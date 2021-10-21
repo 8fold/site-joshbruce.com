@@ -5,7 +5,7 @@
   "license": "MIT",
   "authors": [],
   "require": {
-    "php": "^7.4||^8.0",
+    "php": "^8.0",
     "8fold/php-amos": "^0.1.0"
   },
   "require-dev": {

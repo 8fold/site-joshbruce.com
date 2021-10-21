@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-die(var_dump($_SERVER));
+// die(var_dump($_SERVER));
 
 /**
  * We're going to try putting in only the things we need when we need them,
@@ -15,4 +15,4 @@ die(var_dump($_SERVER));
  * 2. We will be using Apache or another server that uses .htaccess with a
  *    rewrite module allowing to facilitate this front controller.
  */
-return \JoshBruce\Site\App::start()->respond();
+print \JoshBruce\Site\App::run();
