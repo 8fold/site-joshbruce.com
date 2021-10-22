@@ -4,22 +4,21 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use Stringable;
-
-use Eightfold\HTMLBuilder\Document as HtmlDocument;
-use Eightfold\HTMLBuilder\Element as HtmlElement;
+// use Eightfold\HTMLBuilder\Document as HtmlDocument;
+// use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use Eightfold\Amos\Store;
-use Eightfold\Amos\Markdown;
-use Eightfold\Amos\PageComponents\PageTitle;
+// use Eightfold\Amos\Markdown;
+// use Eightfold\Amos\PageComponents\PageTitle;
 
-class App implements Stringable
+// use JoshBruce\Site\PageComponents\Head;
+
+use JoshBruce\Site\Http\Uri;
+use JoshBruce\Site\Http\Request;
+use JoshBruce\Site\Http\Response;
+
+class App
 {
-    /**
-     * @var array<string|int|float>
-     */
-    private array $serverGlobal = [];
-
     /**
      * @var Store
      */
@@ -34,6 +33,11 @@ class App implements Stringable
         200 => 'OK',
         404 => 'Not Found'
     ];
+
+    public static function runFromServerGlobal()
+    {
+        return App::create($_SERVER);
+    }
 
     /**
      * In a server environment, `$serverGlobal` would be the entire $_SERVER
@@ -51,9 +55,95 @@ class App implements Stringable
     /**
      * @param array<string|int|float> $serverGlobal
      */
-    public function __construct(array $serverGlobal)
+    public function __construct(
+        private array $serverGlobal
+    ) {
+    }
+
+    public function response(): Response
     {
-        $this->serverGlobal = $serverGlobal;
+        // Implementing this is jumping the gun as we are only responding to
+        // get requests at this time.
+        //
+        // $method = 'GET';
+        // if (array_key_exists('REQUEST_METHOD', $this->serverGlobal())) {
+        //     $sg = $this->serverGlobal();
+        //     $method = $sg['REQUEST_METHOD'];
+        // }
+
+        $request = Request::create(
+            'get',
+            Uri::create($this->serverGlobal())
+        );
+
+        return Response::create($request, $this->store());
+    }
+
+    private function serverGlobal(): array
+    {
+        return $this->serverGlobal;
+    }
+
+    private function store(): Store
+    {
+        if ($this->store === null) {
+            $this->store = Store::create($this->contentPath());
+        }
+        return $this->store;
+    }
+
+
+
+
+
+
+
+
+
+
+    public function emit(): void
+    {
+        if ($this->isAsset()) {
+            $this->emitAsset();
+        }
+        $this->emitHeader();
+        $this->emitHtml();
+    }
+
+    private function isAsset(): bool
+    {
+        $parts = explode('/', $this->requestUri());
+        $parts = array_filter($parts);
+        return array_shift($parts) === 'assets';
+    }
+
+    private function emitHtml(): void
+    {
+        $content = $this->store()->markdown('content.md');
+
+        if (is_bool($content) and ! $content) {
+            print $this->errorPage();
+        }
+
+        if (is_object($content)) {
+            print HtmlDocument::create(
+                PageTitle::create($this->store())->build()
+            )->head(
+                ...Head::create(
+                    $this->store(),
+                    PageTitle::create($this->store())->buildBookend(),
+                    $this->requestUriFull()
+                )
+            )->body(
+                $content->html()
+            );
+        }
+        print '';
+    }
+
+    private function emitAsset(): void
+    {
+
     }
 
     /**
@@ -82,23 +172,32 @@ class App implements Stringable
         return '';
     }
 
-    private function requestMethod(): string
-    {
-        $value = $this->serverGlobal['REQUEST_METHOD'];
-        if (is_string($value)) {
-            return strtolower($value);
-        }
-        return '';
-    }
+    // private function requestMethod(): string
+    // {
+    //     $value = $this->serverGlobal['REQUEST_METHOD'];
+    //     if (is_string($value)) {
+    //         return strtolower($value);
+    //     }
+    //     return '';
+    // }
 
-    private function requestUri(): string
-    {
-        $value = $this->serverGlobal['REQUEST_URI'];
-        if (is_string($value)) {
-            return $value;
-        }
-        return '';
-    }
+    // private function requestUri(): string
+    // {
+    //     $value = $this->serverGlobal['REQUEST_URI'];
+    //     if (is_string($value)) {
+    //         return $value;
+    //     }
+    //     return '';
+    // }
+
+    // private function requestUriFull(): string
+    // {
+    //     $scheme  = $this->serverGlobal['REQUEST_SCHEME'];
+    //     $host    = $this->serverGlobal['HTTP_HOST'];
+    //     $path    = $this->requestUri();
+
+    //     return $scheme . '://' . $host . $path;
+    // }
 
     private function contentPath(): string
     {
@@ -118,22 +217,15 @@ class App implements Stringable
         return implode('/', $parts);
     }
 
-    private function path(): string
-    {
-        if (strtolower($this->requestMethod()) !== 'get') {
-            return '';
-        }
-        return $this->requestUri();
-    }
+    // private function path(): string
+    // {
+    //     if (strtolower($this->requestMethod()) !== 'get') {
+    //         return '';
+    //     }
+    //     return $this->requestUri();
+    // }
 
-    private function store(): Store
-    {
-        if ($this->store === null) {
-            $this->store = Store::create($this->contentPath())
-                ->append($this->path());
-        }
-        return $this->store;
-    }
+
 
     private function protocol(): string
     {
@@ -183,23 +275,29 @@ class App implements Stringable
         return '';
     }
 
-    public function __toString(): string
-    {
-        $this->emitHeader();
+    // public function response(): void
+    // {
+        // $this->emitHeader();
 
-        $content = $this->store()->markdown('content.md');
+        // $content = $this->store()->markdown('content.md');
 
-        if (is_bool($content) and ! $content) {
-            return $this->errorPage();
-        }
+        // if (is_bool($content) and ! $content) {
+        //     print $this->errorPage();
+        // }
 
-        if (is_object($content)) {
-            return (string) HtmlDocument::create(
-                PageTitle::create($this->store())->build()
-            )->body(
-                $content->html()
-            );
-        }
-        return '';
-    }
+        // if (is_object($content)) {
+        //     print HtmlDocument::create(
+        //         PageTitle::create($this->store())->build()
+        //     )->head(
+        //         ...Head::create(
+        //             $this->store(),
+        //             PageTitle::create($this->store())->buildBookend(),
+        //             $this->requestUriFull()
+        //         )
+        //     )->body(
+        //         $content->html()
+        //     );
+        // }
+        // print '';
+    // }
 }

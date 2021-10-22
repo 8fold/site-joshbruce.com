@@ -10,7 +10,7 @@ Constraints:
 
 1. Content will be separated from the app; only the `index.php` file and `.htaccess` will reside in the `public` folder.
 2. Databases will only be used for relationships and only if the relationship can't be handled as quickly using references in flat-files.
-3. Code will remain as light as possible. When I've developed sites similar to this in the past most of the code I ended up writing was related to querying databases and use authentication and administration; both will be avoided for as long as possible.
+3. Code will remain as light as possible. When I've developed sites similar to this in the past most of the code I ended up writing was related to querying databases and user authentication and administration; both will be avoided for as long as possible.
 
 ## Present valid HTML on page
 
@@ -33,7 +33,7 @@ Content-Type: text/html; charset=UTF-8
 
 I'm going to want to have a bit more control over the response, sepecifically the headers to be able to specify a 404 error. I'm going to be using the [Slim framework](https://www.slimframework.com) implementation as a reference.
 
-Resulting header using `header` from PSL:
+Resulting header using `header` from SPL:
 
 ```base
 HTTP/1.1 404 Not Found
@@ -60,3 +60,16 @@ Therefore:
 1. We will always return the header using HTTP 2.
 2. We need a way to check for actual content in the content folder; `8fold/amos` will be used.
 3. We need a way to hide the configuratin; `dotenv` seems a viable solution.
+
+## Uses style sheet from within content area
+
+Amos uses the `.assets` folder to store non-content website assets: favicons, ui images, and the like.
+
+This not using packages thing until necessary is becoming more difficult, partially out of habit, I thnk.
+
+I was thinking of bringing in the [PSR-7](https://www.php-fig.org/psr/psr-7/) implementation from [Slim](https://github.com/slimphp/Slim-Psr7) to accomplish this. I changed my mind because CSS and JavaScript are both plain text. Therefore, I should be able to modify the headers and do what we're doing with HTML. I will be using both as a reference to guide the API design for some first-party classes.
+
+Doing it this way we should stay relatively decoupled from any library brought in while also setting potential future proxies. The main drawback at the moment is that I'm not strictly following the flow and conventions from PSR-7 for the following reasons:
+
+1. I'm not familiar with the implications of the PSR-7, its siblings, and its references; therefore, still learning.
+2. I'm only skimming (gaining a basic understanding) to determine what I need and don't need from PSR-7; despite it being a robust and complete implementation covering a variety of use cases. (ex. A request may have a body, the site only responds to the URL; therefore, this code doesn't account for the existence of a request with a message body.)
