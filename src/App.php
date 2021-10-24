@@ -10,6 +10,9 @@ use JoshBruce\Site\Emitter;
 
 class App
 {
+    /**
+     * @param array<string, array<int, string>|string|int> $serverGlobals
+     */
     public static function emitResponse(array $serverGlobals): void
     {
         $response = null;
@@ -25,7 +28,7 @@ class App
         Emitter::emit($response);
     }
 
-    public static function init(Environment $environment)
+    public static function init(Environment $environment): App
     {
         return new App($environment);
     }

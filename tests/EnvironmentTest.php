@@ -3,35 +3,8 @@
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Http\Response;
 
-beforeEach(function() {
-    $this->serverGlobals = $_SERVER;
-    $this->serverGlobals['CONTENT_UP'] = 0;
-    $this->serverGlobals['CONTENT_FOLDER'] = '/tests/test-content';
-});
-
 test('Has response', function() {
-    expect(
-        Environment::init($this->serverGlobals)->response()->getBody()
-    )->toBe(<<<html
-        <!doctype html>
-        <html>
-            <head>
-                <title>Josh Bruce's personal site</title>
-                <style>
-                    h1 {
-                        text-align: center;
-                    }
-                </style>
-            </head>
-            <body>
-                <h1>The domain of Josh Bruce</h1>
-                <p>This content was successfully found.</p>
-            </body>
-        </html>
-        html
-    );
-
-    $serverGlobals = $this->serverGlobals;
+    $serverGlobals = serverGlobals();
     $serverGlobals['CONTENT_FOLDER'] = 'does-not-exist';
 
     expect(
@@ -51,7 +24,7 @@ test('Has response', function() {
         html
     );
 
-    $serverGlobals = $this->serverGlobals;
+    $serverGlobals = serverGlobals();
     unset($serverGlobals['CONTENT_UP']);
     unset($serverGlobals['CONTENT_FOLDER']);
 
@@ -75,17 +48,17 @@ test('Has response', function() {
 
 test('Verifies', function () {
     expect(
-        Environment::init($this->serverGlobals)->isVerified()
+        Environment::init(serverGlobals())->isVerified()
     )->toBeTrue();
 
-    $serverGlobals = $this->serverGlobals;
+    $serverGlobals = serverGlobals();
     $serverGlobals['CONTENT_FOLDER'] = 'does-not-exist';
 
     expect(
         Environment::init($serverGlobals)->isVerified()
     )->toBeFalse();
 
-    $serverGlobals = $this->serverGlobals;
+    $serverGlobals = serverGlobals();
     unset($serverGlobals['CONTENT_UP']);
     unset($serverGlobals['CONTENT_FOLDER']);
 

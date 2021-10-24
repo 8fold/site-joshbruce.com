@@ -13,6 +13,9 @@ class Response
 {
     /**
      * Not part of PSR-7
+     *
+     * @param array<string, array<int, string>> $headers
+     *
      */
     public static function create(
         int $status = 200,
@@ -20,11 +23,13 @@ class Response
         string $body = '',
         string $version = '2',
         string $reason = ''
-    )
-    {
+    ): Response {
         return new Response($status, $headers, $body, $version, $reason);
     }
 
+    /**
+     * @param array<string, array<int, string>> $headers
+     */
     public function __construct(
         private int $status = 200,
         private array $headers = [],
@@ -44,12 +49,15 @@ class Response
         return $this->reason;
     }
 
+    /**
+     * @return array<string, array<int, string>>
+     */
     public function getHeaders(): array
     {
         return $this->headers;
     }
 
-    public function getBody()
+    public function getBody(): string
     {
         return $this->body;
     }

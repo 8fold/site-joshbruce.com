@@ -32,7 +32,7 @@ class Emitter
         }
 
         if (strlen($this->response()->getBody()) > 0) {
-            print $this->response()->getBody();
+            $this->emitBody();
         }
     }
 
@@ -81,6 +81,6 @@ class Emitter
 
     public function emitBody(): void
     {
-        print $this->body($this->statusCode);
+        print $this->response()->getBody();
     }
 }
