@@ -6,9 +6,7 @@
   "authors": [],
   "require": {
     "php": "^8.0",
-    "8fold/php-amos": "^0.1.0",
-    "vlucas/phpdotenv": "^5.3",
-    "slim/psr7": "^1.5"
+    "vlucas/phpdotenv": "^5.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
