@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
+function emitStatusLine(int $code, string $message): void
+{
+    header("HTTP/2 {$code} {$message}", replace: true, response_code: 500);
+}
+
 function emitErrorHeaders(int $code): void {
     if ($code === 500) {
-        header(
-            'HTTP/2 500 Internal server error',
-            replace: true,
-            response_code: 500
-        );
+        emitStatusLine($code, 'Iternal server error');
         header('Cache-Control: no-cache, must-revalidate');
         // dont' need text/hemlt header, default seems fine
 
@@ -61,3 +62,58 @@ if (! $contentExists) {
     emitErrorHeaders(500);
     emitErrorBody(500, 'content');
 }
+
+// -> 404 server code no valid content
+$contentRoot    = $contentRoot;
+$requestUri     = $_SERVER['REQUEST_URI'];
+$requestAbspath = $contentRoot . $requestUri . '/content.md';
+
+$contentExists = file_exists($requestAbspath) and is_file($requestAbspath);
+
+if (! $contentExists) {
+    emitStatusLine(404, 'Not found');
+    header('Cache-Control: no-cache, must-revalidate');
+    print <<<html
+        <!doctype html>
+        <html>
+            <head>
+                <title>Not found | Josh Bruce's personal site</title>
+                <style>
+                    h1 {
+                        text-align: center;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>404: Not found</h1>
+                <p>We still haven't found what you're looking for.</p>
+            </body>
+        </html>
+    html;
+
+    exit;
+}
+
+emitStatusLine(200, 'Ok');
+header('Cache-Control: max-age=600');
+
+print <<<html
+    <!doctype html>
+    <html>
+        <head>
+            <title>Josh Bruce's personal site</title>
+            <style>
+                h1 {
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>The domain of Josh Bruce</h1>
+            <p>This content was successfully found.</p>
+        </body>
+    </html>
+html;
+
+exit;
+

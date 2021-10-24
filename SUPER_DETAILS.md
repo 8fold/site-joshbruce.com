@@ -36,6 +36,8 @@ These will need to be checked in reverse.
 2. 404: File for request URI could not be found within the content root directory.
 3. 200: File found inside content root directory.
 
+I'm not going to use the same template for the 404 and I did the 500. A server error should have fewer options than a 404. The user typically can't recover from the 500 by themselves; however, they can recover from a 404 relatively easily.
+
 ## Hard reset
 
 total time: 0
