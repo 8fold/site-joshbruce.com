@@ -32,7 +32,7 @@ There are three response codes I want to be able to support:
 
 These will need to be checked in reverse.
 
-1. 500: Conntent root directory not found.
+1. 500: Conntent root directory not found. Or DotEnv required parameters not set.
 2. 404: File for request URI could not be found within the content root directory.
 3. 200: File found inside content root directory.
 
