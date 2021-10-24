@@ -36,28 +36,6 @@ class Environment
 
     public function response(): Response
     {
-        $status  = 200;
-        $reason  = 'Ok';
-        $headers = [
-            'Cache-Control' => ['max-age=600']
-        ];
-        $body = <<<html
-            <!doctype html>
-            <html>
-                <head>
-                    <title>Josh Bruce's personal site</title>
-                    <style>
-                        h1 {
-                            text-align: center;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <h1>The domain of Josh Bruce</h1>
-                    <p>This content was successfully found.</p>
-                </body>
-            </html>
-            html;
         if (! $this->hasRequiredVariables() or ! $this->hasValidContent()) {
             $status = 500;
             $reason = 'Internal server error';
@@ -109,7 +87,7 @@ class Environment
             is_dir($this->contentRoot());
     }
 
-    private function contentRoot(): string
+    public function contentRoot(): string
     {
         if (! $this->hasRequiredVariables()) {
             return '';

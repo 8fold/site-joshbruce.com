@@ -7,7 +7,7 @@ total time: 3h
 non-dev packages (composer show --tree --no-dev): no change
 ```
 
-The response to the 500 errors are handled by the Environment class. I threw the 200 response in there as well, not sure why.
+The response to the 500 errors are handled by the Environment class. I threw the 200 response in there as well, not sure why. At this point, I should be able to start building the conventional Request object. We will ask an App object to respond to the request. That Response will be sent to the Emitter.
 
 I'm also going to want to establish a baseline of performance tests.
 

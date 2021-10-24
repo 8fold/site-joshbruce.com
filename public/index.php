@@ -9,102 +9,82 @@ use Dotenv\Dotenv;
 
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Emitter;
+use JoshBruce\Site\Http\Response;
 
+// Inject environment variables to global $_SERVER array
 Dotenv::createImmutable(__DIR__ . '/../')->load();
 
-if ($env = Environment::init($_SERVER) and $env->isNotVerified()) {
+// Verify environment has minimal structure
+$env = Environment::init($_SERVER);
+if ($env->isNotVerified()) {
     Emitter::emit($env->response());
 }
 
-// -> 500 server code dotenv required variables not set
-// $envHasRequired = array_key_exists('CONTENT_UP', $_SERVER) and
-//     array_key_exists('CONTENT_FOLDER', $_SERVER);
-
-// if (! $envHasRequired) {
-//     $emitter = Emitter::create(
-//         500,
-//         'Iternal server error',
-//         [
-//             'Cache-Control' => [
-//                 'no-cache',
-//                 'must-revalidate'
-//             ]
-//         ]
-//     );
-
-//     $emitter->emitStatusLine();
-//     $emitter->emitHeaders();
-//     $emitter->emitBody();
-
-//     exit;
-// }
-
-// -> 500 server code no content connection possible
-// $contentUp      = $_SERVER['CONTENT_UP'];
-// $contentFolder  = $_SERVER['CONTENT_FOLDER'];
-// $contentStart   = __DIR__;
-// $contentParts   = explode('/', $contentStart);
-// $contentParts   = array_slice($contentParts, 0, -1 * $contentUp);
-// $contentParts[] = $contentFolder;
-// $contentRoot    = implode('/', $contentParts);
-
-// $contentExists = file_exists($contentRoot) and is_dir($contentRoot);
-
-// if (! $contentExists) {
-//     $emitter = Emitter::create(
-//         502,
-//         'Bad gateway',
-//         [
-//             'Cache-Control' => [
-//                 'no-cache',
-//                 'must-revalidate'
-//             ]
-//         ]
-//     );
-
-//     $emitter->emitStatusLine();
-//     $emitter->emitHeaders();
-//     $emitter->emitBody();
-
-//     exit;
-// }
-
 // -> 404 server code no valid content
-$contentRoot    = $contentRoot;
-$requestUri     = $_SERVER['REQUEST_URI'];
-$requestAbspath = $contentRoot . $requestUri . '/content.md';
+$contentRoot     = $env->contentRoot();
+$requestParts    = explode('/', $contentRoot);
+$requestUriParts = explode('/', $_SERVER['REQUEST_URI']);
+$parts           = array_merge($requestParts, $requestUriParts);
+$parts[]         = 'content.md';
+$parts           = array_filter($parts);
+$requestAbspath  = '/' . implode('/', $parts);
+$contentExists   = file_exists($requestAbspath) and is_file($requestAbspath);
 
-$contentExists = file_exists($requestAbspath) and is_file($requestAbspath);
+$response = Response::create(
+    200,
+    headers: [
+        'Cache-Control' => ['max-age=600']
+    ],
+    body: <<<html
+        <!doctype html>
+        <html>
+            <head>
+                <title>Josh Bruce's personal site</title>
+                <style>
+                    h1 {
+                        text-align: center;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>The domain of Josh Bruce</h1>
+                <p>This content was successfully found.</p>
+            </body>
+        </html>
+        html,
+    reason: 'Ok'
+);
 
 if (! $contentExists) {
-    $emitter = Emitter::create(
+    $response = Response::create(
         404,
-        'Not found',
-        [
+        headers: [
             'Cache-Control' => [
                 'no-cache',
                 'must-revalidate'
             ]
-        ]
+        ],
+        body: <<<html
+            <!doctype html>
+            <html>
+                <head>
+                    <title>Not found | Josh Bruce's personal site</title>
+                    <style>
+                        h1 {
+                            text-align: center;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>404: Not found</h1>
+                    <p>We still haven't found what you're looking for.</p>
+                </body>
+            </html>
+            html,
+        reason: 'Not found'
     );
-
-    $emitter->emitStatusLine();
-    $emitter->emitHeaders();
-    $emitter->emitBody();
-
-    exit;
 }
 
-$emitter = Emitter::create(
-    200,
-    'Ok',
-    [
-        'Cache-Control' => ['max-age=600']
-    ]
-);
-
-$emitter->emitStatusLine();
-$emitter->emitHeaders();
-$emitter->emitBody();
+Emitter::emit($response);
 
 exit;
