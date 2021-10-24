@@ -4,7 +4,7 @@
 
 ```bash
 total time: 0
-non-dev packages:
+non-dev packages (composer show --tree --no-dev):
 vlucas/phpdotenv v5.3.1 Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
 ├──ext-pcre *
 ├──graham-campbell/result-type ^1.0.2
