@@ -1,17 +1,16 @@
 <?php
-
-declare(strict_types=1);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-function emitStatusLine(int $code, string $message): void
-{
-    header("HTTP/2 {$code} {$message}", replace: true, response_code: 500);
-}
+use JoshBruce\Site\Emitter;
 
 function emitErrorHeaders(int $code): void {
     if ($code === 500) {
-        emitStatusLine($code, 'Iternal server error');
+        Emitter::create($code, 'Iternal server error')->emitStatusLine();
+        // emitStatusLine($code, );
         header('Cache-Control: no-cache, must-revalidate');
         // dont' need text/hemlt header, default seems fine
 
@@ -31,7 +30,7 @@ function emitErrorBody(int $code, string $details): void {
                 <p>If this error persists, please contact <a href="https://github.com/joshbruce">Josh Bruce</a>.</p>
             </body>
         </html>
-    html;
+        html;
 
     exit;
 }
@@ -71,7 +70,8 @@ $requestAbspath = $contentRoot . $requestUri . '/content.md';
 $contentExists = file_exists($requestAbspath) and is_file($requestAbspath);
 
 if (! $contentExists) {
-    emitStatusLine(404, 'Not found');
+    Emitter::create(404, 'Not found')->emitStatusLine();
+    // emitStatusLine(404, 'Not found');
     header('Cache-Control: no-cache, must-revalidate');
     print <<<html
         <!doctype html>
@@ -89,12 +89,13 @@ if (! $contentExists) {
                 <p>We still haven't found what you're looking for.</p>
             </body>
         </html>
-    html;
+        html;
 
     exit;
 }
 
-emitStatusLine(200, 'Ok');
+Emitter::create(200, 'Ok')->emitStatusLine();
+// emitStatusLine(200, 'Ok');
 header('Cache-Control: max-age=600');
 
 print <<<html
@@ -113,7 +114,6 @@ print <<<html
             <p>This content was successfully found.</p>
         </body>
     </html>
-html;
+    html;
 
 exit;
-

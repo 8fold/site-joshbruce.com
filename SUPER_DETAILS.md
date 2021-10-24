@@ -13,6 +13,8 @@ I don't *need* to run a server or browser to test what we have so far. I can mim
 
 The real server interaction happens when we emit things like headers and print text. The headers will be represented as arrays and the body will be represented as a string.
 
+I'm going to try building into the interfaces and objects described by [PSR-7](https://www.php-fig.org/psr/psr-7/); namely, request, middleware, response, and emit. I'm looking for convention over coming up with my own solution to solved problems.
+
 ## Primary response codes
 
 ```bash
