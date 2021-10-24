@@ -1,9 +1,31 @@
 # Super details
 
+## Add file-based content management
+
+```bash
+total time: 3h
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+The response to the 500 errors are handled by the Environment class. I threw the 200 response in there as well, not sure why.
+
+I'm also going to want to establish a baseline of performance tests.
+
+## ~~Create App~~ Update Environment as entry point
+
+```bash
+total time: 1h 46m
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+The first section of 500 erros happens before a formal request is made; we're determining whether we can respond to any request, much less the specific one given. We will create an Environment class that will verify our environment. We're going to make it possible to pass an array mimicking the `$_SERVER` global to allow for the creation of automated testing.
+
+The Emitter is actually doing to jobs. There is the emission aspect, which requires a server to be running. There is also the building of a response. We're going to separate these two concerns by creating a Response class. This Response class will follow the PSR-7 interface; however, it MAY not implement all of the methods of the interfaces.
+
 ## Start automated testing
 
 ```bash
-total time: 46
+total time: 46m
 non-dev packages (composer show --tree --no-dev): no change
 ```
 

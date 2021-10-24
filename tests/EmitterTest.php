@@ -2,10 +2,6 @@
 
 use JoshBruce\Site\Emitter;
 
-test('Performance', function() {
-
-});
-
 test('Instantiation', function () {
     expect(
         Emitter::create(
@@ -54,4 +50,4 @@ test('Instantiation', function () {
     )->toBe(
         'HTTP/2 200 Ok'
     );
-});
+})->group('emitter');

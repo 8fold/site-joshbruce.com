@@ -5,62 +5,69 @@ error_reporting(E_ALL);
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use Dotenv\Dotenv;
+
+use JoshBruce\Site\Environment;
 use JoshBruce\Site\Emitter;
 
-Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
+Dotenv::createImmutable(__DIR__ . '/../')->load();
+
+if ($env = Environment::init($_SERVER) and $env->isNotVerified()) {
+    Emitter::emit($env->response());
+}
 
 // -> 500 server code dotenv required variables not set
-$envHasRequired = array_key_exists('CONTENT_UP', $_SERVER) and
-    array_key_exists('CONTENT_FOLDER', $_SERVER);
+// $envHasRequired = array_key_exists('CONTENT_UP', $_SERVER) and
+//     array_key_exists('CONTENT_FOLDER', $_SERVER);
 
-if (! $envHasRequired) {
-    $emitter = Emitter::create(
-        500,
-        'Iternal server error',
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ]
-    );
+// if (! $envHasRequired) {
+//     $emitter = Emitter::create(
+//         500,
+//         'Iternal server error',
+//         [
+//             'Cache-Control' => [
+//                 'no-cache',
+//                 'must-revalidate'
+//             ]
+//         ]
+//     );
 
-    $emitter->emitStatusLine();
-    $emitter->emitHeaders();
-    $emitter->emitBody();
+//     $emitter->emitStatusLine();
+//     $emitter->emitHeaders();
+//     $emitter->emitBody();
 
-    exit;
-}
+//     exit;
+// }
 
 // -> 500 server code no content connection possible
-$contentUp      = $_SERVER['CONTENT_UP'];
-$contentFolder  = $_SERVER['CONTENT_FOLDER'];
-$contentStart   = __DIR__;
-$contentParts   = explode('/', $contentStart);
-$contentParts   = array_slice($contentParts, 0, -1 * $contentUp);
-$contentParts[] = $contentFolder;
-$contentRoot    = implode('/', $contentParts);
+// $contentUp      = $_SERVER['CONTENT_UP'];
+// $contentFolder  = $_SERVER['CONTENT_FOLDER'];
+// $contentStart   = __DIR__;
+// $contentParts   = explode('/', $contentStart);
+// $contentParts   = array_slice($contentParts, 0, -1 * $contentUp);
+// $contentParts[] = $contentFolder;
+// $contentRoot    = implode('/', $contentParts);
 
-$contentExists = file_exists($contentRoot) and is_dir($contentRoot);
+// $contentExists = file_exists($contentRoot) and is_dir($contentRoot);
 
-if (! $contentExists) {
-    $emitter = Emitter::create(
-        502,
-        'Bad gateway',
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ]
-    );
+// if (! $contentExists) {
+//     $emitter = Emitter::create(
+//         502,
+//         'Bad gateway',
+//         [
+//             'Cache-Control' => [
+//                 'no-cache',
+//                 'must-revalidate'
+//             ]
+//         ]
+//     );
 
-    $emitter->emitStatusLine();
-    $emitter->emitHeaders();
-    $emitter->emitBody();
+//     $emitter->emitStatusLine();
+//     $emitter->emitHeaders();
+//     $emitter->emitBody();
 
-    exit;
-}
+//     exit;
+// }
 
 // -> 404 server code no valid content
 $contentRoot    = $contentRoot;
