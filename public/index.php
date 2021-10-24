@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-// die(var_dump($_SERVER['CONTENT_UP']));
-
-Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
-
 function emitErrorHeaders(int $code): void {
     if ($code === 500) {
         header(
@@ -39,6 +35,8 @@ function emitErrorBody(int $code, string $details): void {
     exit;
 }
 
+Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
+
 // -> 500 server code dotenv required variables not set
 $envHasRequired = array_key_exists('CONTENT_UP', $_SERVER) and
     array_key_exists('CONTENT_FOLDER', $_SERVER);
@@ -49,7 +47,13 @@ if (! $envHasRequired) {
 }
 
 // -> 500 server code no content connection possible
-$contentRoot = __DIR__ . '/content-dir';
+$contentUp      = $_SERVER['CONTENT_UP'];
+$contentFolder  = $_SERVER['CONTENT_FOLDER'];
+$contentStart   = __DIR__;
+$contentParts   = explode('/', $contentStart);
+$contentParts   = array_slice($contentParts, 0, -1 * $contentUp);
+$contentParts[] = $contentFolder;
+$contentRoot    = implode('/', $contentParts);
 
 $contentExists = file_exists($contentRoot) and is_dir($contentRoot);
 
