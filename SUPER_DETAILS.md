@@ -1,6 +1,82 @@
 # Super details
 
+The `total time` is based on how long it's taken to get to the point of working on the goals of that section.
+
 ## Add file-based content management
+
+```bash
+total time: 5h
+non-dev packages (composer show --tree --no-dev):
+8fold/commonmark-fluent-markdown 0.10.0 A fluent API for CommonMark by the PHP League
+├──8fold/commonmark-abbreviations ^1.2 || ^2.0
+│  ├──league/commonmark ~2.0.1
+│  │  ├──ext-mbstring *
+│  │  ├──league/config ^1.1.1
+│  │  │  ├──dflydev/dot-access-data ^3.0.1
+│  │  │  │  └──php ^7.1 || ^8.0
+│  │  │  ├──nette/schema ^1.2
+│  │  │  │  ├──nette/utils ^2.5.7 || ^3.1.5 ||  ^4.0
+│  │  │  │  │  └──php >=7.2 <8.2
+│  │  │  │  └──php >=7.1 <8.2
+│  │  │  └──php ^7.4 || ^8.0
+│  │  ├──php ^7.4 || ^8.0
+│  │  ├──psr/event-dispatcher ^1.0
+│  │  │  └──php >=7.2.0
+│  │  └──symfony/polyfill-php80 ^1.15
+│  │     └──php >=7.1
+│  └──php ^7.2|^8.0
+├──league/commonmark ^2.0
+│  ├──ext-mbstring *
+│  ├──league/config ^1.1.1
+│  │  ├──dflydev/dot-access-data ^3.0.1
+│  │  │  └──php ^7.1 || ^8.0
+│  │  ├──nette/schema ^1.2
+│  │  │  ├──nette/utils ^2.5.7 || ^3.1.5 ||  ^4.0
+│  │  │  │  └──php >=7.2 <8.2
+│  │  │  └──php >=7.1 <8.2
+│  │  └──php ^7.4 || ^8.0
+│  ├──php ^7.4 || ^8.0
+│  ├──psr/event-dispatcher ^1.0
+│  │  └──php >=7.2.0
+│  └──symfony/polyfill-php80 ^1.15
+│     └──php >=7.1
+├──php ^8.0
+└──symfony/yaml ^2.3 || ^3.0 || ^4.0 || ^5.0
+   ├──php >=7.2.5
+   ├──symfony/deprecation-contracts ^2.1
+   │  └──php >=7.1
+   └──symfony/polyfill-ctype ~1.8
+      └──php >=7.1
+8fold/php-html-builder 0.5.3 A library for building HTML document and element strings.
+├──8fold/php-xml-builder ^0.6
+│  └──php ^7.4||^8.0
+└──php ^7.4||^8.0
+vlucas/phpdotenv v5.3.1 Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
+├──ext-pcre *
+├──graham-campbell/result-type ^1.0.2
+│  ├──php ^7.0 || ^8.0
+│  └──phpoption/phpoption ^1.8
+│     └──php ^7.0 || ^8.0
+├──php ^7.1.3 || ^8.0
+├──phpoption/phpoption ^1.8
+│  └──php ^7.0 || ^8.0
+├──symfony/polyfill-ctype ^1.23
+│  └──php >=7.1
+├──symfony/polyfill-mbstring ^1.23.1
+│  └──php >=7.1
+└──symfony/polyfill-php80 ^1.23.1
+   └──php >=7.1
+```
+
+Our style linter isn't letting us pass because the HTML content we have extends beyond the desire lined limit.
+
+I'll want to move all of this content out of the classes themselves.
+
+We'll need a 500 error page in a local content space to cover the possibility that the user-defined content space doesn't work. Thinking I'll put it in the `public` folder.
+
+From there, we can use the user-defined content folder.
+
+## Create App and make entry point
 
 ```bash
 total time: 3h
@@ -9,7 +85,7 @@ non-dev packages (composer show --tree --no-dev): no change
 
 The response to the 500 errors are handled by the Environment class. I threw the 200 response in there as well, not sure why. At this point, I should be able to start building the conventional Request object. We will ask an App object to respond to the request. That Response will be sent to the Emitter.
 
-I'm also going to want to establish a baseline of performance tests.
+~~I'm also going to want to establish a baseline of performance tests.~~
 
 ## ~~Create App~~ Update Environment as entry point
 

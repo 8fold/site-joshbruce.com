@@ -6,6 +6,10 @@ namespace JoshBruce\Site;
 
 use Dotenv\Dotenv;
 
+use Eightfold\HTMLBuilder\Document as HtmlDocument;
+
+use Eightfold\Markdown\Markdown;
+
 use JoshBruce\Site\Http\Response;
 
 /**
@@ -69,19 +73,28 @@ class Environment
                 ]
             ];
 
-            $body = <<<html
-                <!doctype html>
-                <html>
-                    <head>
-                        <title>Server error | Josh Bruce's personal site</title>
-                    </head>
-                    <body>
-                        <h1>$status: $reason $details</h1>
-                        <p>We're not sure what happened here. Please try again later.</p>
-                        <p>If this error persists, please contact <a href="https://github.com/joshbruce">Josh Bruce</a>.</p>
-                    </body>
-                </html>
-                html;
+            $content = file_get_contents($this->publicFolder() . '/500.md');
+            $replacements = [
+                '%status%'  => $status,
+                '%reason%'  => $reason,
+                '%details%' => $details
+            ];
+            $search  = array_keys($replacements);
+            $replace = array_values($replacements);
+
+            $markdown = str_replace($search, $replace, $content);
+
+            $m = Markdown::create()->minified();
+
+            $meta = $m->getFrontMatter($markdown);
+            $title = 'Server error';
+            if (array_key_exists('title', $meta)) {
+                $title = $meta['title'];
+            }
+
+            $body = HtmlDocument::create($title)->body(
+                $m->convert($markdown)
+            )->build();
 
             return new Response(
                 $status,
@@ -140,6 +153,11 @@ class Environment
         $contentParts  = array_merge($contentParts, $contentFolder);
 
         return implode('/', $contentParts);
+    }
+
+    private function publicFolder(): string
+    {
+        return $this->projectRoot() . '/public';
     }
 
     private function projectRoot(): string
