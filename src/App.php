@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use Eightfold\HTMLBuilder\Document as HtmlDocument;
+use Eightfold\Markdown\Markdown;
+
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Http\Response;
 use JoshBruce\Site\Emitter;
@@ -18,11 +21,11 @@ class App
         $response = null;
         // Verify environment has minimal structure
         $env = Environment::init($_SERVER);
-        if ($env->isNotVerified()) {
-            $response = $env->response();
+        if ($env->isVerified()) {
+            $response = App::init($env)->response();
 
         } else {
-            $response = App::init($env)->response();
+            $response = $env->response();
 
         }
         Emitter::emit($response);
@@ -39,32 +42,51 @@ class App
 
     public function response(): Response
     {
+        $m = Markdown::create()->minified();
+
         if ($this->contentExistsForRequest()) {
+            $markdown = file_get_contents(
+                $this->environment()->contentRoot() .
+                '/content.md'
+            );
+
+            if (is_bool($markdown)) {
+                $markdown = '';
+            }
+
+            $meta = $m->getFrontMatter($markdown);
+            $title = $meta['title'];
+
+            $body = HtmlDocument::create($title)->body(
+                $m->convert($markdown)
+            )->build();
+
             return Response::create(
                 200,
                 headers: [
                     'Cache-Control' => ['max-age=600']
                 ],
-                body: <<<html
-                    <!doctype html>
-                    <html>
-                        <head>
-                            <title>Josh Bruce's personal site</title>
-                            <style>
-                                h1 {
-                                    text-align: center;
-                                }
-                            </style>
-                        </head>
-                        <body>
-                            <h1>The domain of Josh Bruce</h1>
-                            <p>This content was successfully found.</p>
-                        </body>
-                    </html>
-                    html,
+                body: $body,
                 reason: 'Ok'
             );
         }
+
+        $markdown = file_get_contents(
+            $this->environment()->contentRoot() .
+            '/.errors/404.md'
+        );
+
+        if (is_bool($markdown)) {
+            $markdown = '';
+        }
+
+        $meta = $m->getFrontMatter($markdown);
+        $title = $meta['title'];
+
+        $body = HtmlDocument::create($title)->body(
+            $m->convert($markdown)
+        )->build();
+
         return Response::create(
             404,
             headers: [
@@ -73,23 +95,7 @@ class App
                     'must-revalidate'
                 ]
             ],
-            body: <<<html
-                <!doctype html>
-                <html>
-                    <head>
-                        <title>Not found | Josh Bruce's personal site</title>
-                        <style>
-                            h1 {
-                                text-align: center;
-                            }
-                        </style>
-                    </head>
-                    <body>
-                        <h1>404: Not found</h1>
-                        <p>We still haven't found what you're looking for.</p>
-                    </body>
-                </html>
-                html,
+            body: $body,
             reason: 'Not found'
         );
     }
