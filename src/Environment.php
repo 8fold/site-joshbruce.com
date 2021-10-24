@@ -74,15 +74,18 @@ class Environment
             ];
 
             $content = file_get_contents($this->publicFolder() . '/500.md');
-            $replacements = [
-                '%status%'  => $status,
-                '%reason%'  => $reason,
-                '%details%' => $details
-            ];
-            $search  = array_keys($replacements);
-            $replace = array_values($replacements);
+            $markdown = $status . ': ' . $reason . ' ' . $details;
+            if (is_string($content)) {
+                $replacements = [
+                    '%status%'  => $status,
+                    '%reason%'  => $reason,
+                    '%details%' => $details
+                ];
+                $search  = array_keys($replacements);
+                $replace = array_values($replacements);
 
-            $markdown = str_replace($search, $replace, $content);
+                $markdown = str_replace($search, $replace, $content);
+            }
 
             $m = Markdown::create()->minified();
 
