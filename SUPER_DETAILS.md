@@ -1,5 +1,18 @@
 # Super details
 
+## Start automated testing
+
+```bash
+total time: 46
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+We're starting to get a few possible path. I'd like to be able to test those paths automatically instead of changing variables inside of the `index` file.
+
+I don't *need* to run a server or browser to test what we have so far. I can mimic it using dependency injection and creating a faux (mock) `$_SERVER` array.
+
+The real server interaction happens when we emit things like headers and print text. The headers will be represented as arrays and the body will be represented as a string.
+
 ## Primary response codes
 
 ```bash
