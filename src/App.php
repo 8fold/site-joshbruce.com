@@ -6,9 +6,25 @@ namespace JoshBruce\Site;
 
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Emitter;
 
 class App
 {
+    public static function emitResponse(array $serverGlobals): void
+    {
+        $response = null;
+        // Verify environment has minimal structure
+        $env = Environment::init($_SERVER);
+        if ($env->isNotVerified()) {
+            $response = $env->response();
+
+        } else {
+            $response = App::init($env)->response();
+
+        }
+        Emitter::emit($response);
+    }
+
     public static function init(Environment $environment)
     {
         return new App($environment);

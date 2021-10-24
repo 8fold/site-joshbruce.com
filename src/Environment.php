@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use Dotenv\Dotenv;
+
 use JoshBruce\Site\Http\Response;
 
 /**
@@ -13,15 +15,13 @@ use JoshBruce\Site\Http\Response;
  */
 class Environment
 {
-    public static function init(
-        array $serverGlobals
-    ): Environment {
+    public static function init(array $serverGlobals): Environment
+    {
         return new Environment($serverGlobals);
     }
 
-    public function __construct(
-        private array $serverGlobals
-    ) {
+    public function __construct(private array $serverGlobals)
+    {
     }
 
     public function requestUri(): string
