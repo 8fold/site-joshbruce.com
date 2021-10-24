@@ -24,6 +24,11 @@ class Environment
     ) {
     }
 
+    public function requestUri(): string
+    {
+        return $this->serverGlobals['REQUEST_URI'];
+    }
+
     public function isVerified(): bool
     {
         return $this->hasRequiredVariables() and $this->hasValidContent();
