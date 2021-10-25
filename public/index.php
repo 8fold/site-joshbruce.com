@@ -8,7 +8,7 @@ require __DIR__ . '/../vendor/autoload.php';
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
 
-$server = JoshBruce\Site\Environment\Server::init($_SERVER);
+$server = JoshBruce\Site\Server::init($_SERVER);
 
 /**
  * We'll probably replace with the middleware pattern from PSR-7.

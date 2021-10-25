@@ -1,6 +1,6 @@
 <?php
 
-use JoshBruce\Site\Environment\Server;
+use JoshBruce\Site\Server;
 
 it('has required variables', function() {
     expect(

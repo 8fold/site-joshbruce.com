@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-// use Dotenv\Dotenv;
-
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
 use Eightfold\Markdown\Markdown;
 
-use JoshBruce\Site\Environment\Server;
+use JoshBruce\Site\Server;
 use JoshBruce\Site\Content;
-use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Response;
 
 class Environment
 {
@@ -37,7 +35,10 @@ class Environment
             return Response::create();
         }
 
-        $markdown = file_get_contents($this->publicFolder() . '/502.md');
+        $markdown = file_get_contents(
+            $this->projectRoot() .
+            '/500-errors/502.md'
+        );
 
         if (is_bool($markdown)) {
             $markdown = '';
@@ -72,7 +73,8 @@ class Environment
             $this->content = Content::init(
                 $this->projectRoot(),
                 $this->contentUp(),
-                $this->contentFolder()
+                $this->contentFolder(),
+                $this->markdownConverter()
             );
         }
         return $this->content;
@@ -81,11 +83,6 @@ class Environment
     public function markdownConverter(): Markdown
     {
         return $this->server()->markdownConverter();
-    }
-
-    public function publicFolder(): string
-    {
-        return $this->server()->publicFolder();
     }
 
     private function contentUp(): int

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\Http;
+namespace JoshBruce\Site;
 
 /**
  * This response class is not meant to be reusable in general projects, like

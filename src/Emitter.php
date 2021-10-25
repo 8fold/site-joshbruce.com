@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Response;
 
 class Emitter
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\Environment;
+namespace JoshBruce\Site;
 
 use ArrayAccess;
 
@@ -11,7 +11,7 @@ use Dotenv\Dotenv;
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
 use Eightfold\Markdown\Markdown;
 
-use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Response;
 
 /**
  * Object wrapper for $_SERVER globals.
@@ -54,14 +54,17 @@ class Server implements ArrayAccess
             return Response::create(200);
         }
 
-        $markdown = file_get_contents($this->publicFolder() . '/500.md');
+        $markdown = file_get_contents(
+            $this->projectRoot() .
+            '/500-errors/500.md'
+        );
 
         if (is_bool($markdown)) {
             $markdown = '';
         }
 
-        $meta     = $this->markdownConverter()->getFrontMatter($markdown);
-        $title    = $meta['title'];
+        $meta  = $this->markdownConverter()->getFrontMatter($markdown);
+        $title = $meta['title'];
 
         return Response::create(
             500,
@@ -93,17 +96,12 @@ class Server implements ArrayAccess
         return strval($this->offsetGet('REQUEST_URI'));
     }
 
-    public function publicFolder(): string
-    {
-        return $this->projectRoot() . '/public';
-    }
-
     public function projectRoot(): string
     {
         if (strlen($this->projectRoot) === 0) {
             $start = __DIR__;
             $parts = explode('/', $start);
-            $parts = array_slice($parts, 0, -2);
+            $parts = array_slice($parts, 0, -1);
             $this->projectRoot = implode('/', $parts);
         }
         return $this->projectRoot;

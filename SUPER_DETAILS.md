@@ -2,6 +2,15 @@
 
 The `total time` is based on how long it's taken to get to the point of working on the goals of that section.
 
+## Styles and other pages
+
+```bash
+total time: 7h
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+
+
 ## Shorten path to response
 
 ```bash

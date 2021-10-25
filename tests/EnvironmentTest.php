@@ -2,9 +2,9 @@
 
 use JoshBruce\Site\Environment;
 
-use JoshBruce\Site\Environment\Server;
+use JoshBruce\Site\Server;
 
-use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Response;
 
 test('Has response', function() {
     $serverGlobals = serverGlobals();
@@ -21,7 +21,7 @@ test('Has response', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(17);
+    expect($ms)->toBeLessThan(22);
 
     expect(
         $body

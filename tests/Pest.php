@@ -40,7 +40,7 @@ expect()->extend('toBeOne', function () {
 */
 
 use JoshBruce\Site\Environment;
-use JoshBruce\Site\Environment\Server;
+use JoshBruce\Site\Server;
 
 function environment(string $requestUri = '/'): Environment
 {

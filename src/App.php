@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace JoshBruce\Site;
 
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
-use Eightfold\Markdown\Markdown;
 
+use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
-use JoshBruce\Site\Http\Response;
+use JoshBruce\Site\Response;
 use JoshBruce\Site\Emitter;
 
 class App
@@ -22,47 +22,35 @@ class App
     {
     }
 
-    public function markdownConverter(): Markdown
+    public function content(): Content
     {
-        return $this->environment()->markdownConverter();
+        return $this->environment()->content();
     }
 
     public function response(): Response
     {
-        $m = $this->markdownConverter();
-
-        $status  = 404;
-        $file    = '/.errors/404.md';
-        $reason  = 'Not found';
+        $file    = $this->environment()->server()->requestUri() . '/content.md';
+        $content = $this->content()->for(path: $file);
+        $status  = 200;
+        $reason  = 'Ok';
         $headers = [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
+            'Cache-Control' => ['max-age=600']
         ];
-        if ($this->contentExistsForRequest()) {
-            $status  = 200;
-            $file    = '/content.md';
-            $reason  = 'Ok';
+        if (! $content->exists()) {
+            $status  = 404;
+            $file    = '/.errors/404.md';
+            $reason  = 'Not found';
             $headers = [
-                'Cache-Control' => ['max-age=600']
+                'Cache-Control' => [
+                    'no-cache',
+                    'must-revalidate'
+                ]
             ];
+            $content = $this->content()->for(path: $file);
         }
 
-        $markdown = file_get_contents(
-            $this->environment()->content()->root() .
-            $file
-        );
-
-        if (is_bool($markdown)) {
-            $markdown = '';
-        }
-
-        $meta = $m->getFrontMatter($markdown);
-        $title = $meta['title'];
-
-        $body = HtmlDocument::create($title)->body(
-            $m->convert($markdown)
+        $body = HtmlDocument::create($content->title())->body(
+            $content->html()
         )->build();
 
         return Response::create(
@@ -78,24 +66,24 @@ class App
         return $this->environment;
     }
 
-    private function requestFilePath(): string
-    {
-        $contentRoot     = $this->environment()->content()->root();
-        $requestParts    = explode('/', $contentRoot);
-        $requestUriParts = explode(
-            '/',
-            $this->environment()->server()->requestUri()
-        );
-        $parts           = array_merge($requestParts, $requestUriParts);
-        $parts[]         = 'content.md';
-        $parts           = array_filter($parts);
+    // private function requestFilePath(): string
+    // {
+    //     $contentRoot     = $this->environment()->content()->root();
+    //     $requestParts    = explode('/', $contentRoot);
+    //     $requestUriParts = explode(
+    //         '/',
+    //         $this->environment()->server()->requestUri()
+    //     );
+    //     $parts           = array_merge($requestParts, $requestUriParts);
+    //     $parts[]         = 'content.md';
+    //     $parts           = array_filter($parts);
 
-        return '/' . implode('/', $parts);
-    }
+    //     return '/' . implode('/', $parts);
+    // }
 
-    private function contentExistsForRequest(): bool
-    {
-        return file_exists($this->requestFilePath()) and
-            is_file($this->requestFilePath());
-    }
+    // private function contentExistsForRequest(): bool
+    // {
+    //     return file_exists($this->requestFilePath()) and
+    //         is_file($this->requestFilePath());
+    // }
 }
