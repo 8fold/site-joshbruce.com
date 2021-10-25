@@ -2,6 +2,17 @@
 
 The `total time` is based on how long it's taken to get to the point of working on the goals of that section.
 
+## Shorten path to response
+
+```bash
+total time: 5h 30m
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+The Environment class is experiencing a bit of scope creep, I feel.
+
+Our Request will only pay attention to the URL; we are not concerned with the body of a request.
+
 ## Add file-based content management
 
 ```bash

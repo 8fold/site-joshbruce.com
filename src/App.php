@@ -13,24 +13,6 @@ use JoshBruce\Site\Emitter;
 
 class App
 {
-    /**
-     * @param array<string, array<int, string>|string|int> $serverGlobals
-     */
-    public static function emitResponse(array $serverGlobals): void
-    {
-        $response = null;
-        // Verify environment has minimal structure
-        $env = Environment::init($_SERVER);
-        if ($env->isVerified()) {
-            $response = App::init($env)->response();
-
-        } else {
-            $response = $env->response();
-
-        }
-        Emitter::emit($response);
-    }
-
     public static function init(Environment $environment): App
     {
         return new App($environment);
@@ -40,40 +22,36 @@ class App
     {
     }
 
+    public function markdownConverter(): Markdown
+    {
+        return $this->environment()->markdownConverter();
+    }
+
     public function response(): Response
     {
-        $m = Markdown::create()->minified();
+        $m = $this->markdownConverter();
 
+        $status  = 404;
+        $file    = '/.errors/404.md';
+        $reason  = 'Not found';
+        $headers = [
+            'Cache-Control' => [
+                'no-cache',
+                'must-revalidate'
+            ]
+        ];
         if ($this->contentExistsForRequest()) {
-            $markdown = file_get_contents(
-                $this->environment()->contentRoot() .
-                '/content.md'
-            );
-
-            if (is_bool($markdown)) {
-                $markdown = '';
-            }
-
-            $meta = $m->getFrontMatter($markdown);
-            $title = $meta['title'];
-
-            $body = HtmlDocument::create($title)->body(
-                $m->convert($markdown)
-            )->build();
-
-            return Response::create(
-                200,
-                headers: [
-                    'Cache-Control' => ['max-age=600']
-                ],
-                body: $body,
-                reason: 'Ok'
-            );
+            $status  = 200;
+            $file    = '/content.md';
+            $reason  = 'Ok';
+            $headers = [
+                'Cache-Control' => ['max-age=600']
+            ];
         }
 
         $markdown = file_get_contents(
-            $this->environment()->contentRoot() .
-            '/.errors/404.md'
+            $this->environment()->content()->root() .
+            $file
         );
 
         if (is_bool($markdown)) {
@@ -88,15 +66,10 @@ class App
         )->build();
 
         return Response::create(
-            404,
-            headers: [
-                'Cache-Control' => [
-                    'no-cache',
-                    'must-revalidate'
-                ]
-            ],
+            $status,
+            headers: $headers,
             body: $body,
-            reason: 'Not found'
+            reason: $reason
         );
     }
 
@@ -107,9 +80,12 @@ class App
 
     private function requestFilePath(): string
     {
-        $contentRoot     = $this->environment()->contentRoot();
+        $contentRoot     = $this->environment()->content()->root();
         $requestParts    = explode('/', $contentRoot);
-        $requestUriParts = explode('/', $this->environment()->requestUri());
+        $requestUriParts = explode(
+            '/',
+            $this->environment()->server()->requestUri()
+        );
         $parts           = array_merge($requestParts, $requestUriParts);
         $parts[]         = 'content.md';
         $parts           = array_filter($parts);

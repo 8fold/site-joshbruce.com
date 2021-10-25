@@ -39,6 +39,11 @@ class Response
     ) {
     }
 
+    public function isOk(): bool
+    {
+        return $this->getStatusCode() === 200;
+    }
+
     public function getStatusCode(): int
     {
         return $this->status;

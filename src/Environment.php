@@ -4,190 +4,102 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use Dotenv\Dotenv;
+// use Dotenv\Dotenv;
 
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
 use Eightfold\Markdown\Markdown;
 
+use JoshBruce\Site\Environment\Server;
+use JoshBruce\Site\Content;
 use JoshBruce\Site\Http\Response;
 
-/**
- * Verifies the environment is set up in a way that it can handle respnses.
- *
- * Failure will exit early and send a response to the client.
- */
 class Environment
 {
-    private bool $hasRequiredVariables;
-
-    private bool $hasValidContent;
-
-    private string $projectRoot = '';
+    /**
+     * @var Content
+     */
+    private $content;
 
     private string $contentRoot = '';
 
-    /**
-     * @param array<string, array<int, string>|string|int> $serverGlobals
-     */
-    public static function init(array $serverGlobals): Environment
+    public static function init(Server $server): Environment
     {
-        return new Environment($serverGlobals);
+        return new Environment($server);
     }
 
-    /**
-     * @param array<string, array<int, string>|string|int> $serverGlobals
-     */
-    public function __construct(private array $serverGlobals)
+    public function __construct(private Server $server)
     {
-    }
-
-    public function requestUri(): string
-    {
-        // TODO: make sure this is part of a valid setup
-        $uri = $this->serverGlobals['REQUEST_URI'];
-        if (is_string($uri)) {
-            return $uri;
-        }
-        return '';
-    }
-
-    public function isVerified(): bool
-    {
-        return $this->response()->getStatusCode() === 200;
-    }
-
-    public function isNotVerified(): bool
-    {
-        return ! $this->isVerified();
-    }
-
-    public function contentRoot(): string
-    {
-        if (! $this->hasRequiredVariables()) {
-            return '';
-        }
-
-        if (strlen($this->contentRoot) === 0) {
-            $contentStart = $this->projectRoot();
-
-            $contentParts = explode('/', $contentStart);
-            $contentUp    = $this->contentUp();
-
-            if (is_int($contentUp) and $contentUp > 0) {
-                $contentParts = array_slice($contentParts, 0, -1 * $contentUp);
-            }
-            $contentFolder = explode('/', $this->contentFolder());
-            $contentFolder = array_filter($contentFolder);
-            $contentParts  = array_merge($contentParts, $contentFolder);
-
-            $this->contentRoot = implode('/', $contentParts);
-        }
-        return $this->contentRoot;
     }
 
     public function response(): Response
     {
-        if ($this->hasRequiredVariables() and $this->hasValidContent()) {
-            return new Response(200);
+        if ($this->content()->isValid()) {
+            return Response::create();
         }
 
-        $status = 500;
-        $reason = 'Internal server error';
-        $details = '(environment)';
-        if ($this->hasRequiredVariables() and ! $this->hasValidContent()) {
-            $status = 502;
-            $reason = 'Bad gateway';
-            $details = '(content)';
+        $markdown = file_get_contents($this->publicFolder() . '/502.md');
+
+        if (is_bool($markdown)) {
+            $markdown = '';
         }
 
-        $headers = [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ];
+        $meta     = $this->markdownConverter()->getFrontMatter($markdown);
+        $title    = $meta['title'];
 
-        $content = file_get_contents($this->publicFolder() . '/500.md');
-        $markdown = $status . ': ' . $reason . ' ' . $details;
-        if (is_string($content)) {
-            $replacements = [
-                '%status%'  => $status,
-                '%reason%'  => $reason,
-                '%details%' => $details
-            ];
-            $search  = array_keys($replacements);
-            $replace = array_values($replacements);
-
-            $markdown = str_replace($search, $replace, $content);
-        }
-
-        $m = Markdown::create()->minified();
-
-        $meta = $m->getFrontMatter($markdown);
-        $title = $meta['title'];
-
-        $body = HtmlDocument::create($title)->body(
-            $m->convert($markdown)
-        )->build();
-
-        return new Response(
-            $status,
-            headers: $headers,
-            body: $body,
-            reason: $reason
+        return Response::create(
+            502,
+            body: HtmlDocument::create($title)->body(
+                $this->markdownConverter()->convert($markdown)
+            )->build(),
+            headers: [
+                'Cache-Control' => [
+                    'no-cache',
+                    'must-revalidate'
+                ]
+            ],
+            reason: 'Bad gateway'
         );
     }
 
-    private function hasRequiredVariables(): bool
+    public function server(): Server
     {
-        if (! isset($this->hasRequiredVariables)) {
-            $this->hasRequiredVariables = array_key_exists(
-                'CONTENT_UP',
-                $this->serverGlobals
-            ) and
-                array_key_exists('CONTENT_FOLDER', $this->serverGlobals);
-        }
-        return $this->hasRequiredVariables;
+        return $this->server;
     }
 
-    private function hasValidContent(): bool
+    public function content(): Content
     {
-        if (! isset($this->hasValidContent)) {
-            return file_exists($this->contentRoot()) and
-                is_dir($this->contentRoot());
+        if ($this->content === null) {
+            $this->content = Content::init(
+                $this->projectRoot(),
+                $this->contentUp(),
+                $this->contentFolder()
+            );
         }
-        return $this->hasValidContent;
+        return $this->content;
+    }
+
+    public function markdownConverter(): Markdown
+    {
+        return $this->server()->markdownConverter();
+    }
+
+    public function publicFolder(): string
+    {
+        return $this->server()->publicFolder();
     }
 
     private function contentUp(): int
     {
-        if ($this->hasRequiredVariables()) {
-            return intval($this->serverGlobals['CONTENT_UP']);
-        }
-        return 0;
+        return $this->server()->contentUp();
     }
 
     private function contentFolder(): string
     {
-        if ($this->hasRequiredVariables()) {
-            return strval($this->serverGlobals['CONTENT_FOLDER']);
-        }
-        return '';
-    }
-
-    private function publicFolder(): string
-    {
-        return $this->projectRoot() . '/public';
+        return $this->server()->contentFolder();
     }
 
     private function projectRoot(): string
     {
-        if (strlen($this->projectRoot) === 0) {
-            $start = __DIR__;
-            $parts = explode('/', $start);
-            $parts = array_slice($parts, 0, -1);
-            $this->projectRoot = implode('/', $parts);
-        }
-        return $this->projectRoot;
+        return $this->server()->projectRoot();
     }
 }

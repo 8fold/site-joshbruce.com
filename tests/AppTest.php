@@ -12,7 +12,7 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(17);
+    expect($ms)->toBeLessThan(21);
 
     expect(
         $body
@@ -37,7 +37,7 @@ test('Content is from file system', function() {
         $body
     )->toBe(<<<html
         <!doctype html>
-        <html lang="en"><head><title>Not found</title><meta charset="utf-8"></head><body><h1>404: Not found</h1><p>We still haven't found what you're looking for.</p></body></html>
+        <html lang="en"><head><title>Not found</title><meta charset="utf-8"></head><body><h1>404: Not found</h1><p>We still haven’t found what you’re looking for.</p></body></html>
         html
     );
 });
