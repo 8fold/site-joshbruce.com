@@ -33,13 +33,13 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(22);
+    expect($ms)->toBeLessThan(66.25); // used to be 22ms
 
     expect(
         $body
     )->toBe(<<<html
         <!doctype html>
-        <html lang="en"><head><title>Josh Bruce's personal site</title><meta charset="utf-8"><link rel="stylesheet" href="/css/main.css"></link></head><body><h1>The domain of Josh Bruce</h1><p>This content was successfully found.</p></body></html>
+        <html lang="en"><head><title>Josh Bruce's personal site</title><meta charset="utf-8"><link rel="stylesheet" href="/css/main.css"></link><link type="image/x-icon" rel="icon" href="/assets/favicons/favicon.ico"></link><link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" sizes="180x180"></link><link rel="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32"></link><link rel="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16"></link></head><body><h1>The domain of Josh Bruce</h1><p>This content was successfully found.</p></body></html>
         html
     );
 
