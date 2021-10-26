@@ -9,3 +9,14 @@ One of my favorite principles from The Manifesto for Agile Software Development 
 2. Authentication:  Most of the security issues and concerns involved authenticating users. Instead, I'm hoping to avoid this by leveraging the authentication of platforms for source control, social media, and chat clients.
 3. Database connection: Beyond the admin panel and authentication, database connections and querying accounting for the bulk of defects and code. Using a flat-file system, I don't need to create a database connection. Further, the method of content creation solves a few other problems.
 4. No transformation: Some of the code I've written has to do with transforming user input into web-safe data (ex. Titles to slugs for the URL). The flat-file method being used reduces the need for this.
+
+## History
+
+The primary way to view the history of this project is to look at the [releases](https://github.com/8fold/site-joshbruce.com/releases). The name of each is release indicates the total time spent writing the code found here.
+
+I didn't start this project using the aforementioned method; therefore, prior to the first GitHub release, you can:
+
+1. look at the [commit history](https://github.com/8fold/site-joshbruce.com/commits/main) in general (prior to October 25th, 2021),
+2. look at the [closed pull requests](https://github.com/8fold/site-joshbruce.com/pulls?q=is%3Apr+is%3Aclosed), and
+3. read the [super details](https://github.com/8fold/site-joshbruce.com/blob/main/SUPER_DETAILS.md).
+
