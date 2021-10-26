@@ -91,11 +91,6 @@ class Server implements ArrayAccess
         return strval($this->offsetGet('CONTENT_FOLDER'));
     }
 
-    public function requestUri(): string
-    {
-        return strval($this->offsetGet('REQUEST_URI'));
-    }
-
     public function projectRoot(): string
     {
         if (strlen($this->projectRoot) === 0) {

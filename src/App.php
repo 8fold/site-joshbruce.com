@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use Nyholm\Psr7\Stream as Stream;
+
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
+use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
@@ -13,6 +16,10 @@ use JoshBruce\Site\Emitter;
 
 class App
 {
+    private const HIDDEN = [
+        'css' => '/.assets/styles'
+    ];
+
     public static function init(Environment $environment): App
     {
         return new App($environment);
@@ -29,7 +36,30 @@ class App
 
     public function response(): Response
     {
-        $file    = $this->environment()->server()->requestUri() . '/content.md';
+        $file = $this->requestUri() . '/content.md';
+        if ($this->isFile()) {
+            $parts   = explode('/', $this->requestUri());
+            $parts   = array_filter($parts);
+            $first   = array_shift($parts);
+            $search  = '/' . $first;
+            $replace = self::HIDDEN[$first];
+            $f       = str_replace($search, $replace, $this->requestUri());
+            $content = $this->content()->for(path: $f);
+            if ($content->exists()) {
+                $status  = 200;
+                $reason  = 'Ok';
+                $headers = [
+                    'Cache-Control' => ['max-age=2592000'],
+                    'content-type'  => $content->mimeType()
+                ];
+                return Response::create(
+                    $status,
+                    headers: $headers,
+                    body: $content->content(),
+                    reason: $reason
+                );
+            }
+        }
         $content = $this->content()->for(path: $file);
         $status  = 200;
         $reason  = 'Ok';
@@ -49,7 +79,9 @@ class App
             $content = $this->content()->for(path: $file);
         }
 
-        $body = HtmlDocument::create($content->title())->body(
+        $body = HtmlDocument::create($content->title())->head(
+            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css')
+        )->body(
             $content->html()
         )->build();
 
@@ -61,29 +93,18 @@ class App
         );
     }
 
+    private function isFile(): bool
+    {
+        return strpos($this->requestUri(), '.') > 0;
+    }
+
     private function environment(): Environment
     {
         return $this->environment;
     }
 
-    // private function requestFilePath(): string
-    // {
-    //     $contentRoot     = $this->environment()->content()->root();
-    //     $requestParts    = explode('/', $contentRoot);
-    //     $requestUriParts = explode(
-    //         '/',
-    //         $this->environment()->server()->requestUri()
-    //     );
-    //     $parts           = array_merge($requestParts, $requestUriParts);
-    //     $parts[]         = 'content.md';
-    //     $parts           = array_filter($parts);
-
-    //     return '/' . implode('/', $parts);
-    // }
-
-    // private function contentExistsForRequest(): bool
-    // {
-    //     return file_exists($this->requestFilePath()) and
-    //         is_file($this->requestFilePath());
-    // }
+    private function requestUri(): string
+    {
+        return $this->environment()->server()->requestUri();
+    }
 }

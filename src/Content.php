@@ -76,6 +76,11 @@ class Content
         return $this->frontMatter;
     }
 
+    public function file(): mixed
+    {
+        return fopen($this->filePath(), 'r');
+    }
+
     public function title(): string
     {
         if ($this->exists()) {
@@ -91,6 +96,11 @@ class Content
     public function html(): string
     {
         return $this->markdownConverter()->convert($this->markdown());
+    }
+
+    public function mimeType(): string
+    {
+        return mime_content_type($this->filePath());
     }
 
     public function filePath(): string

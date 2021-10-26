@@ -54,12 +54,10 @@ function server(string $requestUri = '/'): Server
 
 function serverGlobals(string $requestUri = '/'): array
 {
-    $serverGlobals = $_SERVER;
+    $_SERVER['APP_ENV']        = 'test';
+    $_SERVER['CONTENT_UP']     = 0;
+    $_SERVER['CONTENT_FOLDER'] = '/tests/test-content';
+    $_SERVER['REQUEST_URI']    = $requestUri;
 
-    $serverGlobals['APP_ENV']        = 'test';
-    $serverGlobals['CONTENT_UP']     = 0;
-    $serverGlobals['CONTENT_FOLDER'] = '/tests/test-content';
-    $serverGlobals['REQUEST_URI']    = $requestUri;
-
-    return $serverGlobals;
+    return $_SERVER;
 }

@@ -6,9 +6,98 @@ The `total time` is based on how long it's taken to get to the point of working 
 
 ```bash
 total time: 7h
-non-dev packages (composer show --tree --no-dev): no change
+non-dev packages (composer show --tree --no-dev):
+8fold/commonmark-fluent-markdown 0.10.0 A fluent API for CommonMark by the PHP League
+├──8fold/commonmark-abbreviations ^1.2 || ^2.0
+│  ├──league/commonmark ~2.0.1
+│  │  ├──ext-mbstring *
+│  │  ├──league/config ^1.1.1
+│  │  │  ├──dflydev/dot-access-data ^3.0.1
+│  │  │  │  └──php ^7.1 || ^8.0
+│  │  │  ├──nette/schema ^1.2
+│  │  │  │  ├──nette/utils ^2.5.7 || ^3.1.5 ||  ^4.0
+│  │  │  │  │  └──php >=7.2 <8.2
+│  │  │  │  └──php >=7.1 <8.2
+│  │  │  └──php ^7.4 || ^8.0
+│  │  ├──php ^7.4 || ^8.0
+│  │  ├──psr/event-dispatcher ^1.0
+│  │  │  └──php >=7.2.0
+│  │  └──symfony/polyfill-php80 ^1.15
+│  │     └──php >=7.1
+│  └──php ^7.2|^8.0
+├──league/commonmark ^2.0
+│  ├──ext-mbstring *
+│  ├──league/config ^1.1.1
+│  │  ├──dflydev/dot-access-data ^3.0.1
+│  │  │  └──php ^7.1 || ^8.0
+│  │  ├──nette/schema ^1.2
+│  │  │  ├──nette/utils ^2.5.7 || ^3.1.5 ||  ^4.0
+│  │  │  │  └──php >=7.2 <8.2
+│  │  │  └──php >=7.1 <8.2
+│  │  └──php ^7.4 || ^8.0
+│  ├──php ^7.4 || ^8.0
+│  ├──psr/event-dispatcher ^1.0
+│  │  └──php >=7.2.0
+│  └──symfony/polyfill-php80 ^1.15
+│     └──php >=7.1
+├──php ^8.0
+└──symfony/yaml ^2.3 || ^3.0 || ^4.0 || ^5.0
+   ├──php >=7.2.5
+   ├──symfony/deprecation-contracts ^2.1
+   │  └──php >=7.1
+   └──symfony/polyfill-ctype ~1.8
+      └──php >=7.1
+8fold/php-html-builder 0.5.3 A library for building HTML document and element strings.
+├──8fold/php-xml-builder ^0.6
+│  └──php ^7.4||^8.0
+└──php ^7.4||^8.0
+laminas/laminas-httphandlerrunner 2.1.0 Execute PSR-15 RequestHandlerInterface instances and emit responses they generate.
+├──php ^7.3 || ~8.0.0 || ~8.1.0
+├──psr/http-message ^1.0
+│  └──php >=5.3.0
+├──psr/http-message-implementation ^1.0
+└──psr/http-server-handler ^1.0
+   ├──php >=7.0
+   └──psr/http-message ^1.0
+      └──php >=5.3.0
+nyholm/psr7 1.4.1 A fast PHP7 implementation of PSR-7
+├──php >=7.1
+├──php-http/message-factory ^1.0
+│  ├──php >=5.4
+│  └──psr/http-message ^1.0
+│     └──php >=5.3.0
+├──psr/http-factory ^1.0
+│  ├──php >=7.0.0
+│  └──psr/http-message ^1.0
+│     └──php >=5.3.0
+└──psr/http-message ^1.0
+   └──php >=5.3.0
+nyholm/psr7-server 1.0.2 Helper classes to handle PSR-7 server requests
+├──php ^7.1 || ^8.0
+├──psr/http-factory ^1.0
+│  ├──php >=7.0.0
+│  └──psr/http-message ^1.0
+│     └──php >=5.3.0
+└──psr/http-message ^1.0
+   └──php >=5.3.0
+vlucas/phpdotenv v5.3.1 Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
+├──ext-pcre *
+├──graham-campbell/result-type ^1.0.2
+│  ├──php ^7.0 || ^8.0
+│  └──phpoption/phpoption ^1.8
+│     └──php ^7.0 || ^8.0
+├──php ^7.1.3 || ^8.0
+├──phpoption/phpoption ^1.8
+│  └──php ^7.0 || ^8.0
+├──symfony/polyfill-ctype ^1.23
+│  └──php >=7.1
+├──symfony/polyfill-mbstring ^1.23.1
+│  └──php >=7.1
+└──symfony/polyfill-php80 ^1.23.1
+   └──php >=7.1
 ```
 
+Tried sending the CSS back with a header of text/css and it was denied as being text/plain. I'm hoping adding a [PSR-7 implementation](https://github.com/Nyholm/psr7) and an [emitter](https://github.com/laminas/laminas-httphandlerrunner) will reduce the amount of code I've written and make it more versatile for sending files.
 
 
 ## Shorten path to response

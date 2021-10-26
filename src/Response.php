@@ -11,6 +11,13 @@ namespace JoshBruce\Site;
  */
 class Response
 {
+    public static function createStream(
+        int $status = 200,
+        array $headers = [],
+        string $body = ''
+    ): Response {
+
+    }
     /**
      * Not part of PSR-7
      *
@@ -20,11 +27,10 @@ class Response
     public static function create(
         int $status = 200,
         array $headers = [],
-        string $body = '',
-        string $version = '2',
-        string $reason = ''
+        $body = '',
+        string $version = '2'
     ): Response {
-        return new Response($status, $headers, $body, $version, $reason);
+        return new Response($status, $headers, $body, $version);
     }
 
     /**
@@ -33,9 +39,8 @@ class Response
     public function __construct(
         private int $status = 200,
         private array $headers = [],
-        private string $body = '',
-        private string $version = '2',
-        private string $reason = ''
+        private $body = '',
+        private string $version = '2'
     ) {
     }
 
