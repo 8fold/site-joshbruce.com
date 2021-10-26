@@ -12,7 +12,7 @@ test('Content can be in sub-folder', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(29);
+    expect($ms)->toBeLessThan(191); // used to be 29ms
 
     expect(
         $body
@@ -33,7 +33,7 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(66.25); // used to be 22ms
+    expect($ms)->toBeLessThan(67); // used to be 22ms
 
     expect(
         $body
@@ -52,7 +52,7 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(3);
+    expect($ms)->toBeLessThan(4);
 
     expect(
         $body
