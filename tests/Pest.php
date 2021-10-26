@@ -40,19 +40,24 @@ expect()->extend('toBeOne', function () {
 */
 
 use JoshBruce\Site\Environment;
+use JoshBruce\Site\Server;
 
 function environment(string $requestUri = '/'): Environment
 {
-    return Environment::init(serverGlobals($requestUri));
+    return Environment::init(server($requestUri));
+}
+
+function server(string $requestUri = '/'): Server
+{
+    return Server::init(serverGlobals($requestUri));
 }
 
 function serverGlobals(string $requestUri = '/'): array
 {
-    $serverGlobals = $_SERVER;
+    $_SERVER['APP_ENV']        = 'test';
+    $_SERVER['CONTENT_UP']     = 0;
+    $_SERVER['CONTENT_FOLDER'] = '/tests/test-content';
+    $_SERVER['REQUEST_URI']    = $requestUri;
 
-    $serverGlobals['CONTENT_UP']     = 0;
-    $serverGlobals['CONTENT_FOLDER'] = '/tests/test-content';
-    $serverGlobals['REQUEST_URI']    = $requestUri;
-
-    return $serverGlobals;
+    return $_SERVER;
 }

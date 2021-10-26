@@ -4,32 +4,21 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use Eightfold\HTMLBuilder\Document as HtmlDocument;
-use Eightfold\Markdown\Markdown;
+use Nyholm\Psr7\Stream as Stream;
 
+use Eightfold\HTMLBuilder\Document as HtmlDocument;
+use Eightfold\HTMLBuilder\Element as HtmlElement;
+
+use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
-use JoshBruce\Site\Http\Response;
-use JoshBruce\Site\Emitter;
+use JoshBruce\Site\Response;
+use JoshBruce\Site\ResponseFile;
 
 class App
 {
-    /**
-     * @param array<string, array<int, string>|string|int> $serverGlobals
-     */
-    public static function emitResponse(array $serverGlobals): void
-    {
-        $response = null;
-        // Verify environment has minimal structure
-        $env = Environment::init($_SERVER);
-        if ($env->isVerified()) {
-            $response = App::init($env)->response();
-
-        } else {
-            $response = $env->response();
-
-        }
-        Emitter::emit($response);
-    }
+    private const HIDDEN = [
+        'css' => '/.assets/styles'
+    ];
 
     public static function init(Environment $environment): App
     {
@@ -40,64 +29,72 @@ class App
     {
     }
 
-    public function response(): Response
+    public function content(): Content
     {
-        $m = Markdown::create()->minified();
+        return $this->environment()->content();
+    }
 
-        if ($this->contentExistsForRequest()) {
-            $markdown = file_get_contents(
-                $this->environment()->contentRoot() .
-                '/content.md'
-            );
-
-            if (is_bool($markdown)) {
-                $markdown = '';
+    public function response(): Response|ResponseFile
+    {
+        $file = $this->requestUri() . '/content.md';
+        if ($this->isFile()) {
+            $parts   = explode('/', $this->requestUri());
+            $parts   = array_filter($parts);
+            $first   = array_shift($parts);
+            $search  = '/' . $first;
+            $replace = self::HIDDEN[$first];
+            $f       = str_replace($search, $replace, $this->requestUri());
+            $content = $this->content()->for(path: $f);
+            if ($content->exists()) {
+                $status  = 200;
+                $reason  = 'Ok';
+                $headers = [
+                    'Cache-Control' => ['max-age=2592000'],
+                    'Content-Type'  => 'text/css'
+                ];
+                return ResponseFile::create(
+                    status: $status,
+                    headers: $headers,
+                    file: $content->filePath()
+                );
             }
-
-            $meta = $m->getFrontMatter($markdown);
-            $title = $meta['title'];
-
-            $body = HtmlDocument::create($title)->body(
-                $m->convert($markdown)
-            )->build();
-
-            return Response::create(
-                200,
-                headers: [
-                    'Cache-Control' => ['max-age=600']
-                ],
-                body: $body,
-                reason: 'Ok'
-            );
         }
 
-        $markdown = file_get_contents(
-            $this->environment()->contentRoot() .
-            '/.errors/404.md'
-        );
-
-        if (is_bool($markdown)) {
-            $markdown = '';
-        }
-
-        $meta = $m->getFrontMatter($markdown);
-        $title = $meta['title'];
-
-        $body = HtmlDocument::create($title)->body(
-            $m->convert($markdown)
-        )->build();
-
-        return Response::create(
-            404,
-            headers: [
+        $content = $this->content()->for(path: $file);
+        $status  = 200;
+        $reason  = 'Ok';
+        $headers = [
+            'Cache-Control' => ['max-age=600']
+        ];
+        if (! $content->exists()) {
+            $status  = 404;
+            $file    = '/.errors/404.md';
+            $reason  = 'Not found';
+            $headers = [
                 'Cache-Control' => [
                     'no-cache',
                     'must-revalidate'
                 ]
-            ],
-            body: $body,
-            reason: 'Not found'
+            ];
+            $content = $this->content()->for(path: $file);
+        }
+
+        $body = HtmlDocument::create($content->title())->head(
+            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css')
+        )->body(
+            $content->html()
+        )->build();
+
+        return Response::create(
+            status: $status,
+            headers: $headers,
+            body: $body
         );
+    }
+
+    private function isFile(): bool
+    {
+        return strpos($this->requestUri(), '.') > 0;
     }
 
     private function environment(): Environment
@@ -105,21 +102,8 @@ class App
         return $this->environment;
     }
 
-    private function requestFilePath(): string
+    private function requestUri(): string
     {
-        $contentRoot     = $this->environment()->contentRoot();
-        $requestParts    = explode('/', $contentRoot);
-        $requestUriParts = explode('/', $this->environment()->requestUri());
-        $parts           = array_merge($requestParts, $requestUriParts);
-        $parts[]         = 'content.md';
-        $parts           = array_filter($parts);
-
-        return '/' . implode('/', $parts);
-    }
-
-    private function contentExistsForRequest(): bool
-    {
-        return file_exists($this->requestFilePath()) and
-            is_file($this->requestFilePath());
+        return $_SERVER['REQUEST_URI'];
     }
 }
