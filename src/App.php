@@ -37,13 +37,9 @@ class App
     public function response(): Response|ResponseFile
     {
         if ($this->isRequestingFile()) {
-            $parts   = explode('/', $this->requestUri());
-            $parts   = array_filter($parts);
-            $first   = array_shift($parts);
-            $search  = '/' . $first;
-            $replace = self::HIDDEN[$first];
-            $f       = str_replace($search, $replace, $this->requestUri());
-            $content = $this->content()->for(path: $f);
+            $content = $this->content()->for(
+                path: $this->localFilePathWithoutRoot()
+            );
             if ($content->exists()) {
                 $status  = 200;
                 $reason  = 'Ok';
@@ -94,12 +90,25 @@ class App
 
     private function isRequestingFile(): bool
     {
+        // Informal check, because I don't need to be defensive and account for
+        // a URL request path with a period in it - I'll only use hyphens.
         return strpos($this->requestUri(), '.') > 0;
     }
 
     private function environment(): Environment
     {
         return $this->environment;
+    }
+
+    private function localFilePathWithoutRoot(): string
+    {
+        $parts   = explode('/', $this->requestUri());
+        $parts   = array_filter($parts);
+        $first   = array_shift($parts);
+        $search  = '/' . $first;
+        $replace = self::HIDDEN[$first];
+
+        return str_replace($search, $replace, $this->requestUri());
     }
 
     private function requestUri(): string
