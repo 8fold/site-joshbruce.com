@@ -17,7 +17,8 @@ use JoshBruce\Site\ResponseFile;
 class App
 {
     private const HIDDEN = [
-        'css' => '/.assets/styles'
+        '/css'    => '/.assets/styles',
+        '/assets' => '/.assets'
     ];
 
     public static function init(Environment $environment): App
@@ -65,13 +66,32 @@ class App
                 headers: $headers,
                 file: $content->filePath()
             );
-
         }
 
         $headers['Content-Type'] = $content->mimeType();
 
         $body = HtmlDocument::create($content->title())->head(
-            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css')
+            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css'),
+            HtmlElement::link()->props(
+                'type image/x-icon',
+                'rel icon',
+                'href /assets/favicons/favicon.ico'
+            ),
+            HtmlElement::link()->props(
+                'rel apple-touch-icon',
+                'href /assets/favicons/apple-touch-icon.png',
+                'sizes 180x180'
+            ),
+            HtmlElement::link()->props(
+                'rel image/png',
+                'href /assets/favicons/favicon-32x32.png',
+                'sizes 32x32'
+            ),
+            HtmlElement::link()->props(
+                'rel image/png',
+                'href /assets/favicons/favicon-16x16.png',
+                'sizes 16x16'
+            )
         )->body(
             $content->html()
         )->build();
@@ -102,9 +122,12 @@ class App
             $parts   = array_filter($parts);
             $first   = array_shift($parts);
             $search  = '/' . $first;
-            $replace = self::HIDDEN[$first];
 
-            return str_replace($search, $replace, $this->requestUri());
+            if (array_key_exists($search, self::HIDDEN)) {
+                $replace = self::HIDDEN[$search];
+
+                return str_replace($search, $replace, $this->requestUri());
+            }
         }
         return $this->requestUri() . '/content.md';
     }
