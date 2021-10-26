@@ -25,7 +25,7 @@ class Content
         string $projectRoot,
         int $contentUp,
         string $contentFolder,
-        Markdown $markdownConverter
+        Markdown $markdownConverter = null
     ): Content {
         return new Content(
             $projectRoot,
@@ -39,7 +39,7 @@ class Content
         private string $projectRoot,
         private int $contentUp,
         private string $contentFolder,
-        private Markdown $markdownConverter
+        private Markdown $markdownConverter = null
     ) {
     }
 
@@ -96,6 +96,11 @@ class Content
     public function filePath(): string
     {
         return $this->root() . $this->path();
+    }
+
+    public function mimetype(): string
+    {
+
     }
 
     private function markdown(): string

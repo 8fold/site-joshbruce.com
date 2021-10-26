@@ -49,7 +49,7 @@ class App
                 $reason  = 'Ok';
                 $headers = [
                     'Cache-Control' => ['max-age=2592000'],
-                    'Content-Type'  => 'text/css'
+                    'Content-Type'  => $content->mimeType();
                 ];
                 return ResponseFile::create(
                     status: $status,
