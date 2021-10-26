@@ -1,6 +1,17 @@
 # Super details
 
-The `total time` is based on how long it's taken to get to the point of working on the goals of that section.
+## Iterate workflow
+
+```bash
+total time: 7h
+non-dev packages (composer show --tree --no-dev): no change
+```
+
+There are too many steps at the moment and it doesn't feel like others could easily contribute — not that many will.
+
+I established rules for branches requiring a pull request and pull request review. I haven't gone so far as protecting `main` entirely — even from me — because GitHub doesn't support this natively (I submitted a feature request) and there's not an elegant way around this; if I require PR review even for admins, I'd need another admin I could count on, which could be done with a second account — and that seems annoying. So, instead, I'll always work from a branch and submit PRs.
+
+At keystone points, I will then create a GitHub release and auto-generate the release notes. This way, you don't have to go through the individual commit history.
 
 ## Styles and other pages
 
