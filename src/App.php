@@ -36,44 +36,39 @@ class App
 
     public function response(): Response|ResponseFile
     {
-        if ($this->isRequestingFile()) {
-            $content = $this->content()->for(
-                path: $this->localFilePathWithoutRoot()
-            );
-            if ($content->exists()) {
-                $status  = 200;
-                $reason  = 'Ok';
-                $headers = [
-                    'Cache-Control' => ['max-age=2592000'],
-                    'Content-Type'  => $content->mimeType()
-                ];
-                return ResponseFile::create(
-                    status: $status,
-                    headers: $headers,
-                    file: $content->filePath()
-                );
-            }
-        }
-
-        $file = $this->requestUri() . '/content.md';
-        $content = $this->content()->for(path: $file);
-        $status  = 200;
-        $reason  = 'Ok';
+        $status = 200;
         $headers = [
             'Cache-Control' => ['max-age=600']
         ];
-        if (! $content->exists()) {
+
+        $content = $this->content()
+            ->for(path: $this->localFilePathWithoutRoot());
+        if ($content->notFound()) {
+            $content = $this->content()->for(path: '/.errors/404.md');
+
             $status  = 404;
-            $file    = '/.errors/404.md';
-            $reason  = 'Not found';
             $headers = [
                 'Cache-Control' => [
                     'no-cache',
-                    'must-revalidate'
+                    'must-revalidate',
+
                 ]
             ];
-            $content = $this->content()->for(path: $file);
+
+        } elseif ($this->isRequestingFile()) {
+            $headers = [
+                'Cache-Control' => ['max-age=2592000'],
+                'Content-Type'  => $content->mimeType()
+            ];
+            return ResponseFile::create(
+                status: $status,
+                headers: $headers,
+                file: $content->filePath()
+            );
+
         }
+
+        $headers['Content-Type'] = $content->mimeType();
 
         $body = HtmlDocument::create($content->title())->head(
             HtmlElement::link()->props('rel stylesheet', 'href /css/main.css')
@@ -102,13 +97,16 @@ class App
 
     private function localFilePathWithoutRoot(): string
     {
-        $parts   = explode('/', $this->requestUri());
-        $parts   = array_filter($parts);
-        $first   = array_shift($parts);
-        $search  = '/' . $first;
-        $replace = self::HIDDEN[$first];
+        if ($this->isRequestingFile()) {
+            $parts   = explode('/', $this->requestUri());
+            $parts   = array_filter($parts);
+            $first   = array_shift($parts);
+            $search  = '/' . $first;
+            $replace = self::HIDDEN[$first];
 
-        return str_replace($search, $replace, $this->requestUri());
+            return str_replace($search, $replace, $this->requestUri());
+        }
+        return $this->requestUri() . '/content.md';
     }
 
     private function requestUri(): string

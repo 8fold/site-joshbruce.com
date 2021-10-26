@@ -56,6 +56,11 @@ class Content
         return file_exists($this->filePath());
     }
 
+    public function notFound(): bool
+    {
+        return ! $this->exists();
+    }
+
     public function path(): string
     {
         return $this->path;
