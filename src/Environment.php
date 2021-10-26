@@ -48,17 +48,16 @@ class Environment
         $title    = $meta['title'];
 
         return Response::create(
-            502,
-            body: HtmlDocument::create($title)->body(
-                $this->markdownConverter()->convert($markdown)
-            )->build(),
+            status: 502,
             headers: [
                 'Cache-Control' => [
                     'no-cache',
                     'must-revalidate'
                 ]
             ],
-            reason: 'Bad gateway'
+            body: HtmlDocument::create($title)->body(
+                $this->markdownConverter()->convert($markdown)
+            )->build()
         );
     }
 

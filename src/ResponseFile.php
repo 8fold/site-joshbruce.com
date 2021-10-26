@@ -14,7 +14,7 @@ use JoshBruce\Site\Emitter;
  * those implementing the full PSR-7 recommendation. Instead, it is made
  * specifically for joshbruce.com.
  */
-class Response
+class ResponseFile
 {
     /**
      * @var PsrResponse
@@ -24,23 +24,24 @@ class Response
     /**
      * Not part of PSR-7
      *
-     * @param array<string, array<int, string>> $headers
+     * @param array<string, array<int, string>|string> $headers
+     *
      */
     public static function create(
         int $status = 200,
         array $headers = [],
-        string $body = ''
-    ): Response {
-        return new Response($status, $headers, $body);
+        string $file = ''
+    ): ResponseFile {
+        return new ResponseFile($status, $headers, $file);
     }
 
     /**
-     * @param array<string, array<int, string>> $headers
+     * @param array<string, array<int, string>|string> $headers
      */
     public function __construct(
         private int $status = 200,
         private array $headers = [],
-        private string $body = ''
+        private string $file = ''
     ) {
     }
 
@@ -48,8 +49,7 @@ class Response
     {
         if ($this->psrResponse === null) {
             $factory = new PsrFactory();
-            $stream  = $factory->createStream($this->body);
-
+            $stream  = $factory->createStreamFromFile($this->file);
             $this->psrResponse = new PsrResponse(
                 status: $this->status,
                 headers: $this->headers,
@@ -68,11 +68,6 @@ class Response
     public function isOk(): bool
     {
         return $this->getStatusCode() === 200;
-    }
-
-    public function getBody(): string
-    {
-        return $this->body;
     }
 
     public function emit(): void

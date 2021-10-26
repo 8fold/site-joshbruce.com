@@ -26,6 +26,7 @@ if ($response->isOk() and $env = JoshBruce\Site\Environment::init($server)) {
         $response = $app->response();
     }
 }
-JoshBruce\Site\Emitter::emit($response);
+
+$response->emit();
 
 exit;

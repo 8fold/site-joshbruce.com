@@ -72,14 +72,6 @@ nyholm/psr7 1.4.1 A fast PHP7 implementation of PSR-7
 │     └──php >=5.3.0
 └──psr/http-message ^1.0
    └──php >=5.3.0
-nyholm/psr7-server 1.0.2 Helper classes to handle PSR-7 server requests
-├──php ^7.1 || ^8.0
-├──psr/http-factory ^1.0
-│  ├──php >=7.0.0
-│  └──psr/http-message ^1.0
-│     └──php >=5.3.0
-└──psr/http-message ^1.0
-   └──php >=5.3.0
 vlucas/phpdotenv v5.3.1 Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
 ├──ext-pcre *
 ├──graham-campbell/result-type ^1.0.2
@@ -99,6 +91,11 @@ vlucas/phpdotenv v5.3.1 Loads environment variables from `.env` to `getenv()`, `
 
 Tried sending the CSS back with a header of text/css and it was denied as being text/plain. I'm hoping adding a [PSR-7 implementation](https://github.com/Nyholm/psr7) and an [emitter](https://github.com/laminas/laminas-httphandlerrunner) will reduce the amount of code I've written and make it more versatile for sending files.
 
+Adding these two libraries seems to have done the trick. I could have left the Response class as it was but decided to use the PSR-7 implementation handle it; still using the Response class as a proxy. Also put the response in charge of emitting the result. Therefore, if I decide to go with a different implementation it should be easy to switch out; especially since we're using aliased class names.
+
+Update the library, switch out the use statements, and possibly update some of the API calls.
+
+Still haven't needed to create a Request class.
 
 ## Shorten path to response
 

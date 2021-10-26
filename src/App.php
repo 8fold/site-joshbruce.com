@@ -12,7 +12,7 @@ use Eightfold\HTMLBuilder\Element as HtmlElement;
 use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Response;
-use JoshBruce\Site\Emitter;
+use JoshBruce\Site\ResponseFile;
 
 class App
 {
@@ -34,7 +34,7 @@ class App
         return $this->environment()->content();
     }
 
-    public function response(): Response
+    public function response(): Response|ResponseFile
     {
         $file = $this->requestUri() . '/content.md';
         if ($this->isFile()) {
@@ -50,16 +50,16 @@ class App
                 $reason  = 'Ok';
                 $headers = [
                     'Cache-Control' => ['max-age=2592000'],
-                    'content-type'  => $content->mimeType()
+                    'Content-Type'  => 'text/css'
                 ];
-                return Response::create(
-                    $status,
+                return ResponseFile::create(
+                    status: $status,
                     headers: $headers,
-                    body: $content->content(),
-                    reason: $reason
+                    file: $content->filePath()
                 );
             }
         }
+
         $content = $this->content()->for(path: $file);
         $status  = 200;
         $reason  = 'Ok';
@@ -86,10 +86,9 @@ class App
         )->build();
 
         return Response::create(
-            $status,
+            status: $status,
             headers: $headers,
-            body: $body,
-            reason: $reason
+            body: $body
         );
     }
 
@@ -105,6 +104,6 @@ class App
 
     private function requestUri(): string
     {
-        return $this->environment()->server()->requestUri();
+        return $_SERVER['REQUEST_URI'];
     }
 }

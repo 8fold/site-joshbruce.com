@@ -76,8 +76,7 @@ class Server implements ArrayAccess
                     'no-cache',
                     'must-revalidate'
                 ]
-            ],
-            reason: 'Internal server error'
+            ]
         );
     }
 

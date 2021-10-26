@@ -3,3 +3,5 @@ parameters:
 	paths:
 		- src
 		- public
+	ignoreErrors:
+		- '#Call to an undefined static method Eightfold\\HTMLBuilder\\Element::(.*)#'
