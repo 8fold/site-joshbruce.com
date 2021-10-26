@@ -36,8 +36,7 @@ class App
 
     public function response(): Response|ResponseFile
     {
-        $file = $this->requestUri() . '/content.md';
-        if ($this->isFile()) {
+        if ($this->isRequestingFile()) {
             $parts   = explode('/', $this->requestUri());
             $parts   = array_filter($parts);
             $first   = array_shift($parts);
@@ -60,6 +59,7 @@ class App
             }
         }
 
+        $file = $this->requestUri() . '/content.md';
         $content = $this->content()->for(path: $file);
         $status  = 200;
         $reason  = 'Ok';
@@ -92,7 +92,7 @@ class App
         );
     }
 
-    private function isFile(): bool
+    private function isRequestingFile(): bool
     {
         return strpos($this->requestUri(), '.') > 0;
     }
