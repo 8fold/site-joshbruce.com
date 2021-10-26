@@ -33,7 +33,7 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(22);
+    expect($ms)->toBeLessThan(25);
 
     expect(
         $body
@@ -52,7 +52,7 @@ test('Content is from file system', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(1.1);
+    expect($ms)->toBeLessThan(2);
 
     expect(
         $body
