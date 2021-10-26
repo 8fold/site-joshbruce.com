@@ -25,7 +25,7 @@ class Content
         string $projectRoot,
         int $contentUp,
         string $contentFolder,
-        Markdown $markdownConverter = null
+        Markdown|null $markdownConverter = null
     ): Content {
         return new Content(
             $projectRoot,
@@ -39,7 +39,7 @@ class Content
         private string $projectRoot,
         private int $contentUp,
         private string $contentFolder,
-        private Markdown $markdownConverter = null
+        private Markdown|null $markdownConverter = null
     ) {
     }
 
