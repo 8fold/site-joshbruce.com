@@ -24,8 +24,7 @@ class Content
     public static function init(
         string $projectRoot,
         int $contentUp,
-        string $contentFolder,
-        Markdown|null $markdownConverter = null
+        string $contentFolder
     ): Content {
         return new Content(
             $projectRoot,
@@ -38,8 +37,7 @@ class Content
     public function __construct(
         private string $projectRoot,
         private int $contentUp,
-        private string $contentFolder,
-        private Markdown|null $markdownConverter = null
+        private string $contentFolder
     ) {
     }
 
@@ -100,7 +98,7 @@ class Content
 
     public function mimetype(): string
     {
-
+        return '';
     }
 
     private function markdown(): string
@@ -115,11 +113,6 @@ class Content
             $this->markdown = $markdown;
         }
         return $this->markdown;
-    }
-
-    private function markdownConverter(): Markdown
-    {
-        return $this->markdownConverter;
     }
 
     public function isValid(): bool
@@ -160,5 +153,15 @@ class Content
     private function contentFolder(): string
     {
         return $this->contentFolder;
+    }
+
+    private function markdownConverter(): Markdown
+    {
+        if (! isset($this->markdownConverter)) {
+            $this->markdownConverter = Markdown::create()
+                ->minified()
+                ->smartPunctuation();
+        }
+        return $this->markdownConverter;
     }
 }

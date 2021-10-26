@@ -101,14 +101,15 @@ class Server implements ArrayAccess
         return $this->projectRoot;
     }
 
-    public function markdownConverter(): Markdown
-    {
-        if (! isset($this->markdownConverter)) {
-            $this->markdownConverter = Markdown::create()->minified()
-                ->smartPunctuation();
-        }
-        return $this->markdownConverter;
-    }
+    // public function markdownConverter(): Markdown
+    // {
+    //     if (! isset($this->markdownConverter)) {
+    //         $this->markdownConverter = Markdown::create()
+    //             ->minified()
+    //             ->smartPunctuation();
+    //     }
+    //     return $this->markdownConverter;
+    // }
 
     private function hasRequiredValues(): bool
     {
