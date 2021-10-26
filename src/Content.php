@@ -17,6 +17,11 @@ class Content
     private string $markdown = '';
 
     /**
+     * @var Markdown
+     */
+    private $markdownConverter;
+
+    /**
      * @var array<string, int|string|array>
      */
     private array $frontMatter = [];
@@ -29,8 +34,7 @@ class Content
         return new Content(
             $projectRoot,
             $contentUp,
-            $contentFolder,
-            $markdownConverter
+            $contentFolder
         );
     }
 

@@ -18,6 +18,8 @@ class Environment
      */
     private $content;
 
+    private string $projectRoot = '';
+
     private string $contentRoot = '';
 
     public static function init(Server $server): Environment
@@ -32,21 +34,16 @@ class Environment
     public function response(): Response
     {
         if ($this->content()->isValid()) {
-            return Response::create();
+            return Response::create(status: 200);
         }
 
-        $markdown = file_get_contents(
-            $this->projectRoot() .
-            '/500-errors/502.md'
-        );
+        // Custom content instance required
+        //
+        // This somewhat unreadable one-liner basically creates a fully qualified
+        // path to the root of the project, without using relative syntax
+        $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
-        if (is_bool($markdown)) {
-            $markdown = '';
-        }
-
-        $meta     = $this->markdownConverter()->getFrontMatter($markdown);
-        $title    = $meta['title'];
-
+        $content = Content::init($projectRoot, 0, '/500-errors')->for('/502.md');
         return Response::create(
             status: 502,
             headers: [
@@ -55,15 +52,12 @@ class Environment
                     'must-revalidate'
                 ]
             ],
-            body: HtmlDocument::create($title)->body(
-                $this->markdownConverter()->convert($markdown)
+            body: HtmlDocument::create(
+                $content->title()
+            )->body(
+                $content->html()
             )->build()
         );
-    }
-
-    public function server(): Server
-    {
-        return $this->server;
     }
 
     public function content(): Content
@@ -71,31 +65,26 @@ class Environment
         if ($this->content === null) {
             $this->content = Content::init(
                 $this->projectRoot(),
-                $this->contentUp(),
-                $this->contentFolder(),
-                $this->markdownConverter()
+                $this->server()->contentUp(),
+                $this->server()->contentFolder()
             );
         }
         return $this->content;
     }
 
-    public function markdownConverter(): Markdown
-    {
-        return $this->server()->markdownConverter();
-    }
-
-    private function contentUp(): int
-    {
-        return $this->server()->contentUp();
-    }
-
-    private function contentFolder(): string
-    {
-        return $this->server()->contentFolder();
-    }
-
     private function projectRoot(): string
     {
-        return $this->server()->projectRoot();
+        if (strlen($this->projectRoot) === 0) {
+            $start = __DIR__;
+            $parts = explode('/', $start);
+            $parts = array_slice($parts, 0, -1);
+            $this->projectRoot = implode('/', $parts);
+        }
+        return $this->projectRoot;
+    }
+
+    private function server(): Server
+    {
+        return $this->server;
     }
 }
