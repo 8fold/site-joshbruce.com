@@ -116,8 +116,6 @@ class Content
             $extensionMap = [
                 'md'  => 'text/html',
                 'css' => 'text/css',
-                // https://developer.mozilla.org/en-US/docs/Web/HTTP/
-                // Basics_of_HTTP/MIME_types#textjavascript
                 'js'  => 'text/javascript'
             ];
 
