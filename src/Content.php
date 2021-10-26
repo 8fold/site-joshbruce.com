@@ -107,7 +107,26 @@ class Content
 
     public function mimetype(): string
     {
-        return '';
+        $type = mime_content_type($this->filePath());
+        if (is_bool($type) and $type === false) {
+            return '';
+        }
+
+        if ($type === 'text/plain') {
+            $extensionMap = [
+                'md'  => 'text/html',
+                'css' => 'text/css',
+                // https://developer.mozilla.org/en-US/docs/Web/HTTP/
+                // Basics_of_HTTP/MIME_types#textjavascript
+                'js'  => 'text/javascript'
+            ];
+
+            $parts     = explode('.', $this->filePath());
+            $extension = array_pop($parts);
+
+            $type = $extensionMap[$extension];
+        }
+        return $type;
     }
 
     private function markdown(): string

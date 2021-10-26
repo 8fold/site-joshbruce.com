@@ -15,5 +15,25 @@ beforeEach(function() {
 });
 
 it('has correct mimetypes', function() {
+    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/
+    // MIME_types#textjavascript
+    expect(
+        $this->baseContent->for(path: '/.assets/javascript.js')->mimetype()
+    )->toBe(
+        'text/javascript'
+    );
+
+    expect(
+        $this->baseContent->for(path: '/.assets/main.css')->mimetype()
+    )->toBe(
+        'text/css'
+    );
+
+    expect(
+        $this->baseContent->for(path: '/content.md')->mimetype()
+    )->toBe(
+        'text/html'
+    );
+
     expect($this->baseContent->isValid())->toBeTrue();
 })->group('content');
