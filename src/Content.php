@@ -48,6 +48,11 @@ class Content
     public function for(string $path): Content
     {
         $this->path = $path;
+
+        // reset cached values
+        $this->markdown = '';
+        $this->frontMatter = [];
+
         return $this;
     }
 

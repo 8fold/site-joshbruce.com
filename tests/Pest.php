@@ -58,6 +58,7 @@ function serverGlobals(string $requestUri = '/'): array
     $_SERVER['CONTENT_UP']     = 0;
     $_SERVER['CONTENT_FOLDER'] = '/tests/test-content';
     $_SERVER['REQUEST_URI']    = $requestUri;
+    $_SERVER['REQUEST_METHOD'] = 'get';
 
     return $_SERVER;
 }

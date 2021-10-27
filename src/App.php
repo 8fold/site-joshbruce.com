@@ -13,6 +13,8 @@ use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Response;
 use JoshBruce\Site\ResponseFile;
+use JoshBruce\Site\PageComponents\Favicons;
+use JoshBruce\Site\PageComponents\Navigation;
 
 class App
 {
@@ -43,11 +45,10 @@ class App
             // no CSRF token needed
             $path = $_POST['change-page-select'];
 
-            return Response::create(
-                status: 303,
-                headers: [
-                    'Location' =>  $this->requestDomain() . $path
-                ]);
+            // could not figure out a proper response code for this
+            // just redirecting without a response code
+            header('Location:' . $this->requestDomain() . $path);
+            exit;
         }
 
         $status = 200;
@@ -83,72 +84,17 @@ class App
 
         $headers['Content-Type'] = $content->mimeType();
 
-        $body = HtmlDocument::create($content->title())->head(
-            HtmlElement::link()->props(
-                'type image/x-icon',
-                'rel icon',
-                'href /assets/favicons/favicon.ico'
-            ),
-            HtmlElement::link()->props(
-                'rel apple-touch-icon',
-                'href /assets/favicons/apple-touch-icon.png',
-                'sizes 180x180'
-            ),
-            HtmlElement::link()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-32x32.png',
-                'sizes 32x32'
-            ),
-            HtmlElement::link()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-16x16.png',
-                'sizes 16x16'
-            ),
-            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css'),
-            // HtmlElement::script()->props('src /js/menu.js')
-        )->body(
-            HtmlElement::nav(
-                HtmlElement::form(
-                    HtmlElement::div(
-                        HtmlElement::label('navigation: ')->props(
-                            'id change-page-select-label',
-                            'for change-page-select'
-                        ),
-                        HtmlElement::select(
-                            HtmlElement::option('home')->props(
-                                'value /',
-                                'selected selected'
-                            ),
-                            HtmlElement::optgroup(
-                                HtmlElement::option('Overview')
-                                    ->props('value /finances'),
-                                HtmlElement::option('Investment policy')
-                                    ->props('value /finances/investment-policy'),
-                                HtmlElement::option('Paycheck to paycheck')
-                                    ->props('value /finances/building-wealth-paycheck-to-paycheck')
-                            )->props('label Finances'),
-                            HtmlElement::optgroup(
-                                HtmlElement::option('Overview')
-                                    ->props('value /design-your-life'),
-                                HtmlElement::option('Motivators')
-                                    ->props('value /design-your-life/motivators')
-                            )->props('label Design your life'),
-                            HtmlElement::optgroup(
-                                HtmlElement::option('Overview')
-                                    ->props('value /software-development'),
-                                HtmlElement::option('Why donʼt you use')
-                                    ->props('value /software-development/why-dont-you-use')
-                            )->props('label Software development')
-                        )->props(
-                            'id change-page-select',
-                            'name change-page-select'
-                        )
-                    )->props('is form-control'),
-                    HtmlElement::button('Go!')
-                )->props('action /', 'method post'),
-            )->props('id main-nav-form'),
-            $content->html()
-        )->build();
+        $headElements   = Favicons::create();
+        $headElements[] = HtmlElement::link()
+            ->props('rel stylesheet', 'href /css/main.css');
+        $headElements[] = HtmlElement::script()->props('src /js/menu.js');
+
+        $body = HtmlDocument::create($content->title())
+            ->head(...$headElements)
+            ->body(
+                Navigation::create($this->content())->build(),
+                $content->html()
+            )->build();
 
         return Response::create(
             status: $status,
