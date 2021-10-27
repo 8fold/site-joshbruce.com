@@ -48,9 +48,10 @@ class App
         $content = $this->content()
             ->for(path: $this->localFilePathWithoutRoot());
         if ($content->notFound()) {
-            // MANUAL: Our tests don't run in a browser environemtn; therefore,
-            //         don't believe it's possible to write an automated test for
-            //         this given current setup.
+            // MANUAL: Our automated tests don't run in a browser environemtn;
+            //         therefore, don't believe it's possible to write an
+            //         automated test for this given current setup.
+            //
             // don't like that this path doesn't return early.
             // TODO: refactor this
             //       - believe a defalt page template would resolve the issue

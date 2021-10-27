@@ -145,7 +145,7 @@ class Content
         return $type;
     }
 
-    private function markdown(): string
+    public function markdown(): string
     {
         if (strlen($this->markdown) === 0 and $this->exists()) {
             $markdown = file_get_contents($this->filePath());
