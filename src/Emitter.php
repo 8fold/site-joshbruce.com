@@ -21,6 +21,19 @@ class Emitter
         $response = new PsrResponse($status, $headers, $stream);
         self::emit($response);
     }
+
+    public static function emitWithResponseFile(
+        int $status,
+        array $headers,
+        string $file
+    )
+    {
+        $factory = new PsrFactory();
+        $stream  = $factory->createStreamFromFile($file);
+        $response = new PsrResponse($status, $headers, $stream);
+        self::emit($response);
+    }
+
     public static function emit(PsrResponse $response): void
     {
         $emitter = new PsrEmitter();

@@ -97,22 +97,36 @@ if (! $content->isValid()) {
  *
  * Does the requested content exist?
  */
-
 $requestUri = $_SERVER['REQUEST_URI'];
-
-// TESTING
-// $requestUri = '/does/not/exist';
-$localFilePath = $requestUri . '/content.md';
-
-$requestIsForFile = strpos('.', $requestUri) > 0;
-if ($requestIsForFile) {
-    die('requesting html');
+if ($requestUri === '/') {
+    $requestUri = '';
 }
 
+// TESTING
+// $requestUri = '/does/not/exist'; // 404
+// $requestUri = '/assets/favicons/favicon-16x16.png'; // file
 
+$requestIsForFile = strpos($requestUri, '.') > 0;
 
+$localFilePath = $requestUri . '/content.md';
+if ($requestIsForFile) {
+    $folderMap = [
+        '/css'    => '/.assets/styles',
+        '/js'     => '/.assets/scripts',
+        '/assets' => '/.assets'
+    ];
 
+    $parts   = explode('/', $requestUri);
+    $parts   = array_filter($parts);
+    $first   = array_shift($parts);
+    $search  = '/' . $first;
 
+    if (array_key_exists($search, $folderMap)) {
+        $replace = $folderMap[$search];
+
+        $localFilePath = str_replace($search, $replace, $requestUri);
+    }
+}
 
 $content = $content->for($localFilePath);
 if ($content->notFound()) {
@@ -133,11 +147,23 @@ if ($content->notFound()) {
     );
     exit;
 }
-// $requestContent = $content->for()
 
-
-
-
+/**
+ * Target file exists: local response time 27ms
+ *
+ * Handle file
+ */
+if ($requestIsForFile) {
+    JoshBruce\Site\Emitter::emitWithResponseFile(
+        200,
+        [
+            'Cache-Control' => ['max-age=2592000'],
+            'Content-Type'  => $content->mimeType()
+        ],
+        $content->filePath()
+    );
+    exit;
+}
 die(var_dump($requestHasRequiredServerGlobals));
 
 $server = JoshBruce\Site\Server::init($_SERVER);
