@@ -9,8 +9,8 @@ use ArrayAccess;
 use Dotenv\Dotenv;
 
 use Eightfold\HTMLBuilder\Document as HtmlDocument;
-use Eightfold\Markdown\Markdown;
 
+use JoshBruce\Site\Content;
 use JoshBruce\Site\Response;
 
 /**
@@ -26,12 +26,7 @@ class Server implements ArrayAccess
         'CONTENT_FOLDER'
     ];
 
-    /**
-     * @var Markdown
-     */
-    private $markdownConverter;
-
-    private string $projectRoot = '';
+    // private string $projectRoot = '';
 
     /**
      * @param array<string, int|string> $serverGlobals
@@ -51,32 +46,29 @@ class Server implements ArrayAccess
     public function response(): Response
     {
         if ($this->hasRequiredValues()) {
-            return Response::create(200);
+            return Response::create(status: 200);
         }
 
-        $markdown = file_get_contents(
-            $this->projectRoot() .
-            '/500-errors/500.md'
-        );
+        // Custom content instance required
+        //
+        // This somewhat unreadable one-liner basically creates a fully qualified
+        // path to the root of the project, without using relative syntax
+        $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
-        if (is_bool($markdown)) {
-            $markdown = '';
-        }
-
-        $meta  = $this->markdownConverter()->getFrontMatter($markdown);
-        $title = $meta['title'];
-
+        $content = Content::init($projectRoot, 0, '/500-errors')->for('/500.md');
         return Response::create(
-            500,
-            body: HtmlDocument::create($title)->body(
-                $this->markdownConverter()->convert($markdown)
-            )->build(),
+            status: 500,
             headers: [
                 'Cache-Control' => [
                     'no-cache',
                     'must-revalidate'
                 ]
-            ]
+            ],
+            body: HtmlDocument::create(
+                $content->title()
+            )->body(
+                $content->html()
+            )->build()
         );
     }
 
@@ -90,25 +82,16 @@ class Server implements ArrayAccess
         return strval($this->offsetGet('CONTENT_FOLDER'));
     }
 
-    public function projectRoot(): string
-    {
-        if (strlen($this->projectRoot) === 0) {
-            $start = __DIR__;
-            $parts = explode('/', $start);
-            $parts = array_slice($parts, 0, -1);
-            $this->projectRoot = implode('/', $parts);
-        }
-        return $this->projectRoot;
-    }
-
-    public function markdownConverter(): Markdown
-    {
-        if (! isset($this->markdownConverter)) {
-            $this->markdownConverter = Markdown::create()->minified()
-                ->smartPunctuation();
-        }
-        return $this->markdownConverter;
-    }
+    // public function projectRoot(): string
+    // {
+    //     if (strlen($this->projectRoot) === 0) {
+    //         $start = __DIR__;
+    //         $parts = explode('/', $start);
+    //         $parts = array_slice($parts, 0, -1);
+    //         $this->projectRoot = implode('/', $parts);
+    //     }
+    //     return $this->projectRoot;
+    // }
 
     private function hasRequiredValues(): bool
     {

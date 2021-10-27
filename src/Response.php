@@ -24,7 +24,7 @@ class Response
     /**
      * Not part of PSR-7
      *
-     * @param array<string, array<int, string>> $headers
+     * @param array<string, array<int, string>|string> $headers
      */
     public static function create(
         int $status = 200,
@@ -35,7 +35,7 @@ class Response
     }
 
     /**
-     * @param array<string, array<int, string>> $headers
+     * @param array<string, array<int, string>|string> $headers
      */
     public function __construct(
         private int $status = 200,

@@ -17,6 +17,11 @@ class Content
     private string $markdown = '';
 
     /**
+     * @var Markdown
+     */
+    private $markdownConverter;
+
+    /**
      * @var array<string, int|string|array>
      */
     private array $frontMatter = [];
@@ -24,34 +29,41 @@ class Content
     public static function init(
         string $projectRoot,
         int $contentUp,
-        string $contentFolder,
-        Markdown $markdownConverter
+        string $contentFolder
     ): Content {
         return new Content(
             $projectRoot,
             $contentUp,
-            $contentFolder,
-            $markdownConverter
+            $contentFolder
         );
     }
 
     public function __construct(
         private string $projectRoot,
         private int $contentUp,
-        private string $contentFolder,
-        private Markdown $markdownConverter
+        private string $contentFolder
     ) {
     }
 
     public function for(string $path): Content
     {
         $this->path = $path;
+
+        // reset cached values
+        $this->markdown = '';
+        $this->frontMatter = [];
+
         return $this;
     }
 
     public function exists(): bool
     {
         return file_exists($this->filePath());
+    }
+
+    public function notFound(): bool
+    {
+        return ! $this->exists();
     }
 
     public function path(): string
@@ -98,6 +110,28 @@ class Content
         return $this->root() . $this->path();
     }
 
+    public function mimetype(): string
+    {
+        $type = mime_content_type($this->filePath());
+        if (is_bool($type) and $type === false) {
+            return '';
+        }
+
+        if ($type === 'text/plain') {
+            $extensionMap = [
+                'md'  => 'text/html',
+                'css' => 'text/css',
+                'js'  => 'text/javascript'
+            ];
+
+            $parts     = explode('.', $this->filePath());
+            $extension = array_pop($parts);
+
+            $type = $extensionMap[$extension];
+        }
+        return $type;
+    }
+
     private function markdown(): string
     {
         if (strlen($this->markdown) === 0 and $this->exists()) {
@@ -110,11 +144,6 @@ class Content
             $this->markdown = $markdown;
         }
         return $this->markdown;
-    }
-
-    private function markdownConverter(): Markdown
-    {
-        return $this->markdownConverter;
     }
 
     public function isValid(): bool
@@ -155,5 +184,15 @@ class Content
     private function contentFolder(): string
     {
         return $this->contentFolder;
+    }
+
+    private function markdownConverter(): Markdown
+    {
+        if (! isset($this->markdownConverter)) {
+            $this->markdownConverter = Markdown::create()
+                ->minified()
+                ->smartPunctuation();
+        }
+        return $this->markdownConverter;
     }
 }

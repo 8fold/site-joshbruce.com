@@ -13,11 +13,15 @@ use JoshBruce\Site\Content;
 use JoshBruce\Site\Environment;
 use JoshBruce\Site\Response;
 use JoshBruce\Site\ResponseFile;
+use JoshBruce\Site\PageComponents\Favicons;
+use JoshBruce\Site\PageComponents\Navigation;
 
 class App
 {
     private const HIDDEN = [
-        'css' => '/.assets/styles'
+        '/css'    => '/.assets/styles',
+        '/js'     => '/.assets/scripts',
+        '/assets' => '/.assets'
     ];
 
     public static function init(Environment $environment): App
@@ -36,54 +40,61 @@ class App
 
     public function response(): Response|ResponseFile
     {
-        $file = $this->requestUri() . '/content.md';
-        if ($this->isFile()) {
-            $parts   = explode('/', $this->requestUri());
-            $parts   = array_filter($parts);
-            $first   = array_shift($parts);
-            $search  = '/' . $first;
-            $replace = self::HIDDEN[$first];
-            $f       = str_replace($search, $replace, $this->requestUri());
-            $content = $this->content()->for(path: $f);
-            if ($content->exists()) {
-                $status  = 200;
-                $reason  = 'Ok';
-                $headers = [
-                    'Cache-Control' => ['max-age=2592000'],
-                    'Content-Type'  => 'text/css'
-                ];
-                return ResponseFile::create(
-                    status: $status,
-                    headers: $headers,
-                    file: $content->filePath()
-                );
-            }
+        if ($this->requestMethod() === 'post') {
+            // used for navigation only
+            // no CSRF token needed
+            $path = $_POST['change-page-select'];
+
+            // could not figure out a proper response code for this
+            // just redirecting without a response code
+            header('Location:' . $this->requestDomain() . $path);
+            exit;
         }
 
-        $content = $this->content()->for(path: $file);
-        $status  = 200;
-        $reason  = 'Ok';
+        $status = 200;
         $headers = [
             'Cache-Control' => ['max-age=600']
         ];
-        if (! $content->exists()) {
+
+        $content = $this->content()
+            ->for(path: $this->localFilePathWithoutRoot());
+        if ($content->notFound()) {
+            $content = $this->content()->for(path: '/.errors/404.md');
+
             $status  = 404;
-            $file    = '/.errors/404.md';
-            $reason  = 'Not found';
             $headers = [
                 'Cache-Control' => [
                     'no-cache',
-                    'must-revalidate'
+                    'must-revalidate',
+
                 ]
             ];
-            $content = $this->content()->for(path: $file);
+
+        } elseif ($this->isRequestingFile()) {
+            $headers = [
+                'Cache-Control' => ['max-age=2592000'],
+                'Content-Type'  => $content->mimeType()
+            ];
+            return ResponseFile::create(
+                status: $status,
+                headers: $headers,
+                file: $content->filePath()
+            );
         }
 
-        $body = HtmlDocument::create($content->title())->head(
-            HtmlElement::link()->props('rel stylesheet', 'href /css/main.css')
-        )->body(
-            $content->html()
-        )->build();
+        $headers['Content-Type'] = $content->mimeType();
+
+        $headElements   = Favicons::create();
+        $headElements[] = HtmlElement::link()
+            ->props('rel stylesheet', 'href /css/main.css');
+        $headElements[] = HtmlElement::script()->props('src /js/menu.js');
+
+        $body = HtmlDocument::create($content->title())
+            ->head(...$headElements)
+            ->body(
+                Navigation::create($this->content())->build(),
+                $content->html()
+            )->build();
 
         return Response::create(
             status: $status,
@@ -92,14 +103,45 @@ class App
         );
     }
 
-    private function isFile(): bool
+    private function isRequestingFile(): bool
     {
+        // Informal check, because I don't need to be defensive and account for
+        // a URL request path with a period in it - I'll only use hyphens.
         return strpos($this->requestUri(), '.') > 0;
     }
 
     private function environment(): Environment
     {
         return $this->environment;
+    }
+
+    private function localFilePathWithoutRoot(): string
+    {
+        if ($this->isRequestingFile()) {
+            $parts   = explode('/', $this->requestUri());
+            $parts   = array_filter($parts);
+            $first   = array_shift($parts);
+            $search  = '/' . $first;
+
+            if (array_key_exists($search, self::HIDDEN)) {
+                $replace = self::HIDDEN[$search];
+
+                return str_replace($search, $replace, $this->requestUri());
+            }
+        }
+        return $this->requestUri() . '/content.md';
+    }
+
+    private function requestDomain(): string
+    {
+        $scheme = $_SERVER['REQUEST_SCHEME'];
+        $serverName = $_SERVER['HTTP_HOST'];
+        return $scheme . '://' . $serverName;
+    }
+
+    private function requestMethod(): string
+    {
+        return strtolower($_SERVER['REQUEST_METHOD']);
     }
 
     private function requestUri(): string
