@@ -33,19 +33,30 @@ class Navigation implements Buildable, Stringable
         );
     }
 
-    private function anchor(string $for)
+    private function anchor(string $for): HtmlElement
     {
         list($href, $text) = explode(' ', $for, 2);
         return HtmlElement::a($text)->props('href ' . $href);
     }
 
-    public function build(): string
+    /**
+     * @return array<string|array<string>>
+     */
+    private function navigation(): array
     {
         $nav = $this->content()->for(path: '/.navigation/main.md')
             ->frontMatter();
         $nav = $nav['navigation'];
+        if (is_array($nav)) {
+            return $nav;
+        }
+        return [];
+    }
 
+    public function build(): string
+    {
         $li = [];
+        $nav = $this->navigation();
         foreach ($nav as $item) {
             if (is_string($item)) {
                 $li[] = $this->listItem(for: $item);

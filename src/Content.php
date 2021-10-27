@@ -191,7 +191,8 @@ class Content
         if (! isset($this->markdownConverter)) {
             $this->markdownConverter = Markdown::create()
                 ->minified()
-                ->smartPunctuation();
+                ->smartPunctuation()
+                ->tables();
         }
         return $this->markdownConverter;
     }
