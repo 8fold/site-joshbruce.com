@@ -1,4 +1,8 @@
 <?php
+
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
+
 require __DIR__ . '/../vendor/autoload.php';
 
 /**
@@ -7,17 +11,13 @@ require __DIR__ . '/../vendor/autoload.php';
  * We only want the bare minimum setup in the beginning.
  */
 $markdownConverter = Eightfold\Markdown\Markdown::create()
-                ->minified()
-                ->smartPunctuation();
+    ->minified()
+    ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
-
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
 
 /**
  * Verifying setup is valid.
@@ -60,6 +60,11 @@ if (! $requestHasRequiredServerGlobals) {
             )->build()
     );
     exit;
+}
+
+if ($_SERVER['APP_ENV'] !== 'production') {
+    (new Whoops\Run)->pushHandler(new Whoops\Handler\PrettyPageHandler)
+        ->register();
 }
 
 /**
@@ -193,8 +198,10 @@ if (strlen($redirectPath) > 0) {
 }
 
 /**
- * Process HTML response: local response time 75ms
+ * Process HTML response: local response time 75ms (90ms with table content)
  */
+
+$markdownConverter = $markdownConverter->tables();
 
 $headers['Content-Type'] = $content->mimeType();
 
@@ -205,6 +212,8 @@ $headElements[] = Eightfold\HTMLBuilder\Element::link()
 
 $body = Eightfold\HTMLBuilder\Document::create(
         $markdownConverter->getFrontMatter($content->markdown())['title']
+    )->head(
+        ...$headElements
     )->body(
         JoshBruce\Site\PageComponents\Navigation::create($content)
             ->build(),
