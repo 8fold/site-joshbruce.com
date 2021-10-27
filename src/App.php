@@ -87,7 +87,7 @@ class App
         $headElements   = Favicons::create();
         $headElements[] = HtmlElement::link()
             ->props('rel stylesheet', 'href /css/main.css');
-        $headElements[] = HtmlElement::script()->props('src /js/menu.js');
+        // $headElements[] = HtmlElement::script()->props('src /js/menu.js');
 
         $body = HtmlDocument::create($content->title())
             ->head(...$headElements)
