@@ -25,7 +25,10 @@ error_reporting(E_ALL);
 $requestRequiredServerGlobals = [
     'APP_ENV',
     'CONTENT_UP',
-    'CONTENT_FOLDER'
+    'CONTENT_FOLDER',
+    'REQUEST_SCHEME',
+    'HTTP_HOST',
+    'REQUEST_URI'
 ];
 
 // TESTING
@@ -104,7 +107,13 @@ if ($requestUri === '/') {
 
 // TESTING
 // $requestUri = '/does/not/exist'; // 404
+//
 // $requestUri = '/assets/favicons/favicon-16x16.png'; // file
+//
+// Check browser address becomes /design-your-life
+// if ($requestUri !== '/design-your-life') { // redirecting
+//     $requestUri = '/self-improvement'; // redirecting
+// } // redirecting
 
 $requestIsForFile = strpos($requestUri, '.') > 0;
 
@@ -164,27 +173,43 @@ if ($requestIsForFile) {
     );
     exit;
 }
-die(var_dump($requestHasRequiredServerGlobals));
-
-$server = JoshBruce\Site\Server::init($_SERVER);
 
 /**
- * We'll probably replace with the middleware pattern from PSR-7.
- *
- * 1. Check .env file has the required members; 500 response on failure.
- * 2. Check the content folder can be accessed; 502 response on failure.
- * 3. Start the app and determine response.
+ * Target file wants to redirect us: local response time 40ms
  */
-$response = $server->response();
-if ($response->isOk() and $env = JoshBruce\Site\Environment::init($server)) {
-    // server global set up correctly - start environment
-    $response = $env->response();
-    if ($response->isOk() and $app = JoshBruce\Site\App::init($env)) {
-        // environment can connect to content - start app
-        $response = $app->response();
-    }
+$redirectPath = $content->redirectPath();
+if (strlen($redirectPath) > 0) {
+    $scheme        = $_SERVER['REQUEST_SCHEME'];
+    $serverName    = $_SERVER['HTTP_HOST'];
+    $requestDomain = $scheme . '://' . $serverName;
+    JoshBruce\Site\Emitter::emitWithResponse(
+        301,
+        [
+            'Referrer' => $requestDomain . $requestUri,
+            'Location' => $requestDomain . $redirectPath
+        ]
+    );
+    exit;
 }
 
-$response->emit();
+/**
+ * Process HTML response: local response time 75ms
+ */
 
+$headers['Content-Type'] = $content->mimeType();
+
+$headElements   = JoshBruce\Site\PageComponents\Favicons::create();
+$headElements[] = Eightfold\HTMLBuilder\Element::link()
+    ->props('rel stylesheet', 'href /css/main.css');
+// $headElements[] = HtmlElement::script()->props('src /js/menu.js');
+
+$body = Eightfold\HTMLBuilder\Document::create(
+        $markdownConverter->getFrontMatter($content->markdown())['title']
+    )->body(
+        JoshBruce\Site\PageComponents\Navigation::create($content)
+            ->build(),
+        $markdownConverter->convert($content->markdown())
+    )->build();
+
+JoshBruce\Site\Emitter::emitWithResponse(200, $headers, $body);
 exit;
