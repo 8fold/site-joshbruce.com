@@ -12,7 +12,7 @@ test('Content can be in sub-folder', function() {
     $elapsed = $endTime - $startTime;
     $ms      = $elapsed/1e+6;
 
-    expect($ms)->toBeLessThan(225); // used to be 29ms
+    expect($ms)->toBeLessThan(269); // used to be 29ms
 
     expect(
         $body
