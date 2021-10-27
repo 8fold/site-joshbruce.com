@@ -100,6 +100,19 @@ class Content
         return '';
     }
 
+    public function redirectPath(): string
+    {
+        $fm = $this->frontMatter();
+        if (
+            array_key_exists('redirect', $fm) and
+            $redirect = $fm['redirect'] and
+            is_string($redirect)
+        ) {
+            return $redirect;
+        }
+        return '';
+    }
+
     public function html(): string
     {
         return $this->markdownConverter()->convert($this->markdown());
@@ -191,7 +204,8 @@ class Content
         if (! isset($this->markdownConverter)) {
             $this->markdownConverter = Markdown::create()
                 ->minified()
-                ->smartPunctuation();
+                ->smartPunctuation()
+                ->tables();
         }
         return $this->markdownConverter;
     }

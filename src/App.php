@@ -40,17 +40,6 @@ class App
 
     public function response(): Response|ResponseFile
     {
-        if ($this->requestMethod() === 'post') {
-            // used for navigation only
-            // no CSRF token needed
-            $path = $_POST['change-page-select'];
-
-            // could not figure out a proper response code for this
-            // just redirecting without a response code
-            header('Location:' . $this->requestDomain() . $path);
-            exit;
-        }
-
         $status = 200;
         $headers = [
             'Cache-Control' => ['max-age=600']
@@ -59,6 +48,12 @@ class App
         $content = $this->content()
             ->for(path: $this->localFilePathWithoutRoot());
         if ($content->notFound()) {
+            // MANUAL: Our tests don't run in a browser environemtn; therefore,
+            //         don't believe it's possible to write an automated test for
+            //         this given current setup.
+            // don't like that this path doesn't return early.
+            // TODO: refactor this
+            //       - believe a defalt page template would resolve the issue
             $content = $this->content()->for(path: '/.errors/404.md');
 
             $status  = 404;
@@ -80,6 +75,15 @@ class App
                 headers: $headers,
                 file: $content->filePath()
             );
+
+        } elseif ($this->isRedirecting()) {
+            return Response::create(
+                status: 301,
+                headers: [
+                    'Location' => $this->requestDomain() .
+                        $this->content()->redirectPath()
+                ]
+            );
         }
 
         $headers['Content-Type'] = $content->mimeType();
@@ -87,7 +91,7 @@ class App
         $headElements   = Favicons::create();
         $headElements[] = HtmlElement::link()
             ->props('rel stylesheet', 'href /css/main.css');
-        $headElements[] = HtmlElement::script()->props('src /js/menu.js');
+        // $headElements[] = HtmlElement::script()->props('src /js/menu.js');
 
         $body = HtmlDocument::create($content->title())
             ->head(...$headElements)
@@ -108,6 +112,11 @@ class App
         // Informal check, because I don't need to be defensive and account for
         // a URL request path with a period in it - I'll only use hyphens.
         return strpos($this->requestUri(), '.') > 0;
+    }
+
+    private function isRedirecting(): bool
+    {
+        return strlen($this->content()->redirectPath()) > 0;
     }
 
     private function environment(): Environment

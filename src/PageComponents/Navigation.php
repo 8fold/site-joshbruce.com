@@ -18,6 +18,7 @@ class Navigation implements Buildable, Stringable
 
     public function __construct(private Content $content)
     {
+        $this->content = clone $content;
     }
 
     private function content(): Content
@@ -25,48 +26,60 @@ class Navigation implements Buildable, Stringable
         return $this->content;
     }
 
+    private function listItem(string $for): HtmlElement
+    {
+        return HtmlElement::li(
+            $this->anchor(for: $for)
+        );
+    }
+
+    private function anchor(string $for): HtmlElement
+    {
+        list($href, $text) = explode(' ', $for, 2);
+        return HtmlElement::a($text)->props('href ' . $href);
+    }
+
+    /**
+     * @return array<string|array<string>>
+     */
+    private function navigation(): array
+    {
+        $nav = $this->content()->for(path: '/.navigation/main.md')
+            ->frontMatter();
+        $nav = $nav['navigation'];
+        if (is_array($nav)) {
+            return $nav;
+        }
+        return [];
+    }
+
     public function build(): string
     {
+        $li = [];
+        $nav = $this->navigation();
+        foreach ($nav as $item) {
+            if (is_string($item)) {
+                $li[] = $this->listItem(for: $item);
+
+            } elseif (is_array($item)) {
+                $l = '';
+                $s = [];
+                for ($i = 0; $i < count($item); $i++) {
+                    if ($i === 0) {
+                        $l = $this->anchor($item[$i]);
+
+                    } else {
+                        $s[] = $this->listItem($item[$i]);
+
+                    }
+                }
+
+                $li[] = HtmlElement::li($l, HtmlElement::ul(...$s));
+            }
+        }
         return HtmlElement::nav(
-            HtmlElement::form(
-                HtmlElement::div(
-                    HtmlElement::label('navigation: ')->props(
-                        'id change-page-select-label',
-                        'for change-page-select'
-                    ),
-                    HtmlElement::select(
-                        HtmlElement::option('home')->props(
-                            'value /',
-                            'selected selected'
-                        ),
-                        HtmlElement::optgroup(
-                            HtmlElement::option('Overview')
-                                ->props('value /finances'),
-                            HtmlElement::option('Investment policy')
-                                ->props('value /finances/investment-policy'),
-                            HtmlElement::option('Paycheck to paycheck')
-                                ->props('value /finances/building-wealth-paycheck-to-paycheck')
-                        )->props('label Finances'),
-                        HtmlElement::optgroup(
-                            HtmlElement::option('Overview')
-                                ->props('value /design-your-life'),
-                            HtmlElement::option('Motivators')
-                                ->props('value /design-your-life/motivators')
-                        )->props('label Design your life'),
-                        HtmlElement::optgroup(
-                            HtmlElement::option('Overview')
-                                ->props('value /software-development'),
-                            HtmlElement::option('Why donʼt you use')
-                                ->props('value /software-development/why-dont-you-use')
-                        )->props('label Software development')
-                    )->props(
-                        'id change-page-select',
-                        'name change-page-select'
-                    )
-                )->props('is form-control'),
-                HtmlElement::button('Go!')
-            )->props('action /', 'method post'),
-        )->props('id main-nav-form');
+            HtmlElement::ul(...$li)
+        );
     }
 
     public function __toString(): string
