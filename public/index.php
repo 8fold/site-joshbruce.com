@@ -22,44 +22,18 @@ Dotenv\Dotenv::createImmutable($projectRoot)->load();
 $server = JoshBruce\Site\Server::init($_SERVER);
 
 if ($server->isMissingRequiredValues()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
-        ->for('/500.md');
-
-    JoshBruce\Site\Emitter::emitWithResponse(
-        500,
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ],
-        Eightfold\HTMLBuilder\Document::create(
-                $markdownConverter->getFrontMatter($content->markdown())['title']
-            )->body(
-                $markdownConverter->convert($content->markdown())
-            )->build()
+    JoshBruce\Site\Emitter::emitInterServerErrorResponse(
+        $markdownConverter,
+        $projectRoot
     );
     exit;
 }
 
 if ($server->isUsingUnsupportedMethod()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
-        ->for('/405.md');
-
-    JoshBruce\Site\Emitter::emitWithResponse(
-        405,
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ],
-            'Allow' => $server->supportedMethods()
-        ],
-        Eightfold\HTMLBuilder\Document::create(
-                $markdownConverter->getFrontMatter($content->markdown())['title']
-            )->body(
-                $markdownConverter->convert($content->markdown())
-            )->build()
+    JoshBruce\Site\Emitter::emitUnsupportedMethodResponse(
+        $markdownConverter,
+        $projectRoot,
+        $server
     );
     exit;
 }
@@ -71,22 +45,9 @@ $content = JoshBruce\Site\Content::init(
 );
 
 if ($content->folderIsMissing()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
-        ->for('/502.md');
-
-    JoshBruce\Site\Emitter::emitWithResponse(
-        502,
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ],
-        Eightfold\HTMLBuilder\Document::create(
-                $markdownConverter->getFrontMatter($content->markdown())['title']
-            )->body(
-                $markdownConverter->convert($content->markdown())
-            )->build()
+    JoshBruce\Site\Emitter::emitBadGatewayResponse(
+        $markdownConverter,
+        $projectRoot
     );
     exit;
 }
@@ -99,21 +60,12 @@ if ($content->folderIsMissing()) {
 // }
 
 $content = $content->for($server->filePathForRequest());
+
 if ($content->notFound()) {
-    $content = $content->for(path: '/.errors/404.md');
-    JoshBruce\Site\Emitter::emitWithResponse(
-        404,
-        [
-            'Cache-Control' => [
-                'no-cache',
-                'must-revalidate'
-            ]
-        ],
-        Eightfold\HTMLBuilder\Document::create(
-                $markdownConverter->getFrontMatter($content->markdown())['title']
-            )->body(
-                $markdownConverter->convert($content->markdown())
-            )->build()
+    JoshBruce\Site\Emitter::emitNotFoundResponse(
+        $markdownConverter,
+        $content,
+        '/.errors/404.md'
     );
     exit;
 }
@@ -131,15 +83,8 @@ if ($server->isRequestingFile()) {
 }
 
 if ($content->hasMoved()) {
-    $scheme        = $_SERVER['REQUEST_SCHEME'];
-    $serverName    = $_SERVER['HTTP_HOST'];
-    $requestDomain = $scheme . '://' . $serverName;
-    JoshBruce\Site\Emitter::emitWithResponse(
-        301,
-        [
-            'Location' => $requestDomain . $content->redirectPath()
-        ]
-    );
+    $location = $server->domain() . $content->redirectPath();
+    JoshBruce\Site\Emitter::emitRedirectionResponse($location);
     exit;
 }
 
