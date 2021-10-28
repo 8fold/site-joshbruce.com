@@ -87,7 +87,8 @@ if ($content->hasMoved()) {
  * Process HTML response: local response time 75ms (90ms with table content)
  */
 
-$markdownConverter = $markdownConverter->tables()->externalLinks();
+$markdownConverter = $markdownConverter->withConfig(['html_input' => 'allow'])
+    ->tables()->externalLinks();
 
 $headers['Content-Type'] = $content->mimeType();
 
@@ -95,14 +96,35 @@ $headElements   = JoshBruce\Site\PageComponents\Favicons::create();
 $headElements[] = Eightfold\HTMLBuilder\Element::link()
     ->props('rel stylesheet', 'href /css/main.css');
 
+$markdown = $content->markdown();
+
+$frontMatter = $markdownConverter->getFrontMatter($content->markdown());
+
+$dateBlock = Eightfold\HTMLBuilder\Element::div(
+        Eightfold\HTMLBuilder\Element::p("Created on: {$frontMatter['created']}"),
+        Eightfold\HTMLBuilder\Element::p("Updated on: {$frontMatter['updated']}")
+    )->props('is dateblock');
+
+$body = $markdownConverter->getBody($markdown);
+
+$body = $dateBlock . $body;
+
+if (array_key_exists('header', $frontMatter)) {
+    $body = "# {$frontMatter['header']}\n\n" . $body;
+
+} else {
+    $body = "# {$frontMatter['title']}\n\n" . $body;
+
+}
+
 $body = Eightfold\HTMLBuilder\Document::create(
-        $markdownConverter->getFrontMatter($content->markdown())['title']
+        $frontMatter['title']
     )->head(
         ...$headElements
     )->body(
         JoshBruce\Site\PageComponents\Navigation::create($content)
             ->build(),
-        $markdownConverter->convert($content->markdown())
+        $markdownConverter->convert($body)
     )->build();
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $headers, $body);
