@@ -45,7 +45,7 @@ $content = JoshBruce\Site\Content::init(
 );
 
 if ($content->folderIsMissing()) {
-    JoshBruce\Site\Emitter::emitBadGatewayResponse(
+    JoshBruce\Site\Emitter::emitBadContentResponse(
         $markdownConverter,
         $projectRoot
     );
@@ -71,14 +71,7 @@ if ($content->notFound()) {
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitWithResponseFile(
-        200,
-        [
-            'Cache-Control' => ['max-age=2592000'],
-            'Content-Type'  => $content->mimeType()
-        ],
-        $content->filePath()
-    );
+    JoshBruce\Site\Emitter::emitFile($content->mimeType(), $content->filePath());
     exit;
 }
 
