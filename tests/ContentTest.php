@@ -35,5 +35,5 @@ it('has correct mimetypes', function() {
         'text/html'
     );
 
-    expect($this->baseContent->isValid())->toBeTrue();
+    expect($this->baseContent->folderDoesExist())->toBeTrue();
 })->group('content');
