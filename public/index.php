@@ -137,10 +137,10 @@ if ($requestIsForFile) {
 
     $folderMapKey  = '/' . $first;
 
-    if (array_key_exists($search, $folderMap)) {
-        $replace = $folderMap[$search];
+    if (array_key_exists($folderMapKey, $folderMap)) {
+        $replace = $folderMap[$folderMapKey];
 
-        $localFilePath = str_replace($search, $replace, $requestUri);
+        $localFilePath = str_replace($folderMapKey, $replace, $requestUri);
     }
 }
 
@@ -156,9 +156,9 @@ if ($content->notFound()) {
             ]
         ],
         Eightfold\HTMLBuilder\Document::create(
-                $content->title()
+                $markdownConverter->getFrontMatter($content->markdown())['title']
             )->body(
-                $content->html()
+                $markdownConverter->convert($content->markdown())
             )->build()
     );
     exit;

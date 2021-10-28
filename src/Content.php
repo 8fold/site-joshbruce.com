@@ -14,6 +14,13 @@ class Content
 
     private string $path = '/';
 
+    private string $markdown = '';
+
+    /**
+     * @var array<string, mixed>
+     */
+    private array $frontMatter = [];
+
     public static function init(
         string $projectRoot,
         int $contentUp,
@@ -52,6 +59,33 @@ class Content
     public function notFound(): bool
     {
         return ! $this->exists();
+    }
+
+    public function filePath(): string
+    {
+        return $this->root() . $this->path;
+    }
+
+    public function mimetype(): string
+    {
+        $type = mime_content_type($this->filePath());
+        if (is_bool($type) and $type === false) {
+            return '';
+        }
+
+        if ($type === 'text/plain') {
+            $extensionMap = [
+                'md'  => 'text/html',
+                'css' => 'text/css',
+                'js'  => 'text/javascript'
+            ];
+
+            $parts     = explode('.', $this->filePath());
+            $extension = array_pop($parts);
+
+            $type = $extensionMap[$extension];
+        }
+        return $type;
     }
 
     /**
@@ -97,36 +131,9 @@ class Content
         return '';
     }
 
-    public function mimetype(): string
-    {
-        $type = mime_content_type($this->filePath());
-        if (is_bool($type) and $type === false) {
-            return '';
-        }
-
-        if ($type === 'text/plain') {
-            $extensionMap = [
-                'md'  => 'text/html',
-                'css' => 'text/css',
-                'js'  => 'text/javascript'
-            ];
-
-            $parts     = explode('.', $this->filePath());
-            $extension = array_pop($parts);
-
-            $type = $extensionMap[$extension];
-        }
-        return $type;
-    }
-
     private function exists(): bool
     {
         return file_exists($this->filePath());
-    }
-
-    private function filePath(): string
-    {
-        return $this->root() . $this->path;
     }
 
     private function root(): string
