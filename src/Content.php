@@ -40,9 +40,9 @@ class Content
     ) {
     }
 
-    public function folderDoesExist(): bool
+    public function folderIsMissing(): bool
     {
-        return file_exists($this->root()) and is_dir($this->root());
+        return ! $this->folderExists();
     }
 
     public function for(string $path): Content
@@ -59,6 +59,11 @@ class Content
     public function notFound(): bool
     {
         return ! $this->exists();
+    }
+
+    public function hasMoved(): bool
+    {
+        return strlen($this->redirectPath()) > 0;
     }
 
     public function filePath(): string
@@ -129,6 +134,11 @@ class Content
             return $redirect;
         }
         return '';
+    }
+
+    private function folderExists(): bool
+    {
+        return file_exists($this->root()) and is_dir($this->root());
     }
 
     private function exists(): bool

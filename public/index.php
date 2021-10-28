@@ -3,7 +3,9 @@
 ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 
-require __DIR__ . '/../vendor/autoload.php';
+$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+
+require $projectRoot . '/vendor/autoload.php';
 
 /**
  * Rergardless of what happens next, we'll need a basline markown converter.
@@ -15,34 +17,12 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
     ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
-Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
+Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+$server = JoshBruce\Site\Server::init($_SERVER);
 
-/**
- * Verifying setup is valid.
- */
-$requestRequiredServerGlobals = [
-    'APP_ENV',
-    'CONTENT_UP',
-    'CONTENT_FOLDER',
-    'REQUEST_SCHEME',
-    'HTTP_HOST',
-    'REQUEST_URI'
-];
-
-// TESTING
-// unset($_SERVER['APP_ENV']);
-$requestHasRequiredServerGlobals = true;
-foreach ($requestRequiredServerGlobals as $key) {
-    if (! array_key_exists($key, $_SERVER)) {
-        $requestHasRequiredServerGlobals = false;
-        break;
-    }
-}
-
-if (! $requestHasRequiredServerGlobals) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
+if ($server->isMissingRequiredValues()) {
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
         ->for('/500.md');
 
     JoshBruce\Site\Emitter::emitWithResponse(
@@ -62,26 +42,36 @@ if (! $requestHasRequiredServerGlobals) {
     exit;
 }
 
-if ($_SERVER['APP_ENV'] !== 'production') {
-    $erroHandler = new Whoops\Run;
-    $erroHandler->pushHandler(new Whoops\Handler\PrettyPageHandler);
-    $erroHandler->register();
+if ($server->isUsingUnsupportedMethod()) {
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
+        ->for('/405.md');
+
+    JoshBruce\Site\Emitter::emitWithResponse(
+        405,
+        [
+            'Cache-Control' => [
+                'no-cache',
+                'must-revalidate'
+            ],
+            'Allow' => $server->supportedMethods()
+        ],
+        Eightfold\HTMLBuilder\Document::create(
+                $markdownConverter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $markdownConverter->convert($content->markdown())
+            )->build()
+    );
+    exit;
 }
 
-/**
- * Verifying specified content area exists.
- */
-
-// TESTING
-// $_SERVER['CONTENT_FOLDER'] = '/does/not/exist';
 $content = JoshBruce\Site\Content::init(
     $projectRoot,
-    $_SERVER['CONTENT_UP'],
-    $_SERVER['CONTENT_FOLDER']
+    $server->contentUp(),
+    $server->contentFolder()
 );
 
-if (! $content->folderDoesExist()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
+if ($content->folderIsMissing()) {
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
         ->for('/502.md');
 
     JoshBruce\Site\Emitter::emitWithResponse(
@@ -101,50 +91,14 @@ if (! $content->folderDoesExist()) {
     exit;
 }
 
-/**
- * Bootsrap is complete: local response time 19ms
- *
- * Does the requested content exist?
- */
-$requestUri = $_SERVER['REQUEST_URI'];
-if ($requestUri === '/') {
-    $requestUri = '';
-}
-
-// TESTING
-// $requestUri = '/does/not/exist'; // 404
-//
-// $requestUri = '/assets/favicons/favicon-16x16.png'; // file
-//
+// TESTING: Redirection
 // Check browser address becomes /design-your-life
-// if ($requestUri !== '/design-your-life') { // redirecting
-//     $requestUri = '/self-improvement'; // redirecting
-// } // redirecting
+// if ($server->requestUri() !== '/design-your-life') {
+//     $_SERVER['REQUEST_URI'] = '/self-improvement';
+//     $server = JoshBruce\Site\Server::init($_SERVER);
+// }
 
-$requestIsForFile = strpos($requestUri, '.') > 0;
-
-$localFilePath = $requestUri . '/content.md';
-if ($requestIsForFile) {
-    $folderMap = [
-        '/css'    => '/.assets/styles',
-        '/js'     => '/.assets/scripts',
-        '/assets' => '/.assets'
-    ];
-
-    $parts = explode('/', $requestUri);
-    $parts = array_filter($parts);
-    $first = array_shift($parts);
-
-    $folderMapKey  = '/' . $first;
-
-    if (array_key_exists($folderMapKey, $folderMap)) {
-        $replace = $folderMap[$folderMapKey];
-
-        $localFilePath = str_replace($folderMapKey, $replace, $requestUri);
-    }
-}
-
-$content = $content->for($localFilePath);
+$content = $content->for($server->filePathForRequest());
 if ($content->notFound()) {
     $content = $content->for(path: '/.errors/404.md');
     JoshBruce\Site\Emitter::emitWithResponse(
@@ -164,12 +118,7 @@ if ($content->notFound()) {
     exit;
 }
 
-/**
- * Target file exists: local response time 27ms
- *
- * Handle file
- */
-if ($requestIsForFile) {
+if ($server->isRequestingFile()) {
     JoshBruce\Site\Emitter::emitWithResponseFile(
         200,
         [
@@ -181,18 +130,14 @@ if ($requestIsForFile) {
     exit;
 }
 
-/**
- * Target file wants to redirect us: local response time 40ms
- */
-$redirectPath = $content->redirectPath();
-if (strlen($redirectPath) > 0) {
+if ($content->hasMoved()) {
     $scheme        = $_SERVER['REQUEST_SCHEME'];
     $serverName    = $_SERVER['HTTP_HOST'];
     $requestDomain = $scheme . '://' . $serverName;
     JoshBruce\Site\Emitter::emitWithResponse(
         301,
         [
-            'Location' => $requestDomain . $redirectPath
+            'Location' => $requestDomain . $content->redirectPath()
         ]
     );
     exit;
