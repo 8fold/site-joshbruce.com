@@ -19,29 +19,8 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-/**
- * Verifying setup is valid.
- */
-$requestRequiredServerGlobals = [
-    'APP_ENV',
-    'CONTENT_UP',
-    'CONTENT_FOLDER',
-    'REQUEST_SCHEME',
-    'HTTP_HOST',
-    'REQUEST_URI'
-];
-
-// TESTING
-// unset($_SERVER['APP_ENV']);
-$requestHasRequiredServerGlobals = true;
-foreach ($requestRequiredServerGlobals as $key) {
-    if (! array_key_exists($key, $_SERVER)) {
-        $requestHasRequiredServerGlobals = false;
-        break;
-    }
-}
-
-if (! $requestHasRequiredServerGlobals) {
+$server = JoshBruce\Site\Server::init($_SERVER);
+if ($server->isMissingRequiredValues()) {
     $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
         ->for('/500.md');
 
@@ -60,12 +39,6 @@ if (! $requestHasRequiredServerGlobals) {
             )->build()
     );
     exit;
-}
-
-if ($_SERVER['APP_ENV'] !== 'production') {
-    $erroHandler = new Whoops\Run;
-    $erroHandler->pushHandler(new Whoops\Handler\PrettyPageHandler);
-    $erroHandler->register();
 }
 
 /**
