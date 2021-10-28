@@ -51,6 +51,20 @@ class Server
         return false;
     }
 
+    public function isUsingUnsupportedMethod(): bool
+    {
+        $requestMethod = $this->serverGlobals['REQUEST_METHOD'];
+        return ! in_array($requestMethod, $this->supportedMethods());
+    }
+
+    /**
+     * @return string[] [description]
+     */
+    public function supportedMethods(): array
+    {
+        return ['GET'];
+    }
+
     public function contentUp(): int
     {
         return intval($this->serverGlobals['CONTENT_UP']);

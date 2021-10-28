@@ -22,7 +22,7 @@ Dotenv\Dotenv::createImmutable($projectRoot)->load();
 $server = JoshBruce\Site\Server::init($_SERVER);
 
 if ($server->isMissingRequiredValues()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
         ->for('/500.md');
 
     JoshBruce\Site\Emitter::emitWithResponse(
@@ -43,11 +43,34 @@ if ($server->isMissingRequiredValues()) {
 }
 
 /**
+ * Verifying the method is supported by the app
+ */
+if ($server->isUsingUnsupportedMethod()) {
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
+        ->for('/405.md');
+
+    JoshBruce\Site\Emitter::emitWithResponse(
+        405,
+        [
+            'Cache-Control' => [
+                'no-cache',
+                'must-revalidate'
+            ],
+            'Allow' => $server->supportedMethods()
+        ],
+        Eightfold\HTMLBuilder\Document::create(
+                $markdownConverter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $markdownConverter->convert($content->markdown())
+            )->build()
+    );
+    exit;
+}
+
+
+/**
  * Verifying specified content area exists.
  */
-
-// TESTING
-// $_SERVER['CONTENT_FOLDER'] = '/does/not/exist';
 $content = JoshBruce\Site\Content::init(
     $projectRoot,
     $server->contentUp(),
@@ -55,7 +78,7 @@ $content = JoshBruce\Site\Content::init(
 );
 
 if ($content->folderIsMissing()) {
-    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
+    $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
         ->for('/502.md');
 
     JoshBruce\Site\Emitter::emitWithResponse(

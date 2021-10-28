@@ -2,6 +2,19 @@
 
 use JoshBruce\Site\Server;
 
+it('limits request methods', function() {
+    expect(
+        Server::init(serverGlobals())->isUsingUnsupportedMethod()
+    )->toBeFalse();
+
+    $serverGlobals = serverGlobals();
+    $serverGlobals['REQUEST_METHOD'] = 'INVALID';
+
+    expect(
+        Server::init($serverGlobals)->isUsingUnsupportedMethod()
+    )->toBeTrue();
+})->group('server');
+
 it('has required variables', function() {
     expect(
         Server::init(serverGlobals())->isMissingRequiredValues()
