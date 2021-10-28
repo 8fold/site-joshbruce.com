@@ -87,7 +87,7 @@ if ($content->hasMoved()) {
  * Process HTML response: local response time 75ms (90ms with table content)
  */
 
-$markdownConverter = $markdownConverter->tables();
+$markdownConverter = $markdownConverter->tables()->externalLinks();
 
 $headers['Content-Type'] = $content->mimeType();
 

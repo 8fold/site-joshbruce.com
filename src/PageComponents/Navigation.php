@@ -81,7 +81,7 @@ class Navigation implements Buildable, Stringable
         }
         return HtmlElement::nav(
             HtmlElement::ul(...$li)
-        );
+        )->build();
     }
 
     public function __toString(): string
