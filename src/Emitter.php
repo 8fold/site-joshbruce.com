@@ -160,7 +160,11 @@ class Emitter
         self::emitWithResponse(
             301,
             [
-                'Location' => $location
+                'Location' => $location,
+                'Cache-Control' => [
+                    'no-cache',
+                    'must-revalidate'
+                ]
             ]
         );
     }
