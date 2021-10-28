@@ -124,7 +124,13 @@ $body = Eightfold\HTMLBuilder\Document::create(
     )->body(
         JoshBruce\Site\PageComponents\Navigation::create($content)
             ->build(),
-        $markdownConverter->convert($body)
+        $markdownConverter->convert($body),
+        Eightfold\HTMLBuilder\Element::footer(
+            Eightfold\HTMLBuilder\Element::p(
+                'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
+                    'All rights reserved.'
+            )
+        )
     )->build();
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $headers, $body);
