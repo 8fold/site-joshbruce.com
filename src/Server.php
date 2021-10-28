@@ -50,4 +50,14 @@ class Server
 
         return false;
     }
+
+    public function contentUp(): int
+    {
+        return intval($this->serverGlobals['CONTENT_UP']);
+    }
+
+    public function contentFolder(): string
+    {
+        return strval($this->serverGlobals['CONTENT_FOLDER']);
+    }
 }

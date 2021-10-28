@@ -20,6 +20,7 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
 $server = JoshBruce\Site\Server::init($_SERVER);
+
 if ($server->isMissingRequiredValues()) {
     $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
         ->for('/500.md');
@@ -49,11 +50,11 @@ if ($server->isMissingRequiredValues()) {
 // $_SERVER['CONTENT_FOLDER'] = '/does/not/exist';
 $content = JoshBruce\Site\Content::init(
     $projectRoot,
-    $_SERVER['CONTENT_UP'],
-    $_SERVER['CONTENT_FOLDER']
+    $server->contentUp(),
+    $server->contentFolder()
 );
 
-if (! $content->folderDoesExist()) {
+if ($content->folderIsMissing()) {
     $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
         ->for('/502.md');
 
@@ -97,6 +98,7 @@ if ($requestUri === '/') {
 $requestIsForFile = strpos($requestUri, '.') > 0;
 
 $localFilePath = $requestUri . '/content.md';
+
 if ($requestIsForFile) {
     $folderMap = [
         '/css'    => '/.assets/styles',
