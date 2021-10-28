@@ -3,7 +3,9 @@
 ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 
-require __DIR__ . '/../vendor/autoload.php';
+$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+
+require $projectRoot . '/vendor/autoload.php';
 
 /**
  * Rergardless of what happens next, we'll need a basline markown converter.
@@ -15,9 +17,7 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
     ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
-Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->load();
-
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
 /**
  * Verifying setup is valid.
