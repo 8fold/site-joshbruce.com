@@ -42,9 +42,6 @@ if ($server->isMissingRequiredValues()) {
     exit;
 }
 
-/**
- * Verifying the method is supported by the app
- */
 if ($server->isUsingUnsupportedMethod()) {
     $content = JoshBruce\Site\Content::init($projectRoot, 0, '/setup-errors')
         ->for('/405.md');
@@ -67,10 +64,6 @@ if ($server->isUsingUnsupportedMethod()) {
     exit;
 }
 
-
-/**
- * Verifying specified content area exists.
- */
 $content = JoshBruce\Site\Content::init(
     $projectRoot,
     $server->contentUp(),
@@ -98,51 +91,7 @@ if ($content->folderIsMissing()) {
     exit;
 }
 
-/**
- * Bootsrap is complete: local response time 19ms
- *
- * Does the requested content exist?
- */
-$requestUri = $_SERVER['REQUEST_URI'];
-if ($requestUri === '/') {
-    $requestUri = '';
-}
-
-// TESTING
-// $requestUri = '/does/not/exist'; // 404
-//
-// $requestUri = '/assets/favicons/favicon-16x16.png'; // file
-//
-// Check browser address becomes /design-your-life
-// if ($requestUri !== '/design-your-life') { // redirecting
-//     $requestUri = '/self-improvement'; // redirecting
-// } // redirecting
-
-$requestIsForFile = strpos($requestUri, '.') > 0;
-
-$localFilePath = $requestUri . '/content.md';
-
-if ($requestIsForFile) {
-    $folderMap = [
-        '/css'    => '/.assets/styles',
-        '/js'     => '/.assets/scripts',
-        '/assets' => '/.assets'
-    ];
-
-    $parts = explode('/', $requestUri);
-    $parts = array_filter($parts);
-    $first = array_shift($parts);
-
-    $folderMapKey  = '/' . $first;
-
-    if (array_key_exists($folderMapKey, $folderMap)) {
-        $replace = $folderMap[$folderMapKey];
-
-        $localFilePath = str_replace($folderMapKey, $replace, $requestUri);
-    }
-}
-
-$content = $content->for($localFilePath);
+$content = $content->for($server->filePathForRequest());
 if ($content->notFound()) {
     $content = $content->for(path: '/.errors/404.md');
     JoshBruce\Site\Emitter::emitWithResponse(
@@ -162,12 +111,7 @@ if ($content->notFound()) {
     exit;
 }
 
-/**
- * Target file exists: local response time 27ms
- *
- * Handle file
- */
-if ($requestIsForFile) {
+if ($server->isRequestingFile()) {
     JoshBruce\Site\Emitter::emitWithResponseFile(
         200,
         [

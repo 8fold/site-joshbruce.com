@@ -2,6 +2,36 @@
 
 use JoshBruce\Site\Server;
 
+it('expected local file path', function() {
+    expect(
+        Server::init(serverGlobals())->filePathForRequest()
+    )->toBe(
+        '/content.md'
+    );
+
+    $serverGlobals = serverGlobals();
+    $serverGlobals['REQUEST_URI'] = '/some.file';
+
+    expect(
+        Server::init($serverGlobals)->filePathForRequest()
+    )->toBe(
+        '/some.file'
+    );
+})->group('server');
+
+it('can determine if request is for a file', function() {
+    expect(
+        Server::init(serverGlobals())->isRequestingFile()
+    )->toBeFalse();
+
+    $serverGlobals = serverGlobals();
+    $serverGlobals['REQUEST_URI'] = '/some.file';
+
+    expect(
+        Server::init($serverGlobals)->isRequestingFile()
+    )->toBeTrue();
+})->group('server');
+
 it('limits request methods', function() {
     expect(
         Server::init(serverGlobals())->isUsingUnsupportedMethod()

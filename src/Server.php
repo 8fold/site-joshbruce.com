@@ -53,8 +53,13 @@ class Server
 
     public function isUsingUnsupportedMethod(): bool
     {
-        $requestMethod = $this->serverGlobals['REQUEST_METHOD'];
+        $requestMethod = strtoupper($this->serverGlobals['REQUEST_METHOD']);
         return ! in_array($requestMethod, $this->supportedMethods());
+    }
+
+    public function isRequestingFile(): bool
+    {
+        return strpos($this->requestUri(), '.') > 0;
     }
 
     /**
@@ -73,5 +78,42 @@ class Server
     public function contentFolder(): string
     {
         return strval($this->serverGlobals['CONTENT_FOLDER']);
+    }
+
+    public function filePathForRequest(): string
+    {
+        if ($this->isRequestingFile()) {
+            $folderMap = [
+                '/css'    => '/.assets/styles',
+                '/js'     => '/.assets/scripts',
+                '/assets' => '/.assets'
+            ];
+
+            $parts = explode('/', $this->requestUri());
+            $parts = array_filter($parts);
+            $first = array_shift($parts);
+
+            $folderMapKey  = '/' . $first;
+
+            if (array_key_exists($folderMapKey, $folderMap)) {
+                $replace = $folderMap[$folderMapKey];
+
+                return str_replace(
+                    $folderMapKey,
+                    $replace,
+                    $this->requestUri()
+                );
+            }
+            return $this->requestUri();
+        }
+        return $this->requestUri() . '/content.md';
+    }
+
+    private function requestUri(): string
+    {
+        if ($this->serverGlobals['REQUEST_URI'] === '/') {
+            return '';
+        }
+        return $this->serverGlobals['REQUEST_URI'];
     }
 }
