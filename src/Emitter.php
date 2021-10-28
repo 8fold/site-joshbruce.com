@@ -16,8 +16,8 @@ class Emitter
         string $body = ''
     ): void
     {
-        $factory = new PsrFactory();
-        $stream  = $factory->createStream($body);
+        $factory  = new PsrFactory();
+        $stream   = $factory->createStream($body);
         $response = new PsrResponse($status, $headers, $stream);
         self::emit($response);
     }
@@ -28,8 +28,8 @@ class Emitter
         string $file
     )
     {
-        $factory = new PsrFactory();
-        $stream  = $factory->createStreamFromFile($file);
+        $factory  = new PsrFactory();
+        $stream   = $factory->createStreamFromFile($file);
         $response = new PsrResponse($status, $headers, $stream);
         self::emit($response);
     }

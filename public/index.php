@@ -1,7 +1,7 @@
 <?php
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -79,7 +79,7 @@ $content = JoshBruce\Site\Content::init(
     $_SERVER['CONTENT_FOLDER']
 );
 
-if (! $content->isValid()) {
+if (! $content->folderDoesExist()) {
     $content = JoshBruce\Site\Content::init($projectRoot, 0, '/500-errors')
         ->for('/502.md');
 
@@ -130,10 +130,11 @@ if ($requestIsForFile) {
         '/assets' => '/.assets'
     ];
 
-    $parts   = explode('/', $requestUri);
-    $parts   = array_filter($parts);
-    $first   = array_shift($parts);
-    $search  = '/' . $first;
+    $parts = explode('/', $requestUri);
+    $parts = array_filter($parts);
+    $first = array_shift($parts);
+
+    $folderMapKey  = '/' . $first;
 
     if (array_key_exists($search, $folderMap)) {
         $replace = $folderMap[$search];
@@ -190,7 +191,6 @@ if (strlen($redirectPath) > 0) {
     JoshBruce\Site\Emitter::emitWithResponse(
         301,
         [
-            'Referrer' => $requestDomain . $requestUri,
             'Location' => $requestDomain . $redirectPath
         ]
     );
@@ -208,7 +208,6 @@ $headers['Content-Type'] = $content->mimeType();
 $headElements   = JoshBruce\Site\PageComponents\Favicons::create();
 $headElements[] = Eightfold\HTMLBuilder\Element::link()
     ->props('rel stylesheet', 'href /css/main.css');
-// $headElements[] = HtmlElement::script()->props('src /js/menu.js');
 
 $body = Eightfold\HTMLBuilder\Document::create(
         $markdownConverter->getFrontMatter($content->markdown())['title']

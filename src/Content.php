@@ -14,18 +14,6 @@ class Content
 
     private string $path = '/';
 
-    private string $markdown = '';
-
-    /**
-     * @var Markdown
-     */
-    private $markdownConverter;
-
-    /**
-     * @var array<string, int|string|array>
-     */
-    private array $frontMatter = [];
-
     public static function init(
         string $projectRoot,
         int $contentUp,
@@ -45,6 +33,11 @@ class Content
     ) {
     }
 
+    public function folderDoesExist(): bool
+    {
+        return file_exists($this->root()) and is_dir($this->root());
+    }
+
     public function for(string $path): Content
     {
         $this->path = $path;
@@ -56,19 +49,9 @@ class Content
         return $this;
     }
 
-    public function exists(): bool
-    {
-        return file_exists($this->filePath());
-    }
-
     public function notFound(): bool
     {
         return ! $this->exists();
-    }
-
-    public function path(): string
-    {
-        return $this->path;
     }
 
     /**
@@ -82,22 +65,23 @@ class Content
                 $markdown = $this->markdown();
             }
 
-            $this->frontMatter = $this->markdownConverter()
-                ->getFrontMatter($markdown);
+            $this->frontMatter = Markdown::create()->getFrontMatter($markdown);
         }
         return $this->frontMatter;
     }
 
-    public function title(): string
+    public function markdown(): string
     {
-        if ($this->exists()) {
-            $fm = $this->frontMatter();
-            $title = $fm['title'];
-            if (is_string($title)) {
-                return $title;
+        if (strlen($this->markdown) === 0 and $this->exists()) {
+            $markdown = file_get_contents($this->filePath());
+
+            if (is_bool($markdown)) {
+                $markdown = '';
             }
+
+            $this->markdown = $markdown;
         }
-        return '';
+        return $this->markdown;
     }
 
     public function redirectPath(): string
@@ -111,16 +95,6 @@ class Content
             return $redirect;
         }
         return '';
-    }
-
-    public function html(): string
-    {
-        return $this->markdownConverter()->convert($this->markdown());
-    }
-
-    public function filePath(): string
-    {
-        return $this->root() . $this->path();
     }
 
     public function mimetype(): string
@@ -145,68 +119,31 @@ class Content
         return $type;
     }
 
-    public function markdown(): string
+    private function exists(): bool
     {
-        if (strlen($this->markdown) === 0 and $this->exists()) {
-            $markdown = file_get_contents($this->filePath());
-
-            if (is_bool($markdown)) {
-                $markdown = '';
-            }
-
-            $this->markdown = $markdown;
-        }
-        return $this->markdown;
+        return file_exists($this->filePath());
     }
 
-    public function isValid(): bool
+    private function filePath(): string
     {
-        return file_exists($this->root()) and is_dir($this->root());
+        return $this->root() . $this->path;
     }
 
-    public function root(): string
+    private function root(): string
     {
         if (strlen($this->root) === 0) {
-            $contentStart = $this->projectRoot();
-
-            $contentParts = explode('/', $contentStart);
-            $contentUp    = $this->contentUp();
+            $contentParts = explode('/', $this->projectRoot);
+            $contentUp    = $this->contentUp;
 
             if (is_int($contentUp) and $contentUp > 0) {
                 $contentParts = array_slice($contentParts, 0, -1 * $contentUp);
             }
-            $contentFolder = explode('/', $this->contentFolder());
+            $contentFolder = explode('/', $this->contentFolder);
             $contentFolder = array_filter($contentFolder);
             $contentParts  = array_merge($contentParts, $contentFolder);
 
             $this->root = implode('/', $contentParts);
         }
         return $this->root;
-    }
-
-    private function projectRoot(): string
-    {
-        return $this->projectRoot;
-    }
-
-    private function contentUp(): int
-    {
-        return $this->contentUp;
-    }
-
-    private function contentFolder(): string
-    {
-        return $this->contentFolder;
-    }
-
-    private function markdownConverter(): Markdown
-    {
-        if (! isset($this->markdownConverter)) {
-            $this->markdownConverter = Markdown::create()
-                ->minified()
-                ->smartPunctuation()
-                ->tables();
-        }
-        return $this->markdownConverter;
     }
 }
