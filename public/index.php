@@ -91,6 +91,13 @@ if ($content->folderIsMissing()) {
     exit;
 }
 
+// TESTING: Redirection
+// Check browser address becomes /design-your-life
+// if ($server->requestUri() !== '/design-your-life') {
+//     $_SERVER['REQUEST_URI'] = '/self-improvement';
+//     $server = JoshBruce\Site\Server::init($_SERVER);
+// }
+
 $content = $content->for($server->filePathForRequest());
 if ($content->notFound()) {
     $content = $content->for(path: '/.errors/404.md');
@@ -123,18 +130,14 @@ if ($server->isRequestingFile()) {
     exit;
 }
 
-/**
- * Target file wants to redirect us: local response time 40ms
- */
-$redirectPath = $content->redirectPath();
-if (strlen($redirectPath) > 0) {
+if ($content->hasMoved()) {
     $scheme        = $_SERVER['REQUEST_SCHEME'];
     $serverName    = $_SERVER['HTTP_HOST'];
     $requestDomain = $scheme . '://' . $serverName;
     JoshBruce\Site\Emitter::emitWithResponse(
         301,
         [
-            'Location' => $requestDomain . $redirectPath
+            'Location' => $requestDomain . $content->redirectPath()
         ]
     );
     exit;

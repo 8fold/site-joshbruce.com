@@ -61,6 +61,11 @@ class Content
         return ! $this->exists();
     }
 
+    public function hasMoved(): bool
+    {
+        return strlen($this->redirectPath()) > 0;
+    }
+
     public function filePath(): string
     {
         return $this->root() . $this->path;

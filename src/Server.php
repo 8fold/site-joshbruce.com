@@ -109,7 +109,7 @@ class Server
         return $this->requestUri() . '/content.md';
     }
 
-    private function requestUri(): string
+    public function requestUri(): string
     {
         if ($this->serverGlobals['REQUEST_URI'] === '/') {
             return '';
