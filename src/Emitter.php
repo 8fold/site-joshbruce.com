@@ -50,6 +50,18 @@ class Emitter
         $emitter->emit($response);
     }
 
+    public static function emitFile(string $mimeType, string $filePath): void
+    {
+        self::emitWithResponseFile(
+            200,
+            [
+                'Cache-Control' => ['max-age=2592000'],
+                'Content-Type'  => $mimeType
+            ],
+            $filePath
+        );
+    }
+
     public static function emitInterServerErrorResponse(
         Markdown $converter,
         string $projectRoot
@@ -98,12 +110,12 @@ class Emitter
         );
     }
 
-    public static function emitBadGatewayResponse(
+    public static function emitBadContentResponse(
         Markdown $converter,
         string $projectRoot
     ): void {
         $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->for('/502.md');
+            ->for('/500.md');
 
         self::emitWithResponse(
             502,
