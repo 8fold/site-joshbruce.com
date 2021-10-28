@@ -1,7 +1,7 @@
 <?php
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -63,8 +63,9 @@ if (! $requestHasRequiredServerGlobals) {
 }
 
 if ($_SERVER['APP_ENV'] !== 'production') {
-    (new Whoops\Run)->pushHandler(new Whoops\Handler\PrettyPageHandler)
-        ->register();
+    $erroHandler = new Whoops\Run;
+    $erroHandler->pushHandler(new Whoops\Handler\PrettyPageHandler);
+    $erroHandler->register();
 }
 
 /**
