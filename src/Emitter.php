@@ -66,10 +66,10 @@ class Emitter
                 ]
             ],
             Document::create(
-                    $converter->getFrontMatter($content->markdown())['title']
-                )->body(
-                    $converter->convert($content->markdown())
-                )->build()
+                $converter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $converter->convert($content->markdown())
+            )->build()
         );
     }
 
@@ -91,10 +91,10 @@ class Emitter
                 'Allow' => $server->supportedMethods()
             ],
             Document::create(
-                    $converter->getFrontMatter($content->markdown())['title']
-                )->body(
-                    $converter->convert($content->markdown())
-                )->build()
+                $converter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $converter->convert($content->markdown())
+            )->build()
         );
     }
 
@@ -114,10 +114,10 @@ class Emitter
                 ]
             ],
             Document::create(
-                    $converter->getFrontMatter($content->markdown())['title']
-                )->body(
-                    $converter->convert($content->markdown())
-                )->build()
+                $converter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $converter->convert($content->markdown())
+            )->build()
         );
     }
 
@@ -136,14 +136,14 @@ class Emitter
                 ]
             ],
             Document::create(
-                    $converter->getFrontMatter($content->markdown())['title']
-                )->body(
-                    $converter->convert($content->markdown())
-                )->build()
+                $converter->getFrontMatter($content->markdown())['title']
+            )->body(
+                $converter->convert($content->markdown())
+            )->build()
         );
     }
 
-    public function emitRedirectionResponse(string $location): void
+    public static function emitRedirectionResponse(string $location): void
     {
         self::emitWithResponse(
             301,

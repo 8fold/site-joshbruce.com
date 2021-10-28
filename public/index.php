@@ -23,7 +23,6 @@ $server = JoshBruce\Site\Server::init($_SERVER);
 
 if ($server->isMissingRequiredValues()) {
     JoshBruce\Site\Emitter::emitInterServerErrorResponse(
-        500,
         $markdownConverter,
         $projectRoot
     );
@@ -48,8 +47,7 @@ $content = JoshBruce\Site\Content::init(
 if ($content->folderIsMissing()) {
     JoshBruce\Site\Emitter::emitBadGatewayResponse(
         $markdownConverter,
-        $projectRoot,
-        $server
+        $projectRoot
     );
     exit;
 }
