@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace JoshBruce\Site\PageComponents;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
