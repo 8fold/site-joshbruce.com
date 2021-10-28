@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use DirectoryIterator;
+
 use Eightfold\Markdown\Markdown;
 
 use JoshBruce\Site;
@@ -56,9 +58,22 @@ class Content
         return $this;
     }
 
+    public function pathWithoutFile(): string
+    {
+        if (strpos($this->path, '.') === 0) {
+            return $this->path;
+        }
+        return implode('/', array_slice(explode('/', $this->path), 0, -1));
+    }
+
     public function notFound(): bool
     {
         return ! $this->exists();
+    }
+
+    public function exists(): bool
+    {
+        return file_exists($this->filePath());
     }
 
     public function hasMoved(): bool
@@ -136,14 +151,38 @@ class Content
         return '';
     }
 
+    public function contentInSubfolders(): array
+    {
+        $parts = explode('/', $this->path);
+        $parts = array_slice($parts, 0, -1);
+        $dirPath = implode('/', $parts);
+
+        $folderPath = $this->root() . $dirPath;
+
+        if (! is_dir($folderPath)) {
+            return [];
+        }
+
+        $content = [];
+        foreach (new DirectoryIterator($folderPath) as $folder) {
+            if ($folder->isFile() or $folder->isDot()) {
+                // I feel continue should be named next or something.
+                continue;
+            }
+            $path = str_replace($this->root(), '', $folder->getPathname());
+            $date = array_slice(explode('/', $path), -1);
+            $date = array_shift($date);
+            if ($date !== null) {
+                $clone = clone $this;
+                $content[$date] = $clone->for($path . '/content.md');
+            }
+        }
+        return $content;
+    }
+
     private function folderExists(): bool
     {
         return file_exists($this->root()) and is_dir($this->root());
-    }
-
-    private function exists(): bool
-    {
-        return file_exists($this->filePath());
     }
 
     private function root(): string
