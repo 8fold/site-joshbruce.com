@@ -2,7 +2,7 @@
 
 use JoshBruce\Site\Server;
 
-it('expected local file path', function() {
+it('has expected local file path', function() {
     expect(
         Server::init(serverGlobals())->filePathForRequest()
     )->toBe(
