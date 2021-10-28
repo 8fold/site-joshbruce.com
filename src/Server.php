@@ -116,4 +116,11 @@ class Server
         }
         return $this->serverGlobals['REQUEST_URI'];
     }
+
+    public function domain(): string
+    {
+        $scheme     = $this->serverGlobals['REQUEST_SCHEME'];
+        $serverName = $this->serverGlobals['HTTP_HOST'];
+        return $scheme . '://' . $serverName;
+    }
 }

@@ -131,13 +131,10 @@ if ($server->isRequestingFile()) {
 }
 
 if ($content->hasMoved()) {
-    $scheme        = $_SERVER['REQUEST_SCHEME'];
-    $serverName    = $_SERVER['HTTP_HOST'];
-    $requestDomain = $scheme . '://' . $serverName;
     JoshBruce\Site\Emitter::emitWithResponse(
         301,
         [
-            'Location' => $requestDomain . $content->redirectPath()
+            'Location' => $server->domain() . $content->redirectPath()
         ]
     );
     exit;
