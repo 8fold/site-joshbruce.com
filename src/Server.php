@@ -35,7 +35,6 @@ class Server
             'REQUEST_URI'
         ];
 
-        $hasRequired = true;
         foreach ($required as $key) {
             if (! array_key_exists($key, $this->serverGlobals)) {
                 return true;

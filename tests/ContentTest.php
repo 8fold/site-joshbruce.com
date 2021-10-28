@@ -35,5 +35,4 @@ it('has correct mimetypes', function() {
         'text/html'
     );
 
-    expect($this->baseContent->folderIsMissing())->toBeFalse();
 })->group('content');
