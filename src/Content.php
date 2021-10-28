@@ -151,6 +151,9 @@ class Content
         return '';
     }
 
+    /**
+     * @return array<string, Content>
+     */
     public function contentInSubfolders(): array
     {
         $parts = explode('/', $this->path);
