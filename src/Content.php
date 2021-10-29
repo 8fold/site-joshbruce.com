@@ -187,9 +187,33 @@ class Content
         return $content;
     }
 
-    public function contentStack(): array
+    /**
+     * @todo Test
+     * @return Content[]
+     */
+    public function folderStack(): array
     {
+        $folderPath = $this->folderPath();
+        if (! is_dir($folderPath)) {
+            return [];
+        }
 
+        $folderPathParts = explode('/', $folderPath);
+
+        $content = [];
+        while (count($folderPathParts) > 0) {
+            $path = implode('/', $folderPathParts);
+            $filePath = $path . '/content.md';
+
+            if (file_exists($filePath)) {
+                $path = str_replace($this->root(), '', $path);
+                $clone = clone $this;
+                $content[] = $clone->for(path: $path . '/content.md');
+            }
+
+            array_pop($folderPathParts);
+        }
+        return $content;
     }
 
     private function folderExists(): bool

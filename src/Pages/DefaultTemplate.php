@@ -69,7 +69,7 @@ class DefaultTemplate
             ->props('rel stylesheet', 'href /css/main.css');
 
         return Document::create(
-            $this->frontMatter()['title']
+            $this->pageTitle()
         )->head(
             ...$headElements
         )->body(
@@ -82,6 +82,16 @@ class DefaultTemplate
                 )
             )
         )->build();
+    }
+
+    private function pageTitle(): string
+    {
+        $contents = $this->content->folderStack();
+        $titles = [];
+        foreach ($contents as $content) {
+            $titles[] = $content->frontMatter()['title'];
+        }
+        return implode(' | ', $titles);
     }
 
     private function markdown(): string
