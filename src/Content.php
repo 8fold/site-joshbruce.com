@@ -49,13 +49,14 @@ class Content
 
     public function for(string $path): Content
     {
-        $this->path = $path;
+        return Content::init('/', 0, '');
+        // $this->path = $path;
 
-        // reset cached values
-        $this->markdown = '';
-        $this->frontMatter = [];
+        // // reset cached values
+        // $this->markdown = '';
+        // $this->frontMatter = [];
 
-        return $this;
+        // return $this;
     }
 
     public function pathWithoutFile(): string
@@ -97,24 +98,25 @@ class Content
 
     public function mimetype(): string
     {
-        $type = mime_content_type($this->filePath());
-        if (is_bool($type) and $type === false) {
-            return '';
-        }
+        return '';
+        // $type = mime_content_type($this->filePath());
+        // if (is_bool($type) and $type === false) {
+        //     return '';
+        // }
 
-        if ($type === 'text/plain') {
-            $extensionMap = [
-                'md'  => 'text/html',
-                'css' => 'text/css',
-                'js'  => 'text/javascript'
-            ];
+        // if ($type === 'text/plain') {
+        //     $extensionMap = [
+        //         'md'  => 'text/html',
+        //         'css' => 'text/css',
+        //         'js'  => 'text/javascript'
+        //     ];
 
-            $parts     = explode('.', $this->filePath());
-            $extension = array_pop($parts);
+        //     $parts     = explode('.', $this->filePath());
+        //     $extension = array_pop($parts);
 
-            $type = $extensionMap[$extension];
-        }
-        return $type;
+        //     $type = $extensionMap[$extension];
+        // }
+        // return $type;
     }
 
     /**
@@ -218,24 +220,26 @@ class Content
 
     private function folderExists(): bool
     {
-        return file_exists($this->root()) and is_dir($this->root());
+        return true;
+        // return file_exists($this->root()) and is_dir($this->root());
     }
 
     private function root(): string
     {
-        if (strlen($this->root) === 0) {
-            $contentParts = explode('/', $this->projectRoot);
-            $contentUp    = $this->contentUp;
+        return '';
+        // if (strlen($this->root) === 0) {
+        //     $contentParts = explode('/', $this->projectRoot);
+        //     $contentUp    = $this->contentUp;
 
-            if (is_int($contentUp) and $contentUp > 0) {
-                $contentParts = array_slice($contentParts, 0, -1 * $contentUp);
-            }
-            $contentFolder = explode('/', $this->contentFolder);
-            $contentFolder = array_filter($contentFolder);
-            $contentParts  = array_merge($contentParts, $contentFolder);
+        //     if (is_int($contentUp) and $contentUp > 0) {
+        //         $contentParts = array_slice($contentParts, 0, -1 * $contentUp);
+        //     }
+        //     $contentFolder = explode('/', $this->contentFolder);
+        //     $contentFolder = array_filter($contentFolder);
+        //     $contentParts  = array_merge($contentParts, $contentFolder);
 
-            $this->root = implode('/', $contentParts);
-        }
-        return $this->root;
+        //     $this->root = implode('/', $contentParts);
+        // }
+        // return $this->root;
     }
 }
