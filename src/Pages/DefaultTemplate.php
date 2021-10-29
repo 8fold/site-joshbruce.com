@@ -16,9 +16,12 @@ use JoshBruce\Site\PageComponents\Navigation;
 
 class DefaultTemplate
 {
-    private $frontMatter = [];
+    /**
+     * @var array<string, mixed>
+     */
+    private array $frontMatter = [];
 
-    private $markdownBody = '';
+    private string $markdownBody = '';
 
     public static function create(
         Markdown $markdownConverter,
@@ -36,6 +39,9 @@ class DefaultTemplate
             ->tables()->externalLinks();
     }
 
+    /**
+     * @return array<string, string|string[]>
+     */
     public function headers(): array
     {
         $headers = [];
@@ -63,19 +69,19 @@ class DefaultTemplate
             ->props('rel stylesheet', 'href /css/main.css');
 
         return Document::create(
-                $this->frontMatter()['title']
-            )->head(
-                ...$headElements
-            )->body(
-                Navigation::create($this->content)->build(),
-                $this->markdownConverter->convert($body),
-                Element::footer(
-                    Element::p(
-                        'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
-                            'All rights reserved.'
-                    )
+            $this->frontMatter()['title']
+        )->head(
+            ...$headElements
+        )->body(
+            Navigation::create($this->content)->build(),
+            $this->markdownConverter->convert($body),
+            Element::footer(
+                Element::p(
+                    'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
+                        'All rights reserved.'
                 )
-            )->build();
+            )
+        )->build();
     }
 
     private function markdown(): string
@@ -93,8 +99,10 @@ class DefaultTemplate
         $frontMatter = $this->frontMatter();
 
         $updated = '';
-        if (array_key_exists('updated', $frontMatter)) {
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated']);
+        if (
+            array_key_exists('updated', $frontMatter) and
+            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated'])
+        ) {
             $time = Element::time($carbon->toFormattedDateString())
                 ->props(
                     'property dateModified',
@@ -103,14 +111,15 @@ class DefaultTemplate
             $updated = Element::p("Updated on: {$time}");
         }
 
-        $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created']);
-        $time = Element::time($carbon->toFormattedDateString())
-            ->props(
-                'property dateCreated',
-                'content ' . $carbon->format('Y-m-d')
-            )->build();
-        $created = Element::p("Created on: {$time}");
-
+        $created = '';
+        if ($carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])) {
+            $time = Element::time($carbon->toFormattedDateString())
+                ->props(
+                    'property dateCreated',
+                    'content ' . $carbon->format('Y-m-d')
+                )->build();
+            $created = Element::p("Created on: {$time}");
+        }
         return Element::div($created, $updated)->props('is dateblock')->build();
     }
 
@@ -138,6 +147,9 @@ class DefaultTemplate
         return '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     private function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {
