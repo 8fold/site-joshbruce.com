@@ -5,17 +5,29 @@ use JoshBruce\Site\FileSystem;
 beforeEach(function() {
     // This somewhat unreadable one-liner basically creates a fully qualified
     // path to the root of the project, without using relative syntax
-    $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+    $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+
+    $this->contentRoot = $this->projectRoot . '/tests/test-content';
 
     $this->fileSystem = FileSystem::init(
-        projectRoot: $projectRoot,
+        projectRoot: $this->projectRoot,
         contentUp: 0,
         contentFolder: '/tests/test-content'
     );
 });
 
 it('has file and folder paths', function() {
+    expect(
+        $this->fileSystem->with(path: '/sub-folder/content.md')->filePath()
+    )->toBe(
+        $this->contentRoot . '/sub-folder/content.md'
+    );
 
+    expect(
+        $this->fileSystem->with(path: '/sub-folder/content.md')->folderPath()
+    )->toBe(
+        $this->contentRoot . '/sub-folder'
+    );
 });
 
 it('has correct mimetypes', function() {

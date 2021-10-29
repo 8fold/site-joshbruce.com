@@ -31,6 +31,13 @@ class FileSystem
         );
     }
 
+    public function __construct(
+        private string $projectRoot,
+        private int $contentUp,
+        private string $contentFolder
+    ) {
+    }
+
     public function with(string $path): FileSystem
     {
         $parts = explode('/', $path);
@@ -43,19 +50,22 @@ class FileSystem
         return $this;
     }
 
-    public function __construct(
-        private string $projectRoot,
-        private int $contentUp,
-        private string $contentFolder
-    ) {
+    public function isFile(): bool
+    {
+        return strlen($this->fileName) > 0;
     }
 
     public function filePath(): string
     {
-        if (strlen($this->fileName) === 0) {
-            return $this->root() . $this->path;
+        if ($this->isFile()) {
+            return $this->folderPath() . '/' . $this->fileName;
         }
-        return $this->root() . $this->path . '/' . $this->fileName;
+        return $this->folderPath();
+    }
+
+    public function folderPath(): string
+    {
+        return $this->root() . $this->path;
     }
 
     public function mimetype(): string

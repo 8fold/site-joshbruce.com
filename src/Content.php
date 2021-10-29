@@ -90,11 +90,12 @@ class Content
 
     public function folderPath(): string
     {
-        $parts = explode('/', $this->path);
-        $parts = array_slice($parts, 0, -1);
-        $dirPath = implode('/', $parts);
+        return '';
+        // $parts = explode('/', $this->path);
+        // $parts = array_slice($parts, 0, -1);
+        // $dirPath = implode('/', $parts);
 
-        return $this->root() . $dirPath;
+        // return $this->root() . $dirPath;
     }
 
     public function mimetype(): string
