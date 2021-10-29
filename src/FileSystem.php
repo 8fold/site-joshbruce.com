@@ -50,6 +50,11 @@ class FileSystem
         return $this;
     }
 
+    public function rootFolderIsMissing(): bool
+    {
+        return ! $this->folderExists();
+    }
+
     public function isFile(): bool
     {
         return strlen($this->fileName) > 0;

@@ -44,7 +44,8 @@ class Content
 
     public function folderIsMissing(): bool
     {
-        return ! $this->folderExists();
+        return true;
+        // return ! $this->folderExists();
     }
 
     public function for(string $path): Content
@@ -61,10 +62,11 @@ class Content
 
     public function pathWithoutFile(): string
     {
-        if (strpos($this->path, '.') === 0) {
-            return $this->path;
-        }
-        return implode('/', array_slice(explode('/', $this->path), 0, -1));
+        return '';
+        // if (strpos($this->path, '.') === 0) {
+        //     return $this->path;
+        // }
+        // return implode('/', array_slice(explode('/', $this->path), 0, -1));
     }
 
     public function notFound(): bool
