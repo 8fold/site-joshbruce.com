@@ -10,6 +10,8 @@ class FileSystem
 
     private string $path = '/';
 
+    private string $fileName = '';
+
     // private string $markdown = '';
 
     /**
@@ -31,6 +33,12 @@ class FileSystem
 
     public function with(string $path): FileSystem
     {
+        $parts = explode('/', $path);
+        $possibleFileName = array_pop($parts);
+        if (strpos($possibleFileName, '.') > 0) {
+            $this->fileName = $possibleFileName;
+            $path = implode('/', $parts);
+        }
         $this->path = $path;
         return $this;
     }
@@ -40,6 +48,14 @@ class FileSystem
         private int $contentUp,
         private string $contentFolder
     ) {
+    }
+
+    public function filePath(): string
+    {
+        if (strlen($this->fileName) === 0) {
+            return $this->root() . $this->path;
+        }
+        return $this->root() . $this->path . '/' . $this->fileName;
     }
 
     public function mimetype(): string

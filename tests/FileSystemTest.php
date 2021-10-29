@@ -14,6 +14,10 @@ beforeEach(function() {
     );
 });
 
+it('has file and folder paths', function() {
+
+});
+
 it('has correct mimetypes', function() {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/
     // MIME_types#textjavascript

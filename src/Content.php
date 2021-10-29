@@ -84,7 +84,8 @@ class Content
 
     public function filePath(): string
     {
-        return $this->root() . $this->path;
+        return '';
+        // return $this->root() . $this->path;
     }
 
     public function folderPath(): string
