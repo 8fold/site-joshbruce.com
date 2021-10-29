@@ -87,6 +87,7 @@ if ($content->hasMoved()) {
  * Process HTML response: local response time 75ms (90ms with table content)
  */
 
+$page = JoshBruce\Site\Pages\Default::create($markdownConverter, $content);
 $markdownConverter = $markdownConverter->withConfig(['html_input' => 'allow'])
     ->tables()->externalLinks();
 
