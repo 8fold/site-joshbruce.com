@@ -83,10 +83,6 @@ if ($content->hasMoved()) {
     exit;
 }
 
-/**
- * Process HTML response: local response time 75ms (90ms with table content)
- */
-
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     $markdownConverter,
     $content

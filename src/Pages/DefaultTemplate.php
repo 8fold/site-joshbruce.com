@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Pages;
 
+use Carbon\Carbon;
+
 use Eightfold\Markdown\Markdown;
 use Eightfold\HTMLBuilder\Element;
+use Eightfold\HTMLBuilder\Document;
 
 use JoshBruce\Site\Content;
+use JoshBruce\Site\PageComponents\Favicons;
+use JoshBruce\Site\PageComponents\Navigation;
 
 class DefaultTemplate
 {
@@ -42,7 +47,35 @@ class DefaultTemplate
     {
         $body = $this->markdown();
         $body = $this->dateBlock() . $body;
-        return $this->markdownConverter->convert($body);
+
+        if (array_key_exists('header', $this->frontMatter())) {
+            $body = "# {$this->frontMatter()['header']}\n\n" . $body;
+
+        } else {
+            $body = "# {$this->frontMatter()['title']}\n\n" . $body;
+
+        }
+
+        $body = $body . "\n\n" . $this->logList();
+
+        $headElements   = Favicons::create();
+        $headElements[] = Element::link()
+            ->props('rel stylesheet', 'href /css/main.css');
+
+        return Document::create(
+                $this->frontMatter()['title']
+            )->head(
+                ...$headElements
+            )->body(
+                Navigation::create($this->content)->build(),
+                $this->markdownConverter->convert($body),
+                Element::footer(
+                    Element::p(
+                        'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
+                            'All rights reserved.'
+                    )
+                )
+            )->build();
     }
 
     private function markdown(): string
@@ -58,15 +91,51 @@ class DefaultTemplate
     private function dateBlock(): string
     {
         $frontMatter = $this->frontMatter();
+
         $updated = '';
         if (array_key_exists('updated', $frontMatter)) {
-            $updated = Element::p("Updated on: {$frontMatter['updated']}");
+            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated']);
+            $time = Element::time($carbon->toFormattedDateString())
+                ->props(
+                    'property dateModified',
+                    'content ' . $carbon->format('Y-m-d')
+                )->build();
+            $updated = Element::p("Updated on: {$time}");
         }
 
-        return Element::div(
-                Element::p("Created on: {$frontMatter['created']}"),
-                $updated
-            )->props('is dateblock')->build();
+        $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created']);
+        $time = Element::time($carbon->toFormattedDateString())
+            ->props(
+                'property dateCreated',
+                'content ' . $carbon->format('Y-m-d')
+            )->build();
+        $created = Element::p("Created on: {$time}");
+
+        return Element::div($created, $updated)->props('is dateblock')->build();
+    }
+
+    private function logList(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (
+            array_key_exists('type', $frontMatter) and
+            $frontMatter['type'] === 'log'
+        ) {
+            $contents = $this->content->contentInSubfolders();
+            krsort($contents);
+            $logLinks = [];
+            foreach ($contents as $key => $c) {
+                if (! str_starts_with(strval($key), '_') and $c->exists()) {
+                    $logLinks[] = Element::li(
+                        Element::a(
+                            $c->frontMatter()['title']
+                        )->props('href ' . $c->pathWithoutFile())
+                    );
+                }
+            }
+            return Element::ul(...$logLinks)->build();
+        }
+        return '';
     }
 
     private function frontMatter(): array
@@ -77,50 +146,4 @@ class DefaultTemplate
         }
         return $this->frontMatter;
     }
-
-
-// $headElements   = JoshBruce\Site\PageComponents\Favicons::create();
-// $headElements[] = Eightfold\HTMLBuilder\Element::link()
-//     ->props('rel stylesheet', 'href /css/main.css');
-
-// if (array_key_exists('header', $frontMatter)) {
-//     $body = "# {$frontMatter['header']}\n\n" . $body;
-
-// } else {
-//     $body = "# {$frontMatter['title']}\n\n" . $body;
-
-// }
-
-// if (array_key_exists('type', $frontMatter) and $frontMatter['type'] === 'log') {
-//     $contents = $content->contentInSubfolders();
-//     krsort($contents);
-//     $logLinks = [];
-//     foreach ($contents as $key => $c) {
-//         if (! str_starts_with(strval($key), '_') and $c->exists()) {
-//             $logLinks[] = Eightfold\HTMLBuilder\Element::li(
-//                 Eightfold\HTMLBuilder\Element::a(
-//                     $c->frontMatter()['title']
-//                 )->props('href ' . $c->pathWithoutFile())
-//             );
-//         }
-//     }
-//     $list = Eightfold\HTMLBuilder\Element::ul(...$logLinks)->build();
-//     $body = $body . $list;
-// }
-
-// $body = Eightfold\HTMLBuilder\Document::create(
-//         $frontMatter['title']
-//     )->head(
-//         ...$headElements
-//     )->body(
-//         JoshBruce\Site\PageComponents\Navigation::create($content)
-//             ->build(),
-//         $markdownConverter->convert($body),
-//         Eightfold\HTMLBuilder\Element::footer(
-//             Eightfold\HTMLBuilder\Element::p(
-//                 'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
-//                     'All rights reserved.'
-//             )
-//         )
-//     )->build();
 }
