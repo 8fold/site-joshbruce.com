@@ -86,6 +86,15 @@ class Content
         return $this->root() . $this->path;
     }
 
+    public function folderPath(): string
+    {
+        $parts = explode('/', $this->path);
+        $parts = array_slice($parts, 0, -1);
+        $dirPath = implode('/', $parts);
+
+        return $this->root() . $dirPath;
+    }
+
     public function mimetype(): string
     {
         $type = mime_content_type($this->filePath());
@@ -156,12 +165,7 @@ class Content
      */
     public function contentInSubfolders(): array
     {
-        $parts = explode('/', $this->path);
-        $parts = array_slice($parts, 0, -1);
-        $dirPath = implode('/', $parts);
-
-        $folderPath = $this->root() . $dirPath;
-
+        $folderPath = $this->folderPath();
         if (! is_dir($folderPath)) {
             return [];
         }
@@ -179,6 +183,35 @@ class Content
                 $clone = clone $this;
                 $content[$date] = $clone->for($path . '/content.md');
             }
+        }
+        return $content;
+    }
+
+    /**
+     * @todo Test
+     * @return Content[]
+     */
+    public function folderStack(): array
+    {
+        $folderPath = $this->folderPath();
+        if (! is_dir($folderPath)) {
+            return [];
+        }
+
+        $folderPathParts = explode('/', $folderPath);
+
+        $content = [];
+        while (count($folderPathParts) > 0) {
+            $path = implode('/', $folderPathParts);
+            $filePath = $path . '/content.md';
+
+            if (file_exists($filePath)) {
+                $path = str_replace($this->root(), '', $path);
+                $clone = clone $this;
+                $content[] = $clone->for(path: $path . '/content.md');
+            }
+
+            array_pop($folderPathParts);
         }
         return $content;
     }

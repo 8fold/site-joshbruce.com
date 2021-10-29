@@ -34,14 +34,14 @@ it('can determine if request is for a file', function() {
 
 it('limits request methods', function() {
     expect(
-        Server::init(serverGlobals())->isUsingUnsupportedMethod()
+        Server::init(serverGlobals())->isRequestingUnsupportedMethod()
     )->toBeFalse();
 
     $serverGlobals = serverGlobals();
     $serverGlobals['REQUEST_METHOD'] = 'INVALID';
 
     expect(
-        Server::init($serverGlobals)->isUsingUnsupportedMethod()
+        Server::init($serverGlobals)->isRequestingUnsupportedMethod()
     )->toBeTrue();
 })->group('server');
 
