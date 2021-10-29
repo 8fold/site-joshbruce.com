@@ -50,7 +50,7 @@ class Server
         return false;
     }
 
-    public function isUsingUnsupportedMethod(): bool
+    public function isRequestingUnsupportedMethod(): bool
     {
         $requestMethod = strtoupper($this->serverGlobals['REQUEST_METHOD']);
         return ! in_array($requestMethod, $this->supportedMethods());

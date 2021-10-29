@@ -31,7 +31,7 @@ if ($server->isMissingRequiredValues()) {
     exit;
 }
 
-if ($server->isUsingUnsupportedMethod()) {
+if ($server->isRequestingUnsupportedMethod()) {
     JoshBruce\Site\Emitter::emitUnsupportedMethodResponse(
         $markdownConverter,
         $projectRoot,
