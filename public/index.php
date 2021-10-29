@@ -87,76 +87,10 @@ if ($content->hasMoved()) {
  * Process HTML response: local response time 75ms (90ms with table content)
  */
 
-$page = JoshBruce\Site\Pages\Default::create($markdownConverter, $content);
-$markdownConverter = $markdownConverter->withConfig(['html_input' => 'allow'])
-    ->tables()->externalLinks();
+$page = JoshBruce\Site\Pages\DefaultTemplate::create(
+    $markdownConverter,
+    $content
+);
 
-$headers['Content-Type'] = $content->mimeType();
-
-$headElements   = JoshBruce\Site\PageComponents\Favicons::create();
-$headElements[] = Eightfold\HTMLBuilder\Element::link()
-    ->props('rel stylesheet', 'href /css/main.css');
-
-$markdown = $content->markdown();
-
-$frontMatter = $markdownConverter->getFrontMatter($content->markdown());
-
-$updated = '';
-if (array_key_exists('updated', $frontMatter)) {
-    $updated = Eightfold\HTMLBuilder\Element::p(
-        "Updated on: {$frontMatter['updated']}"
-    );
-}
-
-$dateBlock = Eightfold\HTMLBuilder\Element::div(
-        Eightfold\HTMLBuilder\Element::p("Created on: {$frontMatter['created']}"),
-        $updated
-    )->props('is dateblock');
-
-$body = $markdownConverter->getBody($markdown);
-
-$body = $dateBlock . $body;
-
-if (array_key_exists('header', $frontMatter)) {
-    $body = "# {$frontMatter['header']}\n\n" . $body;
-
-} else {
-    $body = "# {$frontMatter['title']}\n\n" . $body;
-
-}
-
-if (array_key_exists('type', $frontMatter) and $frontMatter['type'] === 'log') {
-    $contents = $content->contentInSubfolders();
-    krsort($contents);
-    $logLinks = [];
-    foreach ($contents as $key => $c) {
-        if (! str_starts_with(strval($key), '_') and $c->exists()) {
-            $logLinks[] = Eightfold\HTMLBuilder\Element::li(
-                Eightfold\HTMLBuilder\Element::a(
-                    $c->frontMatter()['title']
-                )->props('href ' . $c->pathWithoutFile())
-            );
-        }
-    }
-    $list = Eightfold\HTMLBuilder\Element::ul(...$logLinks)->build();
-    $body = $body . $list;
-}
-
-$body = Eightfold\HTMLBuilder\Document::create(
-        $frontMatter['title']
-    )->head(
-        ...$headElements
-    )->body(
-        JoshBruce\Site\PageComponents\Navigation::create($content)
-            ->build(),
-        $markdownConverter->convert($body),
-        Eightfold\HTMLBuilder\Element::footer(
-            Eightfold\HTMLBuilder\Element::p(
-                'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
-                    'All rights reserved.'
-            )
-        )
-    )->build();
-
-JoshBruce\Site\Emitter::emitWithResponse(200, $headers, $body);
+JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
 exit;
