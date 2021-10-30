@@ -8,8 +8,6 @@ use DirectoryIterator;
 
 class FileSystem
 {
-    private string $rootFolder = '';
-
     /**
      * @var array<string, mixed>
      */
@@ -92,7 +90,8 @@ class FileSystem
             '/assets' => '/.assets'
         ];
 
-        $parts = explode('/', $this->folderPath());
+        $path  = str_replace($this->contentRoot, '', $this->folderPath());
+        $parts = explode('/', $path);
         $parts = array_filter($parts);
         $first = array_shift($parts);
 
