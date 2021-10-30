@@ -16,11 +16,6 @@
   "license": "MIT",
   "name": "vendor/project",
   "prefer-stable": true,
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6",
-    "phpstan/phpstan": "^0.12",
-    "pestphp/pest": "^1.20"
-  },
   "require": {
     "php": "^8.0",
     "ext-fileinfo": "*",
@@ -31,6 +26,11 @@
     "laminas/laminas-httphandlerrunner": "^2.1",
     "filp/whoops": "^2.14",
     "nesbot/carbon": "^2.53"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6",
+    "phpstan/phpstan": "^0.12",
+    "pestphp/pest": "^1.20"
   },
   "scripts": {
     "prod": "@production",
