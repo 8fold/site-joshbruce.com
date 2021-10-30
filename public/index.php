@@ -21,7 +21,7 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-$server = JoshBruce\Site\Server::init($_SERVER);
+$server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
     JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
@@ -41,9 +41,9 @@ if ($server->isRequestingUnsupportedMethod()) {
 }
 
 $fileSystem = JoshBruce\Site\FileSystem::init(
-    $projectRoot,
-    $server->contentUp(),
-    $server->contentFolder()
+    $server->contentRoot(),
+    $server->requestUriWithoutFileName(),
+    $server->requestFileName()
 );
 
 if ($fileSystem->rootFolderIsMissing()) {
@@ -61,7 +61,10 @@ if ($fileSystem->rootFolderIsMissing()) {
 //     $server = JoshBruce\Site\Server::init($_SERVER);
 // }
 
-$fileSystem = $fileSystem->with(path: $server->filePathForRequest());
+$fileSystem = $fileSystem->with(
+    folderPath: $server->requestUriWithoutFileName(),
+    fileName: $server->requestFileName()
+);
 
 if ($fileSystem->notFound()) {
     $fileSystem = $fileSystem->with('/.errors', '404.md');

@@ -76,7 +76,7 @@ class DefaultTemplate
         )->head(
             ...$headElements
         )->body(
-            Navigation::create($this->file, $this->content)->build(),
+            Navigation::create($this->file)->build(),
             $this->markdownConverter->convert($body),
             Element::footer(
                 Element::p(
@@ -92,7 +92,10 @@ class DefaultTemplate
         $contents = $this->file->folderStack();
         $titles = [];
         foreach ($contents as $file) {
-            $fileContent = $file->with($file->path(), 'content.md');
+            $fileContent = $file->with(
+                $file->folderPath(full: false),
+                'content.md'
+            );
             $titles[] = Content::init($fileContent)->frontMatter()['title'];
         }
         return implode(' | ', $titles);
@@ -161,7 +164,7 @@ class DefaultTemplate
                     $logLinks[] = Element::li(
                         Element::a(
                             $content->frontMatter()['title']
-                        )->props('href ' . $file->path())
+                        )->props('href ' . $file->folderPath(full: false))
                     );
                 }
             }

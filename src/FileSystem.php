@@ -16,81 +16,27 @@ class FileSystem
     private array $frontMatter = [];
 
     public static function init(
-        string $projectRoot,
-        int $contentUp,
-        string $contentFolder,
-        string $path = '/',
+        string $contentRoot,
+        string $folderPath = '/',
         string $fileName = ''
     ): FileSystem {
-        $projectParts = explode('/', $projectRoot);
-        if (is_int($contentUp) and $contentUp > 0) {
-            $projectParts = array_slice($projectParts, 0, -1 * $contentUp);
-        }
-
-        $contentParts = explode('/', $contentFolder); // allow for subfolders
-        $contentParts = array_filter($contentParts); // remove empty values
-        $contentParts = array_merge($projectParts, $contentParts);
-
-        if (strlen($fileName) === 0) {
-            $fileName = self::fileNameFromPath($contentParts);
-        }
-
-        $contentRoot = implode('/', $contentParts);
-
         return new FileSystem(
             $contentRoot,
-            $path,
+            $folderPath,
             $fileName
         );
     }
 
-    /**
-     * @param string|array<int, string> $path
-     */
-    public static function fileNameFromPath(array|string $path): string
-    {
-        if (is_string($path)) {
-            $path = explode('/', $path);
-        }
-
-        $possibleFileName = array_pop($path);
-        if ($possibleFileName !== null) {
-            // account for hidden files where the dot is first character
-            $fileNameParts = array_filter(explode('.', $possibleFileName));
-            if (count($fileNameParts) === 1) {
-                return $possibleFileName;
-            }
-        }
-        return '';
-    }
-
     public function __construct(
         private string $contentRoot,
-        private string $path = '/',
+        private string $folderPath = '/',
         private string $fileName = ''
     ) {
     }
 
-    public function with(string $path, string $fileName = ''): FileSystem
+    public function with(string $folderPath, string $fileName = ''): FileSystem
     {
-        if (strlen($fileName) === 0) {
-            $contentParts = explode('/', $path);
-            $fileName = self::fileNameFromPath($contentParts);
-        }
-
-//         if ($f = self::fileNameFromPath($path) and strlen($f) > 0) {
-//             $fileName = $f;
-//
-//             $parts = explode('/', $path);
-//             array_pop($parts);
-//             $path = implode('/', $parts);
-//         }
-        return new self($this->contentRoot, $path, $fileName);
-    }
-
-    public function path(): string
-    {
-        return $this->path;
+        return new self($this->contentRoot, $folderPath, $fileName);
     }
 
     public function fileName(): string
@@ -98,6 +44,13 @@ class FileSystem
         return $this->fileName;
     }
 
+    public function folderPath(bool $full = true): string
+    {
+        if ($full) {
+            return $this->contentRoot . $this->folderPath;
+        }
+        return $this->folderPath;
+    }
 
     public function notFound(): bool
     {
@@ -122,17 +75,36 @@ class FileSystem
         return strlen($this->fileName()) > 0;
     }
 
-    public function filePath(): string
+    private function isNotFile(): bool
     {
-        if ($this->isFile()) {
-            return $this->folderPath() . '/' . $this->fileName;
-        }
-        return $this->folderPath();
+        return ! $this->isFile();
     }
 
-    public function folderPath(): string
+    public function filePath(): string
     {
-        return $this->contentRoot . $this->path;
+        if ($this->isNotFile()) {
+            return $this->folderPath() . '/content.md';
+        }
+
+        $folderMap = [
+            '/css'    => '/.assets/styles',
+            '/js'     => '/.assets/scripts',
+            '/assets' => '/.assets'
+        ];
+
+        $parts = explode('/', $this->folderPath());
+        $parts = array_filter($parts);
+        $first = array_shift($parts);
+
+        $folderMapKey  = '/' . $first;
+
+        $path = $this->folderPath() . '/' . $this->fileName();
+        if (array_key_exists($folderMapKey, $folderMap)) {
+            $replace = $folderMap[$folderMapKey];
+            $path = str_replace($folderMapKey, $replace, $path);
+
+        }
+        return $path;
     }
 
     public function mimetype(): string
@@ -159,7 +131,6 @@ class FileSystem
 
     /**
      * @return array<string, FileSystem>
-     * @todo Ability to specify file
      */
     public function subfolders(string $fileName = ''): array
     {
@@ -191,7 +162,6 @@ class FileSystem
 
     /**
      * @return FileSystem[]
-     * @todo Ability to specify file
      */
     public function folderStack(string $fileName = ''): array
     {
@@ -208,7 +178,7 @@ class FileSystem
             $path = implode('/', $folderPathParts);
 
             $clone = clone $this;
-            $clone = $clone->with(path: $path, fileName: $fileName);
+            $clone = $clone->with(folderPath: $path, fileName: $fileName);
 
             $folders[] = $clone;
 

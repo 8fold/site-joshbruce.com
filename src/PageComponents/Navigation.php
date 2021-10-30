@@ -14,23 +14,13 @@ use JoshBruce\Site\Content;
 
 class Navigation implements Buildable, Stringable
 {
-    public static function create(
-        FileSystem $file,
-        Content $content // TODO: Can be removed
-    ): Navigation {
-        return new Navigation($file, $content);
-    }
-
-    public function __construct(
-        private FileSystem $file,
-        private Content $content
-    ) {
-        $this->content = clone $content;
-    }
-
-    private function content(): Content
+    public static function create(FileSystem $file): Navigation
     {
-        return $this->content;
+        return new Navigation($file);
+    }
+
+    public function __construct(private FileSystem $file)
+    {
     }
 
     private function listItem(string $for): HtmlElement
@@ -52,7 +42,7 @@ class Navigation implements Buildable, Stringable
     private function navigation(): array
     {
 
-        $file = $this->file->with(path: '/.navigation/main.md');
+        $file = $this->file->with(folderPath: '/.navigation', fileName: 'main.md');
         $nav  = Content::init(file: $file)->frontMatter();
         $nav = $nav['navigation'];
         if (is_array($nav)) {

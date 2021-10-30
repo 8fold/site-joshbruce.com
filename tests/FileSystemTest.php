@@ -10,30 +10,29 @@ beforeEach(function() {
     $this->contentRoot = $this->projectRoot . '/tests/test-content';
 
     $this->fileSystem = FileSystem::init(
-        projectRoot: $this->projectRoot,
-        contentUp: 0,
-        contentFolder: '/tests/test-content'
+        contentRoot: $this->contentRoot,
+        folderPath: '/tests/test-content'
     );
 });
 
 it('can return folder tree', function() {
     $this->assertEquals(
-        $this->fileSystem->with(path: '/sub-folder')->folderStack(),
+        $this->fileSystem->with(folderPath: '/sub-folder')->folderStack(),
         [
-            $this->fileSystem->with(path: '/sub-folder'),
-            $this->fileSystem->with(path: '')
+            $this->fileSystem->with(folderPath: '/sub-folder'),
+            $this->fileSystem->with(folderPath: '')
         ]
     );
 
     $this->assertEquals(
-        $this->fileSystem->with(path: '/sub-folder')
+        $this->fileSystem->with(folderPath: '/sub-folder')
             ->folderStack(fileName: 'content.md'),
         [
             $this->fileSystem->with(
-                path: '/sub-folder',
+                folderPath: '/sub-folder',
                 fileName: 'content.md'
             ),
-            $this->fileSystem->with(path: '', fileName: 'content.md')
+            $this->fileSystem->with(folderPath: '', fileName: 'content.md')
         ]
     );
 })->group('filesystem');
@@ -41,7 +40,7 @@ it('can return folder tree', function() {
 it('has file and folder paths', function() {
     expect(
         $this->fileSystem->with(
-            path: '/sub-folder',
+            folderPath: '/sub-folder',
             fileName: 'content.md'
         )->filePath()
     )->toBe(
@@ -50,7 +49,7 @@ it('has file and folder paths', function() {
 
     expect(
         $this->fileSystem->with(
-            path: '/sub-folder',
+            folderPath: '/sub-folder',
             fileName: 'content.md'
         )->folderPath()
     )->toBe(
@@ -63,7 +62,7 @@ it('has correct mimetypes', function() {
     // MIME_types#textjavascript
     expect(
         $this->fileSystem->with(
-            path: '/.assets',
+            folderPath: '/.assets',
             fileName: 'javascript.js'
         )->mimetype()
     )->toBe(
@@ -72,7 +71,7 @@ it('has correct mimetypes', function() {
 
     expect(
         $this->fileSystem->with(
-            path: '/.assets',
+            folderPath: '/.assets',
             fileName: 'main.css'
         )->mimetype()
     )->toBe(
@@ -81,7 +80,7 @@ it('has correct mimetypes', function() {
 
     expect(
         $this->fileSystem->with(
-            path: '/',
+            folderPath: '/',
             fileName: 'content.md'
         )->mimetype()
     )->toBe(

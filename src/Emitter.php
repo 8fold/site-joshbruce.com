@@ -69,9 +69,7 @@ class Emitter
     ): void {
         $file = FileSystem::init(
             $projectRoot,
-            0,
             '/setup-errors',
-            '',
             '500.md'
         );
         $content = Content::init($file);
@@ -99,9 +97,7 @@ class Emitter
     ): void {
         $file = FileSystem::init(
             $projectRoot,
-            0,
             '/setup-errors',
-            '',
             '405.md'
         );
         $content = Content::init($file);
@@ -129,9 +125,7 @@ class Emitter
     ): void {
         $file = FileSystem::init(
             $projectRoot,
-            0,
             '/setup-errors',
-            '',
             '500_2.md'
         );
         $content = Content::init($file);
