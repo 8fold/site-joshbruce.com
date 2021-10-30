@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Pages;
 
-use Carbon\Carbon;
-
 use Eightfold\Markdown\Markdown;
 use Eightfold\HTMLBuilder\Element;
 use Eightfold\HTMLBuilder\Document;
@@ -14,6 +12,8 @@ use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
 use JoshBruce\Site\PageComponents\Favicons;
 use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\DateBlock;
+use JoshBruce\Site\PageComponents\Heading;
 
 class DefaultTemplate
 {
@@ -55,15 +55,9 @@ class DefaultTemplate
     public function body(): string
     {
         $body = $this->markdown();
-        $body = $this->dateBlock() . $body;
-
-        if (array_key_exists('header', $this->frontMatter())) {
-            $body = "# {$this->frontMatter()['header']}\n\n" . $body;
-
-        } else {
-            $body = "# {$this->frontMatter()['title']}\n\n" . $body;
-
-        }
+        $body = DateBlock::create(frontMatter: $this->frontMatter()) . $body;
+        $body = Heading::create(frontMatter: $this->frontMatter()) . "\n\n" .
+            $body;
 
         $body = $body . "\n\n" . $this->logList();
 
@@ -77,7 +71,9 @@ class DefaultTemplate
             ...$headElements
         )->body(
             Navigation::create($this->file)->build(),
-            $this->markdownConverter->convert($body),
+            Element::article(
+                $this->markdownConverter->convert($body)
+            )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::footer(
                 Element::p(
                     'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
@@ -109,42 +105,6 @@ class DefaultTemplate
             );
         }
         return $this->markdownBody;
-    }
-
-    private function dateBlock(): string
-    {
-        $frontMatter = $this->frontMatter();
-
-        $updated = '';
-        if (
-            array_key_exists('updated', $frontMatter) and
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated'])
-        ) {
-            $time = Element::time($carbon->toFormattedDateString())
-                ->props(
-                    'property dateModified',
-                    'content ' . $carbon->format('Y-m-d')
-                )->build();
-            $updated = Element::p("Updated on: {$time}");
-        }
-
-        $created = '';
-        if (
-            array_key_exists('created', $frontMatter) and
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])
-        ) {
-            $time = Element::time($carbon->toFormattedDateString())
-                ->props(
-                    'property dateCreated',
-                    'content ' . $carbon->format('Y-m-d')
-                )->build();
-            $created = Element::p("Created on: {$time}");
-        }
-
-        if (empty($updated) and empty($created)) {
-            return '';
-        }
-        return Element::div($created, $updated)->props('is dateblock')->build();
     }
 
     private function logList(): string
