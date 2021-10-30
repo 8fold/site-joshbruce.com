@@ -10,7 +10,7 @@ $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 require $projectRoot . '/vendor/autoload.php';
 
 /**
- * Rergardless of what happens next, we'll need a basline markown converter.
+ * Regardless of what happens next, we'll need a baseline markdown converter.
  *
  * We only want the bare minimum setup in the beginning.
  */
@@ -21,10 +21,10 @@ $markdownConverter = Eightfold\Markdown\Markdown::create()
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-$server = JoshBruce\Site\Server::init($_SERVER);
+$server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
-    JoshBruce\Site\Emitter::emitInterServerErrorResponse(
+    JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
         $markdownConverter,
         $projectRoot
     );
@@ -40,13 +40,13 @@ if ($server->isRequestingUnsupportedMethod()) {
     exit;
 }
 
-$content = JoshBruce\Site\Content::init(
-    $projectRoot,
-    $server->contentUp(),
-    $server->contentFolder()
+$fileSystem = JoshBruce\Site\FileSystem::init(
+    $server->contentRoot(),
+    $server->requestUriWithoutFileName(),
+    $server->requestFileName()
 );
 
-if ($content->folderIsMissing()) {
+if ($fileSystem->rootFolderIsMissing()) {
     JoshBruce\Site\Emitter::emitBadContentResponse(
         $markdownConverter,
         $projectRoot
@@ -61,22 +61,26 @@ if ($content->folderIsMissing()) {
 //     $server = JoshBruce\Site\Server::init($_SERVER);
 // }
 
-$content = $content->for($server->filePathForRequest());
+$fileSystem = $fileSystem->with(
+    folderPath: $server->requestUriWithoutFileName(),
+    fileName: $server->requestFileName()
+);
 
-if ($content->notFound()) {
+if ($fileSystem->notFound()) {
+    $fileSystem = $fileSystem->with('/.errors', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
         $markdownConverter,
-        $content,
-        '/.errors/404.md'
+        $fileSystem
     );
     exit;
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitFile($content->mimeType(), $content->filePath());
+    JoshBruce\Site\Emitter::emitFile($fileSystem->mimeType(), $fileSystem->filePath());
     exit;
 }
 
+$content = JoshBruce\Site\Content::init($fileSystem);
 if ($content->hasMoved()) {
     $location = $server->domain() . $content->redirectPath();
     JoshBruce\Site\Emitter::emitRedirectionResponse($location);
@@ -84,6 +88,7 @@ if ($content->hasMoved()) {
 }
 
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
+    $fileSystem,
     $markdownConverter,
     $content
 );

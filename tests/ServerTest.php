@@ -2,59 +2,43 @@
 
 use JoshBruce\Site\Server;
 
-it('has expected local file path', function() {
+it('has expected file name and content root', function() {
     expect(
-        Server::init(serverGlobals())->filePathForRequest()
+        Server::init(serverGlobals(), __DIR__)->requestFileName()
     )->toBe(
-        '/content.md'
+        ''
     );
 
-    $serverGlobals = serverGlobals();
-    $serverGlobals['REQUEST_URI'] = '/some.file';
-
     expect(
-        Server::init($serverGlobals)->filePathForRequest()
+        Server::init(serverGlobals(), __DIR__)->contentRoot()
     )->toBe(
-        '/some.file'
+        __DIR__ . '/test-content'
     );
-})->group('server');
-
-it('can determine if request is for a file', function() {
-    expect(
-        Server::init(serverGlobals())->isRequestingFile()
-    )->toBeFalse();
-
-    $serverGlobals = serverGlobals();
-    $serverGlobals['REQUEST_URI'] = '/some.file';
-
-    expect(
-        Server::init($serverGlobals)->isRequestingFile()
-    )->toBeTrue();
 })->group('server');
 
 it('limits request methods', function() {
     expect(
-        Server::init(serverGlobals())->isRequestingUnsupportedMethod()
+        Server::init(serverGlobals(), __DIR__)->isRequestingUnsupportedMethod()
     )->toBeFalse();
 
     $serverGlobals = serverGlobals();
     $serverGlobals['REQUEST_METHOD'] = 'INVALID';
 
     expect(
-        Server::init($serverGlobals)->isRequestingUnsupportedMethod()
+        Server::init($serverGlobals, __DIR__)->isRequestingUnsupportedMethod()
     )->toBeTrue();
 })->group('server');
 
 it('has required variables', function() {
     expect(
-        Server::init(serverGlobals())->isMissingRequiredValues()
+        Server::init(serverGlobals(), __DIR__)->isMissingRequiredValues()
     )->toBeFalse();
 
     $serverGlobals = serverGlobals();
     unset($serverGlobals['CONTENT_UP']);
 
     expect(
-        Server::init($serverGlobals)->isMissingRequiredValues()
+        Server::init($serverGlobals, __DIR__)->isMissingRequiredValues()
     )->toBeTrue();
 })->group('server');
 

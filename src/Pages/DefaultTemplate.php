@@ -10,6 +10,7 @@ use Eightfold\Markdown\Markdown;
 use Eightfold\HTMLBuilder\Element;
 use Eightfold\HTMLBuilder\Document;
 
+use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
 use JoshBruce\Site\PageComponents\Favicons;
 use JoshBruce\Site\PageComponents\Navigation;
@@ -24,13 +25,15 @@ class DefaultTemplate
     private string $markdownBody = '';
 
     public static function create(
+        FileSystem $file,
         Markdown $markdownConverter,
         Content $content
     ): DefaultTemplate {
-        return new DefaultTemplate($markdownConverter, $content);
+        return new DefaultTemplate($file, $markdownConverter, $content);
     }
 
     public function __construct(
+        private FileSystem $file,
         private Markdown $markdownConverter,
         private Content $content
     ) {
@@ -45,7 +48,7 @@ class DefaultTemplate
     public function headers(): array
     {
         $headers = [];
-        $headers['Content-Type'] = $this->content->mimeType();
+        $headers['Content-Type'] = $this->file->mimeType();
         return $headers;
     }
 
@@ -73,7 +76,7 @@ class DefaultTemplate
         )->head(
             ...$headElements
         )->body(
-            Navigation::create($this->content)->build(),
+            Navigation::create($this->file)->build(),
             $this->markdownConverter->convert($body),
             Element::footer(
                 Element::p(
@@ -86,10 +89,14 @@ class DefaultTemplate
 
     private function pageTitle(): string
     {
-        $contents = $this->content->folderStack();
+        $contents = $this->file->folderStack();
         $titles = [];
-        foreach ($contents as $content) {
-            $titles[] = $content->frontMatter()['title'];
+        foreach ($contents as $file) {
+            $fileContent = $file->with(
+                $file->folderPath(full: false),
+                'content.md'
+            );
+            $titles[] = Content::init($fileContent)->frontMatter()['title'];
         }
         return implode(' | ', $titles);
     }
@@ -122,13 +129,20 @@ class DefaultTemplate
         }
 
         $created = '';
-        if ($carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])) {
+        if (
+            array_key_exists('created', $frontMatter) and
+            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])
+        ) {
             $time = Element::time($carbon->toFormattedDateString())
                 ->props(
                     'property dateCreated',
                     'content ' . $carbon->format('Y-m-d')
                 )->build();
             $created = Element::p("Created on: {$time}");
+        }
+
+        if (empty($updated) and empty($created)) {
+            return '';
         }
         return Element::div($created, $updated)->props('is dateblock')->build();
     }
@@ -140,15 +154,17 @@ class DefaultTemplate
             array_key_exists('type', $frontMatter) and
             $frontMatter['type'] === 'log'
         ) {
-            $contents = $this->content->contentInSubfolders();
+            $contents = $this->file->subfolders('content.md');
             krsort($contents);
             $logLinks = [];
-            foreach ($contents as $key => $c) {
-                if (! str_starts_with(strval($key), '_') and $c->exists()) {
+            foreach ($contents as $key => $file) {
+                if (! str_starts_with(strval($key), '_') and $file->found()) {
+                    $content = Content::init($file);
+
                     $logLinks[] = Element::li(
                         Element::a(
-                            $c->frontMatter()['title']
-                        )->props('href ' . $c->pathWithoutFile())
+                            $content->frontMatter()['title']
+                        )->props('href ' . $file->folderPath(full: false))
                     );
                 }
             }

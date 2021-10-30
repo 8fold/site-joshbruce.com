@@ -9,19 +9,28 @@ use Whoops\Handler\PrettyPageHandler;
 
 class Server
 {
+    private string $contentFolderRoot = '';
+
     /**
      * @param  array<string, string> $serverGlobals
      */
-    public static function init(array $serverGlobals): Server
-    {
-        return new Server(serverGlobals: $serverGlobals);
+    public static function init(
+        array $serverGlobals,
+        string $projectRoot
+    ): Server {
+        return new Server(
+            serverGlobals: $serverGlobals,
+            projectRoot: $projectRoot
+        );
     }
 
     /**
      * @param array<string, string> $serverGlobals
      */
-    public function __construct(private array $serverGlobals)
-    {
+    public function __construct(
+        private array $serverGlobals,
+        private string $projectRoot
+    ) {
     }
 
     public function isMissingRequiredValues(): bool
@@ -58,62 +67,66 @@ class Server
 
     public function isRequestingFile(): bool
     {
-        return strpos($this->requestUri(), '.') > 0;
+        return strlen($this->requestFileName()) > 0;
     }
 
     /**
-     * @return string[] [description]
+     * @return string[]
      */
     public function supportedMethods(): array
     {
         return ['GET'];
     }
 
-    public function contentUp(): int
+
+    public function contentRoot(): string
     {
-        return intval($this->serverGlobals['CONTENT_UP']);
+        $projectParts  = explode('/', $this->projectRoot);
+        $contentUp     = intval($this->serverGlobals['CONTENT_UP']);
+        $contentFolder = strval($this->serverGlobals['CONTENT_FOLDER']);
+
+        if (is_int($contentUp) and $contentUp > 0) {
+            $projectParts = array_slice($projectParts, 0, -1 * $contentUp);
+        }
+
+        $contentParts = explode('/', $contentFolder); // allow for subfolders
+        $contentParts = array_filter($contentParts); // remove empty value
+        $contentParts = array_merge($projectParts, $contentParts);
+
+        if (
+            $this->isRequestingFile() and
+            in_array($this->requestFileName(), $contentParts)
+        ) {
+            array_pop($contentParts);
+        }
+
+        return implode('/', $contentParts);
     }
 
-    public function contentFolder(): string
+    public function requestFileName(): string
     {
-        return strval($this->serverGlobals['CONTENT_FOLDER']);
+        $path  = $this->requestUri();
+        $parts = explode('/', $path);
+
+        $possibleFileName = array_pop($parts);
+        if (
+            $possibleFileName !== null and
+            ! str_starts_with($possibleFileName, '.') and
+            $fileNameParts = array_filter(explode('.', $possibleFileName)) and
+            count($fileNameParts) > 1
+        ) {
+            return $possibleFileName;
+        }
+        return '';
     }
 
-    public function filePathForRequest(): string
+    public function requestUriWithoutFileName(): string
     {
         if ($this->isRequestingFile()) {
-            $folderMap = [
-                '/css'    => '/.assets/styles',
-                '/js'     => '/.assets/scripts',
-                '/assets' => '/.assets'
-            ];
-
-            $parts = explode('/', $this->requestUri());
-            $parts = array_filter($parts);
-            $first = array_shift($parts);
-
-            $folderMapKey  = '/' . $first;
-
-            if (array_key_exists($folderMapKey, $folderMap)) {
-                $replace = $folderMap[$folderMapKey];
-
-                return str_replace(
-                    $folderMapKey,
-                    $replace,
-                    $this->requestUri()
-                );
-            }
-            return $this->requestUri();
+            $potential = '/' . $this->requestFileName();
+            return str_replace($potential, '', $this->requestUri());
         }
-        return $this->requestUri() . '/content.md';
-    }
-
-    public function requestUri(): string
-    {
-        if ($this->serverGlobals['REQUEST_URI'] === '/') {
-            return '';
-        }
-        return $this->serverGlobals['REQUEST_URI'];
+        return $this->requestUri();
     }
 
     public function domain(): string
@@ -121,5 +134,13 @@ class Server
         $scheme     = $this->serverGlobals['REQUEST_SCHEME'];
         $serverName = $this->serverGlobals['HTTP_HOST'];
         return $scheme . '://' . $serverName;
+    }
+
+    private function requestUri(): string
+    {
+        if ($this->serverGlobals['REQUEST_URI'] === '/') {
+            return '';
+        }
+        return $this->serverGlobals['REQUEST_URI'];
     }
 }

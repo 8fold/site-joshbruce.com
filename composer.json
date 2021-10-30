@@ -1,24 +1,5 @@
 {
-  "name": "vendor/project",
-  "description": "",
-  "type": "library",
-  "license": "MIT",
   "authors": [],
-  "require": {
-    "php": "^8.0",
-    "vlucas/phpdotenv": "^5.3",
-    "8fold/commonmark-fluent-markdown": "^0.10.0",
-    "8fold/php-html-builder": "^0.5.3",
-    "nyholm/psr7": "^1.4",
-    "laminas/laminas-httphandlerrunner": "^2.1",
-    "filp/whoops": "^2.14",
-    "nesbot/carbon": "^2.53"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6",
-    "phpstan/phpstan": "^0.12",
-    "pestphp/pest": "^1.20"
-  },
   "autoload": {
     "psr-4": {
       "JoshBruce\\Site\\": "./src"
@@ -31,12 +12,36 @@
   "config": {
     "preferred-install": "dist"
   },
+  "description": "",
+  "license": "MIT",
+  "name": "vendor/project",
   "prefer-stable": true,
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6",
+    "phpstan/phpstan": "^0.12",
+    "pestphp/pest": "^1.20"
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-fileinfo": "*",
+    "vlucas/phpdotenv": "^5.3",
+    "8fold/commonmark-fluent-markdown": "^0.10.0",
+    "8fold/php-html-builder": "^0.5.3",
+    "nyholm/psr7": "^1.4",
+    "laminas/laminas-httphandlerrunner": "^2.1",
+    "filp/whoops": "^2.14",
+    "nesbot/carbon": "^2.53"
+  },
   "scripts": {
     "prod": "@production",
-    "production": ["@style", "@stan", "@test"],
+    "production": [
+      "@style",
+      "@stan",
+      "@test"
+    ],
     "style": "./vendor/bin/phpcs --standard=phpcs.xml -p ./src",
     "stan": "./vendor/bin/phpstan analyze",
     "test": "./vendor/bin/pest"
-  }
+  },
+  "type": "library"
 }
