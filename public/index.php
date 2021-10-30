@@ -10,7 +10,7 @@ $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 require $projectRoot . '/vendor/autoload.php';
 
 /**
- * Rergardless of what happens next, we'll need a basline markown converter.
+ * Regardless of what happens next, we'll need a baseline markdown converter.
  *
  * We only want the bare minimum setup in the beginning.
  */
@@ -40,13 +40,13 @@ if ($server->isRequestingUnsupportedMethod()) {
     exit;
 }
 
-$content = JoshBruce\Site\Content::init(
+$fileSystem = JoshBruce\Site\FileSystem::init(
     $projectRoot,
     $server->contentUp(),
     $server->contentFolder()
 );
 
-if ($content->folderIsMissing()) {
+if ($fileSystem->rootFolderIsMissing()) {
     JoshBruce\Site\Emitter::emitBadContentResponse(
         $markdownConverter,
         $projectRoot
@@ -61,29 +61,30 @@ if ($content->folderIsMissing()) {
 //     $server = JoshBruce\Site\Server::init($_SERVER);
 // }
 
-$content = $content->for($server->filePathForRequest());
-
-if ($content->notFound()) {
+$fileSystem = $fileSystem->with(path: $server->filePathForRequest());
+if ($fileSystem->notFound()) {
     JoshBruce\Site\Emitter::emitNotFoundResponse(
         $markdownConverter,
-        $content,
+        $fileSystem,
         '/.errors/404.md'
     );
     exit;
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitFile($content->mimeType(), $content->filePath());
+    JoshBruce\Site\Emitter::emitFile($fileSystem->mimeType(), $fileSystem->filePath());
     exit;
 }
 
+$content = JoshBruce\Site\Content::init($fileSystem);
 if ($content->hasMoved()) {
-    $location = $server->domain() . $content->redirectPath();
+    $location = $server->domain() . $fileSystem->redirectPath();
     JoshBruce\Site\Emitter::emitRedirectionResponse($location);
     exit;
 }
 
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
+    $fileSystem,
     $markdownConverter,
     $content
 );

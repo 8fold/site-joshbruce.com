@@ -46,7 +46,7 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-        $nav = $this->content()->for(path: '/.navigation/main.md')
+        $nav = $this->content()->with(path: '/.navigation/main.md')
             ->frontMatter();
         $nav = $nav['navigation'];
         if (is_array($nav)) {

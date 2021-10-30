@@ -8,14 +8,10 @@ use DirectoryIterator;
 
 use Eightfold\Markdown\Markdown;
 
-use JoshBruce\Site;
+use JoshBruce\Site\FileSystem;
 
 class Content
 {
-    private string $root = '';
-
-    private string $path = '/';
-
     private string $markdown = '';
 
     /**
@@ -23,104 +19,27 @@ class Content
      */
     private array $frontMatter = [];
 
-    public static function init(
-        string $projectRoot,
-        int $contentUp,
-        string $contentFolder
-    ): Content {
-        return new Content(
-            $projectRoot,
-            $contentUp,
-            $contentFolder
-        );
-    }
-
-    public function __construct(
-        private string $projectRoot,
-        private int $contentUp,
-        private string $contentFolder
-    ) {
-    }
-
-    public function folderIsMissing(): bool
+    public static function init(FileSystem $file): Content
     {
-        return true;
-        // return ! $this->folderExists();
+        return new Content($file);
     }
 
-    public function for(string $path): Content
+    public function __construct(private FileSystem $file)
     {
-        return Content::init('/', 0, '');
-        // $this->path = $path;
-
-        // // reset cached values
-        // $this->markdown = '';
-        // $this->frontMatter = [];
-
-        // return $this;
     }
 
-    public function pathWithoutFile(): string
+    public function markdown(): string
     {
-        return '';
-        // if (strpos($this->path, '.') === 0) {
-        //     return $this->path;
-        // }
-        // return implode('/', array_slice(explode('/', $this->path), 0, -1));
-    }
+        if (strlen($this->markdown) === 0 and $this->file->found()) {
+            $markdown = file_get_contents($this->file->filePath());
 
-    public function notFound(): bool
-    {
-        return ! $this->exists();
-    }
+            if (is_bool($markdown)) {
+                $markdown = '';
+            }
 
-    public function exists(): bool
-    {
-        return file_exists($this->filePath());
-    }
-
-    public function hasMoved(): bool
-    {
-        return strlen($this->redirectPath()) > 0;
-    }
-
-    public function filePath(): string
-    {
-        return '';
-        // return $this->root() . $this->path;
-    }
-
-    public function folderPath(): string
-    {
-        return '';
-        // $parts = explode('/', $this->path);
-        // $parts = array_slice($parts, 0, -1);
-        // $dirPath = implode('/', $parts);
-
-        // return $this->root() . $dirPath;
-    }
-
-    public function mimetype(): string
-    {
-        return '';
-        // $type = mime_content_type($this->filePath());
-        // if (is_bool($type) and $type === false) {
-        //     return '';
-        // }
-
-        // if ($type === 'text/plain') {
-        //     $extensionMap = [
-        //         'md'  => 'text/html',
-        //         'css' => 'text/css',
-        //         'js'  => 'text/javascript'
-        //     ];
-
-        //     $parts     = explode('.', $this->filePath());
-        //     $extension = array_pop($parts);
-
-        //     $type = $extensionMap[$extension];
-        // }
-        // return $type;
+            $this->markdown = $markdown;
+        }
+        return $this->markdown;
     }
 
     /**
@@ -139,18 +58,9 @@ class Content
         return $this->frontMatter;
     }
 
-    public function markdown(): string
+    public function hasMoved(): bool
     {
-        if (strlen($this->markdown) === 0 and $this->exists()) {
-            $markdown = file_get_contents($this->filePath());
-
-            if (is_bool($markdown)) {
-                $markdown = '';
-            }
-
-            $this->markdown = $markdown;
-        }
-        return $this->markdown;
+        return strlen($this->redirectPath()) > 0;
     }
 
     public function redirectPath(): string
@@ -182,68 +92,14 @@ class Content
                 // I feel continue should be named next or something.
                 continue;
             }
-            $path = str_replace($this->root(), '', $folder->getPathname());
-            $date = array_slice(explode('/', $path), -1);
-            $date = array_shift($date);
-            if ($date !== null) {
+            $path       = str_replace($this->root(), '', $folder->getPathname());
+            $folderName = array_slice(explode('/', $path), -1);
+            $folderName = array_shift($folderName);
+            if ($folderName !== null) {
                 $clone = clone $this;
-                $content[$date] = $clone->for($path . '/content.md');
+                $content[$folderName] = $clone->for($path . '/content.md');
             }
         }
         return $content;
-    }
-
-    /**
-     * @todo Test
-     * @return Content[]
-     */
-    public function folderStack(): array
-    {
-        $folderPath = $this->folderPath();
-        if (! is_dir($folderPath)) {
-            return [];
-        }
-
-        $folderPathParts = explode('/', $folderPath);
-
-        $content = [];
-        while (count($folderPathParts) > 0) {
-            $path = implode('/', $folderPathParts);
-            $filePath = $path . '/content.md';
-
-            if (file_exists($filePath)) {
-                $path = str_replace($this->root(), '', $path);
-                $clone = clone $this;
-                $content[] = $clone->for(path: $path . '/content.md');
-            }
-
-            array_pop($folderPathParts);
-        }
-        return $content;
-    }
-
-    private function folderExists(): bool
-    {
-        return true;
-        // return file_exists($this->root()) and is_dir($this->root());
-    }
-
-    private function root(): string
-    {
-        return '';
-        // if (strlen($this->root) === 0) {
-        //     $contentParts = explode('/', $this->projectRoot);
-        //     $contentUp    = $this->contentUp;
-
-        //     if (is_int($contentUp) and $contentUp > 0) {
-        //         $contentParts = array_slice($contentParts, 0, -1 * $contentUp);
-        //     }
-        //     $contentFolder = explode('/', $this->contentFolder);
-        //     $contentFolder = array_filter($contentFolder);
-        //     $contentParts  = array_merge($contentParts, $contentFolder);
-
-        //     $this->root = implode('/', $contentParts);
-        // }
-        // return $this->root;
     }
 }

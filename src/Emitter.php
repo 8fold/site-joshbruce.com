@@ -67,7 +67,7 @@ class Emitter
         string $projectRoot
     ): void {
         $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->for('/500.md');
+            ->with('/500.md');
 
         self::emitWithResponse(
             500,
@@ -91,7 +91,7 @@ class Emitter
         Server $server
     ): void {
         $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->for('/405.md');
+            ->with('/405.md');
 
         self::emitWithResponse(
             405,
@@ -115,7 +115,7 @@ class Emitter
         string $projectRoot
     ): void {
         $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->for('/500.md');
+            ->with('/500.md');
 
         self::emitWithResponse(
             502,
@@ -138,7 +138,7 @@ class Emitter
         Content $localContent,
         string $path
     ): void {
-        $content = $localContent->for(path: $path);
+        $content = $localContent->with(path: $path);
         self::emitWithResponse(
             404,
             [

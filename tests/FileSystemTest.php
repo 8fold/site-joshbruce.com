@@ -16,39 +16,64 @@ beforeEach(function() {
     );
 });
 
+it('can return folder tree', function() {
+    $this->assertEquals(
+        $this->fileSystem->with(path: '/sub-folder')->folderStack(),
+        [
+            $this->fileSystem->with(path: '/sub-folder'),
+            $this->fileSystem->with(path: '')
+        ]
+    );
+})->group('filesystem');
+
 it('has file and folder paths', function() {
     expect(
-        $this->fileSystem->with(path: '/sub-folder/content.md')->filePath()
+        $this->fileSystem->with(
+            path: '/sub-folder',
+            fileName: 'content.md'
+        )->filePath()
     )->toBe(
         $this->contentRoot . '/sub-folder/content.md'
     );
 
     expect(
-        $this->fileSystem->with(path: '/sub-folder/content.md')->folderPath()
+        $this->fileSystem->with(
+            path: '/sub-folder',
+            fileName: 'content.md'
+        )->folderPath()
     )->toBe(
         $this->contentRoot . '/sub-folder'
     );
-});
+})->group('filesystem');
 
 it('has correct mimetypes', function() {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/
     // MIME_types#textjavascript
     expect(
-        $this->fileSystem->with(path: '/.assets/javascript.js')->mimetype()
+        $this->fileSystem->with(
+            path: '/.assets',
+            fileName: 'javascript.js'
+        )->mimetype()
     )->toBe(
         'text/javascript'
     );
 
     expect(
-        $this->fileSystem->with(path: '/.assets/main.css')->mimetype()
+        $this->fileSystem->with(
+            path: '/.assets',
+            fileName: 'main.css'
+        )->mimetype()
     )->toBe(
         'text/css'
     );
 
     expect(
-        $this->fileSystem->with(path: '/content.md')->mimetype()
+        $this->fileSystem->with(
+            path: '/',
+            fileName: 'content.md'
+        )->mimetype()
     )->toBe(
         'text/html'
     );
 
-})->group('content');
+})->group('filesystem');
