@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use DirectoryIterator;
+
 class FileSystem
 {
     private string $rootFolder = '';
@@ -21,23 +23,16 @@ class FileSystem
         string $fileName = ''
     ): FileSystem {
         $projectParts = explode('/', $projectRoot);
-        $relativeUp   = $contentUp;
         if (is_int($contentUp) and $contentUp > 0) {
-            $relativeParts = array_slice($projectParts, 0, -1 * $relativeUp);
+            $projectParts = array_slice($projectParts, 0, -1 * $contentUp);
         }
 
         $contentParts = explode('/', $contentFolder); // allow for subfolders
         $contentParts = array_filter($contentParts); // remove empty values
-
         $contentParts = array_merge($projectParts, $contentParts);
 
-        $copy             = $contentParts;
-        $possibleFileName = array_pop($copy);
-        // account for hidden files where the dot is first character
-        $fileNameParts    = array_filter(explode('.',  $possibleFileName));
-        if (count($fileNameParts) >= 2) {
-            $fileName = $possibleFileName;
-            array_pop($contentParts); // remove last to get content folder path
+        if (strlen($fileName) === 0) {
+            $fileName = self::fileNameFromPath($contentParts);
         }
 
         $contentRoot = implode('/', $contentParts);
@@ -49,6 +44,26 @@ class FileSystem
         );
     }
 
+    /**
+     * @param string|array<int, string> $path
+     */
+    public static function fileNameFromPath(array|string $path): string
+    {
+        if (is_string($path)) {
+            $path = explode('/', $path);
+        }
+
+        $possibleFileName = array_pop($path);
+        if ($possibleFileName !== null) {
+            // account for hidden files where the dot is first character
+            $fileNameParts = array_filter(explode('.', $possibleFileName));
+            if (count($fileNameParts) === 1) {
+                return $possibleFileName;
+            }
+        }
+        return '';
+    }
+
     public function __construct(
         private string $contentRoot,
         private string $path = '/',
@@ -58,6 +73,18 @@ class FileSystem
 
     public function with(string $path, string $fileName = ''): FileSystem
     {
+        if (strlen($fileName) === 0) {
+            $contentParts = explode('/', $path);
+            $fileName = self::fileNameFromPath($contentParts);
+        }
+
+//         if ($f = self::fileNameFromPath($path) and strlen($f) > 0) {
+//             $fileName = $f;
+//
+//             $parts = explode('/', $path);
+//             array_pop($parts);
+//             $path = implode('/', $parts);
+//         }
         return new self($this->contentRoot, $path, $fileName);
     }
 
@@ -131,9 +158,42 @@ class FileSystem
     }
 
     /**
-     * @return FileSystem[]
+     * @return array<string, FileSystem>
+     * @todo Ability to specify file
      */
-    public function folderStack(): array
+    public function subfolders(string $fileName = ''): array
+    {
+        $folderPath = $this->folderPath();
+        if (! is_dir($folderPath)) {
+            return [];
+        }
+
+        $content = [];
+        foreach (new DirectoryIterator($folderPath) as $folder) {
+            if ($folder->isFile() or $folder->isDot()) {
+                // I feel continue should be named next or something.
+                continue;
+            }
+            $path       = str_replace(
+                $this->contentRoot,
+                '',
+                $folder->getPathname()
+            );
+            $folderName = array_slice(explode('/', $path), -1); // up 1
+            $folderName = array_shift($folderName);
+            if ($folderName !== null) {
+                $clone = clone $this;
+                $content[$folderName] = $clone->with($path, $fileName);
+            }
+        }
+        return $content;
+    }
+
+    /**
+     * @return FileSystem[]
+     * @todo Ability to specify file
+     */
+    public function folderStack(string $fileName = ''): array
     {
         $folderPath = $this->folderPath();
         if (! is_dir($folderPath)) {
@@ -148,7 +208,7 @@ class FileSystem
             $path = implode('/', $folderPathParts);
 
             $clone = clone $this;
-            $clone = $clone->with(path: $path);
+            $clone = $clone->with(path: $path, fileName: $fileName);
 
             $folders[] = $clone;
 

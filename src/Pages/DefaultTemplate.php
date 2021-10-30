@@ -76,7 +76,7 @@ class DefaultTemplate
         )->head(
             ...$headElements
         )->body(
-            Navigation::create($this->content)->build(),
+            Navigation::create($this->file, $this->content)->build(),
             $this->markdownConverter->convert($body),
             Element::footer(
                 Element::p(
@@ -126,13 +126,20 @@ class DefaultTemplate
         }
 
         $created = '';
-        if ($carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])) {
+        if (
+            array_key_exists('created', $frontMatter) and
+            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])
+        ) {
             $time = Element::time($carbon->toFormattedDateString())
                 ->props(
                     'property dateCreated',
                     'content ' . $carbon->format('Y-m-d')
                 )->build();
             $created = Element::p("Created on: {$time}");
+        }
+
+        if (empty($updated) and empty($created)) {
+            return '';
         }
         return Element::div($created, $updated)->props('is dateblock')->build();
     }
@@ -144,17 +151,17 @@ class DefaultTemplate
             array_key_exists('type', $frontMatter) and
             $frontMatter['type'] === 'log'
         ) {
-            $contents = $this->file->folderStack();
+            $contents = $this->file->subfolders('content.md');
             krsort($contents);
             $logLinks = [];
-            foreach ($contents as $key => $f) {
-                $fc = $f->with($f->path(), 'content.md');
-                $content = Content::init($fc);
-                if (! str_starts_with(strval($key), '_') and $fc->found()) {
+            foreach ($contents as $key => $file) {
+                if (! str_starts_with(strval($key), '_') and $file->found()) {
+                    $content = Content::init($file);
+
                     $logLinks[] = Element::li(
                         Element::a(
                             $content->frontMatter()['title']
-                        )->props('href ' . $fc->folderPath())
+                        )->props('href ' . $file->path())
                     );
                 }
             }

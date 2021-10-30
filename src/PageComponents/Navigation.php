@@ -9,17 +9,22 @@ use Stringable;
 use Eightfold\XMLBuilder\Contracts\Buildable;
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
+use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
 
 class Navigation implements Buildable, Stringable
 {
-    public static function create(Content $content): Navigation
-    {
-        return new Navigation($content);
+    public static function create(
+        FileSystem $file,
+        Content $content // TODO: Can be removed
+    ): Navigation {
+        return new Navigation($file, $content);
     }
 
-    public function __construct(private Content $content)
-    {
+    public function __construct(
+        private FileSystem $file,
+        private Content $content
+    ) {
         $this->content = clone $content;
     }
 
@@ -46,8 +51,9 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-        $nav = $this->content()->with(path: '/.navigation/main.md')
-            ->frontMatter();
+
+        $file = $this->file->with(path: '/.navigation/main.md');
+        $nav  = Content::init(file: $file)->frontMatter();
         $nav = $nav['navigation'];
         if (is_array($nav)) {
             return $nav;

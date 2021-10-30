@@ -11,8 +11,9 @@ use Laminas\HttpHandlerRunner\Emitter\SapiStreamEmitter as PsrEmitter;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\Markdown\Markdown;
 
-use JoshBruce\Site\Content;
 use JoshBruce\Site\Server;
+use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\Content;
 
 class Emitter
 {
@@ -62,12 +63,18 @@ class Emitter
         );
     }
 
-    public static function emitInterServerErrorResponse(
+    public static function emitInteralServerErrorResponse(
         Markdown $converter,
         string $projectRoot
     ): void {
-        $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->with('/500.md');
+        $file = FileSystem::init(
+            $projectRoot,
+            0,
+            '/setup-errors',
+            '',
+            '500.md'
+        );
+        $content = Content::init($file);
 
         self::emitWithResponse(
             500,
@@ -90,8 +97,14 @@ class Emitter
         string $projectRoot,
         Server $server
     ): void {
-        $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->with('/405.md');
+        $file = FileSystem::init(
+            $projectRoot,
+            0,
+            '/setup-errors',
+            '',
+            '405.md'
+        );
+        $content = Content::init($file);
 
         self::emitWithResponse(
             405,
@@ -114,8 +127,14 @@ class Emitter
         Markdown $converter,
         string $projectRoot
     ): void {
-        $content = Content::init($projectRoot, 0, '/setup-errors')
-            ->with('/500.md');
+        $file = FileSystem::init(
+            $projectRoot,
+            0,
+            '/setup-errors',
+            '',
+            '500_2.md'
+        );
+        $content = Content::init($file);
 
         self::emitWithResponse(
             502,
@@ -135,10 +154,10 @@ class Emitter
 
     public static function emitNotFoundResponse(
         Markdown $converter,
-        Content $localContent,
-        string $path
+        FileSystem $file
     ): void {
-        $content = $localContent->with(path: $path);
+        $content = Content::init($file);
+
         self::emitWithResponse(
             404,
             [

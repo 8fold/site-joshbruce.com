@@ -75,31 +75,4 @@ class Content
         }
         return '';
     }
-
-    /**
-     * @return array<string, Content>
-     */
-    public function contentInSubfolders(): array
-    {
-        $folderPath = $this->folderPath();
-        if (! is_dir($folderPath)) {
-            return [];
-        }
-
-        $content = [];
-        foreach (new DirectoryIterator($folderPath) as $folder) {
-            if ($folder->isFile() or $folder->isDot()) {
-                // I feel continue should be named next or something.
-                continue;
-            }
-            $path       = str_replace($this->root(), '', $folder->getPathname());
-            $folderName = array_slice(explode('/', $path), -1);
-            $folderName = array_shift($folderName);
-            if ($folderName !== null) {
-                $clone = clone $this;
-                $content[$folderName] = $clone->for($path . '/content.md');
-            }
-        }
-        return $content;
-    }
 }

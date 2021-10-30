@@ -24,7 +24,7 @@ Dotenv\Dotenv::createImmutable($projectRoot)->load();
 $server = JoshBruce\Site\Server::init($_SERVER);
 
 if ($server->isMissingRequiredValues()) {
-    JoshBruce\Site\Emitter::emitInterServerErrorResponse(
+    JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
         $markdownConverter,
         $projectRoot
     );
@@ -62,11 +62,12 @@ if ($fileSystem->rootFolderIsMissing()) {
 // }
 
 $fileSystem = $fileSystem->with(path: $server->filePathForRequest());
+
 if ($fileSystem->notFound()) {
+    $fileSystem = $fileSystem->with('/.errors', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
         $markdownConverter,
-        $fileSystem,
-        '/.errors/404.md'
+        $fileSystem
     );
     exit;
 }
@@ -78,7 +79,7 @@ if ($server->isRequestingFile()) {
 
 $content = JoshBruce\Site\Content::init($fileSystem);
 if ($content->hasMoved()) {
-    $location = $server->domain() . $fileSystem->redirectPath();
+    $location = $server->domain() . $content->redirectPath();
     JoshBruce\Site\Emitter::emitRedirectionResponse($location);
     exit;
 }

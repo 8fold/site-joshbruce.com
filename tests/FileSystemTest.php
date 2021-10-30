@@ -24,6 +24,18 @@ it('can return folder tree', function() {
             $this->fileSystem->with(path: '')
         ]
     );
+
+    $this->assertEquals(
+        $this->fileSystem->with(path: '/sub-folder')
+            ->folderStack(fileName: 'content.md'),
+        [
+            $this->fileSystem->with(
+                path: '/sub-folder',
+                fileName: 'content.md'
+            ),
+            $this->fileSystem->with(path: '', fileName: 'content.md')
+        ]
+    );
 })->group('filesystem');
 
 it('has file and folder paths', function() {
