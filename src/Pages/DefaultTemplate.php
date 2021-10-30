@@ -14,6 +14,8 @@ use JoshBruce\Site\PageComponents\Favicons;
 use JoshBruce\Site\PageComponents\Navigation;
 use JoshBruce\Site\PageComponents\DateBlock;
 use JoshBruce\Site\PageComponents\Heading;
+use JoshBruce\Site\PageComponents\LogList;
+use JoshBruce\Site\PageComponents\Footer;
 
 class DefaultTemplate
 {
@@ -59,7 +61,10 @@ class DefaultTemplate
         $body = Heading::create(frontMatter: $this->frontMatter()) . "\n\n" .
             $body;
 
-        $body = $body . "\n\n" . $this->logList();
+        $body = $body . "\n\n" . LogList::create(
+            $this->frontMatter(),
+            $this->file
+        );
 
         $headElements   = Favicons::create();
         $headElements[] = Element::link()
@@ -74,12 +79,7 @@ class DefaultTemplate
             Element::article(
                 $this->markdownConverter->convert($body)
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
+            Footer::create()
         )->build();
     }
 
@@ -105,32 +105,6 @@ class DefaultTemplate
             );
         }
         return $this->markdownBody;
-    }
-
-    private function logList(): string
-    {
-        $frontMatter = $this->frontMatter();
-        if (
-            array_key_exists('type', $frontMatter) and
-            $frontMatter['type'] === 'log'
-        ) {
-            $contents = $this->file->subfolders('content.md');
-            krsort($contents);
-            $logLinks = [];
-            foreach ($contents as $key => $file) {
-                if (! str_starts_with(strval($key), '_') and $file->found()) {
-                    $content = Content::init($file);
-
-                    $logLinks[] = Element::li(
-                        Element::a(
-                            $content->frontMatter()['title']
-                        )->props('href ' . $file->folderPath(full: false))
-                    );
-                }
-            }
-            return Element::ul(...$logLinks)->build();
-        }
-        return '';
     }
 
     /**
