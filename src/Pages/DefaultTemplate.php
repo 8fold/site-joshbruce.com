@@ -10,12 +10,12 @@ use Eightfold\HTMLBuilder\Document;
 
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
-use JoshBruce\Site\PageComponents\Favicons;
 use JoshBruce\Site\PageComponents\Navigation;
 use JoshBruce\Site\PageComponents\DateBlock;
 use JoshBruce\Site\PageComponents\Heading;
 use JoshBruce\Site\PageComponents\LogList;
 use JoshBruce\Site\PageComponents\Footer;
+use JoshBruce\Site\PageComponents\HeadElements;
 
 class DefaultTemplate
 {
@@ -66,14 +66,10 @@ class DefaultTemplate
             $this->file
         );
 
-        $headElements   = Favicons::create();
-        $headElements[] = Element::link()
-            ->props('rel stylesheet', 'href /css/main.css');
-
         return Document::create(
             $this->pageTitle()
         )->head(
-            ...$headElements
+            ...HeadElements::create()
         )->body(
             Navigation::create($this->file)->build(),
             Element::article(
