@@ -11,7 +11,7 @@ use JoshBruce\Site\PageComponents\Favicons;
 class HeadElements
 {
     /**
-     * @return array<int, HtmlElement|Favicons>
+     * @return array<int, HtmlElement>
      */
     public static function create(): array
     {
