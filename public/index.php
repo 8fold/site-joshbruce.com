@@ -11,8 +11,6 @@ require $projectRoot . '/vendor/autoload.php';
 
 /**
  * Regardless of what happens next, we'll need a baseline markdown converter.
- *
- * We only want the bare minimum setup in the beginning.
  */
 $markdownConverter = Eightfold\Markdown\Markdown::create()
     ->minified()
