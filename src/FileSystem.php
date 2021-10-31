@@ -88,7 +88,8 @@ class FileSystem
         $subtract = str_replace(
             $this->contentRoot . '/content',
             '',
-            $this->folderPath());
+            $this->folderPath()
+        );
         return strlen($subtract) === 0;
     }
 
