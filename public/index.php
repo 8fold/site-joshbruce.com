@@ -54,9 +54,9 @@ if ($fileSystem->rootFolderIsMissing()) {
 
 // TESTING: Redirection
 // Check browser address becomes /design-your-life
-// if ($server->requestUri() !== '/design-your-life') {
+// if ($server->requestUriWithoutFileName() !== '/design-your-life') {
 //     $_SERVER['REQUEST_URI'] = '/self-improvement';
-//     $server = JoshBruce\Site\Server::init($_SERVER);
+//     $server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 // }
 
 $fileSystem = $fileSystem->with(
