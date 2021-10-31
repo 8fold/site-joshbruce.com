@@ -43,6 +43,7 @@ class DefaultTemplate
         $this->markdownConverter = $markdownConverter
             ->withConfig(['html_input' => 'allow'])
             ->externalLinks()
+            ->abbreviations()
             ->headingPermalinks(
                 [
                     'min_heading_level' => 2,
@@ -84,10 +85,12 @@ class DefaultTemplate
         )->head(
             ...HeadElements::create()
         )->body(
-            Navigation::create($this->file)->build(),
+            Element::a('menu')->props('href #main-nav', 'id content-top'),
             Element::article(
                 $this->markdownConverter->convert($body)
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
+            Element::a('top')->props('href #content-top', 'id go-to-top'),
+            Navigation::create($this->file)->build(),
             Footer::create()
         )->build();
     }
