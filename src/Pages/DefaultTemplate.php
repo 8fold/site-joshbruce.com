@@ -16,6 +16,7 @@ use JoshBruce\Site\PageComponents\Heading;
 use JoshBruce\Site\PageComponents\LogList;
 use JoshBruce\Site\PageComponents\Footer;
 use JoshBruce\Site\PageComponents\HeadElements;
+use JoshBruce\Site\PageComponents\Data;
 
 class DefaultTemplate
 {
@@ -41,7 +42,13 @@ class DefaultTemplate
     ) {
         $this->markdownConverter = $markdownConverter
             ->withConfig(['html_input' => 'allow'])
-            ->tables()->externalLinks();
+            ->externalLinks()
+            ->headingPermalinks(
+                [
+                    'min_heading_level' => 2,
+                    'symbol' => '＃'
+                ],
+            );
     }
 
     /**
@@ -57,9 +64,15 @@ class DefaultTemplate
     public function body(): string
     {
         $body = $this->markdown();
-        $body = DateBlock::create(frontMatter: $this->frontMatter()) . $body;
-        $body = Heading::create(frontMatter: $this->frontMatter()) . "\n\n" .
-            $body;
+        $body = Data::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+        $body = DateBlock::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+
+        if ($this->file->isNotRoot()) {
+            $body = Heading::create(frontMatter: $this->frontMatter()) .
+                "\n\n" . $body;
+        }
 
         $body = $body . "\n\n" . LogList::create(
             $this->frontMatter(),
