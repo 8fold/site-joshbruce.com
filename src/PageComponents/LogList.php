@@ -16,7 +16,6 @@ class LogList
      */
     public static function create(array $frontMatter, FileSystem $file): string
     {
-        // $frontMatter = $this->frontMatter();
         if (
             array_key_exists('type', $frontMatter) and
             $frontMatter['type'] === 'log'

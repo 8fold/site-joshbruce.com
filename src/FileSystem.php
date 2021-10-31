@@ -136,11 +136,12 @@ class FileSystem
                 // I feel continue should be named next or something.
                 continue;
             }
-            $path       = str_replace(
-                $this->contentRoot,
+            $path = str_replace(
+                $this->contentRoot . '/content',
                 '',
                 $folder->getPathname()
             );
+
             $folderName = array_slice(explode('/', $path), -1); // up 1
             $folderName = array_shift($folderName);
             if ($folderName !== null) {
@@ -165,7 +166,7 @@ class FileSystem
         $folderPathParts = explode('/', $folderPath);
 
         $folders = [];
-        while (count($folderPathParts) > 0) {
+        while (count($folderPathParts) > 1) {
             $path = implode('/', $folderPathParts);
 
             $clone = clone $this;
