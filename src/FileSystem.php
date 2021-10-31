@@ -78,6 +78,21 @@ class FileSystem
         return strlen($this->fileName()) > 0;
     }
 
+    public function isNotRoot(): bool
+    {
+        return ! $this->isRoot();
+    }
+
+    private function isRoot(): bool
+    {
+        $subtract = str_replace(
+            $this->contentRoot . '/content',
+            '',
+            $this->folderPath()
+        );
+        return strlen($subtract) === 0;
+    }
+
     private function isNotFile(): bool
     {
         return ! $this->isFile();
