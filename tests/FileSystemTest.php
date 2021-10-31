@@ -44,7 +44,7 @@ it('has file and folder paths', function() {
             fileName: 'content.md'
         )->filePath()
     )->toBe(
-        $this->contentRoot . '/sub-folder/content.md'
+        $this->contentRoot . '/content/sub-folder/content.md'
     );
 
     expect(
@@ -53,7 +53,7 @@ it('has file and folder paths', function() {
             fileName: 'content.md'
         )->folderPath()
     )->toBe(
-        $this->contentRoot . '/sub-folder'
+        $this->contentRoot . '/content/sub-folder'
     );
 })->group('filesystem');
 
@@ -62,7 +62,7 @@ it('has correct mimetypes', function() {
     // MIME_types#textjavascript
     expect(
         $this->fileSystem->with(
-            folderPath: '/.assets',
+            folderPath: '/assets/js',
             fileName: 'javascript.js'
         )->mimetype()
     )->toBe(
@@ -71,7 +71,7 @@ it('has correct mimetypes', function() {
 
     expect(
         $this->fileSystem->with(
-            folderPath: '/.assets',
+            folderPath: '/assets/css',
             fileName: 'main.css'
         )->mimetype()
     )->toBe(

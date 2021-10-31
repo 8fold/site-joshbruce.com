@@ -45,6 +45,11 @@ class FileSystem
     public function folderPath(bool $full = true): string
     {
         if ($full) {
+            if ($this->isNotFile() or $this->fileName() === 'content.md') {
+                return $this->contentRoot .
+                    '/content' .
+                    $this->folderPath(false);
+            }
             return $this->contentRoot . $this->folderPath;
         }
         return $this->folderPath;
@@ -80,29 +85,16 @@ class FileSystem
 
     public function filePath(): string
     {
-        if ($this->isNotFile()) {
+        $folderPath = $this->folderPath();
+        if (str_ends_with($folderPath, '/') or $folderPath === '/') {
+            $folderPath = substr($folderPath, 0, -1);
+        }
+
+        if ($this->isNotFile() or $this->fileName() === 'content.md') {
             return $this->folderPath() . '/content.md';
         }
 
-        $folderMap = [
-            '/css'    => '/.assets/styles',
-            '/js'     => '/.assets/scripts',
-            '/assets' => '/.assets'
-        ];
-
-        $path  = str_replace($this->contentRoot, '', $this->folderPath());
-        $parts = explode('/', $path);
-        $parts = array_filter($parts);
-        $first = array_shift($parts);
-
-        $folderMapKey  = '/' . $first;
-
-        $path = $this->folderPath() . '/' . $this->fileName();
-        if (array_key_exists($folderMapKey, $folderMap)) {
-            $replace = $folderMap[$folderMapKey];
-            $path = str_replace($folderMapKey, $replace, $path);
-
-        }
+        $path = $folderPath . '/' . $this->fileName();
         return $path;
     }
 
@@ -168,7 +160,7 @@ class FileSystem
         if (! is_dir($folderPath)) {
             return [];
         }
-        $folderPath = str_replace($this->contentRoot, '', $folderPath);
+        $folderPath = str_replace($this->contentRoot . '/content', '', $folderPath);
 
         $folderPathParts = explode('/', $folderPath);
 
