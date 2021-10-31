@@ -41,7 +41,6 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-
         $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
         $nav  = Content::init(file: $file)->frontMatter();
         $nav = $nav['navigation'];
@@ -77,7 +76,7 @@ class Navigation implements Buildable, Stringable
         }
         return HtmlElement::nav(
             HtmlElement::ul(...$li)
-        )->build();
+        )->props('id main-nav')->build();
     }
 
     public function __toString(): string
