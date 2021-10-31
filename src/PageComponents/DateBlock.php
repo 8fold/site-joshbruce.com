@@ -16,6 +16,9 @@ class DateBlock
     public static function create(array $frontMatter): string
     {
         $updated = '';
+        // FrontMatter::create()
+        // $frontMatter->has('updated')
+        // $frontMatter->updated()
         if (
             array_key_exists('updated', $frontMatter) and
             $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated'])
