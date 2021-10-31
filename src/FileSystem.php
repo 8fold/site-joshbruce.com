@@ -166,7 +166,7 @@ class FileSystem
         $folderPathParts = explode('/', $folderPath);
 
         $folders = [];
-        while (count($folderPathParts) > 1) {
+        while (count($folderPathParts) > 0) {
             $path = implode('/', $folderPathParts);
 
             $clone = clone $this;
