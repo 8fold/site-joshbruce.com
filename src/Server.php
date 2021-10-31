@@ -48,6 +48,12 @@ class Server
             if (! array_key_exists($key, $this->serverGlobals)) {
                 return true;
             }
+
+            if ($key === 'REQUEST_URI') {
+                $uri = $this->serverGlobals['REQUEST_URI'];
+                $parts = explode('?', $uri);
+                $this->serverGlobals['REQUEST_URI'] = array_shift($parts);
+            }
         }
 
         if ($this->serverGlobals['APP_ENV'] !== 'production') {
