@@ -42,7 +42,7 @@ class Navigation implements Buildable, Stringable
     private function navigation(): array
     {
 
-        $file = $this->file->with(folderPath: '/.navigation', fileName: 'main.md');
+        $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
         $nav  = Content::init(file: $file)->frontMatter();
         $nav = $nav['navigation'];
         if (is_array($nav)) {

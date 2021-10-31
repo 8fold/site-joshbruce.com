@@ -17,7 +17,7 @@ class HeadElements
     {
         $headElements   = Favicons::create();
         $headElements[] = HtmlElement::link()
-            ->props('rel stylesheet', 'href /css/main.min.css');
+            ->props('rel stylesheet', 'href /assets/css/main.min.css');
         return $headElements;
     }
 }

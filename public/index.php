@@ -65,7 +65,7 @@ $fileSystem = $fileSystem->with(
 );
 
 if ($fileSystem->notFound()) {
-    $fileSystem = $fileSystem->with('/.errors', '404.md');
+    $fileSystem = $fileSystem->with('/errors', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
         $markdownConverter,
         $fileSystem
