@@ -12,7 +12,7 @@ class Footer
     {
         return HtmlElement::footer(
             HtmlElement::p(
-                'Copyright © 2004–' . date('Y') . 'Joshua C. Bruce. ' .
+                'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
                     'All rights reserved.'
             )
         );
