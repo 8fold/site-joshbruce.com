@@ -10,24 +10,21 @@ use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content\Markdown;
+use JoshBruce\Site\Content\FrontMatter;
 
 class OriginalContentNotice
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
     public static function create(
-        array $frontMatter,
-        // MarkdownConverter $markdownConverter,
+        FrontMatter $frontMatter,
         FileSystem $fileSystem
     ): string {
         $file = $fileSystem->with('/messages', 'original.md');
         if (
-            array_key_exists('original', $frontMatter) and
+            $frontMatter->hasMember('original') and
             $file->found() and
             $markdown = Markdown::init($file)->markdown()
         ) {
-            list($link, $platform) = explode(' ', $frontMatter['original'], 2);
+            list($link, $platform) = explode(' ', $frontMatter->original(), 2);
             $originalLink = "[{$platform}]({$link})";
             $markdown = str_replace(
                 '{{platform link}}',

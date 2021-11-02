@@ -8,19 +8,14 @@ use Carbon\Carbon;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class Data
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
-    public static function create(array $frontMatter): HtmlElement|string
+    public static function create(FrontMatter $frontMatter): HtmlElement|string
     {
-        if (! array_key_exists('data', $frontMatter)) {
-            return '';
-        }
-
         $listHeadings = [];
-        foreach ($frontMatter['data'] as $row) {
+        foreach ($frontMatter->data() as $row) {
             $label   = $row[0];
             $current = $row[3];
             $low     = $row[1];

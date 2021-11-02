@@ -34,6 +34,14 @@ class FrontMatter
         return '';
     }
 
+    public function header(): string
+    {
+        if ($this->hasMember('header')) {
+            return $this->frontMatter['header'];
+        }
+        return '';
+    }
+
     /**
      * @return array<int, string>
      */
@@ -49,6 +57,57 @@ class FrontMatter
     {
         if ($this->hasMember('redirect')) {
             return $this->frontMatter['redirect'];
+        }
+        return '';
+    }
+
+    /**
+     * @return array<int, int[]>
+     */
+    public function data(): array
+    {
+        if ($this->hasMember('data')) {
+            return $this->frontMatter['data'];
+        }
+        return [];
+    }
+
+    public function original(): string
+    {
+        if ($this->hasMember('original')) {
+            return $this->frontMatter['original'];
+        }
+        return '';
+    }
+
+    public function type(): string
+    {
+        if ($this->hasMember('type')) {
+            return $this->frontMatter['type'];
+        }
+        return '';
+    }
+
+    public function created(): string
+    {
+        if ($this->hasMember('created')) {
+            return $this->frontMatter['created'];
+        }
+        return '';
+    }
+
+    public function updated(): string
+    {
+        if ($this->hasMember('updated')) {
+            return $this->frontMatter['updated'];
+        }
+        return '';
+    }
+
+    public function moved(): string
+    {
+        if ($this->hasMember('moved')) {
+            return $this->frontMatter['moved'];
         }
         return '';
     }

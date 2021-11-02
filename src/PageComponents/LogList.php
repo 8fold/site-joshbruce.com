@@ -9,16 +9,17 @@ use Eightfold\HTMLBuilder\Element as HtmlElement;
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content\Markdown;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class LogList
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
-    public static function create(array $frontMatter, FileSystem $file): string
-    {
+    public static function create(
+        FrontMatter $frontMatter,
+        FileSystem $file
+    ): string {
         if (
-            array_key_exists('type', $frontMatter) and
-            $frontMatter['type'] === 'log'
+            $frontMatter->hasMember('type') and
+            $frontMatter->type() === 'log'
         ) {
             $contents = $file->subfolders('content.md');
             krsort($contents);

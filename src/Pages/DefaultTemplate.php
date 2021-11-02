@@ -19,12 +19,11 @@ use JoshBruce\Site\PageComponents\LogList;
 use JoshBruce\Site\PageComponents\Navigation;
 use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class DefaultTemplate
 {
-    /**
-     * @var array<string, mixed>
-     */
-    private array $frontMatter = [];
+    private FrontMatter $frontMatter;
 
     private string $markdownBody = '';
 
@@ -132,14 +131,12 @@ class DefaultTemplate
         return $this->markdownBody;
     }
 
-    /**
-     * @return array<string, mixed>
-     */
-    private function frontMatter(): array
+    private function frontMatter(): FrontMatter
     {
-        if (count($this->frontMatter) === 0) {
-            $this->frontMatter = $this->markdownConverter
+        if (! isset($this->frontMatter)) {
+            $frontMatter = $this->markdownConverter
                 ->getFrontMatter($this->markdown->markdown());
+            $this->frontMatter = FrontMatter::init($frontMatter);
         }
         return $this->frontMatter;
     }

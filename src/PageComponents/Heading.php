@@ -4,17 +4,16 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class Heading
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
-    public static function create(array $frontMatter): string
+    public static function create(FrontMatter $frontMatter): string
     {
-        if (array_key_exists('header', $frontMatter)) {
-            return "# {$frontMatter['header']}";
+        if ($frontMatter->hasMember('header')) {
+            return "# {$frontMatter->header()}";
 
         }
-        return "# {$frontMatter['title']}";
+        return "# {$frontMatter->title()}";
     }
 }
