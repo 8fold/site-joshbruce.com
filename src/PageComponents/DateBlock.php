@@ -38,6 +38,9 @@ class DateBlock
             ->props('is dateblock')->build();
     }
 
+    /**
+     * @param array<string, mixed> $frontMatter
+     */
     private static function timestamp(
         array $frontMatter,
         string $key,
