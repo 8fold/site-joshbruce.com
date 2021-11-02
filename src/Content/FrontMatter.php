@@ -29,7 +29,7 @@ class FrontMatter
     public function title(): string
     {
         if ($this->hasMember('title')) {
-            return $this->frontMatter['title'];
+            return strval($this->frontMatter['title']);
         }
         return '';
     }
@@ -37,7 +37,7 @@ class FrontMatter
     public function header(): string
     {
         if ($this->hasMember('header')) {
-            return $this->frontMatter['header'];
+            return strval($this->frontMatter['header']);
         }
         return '';
     }
@@ -56,7 +56,7 @@ class FrontMatter
     public function redirectPath(): string
     {
         if ($this->hasMember('redirect')) {
-            return $this->frontMatter['redirect'];
+            return strval($this->frontMatter['redirect']);
         }
         return '';
     }
@@ -75,7 +75,7 @@ class FrontMatter
     public function original(): string
     {
         if ($this->hasMember('original')) {
-            return $this->frontMatter['original'];
+            return strval($this->frontMatter['original']);
         }
         return '';
     }
@@ -83,32 +83,32 @@ class FrontMatter
     public function type(): string
     {
         if ($this->hasMember('type')) {
-            return $this->frontMatter['type'];
+            return strval($this->frontMatter['type']);
         }
         return '';
     }
 
-    public function created(): string
+    public function created(): int|false
     {
         if ($this->hasMember('created')) {
-            return $this->frontMatter['created'];
+            return intval($this->frontMatter['created']);
         }
-        return '';
+        return false;
     }
 
-    public function updated(): string
+    public function updated(): int|false
     {
         if ($this->hasMember('updated')) {
-            return $this->frontMatter['updated'];
+            return intval($this->frontMatter['updated']);
         }
-        return '';
+        return false;
     }
 
-    public function moved(): string
+    public function moved(): int|false
     {
         if ($this->hasMember('moved')) {
-            return $this->frontMatter['moved'];
+            return intval($this->frontMatter['moved']);
         }
-        return '';
+        return false;
     }
 }

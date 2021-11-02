@@ -37,14 +37,14 @@ class DateBlock
 
     private static function timestamp(
         string $label,
-        string $date = '',
+        int|false $date = false,
         string $schemaProp = ''
     ): HtmlElement|string {
-        if (strlen($date) === 0) {
+        if (! $date) {
             return '';
         }
 
-        if ($carbon = Carbon::createFromFormat('Ymd', $date)) {
+        if ($carbon = Carbon::createFromFormat('Ymd', strval($date))) {
             $time = HtmlElement::time($carbon->toFormattedDateString())
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
