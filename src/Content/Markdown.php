@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site;
+namespace JoshBruce\Site\Content;
 
 use DirectoryIterator;
 
-use Eightfold\Markdown\Markdown;
+use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use JoshBruce\Site\FileSystem;
 
-class Content
+class Markdown
 {
     private string $markdown = '';
 
@@ -19,9 +19,9 @@ class Content
      */
     private array $frontMatter = [];
 
-    public static function init(FileSystem $file): Content
+    public static function init(FileSystem $file): Markdown
     {
-        return new Content($file);
+        return new Markdown($file);
     }
 
     public function __construct(private FileSystem $file)
@@ -53,7 +53,8 @@ class Content
                 $markdown = $this->markdown();
             }
 
-            $this->frontMatter = Markdown::create()->getFrontMatter($markdown);
+            $this->frontMatter = MarkdownConverter::create()
+                ->getFrontMatter($markdown);
         }
         return $this->frontMatter;
     }

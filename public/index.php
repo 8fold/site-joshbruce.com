@@ -78,9 +78,9 @@ if ($server->isRequestingFile()) {
     exit;
 }
 
-$content = JoshBruce\Site\Content::init($fileSystem);
-if ($content->hasMoved()) {
-    $location = $server->domain() . $content->redirectPath();
+$markdown = JoshBruce\Site\Content\Markdown::init($fileSystem);
+if ($markdown->hasMoved()) {
+    $location = $server->domain() . $markdown->redirectPath();
     JoshBruce\Site\Emitter::emitRedirectionResponse($location);
     exit;
 }
@@ -88,7 +88,7 @@ if ($content->hasMoved()) {
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     $fileSystem,
     $markdownConverter,
-    $content
+    $markdown
 );
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());

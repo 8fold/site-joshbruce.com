@@ -7,7 +7,7 @@ namespace JoshBruce\Site\PageComponents;
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
 
 class LogList
 {
@@ -25,11 +25,11 @@ class LogList
             $logLinks = [];
             foreach ($contents as $key => $f) {
                 if (! str_starts_with(strval($key), '_') and $f->found()) {
-                    $content = Content::init($f);
+                    $markdown = Markdown::init($f);
 
                     $logLinks[] = HtmlElement::li(
                         HtmlElement::a(
-                            $content->frontMatter()['title']
+                            $markdown->frontMatter()['title']
                         )->props('href ' . $f->folderPath(full: false))
                     );
                 }

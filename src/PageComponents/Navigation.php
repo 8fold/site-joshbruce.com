@@ -10,7 +10,7 @@ use Eightfold\XMLBuilder\Contracts\Buildable;
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
 
 class Navigation implements Buildable, Stringable
 {
@@ -42,7 +42,7 @@ class Navigation implements Buildable, Stringable
     private function navigation(): array
     {
         $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
-        $nav  = Content::init(file: $file)->frontMatter();
+        $nav  = Markdown::init(file: $file)->frontMatter();
         $nav = $nav['navigation'];
         if (is_array($nav)) {
             return $nav;

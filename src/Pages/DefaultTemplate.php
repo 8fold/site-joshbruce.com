@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Pages;
 
-use Eightfold\Markdown\Markdown;
+use Eightfold\Markdown\Markdown as MarkdownConverter;
 use Eightfold\HTMLBuilder\Element;
 use Eightfold\HTMLBuilder\Document;
 
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
 use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
 use JoshBruce\Site\PageComponents\Footer;
@@ -30,16 +30,16 @@ class DefaultTemplate
 
     public static function create(
         FileSystem $file,
-        Markdown $markdownConverter,
-        Content $content
+        MarkdownConverter $markdownConverter,
+        Markdown $markdown
     ): DefaultTemplate {
-        return new DefaultTemplate($file, $markdownConverter, $content);
+        return new DefaultTemplate($file, $markdownConverter, $markdown);
     }
 
     public function __construct(
         private FileSystem $file,
-        private Markdown $markdownConverter,
-        private Content $content
+        private MarkdownConverter $markdownConverter,
+        private Markdown $markdown
     ) {
         $this->markdownConverter = $markdownConverter
             ->withConfig(['html_input' => 'allow'])
@@ -73,7 +73,7 @@ class DefaultTemplate
         $originalLink = OriginalContentNotice::create(
             frontMatter: $this->frontMatter(),
             fileSystem: $this->file,
-            markdownConverter: $this->markdownConverter
+            // markdownConverter: $this->markdownConverter
         );
         $body = $originalLink . "\n\n" . $body;
 
@@ -116,7 +116,8 @@ class DefaultTemplate
                 $file->folderPath(full: false),
                 'content.md'
             );
-            $titles[] = Content::init($fileContent)->frontMatter()['title'];
+            $titles[] = Markdown::init($fileContent)
+                ->frontMatter()['title'];
         }
         return implode(' | ', $titles);
     }
@@ -125,7 +126,7 @@ class DefaultTemplate
     {
         if (strlen($this->markdownBody) === 0) {
             $this->markdownBody = $this->markdownConverter->getBody(
-                $this->content->markdown()
+                $this->markdown->markdown()
             );
         }
         return $this->markdownBody;
@@ -138,7 +139,7 @@ class DefaultTemplate
     {
         if (count($this->frontMatter) === 0) {
             $this->frontMatter = $this->markdownConverter
-                ->getFrontMatter($this->content->markdown());
+                ->getFrontMatter($this->markdown->markdown());
         }
         return $this->frontMatter;
     }

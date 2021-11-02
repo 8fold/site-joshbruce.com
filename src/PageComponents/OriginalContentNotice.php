@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Eightfold\Markdown\Markdown;
+use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
 
 class OriginalContentNotice
 {
@@ -18,14 +18,14 @@ class OriginalContentNotice
      */
     public static function create(
         array $frontMatter,
-        Markdown $markdownConverter,
+        // MarkdownConverter $markdownConverter,
         FileSystem $fileSystem
     ): string {
         $file = $fileSystem->with('/messages', 'original.md');
         if (
             array_key_exists('original', $frontMatter) and
             $file->found() and
-            $markdown = Content::init($file)->markdown()
+            $markdown = Markdown::init($file)->markdown()
         ) {
             list($link, $platform) = explode(' ', $frontMatter['original'], 2);
             $originalLink = "[{$platform}]({$link})";
