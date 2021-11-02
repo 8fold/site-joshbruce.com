@@ -42,12 +42,7 @@ class Navigation implements Buildable, Stringable
     private function navigation(): array
     {
         $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
-        $nav  = Markdown::init(file: $file)->frontMatter()->navigation();
-        // $nav = $nav['navigation'];
-        // if (is_array($nav)) {
-        //     return $nav;
-        // }
-        return [];
+        return Markdown::init(file: $file)->frontMatter()->navigation();
     }
 
     public function build(): string

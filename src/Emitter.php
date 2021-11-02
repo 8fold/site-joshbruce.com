@@ -83,9 +83,7 @@ class Emitter
                 ]
             ],
             Document::create(
-                $markdownConverter->getFrontMatter(
-                    $markdown->markdown()
-                )['title']
+                $markdown->frontMatter()->title()
             )->body(
                 $markdownConverter->convert($markdown->markdown())
             )->build()
@@ -114,9 +112,7 @@ class Emitter
                 'Allow' => $server->supportedMethods()
             ],
             Document::create(
-                $markdownConverter->getFrontMatter(
-                    $markdown->markdown()
-                )['title']
+                $markdown->frontMatter()->title()
             )->body(
                 $markdownConverter->convert($markdown->markdown())
             )->build()
@@ -143,9 +139,7 @@ class Emitter
                 ]
             ],
             Document::create(
-                $markdownConverter->getFrontMatter(
-                    $markdown->markdown()
-                )['title']
+                $markdown->frontMatter()->title()
             )->body(
                 $markdownConverter->convert($markdown->markdown())
             )->build()
@@ -167,9 +161,7 @@ class Emitter
                 ]
             ],
             Document::create(
-                $markdownConverter->getFrontMatter(
-                    $markdown->markdown()
-                )['title']
+                $markdown->frontMatter()->title()
             )->body(
                 $markdownConverter->convert($markdown->markdown())
             )->build()

@@ -39,7 +39,7 @@ class FrontMatter
      */
     public function navigation(): array
     {
-        if ($this->hasMember('title')) {
+        if ($this->hasMember('navigation')) {
             return $this->frontMatter['navigation'];
         }
         return [];
