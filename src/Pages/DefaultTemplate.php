@@ -117,7 +117,7 @@ class DefaultTemplate
                 'content.md'
             );
             $titles[] = Markdown::init($fileContent)
-                ->frontMatter()['title'];
+                ->frontMatter()->title();
         }
         return implode(' | ', $titles);
     }

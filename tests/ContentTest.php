@@ -1,18 +1,38 @@
 <?php
 
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
 
-// beforeEach(function() {
-//     // This somewhat unreadable one-liner basically creates a fully qualified
-//     // path to the root of the project, without using relative syntax
-//     $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+use JoshBruce\Site\FileSystem;
 
-//     $this->baseContent = Content::init(
-//         projectRoot: $projectRoot,
-//         contentUp: 0,
-//         contentFolder: '/tests/test-content'
-//     );
-// });
+use JoshBruce\Site\Content\FrontMatter;
+
+beforeEach(function() {
+    // This somewhat unreadable one-liner basically creates a fully qualified
+    // path to the root of the project, without using relative syntax
+    $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+
+    $this->contentRoot = $this->projectRoot . '/tests/test-content';
+
+    $this->fileSystem = FileSystem::init(
+        contentRoot: $this->contentRoot,
+        folderPath: '/tests/test-content'
+    );
+
+    $this->file = $this->fileSystem->with(
+        folderPath: '',
+        fileName: 'content.md'
+    );
+});
+
+it('can return front matter', function() {
+    expect(
+        Markdown::init($this->file)->frontMatter()
+    )->toBeInstanceOf(
+        FrontMatter::class
+    );
+});
+
+
 
 // it('has correct mimetypes', function() {
 //     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/

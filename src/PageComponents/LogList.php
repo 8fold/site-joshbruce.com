@@ -29,7 +29,7 @@ class LogList
 
                     $logLinks[] = HtmlElement::li(
                         HtmlElement::a(
-                            $markdown->frontMatter()['title']
+                            $markdown->frontMatter()->title() // ['title']
                         )->props('href ' . $f->folderPath(full: false))
                     );
                 }
