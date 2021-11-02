@@ -10,13 +10,14 @@ use Eightfold\HTMLBuilder\Document;
 
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
-use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
-use JoshBruce\Site\PageComponents\Heading;
-use JoshBruce\Site\PageComponents\LogList;
 use JoshBruce\Site\PageComponents\Footer;
 use JoshBruce\Site\PageComponents\HeadElements;
-use JoshBruce\Site\PageComponents\Data;
+use JoshBruce\Site\PageComponents\Heading;
+use JoshBruce\Site\PageComponents\LogList;
+use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
 class DefaultTemplate
 {
@@ -42,9 +43,10 @@ class DefaultTemplate
     ) {
         $this->markdownConverter = $markdownConverter
             ->withConfig(['html_input' => 'allow'])
-            ->externalLinks()
             ->abbreviations()
-            ->headingPermalinks(
+            ->externalLinks([
+                'open_in_new_window' => true
+            ])->headingPermalinks(
                 [
                     'min_heading_level' => 2,
                     'symbol' => '＃'
@@ -67,8 +69,18 @@ class DefaultTemplate
         $body = $this->markdown();
         $body = Data::create(frontMatter: $this->frontMatter()) .
             "\n\n" . $body;
+
+        $originalLink = OriginalContentNotice::create(
+            frontMatter: $this->frontMatter(),
+            fileSystem: $this->file,
+            markdownConverter: $this->markdownConverter
+        );
+        $body = $originalLink . "\n\n" . $body;
+
         $body = DateBlock::create(frontMatter: $this->frontMatter()) .
             "\n\n" . $body;
+
+
 
         if ($this->file->isNotRoot()) {
             $body = Heading::create(frontMatter: $this->frontMatter()) .

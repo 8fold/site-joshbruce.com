@@ -13,7 +13,7 @@ require $projectRoot . '/vendor/autoload.php';
  * Regardless of what happens next, we'll need a baseline markdown converter.
  */
 $markdownConverter = Eightfold\Markdown\Markdown::create()
-    ->minified()
+    ->minified() // can't be minified due to code blocks
     ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
