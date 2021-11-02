@@ -10,12 +10,14 @@ use Eightfold\HTMLBuilder\Document;
 
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content;
-use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
-use JoshBruce\Site\PageComponents\Heading;
-use JoshBruce\Site\PageComponents\LogList;
 use JoshBruce\Site\PageComponents\Footer;
 use JoshBruce\Site\PageComponents\HeadElements;
+use JoshBruce\Site\PageComponents\Heading;
+use JoshBruce\Site\PageComponents\LogList;
+use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
 class DefaultTemplate
 {
@@ -41,7 +43,15 @@ class DefaultTemplate
     ) {
         $this->markdownConverter = $markdownConverter
             ->withConfig(['html_input' => 'allow'])
-            ->tables()->externalLinks();
+            ->abbreviations()
+            ->externalLinks([
+                'open_in_new_window' => true
+            ])->headingPermalinks(
+                [
+                    'min_heading_level' => 2,
+                    'symbol' => '＃'
+                ],
+            );
     }
 
     /**
@@ -57,9 +67,25 @@ class DefaultTemplate
     public function body(): string
     {
         $body = $this->markdown();
-        $body = DateBlock::create(frontMatter: $this->frontMatter()) . $body;
-        $body = Heading::create(frontMatter: $this->frontMatter()) . "\n\n" .
-            $body;
+        $body = Data::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+
+        $originalLink = OriginalContentNotice::create(
+            frontMatter: $this->frontMatter(),
+            fileSystem: $this->file,
+            markdownConverter: $this->markdownConverter
+        );
+        $body = $originalLink . "\n\n" . $body;
+
+        $body = DateBlock::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+
+
+
+        if ($this->file->isNotRoot()) {
+            $body = Heading::create(frontMatter: $this->frontMatter()) .
+                "\n\n" . $body;
+        }
 
         $body = $body . "\n\n" . LogList::create(
             $this->frontMatter(),
@@ -71,10 +97,12 @@ class DefaultTemplate
         )->head(
             ...HeadElements::create()
         )->body(
-            Navigation::create($this->file)->build(),
+            Element::a('menu')->props('href #main-nav', 'id content-top'),
             Element::article(
                 $this->markdownConverter->convert($body)
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
+            Element::a('top')->props('href #content-top', 'id go-to-top'),
+            Navigation::create($this->file)->build(),
             Footer::create()
         )->build();
     }

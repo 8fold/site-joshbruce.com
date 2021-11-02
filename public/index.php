@@ -13,7 +13,7 @@ require $projectRoot . '/vendor/autoload.php';
  * Regardless of what happens next, we'll need a baseline markdown converter.
  */
 $markdownConverter = Eightfold\Markdown\Markdown::create()
-    ->minified()
+    ->minified() // can't be minified due to code blocks
     ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
@@ -54,9 +54,9 @@ if ($fileSystem->rootFolderIsMissing()) {
 
 // TESTING: Redirection
 // Check browser address becomes /design-your-life
-// if ($server->requestUri() !== '/design-your-life') {
+// if ($server->requestUriWithoutFileName() !== '/design-your-life') {
 //     $_SERVER['REQUEST_URI'] = '/self-improvement';
-//     $server = JoshBruce\Site\Server::init($_SERVER);
+//     $server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 // }
 
 $fileSystem = $fileSystem->with(

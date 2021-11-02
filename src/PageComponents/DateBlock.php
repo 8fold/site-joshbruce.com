@@ -15,39 +15,49 @@ class DateBlock
      */
     public static function create(array $frontMatter): string
     {
-        $updated = '';
-        // FrontMatter::create()
-        // $frontMatter->has('updated')
-        // $frontMatter->updated()
-        if (
-            array_key_exists('updated', $frontMatter) and
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['updated'])
-        ) {
-            $time = HtmlElement::time($carbon->toFormattedDateString())
-                ->props(
-                    'property dateModified',
-                    'content ' . $carbon->format('Y-m-d')
-                )->build();
-            $updated = HtmlElement::p("Updated on: {$time}");
-        }
+        $created = self::timestamp(
+            $frontMatter,
+            'created',
+            'Created on',
+            'dateCreated'
+        );
 
-        $created = '';
-        if (
-            array_key_exists('created', $frontMatter) and
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter['created'])
-        ) {
-            $time = HtmlElement::time($carbon->toFormattedDateString())
-                ->props(
-                    'property dateCreated',
-                    'content ' . $carbon->format('Y-m-d')
-                )->build();
-            $created = HtmlElement::p("Created on: {$time}");
-        }
+        $moved = self::timestamp($frontMatter, 'moved', 'Moved on');
 
-        if (empty($updated) and empty($created)) {
+        $updated = self::timestamp(
+            $frontMatter,
+            'updated',
+            'Updated on',
+            'dateModified'
+        );
+
+        if (empty($updated) and empty($moved) and empty($created)) {
             return '';
         }
-        return HtmlElement::div($created, $updated)
+        return HtmlElement::div($created, $moved, $updated)
             ->props('is dateblock')->build();
+    }
+
+    /**
+     * @param array<string, mixed> $frontMatter
+     */
+    private static function timestamp(
+        array $frontMatter,
+        string $key,
+        string $label,
+        string $schemaProp = ''
+    ): HtmlElement|string {
+        if (
+            array_key_exists($key, $frontMatter) and
+            $carbon = Carbon::createFromFormat('Ymd', $frontMatter[$key])
+        ) {
+            $time = HtmlElement::time($carbon->toFormattedDateString())
+                ->props(
+                    (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
+                    'content ' . $carbon->format('Y-m-d')
+                )->build();
+            return HtmlElement::p("{$label}: {$time}");
+        }
+        return '';
     }
 }

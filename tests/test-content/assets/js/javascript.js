@@ -1,1 +1,1 @@
-javascript.js
+function something() {}
