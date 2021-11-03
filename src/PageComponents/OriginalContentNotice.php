@@ -4,30 +4,27 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Eightfold\Markdown\Markdown;
+use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content;
+use JoshBruce\Site\Content\Markdown;
+use JoshBruce\Site\Content\FrontMatter;
 
 class OriginalContentNotice
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
     public static function create(
-        array $frontMatter,
-        Markdown $markdownConverter,
+        FrontMatter $frontMatter,
         FileSystem $fileSystem
     ): string {
         $file = $fileSystem->with('/messages', 'original.md');
         if (
-            array_key_exists('original', $frontMatter) and
+            $frontMatter->hasMember('original') and
             $file->found() and
-            $markdown = Content::init($file)->markdown()
+            $markdown = Markdown::init($file)->markdown()
         ) {
-            list($link, $platform) = explode(' ', $frontMatter['original'], 2);
+            list($link, $platform) = explode(' ', $frontMatter->original(), 2);
             $originalLink = "[{$platform}]({$link})";
             $markdown = str_replace(
                 '{{platform link}}',

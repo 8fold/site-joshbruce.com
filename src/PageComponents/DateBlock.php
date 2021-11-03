@@ -8,26 +8,23 @@ use Carbon\Carbon;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class DateBlock
 {
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
-    public static function create(array $frontMatter): string
+    public static function create(FrontMatter $frontMatter): string
     {
         $created = self::timestamp(
-            $frontMatter,
-            'created',
             'Created on',
+            $frontMatter->created(),
             'dateCreated'
         );
 
-        $moved = self::timestamp($frontMatter, 'moved', 'Moved on');
+        $moved = self::timestamp('Moved on', $frontMatter->moved());
 
         $updated = self::timestamp(
-            $frontMatter,
-            'updated',
             'Updated on',
+            $frontMatter->updated(),
             'dateModified'
         );
 
@@ -38,19 +35,16 @@ class DateBlock
             ->props('is dateblock')->build();
     }
 
-    /**
-     * @param array<string, mixed> $frontMatter
-     */
     private static function timestamp(
-        array $frontMatter,
-        string $key,
         string $label,
+        int|false $date = false,
         string $schemaProp = ''
     ): HtmlElement|string {
-        if (
-            array_key_exists($key, $frontMatter) and
-            $carbon = Carbon::createFromFormat('Ymd', $frontMatter[$key])
-        ) {
+        if (! $date) {
+            return '';
+        }
+
+        if ($carbon = Carbon::createFromFormat('Ymd', strval($date))) {
             $time = HtmlElement::time($carbon->toFormattedDateString())
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',

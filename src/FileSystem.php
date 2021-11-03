@@ -6,12 +6,14 @@ namespace JoshBruce\Site;
 
 use DirectoryIterator;
 
+use JoshBruce\Site\Content\FrontMatter;
+
 class FileSystem
 {
     /**
-     * @var array<string, mixed>
+     * @var FrontMatter
      */
-    private array $frontMatter = [];
+    private FrontMatter $frontMatter;
 
     public static function init(
         string $contentRoot,
