@@ -30,9 +30,44 @@ Right now some of the sites I maintain use [Laravel](https://laravel.com), which
 
 I plan to remove the dependency on Laravel and FlySystem for all the sites I maintain unless explicitly asked. As most of the sites I maintain no longer require databases or direct authentication and even one of the maintainers of FlySystem said it creates more overhead than it's worth when only working in local files, I think we're good.
 
-I was experimenting with a lot of other approaches for decoupling and wrapping over the last few years. I've run into a few issues with this and versioning. This version collision and the performance degredations it caused has led me to flag many of these other libraries for deprecation and abandonment. As this writing, we have 5 required libraries. Generally speaking they have no common dependencies and I maintain two of them.
+I was experimenting with a lot of other approaches for decoupling and wrapping over the last few years. I've run into a few issues with this and versioning. This version collision and the performance degradations it caused has led me to flag many of these other libraries for deprecation and abandonment. As this writing, we have 5 required libraries. Generally speaking they have no common dependencies and I maintain two of them.
 
 This frees me up a great deal to move about the cabin as I see fit.
+
+## Analysis
+
+The mission of this build is to be quick and considerate. I can't trust that my experience is the experience of someone else; there are too many variables.
+
+Is my internet connection better? Is my hardware better? Is the content cached? Is the server closer to me than another person?
+
+My host lets me use one of two servers. One is on the eastern half of the United States and the other is on the western half.
+
+The following is a list of tools and targets.
+
+Regardless of settings or page, I want page load times to be 3 seconds or less. Pages to test:
+
+1. https://joshbruce.com (short content, minimal assets and media)
+2. https://joshbruce.com/web-development/2021-site-in-depth (long content, images)
+3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth (long content, iframes)
+
+- Dynamic content generation: Once the site is running, it SHOULD return a response in less than 150ms.
+- [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
+	1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 89
+		- SEO is low because we lack the description meta tag.
+	2. Performance - 99, Accessibility - 95, Best practices - 100, SEO - 90
+		- Accessibility is low due to permalink inclusion using aria-hidden true.
+		- SEO is low because we lack the description meta tag.
+	3. **Performance - 99, Accessibility - 89, Best practices - 100, SEO - 89**
+		- Accessibility is low due to permalink inclusion use aria-hidden true AND `iframe` lacks title attribute.
+		- SEO is low because we lack the description meta tag.
+- [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
+	1. Grade A, Load time 1.54s
+	2. Grade A, Load time 2.1s
+	3. **Grade B, Load time 3.42s**
+- [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
+	1. Grade A, Load time 1.24s
+	2. Grade B, Load time 2.9s
+	3. Grade A, Load time 2.53s
 
 ## History
 
