@@ -5,7 +5,7 @@ One of my favorite principles from The Manifesto for Agile Software Development 
 
 ## Work I did not do
 
-1. Admin panel: Over the years, I've created a fair amount of content maanagement systems and methods for making updating websites easier for non-developers. Most of the code I wrote had to do with administration. Whether it was beating out-of-the-box content management systems into submission or creating my onw. I can avoid this by leveraging other platforms.
+1. Admin panel: Over the years, I've created a fair amount of content management systems and methods for making updating websites easier for non-developers. Most of the code I wrote had to do with administration. Whether it was beating out-of-the-box content management systems into submission or creating my own. I can avoid this by leveraging other platforms.
 2. Authentication:  Most of the security issues and concerns involved authenticating users. Instead, I'm hoping to avoid this by leveraging the authentication of platforms for source control, social media, and chat clients.
 3. Database connection: Beyond the admin panel and authentication, database connections and querying accounting for the bulk of defects and code. Using a flat-file system, I don't need to create a database connection. Further, the method of content creation solves a few other problems.
 4. No transformation: Some of the code I've written has to do with transforming user input into web-safe data (ex. Titles to slugs for the URL). The flat-file method being used reduces the need for this.
@@ -20,7 +20,7 @@ On the one hand, leveraging libraries, packages, and frameworks created and main
 
 For example:
 
-As of October 28th, 2021, I'm listed as a maintainer of [Marked](https://github.com/markedjs/marked). This happened because a library I wanted to use, used Marked. Not only that, but it always used the latest version of Marked. A denial of service vulnerability was discovered and Marked had fallen into disrepair and it didn't seem like the maintainer of the library I directly wanated to use wanted to switch to the something different. After a little back-and-forth figuring out how to do it (first time "taking over" a project) and [a bit of a ruckus](https://github.com/markedjs/marked/issues/1522) in the community, a small group formed to become the core team and to be stewards of the codebase for a community-led project. The core also serves to increase the developer experience.
+As of October 28th, 2021, I'm listed as a maintainer of [Marked](https://github.com/markedjs/marked). This happened because a library I wanted to use, used Marked. Not only that, but it always used the latest version of Marked. A denial of service vulnerability was discovered and Marked had fallen into disrepair and it didn't seem like the maintainer of the library I directly wanted to use wanted to switch to the something different. After a little back-and-forth figuring out how to do it (first time "taking over" a project) and [a bit of a ruckus](https://github.com/markedjs/marked/issues/1522) in the community, a small group formed to become the core team and to be stewards of the codebase for a community-led project. The core also serves to increase the developer experience.
 
 Marked fixed the vulnerabilities and the community and library have been pushing forward ever since.
 
@@ -28,9 +28,44 @@ Right now some of the sites I maintain use [Laravel](https://laravel.com), which
 
 I plan to remove the dependency on Laravel and FlySystem for all the sites I maintain unless explicitly asked. As most of the sites I maintain no longer require databases or direct authentication and even one of the maintainers of FlySystem said it creates more overhead than it's worth when only working in local files, I think we're good.
 
-I was experimenting with a lot of other approaches for decoupling and wrapping over the last few years. I've run into a few issues with this and versioning. This version collision and the performance degredations it caused has led me to flag many of these other libraries for deprecation and abandonment. As this writing, we have 5 required libraries. Generally speaking they have no common dependencies and I maintain two of them.
+I was experimenting with a lot of other approaches for decoupling and wrapping over the last few years. I've run into a few issues with this and versioning. This version collision and the performance degradations it caused has led me to flag many of these other libraries for deprecation and abandonment. As this writing, we have 5 required libraries. Generally speaking they have no common dependencies and I maintain two of them.
 
 This frees me up a great deal to move about the cabin as I see fit.
+
+## Analysis
+
+The mission of this build is to be quick and considerate. I can't trust that my experience is the experience of someone else; there are too many variables.
+
+Is my internet connection better? Is my hardware better? Is the content cached? Is the server closer to me than another person?
+
+My host lets me use one of two servers. One is on the eastern half of the United States and the other is on the western half.
+
+The following is a list of tools and targets.
+
+Regardless of settings or page, I want page load times to be 3 seconds or less. Pages to test:
+
+1. https://joshbruce.com (short content, minimal assets and media)
+2. https://joshbruce.com/web-development/2021-site-in-depth (long content, images)
+3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth (long content, iframes)
+
+- Dynamic content generation: Once the site is running, it SHOULD return a response in less than 150ms.
+- [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
+	1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 89
+		- SEO is low because we lack the description meta tag.
+	2. Performance - 99, Accessibility - 95, Best practices - 100, SEO - 90
+		- Accessibility is low due to permalink inclusion using aria-hidden true.
+		- SEO is low because we lack the description meta tag.
+	3. **Performance - 99, Accessibility - 89, Best practices - 100, SEO - 89**
+		- Accessibility is low due to permalink inclusion use aria-hidden true AND `iframe` lacks title attribute.
+		- SEO is low because we lack the description meta tag.
+- [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
+	1. Grade A, Load time 1.54s
+	2. Grade A, Load time 2.1s
+	3. **Grade B, Load time 3.42s**
+- [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
+	1. Grade A, Load time 1.24s
+	2. Grade B, Load time 2.9s
+	3. Grade A, Load time 2.53s
 
 ## History
 
