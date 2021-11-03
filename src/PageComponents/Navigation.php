@@ -55,6 +55,9 @@ class Navigation implements Buildable, Stringable
         $li = [];
         $nav = $this->navigation();
         foreach ($nav as $item) {
+            // TODO: Not sure this constitutes an elegant solution
+            //       but I can't seem to find another way.
+            $item = str_replace('\\', ',', $item);
             if (is_string($item)) {
                 $li[] = $this->listItem(for: $item);
 
