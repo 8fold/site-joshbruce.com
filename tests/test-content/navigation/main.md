@@ -9,7 +9,8 @@ navigation: [
 		/design-your-life/motivators Motivators
 	], [
 	    /software-development Software development,
-	    /software-development/why-dont-you-use Why don't you use
+	    /software-development/why-dont-you-use Why don't you use,
+		/somethig-with-commas Some\ commas\ and whatnot
 	]
 ]
 ---
