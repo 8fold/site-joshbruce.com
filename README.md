@@ -69,6 +69,15 @@ Regardless of settings or page, I want page load times to be 3 seconds or less. 
 	2. Grade B, Load time 2.9s
 	3. Grade A, Load time 2.53s
 
+## Running locally
+
+1. Clone the repository.
+2. Start a PHP server environment; recommend:
+	- [MAMP](https://www.mamp.info/en/mamp-pro/windows/),
+	- [XAMPP](https://www.apachefriends.org/download.html), or
+	- custom build.
+3. Point the locally hosted domain to the public directory.
+
 ## History
 
 The primary way to view the history of this project is to look at the [releases](https://github.com/8fold/site-joshbruce.com/releases). The name of each is release indicates the total time spent writing the code found here.
