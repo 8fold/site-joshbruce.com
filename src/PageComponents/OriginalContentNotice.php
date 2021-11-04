@@ -15,25 +15,23 @@ use JoshBruce\Site\Content\FrontMatter;
 class OriginalContentNotice
 {
     public static function create(
-        FrontMatter $frontMatter,
-        FileSystem $fileSystem
+        string $copyContent,
+        string $messagePath,
+        string $originalLink
     ): string {
-        $file = $fileSystem->with('/messages', 'original.md');
-        if (
-            $frontMatter->hasMember('original') and
-            $file->found() and
-            $markdown = Markdown::init($file)->markdown()
-        ) {
-            list($link, $platform) = explode(' ', $frontMatter->original(), 2);
-            $originalLink = "[{$platform}]({$link})";
-            $markdown = str_replace(
-                '{{platform link}}',
-                $originalLink,
-                $markdown
-            );
-
-            return $markdown;
+        if (empty($copyContent)) {
+            return '';
         }
-        return '';
+
+        list($link, $platform) = explode(' ', $originalLink, 2);
+        $originalLink = "[{$platform}]({$link})";
+
+        $markdown = str_replace(
+            '{{platform link}}',
+            $originalLink,
+            $copyContent
+        );
+
+        return $markdown;
     }
 }

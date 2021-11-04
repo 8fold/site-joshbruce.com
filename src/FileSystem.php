@@ -42,7 +42,10 @@ class FileSystem
     public function folderPath(bool $full = true): string
     {
         if ($full) {
-            if (str_contains($this->folderPath(false), 'navigation')) {
+            if (
+                str_contains($this->folderPath(false), 'navigation') or
+                str_contains($this->folderPath(false), 'messages')
+            ) {
                 return $this->contentRoot . $this->folderPath(false);
             }
             return $this->contentRoot .
