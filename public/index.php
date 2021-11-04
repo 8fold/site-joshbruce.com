@@ -2,19 +2,12 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
 require $projectRoot . '/vendor/autoload.php';
-
-/**
- * Regardless of what happens next, we'll need a baseline markdown converter.
- */
-$markdownConverter = Eightfold\Markdown\Markdown::create()
-    ->minified() // can't be minified due to code blocks
-    ->smartPunctuation();
 
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
@@ -23,7 +16,7 @@ $server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
     JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
     exit;
@@ -31,7 +24,7 @@ if ($server->isMissingRequiredValues()) {
 
 if ($server->isRequestingUnsupportedMethod()) {
     JoshBruce\Site\Emitter::emitUnsupportedMethodResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot,
         $server
     );
@@ -46,7 +39,7 @@ $fileSystem = JoshBruce\Site\FileSystem::init(
 
 if ($fileSystem->rootFolderIsMissing()) {
     JoshBruce\Site\Emitter::emitBadContentResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
     exit;
@@ -65,9 +58,9 @@ $fileSystem = $fileSystem->with(
 );
 
 if ($fileSystem->notFound()) {
-    $fileSystem = $fileSystem->with('/errors', '404.md');
+    $fileSystem = $fileSystem->with('/content', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
     );
     exit;
@@ -86,9 +79,10 @@ if ($markdown->hasMoved()) {
 }
 
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
-    $fileSystem,
-    $markdownConverter,
-    $markdown
+    JoshBruce\Site\Content\Markdown::init($fileSystem)->convert(),
+    $fileSystem->mimeType(),
+    $fileSystem->folderStack(),
+    $fileSystem->contentRoot()
 );
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
