@@ -14,12 +14,12 @@ use JoshBruce\Site\Content\Markdown;
 
 class Navigation implements Buildable, Stringable
 {
-    public static function create(FileSystem $file): Navigation
+    public static function create(string $contentRoot): Navigation
     {
-        return new Navigation($file);
+        return new Navigation($contentRoot);
     }
 
-    public function __construct(private FileSystem $file)
+    public function __construct(private string $contentRoot)
     {
     }
 
@@ -41,7 +41,9 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-        $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
+        $file = FileSystem::init($this->contentRoot)
+            ->with(folderPath: '/navigation', fileName: 'main.md');
+        // $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
         return Markdown::init(file: $file)->frontMatter()->navigation();
     }
 

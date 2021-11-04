@@ -42,12 +42,12 @@ class FileSystem
     public function folderPath(bool $full = true): string
     {
         if ($full) {
-            if ($this->isNotFile() or $this->fileName() === 'content.md') {
-                return $this->contentRoot .
-                    '/content' .
-                    $this->folderPath(false);
+            if (str_contains($this->folderPath(false), 'navigation')) {
+                return $this->contentRoot . $this->folderPath(false);
             }
-            return $this->contentRoot . $this->folderPath;
+            return $this->contentRoot .
+                '/content' .
+                $this->folderPath(false);
         }
         return $this->folderPath;
     }
@@ -64,10 +64,15 @@ class FileSystem
 
     public function rootFolderIsMissing(): bool
     {
-        if (! file_exists($this->contentRoot)) {
+        if (! file_exists($this->contentRoot())) {
             return true;
         }
-        return ! is_dir($this->contentRoot);
+        return ! is_dir($this->contentRoot());
+    }
+
+    public function contentRoot(): string
+    {
+        return $this->contentRoot;
     }
 
     public function isFile(): bool
@@ -83,7 +88,7 @@ class FileSystem
     private function isRoot(): bool
     {
         $subtract = str_replace(
-            $this->contentRoot . '/content',
+            $this->contentRoot() . '/content',
             '',
             $this->folderPath()
         );
@@ -145,11 +150,11 @@ class FileSystem
         $content = [];
         foreach (new DirectoryIterator($folderPath) as $folder) {
             if ($folder->isFile() or $folder->isDot()) {
-                // I feel continue should be named next or something.
                 continue;
             }
+
             $path = str_replace(
-                $this->contentRoot . '/content',
+                $this->contentRoot() . '/content',
                 '',
                 $folder->getPathname()
             );
@@ -173,7 +178,7 @@ class FileSystem
         if (! is_dir($folderPath)) {
             return [];
         }
-        $folderPath = str_replace($this->contentRoot . '/content', '', $folderPath);
+        $folderPath = str_replace($this->contentRoot() . '/content', '', $folderPath);
 
         $folderPathParts = explode('/', $folderPath);
 

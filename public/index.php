@@ -79,9 +79,10 @@ if ($markdown->hasMoved()) {
 }
 
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
-    $fileSystem,
-    JoshBruce\Site\Content\Markdown::markdownConverter(),
-    $markdown
+    JoshBruce\Site\Content\Markdown::init($fileSystem)->convert(),
+    $fileSystem->mimeType(),
+    $fileSystem->folderStack(),
+    $fileSystem->contentRoot()
 );
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
