@@ -86,10 +86,14 @@ class Markdown
                 "\n\n" . $body;
         }
 
-        $body = $body . "\n\n" . LogList::create(
-            $this->frontMatter(),
-            $this->file
-        );
+        if (
+            $this->frontMatter()->hasMember('type') and
+            $this->frontMatter()->type() === 'log'
+        ) {
+            $body = $body . "\n\n" . LogList::create(
+                $this->file->subfolders('content.md')
+            );
+        }
 
         return self::markdownConverter()->convert($body);
     }
