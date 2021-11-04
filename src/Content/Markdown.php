@@ -60,10 +60,22 @@ class Markdown
         $body = Data::create(frontMatter: $this->frontMatter()) .
             "\n\n" . $body;
 
-        $originalLink = OriginalContentNotice::create(
-            frontMatter: $this->frontMatter(),
-            fileSystem: $this->file,
-        );
+        $originalLink = '';
+        $copy = $this->file->with('/messages', 'original.md');
+        if (
+            $this->frontMatter()->hasMember('original') and
+            $copy->found()
+        ) {
+            $copyContent = file_get_contents($copy->filePath());
+            if (is_string($copyContent)) {
+                $originalLink = OriginalContentNotice::create(
+                    copyContent: $copyContent,
+                    messagePath: $copy->filePath(),
+                    originalLink: $this->frontMatter()->original()
+                );
+            }
+        }
+
         $body = $originalLink . "\n\n" . $body;
 
         $body = DateBlock::create(frontMatter: $this->frontMatter()) .
@@ -74,10 +86,14 @@ class Markdown
                 "\n\n" . $body;
         }
 
-        $body = $body . "\n\n" . LogList::create(
-            $this->frontMatter(),
-            $this->file
-        );
+        if (
+            $this->frontMatter()->hasMember('type') and
+            $this->frontMatter()->type() === 'log'
+        ) {
+            $body = $body . "\n\n" . LogList::create(
+                $this->file->subfolders('content.md')
+            );
+        }
 
         return self::markdownConverter()->convert($body);
     }

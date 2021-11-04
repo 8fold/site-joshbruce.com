@@ -13,30 +13,29 @@ use JoshBruce\Site\Content\FrontMatter;
 
 class LogList
 {
+    /**
+     * @param FileSystem[] $fileSubfolders
+     */
     public static function create(
-        FrontMatter $frontMatter,
-        FileSystem $file
+        array $fileSubfolders
     ): string {
-        if (
-            $frontMatter->hasMember('type') and
-            $frontMatter->type() === 'log'
-        ) {
-            $contents = $file->subfolders('content.md');
-            krsort($contents);
-            $logLinks = [];
-            foreach ($contents as $key => $f) {
-                if (! str_starts_with(strval($key), '_') and $f->found()) {
-                    $markdown = Markdown::init($f);
-
-                    $logLinks[] = HtmlElement::li(
-                        HtmlElement::a(
-                            $markdown->frontMatter()->title() // ['title']
-                        )->props('href ' . $f->folderPath(full: false))
-                    );
-                }
-            }
-            return HtmlElement::ul(...$logLinks)->build();
+        if (count($fileSubfolders) === 0) {
+            return '';
         }
-        return '';
+
+        krsort($fileSubfolders);
+        $logLinks = [];
+        foreach ($fileSubfolders as $key => $f) {
+            if (! str_starts_with(strval($key), '_') and $f->found()) {
+                $markdown = Markdown::init($f);
+
+                $logLinks[] = HtmlElement::li(
+                    HtmlElement::a(
+                        $markdown->frontMatter()->title() // ['title']
+                    )->props('href ' . $f->folderPath(full: false))
+                );
+            }
+        }
+        return HtmlElement::ul(...$logLinks)->build();
     }
 }
