@@ -44,7 +44,8 @@ class FileSystem
         if ($full) {
             if (
                 str_contains($this->folderPath(false), 'navigation') or
-                str_contains($this->folderPath(false), 'messages')
+                str_contains($this->folderPath(false), 'messages') or
+                str_contains($this->folderPath(false), 'media')
             ) {
                 return $this->contentRoot . $this->folderPath(false);
             }
