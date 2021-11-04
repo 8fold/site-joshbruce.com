@@ -30,7 +30,10 @@
     "nyholm/psr7": "^1.4",
     "laminas/laminas-httphandlerrunner": "^2.1",
     "filp/whoops": "^2.14",
-    "nesbot/carbon": "^2.53"
+    "nesbot/carbon": "^2.53",
+    "symfony/console": "^5.3",
+    "symfony/finder": "^5.3",
+    "league/flysystem": "^2.3"
   },
   "scripts": {
     "prod": "@production",
