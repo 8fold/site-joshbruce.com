@@ -2,19 +2,14 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
 require $projectRoot . '/vendor/autoload.php';
 
-/**
- * Regardless of what happens next, we'll need a baseline markdown converter.
- */
-$markdownConverter = Eightfold\Markdown\Markdown::create()
-    ->minified() // can't be minified due to code blocks
-    ->smartPunctuation();
+$markdownConverter = JoshBruce\Site\Content\Markdown::markdownConverter();
 
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
