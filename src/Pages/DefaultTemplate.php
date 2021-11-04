@@ -18,6 +18,9 @@ use JoshBruce\Site\Content\FrontMatter;
 
 class DefaultTemplate
 {
+    /**
+     * @param FileSystem[] $folderStack
+     */
     public static function create(
         string $body,
         string $mimeType, // should always be 'text/html'
@@ -27,6 +30,9 @@ class DefaultTemplate
         return new DefaultTemplate($body, $mimeType, $folderStack, $file);
     }
 
+    /**
+     * @param FileSystem[] $folderStack
+     */
     public function __construct(
         private string $body,
         private string $mimeType,
