@@ -64,10 +64,15 @@ class FileSystem
 
     public function rootFolderIsMissing(): bool
     {
-        if (! file_exists($this->contentRoot)) {
+        if (! file_exists($this->contentRoot())) {
             return true;
         }
-        return ! is_dir($this->contentRoot);
+        return ! is_dir($this->contentRoot());
+    }
+
+    public function contentRoot(): string
+    {
+        return $this->contentRoot;
     }
 
     public function isFile(): bool
@@ -83,7 +88,7 @@ class FileSystem
     private function isRoot(): bool
     {
         $subtract = str_replace(
-            $this->contentRoot . '/content',
+            $this->contentRoot() . '/content',
             '',
             $this->folderPath()
         );
@@ -149,7 +154,7 @@ class FileSystem
             }
 
             $path = str_replace(
-                $this->contentRoot . '/content',
+                $this->contentRoot() . '/content',
                 '',
                 $folder->getPathname()
             );
@@ -173,7 +178,7 @@ class FileSystem
         if (! is_dir($folderPath)) {
             return [];
         }
-        $folderPath = str_replace($this->contentRoot . '/content', '', $folderPath);
+        $folderPath = str_replace($this->contentRoot() . '/content', '', $folderPath);
 
         $folderPathParts = explode('/', $folderPath);
 

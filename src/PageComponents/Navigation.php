@@ -14,17 +14,25 @@ use JoshBruce\Site\Content\Markdown;
 
 class Navigation implements Buildable, Stringable
 {
-    /**
-     * @todo: file is only used because it stores the project and content roots
-     */
-    public static function create(FileSystem $file): Navigation
+    public static function create(string $contentRoot): Navigation
     {
-        return new Navigation($file);
+        return new Navigation($contentRoot);
     }
 
-    public function __construct(private FileSystem $file)
+    public function __construct(private string $contentRoot)
     {
     }
+    /**
+     * @todo: file is only used because it stores the content
+     */
+//     public static function create(FileSystem $file): Navigation
+//     {
+//         return new Navigation($file);
+//     }
+//
+//     public function __construct(private FileSystem $file)
+//     {
+//     }
 
     private function listItem(string $for): HtmlElement
     {
@@ -44,7 +52,9 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-        $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
+        $file = FileSystem::init($this->contentRoot)
+            ->with(folderPath: '/navigation', fileName: 'main.md');
+        // $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');
         return Markdown::init(file: $file)->frontMatter()->navigation();
     }
 

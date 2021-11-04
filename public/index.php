@@ -82,7 +82,7 @@ $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     JoshBruce\Site\Content\Markdown::init($fileSystem)->convert(),
     $fileSystem->mimeType(),
     $fileSystem->folderStack(),
-    $fileSystem
+    $fileSystem->contentRoot()
 );
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
