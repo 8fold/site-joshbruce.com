@@ -22,17 +22,6 @@ class Navigation implements Buildable, Stringable
     public function __construct(private string $contentRoot)
     {
     }
-    /**
-     * @todo: file is only used because it stores the content
-     */
-//     public static function create(FileSystem $file): Navigation
-//     {
-//         return new Navigation($file);
-//     }
-//
-//     public function __construct(private FileSystem $file)
-//     {
-//     }
 
     private function listItem(string $for): HtmlElement
     {

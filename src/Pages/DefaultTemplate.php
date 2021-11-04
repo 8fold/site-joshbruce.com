@@ -25,15 +25,13 @@ class DefaultTemplate
         string $body,
         string $mimeType, // should always be 'text/html'
         array $folderStack, // for page title
-        string $contentRoot,
-        // FileSystem $file
+        string $contentRoot
     ): DefaultTemplate {
         return new DefaultTemplate(
             $body,
             $mimeType,
             $folderStack,
-            $contentRoot,
-            // $file
+            $contentRoot
         );
     }
 
@@ -45,11 +43,6 @@ class DefaultTemplate
         private string $mimeType,
         private array $folderStack,
         private string $contentRoot,
-        // TODO:
-        // passed to:
-        //      navigation - could be removed if navigation could instantiate
-        //                   a FileSystem instance with the content root
-        // private FileSystem $file,
     ) {
     }
 
@@ -76,7 +69,6 @@ class DefaultTemplate
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::a('top')->props('href #content-top', 'id go-to-top'),
             Navigation::create($this->contentRoot)->build(),
-            // Navigation::create($this->file)->build(),
             Footer::create()
         )->build();
     }
