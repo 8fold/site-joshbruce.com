@@ -14,6 +14,9 @@ use JoshBruce\Site\Content\Markdown;
 
 class Navigation implements Buildable, Stringable
 {
+    /**
+     * @todo: file is only used because it stores the project and content roots
+     */
     public static function create(FileSystem $file): Navigation
     {
         return new Navigation($file);
