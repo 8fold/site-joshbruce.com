@@ -9,8 +9,6 @@ $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
 require $projectRoot . '/vendor/autoload.php';
 
-$markdownConverter = JoshBruce\Site\Content\Markdown::markdownConverter();
-
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
@@ -18,7 +16,7 @@ $server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
     JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
     exit;
@@ -26,7 +24,7 @@ if ($server->isMissingRequiredValues()) {
 
 if ($server->isRequestingUnsupportedMethod()) {
     JoshBruce\Site\Emitter::emitUnsupportedMethodResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot,
         $server
     );
@@ -41,7 +39,7 @@ $fileSystem = JoshBruce\Site\FileSystem::init(
 
 if ($fileSystem->rootFolderIsMissing()) {
     JoshBruce\Site\Emitter::emitBadContentResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
     exit;
@@ -60,9 +58,9 @@ $fileSystem = $fileSystem->with(
 );
 
 if ($fileSystem->notFound()) {
-    $fileSystem = $fileSystem->with('/errors', '404.md');
+    $fileSystem = $fileSystem->with('/content', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
-        $markdownConverter,
+        JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
     );
     exit;
@@ -82,7 +80,7 @@ if ($markdown->hasMoved()) {
 
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     $fileSystem,
-    $markdownConverter,
+    JoshBruce\Site\Content\Markdown::markdownConverter(),
     $markdown
 );
 
