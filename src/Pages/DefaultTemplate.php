@@ -40,17 +40,6 @@ class DefaultTemplate
         private MarkdownConverter $markdownConverter,
         private Markdown $markdown
     ) {
-        // $this->markdownConverter = $markdownConverter
-        //     ->withConfig(['html_input' => 'allow'])
-        //     ->abbreviations()
-        //     ->externalLinks([
-        //         'open_in_new_window' => true
-        //     ])->headingPermalinks(
-        //         [
-        //             'min_heading_level' => 2,
-        //             'symbol' => '＃'
-        //         ],
-        //     );
     }
 
     /**

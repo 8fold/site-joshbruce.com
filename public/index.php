@@ -9,8 +9,6 @@ $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
 require $projectRoot . '/vendor/autoload.php';
 
-// $markdownConverter = JoshBruce\Site\Content\Markdown::markdownConverter();
-
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
