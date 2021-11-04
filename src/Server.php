@@ -9,8 +9,6 @@ use Whoops\Handler\PrettyPageHandler;
 
 class Server
 {
-    private string $contentFolderRoot = '';
-
     /**
      * @param  array<string, string> $serverGlobals
      */

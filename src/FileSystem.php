@@ -10,11 +10,6 @@ use JoshBruce\Site\Content\FrontMatter;
 
 class FileSystem
 {
-    /**
-     * @var FrontMatter
-     */
-    private FrontMatter $frontMatter;
-
     public static function init(
         string $contentRoot,
         string $folderPath = '/',
