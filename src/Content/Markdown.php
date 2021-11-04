@@ -26,6 +26,23 @@ class Markdown
         return new Markdown($file);
     }
 
+    public static function markdownConverter(): MarkdownConverter
+    {
+        return MarkdownConverter::create()
+            ->minified() // can't be minified due to code blocks
+            ->smartPunctuation()
+            ->withConfig(['html_input' => 'allow'])
+            ->abbreviations()
+            ->externalLinks([
+                'open_in_new_window' => true
+            ])->headingPermalinks(
+                [
+                    'min_heading_level' => 2,
+                    'symbol' => '＃'
+                ],
+            );
+    }
+
     public function __construct(private FileSystem $file)
     {
     }
