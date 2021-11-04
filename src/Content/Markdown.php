@@ -10,6 +10,12 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use JoshBruce\Site\FileSystem;
 
+use JoshBruce\Site\PageComponents\Data;
+use JoshBruce\Site\PageComponents\DateBlock;
+use JoshBruce\Site\PageComponents\Heading;
+use JoshBruce\Site\PageComponents\LogList;
+use JoshBruce\Site\PageComponents\OriginalContentNotice;
+
 use JoshBruce\Site\Content\FrontMatter;
 
 class Markdown
@@ -47,6 +53,35 @@ class Markdown
     {
     }
 
+    public function convert(): string
+    {
+        // TODO: cache as property
+        $body = self::markdownConverter()->getBody($this->markdown());
+        $body = Data::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+
+        $originalLink = OriginalContentNotice::create(
+            frontMatter: $this->frontMatter(),
+            fileSystem: $this->file,
+        );
+        $body = $originalLink . "\n\n" . $body;
+
+        $body = DateBlock::create(frontMatter: $this->frontMatter()) .
+            "\n\n" . $body;
+
+        if ($this->file->isNotRoot()) {
+            $body = Heading::create(frontMatter: $this->frontMatter()) .
+                "\n\n" . $body;
+        }
+
+        $body = $body . "\n\n" . LogList::create(
+            $this->frontMatter(),
+            $this->file
+        );
+
+        return self::markdownConverter()->convert($body);
+    }
+
     public function markdown(): string
     {
         if (strlen($this->markdown) === 0 and $this->file->found()) {
@@ -61,20 +96,29 @@ class Markdown
         return $this->markdown;
     }
 
+    /**
+     * @todo: test
+     */
     public function frontMatter(): FrontMatter
     {
         if (! isset($this->frontMatter)) {
-            $markdown = '';
-            if (strlen($this->markdown) === 0) {
-                $markdown = $this->markdown();
-            }
-
-            $frontMatter = MarkdownConverter::create()
-                ->getFrontMatter($markdown);
-
+            $frontMatter = self::markdownConverter()
+                ->getFrontMatter($this->markdown());
             $this->frontMatter = FrontMatter::init($frontMatter);
         }
         return $this->frontMatter;
+//         if (! isset($this->frontMatter)) {
+//             $markdown = '';
+//             if (strlen($this->markdown) === 0) {
+//                 $markdown = $this->markdown();
+//             }
+//
+//             $frontMatter = MarkdownConverter::create()
+//                 ->getFrontMatter($markdown);
+//
+//             $this->frontMatter = FrontMatter::init($frontMatter);
+//         }
+//         return $this->frontMatter;
     }
 
     public function hasMoved(): bool
