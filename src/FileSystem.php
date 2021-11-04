@@ -45,12 +45,9 @@ class FileSystem
             if (str_contains($this->folderPath(false), 'navigation')) {
                 return $this->contentRoot . $this->folderPath(false);
             }
-            // if ($this->isNotFile() or $this->fileName() === 'content.md') {
-                return $this->contentRoot .
-                    '/content' .
-                    $this->folderPath(false);
-            // }
-            // return $this->contentRoot . $this->folderPath;
+            return $this->contentRoot .
+                '/content' .
+                $this->folderPath(false);
         }
         return $this->folderPath;
     }
@@ -148,9 +145,9 @@ class FileSystem
         $content = [];
         foreach (new DirectoryIterator($folderPath) as $folder) {
             if ($folder->isFile() or $folder->isDot()) {
-                // I feel continue should be named next or something.
                 continue;
             }
+
             $path = str_replace(
                 $this->contentRoot . '/content',
                 '',

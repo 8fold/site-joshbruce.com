@@ -107,18 +107,6 @@ class Markdown
             $this->frontMatter = FrontMatter::init($frontMatter);
         }
         return $this->frontMatter;
-//         if (! isset($this->frontMatter)) {
-//             $markdown = '';
-//             if (strlen($this->markdown) === 0) {
-//                 $markdown = $this->markdown();
-//             }
-//
-//             $frontMatter = MarkdownConverter::create()
-//                 ->getFrontMatter($markdown);
-//
-//             $this->frontMatter = FrontMatter::init($frontMatter);
-//         }
-//         return $this->frontMatter;
     }
 
     public function hasMoved(): bool

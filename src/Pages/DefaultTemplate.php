@@ -21,19 +21,19 @@ class DefaultTemplate
     public static function create(
         string $body,
         string $mimeType, // should always be 'text/html'
+        array $folderStack, // for page title
         FileSystem $file
     ): DefaultTemplate {
-        return new DefaultTemplate($body, $mimeType, $file);
+        return new DefaultTemplate($body, $mimeType, $folderStack, $file);
     }
 
     public function __construct(
         private string $body,
         private string $mimeType,
+        private array $folderStack,
         // TODO:
         // passed to:
         //      navigation
-        // while building markdown to be converted:
-        //      folder stack used to build page title
         private FileSystem $file,
     ) {
     }
@@ -67,9 +67,8 @@ class DefaultTemplate
 
     private function pageTitle(): string
     {
-        $contents = $this->file->folderStack();
         $titles = [];
-        foreach ($contents as $file) {
+        foreach ($this->folderStack as $file) {
             $fileContent = $file->with(
                 $file->folderPath(full: false),
                 'content.md'

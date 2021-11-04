@@ -57,7 +57,6 @@ $fileSystem = $fileSystem->with(
     fileName: $server->requestFileName()
 );
 
-// die(var_dump($fileSystem->filePath()));
 if ($fileSystem->notFound()) {
     $fileSystem = $fileSystem->with('/content', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
@@ -82,9 +81,8 @@ if ($markdown->hasMoved()) {
 $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     JoshBruce\Site\Content\Markdown::init($fileSystem)->convert(),
     $fileSystem->mimeType(),
+    $fileSystem->folderStack(),
     $fileSystem
-    // JoshBruce\Site\Content\Markdown::markdownConverter(),
-    // $markdown
 );
 
 JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
