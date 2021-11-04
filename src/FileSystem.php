@@ -42,12 +42,15 @@ class FileSystem
     public function folderPath(bool $full = true): string
     {
         if ($full) {
-            if ($this->isNotFile() or $this->fileName() === 'content.md') {
+            if (str_contains($this->folderPath(false), 'navigation')) {
+                return $this->contentRoot . $this->folderPath(false);
+            }
+            // if ($this->isNotFile() or $this->fileName() === 'content.md') {
                 return $this->contentRoot .
                     '/content' .
                     $this->folderPath(false);
-            }
-            return $this->contentRoot . $this->folderPath;
+            // }
+            // return $this->contentRoot . $this->folderPath;
         }
         return $this->folderPath;
     }
