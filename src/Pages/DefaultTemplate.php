@@ -78,7 +78,7 @@ class DefaultTemplate
         $titles = [];
         foreach ($this->folderStack as $file) {
             $fileContent = $file->with(
-                $file->folderPath(full: false),
+                $file->path(full: false),
                 'content.md'
             );
             $titles[] = Markdown::init($fileContent)

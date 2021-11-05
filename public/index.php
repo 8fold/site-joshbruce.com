@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
@@ -58,7 +58,7 @@ $fileSystem = $fileSystem->with(
 );
 
 if ($fileSystem->notFound()) {
-    $fileSystem = $fileSystem->with('/content', '404.md');
+    $fileSystem = $fileSystem->with('/', '404.md');
     JoshBruce\Site\Emitter::emitNotFoundResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
@@ -67,7 +67,10 @@ if ($fileSystem->notFound()) {
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitFile($fileSystem->mimeType(), $fileSystem->filePath());
+    JoshBruce\Site\Emitter::emitFile(
+        $fileSystem->mimeType(),
+        $fileSystem->path()
+    );
     exit;
 }
 

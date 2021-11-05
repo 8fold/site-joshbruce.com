@@ -11,12 +11,11 @@ beforeEach(function() {
     // path to the root of the project, without using relative syntax
     $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
-    $this->contentRoot = $this->projectRoot . '/tests/test-content';
+    serverGlobals();
 
-    $this->fileSystem = FileSystem::init(
-        contentRoot: $this->contentRoot,
-        folderPath: '/tests/test-content'
-    );
+    $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
+
+    $this->fileSystem = FileSystem::init($this->contentRoot);
 });
 
 test('navigation', function() {
