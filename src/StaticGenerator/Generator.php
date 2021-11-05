@@ -27,19 +27,18 @@ class Generator
     public static function init(
         OutputInterface $output,
         string $contentRoot,
-        string $destination = ''
+        string $destination
     ): Generator {
-        $compiler = new Generator($output, $contentRoot, $destination);
-        return $compiler->compile();
+        return new Generator($output, $contentRoot, $destination);
     }
 
     public function __construct(
         private OutputInterface $output,
         private string $contentRoot,
-        private string $destination = ''
+        private string $destination
     ) {
-        if (isset($_SERVER['APP_NAV'])) {
-            $this->isNotTesting = $_SERVER['APP_NAV'] !== 'testing';
+        if (isset($_SERVER['APP_ENV'])) {
+            $this->isNotTesting = $_SERVER['APP_ENV'] !== 'testing';
         }
         // $this->markdownConverter = MarkdownConverter::create()
         //     ->minified() // can't be minified due to code blocks
@@ -109,6 +108,8 @@ class Generator
 
     private function compileContentFileFor(string $contentRootPath): void
     {
+        $destinationPath = $this->contentDestinationPathFor($contentRootPath);
+
         $parts = explode('/content/', $contentRootPath, 2);
         $root = array_shift($parts);
         array_unshift($parts, '');
@@ -138,8 +139,6 @@ class Generator
             $file->folderStack(),
             $root
         );
-
-        $destinationPath = $this->contentDestinationPathFor($contentRootPath);
 
         $this->leagueFileSystem()->write($destinationPath, $content->body());
 
@@ -183,7 +182,7 @@ class Generator
 
     private function markdownConverter(): MarkdownConverter
     {
-        return $this->markdownConverter;
+        return Markdown::markdownConverter();
     }
 
     private function leagueFileSystem(): LeagueFilesystem
