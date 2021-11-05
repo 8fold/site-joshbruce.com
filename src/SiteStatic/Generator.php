@@ -46,7 +46,10 @@ class Generator
         $this->compilingDidStartMessage($this->contentRoot, $this->destination);
 
         $finder = new Finder();
-        $finder = $finder->in($this->contentRoot);
+        $finder = $finder->ignoreVCS(false)
+            ->ignoreUnreadableDirs()
+            ->ignoreDotFiles(false)
+            ->in($this->contentRoot);
         foreach ($finder as $found) {
             $path = (string) $found;
             if (strpos($path, '_') > 0 or $found->isDir()) {
@@ -118,10 +121,11 @@ class Generator
         return $this->destination . $relativePath;
     }
 
-    private function copyFileFor(string $contentRootPath): void
+    private function copyFileFor(string $path): void
     {
-        $destinationPath = $this->fileDestinationPathFor($contentRootPath);
-        $this->leagueFileSystem()->copy($contentRootPath, $destinationPath);
+        $destinationPath = $this->fileDestinationPathFor($path);
+        $this->leagueFileSystem()->copy($path, $destinationPath);
+        $this->sourceFileCopiedMessage($path, $destinationPath);
     }
 
     /**
@@ -168,6 +172,19 @@ class Generator
         $this->output()->writeln(<<<bash
 
             Converted:
+                {$contentPath} to
+                {$destinationPath}
+            bash
+        );
+    }
+
+    private function sourceFileCopiedMessage(
+        string $contentPath,
+        string $destinationPath
+    ): void {
+        $this->output()->writeln(<<<bash
+
+            Copied:
                 {$contentPath} to
                 {$destinationPath}
             bash
