@@ -1,11 +1,68 @@
-One of my favorite principles from The Manifesto for Agile Software Development is:
+The code found here is able to generate the same (or really close to it) site using multiple styles. Each style is held inside a directory; the names start with "Site." Each style has an associated read me file (listed in order of creation):
 
-> Simplicity--the art of maximizing the amount
-> of work not done--is essential.
+1. [Dynamic PHP: single-page, server-side](https://github.com/8fold/site-joshbruce.com/blob/main/src/SiteDynamic/README.md)
+2. [Static HTML](https://github.com/8fold/site-joshbruce.com/blob/main/src/SiteStatic/README.md)
 
 The content is also available in a [separate repository](https://github.com/joshbruce/content-joshbruce.com) before it gets published.
 
-## Work I did not do
+## Running locally
+
+1. Clone the repository.
+2. Start a PHP server environment; recommend:
+	- [MAMP](https://www.mamp.info/en/mamp-pro/windows/),
+	- [XAMPP](https://www.apachefriends.org/download.html), or
+	- custom build.
+3. Point the locally hosted domain to the `public` directory.
+
+When you go to the locally hosted URL, it should throw a 500 server error. This is because you will need two things: the content folder and a `.env` file.
+
+Let's start with the content folder; using the content for joshbruce.com:
+
+1. Clone the [content repository](https://github.com/joshbruce/content-joshbruce.com).
+	- It's recommended this be outside the site project folder.
+
+That's pretty much it for that piece. Navigate back to the root of the site project and crate a `.env` file with the following parameters:
+
+```bash
+APP_ENV=local
+CONTENT_UP=#
+CONTENT_FOLDER=/path/to/inner/content/folder
+```
+
+Let's presume the following folder structure on your machine:
+
+```bash
+.
+└── Desktop/
+	├── site-joshbruce.com
+	└── content-joshbruce.com
+```
+
+Your `.env` file would look like this:
+
+```bash
+APP_ENV=local
+CONTENT_UP=1
+CONTENT_FOLDER=/content-joshbruce.com/content
+```
+
+This `.env` file tells us to go up one directory; to `Desktop` in this example. Then, from there, point to `/content-joshbruce.com/content`, which is where our text-based content lives.
+
+## History
+
+1. GitHub [releases](https://github.com/8fold/site-joshbruce.com/releases) go from now back to roughly October 28th, 2021.
+2. The [SUPER_DETAILS.md](https://github.com/8fold/site-joshbruce.com/blob/main/SUPER_DETAILS.md) file will cover prior to that.
+3. The [commit history](https://github.com/8fold/site-joshbruce.com/commits/main) and [closed pull requests](https://github.com/8fold/site-joshbruce.com/pulls?q=is%3Apr+is%3Aclosed) are also a possibility.
+
+## Other
+
+One of my favorite principles from The Manifesto for Agile Software Development is:
+
+> Simplicity--the art of maximizing the amount
+>
+> of work not done--is essential.
+
+### Work I did not do
 
 1. Admin panel: Over the years, I've created a fair amount of content management systems and methods for making updating websites easier for non-developers. Most of the code I wrote had to do with administration. Whether it was beating out-of-the-box content management systems into submission or creating my own. I can avoid this by leveraging other platforms.
 2. Authentication:  Most of the security issues and concerns involved authenticating users. Instead, I'm hoping to avoid this by leveraging the authentication of platforms for source control, social media, and chat clients.
@@ -14,7 +71,7 @@ The content is also available in a [separate repository](https://github.com/josh
 5. I did not use a router: Because this strategy is file- and path-based, the URL path *is* the query for content. There may be minimal checking for templates (controllers), but we're not there yet.
 6. I did not write any HTML: Not even for templates.
 
-## Minimal dependencies
+### Minimal dependencies
 
 There's a double-edged sword here.
 
@@ -34,7 +91,7 @@ I was experimenting with a lot of other approaches for decoupling and wrapping o
 
 This frees me up a great deal to move about the cabin as I see fit.
 
-## Analysis
+### Analysis
 
 The mission of this build is to be quick and considerate. I can't trust that my experience is the experience of someone else; there are too many variables.
 
@@ -68,23 +125,4 @@ Regardless of settings or page, I want page load times to be 3 seconds or less. 
 	1. Grade A, Load time 1.24s
 	2. Grade B, Load time 2.9s
 	3. Grade A, Load time 2.53s
-
-## Running locally
-
-1. Clone the repository.
-2. Start a PHP server environment; recommend:
-	- [MAMP](https://www.mamp.info/en/mamp-pro/windows/),
-	- [XAMPP](https://www.apachefriends.org/download.html), or
-	- custom build.
-3. Point the locally hosted domain to the public directory.
-
-## History
-
-The primary way to view the history of this project is to look at the [releases](https://github.com/8fold/site-joshbruce.com/releases). The name of each is release indicates the total time spent writing the code found here.
-
-I didn't start this project using the aforementioned method; therefore, prior to the first GitHub release, you can:
-
-1. look at the [commit history](https://github.com/8fold/site-joshbruce.com/commits/main) in general (prior to October 25th, 2021),
-2. look at the [closed pull requests](https://github.com/8fold/site-joshbruce.com/pulls?q=is%3Apr+is%3Aclosed), and
-3. read the [super details](https://github.com/8fold/site-joshbruce.com/blob/main/SUPER_DETAILS.md).
 
