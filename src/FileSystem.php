@@ -8,6 +8,9 @@ use DirectoryIterator;
 
 use JoshBruce\Site\Content\FrontMatter;
 
+/**
+ * @todo: Change contentRoot to be the folder in which the text-based content is.
+ */
 class FileSystem
 {
     public static function init(
