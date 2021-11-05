@@ -25,14 +25,20 @@ class LogList
 
         krsort($fileSubfolders);
         $logLinks = [];
-        foreach ($fileSubfolders as $key => $f) {
-            if (! str_starts_with(strval($key), '_') and $f->found()) {
-                $markdown = Markdown::init($f);
+        foreach ($fileSubfolders as $key => $file) {
+            if (! str_starts_with(strval($key), '_') and $file->found()) {
+                $markdown = Markdown::init($file);
+
+                $linkPath = str_replace(
+                    '/content.md',
+                    '',
+                    $file->path(full: false)
+                );
 
                 $logLinks[] = HtmlElement::li(
                     HtmlElement::a(
                         $markdown->frontMatter()->title() // ['title']
-                    )->props('href ' . $f->folderPath(full: false))
+                    )->props('href ' . $linkPath)
                 );
             }
         }
