@@ -101,7 +101,14 @@ class Markdown
     public function markdown(): string
     {
         if (strlen($this->markdown) === 0 and $this->file->found()) {
-            $markdown = file_get_contents($this->file->filePath());
+            $fileName = 'content.md';
+            if (strlen($this->file->fileName()) > 0) {
+                $fileName = $this->file->fileName();
+            }
+
+            $markdown = file_get_contents(
+                $this->file->fileNamed($fileName)->path()
+            );
 
             if (is_bool($markdown)) {
                 $markdown = '';

@@ -32,9 +32,22 @@ class FileSystem
     ) {
     }
 
+    /**
+     * @return string Path to where the text-based content for the site lives.
+     */
+    public function contentRoot(): string
+    {
+        return $this->contentRoot;
+    }
+
     public function with(string $folderPath, string $fileName = ''): FileSystem
     {
         return new self($this->contentRoot, $folderPath, $fileName);
+    }
+
+    public function fileNamed(string $fileName): FileSystem
+    {
+        return $this->with($this->folderPath, $fileName);
     }
 
     public function fileName(): string
@@ -42,89 +55,22 @@ class FileSystem
         return $this->fileName;
     }
 
-    public function folderPath(bool $full = true): string
+    public function path(bool $full = true): string
     {
-        if ($full) {
-            if (
-                str_contains($this->folderPath(false), 'navigation') or
-                str_contains($this->folderPath(false), 'messages') or
-                str_contains($this->folderPath(false), 'media')
-            ) {
-                return $this->contentRoot . $this->folderPath(false);
-            }
-            return $this->contentRoot .
-                '/content' .
-                $this->folderPath(false);
-        }
-        return $this->folderPath;
-    }
-
-    public function notFound(): bool
-    {
-        return ! $this->found();
-    }
-
-    public function found(): bool
-    {
-        return file_exists($this->filePath());
-    }
-
-    public function rootFolderIsMissing(): bool
-    {
-        if (! file_exists($this->contentRoot())) {
-            return true;
-        }
-        return ! is_dir($this->contentRoot());
-    }
-
-    public function contentRoot(): string
-    {
-        return $this->contentRoot;
-    }
-
-    public function isFile(): bool
-    {
-        return strlen($this->fileName()) > 0;
-    }
-
-    public function isNotRoot(): bool
-    {
-        return ! $this->isRoot();
-    }
-
-    private function isRoot(): bool
-    {
-        $subtract = str_replace(
-            $this->contentRoot() . '/content',
-            '',
-            $this->folderPath()
-        );
-        return strlen($subtract) === 0;
-    }
-
-    private function isNotFile(): bool
-    {
-        return ! $this->isFile();
-    }
-
-    public function filePath(): string
-    {
-        $folderPath = $this->folderPath();
-        if (str_ends_with($folderPath, '/') or $folderPath === '/') {
-            $folderPath = substr($folderPath, 0, -1);
+        $path = $this->contentRoot . $this->folderPath . '/' . $this->fileName();
+        if (! $full) {
+            $path = str_replace($this->contentRoot, '', $path);
         }
 
-        if ($this->isNotFile() or $this->fileName() === 'content.md') {
-            return $this->folderPath() . '/content.md';
+        if (str_ends_with($path, '/')) {
+            return substr($path, 0, -1);
         }
-
-        $path = $folderPath . '/' . $this->fileName();
         return $path;
     }
 
     public function mimetype(): string
     {
-        $type = mime_content_type($this->filePath());
+        $type = mime_content_type($this->path());
         if (is_bool($type) and $type === false) {
             return '';
         }
@@ -136,7 +82,7 @@ class FileSystem
                 'js'  => 'text/javascript'
             ];
 
-            $parts     = explode('.', $this->filePath());
+            $parts     = explode('.', $this->path());
             $extension = array_pop($parts);
 
             $type = $extensionMap[$extension];
@@ -144,36 +90,58 @@ class FileSystem
         return $type;
     }
 
-    /**
-     * @return array<string, FileSystem>
-     */
-    public function subfolders(string $fileName = ''): array
+    public function navigation(string $file = ''): FileSystem
     {
-        $folderPath = $this->folderPath();
-        if (! is_dir($folderPath)) {
-            return [];
+        return $this->up()->with('/navigation', $file);
+    }
+
+    public function messages(string $file = ''): FileSystem
+    {
+        return $this->up()->with('/messages', $file);
+    }
+
+    public function media(string $file = ''): FileSystem
+    {
+        return $this->up()->with('/media', $file);
+    }
+
+    public function assets(string $file = ''): FileSystem
+    {
+        return $this->up()->with('/assets', $file);
+    }
+
+    public function rootFolderIsMissing(): bool
+    {
+        if (! file_exists($this->contentRoot())) {
+            return true;
         }
+        return ! is_dir($this->contentRoot());
+    }
 
-        $content = [];
-        foreach (new DirectoryIterator($folderPath) as $folder) {
-            if ($folder->isFile() or $folder->isDot()) {
-                continue;
-            }
+    public function notFound(): bool
+    {
+        return ! $this->found();
+    }
 
-            $path = str_replace(
-                $this->contentRoot() . '/content',
-                '',
-                $folder->getPathname()
-            );
+    public function found(): bool
+    {
+        return file_exists($this->path());
+    }
 
-            $folderName = array_slice(explode('/', $path), -1); // up 1
-            $folderName = array_shift($folderName);
-            if ($folderName !== null) {
-                $clone = clone $this;
-                $content[$folderName] = $clone->with($path, $fileName);
-            }
-        }
-        return $content;
+    public function isNotRoot(): bool
+    {
+        return ! $this->isRoot();
+    }
+
+    public function isRoot(): bool
+    {
+        $subtract = str_replace($this->contentRoot(), '', $this->path());
+        return strlen($subtract) === 0 or $subtract === '/';
+    }
+
+    public function isFile(): bool
+    {
+        return file_exists($this->path()) and ! is_dir($this->path());
     }
 
     /**
@@ -181,11 +149,11 @@ class FileSystem
      */
     public function folderStack(string $fileName = ''): array
     {
-        $folderPath = $this->folderPath();
+        $folderPath = $this->path();
         if (! is_dir($folderPath)) {
             return [];
         }
-        $folderPath = str_replace($this->contentRoot() . '/content', '', $folderPath);
+        $folderPath = str_replace($this->contentRoot(), '', $folderPath);
 
         $folderPathParts = explode('/', $folderPath);
 
@@ -202,4 +170,127 @@ class FileSystem
         }
         return $folders;
     }
+
+    /**
+     * @return array<string, FileSystem>
+     */
+    public function subfolders(string $fileName = ''): array
+    {
+        $folderPath = $this->path();
+        if (! is_dir($folderPath)) {
+            return [];
+        }
+
+        $content = [];
+        foreach (new DirectoryIterator($folderPath) as $folder) {
+            if ($folder->isFile() or $folder->isDot()) {
+                continue;
+            }
+
+            $fullPathToFolder = $folder->getPathname();
+            $partialPath      = str_replace(
+                $this->contentRoot(),
+                '',
+                $fullPathToFolder
+            );
+
+            $parts = explode('/', $partialPath);
+
+            $folderName = array_pop($parts);
+
+            $clone = clone $this;
+            $content[$folderName] = $clone->with($partialPath, $fileName);
+        }
+        return $content;
+    }
+
+    private function up(): FileSystem
+    {
+        $parts = explode('/', $this->contentRoot);
+        array_pop($parts);
+        $newRoot = implode('/', $parts);
+        return FileSystem::init($newRoot);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // public function fileName(): string
+    // {
+    //     return $this->fileName;
+    // }
+
+    // public function folderPath(bool $full = true): string
+    // {
+    //     if ($full) {
+    //         if (
+    //             str_contains($this->folderPath(false), 'navigation') or
+    //             str_contains($this->folderPath(false), 'messages') or
+    //             str_contains($this->folderPath(false), 'media')
+    //         ) {
+    //             return $this->contentRoot . $this->folderPath(false);
+    //         }
+    //         return $this->contentRoot .
+    //             '/content' .
+    //             $this->folderPath(false);
+    //     }
+    //     return $this->folderPath;
+    // }
+
+
+
+
+
+
+
+    // public function isFile(): bool
+    // {
+    //     return strlen($this->fileName()) > 0;
+    // }
+
+
+
+    // private function isNotFile(): bool
+    // {
+    //     return ! $this->isFile();
+    // }
+
+//     public function filePath(): string
+//     {
+//         $folderPath = $this->folderPath();
+//         if (str_ends_with($folderPath, '/') or $folderPath === '/') {
+//             $folderPath = substr($folderPath, 0, -1);
+//         }
+//
+//         if ($this->isNotFile() or $this->fileName() === 'content.md') {
+//             return $this->folderPath() . '/content.md';
+//         }
+//
+//         $path = $folderPath . '/' . $this->fileName();
+//         return $path;
+//     }
+
+
+
+
+
+
 }
