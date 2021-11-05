@@ -8,59 +8,69 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Finder\Finder;
 
 use League\Flysystem\Local\LocalFilesystemAdapter;
-use League\Flysystem\Filesystem;
+use League\Flysystem\Filesystem as LeagueFilesystem;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
+use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\Content\Markdown;
+
+use JoshBruce\Site\Pages\DefaultTemplate;
+
 class Generator
 {
-    private MarkdownConverter $markdownConverter;
+    private bool $isNotTesting = false;
+    // private MarkdownConverter $markdownConverter;
 
-    private FileSystem $fileSystem;
+    private LeagueFilesystem $leagueFileSystem;
 
-    public static function run(
+    public static function init(
         OutputInterface $output,
-        string $source,
-        string $destionation
-    ): bool {
-        $compiler = new Generator($output, $source, $destionation);
+        string $contentRoot,
+        string $destination = ''
+    ): Generator {
+        $compiler = new Generator($output, $contentRoot, $destination);
         return $compiler->compile();
     }
 
     public function __construct(
         private OutputInterface $output,
-        private string $source,
-        private string $destionation
+        private string $contentRoot,
+        private string $destination = ''
     ) {
-        $this->markdownConverter = MarkdownConverter::create()
-            ->minified() // can't be minified due to code blocks
-            ->smartPunctuation()
-            ->withConfig(['html_input' => 'allow'])
-            ->abbreviations()
-            ->externalLinks([
-                'open_in_new_window' => true
-            ])->headingPermalinks(
-                [
-                    'min_heading_level' => 2,
-                    'symbol' => '＃'
-                ],
-            );
+        if (isset($_SERVER['APP_NAV'])) {
+            $this->isNotTesting = $_SERVER['APP_NAV'] !== 'testing';
+        }
+        // $this->markdownConverter = MarkdownConverter::create()
+        //     ->minified() // can't be minified due to code blocks
+        //     ->smartPunctuation()
+        //     ->withConfig(['html_input' => 'allow'])
+        //     ->abbreviations()
+        //     ->externalLinks([
+        //         'open_in_new_window' => true
+        //     ])->headingPermalinks(
+        //         [
+        //             'min_heading_level' => 2,
+        //             'symbol' => '＃'
+        //         ],
+        //     );
     }
 
-    private function compile(): bool
+    public function compile(): bool
     {
-        $this->output()->writeln(<<<bash
+        if ($this->isNotTesting) {
+            $this->output()->writeln(<<<bash
 
-            Starting to compile from:
-                {$this->source()} to
-                {$this->destination()}
-            bash
-        );
-
-        $start = hrtime(true);
+                Starting to compile from:
+                    {$this->contentRoot()} to
+                    {$this->destination()}
+                bash
+            );
+            $start = hrtime(true);
+        }
 
         $finder = new Finder();
-        $finder = $finder->in($this->source());
+        $finder = $finder->in($this->contentRoot());
         foreach ($finder as $found) {
             $path = (string) $found;
             if (strpos($path, '_') > 0 or $found->isDir()) {
@@ -75,40 +85,68 @@ class Generator
             }
         }
 
-        $end = hrtime(true);
+        if ($this->isNotTesting) {
+            $end = hrtime(true);
+        }
         return true;
     }
 
-    private function copyFileFor(string $sourcePath): void
+    private function copyFileFor(string $contentRootPath): void
     {
-        $destinationPath = $this->fileDestinationPathFor($sourcePath);
-        $this->fileSystem()->copy($sourcePath, $destinationPath);
+        $destinationPath = $this->fileDestinationPathFor($contentRootPath);
+        $this->leagueFileSystem()->copy($contentRootPath, $destinationPath);
     }
 
-    private function fileDestinationPathFor(string $sourcePath): string
+    private function fileDestinationPathFor(string $contentRootPath): string
     {
         $destinationRelativePath = str_replace(
             'content/',
             '',
-            $this->relativePathFor($sourcePath)
+            $this->relativePathFor($contentRootPath)
         );
         return $this->destination() . $destinationRelativePath;
     }
 
-    private function compileContentFileFor(string $sourcePath): void
+    private function compileContentFileFor(string $contentRootPath): void
     {
-        $contents = $this->markdownConverter()->convert(
-            file_get_contents($sourcePath)
+        $parts = explode('/content/', $contentRootPath, 2);
+        $root = array_shift($parts);
+        array_unshift($parts, '');
+        $file = array_pop($parts);
+        $path = implode('/', $parts);
+        if (empty($path)) {
+            $path = '/';
+        }
+
+        $file = FileSystem::init($root, $path, $file);
+        if ($file->notFound()) {
+            $this->output()->writeln(<<<bash
+
+                Source file not found for:
+                    {$contentRootPath} to
+                    {$destinationPath}
+                bash
+            );
+            return;
+        }
+
+        $body = Markdown::init($file)->convert();
+
+        $content = DefaultTemplate::create(
+            $body,
+            $file->mimeType(),
+            $file->folderStack(),
+            $root
         );
 
-        $destinationPath = $this->contentDestinationPathFor($sourcePath);
+        $destinationPath = $this->contentDestinationPathFor($contentRootPath);
 
-        $this->filesystem()->write($destinationPath, $contents);
+        $this->leagueFileSystem()->write($destinationPath, $content->body());
 
         $this->output()->writeln(<<<bash
 
             Converted:
-                {$sourcePath} to
+                {$contentRootPath} to
                 {$destinationPath}
             bash
         );
@@ -125,7 +163,7 @@ class Generator
 
     private function relativePathFor(string $path): string
     {
-        return str_replace($this->source(), '', $path);
+        return str_replace($this->contentRoot(), '', $path);
     }
 
     private function output(): OutputInterface
@@ -133,14 +171,14 @@ class Generator
         return $this->output;
     }
 
-    private function source(): string
+    private function contentRoot(): string
     {
-        return $this->source . '/content';
+        return $this->contentRoot;
     }
 
     private function destination(): string
     {
-        return $this->destionation;
+        return $this->destination;
     }
 
     private function markdownConverter(): MarkdownConverter
@@ -148,14 +186,14 @@ class Generator
         return $this->markdownConverter;
     }
 
-    private function fileSystem(): FileSystem
+    private function leagueFileSystem(): LeagueFilesystem
     {
-        if (! isset($this->fileSystem)) {
+        if (! isset($this->leagueFileSystem)) {
             $adapter    = new LocalFilesystemAdapter('/');
-            $fileSystem = new Filesystem($adapter);
+            $fileSystem = new LeagueFilesystem($adapter);
 
-            $this->fileSystem = $fileSystem;
+            $this->leagueFileSystem = $fileSystem;
         }
-        return $this->fileSystem;
+        return $this->leagueFileSystem;
     }
 }
