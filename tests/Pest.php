@@ -15,21 +15,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Expectations
-|--------------------------------------------------------------------------
-|
-| When you're writing tests, you often need to check that values meet certain conditions. The
-| "expect()" function gives you access to a set of "expectations" methods that you can use
-| to assert different things. Of course, you may extend the Expectation API at any time.
-|
-*/
-
-expect()->extend('toBeOne', function () {
-    return $this->toBe(1);
-});
-
-/*
-|--------------------------------------------------------------------------
 | Functions
 |--------------------------------------------------------------------------
 |
@@ -56,7 +41,7 @@ function serverGlobals(string $requestUri = '/'): array
 {
     $_SERVER['APP_ENV']        = 'test';
     $_SERVER['CONTENT_UP']     = 0;
-    $_SERVER['CONTENT_FOLDER'] = '/test-content';
+    $_SERVER['CONTENT_FOLDER'] = '/tests/test-content/content';
     $_SERVER['REQUEST_SCHEME'] = 'http';
     $_SERVER['HTTP_HOST']      = 'testing.com';
     $_SERVER['REQUEST_URI']    = $requestUri;

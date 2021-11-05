@@ -7,53 +7,123 @@ beforeEach(function() {
     // path to the root of the project, without using relative syntax
     $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
-    $this->contentRoot = $this->projectRoot . '/tests/test-content';
+    serverGlobals();
 
-    $this->fileSystem = FileSystem::init(
-        contentRoot: $this->contentRoot,
-        folderPath: '/tests/test-content'
-    );
+    $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
 });
 
 it('can return folder tree', function() {
     $this->assertEquals(
-        $this->fileSystem->with(folderPath: '/sub-folder')->folderStack(),
+        FileSystem::init($this->contentRoot)
+            ->with(folderPath: '/sub-folder')->folderStack(),
         [
-            $this->fileSystem->with(folderPath: '/sub-folder'),
-            $this->fileSystem->with(folderPath: '')
+            FileSystem::init($this->contentRoot)->with(folderPath: '/sub-folder'),
+            FileSystem::init($this->contentRoot)->with(folderPath: '')
         ]
     );
 
     $this->assertEquals(
-        $this->fileSystem->with(folderPath: '/sub-folder')
+        FileSystem::init($this->contentRoot)
+            ->with(folderPath: '/sub-folder')
             ->folderStack(fileName: 'content.md'),
         [
-            $this->fileSystem->with(
+            FileSystem::init($this->contentRoot)->with(
                 folderPath: '/sub-folder',
                 fileName: 'content.md'
             ),
-            $this->fileSystem->with(folderPath: '', fileName: 'content.md')
+            FileSystem::init($this->contentRoot)
+                ->with(folderPath: '', fileName: 'content.md')
         ]
     );
 })->group('filesystem');
 
-it('has file and folder paths', function() {
+it('can determine if path is content root', function() {
     expect(
-        $this->fileSystem->with(
-            folderPath: '/sub-folder',
-            fileName: 'content.md'
-        )->filePath()
+        FileSystem::init($this->contentRoot)->isRoot()
+    )->toBeTrue();
+
+    expect(
+        FileSystem::init($this->contentRoot, '/not-there')->isRoot()
+    )->toBeFalse();
+
+    expect(
+        FileSystem::init($this->contentRoot)->isNotRoot()
+    )->toBeFalse();
+
+    expect(
+        FileSystem::init($this->contentRoot, '/not-there')->isNotRoot()
+    )->toBeTrue();
+})->group('filesystem');
+
+it('can determine if path exists', function() {
+    expect(
+        FileSystem::init($this->contentRoot)->found()
+    )->toBeTrue();
+
+    expect(
+        FileSystem::init($this->contentRoot . '/not-there')->found()
+    )->toBeFalse();
+
+    expect(
+        FileSystem::init($this->contentRoot)->notFound()
+    )->toBeFalse();
+
+    expect(
+        FileSystem::init($this->contentRoot . '/not-there')->notFound()
+    )->toBeTrue();
+})->group('filesystem');
+
+it('can detect whether the root folder exists', function() {
+   expect(
+       FileSystem::init($this->contentRoot)->rootFolderIsMissing()
+   )->toBeFalse();
+
+   expect(
+      FileSystem::init($this->contentRoot . '/not-there')->rootFolderIsMissing()
+  )->toBeTrue();
+})->group('filesystem');
+
+it('has correct file path', function() {
+    expect(
+        FileSystem::init($this->contentRoot)->with(
+            folderPath: '/assets/js',
+            fileName: 'javascript.js'
+        )->path()
     )->toBe(
-        $this->contentRoot . '/content/sub-folder/content.md'
+        __DIR__ . '/test-content/content/assets/js/javascript.js'
     );
 
     expect(
-        $this->fileSystem->with(
-            folderPath: '/sub-folder',
-            fileName: 'content.md'
-        )->folderPath()
+        FileSystem::init($this->contentRoot)->navigation('main.md')->path()
     )->toBe(
-        $this->contentRoot . '/content/sub-folder'
+        __DIR__ . '/test-content/navigation/main.md'
+    );
+
+    expect(
+        FileSystem::init($this->contentRoot)->messages('original.md')->path()
+    )->toBe(
+        __DIR__ . '/test-content/messages/original.md'
+    );
+
+    expect(
+        FileSystem::init($this->contentRoot)->messages()->path()
+    )->toBe(
+        __DIR__ . '/test-content/messages'
+    );
+
+    expect(
+        FileSystem::init($this->contentRoot, '/sub-folder', 'content.md')
+            ->path(false)
+    )->toBe(
+        '/sub-folder/content.md'
+    );
+})->group('filesystem');
+
+it('has the correct content root', function() {
+    expect(
+        FileSystem::init($this->contentRoot)->contentRoot()
+    )->toBe(
+        __DIR__ . '/test-content/content'
     );
 })->group('filesystem');
 
@@ -61,7 +131,7 @@ it('has correct mimetypes', function() {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/
     // MIME_types#textjavascript
     expect(
-        $this->fileSystem->with(
+        FileSystem::init($this->contentRoot)->with(
             folderPath: '/assets/js',
             fileName: 'javascript.js'
         )->mimetype()
@@ -70,7 +140,7 @@ it('has correct mimetypes', function() {
     );
 
     expect(
-        $this->fileSystem->with(
+        FileSystem::init($this->contentRoot)->with(
             folderPath: '/assets/css',
             fileName: 'main.css'
         )->mimetype()
@@ -79,12 +149,11 @@ it('has correct mimetypes', function() {
     );
 
     expect(
-        $this->fileSystem->with(
+        FileSystem::init($this->contentRoot)->with(
             folderPath: '/',
             fileName: 'content.md'
         )->mimetype()
     )->toBe(
         'text/html'
     );
-
 })->group('filesystem');
