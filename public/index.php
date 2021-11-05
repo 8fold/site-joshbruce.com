@@ -67,7 +67,10 @@ if ($fileSystem->notFound()) {
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitFile($fileSystem->mimeType(), $fileSystem->filePath());
+    JoshBruce\Site\Emitter::emitFile(
+        $fileSystem->mimeType(),
+        $fileSystem->path()
+    );
     exit;
 }
 

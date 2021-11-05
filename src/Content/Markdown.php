@@ -66,11 +66,11 @@ class Markdown
             $this->frontMatter()->hasMember('original') and
             $copy->found()
         ) {
-            $copyContent = file_get_contents($copy->filePath());
+            $copyContent = file_get_contents($copy->path());
             if (is_string($copyContent)) {
                 $originalLink = OriginalContentNotice::create(
                     copyContent: $copyContent,
-                    messagePath: $copy->filePath(),
+                    messagePath: $copy->path(),
                     originalLink: $this->frontMatter()->original()
                 );
             }
