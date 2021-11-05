@@ -43,14 +43,17 @@ $application->setName('compile')
 
 		$start = hrtime(true);
 
-		if (Generator::run($output, $source, $destination)) {
+		$generator = Generator::init($output, $source, $destination);
+		if ($generator->compile()) {
+
 			$end     = hrtime(true);
 			$elapsed = $end - $start;
 			$ms      = round($elapsed/1e+6);
+			$seconds = round($ms/1000, 2);
 
 			$output->writeln(<<<bash
 
-				Completed successfully in {$ms}ms!
+				Completed successfully in {$seconds}s
 
 				bash
 			);

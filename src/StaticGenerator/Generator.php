@@ -20,7 +20,6 @@ use JoshBruce\Site\Pages\DefaultTemplate;
 class Generator
 {
     private bool $isNotTesting = false;
-    // private MarkdownConverter $markdownConverter;
 
     private LeagueFilesystem $leagueFileSystem;
 
@@ -40,36 +39,14 @@ class Generator
         if (isset($_SERVER['APP_ENV'])) {
             $this->isNotTesting = $_SERVER['APP_ENV'] !== 'testing';
         }
-        // $this->markdownConverter = MarkdownConverter::create()
-        //     ->minified() // can't be minified due to code blocks
-        //     ->smartPunctuation()
-        //     ->withConfig(['html_input' => 'allow'])
-        //     ->abbreviations()
-        //     ->externalLinks([
-        //         'open_in_new_window' => true
-        //     ])->headingPermalinks(
-        //         [
-        //             'min_heading_level' => 2,
-        //             'symbol' => '＃'
-        //         ],
-        //     );
     }
 
     public function compile(): bool
     {
-        if ($this->isNotTesting) {
-            $this->output()->writeln(<<<bash
-
-                Starting to compile from:
-                    {$this->contentRoot()} to
-                    {$this->destination()}
-                bash
-            );
-            $start = hrtime(true);
-        }
+        $this->compilingDidStartMessage($this->contentRoot, $this->destination);
 
         $finder = new Finder();
-        $finder = $finder->in($this->contentRoot());
+        $finder = $finder->in($this->contentRoot);
         foreach ($finder as $found) {
             $path = (string) $found;
             if (strpos($path, '_') > 0 or $found->isDir()) {
@@ -81,6 +58,7 @@ class Generator
 
             } else {
                 $this->copyFileFor($path);
+
             }
         }
 
@@ -90,46 +68,24 @@ class Generator
         return true;
     }
 
-    private function copyFileFor(string $contentRootPath): void
-    {
-        $destinationPath = $this->fileDestinationPathFor($contentRootPath);
-        $this->leagueFileSystem()->copy($contentRootPath, $destinationPath);
-    }
 
-    private function fileDestinationPathFor(string $contentRootPath): string
+    private function compileContentFileFor(string $contentPath): void
     {
-        $destinationRelativePath = str_replace(
-            'content/',
-            '',
-            $this->relativePathFor($contentRootPath)
-        );
-        return $this->destination() . $destinationRelativePath;
-    }
+        $contentRoot = $this->contentRoot;
+        $path        = str_replace($contentRoot, '', $contentPath);
 
-    private function compileContentFileFor(string $contentRootPath): void
-    {
-        $destinationPath = $this->contentDestinationPathFor($contentRootPath);
+        $parts       = explode('/', $path);
 
-        $parts = explode('/content/', $contentRootPath, 2);
-        $root = array_shift($parts);
-        array_unshift($parts, '');
-        $file = array_pop($parts);
-        $path = implode('/', $parts);
-        if (empty($path)) {
-            $path = '/';
+        $fileName    = array_pop($parts);
+
+        $folderPath  = implode('/', $parts);
+        if (strlen($folderPath) === 0) {
+            $folderPath = '/';
         }
 
-        $file = FileSystem::init($root, $path, $file);
-        if ($file->notFound()) {
-            $this->output()->writeln(<<<bash
+        $destinationPath = $this->contentDestinationPathFor($contentPath);
 
-                Source file not found for:
-                    {$contentRootPath} to
-                    {$destinationPath}
-                bash
-            );
-            return;
-        }
+        $file = FileSystem::init($contentRoot, $folderPath, $fileName);
 
         $body = Markdown::init($file)->convert();
 
@@ -137,18 +93,12 @@ class Generator
             $body,
             $file->mimeType(),
             $file->folderStack(),
-            $root
-        );
+            $contentRoot
+        )->body();
 
-        $this->leagueFileSystem()->write($destinationPath, $content->body());
+        $this->leagueFileSystem()->write($destinationPath, $content);
 
-        $this->output()->writeln(<<<bash
-
-            Converted:
-                {$contentRootPath} to
-                {$destinationPath}
-            bash
-        );
+        $this->sourceFileConvertedMessage($contentPath, $destinationPath);
     }
 
     private function contentDestinationPathFor(string $path): string
@@ -160,31 +110,23 @@ class Generator
         );
     }
 
-    private function relativePathFor(string $path): string
+    private function fileDestinationPathFor(string $path): string
     {
-        return str_replace($this->contentRoot(), '', $path);
+        $contentRoot  = $this->contentRoot;
+        $relativePath = str_replace($contentRoot, '', $path);
+
+        return $this->destination . $relativePath;
     }
 
-    private function output(): OutputInterface
+    private function copyFileFor(string $contentRootPath): void
     {
-        return $this->output;
+        $destinationPath = $this->fileDestinationPathFor($contentRootPath);
+        $this->leagueFileSystem()->copy($contentRootPath, $destinationPath);
     }
 
-    private function contentRoot(): string
-    {
-        return $this->contentRoot;
-    }
-
-    private function destination(): string
-    {
-        return $this->destination;
-    }
-
-    private function markdownConverter(): MarkdownConverter
-    {
-        return Markdown::markdownConverter();
-    }
-
+    /**
+     * @todo: We use League FlySystem because it does recursive folder creation.
+     */
     private function leagueFileSystem(): LeagueFilesystem
     {
         if (! isset($this->leagueFileSystem)) {
@@ -194,5 +136,41 @@ class Generator
             $this->leagueFileSystem = $fileSystem;
         }
         return $this->leagueFileSystem;
+    }
+
+    /**************************/
+    /*    Console messages    */
+    /**************************/
+    private function output(): OutputInterface
+    {
+        return $this->output;
+    }
+
+    private function compilingDidStartMessage(
+        string $contentPath,
+        string $destinationPath
+    ): void {
+        if ($this->isNotTesting) {
+            $this->output()->writeln(<<<bash
+
+                Starting to compile from:
+                    {$contentPath} to
+                    {$destinationPath}
+                bash
+            );
+        }
+    }
+
+    private function sourceFileConvertedMessage(
+        string $contentPath,
+        string $destinationPath
+    ): void {
+        $this->output()->writeln(<<<bash
+
+            Converted:
+                {$contentPath} to
+                {$destinationPath}
+            bash
+        );
     }
 }

@@ -135,7 +135,11 @@ class FileSystem
 
     public function isRoot(): bool
     {
-        $subtract = str_replace($this->contentRoot(), '', $this->path());
+        $subtract = str_replace(
+            [$this->contentRoot(), '/content.md'],
+            ['', ''],
+            $this->path()
+        );
         return strlen($subtract) === 0 or $subtract === '/';
     }
 
@@ -177,8 +181,14 @@ class FileSystem
     public function subfolders(string $fileName = ''): array
     {
         $folderPath = $this->path();
-        if (! is_dir($folderPath)) {
+        if (! is_dir($folderPath) and ! is_file($folderPath)) {
             return [];
+
+        } elseif (is_file($folderPath)) {
+            $parts = explode('/', $folderPath);
+            array_pop($parts);
+            $folderPath = implode('/', $parts);
+
         }
 
         $content = [];

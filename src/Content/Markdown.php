@@ -57,20 +57,23 @@ class Markdown
     {
         // TODO: cache as property
         $body = self::markdownConverter()->getBody($this->markdown());
-        $body = Data::create(frontMatter: $this->frontMatter()) .
-            "\n\n" . $body;
+
+        if ($this->frontMatter()->hasMember('data')) {
+            $body = Data::create(data: $this->frontMatter()->data()) .
+                "\n\n" . $body;
+        }
 
         $originalLink = '';
-        $copy = $this->file->with('/messages', 'original.md');
+        $original = $this->file->messages('original.md');
         if (
             $this->frontMatter()->hasMember('original') and
-            $copy->found()
+            $original->found()
         ) {
-            $copyContent = file_get_contents($copy->path());
+            $copyContent = file_get_contents($original->path());
             if (is_string($copyContent)) {
                 $originalLink = OriginalContentNotice::create(
                     copyContent: $copyContent,
-                    messagePath: $copy->path(),
+                    messagePath: $original->path(),
                     originalLink: $this->frontMatter()->original()
                 );
             }
@@ -78,10 +81,13 @@ class Markdown
 
         $body = $originalLink . "\n\n" . $body;
 
-        $body = DateBlock::create(frontMatter: $this->frontMatter()) .
-            "\n\n" . $body;
+        $dateBlock = DateBlock::create(frontMatter: $this->frontMatter());
+        if (strlen($dateBlock) > 0) {
+            $body = $dateBlock . "\n\n" . $body;
+        }
 
         if ($this->file->isNotRoot()) {
+            // TODO: Not sure why this isn't working for static site
             $body = Heading::create(frontMatter: $this->frontMatter()) .
                 "\n\n" . $body;
         }
