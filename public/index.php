@@ -12,10 +12,10 @@ require $projectRoot . '/vendor/autoload.php';
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-$server = JoshBruce\Site\Server::init($_SERVER, $projectRoot);
+$server = JoshBruce\Site\SiteDynamic\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
-    JoshBruce\Site\Emitter::emitInteralServerErrorResponse(
+    JoshBruce\Site\SiteDynamic\Emitter::emitInteralServerErrorResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
@@ -23,7 +23,7 @@ if ($server->isMissingRequiredValues()) {
 }
 
 if ($server->isRequestingUnsupportedMethod()) {
-    JoshBruce\Site\Emitter::emitUnsupportedMethodResponse(
+    JoshBruce\Site\SiteDynamic\Emitter::emitUnsupportedMethodResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot,
         $server
@@ -38,7 +38,7 @@ $fileSystem = JoshBruce\Site\FileSystem::init(
 );
 
 if ($fileSystem->rootFolderIsMissing()) {
-    JoshBruce\Site\Emitter::emitBadContentResponse(
+    JoshBruce\Site\SiteDynamic\Emitter::emitBadContentResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
@@ -59,7 +59,7 @@ $fileSystem = $fileSystem->with(
 
 if ($fileSystem->notFound()) {
     $fileSystem = $fileSystem->with('/', '404.md');
-    JoshBruce\Site\Emitter::emitNotFoundResponse(
+    JoshBruce\Site\SiteDynamic\Emitter::emitNotFoundResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
     );
@@ -67,7 +67,7 @@ if ($fileSystem->notFound()) {
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\Emitter::emitFile(
+    JoshBruce\Site\SiteDynamic\Emitter::emitFile(
         $fileSystem->mimeType(),
         $fileSystem->path()
     );
@@ -77,7 +77,7 @@ if ($server->isRequestingFile()) {
 $markdown = JoshBruce\Site\Content\Markdown::init($fileSystem);
 if ($markdown->hasMoved()) {
     $location = $server->domain() . $markdown->redirectPath();
-    JoshBruce\Site\Emitter::emitRedirectionResponse($location);
+    JoshBruce\Site\SiteDynamic\Emitter::emitRedirectionResponse($location);
     exit;
 }
 
@@ -88,5 +88,9 @@ $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     $fileSystem->contentRoot()
 );
 
-JoshBruce\Site\Emitter::emitWithResponse(200, $page->headers(), $page->body());
+JoshBruce\Site\SiteDynamic\Emitter::emitWithResponse(
+    200,
+    $page->headers(),
+    $page->body()
+);
 exit;

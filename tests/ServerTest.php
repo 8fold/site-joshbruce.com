@@ -1,6 +1,6 @@
 <?php
 
-use JoshBruce\Site\Server;
+use JoshBruce\Site\SiteDynamic\Server;
 
 beforeEach(function() {
     // This somewhat unreadable one-liner basically creates a fully qualified

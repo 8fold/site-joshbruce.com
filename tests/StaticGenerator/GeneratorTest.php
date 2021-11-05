@@ -1,6 +1,6 @@
 <?php
 
-use JoshBruce\Site\StaticGenerator\Generator;
+use JoshBruce\Site\SiteStatic\Generator;
 
 use JoshBruce\Site\Tests\StaticGenerator\OutputInterface;
 

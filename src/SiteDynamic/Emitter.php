@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site;
+namespace JoshBruce\Site\SiteDynamic;
 
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7\Response as PsrResponse;
@@ -11,7 +11,7 @@ use Laminas\HttpHandlerRunner\Emitter\SapiStreamEmitter as PsrEmitter;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
-use JoshBruce\Site\Server;
+use JoshBruce\Site\SiteDynamic\Server;
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content\Markdown;
 
