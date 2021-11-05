@@ -12,10 +12,13 @@ use JoshBruce\Site\Content\FrontMatter;
 
 class Data
 {
-    public static function create(FrontMatter $frontMatter): HtmlElement|string
+    /**
+     * @param array<int, array<int, string|int|float>> $data
+     */
+    public static function create(array $data): HtmlElement|string
     {
         $listHeadings = [];
-        foreach ($frontMatter->data() as $row) {
+        foreach ($data as $row) {
             $label   = $row[0];
             $current = $row[3];
             $low     = $row[1];

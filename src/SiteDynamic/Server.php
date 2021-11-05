@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site;
+namespace JoshBruce\Site\SiteDynamic;
 
 use Whoops\Run;
 use Whoops\Handler\PrettyPageHandler;
