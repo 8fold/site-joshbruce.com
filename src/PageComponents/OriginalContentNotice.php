@@ -24,7 +24,9 @@ class OriginalContentNotice
         }
 
         list($link, $platform) = explode(' ', $originalLink, 2);
-        $originalLink = "[{$platform}]({$link})";
+        $originalLink = HtmlElement::a($platform)
+            ->props("href {$link}", 'itemprop sameAs')
+            ->build();
 
         $markdown = str_replace(
             '{{platform link}}',
