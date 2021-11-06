@@ -24,19 +24,22 @@
 |
 */
 
-use JoshBruce\Site\Environment;
-use JoshBruce\Site\Server;
+// use JoshBruce\Site\Environment;
+use JoshBruce\DynamicSite\Server;
 
-function environment(string $requestUri = '/'): Environment
-{
-    return Environment::init(server($requestUri));
-}
+// function environment(string $requestUri = '/'): Environment
+// {
+//     return Environment::init(server($requestUri));
+// }
 
-function server(string $requestUri = '/'): Server
-{
-    return Server::init(serverGlobals($requestUri));
-}
+// function server(string $requestUri = '/'): Server
+// {
+//     return Server::init(serverGlobals($requestUri));
+// }
 
+/**
+ * @return array<string, int|string>
+ */
 function serverGlobals(string $requestUri = '/'): array
 {
     $_SERVER['APP_ENV']        = 'test';

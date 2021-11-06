@@ -10,7 +10,7 @@ use Whoops\Handler\PrettyPageHandler;
 class Server
 {
     /**
-     * @param  array<string, string> $serverGlobals
+     * @param  array<string, int|string> $serverGlobals
      */
     public static function init(
         array $serverGlobals,
@@ -23,7 +23,7 @@ class Server
     }
 
     /**
-     * @param array<string, string> $serverGlobals
+     * @param  array<string, int|string> $serverGlobals
      */
     public function __construct(
         private array $serverGlobals,
@@ -48,7 +48,7 @@ class Server
             }
 
             if ($key === 'REQUEST_URI') {
-                $uri = $this->serverGlobals['REQUEST_URI'];
+                $uri = $this->requestUri();
                 $parts = explode('?', $uri);
                 $this->serverGlobals['REQUEST_URI'] = array_shift($parts);
             }
@@ -65,7 +65,9 @@ class Server
 
     public function isRequestingUnsupportedMethod(): bool
     {
-        $requestMethod = strtoupper($this->serverGlobals['REQUEST_METHOD']);
+        $requestMethod = strtoupper(
+            strval($this->serverGlobals['REQUEST_METHOD'])
+        );
         return ! in_array($requestMethod, $this->supportedMethods());
     }
 
@@ -145,6 +147,6 @@ class Server
         if ($this->serverGlobals['REQUEST_URI'] === '/') {
             return '';
         }
-        return $this->serverGlobals['REQUEST_URI'];
+        return strval($this->serverGlobals['REQUEST_URI']);
     }
 }

@@ -2,14 +2,14 @@
   "authors": [],
   "autoload": {
     "psr-4": {
-      "JoshBruce\\DynamicSite\\": "./site-dynamic",
-      "JoshBruce\\StaticSite\\": "./site-static"
+      "JoshBruce\\DynamicSite\\": "./site-dynamic-php",
+      "JoshBruce\\StaticSite\\": "./site-static-html"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "JoshBruce\\DynamicSite\\Tests\\": "./site-dynamic/tests",
-      "JoshBruce\\StaticSite\\Tests\\": "./site-static/tests"
+      "JoshBruce\\DynamicSite\\Tests\\": "./site-dynamic-php/tests",
+      "JoshBruce\\StaticSite\\Tests\\": "./site-static-html/tests"
     }
   },
   "config": {

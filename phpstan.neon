@@ -2,6 +2,7 @@ parameters:
 	level: 8
 	paths:
 		- src
-		- site-dynamic/public
+		- site-dynamic-php
 	ignoreErrors:
 		- '#Call to an undefined static method Eightfold\\HTMLBuilder\\Element::(.*)#'
+		- '#Call to an undefined method Pest\\Expectation|Pest\\Support\\Extendable::(.*)#'
