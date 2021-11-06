@@ -41,7 +41,7 @@ class Navigation implements Buildable, Stringable
      */
     private function navigation(): array
     {
-        $file = FileSystem::init()->navigation($this->fileName);
+        $file = FileSystem::navigation($this->fileName);
             // die(var_dump($file));
         // $file = FileSystem::init($this->contentRoot)->navigation('main.md');
         // $file = $this->file->with(folderPath: '/navigation', fileName: 'main.md');

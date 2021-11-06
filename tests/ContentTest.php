@@ -6,27 +6,11 @@ use JoshBruce\Site\FileSystem;
 
 use JoshBruce\Site\Content\FrontMatter;
 
-beforeEach(function() {
-    // This somewhat unreadable one-liner basically creates a fully qualified
-    // path to the root of the project, without using relative syntax
-    $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
-
-    $this->contentRoot = $this->projectRoot . '/tests/test-content';
-
-    $this->fileSystem = FileSystem::init(
-        contentRoot: $this->contentRoot,
-        folderPath: '/tests/test-content'
-    );
-
-    $this->file = $this->fileSystem->with(
-        folderPath: '',
-        fileName: 'content.md'
-    );
-});
-
 it('can return front matter', function() {
     expect(
-        Markdown::init($this->file)->frontMatter()
+        Markdown::init(
+            FileSystem::public('content.md')
+        )->frontMatter()
     )->toBeInstanceOf(
         FrontMatter::class
     );

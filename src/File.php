@@ -16,21 +16,30 @@ class File
     }
 
     final public function __construct(private string $path)
-    {}
+    {
+    }
 
+    /**
+     * @todo: move to trait
+     */
     public function path(bool $full = true): string
     {
         if ($full) {
             return $this->path;
         }
+        return str_replace($this->base(), '', $this->path);
+    }
 
+    /**
+     * @todo: move to trait
+     */
+    public function base(): string
+    {
         $dir     = __DIR__;
         $parts   = explode('/', $dir);
         $parts   = array_slice($parts, 0, -1);
         $parts[] = 'content';
-        $path    = implode('/', $parts);
-
-        return str_replace($path, '', $this->path);
+        return implode('/', $parts);
     }
 
     public function fileName(): string

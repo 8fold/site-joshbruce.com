@@ -52,7 +52,8 @@ class Markdown
     }
 
     public function __construct(private File $file)
-    {}
+    {
+    }
 
     public function convert(): string
     {
