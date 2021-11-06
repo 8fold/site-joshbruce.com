@@ -41,7 +41,8 @@ class Markdown
             ->descriptionLists()
             ->abbreviations()
             ->externalLinks([
-                'open_in_new_window' => true
+                'open_in_new_window' => true,
+                'internal_hosts' => 'joshbruce.com'
             ])->headingPermalinks(
                 [
                     'min_heading_level' => 2,
