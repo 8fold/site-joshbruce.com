@@ -38,6 +38,7 @@ class Markdown
             ->minified() // can't be minified due to code blocks
             ->smartPunctuation()
             ->withConfig(['html_input' => 'allow'])
+            ->descriptionLists()
             ->abbreviations()
             ->externalLinks([
                 'open_in_new_window' => true

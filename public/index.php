@@ -58,7 +58,7 @@ $fileSystem = $fileSystem->with(
 );
 
 if ($fileSystem->notFound()) {
-    $fileSystem = $fileSystem->with('/', '404.md');
+    $fileSystem = $fileSystem->with('/', 'error-404.md');
     JoshBruce\Site\SiteDynamic\Emitter::emitNotFoundResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
