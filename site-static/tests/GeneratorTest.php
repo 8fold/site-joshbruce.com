@@ -1,8 +1,10 @@
 <?php
 
-use JoshBruce\Site\SiteStatic\Generator;
+namespace JoshBruce\StaticSite\Tests;
 
-use JoshBruce\Site\Tests\StaticGenerator\OutputInterface;
+use JoshBruce\StaticSite\Generator;
+
+use JoshBruce\StaticSite\Tests\OutputInterface;
 
 beforeEach(function() {
     $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));

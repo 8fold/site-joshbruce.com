@@ -22,6 +22,8 @@
   <testsuites>
     <testsuite name="base">
       <directory suffix="Test.php">./tests/</directory>
+	  <directory suffix="Test.php">./site-dynamic/tests/</directory>
+	  <directory suffix="Test.php">./site-static/tests/</directory>
     </testsuite>
   </testsuites>
   <php>

@@ -1,6 +1,6 @@
 <?php
 
-namespace JoshBruce\Site\Tests\StaticGenerator;
+namespace JoshBruce\StaticSite\Tests;
 
 use Symfony\Component\Console\Output\Output;
 
