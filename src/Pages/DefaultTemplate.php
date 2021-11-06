@@ -61,7 +61,7 @@ class DefaultTemplate
         return Document::create(
             $this->pageTitle()
         )->head(
-            ...HeadElements::create()
+            ...HeadElements::create($this->contentRoot)
         )->body(
             Element::a('menu')->props('href #main-nav', 'id content-top'),
             Element::article(
