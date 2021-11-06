@@ -5,17 +5,17 @@ declare(strict_types=1);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
 require $projectRoot . '/vendor/autoload.php';
 
 // Inject environment variables to global $_SERVER array
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
-$server = JoshBruce\Site\SiteDynamic\Server::init($_SERVER, $projectRoot);
+$server = JoshBruce\DynamicSite\Server::init($_SERVER, $projectRoot);
 
 if ($server->isMissingRequiredValues()) {
-    JoshBruce\Site\SiteDynamic\Emitter::emitInteralServerErrorResponse(
+    JoshBruce\DynamicSite\Emitter::emitInteralServerErrorResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
@@ -23,7 +23,7 @@ if ($server->isMissingRequiredValues()) {
 }
 
 if ($server->isRequestingUnsupportedMethod()) {
-    JoshBruce\Site\SiteDynamic\Emitter::emitUnsupportedMethodResponse(
+    JoshBruce\DynamicSite\Emitter::emitUnsupportedMethodResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot,
         $server
@@ -38,7 +38,7 @@ $fileSystem = JoshBruce\Site\FileSystem::init(
 );
 
 if ($fileSystem->rootFolderIsMissing()) {
-    JoshBruce\Site\SiteDynamic\Emitter::emitBadContentResponse(
+    JoshBruce\DynamicSite\Emitter::emitBadContentResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
     );
@@ -59,7 +59,7 @@ $fileSystem = $fileSystem->with(
 
 if ($fileSystem->notFound()) {
     $fileSystem = $fileSystem->with('/', 'error-404.md');
-    JoshBruce\Site\SiteDynamic\Emitter::emitNotFoundResponse(
+    JoshBruce\DynamicSite\Emitter::emitNotFoundResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $fileSystem
     );
@@ -67,7 +67,7 @@ if ($fileSystem->notFound()) {
 }
 
 if ($server->isRequestingFile()) {
-    JoshBruce\Site\SiteDynamic\Emitter::emitFile(
+    JoshBruce\DynamicSite\Emitter::emitFile(
         $fileSystem->mimeType(),
         $fileSystem->path()
     );
@@ -77,7 +77,7 @@ if ($server->isRequestingFile()) {
 $markdown = JoshBruce\Site\Content\Markdown::init($fileSystem);
 if ($markdown->hasMoved()) {
     $location = $server->domain() . $markdown->redirectPath();
-    JoshBruce\Site\SiteDynamic\Emitter::emitRedirectionResponse($location);
+    JoshBruce\DynamicSite\Emitter::emitRedirectionResponse($location);
     exit;
 }
 
@@ -88,7 +88,7 @@ $page = JoshBruce\Site\Pages\DefaultTemplate::create(
     $fileSystem->contentRoot()
 );
 
-JoshBruce\Site\SiteDynamic\Emitter::emitWithResponse(
+JoshBruce\DynamicSite\Emitter::emitWithResponse(
     200,
     $page->headers(),
     $page->body()
