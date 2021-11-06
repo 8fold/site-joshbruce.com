@@ -18,9 +18,19 @@ class File
     final public function __construct(private string $path)
     {}
 
-    public function path(): string
+    public function path(bool $full = true): string
     {
-        return $this->path;
+        if ($full) {
+            return $this->path;
+        }
+
+        $dir     = __DIR__;
+        $parts   = explode('/', $dir);
+        $parts   = array_slice($parts, 0, -1);
+        $parts[] = 'content';
+        $path    = implode('/', $parts);
+
+        return str_replace($path, '', $this->path);
     }
 
     public function fileName(): string

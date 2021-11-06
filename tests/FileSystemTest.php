@@ -2,6 +2,8 @@
 
 use JoshBruce\Site\FileSystem;
 
+use JoshBruce\Site\File;
+
 beforeEach(function() {
     // This somewhat unreadable one-liner basically creates a fully qualified
     // path to the root of the project, without using relative syntax
@@ -85,45 +87,34 @@ it('can detect whether the root folder exists', function() {
 
 it('has correct file path', function() {
     expect(
-        FileSystem::init($this->contentRoot)->with(
-            folderPath: '/assets/js',
-            fileName: 'javascript.js'
-        )->path()
+        FileSystem::init($this->contentRoot, 'css', 'main.min.css')->path()
     )->toBe(
-        __DIR__ . '/test-content/content/assets/js/javascript.js'
+        "{$this->contentRoot}/css/main.min.css"
     );
 
     expect(
         FileSystem::init($this->contentRoot)->navigation('main.md')->path()
     )->toBe(
-        __DIR__ . '/test-content/navigation/main.md'
+        "{$this->contentRoot}/navigation/main.md"
     );
 
     expect(
         FileSystem::init($this->contentRoot)->messages('original.md')->path()
     )->toBe(
-        __DIR__ . '/test-content/messages/original.md'
+        "{$this->contentRoot}/messages/original.md"
     );
 
     expect(
         FileSystem::init($this->contentRoot)->messages()->path()
     )->toBe(
-        __DIR__ . '/test-content/messages'
+        "{$this->contentRoot}/messages"
     );
 
     expect(
-        FileSystem::init($this->contentRoot, '/sub-folder', 'content.md')
+        FileSystem::init($this->contentRoot, 'public', 'legal', 'content.md')
             ->path(false)
     )->toBe(
-        '/sub-folder/content.md'
-    );
-})->group('filesystem');
-
-it('has the correct content root', function() {
-    expect(
-        FileSystem::init($this->contentRoot)->contentRoot()
-    )->toBe(
-        __DIR__ . '/test-content/content'
+        '/public/legal/content.md'
     );
 })->group('filesystem');
 

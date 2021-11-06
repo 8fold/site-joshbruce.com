@@ -22,15 +22,21 @@ class FileSystem
         // string $fileName = ''
     ): FileSystem|File {
         $last = array_pop($parts);
+
+        $p       = explode('/', $base);
+        $parts   = array_merge($p, $parts);
+        $parts[] = $last;
+        $path    = implode('/', $parts);
         if (is_string($last) and str_contains($last, '.')) {
-            $p       = explode('/', $base);
-            $parts   = array_merge($p, $parts);
-            $parts[] = $last;
-            $path    = implode('/', $parts);
             return File::init($path);
         }
+
+        if (str_ends_with($path, '/')) {
+            $path = substr($path, 0, -1);
+        }
+
         return new FileSystem(
-            $base
+            $path
             // $contentRoot,
             // $folderPath,
             // $fileName
@@ -73,17 +79,9 @@ class FileSystem
     //     return $this->fileName;
     // }
 
-    public function path(bool $full = true): string
+    public function path(): string
     {
-        $path = $this->contentRoot() . $this->folderPath . '/' . $this->fileName();
-        if (! $full) {
-            $path = str_replace($this->contentRoot, '', $path);
-        }
-
-        if (str_ends_with($path, '/')) {
-            return substr($path, 0, -1);
-        }
-        return $path;
+        return $this->base;
     }
 
 //     public function mimetype(): string
@@ -114,12 +112,15 @@ class FileSystem
             return File::init("{$this->base()}/navigation/{$file}");
         }
         return FileSystem::init("{$this->base()}/navigation");
-        // return $this->up()->with('/navigation', $file);
     }
 
-    public function messages(string $file = ''): FileSystem
+    public function messages(string $file = ''): FileSystem|File
     {
-        return $this->up()->with('/messages', $file);
+        if (strlen($file) === 0) {
+            return FileSystem::init("{$this->base()}/messages");
+        }
+        $base = $this->messages()->path();
+        return File::init("{$base}/{$file}");
     }
 
     public function media(string $file = ''): FileSystem
