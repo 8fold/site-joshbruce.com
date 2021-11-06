@@ -8,7 +8,7 @@ use DirectoryIterator;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
-use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\File;
 
 use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
@@ -27,7 +27,7 @@ class Markdown
      */
     private FrontMatter $frontMatter;
 
-    public static function init(FileSystem $file): Markdown
+    public static function init(File $file): Markdown
     {
         return new Markdown($file);
     }
@@ -51,9 +51,8 @@ class Markdown
             );
     }
 
-    public function __construct(private FileSystem $file)
-    {
-    }
+    public function __construct(private File $file)
+    {}
 
     public function convert(): string
     {
@@ -109,14 +108,16 @@ class Markdown
     public function markdown(): string
     {
         if (strlen($this->markdown) === 0 and $this->file->found()) {
-            $fileName = 'content.md';
-            if (strlen($this->file->fileName()) > 0) {
-                $fileName = $this->file->fileName();
-            }
+            // $fileName = 'content.md';
+            // if (strlen($this->file->fileName()) > 0) {
+            //     $fileName = $this->file->fileName();
+            // }
 
-            $markdown = file_get_contents(
-                $this->file->fileNamed($fileName)->path()
-            );
+            $markdown = $this->file->contents();
+
+            // $markdown = file_get_contents(
+            //     $this->file->fileNamed($fileName)->path()
+            // );
 
             if (is_bool($markdown)) {
                 $markdown = '';

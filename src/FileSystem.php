@@ -8,56 +8,66 @@ use DirectoryIterator;
 
 use JoshBruce\Site\Content\FrontMatter;
 
+use JoshBruce\Site\File;
+
 /**
  * @todo: Remove contentRoot by moving content to project root.
  */
 class FileSystem
 {
     public static function init(
-        string $contentRoot,
-        string $folderPath = '/',
-        string $fileName = ''
+        string $base = ''
+        // string $contentRoot,
+        // string $folderPath = '/',
+        // string $fileName = ''
     ): FileSystem {
         return new FileSystem(
-            $contentRoot,
-            $folderPath,
-            $fileName
+            $base
+            // $contentRoot,
+            // $folderPath,
+            // $fileName
         );
     }
 
     public function __construct(
-        private string $contentRoot,
-        private string $folderPath = '/',
-        private string $fileName = ''
+        private string $base = ''
+        // private string $contentRoot,
+        // private string $folderPath = '/',
+        // private string $fileName = ''
     ) {
     }
 
     /**
      * @return string Path to where the text-based content for the site lives.
      */
-    public function contentRoot(): string
+    public function base(): string
     {
-        return $this->contentRoot;
+        $dir     = __DIR__;
+        $parts   = explode('/', $dir);
+        $parts   = array_slice($parts, 0, -1);
+        $parts[] = 'content';
+        return implode('/', $parts);
     }
 
-    public function with(string $folderPath, string $fileName = ''): FileSystem
-    {
-        return new self($this->contentRoot, $folderPath, $fileName);
-    }
+//     public function with(string $fileName = ''): FileSystem
+//     {
+//
+//         return new self($this->contentRoot(), $fileName);
+//     }
 
-    public function fileNamed(string $fileName): FileSystem
-    {
-        return $this->with($this->folderPath, $fileName);
-    }
+    // public function fileNamed(string $fileName): FileSystem
+    // {
+    //     return $this->with($this->folderPath, $fileName);
+    // }
 
-    public function fileName(): string
-    {
-        return $this->fileName;
-    }
+    // public function fileName(): string
+    // {
+    //     return $this->fileName;
+    // }
 
     public function path(bool $full = true): string
     {
-        $path = $this->contentRoot . $this->folderPath . '/' . $this->fileName();
+        $path = $this->contentRoot() . $this->folderPath . '/' . $this->fileName();
         if (! $full) {
             $path = str_replace($this->contentRoot, '', $path);
         }
@@ -90,9 +100,13 @@ class FileSystem
         return $type;
     }
 
-    public function navigation(string $file = ''): FileSystem
+    public function navigation(string $file = ''): FileSystem|File
     {
-        return $this->up()->with('/navigation', $file);
+        if (strlen($file) > 0) {
+            return File::init("{$this->base()}/navigation/{$file}");
+        }
+        return FileSystem::init("{$this->base()}/navigation");
+        // return $this->up()->with('/navigation', $file);
     }
 
     public function messages(string $file = ''): FileSystem
@@ -214,11 +228,11 @@ class FileSystem
         return $content;
     }
 
-    private function up(): FileSystem
-    {
-        $parts = explode('/', $this->contentRoot);
-        array_pop($parts);
-        $newRoot = implode('/', $parts);
-        return FileSystem::init($newRoot);
-    }
+    // private function up(): FileSystem
+    // {
+    //     $parts = explode('/', $this->base());
+    //     array_pop($parts);
+    //     $newRoot = implode('/', $parts);
+    //     return FileSystem::init($newRoot);
+    // }
 }

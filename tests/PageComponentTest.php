@@ -20,12 +20,12 @@ beforeEach(function() {
 
 test('navigation', function() {
     expect(
-        Navigation::create($this->fileSystem->contentRoot())->build()
+        Navigation::create('main.md')->build()
     )->toBe(<<<html
-        <nav id="main-nav"><ul><li><a href="/">home</a></li><li><a href="/finances">Finances</a><ul><li><a href="/finances/investment-policy">Investment policy</a></li><li><a href="/finances/building-wealth-paycheck-to-paycheck">Paycheck to paycheck</a></li></ul></li><li><a href="/design-your-life">Design your life</a><ul><li><a href="/design-your-life/motivators">Motivators</a></li></ul></li><li><a href="/software-development">Software development</a><ul><li><a href="/software-development/why-dont-you-use">Why don't you use</a></li><li><a href="/somethig-with-commas">Some, commas, and whatnot</a></li></ul></li></ul></nav>
+        <nav id="main-nav"><ul><li><a href="/">Josh Bruce</a></li><li><a href="/finances">Finances</a><ul><li><a href="/finances/investment-policy">Investment policy</a></li><li><a href="/finances/building-wealth-paycheck-to-paycheck">Paycheck to paycheck</a></li></ul></li><li><a href="/design-your-life">Design your life</a><ul><li><a href="/design-your-life/motivators">Motivators</a></li></ul></li><li><a href="/software-development">Software development</a><ul><li><a href="/software-development/why-dont-you-use">Why donʼt you use</a></li></ul></li><li><a href="/web-development">Web development</a><ul><li><a href="/web-development/on-constraints">On constraints</a></li><li><a href="/web-development/modern-web-development">Modern web development</a></li><li><a href="/web-development/static-dynamic-and-interactive">Static, dynamic, and interactive</a></li><li><a href="/web-development/refactoring-re-engineering-and-rebuilding">Refactoring, re-engineering, and rebuilding</a></li></ul></li></ul></nav>
         html
     );
-});
+})->group('components', 'navigation');
 
 use JoshBruce\Site\Content\FrontMatter;
 
