@@ -9,7 +9,7 @@ beforeEach(function() {
 
     serverGlobals();
 
-    $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
+    $this->contentRoot = $this->projectRoot . '/content';
 });
 
 it('can return folder tree', function() {
@@ -131,28 +131,19 @@ it('has correct mimetypes', function() {
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/
     // MIME_types#textjavascript
     expect(
-        FileSystem::init($this->contentRoot)->with(
-            folderPath: '/assets/js',
-            fileName: 'javascript.js'
-        )->mimetype()
+        FileSystem::init($this->contentRoot, 'gulpfile.js')->mimetype()
     )->toBe(
         'text/javascript'
     );
 
     expect(
-        FileSystem::init($this->contentRoot)->with(
-            folderPath: '/assets/css',
-            fileName: 'main.css'
-        )->mimetype()
+        FileSystem::init($this->contentRoot, 'css', 'main.min.css')->mimetype()
     )->toBe(
         'text/css'
     );
 
     expect(
-        FileSystem::init($this->contentRoot)->with(
-            folderPath: '/',
-            fileName: 'content.md'
-        )->mimetype()
+        FileSystem::init($this->contentRoot, 'public', 'content.md')->mimetype()
     )->toBe(
         'text/html'
     );

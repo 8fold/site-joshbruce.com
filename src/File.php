@@ -39,4 +39,26 @@ class File
     {
         return file_exists($this->path()) and is_file($this->path());
     }
+
+    public function mimetype(): string
+    {
+        $type = mime_content_type($this->path());
+        if (is_bool($type) and $type === false) {
+            return '';
+        }
+
+        if ($type === 'text/plain') {
+            $extensionMap = [
+                'md'  => 'text/html',
+                'css' => 'text/css',
+                'js'  => 'text/javascript'
+            ];
+
+            $parts     = explode('.', $this->path());
+            $extension = array_pop($parts);
+
+            $type = $extensionMap[$extension];
+        }
+        return $type;
+    }
 }

@@ -6,17 +6,17 @@ use JoshBruce\Site\PageComponents\Navigation;
 
 use JoshBruce\Site\FileSystem;
 
-beforeEach(function() {
-    // This somewhat unreadable one-liner basically creates a fully qualified
-    // path to the root of the project, without using relative syntax
-    $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
-
-    serverGlobals();
-
-    $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
-
-    $this->fileSystem = FileSystem::init($this->contentRoot);
-});
+// beforeEach(function() {
+//     // This somewhat unreadable one-liner basically creates a fully qualified
+//     // path to the root of the project, without using relative syntax
+//     $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+//
+//     serverGlobals();
+//
+//     $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
+//
+//     $this->fileSystem = FileSystem::init($this->contentRoot);
+// });
 
 test('navigation', function() {
     expect(

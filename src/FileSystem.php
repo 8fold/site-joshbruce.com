@@ -16,11 +16,19 @@ use JoshBruce\Site\File;
 class FileSystem
 {
     public static function init(
-        string $base = ''
+        string $base = '', ...$parts
         // string $contentRoot,
         // string $folderPath = '/',
         // string $fileName = ''
-    ): FileSystem {
+    ): FileSystem|File {
+        $last = array_pop($parts);
+        if (is_string($last) and str_contains($last, '.')) {
+            $p       = explode('/', $base);
+            $parts   = array_merge($p, $parts);
+            $parts[] = $last;
+            $path    = implode('/', $parts);
+            return File::init($path);
+        }
         return new FileSystem(
             $base
             // $contentRoot,
@@ -78,27 +86,27 @@ class FileSystem
         return $path;
     }
 
-    public function mimetype(): string
-    {
-        $type = mime_content_type($this->path());
-        if (is_bool($type) and $type === false) {
-            return '';
-        }
-
-        if ($type === 'text/plain') {
-            $extensionMap = [
-                'md'  => 'text/html',
-                'css' => 'text/css',
-                'js'  => 'text/javascript'
-            ];
-
-            $parts     = explode('.', $this->path());
-            $extension = array_pop($parts);
-
-            $type = $extensionMap[$extension];
-        }
-        return $type;
-    }
+//     public function mimetype(): string
+//     {
+//         $type = mime_content_type($this->path());
+//         if (is_bool($type) and $type === false) {
+//             return '';
+//         }
+//
+//         if ($type === 'text/plain') {
+//             $extensionMap = [
+//                 'md'  => 'text/html',
+//                 'css' => 'text/css',
+//                 'js'  => 'text/javascript'
+//             ];
+//
+//             $parts     = explode('.', $this->path());
+//             $extension = array_pop($parts);
+//
+//             $type = $extensionMap[$extension];
+//         }
+//         return $type;
+//     }
 
     public function navigation(string $file = ''): FileSystem|File
     {
