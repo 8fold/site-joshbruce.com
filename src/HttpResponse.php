@@ -16,7 +16,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\Site\Content\Markdown;
 
-use JoshBruce\Site\PageComponents\Footer;
+use JoshBruce\Site\PageComponents\Navigation;
 
 class HttpResponse
 {
@@ -105,7 +105,7 @@ class HttpResponse
                 $html
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::a('top')->props('href #content-top', 'id go-to-top'),
-            // Navigation::create($this->contentRoot)->build(),
+            Navigation::create('main.md'),
             Element::footer(
                 Element::p(
                     'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .

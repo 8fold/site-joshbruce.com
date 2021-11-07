@@ -1,21 +1,13 @@
----
-navigation: [
-	/ Josh Bruce, [
-		/finances Finances,
-		/finances/investment-policy Investment policy,
-		/finances/building-wealth-paycheck-to-paycheck Paycheck to paycheck
-	], [
-		/design-your-life Design your life,
-		/design-your-life/motivators Motivators
-	], [
-	    /software-development Software development,
-	    /software-development/why-dont-you-use Why donʼt you use
-	], [
-		/web-development Web development,
-		/web-development/on-constraints On constraints,
-		/web-development/modern-web-development Modern web development,
-		/web-development/static-dynamic-and-interactive Static\ dynamic\ and interactive,
-		/web-development/refactoring-re-engineering-and-rebuilding Refactoring\ re-engineering\ and rebuilding
-	]
-]
----
+- [Josh bruce](/)
+- [Finances](/finances)
+    - [Investment policy](/finances/investment-policy)
+    - [Paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck)
+- [Design your life](/design-your-life)
+    - [Motivators](/design-your-life/motivators)
+- [Software development](/software-development)
+    - [Why don't you use](/software-development/why-dont-you-use)
+- [Web development](/web-development)
+    - [On constraints](/web-development/on-constraints)
+    - [Modern web development](/web-development/modern-web-development)
+    - [Static, dynamic, and interactive](/web-development/static-dynamic-and-interactive)
+    - [Refactoring, re-engineering, and rebuilding](/web-development/refactoring-re-engineering-and-rebuilding)
