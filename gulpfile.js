@@ -20,9 +20,9 @@ gulp.task("default", (done) => {
 gulp.task("sass", (done) => {
   const pluginsProcess = [discardComments(), autoprefixer()];
   const pluginsMinify  = [csso({ forceMediaMerge: false })];
-  const dest           = "./content/assets/css";
+  const dest           = "./content/public/assets/css";
   gulp
-    .src('assets/sass/main.scss')
+    .src('./content/assets/sass/main.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({ outputStyle: "expanded" })
@@ -37,6 +37,6 @@ gulp.task("sass", (done) => {
 });
 
 gulp.task("watch", () => {
-  gulp.watch("assets/**/*.scss", gulp.series("sass"));
+  gulp.watch("./content/assets/**/*.scss", gulp.series("sass"));
   return;
 });
