@@ -6,24 +6,27 @@ use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
 // use JoshBruce\Site\ServerGlobals;
 //
-// test('expected headers', function() {
-//     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::init()
-//         )->headers()
-//     )->toBeEmpty()->toBeArray();
-// })->group('response', 'focus');
-//
-// test('expected body', function() {
-//     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::init()
-//         )->body()
-//     )->toBe(<<<text
-//         Hello, World!
-//         text
-//     );
-// })->group('response');
+test('expected headers', function() {
+    serverGlobals();
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::fromGlobals()
+        )->headers()
+    )->toBe(
+        ['Content-Type' => 'text/html']
+    );
+
+    serverGlobals('/assets/css/main.min.css');
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::fromGlobals()
+        )->headers()
+    )->toBe(
+        ['Content-Type' => 'text/css']
+    );
+})->group('response');
 
 test('expected titles', function() {
     serverGlobals();
@@ -33,7 +36,20 @@ test('expected titles', function() {
     )->body();
 
     expect(
-        str_contains($body, "Josh Bruce's personal site")
+        str_contains($body, "<title>Josh Bruce's personal site</title>")
+    )->toBeTrue();
+
+    serverGlobals('/finances');
+
+    $body = HttpResponse::from(
+        request: HttpRequest::fromGlobals()
+    )->body();
+
+    expect(
+        str_contains(
+            $body,
+            "<title>Finances | Josh Bruce's personal site</title>"
+        )
     )->toBeTrue();
 
 //     unset($_SERVER['APP_ENV']);
@@ -67,7 +83,7 @@ test('expected titles', function() {
 //     )->toBeInt()->toBe(
 //         404
 //     );
-})->group('response', 'focus');
+})->group('response');
 
 test('expected status codes', function() {
     serverGlobals();

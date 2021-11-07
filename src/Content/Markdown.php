@@ -75,6 +75,22 @@ class Markdown
         return $this->frontMatter;
     }
 
+    public function pageTitle(): string
+    {
+        $titles   = [];
+        $titles[] = $this->frontMatter()->title();
+
+        $file = clone $this->file;
+        while ($file->canGoUp()) {
+            $file = $file->up();
+
+            $m = Markdown::for($file);
+
+            $titles[] = $m->frontMatter()->title();
+        }
+        return implode(' | ', $titles);
+    }
+
     private function fileContent(): string
     {
         if (strlen($this->fileContent) === 0 and $this->file->found()) {

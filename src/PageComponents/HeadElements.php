@@ -16,8 +16,8 @@
 //     public static function create(string $contentRoot): array
 //     {
 //         $headElements   = [
-//             HtmlElement::meta()
-//                 ->props('name viewport', 'content width=device-width,initial-scale=1')
+            // HtmlElement::meta()
+            //     ->props('name viewport', 'content width=device-width,initial-scale=1')
 //         ];
 //
 //         $headElements = array_merge($headElements, Favicons::create());

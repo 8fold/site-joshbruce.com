@@ -8,6 +8,8 @@ namespace JoshBruce\Site;
 //
 // // use JoshBruce\Site\Content\FrontMatter;
 //
+use JoshBruce\Site\FileSystem;
+
 class File
 {
     public static function at(string $localPath): File
@@ -44,9 +46,25 @@ class File
         if ($full) {
             return $this->localPath;
         }
-        return '';
-        // TODO: test and verify used
-        // return str_replace($this->base(), '', $this->localPath);
+        // TODO: test and verify used - returning empty string not an option.
+        return str_replace(
+            FileSystem::contentRoot() . '/public',
+            '',
+            $this->localPath
+        );
+    }
+
+    public function canGoUp(): bool
+    {
+        return $this->path(false) !== '/content.md';
+    }
+
+    public function up(): File
+    {
+        $parts = explode('/', $this->localPath);
+        $parts = array_slice($parts, 0, -2); // remove file name and one folder.
+        $localPath = implode('/', $parts);
+        return File::at($localPath . '/content.md');
     }
 
     public function contents(): string
@@ -56,6 +74,28 @@ class File
             return '';
         }
         return $contents;
+    }
+
+    public function mimetype(): string
+    {
+        $type = mime_content_type($this->path());
+        if (is_bool($type) and $type === false) {
+            return '';
+        }
+
+        if ($type === 'text/plain') {
+            $extensionMap = [
+                'md'  => 'text/html',
+                'css' => 'text/css',
+                'js'  => 'text/javascript'
+            ];
+
+            $parts     = explode('.', $this->path());
+            $extension = array_pop($parts);
+
+            $type = $extensionMap[$extension];
+        }
+        return $type;
     }
 //     public static function init(string $path): File
 //     {
@@ -91,25 +131,4 @@ class File
 //
 
 //
-//     public function mimetype(): string
-//     {
-//         $type = mime_content_type($this->path());
-//         if (is_bool($type) and $type === false) {
-//             return '';
-//         }
-//
-//         if ($type === 'text/plain') {
-//             $extensionMap = [
-//                 'md'  => 'text/html',
-//                 'css' => 'text/css',
-//                 'js'  => 'text/javascript'
-//             ];
-//
-//             $parts     = explode('.', $this->path());
-//             $extension = array_pop($parts);
-//
-//             $type = $extensionMap[$extension];
-//         }
-//         return $type;
-//     }
 }

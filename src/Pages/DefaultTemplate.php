@@ -51,9 +51,9 @@
 //      */
 //     public function headers(): array
 //     {
-//         $headers = [];
-//         $headers['Content-Type'] = $this->mimeType;
-//         return $headers;
+        // $headers = [];
+        // $headers['Content-Type'] = $this->mimeType;
+        // return $headers;
 //     }
 //
 //     public function body(): string

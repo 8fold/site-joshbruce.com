@@ -105,7 +105,10 @@ class HttpRequest
         $parts = explode('/', $this->uriPath());
         $lastPart = array_slice($parts, -1);
         $possibleFileName = array_shift($lastPart);
-        if ($possibleFileName === null) {
+        if (
+            $possibleFileName === null or
+            ! str_contains($possibleFileName, '.')
+        ) {
             return '';
         }
         return $possibleFileName;
