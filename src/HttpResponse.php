@@ -13,7 +13,7 @@ use Nyholm\Psr7\Response as PsrResponse;
 //
 class HttpResponse
 {
-    private PsrResponse $psrResponse;
+    private ResponseInterface $psrResponse;
 
     public static function from(HttpRequest $request): HttpResponse
     {

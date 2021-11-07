@@ -23,10 +23,10 @@ use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
  */
 class HttpRequest
 {
-//     private RequestInterface $psrRequest;
-//
-//     private string $localPath = '';
-//
+    private RequestInterface $psrRequest;
+
+    private string $localPath = '';
+
     public static function fromGlobals(): HttpRequest
     {
         return new HttpRequest();

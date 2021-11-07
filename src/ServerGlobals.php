@@ -43,7 +43,7 @@ class ServerGlobals
     {
         if ($this->hasAppEnv()) {
             $globals = $this->globals();
-            return $globals['APP_ENV'];
+            return strval($globals['APP_ENV']);
         }
         return '';
     }
@@ -53,6 +53,9 @@ class ServerGlobals
         return array_key_exists('APP_ENV', $this->globals());
     }
 
+    /**
+     * @return array<string, int|string>
+     */
     private function globals(): array
     {
         return $_SERVER;
