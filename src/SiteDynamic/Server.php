@@ -9,13 +9,13 @@ namespace JoshBruce\Site\SiteDynamic;
 
 class Server
 {
-    public static function projectRoot(): string
-    {
-        $dir     = __DIR__;
-        $parts   = explode('/', $dir);
-        $parts   = array_slice($parts, 0, -2);
-        return implode('/', $parts);
-    }
+    // public static function projectRoot(): string
+    // {
+    //     $dir     = __DIR__;
+    //     $parts   = explode('/', $dir);
+    //     $parts   = array_slice($parts, 0, -2);
+    //     return implode('/', $parts);
+    // }
 
     /**
      * @param  array<string, string> $serverGlobals
@@ -25,8 +25,8 @@ class Server
         string $projectRoot
     ): Server {
         return new Server(
-            serverGlobals: $serverGlobals,
-            projectRoot: $projectRoot
+            serverGlobals: $serverGlobals
+            // projectRoot: $projectRoot
         );
     }
 
@@ -34,8 +34,8 @@ class Server
      * @param array<string, string> $serverGlobals
      */
     public function __construct(
-        private array $serverGlobals,
-        private string $projectRoot
+        private array $serverGlobals
+        // private string $projectRoot
     ) {
     }
 
@@ -71,66 +71,66 @@ class Server
 //         return false;
 //     }
 
-    public function isRequestingUnsupportedMethod(): bool
-    {
-        $requestMethod = strtoupper($this->serverGlobals['REQUEST_METHOD']);
-        return ! in_array($requestMethod, $this->supportedMethods());
-    }
+    // public function isRequestingUnsupportedMethod(): bool
+    // {
+    //     $requestMethod = strtoupper($this->serverGlobals['REQUEST_METHOD']);
+    //     return ! in_array($requestMethod, $this->supportedMethods());
+    // }
 
-    public function isRequestingFile(): bool
-    {
-        return strlen($this->requestFileName()) > 0;
-    }
+    // public function isRequestingFile(): bool
+    // {
+    //     return strlen($this->requestFileName()) > 0;
+    // }
 
     /**
      * @return string[]
      */
-    public function supportedMethods(): array
-    {
-        return ['GET'];
-    }
+    // public function supportedMethods(): array
+    // {
+    //     return ['GET'];
+    // }
 
 
-    public function contentRoot(): string
-    {
-        $projectParts  = explode('/', $this->projectRoot);
-        $contentUp     = intval($this->serverGlobals['CONTENT_UP']);
-        $contentFolder = strval($this->serverGlobals['CONTENT_FOLDER']);
+//     public function contentRoot(): string
+//     {
+//         $projectParts  = explode('/', $this->projectRoot);
+//         $contentUp     = intval($this->serverGlobals['CONTENT_UP']);
+//         $contentFolder = strval($this->serverGlobals['CONTENT_FOLDER']);
+//
+//         if (is_int($contentUp) and $contentUp > 0) {
+//             $projectParts = array_slice($projectParts, 0, -1 * $contentUp);
+//         }
+//
+//         $contentParts = explode('/', $contentFolder); // allow for subfolders
+//         $contentParts = array_filter($contentParts); // remove empty value
+//         $contentParts = array_merge($projectParts, $contentParts);
+//
+//         if (
+//             $this->isRequestingFile() and
+//             in_array($this->requestFileName(), $contentParts)
+//         ) {
+//             array_pop($contentParts);
+//         }
+//
+//         return implode('/', $contentParts);
+//     }
 
-        if (is_int($contentUp) and $contentUp > 0) {
-            $projectParts = array_slice($projectParts, 0, -1 * $contentUp);
-        }
-
-        $contentParts = explode('/', $contentFolder); // allow for subfolders
-        $contentParts = array_filter($contentParts); // remove empty value
-        $contentParts = array_merge($projectParts, $contentParts);
-
-        if (
-            $this->isRequestingFile() and
-            in_array($this->requestFileName(), $contentParts)
-        ) {
-            array_pop($contentParts);
-        }
-
-        return implode('/', $contentParts);
-    }
-
-    public function requestFileName(): string
-    {
-        $path  = $this->requestUri();
-        $parts = explode('/', $path);
-
-        $possibleFileName = array_pop($parts);
-        if (
-            $possibleFileName !== null and
-            ! str_starts_with($possibleFileName, '.') and
-            $fileNameParts = array_filter(explode('.', $possibleFileName)) and
-            count($fileNameParts) > 1
-        ) {
-            return $possibleFileName;
-        }
-        return '';
-    }
+//     public function requestFileName(): string
+//     {
+//         $path  = $this->requestUri();
+//         $parts = explode('/', $path);
+//
+//         $possibleFileName = array_pop($parts);
+//         if (
+//             $possibleFileName !== null and
+//             ! str_starts_with($possibleFileName, '.') and
+//             $fileNameParts = array_filter(explode('.', $possibleFileName)) and
+//             count($fileNameParts) > 1
+//         ) {
+//             return $possibleFileName;
+//         }
+//         return '';
+//     }
 
     public function requestUriWithoutFileName(): string
     {

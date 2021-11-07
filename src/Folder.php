@@ -103,7 +103,7 @@ class Folder
 //         return $type;
 //     }
 
-    private function local(
+    public function local(
         string $folder,
         string $withFile = ''
     ): FileSystem|File {

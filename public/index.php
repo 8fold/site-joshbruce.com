@@ -13,18 +13,10 @@ require $projectRoot . '/vendor/autoload.php';
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
 $server = JoshBruce\Site\SiteDynamic\Server::init($_SERVER, $projectRoot);
-//
-// $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
-// $creator      = new Nyholm\Psr7Server\ServerRequestCreator(
-//     $psr17Factory,
-//     $psr17Factory,
-//     $psr17Factory,
-//     $psr17Factory
-// );
-//
-// $request = $creator->fromGlobals();
-$request = JoshBruce\Site\HttpRequest::init();
-die(var_dump($request));
+
+$request  = JoshBruce\Site\HttpRequest::fromGlobals();
+$response = JoshBruce\Site\HttpResponse::init(with: $request);
+die(var_dump($response));
 if ($request->isMissingRequiredValues()) {
     JoshBruce\Site\SiteDynamic\Emitter::emitInteralServerErrorResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
@@ -32,8 +24,6 @@ if ($request->isMissingRequiredValues()) {
     );
     exit;
 }
-
-
 
 if ($request->isUnsupportedMethod()) {
     JoshBruce\Site\SiteDynamic\Emitter::emitUnsupportedMethodResponse(
@@ -44,19 +34,19 @@ if ($request->isUnsupportedMethod()) {
     exit;
 }
 
-$fileSystem = JoshBruce\Site\FileSystem::init(
-    $server->contentRoot(),
-    $server->requestUriWithoutFileName(),
-    $server->requestFileName()
-);
+// $fileSystem = JoshBruce\Site\FileSystem::init(
+//     $server->contentRoot(),
+//     $server->requestUriWithoutFileName(),
+//     $server->requestFileName()
+// );
 
-if ($fileSystem->rootFolderIsMissing()) {
-    JoshBruce\Site\SiteDynamic\Emitter::emitBadContentResponse(
-        JoshBruce\Site\Content\Markdown::markdownConverter(),
-        $projectRoot
-    );
-    exit;
-}
+// if ($fileSystem->rootFolderIsMissing()) {
+//     JoshBruce\Site\SiteDynamic\Emitter::emitBadContentResponse(
+//         JoshBruce\Site\Content\Markdown::markdownConverter(),
+//         $projectRoot
+//     );
+//     exit;
+// }
 
 // TESTING: Redirection
 // Check browser address becomes /design-your-life
