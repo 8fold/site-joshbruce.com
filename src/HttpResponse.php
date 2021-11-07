@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 //
-// use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ResponseInterface;
 //
-// use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
-// use Nyholm\Psr7\Response as PsrResponse;
+use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
+use Nyholm\Psr7\Response as PsrResponse;
 //
 // use JoshBruce\Site\HttpRequest;
 //
@@ -54,16 +54,16 @@ class HttpResponse
 //         return $this->psrResponse()->getHeaders();
 //     }
 //
-//     public function psrResponse(): ResponseInterface
-//     {
-//         if (! isset($this->psrResponse)) {
-//             $psr17Factory = new PsrFactory();
-//             $this->psrResponse = $psr17Factory->createResponse(
-//                 $this->statusCode()
-//             )->withBody(
-//                 $psr17Factory->createStream('Hello, World!')
-//             );
-//         }
-//         return $this->psrResponse;
-//     }
+    public function psrResponse(): ResponseInterface
+    {
+        if (! isset($this->psrResponse)) {
+            $psr17Factory = new PsrFactory();
+            $this->psrResponse = $psr17Factory->createResponse(
+                $this->statusCode()
+            )->withBody(
+                $psr17Factory->createStream('Hello, World!')
+            );
+        }
+        return $this->psrResponse;
+    }
 }

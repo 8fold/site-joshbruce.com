@@ -30,7 +30,7 @@ test('correct status codes', function() {
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::init()
+            request: HttpRequest::fromGlobals()
         )->statusCode()
     )->toBeInt()->toBe(
         200
@@ -40,7 +40,7 @@ test('correct status codes', function() {
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::init()
+            request: HttpRequest::fromGlobals()
         )->statusCode()
     )->toBeInt()->toBe(
         500
@@ -52,7 +52,7 @@ test('correct status codes', function() {
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::init()
+            request: HttpRequest::fromGlobals()
         )->statusCode()
     )->toBeInt()->toBe(
         405
@@ -62,7 +62,7 @@ test('correct status codes', function() {
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::init()
+            request: HttpRequest::fromGlobals()
         )->statusCode()
     )->toBeInt()->toBe(
         404

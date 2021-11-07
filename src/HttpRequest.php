@@ -27,12 +27,7 @@ class HttpRequest
 //
 //     private string $localPath = '';
 //
-//     public static function fromGlobals(): HttpRequest
-//     {
-//         return self::init();
-//     }
-//
-    public static function init(): HttpRequest
+    public static function fromGlobals(): HttpRequest
     {
         return new HttpRequest();
     }
@@ -53,9 +48,9 @@ class HttpRequest
 
         if ($this->serverGlobals()->appEnvIsNot('production')) {
             // use Whoops! for error display
-            $errorHandler = new ErrorHandler;
+            $errorHandler = new ErrorHandler();
             $errorHandler->pushHandler(
-                new ErrorPageHandler
+                new ErrorPageHandler()
             );
             $errorHandler->register();
         }
