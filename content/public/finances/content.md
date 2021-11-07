@@ -1,9 +1,14 @@
 ---
 title: Finances
 disclaimer: "I'm not a financial planner or advisor and don't play one on the Internet. This content is for informational and entertainment purposes only and does not constitute advice. Please consult with your financial advisors and financial institutions."
-created: 20210216
-updated: 20210528
+dateblock:
+    - 20210216 Created on
+    - 20210528 Updated on
 ---
+
+# Finances
+
+{!!dateblock!!}
 
 Talking about money has always felt foreign to me. It's one of those things that's socialized to be taboo. If you're doing poorly, people may not like you. If you're doing well, people may not like you. So, just don't talk about it. At least that appears to be the American ethos when it comes to money.
 

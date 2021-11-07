@@ -1,7 +1,12 @@
 ---
 title: Consolidated financial blueprint
-created: 20210511
+dateblock:
+    - 20210511 Created on
 ---
+
+# Consolidated financial blueprint
+
+{!!dateblock!!}
 
 The strange thing for me is that I didn't look into financial advice outside what I knew until I was debt free. I remember calling the institution that had my Roth [.IRA](Individual Retirement Account) and asking about planning for retirement. The representative said, "Get out of debt, then start thinking about that and call me." Seemed fair enough at the time and that's what I did. Probably not the wisest decision.
 
@@ -13,13 +18,13 @@ With most of the strategies I've seen they are pretty generic and applicable to 
 
 ## Infrastructure (basic)
 
-This is about setup and constraints. 
+This is about setup and constraints.
 
 At minimum you need someone willing to give you money, a place to put that money, and a way to take that money out and spend it.
 
 Habit 1: Always redistribute (or earmark) income.
 
-Stealing this one from teaching children about money. It's the three buckets: spend, save, give. You could have three literal buckets and if you get a dollar you would put a certain percentage into each of them. Maybe 50 cents in the spend bucket, 10 in the give bucket, and 40 in the save bucket. 
+Stealing this one from teaching children about money. It's the three buckets: spend, save, give. You could have three literal buckets and if you get a dollar you would put a certain percentage into each of them. Maybe 50 cents in the spend bucket, 10 in the give bucket, and 40 in the save bucket.
 
 This takes that lump sum you received and divides it up into smaller portions.
 
@@ -31,11 +36,11 @@ In fact, you should probably go ahead and open two savings accounts. One is for 
 
 Let's shift to people over the age of 18; the same three buckets are a good starting place and it's advisable to add a couple more:
 
-1. Income account (new): This is a checking account at a financial institution; this facilitates depositing money you receive from others and makes the bookkeeping easier. 
-2. Save, Profit, or Hold (a name that implies you shouldn't spend this money): This is an interest-bearing account at a financial institution. 
+1. Income account (new): This is a checking account at a financial institution; this facilitates depositing money you receive from others and makes the bookkeeping easier.
+2. Save, Profit, or Hold (a name that implies you shouldn't spend this money): This is an interest-bearing account at a financial institution.
 3. Taxes (new): This is an interest-bearing account at a financial institution (a different sub-account than the Save account). As your money makes more money, the government might want to take a portion of that money; it's referred to as taxable interest-income — this is where you'll prepare for that moment.
-4. Giving: This is an interest-bearing account. This is a set aside for charitable donations and even gifts for friends and family. 
-5. Operating Expenses or Spend: This is a checking account and facilitates spending money. If you decide to get a debit card, this is the account to get the card associated with. 
+4. Giving: This is an interest-bearing account. This is a set aside for charitable donations and even gifts for friends and family.
+5. Operating Expenses or Spend: This is a checking account and facilitates spending money. If you decide to get a debit card, this is the account to get the card associated with.
 
 Habit 3: Establish and maintain allocations and flows.
 
@@ -107,7 +112,7 @@ We're going to add to our five accounts and some percentages, these are the perc
 4. The Giving account; 0 percent.
 5. The Operating Expenses account; 15 percent.
 
-The "advanced" part of infrastructure is to take further advantage of the concept of fund accounting by opening more sub-accounts to help facilitate the practices. 
+The "advanced" part of infrastructure is to take further advantage of the concept of fund accounting by opening more sub-accounts to help facilitate the practices.
 
 For me, that means adding a few more accounts:
 

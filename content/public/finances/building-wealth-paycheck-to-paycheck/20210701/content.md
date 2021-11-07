@@ -1,19 +1,26 @@
 ---
 title: July 1st, 2021 paycheck
-created: 20210613
-updated: 20210701
+dateblock:
+    - 20210619 Created on
+    - 20211031 Updated on
 data:
-- [Debt, 0, 0, 0.28]
-- [Cash, 2, 4, 9.94]
-- [Invest, 0, 0, 0]
-- [US Bonds - munis, 1, 2, 4.14]
-- ["US Bonds - [.Gov't](Government)", 0, 0.5, 0.01]
-- [US equities - small, 30, 35, 18.01]
-- [US equities - mid, 30, 35, 22.69]
-- [US equities - large, 30, 35, 45.22]
-- [Int. bonds, 0, 0, 0]
-- [Int. equities, 0, 2, 1.42]
+    - [Debt, 0, 0, 0.28]
+    - [Cash, 2, 4, 9.94]
+    - [Invest, 0, 0, 0]
+    - [US Bonds - munis, 1, 2, 4.14]
+    - ["US Bonds - [.Gov't](Government)", 0, 0.5, 0.01]
+    - [US equities - small, 30, 35, 18.01]
+    - [US equities - mid, 30, 35, 22.69]
+    - [US equities - large, 30, 35, 45.22]
+    - [Int. bonds, 0, 0, 0]
+    - [Int. equities, 0, 2, 1.42]
 ---
+
+# July 1st, 2021 paycheck
+
+{!!dateblock!!}
+
+{!!data!!}
 
 I increased the contribution to my 401(k) by 2 percent; 17 percent for this paycheck.
 

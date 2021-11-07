@@ -1,58 +1,55 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site\PageComponents;
-//
-// use Carbon\Carbon;
-//
-// use Eightfold\HTMLBuilder\Element as HtmlElement;
-//
-// use JoshBruce\Site\Content\FrontMatter;
-//
-// class Data
-// {
-//     /**
-//      * @param array<int, array<int, string|int|float>> $data
-//      */
-//     public static function create(array $data): HtmlElement|string
-//     {
-//         $listHeadings = [];
-//         foreach ($data as $row) {
-//             $label   = $row[0];
-//             $current = $row[3];
-//             $low     = $row[1];
-//             $high    = $row[2];
-//
-//             $detail = 'hold';
-//             if ($current > $high) {
-//                 $detail = 'decrease';
-//
-//             } elseif ($current < $low) {
-//                 $detail = 'increase';
-//
-//             }
-//
-//             $listHeadings[] = Htmlelement::li(
-//                 $label . " ({$detail})",
-//                 HtmlElement::ul(
-//                     HtmlElement::li(
-//                         HtmlElement::b('current: '),
-//                         $current
-//                     ),
-//                     HtmlElement::li(
-//                         HtmlElement::abbr('min')->props('title minimum'),
-//                         ': ',
-//                         $low
-//                     ),
-//                     HtmlElement::li(
-//                         HtmlElement::abbr('max')->props('title maximum'),
-//                         ': ',
-//                         $high
-//                     )
-//                 )
-//             );
-//         }
-//         return HtmlElement::ul(...$listHeadings);
-//     }
-// }
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site\PageComponents;
+
+use Eightfold\HTMLBuilder\Element;
+
+use JoshBruce\Site\Content\FrontMatter;
+
+class Data
+{
+    public static function create(FrontMatter $frontMatter): string
+    {
+        $data = $frontMatter->data();
+
+        $listHeadings = [];
+        foreach ($data as $row) {
+            $label   = $row[0];
+            $current = $row[3];
+            $low     = $row[1];
+            $high    = $row[2];
+
+            $detail = 'hold';
+            if ($current > $high) {
+                $detail = 'decrease';
+
+            } elseif ($current < $low) {
+                $detail = 'increase';
+
+            }
+
+            $listHeadings[] = Element::li(
+                $label . " ({$detail})",
+                Element::ul(
+                    Element::li(
+                        Element::b('current: '),
+                        $current
+                    ),
+                    Element::li(
+                        Element::abbr('min')->props('title minimum'),
+                        ': ',
+                        $low
+                    ),
+                    Element::li(
+                        Element::abbr('max')->props('title maximum'),
+                        ': ',
+                        $high
+                    )
+                )
+            );
+        }
+        return Element::ul(...$listHeadings)->build();
+    }
+}

@@ -35,6 +35,17 @@ class FrontMatter
     }
 
     /**
+     * @return array<int, int[]>
+     */
+    public function data(): array
+    {
+        if ($this->hasMember('data')) {
+            return $this->frontMatter['data'];
+        }
+        return [];
+    }
+
+    /**
      * @return array<int, string>
      */
     public function dateblock(): array
@@ -72,16 +83,6 @@ class FrontMatter
 //         return '';
 //     }
 //
-//     /**
-//      * @return array<int, int[]>
-//      */
-//     public function data(): array
-//     {
-//         if ($this->hasMember('data')) {
-//             return $this->frontMatter['data'];
-//         }
-//         return [];
-//     }
 //
 //     public function original(): string
 //     {

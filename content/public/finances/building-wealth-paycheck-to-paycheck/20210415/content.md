@@ -1,8 +1,13 @@
 ---
-title: April 15th, 2021 paycheck 
-created: 20210331
-updated: 20210510
+title: April 15th, 2021 paycheck
+dateblock:
+    - 20210331 Created on
+    - 20210510 Updated on
 ---
+
+# April 15th, 2021 paycheck
+
+{!!dateblock!!}
 
 Thinking things will be settling down as the new rhythm is established.
 
@@ -18,7 +23,7 @@ Cash reserves going down.
 
 Still waiting to hear back on moving my business accounts to a new institution.
 
-## Credit cards 
+## Credit cards
 
 Still have 6 cards. 2 business and 4 personal (2 I use regularly). None carry a balance.
 
@@ -27,7 +32,7 @@ Oddly enough, the story of money coming back to me continues.
 I was refunded for a charge I put on one of the cards for business expenses (state documentation). Come to find out the documentation was already filed and the company I use to file all that for me refunded me the bill. Granted I had already cashed in the reward points when I put the credit into one of my checking accounts; I'm negative 361 points at the moment. However, I'll be using the cash from that refund to make the bulk of my credit card payment when I get my next paycheck.
 
 After figuring how to pay back the reward points that were already cashed out; if that's even a thing. (I called and learned that all my reward points go into the same bucket regardless of card of origin, so, they don’t care it’s negative.)
- 
+
 ## Retirement accounts
 
 This was my time to think about legacy. In short, I see three primary legacies human beings leave:
@@ -38,9 +43,9 @@ This was my time to think about legacy. In short, I see three primary legacies h
 
 Most people will emphasize one of these while toning down the others. I’m opting out of the first and emphasizing the other two. Retirement is the beginning of a financial legacy, past-me to future-me.
 
-This led me down the trust account rabbit hole. 
+This led me down the trust account rabbit hole.
 
-You might be thinking, “But you don’t have kids.” And I hear you. That was the first question I had and found out you can list whoever you want as the beneficiary of a trust; even businesses and charities. You can also create multiple trusts. 
+You might be thinking, “But you don’t have kids.” And I hear you. That was the first question I had and found out you can list whoever you want as the beneficiary of a trust; even businesses and charities. You can also create multiple trusts.
 
 For example, Benjamin Franklin opened two trusts. The beneficiaries of the trusts were the city of Boston and the city of Philadelphia. 1,000 USD over 200 years to see compounding in action. The ability to make withdrawals twice. Once after the first hundred years, leaving some in the trust, and the second withdrawal after another 100 years.
 
@@ -54,7 +59,7 @@ With that said, I went ahead and decided to up my 401(k) contributions to 10 per
 
 Let's take 2021 as an example. With my first check in January I want to start maximizing the Roth IRA contribution; leaving myself a bit of padding. Once I get all the tax forms and have a feel for my modified adjusted gross income, I want to top-off what I can in the Roth IRA; if there's anything left to contribute for 2020, I'll put it in the Traditional IRA.
 
-With the IRA as topped off as it can be for 2020 and 2021, I want to maximize the 401(k), if it doesn't reduce my total employer contribution. I was talking with an agent for my 401(k) who mentioned that if I contributed everything at the beginning of the year, I might lose out on some of the employer match. I'm not sure how that works mathematically and will contact my benefits department. Regardless, it would be a lot easier for me to throw in the whole thing at the front of the year because I have my salary, bonuses that contribute to the 401(k), and the possibility of raises. 
+With the IRA as topped off as it can be for 2020 and 2021, I want to maximize the 401(k), if it doesn't reduce my total employer contribution. I was talking with an agent for my 401(k) who mentioned that if I contributed everything at the beginning of the year, I might lose out on some of the employer match. I'm not sure how that works mathematically and will contact my benefits department. Regardless, it would be a lot easier for me to throw in the whole thing at the front of the year because I have my salary, bonuses that contribute to the 401(k), and the possibility of raises.
 
 Assuming that contributing 19,500 USD always results in the same employer match, then at this point I will have my IRA and 401(k) topped off, which leaves me able to contribute to the taxable accounts and HSA throughout the year. (There is a tax question in here I'll explore, if it seems like an option.)
 

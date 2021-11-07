@@ -1,7 +1,12 @@
 ---
 title: Design your life
-created: 20210619
+dateblock:
+    - 20210619 Created on
 ---
+
+# Design your life
+
+{!!dateblock!!}
 
 This is one of those "when I was a kid" stories, fair warning; I'll try to be brief.
 

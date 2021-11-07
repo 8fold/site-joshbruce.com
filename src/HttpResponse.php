@@ -72,26 +72,26 @@ class HttpResponse
         return Document::create(
             $markdown->pageTitle()
         )->head(
-            Element::meta()->props(
+            Element::meta()->omitEndTag()->props(
                 'name viewport',
                 'content width=device-width,initial-scale=1'
             ),
-            Element::link()->props(
+            Element::link()->omitEndTag()->props(
                 'type image/x-icon',
                 'rel icon',
                 'href /assets/favicons/favicon.ico'
             ),
-            Element::link()->props(
+            Element::link()->omitEndTag()->props(
                 'rel apple-touch-icon',
                 'href /assets/favicons/apple-touch-icon.png',
                 'sizes 180x180'
             ),
-            Element::link()->props(
+            Element::link()->omitEndTag()->props(
                 'rel image/png',
                 'href /assets/favicons/favicon-32x32.png',
                 'sizes 32x32'
             ),
-            Element::link()->props(
+            Element::link()->omitEndTag()->props(
                 'rel image/png',
                 'href /assets/favicons/favicon-16x16.png',
                 'sizes 16x16'
@@ -117,7 +117,7 @@ class HttpResponse
         //       content in same folder as rest of project.
         $query = round(microtime(true));
 
-        return Element::link()
+        return Element::link()->omitEndTag()
             ->props('rel stylesheet', "href {$cssPath}?v={$query}");
     }
 

@@ -1,9 +1,14 @@
 ---
 title: Why don't you use (WordPress, PolyWorkHQ, Medium, LinkedIn, and so on)?
 header: Why don't you use a framework or platform?
-created: 20210619
-updated: 20210710
+dateblock:
+    - 20210619 Created on
+    - 20210710 Updated on
 ---
+
+# Why donʼt you use a framework or platform?
+
+{!!dateblock!!}
 
 Since 1998 I have always created the platform used by my website. Be it Adobe Flash, PHP, or trying to write one in Swift. Inevitably someone asks me why I feel the need to reinvent the wheel or why I think I'm "better" or "too good" for those other platforms.
 
@@ -13,7 +18,7 @@ I've never been a fan of WordPress and I started using it around 2005 and it ins
 
 I've had two regular jobs as a web developer. In both cases, every problem or site that came across the table WordPress had to be the solution. In the early 2000s we wanted to avoid custom code to reduce the learning curve of someone coming in after me; of course, I still had to explain all the customizations we did to WordPress to make it work for the client. In 2012 at my second and last gig as a full-time web developer I would spend hours and sometimes days trying to beat WordPress into submission to give the client what they needed. This usually ended with me writing a user's manual so they could update the site themselves. The equivalent from 2015 or so would be the single-page client-side web app; think frameworks like Angular. A brochure site for a local restaurant with a menu and list of locations doesn't need all that...not a good solution for the specific problem.
 
-[Maslow's Hammer](https://en.wikipedia.org/wiki/Law_of_the_instrument) was in full effect and still kinda is. Turning a technology (the web) designed to be accessible to the "commoner" into something requiring complex, advanced knowledge. 
+[Maslow's Hammer](https://en.wikipedia.org/wiki/Law_of_the_instrument) was in full effect and still kinda is. Turning a technology (the web) designed to be accessible to the "commoner" into something requiring complex, advanced knowledge.
 
 This desire to make the web accessible to more people so they could create their own content saw a boom in platforms where those who didn't want to learn the syntax of HTML and the technology of transferring files could post their own content. [Twitter](https://twitter.com), [Facebook](https://www.facebook.com), [MySpace](https://myspace.com), [LinkeIn](https://www.linkedin.com) and other social media platforms started dominating the landscape. Of course, many of these came after the push by developers to create software the "commoner" could install on their own servers to generate their sites; [WordPress](https://wordpress.org), [TextPattern](https://textpattern.com), [Movable Type](https://www.movabletype.com), and countless others.
 
@@ -35,13 +40,13 @@ The Internet is fast. We're just not building like we had to back in the day whe
 
 ## Don't force feed
 
-There's a lot of advice out there on how to grow an audience. One of the most prolific and specific pieces of advice is to generate a shit-ton of content. 
+There's a lot of advice out there on how to grow an audience. One of the most prolific and specific pieces of advice is to generate a shit-ton of content.
 
 > You should be posting four or five times a day!
 
-I feel like this advice comes from the more eyeballs mentality that originated with ad revenue. More eyeballs equals more money to the platform owner. Of course, if you're posting to someone else's platform, they're making all that money. Not only that, but this advertising model has led to the creation of the feed and trying to get people to scroll forever on the page. 
+I feel like this advice comes from the more eyeballs mentality that originated with ad revenue. More eyeballs equals more money to the platform owner. Of course, if you're posting to someone else's platform, they're making all that money. Not only that, but this advertising model has led to the creation of the feed and trying to get people to scroll forever on the page.
 
-If I want to appear in your feed, I need to produce more content than the next person. Specifically, I need to create more content you are willing to interact with than the next person. 
+If I want to appear in your feed, I need to produce more content than the next person. Specifically, I need to create more content you are willing to interact with than the next person.
 
 I remember when I was still publishing on Medium I started talking about productivity and [self-improvement](/self-improvement) and was just starting to build an audience. I started following some other folks in that niche. They were putting out daily articles; using the following formula.
 
@@ -53,24 +58,24 @@ I remember when I was still publishing on Medium I started talking about product
 6. Tuesday...
 7. Saturday: Post article about "10 great life hacks" that summarized and regurgitated the previous 10 articles.
 
-Quantity. Quantity. Quantity. 
+Quantity. Quantity. Quantity.
 
 That's not how I've ever wanted to roll on the Internet. However, I felt what happened as a result; lowered engagement, less discoverability of the content I was putting out, and so on. So, I stopped posting to Medium while I could figure out how I wanted to do content in this ever changing medium called the Internet.
 
 The two big things I didn't want were:
 
-1. I didn't want to repeat content. 
-2. I didn't want to leave content up that was stale. 
+1. I didn't want to repeat content.
+2. I didn't want to leave content up that was stale.
 
-That's when I came to the three content type model. 
+That's when I came to the three content type model.
 
 ## Decoupling
 
 The longer you let someone or something else do things for you, the more coupled you will become. Something I'm seeing a lot of in the software development space is "modernization" efforts.
 
-Moving clients from database A to database B or micro-services instead of monoliths. 
+Moving clients from database A to database B or micro-services instead of monoliths.
 
-To pick on WordPress again, it used to be that WordPress would create a whole database architecture for you (don't know if that's still the case). The more content you created, the more it was tightly coupled to that database architecture and, by extension, to WordPress. It got to the point that many of the other content management applications had scripts that would perform database migrations from WordPress (or other popular tools). 
+To pick on WordPress again, it used to be that WordPress would create a whole database architecture for you (don't know if that's still the case). The more content you created, the more it was tightly coupled to that database architecture and, by extension, to WordPress. It got to the point that many of the other content management applications had scripts that would perform database migrations from WordPress (or other popular tools).
 
 Of course, you're basically getting a divorce and immediately remarrying someone else with similar baggage.
 

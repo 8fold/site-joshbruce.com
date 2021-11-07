@@ -309,26 +309,26 @@ class FileSystem
 // //         }
 // //
 // //         $content = [];
-// //         foreach (new DirectoryIterator($folderPath) as $folder) {
-// //             if ($folder->isFile() or $folder->isDot()) {
-// //                 continue;
-// //             }
-// //
-// //             $fullPathToFolder = $folder->getPathname();
-// //             $partialPath      = str_replace(
-// //                 $this->contentRoot(),
-// //                 '',
-// //                 $fullPathToFolder
-// //             );
-// //
-// //             $parts = explode('/', $partialPath);
-// //
-// //             $folderName = array_pop($parts);
-// //
-// //             $clone = clone $this;
-// //             $content[$folderName] = $clone->with($partialPath, $fileName);
-// //         }
-// //         return $content;
+//         foreach (new DirectoryIterator($folderPath) as $folder) {
+//             if ($folder->isFile() or $folder->isDot()) {
+//                 continue;
+//             }
+//
+//             $fullPathToFolder = $folder->getPathname();
+//             $partialPath      = str_replace(
+//                 $this->contentRoot(),
+//                 '',
+//                 $fullPathToFolder
+//             );
+//
+//             $parts = explode('/', $partialPath);
+//
+//             $folderName = array_pop($parts);
+//
+//             $clone = clone $this;
+//             $content[$folderName] = $clone->with($partialPath, $fileName);
+//         }
+//         return $content;
 // //     }
 //
 //     // private function up(): FileSystem

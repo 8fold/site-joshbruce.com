@@ -1,8 +1,13 @@
 ---
 title: Health, wellness, and physicality
-created: 20210531
+dateblock:
+    - 20210531 Created on
 disclaimer: "I'm not a doctor much less your doctor nor am I a personal stylist. Just a guy on the Internet sharing experiences and what I'm doing and considering regarding my own physical and mental health. This content is for informational and entertainment purposes only and does not constitute advice. Please consult with your doctor and wellness team."
 ---
+
+# Halth, wellness, and phsyicality
+
+{!!dateblock!!}
 
 Given my historical journal entries it seems every six years or so I get a bug in my ear to look at my physical health, physical appearance, style and whatnot.
 
@@ -10,7 +15,7 @@ In 2009 it was urban obstacle course style with [Parkour](https://en.wikipedia.o
 
 In 2015 it was what I called "The Aesthetics Project." It was learning how to exercise indoors, buy clothes that fit and what my palette was.
 
-In 2021 it's about longevity; [getting out of debt](/finances) had a pretty profound affect on me. 
+In 2021 it's about longevity; [getting out of debt](/finances) had a pretty profound affect on me.
 
 - Nutrition: Ingestion and internal organs
 	- Change and Rules
@@ -57,7 +62,7 @@ In 2021 it's about longevity; [getting out of debt](/finances) had a pretty prof
 	- Consider
 	- Keep
 		- Think long-term (long game)
-		- Don't sacrifice long-term for short-term gains 
+		- Don't sacrifice long-term for short-term gains
 		- Avoid labels
 	- Remove
 - Philosophy (see Character):
@@ -72,6 +77,6 @@ In 2021 it's about longevity; [getting out of debt](/finances) had a pretty prof
 		- Therapist and psychiatrist - friction is teledoc - being able to maintain consistency in provider while not maintaining consistency of location
 	- Keep
 	- Remove
-		- Self-image and -worth cognitive dissonance 
+		- Self-image and -worth cognitive dissonance
 			- Self-recognition
 			- Sleep pretty okay

@@ -1,11 +1,16 @@
 ---
 title: Motivators
-created: 20210620
+dateblock:
+    - 20210620 Created on
 coming-soon:
 - review Getting Things Done by David Allen
 - review Drive by Dan Pink
 - review The 5 Love Languages by Gary Chapman
 ---
+
+# Motivators
+
+{!!dateblock!!}
 
 If you haven't noticed I'm kinda big on values and principles as approach to automating decision making. When I first read Getting Things Done by David Allen I seem to recall feeling there was an idea that trying to identify values and principles was not seen as helpful while you're being overwhelmed; vacuuming while the house is on fire.
 
@@ -41,9 +46,9 @@ Anyway. Let's see what the expanded version looks like. Basically we're going to
 
 1. purpose,
 2. autonomy,
-3. **physical touch (I'm big on hugs and high-fives)**, 
-4. **words of affirmation**, 
-5. **quality time**, 
+3. **physical touch (I'm big on hugs and high-fives)**,
+4. **words of affirmation**,
+5. **quality time**,
 6. mastery,
 7. numbers,
 8. **acts of service**,
@@ -58,6 +63,6 @@ I'm big on giving and receiving consent checks. That's in keeping with both purp
 
 With this combination, I am toying with the principle: Only participate in that which is consensual.
 
-And this is how I find identifying your values, principles, practices (or habits), and tools goes. It's nonlinear. You don't need to figure out your life's purpose before determining your values before stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that's a practice. 
+And this is how I find identifying your values, principles, practices (or habits), and tools goes. It's nonlinear. You don't need to figure out your life's purpose before determining your values before stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that's a practice.
 
-This exercise is a way to get away from the writer's block that can often come from being asked to figure out what you want to be if you grow up. 
+This exercise is a way to get away from the writer's block that can often come from being asked to figure out what you want to be if you grow up.

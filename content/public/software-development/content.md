@@ -1,8 +1,13 @@
 ---
-title: Software Development
-created: 20210619
-updated: 20211031
+title: Software development
+dateblock:
+    - 20210619 Created on
+    - 20211031 Updated on
 ---
+
+# Software development
+
+{!!dateblock!!}
 
 I differentiate software development from [web development](/web-development) in the sense that all web development is software development but not all software development is web development. Web development is software development in a specific context, with contextual constraints.
 

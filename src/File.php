@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 namespace JoshBruce\Site;
-//
-// // use DirectoryIterator;
-//
+
+use DirectoryIterator;
+
 // // use JoshBruce\Site\Content\FrontMatter;
 //
 use JoshBruce\Site\FileSystem;
@@ -48,7 +48,7 @@ class File
         }
         // TODO: test and verify used - returning empty string not an option.
         return str_replace(
-            FileSystem::contentRoot() . '/public',
+            $this->contentRoot(),
             '',
             $this->localPath
         );
@@ -96,6 +96,35 @@ class File
             $type = $extensionMap[$extension];
         }
         return $type;
+    }
+
+    /**
+     * @return File[]
+     */
+    public function children(string $filesNamed): array
+    {
+        $base = str_replace('/content.md', '', $this->path());
+
+        $files = [];
+        foreach (new DirectoryIterator($base) as $folder) {
+            if ($folder->isFile() or $folder->isDot()) {
+                continue;
+            }
+
+            $fullPathToFolder = $folder->getPathname();
+            $parts            = explode('/', $fullPathToFolder);
+            $folderName       = array_pop($parts);
+
+            $files[$folderName] = File::at(
+                $fullPathToFolder . '/'. $filesNamed
+            );
+        }
+        return $files;
+    }
+
+    private function contentRoot(): string
+    {
+        return FileSystem::contentRoot() . '/public';
     }
 //     public static function init(string $path): File
 //     {

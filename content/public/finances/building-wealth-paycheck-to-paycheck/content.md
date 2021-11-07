@@ -1,8 +1,13 @@
 ---
 title: Building Wealth Paycheck to Paycheck
-created: 20210216
-type: log
+dateblock:
+    - 20210216 Created on
+loglist: true
 ---
+
+# Building Wealth Paycheck to Paycheck
+
+{!!dateblock!!}
 
 I'm present- and future-oriented. The concept of building a restrictive budget and then potentially beating myself for past decisions is a total turn off for me. I needed something simple-ish.
 
@@ -25,4 +30,5 @@ I'll probably avoid talking dollar amounts mainly because, for me, the systems a
 
 The related entries are my journey paycheck-to-paycheck. They are listed in reverse chronological order.
 
+{!!loglist!!}
 

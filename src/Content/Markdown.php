@@ -7,17 +7,17 @@ namespace JoshBruce\Site\Content;
 // use DirectoryIterator;
 //
 use Eightfold\Markdown\Markdown as MarkdownConverter;
-//
+
 use JoshBruce\Site\File;
-//
-// use JoshBruce\Site\PageComponents\Data;
+
+use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
 // use JoshBruce\Site\PageComponents\Heading;
-// use JoshBruce\Site\PageComponents\LogList;
+use JoshBruce\Site\PageComponents\LogList;
 // use JoshBruce\Site\PageComponents\OriginalContentNotice;
-//
+
 // use JoshBruce\Site\Content\FrontMatter;
-//
+
 class Markdown
 {
     private string $fileContent = '';
@@ -63,7 +63,9 @@ class Markdown
         $inserts = [];
         if (preg_match_all('/{!!(.*)!!}/', $body, $inserts)) {
             $templateMap = [
-                'dateblock' => DateBlock::class
+                'data'      => Data::class,
+                'dateblock' => DateBlock::class,
+                'loglist'   => LogList::class
             ];
 
             $replacements = $inserts[0];
@@ -74,8 +76,16 @@ class Markdown
                     continue;
                 }
 
+                $b = '';
                 $template = $templateMap[$templateKey];
-                $b        = $template::create($this->frontMatter());
+                if ($templateKey === 'loglist') {
+                    $b = $template::create($this->file);
+
+                } else {
+                    $b = $template::create($this->frontMatter());
+
+                }
+
 
                 $body = str_replace($replacements[$i], $b, $body);
             }
