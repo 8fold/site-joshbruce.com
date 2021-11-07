@@ -1,8 +1,8 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site;
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site;
 //
 // use Psr\Http\Message\ResponseInterface;
 //
@@ -11,38 +11,38 @@
 //
 // use JoshBruce\Site\HttpRequest;
 //
-// class HttpResponse
-// {
-//     private PsrResponse $psrResponse;
-//
-//     public static function from(HttpRequest $request): HttpResponse
-//     {
-//         return self::init($request);
-//     }
+class HttpResponse
+{
+    private PsrResponse $psrResponse;
+
+    public static function from(HttpRequest $request): HttpResponse
+    {
+        return new HttpResponse($request);
+    }
 //
 //     public static function init(HttpRequest $with): HttpResponse
 //     {
 //         return new HttpResponse($with);
 //     }
 //
-//     public function __construct(private $request)
-//     {
-//     }
+    public function __construct(private HttpRequest $request)
+    {
+    }
 //
-//     public function statusCode(): int
-//     {
-//         if ($this->request->isMissingRequiredValues()) {
-//             return 500;
-//
-//         } elseif ($this->request->isUnsupportedMethod()) {
-//             return 405;
-//
-//         } elseif ($this->request->isNotFound()) {
-//             return 404;
-//
-//         }
-//         return 200;
-//     }
+    public function statusCode(): int
+    {
+        if ($this->request->isMissingRequiredValues()) {
+            return 500;
+
+        } elseif ($this->request->isUnsupportedMethod()) {
+            return 405;
+
+        } elseif ($this->request->isNotFound()) {
+            return 404;
+
+        }
+        return 200;
+    }
 //
 //     public function body(): string
 //     {
@@ -66,4 +66,4 @@
 //         }
 //         return $this->psrResponse;
 //     }
-// }
+}

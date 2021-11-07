@@ -1,8 +1,8 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site;
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site;
 //
 // // use Whoops\Run;
 // // use Whoops\Handler\PrettyPageHandler;
@@ -15,45 +15,46 @@
 // // use JoshBruce\Site\ServerGlobals;
 // // use JoshBruce\Site\HttpResponse;
 //
-// class ServerGlobals
-// {
+class ServerGlobals
+{
 //     private array $globals = [];
 //
-//     public static function init(): ServerGlobals
-//     {
-//         return new ServerGlobals();
-//     }
+    public static function init(): ServerGlobals
+    {
+        return new ServerGlobals();
+    }
 //
 //     public function __construct()
 //     {
 //     }
 //
-//     public function appEnv(): string
-//     {
-//         if ($this->hasAppEnv()) {
-//             $globals = $this->globals();
-//             return $globals['APP_ENV'];
-//         }
-//         return '';
-//     }
 //
-//     public function appEnvIsNot(): bool
-//     {
-//         return $this->appEnv() !== 'production';
-//     }
-//
-//     public function hasAppEnv(): bool
-//     {
-//         return array_key_exists('APP_ENV', $this->globals());
-//     }
-//
-//     public function isMissingAppEnv(): bool
-//     {
-//         return ! $this->hasAppEnv();
-//     }
-//
-//     private function globals(): array
-//     {
-//         return $_SERVER;
-//     }
-// }
+    public function appEnvIsNot(string $value): bool
+    {
+        return $this->appEnv() !== $value;
+    }
+
+    public function isMissingAppEnv(): bool
+    {
+        return ! $this->hasAppEnv();
+    }
+
+    private function appEnv(): string
+    {
+        if ($this->hasAppEnv()) {
+            $globals = $this->globals();
+            return $globals['APP_ENV'];
+        }
+        return '';
+    }
+
+    private function hasAppEnv(): bool
+    {
+        return array_key_exists('APP_ENV', $this->globals());
+    }
+
+    private function globals(): array
+    {
+        return $_SERVER;
+    }
+}

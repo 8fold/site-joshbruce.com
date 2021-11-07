@@ -1,8 +1,8 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site;
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site;
 //
 // use DirectoryIterator;
 //
@@ -11,11 +11,11 @@
 // use JoshBruce\Site\SiteDynamic\Server;
 // use JoshBruce\Site\Folder;
 //
-// /**
-//  * A factory class to make accessing project folders easier.
-//  */
-// class FileSystem
-// {
+/**
+ * A factory class to make accessing project folders easier.
+ */
+class FileSystem
+{
 //     public static function public(string $file = ''): Folder|File
 //     {
 //         $folder = self::folder(named: 'public');
@@ -54,24 +54,25 @@
 //         return ! self::contentFolderWasFound();
 //     }
 //
-//     public static function projectRoot(): string
-//     {
-//         $dir   = __DIR__;
-//         $parts = explode('/', $dir);
-//         $parts = array_slice($parts, 0, -2);
-//         return implode('/', $parts);
-//     }
-//
-//     public static function base(): string
-//     {
-//         $parts   = explode('/', self::projectRoot());
-//         $parts[] = 'content';
-//         $base    = implode('/', $parts);
-//         if (str_ends_with($base, '/')) {
-//             $base = substr($base, 0, -1);
-//         }
-//         return $base;
-//     }
+    public static function contentRoot(): string
+    {
+        $parts   = explode('/', self::projectRoot());
+        $parts[] = 'content';
+        $base    = implode('/', $parts);
+        if (str_ends_with($base, '/')) {
+            $base = substr($base, 0, -1);
+        }
+        return $base;
+    }
+
+    private static function projectRoot(): string
+    {
+        $dir   = __DIR__;
+        $parts = explode('/', $dir);
+        $parts = array_slice($parts, 0, -1);
+        return implode('/', $parts);
+    }
+
 //
 //     private static function folder(string $named): Folder
 //     {
@@ -337,4 +338,4 @@
 //     //     $newRoot = implode('/', $parts);
 //     //     return FileSystem::init($newRoot);
 //     // }
-// }
+}

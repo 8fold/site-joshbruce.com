@@ -1,71 +1,73 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// use JoshBruce\Site\HttpResponse;
-// use JoshBruce\Site\HttpRequest;
+
+declare(strict_types=1);
+
+use JoshBruce\Site\HttpResponse;
+use JoshBruce\Site\HttpRequest;
 // use JoshBruce\Site\ServerGlobals;
 //
 // test('expected headers', function() {
 //     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
+//         HttpResponse::from(
+//             request: HttpRequest::init()
 //         )->headers()
 //     )->toBeEmpty()->toBeArray();
 // })->group('response', 'focus');
 //
 // test('expected body', function() {
 //     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
+//         HttpResponse::from(
+//             request: HttpRequest::init()
 //         )->body()
 //     )->toBe(<<<text
 //         Hello, World!
 //         text
 //     );
 // })->group('response');
-//
-// test('correct status codes', function() {
-//     serverGlobals();
-//
-//     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         200
-//     );
-//
-//     unset($_SERVER['APP_ENV']);
-//
-//     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         500
-//     );
-//
-//     $_SERVER['REQUEST_METHOD'] = 'post';
-//
-//     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         405
-//     );
-//
-//     serverGlobals('/not-valid');
-//
-//     expect(
-//         HttpResponse::init(
-//             with: HttpRequest::init()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         404
-//     );
-// })->group('response');
+
+test('correct status codes', function() {
+    serverGlobals();
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::init()
+        )->statusCode()
+    )->toBeInt()->toBe(
+        200
+    );
+
+    unset($_SERVER['APP_ENV']);
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::init()
+        )->statusCode()
+    )->toBeInt()->toBe(
+        500
+    );
+
+    serverGlobals();
+
+    $_SERVER['REQUEST_METHOD'] = 'post';
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::init()
+        )->statusCode()
+    )->toBeInt()->toBe(
+        405
+    );
+
+    serverGlobals('/not-valid');
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::init()
+        )->statusCode()
+    )->toBeInt()->toBe(
+        404
+    );
+})->group('response');
 //
 // test('can check request is valid', function() {
 //     serverGlobals();
