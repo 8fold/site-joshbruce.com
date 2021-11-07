@@ -33,6 +33,17 @@ class FrontMatter
         }
         return '';
     }
+
+    /**
+     * @return array<int, string>
+     */
+    public function dateblock(): array
+    {
+        if ($this->hasMember('dateblock')) {
+            return $this->frontMatter['dateblock'];
+        }
+        return [];
+    }
 //
 //     public function header(): string
 //     {

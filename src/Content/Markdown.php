@@ -11,7 +11,7 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use JoshBruce\Site\File;
 //
 // use JoshBruce\Site\PageComponents\Data;
-// use JoshBruce\Site\PageComponents\DateBlock;
+use JoshBruce\Site\PageComponents\DateBlock;
 // use JoshBruce\Site\PageComponents\Heading;
 // use JoshBruce\Site\PageComponents\LogList;
 // use JoshBruce\Site\PageComponents\OriginalContentNotice;
@@ -59,6 +59,27 @@ class Markdown
     public function html(): string
     {
         $body = self::markdownConverter()->getBody($this->fileContent());
+
+        $inserts = [];
+        if (preg_match_all('/{!!(.*)!!}/', $body, $inserts)) {
+            $templateMap = [
+                'dateblock' => DateBlock::class
+            ];
+
+            $replacements = $inserts[0];
+            $templates    = $inserts[1];
+            for ($i = 0; $i < count($replacements); $i++) {
+                $templateKey = $templates[$i];
+                if (! array_key_exists($templateKey, $templateMap)) {
+                    continue;
+                }
+
+                $template = $templateMap[$templateKey];
+                $b        = $template::create($this->frontMatter());
+
+                $body = str_replace($replacements[$i], $b, $body);
+            }
+        }
         return self::markdownConverter()->convert($body);
     }
 
