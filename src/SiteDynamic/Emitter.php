@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace JoshBruce\Site\SiteDynamic;
 
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
-use Nyholm\Psr7\Response as PsrResponse;
+// use Nyholm\Psr7\Response as PsrResponse;
 use Laminas\HttpHandlerRunner\Emitter\SapiStreamEmitter as PsrEmitter;
 
 use Eightfold\HTMLBuilder\Document;
@@ -14,6 +14,7 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use JoshBruce\Site\SiteDynamic\Server;
 use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\Content\Markdown;
+use JoshBruce\Site\HttpResponse;
 
 class Emitter
 {
@@ -45,10 +46,10 @@ class Emitter
         self::emit($response);
     }
 
-    public static function emit(PsrResponse $response): void
+    public static function emit(HttpResponse $response): void
     {
         $emitter = new PsrEmitter();
-        $emitter->emit($response);
+        $emitter->emit($response->psrResponse());
     }
 
     public static function emitFile(string $mimeType, string $filePath): void

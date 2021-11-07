@@ -6,7 +6,26 @@ use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
 use JoshBruce\Site\ServerGlobals;
 
-test('internal server error responses', function() {
+test('expected headers', function() {
+    expect(
+        HttpResponse::init(
+            with: HttpRequest::init()
+        )->headers()
+    )->toBeEmpty()->toBeArray();
+})->group('response', 'focus');
+
+test('expected body', function() {
+    expect(
+        HttpResponse::init(
+            with: HttpRequest::init()
+        )->body()
+    )->toBe(<<<text
+        Hello, World!
+        text
+    );
+})->group('response');
+
+test('correct status codes', function() {
     serverGlobals();
 
     expect(

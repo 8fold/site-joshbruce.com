@@ -27,6 +27,11 @@ class HttpRequest
 
     private string $localPath = '';
 
+    public static function fromGlobals(): HttpRequest
+    {
+        return self::init();
+    }
+
     public static function init(): HttpRequest
     {
         return new HttpRequest();

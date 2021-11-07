@@ -54,13 +54,17 @@ class FileSystem
         return ! self::contentFolderWasFound();
     }
 
+    public static function projectRoot(): string
+    {
+        $dir   = __DIR__;
+        $parts = explode('/', $dir);
+        $parts = array_slice($parts, 0, -2);
+        return implode('/', $parts);
+    }
+
     public static function base(): string
     {
-        $projectRoot = Server::projectRoot();
-        // $dir     = __DIR__;
-        // $parts   = explode('/', $dir);
-        // $parts   = array_slice($parts, 0, -1);
-        $parts   = explode('/', $projectRoot);
+        $parts   = explode('/', self::projectRoot());
         $parts[] = 'content';
         $base    = implode('/', $parts);
         if (str_ends_with($base, '/')) {
