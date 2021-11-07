@@ -16,6 +16,8 @@ use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\Site\Content\Markdown;
 
+use JoshBruce\Site\PageComponents\Footer;
+
 class HttpResponse
 {
     private ResponseInterface $psrResponse;
@@ -97,7 +99,6 @@ class HttpResponse
                 'sizes 16x16'
             ),
             $this->cssElement()
-            // ...HeadElements::create($this->contentRoot)
         )->body(
             Element::a('menu')->props('href #main-nav', 'id content-top'),
             Element::article(
@@ -105,7 +106,12 @@ class HttpResponse
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::a('top')->props('href #content-top', 'id go-to-top'),
             // Navigation::create($this->contentRoot)->build(),
-            // Footer::create()
+            Element::footer(
+                Element::p(
+                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
+                        'All rights reserved.'
+                )
+            )
         )->build();
     }
 
