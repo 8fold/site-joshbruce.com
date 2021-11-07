@@ -1,6 +1,7 @@
 ---
-title: June 1, 2021 paycheck 
-created: 20210601
+title: June 1, 2021 paycheck
+dateblock:
+    - 20210601 Created on
 data:
 - [Debt, 0, 0, 0.05]
 - [Cash, 2, 4, 8.08]
@@ -14,17 +15,23 @@ data:
 - [Int. equities, 0, 2, 1.22]
 ---
 
+# June 1, 2021 paycheck
+
+{!!dateblock!!}
+
+{!!data!!}
+
 I increased the contribution to my 401(k) by 2 percent; 13 percent for this paycheck.
 
-Received a bonus this pay period. This is also supposed to be the paycheck where I take money from the Profit account and split it to other accounts. 
+Received a bonus this pay period. This is also supposed to be the paycheck where I take money from the Profit account and split it to other accounts.
 
 In other words, this is a super payday.
 
-For the sake of transparency, and in case I haven’t mentioned already, I actually get paid biweekly; not on the first and fifteenth. I try to only make the moves and payments in a way that they settle by the first and fifteenth. For all paychecks I’ll have the weekend to develop a plan before money will actually move. For most paychecks, I’ll have about a week to settle into a plan. 
+For the sake of transparency, and in case I haven’t mentioned already, I actually get paid biweekly; not on the first and fifteenth. I try to only make the moves and payments in a way that they settle by the first and fifteenth. For all paychecks I’ll have the weekend to develop a plan before money will actually move. For most paychecks, I’ll have about a week to settle into a plan.
 
 I’ve been doing some math to verify being able to reach the FI number in 10 years. I need 250 [.USD](United States Dollars) per pay for the Roth IRA, 150 USD for the [.HSA](Health Savings Account), and at least 871 USD to my taxable accounts. That’s 1,271 USD in total. I’ve already contributed what I can to the Roth for 2020 and 2021. 722 USD per, biweekly paycheck to the 401(k) would get the maximum annual employee contribution and employer match.
 
-Having the hard minimum dollar amounts should help make informed, percent-based decisions given my current context. 
+Having the hard minimum dollar amounts should help make informed, percent-based decisions given my current context.
 
 If the percentages don't hit the numbers, I know I should adjust. If the percentages overshoot the numbers, then I know I have some flexibility. When I feel income-stable and feel my risk tolerance and capacity is high, I’ll probably increase what gets sent to investments; otherwise, I’ll probably send more to the Runway account.
 
@@ -42,9 +49,9 @@ Honestly I don’t think the 15 and 11 percent will be enough to continue. [Wave
 
 The above represents the immediate, back-of-the-envelope plan; I’m going to leave it there for now as we continue ironing out how these entries and their content will work. This also means I typically move as much as I can from non-interest-bearing accounts as soon as I can while maybe waiting a bit to pay bills and credit cards. This increases my average daily balances as soon as possible while minimizing money going out to third-parties until the last responsible moment.
 
-I’m going to need enough in the Operating Expense account to pay the balances of my credit cards. 
+I’m going to need enough in the Operating Expense account to pay the balances of my credit cards.
 
-I’m going to take a little less than half from the Income account and move it to the Operating Expense account; using the Income account to pay the credit cards instead of pulling from the Runway account as designed. Another little less than half will go to the equipment account, which should increase the dividends to be paid out when it matures; have to write a check because the dollar amount is too much to do in one shot any other way. The rest will go to the Invest account to wind up in VTSAX. 
+I’m going to take a little less than half from the Income account and move it to the Operating Expense account; using the Income account to pay the credit cards instead of pulling from the Runway account as designed. Another little less than half will go to the equipment account, which should increase the dividends to be paid out when it matures; have to write a check because the dollar amount is too much to do in one shot any other way. The rest will go to the Invest account to wind up in VTSAX.
 
 I’m still not sure I’ll go for the desktop computer; however, I’m leaning very heavily in getting rid of my television and streaming device regardless. I’ll replace both with my laptop and monitor. The other benefit to having the desktop (all-in-one) is it can check my email and apply email rules immediately. Applying email rules has not been added to the iPhone.
 
@@ -52,7 +59,7 @@ I’m still not sure I’ll go for the desktop computer; however, I’m leaning 
 
 Also, given this is the beginning of a quarter, I should receive a fair amount of dividends that will adjust balances. I won’t take the snapshot until the first of June and I’ll need to make sure the balance of the tax account is greater than 30 percent of the year-to-date taxable interest income amount.
 
-Given this round, I think the percentages will be changed to 2 percent to the Profit and Tax accounts, 23 percent to the Operating Expenses and Runway accounts, and 50 percent to the Invest account. 
+Given this round, I think the percentages will be changed to 2 percent to the Profit and Tax accounts, 23 percent to the Operating Expenses and Runway accounts, and 50 percent to the Invest account.
 
 The goal being to have enough to invest 1,271 USD per paycheck at minimum. That means a net deposit to the Income account of 2,542 USD. As long as the amount deposited to the Income account is greater than that and the amount I contribute to my 401(k) is less than 722 USD, then I can keep increasing the contribution to my 401(k). If the balance of my Runway account decreases over time, I’ll reduce the amount going to the Profit account and try to reduce operating expenses; increasing how much goes to the Runway account.
 

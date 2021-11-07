@@ -1,7 +1,8 @@
 ---
 title: September 15th, 2021 paycheck
-created: 20210904
-updated: 20210917
+dateblock:
+    - 20210904 Created on
+    - 20210917 Updated on
 data:
 - [Debt, 0, 0, 0.5]
 - [Cash, 5, 10, 15.7]
@@ -11,6 +12,12 @@ data:
 - [US equities - mid, 24, 35, 23.0]
 - [US equities - large, 24, 35, 39.9]
 ---
+
+# September 15th, 2021 paycheck
+
+{!!dateblock!!}
+
+{!!data!!}
 
 For the 401k I took the 19,500 [.USD](United States Dollars) I can make in a year and subtracted my contributions so far. I divided that difference by how many paychecks I think I’ll get before the end of the year. That should give me a rough, per paycheck, amount. The 25 percent I had last time was too high, so, I reduced it to 20 percent this time (still too high but closer). (Oddly enough my net pay was the same despite my contribution being almost 200 USD less.)
 
@@ -24,4 +31,4 @@ I did receive a letter from the [.IRS](Internal Revenue Service) confirming they
 
 My new gig is feeling pretty stable and they seem to like me. So, I’ll probably run a bit leaner on the cash side once the IRS thing is cleared up.
 
-Other than that, not a lot to report. 
+Other than that, not a lot to report.

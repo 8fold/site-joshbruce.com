@@ -1,7 +1,12 @@
 ---
 title: March 15th, 2021 paycheck
-created: 20210312
+dateblock:
+    - 20210312 Created on
 ---
+
+# March 15th, 2021 paycheck
+
+{!!dateblock!!}
 
 Cash reserve is slowly going down as I'm using it for shelter and food while not continuing to save for future months; getting down to current and next month cash flowed.
 
@@ -9,7 +14,7 @@ All the other major shifts I'm wanting to do are happening while the cash reserv
 
 Let's talk about those major shifts; seems relevant.
 
-## Financial institutions 
+## Financial institutions
 
 I have primary, secondary, and tertiary institutions identified. These are "traditional" institutions — mostly credit unions; I really like cooperative and member-owned business models. I've had two of the institutions for over 20 years now.
 
@@ -35,7 +40,7 @@ I also have a line of credit for overdraft protection on the checking; using cre
 
 ### Secondary
 
-This institution was a pleasant surprise as I was planning on having them as the tertiary institution for business accounts. Their customer service and products had me shifting that mindset within the first week. 
+This institution was a pleasant surprise as I was planning on having them as the tertiary institution for business accounts. Their customer service and products had me shifting that mindset within the first week.
 
 This institution will be replacing a local credit union currently housing my business accounts.
 
@@ -55,7 +60,7 @@ I have another card with my new secondary institution I opened recently. It's a 
 
 My third card used to be my primary card. It's a rewards card and earned me about half what the previously mentioned card would have. I've had it for 20 years. The plan here is to hold onto this card while the previous and next card age. Then I'll close it down and the history should remain on my credit report for 10 years according to Experian.
 
-My fourth card will replace the previous card from the same institution. It's a straight cash rewards card and earns 1.5 cents on the dollar regardless of category. I'll use it for subscriptions and instances where AMEX isn't accepted. 
+My fourth card will replace the previous card from the same institution. It's a straight cash rewards card and earns 1.5 cents on the dollar regardless of category. I'll use it for subscriptions and instances where AMEX isn't accepted.
 
 My fifth and sixth cards are both business cards; one for each business. If the accounts at the secondary institution get opened, I'll try to get cards through the secondary institution and close these two out, which consolidates my institutions back to the three mentioned.
 
@@ -63,7 +68,7 @@ My fifth and sixth cards are both business cards; one for each business. If the 
 
 I have a 401(k) with my employer. It's 100 percent vested. It doesn't offer my desired index funds but I'm faking it by having a small-, mid-, and [.S&P 500](Standards and Poors 500) index fund. The changes I made was going from the target date fund into the S&P 500. Then, during open enrollment, I opened the other two and have my contributions going to them on a 50-50 split and nothing more going to the S&P 500 to get the equities asset allocation described by the [Investment Policy](/finances/investment-policy). I increased the contributions by 2 percent, going from 5 to 7 percent; employer match is on the first 5. (I got a raise and am hoping to reduce my tax liability without blocking myself from a sizable amount in my non-retirement accounts.)
 
-I decided to go [Health Savings](https://healthsavings.com) instead of the HSA provided by my employer; I've been burned in the past with an HSA being tied to my employer and don't want to deal with that again. I decided to use them because they partnered with Vanguard and have the funds I'm interested in. They're customer service doesn't suck. I'm not going to max it out at the beginning of the year as my health insurance situation can change and it's my understanding the contribution limit is tied to a monthly construct...yeah, not sure how to word that better, that's where it lives now. 
+I decided to go [Health Savings](https://healthsavings.com) instead of the HSA provided by my employer; I've been burned in the past with an HSA being tied to my employer and don't want to deal with that again. I decided to use them because they partnered with Vanguard and have the funds I'm interested in. They're customer service doesn't suck. I'm not going to max it out at the beginning of the year as my health insurance situation can change and it's my understanding the contribution limit is tied to a monthly construct...yeah, not sure how to word that better, that's where it lives now.
 
 Decided to shift to maxing out the Roth IRA at the beginning of each year; leaving room to deal with the income caps and whatnot...I feel weird having to say this is a concern in my life.
 
@@ -113,11 +118,11 @@ A piece of the jagged rocks embedded in the cement had carved out a chunk of my 
 
 We went to the pharmacy and picked up creams and ointments to treat cuts along with a mess-ton of bandages.
 
-I called my manager who insisted I come in the next day. I did. 
+I called my manager who insisted I come in the next day. I did.
 
 I showed everyone the pictures. And my palms (I was doing software development at the time and leaked blood on my desk a couple of times). I was there a few hours before being sent home.
 
-A couple weeks later I was doing pretty well. The hole in my elbow had formed what I heard referred to as a blood plug, which is what it sounds like, a plug made of coagulated blood. It was stopping the hole from healing (closing) quickly. So, I pulled the one inch, solidified blood from my elbow and bandaged the hole. In a week, it was healed, now there's barely a noticeable scar. 
+A couple weeks later I was doing pretty well. The hole in my elbow had formed what I heard referred to as a blood plug, which is what it sounds like, a plug made of coagulated blood. It was stopping the hole from healing (closing) quickly. So, I pulled the one inch, solidified blood from my elbow and bandaged the hole. In a week, it was healed, now there's barely a noticeable scar.
 
 A day or two later, the woman I was dating came over with a bicycle helmet.
 

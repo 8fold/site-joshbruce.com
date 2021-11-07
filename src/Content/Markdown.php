@@ -14,19 +14,20 @@ use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
 // use JoshBruce\Site\PageComponents\Heading;
 use JoshBruce\Site\PageComponents\LogList;
-// use JoshBruce\Site\PageComponents\OriginalContentNotice;
+use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
 // use JoshBruce\Site\Content\FrontMatter;
 
 class Markdown
 {
     private string $fileContent = '';
-//     private string $markdown = '';
 
     /**
      * @var FrontMatter
      */
     private FrontMatter $frontMatter;
+
+    private string $body = '';
 
     public static function for(File $file): Markdown
     {
@@ -58,14 +59,15 @@ class Markdown
 
     public function html(): string
     {
-        $body = self::markdownConverter()->getBody($this->fileContent());
+        $body = $this->body();
 
         $inserts = [];
         if (preg_match_all('/{!!(.*)!!}/', $body, $inserts)) {
             $templateMap = [
                 'data'      => Data::class,
                 'dateblock' => DateBlock::class,
-                'loglist'   => LogList::class
+                'loglist'   => LogList::class,
+                'original'  => OriginalContentNotice::class
             ];
 
             $replacements = $inserts[0];
@@ -104,6 +106,15 @@ class Markdown
             $this->frontMatter = FrontMatter::init($frontMatter);
         }
         return $this->frontMatter;
+    }
+
+    public function body(): string
+    {
+        if (strlen($this->body) === 0) {
+            $this->body = self::markdownConverter()
+                ->getBody($this->fileContent());
+        }
+        return $this->body;
     }
 
     public function pageTitle(): string

@@ -1,10 +1,15 @@
 ---
 title: Investment Policy
-created: 20210216
-updated: 20210828
+dateblock:
+    - 20210216 Created on
+    - 20210828 Updated on
 coming-soon:
 - review agile manifesto
 ---
+
+# Investment Policy
+
+{!!dateblock!!}
 
 An investment policy is entered between a financial advisor and yourself. In my case, I am the financial advisor and think it is beneficial to enter an agreement with myself when I am at peace. I want to do it while I'm at peace and in a good place because when things go pear-shaped I can come back to the mechanical side of things.
 

@@ -1,8 +1,10 @@
 ---
 title: 2021 site refresh in-depth
-header: 2021 site in-depth
-created: 20211031
+dateblock:
+    - 20211031 Created on
 ---
+
+# 2021 site in-depth
 
 I think I'm going to call this one the quick and considerate update.
 

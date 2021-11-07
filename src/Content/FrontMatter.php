@@ -55,6 +55,14 @@ class FrontMatter
         }
         return [];
     }
+
+    public function original(): string
+    {
+        if ($this->hasMember('original')) {
+            return strval($this->frontMatter['original']);
+        }
+        return '';
+    }
 //
 //     public function header(): string
 //     {
@@ -84,13 +92,7 @@ class FrontMatter
 //     }
 //
 //
-//     public function original(): string
-//     {
-//         if ($this->hasMember('original')) {
-//             return strval($this->frontMatter['original']);
-//         }
-//         return '';
-//     }
+
 //
 //     public function type(): string
 //     {

@@ -6,8 +6,6 @@ namespace JoshBruce\Site;
 
 use DirectoryIterator;
 
-// // use JoshBruce\Site\Content\FrontMatter;
-//
 use JoshBruce\Site\FileSystem;
 
 class File
@@ -36,6 +34,11 @@ class File
     public function found(): bool
     {
         return file_exists($this->path()) and is_file($this->path());
+    }
+
+    public function isNotFound(): bool
+    {
+        return ! $this->found();
     }
 
     /**
@@ -116,7 +119,7 @@ class File
             $folderName       = array_pop($parts);
 
             $files[$folderName] = File::at(
-                $fullPathToFolder . '/'. $filesNamed
+                $fullPathToFolder . '/' . $filesNamed
             );
         }
         return $files;

@@ -1,7 +1,8 @@
 ---
 title: November 1st, 2021 paycheck
-created: 20210918
-updated: 20211031
+dateblock:
+    - 20210918 Created on
+    - 20211031 Updated on
 data:
 - [Debt, 0, 0, 0.5]
 - [Cash, 5, 10, 14.1]
@@ -11,6 +12,12 @@ data:
 - [US equities - mid, 24, 35, 23.6]
 - [US equities - large, 24, 35, 39.3]
 ---
+
+# November 1st, 2021 paycheck
+
+{!!dateblock!!}
+
+{!!data!!}
 
 Upped the 401k amount to 20 percent; it seems like the change might take a paycheck before taking affect. Still waiting for the [.IRS](Internal Revenue Service); so, avoiding spending and not investing, which is a bummer considering the market was down significantly pretty much all of September and part of October.
 

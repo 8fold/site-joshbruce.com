@@ -1,11 +1,16 @@
 ---
-title: May 1st, 2021 paycheck 
-created: 20210501
+title: May 1st, 2021 paycheck
+dateblock:
+    - 20210501 Created on
 ---
+
+# October 1st, 2021 paycheck
+
+{!!dateblock!!}
 
 I thought things would have settled down — I was wrong.
 
-The [.US](United States) Federal Government extended the tax filing deadline, which extended how long I could contribute to my Roth [.IRA](Individual Retirement Account) for 2020. So, the cash reserves I have will be going to try and maximize that contribution. 
+The [.US](United States) Federal Government extended the tax filing deadline, which extended how long I could contribute to my Roth [.IRA](Individual Retirement Account) for 2020. So, the cash reserves I have will be going to try and maximize that contribution.
 
 I had a coaching session with a [Wave Advisor](https://www.waveapps.com/wave-advisors) to improve and verify my bookkeeping skills. Come to find out I'm doing pretty okay on that score and they were able to help me with a few interactions and capabilities of the app.
 
@@ -31,7 +36,7 @@ The author, Mike, does say you should have a mirror for the Profit and Taxes acc
 Here's the implementation I decided to shift to.
 
 1. Income account: I opened another checking account and updated my payroll department to have my paychecks go here; I have a bit go to my secondary institution as well (more on that later).
-2. Hold (this is the Profit account from the book): I renamed the savings account I have with my primary institution. 
+2. Hold (this is the Profit account from the book): I renamed the savings account I have with my primary institution.
 3. Taxes: I opened a secondary savings account.
 4. Operating Expenses: I renamed my original checking account at my primary institution.
 5. Runway: I renamed my money market account at my primary institution.
@@ -69,7 +74,7 @@ Second, because I'm more hands-on with this approach seeing where and how operat
 
 Third, I added a summary for how each account operates to the description of the account in the Wave chart of accounts. This further reduces the need for the spreadsheet while increasing the possibility of bringing in a third-party to manage this for me or at least see into it; thinking accountant or bookkeeper.
 
-Finally, instead of using a separate sheet (tab) in Apple Numbers for each paycheck, I've consolidated everything into two sheets. One stores the past distributions and the other holds the current and future distributions on a rolling 12 month cycle, with two runs each (24 columns in total). 
+Finally, instead of using a separate sheet (tab) in Apple Numbers for each paycheck, I've consolidated everything into two sheets. One stores the past distributions and the other holds the current and future distributions on a rolling 12 month cycle, with two runs each (24 columns in total).
 
 ## Event-based distributions
 
@@ -85,7 +90,7 @@ I didn't apply all the percentages this time because I'm trying to draw down my 
 
 When it comes to passive income, dividends are king of the hill. Put money somewhere and more money gets generated; as long as you don't spend the money that's in there.
 
-For some accounts (401(k), IRAs, and the like) dividends don't count as taxable income. For other accounts, they do. In the US, if you earned more than 10 USD in taxable interest income from an institution, you'll receive a 1099 form letting you know. And, the government may take a cut from that money. 
+For some accounts (401(k), IRAs, and the like) dividends don't count as taxable income. For other accounts, they do. In the US, if you earned more than 10 USD in taxable interest income from an institution, you'll receive a 1099 form letting you know. And, the government may take a cut from that money.
 
 That's why the Tax account is important.
 
@@ -117,9 +122,9 @@ Something comes out of the Operating Expense account unexpectedly.
 
 There are a lot of options here and I'm going to describe them in general and which ones I have.
 
-Institution default: In some cases institutions will *not* pay the item that came in that would have drawn the account negative. There's usually a fee from the institution if that happens. This is the deep fallback option. 
+Institution default: In some cases institutions will *not* pay the item that came in that would have drawn the account negative. There's usually a fee from the institution if that happens. This is the deep fallback option.
 
-Line of credit: I have a personal line of credit with my primary institution. This is a revolving loan that will be advanced automatically if something comes in that would have drawn my account negative. Some institutions let you use a credit card for this, I avoid that option. The reason I avoid it is because overdrafts are considered a cash advance. Cash advances are often charged daily interest instead of monthly (similar to the line of credit); however, when you make payments, the payment will sometimes go to pay down purchases before going to pay off cash advances (not the same as the line of credit as there's only one type of charge there). 
+Line of credit: I have a personal line of credit with my primary institution. This is a revolving loan that will be advanced automatically if something comes in that would have drawn my account negative. Some institutions let you use a credit card for this, I avoid that option. The reason I avoid it is because overdrafts are considered a cash advance. Cash advances are often charged daily interest instead of monthly (similar to the line of credit); however, when you make payments, the payment will sometimes go to pay down purchases before going to pay off cash advances (not the same as the line of credit as there's only one type of charge there).
 
 Another account: Another option, which I'm setting up is to have the funds drawn from another account automatically; specifically the Runway account. To be clear, there will be a chain here; like an overdraft conga line. If the Operating Expense account is about to go negative, money should get transferred from the line of credit. If the line of credit is maxed out, funds should be drawn from the Runway account. If funds aren't available in the Runway account, funds should come from the Hold account. The idea is to set up the distribution and redistribution ratios in a way that this never happens.
 

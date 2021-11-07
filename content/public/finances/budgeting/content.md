@@ -1,9 +1,14 @@
 ---
 title: Budgeting
-created: 20210704
+dateblock:
+    - 20210704 Created on
 coming-soon:
 - review Profit First
 ---
+
+# October 1st, 2021 paycheck
+
+{!!dateblock!!}
 
 I've always been torn on the word "budget." Mainly because I think the connotation of the word has overtaken the denotation (common use) of the word, which is:
 
@@ -18,7 +23,7 @@ Unfortunately, many think of budgeting in terms of another word whose connotatio
 
 Budget means restricting the spending, not estimating income and expenses in a given period. I don't do restriction well. Hell, I barely do delayed gratification well.
 
-Now, budget as a verb means to allow a certain amount of money to be allocated toward something in a budget (noun). 
+Now, budget as a verb means to allow a certain amount of money to be allocated toward something in a budget (noun).
 
 Just like you have a diet (the food you habitually eat), you have a budget. The question here is how intentional is that budget (diet)? How mindful are you of that budget (diet)?
 

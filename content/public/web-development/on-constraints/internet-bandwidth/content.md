@@ -1,9 +1,16 @@
 ---
 title: Internet bandwidth
-created: 20171204
-moved: 20211101
+dateblock:
+    - 20171204 Created on
+    - 20211101 Updated on
 original: https://medium.com/8fold-pub/on-constraints-internet-bandwidth-eab05c20e218 Medium
 ---
+
+# Internet bandwidth
+
+{!!dateblock!!}
+
+{!!original!!}
 
 All figures are "rough". And this one's a little longer and feels more rant-like than the others. Definitely full of snark.
 

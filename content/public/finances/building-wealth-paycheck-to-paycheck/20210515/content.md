@@ -1,7 +1,12 @@
 ---
-title: May 15th, 2021 paycheck 
-created: 20210515
+title: May 15th, 2021 paycheck
+dateblock:
+    - 20210515 Created on
 ---
+
+# May 15th, 2021 paycheck
+
+{!!dateblock!!}
 
 Think I've finally settled on a graphic for this series. It's a simple line chart and took me a moment to iterate to this point.
 
@@ -30,7 +35,7 @@ Using accounting software as a pre-emptive tool on the other hand means using it
 
 Let's get away from my description and to a case study.
 
-I went to the grocery store the other day. 
+I went to the grocery store the other day.
 
 I paid for the groceries using Apple Pay with my card that gives me 3 percent cash back on supermarket purchases. The receipt printed. I launched the [Wave Receipts app](https://www.waveapps.com/receipts/) and snapped a picture of the receipt. It did the automatic processing to figure out merchant and amount. I updated the information with which account I used to pay and which category the transaction should use. Then I told Wave to add the transaction to my ledger and it did; thereby, updating my balances inside Wave.
 
@@ -38,7 +43,7 @@ It would take one or two days for the credit card to convert the pending charge 
 
 Luckily, or unluckily, depending on how you want to look at it, Wave doesn't have the ability to automatically sync with all my accounts.
 
-They use [Plaid](https://plaid.com) to access the other financial institutions. Near as I can tell, they use the basic plan that doesn't allow for syncing with investment accounts — the language of support folks tends to feel like throwing Plaid under the bus, which bothers me — they are your partner. 
+They use [Plaid](https://plaid.com) to access the other financial institutions. Near as I can tell, they use the basic plan that doesn't allow for syncing with investment accounts — the language of support folks tends to feel like throwing Plaid under the bus, which bothers me — they are your partner.
 
 In other words, they don't say, "Wave is testing Plaid out at the moment. In an effort to reduce costs and continue passing those savings to our users, we have opted for the Plaid plan that doesn't include investments. That may change in the future." Something like that would be better than, "Our third-party account aggregator doesn't allow us to do that" — like Plaid is incapable of it. This bus throwing language gets users complaining about Wave's choice to partner with Plaid, at which point Wave does come to defend Plaid in comparison to their previous aggregator. Anyway, Plaid apparently does have the ability to sync with investment accounts, just not on the plan most likely used by Wave.
 
@@ -72,23 +77,23 @@ Once I have the plan in place, I'll make the money moves. When the transactions 
 
 This replaces the bulk of what the spreadsheet did for me and does it in more detail while being able to generate reports and whatnot.
 
-I still have a spreadsheet. The spreadsheet is basically to generate the asset allocation graphic.  
+I still have a spreadsheet. The spreadsheet is basically to generate the asset allocation graphic.
 
 ## The plan
 
 For the 401(k) I have 11 percent of my pre-tax income going there at present, which I'm going to increase throughout the year as I dial in what I need to land in the Income fund to support my total lifestyle cost. I updated my payroll allocation to have a specified amount go toward replacing my equipment (computers and phones), this is taken out before distributing from the Income fund. From the Income fund:
 
-- 10 percent to the Profit fund. 
-- 2 percent to the Tax-hold fund. 
-- 15 percent to the Operating Expense fund. 
-- 10 percent to the Runway fund. And 
-- 60 percent to the Investing Pass-through fund. 
+- 10 percent to the Profit fund.
+- 2 percent to the Tax-hold fund.
+- 15 percent to the Operating Expense fund.
+- 10 percent to the Runway fund. And
+- 60 percent to the Investing Pass-through fund.
 
 That leaves 3 percent inside the Income fund. Because this is a drastically new way of doing things for me I am being a little conservative at the tail-end of reducing my liquid cash reserves. Basically, that 3 percent is the last of it. Going forward, I'll be taking the Income fund to a zero-balance every time.
 
 The next paycheck will be on June first, which means I'll be shifting the money from the Profit fund and potentially changing these flow percentages.
 
-As more money flows into the small- and mid-cap US equities, the ratio of the large-cap and municipal bonds should drop in comparison, which is what I'm going for. Also, as the allocation percentages shift, my cash reserves will continue to build back up. 
+As more money flows into the small- and mid-cap US equities, the ratio of the large-cap and municipal bonds should drop in comparison, which is what I'm going for. Also, as the allocation percentages shift, my cash reserves will continue to build back up.
 
 With that said, I want to be running pretty lean while I'm earning an income from a day-job. That means trying to reduce the percentage required for the Operating Expense fund from each paycheck to increase the amount going to the Investing Pass-through fund. I'm considering, or hoping, to reduce the percentage put into the Profit and Tax-hold funds, which will allow me to increase the amount held back for the 401(k) and put toward the Investing Pass-through fund.
 
@@ -132,11 +137,11 @@ Having just purchased more VEXAX to finish off the 2020 Roth IRA contributions, 
 
 That’s another thing. Intellectually I know that fluctuations in the value of VEXAX will be amplified because I have more of it. Further, I’m not losing shares in the fund, it’s that their perceived value is less. Like losing buying power with cash, which is roughly 3 percent per year.
 
-Then there’s the time scale. This is a 10 year plan. I’ve been operating the plan for less than six months. The strategy isn’t even based on numbers, again, it’s based on my values and principles. On a 10 year time scale, most of the money will be from direct contributions, not returns. 
+Then there’s the time scale. This is a 10 year plan. I’ve been operating the plan for less than six months. The strategy isn’t even based on numbers, again, it’s based on my values and principles. On a 10 year time scale, most of the money will be from direct contributions, not returns.
 
 And yet, here I am battling with doubt. Asking myself the question, should I do something different? Put more money into a different index fund. Even stranger is the slight underpinning of asking whether I *should have* done something different; like regret.
 
-A popular refrain with me is: You can’t change the past, only determine how to progress into the future. 
+A popular refrain with me is: You can’t change the past, only determine how to progress into the future.
 
 Then there are the principles I hold, specifically “past performance doesn’t guarantee future performance.” My approach isn’t grounded in performance, it’s grounded in my values and principles; I keep coming back to this. And, if I do change something it should be grounded in the same manner, which means changing my values and principles or at least reframing them.
 

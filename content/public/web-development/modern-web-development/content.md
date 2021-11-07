@@ -1,8 +1,13 @@
 ---
 title: Modern web development
-created: 20211018
-updated: 20211105
+dateblock:
+    - 20211018 Created on
+    - 20211105 Updated on
 ---
+
+# Modern web development
+
+{!!dateblock!!}
 
 The term "modern" is an odd one, freighted with baggage. In the context of web development it seems even stranger given that I’m older than the public web.
 

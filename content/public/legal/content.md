@@ -1,13 +1,18 @@
 ---
 title: Terms of service
-created: 20210710
+dateblock:
+    - 20210710 Created on
 ---
+
+# Terms of service
+
+{!!dateblock!!}
 
 These Terms of Service ("Terms") are a contract between you and Joshua Bruce. They govern your use of sites, services, products, and content ("Services") provided and maintained by Joshua Bruce. By using the Services, you agree to these Terms. If you do not agree to any of the Terms, you should not use the Services.
 
 Joshua Bruce may change the Terms at his discretion. If a change is material, he will do his best to let you know before those changes take effect.
 
-By using the Services on or after the effective date, you agree to the new Terms. 
+By using the Services on or after the effective date, you agree to the new Terms.
 
 ## Content and services
 

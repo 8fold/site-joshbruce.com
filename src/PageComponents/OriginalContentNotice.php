@@ -1,39 +1,45 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site\PageComponents;
-//
-// use Eightfold\Markdown\Markdown as MarkdownConverter;
-//
-// use Eightfold\HTMLBuilder\Element as HtmlElement;
-//
-// use JoshBruce\Site\FileSystem;
-// use JoshBruce\Site\Content\Markdown;
-// use JoshBruce\Site\Content\FrontMatter;
-//
-// class OriginalContentNotice
-// {
-//     public static function create(
-//         string $copyContent,
-//         string $messagePath,
-//         string $originalLink
-//     ): string {
-//         if (empty($copyContent)) {
-//             return '';
-//         }
-//
-//         list($link, $platform) = explode(' ', $originalLink, 2);
-//         $originalLink = HtmlElement::a($platform)
-//             ->props("href {$link}", 'itemprop sameAs')
-//             ->build();
-//
-//         $markdown = str_replace(
-//             '{{platform link}}',
-//             $originalLink,
-//             $copyContent
-//         );
-//
-//         return $markdown;
-//     }
-// }
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site\PageComponents;
+
+use Eightfold\HTMLBuilder\Element;
+
+use JoshBruce\Site\File;
+use JoshBruce\Site\FileSystem;
+
+use JoshBruce\Site\Content\Markdown;
+use JoshBruce\Site\Content\FrontMatter;
+
+class OriginalContentNotice
+{
+    public static function create(FrontMatter $frontMatter): string
+    {
+        $contentRoot = FileSystem::contentRoot();
+        $noticesRoot = $contentRoot . '/notices';
+
+        $file = File::at($noticesRoot . '/original.md');
+        if ($file->isNotFound()) {
+            return '';
+        }
+
+        $original = $frontMatter->original();
+        list($href, $platform) = explode(' ', $original, 2);
+
+        $body = Markdown::for($file)->body();
+
+        $matches = [];
+        $search  = '/{!!platformlink!!}/';
+        if (! preg_match($search, $body, $matches)) {
+            return '';
+        }
+
+        $body = preg_replace($search, "[{$platform}]({$href})", $body);
+        if ($body === null) {
+            return '';
+        }
+
+        return Markdown::markdownConverter()->convert($body);
+    }
+}

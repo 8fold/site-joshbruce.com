@@ -1,7 +1,8 @@
 ---
 title: August 1st, 2021 paycheck
-created: 20210709
-updated: 20210803
+dateblock:
+    - 20210709 Created on
+    - 20210803 Updated on
 data:
 - [Debt, 0, 0, 0]
 - [Cash, 2, 4, 9.94]
@@ -15,13 +16,19 @@ data:
 - [Int. equities, 0, 2, 1.41]
 ---
 
+# August 1st, 2021 paycheck
+
+{!!dateblock!!}
+
+{!!data!!}
+
 This is another awkward paycheck because it will actually be two. One on the sixteenth and another on the thirtieth.
 
 ## Paycheck from the 16th
 
 I increased the 401(k) contribution to 20 percent. Still hoping to hit the maximum contribution limit for the year. A secondary benefit is that it should concentrate my contributions to small- and mid-cap equities. Because I’ve practically hit my contribution limit to my Roth IRA for 2021, which means there’s 250 USD every paycheck that can go somewhere else. The total US equities fund is weighted toward large-cap; so, redirecting the 250 USD there won’t help reach the desired portfolio balance as quickly as increasing 401(k) contributions.
 
-I cancelled the indemnity insurance I was trying out, which reduces per paycheck expenses by about 150 [.USD](United States Dollar). 
+I cancelled the indemnity insurance I was trying out, which reduces per paycheck expenses by about 150 [.USD](United States Dollar).
 
 - 1 percent to Profit,
 - 2 percent to Tax,

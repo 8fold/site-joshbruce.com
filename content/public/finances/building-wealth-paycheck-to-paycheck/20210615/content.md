@@ -1,13 +1,18 @@
 ---
-title: June 15th, 2021 paycheck 
-created: 20210604
+title: June 15th, 2021 paycheck
+dateblock:
+    - 20210604 Created on
 ---
+
+# June 15th, 2021 paycheck
+
+{!!dateblock!!}
 
 I increased the contribution to my 401(k) by 2 percent; 15 percent for this paycheck.
 
 No bonus this time. The Income account started at a 0 balance. That means I can get a look at the baseline and minimums without too many other things pulling on my attention.
 
-To reach the 1,271 [.USD](United States Dollars) minimum to the Invest account, I'll need to drop the distribution to the Profit account by 1 percent and increase the distribution to the Invest account by 1 percent. 
+To reach the 1,271 [.USD](United States Dollars) minimum to the Invest account, I'll need to drop the distribution to the Profit account by 1 percent and increase the distribution to the Invest account by 1 percent.
 
 I realized I did the quarterly transfer from the Profit account a month early. Those should be done on the first of January, April, July, and October. I got a bit ahead of myself. No big deal and can’t go back, just something to remember moving forward.
 
@@ -19,7 +24,7 @@ Regardless, the 233 USD not going to the desktop account will go to the income a
 
 ## Being paid biweekly
 
-This paycheck is odd because It came in so close to the first of the month. The next one will also come in really close to the fifteenth. 
+This paycheck is odd because It came in so close to the first of the month. The next one will also come in really close to the fifteenth.
 
 I don’t want the funds waiting around in the Income account for 11 days though.
 
@@ -27,7 +32,7 @@ I’ll put 51.75 to the Invest account, 1 percent to the Profit account, 2 perce
 
 I’ll pay off the credit cards and other bills and do it again around the actual fifteenth of the month. This should make my paycheck on the eighteenth closer to the consistent amount moving forward.
 
-## Web development 
+## Web development
 
 I’m doing some web development work as a 1099. This will bring in some extra income and will need to be split a bit differently to account for taxes.
 
@@ -37,7 +42,7 @@ Note: These percents are based on the total amount paid, not the total amount re
 
 ## M1 Finance portfolio
 
-I use an [M1 Finance](https://www.m1finance.com) pie for insurance deductibles. It needs to carry a few thousand altogether at any given time. Right now I’m partially playing around with it. It has two categories of investments. Of course, it’s an experiment and probably is worth explaining. 
+I use an [M1 Finance](https://www.m1finance.com) pie for insurance deductibles. It needs to carry a few thousand altogether at any given time. Right now I’m partially playing around with it. It has two categories of investments. Of course, it’s an experiment and probably is worth explaining.
 
 It’s a pie of pies.
 
@@ -59,7 +64,7 @@ It's a buy-and-hold-forever strategy unless I stop purchasing products and servi
 
 ## Mac Mini
 
-I’m thinking of going back to the Mac Mini setup I had around 2011 instead of going with the iMac. 
+I’m thinking of going back to the Mac Mini setup I had around 2011 instead of going with the iMac.
 
 I’d still get rid of the Apple TV and my 32” television set, so, consolidation still happening.
 
@@ -71,15 +76,15 @@ Second, I purchased a space gray [Magic Trackpad](https://store.apple.com/xc/pro
 
 Third, I purchased a 24 inch monitor in 2020. It uses an HDMI connection. The iMac doesn't have an HDMI connection and I'm not sure I want to have a dual monitor setup; after years of having only a laptop, I'm good and can work around limited real estate. With the monitor and the mini *without* the keyboard and extra trackpad, I don't think the volume of the desktop setup would be much greater than the iMac by itself.
 
-Fourth, from a workflow perspective, one of the reasons I want to have a standalone desktop again is to let it run all the time and check email in the background to apply the presorting rules I've established in Apple Mail. The iMac is not required for this functionality, technically I could probably do it with my email provider but it's more convenient to establish the rules in Apple Mail. Therefore, I only need a machine that can run Apple Mail in the background and check my mail all the time. 
+Fourth, from a workflow perspective, one of the reasons I want to have a standalone desktop again is to let it run all the time and check email in the background to apply the presorting rules I've established in Apple Mail. The iMac is not required for this functionality, technically I could probably do it with my email provider but it's more convenient to establish the rules in Apple Mail. Therefore, I only need a machine that can run Apple Mail in the background and check my mail all the time.
 
-Fifth, from a production perspective, I'm looking to no longer need to plug my laptop into the port hub I have when I want to do work at my desk. I like the laptop for portability and I also appreciate having a permanent setup that's easy to start up at my desktop. 
+Fifth, from a production perspective, I'm looking to no longer need to plug my laptop into the port hub I have when I want to do work at my desk. I like the laptop for portability and I also appreciate having a permanent setup that's easy to start up at my desktop.
 
 Miscellaneous: I like the idea of being able to have my laptop open, off to the side with its own setup. There's about a 1,000 USD difference in price, which I can put toward the Invest account; it's already saved up. As odd as it might sound, from a personal branding consideration, the pink could work, but a full red version would blend in better. There's a rumor that there will be a redesign of the mini for 2021 and it will be released around WWDC 2021.
 
 In short, in 2020 I spent a lot of money updating the studio and sunk cost fallacy be damned, the new iMac should come with a few more enhancements and my current equipment should be a bit more worn before I chuck that aside and get the new iMac.
 
-At least that's where my brain is at right now. 
+At least that's where my brain is at right now.
 
 One of the things I like about having to save up for a purchase is it can help curb impulse purchases. Granted, it also requires discipline to not just throw down using a credit card; for me, using deposit certificates with a rollover date in the future helps here.
 

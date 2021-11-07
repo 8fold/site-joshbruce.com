@@ -1,7 +1,10 @@
 ---
 title: Refactoring, re-engineering, and rebuilding
-created: 20211102
+dateblock:
+    - 20211102 Created on
 ---
+
+# Refactoring, re-engineering, and rebuilding
 
 Someone mentioned the word "refactoring" the other day. Someone else said, "Let's call it rebuilding."
 
