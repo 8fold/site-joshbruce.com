@@ -26,12 +26,7 @@ class HttpResponse
     {
         return new HttpResponse($request);
     }
-//
-//     public static function init(HttpRequest $with): HttpResponse
-//     {
-//         return new HttpResponse($with);
-//     }
-//
+
     private function __construct(private HttpRequest $request)
     {
     }

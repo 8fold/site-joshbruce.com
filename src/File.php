@@ -129,38 +129,4 @@ class File
     {
         return FileSystem::contentRoot() . '/public';
     }
-//     public static function init(string $path): File
-//     {
-//         return new File($path);
-//     }
-//
-//     final public function __construct(private string $path)
-//     {
-//     }
-//
-
-//
-//     /**
-//      * @todo: move to trait
-//      */
-//     public function base(): string
-//     {
-//         $dir     = __DIR__;
-//         $parts   = explode('/', $dir);
-//         $parts   = array_slice($parts, 0, -1);
-//         $parts[] = 'content';
-//         return implode('/', $parts);
-//     }
-//
-//     public function fileName(): string
-//     {
-//         $path  = $this->path();
-//         $parts = explode('/', $path);
-//         return array_pop($parts);
-//     }
-//
-
-//
-
-//
 }

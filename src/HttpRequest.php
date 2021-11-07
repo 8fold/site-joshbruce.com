@@ -12,11 +12,6 @@ use Psr\Http\Message\UriInterface;
 
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
-// use Nyholm\Psr7\Response as PsrResponse;
-//
-// use JoshBruce\Site\ServerGlobals;
-// use JoshBruce\Site\HttpResponse;
-// use JoshBruce\Site\FileSystem;
 
 use JoshBruce\Site\File;
 
@@ -37,11 +32,7 @@ class HttpRequest
     private function __construct()
     {
     }
-//
-//     public function response(): HttpResponse
-//     {
-//     }
-//
+
     public function isMissingRequiredValues(): bool
     {
         if ($this->serverGlobals()->isMissingAppEnv()) {

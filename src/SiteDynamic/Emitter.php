@@ -3,49 +3,13 @@
 declare(strict_types=1);
 
 namespace JoshBruce\Site\SiteDynamic;
-//
-// use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
-// // use Nyholm\Psr7\Response as PsrResponse;
+
 use Laminas\HttpHandlerRunner\Emitter\SapiStreamEmitter as PsrEmitter;
-//
-// use Eightfold\HTMLBuilder\Document;
-// use Eightfold\Markdown\Markdown as MarkdownConverter;
-//
-// use JoshBruce\Site\SiteDynamic\Server;
-// use JoshBruce\Site\FileSystem;
-// use JoshBruce\Site\Content\Markdown;
+
 use JoshBruce\Site\HttpResponse;
-//
+
 class Emitter
 {
-//     /**
-//      * @param  array<string, string|string[]> $headers [description]
-//      */
-//     public static function emitWithResponse(
-//         int $status,
-//         array $headers,
-//         string $body = ''
-//     ): void {
-//         $factory  = new PsrFactory();
-//         $stream   = $factory->createStream($body);
-//         $response = new PsrResponse($status, $headers, $stream);
-//         self::emit($response);
-//     }
-//
-//     /**
-//      * @param  array<string, string|string[]> $headers [description]
-//      */
-//     public static function emitWithResponseFile(
-//         int $status,
-//         array $headers,
-//         string $file
-//     ): void {
-//         $factory  = new PsrFactory();
-//         $stream   = $factory->createStreamFromFile($file);
-//         $response = new PsrResponse($status, $headers, $stream);
-//         self::emit($response);
-//     }
-//
     public static function emit(HttpResponse $response): void
     {
         $emitter = new PsrEmitter();
