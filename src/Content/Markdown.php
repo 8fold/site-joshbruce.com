@@ -22,12 +22,12 @@ class Markdown
 {
     private string $fileContent = '';
 //     private string $markdown = '';
-//
-//     /**
-//      * @var FrontMatter
-//      */
-//     private FrontMatter $frontMatter;
-//
+
+    /**
+     * @var FrontMatter
+     */
+    private FrontMatter $frontMatter;
+
     public static function for(File $file): Markdown
     {
         return new Markdown($file);
@@ -78,11 +78,7 @@ class Markdown
     private function fileContent(): string
     {
         if (strlen($this->fileContent) === 0 and $this->file->found()) {
-            $content = $this->file->contents();
-            if (is_bool($content)) {
-                $content = '';
-            }
-            $this->fileContent = $content;
+            $this->fileContent = $this->file->contents();
         }
         return $this->fileContent;
     }

@@ -28,9 +28,6 @@ class File
     {
         $parts = explode('/', $this->localPath);
         $possibleFileName = array_pop($parts);
-        if ($possibleFileName === null) {
-            return false;
-        }
         return str_ends_with($possibleFileName, '.md');
     }
 
@@ -47,12 +44,18 @@ class File
         if ($full) {
             return $this->localPath;
         }
-        return str_replace($this->base(), '', $this->path);
+        return '';
+        // TODO: test and verify used
+        // return str_replace($this->base(), '', $this->localPath);
     }
 
     public function contents(): string
     {
-        return file_get_contents($this->path());
+        $contents = file_get_contents($this->path());
+        if ($contents === false) {
+            return '';
+        }
+        return $contents;
     }
 //     public static function init(string $path): File
 //     {
