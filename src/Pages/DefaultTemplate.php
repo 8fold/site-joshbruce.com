@@ -58,19 +58,19 @@
 //
 //     public function body(): string
 //     {
-//         return Document::create(
-//             $this->pageTitle()
-//         )->head(
-//             ...HeadElements::create($this->contentRoot)
-//         )->body(
-//             Element::a('menu')->props('href #main-nav', 'id content-top'),
-//             Element::article(
-//                 $this->body
-//             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
-//             Element::a('top')->props('href #content-top', 'id go-to-top'),
-//             Navigation::create($this->contentRoot)->build(),
-//             Footer::create()
-//         )->build();
+        // return Document::create(
+        //     $this->pageTitle()
+        // )->head(
+        //     ...HeadElements::create($this->contentRoot)
+        // )->body(
+        //     Element::a('menu')->props('href #main-nav', 'id content-top'),
+        //     Element::article(
+        //         $this->body
+        //     )->props('typeof BlogPosting', 'vocab https://schema.org/'),
+        //     Element::a('top')->props('href #content-top', 'id go-to-top'),
+        //     Navigation::create($this->contentRoot)->build(),
+        //     Footer::create()
+        // )->build();
 //     }
 //
 //     private function pageTitle(): string

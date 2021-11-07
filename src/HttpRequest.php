@@ -17,7 +17,9 @@ use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 // use JoshBruce\Site\ServerGlobals;
 // use JoshBruce\Site\HttpResponse;
 // use JoshBruce\Site\FileSystem;
-//
+
+use JoshBruce\Site\File;
+
 /**
  * Immutable class for server requests
  */
@@ -31,10 +33,10 @@ class HttpRequest
     {
         return new HttpRequest();
     }
-//
-//     public function __construct()
-//     {
-//     }
+
+    private function __construct()
+    {
+    }
 //
 //     public function response(): HttpResponse
 //     {
@@ -62,10 +64,19 @@ class HttpRequest
         return ! $this->isSupportedMethod();
     }
 
-
     public function isNotFound(): bool
     {
         return ! $this->isFound();
+    }
+
+    public function isFile(): bool
+    {
+        return str_contains($this->possibleFileName(), '.');
+    }
+
+    public function localFile(): File
+    {
+        return File::at(localPath: $this->localPath());
     }
 
     private function isFound(): bool
@@ -76,10 +87,7 @@ class HttpRequest
     private function localPath(): string
     {
         if (empty($this->localPath)) {
-            $parts = explode('/', $this->uriPath());
-            $lastPart = array_slice($parts, -1);
-            $possibleFileName = array_shift($lastPart);
-
+            $possibleFileName = $this->possibleFileName();
             $relativePath = $this->uriPath();
             if (empty($possibleFileName)) {
                 $relativePath = $this->uriPath() . '/content.md';
@@ -90,6 +98,17 @@ class HttpRequest
             $this->localPath = "{$root}/public{$relativePath}";
         }
         return $this->localPath;
+    }
+
+    private function possibleFileName(): string
+    {
+        $parts = explode('/', $this->uriPath());
+        $lastPart = array_slice($parts, -1);
+        $possibleFileName = array_shift($lastPart);
+        if ($possibleFileName === null) {
+            return '';
+        }
+        return $possibleFileName;
     }
 
     /**

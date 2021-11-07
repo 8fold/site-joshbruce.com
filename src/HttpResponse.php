@@ -10,9 +10,12 @@ use Psr\Http\Message\StreamInterface;
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7\Response as PsrResponse;
 use Nyholm\Psr7\Stream as PsrStream;
-//
-// use JoshBruce\Site\HttpRequest;
-//
+
+use Eightfold\HTMLBuilder\Document;
+use Eightfold\HTMLBuilder\Element;
+
+use JoshBruce\Site\Content\Markdown;
+
 class HttpResponse
 {
     private ResponseInterface $psrResponse;
@@ -27,10 +30,10 @@ class HttpResponse
 //         return new HttpResponse($with);
 //     }
 //
-    public function __construct(private HttpRequest $request)
+    private function __construct(private HttpRequest $request)
     {
     }
-//
+
     public function statusCode(): int
     {
         if ($this->request->isMissingRequiredValues()) {
@@ -46,28 +49,54 @@ class HttpResponse
         return 200;
     }
 
-    public function body(): StreamInterface
+    /**
+     * @return array<string, int|string|string[]>
+     */
+    public function headers(): array
     {
-        return PsrStream::create('Hello, World!');
-        // return (string) $this->psrResponse()->getBody();
+        return [];
     }
-//
-//     public function headers(): array
-//     {
-//         return $this->psrResponse()->getHeaders();
-//     }
-//
+
+    public function body(): string
+    {
+        $localFile = $this->request->localFile();
+        if ($localFile->isNotMarkdown()) {
+            die('process file-file');
+        }
+
+        $markdown = Markdown::for(file: $localFile);
+        $html     = $markdown->html();
+
+        return Document::create(
+            $markdown->frontMatter()->title() //$this->pageTitle()
+        )->head(
+            // ...HeadElements::create($this->contentRoot)
+        )->body(
+            Element::a('menu')->props('href #main-nav', 'id content-top'),
+            Element::article(
+                $html
+            )->props('typeof BlogPosting', 'vocab https://schema.org/'),
+            Element::a('top')->props('href #content-top', 'id go-to-top'),
+            // Navigation::create($this->contentRoot)->build(),
+            // Footer::create()
+        )->build();
+    }
+
     public function psrResponse(): ResponseInterface
     {
         if (! isset($this->psrResponse)) {
             $psr17Factory = new PsrFactory();
-            $this->psrResponse = $psr17Factory->createResponse(
-                $this->statusCode()
-            )->withBody(
-                $this->body()
+            $body         = $this->body();
+            $stream       = $psr17Factory->createStream($body);
+            if ($this->request->isFile()) {
+                $stream = $psr17Factory->createStreamFromFile($body);
+            }
+
+            $this->psrResponse = new PsrResponse(
+                $this->statusCode(),
+                $this->headers(),
+                $stream
             );
-
-
         }
         return $this->psrResponse;
     }

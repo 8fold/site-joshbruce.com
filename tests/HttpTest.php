@@ -25,7 +25,51 @@ use JoshBruce\Site\HttpRequest;
 //     );
 // })->group('response');
 
-test('correct status codes', function() {
+test('expected titles', function() {
+    serverGlobals();
+
+    $body = HttpResponse::from(
+        request: HttpRequest::fromGlobals()
+    )->body();
+
+    expect(
+        str_contains($body, "Josh Bruce's personal site")
+    )->toBeTrue();
+
+//     unset($_SERVER['APP_ENV']);
+//
+//     expect(
+//         HttpResponse::from(
+//             request: HttpRequest::fromGlobals()
+//         )->statusCode()
+//     )->toBeInt()->toBe(
+//         500
+//     );
+//
+//     serverGlobals();
+//
+//     $_SERVER['REQUEST_METHOD'] = 'post';
+//
+//     expect(
+//         HttpResponse::from(
+//             request: HttpRequest::fromGlobals()
+//         )->statusCode()
+//     )->toBeInt()->toBe(
+//         405
+//     );
+//
+//     serverGlobals('/not-valid');
+//
+//     expect(
+//         HttpResponse::from(
+//             request: HttpRequest::fromGlobals()
+//         )->statusCode()
+//     )->toBeInt()->toBe(
+//         404
+//     );
+})->group('response', 'focus');
+
+test('expected status codes', function() {
     serverGlobals();
 
     expect(

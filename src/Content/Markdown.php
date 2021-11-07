@@ -1,14 +1,14 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site\Content;
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site\Content;
 //
 // use DirectoryIterator;
 //
-// use Eightfold\Markdown\Markdown as MarkdownConverter;
+use Eightfold\Markdown\Markdown as MarkdownConverter;
 //
-// use JoshBruce\Site\File;
+use JoshBruce\Site\File;
 //
 // use JoshBruce\Site\PageComponents\Data;
 // use JoshBruce\Site\PageComponents\DateBlock;
@@ -18,8 +18,9 @@
 //
 // use JoshBruce\Site\Content\FrontMatter;
 //
-// class Markdown
-// {
+class Markdown
+{
+    private string $fileContent = '';
 //     private string $markdown = '';
 //
 //     /**
@@ -27,33 +28,64 @@
 //      */
 //     private FrontMatter $frontMatter;
 //
-//     public static function init(File $file): Markdown
-//     {
-//         return new Markdown($file);
-//     }
-//
-//     public static function markdownConverter(): MarkdownConverter
-//     {
-//         return MarkdownConverter::create()
-//             ->minified() // can't be minified due to code blocks
-//             ->smartPunctuation()
-//             ->withConfig(['html_input' => 'allow'])
-//             ->descriptionLists()
-//             ->abbreviations()
-//             ->externalLinks([
-//                 'open_in_new_window' => true,
-//                 'internal_hosts' => 'joshbruce.com'
-//             ])->headingPermalinks(
-//                 [
-//                     'min_heading_level' => 2,
-//                     'symbol' => '＃'
-//                 ],
-//             );
-//     }
-//
-//     public function __construct(private File $file)
-//     {
-//     }
+    public static function for(File $file): Markdown
+    {
+        return new Markdown($file);
+    }
+
+    public static function markdownConverter(): MarkdownConverter
+    {
+        return MarkdownConverter::create()
+            ->minified() // can't be minified due to code blocks
+            ->smartPunctuation()
+            ->withConfig(['html_input' => 'allow'])
+            ->descriptionLists()
+            ->abbreviations()
+            ->externalLinks([
+                'open_in_new_window' => true,
+                'internal_hosts' => 'joshbruce.com'
+            ])->headingPermalinks(
+                [
+                    'min_heading_level' => 2,
+                    'symbol' => '＃'
+                ],
+            );
+    }
+
+    private function __construct(private File $file)
+    {
+    }
+
+    public function html(): string
+    {
+        $body = self::markdownConverter()->getBody($this->fileContent());
+        return self::markdownConverter()->convert($body);
+    }
+
+    /**
+     * @todo: test
+     */
+    public function frontMatter(): FrontMatter
+    {
+        if (! isset($this->frontMatter)) {
+            $frontMatter = self::markdownConverter()
+                ->getFrontMatter($this->fileContent());
+            $this->frontMatter = FrontMatter::init($frontMatter);
+        }
+        return $this->frontMatter;
+    }
+
+    private function fileContent(): string
+    {
+        if (strlen($this->fileContent) === 0 and $this->file->found()) {
+            $content = $this->file->contents();
+            if (is_bool($content)) {
+                $content = '';
+            }
+            $this->fileContent = $content;
+        }
+        return $this->fileContent;
+    }
 //
 //     public function convert(): string
 //     {
@@ -129,18 +161,7 @@
 //         return $this->markdown;
 //     }
 //
-//     /**
-//      * @todo: test
-//      */
-//     public function frontMatter(): FrontMatter
-//     {
-//         if (! isset($this->frontMatter)) {
-//             $frontMatter = self::markdownConverter()
-//                 ->getFrontMatter($this->markdown());
-//             $this->frontMatter = FrontMatter::init($frontMatter);
-//         }
-//         return $this->frontMatter;
-//     }
+
 //
 //     public function hasMoved(): bool
 //     {
@@ -151,4 +172,4 @@
 //     {
 //         return $this->frontMatter()->redirectPath();
 //     }
-// }
+}

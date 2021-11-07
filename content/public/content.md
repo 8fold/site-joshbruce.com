@@ -9,7 +9,7 @@ Hello,
 
 My name is Josh Bruce (shocker).
 
-I've been creating content online since 1998 on various platforms. In 2020 I felt my content had become spread all over the place and I've decided to consolidate it here. 
+I've been creating content online since 1998 on various platforms. In 2020 I felt my content had become spread all over the place and I've decided to consolidate it here.
 
 Fair warning, I’m a multi-faceted being and will do my best to create logical separations and experiences for the various topics discussed.
 

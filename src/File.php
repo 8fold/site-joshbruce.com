@@ -1,15 +1,59 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site;
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site;
 //
 // // use DirectoryIterator;
 //
 // // use JoshBruce\Site\Content\FrontMatter;
 //
-// class File
-// {
+class File
+{
+    public static function at(string $localPath): File
+    {
+        return new File($localPath);
+    }
+
+    private function __construct(private string $localPath)
+    {
+    }
+
+    public function isNotMarkdown(): bool
+    {
+        return ! $this->isMarkdown();
+    }
+
+    private function isMarkdown(): bool
+    {
+        $parts = explode('/', $this->localPath);
+        $possibleFileName = array_pop($parts);
+        if ($possibleFileName === null) {
+            return false;
+        }
+        return str_ends_with($possibleFileName, '.md');
+    }
+
+    public function found(): bool
+    {
+        return file_exists($this->path()) and is_file($this->path());
+    }
+
+    /**
+     * @todo: move to trait
+     */
+    public function path(bool $full = true): string
+    {
+        if ($full) {
+            return $this->localPath;
+        }
+        return str_replace($this->base(), '', $this->path);
+    }
+
+    public function contents(): string
+    {
+        return file_get_contents($this->path());
+    }
 //     public static function init(string $path): File
 //     {
 //         return new File($path);
@@ -19,16 +63,7 @@
 //     {
 //     }
 //
-//     /**
-//      * @todo: move to trait
-//      */
-//     public function path(bool $full = true): string
-//     {
-//         if ($full) {
-//             return $this->path;
-//         }
-//         return str_replace($this->base(), '', $this->path);
-//     }
+
 //
 //     /**
 //      * @todo: move to trait
@@ -49,15 +84,9 @@
 //         return array_pop($parts);
 //     }
 //
-//     public function contents(): string
-//     {
-//         return file_get_contents($this->path());
-//     }
+
 //
-//     public function found(): bool
-//     {
-//         return file_exists($this->path()) and is_file($this->path());
-//     }
+
 //
 //     public function mimetype(): string
 //     {
@@ -80,4 +109,4 @@
 //         }
 //         return $type;
 //     }
-// }
+}

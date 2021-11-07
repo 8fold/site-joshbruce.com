@@ -1,38 +1,38 @@
 <?php
-//
-// declare(strict_types=1);
-//
-// namespace JoshBruce\Site\Content;
-//
-// class FrontMatter
-// {
-//     /**
-//      * @param array<string, mixed> $frontMatter
-//      */
-//     public static function init(array $frontMatter = []): FrontMatter
-//     {
-//         return new FrontMatter($frontMatter);
-//     }
-//
-//     /**
-//      * @param array<string, mixed> $frontMatter
-//      */
-//     public function __construct(private array $frontMatter = [])
-//     {
-//     }
-//
-//     public function hasMember(string $member): bool
-//     {
-//         return array_key_exists($member, $this->frontMatter);
-//     }
-//
-//     public function title(): string
-//     {
-//         if ($this->hasMember('title')) {
-//             return strval($this->frontMatter['title']);
-//         }
-//         return '';
-//     }
+
+declare(strict_types=1);
+
+namespace JoshBruce\Site\Content;
+
+class FrontMatter
+{
+    /**
+     * @param array<string, mixed> $frontMatter
+     */
+    public static function init(array $frontMatter = []): FrontMatter
+    {
+        return new FrontMatter($frontMatter);
+    }
+
+    /**
+     * @param array<string, mixed> $frontMatter
+     */
+    private function __construct(private array $frontMatter = [])
+    {
+    }
+
+    public function hasMember(string $member): bool
+    {
+        return array_key_exists($member, $this->frontMatter);
+    }
+
+    public function title(): string
+    {
+        if ($this->hasMember('title')) {
+            return strval($this->frontMatter['title']);
+        }
+        return '';
+    }
 //
 //     public function header(): string
 //     {
@@ -111,4 +111,4 @@
 //         }
 //         return false;
 //     }
-// }
+}
