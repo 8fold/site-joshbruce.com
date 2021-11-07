@@ -88,7 +88,7 @@ class Generator
 
         $destinationPath = $this->contentDestinationPathFor($contentPath);
 
-        $file = FileSystem::init($contentRoot, $folderPath, $fileName);
+        $file = FileSystem::public($folderPath, $fileName);
 
         $body = Markdown::init($file)->convert();
 

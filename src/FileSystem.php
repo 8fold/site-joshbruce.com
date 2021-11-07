@@ -8,6 +8,7 @@ use DirectoryIterator;
 
 use JoshBruce\Site\Content\FrontMatter;
 
+use JoshBruce\Site\SiteDynamic\Server;
 use JoshBruce\Site\Folder;
 
 /**
@@ -55,9 +56,11 @@ class FileSystem
 
     public static function base(): string
     {
-        $dir     = __DIR__;
-        $parts   = explode('/', $dir);
-        $parts   = array_slice($parts, 0, -1);
+        $projectRoot = Server::projectRoot();
+        // $dir     = __DIR__;
+        // $parts   = explode('/', $dir);
+        // $parts   = array_slice($parts, 0, -1);
+        $parts   = explode('/', $projectRoot);
         $parts[] = 'content';
         $base    = implode('/', $parts);
         if (str_ends_with($base, '/')) {

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
 
@@ -13,8 +13,19 @@ require $projectRoot . '/vendor/autoload.php';
 Dotenv\Dotenv::createImmutable($projectRoot)->load();
 
 $server = JoshBruce\Site\SiteDynamic\Server::init($_SERVER, $projectRoot);
-
-if ($server->isMissingRequiredValues()) {
+//
+// $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
+// $creator      = new Nyholm\Psr7Server\ServerRequestCreator(
+//     $psr17Factory,
+//     $psr17Factory,
+//     $psr17Factory,
+//     $psr17Factory
+// );
+//
+// $request = $creator->fromGlobals();
+$request = JoshBruce\Site\HttpRequest::init();
+die(var_dump($request));
+if ($request->isMissingRequiredValues()) {
     JoshBruce\Site\SiteDynamic\Emitter::emitInteralServerErrorResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot
@@ -22,7 +33,9 @@ if ($server->isMissingRequiredValues()) {
     exit;
 }
 
-if ($server->isRequestingUnsupportedMethod()) {
+
+
+if ($request->isUnsupportedMethod()) {
     JoshBruce\Site\SiteDynamic\Emitter::emitUnsupportedMethodResponse(
         JoshBruce\Site\Content\Markdown::markdownConverter(),
         $projectRoot,

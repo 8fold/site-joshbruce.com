@@ -12,6 +12,14 @@ beforeEach(function() {
     $this->contentRoot = $this->projectRoot . $_SERVER['CONTENT_FOLDER'];
 });
 
+it('has expected project roo', function() {
+    expect(
+        Server::projectRoot()
+    )->toBeString()->toBe(
+        $this->projectRoot
+    );
+})->group('server');
+
 it('has expected file name and content root', function() {
     expect(
         Server::init(serverGlobals(), $this->projectRoot)->requestFileName()

@@ -40,12 +40,12 @@ function server(string $requestUri = '/'): Server
 function serverGlobals(string $requestUri = '/'): array
 {
     $_SERVER['APP_ENV']        = 'test';
-    $_SERVER['CONTENT_UP']     = 0;
-    $_SERVER['CONTENT_FOLDER'] = '/tests/test-content/content';
-    $_SERVER['REQUEST_SCHEME'] = 'http';
-    $_SERVER['HTTP_HOST']      = 'testing.com';
-    $_SERVER['REQUEST_URI']    = $requestUri;
-    $_SERVER['REQUEST_METHOD'] = 'get';
+    // $_SERVER['CONTENT_UP']     = 0;
+    // $_SERVER['CONTENT_FOLDER'] = '/tests/test-content/content';
+    // $_SERVER['REQUEST_SCHEME'] = 'http';
+    // $_SERVER['HTTP_HOST']      = 'testing.com';
+    // $_SERVER['REQUEST_URI']    = $requestUri;
+    // $_SERVER['REQUEST_METHOD'] = 'get';
 
     return $_SERVER;
 }

@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\SiteDynamic;
 
-use Whoops\Run;
-use Whoops\Handler\PrettyPageHandler;
+// use Whoops\Run;
+// use Whoops\Handler\PrettyPageHandler;
 
 class Server
 {
+    public static function projectRoot(): string
+    {
+        $dir     = __DIR__;
+        $parts   = explode('/', $dir);
+        $parts   = array_slice($parts, 0, -2);
+        return implode('/', $parts);
+    }
+
     /**
      * @param  array<string, string> $serverGlobals
      */
@@ -31,37 +39,37 @@ class Server
     ) {
     }
 
-    public function isMissingRequiredValues(): bool
-    {
-        $required = [
-            'APP_ENV',
-            'CONTENT_UP',
-            'CONTENT_FOLDER',
-            'REQUEST_SCHEME',
-            'HTTP_HOST',
-            'REQUEST_URI'
-        ];
-
-        foreach ($required as $key) {
-            if (! array_key_exists($key, $this->serverGlobals)) {
-                return true;
-            }
-
-            if ($key === 'REQUEST_URI') {
-                $uri = $this->serverGlobals['REQUEST_URI'];
-                $parts = explode('?', $uri);
-                $this->serverGlobals['REQUEST_URI'] = array_shift($parts);
-            }
-        }
-
-        if ($this->serverGlobals['APP_ENV'] !== 'production') {
-            $erroHandler = new Run();
-            $erroHandler->pushHandler(new PrettyPageHandler());
-            $erroHandler->register();
-        }
-
-        return false;
-    }
+//     public function isMissingRequiredValues(): bool
+//     {
+//         $required = [
+//             'APP_ENV',
+//             'CONTENT_UP',
+//             'CONTENT_FOLDER',
+//             'REQUEST_SCHEME',
+//             'HTTP_HOST',
+//             'REQUEST_URI'
+//         ];
+//
+//         foreach ($required as $key) {
+//             if (! array_key_exists($key, $this->serverGlobals)) {
+//                 return true;
+//             }
+//
+//             if ($key === 'REQUEST_URI') {
+//                 $uri = $this->serverGlobals['REQUEST_URI'];
+//                 $parts = explode('?', $uri);
+//                 $this->serverGlobals['REQUEST_URI'] = array_shift($parts);
+//             }
+//         }
+//
+//         if ($this->serverGlobals['APP_ENV'] !== 'production') {
+//             $erroHandler = new Run();
+//             $erroHandler->pushHandler(new PrettyPageHandler());
+//             $erroHandler->register();
+//         }
+//
+//         return false;
+//     }
 
     public function isRequestingUnsupportedMethod(): bool
     {
