@@ -6,11 +6,12 @@ test('index is not displaying errors', function() {
     $dir     = __DIR__;
     $parts   = explode('/', $dir);
     $parts   = array_slice($parts, 0, -1);
-    $parts[] = 'public';
+    $parts[] = 'site-dynamic-php';
     $parts[] = 'index.php';
 
     $path = implode('/', $parts);
 
+    // index.php should exist
     expect(is_file($path))->toBeTrue();
 
     $contents = file_get_contents($path);
@@ -18,8 +19,10 @@ test('index is not displaying errors', function() {
     preg_match_all('/ini_set\(.*\);/', $contents, $matches);
     $matches = array_shift($matches);
 
-    expect(count($matches))->toBeGreaterThan(0);
+    // ini_set should be present
+    expect(count($matches))->toBe(2);
 
+    // ini_set should be 0
     foreach ($matches as $match) {
         expect(
             str_contains($match, '1'),

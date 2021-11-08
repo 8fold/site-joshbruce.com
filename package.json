@@ -19,6 +19,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "gulp": "^4.0.2",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "set-value": ">=4.0.1",
+    "glob-parent": ">=5.1.2"
   }
 }
