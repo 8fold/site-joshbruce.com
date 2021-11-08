@@ -4,19 +4,16 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Carbon\Carbon;
-
-use Eightfold\HTMLBuilder\Element as HtmlElement;
+use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\Site\Content\FrontMatter;
 
 class Data
 {
-    /**
-     * @param array<int, array<int, string|int|float>> $data
-     */
-    public static function create(array $data): HtmlElement|string
+    public static function create(FrontMatter $frontMatter): string
     {
+        $data = $frontMatter->data();
+
         $listHeadings = [];
         foreach ($data as $row) {
             $label   = $row[0];
@@ -33,26 +30,26 @@ class Data
 
             }
 
-            $listHeadings[] = Htmlelement::li(
+            $listHeadings[] = Element::li(
                 $label . " ({$detail})",
-                HtmlElement::ul(
-                    HtmlElement::li(
-                        HtmlElement::b('current: '),
+                Element::ul(
+                    Element::li(
+                        Element::b('current: '),
                         $current
                     ),
-                    HtmlElement::li(
-                        HtmlElement::abbr('min')->props('title minimum'),
+                    Element::li(
+                        Element::abbr('min')->props('title minimum'),
                         ': ',
                         $low
                     ),
-                    HtmlElement::li(
-                        HtmlElement::abbr('max')->props('title maximum'),
+                    Element::li(
+                        Element::abbr('max')->props('title maximum'),
                         ': ',
                         $high
                     )
                 )
             );
         }
-        return HtmlElement::ul(...$listHeadings);
+        return Element::ul(...$listHeadings)->build();
     }
 }

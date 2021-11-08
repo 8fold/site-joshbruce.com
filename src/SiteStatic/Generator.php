@@ -4,40 +4,53 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\SiteStatic;
 
+use SplFileInfo;
+
+use Dotenv\Dotenv;
+
 use Symfony\Component\Console\Output\OutputInterface;
+
 use Symfony\Component\Finder\Finder;
 
 use League\Flysystem\Local\LocalFilesystemAdapter;
 use League\Flysystem\Filesystem as LeagueFilesystem;
 
-use Eightfold\Markdown\Markdown as MarkdownConverter;
-
 use JoshBruce\Site\FileSystem;
-use JoshBruce\Site\Content\Markdown;
 
-use JoshBruce\Site\Pages\DefaultTemplate;
+use JoshBruce\Site\HttpResponse;
+use JoshBruce\Site\HttpRequest;
 
 class Generator
 {
     private bool $isNotTesting = false;
 
+    private string $contentRoot = '';
+
     private LeagueFilesystem $leagueFileSystem;
 
     public static function init(
         OutputInterface $output,
-        string $contentRoot,
-        string $destination
+        string $destination = ''
     ): Generator {
-        return new Generator($output, $contentRoot, $destination);
+        return new Generator($output, $destination);
     }
 
-    public function __construct(
+    private function __construct(
         private OutputInterface $output,
-        private string $contentRoot,
-        private string $destination
+        private string $destination = ''
     ) {
+        $projectRoot = FileSystem::projectRoot();
+
+        Dotenv::createImmutable($projectRoot)->load();
+
         if (isset($_SERVER['APP_ENV'])) {
             $this->isNotTesting = $_SERVER['APP_ENV'] !== 'testing';
+        }
+
+        $this->contentRoot = FileSystem::contentRoot() . '/public';
+
+        if (strlen($destination) === 0) {
+            $this->destination =  $projectRoot . '/site-static-html/public';
         }
     }
 
@@ -45,16 +58,10 @@ class Generator
     {
         $this->compilingDidStartMessage($this->contentRoot, $this->destination);
 
-        $finder = new Finder();
-        $finder = $finder->ignoreVCS(false)
-            ->ignoreUnreadableDirs()
-            ->ignoreDotFiles(false)
-            ->in($this->contentRoot);
+        $finder = $this->finder();
+
         foreach ($finder as $found) {
             $path = (string) $found;
-            if (strpos($path, '_') > 0 or $found->isDir()) {
-                continue;
-            }
 
             if (str_contains($path, '.md')) {
                 $this->compileContentFileFor($path);
@@ -64,44 +71,46 @@ class Generator
 
             }
         }
-
-        if ($this->isNotTesting) {
-            $end = hrtime(true);
-        }
         return true;
     }
 
-
     private function compileContentFileFor(string $contentPath): void
     {
-        $contentRoot = $this->contentRoot;
-        $path        = str_replace($contentRoot, '', $contentPath);
-
-        $parts       = explode('/', $path);
-
-        $fileName    = array_pop($parts);
-
-        $folderPath  = implode('/', $parts);
-        if (strlen($folderPath) === 0) {
-            $folderPath = '/';
-        }
-
         $destinationPath = $this->contentDestinationPathFor($contentPath);
 
-        $file = FileSystem::init($contentRoot, $folderPath, $fileName);
+        $relativePath = $this->relativePath($contentPath);
+        $parts        = explode('/', $relativePath);
+        $parts        = array_slice($parts, 0, -1);
+        $requestUri   = implode('/', $parts);
 
-        $body = Markdown::init($file)->convert();
+        $_SERVER['REQUEST_URI'] = $requestUri;
+        if (str_contains($destinationPath, '/error-404.html')) {
+            $_SERVER['REQUEST_URI'] = '/low/probability/of/ex/is/ting';
 
-        $content = DefaultTemplate::create(
-            $body,
-            $file->mimeType(),
-            $file->folderStack(),
-            $contentRoot
-        )->body();
+        } elseif (str_contains($destinationPath, '/error-405.html')) {
+            $_SERVER['REQUEST_METHOD'] = 'DELETE';
 
-        $this->leagueFileSystem()->write($destinationPath, $content);
+        } elseif (strlen($requestUri) === 0) {
+            $_SERVER['REQUEST_URI'] = '/';
 
-        $this->sourceFileConvertedMessage($contentPath, $destinationPath);
+        }
+
+        // $_SERVER['REQUEST_URI'] = (strlen($requestUri) === 0)
+        //     ? '/'
+        //     : $requestUri;
+
+        $html = HttpResponse::from(request: HttpRequest::fromGlobals())->body();
+
+        $this->leagueFileSystem()->write($destinationPath, $html);
+
+        // $this->sourceFileConvertedMessage($contentPath, $destinationPath);
+    }
+
+    private function copyFileFor(string $path): void
+    {
+        $destinationPath = $this->fileDestinationPathFor($path);
+        $this->leagueFileSystem()->copy($path, $destinationPath);
+        // $this->sourceFileCopiedMessage($path, $destinationPath);
     }
 
     private function contentDestinationPathFor(string $path): string
@@ -115,17 +124,37 @@ class Generator
 
     private function fileDestinationPathFor(string $path): string
     {
-        $contentRoot  = $this->contentRoot;
-        $relativePath = str_replace($contentRoot, '', $path);
-
+        $relativePath = $this->relativePath($path);
         return $this->destination . $relativePath;
     }
 
-    private function copyFileFor(string $path): void
+    private function finder(): Finder
     {
-        $destinationPath = $this->fileDestinationPathFor($path);
-        $this->leagueFileSystem()->copy($path, $destinationPath);
-        $this->sourceFileCopiedMessage($path, $destinationPath);
+        $finder = new Finder();
+        return $finder->ignoreVCS(false)
+            ->ignoreUnreadableDirs()
+            ->ignoreDotFiles(false)
+            ->ignoreVCSIgnored(true)
+            ->files()
+            ->filter(fn($f) => $this->isPublished($f))
+            ->in($this->contentRoot);
+    }
+
+    private function isPublished(SplFileInfo $finderFile): bool
+    {
+        return ! $this->isDraft($finderFile);
+    }
+
+    private function isDraft(SplFileInfo $finderFile): bool
+    {
+        $filePath = (string) $finderFile;
+        $relativePath = $this->relativePath($filePath);
+        return str_contains($relativePath, '_');
+    }
+
+    private function relativePath(string $path): string
+    {
+        return str_replace($this->contentRoot, '', $path);
     }
 
     /**
@@ -165,29 +194,33 @@ class Generator
         }
     }
 
-    private function sourceFileConvertedMessage(
-        string $contentPath,
-        string $destinationPath
-    ): void {
-        $this->output()->writeln(<<<bash
-
-            Converted:
-                {$contentPath} to
-                {$destinationPath}
-            bash
-        );
-    }
-
     private function sourceFileCopiedMessage(
         string $contentPath,
         string $destinationPath
     ): void {
-        $this->output()->writeln(<<<bash
+        if ($this->isNotTesting) {
+            $this->output()->writeln(<<<bash
 
-            Copied:
-                {$contentPath} to
-                {$destinationPath}
-            bash
-        );
+                Copied:
+                    {$contentPath} to
+                    {$destinationPath}
+                bash
+            );
+        }
+    }
+
+    private function sourceFileConvertedMessage(
+        string $contentPath,
+        string $destinationPath
+    ): void {
+        if ($this->isNotTesting) {
+            $this->output()->writeln(<<<bash
+
+                Converted:
+                    {$contentPath} to
+                    {$destinationPath}
+                bash
+            );
+        }
     }
 }

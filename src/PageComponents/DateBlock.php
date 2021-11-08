@@ -6,7 +6,7 @@ namespace JoshBruce\Site\PageComponents;
 
 use Carbon\Carbon;
 
-use Eightfold\HTMLBuilder\Element as HtmlElement;
+use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\Site\Content\FrontMatter;
 
@@ -14,43 +14,43 @@ class DateBlock
 {
     public static function create(FrontMatter $frontMatter): string
     {
-        $created = self::timestamp(
-            'Created on',
-            $frontMatter->created(),
-            'dateCreated'
-        );
+        $times = [];
+        $dateblock = $frontMatter->dateblock();
+        foreach ($dateblock as $date) {
+            list($d, $label) = explode(' ', $date, 2);
+            $schemaProp = '';
+            if (str_starts_with($label, 'Created')) {
+                $schemaProp = 'dateCreated';
 
-        $moved = self::timestamp('Moved on', $frontMatter->moved());
+            } elseif (str_starts_with($label, 'Updated')) {
+                $schemaProp = 'dateModified';
 
-        $updated = self::timestamp(
-            'Updated on',
-            $frontMatter->updated(),
-            'dateModified'
-        );
+            }
+            $times[] = self::timestamp($label, intval($d), $schemaProp);
+        }
 
-        if (empty($updated) and empty($moved) and empty($created)) {
+        if (count($times) === 0) {
             return '';
         }
-        return HtmlElement::div($created, $moved, $updated)
-            ->props('is dateblock')->build();
+        return Element::div(...$times)->props('is dateblock')->build();
     }
 
     private static function timestamp(
         string $label,
         int|false $date = false,
         string $schemaProp = ''
-    ): HtmlElement|string {
+    ): Element|string {
         if (! $date) {
             return '';
         }
 
         if ($carbon = Carbon::createFromFormat('Ymd', strval($date))) {
-            $time = HtmlElement::time($carbon->toFormattedDateString())
+            $time = Element::time($carbon->toFormattedDateString())
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
                     'content ' . $carbon->format('Y-m-d')
                 )->build();
-            return HtmlElement::p("{$label}: {$time}");
+            return Element::p("{$label}: {$time}");
         }
         return '';
     }

@@ -4,21 +4,17 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Eightfold\HTMLBuilder\Element as HtmlElement;
+use JoshBruce\Site\File;
 
-use JoshBruce\Site\FileSystem;
+use Eightfold\HTMLBuilder\Element;
+
 use JoshBruce\Site\Content\Markdown;
-
-use JoshBruce\Site\Content\FrontMatter;
 
 class LogList
 {
-    /**
-     * @param FileSystem[] $fileSubfolders
-     */
-    public static function create(
-        array $fileSubfolders
-    ): string {
+    public static function create(File $file): string
+    {
+        $fileSubfolders = $file->children(filesNamed: 'content.md');
         if (count($fileSubfolders) === 0) {
             return '';
         }
@@ -27,7 +23,7 @@ class LogList
         $logLinks = [];
         foreach ($fileSubfolders as $key => $file) {
             if (! str_starts_with(strval($key), '_') and $file->found()) {
-                $markdown = Markdown::init($file);
+                $markdown = Markdown::for($file);
 
                 $linkPath = str_replace(
                     '/content.md',
@@ -35,13 +31,13 @@ class LogList
                     $file->path(full: false)
                 );
 
-                $logLinks[] = HtmlElement::li(
-                    HtmlElement::a(
-                        $markdown->frontMatter()->title() // ['title']
+                $logLinks[] = Element::li(
+                    Element::a(
+                        $markdown->frontMatter()->title()
                     )->props('href ' . $linkPath)
                 );
             }
         }
-        return HtmlElement::ul(...$logLinks)->build();
+        return Element::ul(...$logLinks)->build();
     }
 }

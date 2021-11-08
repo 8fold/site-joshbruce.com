@@ -17,7 +17,7 @@ class FrontMatter
     /**
      * @param array<string, mixed> $frontMatter
      */
-    public function __construct(private array $frontMatter = [])
+    private function __construct(private array $frontMatter = [])
     {
     }
 
@@ -34,33 +34,6 @@ class FrontMatter
         return '';
     }
 
-    public function header(): string
-    {
-        if ($this->hasMember('header')) {
-            return strval($this->frontMatter['header']);
-        }
-        return '';
-    }
-
-    /**
-     * @return array<int, string>
-     */
-    public function navigation(): array
-    {
-        if ($this->hasMember('navigation')) {
-            return $this->frontMatter['navigation'];
-        }
-        return [];
-    }
-
-    public function redirectPath(): string
-    {
-        if ($this->hasMember('redirect')) {
-            return strval($this->frontMatter['redirect']);
-        }
-        return '';
-    }
-
     /**
      * @return array<int, int[]>
      */
@@ -72,43 +45,22 @@ class FrontMatter
         return [];
     }
 
+    /**
+     * @return array<int, string>
+     */
+    public function dateblock(): array
+    {
+        if ($this->hasMember('dateblock')) {
+            return $this->frontMatter['dateblock'];
+        }
+        return [];
+    }
+
     public function original(): string
     {
         if ($this->hasMember('original')) {
             return strval($this->frontMatter['original']);
         }
         return '';
-    }
-
-    public function type(): string
-    {
-        if ($this->hasMember('type')) {
-            return strval($this->frontMatter['type']);
-        }
-        return '';
-    }
-
-    public function created(): int|false
-    {
-        if ($this->hasMember('created')) {
-            return intval($this->frontMatter['created']);
-        }
-        return false;
-    }
-
-    public function updated(): int|false
-    {
-        if ($this->hasMember('updated')) {
-            return intval($this->frontMatter['updated']);
-        }
-        return false;
-    }
-
-    public function moved(): int|false
-    {
-        if ($this->hasMember('moved')) {
-            return intval($this->frontMatter['moved']);
-        }
-        return false;
     }
 }
