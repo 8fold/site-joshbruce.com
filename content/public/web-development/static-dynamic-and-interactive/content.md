@@ -1,6 +1,12 @@
 ---
 title: Static, dynamic, and interactive
+dateblock:
+    - 20211107 Created on
 ---
+
+# Static, dynamic, and interactive
+
+{!!dateblock!!}
 
 I've seen multiple components to talking about site content; here's what that looks like for me at the moment.
 
@@ -36,7 +42,7 @@ It's running on an [Apache](https://httpd.apache.org) server on some version of 
 
 That's what makes it a single-page application (or site).
 
-The file doesn't get returned to the browser. Instead, it runs the script line-for-line (procedurally) inside the `index.php` file, which will instantiate objects as necessary to achieve the goal of returning the appropriate response; a controller—sometimes more specifically referred to as a "front controller." All of this code runs on the server until it finishes or times out, whichever comes first. Once the scripts are done running, the server shuts down the application that was started specifically for that single request.
+The file doesn't get returned to the browser. Instead, it runs the script line-for-line (procedurally) inside the `index.php` file, which will instantiate objects as necessary to achieve the goal of returning the appropriate response; a controller—sometimes more specifically referred to as a "front controller." All of this code runs on the server until it finishes, runs out of memory, or times out, whichever comes first. Once the scripts are done running, the server shuts down the application that was started specifically for that single request.
 
 Because the app is running entirely on the server, it's a server-side application (or site).
 
@@ -44,7 +50,7 @@ As of this writing, there isn't a single line of HTML anywhere in the content or
 
 ## Static sites
 
-The drawback felt by having a static was that it was so hard to change the structure of pages and look and feel of the site.
+The drawback felt by having a static site was that it was so hard to change the structure of pages and look and feel of the site.
 
 Want to update the navigation? Sure thing, go through every page of the site and copy-and-paste the HTML you want updated.
 
@@ -53,7 +59,7 @@ Two things came about to help overcome this (in my estimation):
 1. server-side scripting languages and
 2. [.CSS](Cascading Style Sheets).
 
-Scripting languages like [.PHP](PHP: Hypertext Preprocessor) allowed you to create HTML snippets and templates that could be composed into a final, rendered page and sent back to the server. Effectively turning the site into a dynamically-generated site. CSS let you redesign the site [in multiple ways](http://www.csszengarden.com) without having to change the structure of the HTML.
+Scripting languages like [.PHP](PHP: Hypertext Preprocessor) allowed you to create HTML snippets and templates that could be composed into a final, rendered page and sent back to the server to be forwarded to the requester. Effectively turning the site into a dynamically-generated site. CSS let you redesign the site [in multiple ways](http://www.csszengarden.com) without having to change the structure of the HTML.
 
 ## Dynamic sites
 
@@ -61,19 +67,21 @@ The drawback to dynamic sites has always been speed.
 
 It's a lot faster for a server to find a file and send it back to the person requesting that content. Granted this only seemed to become a problem when your site hit a certain level of users all vying for the attention of the server.
 
-The ability to server different experiences based on different parameters was awesome though. Designers would sometimes create different CSS to cover different times of year. Keeping track of sessions made it possible for users to sign-in and customize the site. The idea of users having the ability to customize their experience was a pretty big deal for a while.
+The ability to serve different experiences based on different parameters was awesome though. Some designers would create different CSS to cover different times of year, or, maybe put a blurb up asking you to upgrade your browser. Keeping track of sessions made it possible for users to sign-in and customize the site. The idea of users having the ability to customize their experience was a pretty big deal for a while, however, seems to have fallen away in favor of “everyone gets the same thing,” which makes a certain degree of sense; the more customizable something is, the harder it is to support.
 
 ## Multi-page sites
 
-The drawback to multi-page sites was that it was difficult to keep the site architecture and code architecture straight; depending on the number of separate files.
+The drawback to multi-page sites was that it was difficult to keep the site architecture and code architecture straight; depending on the number of separate files and technologies being used.
 
-The benefit here though was the ability to mix-and-match experiences and server gets to be a server. I could have part of my site be static while another part was dynamic. Optimizing the experience for the content and user needs.
+The benefit here though was the ability to mix-and-match experiences and the server gets to be a server. I could have part of my site be static while another part was dynamic. Optimizing the experience for the content and user needs.
+
+Which brings us back to the drawback; the wider the technology stack is in breadth, the harder it will be to find someone with the appropriate combination of skills to maintain it. 
 
 I'm pretty sure this is where [joshbruce.com](https://joshbruce.com) is headed. That is, of course, so long as I don't get bored and it seems appropriate.
 
 ## Single-page sites
 
-The drawback to the single-page site is that you're kinda all in on an approach and technology stack. You also take on more of the responsibilities usually left to a the server software of your choice.
+The drawback to the single-page site is that you're kinda all in on an approach and technology stack. You also take on more of the responsibilities usually left to the server software of your choice.
 
 The benefit though is that it can be, theoretically, easier to keep track of. However, with the way things are going with frameworks and the like, I'm not so sure.
 
