@@ -24,6 +24,10 @@ class Generator
 {
     private bool $isNotTesting = false;
 
+    private string $contentRoot = '';
+
+    private LeagueFilesystem $leagueFileSystem;
+
     public static function init(
         OutputInterface $output,
         string $destination = ''
