@@ -1,6 +1,12 @@
 ---
 title: On constraints
+dateblock:
+    - 20211101 Created on
 ---
+
+# On constraints
+
+{!!dateblock!!}
 
 This series was started on Medium. Some of the articles in that series are more about [software development](/software-development) in general and is why this series will represent those topics specific to web development, at least in my mind.
 

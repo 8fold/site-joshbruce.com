@@ -36,6 +36,7 @@ class Markdown
             ->smartPunctuation()
             ->withConfig(['html_input' => 'allow'])
             ->descriptionLists()
+            ->attributes()
             ->abbreviations()
             ->externalLinks([
                 'open_in_new_window' => true,

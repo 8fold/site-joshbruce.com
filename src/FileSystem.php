@@ -17,7 +17,7 @@ class FileSystem
         return $base;
     }
 
-    private static function projectRoot(): string
+    public static function projectRoot(): string
     {
         $dir   = __DIR__;
         $parts = explode('/', $dir);

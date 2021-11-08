@@ -15,37 +15,19 @@ use JoshBruce\Site\SiteStatic\Generator;
 $application = new SingleCommandApplication();
 
 $application->setName('compile')
-	->setVersion('0.0.1')
-	->addArgument('source', InputArgument::REQUIRED, '/path/to/cotent/source')
-	->addArgument('destination', InputArgument::REQUIRED, '/path/to/destination')
+	->setVersion('0.2.1')
+	->addArgument('destination', InputArgument::OPTIONAL, '/path/to/destination')
 	->setCode(function (InputInterface $input, OutputInterface $output) {
-		$source = $input->getArgument('source');
-		if (! file_exists($source)) {
-			$output->writeln('The source directory could not be found.');
-			return Command::FAILURE;
-		}
-
-		if (! is_dir($source)) {
-			$output->writeln('The source should be a directory.');
-			return Command::FAILURE;
-		}
 
 		$destination = $input->getArgument('destination');
-		if (! file_exists($destination)) {
-			$output->writeln('The destination directory could not be found.');
-			return Command::FAILURE;
-		}
-
-		if (! is_dir($destination)) {
-			$output->writeln('The destination should be a directory.');
-			return Command::FAILURE;
+		if ($destination === null) {
+			$destination = '';
 		}
 
 		$start = hrtime(true);
 
-		$generator = Generator::init($output, $source, $destination);
+		$generator = Generator::init($output, $destination);
 		if ($generator->compile()) {
-
 			$end     = hrtime(true);
 			$elapsed = $end - $start;
 			$ms      = round($elapsed/1e+6);
