@@ -126,6 +126,8 @@ class Markdown
 
             $titles[] = $m->frontMatter()->title();
         }
+
+        $titles = array_filter($titles);
         return implode(' | ', $titles);
     }
 

@@ -14,6 +14,9 @@ use Nyholm\Psr7\Stream as PsrStream;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
+use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\File;
+
 use JoshBruce\Site\Content\Markdown;
 
 use JoshBruce\Site\PageComponents\Navigation;
@@ -52,22 +55,44 @@ class HttpResponse
     public function headers(): array
     {
         $headers = [];
-        $headers['Content-Type'] = $this->request->localFile()->mimeType();
+        if ($this->statusCode() === 200) {
+            $headers['Content-Type'] = $this->request->localFile()->mimeType();
+
+        } elseif ($this->statusCode() === 404) {
+            $headers['Content-Type'] = 'text/html';
+
+        }
+
         return $headers;
     }
 
     public function body(): string
     {
         $localFile = $this->request->localFile();
-        if ($localFile->isNotMarkdown()) {
+        if ($this->statusCode() === 200 and $localFile->isNotMarkdown()) {
             return $localFile->path();
+
+        } elseif ($this->statusCode() === 404) {
+            $localPath = FileSystem::contentRoot() . '/public/error-404.md';
+            $localFile = File::at($localPath);
+
+        } elseif ($this->statusCode() === 405) {
+            $localPath = FileSystem::contentRoot() . '/public/error-405.md';
+            $localFile = File::at($localPath);
+
         }
 
-        $markdown = Markdown::for(file: $localFile);
-        $html     = $markdown->html();
+        $html = '';
+        $pageTitle = '';
+        if ($localFile->isMarkdown()) {
+            $markdown  = Markdown::for(file: $localFile);
+            $pageTitle = $markdown->pageTitle();
+            $html      = $markdown->html();
+
+        }
 
         return Document::create(
-            $markdown->pageTitle()
+            $pageTitle
         )->head(
             Element::meta()->omitEndTag()->props(
                 'name viewport',

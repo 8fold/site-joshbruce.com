@@ -59,6 +59,7 @@ class Generator
         $this->compilingDidStartMessage($this->contentRoot, $this->destination);
 
         $finder = $this->finder();
+
         foreach ($finder as $found) {
             $path = (string) $found;
 
@@ -82,22 +83,34 @@ class Generator
         $parts        = array_slice($parts, 0, -1);
         $requestUri   = implode('/', $parts);
 
-        $_SERVER['REQUEST_URI'] = (strlen($requestUri) === 0)
-            ? '/'
-            : $requestUri;
+        $_SERVER['REQUEST_URI'] = $requestUri;
+        if (str_contains($destinationPath, '/error-404.html')) {
+            $_SERVER['REQUEST_URI'] = '/low/probability/of/ex/is/ting';
+
+        } elseif (str_contains($destinationPath, '/error-405.html')) {
+            $_SERVER['REQUEST_METHOD'] = 'DELETE';
+
+        } elseif (strlen($requestUri) === 0) {
+            $_SERVER['REQUEST_URI'] = '/';
+
+        }
+
+        // $_SERVER['REQUEST_URI'] = (strlen($requestUri) === 0)
+        //     ? '/'
+        //     : $requestUri;
 
         $html = HttpResponse::from(request: HttpRequest::fromGlobals())->body();
 
         $this->leagueFileSystem()->write($destinationPath, $html);
 
-        $this->sourceFileConvertedMessage($contentPath, $destinationPath);
+        // $this->sourceFileConvertedMessage($contentPath, $destinationPath);
     }
 
     private function copyFileFor(string $path): void
     {
         $destinationPath = $this->fileDestinationPathFor($path);
         $this->leagueFileSystem()->copy($path, $destinationPath);
-        $this->sourceFileCopiedMessage($path, $destinationPath);
+        // $this->sourceFileCopiedMessage($path, $destinationPath);
     }
 
     private function contentDestinationPathFor(string $path): string
@@ -111,7 +124,6 @@ class Generator
 
     private function fileDestinationPathFor(string $path): string
     {
-
         $relativePath = $this->relativePath($path);
         return $this->destination . $relativePath;
     }

@@ -24,11 +24,18 @@ class File
         return ! $this->isMarkdown();
     }
 
-    private function isMarkdown(): bool
+    public function isMarkdown(): bool
     {
         $parts = explode('/', $this->localPath);
         $possibleFileName = array_pop($parts);
         return str_ends_with($possibleFileName, '.md');
+    }
+
+    public function isHtml(): bool
+    {
+        $parts = explode('/', $this->localPath);
+        $possibleFileName = array_pop($parts);
+        return str_ends_with($possibleFileName, '.html');
     }
 
     public function found(): bool

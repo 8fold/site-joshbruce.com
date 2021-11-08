@@ -52,6 +52,19 @@ test('expected titles', function() {
         )
     )->toBeTrue();
 
+    serverGlobals('/something-missing');
+
+    $body = HttpResponse::from(
+        request: HttpRequest::fromGlobals()
+    )->body();
+
+    expect(
+        str_contains(
+            $body,
+            "<title>Page not found</title>"
+        )
+    )->toBeTrue();
+
 //     unset($_SERVER['APP_ENV']);
 //
 //     expect(
