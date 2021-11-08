@@ -18,6 +18,8 @@ test('index is not displaying errors', function() {
     preg_match_all('/ini_set\(.*\);/', $contents, $matches);
     $matches = array_shift($matches);
 
+    expect(count($matches))->toBeGreaterThan(0);
+
     foreach ($matches as $match) {
         expect(
             str_contains($match, '1'),
