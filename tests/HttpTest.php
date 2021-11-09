@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
-// use JoshBruce\Site\ServerGlobals;
-//
+
 test('expected headers', function() {
     serverGlobals();
 
