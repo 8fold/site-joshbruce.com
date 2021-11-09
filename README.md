@@ -12,7 +12,7 @@ The content is also available in a [separate repository](https://github.com/josh
 	- [MAMP](https://www.mamp.info/en/mamp-pro/windows/),
 	- [XAMPP](https://www.apachefriends.org/download.html), or
 	- custom build.
-3. Point the locally hosted domain to the `public` directory.
+3. Point the locally hosted domain to the `site-dynamic-php` directory.
 
 When you go to the locally hosted URL, it should throw a 500 server error. This is because you will need two things: the content folder and a `.env` file.
 

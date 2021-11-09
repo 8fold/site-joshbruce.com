@@ -63,4 +63,12 @@ class FrontMatter
         }
         return '';
     }
+
+    public function template(): string
+    {
+        if ($this->hasMember('template')) {
+            return strval($this->frontMatter['template']);
+        }
+        return '';
+    }
 }

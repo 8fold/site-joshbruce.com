@@ -4,8 +4,17 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use SplFileInfo;
+
+use Symfony\Component\Finder\Finder;
+
 class FileSystem
 {
+    public static function publicRoot(): string
+    {
+        return FileSystem::contentRoot() . '/public';
+    }
+
     public static function contentRoot(): string
     {
         $parts   = explode('/', self::projectRoot());
@@ -23,5 +32,35 @@ class FileSystem
         $parts = explode('/', $dir);
         $parts = array_slice($parts, 0, -1);
         return implode('/', $parts);
+    }
+
+    public static function finder(): Finder
+    {
+        $finder = new Finder();
+        return $finder->ignoreVCS(false)
+            ->ignoreUnreadableDirs()
+            ->ignoreDotFiles(false)
+            ->ignoreVCSIgnored(true)
+            ->notName('.gitignore')
+            ->files()
+            ->filter(fn($f) => self::isPublished($f))
+            ->in(self::publicRoot());
+    }
+
+    private static function isPublished(SplFileInfo $finderFile): bool
+    {
+        return ! self::isDraft($finderFile);
+    }
+
+    private static function isDraft(SplFileInfo $finderFile): bool
+    {
+        $filePath = (string) $finderFile;
+        $relativePath = self::relativePath($filePath);
+        return str_contains($relativePath, '_');
+    }
+
+    private static function relativePath(string $path): string
+    {
+        return str_replace(self::contentRoot(), '', $path);
     }
 }

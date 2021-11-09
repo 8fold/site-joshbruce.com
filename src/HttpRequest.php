@@ -65,6 +65,16 @@ class HttpRequest
         return str_contains($this->possibleFileName(), '.');
     }
 
+    public function isSitemap(): bool
+    {
+        return $this->isFile() and $this->possibleFileName() === 'sitemap.xml';
+    }
+
+    public function isNotSitemap(): bool
+    {
+        return ! $this->isSitemap();
+    }
+
     public function localFile(): File
     {
         return File::at(localPath: $this->localPath());
@@ -82,6 +92,14 @@ class HttpRequest
             $relativePath = $this->uriPath();
             if (empty($possibleFileName)) {
                 $relativePath = $this->uriPath() . '/content.md';
+
+            // } elseif (str_contains($relativePath, '.xml')) {
+            //     $relativePath = str_replace('.xml', '.md', $relativePath);
+
+            }
+
+            if (! str_starts_with($relativePath, '/')) {
+                $relativePath = "/{$relativePath}";
             }
 
             $root = FileSystem::contentRoot();

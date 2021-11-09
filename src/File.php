@@ -10,6 +10,8 @@ use JoshBruce\Site\FileSystem;
 
 class File
 {
+    private string $contentFileName = '/content.md';
+
     public static function at(string $localPath): File
     {
         return new File($localPath);
@@ -66,7 +68,7 @@ class File
 
     public function canGoUp(): bool
     {
-        return $this->path(false) !== '/content.md';
+        return $this->path(false) !== $this->contentFileName;
     }
 
     public function up(): File
@@ -74,7 +76,7 @@ class File
         $parts = explode('/', $this->localPath);
         $parts = array_slice($parts, 0, -2); // remove file name and one folder.
         $localPath = implode('/', $parts);
-        return File::at($localPath . '/content.md');
+        return File::at($localPath . $this->contentFileName);
     }
 
     public function contents(): string
@@ -97,7 +99,8 @@ class File
             $extensionMap = [
                 'md'  => 'text/html',
                 'css' => 'text/css',
-                'js'  => 'text/javascript'
+                'js'  => 'text/javascript',
+                'xml' => 'application/xml'
             ];
 
             $parts     = explode('.', $this->path());
@@ -108,12 +111,21 @@ class File
         return $type;
     }
 
+    public function canonicalUrl(): string
+    {
+        return str_replace(
+            $this->contentFileName,
+            '',
+            'https://joshbruce.com' . $this->path(false)
+        );
+    }
+
     /**
      * @return File[]
      */
     public function children(string $filesNamed): array
     {
-        $base = str_replace('/content.md', '', $this->path());
+        $base = str_replace($this->contentFileName, '', $this->path());
 
         $files = [];
         foreach (new DirectoryIterator($base) as $folder) {
@@ -134,6 +146,6 @@ class File
 
     private function contentRoot(): string
     {
-        return FileSystem::contentRoot() . '/public';
+        return FileSystem::publicRoot();
     }
 }
