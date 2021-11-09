@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
-// use JoshBruce\Site\ServerGlobals;
-//
+
 test('expected headers', function() {
     serverGlobals();
 
@@ -64,38 +63,6 @@ test('expected titles', function() {
             "<title>Page not found</title>"
         )
     )->toBeTrue();
-
-//     unset($_SERVER['APP_ENV']);
-//
-//     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::fromGlobals()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         500
-//     );
-//
-//     serverGlobals();
-//
-//     $_SERVER['REQUEST_METHOD'] = 'post';
-//
-//     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::fromGlobals()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         405
-//     );
-//
-//     serverGlobals('/not-valid');
-//
-//     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::fromGlobals()
-//         )->statusCode()
-//     )->toBeInt()->toBe(
-//         404
-//     );
 })->group('response');
 
 test('expected status codes', function() {
