@@ -10,3 +10,5 @@ yarn-error.log
 .nova
 
 site-static-html/
+
+!site-dynamic-php/public/.gitignore

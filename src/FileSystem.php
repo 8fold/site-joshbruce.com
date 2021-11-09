@@ -41,6 +41,7 @@ class FileSystem
             ->ignoreUnreadableDirs()
             ->ignoreDotFiles(false)
             ->ignoreVCSIgnored(true)
+            ->notName('.gitignore')
             ->files()
             ->filter(fn($f) => self::isPublished($f))
             ->in(self::publicRoot());
