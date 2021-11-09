@@ -13,6 +13,7 @@ use Psr\Http\Message\UriInterface;
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 
+use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\File;
 
 /**
@@ -26,11 +27,24 @@ class HttpRequest
 
     public static function fromGlobals(): HttpRequest
     {
+        if ($fileSystem === null) {
+            $fileSystem = new FileSystem();
+        }
+
         return new HttpRequest();
     }
 
-    private function __construct()
-    {
+    public static function for(
+        FileSystem $contentFolder,
+        array $serverGlobals
+    ): HttpRequest {
+        return new HttpRequest($contentFolder, $serverGlobals);
+    }
+
+    private function __construct(
+        FileSystem $contentFolder,
+        array $serverGlobals
+    ) {
     }
 
     public function isMissingRequiredValues(): bool
