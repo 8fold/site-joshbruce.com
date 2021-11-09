@@ -131,6 +131,11 @@ class Markdown
         return implode(' | ', $titles);
     }
 
+    public function canonicalURl(): string
+    {
+        return $this->file->canonicalUrl();
+    }
+
     private function fileContent(): string
     {
         if (strlen($this->fileContent) === 0 and $this->file->found()) {

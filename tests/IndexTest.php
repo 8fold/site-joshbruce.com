@@ -29,4 +29,4 @@ test('index is not displaying errors', function() {
             'Okay to fail in local.'
         )->toBeFalse();
     }
-})->group('index', 'focus');
+})->group('index');

@@ -21,6 +21,8 @@ use JoshBruce\Site\Content\Markdown;
 
 use JoshBruce\Site\PageComponents\Navigation;
 
+use JoshBruce\Site\Documents\Sitemap;
+
 class HttpResponse
 {
     private ResponseInterface $psrResponse;
@@ -69,7 +71,11 @@ class HttpResponse
     public function body(): string
     {
         $localFile = $this->request->localFile();
-        if ($this->statusCode() === 200 and $localFile->isNotMarkdown()) {
+        if (
+            $this->statusCode() === 200 and
+            $localFile->isNotMarkdown() and
+            $this->request->isNotSitemap($localFile)
+        ) {
             return $localFile->path();
 
         } elseif ($this->statusCode() === 404) {
@@ -82,12 +88,19 @@ class HttpResponse
 
         }
 
-        $html = '';
+        $template = '';
         $pageTitle = '';
+        $html = '';
         if ($localFile->isMarkdown()) {
             $markdown  = Markdown::for(file: $localFile);
+            $template  = $markdown->frontMatter()->template();
             $pageTitle = $markdown->pageTitle();
             $html      = $markdown->html();
+
+        }
+
+        if ($this->request->isSitemap()) {
+            return Sitemap::create();
 
         }
 
@@ -153,7 +166,10 @@ class HttpResponse
             $psr17Factory = new PsrFactory();
             $body         = $this->body();
             $stream       = $psr17Factory->createStream($body);
-            if ($this->request->isFile()) {
+            if (
+                $this->request->isFile() and
+                $this->request->isNotSitemap()
+            ) {
                 $stream = $psr17Factory->createStreamFromFile($body);
             }
 
