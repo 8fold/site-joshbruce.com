@@ -74,7 +74,7 @@ class HttpResponse
         if (
             $this->statusCode() === 200 and
             $localFile->isNotMarkdown() and
-            $this->request->isNotSitemap($localFile)
+            $this->request->isNotSitemap()
         ) {
             return $localFile->path();
 

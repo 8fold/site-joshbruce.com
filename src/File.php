@@ -113,7 +113,11 @@ class File
 
     public function canonicalUrl(): string
     {
-        return str_replace($this->contentFileName, '', 'https://joshbruce.com' . $this->path(false));
+        return str_replace(
+            $this->contentFileName,
+            '',
+            'https://joshbruce.com' . $this->path(false)
+        );
     }
 
     /**
