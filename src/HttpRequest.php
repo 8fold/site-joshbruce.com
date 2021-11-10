@@ -27,6 +27,10 @@ class HttpRequest
 
     private string $localPath = '';
 
+    private File $localFile;
+
+    private string $possibleFileName = '';
+
     public static function with(
         ServerGlobals $serverGlobals,
         FileSystemInterface $in
@@ -34,20 +38,6 @@ class HttpRequest
         return new HttpRequest($serverGlobals, $in);
     }
 
-//     public static function fromGlobals(): HttpRequest
-//     {
-//         if ($fileSystem === null) {
-//             $fileSystem = new FileSystemInterface();
-//         }
-//
-//         return new HttpRequest();
-//     }
-//
-//     // public static function for(FileSystemInterface $contentFolder): HttpRequest
-//     // {
-//     //     return new HttpRequest($contentFolder, $serverGlobals);
-//     // }
-//
     private function __construct(
         private ServerGlobals $serverGlobals,
         private FileSystemInterface $fileSystem
@@ -84,7 +74,13 @@ class HttpRequest
 
     public function localFile(): File
     {
-        return File::at(localPath: $this->localPath(), in: $this->fileSystem());
+        if (! isset($this->localFile)) {
+            $this->localFile = File::at(
+                localPath: $this->localPath(),
+                in: $this->fileSystem()
+            );
+        }
+        return $this->localFile;
     }
 
     public function isFile(): bool
@@ -110,9 +106,8 @@ class HttpRequest
     private function localPath(): string
     {
         if (empty($this->localPath)) {
-            $possibleFileName = $this->possibleFileName();
             $relativePath = $this->psrPath();
-            if (empty($possibleFileName)) {
+            if (empty($this->possibleFileName())) {
                 $relativePath = $this->psrPath() . '/content.md';
             }
 
@@ -129,16 +124,20 @@ class HttpRequest
 
     private function possibleFileName(): string
     {
-        $parts = explode('/', $this->psrPath());
-        $lastPart = array_slice($parts, -1);
-        $possibleFileName = array_shift($lastPart);
-        if (
-            $possibleFileName === null or
-            ! str_contains($possibleFileName, '.')
-        ) {
-            return '';
+        if (strlen($this->possibleFileName) === 0) {
+            $parts = explode('/', $this->psrPath());
+            $lastPart = array_slice($parts, -1);
+            $possibleFileName = array_shift($lastPart);
+            if (
+                $possibleFileName === null or
+                ! str_contains($possibleFileName, '.')
+            ) {
+                return '';
+            }
+
+            $this->possibleFileName = $possibleFileName;
         }
-        return $possibleFileName;
+        return $this->possibleFileName;
     }
 
     /**
@@ -178,9 +177,4 @@ class HttpRequest
         }
         return $psrPath;
     }
-//
-//     private function uri(): UriInterface
-//     {
-//         return $this->psrRequest()->getUri();
-//     }
 }

@@ -18,7 +18,6 @@ class OriginalContentNotice
         FrontMatter $frontMatter,
         FileSystemInterface $fileSystem
     ): string {
-        // $contentRoot = FileSystem::contentRoot();
         $contentRoot = $fileSystem->contentRoot();
         $noticesRoot = $contentRoot . '/notices';
 

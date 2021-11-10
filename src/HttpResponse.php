@@ -83,7 +83,7 @@ class HttpResponse
 
         } elseif ($this->statusCode() === 405) {
             $localPath = $this->request()->fileSystem()->publicRoot() .
-                '/public/error-405.md';
+                '/error-405.md';
             $localFile = File::at($localPath, $this->request()->fileSystem());
 
         }

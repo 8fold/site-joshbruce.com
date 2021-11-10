@@ -31,7 +31,7 @@ class Sitemap
         $urls = [];
         foreach ($markdown as $m) {
             $urls[] = Element::url(
-                Element::loc($m->canonicalUrl())
+                Element::loc($m->file()->canonicalUrl())
             );
         }
 

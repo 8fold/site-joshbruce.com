@@ -61,11 +61,6 @@ class ServerGlobals
             array_key_exists('APP_URL', $globals);
     }
 
-//     public function appEnvIsNot(string $value): bool
-//     {
-//         return $this->appEnv() !== $value;
-//     }
-//
     public function appEnv(): string
     {
         if ($this->hasRequiredValues()) {
@@ -74,25 +69,6 @@ class ServerGlobals
         }
         return '';
     }
-
-//     public function isMissingAppEnv(): bool
-//     {
-//         return ! $this->hasAppEnv();
-//     }
-//
-//     public function isMissingAppUrl(): bool
-//     {
-//         return ! $this->hasAppUrl();
-//     }
-//
-//     public function appUrl(): string
-//     {
-//         if ($this->hasAppUrl()) {
-//             $globals = $this->globals();
-//             return strval($globals['APP_URL']);
-//         }
-//         return '';
-//     }
 
     /**
      * @return array<string, int|string>

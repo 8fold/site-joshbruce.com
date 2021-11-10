@@ -137,9 +137,9 @@ class Markdown
         return implode(' | ', $titles);
     }
 
-    public function canonicalURl(): string
+    public function file(): File
     {
-        return $this->file()->canonicalUrl();
+        return $this->file;
     }
 
     private function fileContent(): string
@@ -148,11 +148,6 @@ class Markdown
             $this->fileContent = $this->file()->contents();
         }
         return $this->fileContent;
-    }
-
-    private function file(): File
-    {
-        return $this->file;
     }
 
     private function fileSystem(): FileSystemInterface
