@@ -15,6 +15,7 @@ use Symfony\Component\Finder\Finder;
 use League\Flysystem\Local\LocalFilesystemAdapter;
 use League\Flysystem\Filesystem as LeagueFilesystem;
 
+use JoshBruce\Site\ServerGlobals;
 use JoshBruce\Site\FileSystem;
 
 use JoshBruce\Site\HttpResponse;
@@ -43,9 +44,7 @@ class Generator
 
         Dotenv::createImmutable($projectRoot)->load();
 
-        if (isset($_SERVER['APP_ENV'])) {
-            $this->isNotTesting = $_SERVER['APP_ENV'] !== 'testing';
-        }
+        $this->isNotTesting = ServerGlobals::init()->appEnv() !== 'test';
 
         $this->contentRoot = FileSystem::contentRoot() . '/public';
 
@@ -83,34 +82,32 @@ class Generator
         $parts        = array_slice($parts, 0, -1);
         $requestUri   = implode('/', $parts);
 
-        $_SERVER['REQUEST_URI'] = $requestUri;
+        $request = HttpRequest::fromGlobals()->withUri($requestUri);
         if (str_contains($destinationPath, '/error-404.html')) {
-            $_SERVER['REQUEST_URI'] = '/low/probability/of/ex/is/ting';
+            $request = HttpRequest::fromGlobals()->withUri(
+                '/low/probability/of/ex/is/ting'
+            );
 
         } elseif (str_contains($destinationPath, '/error-405.html')) {
-            $_SERVER['REQUEST_METHOD'] = 'DELETE';
+            $request = HttpRequest::fromGlobals()->withMethod('DELETE');
 
         } elseif (strlen($requestUri) === 0) {
-            $_SERVER['REQUEST_URI'] = '/';
+            $request = HttpRequest::fromGlobals()->withUri('/');
 
         }
 
-        // $_SERVER['REQUEST_URI'] = (strlen($requestUri) === 0)
-        //     ? '/'
-        //     : $requestUri;
-
-        $html = HttpResponse::from(request: HttpRequest::fromGlobals())->body();
+        $html = HttpResponse::from(request: $request)->body();
 
         $this->leagueFileSystem()->write($destinationPath, $html);
 
-        // $this->sourceFileConvertedMessage($contentPath, $destinationPath);
+        $this->sourceFileConvertedMessage($contentPath, $destinationPath);
     }
 
     private function copyFileFor(string $path): void
     {
         $destinationPath = $this->fileDestinationPathFor($path);
         $this->leagueFileSystem()->copy($path, $destinationPath);
-        // $this->sourceFileCopiedMessage($path, $destinationPath);
+        $this->sourceFileCopiedMessage($path, $destinationPath);
     }
 
     private function contentDestinationPathFor(string $path): string

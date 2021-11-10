@@ -6,6 +6,11 @@ namespace JoshBruce\Site;
 
 class ServerGlobals
 {
+    /**
+     * @var array<string, int|string>
+     */
+    private array $globals = [];
+
     public static function init(): ServerGlobals
     {
         return new ServerGlobals();
@@ -18,6 +23,15 @@ class ServerGlobals
     public function appEnvIsNot(string $value): bool
     {
         return $this->appEnv() !== $value;
+    }
+
+    private function appEnv(): string
+    {
+        if ($this->hasAppEnv()) {
+            $globals = $this->globals();
+            return strval($globals['APP_ENV']);
+        }
+        return '';
     }
 
     public function isMissingAppEnv(): bool
@@ -39,15 +53,6 @@ class ServerGlobals
         return '';
     }
 
-    private function appEnv(): string
-    {
-        if ($this->hasAppEnv()) {
-            $globals = $this->globals();
-            return strval($globals['APP_ENV']);
-        }
-        return '';
-    }
-
     private function hasAppEnv(): bool
     {
         return array_key_exists('APP_ENV', $this->globals());
@@ -63,6 +68,9 @@ class ServerGlobals
      */
     private function globals(): array
     {
-        return $_SERVER;
+        if (count($this->globals) === 0) {
+            $this->globals = $_SERVER;
+        }
+        return $this->globals;
     }
 }

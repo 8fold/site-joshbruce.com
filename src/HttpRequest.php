@@ -27,24 +27,20 @@ class HttpRequest
 
     public static function fromGlobals(): HttpRequest
     {
-        if ($fileSystem === null) {
-            $fileSystem = new FileSystem();
-        }
-
+//         if ($fileSystem === null) {
+//             $fileSystem = new FileSystem();
+//         }
+//
         return new HttpRequest();
     }
 
-    public static function for(
-        FileSystem $contentFolder,
-        array $serverGlobals
-    ): HttpRequest {
-        return new HttpRequest($contentFolder, $serverGlobals);
-    }
+    // public static function for(FileSystem $contentFolder): HttpRequest
+    // {
+    //     return new HttpRequest($contentFolder, $serverGlobals);
+    // }
 
-    private function __construct(
-        FileSystem $contentFolder,
-        array $serverGlobals
-    ) {
+    private function __construct()
+    {
     }
 
     public function isMissingRequiredValues(): bool
