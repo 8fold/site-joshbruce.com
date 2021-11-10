@@ -15,12 +15,27 @@ class FileSystem
         return new static(static::projectRoot());
     }
 
-    public static function publicRoot(): string
+    public static function projectRoot(): string
     {
-        return static::contentRoot() . '/public';
+        $dir   = __DIR__;
+        $parts = explode('/', $dir);
+        $parts = array_slice($parts, 0, -1);
+        return implode('/', $parts);
     }
 
-    public static function contentRoot(): string
+    final private function __construct(protected string $projectRoot)
+    {
+    }
+
+    public function hasRequiredFolders(): bool
+    {
+        return file_exists($this->contentRoot()) and
+            file_exists($this->publicRoot()) and
+            is_dir($this->contentRoot()) and
+            is_dir($this->publicRoot());
+    }
+
+    public function contentRoot(): string
     {
         $parts   = explode('/', static::projectRoot());
         $parts[] = 'content';
@@ -31,15 +46,50 @@ class FileSystem
         return $base;
     }
 
-    public static function projectRoot(): string
+    public function publicRoot(): string
     {
-        $dir   = __DIR__;
-        $parts = explode('/', $dir);
-        $parts = array_slice($parts, 0, -1);
-        return implode('/', $parts);
+        return $this->contentRoot() . '/public';
     }
 
-    public static function finder(): Finder
+    public function publishedContentFinder(): Finder
+    {
+        return $this->finder()->in($this->publicRoot())->name('content.md')
+            ->filter(fn($f) => $this->isPublished($f));
+    }
+
+    private function relativePath(string $path): string
+    {
+        return str_replace($this->contentRoot(), '', $path);
+    }
+
+    private function isPublished(SplFileInfo $finderFile): bool
+    {
+        return ! $this->isDraft($finderFile);
+    }
+
+    private function isDraft(SplFileInfo $finderFile): bool
+    {
+        $filePath = (string) $finderFile;
+        $relativePath = $this->relativePath($filePath);
+        return str_contains($relativePath, '_');
+    }
+
+    private function projectRootFinder(): Finder
+    {
+        return $this->finder()->in(static::projectRoot());
+    }
+
+    private function contentRootFinder(): Finder
+    {
+        return $this->finder()->in($this->contentRoot());
+    }
+
+    private function publicRootFinder(): Finder
+    {
+        return $this->finder()->in($this->publicRoot());
+    }
+
+    private function finder(): Finder
     {
         $finder = new Finder();
         return $finder->ignoreVCS(false)
@@ -47,29 +97,6 @@ class FileSystem
             ->ignoreDotFiles(false)
             ->ignoreVCSIgnored(true)
             ->notName('.gitignore')
-            ->files()
-            ->filter(fn($f) => self::isPublished($f))
-            ->in(self::publicRoot());
-    }
-
-    private static function isPublished(SplFileInfo $finderFile): bool
-    {
-        return ! self::isDraft($finderFile);
-    }
-
-    private static function isDraft(SplFileInfo $finderFile): bool
-    {
-        $filePath = (string) $finderFile;
-        $relativePath = self::relativePath($filePath);
-        return str_contains($relativePath, '_');
-    }
-
-    private static function relativePath(string $path): string
-    {
-        return str_replace(self::contentRoot(), '', $path);
-    }
-
-    final private function __construct(protected string $projectRoot)
-    {
+            ->files();
     }
 }
