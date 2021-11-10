@@ -4,31 +4,21 @@ declare(strict_types=1);
 
 use JoshBruce\Site\File;
 
-use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\Tests\TestFileSystem;
 
 test('can generate canonical URL', function() {
-   expect(
-       File::at(FileSystem::publicRoot() . '/content.md')->canonicalUrl()
-   )->toBe(
-       'https://joshbruce.com'
-   );
+    $fileSystem = TestFileSystem::init();
+    $publicRoot = $fileSystem->publicRoot();
 
     expect(
-       File::at(FileSystem::publicRoot())->canonicalUrl()
-   )->toBe(
-       'https://joshbruce.com'
-   );
-
-    expect(
-       File::at(FileSystem::publicRoot() . '/web-development')->canonicalUrl()
-   )->toBe(
-       'https://joshbruce.com/web-development'
-   );
-
-   expect(
-        File::at(FileSystem::publicRoot() . '/web-development/content.md')
-            ->canonicalUrl()
+       File::at($publicRoot . '/content.md', $fileSystem)->canonicalUrl()
     )->toBe(
-        'https://joshbruce.com/web-development'
+       'https://joshbruce.com'
+    );
+
+    expect(
+       File::at($publicRoot, $fileSystem)->canonicalUrl()
+    )->toBe(
+       'https://joshbruce.com'
     );
 })->group('file');

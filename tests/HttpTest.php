@@ -5,56 +5,66 @@ declare(strict_types=1);
 use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
 
-test('expected headers', function() {
-    serverGlobals();
+use JoshBruce\Site\ServerGlobals;
 
+use JoshBruce\Site\Tests\TestFileSystem;
+
+test('expected headers', function() {
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init(),
+                TestFileSystem::init()
+            )
         )->headers()
     )->toBe(
         ['Content-Type' => 'text/html']
     );
 
-    serverGlobals('/assets/css/main.min.css');
-
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init()
+                    ->withRequestUri('/assets/css/main.min.css'),
+                TestFileSystem::init()
+            )
         )->headers()
     )->toBe(
         ['Content-Type' => 'text/css']
     );
-})->group('response');
+})->group('response', 'request');
 
 test('expected titles', function() {
-    serverGlobals();
-
     $body = HttpResponse::from(
-        request: HttpRequest::fromGlobals()
+        request: HttpRequest::with(
+            ServerGlobals::init()->withRequestUri('/'),
+            TestFileSystem::init()
+        )
     )->body();
 
     expect(
-        str_contains($body, "<title>Josh Bruce's personal site</title>")
+        str_contains($body, "<title>Test content root</title>")
     )->toBeTrue();
 
-    serverGlobals('/finances');
-
     $body = HttpResponse::from(
-        request: HttpRequest::fromGlobals()
+        request: HttpRequest::with(
+            ServerGlobals::init()->withRequestUri('/published-sub'),
+            TestFileSystem::init()
+        )
     )->body();
 
     expect(
         str_contains(
             $body,
-            "<title>Finances | Josh Bruce's personal site</title>"
+            "<title>Sub-folder content title | Test content root</title>"
         )
     )->toBeTrue();
 
-    serverGlobals('/something-missing');
-
     $body = HttpResponse::from(
-        request: HttpRequest::fromGlobals()
+        request: HttpRequest::with(
+            ServerGlobals::init()->withRequestUri('/something/invalid'),
+            TestFileSystem::init()
+        )
     )->body();
 
     expect(
@@ -63,94 +73,54 @@ test('expected titles', function() {
             "<title>Page not found</title>"
         )
     )->toBeTrue();
-})->group('response');
+})->group('response', 'request');
 
 test('expected status codes', function() {
-    serverGlobals();
-
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init()->withRequestUri('/'),
+                TestFileSystem::init()
+            )
         )->statusCode()
     )->toBeInt()->toBe(
         200
     );
 
-    unset($_SERVER['APP_ENV']);
-
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init()->withRequestUri('/something/invalid'),
+                TestFileSystem::init()
+            )
         )->statusCode()
     )->toBeInt()->toBe(
-        500
+        404
     );
-
-    serverGlobals();
-
-    $_SERVER['REQUEST_METHOD'] = 'post';
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init()->withRequestMethod('post'),
+                TestFileSystem::init()
+            )
         )->statusCode()
     )->toBeInt()->toBe(
         405
     );
 
-    serverGlobals('/not-valid');
+    unset($_SERVER['APP_URL']);
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::fromGlobals()
+            request: HttpRequest::with(
+                ServerGlobals::init(),
+                TestFileSystem::init()
+            )
         )->statusCode()
     )->toBeInt()->toBe(
-        404
+        500
     );
-})->group('response');
-//
-// test('can check request is valid', function() {
-//     serverGlobals();
-//
-//     expect(
-//         HttpRequest::init()->isMissingRequiredValues()
-//     )->toBeFalse();
-//
-//     expect(
-//         HttpRequest::init()->isUnsupportedMethod()
-//     )->toBeFalse();
-//
-//     expect(
-//         HttpRequest::init()->isNotFound()
-//     )->toBeFalse();
-//
-//     serverGlobals('/not-valid');
-//     unset($_SERVER['APP_ENV']);
-//     $_SERVER['REQUEST_METHOD'] = 'post';
-//
-//     expect(
-//         HttpRequest::init()->isMissingRequiredValues()
-//     )->toBeTrue();
-//
-//     expect(
-//         HttpRequest::init()->isUnsupportedMethod()
-//     )->toBeTrue();
-//
-//     expect(
-//         HttpRequest::init()->isNotFound()
-//     )->toBeTrue();
-// })->group('request');
-//
-// it('uses server globals', function() {
-//     serverGlobals();
-//
-//     expect(
-//         ServerGlobals::init()->hasAppEnv()
-//     )->toBeTrue();
-//
-//     unset($_SERVER['APP_ENV']);
-//
-//     expect(
-//         ServerGlobals::init()->hasAppEnv()
-//     )->toBeFalse();
-// })->group('globals');
+
+    $_SERVER['APP_URL'] = 'http://jb-site.test';
+})->group('response', 'request');

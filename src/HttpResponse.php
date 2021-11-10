@@ -14,7 +14,6 @@ use Nyholm\Psr7\Stream as PsrStream;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\File;
 
 use JoshBruce\Site\Content\Markdown;
@@ -38,13 +37,13 @@ class HttpResponse
 
     public function statusCode(): int
     {
-        if ($this->request->isMissingRequiredValues()) {
+        if ($this->request()->isMissingRequiredValues()) {
             return 500;
 
-        } elseif ($this->request->isUnsupportedMethod()) {
+        } elseif ($this->request()->isUnsupportedMethod()) {
             return 405;
 
-        } elseif ($this->request->isNotFound()) {
+        } elseif ($this->request()->isNotFound()) {
             return 404;
 
         }
@@ -58,33 +57,34 @@ class HttpResponse
     {
         $headers = [];
         if ($this->statusCode() === 200) {
-            $headers['Content-Type'] = $this->request->localFile()->mimeType();
+            $headers['Content-Type'] = $this->request()->localFile()->mimeType();
 
         } elseif ($this->statusCode() === 404) {
             $headers['Content-Type'] = 'text/html';
 
         }
-
         return $headers;
     }
 
     public function body(): string
     {
-        $localFile = $this->request->localFile();
+        $localFile = $this->request()->localFile();
         if (
             $this->statusCode() === 200 and
             $localFile->isNotMarkdown() and
-            $this->request->isNotSitemap()
+            $this->request()->isNotSitemap()
         ) {
             return $localFile->path();
 
         } elseif ($this->statusCode() === 404) {
-            $localPath = FileSystem::contentRoot() . '/public/error-404.md';
-            $localFile = File::at($localPath);
+            $localPath = $this->request()->fileSystem()->publicRoot() .
+                '/error-404.md';
+            $localFile = File::at($localPath, $this->request()->fileSystem());
 
         } elseif ($this->statusCode() === 405) {
-            $localPath = FileSystem::contentRoot() . '/public/error-405.md';
-            $localFile = File::at($localPath);
+            $localPath = $this->request()->fileSystem()->publicRoot() .
+                '/error-405.md';
+            $localFile = File::at($localPath, $this->request()->fileSystem());
 
         }
 
@@ -92,16 +92,17 @@ class HttpResponse
         $pageTitle = '';
         $html = '';
         if ($localFile->isMarkdown()) {
-            $markdown  = Markdown::for(file: $localFile);
+            $markdown  = Markdown::for(
+                file: $localFile,
+                in: $this->request()->fileSystem()
+            );
             $template  = $markdown->frontMatter()->template();
             $pageTitle = $markdown->pageTitle();
             $html      = $markdown->html();
-
         }
 
-        if ($this->request->isSitemap()) {
-            return Sitemap::create();
-
+        if ($this->request()->isSitemap()) {
+            return Sitemap::create($this->request()->fileSystem());
         }
 
         return Document::create(
@@ -138,7 +139,7 @@ class HttpResponse
                 $html
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::a('top')->props('href #content-top', 'id go-to-top'),
-            Navigation::create('main.md'),
+            Navigation::create('main.md', $this->request()->fileSystem()),
             Element::footer(
                 Element::p(
                     'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
@@ -167,8 +168,8 @@ class HttpResponse
             $body         = $this->body();
             $stream       = $psr17Factory->createStream($body);
             if (
-                $this->request->isFile() and
-                $this->request->isNotSitemap()
+                $this->request()->isFile() and
+                $this->request()->isNotSitemap()
             ) {
                 $stream = $psr17Factory->createStreamFromFile($body);
             }
@@ -180,5 +181,10 @@ class HttpResponse
             );
         }
         return $this->psrResponse;
+    }
+
+    private function request(): HttpRequest
+    {
+        return $this->request;
     }
 }

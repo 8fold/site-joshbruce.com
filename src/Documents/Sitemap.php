@@ -7,30 +7,31 @@ namespace JoshBruce\Site\Documents;
 use Eightfold\XMLBuilder\Document;
 use Eightfold\XMLBuilder\Element;
 
-use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\File;
 
 use JoshBruce\Site\Content\Markdown;
 
 class Sitemap
 {
-    public static function create(): string
+    public static function create(FileSystemInterface $fileSystem): string
     {
-        $finder = FileSystem::finder()->name('content.md')->sortByName()
+        $finder = $fileSystem->publishedContentFinder()->sortByName()
             ->notContains('redirect:')
             ->notContains('noindex:');
 
         $markdown = [];
         foreach ($finder as $file) {
             $markdown[] = Markdown::for(
-                File::at($file->getPathname())
+                File::at($file->getPathname(), $fileSystem),
+                $fileSystem
             );
         }
 
         $urls = [];
         foreach ($markdown as $m) {
             $urls[] = Element::url(
-                Element::loc($m->canonicalUrl())
+                Element::loc($m->file()->canonicalUrl())
             );
         }
 

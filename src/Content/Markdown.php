@@ -7,6 +7,7 @@ namespace JoshBruce\Site\Content;
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use JoshBruce\Site\File;
+use JoshBruce\Site\FileSystemInterface;
 
 use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
@@ -24,9 +25,9 @@ class Markdown
 
     private string $body = '';
 
-    public static function for(File $file): Markdown
+    public static function for(File $file, FileSystemInterface $in): Markdown
     {
-        return new Markdown($file);
+        return new Markdown($file, $in);
     }
 
     public static function markdownConverter(): MarkdownConverter
@@ -49,8 +50,10 @@ class Markdown
             );
     }
 
-    private function __construct(private File $file)
-    {
+    private function __construct(
+        private File $file,
+        private FileSystemInterface $fileSystem
+    ) {
     }
 
     public function html(): string
@@ -77,10 +80,13 @@ class Markdown
                 $b = '';
                 $template = $templateMap[$templateKey];
                 if ($templateKey === 'loglist') {
-                    $b = $template::create($this->file);
+                    $b = $template::create($this->file(), $this->fileSystem());
 
                 } else {
-                    $b = $template::create($this->frontMatter());
+                    $b = $template::create(
+                        $this->frontMatter(),
+                        $this->fileSystem()
+                    );
 
                 }
 
@@ -118,11 +124,11 @@ class Markdown
         $titles   = [];
         $titles[] = $this->frontMatter()->title();
 
-        $file = clone $this->file;
+        $file = clone $this->file();
         while ($file->canGoUp()) {
             $file = $file->up();
 
-            $m = Markdown::for($file);
+            $m = Markdown::for($file, $this->fileSystem());
 
             $titles[] = $m->frontMatter()->title();
         }
@@ -131,16 +137,21 @@ class Markdown
         return implode(' | ', $titles);
     }
 
-    public function canonicalURl(): string
+    public function file(): File
     {
-        return $this->file->canonicalUrl();
+        return $this->file;
     }
 
     private function fileContent(): string
     {
-        if (strlen($this->fileContent) === 0 and $this->file->found()) {
-            $this->fileContent = $this->file->contents();
+        if (strlen($this->fileContent) === 0 and $this->file()->found()) {
+            $this->fileContent = $this->file()->contents();
         }
         return $this->fileContent;
+    }
+
+    private function fileSystem(): FileSystemInterface
+    {
+        return $this->fileSystem;
     }
 }

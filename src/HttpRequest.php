@@ -13,6 +13,9 @@ use Psr\Http\Message\UriInterface;
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 
+use JoshBruce\Site\ServerGlobals;
+use JoshBruce\Site\FileSystemInterface;
+
 use JoshBruce\Site\File;
 
 /**
@@ -24,22 +27,22 @@ class HttpRequest
 
     private string $localPath = '';
 
-    public static function fromGlobals(): HttpRequest
-    {
-        return new HttpRequest();
+    private File $localFile;
+
+    private string $possibleFileName = '';
+
+    public static function with(
+        ServerGlobals $serverGlobals,
+        FileSystemInterface $in
+    ): HttpRequest {
+        return new HttpRequest($serverGlobals, $in);
     }
 
-    private function __construct()
-    {
-    }
-
-    public function isMissingRequiredValues(): bool
-    {
-        if ($this->serverGlobals()->isMissingAppEnv()) {
-            return true;
-        }
-
-        if ($this->serverGlobals()->appEnvIsNot('production')) {
+    private function __construct(
+        private ServerGlobals $serverGlobals,
+        private FileSystemInterface $fileSystem
+    ) {
+        if ($this->serverGlobals()->appEnv() !== 'production') {
             // use Whoops! for error display
             $errorHandler = new ErrorHandler();
             $errorHandler->pushHandler(
@@ -47,17 +50,37 @@ class HttpRequest
             );
             $errorHandler->register();
         }
-        return false;
+    }
+
+    public function isMissingRequiredValues(): bool
+    {
+        return $this->serverGlobals()->isMissingRequiredValues();
     }
 
     public function isUnsupportedMethod(): bool
     {
-        return ! $this->isSupportedMethod();
+        $requestMethod = strtoupper($this->psrRequest()->getMethod());
+        $isSupported   =  in_array($requestMethod, $this->supportedMethods());
+
+        return ! $isSupported;
     }
 
     public function isNotFound(): bool
     {
-        return ! $this->isFound();
+        $isFound = file_exists($this->localPath()) and
+            is_file($this->localPath());
+        return ! $isFound;
+    }
+
+    public function localFile(): File
+    {
+        if (! isset($this->localFile)) {
+            $this->localFile = File::at(
+                localPath: $this->localPath(),
+                in: $this->fileSystem()
+            );
+        }
+        return $this->localFile;
     }
 
     public function isFile(): bool
@@ -67,7 +90,7 @@ class HttpRequest
 
     public function isSitemap(): bool
     {
-        return $this->isFile() and $this->possibleFileName() === 'sitemap.xml';
+        return $this->possibleFileName() === 'sitemap.xml';
     }
 
     public function isNotSitemap(): bool
@@ -75,52 +98,46 @@ class HttpRequest
         return ! $this->isSitemap();
     }
 
-    public function localFile(): File
+    public function fileSystem(): FileSystemInterface
     {
-        return File::at(localPath: $this->localPath());
-    }
-
-    private function isFound(): bool
-    {
-        return file_exists($this->localPath()) and is_file($this->localPath());
+        return $this->fileSystem;
     }
 
     private function localPath(): string
     {
         if (empty($this->localPath)) {
-            $possibleFileName = $this->possibleFileName();
-            $relativePath = $this->uriPath();
-            if (empty($possibleFileName)) {
-                $relativePath = $this->uriPath() . '/content.md';
-
-            // } elseif (str_contains($relativePath, '.xml')) {
-            //     $relativePath = str_replace('.xml', '.md', $relativePath);
-
+            $relativePath = $this->psrPath();
+            if (empty($this->possibleFileName())) {
+                $relativePath = $this->psrPath() . '/content.md';
             }
 
             if (! str_starts_with($relativePath, '/')) {
                 $relativePath = "/{$relativePath}";
             }
 
-            $root = FileSystem::contentRoot();
+            $root = $this->fileSystem()->publicRoot();
 
-            $this->localPath = "{$root}/public{$relativePath}";
+            $this->localPath = "{$root}{$relativePath}";
         }
         return $this->localPath;
     }
 
     private function possibleFileName(): string
     {
-        $parts = explode('/', $this->uriPath());
-        $lastPart = array_slice($parts, -1);
-        $possibleFileName = array_shift($lastPart);
-        if (
-            $possibleFileName === null or
-            ! str_contains($possibleFileName, '.')
-        ) {
-            return '';
+        if (strlen($this->possibleFileName) === 0) {
+            $parts = explode('/', $this->psrPath());
+            $lastPart = array_slice($parts, -1);
+            $possibleFileName = array_shift($lastPart);
+            if (
+                $possibleFileName === null or
+                ! str_contains($possibleFileName, '.')
+            ) {
+                return '';
+            }
+
+            $this->possibleFileName = $possibleFileName;
         }
-        return $possibleFileName;
+        return $this->possibleFileName;
     }
 
     /**
@@ -131,15 +148,9 @@ class HttpRequest
         return ['GET'];
     }
 
-    private function isSupportedMethod(): bool
-    {
-        $requestMethod = strtoupper($this->psrRequest()->getMethod());
-        return in_array($requestMethod, $this->supportedMethods());
-    }
-
     private function serverGlobals(): ServerGlobals
     {
-        return ServerGlobals::init();
+        return $this->serverGlobals;
     }
 
     private function psrRequest(): RequestInterface
@@ -158,17 +169,12 @@ class HttpRequest
         return $this->psrRequest;
     }
 
-    private function uriPath(): string
+    private function psrPath(): string
     {
-        $uriPath = $this->uri()->getPath();
-        if ($uriPath === '/') {
-            $uriPath = '';
+        $psrPath = $this->psrRequest()->getUri()->getPath();
+        if ($psrPath === '/') {
+            $psrPath = '';
         }
-        return $uriPath;
-    }
-
-    private function uri(): UriInterface
-    {
-        return $this->psrRequest()->getUri();
+        return $psrPath;
     }
 }
