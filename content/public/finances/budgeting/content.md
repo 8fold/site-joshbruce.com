@@ -6,7 +6,7 @@ coming-soon:
 - review Profit First
 ---
 
-# October 1st, 2021 paycheck
+# Budgeting
 
 {!!dateblock!!}
 
