@@ -5,7 +5,7 @@ declare(strict_types=1);
 ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -1));
+$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
 require $projectRoot . '/vendor/autoload.php';
 
