@@ -32,7 +32,7 @@ class ServerGlobals
     public function requestUri(): string
     {
         $globals = $this->globals();
-        return $globals['REQUEST_URI'];
+        return strval($globals['REQUEST_URI']);
     }
 
     public function withRequestMethod(string $method): ServerGlobals
@@ -46,7 +46,7 @@ class ServerGlobals
     public function requestMethod(): string
     {
         $globals = $this->globals();
-        return $globals['REQUEST_METHOD'];
+        return strval($globals['REQUEST_METHOD']);
     }
 
     public function isMissingRequiredValues(): bool

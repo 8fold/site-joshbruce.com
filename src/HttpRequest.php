@@ -77,10 +77,8 @@ class HttpRequest
 
     public function isNotFound(): bool
     {
-        $isFound = file_exists(
-            $this->localPath()) and
-            is_file($this->localPath()
-        );
+        $isFound = file_exists($this->localPath()) and
+            is_file($this->localPath());
         return ! $isFound;
     }
 
@@ -88,11 +86,11 @@ class HttpRequest
     {
         return File::at(localPath: $this->localPath());
     }
-//
-//     public function isFile(): bool
-//     {
-//         return str_contains($this->possibleFileName(), '.');
-//     }
+
+    public function isFile(): bool
+    {
+        return str_contains($this->possibleFileName(), '.');
+    }
 
     public function isSitemap(): bool
     {

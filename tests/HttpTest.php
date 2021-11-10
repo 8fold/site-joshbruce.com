@@ -14,7 +14,7 @@ test('expected headers', function() {
         HttpResponse::from(
             request: HttpRequest::with(
                 ServerGlobals::init(),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->headers()
     )->toBe(
@@ -26,7 +26,7 @@ test('expected headers', function() {
             request: HttpRequest::with(
                 ServerGlobals::init()
                     ->withRequestUri('/assets/css/main.min.css'),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->headers()
     )->toBe(
@@ -38,7 +38,7 @@ test('expected titles', function() {
     $body = HttpResponse::from(
         request: HttpRequest::with(
             ServerGlobals::init()->withRequestUri('/'),
-            new TestFileSystem()
+            TestFileSystem::init()
         )
     )->body();
 
@@ -49,7 +49,7 @@ test('expected titles', function() {
     $body = HttpResponse::from(
         request: HttpRequest::with(
             ServerGlobals::init()->withRequestUri('/finances'),
-            new TestFileSystem()
+            TestFileSystem::init()
         )
     )->body();
 
@@ -63,7 +63,7 @@ test('expected titles', function() {
     $body = HttpResponse::from(
         request: HttpRequest::with(
             ServerGlobals::init()->withRequestUri('/something/invalid'),
-            new TestFileSystem()
+            TestFileSystem::init()
         )
     )->body();
 
@@ -80,7 +80,7 @@ test('expected status codes', function() {
         HttpResponse::from(
             request: HttpRequest::with(
                 ServerGlobals::init()->withRequestUri('/'),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->statusCode()
     )->toBeInt()->toBe(
@@ -91,7 +91,7 @@ test('expected status codes', function() {
         HttpResponse::from(
             request: HttpRequest::with(
                 ServerGlobals::init()->withRequestUri('/something/invalid'),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->statusCode()
     )->toBeInt()->toBe(
@@ -102,7 +102,7 @@ test('expected status codes', function() {
         HttpResponse::from(
             request: HttpRequest::with(
                 ServerGlobals::init()->withRequestMethod('post'),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->statusCode()
     )->toBeInt()->toBe(
@@ -115,7 +115,7 @@ test('expected status codes', function() {
         HttpResponse::from(
             request: HttpRequest::with(
                 ServerGlobals::init(),
-                new TestFileSystem()
+                TestFileSystem::init()
             )
         )->statusCode()
     )->toBeInt()->toBe(

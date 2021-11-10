@@ -10,14 +10,19 @@ use Symfony\Component\Finder\Finder;
 
 class FileSystem
 {
+    public static function init(): static
+    {
+        return new static(static::projectRoot());
+    }
+
     public static function publicRoot(): string
     {
-        return FileSystem::contentRoot() . '/public';
+        return static::contentRoot() . '/public';
     }
 
     public static function contentRoot(): string
     {
-        $parts   = explode('/', self::projectRoot());
+        $parts   = explode('/', static::projectRoot());
         $parts[] = 'content';
         $base    = implode('/', $parts);
         if (str_ends_with($base, '/')) {
@@ -62,5 +67,9 @@ class FileSystem
     private static function relativePath(string $path): string
     {
         return str_replace(self::contentRoot(), '', $path);
+    }
+
+    final private function __construct(protected string $projectRoot)
+    {
     }
 }
