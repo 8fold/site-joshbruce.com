@@ -2,6 +2,7 @@
 title: Design your life
 dateblock:
     - 20210619 Created on
+    - 20211109 Updated on
 ---
 
 # Design your life
@@ -10,11 +11,11 @@ dateblock:
 
 This is one of those "when I was a kid" stories, fair warning; I'll try to be brief.
 
-When I was 15 years old and for the rest of high school my house had become a gathering spot for my friends. We even called days where we got together "gatherings" and we pretty got together every day. A lot of times we just wanted a place where we felt safe to be ourselves.
+When I was 15 years old and for the rest of high school my house had become a gathering spot for my friends. We even called days where we got together "gatherings" and we pretty much got together every day. A lot of times we just wanted a place where we felt safe to be ourselves.
 
 Most of the time we played games and shot the shit.
 
-It was hard to convince some of the parents of my friends that there wasn't anything more interesting happening. They couldn't believe that their kids would want to come to my house all the time unless there was sex, drugs, and rock and roll going on. Funny part was that I had three rules in my house:
+It was hard to convince some of the parents of my friends that there wasn't anything more interesting happening. They couldn't believe that their kids would want to come to my house all the time unless there was sex, drugs, and rock-and-roll—along with speed, weed, and birth-control—going on. Funny part was I had three rules in my house:
 
 1. You can't drink alcohol.
 2. You can't do drugs.
@@ -22,7 +23,7 @@ It was hard to convince some of the parents of my friends that there wasn't anyt
 
 Those were my rules, not my dad's. Basically, the only thing they were allowed to do at my house that they couldn't do at home was curse and smoke cigarettes, which many of them didn't even smoke.
 
-On the days when we weren't playing games and just chatting we would discuss existential issues. I know, 15, right? How deep could be really?
+On the days when we weren't playing games and just chatting we would discuss existential issues. I know, 15, right? How deep could they gave been really?
 
 To which I would like to turn to [David Bowie](https://www.azlyrics.com/lyrics/davidbowie/changes.html):
 
