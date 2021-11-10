@@ -18,50 +18,81 @@ class ServerGlobals
 
     private function __construct()
     {
+        $this->globals = $_SERVER;
     }
 
-    public function appEnvIsNot(string $value): bool
+    public function withRequestUri(string $method): ServerGlobals
     {
-        return $this->appEnv() !== $value;
+        $this->globals = [];
+
+        $_SERVER['REQUEST_URI'] = $method;
+        return $this;
     }
 
-    private function appEnv(): string
+    public function requestUri(): string
     {
-        if ($this->hasAppEnv()) {
+        $globals = $this->globals();
+        return $globals['REQUEST_URI'];
+    }
+
+    public function withRequestMethod(string $method): ServerGlobals
+    {
+        $this->globals = [];
+
+        $_SERVER['REQUEST_METHOD'] = $method;
+        return $this;
+    }
+
+    public function requestMethod(): string
+    {
+        $globals = $this->globals();
+        return $globals['REQUEST_METHOD'];
+    }
+
+    public function isMissingRequiredValues(): bool
+    {
+        return ! $this->hasRequiredValues();
+    }
+
+    private function hasRequiredValues(): bool
+    {
+        $globals = $this->globals();
+        return array_key_exists('APP_ENV', $globals) and
+            array_key_exists('APP_URL', $globals);
+    }
+
+//     public function appEnvIsNot(string $value): bool
+//     {
+//         return $this->appEnv() !== $value;
+//     }
+//
+    public function appEnv(): string
+    {
+        if ($this->hasRequiredValues()) {
             $globals = $this->globals();
             return strval($globals['APP_ENV']);
         }
         return '';
     }
 
-    public function isMissingAppEnv(): bool
-    {
-        return ! $this->hasAppEnv();
-    }
-
-    public function isMissingAppUrl(): bool
-    {
-        return ! $this->hasAppUrl();
-    }
-
-    public function appUrl(): string
-    {
-        if ($this->hasAppUrl()) {
-            $globals = $this->globals();
-            return strval($globals['APP_URL']);
-        }
-        return '';
-    }
-
-    private function hasAppEnv(): bool
-    {
-        return array_key_exists('APP_ENV', $this->globals());
-    }
-
-    private function hasAppUrl(): bool
-    {
-        return array_key_exists('APP_URL', $this->globals());
-    }
+//     public function isMissingAppEnv(): bool
+//     {
+//         return ! $this->hasAppEnv();
+//     }
+//
+//     public function isMissingAppUrl(): bool
+//     {
+//         return ! $this->hasAppUrl();
+//     }
+//
+//     public function appUrl(): string
+//     {
+//         if ($this->hasAppUrl()) {
+//             $globals = $this->globals();
+//             return strval($globals['APP_URL']);
+//         }
+//         return '';
+//     }
 
     /**
      * @return array<string, int|string>

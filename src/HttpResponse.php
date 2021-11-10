@@ -38,13 +38,13 @@ class HttpResponse
 
     public function statusCode(): int
     {
-        if ($this->request->isMissingRequiredValues()) {
+        if ($this->request()->isMissingRequiredValues()) {
             return 500;
 
-        } elseif ($this->request->isUnsupportedMethod()) {
+        } elseif ($this->request()->isUnsupportedMethod()) {
             return 405;
 
-        } elseif ($this->request->isNotFound()) {
+        } elseif ($this->request()->isNotFound()) {
             return 404;
 
         }
@@ -58,23 +58,22 @@ class HttpResponse
     {
         $headers = [];
         if ($this->statusCode() === 200) {
-            $headers['Content-Type'] = $this->request->localFile()->mimeType();
+            $headers['Content-Type'] = $this->request()->localFile()->mimeType();
 
         } elseif ($this->statusCode() === 404) {
             $headers['Content-Type'] = 'text/html';
 
         }
-
         return $headers;
     }
 
     public function body(): string
     {
-        $localFile = $this->request->localFile();
+        $localFile = $this->request()->localFile();
         if (
             $this->statusCode() === 200 and
             $localFile->isNotMarkdown() and
-            $this->request->isNotSitemap()
+            $this->request()->isNotSitemap()
         ) {
             return $localFile->path();
 
@@ -96,12 +95,10 @@ class HttpResponse
             $template  = $markdown->frontMatter()->template();
             $pageTitle = $markdown->pageTitle();
             $html      = $markdown->html();
-
         }
 
-        if ($this->request->isSitemap()) {
+        if ($this->request()->isSitemap()) {
             return Sitemap::create();
-
         }
 
         return Document::create(
@@ -160,25 +157,30 @@ class HttpResponse
             ->props('rel stylesheet', "href {$cssPath}?v={$query}");
     }
 
-    public function psrResponse(): ResponseInterface
+//     public function psrResponse(): ResponseInterface
+//     {
+//         if (! isset($this->psrResponse)) {
+//             $psr17Factory = new PsrFactory();
+//             $body         = $this->body();
+//             $stream       = $psr17Factory->createStream($body);
+//             if (
+//                 $this->request()->isFile() and
+//                 $this->request()->isNotSitemap()
+//             ) {
+//                 $stream = $psr17Factory->createStreamFromFile($body);
+//             }
+//
+//             $this->psrResponse = new PsrResponse(
+//                 $this->statusCode(),
+//                 $this->headers(),
+//                 $stream
+//             );
+//         }
+//         return $this->psrResponse;
+//     }
+//
+    private function request(): HttpRequest
     {
-        if (! isset($this->psrResponse)) {
-            $psr17Factory = new PsrFactory();
-            $body         = $this->body();
-            $stream       = $psr17Factory->createStream($body);
-            if (
-                $this->request->isFile() and
-                $this->request->isNotSitemap()
-            ) {
-                $stream = $psr17Factory->createStreamFromFile($body);
-            }
-
-            $this->psrResponse = new PsrResponse(
-                $this->statusCode(),
-                $this->headers(),
-                $stream
-            );
-        }
-        return $this->psrResponse;
+        return $this->request;
     }
 }
