@@ -6,19 +6,21 @@ namespace JoshBruce\Site;
 
 use DirectoryIterator;
 
-use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\FileSystemInterface;
 
 class File
 {
     private string $contentFileName = '/content.md';
 
-    public static function at(string $localPath): File
+    public static function at(string $localPath, FileSystemInterface $in): File
     {
-        return new File($localPath);
+        return new File($localPath, $in);
     }
 
-    private function __construct(private string $localPath)
-    {
+    private function __construct(
+        private string $localPath,
+        private FileSystemInterface $fileSystem
+    ) {
     }
 
     public function isNotMarkdown(): bool
@@ -60,7 +62,7 @@ class File
         }
         // TODO: test and verify used - returning empty string not an option.
         return str_replace(
-            $this->contentRoot(),
+            $this->fileSystem()->publicRoot(),
             '',
             $this->localPath
         );
@@ -76,7 +78,10 @@ class File
         $parts = explode('/', $this->localPath);
         $parts = array_slice($parts, 0, -2); // remove file name and one folder.
         $localPath = implode('/', $parts);
-        return File::at($localPath . $this->contentFileName);
+        return File::at(
+            $localPath . $this->contentFileName,
+            $this->fileSystem()
+        );
     }
 
     public function contents(): string
@@ -138,14 +143,15 @@ class File
             $folderName       = array_pop($parts);
 
             $files[$folderName] = File::at(
-                $fullPathToFolder . '/' . $filesNamed
+                $fullPathToFolder . '/' . $filesNamed,
+                $this->fileSystem()
             );
         }
         return $files;
     }
 
-    private function contentRoot(): string
+    private function fileSystem(): FileSystemInterface
     {
-        return FileSystem::publicRoot();
+        return $this->fileSystem;
     }
 }

@@ -40,13 +40,14 @@ class Generator
         private OutputInterface $output,
         private string $destination = ''
     ) {
-        $projectRoot = FileSystem::projectRoot();
+        $projectRoot = FileSystem::init()->projectRoot();
+        // $projectRoot = FileSystem::projectRoot();
 
         Dotenv::createImmutable($projectRoot)->load();
 
-        $this->isNotTesting = ServerGlobals::init()->appEnv() !== 'test';
+        // $this->isNotTesting = ServerGlobals::init()->appEnv() !== 'test';
 
-        $this->contentRoot = FileSystem::contentRoot() . '/public';
+        $this->contentRoot = FileSystem::init()->publicRoot();
 
         if (strlen($destination) === 0) {
             $this->destination =  $projectRoot . '/site-static-html/public';
@@ -82,21 +83,24 @@ class Generator
         $parts        = array_slice($parts, 0, -1);
         $requestUri   = implode('/', $parts);
 
-        $request = HttpRequest::fromGlobals()->withUri($requestUri);
+        $globals = ServerGlobals::init()->withRequestUri($requestUri)
+            ->withRequestMethod('GET');
         if (str_contains($destinationPath, '/error-404.html')) {
-            $request = HttpRequest::fromGlobals()->withUri(
-                '/low/probability/of/ex/is/ting'
-            );
+            $globals = $globals->withRequestUri('/low/prob/a/bil/it/ee');
 
         } elseif (str_contains($destinationPath, '/error-405.html')) {
-            $request = HttpRequest::fromGlobals()->withMethod('DELETE');
+            $globals = $globals->withRequestMethod('DELETE');
 
         } elseif (strlen($requestUri) === 0) {
-            $request = HttpRequest::fromGlobals()->withUri('/');
+            $globals = $globals->withRequestUri('/');
 
         }
 
-        $html = HttpResponse::from(request: $request)->body();
+        $fileSystem = FileSystem::init();
+
+        $html = HttpResponse::from(
+            request: HttpRequest::with(serverGlobals: $globals, in: $fileSystem)
+        )->body();
 
         $this->leagueFileSystem()->write($destinationPath, $html);
 

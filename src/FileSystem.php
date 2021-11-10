@@ -8,7 +8,9 @@ use SplFileInfo;
 
 use Symfony\Component\Finder\Finder;
 
-class FileSystem
+use JoshBruce\Site\FileSystemInterface;
+
+class FileSystem implements FileSystemInterface
 {
     public static function init(): static
     {
@@ -72,21 +74,6 @@ class FileSystem
         $filePath = (string) $finderFile;
         $relativePath = $this->relativePath($filePath);
         return str_contains($relativePath, '_');
-    }
-
-    private function projectRootFinder(): Finder
-    {
-        return $this->finder()->in(static::projectRoot());
-    }
-
-    private function contentRootFinder(): Finder
-    {
-        return $this->finder()->in($this->contentRoot());
-    }
-
-    private function publicRootFinder(): Finder
-    {
-        return $this->finder()->in($this->publicRoot());
     }
 
     private function finder(): Finder

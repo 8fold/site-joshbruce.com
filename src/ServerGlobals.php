@@ -21,11 +21,11 @@ class ServerGlobals
         $this->globals = $_SERVER;
     }
 
-    public function withRequestUri(string $method): ServerGlobals
+    public function withRequestUri(string $uri): ServerGlobals
     {
         $this->globals = [];
 
-        $_SERVER['REQUEST_URI'] = $method;
+        $_SERVER['REQUEST_URI'] = $uri;
         return $this;
     }
 

@@ -14,7 +14,7 @@ use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 
 use JoshBruce\Site\ServerGlobals;
-use JoshBruce\Site\FileSystem;
+use JoshBruce\Site\FileSystemInterface;
 
 use JoshBruce\Site\File;
 
@@ -29,28 +29,28 @@ class HttpRequest
 
     public static function with(
         ServerGlobals $serverGlobals,
-        FileSystem $in
+        FileSystemInterface $in
     ): HttpRequest {
         return new HttpRequest($serverGlobals, $in);
     }
 
-// //     public static function fromGlobals(): HttpRequest
-// //     {
-// // //         if ($fileSystem === null) {
-// // //             $fileSystem = new FileSystem();
-// // //         }
-// // //
-// //         return new HttpRequest();
-// //     }
+//     public static function fromGlobals(): HttpRequest
+//     {
+//         if ($fileSystem === null) {
+//             $fileSystem = new FileSystemInterface();
+//         }
 //
-//     // public static function for(FileSystem $contentFolder): HttpRequest
+//         return new HttpRequest();
+//     }
+//
+//     // public static function for(FileSystemInterface $contentFolder): HttpRequest
 //     // {
 //     //     return new HttpRequest($contentFolder, $serverGlobals);
 //     // }
 //
     private function __construct(
         private ServerGlobals $serverGlobals,
-        private FileSystem $fileSystem
+        private FileSystemInterface $fileSystem
     ) {
         if ($this->serverGlobals()->appEnv() !== 'production') {
             // use Whoops! for error display
@@ -84,7 +84,7 @@ class HttpRequest
 
     public function localFile(): File
     {
-        return File::at(localPath: $this->localPath());
+        return File::at(localPath: $this->localPath(), in: $this->fileSystem());
     }
 
     public function isFile(): bool
@@ -102,6 +102,11 @@ class HttpRequest
         return ! $this->isSitemap();
     }
 
+    public function fileSystem(): FileSystemInterface
+    {
+        return $this->fileSystem;
+    }
+
     private function localPath(): string
     {
         if (empty($this->localPath)) {
@@ -115,9 +120,9 @@ class HttpRequest
                 $relativePath = "/{$relativePath}";
             }
 
-            $root = FileSystem::contentRoot();
+            $root = $this->fileSystem()->publicRoot();
 
-            $this->localPath = "{$root}/public{$relativePath}";
+            $this->localPath = "{$root}{$relativePath}";
         }
         return $this->localPath;
     }

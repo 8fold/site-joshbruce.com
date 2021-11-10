@@ -14,7 +14,6 @@ use Nyholm\Psr7\Stream as PsrStream;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\FileSystem;
 use JoshBruce\Site\File;
 
 use JoshBruce\Site\Content\Markdown;
@@ -78,12 +77,14 @@ class HttpResponse
             return $localFile->path();
 
         } elseif ($this->statusCode() === 404) {
-            $localPath = FileSystem::contentRoot() . '/public/error-404.md';
-            $localFile = File::at($localPath);
+            $localPath = $this->request()->fileSystem()->publicRoot() .
+                '/error-404.md';
+            $localFile = File::at($localPath, $this->request()->fileSystem());
 
         } elseif ($this->statusCode() === 405) {
-            $localPath = FileSystem::contentRoot() . '/public/error-405.md';
-            $localFile = File::at($localPath);
+            $localPath = $this->request()->fileSystem()->publicRoot() .
+                '/public/error-405.md';
+            $localFile = File::at($localPath, $this->request()->fileSystem());
 
         }
 
@@ -91,14 +92,17 @@ class HttpResponse
         $pageTitle = '';
         $html = '';
         if ($localFile->isMarkdown()) {
-            $markdown  = Markdown::for(file: $localFile);
+            $markdown  = Markdown::for(
+                file: $localFile,
+                in: $this->request()->fileSystem()
+            );
             $template  = $markdown->frontMatter()->template();
             $pageTitle = $markdown->pageTitle();
             $html      = $markdown->html();
         }
 
         if ($this->request()->isSitemap()) {
-            return Sitemap::create();
+            return Sitemap::create($this->request()->fileSystem());
         }
 
         return Document::create(
@@ -135,7 +139,7 @@ class HttpResponse
                 $html
             )->props('typeof BlogPosting', 'vocab https://schema.org/'),
             Element::a('top')->props('href #content-top', 'id go-to-top'),
-            Navigation::create('main.md'),
+            Navigation::create('main.md', $this->request()->fileSystem()),
             Element::footer(
                 Element::p(
                     'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .

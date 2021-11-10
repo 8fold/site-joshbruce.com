@@ -32,7 +32,7 @@ test('expected headers', function() {
     )->toBe(
         ['Content-Type' => 'text/css']
     );
-})->group('response', 'request', 'server-globals');
+})->group('response', 'request');
 
 test('expected titles', function() {
     $body = HttpResponse::from(
@@ -43,12 +43,12 @@ test('expected titles', function() {
     )->body();
 
     expect(
-        str_contains($body, "<title>Josh Bruce's personal site</title>")
+        str_contains($body, "<title>Test content root</title>")
     )->toBeTrue();
 
     $body = HttpResponse::from(
         request: HttpRequest::with(
-            ServerGlobals::init()->withRequestUri('/finances'),
+            ServerGlobals::init()->withRequestUri('/published-sub'),
             TestFileSystem::init()
         )
     )->body();
@@ -56,7 +56,7 @@ test('expected titles', function() {
     expect(
         str_contains(
             $body,
-            "<title>Finances | Josh Bruce's personal site</title>"
+            "<title>Sub-folder content title | Test content root</title>"
         )
     )->toBeTrue();
 
@@ -73,7 +73,7 @@ test('expected titles', function() {
             "<title>Page not found</title>"
         )
     )->toBeTrue();
-})->group('response', 'request', 'server-globals');
+})->group('response', 'request');
 
 test('expected status codes', function() {
     expect(
@@ -123,4 +123,4 @@ test('expected status codes', function() {
     );
 
     $_SERVER['APP_URL'] = 'http://jb-site.test';
-})->group('response', 'request', 'server-globals');
+})->group('response', 'request');
