@@ -1,7 +1,6 @@
 ---
 title: The 5 Ps
-dateblock:
-    - 20210623 Created on
+created: 20210623
 ---
 
 # The 5 Ps exercise by Josh Bruce

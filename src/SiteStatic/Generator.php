@@ -71,6 +71,10 @@ class Generator
 
             }
         }
+
+        $this->compileContentFileFor($this->contentRoot . '/sitemap.xml');
+        $this->copyFileFor($this->contentRoot . '/robots.txt');
+
         return true;
     }
 
@@ -85,7 +89,10 @@ class Generator
 
         $globals = ServerGlobals::init()->withRequestUri($requestUri)
             ->withRequestMethod('GET');
-        if (str_contains($destinationPath, '/error-404.html')) {
+        if (str_contains($contentPath, 'sitemap.xml')) {
+            $globals = $globals->withRequestUri('/sitemap.xml');
+
+        } elseif (str_contains($destinationPath, '/error-404.html')) {
             $globals = $globals->withRequestUri('/low/prob/a/bil/it/ee');
 
         } elseif (str_contains($destinationPath, '/error-405.html')) {

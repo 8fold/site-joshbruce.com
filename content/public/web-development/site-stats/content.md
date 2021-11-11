@@ -5,6 +5,8 @@ created: 20211108
 
 # Site statistics
 
+{!!dateblock!!}
+
 This isn't about page views, clickthrough rates, or the like; it's about performance characteristics and [.SLAs](Service Level Agreements).
 
 The mission of this site is part sharing and part exploration.

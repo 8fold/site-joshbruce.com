@@ -1,7 +1,6 @@
 ---
 title: May 1st, 2021 paycheck
-dateblock:
-    - 20210501 Created on
+created: 20210501
 ---
 
 # October 1st, 2021 paycheck

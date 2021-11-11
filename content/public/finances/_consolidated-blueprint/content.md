@@ -1,7 +1,6 @@
 ---
 title: Consolidated financial blueprint
-dateblock:
-    - 20210511 Created on
+created: 20210511
 ---
 
 # Consolidated financial blueprint

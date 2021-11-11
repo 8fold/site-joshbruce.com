@@ -1,8 +1,7 @@
 ---
 title: September 15th, 2021 paycheck
-dateblock:
-    - 20210904 Created on
-    - 20210917 Updated on
+created: 20210904
+updated: 20210917
 data:
 - [Debt, 0, 0, 0.5]
 - [Cash, 5, 10, 15.7]

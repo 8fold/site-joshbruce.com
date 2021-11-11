@@ -1,9 +1,8 @@
 ---
 title: Why don't you use (WordPress, PolyWorkHQ, Medium, LinkedIn, and so on)?
 header: Why don't you use a framework or platform?
-dateblock:
-    - 20210619 Created on
-    - 20211109 Updated on
+created: 20210619
+updated: 20211109
 ---
 
 # Why donʼt you use a framework or platform?
@@ -16,11 +15,11 @@ Not to sound too "get off my lawn" about the whole situation I'll say: I've trie
 
 I've never been a fan of WordPress and I started using it around 2005 and it inspired some of the decisions I made as I iterated on my own content management system. The biggest problem I have with WordPress is that its rapid rise in popularity turned it into this odd Frankenstein's monster where every website either had to use WordPress or the problem we were trying to solve could be solved by WordPress, even if WordPress wasn't designed to do it.
 
-I've had two regular jobs as a web developer. In both cases, every problem or site that came across the table WordPress had to be the solution. 
+I've had two regular jobs as a web developer. In both cases, every problem or site that came across the table WordPress had to be the solution.
 
-In the early 2000s we wanted to avoid custom code to reduce the learning curve of someone coming in after me; of course, I still had to explain all the customizations we did to WordPress to make it work for the client. 
+In the early 2000s we wanted to avoid custom code to reduce the learning curve of someone coming in after me; of course, I still had to explain all the customizations we did to WordPress to make it work for the client.
 
-In 2012 at my second and last gig as a full-time web developer (working for corporate) I would spend hours and sometimes days trying to beat WordPress into submission to give the client what they needed. This usually ended with me writing a user's manual so they could update the site themselves. 
+In 2012 at my second and last gig as a full-time web developer (working for corporate) I would spend hours and sometimes days trying to beat WordPress into submission to give the client what they needed. This usually ended with me writing a user's manual so they could update the site themselves.
 
 The equivalent from 2015 or so would be the single-page client-side web app; think frameworks like Angular. A brochure site for a local restaurant with a menu and list of locations doesn't need all that...not a good solution for the specific problem.
 

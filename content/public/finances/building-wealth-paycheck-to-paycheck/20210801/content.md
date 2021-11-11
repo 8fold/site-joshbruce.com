@@ -1,8 +1,7 @@
 ---
 title: August 1st, 2021 paycheck
-dateblock:
-    - 20210709 Created on
-    - 20210803 Updated on
+created: 20210709
+updated: 20210803
 data:
 - [Debt, 0, 0, 0]
 - [Cash, 2, 4, 9.94]

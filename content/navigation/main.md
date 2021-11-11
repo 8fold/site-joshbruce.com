@@ -11,3 +11,7 @@
     - [Modern web development](/web-development/modern-web-development)
     - [Static, dynamic, and interactive](/web-development/static-dynamic-and-interactive)
     - [Refactoring, re-engineering, and rebuilding](/web-development/refactoring-re-engineering-and-rebuilding)
+- [Finances](/finances)
+    - [Investment policy](/finances/investment-policy)
+    - [Paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck)
+- [Full list](/full-navigation)

@@ -1,8 +1,7 @@
 ---
 title: April 15th, 2021 paycheck
-dateblock:
-    - 20210331 Created on
-    - 20210510 Updated on
+created: 20210331
+updated: 20210510
 ---
 
 # April 15th, 2021 paycheck

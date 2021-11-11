@@ -134,12 +134,25 @@ class HttpResponse
             ),
             $this->cssElement()
         )->body(
-            Element::a('menu')->props('href #main-nav', 'id content-top'),
-            Element::article(
-                $html
-            )->props('typeof BlogPosting', 'vocab https://schema.org/'),
-            Element::a('top')->props('href #content-top', 'id go-to-top'),
-            Navigation::create('main.md', $this->request()->fileSystem()),
+            (strlen($template) === 0)
+                ? Element::a('menu')->props('href #main-nav', 'id content-top')
+                : '',
+            (
+                strlen($template) === 0 and
+                str_replace('content.md', '', $localFile->path(false)) !== '/'
+            )
+                ? Element::article(
+                    $html
+                )->props('typeof BlogPosting', 'vocab https://schema.org/')
+                : Element::main(
+                    $html
+                ),
+            (strlen($template) === 0)
+                ? Element::a('top')->props('href #content-top', 'id go-to-top')
+                : '',
+            (strlen($template) === 0)
+                ? Navigation::create('main.md', $this->request()->fileSystem())
+                : '',
             Element::footer(
                 Element::p(
                     'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .

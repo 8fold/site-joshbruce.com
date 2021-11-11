@@ -1,7 +1,6 @@
 ---
 title: June 15th, 2021 paycheck
-dateblock:
-    - 20210604 Created on
+created: 20210604
 ---
 
 # June 15th, 2021 paycheck

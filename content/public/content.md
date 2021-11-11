@@ -17,9 +17,14 @@ With each site iteration I try and push myself related to design, experience, an
 
 I tend toward minimalism, which means I delete a lot more content than I keep. Until recently I didn't know a good way to handle this when creating content. I've decided to go with three types of posts:
 
-1. Evergreen: Entries created once and updated multiple times as information changes; the [investment policy](/finances/investment-policy), for example. These minimize the number of redundant entries and ensure the information you receive is up to date based on current knowledge and experience.
-2. Serialized: Content ordered by date, each entry acting as a snapshot in time for a larger topic (a traditional blog); the [building wealth paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck) series, for example.
-3. Ad-Hoc: Similar to serialized content in that it represents a snapshot in time; however, it may not represent a long running topic to warrant more than one entry.
+Evergreen
+:    Entries created once and updated multiple times as information changes; the [investment policy](/finances/investment-policy), for example. These minimize the number of redundant entries and ensure the information you receive is up to date based on current knowledge and experience.
+
+Serialized
+:    Content ordered by date, each entry acting as a snapshot in time for a larger topic (a traditional blog); the [building wealth paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck) series, for example.
+
+Ad-Hoc
+:    Similar to serialized content in that it represents a snapshot in time; however, it may not represent a long running topic to warrant more than one entry.
 
 I hope you enjoy!
 
