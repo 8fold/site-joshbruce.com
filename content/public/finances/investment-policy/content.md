@@ -1,8 +1,7 @@
 ---
 title: Investment Policy
-dateblock:
-    - 20210216 Created on
-    - 20210828 Updated on
+created: 20210216
+updated: 20210828
 coming-soon:
 - review agile manifesto
 ---

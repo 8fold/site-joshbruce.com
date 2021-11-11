@@ -1,8 +1,7 @@
 ---
 title: Web development
-dateblock:
-    - 20211031 Created on
-    - 20211105 Updated on
+created: 20211031
+updated: 20211105
 ---
 
 # Web development

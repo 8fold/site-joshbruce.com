@@ -1,8 +1,7 @@
 ---
 title: Software development
-dateblock:
-    - 20210619 Created on
-    - 20211109 Updated on
+created: 20210619
+updated: 20211109
 ---
 
 # Software development

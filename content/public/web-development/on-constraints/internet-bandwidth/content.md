@@ -1,8 +1,8 @@
 ---
 title: Internet bandwidth
-dateblock:
-    - 20171204 Created on
-    - 20211101 Updated on
+created: 20171204
+updated: 20211101
+moved: 20211101
 original: https://medium.com/8fold-pub/on-constraints-internet-bandwidth-eab05c20e218 Medium
 ---
 

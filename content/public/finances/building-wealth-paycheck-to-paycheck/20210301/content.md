@@ -1,7 +1,6 @@
 ---
 title: March 1st, 2021 paycheck
-dateblock:
-    - 20210227 Created on
+created: 20210227
 coming-soon:
     - review The Simple Path to Wealth by J.L. Collins
 ---

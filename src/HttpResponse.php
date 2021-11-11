@@ -137,9 +137,16 @@ class HttpResponse
             (strlen($template) === 0)
                 ? Element::a('menu')->props('href #main-nav', 'id content-top')
                 : '',
-            Element::article(
-                $html
-            )->props('typeof BlogPosting', 'vocab https://schema.org/'),
+            (
+                strlen($template) === 0 and
+                str_replace('content.md', '', $localFile->path(false)) !== '/'
+            )
+                ? Element::article(
+                    $html
+                )->props('typeof BlogPosting', 'vocab https://schema.org/')
+                : Element::main(
+                    $html
+                ),
             (strlen($template) === 0)
                 ? Element::a('top')->props('href #content-top', 'id go-to-top')
                 : '',

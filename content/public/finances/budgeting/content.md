@@ -1,8 +1,7 @@
 ---
 title: Budgeting
-dateblock:
-    - 20210704 Created on
-    - 20211109 Updated on
+created: 20210704
+updated: 20211109
 coming-soon:
 - review Profit First
 ---

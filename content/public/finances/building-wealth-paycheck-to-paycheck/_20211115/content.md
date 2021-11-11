@@ -1,8 +1,7 @@
 ---
 title: November 15th, 2021 paycheck
-dateblock:
-    - 20211101 Created on
-    - 20211031 Updated on
+created: 20211101
+updated: 20211031
 data:
 - [Debt, 0, 0, 0.5]
 - [Cash, 5, 10, 14.1]

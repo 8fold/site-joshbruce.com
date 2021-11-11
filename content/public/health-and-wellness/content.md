@@ -1,7 +1,6 @@
 ---
 title: Health, wellness, and physicality
-dateblock:
-    - 20210531 Created on
+created: 20210531
 disclaimer: "I'm not a doctor much less your doctor nor am I a personal stylist. Just a guy on the Internet sharing experiences and what I'm doing and considering regarding my own physical and mental health. This content is for informational and entertainment purposes only and does not constitute advice. Please consult with your doctor and wellness team."
 ---
 

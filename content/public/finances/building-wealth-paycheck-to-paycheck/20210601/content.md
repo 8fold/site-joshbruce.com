@@ -1,7 +1,6 @@
 ---
 title: June 1, 2021 paycheck
-dateblock:
-    - 20210601 Created on
+created: 20210601
 data:
 - [Debt, 0, 0, 0.05]
 - [Cash, 2, 4, 8.08]

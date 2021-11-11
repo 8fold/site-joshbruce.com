@@ -1,7 +1,6 @@
 ---
 title: Terms of service
-dateblock:
-    - 20210710 Created on
+created: 20210710
 ---
 
 # Terms of service

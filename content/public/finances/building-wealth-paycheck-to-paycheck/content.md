@@ -1,7 +1,6 @@
 ---
 title: Building Wealth Paycheck to Paycheck
-dateblock:
-    - 20210216 Created on
+created: 20210216
 loglist: true
 ---
 
