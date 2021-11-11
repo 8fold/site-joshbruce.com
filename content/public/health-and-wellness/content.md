@@ -11,7 +11,7 @@ disclaimer: "I'm not a doctor much less your doctor nor am I a personal stylist.
 
 Given my historical journal entries it seems every six years or so I get a bug in my ear to look at my physical health, physical appearance, style and whatnot.
 
-In 2009 it was urban obstacle course style with [Parkour](https://en.wikipedia.org/wiki/Parkour) and [Freerunning](https://en.wikipedia.org/wiki/Freerunning). I was more about Parkour than Freerunning. If you've touched any content in the [time-and-space](/time-and-space) area I'm sure you're shocked.
+In 2009 it was urban obstacle course style with [Parkour](https://en.wikipedia.org/wiki/Parkour) and [Freerunning](https://en.wikipedia.org/wiki/Freerunning). I was more about Parkour than Freerunning.
 
 In 2015 it was what I called "The Aesthetics Project." It was learning how to exercise indoors, buy clothes that fit and what my palette was.
 

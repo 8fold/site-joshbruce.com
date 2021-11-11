@@ -9,6 +9,8 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use JoshBruce\Site\File;
 use JoshBruce\Site\FileSystemInterface;
 
+use JoshBruce\Site\Documents\Sitemap;
+
 use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
 use JoshBruce\Site\PageComponents\LogList;
@@ -65,6 +67,7 @@ class Markdown
             $templateMap = [
                 'data'      => Data::class,
                 'dateblock' => DateBlock::class,
+                'full-nav'  => Sitemap::class,
                 'loglist'   => LogList::class,
                 'original'  => OriginalContentNotice::class
             ];
@@ -81,6 +84,9 @@ class Markdown
                 $template = $templateMap[$templateKey];
                 if ($templateKey === 'loglist') {
                     $b = $template::create($this->file(), $this->fileSystem());
+
+                } elseif ($templateKey === 'full-nav') {
+                    $b = $template::list($this->fileSystem());
 
                 } else {
                     $b = $template::create(
