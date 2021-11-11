@@ -1,6 +1,6 @@
 ---
 title: Full navigation
-# template: full-nav
+template: full-nav
 ---
 
 # All content
