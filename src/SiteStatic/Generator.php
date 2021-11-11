@@ -73,6 +73,7 @@ class Generator
         }
 
         $this->compileContentFileFor($this->contentRoot . '/sitemap.xml');
+        $this->copyFileFor($this->contentRoot . '/robots.txt');
 
         return true;
     }
