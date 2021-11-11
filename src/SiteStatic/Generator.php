@@ -88,7 +88,7 @@ class Generator
 
         $globals = ServerGlobals::init()->withRequestUri($requestUri)
             ->withRequestMethod('GET');
-        if(str_contains($contentPath, 'sitemap.xml')) {
+        if (str_contains($contentPath, 'sitemap.xml')) {
             $globals = $globals->withRequestUri('/sitemap.xml');
 
         } elseif (str_contains($destinationPath, '/error-404.html')) {
