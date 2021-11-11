@@ -25,7 +25,7 @@ class Sitemap
 
         $urls = [];
         foreach ($files as $file) {
-            $path = str_replace('/content.md', '', $file->path());
+            $path = strval(str_replace('/content.md', '', $file->path()));
             $urls[$path] = Element::url(
                 Element::loc(
                     File::at($path, $fileSystem)->canonicalUrl()
@@ -64,12 +64,14 @@ class Sitemap
         return Markdown::markdownConverter()->convert($markdownList);
     }
 
+    /**
+     * @return array<string, File>
+     */
     private static function files(
         Finder $finder,
         FileSystemInterface $fileSystem,
         bool $all = false
-    ): array
-    {
+    ): array {
         $files = [];
         foreach ($finder as $file) {
             $path = str_replace('/content.md', '', $file->getPathname());
@@ -96,5 +98,4 @@ class Sitemap
             ->notContains('redirect:')
             ->notContains('noindex:');
     }
-
 }
