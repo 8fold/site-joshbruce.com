@@ -16,7 +16,7 @@ I'm big on values and principles as an approach to automating decision making. W
 
 There's definitely something to that. 
 
-Having said that, knowing where north is and facing it written down beats all hell out of trying to find it in the dark. In early 2021 I decided to leave a project I was on despite not having another place to go and the client wanting me to stick around. This was something of an existential crisis for me. 
+Having said that, knowing where north is and having it written down beats all hell out of trying to find it in the dark. In early 2021 I decided to leave a project I was on despite not having another place to go and the client wanting me to stick around. This was something of an existential crisis for me. 
 
 The conversation in my head boiled down to two things:
 
