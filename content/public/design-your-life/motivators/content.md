@@ -27,20 +27,35 @@ So, I went to the documents that describe who I am in terms of values, principle
 
 If I didn’t have those things captured outside myself, it might have taken longer. (In fact, to be honest and transparent, it took me a day or two to go look at those documents—just not something I do regularly in crisis.)
 
-The Motivators exercise can help you uncover and articulate your own character sheet. The exercise was inspired by Dan Pink's work in the book *Drive*, Gary Chapman’s with the *The 5 Love Languages*, and some generation-based research.
+The Motivators exercise can help you uncover and articulate your own character sheet. The exercise was inspired by Dan Pink's work in the book *Drive*, Gary Chapman with the *The 5 Love Languages*, and some generation-based research.
 
 The exercise comes in a short version and an extended version. Let's start with the short. 
 
 You take a list of motivators and sort them in priority order for yourself from most motivating to least motivating. Here are the motivators:
 
-1. Mastery: Having a master-level understanding of the endeavors you pursue.
-2. Autonomy: The freedom to choose your own adventure; what you do, when you do, how you do, and so on.
-3. Purpose: The reason or "why" behind things.
-4. Connection: Relationships with others (*The 5 Love Languages*).
-5. Process: The order and formal nature of things.
-6. Sticks: Negative consequences for your actions.
-7. Numbers: The facts and figures of things (includes money).
-8. Prestige: The appreciation and recognition of others or a label that implies more responsibility or respect (office manager not secretary, custodial engineer not janitor, and so on).
+Mastery: 
+:    Having a master-level understanding of the endeavors you pursue.
+
+Autonomy: 
+:    The freedom to choose your own adventure; what you do, when you do, how you do, and so on.
+
+Purpose: 
+:    The reason or "why" behind things.
+
+Connection: 
+:    Relationships with others (*The 5 Love Languages*).
+
+Process: 
+:    The order and formal nature of things.
+
+Sticks: 
+:    Negative consequences for your actions.
+
+Numbers: 
+:    The facts and figures of things (includes money).
+
+Prestige: 
+:    The appreciation and recognition of others or a label that implies more responsibility or respect (office manager not secretary, custodial engineer not janitor, and so on).
 
 Now, just put them in order. Here's mine as of this writing (I review it about once a year):
 
