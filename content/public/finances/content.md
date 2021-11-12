@@ -2,7 +2,7 @@
 title: Finances
 disclaimer: "I'm not a financial planner or advisor and don't play one on the Internet. This content is for informational and entertainment purposes only and does not constitute advice. Please consult with your financial advisors and financial institutions."
 created: 20210216
-updated: 20210528
+updated: 20211112
 ---
 
 # Finances
@@ -13,21 +13,28 @@ Talking about money has always felt foreign to me. It's one of those things that
 
 Historically, I haven't been good at earning money; however, I've always been decent enough at knowing what to do with it when I have it. I worked at a credit union for six years and was trained on multiple topics there. I worked in the call center and was introduced to all sorts of individual strategies. As a coach I often recommend reducing friction to decision making. I have found establishing values, principles, practices, and tools early helps tremendously in automating decision making. These values, principles, practices, and tools don't need to be limited to the topic area; there's room for overlap.
 
-The following sections begin with my personal values, principles, practices, and tools with additional elements that I may not incorporate into my personal set but still think are viable. If you think any are missing, please let me know.
+The following sections begin with my personal values, principles, practices, and tools. 
 
 ## Values
 
 1. Autonomy: When I do the [Motivators exercise](/design-your-life/motivators) on myself, the ability to "choose my own adventure" ranks second; every time.
-2. Index funds over managed funds; index or mutual funds over individual stocks and bonds.
-3. My values and principles over social norms and mores.
-4. Intellectual legacy over financial legacy over genetic legacy.
-5. Businesses over governments, state governments over federal governments.
-6. Cooperative business structures over privately held over publicly traded.
-7. The most constrained over the most funded.
-8. United States over International: 70 to 30 percent plus or minus 30.
-9. Corporations over governments.
-9. Equities (ownership) over bonds (lending): 70 to 30 percent plus or minus 5.
-10. Local governments over federal governments: 70 to 30 percent plus or minus 30.
+2. My values and principles over social norms and mores.
+3. Intellectual legacy over 
+    - financial legacy over 
+    - genetic legacy.
+4. The most constrained over the most funded.
+5. United States over International.
+6. Index funds over managed funds.
+7. Index funds over individual stocks and bonds.
+8. Small, local businesses over 
+    - large, miltinational businesses over 
+    - local governments over 
+    - state governments over 
+    - federal governments.
+9. Cooperative business structures over 
+    - privately held over 
+    - publicly traded.
+10. Equities (ownership) over bonds (lending).
 
 ## Principles
 
@@ -43,15 +50,12 @@ The following sections begin with my personal values, principles, practices, and
 
 1. Maximize revenue, minimize spending.
 2. Combined expense ratio less than 1%.
-3. Dividend promotion.
-4. Maximize the number of people directly and indirectly supporting your progress.
-5. Always think in terms of meeting in the middle.
-6. Pay yourself first.
-7. Promote dividends earned in vehicles returning less than 7% per year to vehicles that historically return higher.
-8. Decisions should consider everything else before trying to generate higher than average rates of return. (See principle 7.)
-9. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck).
-
-A note on number 7, I have a savings account at a credit union that earns roughly 6% on the first $500 when you meet certain criteria and 0.15% for each dollar above the first $500. I would like all the dividends to be promoted to index funds. Further, I plan on using my bond funds as simple interest savings accounts where I deposit an initial amount and have the dividends not reinvest. More on this in my [investment policy](/finances/investment-policy).
+3. Maximize the number of people supporting your progress.
+4. Think win-win and meeting in the middle.
+5. Pay yourself first.
+6. Promote dividends earned in vehicles returning less than 7% per year to vehicles that historically return higher.
+7. Higher rates of return should be lowest piriority consideration when making decisions (see previous).
+8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck).
 
 ## Tools
 
