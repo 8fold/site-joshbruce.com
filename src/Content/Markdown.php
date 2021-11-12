@@ -143,6 +143,50 @@ class Markdown
         return implode(' | ', $titles);
     }
 
+    public function description(): string
+    {
+        if ($this->frontMatter()->hasMember('description')) {
+            $description = $this->frontMatter()->description();
+
+        } else {
+            $body = $this->body();
+            $description = preg_filter("/#(.*)\n/", '', $body);
+            if (is_string($description)) {
+                $parts = explode("\n", $description);
+                $parts = array_filter($parts);
+                $description = implode(' ', $parts);
+
+            } else {
+                // TODO: Doesn't guarantee meta description content.
+                //       Log??
+                $description = $body;
+
+            }
+        }
+
+        $description = htmlentities(substr($description, 0, 200));
+
+        $parts = explode('. ', $description);
+        $description = '';
+        foreach ($parts as $part) {
+            $d = $part;
+            if (strlen($description) > 0) {
+                $d = $description . '. ' . $part;
+            }
+
+            $proposedLength = strlen($d);
+            if ($proposedLength >= 200) {
+                $ps = explode('. ', $d);
+                array_pop($ps);
+                $description = implode('. ', $ps) . '.';
+                break;
+            }
+            $description = $d;
+        }
+
+        return $description;
+    }
+
     public function file(): File
     {
         return $this->file;

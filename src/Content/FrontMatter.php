@@ -84,4 +84,12 @@ class FrontMatter
         }
         return '';
     }
+
+    public function description(): string
+    {
+        if ($this->hasMember('description')) {
+            return strval($this->frontMatter['description']);
+        }
+        return '';
+    }
 }
