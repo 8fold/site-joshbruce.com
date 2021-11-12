@@ -159,7 +159,7 @@ class Markdown
             } else {
                 // TODO: Doesn't guarantee meta description content.
                 //       Log??
-                $description = '';
+                $description = $body;
 
             }
         }

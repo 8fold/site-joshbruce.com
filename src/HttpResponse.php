@@ -88,17 +88,19 @@ class HttpResponse
 
         }
 
-        $template = '';
-        $pageTitle = '';
-        $html = '';
+        $template    = '';
+        $pageTitle   = '';
+        $html        = '';
+        $description = '';
         if ($localFile->isMarkdown()) {
             $markdown  = Markdown::for(
                 file: $localFile,
                 in: $this->request()->fileSystem()
             );
-            $template  = $markdown->frontMatter()->template();
-            $pageTitle = $markdown->pageTitle();
-            $html      = $markdown->html();
+            $template    = $markdown->frontMatter()->template();
+            $pageTitle   = $markdown->pageTitle();
+            $html        = $markdown->html();
+            $description = $markdown->description();
         }
 
         if ($this->request()->isSitemap()) {
@@ -111,6 +113,10 @@ class HttpResponse
             Element::meta()->omitEndTag()->props(
                 'name viewport',
                 'content width=device-width,initial-scale=1'
+            ),
+            Element::meta()->omitEndTag()->props(
+                'name description',
+                'content ' . $description
             ),
             Element::link()->omitEndTag()->props(
                 'type image/x-icon',
