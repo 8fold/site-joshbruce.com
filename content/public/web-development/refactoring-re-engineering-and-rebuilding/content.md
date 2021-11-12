@@ -41,7 +41,7 @@ Now for the law. It's referred to as [Conway's Law](https://en.wikipedia.org/wik
 
 Conway's Law has been reframed and rephrased more than a few times. Mine goes like this:
 
-> Conway's Law swings both ways. Show me the people and I'l describe the code. Show me the code and I'll describe the people.
+> Conway's Law swings both ways. Show me the people and I'll describe the code. Show me the code and I'll describe the people.
 
 Of course, it doesn't have to be code, system being defined broadly in this context. With that said, it often works out. Take the [code used to build this site](https://github.com/8fold/site-joshbruce.com).
 
@@ -49,7 +49,7 @@ As of this writing, there's a minimum number of dependencies. There's a minimum 
 
 So, what does this say about me?
 
-When it comes to [motivators](/design-your-life/motivators), autonomy is ranked number two almost every time; I don't like depending too much on others and I try to help other not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
+When it comes to [motivators](/design-your-life/motivators), autonomy is ranked number two almost every time; I don't like depending too much on others and I tend to help others not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
 
 I describe the code and the code describes me.
 
@@ -63,7 +63,7 @@ And, in under 48 hours, I redesigned the site, removed my dependency on a framew
 
 ## Re-engineering [.vs](versus) refactoring
 
-I recently refactoring the code for the site. Specifically, I performed the [extract class](https://refactoring.com/catalog/extractClass.html) refactoring to create a class called [`FrontMatter`](https://github.com/8fold/site-joshbruce.com/pull/19). From the perspective of a user of the site, nothing changed, it's a refactoring after all.
+I recently refactored the code for the site. Specifically, I performed the [extract class](https://refactoring.com/catalog/extractClass.html) refactoring to create a class called [`FrontMatter`](https://github.com/8fold/site-joshbruce.com/pull/19). From the perspective of a user of the site, nothing changed, it's a refactoring after all.
 
 However, from the perspective of the other classes within the system, this was re-engineering. The way the other classes interacted with the other pieces of the system changed pretty dramatically. To put it in corporate human terms, I hired someone new to take on the responsibilities that were once owned by another person. This meant everyone who used to interact with that original person now had to interact with this new person.
 
@@ -77,7 +77,7 @@ I talked about [staying as small as possible](/web-development/on-constraints/in
 
 That's a loaded question. When we talk about scaling we usually only talk about it in terms of scaling up. More code. More people. And I think those two things are mutually inclusive. The more people independently contributing to a codebase, the more code there will be. We rarely talk about scaling down though.
 
-I didn't have a good answer for that question at the time. I'm not sure I have one now, in fact. I think it's appropriate to breathe. Scaling up is an inhale and scaling down is an exhale. I think it's appropriate to scale in either direction at any time; however, one should favor the exhale.
+I didn't have a good answer for the when is it appropriate to scale question question at the time. I'm not sure I have one now, in fact. I think it's appropriate to breathe. Scaling up is an inhale and scaling down is an exhale. I think it's appropriate to scale in either direction at any time; however, one should favor the exhale.
 
 But this isn't the article for that I don't think.
 
