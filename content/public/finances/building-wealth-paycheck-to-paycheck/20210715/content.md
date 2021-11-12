@@ -1,7 +1,6 @@
 ---
 title: July 15th, 2021 paycheck
-dateblock:
-    - 20210704 Created on
+created: 20210704
 data:
 - [Debt, 0, 0, 0.16]
 - [Cash, 2, 4, 9.94]

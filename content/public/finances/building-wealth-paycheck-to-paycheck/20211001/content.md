@@ -1,8 +1,7 @@
 ---
 title: October 1st, 2021 paycheck
-dateblock:
-    - 20210918 Created on
-    - 20211001 Updated on
+created: 20210918
+updated: 20211001
 data:
 - [Debt, 0, 0, 0.4]
 - [Cash, 5, 10, 16.5]

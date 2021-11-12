@@ -45,15 +45,28 @@ class FrontMatter
         return [];
     }
 
-    /**
-     * @return array<int, string>
-     */
-    public function dateblock(): array
+    public function created(): int|false
     {
-        if ($this->hasMember('dateblock')) {
-            return $this->frontMatter['dateblock'];
+        if ($this->hasMember('created')) {
+            return $this->frontMatter['created'];
         }
-        return [];
+        return false;
+    }
+
+    public function moved(): int|false
+    {
+        if ($this->hasMember('moved')) {
+            return $this->frontMatter['moved'];
+        }
+        return false;
+    }
+
+    public function updated(): int|false
+    {
+        if ($this->hasMember('updated')) {
+            return $this->frontMatter['updated'];
+        }
+        return false;
     }
 
     public function original(): string
@@ -68,6 +81,14 @@ class FrontMatter
     {
         if ($this->hasMember('template')) {
             return strval($this->frontMatter['template']);
+        }
+        return '';
+    }
+
+    public function description(): string
+    {
+        if ($this->hasMember('description')) {
+            return strval($this->frontMatter['description']);
         }
         return '';
     }

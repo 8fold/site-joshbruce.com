@@ -1,7 +1,6 @@
 ---
 title: On constraints
-dateblock:
-    - 20211101 Created on
+created: 20211101
 ---
 
 # On constraints

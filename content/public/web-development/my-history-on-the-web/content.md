@@ -1,7 +1,6 @@
 ---
 title: My history on the web
-dateblock:
-    - 20211108 Created on
+created: 20211108
 ---
 
 # My history on the web

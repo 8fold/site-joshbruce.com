@@ -15,18 +15,28 @@ class DateBlock
     public static function create(FrontMatter $frontMatter): string
     {
         $times = [];
-        $dateblock = $frontMatter->dateblock();
-        foreach ($dateblock as $date) {
-            list($d, $label) = explode(' ', $date, 2);
-            $schemaProp = '';
-            if (str_starts_with($label, 'Created')) {
-                $schemaProp = 'dateCreated';
 
-            } elseif (str_starts_with($label, 'Updated')) {
-                $schemaProp = 'dateModified';
+        if ($frontMatter->created()) {
+            $label      = 'Created';
+            $date       = $frontMatter->created();
+            $schemaProp = 'dateCreated';
 
-            }
-            $times[] = self::timestamp($label, intval($d), $schemaProp);
+            $times[] = self::timestamp($label, $date, $schemaProp);
+        }
+
+        if ($frontMatter->moved()) {
+            $label      = 'Moved';
+            $date       = $frontMatter->moved();
+
+            $times[] = self::timestamp($label, $date);
+        }
+
+        if ($frontMatter->updated()) {
+            $label      = 'Updated';
+            $date       = $frontMatter->updated();
+            $schemaProp = 'dateCreated';
+
+            $times[] = self::timestamp($label, $date, $schemaProp);
         }
 
         if (count($times) === 0) {

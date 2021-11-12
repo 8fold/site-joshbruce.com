@@ -1,7 +1,6 @@
 ---
 title: Motivators
-dateblock:
-    - 20210620 Created on
+created: 20210620
 coming-soon:
 - review Getting Things Done by David Allen
 - review Drive by Dan Pink

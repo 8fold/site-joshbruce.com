@@ -7,6 +7,7 @@ test('index is not displaying errors', function() {
     $parts   = explode('/', $dir);
     $parts   = array_slice($parts, 0, -1);
     $parts[] = 'site-dynamic-php';
+    $parts[] = 'public';
     $parts[] = 'index.php';
 
     $path = implode('/', $parts);

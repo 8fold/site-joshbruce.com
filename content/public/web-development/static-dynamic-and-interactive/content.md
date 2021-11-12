@@ -1,7 +1,6 @@
 ---
 title: Static, dynamic, and interactive
-dateblock:
-    - 20211107 Created on
+created: 20211107
 ---
 
 # Static, dynamic, and interactive
@@ -75,7 +74,7 @@ The drawback to multi-page sites was that it was difficult to keep the site arch
 
 The benefit here though was the ability to mix-and-match experiences and the server gets to be a server. I could have part of my site be static while another part was dynamic. Optimizing the experience for the content and user needs.
 
-Which brings us back to the drawback; the wider the technology stack is in breadth, the harder it will be to find someone with the appropriate combination of skills to maintain it. 
+Which brings us back to the drawback; the wider the technology stack is in breadth, the harder it will be to find someone with the appropriate combination of skills to maintain it.
 
 I'm pretty sure this is where [joshbruce.com](https://joshbruce.com) is headed. That is, of course, so long as I don't get bored and it seems appropriate.
 

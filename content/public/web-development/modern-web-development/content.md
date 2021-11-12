@@ -1,8 +1,7 @@
 ---
 title: Modern web development
-dateblock:
-    - 20211018 Created on
-    - 20211105 Updated on
+created: 20211018
+updated: 20211105
 ---
 
 # Modern web development

@@ -7,6 +7,9 @@ namespace JoshBruce\Site\Content;
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use JoshBruce\Site\File;
+use JoshBruce\Site\FileSystemInterface;
+
+use JoshBruce\Site\Documents\Sitemap;
 
 use JoshBruce\Site\PageComponents\Data;
 use JoshBruce\Site\PageComponents\DateBlock;
@@ -24,9 +27,9 @@ class Markdown
 
     private string $body = '';
 
-    public static function for(File $file): Markdown
+    public static function for(File $file, FileSystemInterface $in): Markdown
     {
-        return new Markdown($file);
+        return new Markdown($file, $in);
     }
 
     public static function markdownConverter(): MarkdownConverter
@@ -49,8 +52,10 @@ class Markdown
             );
     }
 
-    private function __construct(private File $file)
-    {
+    private function __construct(
+        private File $file,
+        private FileSystemInterface $fileSystem
+    ) {
     }
 
     public function html(): string
@@ -62,6 +67,7 @@ class Markdown
             $templateMap = [
                 'data'      => Data::class,
                 'dateblock' => DateBlock::class,
+                'full-nav'  => Sitemap::class,
                 'loglist'   => LogList::class,
                 'original'  => OriginalContentNotice::class
             ];
@@ -77,10 +83,16 @@ class Markdown
                 $b = '';
                 $template = $templateMap[$templateKey];
                 if ($templateKey === 'loglist') {
-                    $b = $template::create($this->file);
+                    $b = $template::create($this->file(), $this->fileSystem());
+
+                } elseif ($templateKey === 'full-nav') {
+                    $b = $template::list($this->fileSystem());
 
                 } else {
-                    $b = $template::create($this->frontMatter());
+                    $b = $template::create(
+                        $this->frontMatter(),
+                        $this->fileSystem()
+                    );
 
                 }
 
@@ -118,11 +130,11 @@ class Markdown
         $titles   = [];
         $titles[] = $this->frontMatter()->title();
 
-        $file = clone $this->file;
+        $file = clone $this->file();
         while ($file->canGoUp()) {
             $file = $file->up();
 
-            $m = Markdown::for($file);
+            $m = Markdown::for($file, $this->fileSystem());
 
             $titles[] = $m->frontMatter()->title();
         }
@@ -131,16 +143,69 @@ class Markdown
         return implode(' | ', $titles);
     }
 
-    public function canonicalURl(): string
+    public function description(): string
     {
-        return $this->file->canonicalUrl();
+        if ($this->frontMatter()->hasMember('description')) {
+            $description = $this->frontMatter()->description();
+
+        } else {
+            $body = $this->body();
+            $description = preg_filter(
+                ["/#(.*)\n/", "/{!!dateblock!!}/"],
+                ['', ''],
+                $body
+            );
+            if (is_string($description)) {
+                $parts = explode("\n", $description);
+                $parts = array_filter($parts);
+                $description = implode(' ', $parts);
+
+            } else {
+                // TODO: Doesn't guarantee meta description content.
+                //       Log??
+                $description = $body;
+
+            }
+        }
+
+        $description = htmlentities(substr($description, 0, 200));
+
+        $parts = explode('. ', $description);
+        $description = '';
+        foreach ($parts as $part) {
+            $d = $part;
+            if (strlen($description) > 0) {
+                $d = $description . '. ' . $part;
+            }
+
+            $proposedLength = strlen($d);
+            if ($proposedLength >= 200) {
+                $ps = explode('. ', $d);
+                array_pop($ps);
+                $description = implode('. ', $ps) . '.';
+                break;
+            }
+            $description = $d;
+        }
+
+        return $description;
+    }
+
+    public function file(): File
+    {
+        return $this->file;
     }
 
     private function fileContent(): string
     {
-        if (strlen($this->fileContent) === 0 and $this->file->found()) {
-            $this->fileContent = $this->file->contents();
+        if (strlen($this->fileContent) === 0 and $this->file()->found()) {
+            $this->fileContent = $this->file()->contents();
         }
         return $this->fileContent;
+    }
+
+    private function fileSystem(): FileSystemInterface
+    {
+        return $this->fileSystem;
     }
 }

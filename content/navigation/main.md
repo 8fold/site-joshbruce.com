@@ -11,3 +11,4 @@
 - [Finances](/finances)
     - [Investment policy](/finances/investment-policy)
     - [Paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck)
+- [Full list](/full-navigation)

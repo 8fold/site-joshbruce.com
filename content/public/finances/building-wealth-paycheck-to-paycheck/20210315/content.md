@@ -1,7 +1,6 @@
 ---
 title: March 15th, 2021 paycheck
-dateblock:
-    - 20210312 Created on
+created: 20210312
 ---
 
 # March 15th, 2021 paycheck
