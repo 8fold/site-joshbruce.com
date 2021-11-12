@@ -11,7 +11,7 @@ it('can get published content', function() {
        count(
            TestFileSystem::init()->publishedContentFinder()
        )
-   )->toBeInt()->toBe(2);
+   )->toBeInt()->toBe(3);
 })->group('filesystem');
 
 it('has required folders', function() {
