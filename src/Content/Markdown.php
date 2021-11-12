@@ -150,7 +150,11 @@ class Markdown
 
         } else {
             $body = $this->body();
-            $description = preg_filter("/#(.*)\n/", '', $body);
+            $description = preg_filter(
+                ["/#(.*)\n/", "/{!!dateblock!!}/"],
+                ['', ''],
+                $body
+            );
             if (is_string($description)) {
                 $parts = explode("\n", $description);
                 $parts = array_filter($parts);

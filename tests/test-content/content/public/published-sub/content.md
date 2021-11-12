@@ -4,6 +4,8 @@ title: Sub-folder content title
 
 # Heading in the way
 
+{!!dateblock!!}
+
 Short sentence.
 
 ## Heading in the way
