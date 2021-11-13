@@ -14,6 +14,7 @@
   --m-font: clamp(16pt, 5vw, 18pt);
   --s-font: clamp(13pt, 4.0625vw, 15pt);
   --xs-font: clamp(10pt, 3.125vw, 14pt);
+  --2xs-font: clamp(8pt, 3.125vw, 12pt);
 
   --l-line-height: calc(var(--2xl-font) * 1);
   --m-line-height: calc(var(--s-font) * 1.62);
@@ -184,6 +185,36 @@ h5,
 h6 {
   font-size: var(--l-font);
   text-align: var(--center);
+}
+
+div[is="heading-wrapper"] {
+  display: flex;
+  flex-direction: column-reverse;
+  & > a {
+    display: block;
+    text-align: center;
+    & > span:nth-of-type(1) {
+      &:before, &:after {
+        display: inline-block;
+        margin: var(--0-spacer) var(--m-spacer);
+        content: '#';
+        font-size: var(--2xs-font);
+        position: relative;
+        top: var(--3-px);
+      }
+    }
+
+    & > span:nth-of-type(2) {
+      clip: rect(1px,1px,1px,1px)!important;
+      border-width: 0!important;
+      height: 1px!important;
+      overflow: hidden!important;
+      padding: 0!important;
+      position: absolute!important;
+      white-space: nowrap!important;
+      width: 1px!important;
+    }
+  }
 }
 
 hr {

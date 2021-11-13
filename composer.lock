@@ -61,21 +61,79 @@
             "time": "2021-08-15T18:25:52+00:00"
         },
         {
-            "name": "8fold/commonmark-fluent-markdown",
-            "version": "0.10.3",
+            "name": "8fold/commonmark-accessible-heading-permalinks",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/8fold/commonmark-fluent-markdown.git",
-                "reference": "2fbaf73fb47c79290f1c6e915220e4435b576a13"
+                "url": "https://github.com/8fold/commonmark-accessible-heading-permalinks.git",
+                "reference": "c409111e8f6668ccd6268b0466b66e5d791d8b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/8fold/commonmark-fluent-markdown/zipball/2fbaf73fb47c79290f1c6e915220e4435b576a13",
-                "reference": "2fbaf73fb47c79290f1c6e915220e4435b576a13",
+                "url": "https://api.github.com/repos/8fold/commonmark-accessible-heading-permalinks/zipball/c409111e8f6668ccd6268b0466b66e5d791d8b05",
+                "reference": "c409111e8f6668ccd6268b0466b66e5d791d8b05",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "^2.0.2",
+                "php": "^7.4||^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.20.0",
+                "phpstan/phpstan": "^1.1.0",
+                "psr/log": "^1.0.1",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eightfold\\CommonMarkAccessibleHeadingPermalink\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Bruce",
+                    "email": "josh@8fold.pro"
+                }
+            ],
+            "description": "An extension of PHP League's CommonMark library to enable accessible Heading Permalinks usage.",
+            "support": {
+                "issues": "https://github.com/8fold/commonmark-accessible-heading-permalinks/issues",
+                "source": "https://github.com/8fold/commonmark-accessible-heading-permalinks/tree/0.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/8fold",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/joshbruce",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-13T20:22:56+00:00"
+        },
+        {
+            "name": "8fold/commonmark-fluent-markdown",
+            "version": "0.10.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/8fold/commonmark-fluent-markdown.git",
+                "reference": "72e052cdbd2d2ee8d472618e69b69747710eeb13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/8fold/commonmark-fluent-markdown/zipball/72e052cdbd2d2ee8d472618e69b69747710eeb13",
+                "reference": "72e052cdbd2d2ee8d472618e69b69747710eeb13",
                 "shasum": ""
             },
             "require": {
                 "8fold/commonmark-abbreviations": "^1.2 || ^2.0",
+                "8fold/commonmark-accessible-heading-permalinks": "^0.0.1",
                 "league/commonmark": "^2.0",
                 "php": "^8.0",
                 "symfony/yaml": "^2.3 || ^3.0 || ^4.0 || ^5.0"
@@ -105,7 +163,7 @@
             "description": "A fluent API for CommonMark by the PHP League",
             "support": {
                 "issues": "https://github.com/8fold/commonmark-fluent-markdown/issues",
-                "source": "https://github.com/8fold/commonmark-fluent-markdown/tree/0.10.3"
+                "source": "https://github.com/8fold/commonmark-fluent-markdown/tree/0.10.6"
             },
             "funding": [
                 {
@@ -117,7 +175,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-04T00:51:36+00:00"
+            "time": "2021-11-13T21:12:59+00:00"
         },
         {
             "name": "8fold/php-html-builder",
@@ -701,16 +759,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "499313f8b65f9a4dae1c779cd974d59a6fcf0f15"
+                "reference": "8f037e8f3321d5fd4178dcd4d91498220cebd688"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/499313f8b65f9a4dae1c779cd974d59a6fcf0f15",
-                "reference": "499313f8b65f9a4dae1c779cd974d59a6fcf0f15",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8f037e8f3321d5fd4178dcd4d91498220cebd688",
+                "reference": "8f037e8f3321d5fd4178dcd4d91498220cebd688",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +785,7 @@
                 "aws/aws-sdk-php": "^3.132.4",
                 "composer/semver": "^3.0",
                 "ext-fileinfo": "*",
-                "friendsofphp/php-cs-fixer": "^2.16",
+                "friendsofphp/php-cs-fixer": "^3.2",
                 "google/cloud-storage": "^1.23",
                 "phpseclib/phpseclib": "^2.0",
                 "phpstan/phpstan": "^0.12.26",
@@ -766,7 +824,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/2.3.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/2.3.1"
             },
             "funding": [
                 {
@@ -782,7 +840,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-22T06:09:19+00:00"
+            "time": "2021-11-04T20:29:23+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -1350,20 +1408,20 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
-                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.0"
+                "php": ">=7.4.0"
             },
             "type": "library",
             "autoload": {
@@ -1392,9 +1450,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/1.1.1"
+                "source": "https://github.com/php-fig/container/tree/1.1.2"
             },
-            "time": "2021-03-05T17:36:06+00:00"
+            "time": "2021-11-05T16:50:12+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -2787,16 +2845,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "accaddf133651d4b5cf81a119f25296736ffc850"
+                "reference": "d4394d044ed69a8f244f3445bcedf8a0d7fe2403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/accaddf133651d4b5cf81a119f25296736ffc850",
-                "reference": "accaddf133651d4b5cf81a119f25296736ffc850",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
+                "reference": "d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
                 "shasum": ""
             },
             "require": {
@@ -2819,7 +2877,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.3-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
@@ -2849,7 +2907,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.3.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.0"
             },
             "funding": [
                 {
@@ -2861,7 +2919,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-02T19:24:42+00:00"
+            "time": "2021-11-10T01:08:39+00:00"
         }
     ],
     "packages-dev": [
@@ -3709,16 +3767,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.0.2",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "e9e2a501102ba0b126b2f63a7f0a3b151056fe91"
+                "reference": "bcea0ae85868a89d5789c75f012c93129f842934"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e9e2a501102ba0b126b2f63a7f0a3b151056fe91",
-                "reference": "e9e2a501102ba0b126b2f63a7f0a3b151056fe91",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/bcea0ae85868a89d5789c75f012c93129f842934",
+                "reference": "bcea0ae85868a89d5789c75f012c93129f842934",
                 "shasum": ""
             },
             "require": {
@@ -3749,7 +3807,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.0.2"
+                "source": "https://github.com/phpstan/phpstan/tree/1.1.2"
             },
             "funding": [
                 {
@@ -3769,7 +3827,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-03T16:09:51+00:00"
+            "time": "2021-11-09T12:41:09+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4621,16 +4679,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/65e8b7db476c5dd267e65eea9cab77584d3cfff9",
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
                 "shasum": ""
             },
             "require": {
@@ -4679,14 +4737,14 @@
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
-            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "homepage": "https://www.github.com/sebastianbergmann/exporter",
             "keywords": [
                 "export",
                 "exporter"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.4"
             },
             "funding": [
                 {
@@ -4694,7 +4752,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:24:23+00:00"
+            "time": "2021-11-11T14:18:36+00:00"
         },
         {
             "name": "sebastian/global-state",
