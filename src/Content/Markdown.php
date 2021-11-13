@@ -44,7 +44,7 @@ class Markdown
             ->externalLinks([
                 'open_in_new_window' => true,
                 'internal_hosts' => 'joshbruce.com'
-            ])->headingPermalinks(
+            ])->accessibleHeadingPermalinks(
                 [
                     'min_heading_level' => 2,
                     'symbol' => '＃'
