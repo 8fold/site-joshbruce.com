@@ -151,7 +151,7 @@ class Markdown
         } else {
             $body = $this->body();
             $description = preg_filter(
-                ["/#(.*)\n/", "/{!!dateblock!!}/"],
+                ["/#(.*)\n/", "/{!!(.*)!!}/"],
                 ['', ''],
                 $body
             );
