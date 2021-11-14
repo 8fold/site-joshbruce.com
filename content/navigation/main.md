@@ -1,6 +1,7 @@
 - [Josh bruce](/)
 - [Design your life](/design-your-life)
     - [Motivators](/design-your-life/motivators)
+    - [Guidelines and guardrails](/design-your-life/guidelines-and-guardrails)
 - [Software development](/software-development)
     - [Why don't you use](/software-development/why-dont-you-use)
 - [Web development](/web-development)
