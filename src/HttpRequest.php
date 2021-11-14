@@ -98,6 +98,16 @@ class HttpRequest
         return ! $this->isSitemap();
     }
 
+    public function isAtomFeed(): bool
+    {
+        return $this->possibleFileName() === 'atom-feed.xml';
+    }
+
+    public function isNotAtomFeed(): bool
+    {
+        return ! $this->isAtomFeed();
+    }
+
     public function fileSystem(): FileSystemInterface
     {
         return $this->fileSystem;

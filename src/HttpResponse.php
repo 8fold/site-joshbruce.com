@@ -21,6 +21,7 @@ use JoshBruce\Site\Content\Markdown;
 use JoshBruce\Site\PageComponents\Navigation;
 
 use JoshBruce\Site\Documents\Sitemap;
+use JoshBruce\Site\Documents\AtomFeed;
 
 class HttpResponse
 {
@@ -72,7 +73,8 @@ class HttpResponse
         if (
             $this->statusCode() === 200 and
             $localFile->isNotMarkdown() and
-            $this->request()->isNotSitemap()
+            $this->request()->isNotSitemap() and
+            $this->request()->isNotAtomFeed()
         ) {
             return $localFile->path();
 
@@ -105,6 +107,10 @@ class HttpResponse
 
         if ($this->request()->isSitemap()) {
             return Sitemap::create($this->request()->fileSystem());
+
+        } elseif ($this->request()->isAtomFeed()) {
+            return AtomFeed::create($this->request()->fileSystem());
+
         }
 
         $html = Document::create(
