@@ -1,5 +1,14 @@
 {
-  "authors": [],
+  "name": "8fold/site-joshbruce.com",
+  "description": "The site and content for joshbruce.com",
+  "type": "website",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Josh Bruce",
+      "email": "josh@8fold.pro"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "JoshBruce\\Site\\": "./src"
@@ -13,9 +22,9 @@
   "config": {
     "preferred-install": "dist"
   },
-  "description": "",
-  "license": "MIT",
-  "name": "vendor/project",
+
+
+
   "prefer-stable": true,
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
@@ -47,6 +56,5 @@
     "style": "./vendor/bin/phpcs --standard=phpcs.xml -p ./src",
     "stan": "./vendor/bin/phpstan analyze",
     "test": "./vendor/bin/pest"
-  },
-  "type": "library"
+  }
 }
