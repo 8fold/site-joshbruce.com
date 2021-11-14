@@ -5,6 +5,8 @@ created: 20211115
 
 # Guidelines and guardrails 
 
+{!!dateblock!!}
+
 This could also be called something like: X won’t save you. 
 
 The first time I used the turn of phrase a client had just finished telling me that if they could put the right process in place and execute it repeatedly, then all would be right with the world. I responded:
