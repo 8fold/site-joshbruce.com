@@ -11,7 +11,6 @@ use JoshBruce\Site\ServerGlobals;
 
 use JoshBruce\Site\Tests\TestFileSystem;
 
-
 it('can respond to sitemap request', function() {
     // serverGlobals('sitemap.xml');
 
@@ -40,11 +39,13 @@ it('can respond to sitemap request', function() {
         str_contains($xml->body(), '<urlset')
     )->toBeTrue();
 
+    $serverGlobals = ServerGlobals::init()->appUrl();
+
     expect(
         $xml->body()
     )->toBe(<<<xml
         <?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://joshbruce.com</loc><lastmod>2021-11-03</lastmod><priority>0.5</priority></url><url><loc>https://joshbruce.com/published-sub</loc><lastmod>2021-11-13</lastmod><priority>0.5</priority></url></urlset>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{$serverGlobals}</loc><lastmod>2021-11-03</lastmod><priority>0.5</priority></url><url><loc>{$serverGlobals}/published-sub</loc><lastmod>2021-11-13</lastmod><priority>0.5</priority></url></urlset>
         xml
     );
 })->group('request', 'response', 'sitemap');
