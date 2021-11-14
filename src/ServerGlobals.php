@@ -76,6 +76,7 @@ class ServerGlobals
             $globals = $this->globals();
             return strval($globals['APP_URL']);
         }
+        return '';
     }
 
     /**
