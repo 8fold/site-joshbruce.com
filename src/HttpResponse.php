@@ -168,8 +168,11 @@ class HttpResponse
         )->build();
 
         $html = str_replace(
-            'href="/',
-            'href="' . $this->request()->serverGlobals()->appUrl() . '/',
+            ['href="/', 'src="/'],
+            [
+                'href="' . $this->request()->serverGlobals()->appUrl() . '/',
+                'src="' . $this->request()->serverGlobals()->appUrl() . '/',
+            ],
             $html
         );
 
