@@ -36,7 +36,7 @@ class Sitemap
 
             }
 
-            if (strlen($date) === 0) {
+            if (is_string($date) and strlen($date) === 0) {
                 continue;
             }
 
