@@ -1,5 +1,5 @@
 ---
-title: Sub-folder content title
+title: Sub-folder content title 2
 ---
 
 # Heading in the way

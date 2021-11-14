@@ -6,6 +6,8 @@ namespace JoshBruce\Site;
 
 use DirectoryIterator;
 
+use Symfony\Component\Yaml\Yaml;
+
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
 
@@ -27,6 +29,113 @@ class File
         private FileSystemInterface $fileSystem
     ) {
     }
+
+    public function title(): string|false
+    {
+        if ($this->isNotFound()) {
+            // TODO: test
+            return false;
+        }
+
+        $mimetype = mime_content_type($this->path());
+        if ($mimetype !== 'text/plain') {
+            // directories return type of `directory`
+            // TODO: test
+            return false;
+        }
+
+        $contents = file_get_contents($this->path());
+        $parts    = explode('---', $contents);
+
+        if (count($parts) === 0 or strlen($parts[0]) > 0) {
+            //TODO: test
+            return false;
+        }
+
+        $metadata = Yaml::parse($parts[1]);
+
+        if (! array_key_exists('title', $metadata)) {
+            return '';
+        }
+        return $metadata['title'];
+    }
+
+    /**
+     * @todo: move to trait
+     */
+    public function path(bool $full = true): string
+    {
+        if ($full) {
+            return $this->localPath;
+        }
+        // TODO: test and verify used - returning empty string not an option.
+        return str_replace(
+            $this->fileSystem()->publicRoot(),
+            '',
+            $this->localPath
+        );
+    }
+
+    public function pageTitle(): string
+    {
+        $titles   = [];
+        $titles[] = $this->title();
+
+        $file = clone $this;
+        while ($file->canGoUp()) {
+            $file = $file->up();
+            $titles[] = $file->title();
+        }
+
+        $titles = array_filter($titles);
+        $titles = array_reverse($titles);
+        return implode(' | ', $titles);
+    }
+
+    private function up(): File
+    {
+        $parts = explode('/', $this->localPath);
+        $parts = array_slice($parts, 0, -2); // remove file name and one folder.
+        $localPath = implode('/', $parts);
+        return File::at(
+            $localPath . $this->contentFileName,
+            $this->fileSystem()
+        );
+    }
+
+    private function canGoUp(): bool
+    {
+        return $this->path(false) !== $this->contentFileName;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public function isNotMarkdown(): bool
     {
@@ -55,38 +164,6 @@ class File
     public function isNotFound(): bool
     {
         return ! $this->found();
-    }
-
-    /**
-     * @todo: move to trait
-     */
-    public function path(bool $full = true): string
-    {
-        if ($full) {
-            return $this->localPath;
-        }
-        // TODO: test and verify used - returning empty string not an option.
-        return str_replace(
-            $this->fileSystem()->publicRoot(),
-            '',
-            $this->localPath
-        );
-    }
-
-    public function canGoUp(): bool
-    {
-        return $this->path(false) !== $this->contentFileName;
-    }
-
-    public function up(): File
-    {
-        $parts = explode('/', $this->localPath);
-        $parts = array_slice($parts, 0, -2); // remove file name and one folder.
-        $localPath = implode('/', $parts);
-        return File::at(
-            $localPath . $this->contentFileName,
-            $this->fileSystem()
-        );
     }
 
     public function contents(): string

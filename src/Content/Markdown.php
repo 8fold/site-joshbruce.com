@@ -125,23 +125,23 @@ class Markdown
         return $this->body;
     }
 
-    public function pageTitle(): string
-    {
-        $titles   = [];
-        $titles[] = $this->frontMatter()->title();
-
-        $file = clone $this->file();
-        while ($file->canGoUp()) {
-            $file = $file->up();
-
-            $m = Markdown::for($file, $this->fileSystem());
-
-            $titles[] = $m->frontMatter()->title();
-        }
-
-        $titles = array_filter($titles);
-        return implode(' | ', $titles);
-    }
+//     public function pageTitle(): string
+//     {
+//         $titles   = [];
+//         $titles[] = $this->frontMatter()->title();
+//
+//         $file = clone $this->file();
+//         while ($file->canGoUp()) {
+//             $file = $file->up();
+//
+//             $m = Markdown::for($file, $this->fileSystem());
+//
+//             $titles[] = $m->frontMatter()->title();
+//         }
+//
+//         $titles = array_filter($titles);
+//         return implode(' | ', $titles);
+//     }
 
     public function description(): string
     {
