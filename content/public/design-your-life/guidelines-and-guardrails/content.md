@@ -100,7 +100,7 @@ I don’t change people or organizations; I can’t control them. I can only con
 
 Therefore, I bend myself in the areas I’m willing and able to meet them where they are. Then we both figure out where we want to go together and possibly for how long. I think I’ve grown a lot over the years due in no small part to the clients I’ve served. I hope they feel the same about me.
 
-Will we estimate work? Will it be in story points? Will we use micro-services? A todo list? Scrum, Kansan, something else?
+Will we estimate work? Will it be in story points? Will we use micro-services? A todo list? Scrum, kanban, something else?
 
 Who knows and who cares.
 
