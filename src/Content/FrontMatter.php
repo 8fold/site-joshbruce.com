@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Content;
 
+use DateTime;
+// use Carbon\Carbon;
+
 class FrontMatter
 {
     /**
@@ -45,26 +48,37 @@ class FrontMatter
         return [];
     }
 
-    public function created(): int|false
+    public function created(string $format = ''): string|int|false
     {
-        if ($this->hasMember('created')) {
-            return $this->frontMatter['created'];
-        }
-        return false;
+        return $this->dateField('created', $format);
     }
 
-    public function moved(): int|false
+    public function moved(string $format = ''): string|int|false
     {
-        if ($this->hasMember('moved')) {
-            return $this->frontMatter['moved'];
-        }
-        return false;
+        return $this->dateField('moved', $format);
     }
 
-    public function updated(): int|false
+    public function updated(string $format = ''): string|int|false
     {
-        if ($this->hasMember('updated')) {
-            return $this->frontMatter['updated'];
+        return $this->dateField('updated', $format);
+    }
+
+    private function dateField(
+        string $key,
+        string $format = ''
+    ): string|int|false {
+        if ($this->hasMember($key)) {
+            $date = $this->frontMatter[$key];
+            if (strlen($format) === 0) {
+                return $date;
+
+            }
+
+            $date = DateTime::createFromFormat('Ymd', strval($date));
+            if ($date) {
+                return $date->format($format);
+
+            }
         }
         return false;
     }

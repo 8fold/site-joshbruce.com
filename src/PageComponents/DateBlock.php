@@ -47,7 +47,7 @@ class DateBlock
 
     private static function timestamp(
         string $label,
-        int|false $date = false,
+        string|int|false $date = false,
         string $schemaProp = ''
     ): Element|string {
         if (! $date) {

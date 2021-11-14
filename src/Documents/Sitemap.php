@@ -26,10 +26,40 @@ class Sitemap
         $urls = [];
         foreach ($files as $file) {
             $path = strval(str_replace('/content.md', '', $file->path()));
+            $frontMatter = Markdown::for($file, $fileSystem)->frontMatter();
+            $date = '';
+            if ($frontMatter->hasMember('updated')) {
+                $date = $frontMatter->updated('Y-m-d');
+
+            } elseif ($frontMatter->hasMember('created')) {
+                $date = $frontMatter->created('Y-m-d');
+
+            }
+
+            if (is_string($date) and strlen($date) === 0) {
+                continue;
+            }
+
+            $priority = 0.5;
+            if (
+                str_starts_with(
+                    $file->path(false),
+                    '/finances/building-wealth-paycheck-to-paycheck/'
+                )
+            ) {
+                $priority = 0.0;
+
+            } elseif (str_starts_with($file->path(false), '/finances')) {
+                $priority = 0.1;
+
+            }
+
             $urls[$path] = Element::url(
                 Element::loc(
                     File::at($path, $fileSystem)->canonicalUrl()
-                )
+                ),
+                Element::lastmod($date),
+                Element::priority($priority)
             );
         }
         ksort($urls);
