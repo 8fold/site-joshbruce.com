@@ -107,7 +107,7 @@ class HttpResponse
             return Sitemap::create($this->request()->fileSystem());
         }
 
-        return Document::create(
+        $html = Document::create(
             $pageTitle
         )->head(
             Element::meta()->omitEndTag()->props(
@@ -166,6 +166,14 @@ class HttpResponse
                 )
             )
         )->build();
+
+        $html = str_replace(
+            'href="/',
+            'href="' . $this->request()->serverGlobals()->appUrl() . '/',
+            $html
+        );
+
+        return $html;
     }
 
     public function cssElement(): Element

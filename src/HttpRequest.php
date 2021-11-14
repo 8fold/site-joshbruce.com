@@ -148,7 +148,7 @@ class HttpRequest
         return ['GET'];
     }
 
-    private function serverGlobals(): ServerGlobals
+    public function serverGlobals(): ServerGlobals
     {
         return $this->serverGlobals;
     }

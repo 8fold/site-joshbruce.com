@@ -70,6 +70,15 @@ class ServerGlobals
         return '';
     }
 
+    public function appUrl(): string
+    {
+        if ($this->hasRequiredValues()) {
+            $globals = $this->globals();
+            return strval($globals['APP_URL']);
+        }
+        return '';
+    }
+
     /**
      * @return array<string, int|string>
      */

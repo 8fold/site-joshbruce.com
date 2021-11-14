@@ -7,6 +7,7 @@ namespace JoshBruce\Site;
 use DirectoryIterator;
 
 use JoshBruce\Site\FileSystemInterface;
+use JoshBruce\Site\ServerGlobals;
 
 class File
 {
@@ -131,7 +132,7 @@ class File
         return str_replace(
             $this->contentFileName,
             '',
-            'https://joshbruce.com' . $this->path(false)
+            ServerGlobals::init()->appUrl() . $this->path(false)
         );
     }
 
