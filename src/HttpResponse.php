@@ -169,7 +169,7 @@ class HttpResponse
 
         $html = str_replace(
             'href="/',
-            'href="'. $this->request()->serverGlobals()->appUrl() . '/',
+            'href="' . $this->request()->serverGlobals()->appUrl() . '/',
             $html
         );
 
