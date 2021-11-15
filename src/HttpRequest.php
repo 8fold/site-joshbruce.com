@@ -85,10 +85,27 @@ class HttpRequest
     public function localFile(): File
     {
         if (! isset($this->localFile)) {
-            $this->localFile = File::at(
+            $localFile = File::at(
                 localPath: $this->localPath(),
                 in: $this->fileSystem()
             );
+
+            if ($this->statusCode() === 200) {
+                $localFile = $localFile;
+
+            } elseif ($this->statusCode() === 404) {
+                $localPath = $this->fileSystem()->publicRoot() .
+                    '/error-404.md';
+                $localFile = File::at($localPath, $this->fileSystem());
+
+            } elseif ($this->statusCode() === 405) {
+                $localPath = $this->fileSystem()->publicRoot() .
+                    '/error-405.md';
+                $localFile = File::at($localPath, $this->fileSystem());
+
+            }
+
+            $this->localFile = $localFile;
         }
         return $this->localFile;
     }

@@ -47,7 +47,8 @@ class HttpResponse
     {
         $headers = [];
         if ($this->statusCode() === 200) {
-            $headers['Content-Type'] = $this->request()->localFile()->mimeType();
+            $headers['Content-Type'] = $this->request()->localFile()
+                ->mimeType()->type();
 
         } elseif ($this->statusCode() === 404) {
             $headers['Content-Type'] = 'text/html';
@@ -59,23 +60,8 @@ class HttpResponse
     public function body(): string
     {
         $localFile = $this->request()->localFile();
-        if (
-            $this->statusCode() === 200 and
-            $localFile->isNotMarkdown() and
-            $this->request()->isNotSitemap()
-        ) {
+        if ($localFile->mimetype()->isNotXml()) {
             return $localFile->path();
-
-        } elseif ($this->statusCode() === 404) {
-            $localPath = $this->request()->fileSystem()->publicRoot() .
-                '/error-404.md';
-            $localFile = File::at($localPath, $this->request()->fileSystem());
-
-        } elseif ($this->statusCode() === 405) {
-            $localPath = $this->request()->fileSystem()->publicRoot() .
-                '/error-405.md';
-            $localFile = File::at($localPath, $this->request()->fileSystem());
-
         }
 
         $template    = '';
