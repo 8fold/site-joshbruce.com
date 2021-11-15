@@ -6,10 +6,6 @@ namespace JoshBruce\Site;
 
 use Symfony\Component\Finder\Finder;
 
-// use SplFileInfo;
-
-// use Symfony\Component\Finder\Finder;
-
 interface FileSystemInterface
 {
     public static function projectRoot(): string;

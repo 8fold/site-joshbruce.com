@@ -41,11 +41,6 @@ class Generator
         private string $destination = ''
     ) {
         $projectRoot = FileSystem::init()->projectRoot();
-        // $projectRoot = FileSystem::projectRoot();
-
-        Dotenv::createImmutable($projectRoot)->load();
-
-        // $this->isNotTesting = ServerGlobals::init()->appEnv() !== 'test';
 
         $this->contentRoot = FileSystem::init()->publicRoot();
 

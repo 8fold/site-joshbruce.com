@@ -32,14 +32,14 @@ class HttpRequest
     private string $possibleFileName = '';
 
     public static function with(
-        ServerGlobals $serverGlobals,
+        ServerGlobalsInterface $serverGlobals,
         FileSystemInterface $in
     ): HttpRequest {
         return new HttpRequest($serverGlobals, $in);
     }
 
     private function __construct(
-        private ServerGlobals $serverGlobals,
+        private ServerGlobalsInterface $serverGlobals,
         private FileSystemInterface $fileSystem
     ) {
         if ($this->serverGlobals()->appEnv() !== 'production') {
@@ -85,25 +85,24 @@ class HttpRequest
     public function localFile(): File
     {
         if (! isset($this->localFile)) {
-            $localFile = File::at(
-                localPath: $this->localPath(),
-                in: $this->fileSystem()
-            );
-
-            if ($this->statusCode() === 200) {
-                $localFile = $localFile;
-
-            } elseif ($this->statusCode() === 404) {
-                $localPath = $this->fileSystem()->publicRoot() .
-                    '/error-404.md';
-                $localFile = File::at($localPath, $this->fileSystem());
-
-            } elseif ($this->statusCode() === 405) {
-                $localPath = $this->fileSystem()->publicRoot() .
-                    '/error-405.md';
-                $localFile = File::at($localPath, $this->fileSystem());
-
-            }
+            $localFile = match ($this->statusCode()) {
+                404 => File::at(
+                    $this->fileSystem()->publicRoot() . '/error-404.md',
+                    $this->fileSystem()
+                ),
+                405 => File::at(
+                    $this->fileSystem()->publicRoot() . '/error-405.md',
+                    $this->fileSystem()
+                ),
+                500 => File::at(
+                    $this->fileSystem()->publicRoot() . '/error-500.html',
+                    $this->fileSystem()
+                ),
+                default => File::at(
+                    $this->localPath(),
+                    $this->fileSystem()
+                )
+            };
 
             $this->localFile = $localFile;
         }
@@ -175,7 +174,7 @@ class HttpRequest
         return ['GET'];
     }
 
-    public function serverGlobals(): ServerGlobals
+    public function serverGlobals(): ServerGlobalsInterface
     {
         return $this->serverGlobals;
     }

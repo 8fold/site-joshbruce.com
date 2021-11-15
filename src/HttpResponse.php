@@ -15,6 +15,7 @@ use JoshBruce\Site\HttpRequest;
 
 use JoshBruce\Site\Documents\Sitemap;
 use JoshBruce\Site\Documents\HtmlDefault;
+use JoshBruce\Site\Documents\FullNav;
 
 class HttpResponse
 {
@@ -58,14 +59,19 @@ class HttpResponse
             return $localFile->path();
         }
 
+        if ($this->statusCode() === 500) {
+            return $localFile->contents();
+        }
+
         $template  = $localFile->template();
         if (strlen($template) === 0) {
             $template = 'default';
         }
 
         $xml = match ($template) {
-            'sitemap' => Sitemap::create($localFile),
-            default => HtmlDefault::create($localFile)
+            'sitemap'  => Sitemap::create($localFile),
+            'full-nav' => FullNav::create($localFile),
+            default    => HtmlDefault::create($localFile)
         };
 
         $xml = str_replace(

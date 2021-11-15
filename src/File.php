@@ -71,41 +71,17 @@ class File
                 return [];
             }
 
-            $parts    = explode('---', $contents);
-            $metadata = Yaml::parse($parts[1]);
-            $this->frontMatter = $metadata;
+            $parts = explode('---', $contents);
+            if (count($parts) === 1) {
+                $this->frontMatter = [];
+
+            } else {
+                $metadata = Yaml::parse($parts[1]);
+                $this->frontMatter = $metadata;
+
+            }
         }
         return $this->frontMatter;
-    }
-
-    public function isNotMarkdown(): bool
-    {
-        if ($this->isNotFound()) {
-            // TODO: test
-            return false;
-        }
-
-        $mimetype = mime_content_type($this->path());
-        if ($mimetype !== 'text/plain') {
-            // directories return type of `directory`
-            // TODO: test
-            return false;
-        }
-
-        $contents = file_get_contents($this->path());
-        $parts    = explode('---', $contents);
-
-        if (count($parts) === 0 or strlen($parts[0]) > 0) {
-            //TODO: test
-            return false;
-        }
-
-        $metadata = Yaml::parse($parts[1]);
-
-        if (! array_key_exists('title', $metadata)) {
-            return '';
-        }
-        return $metadata['title'];
     }
 
     /**
@@ -124,19 +100,29 @@ class File
         );
     }
 
+    public function title(): string
+    {
+        if (array_key_exists('title', $this->frontMatter())) {
+            $frontMatter = $this->frontMatter();
+            return $frontMatter['title'];
+        }
+        return '';
+    }
+
     public function pageTitle(): string
     {
         $titles   = [];
         $titles[] = $this->title();
 
-        $file = clone $this;
-        while ($file->canGoUp()) {
-            $file = $file->up();
-            $titles[] = $file->title();
+        if (! str_contains($this->path(false), '/error-')) {
+            $file = clone $this;
+            while ($file->canGoUp()) {
+                $file = $file->up();
+                $titles[] = $file->title();
+            }
         }
 
         $titles = array_filter($titles);
-        $titles = array_reverse($titles);
         return implode(' | ', $titles);
     }
 

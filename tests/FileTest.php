@@ -33,7 +33,7 @@ it('generates expected titles', function() {
     expect(
        File::at(localPath: $path . '/content.md', in: $fileSystem)->pageTitle()
     )->toBe(
-       'Test content root | Sub-folder content title | Sub-folder content title 2'
+       'Sub-folder content title 2 | Sub-folder content title | Test content root'
     );
 })->group('file');
 
