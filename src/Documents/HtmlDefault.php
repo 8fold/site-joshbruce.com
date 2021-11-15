@@ -17,8 +17,7 @@ class HtmlDefault
 {
     public static function create(File $file): string
     {
-        $template    = '';
-        $pageTitle   = '';
+        $pageTitle   = $file->pageTitle();
         $html        = '';
         $description = '';
         if ($file->isMarkdown()) {
@@ -26,8 +25,6 @@ class HtmlDefault
                 file: $file,
                 in: $file->fileSystem()
             );
-            $template    = $markdown->frontMatter()->template();
-            $pageTitle   = $markdown->pageTitle();
             $html        = $markdown->html();
             $description = $markdown->description();
         }
@@ -35,6 +32,35 @@ class HtmlDefault
         $html = Document::create(
             $pageTitle
         )->head(
+            ...self::baseHead($description)
+        )->body(
+            Element::a('menu')->props('href #main-nav', 'id content-top'),
+            (str_replace('content.md', '', $file->path(false)) !== '/')
+                ? Element::article(
+                    $html
+                )->props('typeof BlogPosting', 'vocab https://schema.org/')
+                : Element::main(
+                    $html
+                ),
+            Element::a('top')->props('href #content-top', 'id go-to-top'),
+            Navigation::create('main.md', $file->fileSystem()),
+            Element::footer(
+                Element::p(
+                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
+                        'All rights reserved.'
+                )
+            )
+        )->build();
+
+        return $html;
+    }
+
+    /**
+     * @return Element[]
+     */
+    public static function baseHead(string $description): array
+    {
+        return [
             Element::meta()->omitEndTag()->props(
                 'name viewport',
                 'content width=device-width,initial-scale=1'
@@ -64,38 +90,10 @@ class HtmlDefault
                 'sizes 16x16'
             ),
             self::cssElement()
-        )->body(
-            (strlen($template) === 0)
-                ? Element::a('menu')->props('href #main-nav', 'id content-top')
-                : '',
-            (
-                strlen($template) === 0 and
-                str_replace('content.md', '', $file->path(false)) !== '/'
-            )
-                ? Element::article(
-                    $html
-                )->props('typeof BlogPosting', 'vocab https://schema.org/')
-                : Element::main(
-                    $html
-                ),
-            (strlen($template) === 0)
-                ? Element::a('top')->props('href #content-top', 'id go-to-top')
-                : '',
-            (strlen($template) === 0)
-                ? Navigation::create('main.md', $file->fileSystem())
-                : '',
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
-        )->build();
-
-        return $html;
+        ];
     }
 
-    private static function cssElement(): Element
+    public static function cssElement(): Element
     {
         $cssPath  = '/assets/css/main.min.css';
         // $filePath = $contentRoot . $cssPath;

@@ -4,24 +4,26 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-class ServerGlobals
+use JoshBruce\Site\ServerGlobalsInterface;
+
+class ServerGlobals implements ServerGlobalsInterface
 {
     /**
      * @var array<string, int|string>
      */
-    private array $globals = [];
+    protected array $globals = [];
 
-    public static function init(): ServerGlobals
+    public static function init(): ServerGlobalsInterface
     {
-        return new ServerGlobals();
+        return new static();
     }
 
-    private function __construct()
+    final private function __construct()
     {
         $this->globals = $_SERVER;
     }
 
-    public function withRequestUri(string $uri): ServerGlobals
+    public function withRequestUri(string $uri): ServerGlobalsInterface
     {
         $this->globals = [];
 
@@ -35,7 +37,7 @@ class ServerGlobals
         return strval($globals['REQUEST_URI']);
     }
 
-    public function withRequestMethod(string $method): ServerGlobals
+    public function withRequestMethod(string $method): ServerGlobalsInterface
     {
         $this->globals = [];
 

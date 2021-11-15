@@ -71,12 +71,105 @@ class File
                 return [];
             }
 
-            $parts    = explode('---', $contents);
-            $metadata = Yaml::parse($parts[1]);
-            $this->frontMatter = $metadata;
+            $parts = explode('---', $contents);
+            if (count($parts) === 1) {
+                $this->frontMatter = [];
+
+            } else {
+                $metadata = Yaml::parse($parts[1]);
+                $this->frontMatter = $metadata;
+
+            }
         }
         return $this->frontMatter;
     }
+
+    /**
+     * @todo: move to trait
+     */
+    public function path(bool $full = true): string
+    {
+        if ($full) {
+            return $this->localPath;
+        }
+        // TODO: test and verify used - returning empty string not an option.
+        return str_replace(
+            $this->fileSystem()->publicRoot(),
+            '',
+            $this->localPath
+        );
+    }
+
+    public function title(): string
+    {
+        if (array_key_exists('title', $this->frontMatter())) {
+            $frontMatter = $this->frontMatter();
+            return $frontMatter['title'];
+        }
+        return '';
+    }
+
+    public function pageTitle(): string
+    {
+        $titles   = [];
+        $titles[] = $this->title();
+
+        if (! str_contains($this->path(false), '/error-')) {
+            $file = clone $this;
+            while ($file->canGoUp()) {
+                $file = $file->up();
+                $titles[] = $file->title();
+            }
+        }
+
+        $titles = array_filter($titles);
+        return implode(' | ', $titles);
+    }
+
+    private function up(): File
+    {
+        $parts = explode('/', $this->localPath);
+        $parts = array_slice($parts, 0, -2); // remove file name and one folder.
+        $localPath = implode('/', $parts);
+        return File::at(
+            $localPath . $this->contentFileName,
+            $this->fileSystem()
+        );
+    }
+
+    private function canGoUp(): bool
+    {
+        return $this->path(false) !== $this->contentFileName;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public function isNotMarkdown(): bool
     {
@@ -105,38 +198,6 @@ class File
     public function isNotFound(): bool
     {
         return ! $this->found();
-    }
-
-    /**
-     * @todo: move to trait
-     */
-    public function path(bool $full = true): string
-    {
-        if ($full) {
-            return $this->localPath;
-        }
-        // TODO: test and verify used - returning empty string not an option.
-        return str_replace(
-            $this->fileSystem()->publicRoot(),
-            '',
-            $this->localPath
-        );
-    }
-
-    public function canGoUp(): bool
-    {
-        return $this->path(false) !== $this->contentFileName;
-    }
-
-    public function up(): File
-    {
-        $parts = explode('/', $this->localPath);
-        $parts = array_slice($parts, 0, -2); // remove file name and one folder.
-        $localPath = implode('/', $parts);
-        return File::at(
-            $localPath . $this->contentFileName,
-            $this->fileSystem()
-        );
     }
 
     public function contents(): string
