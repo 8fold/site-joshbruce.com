@@ -7,7 +7,6 @@ namespace JoshBruce\Site\Documents;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\HttpRequest;
 use JoshBruce\Site\File;
 
 use JoshBruce\Site\PageComponents\Navigation;
@@ -16,7 +15,7 @@ use JoshBruce\Site\Content\Markdown;
 
 class HtmlDefault
 {
-    public static function create(File $file, HttpRequest $request): string
+    public static function create(File $file): string
     {
         $template    = '';
         $pageTitle   = '';
@@ -92,15 +91,6 @@ class HtmlDefault
                 )
             )
         )->build();
-
-        $html = str_replace(
-            ['href="/', 'src="/'],
-            [
-                'href="' . $request->serverGlobals()->appUrl() . '/',
-                'src="' . $request->serverGlobals()->appUrl() . '/',
-            ],
-            $html
-        );
 
         return $html;
     }

@@ -63,10 +63,21 @@ class HttpResponse
             $template = 'default';
         }
 
-        return match ($template) {
-            'sitemap' => Sitemap::create($localFile, $this->request()),
-            default => HtmlDefault::create($localFile, $this->request())
+        $xml = match ($template) {
+            'sitemap' => Sitemap::create($localFile),
+            default => HtmlDefault::create($localFile)
         };
+
+        $xml = str_replace(
+            ['href="/', 'src="/'],
+            [
+                'href="' . $this->request()->serverGlobals()->appUrl() . '/',
+                'src="' . $this->request()->serverGlobals()->appUrl() . '/',
+            ],
+            $xml
+        );
+
+        return $xml;
     }
 
     public function psrResponse(): ResponseInterface

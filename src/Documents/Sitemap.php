@@ -11,7 +11,6 @@ use Eightfold\XMLBuilder\Element;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
-use JoshBruce\Site\HttpRequest;
 use JoshBruce\Site\File;
 use JoshBruce\Site\FileSystemInterface;
 
@@ -19,7 +18,7 @@ use JoshBruce\Site\Content\Markdown;
 
 class Sitemap
 {
-    public static function create(File $file, HttpRequest $request): string
+    public static function create(File $file): string
     {
         $fileSystem = $file->fileSystem();
         $finder = self::finder($fileSystem);
@@ -117,7 +116,7 @@ class Sitemap
             }
 
             $file = File::at($file->getPathname(), $fileSystem);
-            $files[$path] = $file; // $file->canonicalUrl();
+            $files[$path] = $file;
         }
 
         ksort($files);
