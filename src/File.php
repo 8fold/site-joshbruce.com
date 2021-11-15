@@ -10,6 +10,7 @@ use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
+use JoshBruce\Site\Content\Mimetype;
 
 class File
 {
@@ -17,7 +18,12 @@ class File
 
     private string $contents = '';
 
-    private string $mimetype = '';
+    private Mimetype $mimetype;
+
+    /**
+     * @var array<string, mixed>
+     */
+    private array $frontMatter = [];
 
     public static function at(string $localPath, FileSystemInterface $in): File
     {
@@ -30,7 +36,49 @@ class File
     ) {
     }
 
-    public function title(): string|false
+    public function fileSystem(): FileSystemInterface
+    {
+        return $this->fileSystem;
+    }
+
+    public function isNotXml(): bool
+    {
+        return $this->mimetype()->isNotXml();
+    }
+
+    public function template(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('template', $frontMatter)) {
+            return $frontMatter['template'];
+        }
+        return '';
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function frontMatter(): array
+    {
+        if (count($this->frontMatter) === 0) {
+            if ($this->isNotXml()) {
+                // return as early as possible
+                return [];
+            }
+
+            $contents = file_get_contents($this->path());
+            if (is_bool($contents)) {
+                return [];
+            }
+
+            $parts    = explode('---', $contents);
+            $metadata = Yaml::parse($parts[1]);
+            $this->frontMatter = $metadata;
+        }
+        return $this->frontMatter;
+    }
+
+    public function isNotMarkdown(): bool
     {
         if ($this->isNotFound()) {
             // TODO: test
@@ -178,28 +226,10 @@ class File
         return $this->contents;
     }
 
-    public function mimetype(): string
+    public function mimetype(): Mimetype
     {
-        if (strlen($this->mimetype) === 0) {
-            $type = mime_content_type($this->path());
-            if (is_bool($type) and $type === false) {
-                return '';
-            }
-
-            if ($type === 'text/plain') {
-                $extensionMap = [
-                    'md'  => 'text/html',
-                    'css' => 'text/css',
-                    'js'  => 'text/javascript',
-                    'xml' => 'application/xml'
-                ];
-
-                $parts     = explode('.', $this->path());
-                $extension = array_pop($parts);
-
-                $type = $extensionMap[$extension];
-            }
-            $this->mimetype = $type;
+        if (! isset($this->mimetype)) {
+            $this->mimetype = Mimetype::for($this->path());
         }
         return $this->mimetype;
     }
@@ -236,10 +266,5 @@ class File
             );
         }
         return $files;
-    }
-
-    private function fileSystem(): FileSystemInterface
-    {
-        return $this->fileSystem;
     }
 }
