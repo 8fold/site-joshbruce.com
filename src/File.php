@@ -8,6 +8,7 @@ use DirectoryIterator;
 
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
+use JoshBruce\Site\Content\Mimetype;
 
 class File
 {
@@ -15,7 +16,7 @@ class File
 
     private string $contents = '';
 
-    private string $mimetype = '';
+    private Mimetype $mimetype;
 
     public static function at(string $localPath, FileSystemInterface $in): File
     {
@@ -101,28 +102,10 @@ class File
         return $this->contents;
     }
 
-    public function mimetype(): string
+    public function mimetype(): Mimetype
     {
-        if (strlen($this->mimetype) === 0) {
-            $type = mime_content_type($this->path());
-            if (is_bool($type) and $type === false) {
-                return '';
-            }
-
-            if ($type === 'text/plain') {
-                $extensionMap = [
-                    'md'  => 'text/html',
-                    'css' => 'text/css',
-                    'js'  => 'text/javascript',
-                    'xml' => 'application/xml'
-                ];
-
-                $parts     = explode('.', $this->path());
-                $extension = array_pop($parts);
-
-                $type = $extensionMap[$extension];
-            }
-            $this->mimetype = $type;
+        if (! isset($this->mimetype)) {
+            $this->mimetype = Mimetype::for($this->path());
         }
         return $this->mimetype;
     }
