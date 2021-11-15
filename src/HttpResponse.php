@@ -11,16 +11,10 @@ use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7\Response as PsrResponse;
 use Nyholm\Psr7\Stream as PsrStream;
 
-use Eightfold\HTMLBuilder\Document;
-use Eightfold\HTMLBuilder\Element;
-
-use JoshBruce\Site\File;
-
-use JoshBruce\Site\Content\Markdown;
-
-use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\HttpRequest;
 
 use JoshBruce\Site\Documents\Sitemap;
+use JoshBruce\Site\Documents\HtmlDefault;
 
 class HttpResponse
 {
@@ -60,111 +54,19 @@ class HttpResponse
     public function body(): string
     {
         $localFile = $this->request()->localFile();
-        if ($localFile->mimetype()->isNotXml()) {
+        if ($localFile->isNotXml()) {
             return $localFile->path();
         }
 
-        $template    = '';
-        $pageTitle   = '';
-        $html        = '';
-        $description = '';
-        if ($localFile->isMarkdown()) {
-            $markdown  = Markdown::for(
-                file: $localFile,
-                in: $this->request()->fileSystem()
-            );
-            $template    = $markdown->frontMatter()->template();
-            $pageTitle   = $markdown->pageTitle();
-            $html        = $markdown->html();
-            $description = $markdown->description();
+        $template  = $localFile->template();
+        if (strlen($template) === 0) {
+            $template = 'default';
         }
 
-        if ($this->request()->isSitemap()) {
-            return Sitemap::create($this->request()->fileSystem());
-        }
-
-        $html = Document::create(
-            $pageTitle
-        )->head(
-            Element::meta()->omitEndTag()->props(
-                'name viewport',
-                'content width=device-width,initial-scale=1'
-            ),
-            Element::meta()->omitEndTag()->props(
-                'name description',
-                'content ' . $description
-            ),
-            Element::link()->omitEndTag()->props(
-                'type image/x-icon',
-                'rel icon',
-                'href /assets/favicons/favicon.ico'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel apple-touch-icon',
-                'href /assets/favicons/apple-touch-icon.png',
-                'sizes 180x180'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-32x32.png',
-                'sizes 32x32'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-16x16.png',
-                'sizes 16x16'
-            ),
-            $this->cssElement()
-        )->body(
-            (strlen($template) === 0)
-                ? Element::a('menu')->props('href #main-nav', 'id content-top')
-                : '',
-            (
-                strlen($template) === 0 and
-                str_replace('content.md', '', $localFile->path(false)) !== '/'
-            )
-                ? Element::article(
-                    $html
-                )->props('typeof BlogPosting', 'vocab https://schema.org/')
-                : Element::main(
-                    $html
-                ),
-            (strlen($template) === 0)
-                ? Element::a('top')->props('href #content-top', 'id go-to-top')
-                : '',
-            (strlen($template) === 0)
-                ? Navigation::create('main.md', $this->request()->fileSystem())
-                : '',
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
-        )->build();
-
-        $html = str_replace(
-            ['href="/', 'src="/'],
-            [
-                'href="' . $this->request()->serverGlobals()->appUrl() . '/',
-                'src="' . $this->request()->serverGlobals()->appUrl() . '/',
-            ],
-            $html
-        );
-
-        return $html;
-    }
-
-    public function cssElement(): Element
-    {
-        $cssPath  = '/assets/css/main.min.css';
-        // $filePath = $contentRoot . $cssPath;
-        // TODO: should be last commit of CSS file - another reason to place
-        //       content in same folder as rest of project.
-        $query = round(microtime(true));
-
-        return Element::link()->omitEndTag()
-            ->props('rel stylesheet', "href {$cssPath}?v={$query}");
+        return match ($template) {
+            'sitemap' => Sitemap::create($localFile, $this->request()),
+            default => HtmlDefault::create($localFile, $this->request())
+        };
     }
 
     public function psrResponse(): ResponseInterface

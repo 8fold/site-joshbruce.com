@@ -6,6 +6,8 @@ namespace JoshBruce\Site;
 
 use DirectoryIterator;
 
+use Symfony\Component\Yaml\Yaml;
+
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
 use JoshBruce\Site\Content\Mimetype;
@@ -18,6 +20,11 @@ class File
 
     private Mimetype $mimetype;
 
+    /**
+     * @var array<string, mixed>
+     */
+    private array $frontMatter = [];
+
     public static function at(string $localPath, FileSystemInterface $in): File
     {
         return new File($localPath, $in);
@@ -27,6 +34,48 @@ class File
         private string $localPath,
         private FileSystemInterface $fileSystem
     ) {
+    }
+
+    public function fileSystem(): FileSystemInterface
+    {
+        return $this->fileSystem;
+    }
+
+    public function isNotXml(): bool
+    {
+        return $this->mimetype()->isNotXml();
+    }
+
+    public function template(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('template', $frontMatter)) {
+            return $frontMatter['template'];
+        }
+        return '';
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function frontMatter(): array
+    {
+        if (count($this->frontMatter) === 0) {
+            if ($this->isNotXml()) {
+                // return as early as possible
+                return [];
+            }
+
+            $contents = file_get_contents($this->path());
+            if (is_bool($contents)) {
+                return [];
+            }
+
+            $parts    = explode('---', $contents);
+            $metadata = Yaml::parse($parts[1]);
+            $this->frontMatter = $metadata;
+        }
+        return $this->frontMatter;
     }
 
     public function isNotMarkdown(): bool
@@ -142,10 +191,5 @@ class File
             );
         }
         return $files;
-    }
-
-    private function fileSystem(): FileSystemInterface
-    {
-        return $this->fileSystem;
     }
 }
