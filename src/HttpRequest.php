@@ -52,12 +52,22 @@ class HttpRequest
         }
     }
 
-    public function isMissingRequiredValues(): bool
+    public function statusCode(): int
     {
-        return $this->serverGlobals()->isMissingRequiredValues();
+        if ($this->serverGlobals()->isMissingRequiredValues()) {
+            return 500;
+
+        } elseif ($this->isUnsupportedMethod()) {
+            return 405;
+
+        } elseif ($this->isNotFound()) {
+            return 404;
+
+        }
+        return 200;
     }
 
-    public function isUnsupportedMethod(): bool
+    private function isUnsupportedMethod(): bool
     {
         $requestMethod = strtoupper($this->psrRequest()->getMethod());
         $isSupported   =  in_array($requestMethod, $this->supportedMethods());
@@ -65,7 +75,7 @@ class HttpRequest
         return ! $isSupported;
     }
 
-    public function isNotFound(): bool
+    private function isNotFound(): bool
     {
         $isFound = file_exists($this->localPath()) and
             is_file($this->localPath());

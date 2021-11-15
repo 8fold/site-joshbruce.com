@@ -37,17 +37,7 @@ class HttpResponse
 
     public function statusCode(): int
     {
-        if ($this->request()->isMissingRequiredValues()) {
-            return 500;
-
-        } elseif ($this->request()->isUnsupportedMethod()) {
-            return 405;
-
-        } elseif ($this->request()->isNotFound()) {
-            return 404;
-
-        }
-        return 200;
+        return $this->request()->statusCode();
     }
 
     /**
