@@ -28,7 +28,7 @@ class FullNav
                 in: $file->fileSystem()
             );
             $html        = $markdown->html();
-            $description = $markdown->description();
+            $description = $file->description();
         }
 
         $html = Document::create(

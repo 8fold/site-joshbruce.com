@@ -10,23 +10,22 @@ use JoshBruce\Site\File;
 use JoshBruce\Site\FileSystemInterface;
 
 use JoshBruce\Site\Content\Markdown;
-use JoshBruce\Site\Content\FrontMatter;
 
 class OriginalContentNotice
 {
     public static function create(
-        FrontMatter $frontMatter,
+        File $file,
         FileSystemInterface $fileSystem
     ): string {
         $contentRoot = $fileSystem->contentRoot();
         $noticesRoot = $contentRoot . '/notices';
 
-        $file = File::at($noticesRoot . '/original.md', $fileSystem);
-        if ($file->isNotFound()) {
+        $f = File::at($noticesRoot . '/original.md', $fileSystem);
+        if ($f->isNotFound()) {
             return '';
         }
 
-        $original = $frontMatter->original();
+        $original = $file->original();
         list($href, $platform) = explode(' ', $original, 2);
 
         $body = Markdown::for($file, $fileSystem)->body();

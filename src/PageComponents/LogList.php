@@ -36,7 +36,7 @@ class LogList
 
                 $logLinks[] = Element::li(
                     Element::a(
-                        $markdown->frontMatter()->title()
+                        $file->title()
                     )->props('href ' . $linkPath)
                 );
             }

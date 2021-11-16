@@ -6,13 +6,13 @@ namespace JoshBruce\Site\PageComponents;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\Content\FrontMatter;
+use JoshBruce\Site\File;
 
 class Data
 {
-    public static function create(FrontMatter $frontMatter): string
+    public static function create(File $file): string
     {
-        $data = $frontMatter->data();
+        $data = $file->data();
 
         $listHeadings = [];
         foreach ($data as $row) {
