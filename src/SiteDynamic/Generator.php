@@ -126,13 +126,18 @@ class Generator extends Command
                 continue;
             }
 
+            $fileContents = file_get_contents($file->path());
+            if (! $fileContents) {
+                return false;
+            }
+
             $body = str_replace(
                 [
                     "ErrorDocument 404 /error-404.html\n",
                     "ErrorDocument 405 /error-405.html\n"
                 ],
                 ['', ''],
-                file_get_contents($file->path())
+                $fileContents
             );
 
             $body .= <<<plain
@@ -162,28 +167,9 @@ class Generator extends Command
 
                 plain;
 
-//
-//             if ($uri === '/') {
-//                 $uri = '';
-//             }
-//
-//             $body = HttpResponse::from(
-//                 HttpRequest::with(
-//                     ServerGlobals::init()->withRequestUri($uri),
-//                     $this->fileSystem()
-//                 )
-//             )->body();
-//
-//             $fDestination = str_replace(
-//                 ['content.md', '.md'],
-//                 ['index.html', '.html'],
-//                 $fDestination
-//             );
-//
             $this->leagueFileSystem()->write($fDestination, $body);
 
             $progressBar->advance();
-
         }
 
         $output->writeln('');
