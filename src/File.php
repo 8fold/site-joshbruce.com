@@ -47,6 +47,24 @@ class File
         return $this->mimetype()->isNotXml();
     }
 
+    /**
+     * @todo: verify can be deprecated
+     */
+    public function isMarkdown(): bool
+    {
+        return str_ends_with($this->fileName(), '.md');
+    }
+
+    public function found(): bool
+    {
+        return file_exists($this->path()) and is_file($this->path());
+    }
+
+    public function isNotFound(): bool
+    {
+        return ! $this->found();
+    }
+
     public function created(string $format = ''): string|int|false
     {
         return $this->dateField('created', $format);
@@ -224,11 +242,28 @@ class File
         );
     }
 
+    public function canonicalUrl(): string
+    {
+        return str_replace(
+            $this->contentFileName,
+            '',
+            ServerGlobals::init()->appUrl() . $this->path(false)
+        );
+    }
+
     public function filename(): string
     {
         $path = $this->path();
         $parts = explode('/', $path);
         return array_pop($parts);
+    }
+
+    public function mimetype(): Mimetype
+    {
+        if (! isset($this->mimetype)) {
+            $this->mimetype = Mimetype::for($this->path());
+        }
+        return $this->mimetype;
     }
 
     public function title(): string
@@ -273,7 +308,6 @@ class File
         return $this->contents;
     }
 
-
     private function up(): File
     {
         $parts = explode('/', $this->localPath);
@@ -288,81 +322,6 @@ class File
     private function canGoUp(): bool
     {
         return $this->path(false) !== $this->contentFileName;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public function isNotMarkdown(): bool
-    {
-        return ! $this->isMarkdown();
-    }
-
-    public function isMarkdown(): bool
-    {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.md');
-    }
-
-    public function isHtml(): bool
-    {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.html');
-    }
-
-    public function found(): bool
-    {
-        return file_exists($this->path()) and is_file($this->path());
-    }
-
-    public function isNotFound(): bool
-    {
-        return ! $this->found();
-    }
-
-    public function mimetype(): Mimetype
-    {
-        if (! isset($this->mimetype)) {
-            $this->mimetype = Mimetype::for($this->path());
-        }
-        return $this->mimetype;
-    }
-
-    public function canonicalUrl(): string
-    {
-        return str_replace(
-            $this->contentFileName,
-            '',
-            ServerGlobals::init()->appUrl() . $this->path(false)
-        );
     }
 
     /**
