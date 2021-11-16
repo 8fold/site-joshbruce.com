@@ -74,7 +74,8 @@ class Generator extends Command
                 ''
             ]);
 
-            return Command::SUCCESS;
+            return $this->getApplication()->find('compile:dynamic')
+                ->run($input, $output);
         }
 
         $output->writeln(<<<bash
