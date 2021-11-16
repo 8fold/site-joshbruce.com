@@ -74,8 +74,16 @@ class Generator extends Command
                 ''
             ]);
 
-            return $this->getApplication()->find('compile:dynamic')
-                ->run($input, $output);
+            $app = $this->getApplication();
+            if ($app === null) {
+                $output->writeln([
+                    '',
+                    '!! Dynamic site compilation did NOT run !!',
+                    ''
+                ]);
+                return Command::SUCCESS;
+            }
+            return $app->find('compile:dynamic')->run($input, $output);
         }
 
         $output->writeln(<<<bash
