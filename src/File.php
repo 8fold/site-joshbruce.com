@@ -68,7 +68,7 @@ class File
     ): string|int|false {
         if ($this->frontMatterHasMember($key)) {
             $date = $this->frontMatter[$key];
-            if (strlen($format) === 0) {
+            if (strlen($format) === 0 and is_int($date)) {
                 return $date;
             }
 
@@ -84,16 +84,23 @@ class File
     {
         if ($this->frontMatterHasMember('template')) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['template'];
+            $template = $frontMatter['template'];
+            if (is_string($template)) {
+                return $template;
+            }
         }
         return '';
     }
 
     public function description(): string
     {
+        $description = '';
         if ($this->frontMatterHasMember('description')) {
             $frontMatter = $this->frontMatter();
-            $description = $frontMatter['description'];
+            $desc = $frontMatter['description'];
+            if (is_string($desc)) {
+                $description = $desc;
+            }
 
         } else {
             $body = $this->contents();
@@ -155,7 +162,10 @@ class File
     {
         if ($this->frontMatterHasMember('data')) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['data'];
+            $data = $frontMatter['data'];
+            if (is_array($data)) {
+                return $data;
+            }
         }
         return [];
     }
@@ -182,6 +192,7 @@ class File
             }
 
             $parts = explode('---', $contents);
+
             if (count($parts) === 1) {
                 $this->contents = $parts[0];
                 $this->frontMatter = [];
@@ -189,8 +200,9 @@ class File
             } else {
                 $this->contents = $parts[2];
                 $metadata = Yaml::parse($parts[1]);
-                $this->frontMatter = $metadata;
-
+                if (is_array($metadata)) {
+                    $this->frontMatter = $metadata;
+                }
             }
         }
         return $this->frontMatter;
@@ -223,7 +235,10 @@ class File
     {
         if (array_key_exists('title', $this->frontMatter())) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['title'];
+            $title = $frontMatter['title'];
+            if (is_string($title)) {
+                return $title;
+            }
         }
         return '';
     }
