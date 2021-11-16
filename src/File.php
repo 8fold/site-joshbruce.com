@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
+use DateTime;
 use DirectoryIterator;
+
+use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
+use JoshBruce\Site\Content\Mimetype;
 
 class File
 {
@@ -15,7 +19,12 @@ class File
 
     private string $contents = '';
 
-    private string $mimetype = '';
+    private Mimetype $mimetype;
+
+    /**
+     * @var array<string, mixed>
+     */
+    private array $frontMatter = [];
 
     public static function at(string $localPath, FileSystemInterface $in): File
     {
@@ -28,23 +37,22 @@ class File
     ) {
     }
 
-    public function isNotMarkdown(): bool
+    public function fileSystem(): FileSystemInterface
     {
-        return ! $this->isMarkdown();
+        return $this->fileSystem;
     }
 
+    public function isNotXml(): bool
+    {
+        return $this->mimetype()->isNotXml();
+    }
+
+    /**
+     * @todo: verify can be deprecated
+     */
     public function isMarkdown(): bool
     {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.md');
-    }
-
-    public function isHtml(): bool
-    {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.html');
+        return str_ends_with($this->fileName(), '.md');
     }
 
     public function found(): bool
@@ -55,6 +63,167 @@ class File
     public function isNotFound(): bool
     {
         return ! $this->found();
+    }
+
+    public function created(string $format = ''): string|int|false
+    {
+        return $this->dateField('created', $format);
+    }
+
+    public function updated(string $format = ''): string|int|false
+    {
+        return $this->dateField('updated', $format);
+    }
+
+    public function moved(string $format = ''): string|int|false
+    {
+        return $this->dateField('moved', $format);
+    }
+
+    private function dateField(
+        string $key,
+        string $format = ''
+    ): string|int|false {
+        if ($this->frontMatterHasMember($key)) {
+            $date = $this->frontMatter[$key];
+            if (strlen($format) === 0 and is_int($date)) {
+                return $date;
+            }
+
+            $date = DateTime::createFromFormat('Ymd', strval($date));
+            if ($date) {
+                return $date->format($format);
+            }
+        }
+        return false;
+    }
+
+    public function template(): string
+    {
+        if ($this->frontMatterHasMember('template')) {
+            $frontMatter = $this->frontMatter();
+            $template = $frontMatter['template'];
+            if (is_string($template)) {
+                return $template;
+            }
+        }
+        return '';
+    }
+
+    public function description(): string
+    {
+        $description = '';
+        if ($this->frontMatterHasMember('description')) {
+            $frontMatter = $this->frontMatter();
+            $desc = $frontMatter['description'];
+            if (is_string($desc)) {
+                $description = $desc;
+            }
+
+        } else {
+            $body = $this->contents();
+            $description = preg_filter(
+                ["/#(.*)\n/", "/{!!(.*)!!}/"],
+                ['', ''],
+                $body
+            );
+            if (is_string($description)) {
+                $parts = explode("\n", $description);
+                $parts = array_filter($parts);
+                $description = implode(' ', $parts);
+
+            } else {
+                // TODO: Doesn't guarantee meta description content.
+                //       Log??
+                $description = $body;
+
+            }
+        }
+
+        $description = htmlentities(substr($description, 0, 200));
+
+        $parts = explode('. ', $description);
+        $description = '';
+        foreach ($parts as $part) {
+            $d = $part;
+            if (strlen($description) > 0) {
+                $d = $description . '. ' . $part;
+            }
+
+            $proposedLength = strlen($d);
+            if ($proposedLength >= 200) {
+                $ps = explode('. ', $d);
+                array_pop($ps);
+                $description = implode('. ', $ps) . '.';
+                break;
+            }
+            $description = $d;
+        }
+
+        return $description;
+    }
+
+    public function original(): string
+    {
+        if ($this->frontMatterHasMember('original')) {
+            $frontMatter = $this->frontMatter();
+
+            return strval($frontMatter['original']);
+        }
+        return '';
+    }
+
+    /**
+     * @return array<int, int[]>
+     */
+    public function data(): array
+    {
+        if ($this->frontMatterHasMember('data')) {
+            $frontMatter = $this->frontMatter();
+            $data = $frontMatter['data'];
+            if (is_array($data)) {
+                return $data;
+            }
+        }
+        return [];
+    }
+
+    public function frontMatterHasMember(string $member): bool
+    {
+        return array_key_exists($member, $this->frontMatter());
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function frontMatter(): array
+    {
+        if (count($this->frontMatter) === 0) {
+            if ($this->isNotXml()) {
+                // return as early as possible
+                return [];
+            }
+
+            $contents = file_get_contents($this->path());
+            if (is_bool($contents)) {
+                return [];
+            }
+
+            $parts = explode('---', $contents);
+
+            if (count($parts) === 1) {
+                $this->contents = $parts[0];
+                $this->frontMatter = [];
+
+            } else {
+                $this->contents = $parts[2];
+                $metadata = Yaml::parse($parts[1]);
+                if (is_array($metadata)) {
+                    $this->frontMatter = $metadata;
+                }
+            }
+        }
+        return $this->frontMatter;
     }
 
     /**
@@ -73,12 +242,73 @@ class File
         );
     }
 
-    public function canGoUp(): bool
+    public function canonicalUrl(): string
     {
-        return $this->path(false) !== $this->contentFileName;
+        return str_replace(
+            $this->contentFileName,
+            '',
+            ServerGlobals::init()->appUrl() . $this->path(false)
+        );
     }
 
-    public function up(): File
+    public function filename(): string
+    {
+        $path = $this->path();
+        $parts = explode('/', $path);
+        return array_pop($parts);
+    }
+
+    public function mimetype(): Mimetype
+    {
+        if (! isset($this->mimetype)) {
+            $this->mimetype = Mimetype::for($this->path());
+        }
+        return $this->mimetype;
+    }
+
+    public function title(): string
+    {
+        if (array_key_exists('title', $this->frontMatter())) {
+            $frontMatter = $this->frontMatter();
+            $title = $frontMatter['title'];
+            if (is_string($title)) {
+                return $title;
+            }
+        }
+        return '';
+    }
+
+    public function pageTitle(): string
+    {
+        $titles   = [];
+        $titles[] = $this->title();
+
+        if (! str_contains($this->path(false), '/error-')) {
+            $file = clone $this;
+            while ($file->canGoUp()) {
+                $file = $file->up();
+                $titles[] = $file->title();
+            }
+        }
+
+        $titles = array_filter($titles);
+        return implode(' | ', $titles);
+    }
+
+    public function contents(): string
+    {
+        if (strlen($this->contents) === 0) {
+            $contents = file_get_contents($this->path());
+            if ($contents === false) {
+                return '';
+            }
+            $this->frontMatter();
+            // $this->contents = $contents;
+        }
+        return $this->contents;
+    }
+
+    private function up(): File
     {
         $parts = explode('/', $this->localPath);
         $parts = array_slice($parts, 0, -2); // remove file name and one folder.
@@ -89,51 +319,9 @@ class File
         );
     }
 
-    public function contents(): string
+    private function canGoUp(): bool
     {
-        if (strlen($this->contents) === 0) {
-            $contents = file_get_contents($this->path());
-            if ($contents === false) {
-                return '';
-            }
-            $this->contents = $contents;
-        }
-        return $this->contents;
-    }
-
-    public function mimetype(): string
-    {
-        if (strlen($this->mimetype) === 0) {
-            $type = mime_content_type($this->path());
-            if (is_bool($type) and $type === false) {
-                return '';
-            }
-
-            if ($type === 'text/plain') {
-                $extensionMap = [
-                    'md'  => 'text/html',
-                    'css' => 'text/css',
-                    'js'  => 'text/javascript',
-                    'xml' => 'application/xml'
-                ];
-
-                $parts     = explode('.', $this->path());
-                $extension = array_pop($parts);
-
-                $type = $extensionMap[$extension];
-            }
-            $this->mimetype = $type;
-        }
-        return $this->mimetype;
-    }
-
-    public function canonicalUrl(): string
-    {
-        return str_replace(
-            $this->contentFileName,
-            '',
-            ServerGlobals::init()->appUrl() . $this->path(false)
-        );
+        return $this->path(false) !== $this->contentFileName;
     }
 
     /**
@@ -159,10 +347,5 @@ class File
             );
         }
         return $files;
-    }
-
-    private function fileSystem(): FileSystemInterface
-    {
-        return $this->fileSystem;
     }
 }

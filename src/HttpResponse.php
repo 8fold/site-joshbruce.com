@@ -11,17 +11,12 @@ use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7\Response as PsrResponse;
 use Nyholm\Psr7\Stream as PsrStream;
 
-use Eightfold\HTMLBuilder\Document;
-use Eightfold\HTMLBuilder\Element;
-
-use JoshBruce\Site\File;
-
-use JoshBruce\Site\Content\Markdown;
-
-use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\HttpRequest;
 
 use JoshBruce\Site\Documents\Sitemap;
 use JoshBruce\Site\Documents\AtomFeed;
+use JoshBruce\Site\Documents\HtmlDefault;
+use JoshBruce\Site\Documents\FullNav;
 
 class HttpResponse
 {
@@ -38,17 +33,7 @@ class HttpResponse
 
     public function statusCode(): int
     {
-        if ($this->request()->isMissingRequiredValues()) {
-            return 500;
-
-        } elseif ($this->request()->isUnsupportedMethod()) {
-            return 405;
-
-        } elseif ($this->request()->isNotFound()) {
-            return 404;
-
-        }
-        return 200;
+        return $this->request()->statusCode();
     }
 
     /**
@@ -58,7 +43,8 @@ class HttpResponse
     {
         $headers = [];
         if ($this->statusCode() === 200) {
-            $headers['Content-Type'] = $this->request()->localFile()->mimeType();
+            $headers['Content-Type'] = $this->request()->localFile()
+                ->mimeType()->type();
 
         } elseif ($this->statusCode() === 404) {
             $headers['Content-Type'] = 'text/html';
@@ -70,131 +56,35 @@ class HttpResponse
     public function body(): string
     {
         $localFile = $this->request()->localFile();
-        if (
-            $this->statusCode() === 200 and
-            $localFile->isNotMarkdown() and
-            $this->request()->isNotSitemap() and
-            $this->request()->isNotAtomFeed()
-        ) {
+        if ($localFile->isNotXml()) {
             return $localFile->path();
-
-        } elseif ($this->statusCode() === 404) {
-            $localPath = $this->request()->fileSystem()->publicRoot() .
-                '/error-404.md';
-            $localFile = File::at($localPath, $this->request()->fileSystem());
-
-        } elseif ($this->statusCode() === 405) {
-            $localPath = $this->request()->fileSystem()->publicRoot() .
-                '/error-405.md';
-            $localFile = File::at($localPath, $this->request()->fileSystem());
-
         }
 
-        $template    = '';
-        $pageTitle   = '';
-        $html        = '';
-        $description = '';
-        if ($localFile->isMarkdown()) {
-            $markdown  = Markdown::for(
-                file: $localFile,
-                in: $this->request()->fileSystem()
-            );
-            $template    = $markdown->frontMatter()->template();
-            $pageTitle   = $markdown->pageTitle();
-            $html        = $markdown->html();
-            $description = $markdown->description();
+        if ($this->statusCode() === 500) {
+            return $localFile->contents();
         }
 
-        if ($this->request()->isSitemap()) {
-            return Sitemap::create($this->request()->fileSystem());
-
-        } elseif ($this->request()->isAtomFeed()) {
-            return AtomFeed::create($this->request()->fileSystem());
-
+        $template  = $localFile->template();
+        if (strlen($template) === 0) {
+            $template = 'default';
         }
 
-        $html = Document::create(
-            $pageTitle
-        )->head(
-            Element::meta()->omitEndTag()->props(
-                'name viewport',
-                'content width=device-width,initial-scale=1'
-            ),
-            Element::meta()->omitEndTag()->props(
-                'name description',
-                'content ' . $description
-            ),
-            Element::link()->omitEndTag()->props(
-                'type image/x-icon',
-                'rel icon',
-                'href /assets/favicons/favicon.ico'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel apple-touch-icon',
-                'href /assets/favicons/apple-touch-icon.png',
-                'sizes 180x180'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-32x32.png',
-                'sizes 32x32'
-            ),
-            Element::link()->omitEndTag()->props(
-                'rel image/png',
-                'href /assets/favicons/favicon-16x16.png',
-                'sizes 16x16'
-            ),
-            $this->cssElement()
-        )->body(
-            (strlen($template) === 0)
-                ? Element::a('menu')->props('href #main-nav', 'id content-top')
-                : '',
-            (
-                strlen($template) === 0 and
-                str_replace('content.md', '', $localFile->path(false)) !== '/'
-            )
-                ? Element::article(
-                    $html
-                )->props('typeof BlogPosting', 'vocab https://schema.org/')
-                : Element::main(
-                    $html
-                ),
-            (strlen($template) === 0)
-                ? Element::a('top')->props('href #content-top', 'id go-to-top')
-                : '',
-            (strlen($template) === 0)
-                ? Navigation::create('main.md', $this->request()->fileSystem())
-                : '',
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
-        )->build();
+        $xml = match ($template) {
+            'sitemap'  => Sitemap::create($localFile),
+            'full-nav' => FullNav::create($localFile),
+            default    => HtmlDefault::create($localFile)
+        };
 
-        $html = str_replace(
+        $xml = str_replace(
             ['href="/', 'src="/'],
             [
                 'href="' . $this->request()->serverGlobals()->appUrl() . '/',
                 'src="' . $this->request()->serverGlobals()->appUrl() . '/',
             ],
-            $html
+            $xml
         );
 
-        return $html;
-    }
-
-    public function cssElement(): Element
-    {
-        $cssPath  = '/assets/css/main.min.css';
-        // $filePath = $contentRoot . $cssPath;
-        // TODO: should be last commit of CSS file - another reason to place
-        //       content in same folder as rest of project.
-        $query = round(microtime(true));
-
-        return Element::link()->omitEndTag()
-            ->props('rel stylesheet', "href {$cssPath}?v={$query}");
+        return $xml;
     }
 
     public function psrResponse(): ResponseInterface

@@ -8,6 +8,7 @@ use JoshBruce\Site\HttpRequest;
 use JoshBruce\Site\ServerGlobals;
 
 use JoshBruce\Site\Tests\TestFileSystem;
+use JoshBruce\Site\Tests\TestServerGlobals;
 
 test('expected headers', function() {
     expect(
@@ -108,19 +109,30 @@ test('expected status codes', function() {
     )->toBeInt()->toBe(
         405
     );
+})->group('response', 'request');
 
-    unset($_SERVER['APP_URL']);
+it('can handle 500 response', function() {
+    $serverGlobals = TestServerGlobals::init()->unsetAppEnv();
 
     expect(
         HttpResponse::from(
-            request: HttpRequest::with(
-                ServerGlobals::init(),
-                TestFileSystem::init()
-            )
+            request: HttpRequest::with($serverGlobals, TestFileSystem::init())
         )->statusCode()
     )->toBeInt()->toBe(
         500
     );
 
-    $_SERVER['APP_URL'] = 'http://jb-site.test';
+    $body = HttpResponse::from(
+        request: HttpRequest::with($serverGlobals, TestFileSystem::init())
+    )->body();
+
+    expect(
+        str_contains(
+            $body,
+            "<title>Server error</title>"
+        )
+    )->toBeTrue();
+
+    $serverGlobals->resetAppEnv();
+
 })->group('response', 'request');

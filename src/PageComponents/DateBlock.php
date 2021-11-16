@@ -8,32 +8,32 @@ use Carbon\Carbon;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\Content\FrontMatter;
+use JoshBruce\Site\File;
 
 class DateBlock
 {
-    public static function create(FrontMatter $frontMatter): string
+    public static function create(File $file): string
     {
         $times = [];
 
-        if ($frontMatter->created()) {
+        if ($file->created()) {
             $label      = 'Created';
-            $date       = $frontMatter->created();
+            $date       = $file->created();
             $schemaProp = 'dateCreated';
 
             $times[] = self::timestamp($label, $date, $schemaProp);
         }
 
-        if ($frontMatter->moved()) {
+        if ($file->moved()) {
             $label      = 'Moved';
-            $date       = $frontMatter->moved();
+            $date       = $file->moved();
 
             $times[] = self::timestamp($label, $date);
         }
 
-        if ($frontMatter->updated()) {
+        if ($file->updated()) {
             $label      = 'Updated';
-            $date       = $frontMatter->updated();
+            $date       = $file->updated();
             $schemaProp = 'dateCreated';
 
             $times[] = self::timestamp($label, $date, $schemaProp);

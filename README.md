@@ -1,3 +1,5 @@
+https://www.conventionalcommits.org/en/v1.0.0/
+
 The code found here is able to generate the same (or really close to it) site using multiple styles. Each style is held inside a directory; the names start with "Site." Each style has an associated read me file (listed in order of creation):
 
 1. [Dynamic PHP: single-page, server-side](https://github.com/8fold/site-joshbruce.com/blob/main/src/SiteDynamic)

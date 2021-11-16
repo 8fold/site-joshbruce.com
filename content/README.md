@@ -4,7 +4,7 @@ The contents of this directory are subject to the [terms of service](https://jos
 
 In short, the contents of this folder, unless otherwise specified, are: Copyright © Joshua C. Bruce, all rights reserved.
 
-The scripts and files found outside this folder are subject to the license [found here](https://github.com/8fold/site-joshbruce.com/blob/main/.github/LICENSE). Some software used here may fall under other licenses and license holders. The responsibility of determining which license applies is left to the consumer.
+Anyone may [contribute to](https://github.com/8fold/site-joshbruce.com/blob/main/.github/CONTRIBUTING.md) improving the content per the [license agreement](https://github.com/8fold/site-joshbruce.com/blob/main/.github/LICENSE) and in keeping with the [code of conduct](https://github.com/8fold/site-joshbruce.com/blob/main/.github/CODE_OF_CONDUCT.md).
 
 Open source doesn't necessarily mean open license. Along that same line, free as in beer isn't the same as [free as in speech](https://www.howtogeek.com/howto/31717/what-do-the-phrases-free-speech-vs.-free-beer-really-mean/).
 
