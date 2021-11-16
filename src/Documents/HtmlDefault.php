@@ -18,15 +18,15 @@ class HtmlDefault
     public static function create(File $file): string
     {
         $pageTitle   = $file->pageTitle();
+        $description = $file->description();
         $html        = '';
-        $description = '';
         if ($file->isMarkdown()) {
             $markdown  = Markdown::for(
                 file: $file,
                 in: $file->fileSystem()
             );
             $html        = $markdown->html();
-            $description = $markdown->description();
+            // $description = $markdown->description();
         }
 
         $html = Document::create(

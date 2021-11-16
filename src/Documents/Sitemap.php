@@ -28,13 +28,13 @@ class Sitemap
         $urls = [];
         foreach ($files as $file) {
             $path = strval(str_replace('/content.md', '', $file->path()));
-            $frontMatter = Markdown::for($file, $fileSystem)->frontMatter();
+            $frontMatter = $file->frontMatter();
             $date = '';
-            if ($frontMatter->hasMember('updated')) {
-                $date = $frontMatter->updated('Y-m-d');
+            if ($file->frontMatterHasMember('updated')) {
+                $date = $file->updated('Y-m-d');
 
-            } elseif ($frontMatter->hasMember('created')) {
-                $date = $frontMatter->created('Y-m-d');
+            } elseif ($file->frontMatterHasMember('created')) {
+                $date = $file->created('Y-m-d');
 
             }
 
@@ -83,7 +83,7 @@ class Sitemap
         foreach ($files as $path => $file) {
             $path = $file->path(false);
 
-            $title = Markdown::for($file, $fileSystem)->frontMatter()->title();
+            $title = $file->title();
             $href  = str_replace('/content.md', '', $file->path(false));
 
             $spacesNeeded = (substr_count($path, '/') * 4) - 8;
