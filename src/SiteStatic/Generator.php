@@ -8,7 +8,11 @@ use SplFileInfo;
 
 use Dotenv\Dotenv;
 
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Helper\ProgressBar;
 
 use Symfony\Component\Finder\Finder;
 
@@ -17,118 +21,143 @@ use League\Flysystem\Filesystem as LeagueFilesystem;
 
 use JoshBruce\Site\ServerGlobals;
 use JoshBruce\Site\FileSystem;
-
+use JoshBruce\Site\File;
 use JoshBruce\Site\HttpResponse;
 use JoshBruce\Site\HttpRequest;
 
-class Generator
+class Generator extends Command
 {
-    private bool $isNotTesting = false;
+    protected static $defaultName = 'compile';
 
-    private string $contentRoot = '';
+    protected static $defaultDescription =
+        'Compile content and assets for dynamic and static sites.';
+
+    private string $projectRoot;
+
+    private FileSystem $fileSystem;
 
     private LeagueFilesystem $leagueFileSystem;
 
-    public static function init(
-        OutputInterface $output,
-        string $destination = ''
-    ): Generator {
-        return new Generator($output, $destination);
-    }
-
-    private function __construct(
-        private OutputInterface $output,
-        private string $destination = ''
-    ) {
-        $projectRoot = FileSystem::init()->projectRoot();
-
-        $this->contentRoot = FileSystem::init()->publicRoot();
-
-        if (strlen($destination) === 0) {
-            $this->destination =  $projectRoot . '/site-static-html/public';
-        }
-    }
-
-    public function compile(): bool
+    protected function configure(): void
     {
-        $this->compilingDidStartMessage($this->contentRoot, $this->destination);
+        $this->setHelp('This command uses the content directory and dynamic
+            site capabilities to generate a complete static site.');
+
+        $this->addArgument(
+            'destination',
+            InputArgument::OPTIONAL,
+            '/fully/qualified/path/for/static/site/destination - default is
+                the project root in a folder called site-static-html'
+        );
+
+        $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
+
+        Dotenv::createImmutable($this->projectRoot)->load();
+    }
+
+    protected function execute(
+        InputInterface $input,
+        OutputInterface $output
+    ): int {
+        $start = hrtime(true);
+
+        if ($this->compiledStaticSite($input, $output)) {
+            $end   = hrtime(true);
+            $elapsed = $end - $start;
+            $ms      = round($elapsed / 1e+6);
+            $seconds = round($ms / 1000, 2);
+
+            $output->writeln([
+                '',
+                '******************************************',
+                "Completed static site compilation in {$seconds}s",
+                ''
+            ]);
+
+            return Command::SUCCESS;
+        }
+
+        $output->writeln(<<<bash
+
+            Failed!
+
+            Did not compile the static site.
+
+            bash
+        );
+        return Command::FAILURE;
+    }
+
+    private function compiledStaticSite(
+        InputInterface $input,
+        OutputInterface $output
+    ): bool {
+        $output->writeln([
+            '',
+            'Starting static site compilation',
+            '******************************************',
+            ''
+        ]);
+
+        $destination = $input->getArgument('destination');
+        if (empty($destination)) {
+            $destination = $this->projectRoot . '/site-static-html/public';
+        }
 
         $finder = $this->finder();
 
+        $count = count($finder);
+
+        $progressBar = new ProgressBar($output, $count);
+        $progressBar->start();
+
         foreach ($finder as $found) {
-            $path = (string) $found;
+            $localPath = $found->getPathname();
 
-            if (str_contains($path, '.md')) {
-                $this->compileContentFileFor($path);
+            $file = File::at($localPath, $this->fileSystem());
 
-            } else {
-                $this->copyFileFor($path);
+            $fDestination = $destination . $file->path(false);
 
+            // copy non-html and xml files directly
+            if ($file->isNotXml()) {
+                // $fDestination = $destination . $file->path(false);
+                $this->leagueFileSystem()->copy($file->path(), $fDestination);
+                $progressBar->advance();
+                continue;
             }
+
+            $uri = str_replace(
+                [$this->fileSystem()->publicRoot(), 'content.md'],
+                ['', ''],
+                $localPath
+            );
+
+            if ($uri === '/') {
+                $uri = '';
+            }
+
+            $body = HttpResponse::from(
+                HttpRequest::with(
+                    ServerGlobals::init()->withRequestUri($uri),
+                    $this->fileSystem()
+                )
+            )->body();
+
+            $fDestination = str_replace(
+                ['content.md', '.md'],
+                ['index.html', '.html'],
+                $fDestination
+            );
+
+            $this->leagueFileSystem()->write($fDestination, $body);
+
+            $progressBar->advance();
+
         }
 
-        $this->compileContentFileFor($this->contentRoot . '/sitemap.xml');
-        $this->copyFileFor($this->contentRoot . '/robots.txt');
+        $output->writeln('');
 
         return true;
-    }
-
-    private function compileContentFileFor(string $contentPath): void
-    {
-        $destinationPath = $this->contentDestinationPathFor($contentPath);
-
-        $relativePath = $this->relativePath($contentPath);
-        $parts        = explode('/', $relativePath);
-        $parts        = array_slice($parts, 0, -1);
-        $requestUri   = implode('/', $parts);
-
-        $globals = ServerGlobals::init()->withRequestUri($requestUri)
-            ->withRequestMethod('GET');
-        if (str_contains($contentPath, 'sitemap.xml')) {
-            $globals = $globals->withRequestUri('/sitemap.xml');
-
-        } elseif (str_contains($destinationPath, '/error-404.html')) {
-            $globals = $globals->withRequestUri('/low/prob/a/bil/it/ee');
-
-        } elseif (str_contains($destinationPath, '/error-405.html')) {
-            $globals = $globals->withRequestMethod('DELETE');
-
-        } elseif (strlen($requestUri) === 0) {
-            $globals = $globals->withRequestUri('/');
-
-        }
-
-        $fileSystem = FileSystem::init();
-
-        $html = HttpResponse::from(
-            request: HttpRequest::with(serverGlobals: $globals, in: $fileSystem)
-        )->body();
-
-        $this->leagueFileSystem()->write($destinationPath, $html);
-
-        $this->sourceFileConvertedMessage($contentPath, $destinationPath);
-    }
-
-    private function copyFileFor(string $path): void
-    {
-        $destinationPath = $this->fileDestinationPathFor($path);
-        $this->leagueFileSystem()->copy($path, $destinationPath);
-        $this->sourceFileCopiedMessage($path, $destinationPath);
-    }
-
-    private function contentDestinationPathFor(string $path): string
-    {
-        return str_replace(
-            ['content.md', '.md'],
-            ['index.html', '.html'],
-            $this->fileDestinationPathFor($path)
-        );
-    }
-
-    private function fileDestinationPathFor(string $path): string
-    {
-        $relativePath = $this->relativePath($path);
-        return $this->destination . $relativePath;
     }
 
     private function finder(): Finder
@@ -138,9 +167,10 @@ class Generator
             ->ignoreUnreadableDirs()
             ->ignoreDotFiles(false)
             ->ignoreVCSIgnored(true)
+            ->notName('.gitignore')
             ->files()
             ->filter(fn($f) => $this->isPublished($f))
-            ->in($this->contentRoot);
+            ->in($this->fileSystem()->publicRoot());
     }
 
     private function isPublished(SplFileInfo $finderFile): bool
@@ -151,13 +181,17 @@ class Generator
     private function isDraft(SplFileInfo $finderFile): bool
     {
         $filePath = (string) $finderFile;
-        $relativePath = $this->relativePath($filePath);
+        $file = File::at($filePath, $this->fileSystem());
+        $relativePath = $file->path(false);
         return str_contains($relativePath, '_');
     }
 
-    private function relativePath(string $path): string
+    private function fileSystem(): FileSystem
     {
-        return str_replace($this->contentRoot, '', $path);
+        if (! isset($this->fileSystem)) {
+            $this->fileSystem = FileSystem::init();
+        }
+        return $this->fileSystem;
     }
 
     /**
@@ -172,58 +206,5 @@ class Generator
             $this->leagueFileSystem = $fileSystem;
         }
         return $this->leagueFileSystem;
-    }
-
-    /**************************/
-    /*    Console messages    */
-    /**************************/
-    private function output(): OutputInterface
-    {
-        return $this->output;
-    }
-
-    private function compilingDidStartMessage(
-        string $contentPath,
-        string $destinationPath
-    ): void {
-        if ($this->isNotTesting) {
-            $this->output()->writeln(<<<bash
-
-                Starting to compile from:
-                    {$contentPath} to
-                    {$destinationPath}
-                bash
-            );
-        }
-    }
-
-    private function sourceFileCopiedMessage(
-        string $contentPath,
-        string $destinationPath
-    ): void {
-        if ($this->isNotTesting) {
-            $this->output()->writeln(<<<bash
-
-                Copied:
-                    {$contentPath} to
-                    {$destinationPath}
-                bash
-            );
-        }
-    }
-
-    private function sourceFileConvertedMessage(
-        string $contentPath,
-        string $destinationPath
-    ): void {
-        if ($this->isNotTesting) {
-            $this->output()->writeln(<<<bash
-
-                Converted:
-                    {$contentPath} to
-                    {$destinationPath}
-                bash
-            );
-        }
     }
 }

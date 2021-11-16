@@ -3,44 +3,54 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\SingleCommandApplication;
+// use Symfony\Component\Console\Command\Command;
 
-use JoshBruce\Site\SiteStatic\Generator;
+// use Symfony\Component\Console\Input\InputArgument;
+// use Symfony\Component\Console\Input\InputInterface;
+// use Symfony\Component\Console\Input\InputOption;
 
-$application = new SingleCommandApplication();
+// use Symfony\Component\Console\Output\OutputInterface;
 
-$application->setName('compile')
-	->setVersion('0.2.1')
-	->addArgument('destination', InputArgument::OPTIONAL, '/path/to/destination')
-	->setCode(function (InputInterface $input, OutputInterface $output) {
+use Symfony\Component\Console\Application;
 
-		$destination = $input->getArgument('destination');
-		if ($destination === null) {
-			$destination = '';
-		}
+// use JoshBruce\Site\SiteDynamic\Generator as DynamicGenerator;
+use JoshBruce\Site\SiteStatic\Generator as StaticGenerator;
 
-		$start = hrtime(true);
+$application = new Application();
 
-		$generator = Generator::init($output, $destination);
-		if ($generator->compile()) {
-			$end     = hrtime(true);
-			$elapsed = $end - $start;
-			$ms      = round($elapsed/1e+6);
-			$seconds = round($ms/1000, 2);
+// $application->add(new DynamicGenerator());
 
-			$output->writeln(<<<bash
+$application->add(new StaticGenerator());
 
-				Completed successfully in {$seconds}s
+$application->run();
 
-				bash
-			);
-			return Command::SUCCESS;
-		}
-		return Command::FAILURE;
-	})
-	->run();
+// $application->setName('compile')
+// 	->setVersion('0.2.1')
+// 	->addArgument('destination', InputArgument::OPTIONAL, '/path/to/destination')
+// 	->setCode(function (InputInterface $input, OutputInterface $output) {
+//
+// 		$destination = $input->getArgument('destination');
+// 		if ($destination === null) {
+// 			$destination = '';
+// 		}
+//
+		// $start = hrtime(true);
+//
+// 		$generator = Generator::init($output, $destination);
+// 		if ($generator->compile()) {
+// 			$end     = hrtime(true);
+// 			$elapsed = $end - $start;
+// 			$ms      = round($elapsed/1e+6);
+// 			$seconds = round($ms/1000, 2);
+//
+// 			$output->writeln(<<<bash
+//
+// 				Completed successfully in {$seconds}s
+//
+// 				bash
+// 			);
+// 			return Command::SUCCESS;
+// 		}
+// 		return Command::FAILURE;
+// 	})
+// 	->run();

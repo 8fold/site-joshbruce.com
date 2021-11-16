@@ -212,6 +212,13 @@ class File
         );
     }
 
+    public function filename(): string
+    {
+        $path = $this->path();
+        $parts = explode('/', $path);
+        return array_pop($parts);
+    }
+
     public function title(): string
     {
         if (array_key_exists('title', $this->frontMatter())) {
