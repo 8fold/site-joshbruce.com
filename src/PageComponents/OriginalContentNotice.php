@@ -21,6 +21,7 @@ class OriginalContentNotice
         $noticesRoot = $contentRoot . '/notices';
 
         $f = File::at($noticesRoot . '/original.md', $fileSystem);
+
         if ($f->isNotFound()) {
             return '';
         }
@@ -28,7 +29,7 @@ class OriginalContentNotice
         $original = $file->original();
         list($href, $platform) = explode(' ', $original, 2);
 
-        $body = Markdown::for($file, $fileSystem)->body();
+        $body = Markdown::for($f, $fileSystem)->body();
 
         $matches = [];
         $search  = '/{!!platformlink!!}/';
