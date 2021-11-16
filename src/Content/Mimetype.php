@@ -41,7 +41,9 @@ class Mimetype
                     'md'  => 'text/html',
                     'css' => 'text/css',
                     'js'  => 'text/javascript',
-                    'xml' => 'application/xml'
+                    'xml' => 'application/xml',
+                    'txt' => 'text/plain',
+                    'htaccess' => 'text/plain'
                 ];
 
                 $parts     = explode('.', $this->path);

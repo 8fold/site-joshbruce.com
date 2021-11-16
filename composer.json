@@ -19,7 +19,7 @@
   "prefer-stable": true,
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
-    "phpstan/phpstan": "^1.0.0",
+    "phpstan/phpstan": "^1.1.2",
     "pestphp/pest": "^1.20"
   },
   "require": {

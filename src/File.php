@@ -47,6 +47,24 @@ class File
         return $this->mimetype()->isNotXml();
     }
 
+    /**
+     * @todo: verify can be deprecated
+     */
+    public function isMarkdown(): bool
+    {
+        return str_ends_with($this->fileName(), '.md');
+    }
+
+    public function found(): bool
+    {
+        return file_exists($this->path()) and is_file($this->path());
+    }
+
+    public function isNotFound(): bool
+    {
+        return ! $this->found();
+    }
+
     public function created(string $format = ''): string|int|false
     {
         return $this->dateField('created', $format);
@@ -68,7 +86,7 @@ class File
     ): string|int|false {
         if ($this->frontMatterHasMember($key)) {
             $date = $this->frontMatter[$key];
-            if (strlen($format) === 0) {
+            if (strlen($format) === 0 and is_int($date)) {
                 return $date;
             }
 
@@ -84,16 +102,23 @@ class File
     {
         if ($this->frontMatterHasMember('template')) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['template'];
+            $template = $frontMatter['template'];
+            if (is_string($template)) {
+                return $template;
+            }
         }
         return '';
     }
 
     public function description(): string
     {
+        $description = '';
         if ($this->frontMatterHasMember('description')) {
             $frontMatter = $this->frontMatter();
-            $description = $frontMatter['description'];
+            $desc = $frontMatter['description'];
+            if (is_string($desc)) {
+                $description = $desc;
+            }
 
         } else {
             $body = $this->contents();
@@ -155,7 +180,10 @@ class File
     {
         if ($this->frontMatterHasMember('data')) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['data'];
+            $data = $frontMatter['data'];
+            if (is_array($data)) {
+                return $data;
+            }
         }
         return [];
     }
@@ -182,6 +210,7 @@ class File
             }
 
             $parts = explode('---', $contents);
+
             if (count($parts) === 1) {
                 $this->contents = $parts[0];
                 $this->frontMatter = [];
@@ -189,8 +218,9 @@ class File
             } else {
                 $this->contents = $parts[2];
                 $metadata = Yaml::parse($parts[1]);
-                $this->frontMatter = $metadata;
-
+                if (is_array($metadata)) {
+                    $this->frontMatter = $metadata;
+                }
             }
         }
         return $this->frontMatter;
@@ -212,11 +242,38 @@ class File
         );
     }
 
+    public function canonicalUrl(): string
+    {
+        return str_replace(
+            $this->contentFileName,
+            '',
+            ServerGlobals::init()->appUrl() . $this->path(false)
+        );
+    }
+
+    public function filename(): string
+    {
+        $path = $this->path();
+        $parts = explode('/', $path);
+        return array_pop($parts);
+    }
+
+    public function mimetype(): Mimetype
+    {
+        if (! isset($this->mimetype)) {
+            $this->mimetype = Mimetype::for($this->path());
+        }
+        return $this->mimetype;
+    }
+
     public function title(): string
     {
         if (array_key_exists('title', $this->frontMatter())) {
             $frontMatter = $this->frontMatter();
-            return $frontMatter['title'];
+            $title = $frontMatter['title'];
+            if (is_string($title)) {
+                return $title;
+            }
         }
         return '';
     }
@@ -251,7 +308,6 @@ class File
         return $this->contents;
     }
 
-
     private function up(): File
     {
         $parts = explode('/', $this->localPath);
@@ -266,81 +322,6 @@ class File
     private function canGoUp(): bool
     {
         return $this->path(false) !== $this->contentFileName;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public function isNotMarkdown(): bool
-    {
-        return ! $this->isMarkdown();
-    }
-
-    public function isMarkdown(): bool
-    {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.md');
-    }
-
-    public function isHtml(): bool
-    {
-        $parts = explode('/', $this->localPath);
-        $possibleFileName = array_pop($parts);
-        return str_ends_with($possibleFileName, '.html');
-    }
-
-    public function found(): bool
-    {
-        return file_exists($this->path()) and is_file($this->path());
-    }
-
-    public function isNotFound(): bool
-    {
-        return ! $this->found();
-    }
-
-    public function mimetype(): Mimetype
-    {
-        if (! isset($this->mimetype)) {
-            $this->mimetype = Mimetype::for($this->path());
-        }
-        return $this->mimetype;
-    }
-
-    public function canonicalUrl(): string
-    {
-        return str_replace(
-            $this->contentFileName,
-            '',
-            ServerGlobals::init()->appUrl() . $this->path(false)
-        );
     }
 
     /**

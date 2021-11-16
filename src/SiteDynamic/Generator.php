@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\SiteStatic;
+namespace JoshBruce\Site\SiteDynamic;
 
 use SplFileInfo;
 
@@ -27,10 +27,10 @@ use JoshBruce\Site\HttpRequest;
 
 class Generator extends Command
 {
-    protected static $defaultName = 'compile';
+    protected static $defaultName = 'compile:dynamic';
 
     protected static $defaultDescription =
-        'Compile content and assets for dynamic and static sites.';
+        'Compile content and assets for dynamic sites.';
 
     private string $projectRoot;
 
@@ -40,14 +40,16 @@ class Generator extends Command
 
     protected function configure(): void
     {
-        $this->setHelp('This command uses the content directory and dynamic
-            site capabilities to generate a complete static site.');
+        $this->setHelp(
+            // phpcs:ignore
+            'This command uses the content directory and dynamic site capabilities to compile or copy assets for dynamic sites.'
+        );
 
         $this->addArgument(
             'destination',
             InputArgument::OPTIONAL,
-            '/fully/qualified/path/for/static/site/destination - default is
-                the project root in a folder called site-static-html'
+            // phpcs:ignore
+            '/fully/qualified/path/for/static/site/destination - default is the project root in a folder called site-dynamic-php'
         );
 
         $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
@@ -61,7 +63,7 @@ class Generator extends Command
     ): int {
         $start = hrtime(true);
 
-        if ($this->compiledStaticSite($input, $output)) {
+        if ($this->compiledDynamicSite($input, $output)) {
             $end   = hrtime(true);
             $elapsed = $end - $start;
             $ms      = round($elapsed / 1e+6);
@@ -70,47 +72,38 @@ class Generator extends Command
             $output->writeln([
                 '',
                 '******************************************',
-                "Completed static site compilation in {$seconds}s",
+                "Completed dynamic site compilation in {$seconds}s",
                 ''
             ]);
 
-            $app = $this->getApplication();
-            if ($app === null) {
-                $output->writeln([
-                    '',
-                    '!! Dynamic site compilation did NOT run !!',
-                    ''
-                ]);
-                return Command::SUCCESS;
-            }
-            return $app->find('compile:dynamic')->run($input, $output);
+            return Command::SUCCESS;
         }
 
         $output->writeln(<<<bash
 
             Failed!
 
-            Did not compile the static site.
+            Did not compile dynamic site assets.
 
             bash
         );
         return Command::FAILURE;
     }
 
-    private function compiledStaticSite(
+    private function compiledDynamicSite(
         InputInterface $input,
         OutputInterface $output
     ): bool {
         $output->writeln([
             '',
-            'Starting static site compilation',
+            'Starting dynamic site compilation',
             '******************************************',
             ''
         ]);
 
         $destination = $input->getArgument('destination');
         if (empty($destination)) {
-            $destination = $this->projectRoot . '/site-static-html/public';
+            $destination = $this->projectRoot . '/site-dynamic-php/public';
         }
 
         $finder = $this->finder();
@@ -127,41 +120,56 @@ class Generator extends Command
 
             $fDestination = $destination . $file->path(false);
 
-            // copy non-html and xml files directly
-            if ($file->isNotXml()) {
-                // $fDestination = $destination . $file->path(false);
+            if ($file->fileName() !== '.htaccess') {
                 $this->leagueFileSystem()->copy($file->path(), $fDestination);
                 $progressBar->advance();
                 continue;
             }
 
-            $uri = str_replace(
-                [$this->fileSystem()->publicRoot(), 'content.md'],
-                ['', ''],
-                $localPath
-            );
-
-            if ($uri === '/') {
-                $uri = '';
+            $fileContents = file_get_contents($file->path());
+            if (! $fileContents) {
+                return false;
             }
 
-            $body = HttpResponse::from(
-                HttpRequest::with(
-                    ServerGlobals::init()->withRequestUri($uri),
-                    $this->fileSystem()
-                )
-            )->body();
-
-            $fDestination = str_replace(
-                ['content.md', '.md'],
-                ['index.html', '.html'],
-                $fDestination
+            $body = str_replace(
+                [
+                    "ErrorDocument 404 /error-404.html\n",
+                    "ErrorDocument 405 /error-405.html\n"
+                ],
+                ['', ''],
+                $fileContents
             );
+
+            $body .= <<<plain
+
+                <IfModule mod_rewrite.c>
+                    RewriteEngine On
+
+                    # Handle Authorization Header
+                    RewriteCond %{HTTP:Authorization} .
+                    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+                    # Redirect Trailing Slashes If Not A Folder...
+                    RewriteCond %{REQUEST_FILENAME} !-d
+                    RewriteCond %{REQUEST_URI} (.+)/$
+                    RewriteRule ^ %1 [L,R=301]
+
+                    # Send Requests To Front Controller...
+                    RewriteCond %{REQUEST_FILENAME} !-d
+                    RewriteCond %{REQUEST_FILENAME} !-f
+                    RewriteRule ^ index.php [L]
+                </IfModule>
+
+                <IfModule mod_expires.c>
+                    ExpiresActive On
+                    ExpiresDefault "access plus 5 seconds"
+                </IfModule>
+
+                plain;
 
             $this->leagueFileSystem()->write($fDestination, $body);
 
             $progressBar->advance();
-
         }
 
         $output->writeln('');
@@ -177,8 +185,12 @@ class Generator extends Command
             ->ignoreDotFiles(false)
             ->ignoreVCSIgnored(true)
             ->notName('.gitignore')
+            ->notName('*.md')
+            ->notName('*.xml')
+            ->name('.htaccess')
+            ->name('*.txt')
+            ->name('*.html')
             ->files()
-            ->filter(fn($f) => $this->isPublished($f))
             ->in($this->fileSystem()->publicRoot());
     }
 
