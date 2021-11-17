@@ -70,9 +70,10 @@ class HttpResponse
         }
 
         $xml = match ($template) {
-            'sitemap'  => Sitemap::create($localFile),
-            'full-nav' => FullNav::create($localFile),
-            default    => HtmlDefault::create($localFile)
+            'sitemap'   => Sitemap::create($localFile),
+            'full-nav'  => FullNav::create($localFile),
+            'atom-feed' => AtomFeed::create($localFile),
+            default     => HtmlDefault::create($localFile)
         };
 
         $xml = str_replace(

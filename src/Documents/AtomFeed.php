@@ -17,11 +17,13 @@ use JoshBruce\Site\Content\Markdown;
 
 class AtomFeed
 {
-    public static function create(FileSystemInterface $fileSystem): string
+    public static function create(File $file): string
     {
-        die('here2');
-        $finder = self::finder($fileSystem);
-
+        $finder = self::finder($file->fileSystem());
+        foreach ($finder as $found) {
+            var_dump($found->getPathname());
+        }
+die('here');
         $files = self::files($finder, $fileSystem, true);
 
         $urls = [];
