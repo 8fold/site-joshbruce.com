@@ -200,7 +200,10 @@ class File
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {
-            if ($this->isNotXml()) {
+            if (
+                $this->isNotXml() and
+                ! str_contains($this->path(), 'links.txt')
+            ) {
                 // return as early as possible
                 return [];
             }
@@ -304,7 +307,6 @@ class File
                 return '';
             }
             $this->frontMatter();
-            // $this->contents = $contents;
         }
         return $this->contents;
     }

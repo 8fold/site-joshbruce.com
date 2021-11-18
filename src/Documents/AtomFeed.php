@@ -28,7 +28,6 @@ class AtomFeed
         $dateFormat = 'Y-m-d\T00:00:00\Z';
 
         $markdownConverter = Markdown::markdownConverter();
-        // $files = [];
         $entries = [];
         foreach ($finder as $found) {
             $localPath = $found->getPathname();
@@ -67,6 +66,7 @@ class AtomFeed
             'Ymd',
             strval(array_key_first($entries))
         );
+
         if ($feedUpdated) {
             $feedUpdated = $feedUpdated->format($dateFormat);
         }
@@ -92,7 +92,7 @@ class AtomFeed
         )->props("xmlns http://www.w3.org/2005/Atom")->build();
     }
 
-    private static function finder(FileSystemInterface $fileSystem): Finder
+    public static function finder(FileSystemInterface $fileSystem): Finder
     {
         return $fileSystem->publishedContentFinder()->sortByName()
             ->notContains('redirect:')

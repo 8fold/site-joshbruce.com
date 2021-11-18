@@ -2,7 +2,8 @@
   "authors": [],
   "autoload": {
     "psr-4": {
-      "JoshBruce\\Site\\": "./src"
+      "JoshBruce\\Site\\": "./src",
+      "JoshBruce\\Permalinks\\": "./site-permalink-ids"
     }
   },
   "autoload-dev": {
