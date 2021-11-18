@@ -80,7 +80,8 @@ class AtomFeed
 
         return Document::feed(
             Element::updated($feedUpdated),
-            Comment::create('Copy the URL and paste into a feed reader.'),
+            // phpcs:ignore
+            Comment::create('Copy the URL and paste into a feed reader; web or native application.'),
             Element::title('Personal site of Josh Bruce'),
             Element::author(
                 Element::name('Joshua C. Bruce'),

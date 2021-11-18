@@ -1,12 +1,11 @@
 ---
 title: Feed me (Atom and RSS)
 created: 20211116
-description: "Let's get this out of the way: Atom and [.RSS](Real Simple Syndication) are mostly dead. And, if the United States actually passes the bill to require users be able to turn algorithmic sorting and prioritization of content, then there's really no reason for them as a way to combat social media feeds."
 ---
 
 # Feed me (Atom and RSS)
 
-Let's get this out of the way: Atom and [.RSS](Real Simple Syndication) are mostly dead. And, if the United States actually [passes the bill](https://arstechnica.com/tech-policy/2021/11/bill-proposes-algorithm-free-option-on-big-tech-platforms-may-portend-bigger-steps/?comments=1) to require users be able to turn algorithmic sorting and prioritization of content, then there's really no reason for them as a way to combat social media feeds. They are protocols from [my history on the web](/web-development/my-history-on-the-web).
+Let's get this out of the way: Atom and [.RSS](Real Simple Syndication) are mostly dead. And, if the United States actually [passes the bill](https://arstechnica.com/tech-policy/2021/11/bill-proposes-algorithm-free-option-on-big-tech-platforms-may-portend-bigger-steps/?comments=1) to require users be able to turn algorithmic sorting and prioritization off, then there's really no reason for them as a way to combat social media feeds. They are protocols from [my history on the web](/web-development/my-history-on-the-web).
 
 And, yet, here I am, implementing at least Atom on this site.
 

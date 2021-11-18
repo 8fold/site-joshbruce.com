@@ -142,7 +142,10 @@ class File
             }
         }
 
-        $sentences = explode('. ', $description);
+        $sub       = substr($description, 0, $length * 2);
+        $converted = Markdown::markdownConverter()->convert($sub);
+        $stripped  = strip_tags($converted);
+        $sentences = explode('. ', $stripped);
 
         $newLength = 0;
         $s = [];
@@ -151,10 +154,7 @@ class File
             if ($newLength > $length) {
                 break;
             }
-            $s[] = strip_tags(
-                Markdown::markdownConverter()->convert($sentence)
-            );
-            // $s[] = $sentence;
+            $s[] = $sentence;
         }
 
         $description = implode('. ', $s);
