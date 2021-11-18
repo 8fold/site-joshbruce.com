@@ -18,6 +18,7 @@ use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
 class Markdown
 {
+    private static MarkdownConverter $markdownConverter;
     private string $fileContent = '';
 
     private string $body = '';
@@ -29,22 +30,25 @@ class Markdown
 
     public static function markdownConverter(): MarkdownConverter
     {
-        return MarkdownConverter::create()
-            ->minified() // can't be minified due to code blocks
-            ->smartPunctuation()
-            ->withConfig(['html_input' => 'allow'])
-            ->descriptionLists()
-            ->attributes()
-            ->abbreviations()
-            ->externalLinks([
-                'open_in_new_window' => true,
-                'internal_hosts' => 'joshbruce.com'
-            ])->accessibleHeadingPermalinks(
-                [
-                    'min_heading_level' => 2,
-                    'symbol' => '＃'
-                ],
-            );
+        if (! isset(self::$markdodwnConverter)) {
+            self::$markdownConverter = MarkdownConverter::create()
+                ->minified() // can't be minified due to code blocks
+                ->smartPunctuation()
+                ->withConfig(['html_input' => 'allow'])
+                ->descriptionLists()
+                ->attributes()
+                ->abbreviations()
+                ->externalLinks([
+                    'open_in_new_window' => true,
+                    'internal_hosts' => 'joshbruce.com'
+                ])->accessibleHeadingPermalinks(
+                    [
+                        'min_heading_level' => 2,
+                        'symbol' => '＃'
+                    ],
+                );
+        }
+        return self::$markdownConverter;
     }
 
     private function __construct(
@@ -98,19 +102,6 @@ class Markdown
         return self::markdownConverter()->convert($body);
     }
 
-    /**
-     * @todo: test
-     */
-    // public function frontMatter(): FrontMatter
-    // {
-    //     if (! isset($this->frontMatter)) {
-    //         $frontMatter = self::markdownConverter()
-    //             ->getFrontMatter($this->fileContent());
-    //         $this->frontMatter = FrontMatter::init($frontMatter);
-    //     }
-    //     return $this->frontMatter;
-    // }
-
     public function body(): string
     {
         if (strlen($this->body) === 0) {
@@ -119,72 +110,6 @@ class Markdown
         }
         return $this->body;
     }
-
-//     public function pageTitle(): string
-//     {
-//         $titles   = [];
-//         $titles[] = $this->frontMatter()->title();
-//
-//         $file = clone $this->file();
-//         while ($file->canGoUp()) {
-//             $file = $file->up();
-//
-//             $m = Markdown::for($file, $this->fileSystem());
-//
-//             $titles[] = $m->frontMatter()->title();
-//         }
-//
-//         $titles = array_filter($titles);
-//         return implode(' | ', $titles);
-//     }
-
-//     public function description(): string
-//     {
-//         if ($this->frontMatter()->hasMember('description')) {
-//             $description = $this->frontMatter()->description();
-//
-//         } else {
-//             $body = $this->body();
-//             $description = preg_filter(
-//                 ["/#(.*)\n/", "/{!!(.*)!!}/"],
-//                 ['', ''],
-//                 $body
-//             );
-//             if (is_string($description)) {
-//                 $parts = explode("\n", $description);
-//                 $parts = array_filter($parts);
-//                 $description = implode(' ', $parts);
-//
-//             } else {
-//                 // TODO: Doesn't guarantee meta description content.
-//                 //       Log??
-//                 $description = $body;
-//
-//             }
-//         }
-//
-//         $description = htmlentities(substr($description, 0, 200));
-//
-//         $parts = explode('. ', $description);
-//         $description = '';
-//         foreach ($parts as $part) {
-//             $d = $part;
-//             if (strlen($description) > 0) {
-//                 $d = $description . '. ' . $part;
-//             }
-//
-//             $proposedLength = strlen($d);
-//             if ($proposedLength >= 200) {
-//                 $ps = explode('. ', $d);
-//                 array_pop($ps);
-//                 $description = implode('. ', $ps) . '.';
-//                 break;
-//             }
-//             $description = $d;
-//         }
-//
-//         return $description;
-//     }
 
     public function file(): File
     {

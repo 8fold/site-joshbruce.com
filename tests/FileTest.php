@@ -63,7 +63,7 @@ it('can get description from front matter', function() {
    expect(
        $file->description()
    )->toBe(
-       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit. Curabitur &quot;iaculis&quot; sodales turpis a pellentesque's. In ac nibh ex."
+       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit. Curabitur “iaculis” sodales turpis a pellentesque’s. In ac nibh ex."
    );
 
    // derived description from content, short
@@ -79,6 +79,12 @@ it('can get description from front matter', function() {
     expect(
         $file->description()
     )->toBe(
-        "Short sentence. Something a little bit longer. Third sentence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit."
+        "The US Federal Government extended the tax filing deadline, which extended how long I could contribute to my Roth IRA for 2020."
+    );
+
+    expect(
+        $file->description(400)
+    )->toBe(
+        "The US Federal Government extended the tax filing deadline, which extended how long I could contribute to my Roth IRA for 2020. So, the cash reserves I have will be going to try and maximize that contribution. I had a coaching session with a Wave Advisor to improve and verify my bookkeeping skills."
     );
 })->group('markdown');

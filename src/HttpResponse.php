@@ -96,7 +96,7 @@ class HttpResponse
             $stream       = $psr17Factory->createStream($body);
             if (
                 $this->request()->isFile() and
-                $this->request()->isNotSitemap()
+                $this->request()->localFile()->isNotXml()
             ) {
                 $stream = $psr17Factory->createStreamFromFile($body);
             }

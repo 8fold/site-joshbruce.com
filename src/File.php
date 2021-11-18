@@ -11,7 +11,9 @@ use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\Site\FileSystemInterface;
 use JoshBruce\Site\ServerGlobals;
+
 use JoshBruce\Site\Content\Mimetype;
+use JoshBruce\Site\Content\Markdown;
 
 class File
 {
@@ -67,20 +69,20 @@ class File
 
     public function created(string $format = ''): string|int|false
     {
-        return $this->dateField('created', $format);
+        return self::dateField('created', $format);
     }
 
     public function updated(string $format = ''): string|int|false
     {
-        return $this->dateField('updated', $format);
+        return self::dateField('updated', $format);
     }
 
     public function moved(string $format = ''): string|int|false
     {
-        return $this->dateField('moved', $format);
+        return self::dateField('moved', $format);
     }
 
-    private function dateField(
+    public function dateField(
         string $key,
         string $format = ''
     ): string|int|false {
@@ -110,7 +112,7 @@ class File
         return '';
     }
 
-    public function description(): string
+    public function description(int $length = 200): string
     {
         $description = '';
         if ($this->frontMatterHasMember('description')) {
@@ -140,27 +142,26 @@ class File
             }
         }
 
-        $description = htmlentities(substr($description, 0, 200));
+        $sentences = explode('. ', $description);
 
-        $parts = explode('. ', $description);
-        $description = '';
-        foreach ($parts as $part) {
-            $d = $part;
-            if (strlen($description) > 0) {
-                $d = $description . '. ' . $part;
-            }
-
-            $proposedLength = strlen($d);
-            if ($proposedLength >= 200) {
-                $ps = explode('. ', $d);
-                array_pop($ps);
-                $description = implode('. ', $ps) . '.';
+        $newLength = 0;
+        $s = [];
+        foreach ($sentences as $sentence) {
+            $newLength += strlen($sentence);
+            if ($newLength > $length) {
                 break;
             }
-            $description = $d;
+            $s[] = strip_tags(
+                Markdown::markdownConverter()->convert($sentence)
+            );
+            // $s[] = $sentence;
         }
 
-        return $description;
+        $description = implode('. ', $s);
+        if (! str_ends_with($description, '.')) {
+            $description .= '.';
+        }
+        return htmlspecialchars($description);
     }
 
     public function original(): string

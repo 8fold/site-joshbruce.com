@@ -1,6 +1,7 @@
 ---
 title: Feed me (Atom and RSS)
 created: 20211116
+description: "Let's get this out of the way: Atom and [.RSS](Real Simple Syndication) are mostly dead. And, if the United States actually passes the bill to require users be able to turn algorithmic sorting and prioritization of content, then there's really no reason for them as a way to combat social media feeds."
 ---
 
 # Feed me (Atom and RSS)
