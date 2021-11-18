@@ -102,6 +102,52 @@ test('expected status codes', function() {
     expect(
         HttpResponse::from(
             request: HttpRequest::with(
+                ServerGlobals::init()->withRequestUri('/published-redirect'),
+                TestFileSystem::init()
+            )
+        )->statusCode()
+    )->toBeInt()->toBe(
+        301
+    );
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::with(
+                ServerGlobals::init()->withRequestUri('/published-redirect/302'),
+                TestFileSystem::init()
+            )
+        )->statusCode()
+    )->toBeInt()->toBe(
+        302
+    );
+
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::with(
+                ServerGlobals::init()->withRequestUri('/published-redirect/500'),
+                TestFileSystem::init()
+            )
+        )->statusCode()
+    )->toBeInt()->toBe(
+        500
+    );
+
+    $headers = HttpResponse::from(
+        request: HttpRequest::with(
+            ServerGlobals::init()->withRequestUri('/published-redirect/302'),
+            TestFileSystem::init()
+        )
+    )->headers();
+
+    expect(
+        array_key_exists('Location', $headers)
+    )->toBeTrue();
+})->group('response', 'request');
+
+it('can handle 405 response', function() {
+    expect(
+        HttpResponse::from(
+            request: HttpRequest::with(
                 ServerGlobals::init()->withRequestMethod('post'),
                 TestFileSystem::init()
             )
@@ -109,7 +155,7 @@ test('expected status codes', function() {
     )->toBeInt()->toBe(
         405
     );
-})->group('response', 'request');
+});
 
 it('can handle 500 response', function() {
     $serverGlobals = TestServerGlobals::init()->unsetAppEnv();

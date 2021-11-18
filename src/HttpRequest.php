@@ -63,6 +63,17 @@ class HttpRequest
         } elseif ($this->isNotFound()) {
             return 404;
 
+        } elseif (
+            $redirect = File::at(
+                $this->localPath(),
+                $this->fileSystem()
+            )->redirect()
+        ) {
+            // TODO: create HttpRedirect??
+            // @phpstan-ignore-next-line
+            $code = $redirect->code;
+            return ($code >= 300 and $code <= 399) ? $code : 500;
+
         }
         return 200;
     }

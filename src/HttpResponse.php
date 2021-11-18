@@ -48,6 +48,13 @@ class HttpResponse
         } elseif ($this->statusCode() === 404) {
             $headers['Content-Type'] = 'text/html';
 
+        } elseif ($this->statusCode() > 300 and $this->statusCode() < 399) {
+            if ($redirect = $this->request()->localFile()->redirect()) {
+                // TODO: create HttpRedirect??
+                // @phpstan-ignore-next-line
+                $headers['Location'] = $redirect->destination;
+
+            }
         }
         return $headers;
     }
