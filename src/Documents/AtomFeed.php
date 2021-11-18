@@ -28,23 +28,15 @@ class AtomFeed
         $dateFormat = 'Y-m-d\T00:00:00\Z';
 
         $markdownConverter = Markdown::markdownConverter();
-        $files = [];
+        // $files = [];
+        $entries = [];
         foreach ($finder as $found) {
             $localPath = $found->getPathname();
             $file      = File::at($localPath, $file->fileSystem());
-            $date      = $file->updated();
+
+            $date = $file->updated();
             if (! $date) {
                 $date = $file->created();
-            }
-
-            $files[$date] = $file;
-        }
-        krsort($files);
-
-        $entries = [];
-        foreach ($files as $updated => $file) {
-            if ($updated === 0 or $file->path(false) === '/content.md') {
-                continue;
             }
 
             $title   = $file->title();
@@ -58,7 +50,7 @@ class AtomFeed
                 $updated = $file->updated($dateFormat);
             }
 
-            $entries[] = Element::entry(
+            $entries[$date] = Element::entry(
                 Element::updated($updated),
                 Element::title($title),
                 Element::summary($summary),
@@ -69,10 +61,11 @@ class AtomFeed
                 Element::id($id)
             );
         }
+        krsort($entries);
 
         $feedUpdated = DateTime::createFromFormat(
             'Ymd',
-            strval(array_key_first($files))
+            strval(array_key_first($entries))
         );
         if ($feedUpdated) {
             $feedUpdated = $feedUpdated->format($dateFormat);
@@ -103,6 +96,6 @@ class AtomFeed
     {
         return $fileSystem->publishedContentFinder()->sortByName()
             ->notContains('redirect:')
-            ->notContains('noindex:');
+            ->notContains('nofeed: true');
     }
 }
