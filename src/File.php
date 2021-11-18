@@ -80,6 +80,20 @@ class File
         return $this->dateField('moved', $format);
     }
 
+    /* @todo: Need testing to avoid regression */
+    public function redirect(): object|false
+    {
+        if ($this->frontMatterHasMember('redirect')) {
+            $redirect = strval($this->frontMatter['redirect']);
+            list($code, $destination) = explode(' ', $redirect, 2);
+            return (object) [
+                'code'        => intval($code),
+                'destination' => strval($destination)
+            ];
+        }
+        return false;
+    }
+
     private function dateField(
         string $key,
         string $format = ''
