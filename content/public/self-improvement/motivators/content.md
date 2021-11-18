@@ -1,3 +1,3 @@
 ---
-redirect: /design-your-life/motivators
+redirect: 301 /design-your-life/motivators
 ---

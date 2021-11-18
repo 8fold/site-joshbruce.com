@@ -82,7 +82,20 @@ class File
         return self::dateField('moved', $format);
     }
 
-    public function dateField(
+    public function redirect(): object|false
+    {
+        if ($this->frontMatterHasMember('redirect')) {
+            $redirect = strval($this->frontMatter['redirect']);
+            list($code, $destination) = explode(' ', $redirect, 2);
+            return (object) [
+                'code'        => intval($code),
+                'destination' => strval($destination)
+            ];
+        }
+        return false;
+    }
+
+    private function dateField(
         string $key,
         string $format = ''
     ): string|int|false {

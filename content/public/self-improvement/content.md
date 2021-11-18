@@ -1,3 +1,3 @@
 ---
-redirect: /design-your-life
+redirect: 301 /design-your-life
 ---
