@@ -29,3 +29,23 @@ jobs:
 
       - name: Run tests
         run: composer run test
+
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP Action
+        uses: shivammathur/setup-php@2.15.0
+        with:
+          php-version: '8.0'
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Build static site
+        run: php amos compile
