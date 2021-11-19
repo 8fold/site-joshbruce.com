@@ -9,3 +9,9 @@ Anyone may [contribute to](https://github.com/8fold/site-joshbruce.com/blob/main
 You may interact with and [sponsor](https://github.com/sponsors/joshbruce) this project through GitHub using the sponsor link, the discussion and issues tabs, and contributing directly.
 
 You can also find me [@itsjoshbruce](https://twitter.com/ItsJoshBruce) on Twitter.
+
+## Naming conventions
+
+The `_` (underscore) at the beginning of a file or folder name represents a draft.
+
+The `~` (tilde) at the beginning of a file or folder name represents a redirection.
