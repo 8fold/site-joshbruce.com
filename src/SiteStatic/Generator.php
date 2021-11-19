@@ -52,7 +52,9 @@ class Generator extends Command
 
         $this->projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
-        Dotenv::createImmutable($this->projectRoot)->load();
+        if (File::at($this->projectRoot . '/.env', $this->fileSystem())) {
+            Dotenv::createImmutable($this->projectRoot)->load();
+        }
     }
 
     protected function execute(
