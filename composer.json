@@ -3,7 +3,7 @@
   "autoload": {
     "psr-4": {
       "JoshBruce\\Site\\": "./src",
-      "JoshBruce\\Permalinks\\": "./site-permalink-ids"
+      "JoshBruce\\SitePermalinks\\": "./site-permalink-ids"
     }
   },
   "autoload-dev": {

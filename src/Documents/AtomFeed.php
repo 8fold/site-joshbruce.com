@@ -28,7 +28,7 @@ class AtomFeed
         $dateFormat = 'Y-m-d\T00:00:00\Z';
 
         $markdownConverter = Markdown::markdownConverter();
-        $entries = [];
+        $updatedDates = [];
         foreach ($finder as $found) {
             $localPath = $found->getPathname();
             $file      = File::at($localPath, $file->fileSystem());
@@ -49,7 +49,7 @@ class AtomFeed
                 $updated = $file->updated($dateFormat);
             }
 
-            $entries[$date] = Element::entry(
+            $updatedDates[$date][] = Element::entry(
                 Element::updated($updated),
                 Element::title($title),
                 Element::summary($summary),
@@ -60,7 +60,14 @@ class AtomFeed
                 Element::id($id)
             );
         }
-        krsort($entries);
+        krsort($updatedDates);
+
+        $entries = [];
+        foreach ($updatedDates as $updated) {
+            foreach ($updated as $entry) {
+                $entries[] = $entry;
+            }
+        }
 
         $feedUpdated = DateTime::createFromFormat(
             'Ymd',
