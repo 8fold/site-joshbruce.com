@@ -53,6 +53,11 @@ class FileSystem implements FileSystemInterface
         return $this->contentRoot() . '/public';
     }
 
+    public function redirectedContentFinder(): Finder
+    {
+        return $this->finder()->contains('redirect: ');
+    }
+
     public function publishedContentFinder(): Finder
     {
         return $this->finder()->in($this->publicRoot())->name('content.md')

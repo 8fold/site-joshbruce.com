@@ -265,6 +265,25 @@ class File
         );
     }
 
+    public function parentFolder(): string
+    {
+        $path = $this->path(false);
+        if (str_starts_with($path, '/')) {
+            $path = substr($path, 1, strlen($path) - 1);
+        }
+
+        $parts = explode('/', $path);
+        if (in_array('content.md', $parts)) {
+            $parts = array_slice($parts, 0, count($parts) - 1);
+        }
+
+        $folder = array_pop($parts);
+        if (! $folder) {
+            return '';
+        }
+        return $folder;
+    }
+
     public function filename(): string
     {
         $path = $this->path();
