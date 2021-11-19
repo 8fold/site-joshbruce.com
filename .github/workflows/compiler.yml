@@ -52,7 +52,7 @@ jobs:
         run: |
           <?php
           $_SERVER['APP_ENV'] = 'github';
-          $_SERVER['APP_URL'] = 'https://joshbruce.com;
+          $_SERVER['APP_URL'] = 'https://joshbruce.com';
 
       - name: Build static site
         run: php amos compile
