@@ -1,14 +1,14 @@
 # Content for JoshBruce.com
 
-This repository holds some of the writings of Joshua C. Bruce; specifically, those used for [joshbruce.com](https://joshbruce.com).
+> 🗒 Note: Contributing to the project represents granting permission for the copyright holder designated above to redistribute and modify said contributions.
 
-This project is one aspect of a broader conversation and possible community.
+The contents of this directory are subject to the [terms of service](https://joshbruce.com/legal) on joshbruce.com.
+
+In short, the contents of this folder, unless otherwise specified, are: Copyright © Joshua C. Bruce, all rights reserved.
 
 Anyone may [contribute to](https://github.com/8fold/site-joshbruce.com/blob/main/.github/CONTRIBUTING.md) improving the content per the [license agreement](https://github.com/8fold/site-joshbruce.com/blob/main/.github/LICENSE) and in keeping with the [code of conduct](https://github.com/8fold/site-joshbruce.com/blob/main/.github/CODE_OF_CONDUCT.md).
 
-You may interact with and [sponsor](https://github.com/sponsors/joshbruce) this project through GitHub using the sponsor link, the discussion and issues tabs, and contributing directly.
-
-You can also find me [@itsjoshbruce](https://twitter.com/ItsJoshBruce) on Twitter.
+Open source doesn't necessarily mean open license. Along that same line, free as in beer isn't the same as [free as in speech](https://www.howtogeek.com/howto/31717/what-do-the-phrases-free-speech-vs.-free-beer-really-mean/).
 
 ## Naming conventions
 
