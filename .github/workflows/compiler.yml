@@ -47,5 +47,12 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
 
+      - name: Run PHP code
+        shell: php {0}
+        run: |
+          <?php
+          $_SERVER['APP_ENV'] = 'github';
+          $_SERVER['APP_URL'] = 'https://joshbruce.com';
+
       - name: Build static site
         run: php amos compile
