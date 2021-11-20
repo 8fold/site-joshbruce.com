@@ -16,7 +16,7 @@ JoshBruce\Site\SiteDynamic\Emitter::emit(
     response:JoshBruce\Site\HttpResponse::from(
         request: JoshBruce\Site\HttpRequest::with(
             JoshBruce\Site\ServerGlobals::init(),
-            JoshBruce\SiteDynamic\Finder::init()
+            JoshBruce\Site\FileSystem::init()
         )
     )
 );

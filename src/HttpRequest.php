@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-// use Whoops\Run as ErrorHandler;
-// use Whoops\Handler\PrettyPageHandler as ErrorPageHandler;
+use Whoops\Run as ErrorHandler;
+use Whoops\Handler\PrettyPageHandler as ErrorPageHandler;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;
@@ -44,11 +44,11 @@ class HttpRequest
     ) {
         if ($this->serverGlobals()->appEnv() !== 'production') {
             // use Whoops! for error display
-            // $errorHandler = new ErrorHandler();
-            // $errorHandler->pushHandler(
-            //     new ErrorPageHandler()
-            // );
-            // $errorHandler->register();
+            $errorHandler = new ErrorHandler();
+            $errorHandler->pushHandler(
+                new ErrorPageHandler()
+            );
+            $errorHandler->register();
         }
     }
 
