@@ -42,7 +42,7 @@ class Finder implements Countable, IteratorAggregate //implements FileSystemInte
     {
         $dir   = __DIR__;
         $parts = explode(self::FILE_SEPARATOR, $dir);
-        $parts = array_slice($parts, 0, -2);
+        $parts = array_slice($parts, 0, -3);
         return implode(self::FILE_SEPARATOR, $parts);
     }
 
