@@ -2,12 +2,14 @@
   "authors": [],
   "autoload": {
     "psr-4": {
-      "JoshBruce\\Site\\": "./src"
+      "JoshBruce\\Site\\": "./src",
+      "JoshBruce\\SiteDynamic\\": "./site-dynamic-php/src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "JoshBruce\\Site\\Tests\\": "./tests"
+      "JoshBruce\\Site\\Tests\\": "./tests",
+      "JoshBruce\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests"
     }
   },
   "config": {

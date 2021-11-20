@@ -158,11 +158,10 @@ The design reenforces this; in my opinion.
 
 ## Deploying updates
 
-Right now the code and content is all stored on GitHub. I've cloned them to the server. My code editor has a terminal and let's me automatically sign into my remote server. two commands and a password later, the site's pretty much updated.
+Right now the code and content is all stored on GitHub. I've cloned them to the server. My code editor has a terminal and lets me automatically sign into my remote server. two commands and a password later, the site's pretty much updated.
 
 Eventually I'm looking to add a script that will automatically do the update for me (continuous deployment) but, for now, it's not annoying enough.
 
 It's relatively instant and the site usually isn't down while I do it. Just the changes that were made since the last update are brought over.
 
 Takes less than a second for me to deploy the site and content.
-

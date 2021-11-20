@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
@@ -16,7 +16,7 @@ JoshBruce\Site\SiteDynamic\Emitter::emit(
     response:JoshBruce\Site\HttpResponse::from(
         request: JoshBruce\Site\HttpRequest::with(
             JoshBruce\Site\ServerGlobals::init(),
-            JoshBruce\Site\FileSystem::init()
+            JoshBruce\SiteDynamic\Finder::init()
         )
     )
 );

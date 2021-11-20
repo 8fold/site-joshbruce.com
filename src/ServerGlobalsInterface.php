@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use Symfony\Component\Finder\Finder;
-
 interface ServerGlobalsInterface
 {
     public static function init(): ServerGlobalsInterface;

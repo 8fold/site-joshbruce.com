@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site;
 
-use Whoops\Run as ErrorHandler;
-use Whoops\Handler\PrettyPageHandler as ErrorPageHandler;
+// use Whoops\Run as ErrorHandler;
+// use Whoops\Handler\PrettyPageHandler as ErrorPageHandler;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;
@@ -44,11 +44,11 @@ class HttpRequest
     ) {
         if ($this->serverGlobals()->appEnv() !== 'production') {
             // use Whoops! for error display
-            $errorHandler = new ErrorHandler();
-            $errorHandler->pushHandler(
-                new ErrorPageHandler()
-            );
-            $errorHandler->register();
+            // $errorHandler = new ErrorHandler();
+            // $errorHandler->pushHandler(
+            //     new ErrorPageHandler()
+            // );
+            // $errorHandler->register();
         }
     }
 
@@ -61,6 +61,7 @@ class HttpRequest
             return 405;
 
         } elseif ($this->isNotFound()) {
+            die('could be a redirect');
             return 404;
 
         } elseif (
@@ -195,10 +196,10 @@ class HttpRequest
         if (! isset($this->psrRequest)) {
             $psr17Factory = new PsrFactory();
             $creator      = new PsrServerRequestCreator(
-                $psr17Factory,
-                $psr17Factory,
-                $psr17Factory,
-                $psr17Factory
+                serverRequestFactory: $psr17Factory,
+                uriFactory: $psr17Factory,
+                uploadedFileFactory: $psr17Factory,
+                streamFactory: $psr17Factory
             );
 
             $this->psrRequest = $creator->fromGlobals();
