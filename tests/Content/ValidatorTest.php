@@ -67,8 +67,8 @@ test('redirected content has code and path', function() {
 test('redirected content only hops once', function() {
     // TODO: Thinking there should be something like a HttpRedirect object
     //       it would be able to handle multiple jumps - returning a file
-    //       HttpRequest could use 310 as I believe that's what Chrome sends
-    //       back on too many redirects error.
+    //       HttpRequest. If too many redirects, could use 310 as I believe
+    //       that's what Chrome sends back on too many redirects error.
     foreach ($this->redirected as $splFileInfo) {
         $file = File::at($splFileInfo->getPathName(), FileSystem::init());
         $destination = $file->redirect()->destination;
@@ -79,3 +79,8 @@ test('redirected content only hops once', function() {
         $this->assertFalse($destinationFile->redirect());
     }
 })->group('live-content');
+
+test('all URL references are reachable', function() {
+    // TODO: Check rendered pages for paths and verify those paths result in
+    //       status 200 requests and responses.
+});
