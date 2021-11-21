@@ -12,7 +12,6 @@ class Emitter
 {
     public static function emit(ResponseInterface $response): void
     {
-        $emitter = new PsrEmitter();
-        $emitter->emit($response);
+        (new PsrEmitter())->emit($response);
     }
 }

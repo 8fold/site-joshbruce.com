@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 
-use JoshBruce\SiteDynamic\Tests\Extensions\FileSystem\Finder as TestFinder;
+use JoshBruce\SiteDynamic\Http\Request;
+
+beforeEach(function() {
+   if (array_key_exists('REQUEST_URI', $_SERVER)) {
+       unset($_SERVER['REQUEST_URI']);
+   }
+});
 
 test('can instantiate live version', function() {
    expect(
@@ -12,7 +18,7 @@ test('can instantiate live version', function() {
    )->toBeInstanceOf(
        Finder::class
    );
-})->group('finder');
+})->group('finder', 'live-content');
 
 test('live content has expected folders', function() {
    expect(
@@ -56,52 +62,26 @@ test('live content has expected redirected count', function() {
    )->toBe($expected);
 })->group('finder', 'live-content');
 
-test('can instantiate test version', function() {
-   expect(
-       TestFinder::init()
-   )->toBeInstanceOf(
-       TestFinder::class
-   );
-})->group('finder');
+test('live content has expected files', function() {
+    expect(
+        Finder::init()->publicFileForRequest(
+            Request::fromGlobals(
+                Finder::init()
+            )
+        )->path()
+    )->toBe(
+        Finder::init()->publicRoot() . '/content.md'
+    );
 
-test('test content has expected published count', function() {
-    $expected = 2;
+    $_SERVER['REQUEST_URI'] = '/assets/css/main.min.css';
 
     expect(
-       count(TestFinder::init())
-    )->toBe($expected);
-
-    expect(
-       TestFinder::init()->publishedContent()->count()
-    )->toBe($expected);
-})->group('finder', 'test-content');
-
-test('test content has expected draft count', function() {
-   $expected = 1;
-
-   expect(
-       count(TestFinder::init()->draftContent())
-   )->toBe($expected);
-
-   expect(
-       TestFinder::init()->draftContent()->count()
-   )->toBe($expected);
-})->group('finder', 'test-content');
-
-test('test content has expected redirected count', function() {
-   $expected = 1;
-
-   expect(
-       count(TestFinder::init()->redirectedContent())
-   )->toBe($expected);
-
-   expect(
-       TestFinder::init()->redirectedContent()->count()
-   )->toBe($expected);
-})->group('finder', 'redirect-content');
-
-test('test content has expected folders', function() {
-   expect(
-       TestFinder::init()->hasRequiredFolders()
-   )->toBeTrue();
-})->group('finder', 'test-content');
+        Finder::init()->publicFileForRequest(
+            Request::fromGlobals(
+                Finder::init()
+            )
+        )->path()
+    )->toBe(
+        Finder::init()->publicRoot() . '/assets/css/main.min.css'
+    );
+})->group('finder', 'request', 'live-content');

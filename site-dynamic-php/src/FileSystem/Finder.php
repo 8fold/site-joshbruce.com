@@ -8,11 +8,13 @@ use Countable;
 use IteratorAggregate;
 use SplFileInfo;
 
+use Psr\Http\Message\RequestInterface;
+
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 
-// use JoshBruce\SiteDynamic\FileSystemInterface;
+use JoshBruce\SiteDynamic\FileSystem\File;
 
-class Finder implements Countable, IteratorAggregate //implements FileSystemInterface
+class Finder implements Countable, IteratorAggregate
 {
     private const DRAFT_INDICATOR = '_';
 
@@ -50,17 +52,24 @@ class Finder implements Countable, IteratorAggregate //implements FileSystemInte
     {
     }
 
-    public function count(): int
+    public function publicFileForRequest(RequestInterface $request): File
     {
-        return iterator_count($this->getIterator());
-    }
-
-    public function getIterator(): SymfonyFinder
-    {
-        if (! isset($this->symFinder)) {
-            $this->publishedContent();
+        $root = $request->finder()->publicRoot();
+        $path = $request->getUri()->getPath();
+        if (! str_starts_with($path, '/')) {
+            $path = '/' . $path;
         }
-        return $this->symFinder;
+
+        $filename = '';
+        if ($request->isRequestingContent()) {
+            $filename = '/' . self::CONTENT_FILENAME;
+        }
+
+        $localPath = $root . $path . $filename;
+        if (str_contains($localPath, '//')) {
+            $localPath = str_replace('//', '/', $localPath);
+        }
+        return File::at($localPath, $root);
     }
 
     public function hasRequiredFolders(): bool
@@ -136,7 +145,7 @@ class Finder implements Countable, IteratorAggregate //implements FileSystemInte
         return $this->contentRoot;
     }
 
-    private function publicRoot(): string
+    public function publicRoot(): string
     {
         return $this->contentRoot() . '/public';
     }
@@ -154,33 +163,23 @@ class Finder implements Countable, IteratorAggregate //implements FileSystemInte
         }
         return $this->symFinder;
     }
-//
-//     public function redirectedContentFinder(): Finder
-//     {
-//         return $this->finder()->contains('redirect: ');
-//     }
-//
-//     public function publishedContentFinder(): Finder
-//     {
-//         return $this->finder()->in($this->publicRoot())->name('content.md')
-//             ->filter(fn($f) => $this->isPublished($f));
-//     }
-//
-//     private function relativePath(string $path): string
-//     {
-//         return str_replace($this->contentRoot(), '', $path);
-//     }
-//
-//     private function isPublished(SplFileInfo $finderFile): bool
-//     {
-//         return ! $this->isDraft($finderFile);
-//     }
-//
-//     private function isDraft(SplFileInfo $finderFile): bool
-//     {
-//         $filePath = (string) $finderFile;
-//         $relativePath = $this->relativePath($filePath);
-//         return str_contains($relativePath, '_');
-//     }
-//
+
+    /**
+     * Countable methods
+     */
+    public function count(): int
+    {
+        return iterator_count($this->getIterator());
+    }
+
+    /**
+     * IteratorAggregate methods
+     */
+    public function getIterator(): SymfonyFinder
+    {
+        if (! isset($this->symFinder)) {
+            $this->publishedContent();
+        }
+        return $this->symFinder;
+    }
 }

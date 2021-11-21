@@ -18,6 +18,8 @@ use JoshBruce\Site\PageComponents\OriginalContentNotice;
 
 class Markdown
 {
+    private static MarkdownConverter $markdownConverter;
+
     private string $fileContent = '';
 
     private string $body = '';
@@ -29,22 +31,25 @@ class Markdown
 
     public static function markdownConverter(): MarkdownConverter
     {
-        return MarkdownConverter::create()
-            ->minified() // can't be minified due to code blocks
-            ->smartPunctuation()
-            ->withConfig(['html_input' => 'allow'])
-            ->descriptionLists()
-            ->attributes()
-            ->abbreviations()
-            ->externalLinks([
-                'open_in_new_window' => true,
-                'internal_hosts' => 'joshbruce.com'
-            ])->accessibleHeadingPermalinks(
-                [
-                    'min_heading_level' => 2,
-                    'symbol' => '＃'
-                ],
-            );
+        if (! isset(self::$markdownConverter)) {
+            self::$markdownConverter = MarkdownConverter::create()
+                ->minified() // can't be minified due to code blocks
+                ->smartPunctuation()
+                ->withConfig(['html_input' => 'allow'])
+                ->descriptionLists()
+                ->attributes()
+                ->abbreviations()
+                ->externalLinks([
+                    'open_in_new_window' => true,
+                    'internal_hosts' => 'joshbruce.com'
+                ])->accessibleHeadingPermalinks(
+                    [
+                        'min_heading_level' => 2,
+                        'symbol' => '＃'
+                    ],
+                );
+        }
+        return self::$markdownConverter;
     }
 
     private function __construct(

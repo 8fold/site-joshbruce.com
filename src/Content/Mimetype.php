@@ -24,12 +24,12 @@ class Mimetype
 
     private function isNotHtml(): bool
     {
-        return $this->name() !== 'html';
+        // return $this->filename() !== 'html';
     }
 
     public function isNotXml(): bool
     {
-        return $this->name() !== 'xml' and $this->isNotHtml();
+        // return $this->filename() !== 'xml' and $this->isNotHtml();
     }
 
     public function type(): string

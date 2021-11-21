@@ -12,6 +12,8 @@ Open source doesn't necessarily mean open license. Along that same line, free as
 
 ## Naming conventions
 
+The `.` (dot, period) is reserved for filenames and should not be used in folder names.
+
 The `_` (underscore) at the beginning of a file or folder name represents a draft.
 
 The `~` (tilde) at the beginning of a file or folder name represents a redirection.
