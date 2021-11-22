@@ -11,10 +11,24 @@ use Psr\Http\Message\StreamInterface;
 use Nyholm\Psr7\Response as PsrResponse;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\FileSystem\File;
+use JoshBruce\SiteDynamic\Content\Markdown;
 
+/**
+ * Immutable and read-only class for responding to requests.
+ *
+ * This, admittedly, means it does not fully implement the interface; however,
+ * the interfaces aren't divided between read, write, and both.
+ *
+ * Use with own caution outside this project.
+ *
+ * @todo Might be worth exploring creating them.
+ */
 class Response implements ResponseInterface
 {
     private PsrResponse $response;
+
+    private File $file;
 
     private const ENV_REQUIRED = [
         'APP_ENV',
@@ -25,13 +39,18 @@ class Response implements ResponseInterface
       'GET'
     ];
 
-    public static function from(RequestInterface $request): ResponseInterface
+    public static function from(
+        RequestInterface $request,
+        Finder $in
+    ): ResponseInterface
     {
-        return new Response($request);
+        return new Response($request, $in);
     }
 
-    final private function __construct(private RequestInterface $request)
-    {
+    final private function __construct(
+        private RequestInterface $request,
+        private Finder $finder
+    ) {
     }
 
     private function request(): RequestInterface
@@ -41,7 +60,7 @@ class Response implements ResponseInterface
 
     private function finder(): Finder
     {
-        return $this->request()->finder();
+        return $this->finder;
     }
 
     private function psrResponse(): PsrResponse
@@ -49,8 +68,9 @@ class Response implements ResponseInterface
         if (! isset($this->response)) {
             $this->response = new PsrResponse(
                 status: $this->statusCode(),
-                headers: $this->headers(),
-                body: $this->body(),
+                headers: $this->file()->headers(),
+                body: $this->file()->stream(),
+                // body: $this->body(),
                 reason: null
             );
         }
@@ -59,57 +79,37 @@ class Response implements ResponseInterface
 
     private function statusCode(): int
     {
-        if ($this->envIsMissingRequiredKey()) {
+        if (
+            $this->envIsMissingRequiredKey() or
+            $this->finder()->isMissingRequiredFolders()
+        ) {
             return 500;
 
         } elseif ($this->isUnsupportedMethod()) {
             return 405;
 
-        }
-
-        $file = $this->finder()->publicFileForRequest($this->request());
-        if ($file->isNotFound()) {
+        } elseif ($this->file()->isNotFound()) {
             return 404;
 
-        } elseif ($redirect = $file->redirect()) {
+        } elseif ($redirect = $this->file()->redirect()) {
             // TODO: create HttpRedirect??
             // @phpstan-ignore-next-line
             $code = $redirect->code;
             return ($code >= 300 and $code <= 399) ? $code : 500;
 
         }
-//         if ($this->envIsMissingRequiredKey()) {
-//             return 500;
-//
-//         } elseif ($this->isUnsupportedMethod()) {
-//             return 405;
-//
-//         } elseif ($this->isNotFound()) {
-//             die('could be a redirect');
-//             return 404;
-//
-//         } elseif (
-//             $redirect = File::at(
-//                 $this->localPath(),
-//                 $this->fileSystem()
-//             )->redirect()
-//         ) {
-//
-//         }
         return 200;
     }
 
-    private function headers(): array
+    private function file(): File
     {
-        return [];
-    }
-
-    /**
-     * @todo User StreamInterface exclusively
-     */
-    private function body(): string|StreamInterface
-    {
-        return 'Hello, World!';
+        if (! isset($this->file)) {
+            $this->file = $this->finder()->publicFileForRequest(
+                $this->request(),
+                $this->finder()->publicRoot()
+            );
+        }
+        return $this->file;
     }
 
     private function envIsMissingRequiredKey(): bool
@@ -188,37 +188,31 @@ class Response implements ResponseInterface
      */
     public function withStatus($code, $reasonPhrase = ''): self
     {
-        $this->psrResponse()->withStatus($code, $reasonPhrase);
         return $this;
     }
 
     public function withProtocolVersion($version): self
     {
-        $this->psrResponse()->withProtocolVersion($version);
         return $this;
     }
 
     public function withHeader($header, $value): self
     {
-        $this->psrResponse()->withHeader($header, $value);
         return $this;
     }
 
     public function withAddedHeader($header, $value): self
     {
-        $this->psrResponse()->withAddedHeader($header, $value);
         return $this;
     }
 
     public function withoutHeader($header): self
     {
-        $this->psrResponse()->withoutHeader($header);
         return $this;
     }
 
     public function withBody(StreamInterface $body): self
     {
-        $this->psrResponse()->withBody($body);
         return $this;
     }
 }

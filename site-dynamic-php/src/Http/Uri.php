@@ -11,6 +11,16 @@ use Psr\Http\Message\UriInterface;
 
 use Nyholm\Psr7\Uri as PsrUri;
 
+/**
+ * Immutable and read-only class for creating URI from request.
+ *
+ * This, admittedly, means it does not fully implement the interface; however,
+ * the interfaces aren't divided between read, write, and both.
+ *
+ * Use with own caution outside this project.
+ *
+ * @todo Might be worth exploring creating them.
+ */
 class Uri implements UriFactoryInterface, UriInterface, Stringable
 {
     private PsrUri $uri;

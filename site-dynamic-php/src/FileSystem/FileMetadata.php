@@ -9,12 +9,15 @@ use SplFileInfo;
 use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
 
 class FileMetadata
 {
 	private SplFileInfo $fileInfo;
 
 	private array $frontMatter = [];
+
+	public const FRONT_MATTER_DELIMETER = '---';
 
 	public static function for(string $localPath): static
 	{
@@ -25,26 +28,101 @@ class FileMetadata
 	{
 	}
 
+	/**
+	 * Same as `getBasename` without a suffix
+	 */
+    public function filename(bool $withExtension = true): string
+    {
+        if ($withExtension) {
+            return $this->fileInfo()->getFilename();
+        }
+		return $this->basename('.' . $this->extension());
+    }
+
+	public function extension(): string
+	{
+		return $this->fileInfo()->getExtension();
+	}
+
+	public function path(bool $omitFilename = false): string
+	{
+		if ($omitFilename) {
+			return $this->fileInfo()->getPath();
+		}
+		return $this->realPath();
+	}
+
+	public function mimetype(): FileMimetype
+	{
+		$raw = mime_content_type($this->path());
+		return FileMimetype::with($raw, $this->extension());
+	}
+
+	public function mightHaveFrontMatter(): bool
+	{
+		return $this->mimetype()->raw() === 'text/plain';
+	}
+
+	public function frontMatter(): array
+	{
+        if (
+			count($this->frontMatter) === 0 and
+			$this->mightHaveFrontMatter()
+		) {
+			// TODO: This is an argument for putting all metadata into
+			//       file. Or, making File a factory-like object that
+			//       might instantiate PlainTextFile versus some more
+			//       generic file type; ex. ImageFile.
+			$contents = file_get_contents($this->path());
+			$parts    = explode(self::FRONT_MATTER_DELIMETER, $contents);
+
+			if (
+				count($parts) === 3 and
+				$possible = Yaml::parse($parts[1]) and
+				is_array($possible)
+			) {
+				$this->frontMatter = $possible;
+
+			}
+		}
+		return $this->frontMatter;
+	}
+
 	private function fileInfo(): SplFileInfo
 	{
 		if (! isset($this->fileInfo)) {
-			$this->fileInfo = new SplFileInfo($this->path());
+			$this->fileInfo = new SplFileInfo($this->localPath);
 		}
 		return $this->fileInfo;
 	}
 
-    public function filename(): string
-    {
-		return $this->fileInfo()->getFilename();
-        // $path = $this->localPath;
-        // $parts = explode('/', $path);
-        // return array_pop($parts);
-    }
-
-	private function extension(): string
+	private function basename(string $suffixToOmit = ''): string
 	{
-		return $this->fileInfo()->getExtension();
+		return $this->fileInfo()->getBasename($suffixToOmit);
 	}
+
+	private function pathname(): string
+	{
+		return this->realPath();
+	}
+
+	private function realPath(): string
+	{
+		$p = $this->fileInfo()->getRealPath();
+		if ($p) {
+			return $p;
+		}
+		return '';
+	}
+
+
+
+
+
+
+
+
+
 
     private function isNotHtml(): bool
     {
@@ -72,40 +150,5 @@ class FileMetadata
 				);
 		}
 		return '';
-	}
-
-	private function path(): string
-	{
-		return $this->localPath;
-	}
-
-	private function frontMatter(): array
-	{
-        if (count($this->frontMatter) === 0) {
-            if ($this->isNotXml()) {
-                // return as early as possible
-                return [];
-            }
-
-            $contents = file_get_contents($this->path());
-            if (is_bool($contents)) {
-                return [];
-            }
-
-            $parts = explode('---', $contents);
-
-            if (count($parts) === 1) {
-                $this->contents = $parts[0];
-                $this->frontMatter = [];
-
-            } else {
-                $this->contents = $parts[2];
-                $metadata = Yaml::parse($parts[1]);
-                if (is_array($metadata)) {
-                    $this->frontMatter = $metadata;
-                }
-            }
-        }
-        return $this->frontMatter;
 	}
 }

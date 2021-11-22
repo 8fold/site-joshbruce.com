@@ -6,9 +6,28 @@ namespace JoshBruce\SiteDynamic\Content;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
+use JoshBruce\SiteDynamic\FileSystem\File;
+
+use JoshBruce\Site\DocumentComponents\Data;
+use JoshBruce\Site\DocumentComponents\DateBlock;
+use JoshBruce\Site\DocumentComponents\LogList;
+use JoshBruce\Site\DocumentComponents\OriginalContentNotice;
+
 class Markdown
 {
     private static MarkdownConverter $markdownConverter;
+
+    private const DOCUMENTS = [
+
+    ];
+
+    private const COMPONENTS = [
+        'data'      => Data::class,
+        'dateblock' => DateBlock::class,
+        'full-nav'  => Sitemap::class,
+        'loglist'   => LogList::class,
+        'original'  => OriginalContentNotice::class
+    ];
 
     public static function markdownConverter(): MarkdownConverter
     {

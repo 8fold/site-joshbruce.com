@@ -14,18 +14,28 @@ use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 use JoshBruce\SiteDynamic\Http\Uri;
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 
+/**
+ * Immutable and read-only class for capturing request details.
+ *
+ * This, admittedly, means it does not fully implement the interface; however,
+ * the interfaces aren't divided between read, write, and both.
+ *
+ * Use with own caution outside this project.
+ *
+ * @todo Might be worth exploring creating them.
+ */
 class Request implements RequestInterface
 {
     private PsrServerRequestCreator $creator;
 
     private RequestInterface $psrRequest;
 
-    public static function fromGlobals(Finder $in): Request
+    public static function fromGlobals(): Request
     {
-        return new static($in);
+        return new static();
     }
 
-    final private function __construct(private Finder $finder)
+    final private function __construct()
     {
     }
 
@@ -37,11 +47,6 @@ class Request implements RequestInterface
     public function isRequestingFile(): bool
     {
         return $this->getUri()->isFile();
-    }
-
-    public function finder(): Finder
-    {
-        return $this->finder;
     }
 
     private function psrRequest(): RequestInterface
@@ -78,13 +83,6 @@ class Request implements RequestInterface
     public function getMethod(): string
     {
         return $this->psrRequest()->getMethod();
-    }
-
-    public function withMethod($method): self
-    {
-        $this->psrRequest = $this->psrRequest()
-            ->withMethod($method);
-        return $this;
     }
 
     /**
@@ -135,52 +133,43 @@ class Request implements RequestInterface
      * We want to minimize mutation of state, therefore,
      * these methods only exist to ensure contract compliance.
      */
+    public function withMethod($method): self
+    {
+        return $this;
+    }
+
     public function withUri(UriInterface $uri, $preserveHost = false): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withUri($uri, $preserveHost);
         return $this;
     }
 
     public function withRequestTarget($requestTarget): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withRequestTarget($requestTarget);
         return $this;
     }
 
     public function withProtocolVersion($version): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withProtocolVersion($version);
         return $this;
     }
 
     public function withHeader($header, $value): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withHeader($header, $value);
         return $this;
     }
 
     public function withAddedHeader($header, $value): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withAddedHeader($header, $value);
         return $this;
     }
 
     public function withoutHeader($header): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withoutHeader($header);
         return $this;
     }
 
     public function withBody(StreamInterface $body): self
     {
-        // $this->psrRequest = $this->psrRequest()
-        //     ->withBody($body);
         return $this;
     }
 }

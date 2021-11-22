@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\FileSystem;
 
+use SplFileInfo;
 use DateTime;
 use DirectoryIterator;
 
 use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\StreamInterface;
+
+use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 
 // use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\SiteDynamic\FileSystem\FileMetadata;
+use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 // use JoshBruce\Site\FileSystemInterface;
 // use JoshBruce\Site\ServerGlobals;
@@ -23,7 +29,7 @@ class File
 
 //     private string $contentFileName = '/content.md';
 //
-//     private string $contents = '';
+    private string $contents = '';
 //
 //     private Mimetype $mimetype;
 
@@ -50,6 +56,48 @@ class File
         }
         return $this->metadata;
     }
+
+    public function mimetype(): FileMimetype
+    {
+        return $this->metadata()->mimetype();
+    }
+
+    public function extension(): string
+    {
+        return $this->metadata()->extension();
+    }
+
+    public function filename(bool $withExtension = true): string
+    {
+        return $this->metadata()->filename($withExtension);
+    }
+
+    public function path(bool $omitFilename = false): string
+    {
+        return $this->metadata()->path($omitFilename);
+    }
+
+    public function headers(): array
+    {
+        return [];
+    }
+
+    public function stream(): StreamInterface
+    {
+        $streamFactory = new PsrFactory();
+        if ($this->metadata()->mightHaveFrontMatter()) {
+            return $streamFactory->createStream(
+                Markdown::markdownConverter()->convert($this->contents())
+            );
+
+        }
+        return $streamFactory->createStreamFromFile($this->file()->path());
+    }
+
+
+
+
+
 
     public function isNotXml(): bool
     {
@@ -221,45 +269,20 @@ class File
      */
     public function frontMatter(): array
     {
-//         if (count($this->frontMatter) === 0) {
-//             if ($this->isNotXml()) {
-//                 // return as early as possible
-//                 return [];
-//             }
-//
-//             $contents = file_get_contents($this->path());
-//             if (is_bool($contents)) {
-//                 return [];
-//             }
-//
-//             $parts = explode('---', $contents);
-//
-//             if (count($parts) === 1) {
-//                 $this->contents = $parts[0];
-//                 $this->frontMatter = [];
-//
-//             } else {
-//                 $this->contents = $parts[2];
-//                 $metadata = Yaml::parse($parts[1]);
-//                 if (is_array($metadata)) {
-//                     $this->frontMatter = $metadata;
-//                 }
-//             }
-//         }
-//         return $this->frontMatter;
+        return $this->metadata()->frontMatter();
     }
 
     /**
      * @todo: move to trait
      */
-    public function path(bool $full = true): string
-    {
-        if ($full) {
-            return $this->localPath;
-        }
-        // TODO: test and verify used - returning empty string not an option.
-        return str_replace($this->root, '', $this->localPath);
-    }
+    // public function path(bool $full = true): string
+    // {
+    //     if ($full) {
+    //         return $this->localPath;
+    //     }
+    //     // TODO: test and verify used - returning empty string not an option.
+    //     return str_replace($this->root, '', $this->localPath);
+    // }
 
     public function canonicalUrl(): string
     {
@@ -289,36 +312,9 @@ class File
         return $folder;
     }
 
-    public function filename(): string
-    {
-        // $path = $this->path();
-        // $parts = explode('/', $path);
-        // return array_pop($parts);
-    }
-
-    public function mimetype(): Mimetype
-    {
-        if (! isset($this->mimetype)) {
-            $this->mimetype = Mimetype::for($this->path());
-        }
-        return $this->mimetype;
-    }
-
     public function title(): string
     {
         return $this->metadata()->title();
-        // if ($this->metadata()->has('title')) {
-        //     var_dump(__CLASS__);
-        //     die('checking for title');
-        // }
-        // if (array_key_exists('title', $this->frontMatter())) {
-        //     $frontMatter = $this->frontMatter();
-        //     $title = $frontMatter['title'];
-        //     if (is_string($title)) {
-        //         return $title;
-        //     }
-        // }
-        return '';
     }
 
     public function pageTitle(): string
@@ -340,13 +336,23 @@ class File
 
     public function contents(): string
     {
-        if (strlen($this->contents) === 0) {
+        if (
+            strlen($this->contents) === 0 and
+            $this->metadata()->mightHaveFrontMatter()
+        ) {
             $contents = file_get_contents($this->path());
-            if ($contents === false) {
-                return '';
+            $parts    = explode(
+                FileMetadata::FRONT_MATTER_DELIMETER,
+                $contents
+            );
+
+            if (count($parts) === 1) {
+                $this->contents = ltrim($parts[0]);
+
+            } elseif (count($parts) === 3) {
+                $this->contents = ltrim($parts[2]);
+
             }
-            $this->frontMatter();
-            // $this->contents = $contents;
         }
         return $this->contents;
     }

@@ -17,9 +17,8 @@ beforeEach(function() {
 test('status codes', function() {
     expect(
         Response::from(
-            Request::fromGlobals(
-                in: Finder::init()
-            )
+            Request::fromGlobals(),
+            in: Finder::init()
         )->getStatusCode()
     )->toBeInt()->toBe(
         200
@@ -29,9 +28,8 @@ test('status codes', function() {
 
     expect(
         Response::from(
-            Request::fromGlobals(
-                in: Finder::init()
-            )
+            Request::fromGlobals(),
+            in: Finder::init()
         )->getStatusCode()
     )->toBeInt()->toBe(
         404
@@ -43,9 +41,8 @@ test('status codes', function() {
 
     expect(
         Response::from(
-            Request::fromGlobals(
-                in: Finder::init()
-            )
+            Request::fromGlobals(),
+            in: Finder::init()
         )->getStatusCode()
     )->toBeInt()->toBe(
         405
@@ -56,9 +53,8 @@ test('status codes', function() {
 
     expect(
         Response::from(
-            Request::fromGlobals(
-                in: Finder::init()
-            )
+            Request::fromGlobals(),
+            in: Finder::init()
         )->getStatusCode()
     )->toBeInt()->toBe(
         500
@@ -102,9 +98,8 @@ test('status codes', function() {
 test('can instantiate response', function() {
    expect(
        Response::from(
-           Request::fromGlobals(
-               in: Finder::init()
-           )
+            Request::fromGlobals(),
+            in: Finder::init()
        )
    )->toBeInstanceOf(
        Response::class

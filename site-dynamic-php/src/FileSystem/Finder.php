@@ -52,9 +52,11 @@ class Finder implements Countable, IteratorAggregate
     {
     }
 
-    public function publicFileForRequest(RequestInterface $request): File
-    {
-        $root = $request->finder()->publicRoot();
+    public function publicFileForRequest(
+        RequestInterface $request,
+        string $publicRoot
+    ): File {
+        // $root = $request->finder()->publicRoot();
         $path = $request->getUri()->getPath();
         if (! str_starts_with($path, '/')) {
             $path = '/' . $path;
@@ -65,11 +67,11 @@ class Finder implements Countable, IteratorAggregate
             $filename = '/' . self::CONTENT_FILENAME;
         }
 
-        $localPath = $root . $path . $filename;
+        $localPath = $publicRoot . $path . $filename;
         if (str_contains($localPath, '//')) {
             $localPath = str_replace('//', '/', $localPath);
         }
-        return File::at($localPath, $root);
+        return File::at($localPath, $publicRoot);
     }
 
     public function hasRequiredFolders(): bool
@@ -78,6 +80,11 @@ class Finder implements Countable, IteratorAggregate
             file_exists($this->publicRoot()) and
             is_dir($this->contentRoot()) and
             is_dir($this->publicRoot());
+    }
+
+    public function isMissingRequiredFolders(): bool
+    {
+        return ! $this->hasRequiredFolders();
     }
 
     public function publishedContent(): Finder

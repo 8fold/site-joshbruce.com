@@ -15,13 +15,13 @@ beforeEach(function() {
 test('can tell between file request and content', function() {
    expect(
        Request::fromGlobals(
-           Finder::init()
+           // Finder::init()
        )->isRequestingContent()
    )->toBeTrue();
 
    expect(
        Request::fromGlobals(
-           Finder::init()
+           // Finder::init()
        )->isRequestingFile()
    )->toBeFalse();
 
@@ -30,13 +30,13 @@ test('can tell between file request and content', function() {
 
    expect(
        Request::fromGlobals(
-           Finder::init()
+           // Finder::init()
        )->isRequestingContent()
    )->toBeFalse();
 
    expect(
        Request::fromGlobals(
-           Finder::init()
+           // Finder::init()
        )->isRequestingFile()
    )->toBeTrue();
 })->group('request', 'live-content');
@@ -44,7 +44,7 @@ test('can tell between file request and content', function() {
 test('request implements interface', function() {
     expect(
         Request::fromGlobals(
-            Finder::init()
+            // Finder::init()
         )->getUri()->getPath()
     )->toBe(
         ''
@@ -54,7 +54,7 @@ test('request implements interface', function() {
 
     expect(
         Request::fromGlobals(
-            Finder::init()
+            // Finder::init()
         )->getUri()->getPath()
     )->toBe(
         '/legal'
@@ -62,7 +62,7 @@ test('request implements interface', function() {
 
     expect(
         Request::fromGlobals(
-            Finder::init()
+            // Finder::init()
         )->getMethod()
     )->toBe(
         'GET'
@@ -70,7 +70,7 @@ test('request implements interface', function() {
 
     expect(
         Request::fromGlobals(
-            Finder::init()
+            // Finder::init()
         )->withMethod('HEAD')->getMethod()
     )->toBe(
         'HEAD'
@@ -78,7 +78,7 @@ test('request implements interface', function() {
 
     expect(
        Request::fromGlobals(
-           Finder::init()
+           // Finder::init()
        )
     )->toBeInstanceOf(
        Request::class
