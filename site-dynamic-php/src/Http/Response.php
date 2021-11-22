@@ -70,7 +70,6 @@ class Response implements ResponseInterface
                 status: $this->statusCode(),
                 headers: $this->file()->headers(),
                 body: $this->file()->stream(),
-                // body: $this->body(),
                 reason: null
             );
         }
@@ -106,7 +105,8 @@ class Response implements ResponseInterface
         if (! isset($this->file)) {
             $this->file = $this->finder()->publicFileForRequest(
                 $this->request(),
-                $this->finder()->publicRoot()
+                $this->finder()->publicRoot(),
+                $this->statusCode()
             );
         }
         return $this->file;
