@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-use JoshBruce\Site\Dynamic\FileSystem\FileMetadata;
+use JoshBruce\SiteDynamic\FileSystem\FileMetadata;
+
+use JoshBruce\SiteDynamic\FileSystem\Finder;
 
 beforeEach(function() {
     $this->rootContentPath = Finder::init()->publicRoot() . '/content.md';

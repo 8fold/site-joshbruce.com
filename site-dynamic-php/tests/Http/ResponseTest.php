@@ -12,17 +12,19 @@ beforeEach(function() {
    if (array_key_exists('REQUEST_URI', $_SERVER)) {
        unset($_SERVER['REQUEST_URI']);
    }
+
+   $_SERVER['REQUEST_METHOD'] = 'GET';
 });
 
 test('status codes', function() {
-    expect(
-        Response::from(
-            Request::fromGlobals(),
-            in: Finder::init()
-        )->getStatusCode()
-    )->toBeInt()->toBe(
-        200
-    );
+    // expect(
+    //     Response::from(
+    //         Request::fromGlobals(),
+    //         in: Finder::init()
+    //     )->getStatusCode()
+    // )->toBeInt()->toBe(
+    //     200
+    // );
 
     $_SERVER['REQUEST_URI'] = '/something/invalid';
 
@@ -34,65 +36,31 @@ test('status codes', function() {
     )->toBeInt()->toBe(
         404
     );
-
-    unset($_SERVER['REQUEST_URI']);
-
-    $_SERVER['REQUEST_METHOD'] = 'POST';
-
-    expect(
-        Response::from(
-            Request::fromGlobals(),
-            in: Finder::init()
-        )->getStatusCode()
-    )->toBeInt()->toBe(
-        405
-    );
-
-    unset($_SERVER['REQUEST_METHOD']);
-    unset($_SERVER['APP_URL']);
-
-    expect(
-        Response::from(
-            Request::fromGlobals(),
-            in: Finder::init()
-        )->getStatusCode()
-    )->toBeInt()->toBe(
-        500
-    );
+//
+//     unset($_SERVER['REQUEST_URI']);
+//
+//     $_SERVER['REQUEST_METHOD'] = 'POST';
 //
 //     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::with(
-//                 ServerGlobals::init()->withRequestUri('/published-redirect'),
-//                 TestFileSystem::init()
-//             )
-//         )->statusCode()
+//         Response::from(
+//             Request::fromGlobals(),
+//             in: Finder::init()
+//         )->getStatusCode()
 //     )->toBeInt()->toBe(
-//         301
+//         405
 //     );
 //
+//     unset($_SERVER['REQUEST_METHOD']);
+//     unset($_SERVER['APP_URL']);
+//
 //     expect(
-//         HttpResponse::from(
-//             request: HttpRequest::with(
-//                 ServerGlobals::init()->withRequestUri('/published-redirect/302'),
-//                 TestFileSystem::init()
-//             )
-//         )->statusCode()
+//         Response::from(
+//             Request::fromGlobals(),
+//             in: Finder::init()
+//         )->getStatusCode()
 //     )->toBeInt()->toBe(
-//         302
+//         500
 //     );
-//
-//     $headers = HttpResponse::from(
-//         request: HttpRequest::with(
-//             ServerGlobals::init()->withRequestUri('/published-redirect/302'),
-//             TestFileSystem::init()
-//         )
-//     )->headers();
-//
-//     expect(
-//         array_key_exists('Location', $headers)
-//     )->toBeTrue();
-//
 })->group('response', 'live-content');
 
 test('can instantiate response', function() {

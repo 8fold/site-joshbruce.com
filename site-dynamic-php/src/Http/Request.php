@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http;
 
+use Psr\Http\Message\ServerRequestInterface;
+
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
@@ -24,7 +26,7 @@ use JoshBruce\SiteDynamic\FileSystem\Finder;
  *
  * @todo Might be worth exploring creating them.
  */
-class Request implements RequestInterface
+class Request implements ServerRequestInterface
 {
     private PsrServerRequestCreator $creator;
 
@@ -49,7 +51,23 @@ class Request implements RequestInterface
         return $this->getUri()->isFile();
     }
 
-    private function psrRequest(): RequestInterface
+    /**
+     * RequestInterface
+     */
+    public function getMethod(): string
+    {
+        return $this->psrRequest()->getMethod();
+    }
+
+    /**
+     * RequestInterface
+     */
+    public function getUri(): UriInterface
+    {
+        return $this->psrRequest()->getUri();
+    }
+
+    private function psrRequest(): ServerRequestInterface
     {
         if (! isset($this->psrRequest)) {
             $this->psrRequest = $this->creator()->fromGlobals();
@@ -73,31 +91,90 @@ class Request implements RequestInterface
     }
 
     /**
-     * RequestInterface methods
+     * ServerRequestInterface and RequestInterface methods.
+     *
+     * The following methods aren't used directly and ensure compliance with
+     * the specified interfaces.
+     *
+     * ServerRequestInterface methods
      */
-    public function getUri(): UriInterface
+    public function getServerParams(): array
     {
-        return $this->psrRequest()->getUri();
+        return $this->psrRequest()->getServerParams();
     }
 
-    public function getMethod(): string
+    public function getCookieParams(): array
     {
-        return $this->psrRequest()->getMethod();
+        return $this->psrRequest()->getCookieParams();
+    }
+
+    public function getQueryParams(): array
+    {
+        return $this->psrRequest()->getQueryParams();
+    }
+
+    public function getUploadedFiles(): array
+    {
+        return $this->psrRequest()->getUploadedFiles();
+    }
+
+    public function getParsedBody(): null|array|object
+    {
+        return $this->psrRequest()->getParsedBody();
+    }
+
+    public function getAttributes(): array
+    {
+        return $this->psrRequest()->getAttributes();
+    }
+
+    public function getAttribute($name, $default = null): mixed
+    {
+        return $this->psrRequest()->getAttribute($name, $default);
     }
 
     /**
-     * The following methods aren't used directly,
-     * they ensure compliance with the Request contract.
+     * We want to minimize mutation of state, therefore,
+     * these methods only exist to ensure contract compliance.
+     */
+    public function withCookieParams(array $cookies): self
+    {
+        return $this;
+    }
+
+    public function withQueryParams(array $query): self
+    {
+        return $this;
+    }
+
+    public function withUploadedFiles(array $uploadedFiles): self
+    {
+        return $this;
+    }
+
+    public function withParsedBody($data): self
+    {
+        return $this;
+    }
+
+    public function withAttribute($name, $value): self
+    {
+        return $this;
+    }
+
+    public function withoutAttribute($name): self
+    {
+        return $this;
+    }
+
+    /**
+     * RequestInterface methods
      */
     public function getRequestTarget(): string
     {
         return $this->psrRequest()->getRequestTarget();
     }
 
-    /**
-     * The following methods aren't used directly,
-     * they ensure compliance with the Message contract.
-     */
     public function getProtocolVersion(): string
     {
         return $this->psrRequest()->getProtocolVersion();

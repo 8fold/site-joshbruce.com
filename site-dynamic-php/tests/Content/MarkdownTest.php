@@ -13,4 +13,4 @@ test('markdown converter singleton', function() {
     )->toBe(
         $converter2
     );
-})->group('markdown', 'focus');
+})->group('markdown');

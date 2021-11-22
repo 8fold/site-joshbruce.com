@@ -43,9 +43,7 @@ test('can tell between file request and content', function() {
 
 test('request implements interface', function() {
     expect(
-        Request::fromGlobals(
-            // Finder::init()
-        )->getUri()->getPath()
+        Request::fromGlobals()->getUri()->getPath()
     )->toBe(
         ''
     );
@@ -53,33 +51,27 @@ test('request implements interface', function() {
     $_SERVER['REQUEST_URI'] = '/legal';
 
     expect(
-        Request::fromGlobals(
-            // Finder::init()
-        )->getUri()->getPath()
+        Request::fromGlobals()->getUri()->getPath()
     )->toBe(
         '/legal'
     );
 
     expect(
-        Request::fromGlobals(
-            // Finder::init()
-        )->getMethod()
+        Request::fromGlobals()->getMethod()
     )->toBe(
         'GET'
     );
 
+    $_SERVER['REQUEST_METHOD'] = 'HEAD';
+
     expect(
-        Request::fromGlobals(
-            // Finder::init()
-        )->withMethod('HEAD')->getMethod()
+        Request::fromGlobals()->withMethod('HEAD')->getMethod()
     )->toBe(
         'HEAD'
     );
 
     expect(
-       Request::fromGlobals(
-           // Finder::init()
-       )
+       Request::fromGlobals()
     )->toBeInstanceOf(
        Request::class
     );

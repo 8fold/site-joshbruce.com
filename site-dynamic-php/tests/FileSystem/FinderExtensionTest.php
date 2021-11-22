@@ -13,7 +13,7 @@ test('can instantiate extension', function() {
 })->group('finder', 'test-content');
 
 test('test content has expected published count', function() {
-    $expected = 2;
+    $expected = 3;
 
     expect(
        count(TestFinder::init())

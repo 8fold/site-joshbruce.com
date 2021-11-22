@@ -12,7 +12,8 @@ require $projectRoot . '/vendor/autoload.php';
 use Dotenv\Dotenv;
 
 use JoshBruce\SiteDynamic\Http\Emitter;
-use JoshBruce\SiteDynamic\Http\Response;
+// use JoshBruce\SiteDynamic\Http\Response;
+use JoshBruce\SiteDynamic\Http\RequestHandler;
 use JoshBruce\SiteDynamic\Http\Request;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
@@ -20,9 +21,10 @@ use JoshBruce\SiteDynamic\FileSystem\Finder;
 Dotenv::createImmutable($projectRoot)->load(); // modify $_SERVER superglobals
 
 Emitter::emit(
-    Response::from(
-        Request::fromGlobals(),
-        in: Finder::init()
+    RequestHandler::in(
+        Finder::init()
+    )->handle(
+        Request::fromGlobals()
     )
 );
 exit;

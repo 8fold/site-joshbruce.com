@@ -54,6 +54,10 @@ class FileMetadata
 
 	public function mimetype(): FileMimetype
 	{
+        debug_print_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+        die(var_dump(
+            $this->localPath
+        ));
 		$raw = mime_content_type($this->path());
 		return FileMimetype::with($raw, $this->extension());
 	}

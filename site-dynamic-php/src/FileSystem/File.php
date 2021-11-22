@@ -77,6 +77,11 @@ class File
         return $this->metadata()->path($omitFilename);
     }
 
+    public function statusCode(): int
+    {
+        return 200;
+    }
+
     public function headers(): array
     {
         return [];
@@ -107,20 +112,20 @@ class File
     /**
      * @todo: verify can be deprecated
      */
-    public function isMarkdown(): bool
-    {
-        return str_ends_with($this->fileName(), '.md');
-    }
+    // public function isMarkdown(): bool
+    // {
+    //     return str_ends_with($this->fileName(), '.md');
+    // }
 
-    public function found(): bool
-    {
-        return file_exists($this->path()) and is_file($this->path());
-    }
+    // public function found(): bool
+    // {
+    //     return file_exists($this->path()) and is_file($this->path());
+    // }
 
-    public function isNotFound(): bool
-    {
-        return ! $this->found();
-    }
+    // public function isNotFound(): bool
+    // {
+    //     return ! $this->found();
+    // }
 
     public function created(string $format = ''): string|int|false
     {
