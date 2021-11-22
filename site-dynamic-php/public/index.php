@@ -9,13 +9,20 @@ $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
 require $projectRoot . '/vendor/autoload.php';
 
-// Inject environment variables to global $_SERVER array
-Dotenv\Dotenv::createImmutable($projectRoot)->load();
+use Dotenv\Dotenv;
 
-JoshBruce\SiteDynamic\Http\Emitter::emit(
-    JoshBruce\SiteDynamic\Http\Response::from(
-        JoshBruce\SiteDynamic\Http\Request::fromGlobals(),
-        in: JoshBruce\SiteDynamic\FileSystem\Finder::init()
+use JoshBruce\SiteDynamic\Http\Emitter;
+use JoshBruce\SiteDynamic\Http\Response;
+use JoshBruce\SiteDynamic\Http\Request;
+
+use JoshBruce\SiteDynamic\FileSystem\Finder;
+
+Dotenv::createImmutable($projectRoot)->load(); // modify $_SERVER superglobals
+
+Emitter::emit(
+    Response::from(
+        Request::fromGlobals(),
+        in: Finder::init()
     )
 );
 exit;
