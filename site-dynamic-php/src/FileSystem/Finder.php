@@ -54,7 +54,8 @@ class Finder implements Countable, IteratorAggregate
 
     public function publicFileForRequest(
         RequestInterface $request,
-        string $publicRoot
+        string $publicRoot,
+        int $statusCode
     ): File {
         // $root = $request->finder()->publicRoot();
         $path = $request->getUri()->getPath();
