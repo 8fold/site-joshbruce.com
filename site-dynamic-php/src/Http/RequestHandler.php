@@ -34,7 +34,7 @@ use JoshBruce\SiteDynamic\Http\Responses\UnsupportedMethod as UnsupportedMethodR
  *
  * @todo Might be worth exploring creating them.
  */
-class RequestHandler implements RequestHandlerInterface, ResponseInterface
+class RequestHandler implements RequestHandlerInterface //, ResponseInterface
 {
     private PsrResponse $response;
 
@@ -65,10 +65,11 @@ class RequestHandler implements RequestHandlerInterface, ResponseInterface
         } elseif ($this->finder::isMissingFileForRequest($request)) {
             $status = 404;
 
-        // } elseif ($this->finder::fileForRequest($request)->redirect()) {
-        //     $status = 301;
-
         }
+
+        $root = Finder::publicRoot();
+        $path = $root . $request->getUri()->getPath();
+        // $contentType = LocalFile::at($path, $root)->mimetype()->interpreted();
 
         $response = match ($status) {
             500 => InternalServerErrorResponse::respondTo($request),
@@ -76,9 +77,18 @@ class RequestHandler implements RequestHandlerInterface, ResponseInterface
             404 => NotFoundResponse::respondTo($request),
             301 => RedirectResponse::respondTo($request),
             default => ($request->isRequestingFile())
-                ? FileResponse::respondTo($request)
+                ? FileResponse::respondTo(
+                    $path,
+                    File::at($path, $root)->mimetype()->interpreted()
+                )
                 : DocumentResponse::respondTo($request)
         };
+
+        return new PsrResponse(
+            status: $status,
+            headers: $response->headers(),
+            body: $response->stream()
+        );
 
         die(var_dump($response));
         // $console = [
@@ -108,100 +118,100 @@ class RequestHandler implements RequestHandlerInterface, ResponseInterface
     // ) {
     // }
 
-    private function request(): RequestInterface
-    {
-        return $this->request;
-    }
-
-    private function psrResponse(): PsrResponse
-    {
-        if (! isset($this->response)) {
-            $file = $this->finder::fileForRequest($this->request());
-            $this->response = new PsrResponse(
-                status: $file->statusCode(),
-                headers: $file->headers(),
-                body: $file->stream(),
-                reason: null
-            );
-        }
-        return $this->response;
-    }
-
-    /**
-     * The following methods aren't used directly,
-     * they ensure compliance with the Message contract.
-     */
-    public function getStatusCode(): int
-    {
-        return $this->psrResponse()->getStatusCode();
-    }
-
-    public function getReasonPhrase(): string
-    {
-        return $this->psrResponse()->getReasonPhrase();
-    }
-
-    public function getHeaders(): array
-    {
-        return $this->psrResponse()->getHeaders();
-    }
-
-    public function getBody(): StreamInterface
-    {
-        return $this->psrResponse()->getBody();
-    }
-
-    public function getProtocolVersion(): string
-    {
-        return $this->request()->getProtocolVersion();
-    }
-
-    public function getHeader($header): array
-    {
-        return $this->psrResponse()->getHeader($header);
-    }
-
-    public function hasHeader($header): bool
-    {
-        return $this->psrResponse()->hasHeader($header);
-    }
-
-    public function getHeaderLine($header): string
-    {
-        return $this->psrResponse()->getHeaderLine($header);
-    }
-
-    /**
-     * We want to minimize mutation of state, therefore,
-     * these methods only exist to ensure contract compliance.
-     */
-    public function withStatus($code, $reasonPhrase = ''): self
-    {
-        return $this;
-    }
-
-    public function withProtocolVersion($version): self
-    {
-        return $this;
-    }
-
-    public function withHeader($header, $value): self
-    {
-        return $this;
-    }
-
-    public function withAddedHeader($header, $value): self
-    {
-        return $this;
-    }
-
-    public function withoutHeader($header): self
-    {
-        return $this;
-    }
-
-    public function withBody(StreamInterface $body): self
-    {
-        return $this;
-    }
+//     private function request(): RequestInterface
+//     {
+//         return $this->request;
+//     }
+//
+//     private function psrResponse(): PsrResponse
+//     {
+//         if (! isset($this->response)) {
+//             $file = $this->finder::fileForRequest($this->request());
+//             $this->response = new PsrResponse(
+//                 status: $file->statusCode(),
+//                 headers: $file->headers(),
+//                 body: $file->stream(),
+//                 reason: null
+//             );
+//         }
+//         return $this->response;
+//     }
+//
+//     /**
+//      * The following methods aren't used directly,
+//      * they ensure compliance with the Message contract.
+//      */
+//     public function getStatusCode(): int
+//     {
+//         return $this->psrResponse()->getStatusCode();
+//     }
+//
+//     public function getReasonPhrase(): string
+//     {
+//         return $this->psrResponse()->getReasonPhrase();
+//     }
+//
+//     public function getHeaders(): array
+//     {
+//         return $this->psrResponse()->getHeaders();
+//     }
+//
+//     public function getBody(): StreamInterface
+//     {
+//         return $this->psrResponse()->getBody();
+//     }
+//
+//     public function getProtocolVersion(): string
+//     {
+//         return $this->request()->getProtocolVersion();
+//     }
+//
+//     public function getHeader($header): array
+//     {
+//         return $this->psrResponse()->getHeader($header);
+//     }
+//
+//     public function hasHeader($header): bool
+//     {
+//         return $this->psrResponse()->hasHeader($header);
+//     }
+//
+//     public function getHeaderLine($header): string
+//     {
+//         return $this->psrResponse()->getHeaderLine($header);
+//     }
+//
+//     /**
+//      * We want to minimize mutation of state, therefore,
+//      * these methods only exist to ensure contract compliance.
+//      */
+//     public function withStatus($code, $reasonPhrase = ''): self
+//     {
+//         return $this;
+//     }
+//
+//     public function withProtocolVersion($version): self
+//     {
+//         return $this;
+//     }
+//
+//     public function withHeader($header, $value): self
+//     {
+//         return $this;
+//     }
+//
+//     public function withAddedHeader($header, $value): self
+//     {
+//         return $this;
+//     }
+//
+//     public function withoutHeader($header): self
+//     {
+//         return $this;
+//     }
+//
+//     public function withBody(StreamInterface $body): self
+//     {
+//         return $this;
+//     }
 }

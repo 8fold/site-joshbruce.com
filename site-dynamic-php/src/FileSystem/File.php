@@ -59,7 +59,11 @@ class File
 
     public function mimetype(): FileMimetype
     {
-        return $this->metadata()->mimetype();
+        return FileMimetype::with(
+            mime_content_type($this->path()),
+            (new SplFileInfo($this->path()))->getExtension()
+        );
+        // return $this->metadata()->mimetype();
     }
 
     public function extension(): string

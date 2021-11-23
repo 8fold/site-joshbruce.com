@@ -6,7 +6,7 @@ namespace JoshBruce\SiteDynamic\Http;
 
 use Psr\Http\Message\ServerRequestInterface;
 
-use Psr\Http\Message\RequestInterface;
+// use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
 
@@ -14,6 +14,7 @@ use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 
 use JoshBruce\SiteDynamic\Http\Uri;
+
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 
 /**
@@ -30,7 +31,7 @@ class Request implements ServerRequestInterface
 {
     private PsrServerRequestCreator $creator;
 
-    private RequestInterface $psrRequest;
+    private ServerRequestInterface $psrRequest;
 
     public static function fromGlobals(): Request
     {

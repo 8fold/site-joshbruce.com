@@ -72,7 +72,7 @@ class Finder implements Countable, IteratorAggregate
         return static::$projectRoot;
     }
 
-    private static function contentRoot(): string
+    public static function contentRoot(): string
     {
         if (! isset(self::$contentRoot)) {
             $parts   = explode(self::FILE_SEPARATOR, static::projectRoot());
@@ -88,7 +88,7 @@ class Finder implements Countable, IteratorAggregate
         return self::$contentRoot;
     }
 
-    private static function publicRoot(): string
+    public static function publicRoot(): string
     {
         return self::contentRoot() . '/public';
     }
