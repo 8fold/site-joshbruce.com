@@ -66,20 +66,14 @@ class RequestHandler implements RequestHandlerInterface
             $this->environment()->isMissingVariables() or
             $this->environment()->isMissingFolders()
         ) {
-            $response = InternalServerErrorResponse::with(
+            return InternalServerErrorResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-500.html',
                     $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
-            );
-
-            return new PsrResponse(
-                status: $response->statusCode(),
-                headers: $response->headers(),
-                body: $response->stream()
-            );
+            )->respond();
 
         } elseif ($this->isUnsupportedMethod()) {
             $response = UnsupportedMethodResponse::with(
