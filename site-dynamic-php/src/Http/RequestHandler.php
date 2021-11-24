@@ -89,7 +89,13 @@ class RequestHandler implements RequestHandlerInterface
         $path = $this->fileUri();
 
         if (! file_exists($path) or ! is_file($path)) {
-            $response = NotFoundResponse::respondTo($request);
+            $response = NotFoundResponse::respondTo(
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-404.md',
+                    $this->environment()->publicRoot()
+                ),
+                $this->environment()
+            );
             return new PsrResponse(
                 status: $response->statusCode(),
                 headers: $response->headers(),

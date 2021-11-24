@@ -11,9 +11,10 @@ use Nyholm\Psr7\Stream;
 
 use Eightfold\HTMLBuilder\Element;
 
+use JoshBruce\SiteDynamic\Environment;
+
 use JoshBruce\SiteDynamic\Content\Markdown;
 
-use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
@@ -21,13 +22,16 @@ use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 class NotFound
 {
     public static function respondTo(
-        RequestInterface $request
+        PlainTextFile $file,
+        Environment $environment
     ): NotFound {
-        return new NotFound($request);
+        return new NotFound($file, $environment);
     }
 
-    final private function __construct(private RequestInterface $request)
-    {
+    final private function __construct(
+        private PlainTextFile $file,
+        private Environment $environment
+    ) {
     }
 
     public function statusCode(): int
@@ -48,13 +52,10 @@ class NotFound
                 '',
                 Element::main(
                     Markdown::markdownConverter()->convert(
-                        PlainTextFile::at(
-                            // @todo: Add to list of required content
-                            Finder::publicRoot() . '/error-404.md',
-                            Finder::publicRoot()
-                        )->content()
+                        $this->file->content()
                     )
-                )
+                ),
+                $this->environment
             )
         );
     }
