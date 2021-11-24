@@ -100,6 +100,37 @@ class RequestHandler implements RequestHandlerInterface
         $path = $this->fileUri();
 
         if (! file_exists($path) or ! is_file($path)) {
+            // Either a 404 or redirect
+            $parts = explode('/', $path);
+
+            $fileName = '~' . array_pop($parts);
+            $parent   = '~' . array_pop($parts);
+
+            $parts[] = $parent;
+            $parts[] = $fileName;
+
+            $path = implode('/', $parts);
+            $file = File::at($path, $this->environment()->publicRoot());
+
+            if ($this->isRequestingContent()) {
+                $file = PlainTextFile::at(
+                    $path,
+                    $this->environment()->publicRoot()
+                );
+            }
+
+            if (file_exists($path) and is_file($path)) {
+                $response = RedirectResponse::respondTo(
+                    $file,
+                    $this->environment(),
+                    $this->request()
+                );
+                return new PsrResponse(
+                    status: $response->statusCode(),
+                    headers: $response->headers(),
+                    body: $response->stream()
+                );
+            }
             $response = NotFoundResponse::respondTo(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-404.md',
@@ -115,20 +146,22 @@ class RequestHandler implements RequestHandlerInterface
             );
         }
 
+        $file = File::at($path, $this->environment()->publicRoot());
+        if ($this->isRequestingContent()) {
+            $file = PlainTextFile::at(
+                $path,
+                $this->environment()->publicRoot()
+            );
+        }
+
         $response = ($this->isRequestingFile())
             ? FileResponse::respondTo(
-                File::at(
-                    $path,
-                    $this->environment()->publicRoot()
-                ),
+                $file,
                 $this->environment(),
                 $this->request()
             )
             : DocumentResponse::respondTo(
-                PlainTextFile::at(
-                    $path,
-                    $this->environment()->publicRoot()
-                ),
+                $file,
                 $this->environment(),
                 $this->request()
             );
@@ -146,6 +179,11 @@ class RequestHandler implements RequestHandlerInterface
             strtoupper($this->request()->getMethod()),
             $this->environment()->supportedMethods()
         );
+    }
+
+    private function isRequestingContent(): bool
+    {
+        return ! $this->isRequestingFile();
     }
 
     private function isRequestingFile(): bool

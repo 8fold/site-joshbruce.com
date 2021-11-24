@@ -47,6 +47,15 @@ class PlainTextFile implements FileInterface
 
     private string $content = '';
 
+    public function redirect(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('redirect', $frontMatter)) {
+            return $frontMatter['redirect'];
+        }
+        return '';
+    }
+
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {

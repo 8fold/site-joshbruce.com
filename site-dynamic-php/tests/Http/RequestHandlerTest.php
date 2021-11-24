@@ -89,3 +89,21 @@ it('can handle not found', function() {
         404
     );
 })->group('request-handler', 'live-content', 'status-codes');
+
+it('can handle redirect', function() {
+    expect(
+        RequestHandler::in(
+            Finder::init(),
+            Environment::with(__DIR__ . '/../../../')
+        )->handle(
+            new ServerRequest(
+                method: 'GET',
+                uri: '/self-improvement',
+                headers: [],
+                serverParams: $_SERVER
+            )
+        )->getStatusCode()
+    )->toBe(
+        301
+    );
+})->group('request-handler', 'live-content', 'status-codes');
