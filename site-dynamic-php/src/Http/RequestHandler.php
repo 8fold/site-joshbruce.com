@@ -114,7 +114,7 @@ class RequestHandler implements RequestHandlerInterface
                 );
             }
 
-            $response = RedirectResponse::respondTo(
+            $response = RedirectResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()

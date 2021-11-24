@@ -21,7 +21,7 @@ use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 
 class Redirect
 {
-    public static function respondTo(
+    public static function with(
         PlainTextFile $file,
         Environment $environment,
         ServerRequestInterface $request
