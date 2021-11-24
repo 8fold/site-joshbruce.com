@@ -82,7 +82,7 @@ class RequestHandler implements RequestHandlerInterface
             );
 
         } elseif ($this->isUnsupportedMethod()) {
-            $response = UnsupportedMethodResponse::respondTo(
+            $response = UnsupportedMethodResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-405.md',
                     $this->environment()->publicRoot()
