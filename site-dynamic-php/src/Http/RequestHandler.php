@@ -76,20 +76,14 @@ class RequestHandler implements RequestHandlerInterface
             )->respond();
 
         } elseif ($this->isUnsupportedMethod()) {
-            $response = UnsupportedMethodResponse::with(
+            return UnsupportedMethodResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-405.md',
                     $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
-            );
-
-            return new PsrResponse(
-                status: $response->statusCode(),
-                headers: $response->headers(),
-                body: $response->stream()
-            );
+            )->respond();
 
         }
 
@@ -108,55 +102,45 @@ class RequestHandler implements RequestHandlerInterface
                 );
             }
 
-            $response = RedirectResponse::with(
+            return RedirectResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()
-            );
+            )->respond();
 
-            return new PsrResponse(
-                status: $response->statusCode(),
-                headers: $response->headers(),
-                body: $response->stream()
-            );
         }
 
         if (! file_exists($path) or ! is_file($path)) {
-            $response = NotFoundResponse::with(
+            return NotFoundResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-404.md',
                     $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
-            );
-
-            return new PsrResponse(
-                status: $response->statusCode(),
-                headers: $response->headers(),
-                body: $response->stream()
-            );
+            )->respond();
         }
 
         $file = File::at($path, $this->environment()->publicRoot());
+
         if ($this->isRequestingContent()) {
             $file = PlainTextFile::at(
                 $path,
                 $this->environment()->publicRoot()
             );
-        }
 
-        return ($this->isRequestingFile())
-            ? FileResponse::with(
-                $file,
-                $this->environment(),
-                $this->request()
-            )->respond()
-            : DocumentResponse::with(
+            return DocumentResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()
             )->respond();
+        }
+
+        return FileResponse::with(
+            $file,
+            $this->environment(),
+            $this->request()
+        )->respond();
     }
 
     private function isRedirecting(string $path): bool
