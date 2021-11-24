@@ -66,7 +66,7 @@ class RequestHandler implements RequestHandlerInterface
             $this->environment()->isMissingVariables() or
             $this->environment()->isMissingFolders()
         ) {
-            $response = InternalServerErrorResponse::respondTo(
+            $response = InternalServerErrorResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-500.html',
                     $this->environment()->publicRoot()
