@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
-use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 
-// use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7\Stream;
-
-use JoshBruce\SiteDynamic\FileSystem\Finder;
-use JoshBruce\SiteDynamic\FileSystem\File as LocalFile;
 
 class File
 {
+    public static function at(string $filePath, string $contentType): File
+    {
+        return new File($filePath, $contentType);
+    }
+
     public static function respondTo(
         string $filePath,
         string $contentType
@@ -35,6 +35,7 @@ class File
 
     public function headers(): array
     {
+        // TODO: cache-control - /assets should be different than /media
         return [
             'Content-type' => $this->contentType
         ];

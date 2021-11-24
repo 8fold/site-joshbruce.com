@@ -4,87 +4,80 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\FileSystem;
 
-use SplFileInfo;
-use DateTime;
-use DirectoryIterator;
-
-use Psr\Http\Message\RequestInterface;
-use Psr\Http\Message\StreamInterface;
-
-use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
+use JoshBruce\SiteDynamic\FileSystem\FileInterface;
 
 use Symfony\Component\Yaml\Yaml;
 
+// use SplFileInfo;
+// use DateTime;
+// use DirectoryIterator;
+
+// use Psr\Http\Message\RequestInterface;
+// use Psr\Http\Message\StreamInterface;
+
+// use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
+
 // use Symfony\Component\Yaml\Yaml;
 
-use JoshBruce\SiteDynamic\FileSystem\FileMetadata;
-use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
-use JoshBruce\SiteDynamic\Content\Markdown;
+// use Symfony\Component\Yaml\Yaml;
 
-use JoshBruce\SiteDynamic\FileSystem\FileInterface;
+// use JoshBruce\SiteDynamic\FileSystem\FileMetadata;
+// use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
+// use JoshBruce\SiteDynamic\Content\Markdown;
+//
+
 
 // use JoshBruce\Site\FileSystemInterface;
 // use JoshBruce\Site\ServerGlobals;
 // use JoshBruce\Site\Content\Mimetype;
 
+use JoshBruce\SiteDynamic\FileSystem\FileTrait;
+
+use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+
 class PlainTextFile implements FileInterface
 {
-    private SplFileInfo $fileInfo;
+    use FileTrait;
+
+	private const FRONT_MATTER_DELIMITER = '---';
 
     private string $rawContent = '';
 
     private array $frontMatter = [];
 
-    public const FRONT_MATTER_DELIMETER = '---';
+    private string $content = '';
 
-    private FileMetadata $metadata;
-
-//     private string $contentFileName = '/content.md';
-//
-    private string $contents = '';
-//
-//     private Mimetype $mimetype;
-
-    /**
-     * @var array<string, mixed>
-     */
-    // private array $frontMatter = [];
-
-    public static function at(string $localPath, string $root): PlainTextFile
+    public function frontMatter(): array
     {
-        return new static($localPath, $root);
-    }
-
-    final private function __construct(
-        private string $localPath,
-        private string $root
-    ) {
-    }
-
-    public function metadata(): FileMetadata
-    {
-        die(__FUNCTION__);
-    }
-
-    public function mimetype(): FileMimetype
-    {
-        return FileMimetype::with(
-            mime_content_type($this->localPath),
-            $this->fileInfo()->getExtension()
-        );
+        if (count($this->frontMatter) === 0) {
+            $this->processRawContent();
+        }
+        return $this->frontMatter;
     }
 
     public function content(): string
     {
-        return $this->rawContent();
+        if (strlen($this->content) === 0) {
+            $this->processRawContent();
+        }
+        return $this->content;
     }
 
-    private function fileInfo(): SplFileInfo
+    private function processRawContent(): void
     {
-        if (! isset($this->fileInfo)) {
-            $this->fileInfo = new SplFileInfo($this->localPath);
+        $parts = explode(self::FRONT_MATTER_DELIMITER, $this->rawContent());
+		if (
+			count($parts) === 3 and
+			$possible = Yaml::parse($parts[1]) and
+			is_array($possible)
+		) {
+			$this->frontMatter = $possible;
+            $this->content = $parts[2];
+
+		} else {
+            $this->content = $parts[0];
+
         }
-        return $this->fileInfo;
     }
 
     private function rawContent(): string
@@ -94,6 +87,63 @@ class PlainTextFile implements FileInterface
         }
         return $this->rawContent;
     }
+
+
+//     private SplFileInfo $fileInfo;
+//
+
+//
+//     private array $frontMatter = [];
+//
+//     public const FRONT_MATTER_DELIMETER = '---';
+//
+//     private FileMetadata $metadata;
+
+//     private string $contentFileName = '/content.md';
+//
+    // private string $contents = '';
+//
+//     private Mimetype $mimetype;
+
+    /**
+     * @var array<string, mixed>
+     */
+    // private array $frontMatter = [];
+
+//     public static function at(string $localPath, string $root): PlainTextFile
+//     {
+//         die("here");
+//         return new static($localPath, $root);
+//     }
+//
+//     final private function __construct(
+//         private string $localPath,
+//         private string $root
+//     ) {
+//     }
+
+    // public function metadata(): FileMetadata
+    // {
+    //     die(__FUNCTION__);
+    // }
+
+    // public function mimetype(): FileMimetype
+    // {
+    //     return FileMimetype::with(
+    //         mime_content_type($this->localPath),
+    //         $this->fileInfo()->getExtension()
+    //     );
+    // }
+
+//
+//     private function fileInfo(): SplFileInfo
+//     {
+//         if (! isset($this->fileInfo)) {
+//             $this->fileInfo = new SplFileInfo($this->localPath);
+//         }
+//         return $this->fileInfo;
+//     }
+//
 //
 //
 //

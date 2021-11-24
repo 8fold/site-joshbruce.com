@@ -30,8 +30,6 @@
   <php>
     <ini name="display_errors" value="On"/>
     <ini name="display_startup_errors" value="On"/>
-	<server name="APP_ENV" value="test" force="true"/>
-	<server name="APP_URL" value="http://jb-site.test"/>
   </php>
 
 </phpunit>

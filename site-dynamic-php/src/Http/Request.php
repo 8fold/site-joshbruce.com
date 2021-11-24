@@ -6,31 +6,22 @@ namespace JoshBruce\SiteDynamic\Http;
 
 use Psr\Http\Message\ServerRequestInterface;
 
-// use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
 
 use Nyholm\Psr7\Factory\Psr17Factory as PsrFactory;
 use Nyholm\Psr7Server\ServerRequestCreator as PsrServerRequestCreator;
 
-use JoshBruce\SiteDynamic\Http\Uri;
-
-use JoshBruce\SiteDynamic\FileSystem\Finder;
-
 /**
- * Immutable and read-only class for capturing request details.
+ * Read-only immutable class server request from server globals.
  *
  * This, admittedly, means it does not fully implement the interface; however,
- * the interfaces aren't divided between read, write, and both.
+ * the PSR interfaces aren't divided between read, write, and both.
  *
  * Use with own caution outside this project.
- *
- * @todo Might be worth exploring creating them.
  */
 class Request implements ServerRequestInterface
 {
-    private PsrServerRequestCreator $creator;
-
     private ServerRequestInterface $psrRequest;
 
     public static function fromGlobals(): Request
@@ -42,16 +33,6 @@ class Request implements ServerRequestInterface
     {
     }
 
-    public function isRequestingContent(): bool
-    {
-        return ! $this->isRequestingFile();
-    }
-
-    public function isRequestingFile(): bool
-    {
-        return $this->getUri()->isFile();
-    }
-
     /**
      * RequestInterface
      */
@@ -60,9 +41,6 @@ class Request implements ServerRequestInterface
         return $this->psrRequest()->getMethod();
     }
 
-    /**
-     * RequestInterface
-     */
     public function getUri(): UriInterface
     {
         return $this->psrRequest()->getUri();
@@ -71,24 +49,18 @@ class Request implements ServerRequestInterface
     private function psrRequest(): ServerRequestInterface
     {
         if (! isset($this->psrRequest)) {
-            $this->psrRequest = $this->creator()->fromGlobals();
-        }
-        return $this->psrRequest;
-    }
-
-    private function creator(): PsrServerRequestCreator
-    {
-        if (! isset($this->creator)) {
             $psr17Factory  = new PsrFactory();
-            $uriFactory    = new Uri();
-            $this->creator = new PsrServerRequestCreator(
+
+            $creator = new PsrServerRequestCreator(
                 serverRequestFactory: $psr17Factory,
-                uriFactory: $uriFactory,
+                uriFactory: $psr17Factory,
                 uploadedFileFactory: $psr17Factory,
                 streamFactory: $psr17Factory
             );
+
+            $this->psrRequest = $creator->fromGlobals();
         }
-        return $this->creator;
+        return $this->psrRequest;
     }
 
     /**

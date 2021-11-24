@@ -11,7 +11,9 @@ use Eightfold\HTMLBuilder\Element;
 
 // use JoshBruce\Site\PageComponents\Navigation;
 
-use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\FileInterface;
@@ -23,24 +25,9 @@ class HtmlDefault
         string $pageTitle,
         string $description,
         Element $body,
-        Finder $finder = null
+        Environment $environemt
     ): string {
-        if ($finder === null) {
-            $finder = Finder::init();
-        }
-        // $pageTitle   = $file->pageTitle();
-        // $description = $file->description();
-        // $html        = '';
-        // if ($file->isMarkdown()) {
-        //     $markdown  = Markdown::for(
-        //         file: $file,
-        //         in: $file->fileSystem()
-        //     );
-        //     $html        = $markdown->html();
-        //     // $description = $markdown->description();
-        // }
-
-        return Document::create(
+        $html = Document::create(
             $pageTitle
         )->head(
             ...self::baseHead($description)
@@ -51,8 +38,8 @@ class HtmlDefault
             Element::nav(
                 Markdown::markdownConverter()->convert(
                     PlainTextFile::at(
-                        $finder::contentRoot() . '/navigation/main.md',
-                        $finder::contentRoot()
+                        $environemt->contentRoot() . '/navigation/main.md',
+                        $environemt->contentRoot()
                     )->content()
                 )
             )->props('id main-nav'),
@@ -63,6 +50,12 @@ class HtmlDefault
                 )
             )
         )->build();
+
+        return str_replace(
+            ['href="/'],
+            ['href="' . $_SERVER['APP_URL'] . '/'],
+            $html
+        );
     }
 
     /**

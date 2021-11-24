@@ -9,18 +9,21 @@ use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
 
-use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\Environment;
 
 class InternalServerError
 {
     public static function respondTo(
+        Environment $environment,
         RequestInterface $request
     ): InternalServerError {
-        return new InternalServerError($request);
+        return new InternalServerError($environment, $request);
     }
 
-    final private function __construct(private RequestInterface $request)
-    {
+    final private function __construct(
+        private Environment $environment,
+        private RequestInterface $request
+    ) {
     }
 
     public function statusCode(): int
@@ -36,7 +39,7 @@ class InternalServerError
     public function stream(): StreamInterface
     {
         // @todo: Add to list of required content
-        $path    = Finder::publicRoot() . '/error-500.html';
+        $path    = $this->environment->publicRoot() . '/error-500.html';
         $content = file_get_contents($path);
         return Stream::create($content);
     }

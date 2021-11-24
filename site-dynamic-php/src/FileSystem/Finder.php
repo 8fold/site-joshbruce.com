@@ -27,26 +27,26 @@ class Finder implements Countable, IteratorAggregate
 
     private const REDIRECT_INDICATOR = '~';
 
-    private const CONTENT_FOLDER_NAME = 'content';
+    // private const CONTENT_FOLDER_NAME = 'content';
 
-    private const CONTENT_FILENAME = 'content.md';
+    // public const CONTENT_FILENAME = 'content.md';
 
     private const FILE_SEPARATOR = '/';
 
-    private const ENV_REQUIRED = [
-        'APP_ENV',
-        'APP_URL'
-    ];
+    // private const ENV_REQUIRED = [
+    //     'APP_ENV',
+    //     'APP_URL'
+    // ];
 
-    private const SUPPORTED_METHODS = [
-      'GET'
-    ];
+    // private const SUPPORTED_METHODS = [
+    //   'GET'
+    // ];
 
     private static Finder $finder;
 
-    protected static string $projectRoot;
+    // protected static string $projectRoot;
 
-    protected static string $contentRoot;
+    // protected static string $contentRoot;
 
     private SymfonyFinder $symFinder;
 
@@ -60,50 +60,50 @@ class Finder implements Countable, IteratorAggregate
         return self::$finder;
     }
 
-    protected static function projectRoot(): string
-    {
-        if (! isset(static::$projectRoot)) {
-            $dir   = __DIR__;
-            $parts = explode(self::FILE_SEPARATOR, $dir);
-            $parts = array_slice($parts, 0, -3);
-            static::$projectRoot = implode(self::FILE_SEPARATOR, $parts);
+//     protected static function projectRoot(): string
+//     {
+//         if (! isset(static::$projectRoot)) {
+//             $dir   = __DIR__;
+//             $parts = explode(self::FILE_SEPARATOR, $dir);
+//             $parts = array_slice($parts, 0, -3);
+//             static::$projectRoot = implode(self::FILE_SEPARATOR, $parts);
+//
+//         }
+//         return static::$projectRoot;
+//     }
 
-        }
-        return static::$projectRoot;
-    }
+//     public static function contentRoot(): string
+//     {
+//         if (! isset(self::$contentRoot)) {
+//             $parts   = explode(self::FILE_SEPARATOR, static::projectRoot());
+//             $parts[] = self::CONTENT_FOLDER_NAME;
+//
+//             $base = implode(self::FILE_SEPARATOR, $parts);
+//             if (str_ends_with($base, self::FILE_SEPARATOR)) {
+//                 $base = substr($base, 0, -1);
+//             }
+//
+//             self::$contentRoot = $base;
+//         }
+//         return self::$contentRoot;
+//     }
 
-    public static function contentRoot(): string
-    {
-        if (! isset(self::$contentRoot)) {
-            $parts   = explode(self::FILE_SEPARATOR, static::projectRoot());
-            $parts[] = self::CONTENT_FOLDER_NAME;
+    // public static function publicRoot(): string
+    // {
+    //     return self::contentRoot() . '/public';
+    // }
 
-            $base = implode(self::FILE_SEPARATOR, $parts);
-            if (str_ends_with($base, self::FILE_SEPARATOR)) {
-                $base = substr($base, 0, -1);
-            }
+    // public static function isMissingRequiredFolders(): bool
+    // {
+    //     return ! self::hasRequiredFolders();
+    // }
 
-            self::$contentRoot = $base;
-        }
-        return self::$contentRoot;
-    }
-
-    public static function publicRoot(): string
-    {
-        return self::contentRoot() . '/public';
-    }
-
-    public static function isMissingRequiredFolders(): bool
-    {
-        return ! self::hasRequiredFolders();
-    }
-
-    private static function hasRequiredFolders(): bool
-    {
-        return self::hasFolder(self::projectRoot()) and
-            self::hasFolder(self::contentRoot()) and
-            self::hasFolder(self::publicRoot());
-    }
+    // private static function hasRequiredFolders(): bool
+    // {
+    //     return self::hasFolder(self::projectRoot()) and
+    //         self::hasFolder(self::contentRoot()) and
+    //         self::hasFolder(self::publicRoot());
+    // }
 
     private static function hasFileForRequest(Request $request): bool
     {
@@ -138,21 +138,21 @@ class Finder implements Countable, IteratorAggregate
         return $path;
     }
 
-    public static function isMisconfiguredEnvironment(): bool
-    {
-        foreach (self::ENV_REQUIRED as $key) {
-            if (! array_key_exists($key, $_SERVER)) {
-                return true;
-            }
-        }
-        return false;
-    }
+    // public static function isMisconfiguredEnvironment(): bool
+    // {
+    //     foreach (self::ENV_REQUIRED as $key) {
+    //         if (! array_key_exists($key, $_SERVER)) {
+    //             return true;
+    //         }
+    //     }
+    //     return false;
+    // }
 
-    public static function isUnsupportedMethod(Request $request): bool
-    {
-        $requestMethod = strtoupper($request->getMethod());
-        return ! in_array($requestMethod, self::SUPPORTED_METHODS);
-    }
+    // public static function isUnsupportedMethod(Request $request): bool
+    // {
+    //     $requestMethod = strtoupper($request->getMethod());
+    //     return ! in_array($requestMethod, self::SUPPORTED_METHODS);
+    // }
 
     public static function fileForRequest(Request $request): File
     {
