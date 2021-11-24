@@ -4,25 +4,35 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
 
+use Eightfold\HTMLBuilder\Element;
+
 use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
+
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+
+use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 
 class InternalServerError
 {
     public static function respondTo(
+        PlainTextFile $file,
         Environment $environment,
-        RequestInterface $request
+        ServerRequestInterface $request
     ): InternalServerError {
-        return new InternalServerError($environment, $request);
+        return new InternalServerError($file, $environment, $request);
     }
 
     final private function __construct(
+        private PlainTextFile $file,
         private Environment $environment,
-        private RequestInterface $request
+        private ServerRequestInterface $request
     ) {
     }
 
@@ -38,9 +48,9 @@ class InternalServerError
 
     public function stream(): StreamInterface
     {
-        // @todo: Add to list of required content
-        $path    = $this->environment->publicRoot() . '/error-500.html';
-        $content = file_get_contents($path);
-        return Stream::create($content);
+        if ($this->request->getMethod() === 'HEAD') {
+            return Stream::create('');
+        }
+        return Stream::create($this->file->content());
     }
 }

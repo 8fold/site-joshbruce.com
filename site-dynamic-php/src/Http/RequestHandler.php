@@ -67,6 +67,10 @@ class RequestHandler implements RequestHandlerInterface
             $this->environment()->isMissingFolders()
         ) {
             $response = InternalServerErrorResponse::respondTo(
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-500.html',
+                    $this->environment()->publicRoot()
+                ),
                 $this->environment(),
                 $this->request()
             );
@@ -77,7 +81,14 @@ class RequestHandler implements RequestHandlerInterface
             );
 
         } elseif ($this->isUnsupportedMethod()) {
-            $response = UnsupportedMethodResponse::respondTo($request);
+            $response = UnsupportedMethodResponse::respondTo(
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-405.md',
+                    $this->environment()->publicRoot()
+                ),
+                $this->environment(),
+                $this->request()
+            );
             return new PsrResponse(
                 status: $response->statusCode(),
                 headers: $response->headers(),
@@ -94,7 +105,8 @@ class RequestHandler implements RequestHandlerInterface
                     $this->environment()->publicRoot() . '/error-404.md',
                     $this->environment()->publicRoot()
                 ),
-                $this->environment()
+                $this->environment(),
+                $this->request()
             );
             return new PsrResponse(
                 status: $response->statusCode(),
@@ -105,15 +117,20 @@ class RequestHandler implements RequestHandlerInterface
 
         $response = ($this->isRequestingFile())
             ? FileResponse::respondTo(
-                $path,
                 File::at(
                     $path,
                     $this->environment()->publicRoot()
-                )->mimetype()->interpreted()
+                ),
+                $this->environment(),
+                $this->request()
             )
             : DocumentResponse::respondTo(
-                PlainTextFile::at($path, $this->environment()->publicRoot()),
-                $this->environment()
+                PlainTextFile::at(
+                    $path,
+                    $this->environment()->publicRoot()
+                ),
+                $this->environment(),
+                $this->request()
             );
 
         return new PsrResponse(

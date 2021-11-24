@@ -13,11 +13,10 @@ use Nyholm\Psr7\ServerRequest;
 
 use JoshBruce\SiteDynamic\Http\Emitter;
 use JoshBruce\SiteDynamic\Http\RequestHandler;
-use JoshBruce\SiteDynamic\Http\Request;
-
-use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
+
+use JoshBruce\SiteDynamic\Environment;
 
 Emitter::emit(
     RequestHandler::in(

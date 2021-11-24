@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
@@ -22,14 +23,16 @@ class Document
 {
     public static function respondTo(
         PlainTextFile $file,
-        Environment $environment
+        Environment $environment,
+        ServerRequestInterface $request
     ): Document {
-        return new Document($file, $environment);
+        return new Document($file, $environment, $request);
     }
 
     final private function __construct(
         private PlainTextFile $file,
-        private Environment $environment
+        private Environment $environment,
+        private ServerRequestInterface $request
     ) {
     }
 
@@ -45,6 +48,9 @@ class Document
 
     public function stream(): StreamInterface
     {
+        if ($this->request->getMethod() === 'HEAD') {
+            return Stream::create('');
+        }
         return Stream::create(
             HtmlDefault::create(
                 'Josh Bruceʼs personal site',

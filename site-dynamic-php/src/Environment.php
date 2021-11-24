@@ -82,10 +82,7 @@ class Environment
 
     public function contentRoot(): string
     {
-        if ($this->hasRequiredVariables()) {
-            return $this->projectRoot() . $_SERVER['CONTENT_PATH'];
-        }
-        return $this->projectRoot();
+        return $this->projectRoot() . $_SERVER['CONTENT_PATH'];
     }
 
     public function publicRoot(): string

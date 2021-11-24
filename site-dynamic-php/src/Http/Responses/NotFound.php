@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
@@ -23,14 +23,16 @@ class NotFound
 {
     public static function respondTo(
         PlainTextFile $file,
-        Environment $environment
+        Environment $environment,
+        ServerRequestInterface $request
     ): NotFound {
-        return new NotFound($file, $environment);
+        return new NotFound($file, $environment, $request);
     }
 
     final private function __construct(
         private PlainTextFile $file,
-        private Environment $environment
+        private Environment $environment,
+        private ServerRequestInterface $request
     ) {
     }
 
@@ -46,6 +48,9 @@ class NotFound
 
     public function stream(): StreamInterface
     {
+        if ($this->request->getMethod() === 'HEAD') {
+            return Stream::create('');
+        }
         return Stream::create(
             HtmlDefault::create(
                 'Not found',

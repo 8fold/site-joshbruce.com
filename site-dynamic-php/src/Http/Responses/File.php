@@ -4,27 +4,35 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
 
+use Eightfold\HTMLBuilder\Element;
+
+use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
+
+use JoshBruce\SiteDynamic\FileSystem\FileInterface;
+
+use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+
 class File
 {
-    public static function at(string $filePath, string $contentType): File
-    {
-        return new File($filePath, $contentType);
-    }
-
     public static function respondTo(
-        string $filePath,
-        string $contentType
+        FileInterface $file,
+        Environment $environment,
+        ServerRequestInterface $request
     ): File {
-        return new File($filePath, $contentType);
+        return new File($file, $environment, $request);
     }
 
     final private function __construct(
-        private string $filePath,
-        private string $contentType
+        private FileInterface $file,
+        private Environment $environment,
+        private ServerRequestInterface $request
     ) {
     }
 
@@ -37,14 +45,17 @@ class File
     {
         // TODO: cache-control - /assets should be different than /media
         return [
-            'Content-type' => $this->contentType
+            'Content-type' => $this->file->mimetype()->interpreted()
         ];
     }
 
     public function stream(): StreamInterface
     {
+        if ($this->request->getMethod() === 'HEAD') {
+            return Stream::create('');
+        }
         return Stream::create(
-            @\fopen($this->filePath, 'r')
+            @\fopen($this->file->path(), 'r')
         );
     }
 }

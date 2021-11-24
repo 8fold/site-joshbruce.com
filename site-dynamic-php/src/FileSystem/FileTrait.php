@@ -24,6 +24,11 @@ trait FileTrait
     ) {
     }
 
+    public function path(): string
+    {
+        return $this->fileInfo()->getRealPath();
+    }
+
     public function mimetype(): FileMimetype
     {
         return FileMimetype::with(

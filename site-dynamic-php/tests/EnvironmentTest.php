@@ -48,11 +48,6 @@ it('can validate .env', function() {
 it('fails silently', function() {
     expect(
         Environment::with(__DIR__ . '/test-project-root/failing-env')
-            ->isMissingFolders()
-    )->toBeBool()->toBeTrue();
-
-    expect(
-        Environment::with(__DIR__ . '/test-project-root/failing-env')
             ->isMissingVariables()
     )->toBeBool()->toBeTrue();
 });
