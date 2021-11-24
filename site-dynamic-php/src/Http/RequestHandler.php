@@ -128,7 +128,7 @@ class RequestHandler implements RequestHandlerInterface
         }
 
         if (! file_exists($path) or ! is_file($path)) {
-            $response = NotFoundResponse::respondTo(
+            $response = NotFoundResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-404.md',
                     $this->environment()->publicRoot()
