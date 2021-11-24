@@ -4,48 +4,15 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
-use Nyholm\Psr7\Response as PsrResponse;
 
-use Eightfold\HTMLBuilder\Element;
-
-use JoshBruce\SiteDynamic\Environment;
-
-use JoshBruce\SiteDynamic\Content\Markdown;
-
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-
-use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+use JoshBruce\SiteDynamic\Http\Responses\ResponseCycleTrait;
 
 class InternalServerError
 {
-    public static function with(
-        PlainTextFile $file,
-        Environment $environment,
-        ServerRequestInterface $request
-    ): InternalServerError {
-        return new InternalServerError($file, $environment, $request);
-    }
-
-    final private function __construct(
-        private PlainTextFile $file,
-        private Environment $environment,
-        private ServerRequestInterface $request
-    ) {
-    }
-
-    public function respond(): ResponseInterface
-    {
-        return new PsrResponse(
-            status: $this->statusCode(),
-            headers: $this->headers(),
-            body: $this->stream()
-        );
-    }
+    use ResponseCycleTrait;
 
     public function statusCode(): int
     {
