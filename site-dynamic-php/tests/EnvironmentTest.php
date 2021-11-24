@@ -25,11 +25,6 @@ it('has supported methods', function() {
 it('has expected folders', function() {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
-            ->hasRequiredFolders()
-    )->toBeBool()->toBeTrue();
-
-    expect(
-        Environment::with(__DIR__ . '/test-project-root')
             ->isMissingFolders()
     )->toBeBool()->toBeFalse();
 })->group('env', 'test-content');
@@ -46,11 +41,6 @@ it('has correct content root', function() {
 it('can validate .env', function() {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
-            ->hasRequiredVariables()
-    )->toBeBool()->toBeTrue();
-
-    expect(
-        Environment::with(__DIR__ . '/test-project-root')
             ->isMissingVariables()
     )->toBeBool()->toBeFalse();
 })->group('env', 'test-content');
@@ -58,18 +48,8 @@ it('can validate .env', function() {
 it('fails silently', function() {
     expect(
         Environment::with(__DIR__ . '/test-project-root/failing-env')
-            ->hasRequiredFolders()
-    )->toBeBool()->toBeFalse();
-
-    expect(
-        Environment::with(__DIR__ . '/test-project-root/failing-env')
             ->isMissingFolders()
     )->toBeBool()->toBeTrue();
-
-    expect(
-        Environment::with(__DIR__ . '/test-project-root/failing-env')
-            ->hasRequiredVariables()
-    )->toBeBool()->toBeFalse();
 
     expect(
         Environment::with(__DIR__ . '/test-project-root/failing-env')

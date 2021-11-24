@@ -39,12 +39,18 @@ class Environment
         $this->hasRequiredVariables();
     }
 
+    public function supportedMethods(): array
+    {
+        $list = $_SERVER['APP_METHODS'];
+        return explode(',', $list);
+    }
+
     public function isMissingVariables():bool
     {
         return ! $this->hasRequiredVariables();
     }
 
-    public function hasRequiredVariables(): bool
+    private function hasRequiredVariables(): bool
     {
         if ($this->hasRequiredVariables) {
             foreach (self::ENV_REQUIRED as $required) {
@@ -62,22 +68,16 @@ class Environment
         return ! $this->hasRequiredFolders();
     }
 
-    public function hasRequiredFolders(): bool
+    private function hasRequiredFolders(): bool
     {
         return file_exists($this->publicRoot()) and
             is_dir($this->publicRoot());
     }
 
-    public function projectRoot(): string
+    private function projectRoot(): string
     {
         $rPath = __DIR__ . '/../../';
         return (new SplFileInfo($rPath))->getRealPath();
-    }
-
-    public function supportedMethods(): array
-    {
-        $list = $_SERVER['APP_METHODS'];
-        return explode(',', $list);
     }
 
     public function contentRoot(): string
