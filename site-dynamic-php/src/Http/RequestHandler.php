@@ -146,23 +146,17 @@ class RequestHandler implements RequestHandlerInterface
             );
         }
 
-        $response = ($this->isRequestingFile())
+        return ($this->isRequestingFile())
             ? FileResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()
-            )
+            )->respond()
             : DocumentResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()
-            );
-
-        return new PsrResponse(
-            status: $response->statusCode(),
-            headers: $response->headers(),
-            body: $response->stream()
-        );
+            )->respond();
     }
 
     private function isRedirecting(string $path): bool

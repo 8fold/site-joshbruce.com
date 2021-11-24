@@ -4,37 +4,15 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Http\Responses;
 
-use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Stream;
 
-use Eightfold\HTMLBuilder\Element;
-
-use JoshBruce\SiteDynamic\Environment;
-
-use JoshBruce\SiteDynamic\Content\Markdown;
-
-use JoshBruce\SiteDynamic\FileSystem\FileInterface;
-
-use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+use JoshBruce\SiteDynamic\Http\Responses\ResponseCycleTrait;
 
 class File
 {
-    public static function with(
-        FileInterface $file,
-        Environment $environment,
-        ServerRequestInterface $request
-    ): File {
-        return new File($file, $environment, $request);
-    }
-
-    final private function __construct(
-        private FileInterface $file,
-        private Environment $environment,
-        private ServerRequestInterface $request
-    ) {
-    }
+    use ResponseCycleTrait;
 
     public function statusCode(): int
     {

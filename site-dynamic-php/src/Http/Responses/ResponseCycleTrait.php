@@ -19,12 +19,12 @@ trait ResponseCycleTrait
         $file,
         Environment $environment,
         ServerRequestInterface $request
-    ): InternalServerError {
-        return new InternalServerError($file, $environment, $request);
+    ): static {
+        return new static($file, $environment, $request);
     }
 
     final private function __construct(
-        private PlainTextFile $file,
+        private $file,
         private Environment $environment,
         private ServerRequestInterface $request
     ) {
