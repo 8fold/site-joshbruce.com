@@ -34,6 +34,30 @@ it('can find content', function() {
     )->toBe(
         200
     );
+
+    $response = RequestHandler::in(
+        Finder::init(),
+        Environment::with(__DIR__ . '/../../../')
+    )->handle(
+        new ServerRequest(
+            method: 'GET',
+            uri: '/assets/css/main.min.css',
+            headers: [],
+            serverParams: $_SERVER
+        )
+    );
+
+    expect(
+        $response->getStatusCode()
+    )->toBe(
+        200
+    );
+
+    expect(
+        $response->getHeaders()
+    )->toBe([
+        'Content-type' => ['text/css']
+    ]);
 })->group('request-handler', 'live-content', 'status-codes');
 
 it('can return internal server error', function() {

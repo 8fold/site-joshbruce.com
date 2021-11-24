@@ -153,7 +153,7 @@ class RequestHandler implements RequestHandlerInterface
         }
 
         $response = ($this->isRequestingFile())
-            ? FileResponse::respondTo(
+            ? FileResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()

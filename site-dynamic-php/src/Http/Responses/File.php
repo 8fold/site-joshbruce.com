@@ -21,7 +21,7 @@ use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 
 class File
 {
-    public static function respondTo(
+    public static function with(
         FileInterface $file,
         Environment $environment,
         ServerRequestInterface $request
@@ -45,7 +45,9 @@ class File
     {
         // TODO: cache-control - /assets should be different than /media
         return [
-            'Content-type' => $this->file->mimetype()->interpreted()
+            'Content-type' => [
+                $this->file->mimetype()->interpreted()
+            ]
         ];
     }
 
