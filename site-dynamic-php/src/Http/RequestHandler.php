@@ -74,6 +74,7 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             );
+
             return new PsrResponse(
                 status: $response->statusCode(),
                 headers: $response->headers(),
@@ -89,6 +90,7 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             );
+
             return new PsrResponse(
                 status: $response->statusCode(),
                 headers: $response->headers(),
@@ -99,38 +101,33 @@ class RequestHandler implements RequestHandlerInterface
 
         $path = $this->fileUri();
 
-        if (! file_exists($path) or ! is_file($path)) {
-            // Either a 404 or redirect
-            $parts = explode('/', $path);
-
-            $fileName = '~' . array_pop($parts);
-            $parent   = '~' . array_pop($parts);
-
-            $parts[] = $parent;
-            $parts[] = $fileName;
-
-            $path = implode('/', $parts);
-            $file = File::at($path, $this->environment()->publicRoot());
+        if (
+            $this->isRedirecting($path) and
+            $p = $this->redirectFilePath($path)
+        ) {
+            $file = File::at($p, $this->environment()->publicRoot());
 
             if ($this->isRequestingContent()) {
                 $file = PlainTextFile::at(
-                    $path,
+                    $p,
                     $this->environment()->publicRoot()
                 );
             }
 
-            if (file_exists($path) and is_file($path)) {
-                $response = RedirectResponse::respondTo(
-                    $file,
-                    $this->environment(),
-                    $this->request()
-                );
-                return new PsrResponse(
-                    status: $response->statusCode(),
-                    headers: $response->headers(),
-                    body: $response->stream()
-                );
-            }
+            $response = RedirectResponse::respondTo(
+                $file,
+                $this->environment(),
+                $this->request()
+            );
+
+            return new PsrResponse(
+                status: $response->statusCode(),
+                headers: $response->headers(),
+                body: $response->stream()
+            );
+        }
+
+        if (! file_exists($path) or ! is_file($path)) {
             $response = NotFoundResponse::respondTo(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-404.md',
@@ -139,6 +136,7 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             );
+
             return new PsrResponse(
                 status: $response->statusCode(),
                 headers: $response->headers(),
@@ -171,6 +169,31 @@ class RequestHandler implements RequestHandlerInterface
             headers: $response->headers(),
             body: $response->stream()
         );
+    }
+
+    private function isRedirecting(string $path): bool
+    {
+        if (file_exists($path) and is_file($path)) {
+            return false;
+        }
+
+        $path = $this->redirectFilePath($path);
+
+        return file_exists($path) and is_file($path);
+    }
+
+    private function redirectFilePath(string $path): string
+    {
+        // Either a 404 or redirect
+        $parts = explode('/', $path);
+
+        $fileName = '~' . array_pop($parts);
+        $parent   = '~' . array_pop($parts);
+
+        $parts[] = $parent;
+        $parts[] = $fileName;
+
+        return implode('/', $parts);
     }
 
     private function isUnsupportedMethod(): bool
