@@ -67,9 +67,8 @@ class RequestHandler implements RequestHandlerInterface
             $this->environment()->isMissingFolders()
         ) {
             return InternalServerErrorResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-500.html',
-                    $this->environment()->publicRoot()
+                $this->fileForPath(
+                    $this->environment()->publicRoot() . '/error-500.html'
                 ),
                 $this->environment(),
                 $this->request()
@@ -77,9 +76,8 @@ class RequestHandler implements RequestHandlerInterface
 
         } elseif ($this->isUnsupportedMethod()) {
             return UnsupportedMethodResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-405.md',
-                    $this->environment()->publicRoot()
+                $this->fileForPath(
+                    $this->environment()->publicRoot() . '/error-405.md'
                 ),
                 $this->environment(),
                 $this->request()
@@ -93,17 +91,8 @@ class RequestHandler implements RequestHandlerInterface
             $this->isRedirecting($path) and
             $p = $this->redirectFilePath($path)
         ) {
-            $file = File::at($p, $this->environment()->publicRoot());
-
-            if ($this->isRequestingContent()) {
-                $file = PlainTextFile::at(
-                    $p,
-                    $this->environment()->publicRoot()
-                );
-            }
-
             return RedirectResponse::with(
-                $file,
+                $this->fileForPath($p),
                 $this->environment(),
                 $this->request()
             )->respond();
@@ -112,35 +101,45 @@ class RequestHandler implements RequestHandlerInterface
 
         if (! file_exists($path) or ! is_file($path)) {
             return NotFoundResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-404.md',
-                    $this->environment()->publicRoot()
+                $this->fileForPath(
+                    $this->environment()->publicRoot() . '/error-404.md'
                 ),
                 $this->environment(),
                 $this->request()
             )->respond();
+
         }
 
-        $file = File::at($path, $this->environment()->publicRoot());
-
         if ($this->isRequestingContent()) {
-            $file = PlainTextFile::at(
+            return DocumentResponse::with(
+                $this->fileForPath($path),
+                $this->environment(),
+                $this->request()
+            )->respond();
+
+        }
+
+        return FileResponse::with(
+            $this->fileForPath($path),
+            $this->environment(),
+            $this->request()
+        )->respond();
+    }
+
+    private function fileForPath(string $path): File|PlainTextFile
+    {
+        if ($this->pathIsFile($path)) {
+            return PlainTextFile::at(
                 $path,
                 $this->environment()->publicRoot()
             );
 
-            return DocumentResponse::with(
-                $file,
-                $this->environment(),
-                $this->request()
-            )->respond();
         }
 
-        return FileResponse::with(
-            $file,
-            $this->environment(),
-            $this->request()
-        )->respond();
+        return File::at(
+            $path,
+            $this->environment()->publicRoot()
+        );
     }
 
     private function isRedirecting(string $path): bool
@@ -183,10 +182,33 @@ class RequestHandler implements RequestHandlerInterface
 
     private function isRequestingFile(): bool
     {
-        $parts            = explode('/', $this->requestPath());
+        return $this->pathIsFile($this->requestPath());
+    }
+
+    private function pathIsFile(string $path): bool
+    {
+        $parts            = explode('/', $path);
         $possibleFileName = array_pop($parts);
 
-        return str_contains($possibleFileName, '.');
+        if (! str_contains($possibleFileName, '.')) {
+            return false;
+
+        }
+
+        // could be file
+        if (! str_starts_with($path, $this->environment()->publicRoot())) {
+            // need to add full path
+            $path = $this->environment()->publicRoot() . $path;
+
+        }
+
+        $f = File::at($path, $this->environment()->publicRoot());
+
+        if ($f->mimetype()->name() === 'text') {
+            return false;
+
+        }
+        return true;
     }
 
     private function requestPath(): string
