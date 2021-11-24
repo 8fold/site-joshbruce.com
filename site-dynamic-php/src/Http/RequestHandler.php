@@ -158,7 +158,7 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             )
-            : DocumentResponse::respondTo(
+            : DocumentResponse::with(
                 $file,
                 $this->environment(),
                 $this->request()
