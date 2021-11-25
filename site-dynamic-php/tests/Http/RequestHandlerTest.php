@@ -21,7 +21,6 @@ afterEach(function() {
 it('can find content', function() {
     expect(
         RequestHandler::in(
-            Finder::init(),
             Environment::with(__DIR__ . '/../../../')
         )->handle(
             new ServerRequest(
@@ -36,7 +35,6 @@ it('can find content', function() {
     );
 
     $response = RequestHandler::in(
-        Finder::init(),
         Environment::with(__DIR__ . '/../../../')
     )->handle(
         new ServerRequest(
@@ -63,7 +61,6 @@ it('can find content', function() {
 it('can return internal server error', function() {
     expect(
         RequestHandler::in(
-            Finder::init(),
             Environment::with(__DIR__ . '/../test-project-root/failing-env')
         )->handle(
             new ServerRequest(
@@ -76,12 +73,11 @@ it('can return internal server error', function() {
     )->toBe(
         500
     );
-})->group('request-handler', 'live-content', 'status-codes');
+})->group('request-handler', 'test-content', 'status-codes');
 
 it('can return unsupported method', function() {
     expect(
         RequestHandler::in(
-            Finder::init(),
             Environment::with(__DIR__ . '/../../../')
         )->handle(
             new ServerRequest(
@@ -99,7 +95,6 @@ it('can return unsupported method', function() {
 it('can handle not found', function() {
     expect(
         RequestHandler::in(
-            Finder::init(),
             Environment::with(__DIR__ . '/../../../')
         )->handle(
             new ServerRequest(
@@ -117,7 +112,6 @@ it('can handle not found', function() {
 it('can handle redirect', function() {
     expect(
         RequestHandler::in(
-            Finder::init(),
             Environment::with(__DIR__ . '/../../../')
         )->handle(
             new ServerRequest(

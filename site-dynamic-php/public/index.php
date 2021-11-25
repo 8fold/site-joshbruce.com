@@ -5,9 +5,9 @@ declare(strict_types=1);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
+// $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
 
-require $projectRoot . '/vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 use Nyholm\Psr7\ServerRequest;
 
@@ -20,8 +20,9 @@ use JoshBruce\SiteDynamic\Environment;
 
 Emitter::emit(
     RequestHandler::in(
-        Finder::init(),
-        Environment::with($projectRoot)
+        Environment::with(
+            pathToEnv: __DIR__ . '/../../'
+        )
     )->handle(
         new ServerRequest(
             method: $_SERVER['REQUEST_METHOD'],

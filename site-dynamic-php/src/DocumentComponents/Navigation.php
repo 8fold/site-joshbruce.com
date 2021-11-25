@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\DocumentComponents;
+namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use Eightfold\HTMLBuilder\Element;
 

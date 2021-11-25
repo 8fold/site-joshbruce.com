@@ -35,14 +35,15 @@ class Document
         if ($this->request->getMethod() === 'HEAD') {
             return Stream::create('');
         }
+
+        $content = $this->file->content();
+        $content = Markdown::processPartials($content, $this->file);
         return Stream::create(
             HtmlDefault::create(
                 'Josh Bruceʼs personal site',
                 '',
                 Element::main(
-                    Markdown::markdownConverter()->convert(
-                        $this->file->content()
-                    )
+                    Markdown::markdownConverter()->convert($content)
                 ),
                 $this->environment
             )

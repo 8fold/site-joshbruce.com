@@ -6,10 +6,8 @@ namespace JoshBruce\SiteDynamic\Http;
 
 use Psr\Http\Server\RequestHandlerInterface;
 
-// use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-// use Psr\Http\Message\StreamInterface;
 
 use Nyholm\Psr7\Response as PsrResponse;
 
@@ -44,22 +42,17 @@ class RequestHandler implements RequestHandlerInterface
 {
     private ServerRequestInterface $request;
 
-    public static function in(
-        Finder $finder,
-        Environment $environment
-    ): RequestHandler {
-        return new static($finder, $environment);
+    public static function in(Environment $environment): RequestHandler
+    {
+        return new static($environment);
     }
 
-    final private function __construct(
-        private Finder $finder,
-        private Environment $environment
-    ) {
+    final private function __construct(private Environment $environment)
+    {
     }
 
-    public function handle(
-        ServerRequestInterface $request
-    ): ResponseInterface {
+    public function handle(ServerRequestInterface $request): ResponseInterface
+    {
         $this->request = $request;
 
         if (
@@ -118,7 +111,6 @@ class RequestHandler implements RequestHandlerInterface
             )->respond();
 
         }
-
         return FileResponse::with(
             $this->fileForPath($path),
             $this->environment(),
@@ -146,6 +138,7 @@ class RequestHandler implements RequestHandlerInterface
     {
         if (file_exists($path) and is_file($path)) {
             return false;
+
         }
 
         $path = $this->redirectFilePath($path);

@@ -2,18 +2,19 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\DocumentComponents;
+namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use Carbon\Carbon;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\File;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 class DateBlock
 {
-    public static function create(File $file): string
-    {
+    public static function create(
+        PlainTextFile $file
+    ): string {
         $times = [];
 
         if ($file->created()) {

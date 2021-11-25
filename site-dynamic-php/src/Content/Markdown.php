@@ -6,12 +6,12 @@ namespace JoshBruce\SiteDynamic\Content;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
-use JoshBruce\SiteDynamic\FileSystem\File;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use JoshBruce\Site\DocumentComponents\Data;
-use JoshBruce\Site\DocumentComponents\DateBlock;
-use JoshBruce\Site\DocumentComponents\LogList;
-use JoshBruce\Site\DocumentComponents\OriginalContentNotice;
+use JoshBruce\SiteDynamic\DocumentComponents\Data;
+use JoshBruce\SiteDynamic\DocumentComponents\DateBlock;
+use JoshBruce\SiteDynamic\DocumentComponents\LogList;
+use JoshBruce\SiteDynamic\DocumentComponents\OriginalContentNotice;
 
 class Markdown
 {
@@ -28,6 +28,8 @@ class Markdown
         'loglist'   => LogList::class,
         'original'  => OriginalContentNotice::class
     ];
+
+    private const COMPONENT_WRAPPER = '{!!(.*)!!}';
 
     public static function markdownConverter(): MarkdownConverter
     {
@@ -51,4 +53,55 @@ class Markdown
         }
         return self::$markdownConverter;
     }
+
+    public static function processPartials(
+        string $body,
+        PlainTextFile $file
+    ): string {
+        // $body = $this->body();
+
+        $partials = [];
+        if (
+            preg_match_all(
+                '/' . self::COMPONENT_WRAPPER . '/',
+                $body,
+                $partials
+            )
+        ) {
+            $replacements = $partials[0];
+            $templates    = $partials[1];
+
+            for ($i = 0; $i < count($replacements); $i++) {
+                $partialKey = trim($templates[$i]);
+                if (! array_key_exists($partialKey, self::COMPONENTS)) {
+                    continue;
+                }
+
+                $b = '';
+                $template = self::COMPONENTS[$partialKey];
+                if (
+                    $partialKey === 'data' or
+                    $partialKey === 'dateblock'
+                ) {
+                    $b = $template::create($file);
+
+                } elseif ($partialKey === 'loglist') {
+                    $b = $template::create($this->file(), $this->fileSystem());
+
+                } elseif ($partialKey === 'full-nav') {
+                    $b = $template::list($this->fileSystem());
+
+                } else {
+                    $b = $template::create(
+                        $this->file(),
+                        $this->fileSystem()
+                    );
+
+                }
+                $body = str_replace($replacements[$i], $b, $body);
+            }
+        }
+        return self::markdownConverter()->convert($body);
+    }
+
 }

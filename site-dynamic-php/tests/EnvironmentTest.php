@@ -50,4 +50,4 @@ it('fails silently', function() {
         Environment::with(__DIR__ . '/test-project-root/failing-env')
             ->isMissingVariables()
     )->toBeBool()->toBeTrue();
-});
+})->group('env', 'test-content');

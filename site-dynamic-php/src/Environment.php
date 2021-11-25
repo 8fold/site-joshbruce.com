@@ -18,7 +18,7 @@ class Environment
         // Comma delimited list of supported request methods.
         'APP_METHODS',
         // Path to folder containing containing, relative to project root.
-        'CONTENT_PATH',
+        'ENV_TO_PUBLIC_ROOT',
         // Default name of file containing web content.
         'CONTENT_FILENAME'
     ];
@@ -27,15 +27,17 @@ class Environment
 
     private $hasRequiredVariables = true;
 
+    private const FILE_SEPARATOR = '/';
+
     public static function with(string $pathToEnv): Environment
     {
         return new Environment($pathToEnv);
     }
 
-    final private function __construct(private string $path)
+    final private function __construct(private string $pathToEnv)
     {
         // Inject .env content into server globals
-        Dotenv::createImmutable($path)->load();
+        Dotenv::createImmutable($pathToEnv)->load();
         $this->hasRequiredVariables();
     }
 
@@ -74,19 +76,18 @@ class Environment
             is_dir($this->publicRoot());
     }
 
-    private function projectRoot(): string
-    {
-        $rPath = __DIR__ . '/../../';
-        return (new SplFileInfo($rPath))->getRealPath();
-    }
-
     public function contentRoot(): string
     {
-        return $this->projectRoot() . $_SERVER['CONTENT_PATH'];
+        $parts = explode(self::FILE_SEPARATOR, $this->publicRoot());
+        $parts = array_slice($parts, 0, -1);
+        return implode(self::FILE_SEPARATOR, $parts);
     }
 
     public function publicRoot(): string
     {
-        return $this->contentRoot() . '/' . self::PUBLIC_FOLDERNAME;
+        $fileInfo = new SplFileInfo(
+            $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
+        );
+        return $fileInfo->getRealPath();
     }
 }

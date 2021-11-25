@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\DocumentComponents;
+namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\File;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 class Data
 {
-    public static function create(File $file): string
+    public static function create(PlainTextFile $file): string
     {
         $data = $file->data();
 
@@ -49,6 +49,11 @@ class Data
                     )
                 )
             );
+        }
+
+        if (count($listHeadings) === 0) {
+            return '';
+
         }
         return Element::ul(...$listHeadings)->build();
     }
