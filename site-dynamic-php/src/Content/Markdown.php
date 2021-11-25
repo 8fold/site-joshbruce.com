@@ -59,14 +59,12 @@ class Markdown
         string $body,
         PlainTextFile $file
     ): string {
-        // $body = $this->body();
-
         $partials = [];
         if (
             preg_match_all(
                 '/' . self::COMPONENT_WRAPPER . '/',
                 $body,
-                $partials
+                $partials // Populates $partials
             )
         ) {
             $replacements = $partials[0];
@@ -78,30 +76,15 @@ class Markdown
                     continue;
                 }
 
-                $b = '';
                 $template = self::COMPONENTS[$partialKey];
-                if (
-                    $partialKey === 'data' or
-                    $partialKey === 'dateblock' or
-                    $partialKey === 'full-nav' or
-                    $partialKey === 'loglist'
-                ) {
-                    $b = $template::create($file);
 
-                } elseif ($partialKey === 'loglist') {
-                    $b = $template::create($this->file(), $this->fileSystem());
-
-                } else {
-                    $b = $template::create(
-                        $this->file(),
-                        $this->fileSystem()
-                    );
-
-                }
-                $body = str_replace($replacements[$i], $b, $body);
+                $body = str_replace(
+                    $replacements[$i],
+                    $template::create($file),
+                    $body
+                );
             }
         }
         return self::markdownConverter()->convert($body);
     }
-
 }

@@ -78,6 +78,15 @@ class PlainTextFile implements FileInterface
         return '';
     }
 
+    public function original(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('original', $frontMatter)) {
+            return $frontMatter['original'];
+        }
+        return '';
+    }
+
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {

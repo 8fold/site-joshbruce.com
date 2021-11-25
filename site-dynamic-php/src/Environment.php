@@ -82,7 +82,6 @@ class Environment
 
     public function contentRoot(): string
     {
-
         $parts = explode(self::FILE_SEPARATOR, $this->publicRoot());
         $parts = array_slice($parts, 0, -1);
         return implode(self::FILE_SEPARATOR, $parts);

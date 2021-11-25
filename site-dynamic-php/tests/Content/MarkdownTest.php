@@ -27,6 +27,26 @@ test('converter is singleton', function() {
     );
 })->group('markdown');
 
+it('can process original partial', function() {
+    $projectRoot = __DIR__ . '/../test-project-root';
+
+    $file = PlainTextFile::at(
+        $projectRoot . '/content/public/original/content.md',
+        Environment::with($projectRoot)->publicRoot()
+    );
+
+    expect(
+        Markdown::processPartials(<<<md
+            {!! original !!}
+            md,
+            $file
+        )
+    )->toBe(<<<html
+        <p class="notice">This content was originally posted on <a href="/platform/url">Platform name</a>. There may be modifications and updates in comparison.</p>
+        html
+    );
+})->group('markdown', 'test-content');
+
 it('can process log list partial', function() {
     $projectRoot = __DIR__ . '/../test-project-root';
 
@@ -45,7 +65,7 @@ it('can process log list partial', function() {
         <ul><li><a href="http://jbruce-test.com/log-list/alpha"></a></li><li><a href="http://jbruce-test.com/log-list/2021"></a></li><li><a href="http://jbruce-test.com/log-list/2020"></a></li></ul>
         html
     );
-})->group('markdown', 'test-content', 'focus');
+})->group('markdown', 'test-content');
 
 it('can process data partial', function() {
     $projectRoot = __DIR__ . '/../test-project-root';

@@ -6,42 +6,45 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\File;
-use JoshBruce\Site\FileSystemInterface;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\Site\Content\Markdown;
 
 class OriginalContentNotice
 {
-    public static function create(
-        File $file,
-        FileSystemInterface $fileSystem
-    ): string {
-        $contentRoot = $fileSystem->contentRoot();
+    private const COMPONENT_WRAPPER = '{!! platformlink !!}';
+
+    public static function create(PlainTextFile $file): string
+    {
+        $parts = explode('/', $file->root());
+        $parts = array_slice($parts, 0, -1);
+
+        $contentRoot = implode('/', $parts);
         $noticesRoot = $contentRoot . '/notices';
 
-        $f = File::at($noticesRoot . '/original.md', $fileSystem);
+        $fContent = PlainTextFile::at(
+            $noticesRoot . '/original.md',
+            $noticesRoot
+        )->content();
 
-        if ($f->isNotFound()) {
+        $matches = [];
+        $search  = '/' . self::COMPONENT_WRAPPER . '/';
+        if (! preg_match($search, $fContent, $matches)) {
             return '';
         }
 
         $original = $file->original();
         list($href, $platform) = explode(' ', $original, 2);
 
-        $body = Markdown::for($f, $fileSystem)->body();
-
-        $matches = [];
-        $search  = '/{!!platformlink!!}/';
-        if (! preg_match($search, $body, $matches)) {
+        $fContent = preg_replace(
+            $search,
+            "[{$platform}]({$href})",
+            $fContent
+        );
+        if ($fContent === null) {
             return '';
         }
 
-        $body = preg_replace($search, "[{$platform}]({$href})", $body);
-        if ($body === null) {
-            return '';
-        }
-
-        return Markdown::markdownConverter()->convert($body);
+        return Markdown::markdownConverter()->convert($fContent);
     }
 }
