@@ -126,16 +126,17 @@ class PlainTextFile implements FileInterface
 
     private function dateField(
         string $key,
-        string $format = ''
+        string $format = 'Ymd'
     ): string|int|false {
         $frontMatter = $this->frontMatter();
         if (array_key_exists($key, $frontMatter)) {
             $date = $frontMatter[$key];
-            if (strlen($format) === 0 and is_int($date)) {
-                return $date;
-            }
 
-            $date = DateTime::createFromFormat('Ymd', strval($date));
+            $date = DateTime::createFromFormat(
+                'Ymd',
+                strval($date)
+            );
+
             if ($date) {
                 return $date->format($format);
             }
