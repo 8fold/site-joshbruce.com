@@ -10,6 +10,7 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\DocumentComponents\Data;
 use JoshBruce\SiteDynamic\DocumentComponents\DateBlock;
+use JoshBruce\SiteDynamic\DocumentComponents\FullNavContent;
 use JoshBruce\SiteDynamic\DocumentComponents\LogList;
 use JoshBruce\SiteDynamic\DocumentComponents\OriginalContentNotice;
 
@@ -24,7 +25,7 @@ class Markdown
     private const COMPONENTS = [
         'data'      => Data::class,
         'dateblock' => DateBlock::class,
-        'full-nav'  => Sitemap::class,
+        'full-nav'  => FullNavContent::class,
         'loglist'   => LogList::class,
         'original'  => OriginalContentNotice::class
     ];
@@ -81,15 +82,16 @@ class Markdown
                 $template = self::COMPONENTS[$partialKey];
                 if (
                     $partialKey === 'data' or
-                    $partialKey === 'dateblock'
+                    $partialKey === 'dateblock' or
+                    $partialKey === 'full-nav'
                 ) {
                     $b = $template::create($file);
 
                 } elseif ($partialKey === 'loglist') {
                     $b = $template::create($this->file(), $this->fileSystem());
 
-                } elseif ($partialKey === 'full-nav') {
-                    $b = $template::list($this->fileSystem());
+                // } elseif ($partialKey === 'full-nav') {
+                //     $b = $template::list($this->fileSystem());
 
                 } else {
                     $b = $template::create(

@@ -24,10 +24,7 @@ class Finder implements Countable, IteratorAggregate
 
     public static function init(string $publicRoot): static
     {
-        if (! isset(self::$finder)) {
-            self::$finder = new static($publicRoot);
-        }
-        return self::$finder;
+        return new static($publicRoot);
     }
 
     final private function __construct(private string $publicRoot)
@@ -43,7 +40,7 @@ class Finder implements Countable, IteratorAggregate
 
     public function publishedContent(): Finder
     {
-        $this->symFinder = clone $this->baseFinder()
+        $this->symFinder = clone $this->getIterator()
             ->filter(fn($f) => $this->isPublished($f))
             ->name($this->contentFilename())
             ->files()
@@ -54,7 +51,7 @@ class Finder implements Countable, IteratorAggregate
 
     public function draftContent(): Finder
     {
-        $this->symFinder = clone $this->baseFinder()
+        $this->symFinder = clone $this->getIterator()
             ->filter(fn($f) => $this->isDraft($f))
             ->files()
             ->in($this->publicRoot);
@@ -64,7 +61,7 @@ class Finder implements Countable, IteratorAggregate
 
     public function redirectedContent(): Finder
     {
-        $this->symFinder = clone $this->baseFinder()
+        $this->symFinder = clone $this->getIterator()
             ->filter(fn($f) => $this->isRedirected($f))
             ->files()
             ->in($this->publicRoot);
@@ -84,10 +81,7 @@ class Finder implements Countable, IteratorAggregate
 
     private function isRedirected(SplFileInfo $fileInfo): bool
     {
-        return str_contains(
-            $fileInfo->getPathname(),
-            self::REDIRECT_INDICATOR
-        );
+        return str_contains($fileInfo->getPathname(), self::REDIRECT_INDICATOR);
     }
 
     private function isDraft(SplFileInfo $fileInfo): bool
@@ -108,9 +102,6 @@ class Finder implements Countable, IteratorAggregate
      */
     public function getIterator(): SymfonyFinder
     {
-        if (! isset($this->symFinder)) {
-            $this->publishedContent();
-        }
         return $this->symFinder;
     }
 }

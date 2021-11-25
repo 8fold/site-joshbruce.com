@@ -11,17 +11,30 @@ use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
 
 trait FileTrait
 {
-    private SplFileInfo $fileInfo;
-
     public static function at(string $localPath, string $root): FileInterface
     {
-        return new static($localPath, $root);
+        return static::from(
+            new SplFileInfo($localPath),
+            $root
+        );
+    }
+
+    public static function from(
+        SplFileInfo $fileInfo,
+        string $root
+    ): FileInterface {
+        return new static($fileInfo, $root);
     }
 
     private function __construct(
-        private string $localPath,
+        private SplFileInfo $fileInfo,
         private string $root
     ) {
+    }
+
+    public function root(): string
+    {
+        return $this->root;
     }
 
     public function path(): string
@@ -32,7 +45,7 @@ trait FileTrait
     public function mimetype(): FileMimetype
     {
         return FileMimetype::with(
-            mime_content_type($this->localPath),
+            mime_content_type($this->path()),
             $this->extension()
         );
     }
@@ -44,9 +57,6 @@ trait FileTrait
 
     private function fileInfo(): SplFileInfo
     {
-        if (! isset($this->fileInfo)) {
-            $this->fileInfo = new SplFileInfo($this->localPath);
-        }
         return $this->fileInfo;
     }
 }

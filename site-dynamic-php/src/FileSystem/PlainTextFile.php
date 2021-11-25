@@ -120,7 +120,7 @@ class PlainTextFile implements FileInterface
     private function rawContent(): string
     {
         if (strlen($this->rawContent) === 0) {
-            $this->rawContent = file_get_contents($this->localPath);
+            $this->rawContent = file_get_contents($this->path());
         }
         return $this->rawContent;
     }

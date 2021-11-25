@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\DocumentComponents;
 
+use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use Symfony\Component\Finder\Finder;
+// use Symfony\Component\Finder\Finder;
 //
 // use Eightfold\XMLBuilder\Document;
 // use Eightfold\XMLBuilder\Element;
@@ -22,7 +23,16 @@ class FullNavContent
 {
     public static function create(PlainTextFile $file): string
     {
-        $finder = self::finder($fileSystem)->depth('>= 1');
+        $finder = Finder::init($file->root())->publishedContent()
+            ->getIterator()->depth('>= 1');
+
+        foreach ($finder as $fileInfo) {
+            $file = File::from(fileInfo: $fileInfo, $file->root());
+            die(var_dump($file));
+        }
+
+        die('here');
+        // $finder = self::finder($fileSystem)->depth('>= 1');
 
         $files = self::files($finder, $fileSystem);
 
