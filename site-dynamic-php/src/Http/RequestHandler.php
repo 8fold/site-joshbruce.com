@@ -42,6 +42,8 @@ class RequestHandler implements RequestHandlerInterface
 {
     private ServerRequestInterface $request;
 
+    private string $requestPath = '';
+
     public static function in(Environment $environment): RequestHandler
     {
         return new static($environment);
@@ -215,7 +217,12 @@ class RequestHandler implements RequestHandlerInterface
 
     private function requestPath(): string
     {
-        return $this->request()->getUri()->getPath();
+        if (strlen($this->requestPath) === 0) {
+            $this->requestPath = $this->request()->getUri()->getPath();
+
+        }
+
+        return $this->requestPath;
     }
 
     private function fileUri(): string

@@ -42,10 +42,9 @@ class Environment
         Dotenv::createImmutable($pathToEnv)->load();
         $this->hasRequiredVariables();
     }
-public $callCount = 0;
+
     public function supportedMethods(): array
     {
-$this->callCount++;
         $list = $_SERVER['APP_METHODS'];
         return explode(',', $list);
     }
