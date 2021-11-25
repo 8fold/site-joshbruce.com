@@ -11,6 +11,7 @@ use Nyholm\Psr7\Stream;
 use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+use JoshBruce\SiteDynamic\Documents\FullNav;
 
 use JoshBruce\SiteDynamic\Content\Markdown;
 
@@ -36,10 +37,35 @@ class Document
             return Stream::create('');
         }
 
-        $content = $this->file->content();
-        $content = Markdown::processPartials($content, $this->file);
+        $content = Markdown::processPartials(
+            $this->file->content(),
+            $this->file
+        );
+
+        return match ($this->file->template()) {
+            'full-nav' => $this->fullNav($content),
+            default => $this->default($content)
+        };
+    }
+
+    private function default(string $content): Stream
+    {
         return Stream::create(
             HtmlDefault::create(
+                'Josh Bruceʼs personal site',
+                '',
+                Element::main(
+                    Markdown::markdownConverter()->convert($content)
+                ),
+                $this->environment
+            )
+        );
+    }
+
+    private function fullNav(string $content): Stream
+    {
+        return Stream::create(
+            FullNav::create(
                 'Josh Bruceʼs personal site',
                 '',
                 Element::main(

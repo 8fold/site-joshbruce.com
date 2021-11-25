@@ -90,9 +90,6 @@ class Markdown
                 } elseif ($partialKey === 'loglist') {
                     $b = $template::create($this->file(), $this->fileSystem());
 
-                // } elseif ($partialKey === 'full-nav') {
-                //     $b = $template::list($this->fileSystem());
-
                 } else {
                     $b = $template::create(
                         $this->file(),

@@ -2,49 +2,35 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\Documents;
+namespace JoshBruce\SiteDynamic\Documents;
 
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\File;
+use JoshBruce\SiteDynamic\Environment;
 
-use JoshBruce\Site\Documents\HtmlDefault;
-
-use JoshBruce\Site\PageComponents\Navigation;
-
-use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\FileSystem\FileInterface;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 class FullNav
 {
-    public static function create(File $file): string
+    public static function create(
+        string $pageTitle,
+        string $description,
+        Element $body,
+        Environment $environemt
+    ): string
     {
-        $pageTitle   = $file->pageTitle();
-        $html        = '';
-        $description = '';
-        if ($file->isMarkdown()) {
-            $markdown  = Markdown::for(
-                file: $file,
-                in: $file->fileSystem()
-            );
-            $html        = $markdown->html();
-            $description = $file->description();
-        }
-
         $html = Document::create(
             $pageTitle
         )->head(
             ...HtmlDefault::baseHead($description)
         )->body(
-            Element::main($html),
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
+            Element::main($body),
+            HtmlDefault::footer()
         )->build();
 
-        return $html;
+        return HtmlDefault::canonicalUrls($html);
     }
 }

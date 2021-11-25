@@ -24,6 +24,24 @@ class PlainTextFile implements FileInterface
 
     private string $content = '';
 
+    public function template(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('template', $frontMatter)) {
+            return $frontMatter['template'];
+        }
+        return '';
+    }
+
+    public function title(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('title', $frontMatter)) {
+            return $frontMatter['title'];
+        }
+        return '';
+    }
+
     public function created(string $format = ''): string|int|false
     {
         return $this->dateField('created', $format);

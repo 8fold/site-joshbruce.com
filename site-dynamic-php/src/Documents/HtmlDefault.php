@@ -7,10 +7,6 @@ namespace JoshBruce\SiteDynamic\Documents;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
-// use JoshBruce\Site\File;
-
-// use JoshBruce\Site\PageComponents\Navigation;
-
 use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\Content\Markdown;
@@ -43,19 +39,10 @@ class HtmlDefault
                     )->content()
                 )
             )->props('id main-nav'),
-            Element::footer(
-                Element::p(
-                    'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
-                        'All rights reserved.'
-                )
-            )
+            self::footer()
         )->build();
 
-        return str_replace(
-            ['href="/'],
-            ['href="' . $_SERVER['APP_URL'] . '/'],
-            $html
-        );
+        return self::canonicalUrls($html);
     }
 
     /**
@@ -106,5 +93,24 @@ class HtmlDefault
 
         return Element::link()->omitEndTag()
             ->props('rel stylesheet', "href {$cssPath}?v={$query}");
+    }
+
+    public static function footer(): Element
+    {
+        return Element::footer(
+            Element::p(
+                'Copyright © 2004–' . date('Y') . ' Joshua C. Bruce. ' .
+                    'All rights reserved.'
+            )
+        );
+    }
+
+    public static function canonicalUrls(string $html): string
+    {
+        return str_replace(
+            ['href="/'],
+            ['href="' . $_SERVER['APP_URL'] . '/'],
+            $html
+        );
     }
 }

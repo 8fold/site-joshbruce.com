@@ -37,9 +37,13 @@ trait FileTrait
         return $this->root;
     }
 
-    public function path(): string
+    public function path(bool $full = true): string
     {
-        return $this->fileInfo()->getRealPath();
+        $realPath = $this->fileInfo()->getRealPath();
+        if ($full) {
+            return $realPath;
+        }
+        return str_replace($this->root(), '', $realPath);
     }
 
     public function mimetype(): FileMimetype
