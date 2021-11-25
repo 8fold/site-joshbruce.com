@@ -54,6 +54,11 @@ trait FileTrait
         );
     }
 
+    public function canonicalUrl(): string
+    {
+        return $_SERVER['APP_URL'] . $this->path(false);
+    }
+
     private function extension(): string
     {
         return $this->fileInfo()->getExtension();

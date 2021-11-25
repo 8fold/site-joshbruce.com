@@ -12,6 +12,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 use JoshBruce\SiteDynamic\Documents\FullNav;
+use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 use JoshBruce\SiteDynamic\Content\Markdown;
 
@@ -28,7 +29,11 @@ class Document
 
     public function headers(): array
     {
-        return [];
+        return [
+            'Content-Type' => [
+                $this->file->mimetype()->interpreted()
+            ]
+        ];
     }
 
     public function stream(): StreamInterface
@@ -44,7 +49,8 @@ class Document
 
         return match ($this->file->template()) {
             'full-nav' => $this->fullNav($content),
-            default => $this->default($content)
+            'sitemap'  => $this->sitemap($content),
+            default    => $this->default($content)
         };
     }
 
@@ -73,6 +79,13 @@ class Document
                 ),
                 $this->environment
             )
+        );
+    }
+
+    private function sitemap(string $content): Stream
+    {
+        return Stream::create(
+            Sitemap::create($this->file)
         );
     }
 }

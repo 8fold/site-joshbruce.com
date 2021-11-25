@@ -6,6 +6,8 @@ namespace JoshBruce\SiteDynamic\FileSystem;
 
 use JoshBruce\SiteDynamic\FileSystem\FileInterface;
 
+use DateTime;
+
 use Symfony\Component\Yaml\Yaml;
 
 use JoshBruce\SiteDynamic\FileSystem\FileTrait;
@@ -23,6 +25,12 @@ class PlainTextFile implements FileInterface
     private array $frontMatter = [];
 
     private string $content = '';
+
+    public function hasMetadata(string $key): bool
+    {
+        $frontMatter = $this->frontMatter();
+        return array_key_exists($key, $frontMatter);
+    }
 
     public function template(): string
     {

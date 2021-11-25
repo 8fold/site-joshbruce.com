@@ -29,6 +29,8 @@ class Environment
 
     private const FILE_SEPARATOR = '/';
 
+    private string $publicRoot = '';
+
     public static function with(string $pathToEnv): Environment
     {
         return new Environment($pathToEnv);
@@ -40,9 +42,10 @@ class Environment
         Dotenv::createImmutable($pathToEnv)->load();
         $this->hasRequiredVariables();
     }
-
+public $callCount = 0;
     public function supportedMethods(): array
     {
+$this->callCount++;
         $list = $_SERVER['APP_METHODS'];
         return explode(',', $list);
     }
@@ -54,6 +57,7 @@ class Environment
 
     private function hasRequiredVariables(): bool
     {
+
         if ($this->hasRequiredVariables) {
             foreach (self::ENV_REQUIRED as $required) {
                 if (! array_key_exists($required, $_SERVER)) {
@@ -72,12 +76,14 @@ class Environment
 
     private function hasRequiredFolders(): bool
     {
+
         return file_exists($this->publicRoot()) and
             is_dir($this->publicRoot());
     }
 
     public function contentRoot(): string
     {
+
         $parts = explode(self::FILE_SEPARATOR, $this->publicRoot());
         $parts = array_slice($parts, 0, -1);
         return implode(self::FILE_SEPARATOR, $parts);
@@ -85,9 +91,14 @@ class Environment
 
     public function publicRoot(): string
     {
-        $fileInfo = new SplFileInfo(
-            $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
-        );
-        return $fileInfo->getRealPath();
+        if (strlen($this->publicRoot) === 0) {
+            // Cached locally to improve performance.
+            // Call count for index.php process was 8, now 1.
+            $fileInfo = new SplFileInfo(
+                $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
+            );
+            $this->publicRoot = $fileInfo->getRealPath();
+        }
+        return $this->publicRoot;
     }
 }

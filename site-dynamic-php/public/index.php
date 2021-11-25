@@ -18,11 +18,14 @@ use JoshBruce\SiteDynamic\FileSystem\Finder;
 
 use JoshBruce\SiteDynamic\Environment;
 
-Emitter::emit(
-    RequestHandler::in(
-        Environment::with(
+$environment =         Environment::with(
             pathToEnv: __DIR__ . '/../../'
-        )
+        );
+Emitter::emit(
+    RequestHandler::in($environment
+        // Environment::with(
+        //     pathToEnv: __DIR__ . '/../../'
+        // )
     )->handle(
         new ServerRequest(
             method: $_SERVER['REQUEST_METHOD'],
@@ -32,4 +35,5 @@ Emitter::emit(
         )
     )
 );
+var_dump($environment->callCount);
 exit;

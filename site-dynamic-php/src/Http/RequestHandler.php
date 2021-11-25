@@ -103,7 +103,10 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        if ($this->isRequestingContent()) {
+        if (
+            $this->isRequestingContent() or
+            $this->isRequestingXml()
+        ) {
             return DocumentResponse::with(
                 $this->fileForPath($path),
                 $this->environment(),
@@ -111,6 +114,7 @@ class RequestHandler implements RequestHandlerInterface
             )->respond();
 
         }
+
         return FileResponse::with(
             $this->fileForPath($path),
             $this->environment(),
@@ -171,6 +175,11 @@ class RequestHandler implements RequestHandlerInterface
     private function isRequestingContent(): bool
     {
         return ! $this->isRequestingFile();
+    }
+
+    private function isRequestingXml(): bool
+    {
+        return str_ends_with($this->requestPath(), '.xml');
     }
 
     private function isRequestingFile(): bool
