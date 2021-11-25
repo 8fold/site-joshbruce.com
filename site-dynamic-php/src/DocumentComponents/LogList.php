@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\DocumentComponents;
 
-use JoshBruce\Site\FileSystemInterface;
-use JoshBruce\Site\File;
+use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -13,34 +13,34 @@ use JoshBruce\Site\Content\Markdown;
 
 class LogList
 {
-    public static function create(
-        File $file,
-        FileSystemInterface $fileSystem
-    ): string {
-        $fileSubfolders = $file->children(filesNamed: 'content.md');
-        if (count($fileSubfolders) === 0) {
+    public static function create(PlainTextFile $file): string
+    {
+        $finder = Finder::init($file->path(omitFilename: true))
+            ->publishedContent();
+        if (count($finder) === 0) {
             return '';
         }
 
-        krsort($fileSubfolders);
         $logLinks = [];
-        foreach ($fileSubfolders as $key => $file) {
-            if (! str_starts_with(strval($key), '_') and $file->found()) {
-                $markdown = Markdown::for($file, $fileSystem);
-
-                $linkPath = str_replace(
-                    '/content.md',
-                    '',
-                    $file->path(full: false)
-                );
-
-                $logLinks[] = Element::li(
-                    Element::a(
-                        $file->title()
-                    )->props('href ' . $linkPath)
-                );
+        foreach ($finder as $fileInfo) {
+            if (str_contains($fileInfo->getPathname(), 'paycheck/content.md')) {
+                continue;
             }
+
+            $file = PlainTextFile::from($fileInfo, $file->root());
+
+            $title = $file->title();
+            $href  = $file->canonicalUrl();
+
+            $key = $file->path(full: false, omitFilename: true);
+
+            $logLinks[$key] = Element::li(
+                Element::a($title)->props("href {$href}")
+            );
         }
+
+        krsort($logLinks);
+
         return Element::ul(...$logLinks)->build();
     }
 }

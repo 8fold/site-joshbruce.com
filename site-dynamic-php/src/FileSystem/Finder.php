@@ -33,7 +33,6 @@ class Finder implements Countable, IteratorAggregate
             ->ignoreVCS(true)
             ->ignoreUnreadableDirs()
             ->ignoreDotFiles(true)
-            ->ignoreVCSIgnored(true)
             ->notName('.gitignore')
             ->sortByName();
     }

@@ -25,7 +25,7 @@ class Markdown
     private const COMPONENTS = [
         'data'      => Data::class,
         'dateblock' => DateBlock::class,
-        'full-nav'  => FullNavContent::class,
+        'full-nav'  => FullNavContent::class, // TODO: finish implementing templates
         'loglist'   => LogList::class,
         'original'  => OriginalContentNotice::class
     ];
@@ -83,7 +83,8 @@ class Markdown
                 if (
                     $partialKey === 'data' or
                     $partialKey === 'dateblock' or
-                    $partialKey === 'full-nav'
+                    $partialKey === 'full-nav' or
+                    $partialKey === 'loglist'
                 ) {
                     $b = $template::create($file);
 

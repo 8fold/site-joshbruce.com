@@ -37,12 +37,21 @@ trait FileTrait
         return $this->root;
     }
 
-    public function path(bool $full = true): string
+    public function path(bool $full = true, bool $omitFilename = false): string
     {
         $realPath = $this->fileInfo()->getRealPath();
+        if ($omitFilename) {
+            $parts = explode('/', $realPath);
+            $parts = array_slice($parts, 0, -1);
+            $realPath = implode('/', $parts);
+
+        }
+
         if ($full) {
             return $realPath;
+
         }
+
         return str_replace($this->root(), '', $realPath);
     }
 
@@ -56,7 +65,7 @@ trait FileTrait
 
     public function canonicalUrl(): string
     {
-        return $_SERVER['APP_URL'] . $this->path(false);
+        return $_SERVER['APP_URL'] . $this->path(full: false, omitFilename: true);
     }
 
     private function extension(): string

@@ -5,8 +5,6 @@ declare(strict_types=1);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 
-// $projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
-
 require __DIR__ . '/../../vendor/autoload.php';
 
 use Nyholm\Psr7\ServerRequest;

@@ -10,9 +10,11 @@ use DateTime;
 
 use Symfony\Component\Yaml\Yaml;
 
-use JoshBruce\SiteDynamic\FileSystem\FileTrait;
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+
+use JoshBruce\SiteDynamic\FileSystem\FileTrait;
 
 class PlainTextFile implements FileInterface
 {
@@ -45,7 +47,9 @@ class PlainTextFile implements FileInterface
     {
         $frontMatter = $this->frontMatter();
         if (array_key_exists('title', $frontMatter)) {
-            return $frontMatter['title'];
+            $title = Markdown::markdownConverter()
+                ->convert($frontMatter['title']);
+            return strip_tags($title);
         }
         return '';
     }
