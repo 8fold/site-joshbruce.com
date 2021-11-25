@@ -23,16 +23,16 @@ class LogList
 
         $logLinks = [];
         foreach ($finder as $fileInfo) {
-            if (str_contains($fileInfo->getPathname(), 'paycheck/content.md')) {
+            if ($fileInfo->getRealPath() === $file->path()) {
                 continue;
             }
 
-            $file = PlainTextFile::from($fileInfo, $file->root());
+            $f = PlainTextFile::from($fileInfo, $file->root());
 
-            $title = $file->title();
-            $href  = $file->canonicalUrl();
+            $title = $f->title();
+            $href  = $f->canonicalUrl();
 
-            $key = $file->path(full: false, omitFilename: true);
+            $key = $f->path(full: false, omitFilename: true);
 
             $logLinks[$key] = Element::li(
                 Element::a($title)->props("href {$href}")

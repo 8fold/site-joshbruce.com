@@ -27,6 +27,26 @@ test('converter is singleton', function() {
     );
 })->group('markdown');
 
+it('can process log list partial', function() {
+    $projectRoot = __DIR__ . '/../test-project-root';
+
+    $file = PlainTextFile::at(
+        $projectRoot . '/content/public/log-list/content.md',
+        Environment::with($projectRoot)->publicRoot()
+    );
+
+    expect(
+        Markdown::processPartials(<<<md
+            {!! loglist !!}
+            md,
+            $file
+        )
+    )->toBe(<<<html
+        <ul><li><a href="http://jbruce-test.com/log-list/alpha"></a></li><li><a href="http://jbruce-test.com/log-list/2021"></a></li><li><a href="http://jbruce-test.com/log-list/2020"></a></li></ul>
+        html
+    );
+})->group('markdown', 'test-content', 'focus');
+
 it('can process data partial', function() {
     $projectRoot = __DIR__ . '/../test-project-root';
 
