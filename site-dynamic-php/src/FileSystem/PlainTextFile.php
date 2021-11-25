@@ -78,7 +78,9 @@ class PlainTextFile implements FileInterface
     {
         if (count($this->frontMatter) === 0) {
             $this->processRawContent();
+
         }
+
         return $this->frontMatter;
     }
 
@@ -86,7 +88,9 @@ class PlainTextFile implements FileInterface
     {
         if (strlen($this->content) === 0) {
             $this->processRawContent();
+
         }
+
         return $this->content;
     }
 
@@ -145,9 +149,6 @@ class PlainTextFile implements FileInterface
 
     private function rawContent(): string
     {
-        if (strlen($this->rawContent) === 0) {
-            $this->rawContent = file_get_contents($this->path());
-        }
-        return $this->rawContent;
+        return file_get_contents($this->path());
     }
 }
