@@ -126,6 +126,68 @@ class PlainTextFile implements FileInterface
         return $this->content;
     }
 
+    public function description(): string
+    {
+        $description = '';
+
+        $frontMatter = $this->frontMatter();
+        if (array_key_exists('description', $frontMatter)) {
+            $description = $frontMatter['description'];
+
+        } else {
+            // Remove headings and partials and collapse
+            $description = $this->content();
+
+            $check = preg_filter(
+                ["/#(.*)\n/", "/{!!(.*)!!}/"],
+                ['', ''],
+                $description
+            );
+
+            if ($check !== null) {
+                $description = $check;
+
+            }
+
+            $description = implode(
+                ' ',
+                array_filter(
+                    explode(
+                        "\n",
+                        $description
+                    )
+                )
+            );
+        }
+
+        $description = strip_tags(
+            Markdown::markdownConverter()->convert(
+                substr($description, 0, 400)
+            )
+        );
+
+        $sentences = explode('. ', $description);
+
+        $description = '';
+        foreach ($sentences as $sentence) {
+            $d = $sentence;
+            if (strlen($description) > 0) {
+                $d = $description . '. ' . $sentence;
+            }
+
+            $proposedLength = strlen($d);
+            if ($proposedLength >= 200) {
+                $ps = explode('. ', $d);
+                array_pop($ps);
+                $description = implode('. ', $ps) . '.';
+                break;
+            }
+            $description = $d;
+        }
+
+        return $description;
+    }
+
     /**
      * @return array<int, int[]>
      */

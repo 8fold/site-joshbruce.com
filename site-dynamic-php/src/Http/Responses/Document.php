@@ -59,7 +59,7 @@ class Document
         return Stream::create(
             HtmlDefault::create(
                 $this->file->pageTitle(),
-                '',
+                $this->file->description(),
                 Element::main(
                     Markdown::markdownConverter()->convert($content)
                 ),
@@ -73,7 +73,7 @@ class Document
         return Stream::create(
             FullNav::create(
                 $this->file->pageTitle(),
-                '',
+                $this->file->description(),
                 Element::main(
                     Markdown::markdownConverter()->convert($content)
                 ),
