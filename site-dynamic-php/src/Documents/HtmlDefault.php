@@ -106,6 +106,7 @@ class HtmlDefault
 
     public static function canonicalUrls(string $html): string
     {
+        // TODO: Make sure images show canonical url
         return str_replace(
             ['href="/'],
             ['href="' . $_SERVER['APP_URL'] . '/'],

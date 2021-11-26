@@ -11,6 +11,7 @@ use Symfony\Component\Yaml\Yaml;
 use JoshBruce\Site\Content\Markdown;
 use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
 
+/** @deprecated */
 class FileMetadata
 {
 	private SplFileInfo $fileInfo;
