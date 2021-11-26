@@ -17,7 +17,7 @@ class Environment
         'APP_URL',
         // Comma delimited list of supported request methods.
         'APP_METHODS',
-        // Path to folder containing containing, relative to project root.
+        // Path to folder containing public folder, relative to .env location.
         'ENV_TO_PUBLIC_ROOT',
         // Default name of file containing web content.
         'CONTENT_FILENAME'
