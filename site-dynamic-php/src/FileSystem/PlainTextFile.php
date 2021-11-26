@@ -73,32 +73,6 @@ class PlainTextFile implements FileInterface
         return implode(' | ', $t);
     }
 
-    private function titleParts(): array
-    {
-        if (count($this->titleParts) === 0) {
-            $path = $this->path(omitFilename: true);
-
-            $titles = [];
-            $titles[] = $this->title();
-            while (str_contains($path, $this->root)) {
-                $parts = explode('/', $path);
-                $parts = array_slice($parts, 0, -1);
-                $path  = implode('/', $parts);
-
-                if (str_contains($path, $this->root))
-                {
-                    $titles[] = PlainTextFile::at($path . '/content.md', $this->root)
-                        ->title();
-                }
-            }
-
-            $this->titleParts = $titles;
-
-        }
-
-        return $this->titleParts;
-    }
-
     public function created(string $format = ''): string|int|false
     {
         return $this->dateField('created', $format);
@@ -167,6 +141,32 @@ class PlainTextFile implements FileInterface
 
         }
         return [];
+    }
+
+    private function titleParts(): array
+    {
+        if (count($this->titleParts) === 0) {
+            $path = $this->path(omitFilename: true);
+
+            $titles = [];
+            $titles[] = $this->title();
+            while (str_contains($path, $this->root)) {
+                $parts = explode('/', $path);
+                $parts = array_slice($parts, 0, -1);
+                $path  = implode('/', $parts);
+
+                if (str_contains($path, $this->root))
+                {
+                    $titles[] = PlainTextFile::at($path . '/content.md', $this->root)
+                        ->title();
+                }
+            }
+
+            $this->titleParts = $titles;
+
+        }
+
+        return $this->titleParts;
     }
 
     private function dateField(
