@@ -62,8 +62,9 @@ class RequestHandler implements RequestHandlerInterface
             $this->environment()->isMissingFolders()
         ) {
             return InternalServerErrorResponse::with(
-                $this->fileForPath(
-                    $this->environment()->publicRoot() . '/error-500.html'
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-500.html',
+                    $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
@@ -71,8 +72,9 @@ class RequestHandler implements RequestHandlerInterface
 
         } elseif ($this->isUnsupportedMethod()) {
             return UnsupportedMethodResponse::with(
-                $this->fileForPath(
-                    $this->environment()->publicRoot() . '/error-405.md'
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-405.md',
+                    $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
@@ -87,7 +89,7 @@ class RequestHandler implements RequestHandlerInterface
             $p = $this->redirectFilePath($path)
         ) {
             return RedirectResponse::with(
-                $this->fileForPath($p),
+                PlainTextFile::at($p, $this->environment()->publicRoot()),
                 $this->environment(),
                 $this->request()
             )->respond();
@@ -96,8 +98,9 @@ class RequestHandler implements RequestHandlerInterface
 
         if (! file_exists($path) or ! is_file($path)) {
             return NotFoundResponse::with(
-                $this->fileForPath(
-                    $this->environment()->publicRoot() . '/error-404.md'
+                PlainTextFile::at(
+                    $this->environment()->publicRoot() . '/error-404.md',
+                    $this->environment()->publicRoot()
                 ),
                 $this->environment(),
                 $this->request()
@@ -110,7 +113,7 @@ class RequestHandler implements RequestHandlerInterface
             $this->isRequestingXml()
         ) {
             return DocumentResponse::with(
-                $this->fileForPath($path),
+                PlainTextFile::at($path, $this->environment()->publicRoot()),
                 $this->environment(),
                 $this->request()
             )->respond();
@@ -118,26 +121,12 @@ class RequestHandler implements RequestHandlerInterface
         }
 
         return FileResponse::with(
-            $this->fileForPath($path),
-            $this->environment(),
-            $this->request()
-        )->respond();
-    }
-
-    private function fileForPath(string $path): File|PlainTextFile
-    {
-        if ($this->pathIsFile($path)) {
-            return PlainTextFile::at(
+            File::at(
                 $path,
                 $this->environment()->publicRoot()
-            );
-
-        }
-
-        return File::at(
-            $path,
-            $this->environment()->publicRoot()
-        );
+            ),
+            $this->request()
+        )->respond();
     }
 
     private function isRedirecting(string $path): bool
@@ -237,11 +226,6 @@ class RequestHandler implements RequestHandlerInterface
     private function environment(): Environment
     {
         return $this->environment;
-    }
-
-    private function finder(): Finder
-    {
-        return $this->finder;
     }
 
     private function request(): ServerRequestInterface

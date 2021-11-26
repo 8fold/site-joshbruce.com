@@ -20,8 +20,7 @@ class FullNav
         string $description,
         Element $body,
         Environment $environemt
-    ): string
-    {
+    ): string {
         $html = Document::create(
             $pageTitle
         )->head(

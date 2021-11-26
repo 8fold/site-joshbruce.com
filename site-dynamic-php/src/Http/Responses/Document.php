@@ -27,6 +27,9 @@ class Document
         return 200;
     }
 
+    /**
+     * @return array<string, string|string[]>
+     */
     public function headers(): array
     {
         return [
@@ -54,7 +57,7 @@ class Document
         };
     }
 
-    private function default(string $content): Stream
+    private function default(string $content): StreamInterface
     {
         return Stream::create(
             HtmlDefault::create(
@@ -68,7 +71,7 @@ class Document
         );
     }
 
-    private function fullNav(string $content): Stream
+    private function fullNav(string $content): StreamInterface
     {
         return Stream::create(
             FullNav::create(
@@ -82,7 +85,7 @@ class Document
         );
     }
 
-    private function sitemap(string $content): Stream
+    private function sitemap(string $content): StreamInterface
     {
         return Stream::create(
             Sitemap::create($this->file)

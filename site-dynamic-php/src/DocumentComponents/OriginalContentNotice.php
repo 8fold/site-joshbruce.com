@@ -8,7 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 class OriginalContentNotice
 {

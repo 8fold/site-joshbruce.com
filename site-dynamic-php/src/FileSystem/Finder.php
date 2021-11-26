@@ -10,17 +10,16 @@ use SplFileInfo;
 
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 
+/**
+ * @implements IteratorAggregate<SymfonyFinder>
+ */
 class Finder implements Countable, IteratorAggregate
 {
     private const DRAFT_INDICATOR = '_';
 
     private const REDIRECT_INDICATOR = '~';
 
-    private static Finder $finder;
-
     private SymfonyFinder $symFinder;
-
-    private bool $files = true;
 
     public static function init(string $publicRoot): static
     {

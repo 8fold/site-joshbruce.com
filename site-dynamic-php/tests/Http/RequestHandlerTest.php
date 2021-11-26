@@ -9,7 +9,7 @@ use JoshBruce\SiteDynamic\Http\RequestHandler;
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\Environment;
 
-afterEach(function() {
+afterEach(function () {
     foreach ($_ENV as $var => $value) {
         if ($var !== 'SHELL_VERBOSITY') {
             unset($_ENV[$var]);
@@ -18,7 +18,7 @@ afterEach(function() {
     }
 });
 
-it('can find content', function() {
+it('can find content', function () {
     expect(
         RequestHandler::in(
             Environment::with(__DIR__ . '/../../../')
@@ -58,7 +58,7 @@ it('can find content', function() {
     ]);
 })->group('request-handler', 'live-content', 'status-codes');
 
-it('can return internal server error', function() {
+it('can return internal server error', function () {
     expect(
         RequestHandler::in(
             Environment::with(__DIR__ . '/../test-project-root/failing-env')
@@ -75,7 +75,7 @@ it('can return internal server error', function() {
     );
 })->group('request-handler', 'test-content', 'status-codes');
 
-it('can return unsupported method', function() {
+it('can return unsupported method', function () {
     expect(
         RequestHandler::in(
             Environment::with(__DIR__ . '/../../../')
@@ -92,7 +92,7 @@ it('can return unsupported method', function() {
     );
 })->group('request-handler', 'live-content', 'status-codes');
 
-it('can handle not found', function() {
+it('can handle not found', function () {
     expect(
         RequestHandler::in(
             Environment::with(__DIR__ . '/../../../')
@@ -109,7 +109,7 @@ it('can handle not found', function() {
     );
 })->group('request-handler', 'live-content', 'status-codes');
 
-it('can handle redirect', function() {
+it('can handle redirect', function () {
     expect(
         RequestHandler::in(
             Environment::with(__DIR__ . '/../../../')

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use JoshBruce\SiteDynamic\Environment;
 
-afterEach(function() {
+afterEach(function () {
     foreach ($_ENV as $var => $value) {
         if ($var !== 'SHELL_VERBOSITY') {
             unset($_ENV[$var]);
@@ -13,7 +13,7 @@ afterEach(function() {
     }
 });
 
-it('has supported methods', function() {
+it('has supported methods', function () {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
             ->supportedMethods()
@@ -22,14 +22,14 @@ it('has supported methods', function() {
     ]);
 });
 
-it('has expected folders', function() {
+it('has expected folders', function () {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
             ->isMissingFolders()
     )->toBeBool()->toBeFalse();
 })->group('env', 'test-content');
 
-it('has correct content root', function() {
+it('has correct content root', function () {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
             ->publicRoot()
@@ -38,14 +38,14 @@ it('has correct content root', function() {
     );
 })->group('env', 'test-content');
 
-it('can validate .env', function() {
+it('can validate .env', function () {
     expect(
         Environment::with(__DIR__ . '/test-project-root')
             ->isMissingVariables()
     )->toBeBool()->toBeFalse();
 })->group('env', 'test-content');
 
-it('fails silently', function() {
+it('fails silently', function () {
     expect(
         Environment::with(__DIR__ . '/test-project-root/failing-env')
             ->isMissingVariables()

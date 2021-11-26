@@ -23,9 +23,7 @@ class Environment
         'CONTENT_FILENAME'
     ];
 
-    private const PUBLIC_FOLDERNAME = 'public';
-
-    private $hasRequiredVariables = true;
+    private bool $hasRequiredVariables = true;
 
     private const FILE_SEPARATOR = '/';
 
@@ -43,13 +41,16 @@ class Environment
         $this->hasRequiredVariables();
     }
 
+    /**
+     * @return string[]
+     */
     public function supportedMethods(): array
     {
         $list = $_SERVER['APP_METHODS'];
         return explode(',', $list);
     }
 
-    public function isMissingVariables():bool
+    public function isMissingVariables(): bool
     {
         return ! $this->hasRequiredVariables();
     }
@@ -95,7 +96,13 @@ class Environment
             $fileInfo = new SplFileInfo(
                 $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
             );
-            $this->publicRoot = $fileInfo->getRealPath();
+
+            $realPath = $fileInfo->getRealPath();
+            if (! $realPath) {
+                $realPath = '';
+            }
+
+            $this->publicRoot = $realPath;
         }
         return $this->publicRoot;
     }

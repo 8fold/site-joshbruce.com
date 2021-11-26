@@ -26,12 +26,12 @@ class Sitemap
             $f = PlainTextFile::from(fileInfo: $fileInfo, root: $root);
 
             $lastmod = $f->updated(self::DATE_FORMAT);
-            if (is_bool($lastmod) and ! $lastmod) {
+            if (! $lastmod) {
                 $lastmod = $f->created(self::DATE_FORMAT);
             }
 
             // No mod or creation date, no inclusion in sitemap.
-            if (is_bool($lastmod) and ! $lastmod) {
+            if (! $lastmod) {
                 continue;
 
             }

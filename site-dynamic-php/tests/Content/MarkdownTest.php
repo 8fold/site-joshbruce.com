@@ -7,7 +7,7 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 use JoshBruce\SiteDynamic\Environment;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-afterEach(function() {
+afterEach(function () {
     foreach ($_ENV as $var => $value) {
         if ($var !== 'SHELL_VERBOSITY') {
             unset($_ENV[$var]);
@@ -16,7 +16,8 @@ afterEach(function() {
     }
 });
 
-test('converter is singleton', function() {
+// @phpstan-ignore-next-line
+test('converter is singleton', function () {
     $converter1 = Markdown::markdownConverter();
     $converter2 = Markdown::markdownConverter();
 
@@ -27,7 +28,7 @@ test('converter is singleton', function() {
     );
 })->group('markdown');
 
-it('can process original partial', function() {
+it('can process original partial', function () {
     $projectRoot = __DIR__ . '/../test-project-root';
 
     $file = PlainTextFile::at(
@@ -36,18 +37,18 @@ it('can process original partial', function() {
     );
 
     expect(
-        Markdown::processPartials(<<<md
+        Markdown::processPartials(
+            <<<md
             {!! original !!}
             md,
             $file
-        )
-    )->toBe(<<<html
-        <p class="notice">This content was originally posted on <a href="/platform/url">Platform name</a>. There may be modifications and updates in comparison.</p>
-        html
+        ) . "\n"
+    )->toBe(
+        file_get_contents(__DIR__ . '/partial-output-original.html')
     );
 })->group('markdown', 'test-content');
 
-it('can process log list partial', function() {
+it('can process log list partial', function () {
     $projectRoot = __DIR__ . '/../test-project-root';
 
     $file = PlainTextFile::at(
@@ -56,18 +57,18 @@ it('can process log list partial', function() {
     );
 
     expect(
-        Markdown::processPartials(<<<md
+        Markdown::processPartials(
+            <<<md
             {!! loglist !!}
             md,
             $file
-        )
-    )->toBe(<<<html
-        <ul><li><a href="http://jbruce-test.com/log-list/alpha"></a></li><li><a href="http://jbruce-test.com/log-list/2021"></a></li><li><a href="http://jbruce-test.com/log-list/2020"></a></li></ul>
-        html
+        ) . "\n"
+    )->toBe(
+        file_get_contents(__DIR__ . '/partial-output-log-list.html')
     );
 })->group('markdown', 'test-content');
 
-it('can process data partial', function() {
+it('can process data partial', function () {
     $projectRoot = __DIR__ . '/../test-project-root';
 
     $file = PlainTextFile::at(
@@ -76,18 +77,18 @@ it('can process data partial', function() {
     );
 
     expect(
-        Markdown::processPartials(<<<md
+        Markdown::processPartials(
+            <<<md
             {!! data !!}
             md,
             $file
-        )
-    )->toBe(<<<html
-        <ul><li>Debt (decrease)<ul><li><b>current: </b>0.9</li><li><abbr title="minimum">min</abbr>: 0</li><li><abbr title="maximum">max</abbr>: 0</li></ul></li></ul>
-        html
+        ) . "\n"
+    )->toBe(
+        file_get_contents(__DIR__ . '/partial-output-data.html')
     );
 })->group('markdown', 'test-content');
 
-it('can process date block partial', function() {
+it('can process date block partial', function () {
     $projectRoot = __DIR__ . '/../../../';
 
     $file = PlainTextFile::at(
@@ -97,25 +98,25 @@ it('can process date block partial', function() {
 
     // preferred
     expect(
-        Markdown::processPartials(<<<md
+        Markdown::processPartials(
+            <<<md
             {!! dateblock !!}
             md,
             $file
-        )
-    )->toBe(<<<html
-        <div is="dateblock"><p>Created: <time content="2021-01-01" property="dateCreated">Jan 1, 2021</time></p></div>
-        html
+        ) . "\n"
+    )->toBe(
+        file_get_contents(__DIR__ . '/partial-output-date-block.html')
     );
 
     // legacy
     expect(
-        Markdown::processPartials(<<<md
+        Markdown::processPartials(
+            <<<md
             {!!dateblock!!}
             md,
             $file
-        )
-    )->toBe(<<<html
-        <div is="dateblock"><p>Created: <time content="2021-01-01" property="dateCreated">Jan 1, 2021</time></p></div>
-        html
+        ) . "\n"
+    )->toBe(
+        file_get_contents(__DIR__ . '/partial-output-date-block.html')
     );
 })->group('markdown', 'live-content');

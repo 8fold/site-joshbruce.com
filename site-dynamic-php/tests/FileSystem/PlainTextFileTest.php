@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-beforeEach(function() {
+beforeEach(function () {
     $this->publicRoot = __DIR__ . '/../test-project-root/content/public';
     $this->publish2Content = $this->publicRoot .
         '/published/published-2/content.md';
 });
 
-it('can get page and social titles', function() {
+it('can get page and social titles', function () {
     expect(
         PlainTextFile::at(
             $this->publish2Content,
@@ -30,7 +30,7 @@ it('can get page and social titles', function() {
     );
 })->group('plain-text-file', 'test-content');
 
-it('can get title', function() {
+it('can get title', function () {
     expect(
         PlainTextFile::at(
             $this->publish2Content,
@@ -41,19 +41,21 @@ it('can get title', function() {
     );
 })->group('plain-text-file', 'test-content');
 
-it('can get description from front matter', function() {
-   // description field
-   $file = PlainTextFile::at(
-       $this->publicRoot . '/content.md',
-       $this->publicRoot
-   );
+it('can get description from front matter', function () {
+    // description field
+    $file = PlainTextFile::at(
+        $this->publicRoot . '/content.md',
+        $this->publicRoot
+    );
+
     expect(
         PlainTextFile::at(
             $this->publicRoot . '/content.md',
             $this->publicRoot
         )->description()
     )->toBe(
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit. Curabitur “iaculis” sodales turpis a pellentesque’s. In ac nibh ex."
+        // phpcs:ignore
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit. Curabitur “iaculis” sodales turpis a pellentesque’s. In ac nibh ex.'
     );
 
     // derived description from content, short
@@ -73,6 +75,7 @@ it('can get description from front matter', function() {
             $this->publicRoot
         )->description()
     )->toBe(
-        "Short sentence. Something a little bit longer. Third sentence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit."
+        // phpcs:ignore
+        'Short sentence. Something a little bit longer. Third sentence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit.'
     );
 })->group('plain-text-file', 'test-content');

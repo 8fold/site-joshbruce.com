@@ -7,6 +7,7 @@ namespace JoshBruce\SiteDynamic\FileSystem;
 use JoshBruce\SiteDynamic\FileSystem\FileInterface;
 
 use DateTime;
+use SplFileInfo;
 
 use Symfony\Component\Yaml\Yaml;
 
@@ -20,15 +21,35 @@ class PlainTextFile implements FileInterface
 {
     use FileTrait;
 
-	private const FRONT_MATTER_DELIMITER = '---';
+    private const FRONT_MATTER_DELIMITER = '---';
 
-    private string $rawContent = '';
-
+    /**
+     * @var array<string, mixed>
+     */
     private array $frontMatter = [];
 
     private string $content = '';
 
+    /**
+     * @var string[]
+     */
     private array $titleParts = [];
+
+    public static function at(string $localPath, string $root): PlainTextFile
+    {
+        $realPath = (new SplFileInfo($root))->getRealPath();
+        if (! $realPath) {
+            $realPath = $root;
+        }
+        return static::from(new SplFileInfo($localPath), $realPath);
+    }
+
+    public static function from(
+        SplFileInfo $fileInfo,
+        string $root
+    ): PlainTextFile {
+        return new static($fileInfo, $root);
+    }
 
     public function hasMetadata(string $key): bool
     {
@@ -39,8 +60,12 @@ class PlainTextFile implements FileInterface
     public function template(): string
     {
         $frontMatter = $this->frontMatter();
-        if (array_key_exists('template', $frontMatter)) {
-            return $frontMatter['template'];
+        if (
+            array_key_exists('template', $frontMatter) and
+            $template = $frontMatter['template'] and
+            is_string($template)
+        ) {
+            return $template;
         }
         return '';
     }
@@ -48,10 +73,16 @@ class PlainTextFile implements FileInterface
     public function title(): string
     {
         $frontMatter = $this->frontMatter();
-        if (array_key_exists('title', $frontMatter)) {
-            $title = Markdown::markdownConverter()
-                ->convert($frontMatter['title']);
-            return strip_tags($title);
+        if (
+            array_key_exists('title', $frontMatter) and
+            $title = $frontMatter['title'] and
+            is_string($title)
+        ) {
+            return htmlspecialchars(
+                strip_tags(
+                    Markdown::markdownConverter()->convert($title)
+                )
+            );
         }
         return '';
     }
@@ -91,8 +122,12 @@ class PlainTextFile implements FileInterface
     public function redirect(): string
     {
         $frontMatter = $this->frontMatter();
-        if (array_key_exists('redirect', $frontMatter)) {
-            return $frontMatter['redirect'];
+        if (
+            array_key_exists('redirect', $frontMatter) and
+            $redirect = $frontMatter['redirect'] and
+            is_string($redirect)
+        ) {
+            return $redirect;
         }
         return '';
     }
@@ -100,19 +135,24 @@ class PlainTextFile implements FileInterface
     public function original(): string
     {
         $frontMatter = $this->frontMatter();
-        if (array_key_exists('original', $frontMatter)) {
-            return $frontMatter['original'];
+        if (
+            array_key_exists('original', $frontMatter) and
+            $original = $frontMatter['original'] and
+            is_string($original)
+        ) {
+            return $original;
         }
         return '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {
             $this->processRawContent();
-
         }
-
         return $this->frontMatter;
     }
 
@@ -120,9 +160,7 @@ class PlainTextFile implements FileInterface
     {
         if (strlen($this->content) === 0) {
             $this->processRawContent();
-
         }
-
         return $this->content;
     }
 
@@ -144,20 +182,19 @@ class PlainTextFile implements FileInterface
                 $description
             );
 
-            if ($check !== null) {
+            if ($check !== null and is_string($check)) {
                 $description = $check;
 
             }
 
-            $description = implode(
-                ' ',
-                array_filter(
-                    explode(
-                        "\n",
-                        $description
-                    )
-                )
-            );
+            $blocks = explode("\n", $description);
+            $contentBlocks = array_filter($blocks);
+
+            $description = implode(' ', $contentBlocks);
+        }
+
+        if (! is_string($description)) {
+            $description = '';
         }
 
         $description = strip_tags(
@@ -205,6 +242,9 @@ class PlainTextFile implements FileInterface
         return [];
     }
 
+    /**
+     * @return string[]
+     */
     private function titleParts(): array
     {
         if (count($this->titleParts) === 0) {
@@ -217,8 +257,7 @@ class PlainTextFile implements FileInterface
                 $parts = array_slice($parts, 0, -1);
                 $path  = implode('/', $parts);
 
-                if (str_contains($path, $this->root))
-                {
+                if (str_contains($path, $this->root)) {
                     $titles[] = PlainTextFile::at($path . '/content.md', $this->root)
                         ->title();
                 }
@@ -258,23 +297,21 @@ class PlainTextFile implements FileInterface
 
     private function processRawContent(): void
     {
-        $parts = explode(self::FRONT_MATTER_DELIMITER, $this->rawContent());
-		if (
-			count($parts) === 3 and
-			$possible = Yaml::parse($parts[1]) and
-			is_array($possible)
-		) {
-			$this->frontMatter = $possible;
-            $this->content = $parts[2];
+        $contents = file_get_contents($this->path());
+        if (is_string($contents)) {
+            $parts = explode(self::FRONT_MATTER_DELIMITER, $contents);
+            if (
+                count($parts) === 3 and
+                $possible = Yaml::parse($parts[1]) and
+                is_array($possible)
+            ) {
+                $this->frontMatter = $possible;
+                $this->content = $parts[2];
 
-		} else {
-            $this->content = $parts[0];
+            } else {
+                $this->content = $parts[0];
 
+            }
         }
-    }
-
-    private function rawContent(): string
-    {
-        return file_get_contents($this->path());
     }
 }

@@ -18,10 +18,6 @@ class Markdown
 {
     private static MarkdownConverter $markdownConverter;
 
-    private const DOCUMENTS = [
-
-    ];
-
     private const COMPONENTS = [
         'data'      => Data::class,
         'dateblock' => DateBlock::class,

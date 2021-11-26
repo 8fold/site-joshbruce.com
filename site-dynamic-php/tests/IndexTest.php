@@ -2,33 +2,35 @@
 
 declare(strict_types=1);
 
-test('index is not displaying errors', function() {
-    // TODO: refactor
-    $dir     = __DIR__;
-    $parts   = explode('/', $dir);
-    $parts   = array_slice($parts, 0, -2);
-    $parts[] = 'site-dynamic-php';
-    $parts[] = 'public';
-    $parts[] = 'index.php';
+// @phpstan-ignore-next-line
+test('index is not displaying errors', function () {
+    $rPath = __DIR__ . '/../../site-dynamic-php/public/index.php';
+    $file  = new SplFileInfo($rPath);
+    $path  = $file->getRealPath();
 
-    $path = implode('/', $parts);
+    if (
+        is_string($path) and
+        $contents = file_get_contents($path) and
+        is_string($contents)
+    ) {
+        $matches = [];
+        preg_match_all('/ini_set\(.*\);/', $contents, $matches);
+        $matches = array_shift($matches);
 
-    // index.php should exist
-    expect(is_file($path))->toBeTrue();
+        // ini_set should be present
+        expect(count($matches))->toBe(2);
 
-    $contents = file_get_contents($path);
+        // ini_set should be 0
+        foreach ($matches as $match) {
+            expect(
+                str_contains($match, '1'),
+                'Okay to fail in local.'
+            )->toBeFalse();
+        }
 
-    preg_match_all('/ini_set\(.*\);/', $contents, $matches);
-    $matches = array_shift($matches);
+    } else {
+        // @phpstan-ignore-next-line
+        $this->assertTrue(false, 'Either the path or contents is false');
 
-    // ini_set should be present
-    expect(count($matches))->toBe(2);
-
-    // ini_set should be 0
-    foreach ($matches as $match) {
-        expect(
-            str_contains($match, '1'),
-            'Okay to fail in local.'
-        )->toBeFalse();
     }
 })->group('index');

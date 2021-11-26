@@ -22,21 +22,13 @@ class FileMimetype
     public function category(): string
     {
         $parts = explode('/', $this->interpreted());
-        $cat   = array_shift($parts);
-        if (is_string($cat)) {
-            return $cat;
-        }
-        return '';
+        return array_shift($parts);
     }
 
     public function name(): string
     {
         $parts = explode('/', $this->interpreted());
-        $name  = array_pop($parts);
-        if (is_string($name)) {
-            return $name;
-        }
-        return '';
+        return array_pop($parts);
     }
 
     public function interpreted(): string
@@ -44,7 +36,7 @@ class FileMimetype
         if (strlen($this->mimetype) === 0) {
             $this->mimetype = $this->raw();
             if ($this->mimetype === 'text/plain') {
-                $this->mimetype = match($this->extension) {
+                $this->mimetype = match ($this->extension) {
                     'md'    => 'text/html',
                     'css'   => 'text/css',
                     'js'    => 'text/javascript',

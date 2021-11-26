@@ -19,6 +19,9 @@ class InternalServerError
         return 500;
     }
 
+    /**
+     * @return array<string, string|string[]>
+     */
     public function headers(): array
     {
         return [];

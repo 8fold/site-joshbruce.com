@@ -20,6 +20,9 @@ class Redirect
         return intval($parts[0]);
     }
 
+    /**
+     * @return array<string, string|string[]>
+     */
     public function headers(): array
     {
         $parts = explode(' ', $this->file->redirect(), 2);

@@ -16,7 +16,7 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 trait ResponseCycleTrait
 {
     public static function with(
-        $file,
+        PlainTextFile $file,
         Environment $environment,
         ServerRequestInterface $request
     ): static {
@@ -24,7 +24,7 @@ trait ResponseCycleTrait
     }
 
     final private function __construct(
-        private $file,
+        private PlainTextFile $file,
         private Environment $environment,
         private ServerRequestInterface $request
     ) {

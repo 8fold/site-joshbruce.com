@@ -20,9 +20,6 @@
     </exclude>
   </coverage>
   <testsuites>
-    <testsuite name="base">
-      <directory suffix="Test.php">./tests/</directory>
-    </testsuite>
     <testsuite name="dynamic">
       <directory suffix="Test.php">./site-dynamic-php/tests/</directory>
     </testsuite>

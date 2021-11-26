@@ -25,6 +25,9 @@ class NotFound
         return 404;
     }
 
+    /**
+     * @return array<string, string|string[]>
+     */
     public function headers(): array
     {
         return [];

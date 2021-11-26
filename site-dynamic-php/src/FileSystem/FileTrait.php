@@ -6,27 +6,14 @@ namespace JoshBruce\SiteDynamic\FileSystem;
 
 use SplFileInfo;
 
-use JoshBruce\SiteDynamic\FileSystem\FileInterface;
+// use JoshBruce\SiteDynamic\FileSystem\FileInterface;
+use JoshBruce\SiteDynamic\FileSystem\File;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
 
 trait FileTrait
 {
-    public static function at(string $localPath, string $root): FileInterface
-    {
-        return static::from(
-            new SplFileInfo($localPath),
-            (new SplFileInfo($root))->getRealPath()
-        );
-    }
-
-    public static function from(
-        SplFileInfo $fileInfo,
-        string $root
-    ): FileInterface {
-        return new static($fileInfo, $root);
-    }
-
-    private function __construct(
+    final private function __construct(
         private SplFileInfo $fileInfo,
         private string $root
     ) {
@@ -40,6 +27,10 @@ trait FileTrait
     public function path(bool $full = true, bool $omitFilename = false): string
     {
         $realPath = $this->fileInfo()->getRealPath();
+        if (! $realPath) {
+            return '';
+        }
+
         if ($omitFilename) {
             $parts = explode('/', $realPath);
             $parts = array_slice($parts, 0, -1);
@@ -57,10 +48,12 @@ trait FileTrait
 
     public function mimetype(): FileMimetype
     {
-        return FileMimetype::with(
-            mime_content_type($this->path()),
-            $this->extension()
-        );
+        $mimetype = mime_content_type($this->path());
+        if (! $mimetype) {
+            $mimetype = 'text/plain';
+        }
+
+        return FileMimetype::with($mimetype, $this->extension());
     }
 
     public function canonicalUrl(): string
