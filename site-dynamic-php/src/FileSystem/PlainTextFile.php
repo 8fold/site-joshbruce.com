@@ -28,6 +28,8 @@ class PlainTextFile implements FileInterface
 
     private string $content = '';
 
+    private array $titleParts = [];
+
     public function hasMetadata(string $key): bool
     {
         $frontMatter = $this->frontMatter();
@@ -52,6 +54,49 @@ class PlainTextFile implements FileInterface
             return strip_tags($title);
         }
         return '';
+    }
+
+    public function pageTitle(): string
+    {
+        return implode(' | ', $this->titleParts());
+    }
+
+    public function socialTitle(): string
+    {
+        $titles = $this->titleParts();
+
+        $t = [];
+        $t[] = array_shift($titles);
+        if (count($titles) > 0) {
+            $t[] = array_pop($titles);
+        }
+        return implode(' | ', $t);
+    }
+
+    private function titleParts(): array
+    {
+        if (count($this->titleParts) === 0) {
+            $path = $this->path(omitFilename: true);
+
+            $titles = [];
+            $titles[] = $this->title();
+            while (str_contains($path, $this->root)) {
+                $parts = explode('/', $path);
+                $parts = array_slice($parts, 0, -1);
+                $path  = implode('/', $parts);
+
+                if (str_contains($path, $this->root))
+                {
+                    $titles[] = PlainTextFile::at($path . '/content.md', $this->root)
+                        ->title();
+                }
+            }
+
+            $this->titleParts = $titles;
+
+        }
+
+        return $this->titleParts;
     }
 
     public function created(string $format = ''): string|int|false
@@ -126,11 +171,16 @@ class PlainTextFile implements FileInterface
 
     private function dateField(
         string $key,
-        string $format = 'Ymd'
+        string $format = ''
     ): string|int|false {
         $frontMatter = $this->frontMatter();
         if (array_key_exists($key, $frontMatter)) {
             $date = $frontMatter[$key];
+
+            if (strlen($format) === 0) {
+                return intval($date);
+
+            }
 
             $date = DateTime::createFromFormat(
                 'Ymd',

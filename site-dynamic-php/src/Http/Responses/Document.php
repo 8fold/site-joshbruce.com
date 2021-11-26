@@ -58,7 +58,7 @@ class Document
     {
         return Stream::create(
             HtmlDefault::create(
-                'Josh Bruceʼs personal site',
+                $this->file->pageTitle(),
                 '',
                 Element::main(
                     Markdown::markdownConverter()->convert($content)
@@ -72,7 +72,7 @@ class Document
     {
         return Stream::create(
             FullNav::create(
-                'Josh Bruceʼs personal site',
+                $this->file->pageTitle(),
                 '',
                 Element::main(
                     Markdown::markdownConverter()->convert($content)

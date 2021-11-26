@@ -15,7 +15,7 @@ trait FileTrait
     {
         return static::from(
             new SplFileInfo($localPath),
-            $root
+            (new SplFileInfo($root))->getRealPath()
         );
     }
 
