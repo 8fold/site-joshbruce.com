@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 test('index is not displaying errors', function() {
+    // TODO: refactor
     $dir     = __DIR__;
     $parts   = explode('/', $dir);
-    $parts   = array_slice($parts, 0, -1);
+    $parts   = array_slice($parts, 0, -2);
     $parts[] = 'site-dynamic-php';
     $parts[] = 'public';
     $parts[] = 'index.php';
