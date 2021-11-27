@@ -25,8 +25,6 @@ use JoshBruce\SiteDynamic\Http\Responses\InternalServerError as
     InternalServerErrorResponse;
 use JoshBruce\SiteDynamic\Http\Responses\NotFound as NotFoundResponse;
 use JoshBruce\SiteDynamic\Http\Responses\Redirect as RedirectResponse;
-use JoshBruce\SiteDynamic\Http\Responses\UnsupportedMethod as
-    UnsupportedMethodResponse;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -64,16 +62,6 @@ class RequestHandler implements RequestHandlerInterface
             return InternalServerErrorResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-500.html',
-                    $this->environment()->publicRoot()
-                ),
-                $this->environment(),
-                $this->request()
-            )->respond();
-
-        } elseif ($this->isUnsupportedMethod()) {
-            return UnsupportedMethodResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-405.md',
                     $this->environment()->publicRoot()
                 ),
                 $this->environment(),

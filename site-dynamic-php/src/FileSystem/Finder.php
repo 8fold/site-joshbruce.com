@@ -36,6 +36,15 @@ class Finder implements Countable, IteratorAggregate
             ->sortByName();
     }
 
+    public function allFiles(): Finder
+    {
+        $this->symFinder = clone $this->getIterator()
+            ->files()
+            ->in($this->publicRoot);
+
+        return $this;
+    }
+
     public function publishedContent(): Finder
     {
         $this->symFinder = clone $this->getIterator()
@@ -82,7 +91,7 @@ class Finder implements Countable, IteratorAggregate
         return str_contains($fileInfo->getPathname(), self::REDIRECT_INDICATOR);
     }
 
-    private function isDraft(SplFileInfo $fileInfo): bool
+    public function isDraft(SplFileInfo $fileInfo): bool
     {
         return str_contains($fileInfo->getPathname(), self::DRAFT_INDICATOR);
     }
