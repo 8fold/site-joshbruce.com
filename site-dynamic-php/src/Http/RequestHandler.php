@@ -24,7 +24,6 @@ use JoshBruce\SiteDynamic\Http\Responses\File as FileResponse;
 use JoshBruce\SiteDynamic\Http\Responses\InternalServerError as
     InternalServerErrorResponse;
 use JoshBruce\SiteDynamic\Http\Responses\NotFound as NotFoundResponse;
-use JoshBruce\SiteDynamic\Http\Responses\Redirect as RedirectResponse;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -72,18 +71,6 @@ class RequestHandler implements RequestHandlerInterface
 
         $path = $this->fileUri();
 
-        if (
-            $this->isRedirecting($path) and
-            $p = $this->redirectFilePath($path)
-        ) {
-            return RedirectResponse::with(
-                PlainTextFile::at($p, $this->environment()->publicRoot()),
-                $this->environment(),
-                $this->request()
-            )->respond();
-
-        }
-
         if (! file_exists($path) or ! is_file($path)) {
             return NotFoundResponse::with(
                 PlainTextFile::at(
@@ -93,7 +80,6 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             )->respond();
-
         }
 
         if (
@@ -105,7 +91,6 @@ class RequestHandler implements RequestHandlerInterface
                 $this->environment(),
                 $this->request()
             )->respond();
-
         }
 
         return FileResponse::with(
@@ -121,7 +106,6 @@ class RequestHandler implements RequestHandlerInterface
     {
         if (file_exists($path) and is_file($path)) {
             return false;
-
         }
 
         $path = $this->redirectFilePath($path);
@@ -173,21 +157,18 @@ class RequestHandler implements RequestHandlerInterface
 
         if (! str_contains($possibleFileName, '.')) {
             return false;
-
         }
 
         // could be file
         if (! str_starts_with($path, $this->environment()->publicRoot())) {
             // need to add full path
             $path = $this->environment()->publicRoot() . $path;
-
         }
 
         $f = File::at($path, $this->environment()->publicRoot());
 
         if ($f->mimetype()->name() === 'text') {
             return false;
-
         }
         return true;
     }
@@ -196,9 +177,7 @@ class RequestHandler implements RequestHandlerInterface
     {
         if (strlen($this->requestPath) === 0) {
             $this->requestPath = $this->request()->getUri()->getPath();
-
         }
-
         return $this->requestPath;
     }
 

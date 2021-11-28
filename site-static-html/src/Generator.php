@@ -19,8 +19,8 @@ use Symfony\Component\Console\Helper\ProgressBar;
 
 use Nyholm\Psr7\ServerRequest;
 
-use League\Flysystem\Local\LocalFilesystemAdapter;
-use League\Flysystem\Filesystem as LeagueFilesystem;
+// use League\Flysystem\Local\LocalFilesystemAdapter;
+// use League\Flysystem\Filesystem as LeagueFilesystem;
 
 use JoshBruce\SiteDynamic\Environment;
 use JoshBruce\SiteDynamic\FileSystem\Finder;
@@ -46,16 +46,6 @@ class Generator extends Command
     private string $pathToEnv = '';
 
     private string $destination = '';
-
-
-
-
-
-    private string $projectRoot;
-
-    private FileSystem $fileSystem;
-
-    private LeagueFilesystem $leagueFileSystem;
 
     protected function configure(): void
     {
@@ -105,7 +95,6 @@ class Generator extends Command
                 ]);
             }
             return Command::SUCCESS;
-            // return $app->find('compile:dynamic')->run($input, $output);
         }
 
         $output->writeln(<<<bash
@@ -129,7 +118,8 @@ class Generator extends Command
 
             $realPath = (new SplFileInfo($rPath))->getRealPath();
             if (! $realPath) {
-                mkdir($rPath, 0777, true);
+                mkdir($rPath, recursive: true);
+                $realPath = (new SplFileInfo($rPath))->getRealPath();
             }
 
             $this->destination = $realPath;
@@ -184,179 +174,156 @@ class Generator extends Command
 
         $localFiles = $finder->allFiles();
 
+        $count = count($localFiles);
+
+        $progressBarSection = $this->output()->section();
+        $stepSection = $this->output()->section();
+
+        $progressBar = new ProgressBar($progressBarSection);
+        $progressBar->start($count);
+
+        $stepSection->writeLn(['', 'Starting...']);
+
         foreach ($localFiles as $fileInfo) {
             if ($finder->isDraft($fileInfo)) {
+                $progressBar->advance();
                 continue;
             }
 
             $file = File::from($fileInfo, $root);
             $path = $file->path(false);
             if (str_ends_with($path, '/content.md')) {
-                $path = str_replace('/content.md', '', $path);
-                $body = RequestHandler::in(
-                    $environment
-                )->handle(
-                    new ServerRequest(
-                        method: 'GET',
-                        uri: $path
-                    )
-                )->getBody();
+                $stepSection->overwrite([
+                    '',
+                    'Compiling: ' . $file->path(false, true)
+                ]);
+                $this->processContentPage($file, $environment, $progressBar);
 
-                $fDestination = $this->destination() . $path . '/index.html';
-                $this->leagueFileSystem()->write($fDestination, (string) $body);
-
-                continue;
+            } elseif (str_ends_with($path, '/sitemap.xml')) {
+                $stepSection->overwrite([
+                    '',
+                    'Compiling: ' . $file->path(false)
+                ]);
+                $this->processSiteMap($file, $environment, $progressBar);
 
             } elseif (str_contains($path, '/error-')) {
-                $method = 'GET';
-                $path   = $path;
-                $fDestination = $this->destination() . $path;
-                if (str_ends_with($path, '/error-404.md')) {
-                    $path = '/path/does/not/ex/ist';
-                    $fDestination = str_replace(
-                        '/error-404.md',
-                        '/error-404.html',
-                        $fDestination
-                    );
+                $parts = explode('/', $path);
+                $fileName = array_pop($parts);
+                $dFileName = str_replace('.md', '.html', $fileName);
+                $stepSection->overwrite([
+                    '',
+                    'Compiling: ' . $file->path(false) . '/' . $dFileName
+                ]);
+                $this->processErrorPage($file, $environment, $progressBar);
 
-                } elseif (str_ends_with($path, '/error-405.md')) {
-                    $method = 'DELETE';
-                    $path = '/error-405.html';
-                    $fDestination = str_replace(
-                        '/error-405.md',
-                        '/error-405.html',
-                        $fDestination
-                    );
+            } else {
+                $stepSection->overwrite([
+                    '',
+                    'Copying: ' . $file->path(false)
+                ]);
+                $this->processFile($file, $progressBar);
 
-                }
-
-                $body = RequestHandler::in(
-                    $environment
-                )->handle(
-                    new ServerRequest(
-                        method: $method,
-                        uri: $path
-                    )
-                )->getBody();
-
-                $this->leagueFileSystem()->write($fDestination, (string) $body);
-
-                continue;
             }
-
-            $fDestination = $this->destination() . $path;
-            $this->leagueFileSystem()->copy($file->path(), $fDestination);
         }
 
-        die(var_dump('done with loop'));
+        $stepSection->clear(2);
+
         return true;
-//
-//         $destination = $input->getArgument('destination');
-//         if (empty($destination)) {
-//             $destination = $this->projectRoot . '/site-static-html/public';
-//         }
-//
-//         $finder = $this->finder();
-//
-//         $count = count($finder);
-//
-//         $progressBar = new ProgressBar($output, $count);
-//         $progressBar->start();
-//
-//         foreach ($finder as $found) {
-//             $localPath = $found->getPathname();
-//
-//             $file = File::at($localPath, $this->fileSystem());
-//
-//             $fDestination = $destination . $file->path(false);
-//
-//             // copy non-html and xml files directly
-//             if ($file->isNotXml()) {
-//                 // $fDestination = $destination . $file->path(false);
-                // $this->leagueFileSystem()->copy($file->path(), $fDestination);
-//                 $progressBar->advance();
-//                 continue;
-//             }
-//
-//             $uri = str_replace(
-//                 [$this->fileSystem()->publicRoot(), 'content.md'],
-//                 ['', ''],
-//                 $localPath
-//             );
-//
-//             if ($uri === '/') {
-//                 $uri = '';
-//             }
-//
-//             $body = HttpResponse::from(
-//                 HttpRequest::with(
-//                     ServerGlobals::init()->withRequestUri($uri),
-//                     $this->fileSystem()
-//                 )
-//             )->body();
-//
-//             $fDestination = str_replace(
-//                 ['content.md', '.md'],
-//                 ['index.html', '.html'],
-//                 $fDestination
-//             );
-//
-            // $this->leagueFileSystem()->write($fDestination, $body);
-//
-//             $progressBar->advance();
-//
-//         }
-//
-//         $output->writeln('');
-//
-//         return true;
     }
-//
-//     private function finder(): Finder
-//     {
-//         $finder = new Finder();
-//         return $finder->ignoreVCS(false)
-//             ->ignoreUnreadableDirs()
-//             ->ignoreDotFiles(false)
-//             ->ignoreVCSIgnored(true)
-//             ->notName('.gitignore')
-//             ->files()
-//             ->filter(fn($f) => $this->isPublished($f))
-//             ->in($this->fileSystem()->publicRoot());
-//     }
-//
-//     private function isPublished(SplFileInfo $finderFile): bool
-//     {
-//         return ! $this->isDraft($finderFile);
-//     }
-//
-//     private function isDraft(SplFileInfo $finderFile): bool
-//     {
-//         $filePath = (string) $finderFile;
-//         $file = File::at($filePath, $this->fileSystem());
-//         $relativePath = $file->path(false);
-//         return str_contains($relativePath, '_');
-//     }
-//
-//     private function fileSystem(): FileSystem
-//     {
-//         if (! isset($this->fileSystem)) {
-//             $this->fileSystem = FileSystem::init();
-//         }
-//         return $this->fileSystem;
-//     }
-//
-    /**
-     * @todo: We use League FlySystem because it does recursive folder creation.
-     */
-    private function leagueFileSystem(): LeagueFilesystem
-    {
-        if (! isset($this->leagueFileSystem)) {
-            $adapter    = new LocalFilesystemAdapter('/');
-            $fileSystem = new LeagueFilesystem($adapter);
 
-            $this->leagueFileSystem = $fileSystem;
+    private function processContentPage(
+        File $file,
+        Environment $environment,
+        ProgressBar $progressBar
+    ): void {
+        $path = $file->path(false);
+        $path = str_replace('/content.md', '', $path);
+
+        $body = RequestHandler::in(
+            $environment
+        )->handle(
+            new ServerRequest(
+                method: 'GET',
+                uri: $path
+            )
+        )->getBody();
+
+        $dirPath = $this->destination() . $path;
+        if (! file_exists($dirPath) and ! is_dir($dirPath)) {
+            mkdir($dirPath, recursive: true);
         }
-        return $this->leagueFileSystem;
+        $fDestination = $dirPath . '/index.html';
+        file_put_contents($fDestination, (string) $body);
+
+        $progressBar->advance();
+    }
+
+    private function processSiteMap(
+        File $file,
+        Environment $environment,
+        ProgressBar $progressBar
+    ): void {
+        $path = $file->path(false);
+
+        $body = RequestHandler::in(
+            $environment
+        )->handle(
+            new ServerRequest(
+                method: 'GET',
+                uri: $path
+            )
+        )->getBody();
+
+        $fDestination = $this->destination() . $path;
+        file_put_contents($fDestination, (string) $body);
+
+        $progressBar->advance();
+    }
+
+    private function processErrorPage(
+        File $file,
+        Environment $environment,
+        ProgressBar $progressBar
+    ): void {
+        $path   = $file->path(false);
+
+        $fDestination = $this->destination() . $path;
+        if (str_ends_with($path, '/error-404.md')) {
+            $path = '/path/does/not/ex/ist';
+            $fDestination = str_replace(
+                '/error-404.md',
+                '/error-404.html',
+                $fDestination
+            );
+
+        }
+
+        $body = RequestHandler::in(
+            $environment
+        )->handle(
+            new ServerRequest(
+                method: 'GET',
+                uri: $path
+            )
+        )->getBody();
+
+        file_put_contents($fDestination, (string) $body);
+
+        $progressBar->advance();
+    }
+
+    private function processFile(File $file, ProgressBar $progressBar): void
+    {
+        $path = $file->path(false);
+        $fDestination = $this->destination() . $path;
+        $parts = explode('/', $fDestination);
+        array_pop($parts);
+        $dirPath = implode('/', $parts);
+        if (! is_file($dirPath) and ! is_dir($dirPath)) {
+            mkdir($dirPath, recursive: true);
+        }
+        copy($file->path(), $fDestination);
+
+        $progressBar->advance();
     }
 }

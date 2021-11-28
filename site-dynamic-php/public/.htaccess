@@ -3,6 +3,12 @@ Options -Indexes
 ErrorDocument 500 /error-500.html
 ErrorDocument 405 /error-405.html
 
+# Handle redirects
+Redirect 301 "/self-improvement" "/design-your-life"
+Redirect 301 "/self-improvement/motivators" "/design-your-life/motivators"
+Redirect 301 "/web-development/2021-site-in-depth" "/web-development/this-site/2021"
+Redirect 301 "/web-development/site-stats" "/web-development/this-site/stats"
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
@@ -16,18 +22,14 @@ ErrorDocument 405 /error-405.html
 	Header add Access-Control-Allow-Methods "GET, HEAD"
 	Header add Allow "GET, HEAD"
 
-    # Redirect Trailing Slashes If Not A Folder...
+    # Redirect To Trailing Slashes If Not A Folder Or A File...
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !(/$|\.)
+    RewriteRule (.*) %{REQUEST_URI}/ [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-</IfModule>
-
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault "access plus 5 seconds"
 </IfModule>
