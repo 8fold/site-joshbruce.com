@@ -11,7 +11,7 @@ it('has correct content root', function () {
         'test'
     );
     expect(
-           $sut->publicRoot()
+        $sut->publicRoot()
     )->toBe(
         __DIR__ . '/test-project-root/content/public'
     );

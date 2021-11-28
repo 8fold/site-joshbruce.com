@@ -12,12 +12,18 @@ use Psr\Http\Message\ServerRequestInterface;
 use Nyholm\Psr7\Stream;
 use Nyholm\Psr7\Response as PsrResponse;
 
+use Eightfold\HTMLBuilder\Element;
+
 use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use JoshBruce\SiteDynamic\Http\Responses\Document as DocumentResponse;
+use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+use JoshBruce\SiteDynamic\Documents\FullNav;
+use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -95,11 +101,58 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        return DocumentResponse::with(
-            PlainTextFile::at($path, $this->publicRoot()),
-            $this->environment(),
-            $this->request()
-        )->respond();
+        $file = PlainTextFile::at($path, $this->publicRoot());
+
+        if ($file->template() === 'sitemap') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create(
+                    Sitemap::create($file, $this->environment())
+                )
+            );
+        }
+
+        $pageTitle   = $file->pageTitle();
+        $description = $file->description();
+        $markdown    = Markdown::processPartials(
+            $file->content(),
+            $file,
+            $this->environment()->contentFilename()
+        );
+
+        $body = Markdown::markdownConverter()->convert($markdown);
+
+        if ($file->template() === 'full-nav') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create(
+                    FullNav::create(
+                        $pageTitle,
+                        $description,
+                        Element::main($body),
+                        $this->environment()
+                    )
+                )
+            );
+        }
+
+        return new PsrResponse(
+            status: $status,
+            headers: $headers,
+            body: Stream::create(
+                HtmlDefault::create(
+                    $pageTitle,
+                    $description,
+                    ($this->requestPath() === '/')
+                    ? Element::main($body)
+                    : Element::article($body)
+                        ->props("typeof BlogPosting", "vocab https://schema.org/"),
+                    $this->environment()
+                )
+            )
+        );
     }
 
     private function isRequestingFile(): bool

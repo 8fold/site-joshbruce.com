@@ -12,32 +12,34 @@ class Environment
 
     private const FILE_SEPARATOR = '/';
 
-    private SplFileInfo $publicRootFileInfo;
+    private SplFileInfo $contentPublicFileInfo;
 
     public static function with(
-        string $publicRoot,
+        string $contentPublic,
+        string $indexPublic,
         string $appUrl,
         string $appEnv
     ): Environment {
-        return new Environment($publicRoot, $appUrl, $appEnv);
+        return new Environment($contentPublic, $indexPublic, $appUrl, $appEnv);
     }
 
     final private function __construct(
-        private string $publicRoot,
+        private string $contentPublic,
+        private string $indexPublic,
         private string $appUrl,
         private string $appEnv
     ) {
     }
 
-//     public function isMissingFolders(): bool
-//     {
-//         return ! $this->hasRequiredFolders();
-//     }
-//
-//     private function hasRequiredFolders(): bool
-//     {
-//         return $this->publicRootFileInfo()->isDir();
-//     }
+    public function isMissingFolders(): bool
+    {
+        return ! $this->hasRequiredFolders();
+    }
+
+    private function hasRequiredFolders(): bool
+    {
+        return $this->contentPublicFileInfo()->isDir();
+    }
 
     public function appUrl(): string
     {
@@ -49,27 +51,35 @@ class Environment
         return self::CONTENT_FILENAME;
     }
 
+    /**
+     * @todo: Use as path to error-500.html to respond when folders are missing.
+     */
+    public function indexPublic(): string
+    {
+        return $this->indexPublic;
+    }
+
     public function contentRoot(): string
     {
-        $parts = explode(self::FILE_SEPARATOR, $this->publicRoot());
+        $parts = explode(self::FILE_SEPARATOR, $this->contentPublic());
         $parts = array_slice($parts, 0, -1);
         return implode(self::FILE_SEPARATOR, $parts);
     }
 
-    public function publicRoot(): string
+    public function contentPublic(): string
     {
-        if ($realPath = $this->publicRootFileInfo()->getRealPath()) {
+        if ($realPath = $this->contentPublicFileInfo()->getRealPath()) {
             return $realPath;
         }
         return '';
     }
 
-    private function publicRootFileInfo(): SplFileInfo
+    private function contentPublicFileInfo(): SplFileInfo
     {
-        if (! isset($this->publicRootFileInfo)) {
-            $fileInfo = new SplFileInfo($this->publicRoot);
-            $this->publicRootFileInfo = $fileInfo;
+        if (! isset($this->contentPublicFileInfo)) {
+            $fileInfo = new SplFileInfo($this->contentPublic);
+            $this->contentPublicFileInfo = $fileInfo;
         }
-        return $this->publicRootFileInfo;
+        return $this->contentPublicFileInfo;
     }
 }

@@ -19,8 +19,7 @@ class Sitemap
     public static function create(
         PlainTextFile $file,
         Environment $environment
-    ): string
-    {
+    ): string {
         $root = $file->root();
 
         $finder = Finder::init(

@@ -24,8 +24,7 @@ class Finder implements Countable, IteratorAggregate
     public static function init(
         string $publicRoot,
         string $contentFilename
-    ): static
-    {
+    ): static {
         return new static($publicRoot, $contentFilename);
     }
 
