@@ -6,7 +6,6 @@ namespace JoshBruce\SiteDynamic\FileSystem;
 
 use SplFileInfo;
 
-// use JoshBruce\SiteDynamic\FileSystem\FileInterface;
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 use JoshBruce\SiteDynamic\FileSystem\FileMimetype;

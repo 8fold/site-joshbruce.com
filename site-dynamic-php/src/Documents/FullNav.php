@@ -10,7 +10,6 @@ use Eightfold\HTMLBuilder\Element;
 use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
-use JoshBruce\SiteDynamic\FileSystem\FileInterface;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 class FullNav
