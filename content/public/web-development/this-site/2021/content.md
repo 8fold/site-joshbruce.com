@@ -9,7 +9,7 @@ created: 20211031
 
 I think I'm going to call this one the quick and considerate update.
 
-The main focus of this site is text-based ramblings. The Internet has come a long way since I started. My understanding of it and [software development](/software-development) has also come a long way.
+The main focus of this site is text-based ramblings. The Internet has come a long way since I started. My understanding of it and [software development](/software-development/) has also come a long way.
 
 ## Considerate (lots of firsts)
 
@@ -112,7 +112,7 @@ Because I use the libraries I do for generating the HTML, it's actually minified
 
 That's a long headline.
 
-For [modern web development](/web-development/modern-web-development) we have a tendency to get in the way of or replace the capabilities we get for free from the browser-server relationship. Instead of clicking a link and the browser responding, we jump in the way using JS to see if we need to do something before handing it to the browser to then do what it would have done anyway. Before delivering a response to a request on the server-side, we jump in the way and reroute things (guilty of both).
+For [modern web development](/web-development/modern-web-development/) we have a tendency to get in the way of or replace the capabilities we get for free from the browser-server relationship. Instead of clicking a link and the browser responding, we jump in the way using JS to see if we need to do something before handing it to the browser to then do what it would have done anyway. Before delivering a response to a request on the server-side, we jump in the way and reroute things (guilty of both).
 
 We want to minimize how much we use our code to replace or intercede with the browser and server.
 

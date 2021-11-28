@@ -29,15 +29,15 @@ This desire to make the web accessible to more people so they could create their
 
 There seems to be a resurgence of platforms and applications coming in now as the technologies have stagnated or the ethics of the creators is being challenged.
 
-I spent the first 10 years of [my history on the web](/web-development/my-history-on-the-web) with a website I developed and curated. I spent three years without a website at all (while getting paid to develop websites for other people). And I've spent another 10 years looking for a platform and audience in applications developed by other people.
+I spent the first 10 years of [my history on the web](/web-development/my-history-on-the-web/) with a website I developed and curated. I spent three years without a website at all (while getting paid to develop websites for other people). And I've spent another 10 years looking for a platform and audience in applications developed by other people.
 
 The thing that keeps me coming back to a custom build addressing my specific needs is that I'm in control.
 
-Don't get me wrong, I'm not a very command-control person, in fact, quite the opposite. With that said, I want to be able to create my own [terms of service](/legal) and abide by my own ethics, I don't want you to feel my content is forced upon you by someone else, and another big thing is I don't want to be tightly coupled to someone else's product or service (I want to be relatively self-sufficient).
+Don't get me wrong, I'm not a very command-control person, in fact, quite the opposite. With that said, I want to be able to create my own [terms of service](/legal/) and abide by my own ethics, I don't want you to feel my content is forced upon you by someone else, and another big thing is I don't want to be tightly coupled to someone else's product or service (I want to be relatively self-sufficient).
 
 ## Solving my own problems
 
-As of the [2021 build](/web-development/2021-site-in-depth) of this site, I no longer use [Laravel](https://laravel.com); for reasons described in [this article](/web-development). In short, I didnt use a lot of the features provided by Laravel.
+As of the [2021 build](/web-development/2021-site-in-depth/) of this site, I no longer use [Laravel](https://laravel.com); for reasons described in [this article](/web-development/). In short, I didnt use a lot of the features provided by Laravel.
 
 I don't use trackers or analytics that can keep tabs on my visitors; I don't care how old you are (for the most part) or any other demographic information. Actually, for the most part, I avoid analytics altogether because it could slow down your experience, even the non-stalker-esque tracker I wrote.
 
@@ -53,7 +53,7 @@ I feel like this advice comes from the more eyeballs mentality that originated w
 
 If I want to appear in your feed, I need to produce more content than the next person. Specifically, I need to create more content you are willing to interact with than the next person.
 
-I remember when I was still publishing on Medium I started talking about productivity and [self-improvement](/design-your-life) and was just starting to build an audience. I started following some other folks in that niche. They were putting out daily articles; using the following formula.
+I remember when I was still publishing on Medium I started talking about productivity and [self-improvement](/design-your-life/) and was just starting to build an audience. I started following some other folks in that niche. They were putting out daily articles; using the following formula.
 
 1. Monday: Post article about life hack 1.
 2. Tuesday: Post article about life hack 2.

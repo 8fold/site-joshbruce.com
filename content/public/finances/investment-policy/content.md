@@ -16,7 +16,7 @@ I started with the outline developed by [The White Coat Investor](https://www.wh
 
 ## Financial goals
 
-In keeping with the [meet in the middle](/finances) practice, I want to reverse engineer from the least acceptable to most acceptable retirement ages that are both most likely.
+In keeping with the [meet in the middle](/finances/) practice, I want to reverse engineer from the least acceptable to most acceptable retirement ages that are both most likely.
 
 This gives me what I refer to as a Coast FI stack. Five Coast FI numbers with decreasing retirement ages, up until the point that the age I should be able to achieve the number corresponds (roughly) with the retirement:
 
@@ -78,13 +78,13 @@ The items in the following that are taken directly (or paraphrased) from White C
 - *I will strive to minimize the effects of taxes and expenses on our investment returns.*
 - *My primary investment vehicles will be broad-based index funds, preferably in tax-advantaged accounts.*
 - *I will buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.*
-- My savings rate and returns will be determined on a per-paycheck basis as a natural result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck) workflow.
+- My savings rate and returns will be determined on a per-paycheck basis as a natural result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) workflow.
 - I will do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
 - I will contribute at least $100 per paycheck to long-term savings.
 - I will use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand [.USD](United States dollars); year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
 
-Notice each of these are aligned with my financial [values, principles, and practices](/finances).
+Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
 
 ## Asset allocation
 
@@ -107,7 +107,7 @@ For the taxable account there are potential tax advantages for selling a positio
 
 I have multiple buckets (I'll put debts in this description despite them not being assets in the strictest sense), each is given a range of percentages it can or should be during any given pay period.
 
-The cash accounts use the flow-based approach described in [May 1 Paycheck](/finances/building-wealth-paycheck-to-paycheck/20210501) and [Time- and Flow-Oriented Budgets](/finances/budgeting). I'm sure over time these percentages will need to shift and, as they do, this table will be updated. I'm also not going to be very strict on the actuals matching or being within the targets.
+The cash accounts use the flow-based approach described in [May 1 Paycheck](/finances/building-wealth-paycheck-to-paycheck/20210501/) and [Time- and Flow-Oriented Budgets](/finances/budgeting/). I'm sure over time these percentages will need to shift and, as they do, this table will be updated. I'm also not going to be very strict on the actuals matching or being within the targets.
 
 ### Coast FI 1 (43 years old)
 
@@ -170,7 +170,7 @@ Replacement costs for tools like cellphone, laptop, and the like will be saved o
 
 ## Spend and giving
 
-- I will use the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck) method to help automate these decisions and habits.
+- I will use the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) method to help automate these decisions and habits.
 - This will occur every time income is received.
 - Contributions will be done in a way that helps maintain desired asset allocations.
 

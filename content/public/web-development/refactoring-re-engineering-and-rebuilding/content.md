@@ -49,7 +49,7 @@ As of this writing, there's a minimum number of dependencies. There's a minimum 
 
 So, what does this say about me?
 
-When it comes to [motivators](/design-your-life/motivators), autonomy is ranked number two almost every time; I don't like depending too much on others and I tend to help others not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
+When it comes to [motivators](/design-your-life/motivators/), autonomy is ranked number two almost every time; I don't like depending too much on others and I tend to help others not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
 
 I describe the code and the code describes me.
 
@@ -73,7 +73,7 @@ This makes me think that maybe there's no such thing as refactoring.
 
 Is it really possible to put someone on a team (or alter code in some way) wherein the external behavior doesn't change at least a little bit?
 
-I talked about [staying as small as possible](/web-development/on-constraints/internet-bandwidth) for as long as possible and I would say that applies to team size as well. I was in an interview once and was asked when I thought it was appropriate to scale.
+I talked about [staying as small as possible](/web-development/on-constraints/internet-bandwidth/) for as long as possible and I would say that applies to team size as well. I was in an interview once and was asked when I thought it was appropriate to scale.
 
 That's a loaded question. When we talk about scaling we usually only talk about it in terms of scaling up. More code. More people. And I think those two things are mutually inclusive. The more people independently contributing to a codebase, the more code there will be. We rarely talk about scaling down though.
 

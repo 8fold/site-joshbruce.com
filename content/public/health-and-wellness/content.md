@@ -14,7 +14,7 @@ In 2009 it was urban obstacle course style with [Parkour](https://en.wikipedia.o
 
 In 2015 it was what I called "The Aesthetics Project." It was learning how to exercise indoors, buy clothes that fit and what my palette was.
 
-In 2021 it's about longevity; [getting out of debt](/finances) had a pretty profound affect on me.
+In 2021 it's about longevity; [getting out of debt](/finances/) had a pretty profound affect on me.
 
 - Nutrition: Ingestion and internal organs
 	- Change and Rules
