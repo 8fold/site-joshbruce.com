@@ -15,7 +15,7 @@ There seems to be a renaissance of the server-side applications. The monolithic 
 
 Meanwhile some organizations and businesses are just starting their microservice and single-page client-side web app journey.
 
-Which of these is on the [bleeding edge](/web-development/modern-web-development) and which is behind the curve?
+Which of these is on the [bleeding edge](/web-development/modern-web-development/) and which is behind the curve?
 
 Or, maybe, they're both fine. The question I have is: Are you *choosing* the approach that best suits your needs, context, and constraints? If your company went all [.GM](General Motors) tomorrow, could you maintain your website?
 
@@ -56,13 +56,13 @@ Key takeaways:
 
 I remember working with a developer in the last year of my previous project (see 2013–2016). It was a wonderful experience and I grew a lot. We would get into debates and arguments about web development.
 
-Initially he was pretty much all-in on the single-page, client-side web app approach. As we talked he started to shift. Testing and accessibility became a focus and he really appreciated the idea of progressive enhancement. 
+Initially he was pretty much all-in on the single-page, client-side web app approach. As we talked he started to shift. Testing and accessibility became a focus and he really appreciated the idea of progressive enhancement.
 
 I was channeling my frustration into creating the “on constraints” series and I don't know how much the one on [internet bandwidth](/web-development/on-constraints/internet-bandwidth/) got him thinking about progressive enhancement and the idea of how the Internet evolves, but it was after sending him that one that he basically altered his approach.
 
 The idea is evolution in general.
 
-We are all bound by the technologies of our times. The stuff at a thing's core get iterated on, experimented upon, and eventually they calm down. It's amazing that you can open a plain text editor (turn rich text formatting off), write some text, and save the file with a `.html` extension and display that in a browser. 
+We are all bound by the technologies of our times. The stuff at a thing's core get iterated on, experimented upon, and eventually they calm down. It's amazing that you can open a plain text editor (turn rich text formatting off), write some text, and save the file with a `.html` extension and display that in a browser.
 
 You just created a website.
 
@@ -110,7 +110,7 @@ That didn't go over well.
 
 Out of frustration in waiting and trying to get the non-technical among us to understand my frustration I told the product owner: I'm just gonna build it.
 
-He asked what I meant. 
+He asked what I meant.
 
 I said I was going to build in two weeks what we've been waiting two months for. I cracked open [Laravel](https://laravel.com) and went to town. I built atomic, reusable components and contributed to the [United States Web Design System](https://designsystem.digital.gov). In two weeks I demonstrated what I had. The product owner said, "We need to show this to everyone." A week, and a few improvements later, we did.
 
@@ -128,7 +128,7 @@ Key takeaways:
 2. If you're good at something, it's easy for people to forget the pain that got them the result.
 3. It's not that speed increases; it's that complexity of future work decreases while the changeability of the system overall increases.
 
-After getting laid off I worked as a web developer "for corporate." Mainly brochure and marketing sites. 
+After getting laid off I worked as a web developer "for corporate." Mainly brochure and marketing sites.
 
 Parallax scrolling became a thing for a while, one of our sites used it and I did the math to make it work. I created my first single-page, client-side web app almost entirely in JavaScript using [.API](Application Program Interface) calls.
 
@@ -136,7 +136,7 @@ I worked 6 weeks at 72 hours a week and was pushed to do more and to "go faster.
 
 (Years later I created [a talk](https://youtu.be/jeX4fan9xHI) using the experience as the reference. And vowed to not development “for corporate” again.)
 
-In the previous two years I started looking into developing native apps for iOS. During this time, I released an app written in Objective-C. 
+In the previous two years I started looking into developing native apps for iOS. During this time, I released an app written in Objective-C.
 
 I wasn't a web designer or developer, I just liked making things.
 
@@ -178,9 +178,9 @@ Living in my car. It was one of the best years of my life. I would still do deve
 
 I worked on the United States Census. I did well. My team did better. My performance kept me on for three operations in a row. But, I didn't have an exit strategy and the last operation required a phone line to direct connect to the Census to redistribute work to other workers with laptops—it took the agility away and I was useless. Modifying the flow of work became a huge bottleneck and I didn't see a way around it.
 
-I got a call from a recruiter for the first time. It was for a 6 month contract at WebMD as a content publisher. It paid almost double what I had ever made in my life. My job was to copy and paste from relatively plain text documents into the forms of their custom CMS]. That was it. 
+I got a call from a recruiter for the first time. It was for a 6 month contract at WebMD as a content publisher. It paid almost double what I had ever made in my life. My job was to copy and paste from relatively plain text documents into the forms of their custom CMS]. That was it.
 
-I would go in. There would be a bunch of word processor documents assigned to me. I would select the CMS template, copy-and-paste into the form, and submit the content for review. 
+I would go in. There would be a bunch of word processor documents assigned to me. I would select the CMS template, copy-and-paste into the form, and submit the content for review.
 
 The document literally had the name of the template and the target field names.
 
@@ -196,7 +196,7 @@ Key takeaways:
 
 We'll call this The Dark Ages.
 
-I took my sites down and just started squatting on my domains. I didn't want to do development; not sure what I *wanted* to do if we're being honest and in the decade of having a site I only received the one gig from it, and didn't get paid for it. This colored my perception quite a bit when talking with potential clients. 
+I took my sites down and just started squatting on my domains. I didn't want to do development; not sure what I *wanted* to do if we're being honest and in the decade of having a site I only received the one gig from it, and didn't get paid for it. This colored my perception quite a bit when talking with potential clients.
 
 One exchange in particular has always stuck with me:
 
@@ -241,7 +241,7 @@ After a little over two years the customer asked:
 
 I replied: It's software development, it's never finished.
 
-He asked a follow-on question that escapes me. To which I responded: 
+He asked a follow-on question that escapes me. To which I responded:
 
 > Let me put it a different way. You'll be finished when you move on to a different project. I'll be finished when you stop asking for things, reporting defects, paying me, or some combination thereof. Someone will always be working on it though. Someone will always be doing something. We finished the baseline requirements six months ago, which was on time for the project's original delivery date. Users aren't reporting defects. Everything since then has been gravy or icing.
 

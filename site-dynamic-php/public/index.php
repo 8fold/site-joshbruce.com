@@ -5,18 +5,28 @@ declare(strict_types=1);
 ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 
-$projectRoot = implode('/', array_slice(explode('/', __DIR__), 0, -2));
+require __DIR__ . '/../../vendor/autoload.php';
 
-require $projectRoot . '/vendor/autoload.php';
+use Nyholm\Psr7\ServerRequest;
 
-// Inject environment variables to global $_SERVER array
-Dotenv\Dotenv::createImmutable($projectRoot)->load();
+use JoshBruce\SiteDynamic\Http\Emitter;
+use JoshBruce\SiteDynamic\Http\RequestHandler;
 
-JoshBruce\Site\SiteDynamic\Emitter::emit(
-    response:JoshBruce\Site\HttpResponse::from(
-        request: JoshBruce\Site\HttpRequest::with(
-            JoshBruce\Site\ServerGlobals::init(),
-            JoshBruce\Site\FileSystem::init()
+use JoshBruce\SiteDynamic\FileSystem\Finder;
+
+use JoshBruce\SiteDynamic\Environment;
+
+Emitter::emit(
+    RequestHandler::in(
+        Environment::with(
+            pathToEnv: __DIR__ . '/../../'
+        )
+    )->handle(
+        new ServerRequest(
+            method: $_SERVER['REQUEST_METHOD'],
+            uri: $_SERVER['REQUEST_URI'],
+            headers: getallheaders(),
+            serverParams: $_SERVER
         )
     )
 );

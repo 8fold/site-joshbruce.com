@@ -20,15 +20,13 @@
     </exclude>
   </coverage>
   <testsuites>
-    <testsuite name="base">
-      <directory suffix="Test.php">./tests/</directory>
+    <testsuite name="dynamic">
+      <directory suffix="Test.php">./site-dynamic-php/tests/</directory>
     </testsuite>
   </testsuites>
   <php>
     <ini name="display_errors" value="On"/>
     <ini name="display_startup_errors" value="On"/>
-	<server name="APP_ENV" value="test" force="true"/>
-	<server name="APP_URL" value="http://jb-site.test"/>
   </php>
 
 </phpunit>

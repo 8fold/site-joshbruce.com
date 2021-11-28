@@ -1,4 +1,5 @@
 https://www.conventionalcommits.org/en/v1.0.0/
+https://chris.beams.io/posts/git-commit/
 
 The code found here is able to generate the same (or really close to it) site using multiple styles. Each style is held inside a directory; the names start with "Site." Each style has an associated read me file (listed in order of creation):
 
@@ -95,7 +96,7 @@ This frees me up a great deal to move about the cabin as I see fit.
 
 ### Analysis
 
-General performance statistics and experiments can be found on [joshbruce.com](/web-development/site-stats).
+General performance statistics and experiments can be found on [joshbruce.com](/web-development/site-stats/).
 
 ## Testing can't push to main
 
