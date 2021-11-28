@@ -54,10 +54,7 @@ class RequestHandler implements RequestHandlerInterface
     {
         $this->request = $request;
 
-        if (
-            $this->environment()->isMissingVariables() or
-            $this->environment()->isMissingFolders()
-        ) {
+        if ($this->environment()->isMissingFolders()) {
             return InternalServerErrorResponse::with(
                 PlainTextFile::at(
                     $this->environment()->publicRoot() . '/error-500.html',
@@ -154,7 +151,7 @@ class RequestHandler implements RequestHandlerInterface
 
         return ($this->isRequestingFile())
             ? $uri
-            : $uri . '/' . $_SERVER['CONTENT_FILENAME'];
+            : $uri . '/' . $this->environment()->contentFilename();
     }
 
     private function environment(): Environment

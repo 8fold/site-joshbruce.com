@@ -27,7 +27,6 @@
   "require": {
     "php": "^8.0",
     "ext-fileinfo": "*",
-    "vlucas/phpdotenv": "^5.3",
     "8fold/commonmark-fluent-markdown": "^0.10.0",
     "8fold/php-html-builder": "^0.5.3",
     "nyholm/psr7": "^1.4",

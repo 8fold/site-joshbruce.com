@@ -6,67 +6,27 @@ namespace JoshBruce\SiteDynamic;
 
 use SplFileInfo;
 
-use Dotenv\Dotenv;
-
 class Environment
 {
-    private const ENV_REQUIRED = [
-        // dev|test|production
-        'APP_ENV',
-        // HTTP(S) URI root.
-        'APP_URL',
-        // Comma delimited list of supported request methods.
-        'APP_METHODS',
-        // Path to folder containing public folder, relative to .env location.
-        'ENV_TO_PUBLIC_ROOT',
-        // Default name of file containing web content.
-        'CONTENT_FILENAME'
-    ];
-
-    private bool $hasRequiredVariables = true;
+    private const CONTENT_FILENAME = 'content.md';
 
     private const FILE_SEPARATOR = '/';
 
-    private string $publicRoot = '';
+    private SplFileInfo $publicRootFileInfo;
 
-    public static function with(string $pathToEnv): Environment
-    {
-        return new Environment($pathToEnv);
+    public static function with(
+        string $publicRoot,
+        string $appUrl,
+        string $appEnv
+    ): Environment {
+        return new Environment($publicRoot, $appUrl, $appEnv);
     }
 
-    final private function __construct(private string $pathToEnv)
-    {
-        // Inject .env content into server globals
-        Dotenv::createImmutable($pathToEnv)->load();
-        $this->hasRequiredVariables();
-    }
-
-    /**
-     * @return string[]
-     */
-    public function supportedMethods(): array
-    {
-        $list = $_SERVER['APP_METHODS'];
-        return explode(',', $list);
-    }
-
-    public function isMissingVariables(): bool
-    {
-        return ! $this->hasRequiredVariables();
-    }
-
-    private function hasRequiredVariables(): bool
-    {
-
-        if ($this->hasRequiredVariables) {
-            foreach (self::ENV_REQUIRED as $required) {
-                if (! array_key_exists($required, $_SERVER)) {
-                    $this->hasRequiredVariables = false;
-                    break;
-                }
-            }
-        }
-        return $this->hasRequiredVariables;
+    final private function __construct(
+        private string $publicRoot,
+        private string $appUrl,
+        private string $appEnv
+    ) {
     }
 
     public function isMissingFolders(): bool
@@ -76,9 +36,17 @@ class Environment
 
     private function hasRequiredFolders(): bool
     {
+        return $this->publicRootFileInfo()->isDir();
+    }
 
-        return file_exists($this->publicRoot()) and
-            is_dir($this->publicRoot());
+    public function appUrl(): string
+    {
+        return $this->appUrl;
+    }
+
+    public function contentFileName(): string
+    {
+        return self::CONTENT_FILENAME;
     }
 
     public function contentRoot(): string
@@ -90,20 +58,18 @@ class Environment
 
     public function publicRoot(): string
     {
-        if (strlen($this->publicRoot) === 0) {
-            // Cached locally to improve performance.
-            // Call count for index.php process was 8, now 1.
-            $fileInfo = new SplFileInfo(
-                $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
-            );
-
-            $realPath = $fileInfo->getRealPath();
-            if (! $realPath) {
-                $realPath = '';
-            }
-
-            $this->publicRoot = $realPath;
+        if ($realPath = $this->publicRootFileInfo()->getRealPath()) {
+            return $realPath;
         }
-        return $this->publicRoot;
+        return '';
+    }
+
+    private function publicRootFileInfo(): SplFileInfo
+    {
+        if (! isset($this->publicRootFileInfo)) {
+            $fileInfo = new SplFileInfo($this->publicRoot);
+            $this->publicRootFileInfo = $fileInfo;
+        }
+        return $this->publicRootFileInfo;
     }
 }

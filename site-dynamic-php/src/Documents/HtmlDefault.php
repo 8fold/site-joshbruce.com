@@ -41,7 +41,7 @@ class HtmlDefault
             self::footer()
         )->build();
 
-        return self::canonicalUrls($html);
+        return self::canonicalUrls($html, $environemt);
     }
 
     /**
@@ -104,12 +104,14 @@ class HtmlDefault
         );
     }
 
-    public static function canonicalUrls(string $html): string
-    {
+    public static function canonicalUrls(
+        string $html,
+        Environment $environment
+    ): string {
         // TODO: Make sure images show canonical url
         return str_replace(
             ['href="/'],
-            ['href="' . $_SERVER['APP_URL'] . '/'],
+            ['href="' . $environment->appUrl() . '/'],
             $html
         );
     }

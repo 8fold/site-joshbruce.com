@@ -4,50 +4,31 @@ declare(strict_types=1);
 
 use JoshBruce\SiteDynamic\Environment;
 
-afterEach(function () {
-    foreach ($_ENV as $var => $value) {
-        if ($var !== 'SHELL_VERBOSITY') {
-            unset($_ENV[$var]);
-            unset($_SERVER[$var]);
-        }
-    }
-});
-
-it('has supported methods', function () {
-    expect(
-        Environment::with(__DIR__ . '/test-project-root')
-            ->supportedMethods()
-    )->toBeArray()->toBe([
-       'GET'
-    ]);
-});
-
-it('has expected folders', function () {
-    expect(
-        Environment::with(__DIR__ . '/test-project-root')
-            ->isMissingFolders()
-    )->toBeBool()->toBeFalse();
-})->group('env', 'test-content');
-
 it('has correct content root', function () {
+    $sut = Environment::with(
+        __DIR__ . '/test-project-root/content/public',
+        'http://com.jbruce-test',
+        'test'
+    );
     expect(
-        Environment::with(__DIR__ . '/test-project-root')
-            ->publicRoot()
+           $sut->publicRoot()
     )->toBe(
         __DIR__ . '/test-project-root/content/public'
     );
+
+    expect(
+        $sut->isMissingFolders()
+    )->toBeFalse();
 })->group('env', 'test-content');
 
-it('can validate .env', function () {
-    expect(
-        Environment::with(__DIR__ . '/test-project-root')
-            ->isMissingVariables()
-    )->toBeBool()->toBeFalse();
-})->group('env', 'test-content');
+it('can check for incorrect content root', function () {
+    $sut = Environment::with(
+        __DIR__ . '/test-nonexistent/content/public',
+        'http://com.jbruce-test',
+        'test'
+    );
 
-it('fails silently', function () {
     expect(
-        Environment::with(__DIR__ . '/test-project-root/failing-env')
-            ->isMissingVariables()
-    )->toBeBool()->toBeTrue();
+        $sut->isMissingFolders()
+    )->toBeTrue();
 })->group('env', 'test-content');
