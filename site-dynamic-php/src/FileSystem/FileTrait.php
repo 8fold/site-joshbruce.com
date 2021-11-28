@@ -24,11 +24,6 @@ trait FileTrait
         return $this->root;
     }
 
-    public function isDraft(): bool
-    {
-        $path = $this->path(full: $false);
-    }
-
     public function path(bool $full = true, bool $omitFilename = false): string
     {
         $realPath = $this->fileInfo()->getRealPath();

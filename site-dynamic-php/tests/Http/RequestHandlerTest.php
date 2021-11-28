@@ -75,23 +75,6 @@ it('can return internal server error', function () {
     );
 })->group('request-handler', 'test-content', 'status-codes');
 
-it('can return unsupported method', function () {
-    expect(
-        RequestHandler::in(
-            Environment::with(__DIR__ . '/../../../')
-        )->handle(
-            new ServerRequest(
-                method: 'POST',
-                uri: '/',
-                headers: [],
-                serverParams: $_SERVER
-            )
-        )->getStatusCode()
-    )->toBe(
-        405
-    );
-})->group('request-handler', 'live-content', 'status-codes');
-
 it('can handle not found', function () {
     expect(
         RequestHandler::in(
@@ -106,22 +89,5 @@ it('can handle not found', function () {
         )->getStatusCode()
     )->toBe(
         404
-    );
-})->group('request-handler', 'live-content', 'status-codes');
-
-it('can handle redirect', function () {
-    expect(
-        RequestHandler::in(
-            Environment::with(__DIR__ . '/../../../')
-        )->handle(
-            new ServerRequest(
-                method: 'GET',
-                uri: '/self-improvement',
-                headers: [],
-                serverParams: $_SERVER
-            )
-        )->getStatusCode()
-    )->toBe(
-        301
     );
 })->group('request-handler', 'live-content', 'status-codes');

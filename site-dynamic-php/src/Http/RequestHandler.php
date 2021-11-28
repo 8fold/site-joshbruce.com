@@ -102,39 +102,6 @@ class RequestHandler implements RequestHandlerInterface
         )->respond();
     }
 
-    private function isRedirecting(string $path): bool
-    {
-        if (file_exists($path) and is_file($path)) {
-            return false;
-        }
-
-        $path = $this->redirectFilePath($path);
-
-        return file_exists($path) and is_file($path);
-    }
-
-    private function redirectFilePath(string $path): string
-    {
-        // Either a 404 or redirect
-        $parts = explode('/', $path);
-
-        $fileName = '~' . array_pop($parts);
-        $parent   = '~' . array_pop($parts);
-
-        $parts[] = $parent;
-        $parts[] = $fileName;
-
-        return implode('/', $parts);
-    }
-
-    private function isUnsupportedMethod(): bool
-    {
-        return ! in_array(
-            strtoupper($this->request()->getMethod()),
-            $this->environment()->supportedMethods()
-        );
-    }
-
     private function isRequestingContent(): bool
     {
         return ! $this->isRequestingFile();
