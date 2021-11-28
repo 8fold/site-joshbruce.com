@@ -21,7 +21,7 @@ class Markdown
     private const COMPONENTS = [
         'data'      => Data::class,
         'dateblock' => DateBlock::class,
-        'full-nav'  => FullNavContent::class, // TODO: finish implementing templates
+        'full-nav'  => FullNavContent::class,
         'loglist'   => LogList::class,
         'original'  => OriginalContentNotice::class
     ];
@@ -32,7 +32,7 @@ class Markdown
     {
         if (! isset(self::$markdownConverter)) {
             self::$markdownConverter = MarkdownConverter::create()
-                ->minified() // can't be minified due to code blocks
+                ->minified()
                 ->smartPunctuation()
                 ->withConfig(['html_input' => 'allow'])
                 ->descriptionLists()
