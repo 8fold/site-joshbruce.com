@@ -29,15 +29,15 @@ class Environment
     ) {
     }
 
-    public function isMissingFolders(): bool
-    {
-        return ! $this->hasRequiredFolders();
-    }
-
-    private function hasRequiredFolders(): bool
-    {
-        return $this->publicRootFileInfo()->isDir();
-    }
+//     public function isMissingFolders(): bool
+//     {
+//         return ! $this->hasRequiredFolders();
+//     }
+//
+//     private function hasRequiredFolders(): bool
+//     {
+//         return $this->publicRootFileInfo()->isDir();
+//     }
 
     public function appUrl(): string
     {
