@@ -32,7 +32,6 @@
     "8fold/php-html-builder": "^0.5.3",
     "nyholm/psr7": "^1.4",
     "laminas/laminas-httphandlerrunner": "^2.1",
-    "filp/whoops": "^2.14",
     "nesbot/carbon": "^2.53",
     "symfony/console": "^5.3",
     "symfony/finder": "^5.3",
