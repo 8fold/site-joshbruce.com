@@ -16,4 +16,8 @@ The `.` (dot, period) is reserved for filenames and should not be used in folder
 
 The `_` (underscore) at the beginning of a file or folder name represents a draft.
 
-The `~` (tilde) at the beginning of a file or folder name represents a redirection.
+## Redirection
+
+Sometimes content will need to be moved from one location to another. We don't want this to negatively impact users.Further, we want to stick to our policy of letting the server be a server; therefore, redirection is handled in the `.htaccess` file found in the `public` folder.
+
+TODO: We are working toward automating the build of this portion of the `.htaccess` file; pardon the bumps as there may be a request for you to modify your submission to facilitate.
