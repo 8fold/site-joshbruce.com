@@ -41,7 +41,7 @@ class RequestHandler implements RequestHandlerInterface
 
     private string $requestPath = '';
 
-    private string $publicRoot = '';
+    private string $contentPublic = '';
 
     public static function in(Environment $environment): RequestHandler
     {
@@ -61,19 +61,19 @@ class RequestHandler implements RequestHandlerInterface
 
         $isRequestingFile = $this->isRequestingFile();
 
-        $path = $this->publicRoot() . $this->requestPath();
+        $path = $this->contentPublic() . $this->requestPath();
         if (! $isRequestingFile and ! $this->isRequestingXml()) {
-            $path = $this->publicRoot() .
+            $path = $this->contentPublic() .
                 $this->requestPath() .
                 $this->environment()->contentFilename();
 
         }
 
-        $file = File::at($path, $this->publicRoot());
+        $file = File::at($path, $this->contentPublic());
 
         if ($file->notFound()) {
             $status = 404;
-            $path   = $this->publicRoot() . '/error-404.md';
+            $path   = $this->contentPublic() . '/error-404.md';
 
         } else {
             $headers = [
@@ -101,7 +101,7 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        $file = PlainTextFile::at($path, $this->publicRoot());
+        $file = PlainTextFile::at($path, $this->contentPublic());
 
         if ($file->template() === 'sitemap') {
             return new PsrResponse(
@@ -179,12 +179,12 @@ class RequestHandler implements RequestHandlerInterface
         return $this->request;
     }
 
-    private function publicRoot(): string
+    private function contentPublic(): string
     {
-        if (strlen($this->publicRoot) === 0) {
-            $this->publicRoot = $this->environment()->publicRoot();
+        if (strlen($this->contentPublic) === 0) {
+            $this->contentPublic = $this->environment()->contentPublic();
         }
-        return $this->publicRoot;
+        return $this->contentPublic;
     }
 
     private function environment(): Environment

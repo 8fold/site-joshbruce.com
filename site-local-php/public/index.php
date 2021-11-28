@@ -20,6 +20,7 @@ Emitter::emit(
     RequestHandler::in(
         Environment::with(
             __DIR__ . '/../../content/public',
+            __DIR__,
             'http://com.joshbruce-dynamic:8889',
             'local'
         )

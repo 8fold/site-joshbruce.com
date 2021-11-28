@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\DocumentComponents;
 
-use Carbon\Carbon;
+use DateTime;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -55,11 +55,11 @@ class DateBlock
             return '';
         }
 
-        if ($carbon = Carbon::createFromFormat('Ymd', strval($date))) {
-            $time = Element::time($carbon->toFormattedDateString())
+        if ($date = DateTime::createFromFormat('Ymd', strval($date))) {
+            $time = Element::time($date->format('M j, Y'))
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
-                    'content ' . $carbon->format('Y-m-d')
+                    'content ' . $date->format('Y-m-d')
                 )->build();
             return Element::p("{$label}: {$time}");
         }
