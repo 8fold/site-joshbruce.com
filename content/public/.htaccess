@@ -27,13 +27,13 @@ ErrorDocument 500 /error-500.html
 	RedirectMatch 301 /web-development/site-stats /web-development/this-site/stats/
 
 	# Prepare to rewrite
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
 
 	# Redirect to trailing slash if not folder or file
 	RewriteCond %{REQUEST_URI} /+[^\.]+$
 	RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
 
-    # Requests use front controller
-    # RewriteRule ^ index.php [L]
+	# Requests use front controller
+	# RewriteRule ^ index.php [L]
 </IfModule>
