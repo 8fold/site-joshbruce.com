@@ -2,35 +2,61 @@
 
 declare(strict_types=1);
 
-// @phpstan-ignore-next-line
-test('index is not displaying errors', function () {
-    $rPath = __DIR__ . '/../../site-dynamic-php/public/index.php';
-    $file  = new SplFileInfo($rPath);
-    $path  = $file->getRealPath();
+use PHPUnit\Framework\TestCase;
 
-    if (
-        is_string($path) and
-        $contents = file_get_contents($path) and
-        is_string($contents)
-    ) {
-        $matches = [];
-        preg_match_all('/ini_set\(.*\);/', $contents, $matches);
-        $matches = array_shift($matches);
-
-        // ini_set should be present
-        expect(count($matches))->toBe(2);
-
-        // ini_set should be 0
-        foreach ($matches as $match) {
-            expect(
-                str_contains($match, '1'),
-                'Okay to fail in local.'
-            )->toBeFalse();
-        }
-
-    } else {
-        // @phpstan-ignore-next-line
-        $this->assertTrue(false, 'Either the path or contents is false');
-
+final class IndexTest extends TestCase
+{
+    public static function pathToIndex(): string|false
+    {
+        $rPath = __DIR__ . '/../../site-dynamic-php/public/index.php';
+        $file  = new SplFileInfo($rPath);
+        return $file->getRealPath();
     }
-})->group('index');
+
+    public static function indexFileContents(): string
+    {
+        return file_get_contents(self::pathToIndex());
+    }
+
+    public static function ini_set_matches(): array
+    {
+        $matches = [];
+        preg_match_all('/ini_set\(.*\);/', self::indexFileContents(), $matches);
+        return array_shift($matches);
+    }
+
+    /**
+     * @test
+     *
+     * @group index
+     * @group live-content
+     */
+    public function index_exists(): void
+    {
+        $this->assertIsString(self::pathToIndex());
+    }
+
+    /**
+     * @test
+     *
+     * @group index
+     * @group live-content
+     */
+    public function index_has_ini_set(): void
+    {
+        $this->assertCount(2, self::ini_set_matches());
+    }
+
+    /**
+     * @test
+     *
+     * @group index
+     * @group live-content
+     */
+    public function index_is_not_displaying_errors(): void
+    {
+        foreach (self::ini_set_matches() as $match) {
+            $this->assertFalse(str_contains($match, '1'));
+        }
+    }
+}
