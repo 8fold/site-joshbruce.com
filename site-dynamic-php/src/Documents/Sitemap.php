@@ -7,6 +7,8 @@ namespace JoshBruce\SiteDynamic\Documents;
 use Eightfold\XMLBuilder\Document;
 use Eightfold\XMLBuilder\Element;
 
+use JoshBruce\SiteDynamic\Environment;
+
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
@@ -14,12 +16,17 @@ class Sitemap
 {
     private const DATE_FORMAT = 'Y-m-d';
 
-    public static function create(PlainTextFile $file): string
+    public static function create(
+        PlainTextFile $file,
+        Environment $environment
+    ): string
     {
         $root = $file->root();
 
-        $finder = Finder::init($root)->publishedContent()->getIterator()
-            ->depth('>= 1');
+        $finder = Finder::init(
+            $root,
+            $environment->contentFilename()
+        )->publishedContent()->getIterator()->depth('>= 1');
 
         $urls = [];
         foreach ($finder as $fileInfo) {
@@ -33,7 +40,6 @@ class Sitemap
             // No mod or creation date, no inclusion in sitemap.
             if (! $lastmod) {
                 continue;
-
             }
 
             $path = $f->path(full: false, omitFilename: true);
@@ -51,7 +57,7 @@ class Sitemap
             }
 
             $urls[$path] = Element::url(
-                Element::loc($f->canonicalUrl()),
+                Element::loc($f->canonicalUrl($environment->appUrl())),
                 Element::lastmod($lastmod),
                 Element::priority($priority)
             );

@@ -53,7 +53,8 @@ class Markdown
 
     public static function processPartials(
         string $body,
-        PlainTextFile $file
+        PlainTextFile $file,
+        string $contentFilename
     ): string {
         $partials = [];
         if (
@@ -76,7 +77,7 @@ class Markdown
 
                 $body = str_replace(
                     $replacements[$i],
-                    $template::create($file),
+                    $template::create($file, $contentFilename),
                     $body
                 );
             }

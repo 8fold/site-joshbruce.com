@@ -60,9 +60,9 @@ trait FileTrait
         return FileMimetype::with($mimetype, $this->extension());
     }
 
-    public function canonicalUrl(): string
+    public function canonicalUrl(string $appUrl): string
     {
-        return $_SERVER['APP_URL'] . $this->path(full: false, omitFilename: true);
+        return $appUrl . $this->path(full: false, omitFilename: true);
     }
 
     private function extension(): string

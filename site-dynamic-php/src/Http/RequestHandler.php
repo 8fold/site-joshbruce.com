@@ -6,30 +6,18 @@ namespace JoshBruce\SiteDynamic\Http;
 
 use Psr\Http\Server\RequestHandlerInterface;
 
-use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 use Nyholm\Psr7\Stream;
 use Nyholm\Psr7\Response as PsrResponse;
 
-use Eightfold\HTMLBuilder\Element;
-
 use JoshBruce\SiteDynamic\Environment;
 
-use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use JoshBruce\SiteDynamic\Content\Markdown;
-
 use JoshBruce\SiteDynamic\Http\Responses\Document as DocumentResponse;
-use JoshBruce\SiteDynamic\Http\Responses\File as FileResponse;
-use JoshBruce\SiteDynamic\Http\Responses\InternalServerError as
-    InternalServerErrorResponse;
-use JoshBruce\SiteDynamic\Http\Responses\NotFound as NotFoundResponse;
-
-use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -64,29 +52,9 @@ class RequestHandler implements RequestHandlerInterface
 
         $status  = 200;
         $headers = [];
-// if folders are missing, there is no way to get the content
-//         if ($this->environment()->isMissingFolders()) {
-//             $status = 500;
-//             if ($this->request()->getMethod() === 'HEAD') {
-//                 return new PsrResponse(
-//                     status: $status,
-//                     headers: $headers
-//                 );
-//             }
-//
-//             return new PsrResponse(
-//                 status: 500,
-//                 headers: [],
-//                 body: Stream::create(
-//                     PlainTextFile::at(
-//                         $this->publicRoot() . '/error-500.html',
-//                         $this->publicRoot()
-//                     )->content()
-//                 )
-//             );
-//         }
 
         $isRequestingFile = $this->isRequestingFile();
+
         $path = $this->publicRoot() . $this->requestPath();
         if (! $isRequestingFile and ! $this->isRequestingXml()) {
             $path = $this->publicRoot() .

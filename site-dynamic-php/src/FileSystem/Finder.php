@@ -21,13 +21,18 @@ class Finder implements Countable, IteratorAggregate
 
     private SymfonyFinder $symFinder;
 
-    public static function init(string $publicRoot): static
+    public static function init(
+        string $publicRoot,
+        string $contentFilename
+    ): static
     {
-        return new static($publicRoot);
+        return new static($publicRoot, $contentFilename);
     }
 
-    final private function __construct(private string $publicRoot)
-    {
+    final private function __construct(
+        private string $publicRoot,
+        private string $contentFilename
+    ) {
         $this->symFinder = (new SymfonyFinder())
             ->ignoreVCS(true)
             ->ignoreUnreadableDirs()
@@ -78,7 +83,7 @@ class Finder implements Countable, IteratorAggregate
 
     private function contentFilename(): string
     {
-        return $_SERVER['CONTENT_FILENAME'];
+        return $this->contentFilename;
     }
 
     private function isPublished(SplFileInfo $fileInfo): bool
