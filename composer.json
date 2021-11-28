@@ -9,6 +9,7 @@
   "autoload-dev": {
     "psr-4": {
       "JoshBruce\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests",
+      "JoshBruce\\SiteLocal\\Tests\\": "./site-local-php/tests",
       "JoshBruce\\SiteStatic\\Tests\\": "./site-static-html/tests"
     }
   },

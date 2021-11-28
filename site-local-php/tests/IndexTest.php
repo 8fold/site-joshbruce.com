@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\SiteDynamic\Tests;
+namespace JoshBruce\SiteLocal\Tests;
 
-use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
+use JoshBruce\SiteLocal\Tests\LiveContentTestCase;
 
 final class IndexTest extends LiveContentTestCase
 {
@@ -48,10 +48,10 @@ final class IndexTest extends LiveContentTestCase
      * @group validate-setup
      * @group live-content
      */
-    public function index_is_not_displaying_errors(): void
+    public function index_is_displaying_errors(): void
     {
         foreach (self::ini_set_matches() as $match) {
-            $this->assertFalse(str_contains($match, '1'));
+            $this->assertTrue(str_contains($match, '1'));
         }
     }
 }
