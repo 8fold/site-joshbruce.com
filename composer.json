@@ -22,7 +22,7 @@
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
     "phpstan/phpstan": "^1.2.0",
-    "pestphp/pest": "^1.20"
+    "phpunit/phpunit": "^9.5"
   },
   "require": {
     "php": "^8.0",
