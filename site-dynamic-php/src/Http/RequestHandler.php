@@ -77,7 +77,7 @@ class RequestHandler implements RequestHandlerInterface
 
         } else {
             $headers = [
-                'Content-type' => $file->mimetype()->interpreted()
+                'Content-type' => $file->mimetype()
             ];
 
         }

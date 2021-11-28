@@ -57,7 +57,7 @@ final class RequestHandlerTest extends LiveContentTestCase
     {
         $rootRequest = new ServerRequest(
             method: 'GET',
-            uri: '/does/not/ex/ist',
+            uri: self::invalidPath(),
             headers: [],
             serverParams: $_SERVER
         );

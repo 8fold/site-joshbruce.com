@@ -22,14 +22,14 @@ class Finder implements Countable, IteratorAggregate
     private SymfonyFinder $symFinder;
 
     public static function init(
-        string $publicRoot,
+        string $contentPublic,
         string $contentFilename
     ): static {
-        return new static($publicRoot, $contentFilename);
+        return new static($contentPublic, $contentFilename);
     }
 
     final private function __construct(
-        private string $publicRoot,
+        private string $contentPublic,
         private string $contentFilename
     ) {
         $this->symFinder = (new SymfonyFinder())

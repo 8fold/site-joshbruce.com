@@ -21,4 +21,8 @@ abstract class LiveContentTestCase extends TestCase
         return $file->getRealPath();
     }
 
+    public static function invalidPath(): string
+    {
+        return '/does/not/ex/ist';
+    }
 }

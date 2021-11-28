@@ -6,12 +6,10 @@ namespace JoshBruce\SiteDynamic\FileSystem;
 
 use SplFileInfo;
 
-use JoshBruce\SiteDynamic\FileSystem\File;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\FileMimetype;
-
 trait FileTrait
 {
+    private string $mimetype = '';
+
     final private function __construct(
         private SplFileInfo $fileInfo,
         private string $root
@@ -50,14 +48,26 @@ trait FileTrait
         return str_replace($this->root(), '', $realPath);
     }
 
-    public function mimetype(): FileMimetype
+    public function mimetype(): string
     {
-        $mimetype = mime_content_type($this->path());
-        if (! $mimetype) {
-            $mimetype = 'text/plain';
-        }
+        if (strlen($this->mimetype) === 0) {
+            $mimetype = mime_content_type($this->path());
+            if (! $mimetype) {
+                $mimetype = 'text/plain';
+            }
 
-        return FileMimetype::with($mimetype, $this->extension());
+            $this->mimetype = $mimetype;
+            if ($mimetype === 'text/plain') {
+                $this->mimetype = match ($this->extension()) {
+                    'md'    => 'text/html',
+                    'css'   => 'text/css',
+                    'js'    => 'text/javascript',
+                    'xml'   => 'application/xml',
+                    default => 'text/plain'
+                };
+            }
+        }
+        return $this->mimetype;
     }
 
     public function canonicalUrl(string $appUrl): string

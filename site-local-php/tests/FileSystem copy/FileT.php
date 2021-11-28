@@ -2,7 +2,22 @@
 
 declare(strict_types=1);
 
-use JoshBruce\SiteDynamic\FileSystem\File;
+namespace JoshBruce\SiteDynamic\Tests;
+
+use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
+
+final class IndexTest extends LiveContentTestCase
+{
+    /**
+     * @test
+     *
+     * @group live-content
+     */
+    public function index_exists(): void
+    {
+        $this->assertIsString(self::pathToIndex());
+    }
+}
 
 test('can be instantiated', function () {
     expect(
