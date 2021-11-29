@@ -89,4 +89,64 @@ final class FileTest extends LiveContentTestCase
             self::mainCssFile()->path(full: false, omitFilename: true)
         );
     }
+
+    /**
+     * @test
+     *
+     * @group file
+     * @group live-content
+     */
+    public function mimetype_for_file(): void // phpcs:ignore
+    {
+        $start = hrtime(true);
+
+        $mimetype = File::at(
+            self::pathToContentPublic() . '/assets/css/main.min.css',
+            self::pathToContentPublic()
+        )->mimetype();
+
+        $end = hrtime(true);
+
+        $total = $end - $start;
+        $ms    = $total / 1e+6;
+
+        $this->assertLessThan(1, $ms);
+
+        $start = hrtime(true);
+
+        $mimetype = File::at(
+            self::pathToContentPublic() . '/content.md',
+            self::pathToContentPublic()
+        )->mimetype();
+
+        $end = hrtime(true);
+
+        $total = $end - $start;
+        $ms    = $total / 1e+6;
+
+        $this->assertLessThan(0.02, $ms);
+    }
+
+    /**
+     * @test
+     *
+     * @group file
+     * @group live-content
+     */
+    public function mimetype_for_text(): void // phpcs:ignore
+    {
+        $start = hrtime(true);
+
+        $mimetype = File::at(
+            self::pathToContentPublic() . '/content.md',
+            self::pathToContentPublic()
+        )->mimetype();
+
+        $end = hrtime(true);
+
+        $total = $end - $start;
+        $ms    = $total / 1e+6;
+
+        $this->assertLessThan(0.02, $ms);
+    }
 }
