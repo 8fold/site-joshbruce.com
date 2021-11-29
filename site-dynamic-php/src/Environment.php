@@ -17,17 +17,15 @@ class Environment
     public static function with(
         string $contentPublic,
         string $indexPublic,
-        string $appUrl,
-        // string $appEnv
+        string $appUrl
     ): Environment {
-        return new Environment($contentPublic, $indexPublic, $appUrl); // , $appEnv);
+        return new Environment($contentPublic, $indexPublic, $appUrl);
     }
 
     final private function __construct(
         private string $contentPublic,
         private string $indexPublic,
-        private string $appUrl,
-        // private string $appEnv
+        private string $appUrl
     ) {
     }
 

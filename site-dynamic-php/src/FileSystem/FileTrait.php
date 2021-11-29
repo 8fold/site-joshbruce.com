@@ -37,14 +37,11 @@ trait FileTrait
             $parts = explode('/', $realPath);
             $parts = array_slice($parts, 0, -1);
             $realPath = implode('/', $parts);
-
         }
 
         if ($full) {
             return $realPath;
-
         }
-
         return str_replace($this->root(), '', $realPath);
     }
 

@@ -85,7 +85,6 @@ class HtmlDefault
     public static function cssElement(): Element
     {
         $cssPath  = '/assets/css/main.min.css';
-        // $filePath = $contentRoot . $cssPath;
         // TODO: should be last commit of CSS file - another reason to place
         //       content in same folder as rest of project.
         $query = round(microtime(true));

@@ -21,8 +21,7 @@ Emitter::emit(
         Environment::with(
             __DIR__ . '/../../content/public',
             __DIR__,
-            'https://joshbruce.com',
-            // 'production'
+            'https://joshbruce.com'
         )
     )->handle(
         new ServerRequest(

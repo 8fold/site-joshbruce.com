@@ -169,7 +169,6 @@ class PlainTextFile
 
             if ($check !== null and is_string($check)) {
                 $description = $check;
-
             }
 
             $blocks = explode("\n", $description);
@@ -222,7 +221,6 @@ class PlainTextFile
             is_array($data)
         ) {
             return $data;
-
         }
         return [];
     }
