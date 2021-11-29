@@ -48,20 +48,20 @@ trait FileTrait
     public function mimetype(): string
     {
         if (strlen($this->mimetype) === 0) {
-            $mimetype = mime_content_type($this->path());
-            if (! $mimetype) {
-                $mimetype = 'text/plain';
-            }
+            $mimetype = match ($this->extension()) {
+                'md'    => 'text/html',
+                'css'   => 'text/css',
+                'js'    => 'text/javascript',
+                'xml'   => 'application/xml',
+                default => mime_content_type($this->path())
+            };
 
-            $this->mimetype = $mimetype;
-            if ($mimetype === 'text/plain') {
-                $this->mimetype = match ($this->extension()) {
-                    'md'    => 'text/html',
-                    'css'   => 'text/css',
-                    'js'    => 'text/javascript',
-                    'xml'   => 'application/xml',
-                    default => 'text/plain'
-                };
+            if (! $mimetype) {
+                return 'text/plain';
+
+            } else {
+                $this->mimetype = $mimetype;
+
             }
         }
         return $this->mimetype;
