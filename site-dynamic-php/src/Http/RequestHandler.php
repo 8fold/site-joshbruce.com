@@ -154,7 +154,7 @@ class RequestHandler implements RequestHandlerInterface
         $markdown = Markdown::processPartials(
             $file->content(),
             $file,
-            $this->environment()->contentFilename()
+            $this->environment()
         );
 
         return Markdown::markdownConverter()->convert($markdown);

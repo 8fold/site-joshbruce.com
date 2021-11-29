@@ -18,16 +18,16 @@ class Environment
         string $contentPublic,
         string $indexPublic,
         string $appUrl,
-        string $appEnv
+        // string $appEnv
     ): Environment {
-        return new Environment($contentPublic, $indexPublic, $appUrl, $appEnv);
+        return new Environment($contentPublic, $indexPublic, $appUrl); // , $appEnv);
     }
 
     final private function __construct(
         private string $contentPublic,
         private string $indexPublic,
         private string $appUrl,
-        private string $appEnv
+        // private string $appEnv
     ) {
     }
 

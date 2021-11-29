@@ -6,6 +6,8 @@ namespace JoshBruce\SiteDynamic\Content;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
+use JoshBruce\SiteDynamic\Environment;
+
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\DocumentComponents\Data;
@@ -54,7 +56,7 @@ class Markdown
     public static function processPartials(
         string $body,
         PlainTextFile $file,
-        string $contentFilename
+        Environment $environment
     ): string {
         $partials = [];
         if (
@@ -77,7 +79,7 @@ class Markdown
 
                 $body = str_replace(
                     $replacements[$i],
-                    $template::create($file, $contentFilename),
+                    $template::create($file, $environment),
                     $body
                 );
             }

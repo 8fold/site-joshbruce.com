@@ -48,10 +48,14 @@ abstract class LiveContentTestCase extends TestCase
         return __DIR__ . '/../public/index.php';
     }
 
-    public static function pathToIndex(): string|false
+    public static function pathToIndex(): string
     {
         $file  = new SplFileInfo(self::pathToIndexRelative());
-        return $file->getRealPath();
+        $path  =  $file->getRealPath();
+        if (! $path) {
+            return '';
+        }
+        return $path;
     }
 
     public static function invalidPath(): string
@@ -65,7 +69,7 @@ abstract class LiveContentTestCase extends TestCase
             self::pathToContentPublic(),
             __DIR__ . '/../../public',
             'http://test.joshbruce',
-            'test'
+            // 'test'
         );
     }
 

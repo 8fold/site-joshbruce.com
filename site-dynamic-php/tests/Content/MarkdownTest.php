@@ -43,7 +43,7 @@ final class MarkdownTest extends LiveContentTestCase
             {!! dateblock !!}
             md,
             $file,
-            Environment::CONTENT_FILENAME
+            self::liveContentEnv()
         ) . "\n";
 
         $end = hrtime(true);

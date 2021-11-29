@@ -9,14 +9,20 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use Eightfold\HTMLBuilder\Element;
 
-use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 class LogList
 {
-    public static function create(PlainTextFile $file): string
-    {
-        $finder = Finder::init($file->path(omitFilename: true))
-            ->publishedContent();
+    public static function create(
+        PlainTextFile $file,
+        Environment $environment
+    ): string {
+        $finder = Finder::init(
+            $file->path(omitFilename: true),
+            $environment->contentFilename()
+        )->publishedContent();
         if (count($finder) === 0) {
             return '';
         }
@@ -30,7 +36,7 @@ class LogList
             $f = PlainTextFile::from($fileInfo, $file->root());
 
             $title = $f->title();
-            $href  = $f->canonicalUrl();
+            $href  = $f->canonicalUrl($environment->appUrl());
 
             $key = $f->path(full: false, omitFilename: true);
 

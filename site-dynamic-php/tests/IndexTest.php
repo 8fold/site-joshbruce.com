@@ -10,9 +10,16 @@ final class IndexTest extends LiveContentTestCase
 {
     public static function indexFileContents(): string
     {
-        return file_get_contents(self::pathToIndex());
+        $contents = file_get_contents(self::pathToIndex());
+        if (! $contents) {
+            return '';
+        }
+        return $contents;
     }
 
+    /**
+     * @return string[]
+     */
     public static function iniSetMatches(): array
     {
         $matches = [];

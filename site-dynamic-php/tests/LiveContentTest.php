@@ -20,14 +20,14 @@ final class LiveContentTest extends LiveContentTestCase
      * @group live-content
      * @group content
      */
-	public function content_not_article(): void // phpcs:ignore
-	{
-		$html = (string) self::rootContentResponse()->getBody();
+    public function content_not_article(): void // phpcs:ignore
+    {
+        $html = (string) self::rootContentResponse()->getBody();
 
-		$this->assertTrue(str_contains($html, '<title'));
+        $this->assertTrue(str_contains($html, '<title'));
 
-		$this->assertFalse(str_contains($html, '<article'));
-	}
+        $this->assertFalse(str_contains($html, '<article'));
+    }
 
     /**
      * @test
@@ -35,15 +35,15 @@ final class LiveContentTest extends LiveContentTestCase
      * @group live-content
      * @group content
      */
-	public function content_is_article(): void // phpcs:ignore
-	{
-		$html = (string) self::thisSiteResponse()->getBody();
+    public function content_is_article(): void // phpcs:ignore
+    {
+        $html = (string) self::thisSiteResponse()->getBody();
 
-		$this->assertTrue(str_contains($html, '<title'));
+        $this->assertTrue(str_contains($html, '<title'));
 
-		$this->assertTrue(str_contains(
-			$html,
-			'<article typeof="BlogPosting" vocab="https://schema.org/">'
-		));
-	}
+        $this->assertTrue(str_contains(
+            $html,
+            '<article typeof="BlogPosting" vocab="https://schema.org/">'
+        ));
+    }
 }

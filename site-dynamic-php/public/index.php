@@ -22,7 +22,7 @@ Emitter::emit(
             __DIR__ . '/../../content/public',
             __DIR__,
             'https://joshbruce.com',
-            'production'
+            // 'production'
         )
     )->handle(
         new ServerRequest(
