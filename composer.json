@@ -1,5 +1,38 @@
 {
-  "authors": [],
+  "name": "joshbruce/site-joshbruce-com",
+  "type": "site-collection",
+  "description": "Site content and code for joshbruce.com.",
+  "license": "mixed",
+  "authors": [
+    {
+      "name": "Josh Bruce",
+      "email": "josh@8fold.pro",
+      "homepage": "https://joshbruce.com",
+      "role": "Lead Developer"
+    }
+  ],
+  "support": {
+    "forum": "https://github.com/8fold/site-joshbruce.com/discussions",
+    "issues": "https://github.com/8fold/site-joshbruce.com/issues",
+    "source": "https://github.com/8fold/site-joshbruce.com"
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-fileinfo": "*",
+    "8fold/commonmark-fluent-markdown": "^0.10.0",
+    "8fold/php-html-builder": "^0.5.3",
+    "laminas/laminas-httphandlerrunner": "^2.1",
+    "nyholm/psr7": "^1.4",
+    "nyholm/psr7-server": "^1.0",
+    "symfony/console": "^5.3",
+    "symfony/finder": "^5.3",
+    "symfony/yaml": "^5.3"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.2.0",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
   "autoload": {
     "psr-4": {
       "JoshBruce\\SiteDynamic\\": "./site-dynamic-php/src",
@@ -14,29 +47,10 @@
     }
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "sort-packages": true
   },
-  "description": "",
-  "license": "MIT",
-  "name": "vendor/project",
   "prefer-stable": true,
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6",
-    "phpstan/phpstan": "^1.2.0",
-    "phpunit/phpunit": "^9.5"
-  },
-  "require": {
-    "php": "^8.0",
-    "ext-fileinfo": "*",
-    "8fold/commonmark-fluent-markdown": "^0.10.0",
-    "8fold/php-html-builder": "^0.5.3",
-    "laminas/laminas-httphandlerrunner": "^2.1",
-    "nyholm/psr7": "^1.4",
-    "nyholm/psr7-server": "^1.0",
-    "symfony/console": "^5.3",
-    "symfony/finder": "^5.3",
-    "symfony/yaml": "^5.3"
-  },
   "scripts": {
     "prod": "@production",
     "production": [
@@ -47,6 +61,5 @@
     "style": "./vendor/bin/phpcs --standard=phpcs.xml",
     "stan": "./vendor/bin/phpstan analyze",
     "test": "./vendor/bin/phpunit"
-  },
-  "type": "library"
+  }
 }
