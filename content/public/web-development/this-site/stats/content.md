@@ -34,6 +34,8 @@ I will use three categories or styles of pages:
 
 ## November 15th, 2021
 
+Waiting for response: ~50ms. (no opcache or CDN)
+
 1. https://joshbruce.com (short content, minimal assets and media)
 2. https://joshbruce.com/web-development/2021-site-in-depth (long content, images)
 3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth (long content)

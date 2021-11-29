@@ -2,7 +2,7 @@
 
 > 🗒 Note: Contributing to the project represents granting permission for the copyright holder designated above to redistribute and modify said contributions.
 
-The contents of this directory are subject to the [terms of service](https://joshbruce.com/legal) on joshbruce.com.
+The contents of this directory are subject to the [terms of service](https://joshbruce.com/legal) on [joshbruce.com](https://joshbruce.com).
 
 In short, the contents of this folder, unless otherwise specified, are: Copyright © Joshua C. Bruce, all rights reserved.
 
