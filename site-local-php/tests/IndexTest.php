@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteLocal\Tests;
 
-use JoshBruce\SiteLocal\Tests\LiveContentTestCase;
+use JoshBruce\SiteLocal\Tests\TestContentTestCase;
 
-final class IndexTest extends LiveContentTestCase
+final class IndexTest extends TestContentTestCase
 {
     public static function indexFileContents(): string
     {
