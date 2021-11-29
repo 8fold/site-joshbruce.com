@@ -45,5 +45,15 @@ final class LiveContentTest extends LiveContentTestCase
             $html,
             '<article typeof="BlogPosting" vocab="https://schema.org/">'
         ));
+
+        $this->assertFalse(str_contains(
+            $html,
+            'href="/'
+        ));
+
+        $this->assertFalse(str_contains(
+            $html,
+            'src="/'
+        ));
     }
 }

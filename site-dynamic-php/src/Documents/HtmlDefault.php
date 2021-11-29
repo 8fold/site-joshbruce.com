@@ -109,8 +109,11 @@ class HtmlDefault
     ): string {
         // TODO: Make sure images show canonical url
         return str_replace(
-            ['href="/'],
-            ['href="' . $environment->appUrl() . '/'],
+            ['href="/', 'src="/'],
+            [
+                'href="' . $environment->appUrl() . '/',
+                'src="' . $environment->appUrl() . '/'
+            ],
             $html
         );
     }
