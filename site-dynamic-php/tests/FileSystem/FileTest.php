@@ -124,7 +124,7 @@ final class FileTest extends LiveContentTestCase
         $total = $end - $start;
         $ms    = $total / 1e+6;
 
-        $this->assertLessThan(0.01, $ms);
+        $this->assertLessThan(0.02, $ms);
     }
 
     /**
@@ -147,6 +147,6 @@ final class FileTest extends LiveContentTestCase
         $total = $end - $start;
         $ms    = $total / 1e+6;
 
-        $this->assertLessThan(0.01, $ms);
+        $this->assertLessThan(0.02, $ms);
     }
 }

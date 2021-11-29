@@ -57,6 +57,6 @@ final class MarkdownTest extends LiveContentTestCase
         $ms   = $time / 1e+6;
 
         // TODO: Wonder if we could make this smaller
-        $this->assertLessThan(19, $ms);
+        $this->assertLessThan(25, $ms);
     }
 }
