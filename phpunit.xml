@@ -23,6 +23,9 @@
     <testsuite name="dynamic">
       <directory suffix="Test.php">./site-dynamic-php/tests/</directory>
     </testsuite>
+    <testsuite name="local">
+      <directory suffix="Test.php">./site-local-php/tests/</directory>
+    </testsuite>
   </testsuites>
   <php>
     <ini name="display_errors" value="On"/>

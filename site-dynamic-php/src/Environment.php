@@ -6,67 +6,27 @@ namespace JoshBruce\SiteDynamic;
 
 use SplFileInfo;
 
-use Dotenv\Dotenv;
-
 class Environment
 {
-    private const ENV_REQUIRED = [
-        // dev|test|production
-        'APP_ENV',
-        // HTTP(S) URI root.
-        'APP_URL',
-        // Comma delimited list of supported request methods.
-        'APP_METHODS',
-        // Path to folder containing public folder, relative to .env location.
-        'ENV_TO_PUBLIC_ROOT',
-        // Default name of file containing web content.
-        'CONTENT_FILENAME'
-    ];
-
-    private bool $hasRequiredVariables = true;
+    public const CONTENT_FILENAME = 'content.md';
 
     private const FILE_SEPARATOR = '/';
 
-    private string $publicRoot = '';
+    private SplFileInfo $contentPublicFileInfo;
 
-    public static function with(string $pathToEnv): Environment
-    {
-        return new Environment($pathToEnv);
+    public static function with(
+        string $contentPublic,
+        string $indexPublic,
+        string $appUrl
+    ): Environment {
+        return new Environment($contentPublic, $indexPublic, $appUrl);
     }
 
-    final private function __construct(private string $pathToEnv)
-    {
-        // Inject .env content into server globals
-        Dotenv::createImmutable($pathToEnv)->load();
-        $this->hasRequiredVariables();
-    }
-
-    /**
-     * @return string[]
-     */
-    public function supportedMethods(): array
-    {
-        $list = $_SERVER['APP_METHODS'];
-        return explode(',', $list);
-    }
-
-    public function isMissingVariables(): bool
-    {
-        return ! $this->hasRequiredVariables();
-    }
-
-    private function hasRequiredVariables(): bool
-    {
-
-        if ($this->hasRequiredVariables) {
-            foreach (self::ENV_REQUIRED as $required) {
-                if (! array_key_exists($required, $_SERVER)) {
-                    $this->hasRequiredVariables = false;
-                    break;
-                }
-            }
-        }
-        return $this->hasRequiredVariables;
+    final private function __construct(
+        private string $contentPublic,
+        private string $indexPublic,
+        private string $appUrl
+    ) {
     }
 
     public function isMissingFolders(): bool
@@ -76,34 +36,48 @@ class Environment
 
     private function hasRequiredFolders(): bool
     {
+        return $this->contentPublicFileInfo()->isDir();
+    }
 
-        return file_exists($this->publicRoot()) and
-            is_dir($this->publicRoot());
+    public function appUrl(): string
+    {
+        return $this->appUrl;
+    }
+
+    public function contentFileName(): string
+    {
+        return self::CONTENT_FILENAME;
+    }
+
+    /**
+     * @todo: Use as path to error-500.html to respond when folders are missing.
+     */
+    public function indexPublic(): string
+    {
+        return $this->indexPublic;
     }
 
     public function contentRoot(): string
     {
-        $parts = explode(self::FILE_SEPARATOR, $this->publicRoot());
+        $parts = explode(self::FILE_SEPARATOR, $this->contentPublic());
         $parts = array_slice($parts, 0, -1);
         return implode(self::FILE_SEPARATOR, $parts);
     }
 
-    public function publicRoot(): string
+    public function contentPublic(): string
     {
-        if (strlen($this->publicRoot) === 0) {
-            // Cached locally to improve performance.
-            // Call count for index.php process was 8, now 1.
-            $fileInfo = new SplFileInfo(
-                $this->pathToEnv . $_SERVER['ENV_TO_PUBLIC_ROOT']
-            );
-
-            $realPath = $fileInfo->getRealPath();
-            if (! $realPath) {
-                $realPath = '';
-            }
-
-            $this->publicRoot = $realPath;
+        if ($realPath = $this->contentPublicFileInfo()->getRealPath()) {
+            return $realPath;
         }
-        return $this->publicRoot;
+        return '';
+    }
+
+    private function contentPublicFileInfo(): SplFileInfo
+    {
+        if (! isset($this->contentPublicFileInfo)) {
+            $fileInfo = new SplFileInfo($this->contentPublic);
+            $this->contentPublicFileInfo = $fileInfo;
+        }
+        return $this->contentPublicFileInfo;
     }
 }

@@ -2,80 +2,108 @@
 
 declare(strict_types=1);
 
+namespace JoshBruce\SiteDynamic\Tests;
+
+use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
+
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-beforeEach(function () {
-    $this->publicRoot = __DIR__ . '/../test-project-root/content/public';
-    $this->publish2Content = $this->publicRoot .
-        '/published/published-2/content.md';
-});
+final class PlainTextFileTest extends LiveContentTestCase
+{
+    public static function migratedContent(): PlainTextFile
+    {
+        return PlainTextFile::at(
+            self::pathToContentPublic() .
+                '/web-development/on-constraints/internet-bandwidth/content.md',
+            self::pathToContentPublic()
+        );
+    }
 
-it('can get page and social titles', function () {
-    expect(
-        PlainTextFile::at(
-            $this->publish2Content,
-            $this->publicRoot
-        )->pageTitle()
-    )->toBeString()->toBe(
-        'Published content 2 | Published content | Test content home'
-    );
+    /**
+     * @test
+     *
+     * @group plain-text-file
+     * @group live-content
+     */
+    public function template(): void
+    {
+        $file = PlainTextFile::at(
+            self::pathToContentPublic() . '/sitemap.xml',
+            self::pathToContentPublic()
+        );
 
-    expect(
-        PlainTextFile::at(
-            $this->publish2Content,
-            $this->publicRoot
-        )->socialTitle()
-    )->toBeString()->toBe(
-        'Published content 2 | Test content home'
-    );
-})->group('plain-text-file', 'test-content');
+        $this->assertTrue($file->hasMetadata('template'));
 
-it('can get title', function () {
-    expect(
-        PlainTextFile::at(
-            $this->publish2Content,
-            $this->publicRoot
-        )->title()
-    )->toBeString()->toBe(
-        'Published content 2'
-    );
-})->group('plain-text-file', 'test-content');
+        $this->assertSame('sitemap', $file->template());
+    }
 
-it('can get description from front matter', function () {
-    // description field
-    $file = PlainTextFile::at(
-        $this->publicRoot . '/content.md',
-        $this->publicRoot
-    );
+    /**
+     * @test
+     *
+     * @group plain-text-file
+     * @group live-content
+     */
+    public function title(): void
+    {
+        $this->assertSame(
+            'Josh Bruce’s personal site',
+            self::rootContentFile()->title()
+        );
+    }
 
-    expect(
-        PlainTextFile::at(
-            $this->publicRoot . '/content.md',
-            $this->publicRoot
-        )->description()
-    )->toBe(
-        // phpcs:ignore
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit. Curabitur “iaculis” sodales turpis a pellentesque’s. In ac nibh ex.'
-    );
+    /**
+     * @test
+     *
+     * @group plain-text-file
+     * @group live-content
+     */
+    public function page_social_titles(): void // phpcs:ignore
+    {
+        $this->assertSame(
+            'This site | Web development | Josh Bruce’s personal site',
+            self::thisSiteContentFile()->pageTitle()
+        );
 
-    // derived description from content, short
-    expect(
-        PlainTextFile::at(
-            $this->publicRoot . '/published/content.md',
-            $this->publicRoot
-        )->description()
-    )->toBe(
-        "Short sentence. Something a little bit longer. Third sentence."
-    );
+        $this->assertSame(
+            'This site | Josh Bruce’s personal site',
+            self::thisSiteContentFile()->socialTitle()
+        );
+    }
 
-    // derived description from content, long
-    expect(
-        PlainTextFile::at(
-            $this->publicRoot . '/published/published-2/content.md',
-            $this->publicRoot
-        )->description()
-    )->toBe(
-        // phpcs:ignore
-        'Short sentence. Something a little bit longer. Third sentence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis arcu, molestie nec imperdiet eu, tristique ut elit.'
-    );
-})->group('plain-text-file', 'test-content');
+    /**
+     * @test
+     *
+     * @group plain-text-file
+     * @group live-content
+     */
+    public function dates(): void
+    {
+        $file = self::migratedContent();
+
+        $this->assertSame(20171204, $file->created());
+
+        $this->assertSame(20211101, $file->updated());
+
+        $this->assertSame(20211101, $file->moved());
+
+        $this->assertSame('2021-11-01', $file->moved('Y-m-d'));
+
+        $this->assertFalse(self::rootContentFile()->moved());
+    }
+
+    /**
+     * @test
+     *
+     * @group plain-text-file
+     * @group live-content
+     */
+    public function original(): void
+    {
+        $this->assertSame('', self::rootContentFile()->original());
+
+        $this->assertSame(
+            'https://medium.com/8fold-pub/on-constraints-internet-bandwidth-eab05c20e218 Medium',
+            self::migratedContent()->original()
+        );
+    }
+}

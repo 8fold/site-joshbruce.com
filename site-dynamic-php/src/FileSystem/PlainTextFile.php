@@ -117,19 +117,6 @@ class PlainTextFile
         return $this->dateField('updated', $format);
     }
 
-    public function redirect(): string
-    {
-        $frontMatter = $this->frontMatter();
-        if (
-            array_key_exists('redirect', $frontMatter) and
-            $redirect = $frontMatter['redirect'] and
-            is_string($redirect)
-        ) {
-            return $redirect;
-        }
-        return '';
-    }
-
     public function original(): string
     {
         $frontMatter = $this->frontMatter();
@@ -182,7 +169,6 @@ class PlainTextFile
 
             if ($check !== null and is_string($check)) {
                 $description = $check;
-
             }
 
             $blocks = explode("\n", $description);
@@ -235,7 +221,6 @@ class PlainTextFile
             is_array($data)
         ) {
             return $data;
-
         }
         return [];
     }
@@ -260,11 +245,8 @@ class PlainTextFile
                         ->title();
                 }
             }
-
             $this->titleParts = $titles;
-
         }
-
         return $this->titleParts;
     }
 
@@ -278,15 +260,9 @@ class PlainTextFile
 
             if (strlen($format) === 0) {
                 return intval($date);
-
             }
 
-            $date = DateTime::createFromFormat(
-                'Ymd',
-                strval($date)
-            );
-
-            if ($date) {
+            if ($date = DateTime::createFromFormat('Ymd', strval($date))) {
                 return $date->format($format);
             }
         }

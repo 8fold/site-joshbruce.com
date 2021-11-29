@@ -41,7 +41,7 @@ class HtmlDefault
             self::footer()
         )->build();
 
-        return self::canonicalUrls($html);
+        return self::canonicalUrls($html, $environemt);
     }
 
     /**
@@ -85,7 +85,6 @@ class HtmlDefault
     public static function cssElement(): Element
     {
         $cssPath  = '/assets/css/main.min.css';
-        // $filePath = $contentRoot . $cssPath;
         // TODO: should be last commit of CSS file - another reason to place
         //       content in same folder as rest of project.
         $query = round(microtime(true));
@@ -104,12 +103,17 @@ class HtmlDefault
         );
     }
 
-    public static function canonicalUrls(string $html): string
-    {
+    public static function canonicalUrls(
+        string $html,
+        Environment $environment
+    ): string {
         // TODO: Make sure images show canonical url
         return str_replace(
-            ['href="/'],
-            ['href="' . $_SERVER['APP_URL'] . '/'],
+            ['href="/', 'src="/'],
+            [
+                'href="' . $environment->appUrl() . '/',
+                'src="' . $environment->appUrl() . '/'
+            ],
             $html
         );
     }
