@@ -11,10 +11,12 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 
 class FullNavContent
 {
-    public static function create(PlainTextFile $file): string
-    {
-        $finder = Finder::init($file->root())->publishedContent()
-            ->getIterator()->depth('>= 1');
+    public static function create(
+        PlainTextFile $file,
+        string $contentFilename
+    ): string {
+        $finder = Finder::init($file->root(), $contentFilename)
+            ->publishedContent()->getIterator()->depth('>= 1');
 
         $files = [];
         foreach ($finder as $fileInfo) {
@@ -24,7 +26,7 @@ class FullNavContent
             );
 
             $path = str_replace(
-                '/' . $_SERVER['CONTENT_FILENAME'],
+                '/' . $contentFilename,
                 '',
                 $file->path(false)
             );
@@ -39,7 +41,7 @@ class FullNavContent
             $path  = $f->path(false);
             $title = $f->title();
             $href  = str_replace(
-                '/' . $_SERVER['CONTENT_FILENAME'],
+                '/' . $contentFilename,
                 '',
                 $path
             );

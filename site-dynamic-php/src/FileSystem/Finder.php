@@ -17,17 +17,19 @@ class Finder implements Countable, IteratorAggregate
 {
     private const DRAFT_INDICATOR = '_';
 
-    private const REDIRECT_INDICATOR = '~';
-
     private SymfonyFinder $symFinder;
 
-    public static function init(string $publicRoot): static
-    {
-        return new static($publicRoot);
+    public static function init(
+        string $contentPublic,
+        string $contentFilename
+    ): static {
+        return new static($contentPublic, $contentFilename);
     }
 
-    final private function __construct(private string $publicRoot)
-    {
+    final private function __construct(
+        private string $contentPublic,
+        private string $contentFilename
+    ) {
         $this->symFinder = (new SymfonyFinder())
             ->ignoreVCS(true)
             ->ignoreUnreadableDirs()
@@ -40,7 +42,7 @@ class Finder implements Countable, IteratorAggregate
     {
         $this->symFinder = clone $this->getIterator()
             ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
@@ -51,7 +53,7 @@ class Finder implements Countable, IteratorAggregate
             ->filter(fn($f) => $this->isPublished($f))
             ->name($this->contentFilename())
             ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
@@ -61,34 +63,19 @@ class Finder implements Countable, IteratorAggregate
         $this->symFinder = clone $this->getIterator()
             ->filter(fn($f) => $this->isDraft($f))
             ->files()
-            ->in($this->publicRoot);
-
-        return $this;
-    }
-
-    public function redirectedContent(): Finder
-    {
-        $this->symFinder = clone $this->getIterator()
-            ->filter(fn($f) => $this->isRedirected($f))
-            ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
 
     private function contentFilename(): string
     {
-        return $_SERVER['CONTENT_FILENAME'];
+        return $this->contentFilename;
     }
 
     private function isPublished(SplFileInfo $fileInfo): bool
     {
         return ! $this->isDraft($fileInfo);
-    }
-
-    private function isRedirected(SplFileInfo $fileInfo): bool
-    {
-        return str_contains($fileInfo->getPathname(), self::REDIRECT_INDICATOR);
     }
 
     public function isDraft(SplFileInfo $fileInfo): bool

@@ -9,21 +9,21 @@ use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
+use Nyholm\Psr7\Stream;
 use Nyholm\Psr7\Response as PsrResponse;
+
+use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\Environment;
 
-use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\Content\Markdown;
+
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
-use JoshBruce\SiteDynamic\Content\Markdown;
-
-use JoshBruce\SiteDynamic\Http\Responses\Document as DocumentResponse;
-use JoshBruce\SiteDynamic\Http\Responses\File as FileResponse;
-use JoshBruce\SiteDynamic\Http\Responses\InternalServerError as
-    InternalServerErrorResponse;
-use JoshBruce\SiteDynamic\Http\Responses\NotFound as NotFoundResponse;
+use JoshBruce\SiteDynamic\Documents\HtmlDefault;
+use JoshBruce\SiteDynamic\Documents\FullNav;
+use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -41,6 +41,8 @@ class RequestHandler implements RequestHandlerInterface
 
     private string $requestPath = '';
 
+    private string $contentPublic = '';
+
     public static function in(Environment $environment): RequestHandler
     {
         return new static($environment);
@@ -54,90 +56,119 @@ class RequestHandler implements RequestHandlerInterface
     {
         $this->request = $request;
 
-        if (
-            $this->environment()->isMissingVariables() or
-            $this->environment()->isMissingFolders()
+        $status  = 200;
+        $headers = [];
+
+        $isRequestingFile = $this->isRequestingFile();
+
+        $path = $this->contentPublic() . $this->requestPath();
+        if (! $isRequestingFile and ! $this->isRequestingXml()) {
+            $path = $this->contentPublic() .
+                $this->requestPath() .
+                $this->environment()->contentFilename();
+
+        }
+
+        $file = File::at($path, $this->contentPublic());
+
+        if ($file->notFound()) {
+            $status = 404;
+            $path   = $this->contentPublic() . '/error-404.md';
+
+        } else {
+            $headers = [
+                'Content-type' => $file->mimetype()
+            ];
+
+        }
+
+        if ($this->request()->getMethod() === 'HEAD') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers
+            );
+
+        } elseif (
+            $isRequestingFile and
+            $resource = @\fopen($file->path(), 'r') and
+            is_resource($resource)
         ) {
-            return InternalServerErrorResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-500.html',
-                    $this->environment()->publicRoot()
-                ),
-                $this->environment(),
-                $this->request()
-            )->respond();
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create($resource)
+            );
 
         }
 
-        $path = $this->fileUri();
+        $file = PlainTextFile::at($path, $this->contentPublic());
 
-        if (! file_exists($path) or ! is_file($path)) {
-            return NotFoundResponse::with(
-                PlainTextFile::at(
-                    $this->environment()->publicRoot() . '/error-404.md',
-                    $this->environment()->publicRoot()
-                ),
-                $this->environment(),
-                $this->request()
-            )->respond();
+        if ($file->template() === 'sitemap') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create(
+                    Sitemap::create($file, $this->environment())
+                )
+            );
         }
 
-        if (
-            $this->isRequestingContent() or
-            $this->isRequestingXml()
-        ) {
-            return DocumentResponse::with(
-                PlainTextFile::at($path, $this->environment()->publicRoot()),
-                $this->environment(),
-                $this->request()
-            )->respond();
+        $pageTitle   = $file->pageTitle();
+        $description = $file->description();
+        $body        = $this->body($file);
+
+        if ($file->template() === 'full-nav') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create(
+                    FullNav::create(
+                        $pageTitle,
+                        $description,
+                        Element::main($body),
+                        $this->environment()
+                    )
+                )
+            );
         }
 
-        return FileResponse::with(
-            File::at(
-                $path,
-                $this->environment()->publicRoot()
-            ),
-            $this->request()
-        )->respond();
+        return new PsrResponse(
+            status: $status,
+            headers: $headers,
+            body: Stream::create(
+                HtmlDefault::create(
+                    $pageTitle,
+                    $description,
+                    ($this->requestPath() === '/')
+                    ? Element::main($body)
+                    : Element::article($body)
+                        ->props("typeof BlogPosting", "vocab https://schema.org/"),
+                    $this->environment()
+                )
+            )
+        );
     }
 
-    private function isRequestingContent(): bool
+    private function body(PlainTextFile $file): string
     {
-        return ! $this->isRequestingFile();
+        $markdown = Markdown::processPartials(
+            $file->content(),
+            $file,
+            $this->environment()
+        );
+
+        return Markdown::markdownConverter()->convert($markdown);
+    }
+
+    private function isRequestingFile(): bool
+    {
+        return str_contains($this->requestPath(), '.') and
+            ! $this->isRequestingXml();
     }
 
     private function isRequestingXml(): bool
     {
         return str_ends_with($this->requestPath(), '.xml');
-    }
-
-    private function isRequestingFile(): bool
-    {
-        return $this->pathIsFile($this->requestPath());
-    }
-
-    private function pathIsFile(string $path): bool
-    {
-        $parts            = explode('/', $path);
-        $possibleFileName = array_pop($parts);
-
-        if (! str_contains($possibleFileName, '.')) {
-            return false;
-        }
-
-        // could be file
-        if (! str_starts_with($path, $this->environment()->publicRoot())) {
-            // need to add full path
-            $path = $this->environment()->publicRoot() . $path;
-        }
-
-        $f = File::at($path, $this->environment()->publicRoot());
-
-        if ($f->mimetype()->name() === 'text') {
-            return false;
-        }
-        return true;
     }
 
     private function requestPath(): string
@@ -148,22 +179,21 @@ class RequestHandler implements RequestHandlerInterface
         return $this->requestPath;
     }
 
-    private function fileUri(): string
+    private function request(): ServerRequestInterface
     {
-        $uri = $this->environment()->publicRoot() . $this->requestPath();
+        return $this->request;
+    }
 
-        return ($this->isRequestingFile())
-            ? $uri
-            : $uri . '/' . $_SERVER['CONTENT_FILENAME'];
+    private function contentPublic(): string
+    {
+        if (strlen($this->contentPublic) === 0) {
+            $this->contentPublic = $this->environment()->contentPublic();
+        }
+        return $this->contentPublic;
     }
 
     private function environment(): Environment
     {
         return $this->environment;
-    }
-
-    private function request(): ServerRequestInterface
-    {
-        return $this->request;
     }
 }

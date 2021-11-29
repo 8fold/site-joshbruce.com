@@ -29,6 +29,6 @@ class FullNav
             HtmlDefault::footer()
         )->build();
 
-        return HtmlDefault::canonicalUrls($html);
+        return HtmlDefault::canonicalUrls($html, $environemt);
     }
 }

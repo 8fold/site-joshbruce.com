@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 require __DIR__ . '/../../vendor/autoload.php';
 
@@ -21,7 +21,8 @@ Emitter::emit(
         Environment::with(
             __DIR__ . '/../../content/public',
             __DIR__,
-            'https://joshbruce.com'
+            'http://com.joshbruce-dynamic:8889',
+            'local'
         )
     )->handle(
         new ServerRequest(

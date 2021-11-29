@@ -2,92 +2,74 @@
 
 declare(strict_types=1);
 
+namespace JoshBruce\SiteDynamic\Tests;
+
+use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
+
 use Nyholm\Psr7\ServerRequest;
 
 use JoshBruce\SiteDynamic\Http\RequestHandler;
 
-use JoshBruce\SiteDynamic\FileSystem\Finder;
-use JoshBruce\SiteDynamic\Environment;
-
-afterEach(function () {
-    foreach ($_ENV as $var => $value) {
-        if ($var !== 'SHELL_VERBOSITY') {
-            unset($_ENV[$var]);
-            unset($_SERVER[$var]);
-        }
+final class RequestHandlerTest extends LiveContentTestCase
+{
+    /**
+     * @test
+     *
+     * @group live-content
+     * @group request-handler
+     * @group status-codes
+     */
+    public function test_ok_response(): void // phpcs:ignore
+    {
+        $this->assertSame(200, self::rootContentResponse()->getStatusCode());
     }
-});
 
-it('can find content', function () {
-    expect(
-        RequestHandler::in(
-            Environment::with(__DIR__ . '/../../../')
-        )->handle(
-            new ServerRequest(
-                method: 'GET',
-                uri: '/',
-                headers: [],
-                serverParams: $_SERVER
-            )
-        )->getStatusCode()
-    )->toBe(
-        200
-    );
+    /**
+     * @test
+     *
+     * @group live-content
+     * @group request-handler
+     * @group status-codes
+     */
+    public function test_not_found_response(): void // phpcs:ignore
+    {
+        $invalidRequest = new ServerRequest(
+            method: 'GET',
+            uri: self::invalidPath(),
+            headers: [],
+            serverParams: $_SERVER
+        );
 
-    $response = RequestHandler::in(
-        Environment::with(__DIR__ . '/../../../')
-    )->handle(
-        new ServerRequest(
+        $statusCode = RequestHandler::in(self::liveContentEnv())
+            ->handle($invalidRequest)->getStatusCode();
+
+        $this->assertSame(404, $statusCode);
+    }
+
+    /**
+     * @test
+     *
+     * @group live-content
+     * @group request-handler
+     * @group status-codes
+     */
+    public function test_file_response(): void // phpcs:ignore
+    {
+        $rootRequest = new ServerRequest(
             method: 'GET',
             uri: '/assets/css/main.min.css',
             headers: [],
             serverParams: $_SERVER
-        )
-    );
+        );
 
-    expect(
-        $response->getStatusCode()
-    )->toBe(
-        200
-    );
+        $headers = RequestHandler::in(self::liveContentEnv())
+            ->handle($rootRequest)->getHeaders();
 
-    expect(
-        $response->getHeaders()
-    )->toBe([
-        'Content-type' => ['text/css']
-    ]);
-})->group('request-handler', 'live-content', 'status-codes');
-
-it('can return internal server error', function () {
-    expect(
-        RequestHandler::in(
-            Environment::with(__DIR__ . '/../test-project-root/failing-env')
-        )->handle(
-            new ServerRequest(
-                method: 'GET',
-                uri: '/',
-                headers: [],
-                serverParams: $_SERVER
-            )
-        )->getStatusCode()
-    )->toBe(
-        500
-    );
-})->group('request-handler', 'test-content', 'status-codes');
-
-it('can handle not found', function () {
-    expect(
-        RequestHandler::in(
-            Environment::with(__DIR__ . '/../../../')
-        )->handle(
-            new ServerRequest(
-                method: 'GET',
-                uri: '/does/not/exist',
-                headers: [],
-                serverParams: $_SERVER
-            )
-        )->getStatusCode()
-    )->toBe(
-        404
-    );
-})->group('request-handler', 'live-content', 'status-codes');
+        $this->assertSame(
+            ['Content-type' =>
+                ['text/css']
+            ],
+            $headers
+        );
+    }
+}
