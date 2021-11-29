@@ -50,7 +50,7 @@ final class IndexTest extends LiveContentTestCase
      */
     public function index_is_not_displaying_errors(): void // phpcs:ignore
     {
-        foreach (self::ini_set_matches() as $match) {
+        foreach (self::iniSetMatches() as $match) {
             $this->assertFalse(str_contains($match, '1'));
         }
     }

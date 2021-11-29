@@ -6,24 +6,12 @@ namespace JoshBruce\SiteDynamic\Tests;
 
 use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
 
-use JoshBruce\SiteDynamic\Http\RequestHandler;
-
 use Nyholm\Psr7\ServerRequest;
 
-use JoshBruce\SiteDynamic\Environment;
+use JoshBruce\SiteDynamic\Http\RequestHandler;
 
 final class RequestHandlerTest extends LiveContentTestCase
 {
-    public static function liveContentEnv(): Environment
-    {
-        return Environment::with(
-            self::pathToContentPublic(),
-            __DIR__ . '/../../public',
-            'http://test.joshbruce',
-            'test'
-        );
-    }
-
     /**
      * @test
      *
@@ -33,17 +21,7 @@ final class RequestHandlerTest extends LiveContentTestCase
      */
     public function test_ok_response(): void // phpcs:ignore
     {
-        $rootRequest = new ServerRequest(
-            method: 'GET',
-            uri: '/',
-            headers: [],
-            serverParams: $_SERVER
-        );
-
-        $statusCode = RequestHandler::in(self::liveContentEnv())
-            ->handle($rootRequest)->getStatusCode();
-
-        $this->assertSame(200, $statusCode);
+        $this->assertSame(200, self::rootContentResponse()->getStatusCode());
     }
 
     /**
@@ -55,7 +33,7 @@ final class RequestHandlerTest extends LiveContentTestCase
      */
     public function test_not_found_response(): void // phpcs:ignore
     {
-        $rootRequest = new ServerRequest(
+        $invalidRequest = new ServerRequest(
             method: 'GET',
             uri: self::invalidPath(),
             headers: [],
@@ -63,7 +41,7 @@ final class RequestHandlerTest extends LiveContentTestCase
         );
 
         $statusCode = RequestHandler::in(self::liveContentEnv())
-            ->handle($rootRequest)->getStatusCode();
+            ->handle($invalidRequest)->getStatusCode();
 
         $this->assertSame(404, $statusCode);
     }

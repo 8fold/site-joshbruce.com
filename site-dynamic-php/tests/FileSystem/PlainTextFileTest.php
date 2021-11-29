@@ -61,18 +61,12 @@ final class PlainTextFileTest extends LiveContentTestCase
     {
         $this->assertSame(
             'This site | Web development | Josh Bruce’s personal site',
-            PlainTextFile::at(
-                self::pathToContentPublic() . '/web-development/this-site/content.md',
-                self::pathToContentPublic()
-            )->pageTitle()
+            self::thisSiteContentFile()->pageTitle()
         );
 
         $this->assertSame(
             'This site | Josh Bruce’s personal site',
-            PlainTextFile::at(
-                self::pathToContentPublic() . '/web-development/this-site/content.md',
-                self::pathToContentPublic()
-            )->socialTitle()
+            self::thisSiteContentFile()->socialTitle()
         );
     }
 
