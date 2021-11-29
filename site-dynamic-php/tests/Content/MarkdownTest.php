@@ -18,7 +18,7 @@ final class MarkdownTest extends LiveContentTestCase
      * @group markdown
      * @group live-content
      */
-    public function there_can_be_only_one(): void
+    public function there_can_be_only_one(): void // phpcs:ignore
     {
         $this->assertSame(
             Markdown::markdownConverter(),
@@ -32,7 +32,7 @@ final class MarkdownTest extends LiveContentTestCase
      * @group markdown
      * @group live-content
      */
-    public function can_render_date_block_partial(): void
+    public function can_render_date_block_partial(): void // phpcs:ignore
     {
         $file = self::rootContentFile();
 
@@ -54,7 +54,7 @@ final class MarkdownTest extends LiveContentTestCase
         );
 
         $time = $end - $start;
-        $ms   = $time/1e+6;
+        $ms   = $time / 1e+6;
 
         // TODO: Wonder if we could make this smaller
         $this->assertLessThan(16, $ms);

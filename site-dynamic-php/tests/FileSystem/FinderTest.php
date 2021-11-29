@@ -18,7 +18,7 @@ final class FinderTest extends LiveContentTestCase
      * @group finder
      * @group live-content
      */
-    public function published_content_count(): void
+    public function published_content_count(): void // phpcs:ignore
     {
         $this->assertCount(
             42,
@@ -39,7 +39,7 @@ final class FinderTest extends LiveContentTestCase
      * @group finder
      * @group live-content
      */
-    public function draft_content_count(): void
+    public function draft_content_count(): void // phpcs:ignore
     {
         $this->assertCount(
             9,

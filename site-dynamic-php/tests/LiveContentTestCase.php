@@ -18,13 +18,13 @@ abstract class LiveContentTestCase extends TestCase
         return __DIR__ . '/../../content/public';
     }
 
-	public static function rootContentFile(): PlainTextFile
-	{
-		return PlainTextFile::at(
-			self::pathToContentPublic() . '/content.md',
-			self::pathToContentPublic(),
-		);
-	}
+    public static function rootContentFile(): PlainTextFile
+    {
+        return PlainTextFile::at(
+            self::pathToContentPublic() . '/content.md',
+            self::pathToContentPublic(),
+        );
+    }
 
     public static function pathToIndexRelative(): string
     {

@@ -22,7 +22,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     /**
      * @test
      *
-	 * @group plain-text-file
+     * @group plain-text-file
      * @group live-content
      */
     public function template(): void
@@ -40,7 +40,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     /**
      * @test
      *
-	 * @group plain-text-file
+     * @group plain-text-file
      * @group live-content
      */
     public function title(): void
@@ -54,10 +54,10 @@ final class PlainTextFileTest extends LiveContentTestCase
     /**
      * @test
      *
-	 * @group plain-text-file
+     * @group plain-text-file
      * @group live-content
      */
-    public function page_social_titles(): void
+    public function page_social_titles(): void // phpcs:ignore
     {
         $this->assertSame(
             'This site | Web development | Josh Bruce’s personal site',
@@ -79,7 +79,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     /**
      * @test
      *
-	 * @group plain-text-file
+     * @group plain-text-file
      * @group live-content
      */
     public function dates(): void
@@ -100,7 +100,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     /**
      * @test
      *
-	 * @group plain-text-file
+     * @group plain-text-file
      * @group live-content
      */
     public function original(): void

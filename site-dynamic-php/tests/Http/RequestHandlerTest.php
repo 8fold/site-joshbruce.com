@@ -31,7 +31,7 @@ final class RequestHandlerTest extends LiveContentTestCase
      * @group request-handler
      * @group status-codes
      */
-    public function test_ok_response(): void
+    public function test_ok_response(): void // phpcs:ignore
     {
         $rootRequest = new ServerRequest(
             method: 'GET',
@@ -53,7 +53,7 @@ final class RequestHandlerTest extends LiveContentTestCase
      * @group request-handler
      * @group status-codes
      */
-    public function test_not_found_response(): void
+    public function test_not_found_response(): void // phpcs:ignore
     {
         $rootRequest = new ServerRequest(
             method: 'GET',
@@ -75,7 +75,7 @@ final class RequestHandlerTest extends LiveContentTestCase
      * @group request-handler
      * @group status-codes
      */
-    public function test_file_response(): void
+    public function test_file_response(): void // phpcs:ignore
     {
         $rootRequest = new ServerRequest(
             method: 'GET',

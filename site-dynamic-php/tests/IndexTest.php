@@ -13,7 +13,7 @@ final class IndexTest extends LiveContentTestCase
         return file_get_contents(self::pathToIndex());
     }
 
-    public static function ini_set_matches(): array
+    public static function iniSetMatches(): array
     {
         $matches = [];
         preg_match_all('/ini_set\(.*\);/', self::indexFileContents(), $matches);
@@ -26,7 +26,7 @@ final class IndexTest extends LiveContentTestCase
      * @group validate-setup
      * @group live-content
      */
-    public function index_exists(): void
+    public function index_exists(): void // phpcs:ignore
     {
         $this->assertIsString(self::pathToIndex());
     }
@@ -37,9 +37,9 @@ final class IndexTest extends LiveContentTestCase
      * @group validate-setup
      * @group live-content
      */
-    public function index_has_ini_set(): void
+    public function index_has_ini_set(): void // phpcs:ignore
     {
-        $this->assertCount(2, self::ini_set_matches());
+        $this->assertCount(2, self::iniSetMatches());
     }
 
     /**
@@ -48,7 +48,7 @@ final class IndexTest extends LiveContentTestCase
      * @group validate-setup
      * @group live-content
      */
-    public function index_is_not_displaying_errors(): void
+    public function index_is_not_displaying_errors(): void // phpcs:ignore
     {
         foreach (self::ini_set_matches() as $match) {
             $this->assertFalse(str_contains($match, '1'));
