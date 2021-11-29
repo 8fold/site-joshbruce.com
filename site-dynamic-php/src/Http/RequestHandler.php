@@ -115,13 +115,7 @@ class RequestHandler implements RequestHandlerInterface
 
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
-        $markdown    = Markdown::processPartials(
-            $file->content(),
-            $file,
-            $this->environment()->contentFilename()
-        );
-
-        $body = Markdown::markdownConverter()->convert($markdown);
+        $body        = $this->body($file);
 
         if ($file->template() === 'full-nav') {
             return new PsrResponse(
@@ -153,6 +147,17 @@ class RequestHandler implements RequestHandlerInterface
                 )
             )
         );
+    }
+
+    private function body(PlainTextFile $file): string
+    {
+        $markdown = Markdown::processPartials(
+            $file->content(),
+            $file,
+            $this->environment()->contentFilename()
+        );
+
+        return Markdown::markdownConverter()->convert($markdown);
     }
 
     private function isRequestingFile(): bool

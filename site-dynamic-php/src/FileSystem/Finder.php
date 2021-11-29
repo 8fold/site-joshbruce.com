@@ -17,8 +17,6 @@ class Finder implements Countable, IteratorAggregate
 {
     private const DRAFT_INDICATOR = '_';
 
-    private const REDIRECT_INDICATOR = '~';
-
     private SymfonyFinder $symFinder;
 
     public static function init(
