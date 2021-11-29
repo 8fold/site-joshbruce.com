@@ -8,7 +8,7 @@ use SplFileInfo;
 
 class Environment
 {
-    private const CONTENT_FILENAME = 'content.md';
+    public const CONTENT_FILENAME = 'content.md';
 
     private const FILE_SEPARATOR = '/';
 

@@ -44,7 +44,7 @@ class Finder implements Countable, IteratorAggregate
     {
         $this->symFinder = clone $this->getIterator()
             ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
@@ -55,7 +55,7 @@ class Finder implements Countable, IteratorAggregate
             ->filter(fn($f) => $this->isPublished($f))
             ->name($this->contentFilename())
             ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
@@ -65,17 +65,7 @@ class Finder implements Countable, IteratorAggregate
         $this->symFinder = clone $this->getIterator()
             ->filter(fn($f) => $this->isDraft($f))
             ->files()
-            ->in($this->publicRoot);
-
-        return $this;
-    }
-
-    public function redirectedContent(): Finder
-    {
-        $this->symFinder = clone $this->getIterator()
-            ->filter(fn($f) => $this->isRedirected($f))
-            ->files()
-            ->in($this->publicRoot);
+            ->in($this->contentPublic);
 
         return $this;
     }
@@ -88,11 +78,6 @@ class Finder implements Countable, IteratorAggregate
     private function isPublished(SplFileInfo $fileInfo): bool
     {
         return ! $this->isDraft($fileInfo);
-    }
-
-    private function isRedirected(SplFileInfo $fileInfo): bool
-    {
-        return str_contains($fileInfo->getPathname(), self::REDIRECT_INDICATOR);
     }
 
     public function isDraft(SplFileInfo $fileInfo): bool
