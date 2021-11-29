@@ -17,7 +17,7 @@ final class RequestHandlerTest extends LiveContentTestCase
     public static function liveContentEnv(): Environment
     {
         return Environment::with(
-            __DIR__ . '/../../../content/public',
+            self::pathToContentPublic(),
             __DIR__ . '/../../public',
             'http://test.joshbruce',
             'test'
@@ -43,7 +43,7 @@ final class RequestHandlerTest extends LiveContentTestCase
         $statusCode = RequestHandler::in(self::liveContentEnv())
             ->handle($rootRequest)->getStatusCode();
 
-        $this->assertSame($statusCode, 200);
+        $this->assertSame(200, $statusCode);
     }
 
     /**
@@ -65,7 +65,7 @@ final class RequestHandlerTest extends LiveContentTestCase
         $statusCode = RequestHandler::in(self::liveContentEnv())
             ->handle($rootRequest)->getStatusCode();
 
-        $this->assertSame($statusCode, 404);
+        $this->assertSame(404, $statusCode);
     }
 
     /**
@@ -88,10 +88,10 @@ final class RequestHandlerTest extends LiveContentTestCase
             ->handle($rootRequest)->getHeaders();
 
         $this->assertSame(
-            $headers,
             ['Content-type' =>
                 ['text/css']
-            ]
+            ],
+            $headers
         );
     }
 }

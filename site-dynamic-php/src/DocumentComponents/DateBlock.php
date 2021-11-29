@@ -55,6 +55,7 @@ class DateBlock
             return '';
         }
 
+        // TODO: Should be a way to abstract this - see PlainTextFile
         if ($date = DateTime::createFromFormat('Ymd', strval($date))) {
             $time = Element::time($date->format('M j, Y'))
                 ->props(

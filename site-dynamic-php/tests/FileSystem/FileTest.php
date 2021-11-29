@@ -12,19 +12,11 @@ use SplFileInfo;
 
 final class FileTest extends LiveContentTestCase
 {
-	public static function rootContentFile(): File
-	{
-		return File::at(
-			__DIR__ . '/../../../content/public/content.md',
-			__DIR__ . '/../../../content/public',
-		);
-	}
-
 	public static function mainCssFile(): File
 	{
 		return File::at(
-			__DIR__ . '/../../../content/public/assets/css/main.min.css',
-			__DIR__ . '/../../../content/public',
+			self::pathToContentPublic() . '/assets/css/main.min.css',
+			self::pathToContentPublic(),
 		);
 	}
 
@@ -54,8 +46,8 @@ final class FileTest extends LiveContentTestCase
     public function canonical_url(): void
     {
 		$this->assertSame(
-			self::rootContentFile()->canonicalUrl('http://test.joshbruce'),
-			'http://test.joshbruce'
+			'http://test.joshbruce',
+			self::rootContentFile()->canonicalUrl('http://test.joshbruce')
 		);
     }
 
@@ -67,9 +59,9 @@ final class FileTest extends LiveContentTestCase
      */
     public function mimetype(): void
     {
-		$this->assertSame(self::rootContentFile()->mimetype(), 'text/html');
+		$this->assertSame('text/html', self::rootContentFile()->mimetype());
 
-		$this->assertSame(self::mainCssFile()->mimetype(), 'text/css');
+		$this->assertSame('text/css', self::mainCssFile()->mimetype());
     }
 
     /**
@@ -83,18 +75,18 @@ final class FileTest extends LiveContentTestCase
 		$this->assertSame(
 			self::mainCssFile()->path(),
 			(new SplFileInfo(
-				__DIR__ . '/../../../content/public/assets/css/main.min.css'
+				self::pathToContentPublic() . '/assets/css/main.min.css'
 			))->getRealpath()
 		);
 
 		$this->assertSame(
-			self::mainCssFile()->path(full: false),
-			'/assets/css/main.min.css'
+			'/assets/css/main.min.css',
+			self::mainCssFile()->path(full: false)
 		);
 
 		$this->assertSame(
-			self::mainCssFile()->path(full: false, omitFilename: true),
-			'/assets/css'
+			'/assets/css',
+			self::mainCssFile()->path(full: false, omitFilename: true)
 		);
     }
 }
