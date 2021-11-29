@@ -10,7 +10,9 @@ Security is always the highest priority within the applicable scope of the produ
 
 ## Overall goals (philosophy and values)
 
-There are a lot of philosphical things tied in to the way we strive to do software development. Some you are most likely familiar with, others maybe not so much.
+There are a lot of philosophical things tied in to the way we strive to do software development. Some you are most likely familiar with, others maybe not so much.
+
+**`Main` is always deployable:** This can also be thought of as [trunk-based development](https://trunkbaseddevelopment.com); however, the named approach has a lot more detail that can sometimes lose the underlying principle. `Main` is always deployable, which means at any given point in time, a release from the `main` branch should be possible, if it's not, it should be made deployable as soon as possible.
 
 **You ain't gonna need it (YAGNI):** If someone hasn't asked for it, someone's not paying for it, and it's not needed to finish what has been asked and paid for, then don't develop that thing. (There are some extreme corner cases here, but they are extreme and rare.)
 

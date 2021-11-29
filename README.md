@@ -1,55 +1,34 @@
-https://www.conventionalcommits.org/en/v1.0.0/
-https://chris.beams.io/posts/git-commit/
+The project is broken into multiple areas, each with its own read me.
 
-The code found here is able to generate the same (or really close to it) site using multiple styles. Each style is held inside a directory; the names start with "Site." Each style has an associated read me file (listed in order of creation):
-
-1. [Dynamic PHP: single-page, server-side](https://github.com/8fold/site-joshbruce.com/blob/main/src/SiteDynamic)
-2. [Static HTML](https://github.com/8fold/site-joshbruce.com/blob/main/src/SiteStatic)
-
-The content is also available in a [separate repository](https://github.com/joshbruce/content-joshbruce.com) before it gets published.
+1. [content](https://github.com/8fold/site-joshbruce.com/tree/main/content): Content for [the site](https://joshbruce.com) lives.
+2. [site-dynamic-php](https://github.com/8fold/site-joshbruce.com/tree/main/site-dynamic-php): Code that runs the PHP-based dynamic site lives; this is also used to render the static html variation of the site.
+3. [site-local-php](https://github.com/8fold/site-joshbruce.com/tree/main/site-local-php): Code for running the site locally lives; it mainly uses the code from the PHP-based dynamic site.
+4. [site-static-html](https://github.com/8fold/site-joshbruce.com/tree/main/site-static-html): Code for generating the static html version of the site; also the default target for the rendered files.
 
 ## Running locally
 
-1. Clone the repository.
-2. Start a PHP server environment; recommend:
+1. Fork repository,
+2. Clone the fork,
+3. Start PHP server; recommend:
 	- [MAMP](https://www.mamp.info/en/mamp-pro/windows/),
 	- [XAMPP](https://www.apachefriends.org/download.html), or
 	- custom build.
-3. Point the locally hosted domain to the `site-dynamic-php` directory.
+4. Point local host domain to `/site-local-php/public`.
+5. Update `/site-local-php/public/index.php` with the name of your locally hosted domain (similar to updating a `.env` file, if you're familiar).
 
-When you go to the locally hosted URL, it should throw a 500 server error. This is because you will need two things: the content folder and a `.env` file.
+## Contributing
 
-Let's start with the content folder; using the content for joshbruce.com:
-
-1. Clone the [content repository](https://github.com/joshbruce/content-joshbruce.com).
-	- It's recommended this be outside the site project folder.
-
-That's pretty much it for that piece. Navigate back to the root of the site project and crate a `.env` file with the following parameters:
+Please run
 
 ```bash
-APP_ENV=local
-CONTENT_UP=#
-CONTENT_FOLDER=/path/to/inner/content/folder
+composer run prod
 ```
 
-Let's presume the following folder structure on your machine:
+before submitting a pull request.
 
-```bash
-.
-└── Desktop/
-	├── site-joshbruce.com
-	└── content-joshbruce.com
-```
+Please try and follow the commit message suggestions from [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and [Chris Beams](https://chris.beams.io/posts/git-commit/).
 
-Your `.env` file would look like this:
-
-```bash
-APP_ENV=local
-CONTENT_UP=1
-CONTENT_FOLDER=/content-joshbruce.com/content
-```
-
-This `.env` file tells us to go up one directory; to `Desktop` in this example. Then, from there, point to `/content-joshbruce.com/content`, which is where our text-based content lives.
+For more details, read the [contributing file](https://github.com/8fold/site-joshbruce.com/blob/main/.github/CONTRIBUTING.md).
 
 ## History
 
@@ -96,7 +75,7 @@ This frees me up a great deal to move about the cabin as I see fit.
 
 ### Analysis
 
-General performance statistics and experiments can be found on [joshbruce.com](/web-development/site-stats/).
+General performance statistics and experiments can be found on [joshbruce.com](/web-development/this-site/site-stats/).
 
 ## Testing can't push to main
 
