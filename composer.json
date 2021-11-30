@@ -54,12 +54,18 @@
   "scripts": {
     "prod": "@production",
     "production": [
+      "composer dumpautoload -o",
       "@style",
       "@stan",
       "@test"
     ],
+    "deploy": [
+      "@production",
+      "@optimize-autoload"
+    ],
     "style": "./vendor/bin/phpcs --standard=phpcs.xml",
     "stan": "./vendor/bin/phpstan analyze",
-    "test": "./vendor/bin/phpunit"
+    "test": "./vendor/bin/phpunit",
+    "optimize-autoload": "composer dumpautoload --no-dev --classmap-authoritative"
   }
 }
