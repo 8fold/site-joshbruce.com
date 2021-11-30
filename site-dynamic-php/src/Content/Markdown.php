@@ -34,9 +34,9 @@ class Markdown
     {
         if (! isset(self::$markdownConverter)) {
             self::$markdownConverter = MarkdownConverter::create()
+                ->withConfig(['html_input' => 'allow'])
                 ->minified()
                 ->smartPunctuation()
-                ->withConfig(['html_input' => 'allow'])
                 ->descriptionLists()
                 ->attributes()
                 ->abbreviations()
@@ -84,6 +84,6 @@ class Markdown
                 );
             }
         }
-        return self::markdownConverter()->convert($body);
+        return $body;
     }
 }
