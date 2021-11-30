@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\SiteDynamic\Tests;
+namespace JoshBruce\SiteDynamic\Tests\FileSystem;
 
 use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
 
@@ -21,13 +21,13 @@ final class FinderTest extends LiveContentTestCase
     public function published_content_count(): void // phpcs:ignore
     {
         $this->assertCount(
-            42,
+            41,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()
         );
 
         $this->assertSame(
-            42,
+            41,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()->count()
         );
