@@ -232,6 +232,26 @@ Using this optimized, authoritative autoloader has 590 classes.
 
 Based on these numbers I'm going to add two new scripts to the `composer.json` file. The first to optimize the autoloader by itself and the other to run the complete set of scripts. I will call it "deploy," which will modify my deployment sequence a bit.
 
+Of course, now the output is showing what's really taking the bulk of the time; rendering the markdown to HTML.
+
+Somewhere around 50,000,000 is spent beyond my ability to change—the [Commonmark](https://commonmark.thephpleague.com) package I depend on. That's not a criticism on Commonmark, I'm using a lot of packages and I'm pretty impressed. With that said, I decided to split off a converter specifically for titles.
+
+Now I'm going to continue with the checklist from Symfony. Specifically setting the [realpath cache](https://symfony.com/doc/current/performance.html#configure-the-php-realpath-cache). I'm hoping I can do this from within the `index.php` file and not editing the actual `php.ini` file. I'm pretty sure I could do it on my server, I'm just not sure I actually want to. Symfony suggests doing this because specifically when there is a lot of relative- to real-path conversions. Ever since I switched to a relative path-based solution, there's a lot of that going on.
+
+Here are the initial setting:
+
+```bash
+opcache.enable=1
+opcache.enable_cli=1
+opcache.memory_consumption=256
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=10000
+opcache.revalidate_freq=2
+opcache.fast_shutdown=0
+```
+
+According to the admin panel in [MAMP Pro](https://www.mamp.info/en/mamp-pro/windows/) I'm barely hitting these marks; as in nowhere close.
+
 ### November 15th, 2021
 
 Waiting for response: ~50ms. (no opcache or CDN)
