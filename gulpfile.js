@@ -20,9 +20,10 @@ gulp.task("default", (done) => {
 gulp.task("sass", (done) => {
   const pluginsProcess = [discardComments(), autoprefixer()];
   const pluginsMinify  = [csso({ forceMediaMerge: false })];
+  const src            = "./content/assets/sass/main.scss";
   const dest           = "./content/public/assets/css";
   gulp
-    .src('./content/assets/sass/main.scss')
+    .src(src)
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({ outputStyle: "expanded" })

@@ -48,7 +48,7 @@ My annual income is greater than my overall portfolio value. My total lifestyle 
 
 I have a high risk tolerance and a high risk capacity. My portfolio is 100 percent stocks.
 
-When I start hitting those Coast FI numbers in my [investment policy](/finances/investment-policy), my risk capacity and portfolio allocation will begin to change.
+When I start hitting those Coast FI numbers in my [investment policy](/finances/investment-policy/), my risk capacity and portfolio allocation will begin to change.
 
 I feel like I’m starting late and playing a bit of catch-up. However, I can’t let that feeling cause me to make un-calculated and unnecessary risks.
 
@@ -85,7 +85,7 @@ Like I said, it was going great and the ride was pretty stable. I also really li
 
 ## Coast FI pies
 
-One of the first things we created was the Coast FI stack in the [investment policy](/finances/investment-policy). The Coast FI stack creates 5 milestones; one for each Coast FI number. I created what I believe will be the portfolio I’ll want by the time I reach FI. It is still stock-driven and uses the same two funds as the base. From an historical perspective it seems to have the performance characteristics I’m looking for:
+One of the first things we created was the Coast FI stack in the [investment policy](/finances/investment-policy/). The Coast FI stack creates 5 milestones; one for each Coast FI number. I created what I believe will be the portfolio I’ll want by the time I reach FI. It is still stock-driven and uses the same two funds as the base. From an historical perspective it seems to have the performance characteristics I’m looking for:
 
 - Sharpe and Sortino ratios greater than 1.
 - Depending on which dataset I use the worst drawdown is 6–13 percent and that lasts roughly 6 years.

@@ -11,11 +11,11 @@ coming-soon:
 
 Here's something I never thought I'd say:
 
-> I've adjusted my spreadsheet to allow me to track my finances based on [my investment policy](/finances/investment-policy) and easily share it here in the form of an image.
+> I've adjusted my spreadsheet to allow me to track my finances based on [my investment policy](/finances/investment-policy/) and easily share it here in the form of an image.
 
-Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck) is the only one that's lasted longer than a month.
+Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck/) is the only one that's lasted longer than a month.
 
-I've just finished listening to The Simple Path to Wealth by J.L. Collins and I've made it up to Unit 7 of [Choose [.FI](financial independence)'s](/reviews-and-summaries/choose-fi) Financial Independence 101 course.
+I've just finished listening to The Simple Path to Wealth by J.L. Collins and I've made it up to Unit 7 of [Choose [.FI](financial independence)'s](/reviews-and-summaries/choose-fi/) Financial Independence 101 course.
 
 I'm 41 and will be 42 in July, this is year one.
 
@@ -33,11 +33,11 @@ For example, as of me writing this, I had a pretty hefty balance on my credit ca
 
 When this paycheck landed I had a cash reserve of about four months of housing and food. My target right now is to basically have enough for the current month plus one-half or all of the next month. This will grow back up over time and I feel comfortable taking the risk in order to get the dollars into “the market” earlier.
 
-The cash reserve is currently held in these certificate-like vehicles at my credit union. I have one for each month of the year and they’re part of my more [time-oriented](/finances/time-oriented-budgeting) approach. There’s usually a penalty if I withdraw early. So, for now, this transition to the more lean approach will just happen naturally.
+The cash reserve is currently held in these certificate-like vehicles at my credit union. I have one for each month of the year and they’re part of my more [time-oriented](/finances/time-oriented-budgeting/) approach. There’s usually a penalty if I withdraw early. So, for now, this transition to the more lean approach will just happen naturally.
 
 Given this is the first year, I'm wanting to keep it simple and straightforward; minimal moving parts.
 
-I’m still learning how taxes work with the different types of investment accounts I now have. The [Choose FI Financial Independence 101 course](/reviews-and-summaries/choose-fi) also taught me something new; how progressive taxes work. I didn’t know that all your money wasn’t taxed at your marginal tax rate; the tax rate you qualify for based on income. Instead, there’s a thing called the effective tax rate.
+I’m still learning how taxes work with the different types of investment accounts I now have. The [Choose FI Financial Independence 101 course](/reviews-and-summaries/choose-fi/) also taught me something new; how progressive taxes work. I didn’t know that all your money wasn’t taxed at your marginal tax rate; the tax rate you qualify for based on income. Instead, there’s a thing called the effective tax rate.
 
 I make roughly 100,000 [.USD](United States Dollars) annually at the moment. This means:
 
