@@ -101,19 +101,22 @@ Here you go (basic [VueJS](https://vuejs.org/v2/guide/components.html) without V
 
 <details>
 	<summary>HTML (iteration 1)</summary>
-<pre><code>&lt;button
+
+```html
+<button
   style="
     padding: 20px;
     border: none;
     border-radius: 5px;
     background-color: #50e5db;
-	cursor: pointer;"
+    cursor: pointer;"
   onclick="
     var targetValue = parseInt(this.innerHTML) + 1;
     this.innerHTML = `${targetValue}`;">
 0
-&lt;/button>
-</code></pre>
+</button>
+```
+
 </details>
 </div>
 
@@ -128,7 +131,7 @@ And, about a decade or so ago, this would have been the only way to do it. But t
 	border: none;
 	border-radius: 5px;
 	background-color: #50e5db;
-	cursor: pointer;"
+    cursor: pointer;"
   onclick="
 	var targetValue = parseInt(this.innerHTML) + 1;
 	this.innerHTML = `${targetValue}`;">
@@ -140,7 +143,7 @@ And, about a decade or so ago, this would have been the only way to do it. But t
 	border: none;
 	border-radius: 5px;
 	background-color: #50e5db;
-	cursor: pointer;"
+    cursor: pointer;"
   onclick="
 	var targetValue = parseInt(this.innerHTML) + 1;
 	this.innerHTML = `${targetValue}`;">
@@ -152,7 +155,7 @@ And, about a decade or so ago, this would have been the only way to do it. But t
 	border: none;
 	border-radius: 5px;
 	background-color: #50e5db;
-	cursor: pointer;"
+    cursor: pointer;"
   onclick="
 	var targetValue = parseInt(this.innerHTML) + 1;
 	this.innerHTML = `${targetValue}`;">
@@ -164,7 +167,7 @@ And, about a decade or so ago, this would have been the only way to do it. But t
 	border: none;
 	border-radius: 5px;
 	background-color: #50e5db;
-	cursor: pointer;"
+    cursor: pointer;"
   onclick="
 	var targetValue = parseInt(this.innerHTML) + 1;
 	this.innerHTML = `${targetValue}`;">
@@ -173,52 +176,58 @@ And, about a decade or so ago, this would have been the only way to do it. But t
 
 <details>
 	<summary>HTML (iteration 2)</summary>
-<pre><code>&lt;button
+
+```html
+<button
   style="
     padding: 20px;
     border: none;
     border-radius: 5px;
     background-color: #50e5db;
-	cursor: pointer;
+    cursor: pointer;"
   onclick="
     var targetValue = parseInt(this.innerHTML) + 1;
     this.innerHTML = `${targetValue}`;">
 0
-&lt;/button>
-&lt;button
+</button>
+<button
   style="
     padding: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #50e5db"
+    background-color: #50e5db;
+    cursor: pointer;"
   onclick="
     var targetValue = parseInt(this.innerHTML) + 1;
     this.innerHTML = `${targetValue}`;">
 0
-&lt;/button>
-&lt;button
+</button>
+<button
   style="
     padding: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #50e5db"
+    background-color: #50e5db;
+    cursor: pointer;"
   onclick="
     var targetValue = parseInt(this.innerHTML) + 1;
     this.innerHTML = `${targetValue}`;">
 0
-&lt;/button>
-&lt;button
+</button>
+<button
   style="
     padding: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #50e5db"
+    background-color: #50e5db;
+    cursor: pointer;"
   onclick="
     var targetValue = parseInt(this.innerHTML) + 1;
     this.innerHTML = `${targetValue}`;">
 0
-&lt;/button>
-</code></pre>
+</button>
+```
+
 </details>
 </div>
 
@@ -271,31 +280,40 @@ function increment1(button) {
 
 <details>
 	<summary>HTML (iteration 3)</summary>
-<pre><code>&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-</code></pre>
+
+```html
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+```
+
 </details>
 
 <details>
 <summary>CSS (iteration 3)</summary>
-<pre><code>button {
+
+```css
+button {
   padding: 20px;
   border: none;
   border-radius: 5px;
   background-color: #50e5db;
 }
-</code></pre>
+```
+
 </details>
 
 <details>
 <summary>JavaScript (iteration 3)</summary>
-<pre><code>function increment(button) {
+
+```javascript
+function increment(button) {
   const targetValue = parseInt(button.innerHTML) + 1;
   button.innerHTML = targetValue;
 }
-</code></pre>
+```
+
 </details>
 </div>
 
@@ -343,41 +361,52 @@ function increment2(button) {
 
 <details>
 	<summary>HTML (iteration 4)</summary>
-<pre><code>&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-&lt;button onclick="increment(this)">0&lt;/button>
-&lt;p id="scoreboard">0&lt;/p>
-</code></pre>
+
+```html
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+<button onclick="increment(this)">0</button>
+<p id="scoreboard">0</p>
+```
+
 </details>
 
 <details>
 <summary>CSS (iteration 4)</summary>
-<pre><code>button {
+
+```css
+button {
   padding: 20px;
   border: none;
   border-radius: 5px;
   background-color: #50e5db;
 }
+
 p {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2rem;
 }
-</code></pre>
+```
+
 </details>
 
 <details>
 <summary>JavaScript (iteration 4)</summary>
-<pre><code>function increment(button) {
+
+```javascript
+function increment(button) {
   const targetValue = parseInt(button.innerHTML) + 1;
   const scoreboard  = document.getElementById('scoreboard-4');
   const scoreboardCurrentValue = parseInt(scoreboard.innerHTML);
-  button.value = targetValue;
+
+  button.value         = targetValue;
   button.innerHTML     = `${targetValue}`;
   scoreboard.innerHTML = scoreboardCurrentValue + 1;
 }
-</code></pre>
+```
+
 </details>
 </div>
 
@@ -458,45 +487,58 @@ Array.from(buttons).forEach(function (button) {
 </script>
 <details>
 	<summary>HTML (iteration 5)</summary>
-<pre><code>&lt;button>0&lt;/button>
-&lt;button>0&lt;/button>
-&lt;button>0&lt;/button>
-&lt;button>0&lt;/button>
-&lt;p id="scoreboard">0&lt;/p>
-</code></pre>
+
+```html
+<button>0</button>
+<button>0</button>
+<button>0</button>
+<button>0</button>
+<p id="scoreboard">0</p>
+```
+
 </details>
 
 <details>
 <summary>CSS (iteration 5)</summary>
-<pre><code>button {
+
+```css
+button {
   padding: 20px;
   border: none;
   border-radius: 5px;
   background-color: #50e5db;
   cursor: pointer;
 }
+
 p {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2rem;
 }
-</code></pre>
+```
+
 </details>
 
 <details>
 <summary>JavaScript (iteration 5)</summary>
-<pre><code>var buttons = document
+
+```javascript
+var buttons = document
   .getElementsByTagName('button');
+
 Array.from(buttons).forEach(function (button) {
   button.addEventListener('click', function() {
     const targetValue = parseInt(button.innerHTML) + 1;
     const scoreboard = document.getElementById('scoreboard-5');
     const scoreboardCurrentValue = parseInt(scoreboard.innerHTML);
+
     button.value = targetValue;
     button.innerHTML = `${targetValue}`;
     scoreboard.innerHTML = scoreboardCurrentValue + 1;
   });
-});</code></pre>
+});
+```
+
 </details>
 </div>
 
@@ -561,50 +603,64 @@ Array.from(buttons).forEach(function (button) {
 </script>
 <details>
 	<summary>HTML (iteration 6)</summary>
-<pre><code>&lt;div id="cont">&lt;/div>
-&lt;p id="scoreboard-6">0&lt;/p>
-</code></pre>
+
+```html
+<div id="cont"></div>
+<p id="scoreboard-6">0</p>
+```
+
 </details>
 
 <details>
 <summary>CSS (iteration 6)</summary>
-<pre><code>button {
+
+```css
+button {
   padding: 20px;
   border: none;
   border-radius: 5px;
   background-color: #50e5db;
   cursor: pointer;
 }
+
 p {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2rem;
 }
-</code></pre>
+```
+
 </details>
 
 <details>
 <summary>JavaScript (iteration 6)</summary>
-<pre><code>var container = document.getElementById('cont');
+
+```javascript
+var container = document.getElementById('cont');
+
 for (var i = 0; i < 4; i++) {
   let button = document.createElement('button');
   button.innerHTML = 0;
   container.appendChild(button);
 }
+
 var buttons = document.getElementsByTagName('button');
+
 Array.from(buttons).forEach(function (button) {
   button.addEventListener('click', function() {
     const targetValue = parseInt(button.innerHTML) + 1;
     const scoreboard = document.getElementById('scoreboard-6');
     const scoreboardCurrentValue = parseInt(scoreboard.innerHTML);
+
     button.value = targetValue;
     button.innerHTML = `${targetValue}`;
     scoreboard.innerHTML = scoreboardCurrentValue + 1;
   });
-});</code></pre>
+});
+```
+
 </details>
 </div>
-<!-- <script async src="https://jsfiddle.net/joshbruce/epe61q1t/embed/"></script> -->
 
 About 200 more characters (2 more kilobytes, for a total of [.7kb](seven kilobytes)) and no new functionality.
 

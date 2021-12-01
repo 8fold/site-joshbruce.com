@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\DocumentComponents;
 
+use JoshBruce\SiteDynamic\Environment;
+
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
@@ -13,8 +15,10 @@ class FullNavContent
 {
     public static function create(
         PlainTextFile $file,
-        string $contentFilename
+        Environment $environment
     ): string {
+        $contentFilename = $environment->contentFilename();
+
         $finder = Finder::init($file->root(), $contentFilename)
             ->publishedContent()->getIterator()->depth('>= 1');
 

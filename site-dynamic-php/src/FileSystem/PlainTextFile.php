@@ -74,7 +74,7 @@ class PlainTextFile
         if (
             array_key_exists('title', $frontMatter) and
             $title = $frontMatter['title'] and
-            is_string($title)
+            $title = strval($title)
         ) {
             return htmlspecialchars(
                 strip_tags(

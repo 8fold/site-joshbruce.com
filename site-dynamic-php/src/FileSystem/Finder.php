@@ -11,7 +11,7 @@ use SplFileInfo;
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 
 /**
- * @implements IteratorAggregate<SymfonyFinder>
+ * @implements IteratorAggregate<string, IteratorAggregate>
  */
 class Finder implements Countable, IteratorAggregate
 {

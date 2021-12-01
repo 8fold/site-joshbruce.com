@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\SiteDynamic\Tests;
+namespace JoshBruce\SiteDynamic\Tests\Http;
 
 use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
 
