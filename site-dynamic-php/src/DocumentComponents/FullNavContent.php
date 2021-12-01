@@ -50,6 +50,10 @@ class FullNavContent
                 $path
             );
 
+            if (! str_ends_with($href, '/')) {
+                $href = $href . '/';
+            }
+
             // Building a markdown list using separator count to determine depth.
             $spacesNeeded = (substr_count($path, '/') * 4) - 8;
             $spaces = str_repeat(' ', $spacesNeeded);
