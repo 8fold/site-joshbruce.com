@@ -5,12 +5,12 @@ require __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 
-use JoshBruce\Site\SiteDynamic\Generator as DynamicGenerator;
-use JoshBruce\Site\SiteStatic\Generator as StaticGenerator;
+// use JoshBruce\Site\SiteDynamic\Generator as DynamicGenerator;
+use JoshBruce\SiteStatic\Generator as StaticGenerator;
 
 $application = new Application();
 
-$application->add(new DynamicGenerator());
+// $application->add(new DynamicGenerator());
 
 $application->add(new StaticGenerator());
 

@@ -8,7 +8,7 @@ updated: 20211105
 
 {!!dateblock!!}
 
-I differentiate [software development](/software-development) from web development in the sense that all web development is software development but not all software development is web development. Web development is software development in a specific context, with contextual [constraints](/web-development/on-constraints).
+I differentiate [software development](/software-development/) from web development in the sense that all web development is software development but not all software development is web development. Web development is software development in a specific context, with contextual [constraints](/web-development/on-constraints/).
 
 Generally speaking, when I do develop software, I do it for the web. Further, I take a user down approach. (I never reach, "the metal".) However, after poking around and looking I can say that, at a reasonable level of abstraction, developing software feels the same.
 
@@ -28,8 +28,8 @@ Now, to be fair, that doesn't include the supporting players, if you will. The p
 
 I'd say that's pretty "low-code."
 
-You can read more about the 2021 update [over here](/web-development/2021-site-in-depth).
+You can read more about the 2021 update [over here](/web-development/2021-site-in-depth/).
 
 November 5th update: I just realized [JAMstack](https://jamstack.com) was a thing and I find it funny from the perspective that it's kinda where we're heading. Pretty sure this was originally the idea, precursor, or concept around server-less, which I admittedly didn't pay too much attention to. I'm listening to an audiobook on the subject right now and they seem to be making some of the same arguments and points I've been making and brain-dumping here.
 
-[My history on the Internet](/web-development/my-history-on-the-web) started in 1998 and has never been able to truly hold my attention. I feel like once I hit a certain level of mastery, I'm kinda bored of it. It takes a lot for me to keep practicing in the plateau. With that said, I've never really wanted to be a software developer or engineer; I just like building things and projects like this site help me communicate to teams what's going on in my head and what I'm seeing in the outside world.
+[My history on the Internet](/web-development/my-history-on-the-web/) started in 1998 and has never been able to truly hold my attention. I feel like once I hit a certain level of mastery, I'm kinda bored of it. It takes a lot for me to keep practicing in the plateau. With that said, I've never really wanted to be a software developer or engineer; I just like building things and projects like this site help me communicate to teams what's going on in my head and what I'm seeing in the outside world.

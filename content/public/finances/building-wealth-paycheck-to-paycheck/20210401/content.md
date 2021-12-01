@@ -115,7 +115,7 @@ The first month, the final tally for my portfolio was negative 200 USD. The seco
 
 My mentality when it went up was, "Hey, good thing I bought in already." When it went to negative 300 I was like, "Too bad I don't have anything to throw in there right now."
 
-Therefore, at this point, I can say, it shouldn't be difficult for me to stick to the [investment policy](/finances/investment-policy). Once I have more in, it might become more difficult and that's why I will be checking in with myself regularly.
+Therefore, at this point, I can say, it shouldn't be difficult for me to stick to the [investment policy](/finances/investment-policy/). Once I have more in, it might become more difficult and that's why I will be checking in with myself regularly.
 
 I did have a moment where I questioned whether to max out the IRA contributions at the beginning of the year or dollar cost average more. Given the ship has sailed for this year, I’ll sit with it and see how the rest of the year unfolds.
 

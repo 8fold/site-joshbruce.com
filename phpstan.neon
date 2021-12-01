@@ -1,8 +1,9 @@
 parameters:
 	level: 9
 	paths:
-		- src
 		- site-dynamic-php
+	excludePaths:
+		- site-dynamic-php/tests/FileSystem/PlainTextFileTest.php
 	ignoreErrors:
 		- '#Call to an undefined static method Eightfold\\HTMLBuilder\\Element::(.*)#'
 		- '#Call to an undefined static method Eightfold\\XMLBuilder\\Element::(.*)#'

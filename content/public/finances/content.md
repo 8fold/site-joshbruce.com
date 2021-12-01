@@ -13,26 +13,26 @@ Talking about money has always felt foreign to me. It's one of those things that
 
 Historically, I haven't been good at earning money; however, I've always been decent enough at knowing what to do with it when I have it. I worked at a credit union for six years and was trained on multiple topics there. I worked in the call center and was introduced to all sorts of individual strategies. As a coach I often recommend reducing friction to decision making. I have found establishing values, principles, practices, and tools early helps tremendously in automating decision making. These values, principles, practices, and tools don't need to be limited to the topic area; there's room for overlap.
 
-The following sections begin with my personal values, principles, practices, and tools. 
+The following sections begin with my personal values, principles, practices, and tools.
 
 ## Values
 
-1. Autonomy: When I do the [Motivators exercise](/design-your-life/motivators) on myself, the ability to "choose my own adventure" ranks second; every time.
+1. Autonomy: When I do the [Motivators exercise](/design-your-life/motivators/) on myself, the ability to "choose my own adventure" ranks second; every time.
 2. My values and principles over social norms and mores.
-3. Intellectual legacy over 
-    - financial legacy over 
+3. Intellectual legacy over
+    - financial legacy over
     - genetic legacy.
 4. The most constrained over the most funded.
 5. United States over International.
 6. Index funds over managed funds.
 7. Index funds over individual stocks and bonds.
-8. Small, local businesses over 
-    - large, miltinational businesses over 
-    - local governments over 
-    - state governments over 
+8. Small, local businesses over
+    - large, miltinational businesses over
+    - local governments over
+    - state governments over
     - federal governments.
-9. Cooperative business structures over 
-    - privately held over 
+9. Cooperative business structures over
+    - privately held over
     - publicly traded.
 10. Equities (ownership) over bonds (lending).
 
@@ -55,7 +55,7 @@ The following sections begin with my personal values, principles, practices, and
 5. Pay yourself first.
 6. Promote dividends earned in vehicles returning less than 7% per year to vehicles that historically return higher.
 7. Higher rates of return should be lowest piriority consideration when making decisions (see previous).
-8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck).
+8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/).
 
 ## Tools
 
@@ -66,4 +66,4 @@ The following sections begin with my personal values, principles, practices, and
 5. One or more federally insured, interest bearing savings accounts.
 6. One or more regulated retirement accounts.
 7. One or more regulated taxable accounts.
-8. A well-maintained [investment policy](/finances/investment-policy).
+8. A well-maintained [investment policy](/finances/investment-policy/).

@@ -1,53 +1,71 @@
 {
-  "authors": [],
-  "autoload": {
-    "psr-4": {
-      "JoshBruce\\Site\\": "./src"
+  "name": "joshbruce/site-joshbruce-com",
+  "type": "site-collection",
+  "description": "Site content and code for joshbruce.com.",
+  "license": "mixed",
+  "authors": [
+    {
+      "name": "Josh Bruce",
+      "email": "josh@8fold.pro",
+      "homepage": "https://joshbruce.com",
+      "role": "Lead Developer"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "JoshBruce\\Site\\Tests\\": "./tests"
-    }
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "description": "",
-  "license": "MIT",
-  "name": "vendor/project",
-  "prefer-stable": true,
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6",
-    "phpstan/phpstan": "^1.1.2",
-    "pestphp/pest": "^1.20"
+  ],
+  "support": {
+    "forum": "https://github.com/8fold/site-joshbruce.com/discussions",
+    "issues": "https://github.com/8fold/site-joshbruce.com/issues",
+    "source": "https://github.com/8fold/site-joshbruce.com"
   },
   "require": {
     "php": "^8.0",
     "ext-fileinfo": "*",
-    "vlucas/phpdotenv": "^5.3",
     "8fold/commonmark-fluent-markdown": "^0.10.0",
     "8fold/php-html-builder": "^0.5.3",
-    "nyholm/psr7": "^1.4",
     "laminas/laminas-httphandlerrunner": "^2.1",
-    "filp/whoops": "^2.14",
-    "nesbot/carbon": "^2.53",
+    "nyholm/psr7": "^1.4",
+    "nyholm/psr7-server": "^1.0",
     "symfony/console": "^5.3",
     "symfony/finder": "^5.3",
-    "league/flysystem": "^2.3",
-    "nyholm/psr7-server": "^1.0",
     "symfony/yaml": "^5.3"
   },
+  "require-dev": {
+    "phpstan/phpstan": "^1.2.0",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoshBruce\\SiteDynamic\\": "./site-dynamic-php/src",
+      "JoshBruce\\SiteStatic\\": "./site-static-html/src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JoshBruce\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests",
+      "JoshBruce\\SiteLocal\\Tests\\": "./site-local-php/tests",
+      "JoshBruce\\SiteStatic\\Tests\\": "./site-static-html/tests"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "prefer-stable": true,
   "scripts": {
     "prod": "@production",
     "production": [
+      "composer dumpautoload -o",
       "@style",
       "@stan",
       "@test"
     ],
-    "style": "./vendor/bin/phpcs --standard=phpcs.xml -p ./src",
+    "deploy": [
+      "@production",
+      "@optimize-autoload"
+    ],
+    "style": "./vendor/bin/phpcs --standard=phpcs.xml",
     "stan": "./vendor/bin/phpstan analyze",
-    "test": "./vendor/bin/pest"
-  },
-  "type": "library"
+    "test": "./vendor/bin/phpunit",
+    "optimize-autoload": "composer dumpautoload --no-dev --classmap-authoritative"
+  }
 }

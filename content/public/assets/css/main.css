@@ -59,6 +59,7 @@
   --block:block;
   --both:both;
   --hidden:hidden;
+  --scroll:scroll;
 }
 
 body{
@@ -215,7 +216,16 @@ hr{
 
 code{
   font-family:var(--code-font);
-  font-size:var(--s-font);
+  font-size:var(--xs-font);
+}
+
+pre{
+  overflow-y:var(--scroll);
+  -ms-overflow-style:var(--none);
+  scrollbar-width:var(--none);
+}
+pre::-webkit-scrollbar{
+  display:var(--none);
 }
 
 .toc{
@@ -388,6 +398,10 @@ a[rel~=noreferrer]:after{
   margin-left:var(--2xs-spacer);
   position:var(--relative);
   top:var(--icon-lift-spacer);
+  font-size:var(--xs-font);
+}
+
+.notice{
   font-size:var(--xs-font);
 }
 

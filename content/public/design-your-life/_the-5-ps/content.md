@@ -19,7 +19,7 @@ Please list your top three-to-five in the following areas:
 
 What we often find is that many of us perform our "pensives" in order to afford our "passions"; a project manager who uses the money earned to pay for their music passion. Further, the pedagogies area is often used to increase knowledge and earning capability in the "pensives" area, while people tend to want teach others about their passions; paying for courses in project management to increase salary and pay for instruments that students can use when teaching them music.
 
-This exercise tends to be seen as more difficult the [Motivators exercise](/highest-version-of-the-self/motivators) because you're starting with a blank slate. However, when done together, we find the two are complimentary.
+This exercise tends to be seen as more difficult the [Motivators exercise](/highest-version-of-the-self/motivators/) because you're starting with a blank slate. However, when done together, we find the two are complimentary.
 
 Run through the motivators exercise, then look at your top motivator and list activities that demonstrate this in the "passions" bucket. For the "prohibitions" you may decide to list the inverse of the "passions."
 
