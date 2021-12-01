@@ -1,5 +1,5 @@
 ---
-title: 2021 site refresh in-depth
+title: 2021
 created: 20211031
 ---
 
@@ -165,3 +165,117 @@ Eventually I'm looking to add a script that will automatically do the update for
 It's relatively instant and the site usually isn't down while I do it. Just the changes that were made since the last update are brought over.
 
 Takes less than a second for me to deploy the site and content.
+
+## Site statistics
+
+This isn't about page views, clickthrough rates, or the like; it's about performance characteristics and [.SLAs](Service Level Agreements).
+
+The mission of this site is part sharing and part exploration.
+
+The sharing piece is in the content itself; for what it's worth (humble to a fault). The exploration is mainly in ways to build websites.
+
+The following is not a binding contract with users—just to be clear.
+
+1. Any page on the site should load in less than 3 seconds on a regular 3G connection. That's from the time the request is sent to the time the user receives the response.
+2. Every page should provide a positive experience for those using [.AT](Assistive Technologies). (This will be more difficult for me as I'm not very skilled at using AT and don't know a lot of people in general and specifically not those who use AT; at least not that I'm aware of—doesn't really come up in conversation.)
+
+Note: I'm not sure of a way to throttle tests performed by third-parties. Therefore, the network time tests will be run using [Firefox](https://www.mozilla.org/en-US/firefox/new/) to test.
+
+I will use the following third-party tools (at minimum):
+
+1. [web.dev](https://web.dev/measure/),
+2. [pingdom](https://tools.pingdom.com), and
+3. [keycdn](https://tools.keycdn.com/speed).
+
+I will use three categories or styles of pages:
+
+1. short content, minimal assets and media.
+2. long content with media.
+3. long content with third-party integrations - should be difficult to find one of these.
+
+### November 30th, 2021
+
+I haven't actually done a deployment, so, this will mainly be about what's happening in local development. I'm still trying to optimize as much as possible locally while not relying heavily on caching; however, I'm not sure that will work out for much longer.
+
+I've started profiling the site using [Xdebug](https://xdebug.org/docs/profiler), which outputs a Cachegrind compatible file. I QCachegrind to view the output (I don't remember where I found an installer, but I know it wasn't through Terminal); regardless, it gives me a good understanding of how long different things take to perform.
+
+The main optimization performed as of this writing is to change the way I check for mimetypes. Instead of using the [PHP method](https://www.php.net/manual/en/function.mime-content-type.php) and overwriting, I use the PHP method as the fallback.
+
+- [Original](https://github.com/8fold/site-joshbruce.com/blob/093ede071cc9df78bc098c2feb21b3d7b1ab2a67/site-dynamic-php/src/FileSystem/FileTrait.php#L48) versus
+- as [fallback](https://github.com/8fold/site-joshbruce.com/blob/175f5c586494ca0de6ca5b2cfa0b8c271ca213e3/site-dynamic-php/src/FileSystem/FileTrait.php#L48)
+
+While I didn't think it would make a difference, it seems to have worked out better.
+
+What I'm finding beneficial about profiling is I can establish a baseline. Stated in conversational language:
+
+> Can I improve performance without modifying PHP or server settings?
+
+As of this writing, the answer is no. Most of the time spent processing each request is spent with autoloading classes and compilation. (Technically, some of the class composition through traits and inheritance could be removed but the trade-off in readability and maintainability seems too great.)
+
+So, I've decided to look at the [Symfony performance documentatioin](https://symfony.com/doc/current/performance.html#use-the-opcache-byte-code-cache) to see what I can do there.
+
+Going to start with [optimizing the Composer autoloader](https://symfony.com/doc/current/performance.html#optimize-composer-autoloader). I can do this without changing server configurations and, given where the bulk of time is spent, I'm thinking it could be helpful.
+
+![Performance profile showing most time is spent with Composer autoload](/media/web-development/20211130-performance.png)
+
+Main is the longest running; not really a surprise given it encompasses everything. I'm honestly not sure how to convert this to milliseconds and I'm not entirely sure what is meant when we say they're in 10 nanosecond increments; do I divide by 10 before converting to milliseconds or do I multiply by 10?
+
+Anyway, the number is 1,815,256.
+
+Using the regular optimized autoloader has 1,690 classes.
+
+![Performance profile showing time has been reduced after changing the autoloader](/media/web-development/20211130-performance-post-composer.png)
+
+The new number is 1,318,973. So, roughly a 28 percent reduction, if I'm reading this correctly.
+
+Using this optimized, authoritative autoloader has 590 classes.
+
+Based on these numbers I'm going to add two new scripts to the `composer.json` file. The first to optimize the autoloader by itself and the other to run the complete set of scripts. I will call it "deploy," which will modify my deployment sequence a bit.
+
+### November 15th, 2021
+
+Waiting for response: ~50ms. (no opcache or CDN)
+
+1. https://joshbruce.com (short content, minimal assets and media)
+2. https://joshbruce.com/web-development/2021-site-in-depth (long content, images)
+3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth (long content)
+
+- Dynamic content generation: Once the site is running, it SHOULD return a response in less than 150ms.
+- [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
+    1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+    2. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+    3. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+- [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
+    1. Grade A, Load time 860ms
+    2. Grade A, Load time 1.9s
+    3. Grade A, Load time 804ms
+- [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
+    1. Grade A, Load time 1.01s
+    2. Grade A, Load time 2.43s
+    3. Grade A, Load time 999ms
+
+### November 3rd, 2021
+
+1. https://joshbruce.com (short content, minimal assets and media)
+2. https://joshbruce.com/web-development/2021-site-in-depth (long content, images)
+3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth (long content, iframes)
+
+- Dynamic content generation: Once the site is running, it SHOULD return a response in less than 150ms.
+- [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
+    1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 89
+        - SEO is low because we lack the description meta tag.
+    2. Performance - 99, Accessibility - 95, Best practices - 100, SEO - 90
+        - Accessibility is low due to permalink inclusion using aria-hidden true.
+        - SEO is low because we lack the description meta tag.
+    3. **Performance - 99, Accessibility - 89, Best practices - 100, SEO - 89**
+        - Accessibility is low due to permalink inclusion use aria-hidden true AND `iframe` lacks title attribute.
+        - SEO is low because we lack the description meta tag.
+- [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
+    1. Grade A, Load time 1.54s
+    2. Grade A, Load time 2.1s
+    3. **Grade B, Load time 3.42s**
+- [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
+    1. Grade A, Load time 1.24s
+    2. Grade B, Load time 2.9s
+    3. Grade A, Load time 2.53s
+
