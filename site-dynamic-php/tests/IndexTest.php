@@ -46,7 +46,7 @@ final class IndexTest extends LiveContentTestCase
      */
     public function index_has_ini_set(): void // phpcs:ignore
     {
-        $this->assertCount(2, self::iniSetMatches());
+        $this->assertCount(4, self::iniSetMatches());
     }
 
     /**
