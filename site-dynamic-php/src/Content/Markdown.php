@@ -20,6 +20,8 @@ class Markdown
 {
     private static MarkdownConverter $markdownConverter;
 
+    private static MarkdownConverter $titleConverter;
+
     private const COMPONENTS = [
         'data'      => Data::class,
         'dateblock' => DateBlock::class,
@@ -34,16 +36,21 @@ class Markdown
     {
         if (! isset(self::$markdownConverter)) {
             self::$markdownConverter = MarkdownConverter::create()
-                ->withConfig(['html_input' => 'allow'])
-                ->minified()
+                ->withConfig(
+                    [
+                        'html_input' => 'allow'
+                    ]
+                )->minified()
                 ->smartPunctuation()
                 ->descriptionLists()
-                ->attributes()
+                // ->attributes()
                 ->abbreviations()
-                ->externalLinks([
-                    'open_in_new_window' => true,
-                    'internal_hosts' => 'joshbruce.com'
-                ])->accessibleHeadingPermalinks(
+                ->externalLinks(
+                    [
+                        'open_in_new_window' => true,
+                        'internal_hosts' => 'joshbruce.com'
+                    ]
+                )->accessibleHeadingPermalinks(
                     [
                         'min_heading_level' => 2,
                         'symbol' => '＃'
@@ -51,6 +58,15 @@ class Markdown
                 );
         }
         return self::$markdownConverter;
+    }
+
+    public static function titleConverter(): MarkdownConverter
+    {
+        if (! isset(self::$titleConverter)) {
+            self::$titleConverter = MarkdownConverter::create()
+                ->smartPunctuation();
+        }
+        return self::$titleConverter;
     }
 
     public static function processPartials(
