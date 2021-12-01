@@ -39,7 +39,7 @@ final class IndexTest extends TestContentTestCase
      */
     public function index_has_ini_set(): void
     {
-        $this->assertCount(2, self::ini_set_matches());
+        $this->assertCount(4, self::ini_set_matches());
     }
 
     /**
@@ -51,7 +51,12 @@ final class IndexTest extends TestContentTestCase
     public function index_is_displaying_errors(): void
     {
         foreach (self::ini_set_matches() as $match) {
-            $this->assertTrue(str_contains($match, '1'));
+            if (
+                str_contains($match, 'display_errors') or
+                str_contains($match, 'display_startup_errors')
+            ) {
+                $this->assertTrue(str_contains($match, '1'));
+            }
         }
     }
 }

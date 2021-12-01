@@ -78,7 +78,7 @@ class PlainTextFile
         ) {
             return htmlspecialchars(
                 strip_tags(
-                    Markdown::markdownConverter()->convert($title)
+                    trim(Markdown::titleConverter()->convert($title))
                 )
             );
         }
