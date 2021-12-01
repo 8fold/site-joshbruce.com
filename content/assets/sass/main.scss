@@ -439,6 +439,10 @@ a[rel~=noreferrer]:after {
   font-size: var(--xs-font);
 }
 
+.notice {
+  font-size: var(--xs-font);
+}
+
 footer {
   margin-top: var(--l-spacer);
   & > p {

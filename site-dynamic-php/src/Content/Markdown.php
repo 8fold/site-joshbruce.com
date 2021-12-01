@@ -43,7 +43,7 @@ class Markdown
                 )->minified()
                 ->smartPunctuation()
                 ->descriptionLists()
-                // ->attributes()
+                ->attributes() // for class on notices
                 ->abbreviations()
                 ->externalLinks(
                     [
