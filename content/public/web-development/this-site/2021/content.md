@@ -252,6 +252,10 @@ opcache.fast_shutdown=0
 
 According to the admin panel in [MAMP Pro](https://www.mamp.info/en/mamp-pro/windows/) I'm barely hitting these marks; as in nowhere close.
 
+Setting `opcache.validate_timestamps` to zero didn't really gain much for me and I don't think setting the pre-loader will add much either.
+
+Think this is good for now. Will probably go ahead and release and see what happens.
+
 ### November 15th, 2021
 
 Waiting for response: ~50ms. (no opcache or CDN)
