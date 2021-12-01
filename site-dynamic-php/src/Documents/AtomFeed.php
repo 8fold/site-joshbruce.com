@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace JoshBruce\Site\Documents;
+namespace JoshBruce\SiteDynamic\Documents;
 
 use DateTime;
 
-use Symfony\Component\Finder\Finder;
+// use Symfony\Component\Finder\Finder;
 
 use Eightfold\XMLBuilder\Document;
 use Eightfold\XMLBuilder\Element;
@@ -15,15 +15,22 @@ use Eightfold\XMLBuilder\Cdata;
 
 use Eightfold\HTMLBuilder\Element as HtmlElement;
 
-use JoshBruce\Site\FileSystemInterface;
-use JoshBruce\Site\File;
-use JoshBruce\Site\Content\Markdown;
+use JoshBruce\SiteDynamic\Environment;
+
+use JoshBruce\SiteDynamic\FileSystem\Finder;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+
+use JoshBruce\SiteDynamic\Content\Markdown;
 
 class AtomFeed
 {
-    public static function create(File $file): string
-    {
-        $finder = self::finder($file->fileSystem());
+    public static function create(
+        PlainTextFile $file,
+        Environment $environment
+    ): string {
+        $publicRoot = $environment->contentPublic();
+        $finder = Finder::init($publicRoot, $environment->contentFilename())
+            ->publishedContent();
 
         $dateFormat = 'Y-m-d\T00:00:00\Z';
 
@@ -31,7 +38,7 @@ class AtomFeed
         $updatedDates = [];
         foreach ($finder as $found) {
             $localPath = $found->getPathname();
-            $file      = File::at($localPath, $file->fileSystem());
+            $file      = PlainTextFile::at($localPath, $publicRoot);
 
             $date = $file->updated();
             if (! $date) {
@@ -39,13 +46,19 @@ class AtomFeed
             }
 
             $title   = $file->title();
-            $link    = $file->canonicalUrl();
-            $id      = $file->canonicalUrl();
+            $link    = $file->canonicalUrl($environment->appUrl());
+            if (! str_ends_with($link, '/')) {
+                $link = $link . '/';
+            }
+            $id      = $file->canonicalUrl($environment->appUrl());
+            if (! str_ends_with($id, '/')) {
+                $id = $id . '/';
+            }
             $summary = strip_tags($markdownConverter->convert(
                 $file->description(400)
             ));
             $updated = $file->created($dateFormat);
-            if ($file->frontMatterHasMember('updated')) {
+            if ($file->hasMetadata('updated')) {
                 $updated = $file->updated($dateFormat);
             }
 
