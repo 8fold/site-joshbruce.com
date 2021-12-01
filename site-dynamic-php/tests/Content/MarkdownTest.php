@@ -85,20 +85,20 @@ final class MarkdownTest extends LiveContentTestCase
 //
 //         }
 
-        $expected = file_get_contents(__DIR__ . '/front-matter-code-block-output.html');
-        $markdown = file_get_contents(__DIR__ . '/front-matter-code-block-input.md');
-
-        if (is_string($expected) and is_string($markdown)) {
-            $this->assertSame(
-                $expected,
-                Markdown::markdownConverter()->convert($markdown)
-            );
-
-        } else {
-            $this->assertIsString($expected);
-            $this->assertIsString($markdown);
-
-        }
+//         $expected = file_get_contents(__DIR__ . '/front-matter-code-block-output.html');
+//         $markdown = file_get_contents(__DIR__ . '/front-matter-code-block-input.md');
+//
+//         if (is_string($expected) and is_string($markdown)) {
+//             $this->assertSame(
+//                 $expected,
+//                 Markdown::markdownConverter()->convert($markdown)
+//             );
+//
+//         } else {
+//             $this->assertIsString($expected);
+//             $this->assertIsString($markdown);
+//
+//         }
 
         $file = PlainTextFile::at(
             __DIR__ . '/front-matter-code-block-input.md',
