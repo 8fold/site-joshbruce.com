@@ -70,35 +70,35 @@ final class MarkdownTest extends LiveContentTestCase
      */
     public function can_render_code_blocks_properly(): void // phpcs:ignore
     {
-//         $expected = file_get_contents(__DIR__ . '/code-block-output.html');
-//         $markdown = file_get_contents(__DIR__ . '/code-block-input.md');
-//
-//         if (is_string($expected) and is_string($markdown)) {
-//             $this->assertSame(
-//                 $expected,
-//                 Markdown::markdownConverter()->convert($markdown)
-//             );
-//
-//         } else {
-//             $this->assertIsString($expected);
-//             $this->assertIsString($markdown);
-//
-//         }
+        $expected = file_get_contents(__DIR__ . '/code-block-output.html');
+        $markdown = file_get_contents(__DIR__ . '/code-block-input.md');
 
-//         $expected = file_get_contents(__DIR__ . '/front-matter-code-block-output.html');
-//         $markdown = file_get_contents(__DIR__ . '/front-matter-code-block-input.md');
-//
-//         if (is_string($expected) and is_string($markdown)) {
-//             $this->assertSame(
-//                 $expected,
-//                 Markdown::markdownConverter()->convert($markdown)
-//             );
-//
-//         } else {
-//             $this->assertIsString($expected);
-//             $this->assertIsString($markdown);
-//
-//         }
+        if (is_string($expected) and is_string($markdown)) {
+            $this->assertSame(
+                $expected,
+                Markdown::markdownConverter()->convert($markdown)
+            );
+
+        } else {
+            $this->assertIsString($expected);
+            $this->assertIsString($markdown);
+
+        }
+
+        $expected = file_get_contents(__DIR__ . '/front-matter-code-block-output.html');
+        $markdown = file_get_contents(__DIR__ . '/front-matter-code-block-input.md');
+
+        if (is_string($expected) and is_string($markdown)) {
+            $this->assertSame(
+                $expected,
+                Markdown::markdownConverter()->convert($markdown)
+            );
+
+        } else {
+            $this->assertIsString($expected);
+            $this->assertIsString($markdown);
+
+        }
 
         $file = PlainTextFile::at(
             __DIR__ . '/front-matter-code-block-input.md',
