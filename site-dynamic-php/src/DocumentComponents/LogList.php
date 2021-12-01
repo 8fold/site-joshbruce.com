@@ -37,6 +37,9 @@ class LogList
 
             $title = $f->title();
             $href  = $f->canonicalUrl($environment->appUrl());
+            if (! str_ends_with($href, '/')) {
+                $href = $href . '/';
+            }
 
             $key = $f->path(full: false, omitFilename: true);
 
