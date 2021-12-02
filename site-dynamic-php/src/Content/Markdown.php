@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Content;
 
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use JoshBruce\SiteDynamic\Environment;
@@ -44,16 +46,21 @@ class Markdown
                 ->smartPunctuation()
                 ->descriptionLists()
                 ->attributes() // for class on notices
-                ->abbreviations()
+                ->defaultAttributes([
+                    Image::class => [
+                        'loading'  => 'lazy',
+                        'decoding' => 'async'
+                    ]
+                ])->abbreviations()
                 ->externalLinks(
                     [
                         'open_in_new_window' => true,
-                        'internal_hosts' => 'joshbruce.com'
+                        'internal_hosts'     => 'joshbruce.com'
                     ]
                 )->accessibleHeadingPermalinks(
                     [
                         'min_heading_level' => 2,
-                        'symbol' => '＃'
+                        'symbol'            => '＃'
                     ],
                 );
         }
