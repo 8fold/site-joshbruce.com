@@ -193,6 +193,60 @@ I will use three categories or styles of pages:
 2. long content with media.
 3. long content with third-party integrations - should be difficult to find one of these.
 
+### December 1st, 2021
+
+Waiting for response: ~50ms. (opcache in place, with timestamp checking enabled).
+
+1. https://joshbruce.com (short content, minimal assets and media)
+2. https://joshbruce.com/web-development/this-site/2021/ (long content, images)
+3. https://joshbruce.com/web-development/on-constraints/internet-bandwidth/ (long content)
+
+- Dynamic content generation: Once the site is running, it SHOULD return a response in less than 150ms.
+- [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
+    1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+    2. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+    3. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+- [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
+    1. Grade A, Load time 929ms
+    2. Grade A, Load time 2.04s
+    3. Grade A, Load time 880ms
+- [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
+    1. Grade A, Load time 1.05s
+    2. Grade A, Load time 2.42s
+    3. Grade A, Load time 937.25ms
+
+I released the updated code and turned OPcache on. The server default settings are different than my local defaults; therefore, I updated my local server to match those of the server.
+
+```bash
+/usr/local/php80/bin/php -i | grep opcache
+```
+
+With the following changes.
+
+```bash
+opcache.enable=1
+opcache.enable_cli=0
+opcache.memory_consumption=128
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=10000
+opcache.revalidate_freq=2
+```
+
+The `opcache.fast_shutdown=0` parameter doesn't seem to exist. I commented it out on my local server settings.
+
+Also added lazy loading and asynchronous image decoding to the content using the [Default Attributes](https://commonmark.thephpleague.com/2.0/extensions/default-attributes/) extension.
+
+```php
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+
+'default_attributes' => [
+  Image::class => [
+    'loading'  => 'lazy',
+    'decoding' => 'async'
+  ]
+]
+```
+
 ### November 30th, 2021
 
 I haven't actually done a deployment, so, this will mainly be about what's happening in local development. I'm still trying to optimize as much as possible locally while not relying heavily on caching; however, I'm not sure that will work out for much longer.
