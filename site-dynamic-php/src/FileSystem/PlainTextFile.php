@@ -87,7 +87,8 @@ class PlainTextFile
 
     public function pageTitle(): string
     {
-        return implode(' | ', $this->titleParts());
+        $parts = array_filter($this->titleParts());
+        return implode(' | ', $parts);
     }
 
     public function socialTitle(): string
