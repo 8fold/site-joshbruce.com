@@ -5,13 +5,13 @@ created: 20211218
 
 # Coaching
 
-I freelanced as a business consultant from 2007–2010. Mainly it was web design and development. Sometimes it would marketing and promotion.
+I freelanced as a business consultant from 2007–2010. Mainly web design and development. Sometimes it would be marketing and promotion.
 
-Given that I was working alone during this time I needed to figure out ways to increase revenue while decreasing working time. My primary client during this time actually inspired the need.
+Given I was working alone during the time I needed to figure out ways to increase revenue while decreasing time. My primary client inspired the need.
 
-The short version is that the client would send me emails in this haphazard fashion. It was the equivalent of being the same office and them dropping by every time an idea struck them; it was stressful and difficult.
+The short version is the client would send emails in this haphazard fashion. It was the equivalent of being in the same office and them dropping by every time an idea struck them; it was stressful and difficult.
 
-I started using [Omni Outliner](https://www.omnigroup.com/omnioutliner) and created this laundry list of stuff. It was a stereotypical developer-customer relationship; most of the direct communication being handled by the [.PM](project manager). One day I asked the PM:
+I started using [Omni Outliner](https://www.omnigroup.com/omnioutliner) and created this laundry list of stuff. It was a stereotypical developer-customer relationship; most direct communication being handled by the [.PM](project manager). One day I asked the PM:
 
 > Can I just speak with the client?
 
@@ -23,25 +23,25 @@ I came into the project 18 months in and it was slated for 36 months. It was con
 
 The client finally realized design and management by committee wasn't really conducive to getting things done, so, that's where the person who was sending me all these emails came from.
 
-In [Scrum terms](https://scrumguides.org/scrum-guide.html#product-owner), this person became the [.PO](Product Owner); I had no idea was [Agile Software Development](https://agilemanifesto.org) was at the time.
+In [Scrum terms](https://scrumguides.org/scrum-guide.html#product-owner), this person would be the [.PO](Product Owner); I had no idea what [Agile Software Development](https://agilemanifesto.org) was at the time.
 
-With the three of us on the phone I told the PO that it was difficult to keep up with the one-off emails despite keeping them in this list and I had a proposal to keep things from falling through the cracks.
+With the three of us on the phone I told the PO it was difficult to keep up with the one-off emails despite keeping them in this list (product backlog in Scrum terms) and I had a proposal to keep things from falling through the cracks.
 
 1. Every Monday let's get together and look at the list. We'll prioritize it and make sure I'm not missing anything.
-2. Every Friday let's get together and I"ll show you what I managed to get done during the week. On that day, go ahead and send me one email with all the new stuff; I'll add it to the list and we'll talk again on Monday.
+2. Every Friday let's get together and I’ll show you what I managed to get done during the week. On that day, go ahead and send me one email with all the new stuff; I'll add it to the list and we'll talk again on Monday.
 3. In between those two meetings, leave me alone unless something is actually broken. For example, you can't sign in or something.
 
-It took us about two months to hit that point.
+It took us about two months to hit the point of having that conversation.
 
-It took another month or so before I was doing nightly releases and sending daily emails to the PO of all the things that had changed. The nightly release with release notes prompted us to forego the Friday session, which was equivalent to the [Sprint Review](https://scrumguides.org/scrum-guide.html#sprint-review) in Scrum. (Again, I had no idea what Agile Software Development or Scrum was at the time.) Also, if you're familiar with the origins of [eXtreme Programming](http://www.extremeprogramming.org), this might also sound familiar.
+It took another month or so before I was doing nightly releases and sending daily emails to the PO of all the changes. The nightly release with release notes prompted us to forego the Friday session, which was equivalent to the [Sprint Review](https://scrumguides.org/scrum-guide.html#sprint-review) in Scrum. (Again, I had no idea what Agile Software Development or Scrum was at the time.) Also, if you're familiar with the origins of [eXtreme Programming](http://www.extremeprogramming.org), this might sound familiar.
 
 Anyhoo.
 
-We finished the project on schedule and within budget, I think. They even continued paying me for an additional six months before realizing that we had succumbed to the momentum of the project and getting stuff done.
+We finished the project on schedule and within budget, I think. They even continued paying me for an additional six months before realizing we had succumbed to the momentum of the project and getting stuff done.
 
 I decided this was how I was going to work from now on. It felt amazing and I started capturing my ideas on productivity and getting shit done.
 
-Homeless in 2010, because I put myself out of business. First professional consulting gig in 2011. Shortly thereafter I signed up to the be [.UX](user experience) expert on an internal software project, when I walked in almost the first words out of the technical lead's mouth was, "We do Scrum here." My snappy response consisted of:
+Homeless in 2010, because I put myself out of business. First professional consulting gig in 2011. Shortly thereafter I signed up to be the [.UX](user experience) expert on an internal software project, when I walked in almost the first words out of the technical lead's mouth were, "We do Scrum here." My snappy response consisted of:
 
 > What's that?
 
@@ -49,7 +49,7 @@ Everyone on the team started explaining things. It sounded familiar. With that s
 
 I went home that night and tried to find all the canonical and primary resources I could to get a feel for what "the industry" thought this was all about.
 
-Much like Tony Stark, I'm not much of joiner and, from the writing, it sounded like the authors "got it." It in this case being what I experienced.
+Much like Tony Stark, I'm not much of joiner and, from the writing, it sounded like the authors "got it." It in this case being what I experienced over the previous three years (and possibly during college and definitely in my personal life).
 
 Took a training class from [Scrum.org](https://www.scrum.org) and, if you pardon the name drop, it was taught by Ken Schwaber (co-creator of Scrum). At the time there were only two levels of the Professional Scrum Master certification. After the class I asked Ken if he had any tips, tricks, or hints to help with passing that certification. He made a great show of pondering what was delivered like a very practiced answer:
 
@@ -63,12 +63,14 @@ A year or two later I went to a weeklong bootcamp with Lyssa Adkins and "the Mic
 
 I determined they too were "my tribe."
 
-During this time I also spent a year being a developer for corporate. The experience was so horrible that the chances I will ever accept a developer position for corporate is pretty much `nil`.
+During this time I also spent a year being a developer for corporate. The experience was so horrible chances are I’ll never accept a developer position for corporate ever again.
 
-During this time my mother called me and told me her house was being foreclosed on. Being agile, I didn't miss a beat. The next week I told my client I would be working remote to help assess the situation and would let them know after that. I flew out and worked for most of the day while getting a grip on things. One of the people who lived with my mom at the time apparently told her: Who had to have told him ahead of time, he's handling this too easily to not have been prepared. Mom responded:
+During this time my mother called me and told me her house was being foreclosed on. Being agile, I didn't miss a beat. The next week I worked my client and employer to work remote and I researched some things. Week two I flew out and worked the day job for most of the day while getting a grip on things. One of the people who lived with my mom at the time apparently told her: You had to have told him ahead of time, he's handling this too easily to not have been prepared. Mom responded:
 
 > Actually, I told you before I told him.
 
-With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me.
+Went back out the third week and took time off. By the end of the week we had a plan, all the necessary and available documents, and a lawyer. Two years later the house was sold. I set my m up with an annuity and moved her to New Mexico.
+
+With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me; my lifestyle is conducive to this end.
 
 So, here we are; doing [Scrum Master shit](https://joshbruce.com/coaching/being-a-scrum-master/).
