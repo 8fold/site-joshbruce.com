@@ -65,11 +65,11 @@ I determined they too were "my tribe."
 
 During this time I also spent a year being a developer for corporate. The experience was so horrible chances are I’ll never accept a developer position for corporate ever again.
 
-During this time my mother called me and told me her house was being foreclosed on. Being agile, I didn't miss a beat. The next week I worked my client and employer to work remote and I researched some things. Week two I flew out and worked the day job for most of the day while getting a grip on things. One of the people who lived with my mom at the time apparently told her: You had to have told him ahead of time, he's handling this too easily to not have been prepared. Mom responded:
+Also during this time my mother called and told me her house was being foreclosed on. Being agile, I didn't miss a beat. The next week I worked with my client and employer to being able to work remote and I researched some things. Week two I flew out and worked the day job for most of the day while getting a grip on things in the evenings. One of the people who lived with my mom at the time apparently told her: You had to have told him ahead of time, he's handling this too easily to not have been prepared. Mom responded:
 
 > Actually, I told you before I told him.
 
-Went back out the third week and took time off. By the end of the week we had a plan, all the necessary and available documents, and a lawyer. Two years later the house was sold. I set my m up with an annuity and moved her to New Mexico.
+Went back out the third week and took time off from the day job. By the end of the week we had a plan, all the necessary and available documents, and a lawyer. Two years later the house was sold. I set my m up with an annuity and moved her to New Mexico.
 
 With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me; my lifestyle is conducive to this end.
 
