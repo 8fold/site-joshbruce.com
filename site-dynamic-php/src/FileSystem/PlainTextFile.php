@@ -150,7 +150,7 @@ class PlainTextFile
         return $this->content;
     }
 
-    public function description(): string
+    public function description(int $targetLength = 200): string
     {
         $description = '';
 
@@ -184,7 +184,7 @@ class PlainTextFile
 
         $description = strip_tags(
             Markdown::markdownConverter()->convert(
-                substr($description, 0, 400)
+                substr($description, 0, $targetLength + 200)
             )
         );
 
@@ -198,7 +198,7 @@ class PlainTextFile
             }
 
             $proposedLength = strlen($d);
-            if ($proposedLength >= 200) {
+            if ($proposedLength >= $targetLength) {
                 $ps = explode('. ', $d);
                 array_pop($ps);
                 $description = implode('. ', $ps) . '.';

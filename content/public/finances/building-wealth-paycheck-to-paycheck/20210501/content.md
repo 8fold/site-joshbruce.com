@@ -3,11 +3,11 @@ title: May 1st, 2021 paycheck
 created: 20210501
 ---
 
-# October 1st, 2021 paycheck
+# May 1st, 2021 paycheck
 
 {!!dateblock!!}
 
-I thought things would have settled down — I was wrong.
+I thought things would have settled down—I was wrong.
 
 The [.US](United States) Federal Government extended the tax filing deadline, which extended how long I could contribute to my Roth [.IRA](Individual Retirement Account) for 2020. So, the cash reserves I have will be going to try and maximize that contribution.
 

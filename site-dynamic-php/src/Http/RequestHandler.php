@@ -24,6 +24,7 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 use JoshBruce\SiteDynamic\Documents\FullNav;
 use JoshBruce\SiteDynamic\Documents\Sitemap;
+use JoshBruce\SiteDynamic\Documents\AtomFeed;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -109,6 +110,15 @@ class RequestHandler implements RequestHandlerInterface
                 headers: $headers,
                 body: Stream::create(
                     Sitemap::create($file, $this->environment())
+                )
+            );
+
+        } elseif ($file->template() === 'atom-feed') {
+            return new PsrResponse(
+                status: $status,
+                headers: $headers,
+                body: Stream::create(
+                    AtomFeed::create($file, $this->environment())
                 )
             );
         }

@@ -4,6 +4,7 @@ created: 20210101
 header_quote: Welcome to the rabbit-hole.
 copyright: Joshua C. Bruce
 copyright_year: 2004
+nofeed: true
 ---
 
 Hello,
