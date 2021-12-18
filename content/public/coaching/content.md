@@ -5,7 +5,7 @@ created: 20211218
 
 # Coaching
 
-I freelanced as a business consultant from 2007–2010. Mainly web design and development. Sometimes it would marketing and promotion.
+I freelanced as a business consultant from 2007–2010. Mainly web design and development. Sometimes it would be marketing and promotion.
 
 Given I was working alone during the time I needed to figure out ways to increase revenue while decreasing time. My primary client inspired the need.
 
