@@ -71,4 +71,4 @@ During this time my mother called me and told me her house was being foreclosed 
 
 With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me.
 
-So, here we are.
+So, here we are; doing [Scrum Master shit](https://joshbruce.com/coaching/being-a-scrum-master/).
