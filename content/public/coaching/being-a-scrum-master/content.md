@@ -170,7 +170,7 @@ The response has been, "Someone else giving you the title."
 
 To which my reply is, "I don't meet the requirement then. Thank you for thinking of me though." (I can say I have the experience now and since 2015, despite always kinda operating in the same way when I'm dropped into an environment.)
 
-A recruiter once asked if I could change on the titles on my résumé because the description was close to being a Scrum Master. I said, "I always do the same things when I get brought in. I just don't get to choose my title. If they check, they will not be told I was a Scrum Master."
+A recruiter once asked if I could change one of the titles on my résumé because the description was close to being a Scrum Master. I said, "I always do the same things when I get brought in. I just don't get to choose my title. If they check, they will not be told I was a Scrum Master."
 
 There's also the idea of the number of recent years experience.
 
