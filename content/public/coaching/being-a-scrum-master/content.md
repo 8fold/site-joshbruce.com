@@ -177,3 +177,4 @@ There's also the idea of the number of recent years experience.
 I knew someone once who said they had 20 years of experience doing software development. As I probed, I discovered the experience was working in Assembly and COBOL and they hadn't done it for 20 years.
 
 This is why I try to be very clear when I tell people I've been doing development since 1998 and that I'm still relatively active in that regard.
+
