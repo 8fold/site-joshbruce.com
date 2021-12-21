@@ -21,13 +21,13 @@ final class FinderTest extends LiveContentTestCase
     public function published_content_count(): void // phpcs:ignore
     {
         $this->assertCount(
-            45,
+            46,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()
         );
 
         $this->assertSame(
-            45,
+            46,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()->count()
         );
@@ -42,13 +42,13 @@ final class FinderTest extends LiveContentTestCase
     public function draft_content_count(): void // phpcs:ignore
     {
         $this->assertCount(
-            9,
+            11,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->draftContent()
         );
 
         $this->assertSame(
-            9,
+            11,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->draftContent()->count()
         );
