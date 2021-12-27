@@ -43,6 +43,14 @@ abstract class LiveContentTestCase extends TestCase
         );
     }
 
+    public static function thisInternetBandwidthContentFile(): PlainTextFile
+    {
+        return PlainTextFile::at(
+            self::pathToContentPublic() . '/web-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
+            self::pathToContentPublic()
+        );
+    }
+
     public static function pathToIndexRelative(): string
     {
         return __DIR__ . '/../public/index.php';
