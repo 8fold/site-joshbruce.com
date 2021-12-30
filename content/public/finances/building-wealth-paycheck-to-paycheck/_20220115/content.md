@@ -26,6 +26,16 @@ fi-experiments:
 
 {!! data !!}
 
+When my net worth was in the negative, I wasn't too worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy for anyone to deal with and close out my business with the living. Now though, it's more complex. 
+
+Brokerage accounts, retirement accounts, personal and business accounts, and so on. After looking around for solutions to help automate this process, I came across three things:
+
+1. [Family Emergency Binder](https://smartmoneymamas.com/ice-binder/): This is the one I actually purchased to get a feel but, if you do a search you can find a lot of resources along this line.
+2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
+3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
+
+During 2021, I didn't get much traction on putting these together because that wasn't really the focus for that year.
+
 ## FI experiments
 
 I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent. 
