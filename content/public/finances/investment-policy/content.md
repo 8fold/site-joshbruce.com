@@ -83,6 +83,7 @@ The items in the following that are taken directly (or paraphrased) from White C
 - I will contribute at least $100 per paycheck to long-term savings.
 - I will use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand [.USD](United States dollars); year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
+- For the equities portion of my portfolios, I will strive to be evenly distributed between small-, mid-, and large-cap stocks.
 
 Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
 
