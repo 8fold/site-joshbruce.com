@@ -157,6 +157,8 @@ This one might be a bit more controversial; I like being or knowing who owns the
 
 I'm going to start tracking the paycheck-to-paycheck changes in the FI experimental portfolios.
 
+These portfolios don't have contributions made to them regularly. They also don't have withdrawals taken from them. The purpose is primarily to confirm that fluctuations have the desired result. The Mark 0.0 portfolio should be the most volatile while the Mark 1.0 portfolio should not dip as far down as the Mark 0.0 while keeping decent pace when going up.
+
 - Mark 0.0:
 	- Current: 47.71 USD
 	- Previous: 47.71 USD
