@@ -45,6 +45,7 @@ The following sections begin with my personal values, principles, practices, and
 5. Rising tides lift all boats and don't get caught skinny dipping during receding tides.
 6. Money is food, not blood.
 7. Be in the market and don't try to beat the market.
+8. The macro-allocation principle: Any reasonably diversified 100 percent stock portfolio will perform roughly 94 percent the same.
 
 ## Practices
 

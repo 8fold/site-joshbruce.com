@@ -17,6 +17,7 @@ use JoshBruce\SiteDynamic\DocumentComponents\DateBlock;
 use JoshBruce\SiteDynamic\DocumentComponents\FullNavContent;
 use JoshBruce\SiteDynamic\DocumentComponents\LogList;
 use JoshBruce\SiteDynamic\DocumentComponents\OriginalContentNotice;
+use JoshBruce\SiteDynamic\DocumentComponents\FiExperiments;
 
 class Markdown
 {
@@ -25,11 +26,12 @@ class Markdown
     private static MarkdownConverter $titleConverter;
 
     private const COMPONENTS = [
-        'data'      => Data::class,
-        'dateblock' => DateBlock::class,
-        'full-nav'  => FullNavContent::class,
-        'loglist'   => LogList::class,
-        'original'  => OriginalContentNotice::class
+        'data'           => Data::class,
+        'dateblock'      => DateBlock::class,
+        'full-nav'       => FullNavContent::class,
+        'loglist'        => LogList::class,
+        'original'       => OriginalContentNotice::class,
+        'fi-experiments' => FiExperiments::class
     ];
 
     private const COMPONENT_WRAPPER = '{!!(.*)!!}';
