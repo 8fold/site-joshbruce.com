@@ -1,39 +1,67 @@
 ---
-title: December 15th, 2021 paycheck
-created: 20211217
+title: January 1st, 2022 paycheck
+created: 20211230
 data:
 - [Debt, 0, 0, 0.6]
-- [Cash, 5, 10, 15.4]
-- [Low correlation, 0, 1, 0.6]
-- [Negative correlation, 0, 1, 0.7]
-- [US equities - small, 24, 35, 21.8]
-- [US equities - mid, 24, 35, 22.8]
-- [US equities - large, 24, 35, 37.7]
+- [Cash, 5, 10, 15.8]
+- [Low correlation, 0, 1, 0.7]
+- [Negative correlation, 0, 1, 0.6]
+- [US equities - small, 24, 35, 22]
+- [US equities - mid, 24, 35, 22.5]
+- [US equities - large, 24, 35, 37.9]
 ---
 
-# December 15th, 2021 paycheck
+# January 1st, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
-This one is going to be a bit odd from a numbers perspective. I was paid again on the seventeenth before I published this article. December is a three check month for me.
+December was a three check month for me. So, I was paid on the seventeenth and again on the thirtieth; a day early because of the new year holiday observation. Therefore, this paycheck is actually two and there’s basically a full paycheck’s worth of money in transit.
 
-So, the cash includes a paycheck that technically wasn't there on the fifteenth. However, it shouldn't cause too much of a problem I don't think.
+And, here we go...
 
-The 90 days for the [.IRS](Internal Revenue Service) was up on the eighth. That includes weekends though, so, I'm giving it a few more days until I call to check status and confirm the all clear.
+The [.IRS](United States Internal Revenue Service) sent me a letter notifying me that they would like 90 more days. The date the letter was issued was on the ninetieth day from the previous letter. So, yeah, not sure I’m going to continue holding this much cash; more below.
 
-Transferring my [.HSA](Health Savings Account) has been finished yet. Will be calling them regarding that.
+The request to transfer my [.HSA](Health Savings Account) from HealthSavings Administrators was not completed within the three to five weeks. When I called HealthSavings Administrators they explained that they’ve been having issues processing electronic requests and I should request my preferred provider fax them. What a cluster fuck this experience has been; more below. With that said, I hit the maximum contribution for the HSA with the paycheck on the seventeenth. 
 
-Beyond that, pretty boring and the [.FI](Financial Independence) portfolios are proving themselves out as it relates to the risk parity portfolio concept. The 100 percent equities portfolio shows down roughly 3 percent while the risk parity should down only a little over 1 percent. I think I will start doing paycheck-to-paycheck comparisons similar to what Frank Vasquez does with the portfolios on [Risk Parity Radio](https://www.riskparityradio.com). I think it would be a better way for comparison and tracking over time; especially since I did the contribution accidentally the other day and started two of them after all the others. I can't tell if the others are actually doing better, or if it's just because they haven't been around as long.
+Found out I actually didn’t go over the contribution limit for the year on the 401k. It appears like I did because of the difference between the calendar year and the tax year. The first contribution in 2021 was made against the 2020 tax year. So, maxed out 401k for the first time. I hit the maximum with the paycheck on the seventeenth as well, so, this check is a bit larger than I’m used to compared to the rest of the year.
 
-So, yeah, pretty boring.
+We’re planning on moving. I used some of the cash I’ve had lying around to pay the deposit and first month’s rent. When Becca and I talked about how we’d go about this move we decided I’d take on the full burden of the new place while she did the same for the current place. Therefore, I won’t be paying rent in either place until March; deposit is essentially January rent in current place and first month’s rent is February.
 
-## 401k
+## IRS
 
-I reached the maximum contribution for the year with the first of these last two individual paychecks. Unfortunately, I also went over, which requires the filing of an excess return with my employer.
+In short, I’m pretty sure The Federal Government has spent more processing my 2020 taxes than they will potentially receive. I’m not normally one to throw folks under the bus while also trying to extend a lot of grace and yet...
 
-I had hoped that they would have stopped any overage for me automatically; apparently not. There's also no way to speak to a human about this, it must be done through email.
+Earlier this year or late last year I had a serious falling out with [Intuit](https://www.intuit.com). Basically I had an interaction with them that made me feel like they favored people with money over those without. Given my financial history and anti-elitism stance on things, I basically told them I felt the relationship had turned toxic and abusive and we’re breaking up. They still send me emails despite me asking them multiple times to forget I exist and delete all my personal information for the multiple accounts I used to have with them. Believe there was a quotable hot-take in one call that went something like: Poor people deserve good customer service as well.
+
+All right, that’s driving the bus forward over the first problem, what does that have to do with the IRS?
+
+Up until this year, I used Intuit’s TurboTax software to do my taxes. Normally I store a copy of the files return. I was going through my documents and discovered I didn’t have my returns for all previous years. (That’s totally my fault.) 
+
+Well, I’m not about to call Intuit about it, because that’s just gonna open that wound again and I’m not sure I’ve unpacked some of my baggage around money and being poor to deal with that. So, instead I filled out [IRS Form 4506](https://www.irs.gov/forms-pubs/about-form-4506) and decided to go ahead do it for as many years back as I could. This was back around April of 2021.
+
+This is a service you pay for when you request the copies. 
+
+Anyhoo, around August I get the letter saying there’s a possible discrepancy. I still haven’t received the copies of the returns. In other words, it feels a bit like I sparked a review of my tax returns. 
+
+So, I’ve paid a couple hundred dollars to get copies of my returns. The IRS says I owe another few thousand despite the extra income I received from my mother’s death is not taxable income because taxes were already paid. This caused me to put some of my investing goals on hold to make sure I’d have enough cash after the ninety days to pay if I needed to. 
+
+I figured ninety days wasn’t that big of a deal. Of course, I wasn’t expecting a letter to come stating they’re gonna go ahead and take up to another ninety days to respond again.
+
+(I’m pretty sure I’m only half kidding that if a full audit was ever run the federal, state, and local governments would probably find they owe me money. I’m the definition of anti-shady.)
+
+So, that’s forward over one body, and back over another. But we’re not done.
+
+## HSA
+
+The HSA as provided by my employer doesn’t have the funds I was looking for. My employer also doesn’t have any type of matching program for the HSA. In other words, it’s fully-funded by me and my employer pays the various fees. 
+
+I decided I’d strike out on my own then. I don’t get the tax deduction until I file, but I think it’s worth it to have the flexibility in choosing my provider and having my preferred investment options available. 
+
+I found [HealthSavings Administrators](https://healthsavings.com) and was pretty impressed. They had the funds I wanted. They didn’t strike me as a big-box company. I was able to call customer service and they seemed nice enough. Opened the account.
+
+Opened the account. Found out I still had a few dollars in another HSA that I thought had been feed out of existence some time ago (money-baggage). Thought I had asked the HSA provider I no longer wanted to close my account and transfer the balance into my HealthSavings account. What I actually did, apparently, was ask the provider I didn’t want to transfer from HealthSavings and for HealthSavings to close my account; despite not communicating with HealthSavings.
 
 ## Assets
 
