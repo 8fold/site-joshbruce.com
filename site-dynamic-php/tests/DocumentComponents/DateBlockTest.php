@@ -12,7 +12,7 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use SplFileInfo;
 
-final class FileTest extends LiveContentTestCase
+final class DateBlockTest extends LiveContentTestCase
 {
     /**
      * @test
