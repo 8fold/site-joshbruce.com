@@ -10,7 +10,7 @@ data:
 - [US equities - mid, 24, 35, 22.5]
 - [US equities - large, 24, 35, 37.9]
 fi-experiments:
-- [0.0, 47.71, 47.71, 47.1]
+- [0.0, 47.71, 47.71, 47.71]
 - [0.2, 43.83, 43.83, 43.83]
 - [0.4, 43.74, 43.74, 43.74]
 - [0.6, 43.54, 43.54, 43.54]
@@ -28,7 +28,7 @@ fi-experiments:
 
 ## FI experiments
 
-I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent.
+I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent. 
 
 The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and time-in, not timing the market principles.
 
