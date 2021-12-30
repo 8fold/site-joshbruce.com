@@ -32,7 +32,7 @@ gulp.task("sass", (done) => {
     .pipe(gulp.dest(dest))
     .pipe(postcss(pluginsMinify))
     .pipe(rename({suffix: ".min"}))
-    .pipe(sourcemaps.write("."))
+    // .pipe(sourcemaps.write("."))
     .pipe(gulp.dest(dest));
   done();
 });
