@@ -51,63 +51,67 @@ For years I used Intuit to file my taxes. When I was looking through my records 
 
 Enter [IRS Form 4506](https://www.irs.gov/forms-pubs/about-form-4506). You can request up to 8 past returns for 43 [.USD](United States Dollars) each. I went ahead and ordered from 2020 back to 2012 whether I had that return in my files or not.
 
-A few months later I received the note from the IRS saying I had unreported, taxable income from my mother's death and that I owed taxes for that plus fees and penalties; the amount was almost 15,000 USD. The impact here being that my request spurred what, for me, feels like an audit, but is probably more aptly described as a review.
+A few months later I received the note from the IRS saying I had unreported, taxable income from my mother's death and that I owed taxes for that plus fees and penalties; the amount was almost 15,000 USD. The impact here being that my request for returns spurred what, for me, feels like an audit, but is probably more aptly described as a review.
 
-I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form in. Box 2a, the one specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
+I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the one specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
 
-Contacted an accountant who was kind enough to explain things to me. Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of that along with other letters stating that the distribution is not taxable income and faxed it all to the IRS. I believe I was given 30 days from the time stamped on the letter to respond; that's a pretty good sense of urgency and I think it did it within 10 days. Received a letter saying the IRS would respond within 90 days.
+Contacted an accountant who was kind enough to explain things to me (without charge). Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of that along with other letters stating the distribution is not taxable income and faxed them to the IRS. I believe I was given 30 days from the time stamped on the first letter to respond; that's a pretty good sense of urgency and I think I did it within 10 days. 
 
-Two days after the ninetieth day I received another letter date stamped on the ninetieth day informing me that it would taking longer than normal and that the IRS was extending their own deadline by another 90 days. At this point, between the time and money spent by myself and the IRS, we've probably exceeded the payment I submitted with the 4506 and whatever the proposed owed taxes and fees would be.
+Received a letter saying the IRS would respond within 90 days.
 
-Figuring not to have much say in the matter, I guess I'll just keep holding all this cash, which is causing me to no longer be tracking with market fluctuations; frustrating. (See previous entries for more details on that.)
+Two days after the ninetieth day I received another letter date stamped on the ninetieth day informing me that it was taking longer than normal and the IRS was extending their own deadline by another 90 days; so, I get 30 days, they're taking up to six months. At this point, between the time and money spent by myself and the IRS, we've probably exceeded the payment I submitted with the 4506 and whatever the proposed owed taxes and fees would be.
 
-Speaking of trying to sever ties with folks, a few years ago I started an HSA with Bank of America. When I got laid off, I couldn't continue making contributions and the account started getting feed for inactivity. I took it as a learning experience and wrote the account off as being feed out of existence and would do better due diligence in the future. I suppose I could have closed out the account, but that would have meant figuring out the tax thing related to early withdrawal of non-medial-related funds and I decided there wasn't enough money in the account to bother. When I rejoined the same employer a year later I don't think they offered an HSA plan. I was pretty livid with Bank of America but, again, just chalked it up as a learning experience.
+Figuring not to have much say in the matter, I guess I'll keep holding all this cash, which is causing me to no longer be tracking with market fluctuations; frustrating. (See previous entries for more details on that.)
 
-I signed up for an HSA with my current employer, however, for some reason no contributions were going toward it and I wasn't paying enough attention to realize it. (When I was in debt I didn't pay a lot of attention to my finances, for better and for worse.)
+Speaking of trying to sever ties with folks, a few years ago I started an HSA with Bank of America. When I got laid off, I couldn't continue making contributions and the account started getting feed for inactivity. I took it as a learning experience and wrote the account off as being feed out of existence and would do better due diligence in the future. I suppose I could've closed the account, but that would mean figuring out the tax thing related to early withdrawal of non-medial-related funds and I decided there wasn't enough money in the account to bother. When I rejoined the same employer a year later I don't think they offered an HSA plan. I was pretty livid with Bank of America but, again, just chalked it up as a learning experience.
 
-In 2021 I decided I would change that.
+I signed up for an HSA with my current employer, however, for some reason no contributions were going toward it for the past two years and I wasn't paying enough attention to realize it. (When I was in debt I didn't pay a lot of attention to my finances, for better and for worse.)
 
-My employer doesn't offer a match for HSA contributions and the provider they work with didn't have any funds I was remotely interested in. So, the only positives with using my employer's provider would be the fees are covered and I would receive the tax deduction with each paycheck instead of having to do it as part of my tax filing at the end of the year. So, I decided to go ahead and do it on my own through a provider I chose.
+In 2021 I decided to change that.
+
+My employer doesn't offer a match for HSA contributions and the provider they work with didn't have any index funds I was remotely interested in. So, the only positives with using my employer's provider would be the fees are covered and I would receive the tax deduction with each paycheck instead of having to do it as part of my tax filing at the end of the year. So, I decided to go ahead and do it on my own through a provider I chose.
 
 Enter [HealthSavings Administrators](https://healthsavings.com).
 
-I like them from the word go. They had the funds I wanted. They partnered with a brokerage firm I trust and use. They did feel like a big-box-bank. And, I could even call them and get someone on the phone if I had a question. Opened an account almost immediately.
+I liked them from the word go. They had the index funds I wanted. They partnered with a brokerage firm I trust and use. They didn't feel like a big-box-bank. And, I could even call them and get someone on the phone if I had a question. Opened an account almost immediately.
 
-Then I got a message from Bank of America saying that my HSA account with them still had some money in it; I was shocked. I called up Bank of America and HealthSavings Administrators to see how I could get the money at Bank of America moved to HealthSavings Administrators. I thought I had the right of it.
+Then I got a message from Bank of America saying my HSA with them had some money in it; I was shocked. I called Bank of America and HealthSavings Administrators to see how I could get the money at Bank of America moved to HealthSavings Administrators. I thought I had the right of it.
 
-I went to Bank of America and grabbed their form. I will it out. As part of the comments I explicitly stated:
+I went to Bank of America and grabbed their form. I filled it out. As part of the comments I explicitly stated:
 
-> Transferring from Bank of America to HealthSavings Administrators.
+> Transferring FROM Bank of America TO HealthSavings Administrators.
 
-There's a glitch in the financial services industry. I can write a check on Monday, have it hit my account on Tuesday, and rack up five different fees in a matter of seconds. Further, I can submit a transfer from my bank to a brokerage account on Monday, have it hit taken out of my bank on Tuesday, and invested at the end of the same day. However, most other things will take at least a month.
+Quick aside: There's a glitch in the financial services industry. I can write a check on Monday, have it hit my account on Tuesday, and rack up five different fees in a matter of seconds if funds aren't available. Further, I can submit a transfer from my bank to a brokerage account on Monday, have it taken out of my bank on Tuesday, and invested by the end of the same day. (Finally, I can request a loan or credit card and start spending that money usually within a few hours.) However, most other things will take at least a month.
 
 Anyhoo.
 
-I got paid and went to contribute to my HSA one day. Come to find out, I had no money and my account was being closed down at my request. Apparently, what I was actually supposed to do was get a form from HealthSavings Administrators to send to Bank of America, not the other way around. I explained to the HealthSavings Administrators that it wasn't a dealbreaker because I was the idiot, however, it would have been nice if they would have looked at the form and realized that they were about to do the exact opposite of what was in the comment field. I also had a conversation with Bank of America as well. 
+I got paid and went to contribute to my HSA one day. Come to find out, I had no money and my account was being closed at my request. Apparently, what I was supposed to do was get a form from HealthSavings Administrators to send to Bank of America, not the other way around. I explained to the HealthSavings Administrators that it wasn't a dealbreaker because I was the idiot, however, it would have been nice if they would have looked at the form and realized they were about to do the exact opposite of what was in the comment field. I had a similar conversation with Bank of America.
 
-The agent assured me it was taken care of. Two weeks later, went to make a contribution, come to find out it wasn't actually resolved, but we finally did get it resolved. My account was open with HealthSavings Administrators and closed with Bank of America.
+The agent assured me it was taken care of. My account would be reopened. My contributions would be put back and the money from Bank of America would be transferred. Two weeks later, went to make a contribution, come to find out it wasn't resolved; in fact, it hadn't even been started. I ended up on the line with the same agent who gave me the assurances during the previous call.
+
+We finally did get it resolved. My account was open with HealthSavings Administrators and closed with Bank of America.
 
 Strike one.
 
-Then I got hit with a fee from HealthSavings Administrators and I honestly wasn't expecting it. Called them up. They explained. I asked if there were any other fees I should be aware of. They said, no. And I said, okay, it's not a dealbreaker.
+Then I got hit with a fee from HealthSavings Administrators and I honestly wasn't expecting it despite it being a fee listed in their documents. Called them up. They explained. I asked if there were any other fees I should be aware of. They said, no. And I said, okay, it's not a dealbreaker.
 
 Strike two.
 
-Then I got hit with another fee. I called again and explained the situation and how I had called and asked if there were any other fees. I also explained that while I wasn't living in squalor for most of my life, I had spent much of my life in a position of subsistence and I had just gotten out of debt and was trying to prepare for a different and all of this wasn't making me feel very good. Believe the direct quote was:
+Then I got hit with another fee. I called again and explained the situation and how I called before and asked if there were any other fees. I explained while I wasn't living in squalor for most my life, I spent much of my life in a position of subsistence and I had just gotten out of debt and was trying to prepare for a different life and relationship with money. Further, all of this wasn't making me feel very good. Believe the direct quote was:
 
-> I no longer feel like I can trust you with my money.
+> I come from a long line of subsistence farmers and ranchers who instilled a deep skepticism of bankers. I no longer feel I can trust you with my money.
 
 Strike three.
 
 Opened an HSA brokerage account with someone else and started shoveling money over there. Waited for value of the account with HealthSavings Administrators to hit a point where I could cover the cost of the check they would cut for closing my account.
 
-Quick aside: It is the twenty-first century. Paper-trail doesn't mean actual paper anymore. I get free checks from bank all the time. Even if it's a cashier's check I can get it for free. Again, when it comes to the financial services industry when I'm doing something that's in the interest of the institution, seems like it can happen in a matter of a day or two, if not in seconds. However, if I'm doing something that maybe isn't in their best interest, it takes weeks and there are fees. So frustrating.
+Quick aside: It is the twenty-first century. Paper-trail doesn't mean actual paper anymore. I get free checks from my credit unions all the time. Even if it's a cashier's check I can get it for free. Again, when it comes to the financial services industry when I'm doing something that's in the interest of the institution, seems like it can happen in a matter of a day or two, if not in seconds. However, if I'm doing something that maybe isn't in their best interest, it takes weeks and there are fees. So frustrating.
 
-Moving on. 
+Moving on.
 
-The value reached roughly that point and sold the fund investments and converted everything to cash. I went to my other HSA provider and filled out their online form, which they would submit to HealthSavings Administrators. When I talked with the agent from the HSA provider I plan on keeping for now, they said it could take three to five weeks.
+The value reached roughly that point where it was my initial deposits (cost basis) plus the cost of the check. I sold the index fund investment and converted everything to cash; thereby, increasing the total amount of cash in my overall portfolio. I went to my other HSA provider and filled out their online form, which they would submit to HealthSavings Administrators. When I talked with the agent from the HSA provider I plan on keeping for now, they said it could take three to five weeks.
 
-Fast-forward four weeks, basically the last week of 2021 I called my HSA provider to check status, nothing. Call HealthSavings Administrators who said:
+Fast-forward four weeks, basically the last week of 2021 I called my HSA provider to check status, nothing. Called HealthSavings Administrators who said:
 
 > Oh, yeah. I know we're having problems processing their forms electronically. What you need to do is contact them and have them fax or mail us the request.
 
@@ -117,17 +121,17 @@ Five or six interactions depending on how you're counting. Four or five of them 
 
 I didn't let that anger and frustration boil over onto the agent. I also didn't know how much was just "being poor" baggage and how much might be frustrations with other people (like the IRS), so, I just said:
 
-> Is there a way to escalate this call along with my service history to someone? This hasn't been a good experience for me. And I've gone from saying 'don't do it' if someone asks me directly how I feel about you, to putting my experience and how I feel out there in general.
+> Is there a way to escalate this call along with my service history to someone? This hasn't been a good experience for me (interacting with HealthSavings Administrators as a company). And I've gone from saying 'don't use them' if someone asks me if I have thoughts about you to putting my experience out for general consumption (this post).
 
-What I would have said if the agent wasn't both polite and contrite: 
+What I would've said if the agent wasn't both polite and contrite:
 
-> It's my money. It feels like you're holding it hostage. I feel like you, as the company, don't know what you're doing. While I hope this isn't indicative for all customers, every time I've called in after opening the account, something has been broken.
+> It's my money. It feels like you're holding it hostage. I feel like you, as the company, don't know what you're doing from a backend, paperwork perspective. While I hope this isn't indicative for all customers, every time I've called in after opening the account, something has been broken.
 
-The agent was nice enough to give me an email address and a fax number (yep, fax machines are still a thing). I contacted the HSA provider I want to keep and explained the situation. They told me it could take a day or two because they're backed up. I waited a day or two and emailed the HealthSavings Administrators agent to see how it's going; almost 48 hours later, no response (not even an, "I'm out on vacation").
+The agent was nice enough to give me an email address and a fax number (yep, fax machines are still a thing). I contacted the HSA provider I want to keep and explained the situation. They told me it could take a day or two to submit the fax because they're backed up. I waited a day or two and emailed the HealthSavings Administrators agent to see how it's going; almost 48 hours later, no response (not even an, "I'm out on vacation").
 
-Woke up this morning to check the account. It showed I was locked out. Called to figure out why, it's because the process had already started; of course, it may take 4 to 6 weeks to complete but possibly only two because the process already started. 
+Woke up this morning to check the account. It showed I was locked out. Called to figure out why, it's because the process had already started; of course, it may take 4 to 6 weeks to complete but possibly only two because the process already started.
 
-Now I don't have access to the account online; so, calling again to figure out how they plan to handle tax documents. I've asked that they send them both regular mail and email.
+Now I don't have access to the account online; so, calling again to figure out how they plan to handle tax documents. I've asked that they send the tax documents both regular mail and email.
 
 ## Assets
 
@@ -147,11 +151,11 @@ For me, use-assets aren't investments, I'm using them. They have utility in my l
 
 That's the big one for me; use-assets aren't investments, they have more value to me as what they are, not what I can sell them for. Now for some of the smaller ones, in no particular order.
 
-I appreciate the advice from [The Money Guy Show](https://www.moneyguy.com) when they say owning a home a long-term consideration. If you're not looking to be there for at least five years, it may be better to have the flexibility afforded by renting housing and not owning. I tend to move every 2 or 3 years. Sometimes it's just from one city to another, but I don't see myself setting up roots, so to speak.
+I appreciate the advice from [The Money Guy Show](https://www.moneyguy.com) when they say owning a home is a long-term consideration. If you're not looking to be there for at least five years, it may be better to have the flexibility afforded by renting housing and not owning. I tend to move every 2 or 3 years. Sometimes it's just from one city to another, but I don't see myself setting up roots, so to speak.
 
 I don't like tinkering or maintenance activities. Generally speaking, I don't modify the places I live in; rarely even painting the walls (or hanging things on them to be honest). So, restrictions in this regard don't typically affect my happiness or experience in a place. I've also never had a landlord deny me the request to do something. Some maintenance falls into the total cost of ownership conversation for another time but to hit on it briefly, if the washing machine needs replaced, I don't typically pay for that. New toilets? Not me. Dishwasher goes out? Not it. Exterior needs painting? Not me either. Some people enjoy theses things, I'm not one of them.
 
-This one might be a bit more controversial; I like being or knowing who owns the thing I'm using. Ultimately, the federal, state, and local governments own the homes we live in and the land they're on. If you don't pay property taxes, the house and lot will be taken from you. If you don't pay the fees of the Home Owner's Association (if there is one), bad things can happen, up to and including being removed from the community (sounds like eviction from a rental). If you don't pay the mortgage, the bank will cease the house. I can definitively say I own my cellular phone; I can't do that with larger assets like a home or car. With renting an apartment or home I know the landlord. I delegate a lot of responsibility to them so I don't have to think about it or spend my time doing it. (And, just to be clear, I have a lot of say in who I choose as a landlord, so, as long as I don't choose Scrooge, it's been pretty okay.)
+This one might be a bit more controversial; I like being or knowing who owns the thing I'm using. Ultimately, the federal, state, and local governments own the homes we live in and the land they're on. If you don't pay property taxes, the house and lot will be taken from you. If you don't pay the fees of the Home Owner's Association (if there is one), bad things can happen, up to and including being removed from the community (sounds like eviction from a rental). If you don't pay the mortgage, the bank will seize the house. I can definitively say I own my cellular phone; I can't do that with larger assets like a home or car. With renting an apartment or home I know the landlord. I delegate a lot of responsibility to them so I don't have to think about it or spend my time doing it. (And, just to be clear, I have a lot of say in who I choose as a landlord, so, as long as I don't choose Scrooge, it's been pretty okay.)
 
 ## FI experiments
 
@@ -170,7 +174,7 @@ These portfolios don't have contributions made to them regularly. They also don'
 - Mark 0.4:
 	- Current: 43.74 USD
 	- Previous: 43.74 USD
-	- Change: 0 USD 
+	- Change: 0 USD
 - Mark 0.6:
 	- Current: 43.54 USD
 	- Previous: 43.54 USD
@@ -197,7 +201,7 @@ These portfolios don't have contributions made to them regularly. They also don'
 2021 was mainly about:
 
 - setting up forever relationships,
-- major purchases (resetting), and 
+- major purchases (resetting), and
 - settling in on numbers.
 
 ### Forever relationships
@@ -210,25 +214,25 @@ That's why I tend to have multiple providers.
 
 My primary financial institution has been my primary institution for almost 30 years. The president recently retired. I'm keeping an eye open for changes that might result to make sure they will continue to be my forever institution.
 
-My secondary financial institution is new, however, I believe it things go pear-shaped with my primary then I'll be able to easily convert the secondary to being my primary.
+My secondary financial institution is new, however, I believe if things go pear-shaped with my primary then I'll be able to easily convert the secondary to being my primary.
 
-My tertiary financial institution has been with me for almost 20 years. They handle my insurance policies as well. 
+My tertiary financial institution has been with me for almost 20 years. They handle my insurance policies as well.
 
-My primary credit card is with the secondary institution. My secondary credit card is through Apple and I've been using their other products and services for over a decade. My tertiary credit card is with the tertiary financial institution. My quaternary credit card with my primary institution.
+My primary credit card is with the secondary institution. My secondary credit card is through Apple and I've been using their other products and services for over a decade. My tertiary credit card is with the tertiary financial institution. My quaternary credit card is with my primary institution.
 
 My business account is with the secondary institution as well. I'm looking to transfer the business credit card to them and close out the one I currently have; mainly because it's not with what I consider a forever-institution.
 
-I'm satisfied with my primary, secondary, and tertiary brokerage providers; however, they're all new to me, so, that could change at any moment. I've had a chance to interact with their customer service multiple times and have had no issues. My Roth [.Individual Retirement Account](IRA) was with my tertiary institution, however, I wasn't satisfied with the folks they transferred it to and transferred it to my primary broker. I was lucky enough to discover a Traditional IRA as well, which was rolled into the primary broker.
+I'm satisfied with my primary, secondary, and tertiary brokerage providers; however, they're all new to me, so, that could change at any moment. I've had a chance to interact with their customer service multiple times and have had no issues. My Roth [.Individual Retirement Account](IRA) was with my tertiary institution, however, I wasn't satisfied with the folks they sold that portion of their business to and I transferred those funds to my primary broker. Funny enough, the transfer of my IRA was done electronically, only took a few days, and a couple of phone calls. I was lucky enough to discover a Traditional IRA as well, which was rolled into the primary broker.
 
-The HSA provider institution problem is being resolved. And I dissolved my relationship on that score.
+The HSA provider problem is being resolved. And I dissolved my relationship on that score.
 
 Dropped Intuit like a bad habit and shifted to various financial tools and providers I think I can stick with, including [Wave](https://www.waveapps.com) as the accounting replacement. While there are some issues, they're not nearly to the degree I was having with Intuit products; reminding me that just because it's popular or "professional" doesn't mean it's worth the investment (monetary or emotional).
 
 ### Major purchases
 
-Because I'm looking to reduce spending and increase savings I went ahead and purchased a lot of items during the year. New clothes, electronics, household items, and so on. 
+Because I'm looking to reduce spending and increase savings I went ahead and purchased a lot of items during the year. New clothes, electronics, household items, and so on.
 
-This gave me a chance to look at average useful life and set up my distributions in such a way that when I need to replace them later, I'll already have the funds available.
+This gave me a chance to look at average useful life and set up my paycheck distributions in such a way that when I need to replace those items, I'll already have the funds available.
 
 ### Settling in on numbers
 
@@ -236,4 +240,4 @@ I'm appreciating the lightweight approach to categorizing expenses I've settled 
 
 For example, I really need to cut down on eating out. Next to housing-related expenses, eating out is my next highest; followed closely by purchasing regular food.
 
-Because of the aforementioned throughout this entry, 2021 will hopefully be an anomaly and 2022 will see more consistency and fall off in certain areas. For example, earlier this year I spent the money to buy into a lifetime membership to an organization. That was over 1,000 USD. That made membership fees my fourth highest category. So, basically, housing, dining, food, then memberships. That's out of the ordinary and shouldn't be the case moving forward.
+Because of the aforementioned throughout this entry, 2021 will hopefully be an anomaly and 2022 will see more consistency and fall off in certain areas. For example, earlier this year I spent the money to buy into a lifetime membership to an organization. That was over 1,000 USD. That made membership fees my fourth highest category. So, basically, housing, dining, food, then memberships in that order. That's out of the ordinary and shouldn't be the case moving forward.
