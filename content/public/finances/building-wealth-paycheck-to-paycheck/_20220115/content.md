@@ -36,6 +36,22 @@ Brokerage accounts, retirement accounts, personal and business accounts, and so 
 
 During 2021, I didn't get much traction on putting these together because that wasn't really the focus for that year.
 
+## Retirement accounts 
+
+Contribution limits for some retirement accounts this year have gone up. 1,000 [.United States Dollars](USD) [for the 401k](https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500). Only 50 USD [for the [.Health Savings Account](HSA)](https://www.fool.com/retirement/plans/hsa/contribution-limits/). No change for the Roth [Individual Retirement Account](IRA).
+
+The income limits for being able to contribute the full amount to a Roth IRA [has also gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021). The math to figure out the amount you can contribute if you fall into the reduced amount level still seems confusing as hell. If I find myself getting close to that amount, I’ll probably just ask for an insane raise that would push out of qualifying even after maxing out contributions to other vehicles. 
+
+I’m setting 401k contributions to 17 percent. When I called Fidelity that was the percent they said would get me close over the course of my paychecks without counting bonuses. 15 percent was my estimate based on the 19,500 USD contribution limit and seemed to be a decent sweet spot for the net paycheck amount. It also helps ensure I get the full employer match as my plan doesn’t offer a [true-up provision](https://www.forbes.com/sites/ashleaebeling/2017/05/26/beware-these-401k-match-traps/?sh=714f64c391c6I’ve heard debate whether it’s better).
+
+Research seems to indicate that lump-sum investing could beat out dollar cost averaging by 2.3 percent in returns, however, increases the potential for losses; as summarized in [this Forbes article](https://www.forbes.com/sites/robertberger/2021/02/12/dollar-cost-averaging-vs-lump-sum-investing-how-to-decide/?sh=5d861c917c50). Given the time scale I’m looking at is 10 years—around 20 years given what I’m driving toward—and I’m not worried about a 20 year depression at this point, I’m thinking I’ll lump-sum my Roth IRA contribution for 2022. In 2021 I maxed out early in the year, which meant I could take advantage of the dips later in the year. This year, I have the too much cash problem and converting quickly seems beneficial. That’s presuming the [.Internal Revenue Service](IRS) determines I don’t owe a mess-ton of money. 
+
+Depending on the verdict from the IRS, I may do lump-sum with the HSA.
+
+Basically, I’m thinking 2022 will be the lump-sum investing year for the Roth IRA and HSA.
+
+Given the last year, it appears there’s a dip in the middle of each month, which is when I’ll plan to do the lump-sum contributions; most likely around the time I file taxes. I’ll continue dollar cost averaging into the taxable accounts.
+
 ## FI experiments
 
 I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent. 
