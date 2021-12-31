@@ -52,6 +52,18 @@ Basically, I’m thinking 2022 will be the lump-sum investing year for the Roth 
 
 Given the last year, it appears there’s a dip in the middle of each month, which is when I’ll plan to do the lump-sum contributions; most likely around the time I file taxes. I’ll continue dollar cost averaging into the taxable accounts.
 
+## Too much cash
+
+When I was still getting back to broke, I never thought I’d say I had too much cash. When I first started tracking things via [Personal Capital](https://www.personalcapital.com), the retirement planning feature had roughly a 98 percent success rate—now it shows 78 percent.
+
+Three things happened during the drop in success probability. The first is I started holding all this cash. The second is a serious dip in the market. The third is the continued change toward my target allocation. 
+
+I’m discounting the impact of the allocation for now because the success probability didn’t change while I was moving toward the allocation; the drop seemed to happen almost over night.
+
+That leaves the dip in the market and the cash. Unfortunately, the market is recovering just fine and every standard portfolio provided by Personal Capital is outperforming mine by a few percentage points whereas before they were all within a couple of percentage points. 
+
+With that as the rationale, I’m blaming holding so much cash as the issue and will be doing what I can to rectify the situation with a quickness while still allowing for the possibility the IRS will find I owe money somehow or someway.
+
 ## FI experiments
 
 I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent. 
