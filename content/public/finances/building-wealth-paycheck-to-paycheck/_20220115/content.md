@@ -26,7 +26,7 @@ fi-experiments:
 
 {!! data !!}
 
-When my net worth was in the negative, I wasn't too worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy for anyone to deal with and close out my business with the living. Now though, it's more complex. 
+When my net worth was negative, I wasn't too worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy for anyone to deal with and close out my business with the living. Now though, it's more complex. 
 
 Brokerage accounts, retirement accounts, personal and business accounts, and so on. After looking around for solutions to help automate and digitize this process, I came across three things:
 
@@ -34,7 +34,7 @@ Brokerage accounts, retirement accounts, personal and business accounts, and so 
 2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
 3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
 
-During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220101/).
+During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220101/). Hoping 2022 wil be different.
 
 ## Retirement accounts 
 
@@ -42,9 +42,13 @@ Contribution limits for some retirement accounts this year have gone up. 1,000 [
 
 The income limits for being able to contribute the full amount to a Roth IRA [has also gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021). The math to figure out the amount you can contribute if you fall into the reduced amount level still seems confusing as hell. If I find myself getting close to that amount, I’ll probably just ask for an insane raise that would push me out of qualifying even after maxing out contributions to other vehicles. 
 
-I’m setting 401k contributions to 17 percent. When I called Fidelity that was the percent they said would get me close over the course of my paychecks without counting bonuses. 15 percent was my estimate based on the 19,500 USD contribution limit and seemed to be a decent sweet spot for the net paycheck amount. It also helps ensure I get the full employer match as my plan doesn’t offer a [true-up provision](https://www.forbes.com/sites/ashleaebeling/2017/05/26/beware-these-401k-match-traps/?sh=714f64c391c6I’ve heard debate whether it’s better).
+I’m setting 401k contributions to 17 percent. 
 
-Research seems to indicate lump-sum investing could beat dollar cost averaging by 2.3 percent in returns, however, increases the potential for losses; as summarized in [this Forbes article](https://www.forbes.com/sites/robertberger/2021/02/12/dollar-cost-averaging-vs-lump-sum-investing-how-to-decide/?sh=5d861c917c50). I’m thinking I’ll go ahead and lump-sum the Roth IRA and HSA this year. Not because of higher potential returns (I can’t predict the market) but because it will shift this heavy cash position into something long-term and higher historical returns. 
+When I called Fidelity that was the percent they said would get me close over the course of my paychecks without counting bonuses. 15 percent was my estimate based on the 19,500 USD contribution limit and seemed to be a decent sweet spot for the net paycheck amount; less than 15 percent and tax benefit isn't apparent. It also helps ensure I get the full employer match as my plan doesn’t offer a [true-up provision](https://www.forbes.com/sites/ashleaebeling/2017/05/26/beware-these-401k-match-traps/?sh=714f64c391c6).
+
+I’m going to lump-sum into the HSA and Roth IRA at the beginning of the year; not because of returns but because I’m sitting on all that cash.
+
+Research seems to indicate lump-sum investing could beat dollar cost averaging by 2.3 percent in returns, however, increases the potential for losses; as summarized in [this Forbes article](https://www.forbes.com/sites/robertberger/2021/02/12/dollar-cost-averaging-vs-lump-sum-investing-how-to-decide/?sh=5d861c917c50). 
 
 Given the last year, it appears there’s a dip in the middle of each month, which is when I’ll plan to do the lump-sum contributions; most likely around the time I file taxes. I’ll continue dollar cost averaging into other accounts.
 
