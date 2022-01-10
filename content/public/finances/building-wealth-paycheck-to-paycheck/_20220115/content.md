@@ -96,6 +96,10 @@ That leaves the dip in the market and the cash. Watching the ups and downs over 
 
 With that as the rationale, I’m blaming holding so much cash as the issue and will be doing what I can to rectify the situation with a quickness while still allowing for the possibility the IRS will find I owe money somehow or someway.
 
+With that said, I decided to throw some of the cash into the extended market fund in my taxable brokerage account. This should cause the fair market value of each holding to be within the bands at the highest level; buying the dip (compared to highest fair market value to date), as it were. 
+
+My insurance deductibles pie has also hit the target value. I plan to start an emergency fund pie as well. The target value for the emergency fund pie will be roughly 3 to 6 months and use either the Mark 1.1 or 1.2 setups. I'll also continue holding 3 to 6 months worth of cash as runway.
+
 ## Taxes
 
 Given the tax-related situation that's happening right now I'm planning to create a list of all the folks I may receive tax-related forms from as a sort of checklist.
