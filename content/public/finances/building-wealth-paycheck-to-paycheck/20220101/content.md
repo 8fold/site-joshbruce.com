@@ -23,7 +23,7 @@ And, here we go...
 
 The [.United States Internal Revenue Service](IRS) sent me a letter notifying me they would like 90 more days. The date the letter was issued was on the ninetieth day from the previous letter. So, yeah, not sure I’m going to continue holding this much cash; more below.
 
-The request to transfer my [.Health Savings Account](HSA) from HealthSavings Administrators wasn’t completed within the three to five weeks. When I called HealthSavings Administrators they explained they’ve been having issues processing electronic requests and I should request my preferred provider fax the documents. What a cluster fuck this experience has been; more below. With that said, I hit the maximum contribution for the HSA with the paycheck on the seventeenth; therefore, can't make another contribution with this check. 
+The request to transfer my [.Health Savings Account](HSA) from HealthSavings Administrators wasn’t completed within the three to five weeks. When I called HealthSavings Administrators they explained they’ve been having issues processing electronic requests and I should request my preferred provider fax the documents. What a cluster fuck this experience has been; more below. With that said, I hit the maximum contribution for the HSA with the paycheck on the seventeenth; therefore, can't make another contribution with this check.
 
 Found out I actually didn’t go over the contribution limit for the year on the 401k. It appears like I did because of the difference between the calendar year and the tax year. The first contribution in 2021 was made against the 2020 tax year. So, maxed out my 401k for the first time. I hit the maximum with the paycheck on the seventeenth as well, so, the check on the thirtieth is a bit larger than I’m used to compared to the rest of the year.
 
@@ -33,9 +33,9 @@ We’re planning on moving. I used some of the cash I’ve had lying around to p
 
 The following is venting frustrations, not trying to throw anyone under the bus as it were. My experiences are not presented as indicative of the experience for all. I don't believe there is malicious intent or anything like that, but this was the impact these experiences had on me. I also accept my contributions to the experiences.
 
-Early in 2021 I had a serious falling out with [Intuit](https://www.intuit.com). 
+Early in 2021 I had a serious falling out with [Intuit](https://www.intuit.com).
 
-My business account was a paid plan and we were an authorized dealer. For personal accounting I was on a free plan. 
+My business account was a paid plan and we were an authorized dealer. For personal accounting I was on a free plan.
 
 When I have direct questions about something I prefer to talk to a human by phone and ask direct questions instead of getting overwhelmed trying to read and search forums and documentation. At the time, however, only paid accounts were permitted to call (or chat with) customer service. Eventually the frustration of getting the issue resolved overwhelmed me and I told Intuit something along the following:
 
@@ -61,7 +61,7 @@ A few months later I received the note from the IRS saying I had substantial unr
 
 I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the one specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
 
-Contacted an accountant who was kind enough to explain things to me (without charge). Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of those documents along with other letters stating the distribution is not taxable income and faxed them to the IRS. I believe I was given 30 days from the time stamped on the first letter to respond; that's a pretty good sense of urgency and I think I did it within 10 days. 
+Contacted an accountant who was kind enough to explain things to me (without charge). Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of those documents along with other letters stating the distribution is not taxable income and faxed them to the IRS. I believe I was given 30 days from the time stamped on the first letter to respond; that's a pretty good sense of urgency and I think I did it within 10 days.
 
 Received a letter saying the IRS would respond within 90 days.
 
@@ -69,9 +69,9 @@ Two days after the ninetieth day I received another letter date stamped on the n
 
 Figuring not to have much say in the matter, I guess I'll keep holding all this cash, which is causing me to no longer be tracking with market fluctuations; frustrating. (See previous entries for more details on that.)
 
-Speaking of trying to sever ties with folks, a few years ago I started an HSA with Bank of America. When I got laid off, I couldn't continue making contributions and the account started getting feed for inactivity along with administration fees. 
+Speaking of trying to sever ties with folks, a few years ago I started an HSA with Bank of America. When I got laid off, I couldn't continue making contributions and the account started getting feed for inactivity along with administration fees.
 
-I took it as a learning experience and wrote the account off as being feed out of existence and would do better due diligence in the future. I suppose I could've closed the account, but that would mean figuring out the tax thing related to early withdrawal of non-medical-related funds and I decided there wasn't enough money in the account to bother. 
+I took it as a learning experience and wrote the account off as being feed out of existence and would do better due diligence in the future. I suppose I could've closed the account, but that would mean figuring out the tax thing related to early withdrawal of non-medical-related funds and I decided there wasn't enough money in the account to bother.
 
 When I rejoined the same employer a year later I don't think they offered an HSA plan. I was pretty livid with Bank of America but, again, just chalked it up as a learning experience.
 
@@ -95,7 +95,7 @@ Quick aside: There's a glitch in the financial services industry. We can write a
 
 Anyhoo.
 
-I got paid and went to contribute to my HSA one day. Come to find out, I had no money and my account was being closed at my request. 
+I got paid and went to contribute to my HSA one day. Come to find out, I had no money and my account was being closed at my request.
 
 Apparently, what I was supposed to do was get a form from HealthSavings Administrators to send to Bank of America, not the other way around. I explained to the HealthSavings Administrators that it wasn't a dealbreaker because I was the idiot, however, it would have been nice if they would have looked at the form and realized they were about to do the exact opposite of what was in the comment field. I had a similar conversation with Bank of America.
 
@@ -109,7 +109,7 @@ Then I got hit with a fee from HealthSavings Administrators and I honestly wasn'
 
 Strike two.
 
-Then I got hit with another, higher fee. 
+Then I got hit with another, higher fee.
 
 I called again and explained the situation and how I called before and asked if there were any other fees. I explained while I wasn't living in squalor for most my life, I spent much of my life in a position of subsistence and I had just gotten out of debt and was trying to prepare for a different life and relationship with money. Further, all of this wasn't making me feel very good. Believe the direct quote was:
 
@@ -123,7 +123,7 @@ Quick aside: It is the twenty-first century. Paper-trail doesn't mean actual pap
 
 Moving on.
 
-It took until roughly November when the market value was the total of my cash deposits plus the 25 USD for the check. 
+It took until roughly November when the market value was the total of my cash deposits plus the 25 USD for the check.
 
 I sold the index fund investment converting everything to cash; thereby, increasing the total amount of cash in my overall portfolio. I went to my other HSA provider and filled out their online form, which they would submit to HealthSavings Administrators electronically. When I talked with the agent from the HSA provider I plan on keeping for now, they said it could take three to five weeks.
 
@@ -182,35 +182,35 @@ These portfolios don't have contributions made to them regularly. They also don'
 - Mark 0.0:
 	- Current: 47.71 USD
 	- Previous: 47.71 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 0.2:
 	- Current: 43.83 USD
 	- Previous: 43.83 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 0.4:
 	- Current: 43.74 USD
 	- Previous: 43.74 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 0.6:
 	- Current: 43.54 USD
 	- Previous: 43.54 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 0.8:
 	- Current: 43.36 USD
 	- Previous: 43.36 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 1.0:
 	- Current: 46.87 USD
 	- Previous: 46.87 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 1.1:
 	- Current: 46.76 USD
 	- Previous: 46.76 USD
-	- Change: 0 USD
+	- Change: 0 percent
 - Mark 1.2:
 	- Current: 46.73 USD
 	- Previous: 46.73 USD
-	- Change: 0 USD
+	- Change: 0 percent
 
 ## End or year reflections
 
@@ -238,7 +238,7 @@ My primary credit card is with the secondary institution. My secondary card is t
 
 My business account is with the secondary institution as well. I'm looking to transfer the business credit card to them and close out the one I currently have; mainly because the card isn’t with what I consider a forever-institution.
 
-I'm satisfied with my primary, secondary, and tertiary brokerage providers; however, they're all new to me, so, that could change at any moment. I've had a chance to interact with their customer service multiple times and have had no issues. 
+I'm satisfied with my primary, secondary, and tertiary brokerage providers; however, they're all new to me, so, that could change at any moment. I've had a chance to interact with their customer service multiple times and have had no issues.
 
 My Roth [.Individual Retirement Account](IRA) was with my tertiary institution, however, I wasn't satisfied with the folks they sold that portion of their business to and I transferred those funds to my primary broker. Funny enough, the transfer of my IRA was done electronically, only took a few days, and a couple of phone calls. I was lucky enough to discover a Traditional IRA as well, which was rolled into the primary broker.
 
