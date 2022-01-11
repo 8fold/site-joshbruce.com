@@ -17,7 +17,9 @@ class FiExperiments
         $listHeadings = [];
         foreach ($data as $row) {
             list($label, $current, $previous, $start) = $row;
-            $change = $current - $previous;
+            $previousChange = round((($current - $previous)/$previous)*100, 2);
+            $startChange = round((($current - $start)/$start)*100, 2);
+
 
             $listHeadings[] = Element::li(
                 'Mark ' . $label,
@@ -34,12 +36,14 @@ class FiExperiments
                     Element::li(
                         'change',
                         ': ',
-                        $change
+                        $previousChange,
+                        ' percent'
                     ),
                     Element::li(
-                        'start',
+                        'since started tracking',
                         ': ',
-                        $start
+                        $startChange,
+                        ' percent'
                     )
                 )
             );
