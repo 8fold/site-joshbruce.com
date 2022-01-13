@@ -53,13 +53,15 @@ Historical research indicates lump-sum investing could beat dollar cost averagin
 
 If personal history over 2021 is any indication, there’s usually a dip in the middle of the month. This is when I should do the lump-sum deposits to reduce this cash drag.
 
-Hopefully, the [.United States Internal Revenue Service](IRS) doesn’t extend their estimate again and finds in my favor.
+The [.United States Internal Revenue Service](IRS) responded. They accepted that the bulk of my inheritance wasn’t taxable income. With that said, there was some interest income earned and I did owe taxes and fees on that amount. A little over 100 USD is a lot better than a few thousand. Luckily, times like these are what the [Taxes account](/finances/budgeting) is for. I transferred the money from the Taxes account to the Expenses account, wrote a check, and sent it certified mail.
 
 ### 401k
 
 I’m setting 401k contributions to 17 percent.
 
 When I called Fidelity that was the percent they said would get me close over the course of my paychecks without counting bonuses. 15 percent was my estimate based on the 19,500 USD contribution limit and seemed to be a decent sweet spot for the net paycheck amount; less than 15 percent and tax benefit isn't as apparent. It also helps ensure I get the full employer match as my plan doesn’t offer a [true-up provision](https://www.forbes.com/sites/ashleaebeling/2017/05/26/beware-these-401k-match-traps/?sh=714f64c391c6).
+
+I use three funds at the moment; a small-, a mid-, and large-cap. Looking at my portfolio holistically, I’ve increased the percentage of my contribution that goes to the small-cap with the remaining going to the mid; 80-20, respectively.
 
 ### HSA
 
@@ -99,11 +101,15 @@ With that as the rationale, I’m blaming holding so much cash as the issue and 
 
 With that said, I decided to throw some of the cash into the extended market fund in my taxable brokerage account. This should cause the fair market value of each holding to be within the bands at the highest level; buying the dip (compared to highest fair market value to date), as it were.
 
-My insurance deductibles pie has also hit the target value. I plan to start an emergency fund pie as well. The target value for the emergency fund pie will be roughly 3 to 6 months and use either the Mark 1.1 or 1.2 setups. I'll also continue holding 3 to 6 months worth of cash as runway.
+My insurance deductibles pie has also hit the target value. I plan to start an emergency fund pie as well. The target value for the emergency fund pie will be roughly 3 to 6 months and use either the Mark 1.1 or 1.2 setups. I’m hoping to bring my cash balance to be closer to only one month.
+
+Over the year, that will increase as I save for a bulk deposit to potentially go to the Roth IRA.
 
 ## Taxes
 
 Given the tax-related situation that's happening right now I'm planning to create a list of all the folks I may receive tax-related forms from as a sort of checklist.
+
+The schedule for most documents is by the end of February, all tax documents should be available.
 
 ## FI experiments
 
