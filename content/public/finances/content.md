@@ -27,7 +27,7 @@ The following sections begin with my personal values, principles, practices, and
 6. Index funds over managed funds.
 7. Index funds over individual stocks and bonds.
 8. Small, local businesses over
-    - large, miltinational businesses over
+    - large, multinational businesses over
     - local governments over
     - state governments over
     - federal governments.
@@ -35,6 +35,7 @@ The following sections begin with my personal values, principles, practices, and
     - privately held over
     - publicly traded.
 10. Equities (ownership) over bonds (lending).
+11. Time in the market over timing the market.
 
 ## Principles
 
