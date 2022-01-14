@@ -45,7 +45,7 @@ Contribution limits for some retirement accounts up for 2022.
 - Only 50 USD [for the [.Health Savings Account](HSA)](https://www.fool.com/retirement/plans/hsa/contribution-limits/).
 - No change for the Roth [.Individual Retirement Account](IRA).
 
-The income limits for contributing the full amount to a Roth [Individual Retirement Account](IRA) [has gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021).
+The income limits for contributing the full amount to a Roth IRA [has gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021).
 
 If you fall into the reduced amount level due to income there's still a fair bit of math that's needed. It's still confusing as well.
 
@@ -75,7 +75,7 @@ With the regular income; increased, taxable income (dividends); revenue generate
 
 The modified adjusted gross  income limit for the full amount in 2022 is 125,000 USD. Between HSA and 401k contributions I should be okay.
 
-Doing a straight back-load is something of a hybrid for what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had paid my taxes. Then contribute about 500 USD per month, which would mean I would still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to the get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it. 
+Doing a straight back-load is something of a hybrid for what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had paid my taxes. Then contribute about 500 USD per month, which would mean I would still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to the get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it.
 
 ### Traditional IRA
 
@@ -115,7 +115,7 @@ When the IRS said they were extending their deadline for a resolution, I started
 
 This got me close to the maximum (what you see above).
 
-The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable, interest income that I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth. 
+The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable, interest income that I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth.
 
 When I actually got paid, I did a pretty hard reset on cash. I'm not sure what the percentage will be once everything settles; we'll see with the next paycheck.
 
