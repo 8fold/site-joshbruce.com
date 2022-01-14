@@ -1,5 +1,5 @@
 ---
-title: January 15th, 2022 paycheck
+title: February 1st, 2022 paycheck
 created: 20220115
 data:
 - [Debt, 0, 0, 0.6]
@@ -20,7 +20,7 @@ fi-experiments:
 - [1.2, 46.73, 46.73, 46.73]
 ---
 
-# January 15th, 2022 paycheck
+# February 1st, 2022 paycheck
 
 {!! dateblock !!}
 
