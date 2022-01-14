@@ -5,6 +5,8 @@ created: 20211220
 
 # Total cost of ownership
 
+{!! dateblock !!}
+
 For a long time now I've been trying to consider total cost of ownership when I acquire things. The first time I started paying attention was when I was thinking about why people buy homes and whether I thought it would be right for me. I decided it wouldn't be right for me, at least for now—and since the mid-nineties.
 
 In short, thinking this way is why I have the saying: It's your dime or your time, but nothing's ever free.
