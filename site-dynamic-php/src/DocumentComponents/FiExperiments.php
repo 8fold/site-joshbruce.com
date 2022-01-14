@@ -17,9 +17,8 @@ class FiExperiments
         $listHeadings = [];
         foreach ($data as $row) {
             list($label, $current, $previous, $start) = $row;
-            $previousChange = round((($current - $previous)/$previous)*100, 2);
-            $startChange = round((($current - $start)/$start)*100, 2);
-
+            $previousChange = self::calculateChangeBetween($current, $previous);
+            $startChange    = self::calculateChangeBetween($current, $start);
 
             $listHeadings[] = Element::li(
                 'Mark ' . $label,
@@ -54,5 +53,16 @@ class FiExperiments
 
         }
         return Element::ul(...$listHeadings)->build();
+    }
+
+    private static function calculateChangeBetween(
+        float $first,
+        float $second
+    ): float {
+        $difference = $first - $second;
+        $decimal    = $difference / $second;
+        $percent    = $decimal * 100;
+
+        return round($percent, 2);
     }
 }

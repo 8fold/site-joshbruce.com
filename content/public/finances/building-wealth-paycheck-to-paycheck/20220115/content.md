@@ -131,7 +131,7 @@ The Mark 1.0 portfolio holds a risk-parity style portfolio split between 50 perc
 
 The portfolios between Mark 0.0 and 1.0 start introducing the other components by reducing the amount allocated to the equities. The 1.1 and 1.2 introduce a different commodities setup. Specifically, a different commodities fund at either 6 percent or the entire 13 percent.
 
-The hypothesis is that when the Mark 0.0 mix is down, it will be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0.
+The hypothesis is that when the Mark 0.0 mix is down, it will be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking.
 
 For this paycheck the Mark 0 is down just over 5 percent, however, the Mark 1 mixes are only down 3 percent.
 
