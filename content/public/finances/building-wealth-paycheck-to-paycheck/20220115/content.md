@@ -2,7 +2,7 @@
 title: January 15th, 2022 paycheck
 created: 20220115
 data:
-- [Debt, 0, 0, 0.5]
+- [Debt, 0, 1, 0.5]
 - [Cash, 5, 10, 11.1]
 - [Low correlation, 0, 1, 0.8]
 - [Negative correlation, 0, 1, 0.8]
@@ -27,7 +27,9 @@ fi-experiments:
 
 {!! data !!}
 
-When my net worth was negative, I wasn't worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy to deal with and close out my business with the living. Now it's more complex.
+When my net worth was negative, I wasn't worried about legacy and documenting things; probably not the wisest course of action. It would’ve been pretty easy to deal with my finances and close out my business with the living.
+
+Now it's more complex.
 
 Brokerage accounts, retirement accounts, personal and business accounts, and so on. After looking around for solutions to help automate and digitize this process, I came across three things:
 
@@ -75,7 +77,7 @@ With the regular income; increased, taxable income (dividends); revenue generate
 
 The modified adjusted gross  income limit for the full amount in 2022 is 125,000 USD. Between HSA and 401k contributions I should be more than okay.
 
-Doing a straight back-load is something of a hybrid from what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had paid my taxes. Then contribute about 500 USD per month, which would mean I’d still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it.
+Doing a straight back-load is something of a hybrid from what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had filed my taxes. Then contribute about 500 USD per month, which would mean I’d still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it.
 
 ### Traditional IRA
 
@@ -95,9 +97,9 @@ Three major things happened that could have contributed to the reduced success p
 
 I'm discounting the impact from balancing into the portfolio because as I was moving toward the allocation prior to the other two events the success probability didn't seem to be dropping.
 
-Watching the ups and downs in the market and my overall portfolio, I don't seem to be tracking as closely with the total stock market index (the benchmark I use). When dips happen it seems that small- and mid-cap stocks are hit first; a leading indicator of a possible dip in the large-cap stocks. Given I'm balancing into a more even distribution across small-, mid-, and large-cap stocks, I could see this having an impact as the difference between my portfolio and the benchmark has gone from a couple of percentage points difference to a few points difference over the last couple of month.
+Watching the ups and downs in the market and my overall portfolio, I don't seem to be tracking as closely with the total stock market index (the benchmark I use). When dips happen it seems that small- and mid-cap stocks are hit first; a leading indicator of a possible dip in the more large-cap stocks. Given I'm balancing into a more even distribution across small-, mid-, and large-cap stocks, I could see this having an impact as the difference between my portfolio and the benchmark has gone from a couple of percentage points difference to a few points difference over the last couple of month.
 
-When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/finances/#principles) seems to still be holding true.) I also appreciate having the two separated index funds because it helps me buy low; especially at the beginning of my journey. If the extended market fund is less than the total market fund compared to the percentage they should be when I do my contribution, then I buy the extended market and vice versa. If I were drawing down on the portfolio, I would sell whatever was up in comparison; thereby, buying low and selling high.
+When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/finances/#principles) seems to still be holding true.) I also appreciate having the two index funds to create the equities portion of the portfolio because it helps me buy low; especially at the beginning of my journey. Always buying what’s low, while selling what’s high.
 
 With that in mind, I think the main factor in the low performance over the last couple of months was holding so much cash.
 
@@ -115,13 +117,17 @@ When the IRS said they were extending their deadline for a resolution, I started
 2. I took the padding cash in my M1 Finance account and bought into the various pies. I would have continued contributing to the pies until the IRS came back with a resolution.
 3. I took half of what was in my savings account and bought the extended market index fund.
 
-This got me close to the maximum (what you see above).
+Effectively living [the idea](https://www.investopedia.com/articles/investing/012116/warren-buffett-be-fearful-when-others-are-greedy.asp):
 
-The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable, interest income that I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth.
+> Be greedy when others are fearful and fearful when others are greedy.
 
-When I actually got paid, I did a pretty hard reset on cash. I'm not sure what the percentage will be once everything settles; we'll see with the next paycheck.
+These moves brought my cash position down to just above the maximum band of 10 percent I’ve set (see introduction).
 
-(Hopefully this also means I'll be receiving the returns for the past years I asked for from the IRS.)
+The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable interest income I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth.
+
+When I actually got paid, I did a pretty hard reset on cash; purchasing more of the extended market fund. I'm not sure what the percentage will be once the cash in-transit settles; we'll see with the next paycheck. (I’m estimating it will be closer to 5 percent.)
+
+(Hopefully this also means I'll be receiving the tax returns for the past years I asked for from the IRS.)
 
 ## FI experiments
 
