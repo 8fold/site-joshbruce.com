@@ -27,9 +27,14 @@ fi-experiments:
 
 {!! data !!}
 
+
+
+
 ## FI experiments
 
-The hypothesis is that when the Mark 0.0 mix is down, it will be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking.
+Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+
+The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking.
 
 For this paycheck the Mark 0 is down just over 5 percent, however, the Mark 1 mixes are only down 3 percent.
 
