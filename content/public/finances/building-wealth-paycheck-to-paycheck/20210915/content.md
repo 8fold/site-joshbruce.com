@@ -31,3 +31,5 @@ I did receive a letter from the [.IRS](Internal Revenue Service) confirming they
 My new gig is feeling pretty stable and they seem to like me. So, I’ll probably run a bit leaner on the cash side once the IRS thing is cleared up.
 
 Other than that, not a lot to report.
+
+{!! next-previous !!}

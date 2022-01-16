@@ -87,3 +87,4 @@ At least that's where my brain is at right now.
 
 One of the things I like about having to save up for a purchase is it can help curb impulse purchases. Granted, it also requires discipline to not just throw down using a credit card; for me, using deposit certificates with a rollover date in the future helps here.
 
+{!! next-previous !!}

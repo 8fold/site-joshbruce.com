@@ -17,7 +17,7 @@ data:
 
 {!! data !!}
 
-December was a three check month. I was paid on the seventeenth and the thirtieth; a day early because of observation the new year holiday. Therefore, for this post, there are two paychecks and there’s basically a full paycheck’s worth of money in transit.
+December was a three check month. I was paid on the seventeenth and the thirtieth; a day early because of observation of the new year holiday. Therefore, for this post, there are two paychecks and there’s basically a full paycheck’s worth of money in-transit.
 
 And, here we go...
 
@@ -57,9 +57,9 @@ For years I used Intuit to file my taxes. When I was looking through my records 
 
 Enter [IRS Form 4506](https://www.irs.gov/forms-pubs/about-form-4506). You can request up to 8 past returns for 43 [.United States Dollars](USD) each. I went ahead and ordered from 2020 back to 2012 whether I had that return in my files or not.
 
-A few months later I received the note from the IRS saying I had substantial unreported, taxable income from my mother's death and owed taxes on it plus fees and penalties; the amount was almost 15,000 USD. The impact here being my request for returns spurred what, for me, feels like an audit, but is probably more aptly described as a review.
+A few months later I received the note from the IRS saying I had substantial unreported, taxable income from my mother's death and owed taxes on it plus fees and penalties; the amount was almost 17,000 USD. The impact here being my request for returns spurred what, for me, feels like an audit, but is probably more aptly described as a review.
 
-I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the one specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
+I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the box specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
 
 Contacted an accountant who was kind enough to explain things to me (without charge). Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of those documents along with other letters stating the distribution is not taxable income and faxed them to the IRS. I believe I was given 30 days from the time stamped on the first letter to respond; that's a pretty good sense of urgency and I think I did it within 10 days.
 
@@ -259,3 +259,5 @@ I'm appreciating the lightweight approach I’m using for categorizing expenses.
 For example, I really need to cut down on eating out. Next to housing-related expenses, eating out is my next highest; followed closely by purchasing regular food.
 
 Because of the aforementioned throughout this entry, 2021 will hopefully be an anomaly and 2022 will see more consistency and fall off in certain areas. For example, earlier this year I spent the money to buy into a lifetime membership to an organization. That was just over 1,000 USD. That made membership fees my fourth highest category. So, basically, housing, dining, groceries, then memberships in that order. That's out of the ordinary and shouldn't be the case moving forward.
+
+{!! next-previous !!}

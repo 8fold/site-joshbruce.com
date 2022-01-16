@@ -1,8 +1,8 @@
 ---
-title: January 15th, 2022 paycheck
-created: 20220115
+title: February 1st, 2022 paycheck
+created: 20220201
 data:
-- [Debt, 0, 0, 0.6]
+- [Debt, 0, 1, 0.6]
 - [Cash, 5, 10, 15.8]
 - [Low correlation, 0, 1, 0.7]
 - [Negative correlation, 0, 1, 0.6]
@@ -10,108 +10,47 @@ data:
 - [US equities - mid, 24, 35, 22.5]
 - [US equities - large, 24, 35, 37.9]
 fi-experiments:
-- [0.0, 47.71, 47.71, 47.71]
-- [0.2, 43.83, 43.83, 43.83]
-- [0.4, 43.74, 43.74, 43.74]
-- [0.6, 43.54, 43.54, 43.54]
-- [0.8, 43.36, 43.36, 43.36]
-- [1.0, 46.87, 46.87, 46.87]
-- [1.1, 46.76, 46.76, 46.76]
-- [1.2, 46.73, 46.73, 46.73]
+# label, current, previous, start
+- [0.0, 45.19, 45.19, 47.71]
+- [0.2, 41.68, 41.68, 43.83]
+- [0.4, 41.73, 41.73, 43.74]
+- [0.6, 41.75, 41.75, 43.54]
+- [0.8, 41.84, 41.84, 43.36]
+- [1.0, 45.45, 44.45, 46.87]
+- [1.1, 45.35, 45.35, 46.76]
+- [1.2, 45.32, 45.32, 46.73]
 ---
 
-# January 15th, 2022 paycheck
+# February 1st, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
-When my net worth was negative, I wasn't too worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy for anyone to deal with and close out my business with the living. Now it's more complex. 
+In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my fallout with Intuit. Because of my [consolidated approach to categorizing](/finances/budgeting/) transactions I was able to identify areas where I should adjust with regard to spending and saving. Let's focus on the saving piece as mentioned in the last [paycheck entry](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
 
-Brokerage accounts, retirement accounts, personal and business accounts, and so on. After looking around for solutions to help automate and digitize this process, I came across three things:
+Because of the minimal categories I could quickly see which expenses were more of a one-off for that year and probably not something I wanted to progress into the future. Because all the expenses were tracked by the software I was also able to see exactly how much I had spent overall. Subtracting the one-off expenses from the total, I was able to readjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent to 98 percent probability of success.
 
-1. [Family Emergency Binder](https://smartmoneymamas.com/ice-binder/): This is the one I actually purchased to get a feel but, if you do a search, you can find a lot of resources along this line.
-2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
-3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
+Personal Capital uses the [You Index™️](https://support.personalcapital.com/hc/en-us/articles/201169610-What-is-the-You-Index-), which looks at what I actually have syncing with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio still outranks the comparative portfolios available.
 
-During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220101/). Hoping 2022 will be different.
+The ability to see income versus expenses reenforces the notion of [budgeting](/finances/budgeting/) as a means of tracking (not dieting) as well as the idea of looking at a net worth statement that Brian and Bo from [The Money Guy Show](https://www.moneyguy.com/resources/) (and others in the financial planning space) are often talking about.
 
-## Retirement accounts 
+Over time, the allowed maximum for both debt and cash should decrease. This is because the maximum is based on an overall percentage of the portfolio's value. As the balance increases, the maximums should decrease; 1 percent of a 100 [.United States Dollars](USD) is a lot different than 1 percent of 10,000 USD.
 
-Contribution limits for some retirement accounts have gone up for 2022. 
+## Site updates
 
-- 1,000 [.United States Dollars](USD) [for the 401k](https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500). 
-- Only 50 USD [for the [.Health Savings Account](HSA)](https://www.fool.com/retirement/plans/hsa/contribution-limits/). 
-- No change for the Roth [Individual Retirement Account](IRA).
+I finally got around to updating the visualization for the portfolio. I decided against the image methodology I initially considered.
 
-The income limits for contributing the full amount to a Roth IRA [has gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021). 
-
-The math to figure out the amount you can contribute if you fall into the reduced amount level still seems confusing as hell. If I find myself getting close to that amount, I’ll probably just ask for an insane raise that would push me out of qualifying even after maxing out contributions to other vehicles. 
-
-Historical research indicates lump-sum investing could beat dollar cost averaging by 2.3 percent in returns, however, increases the potential for losses; as summarized in [this Forbes article](https://www.forbes.com/sites/robertberger/2021/02/12/dollar-cost-averaging-vs-lump-sum-investing-how-to-decide/?sh=5d861c917c50). 
-
-If personal history over 2021 is any indication, there’s usually a dip in the middle of the month. This is when I should do the lump-sum deposits to reduce this cash drag.
-
-Hopefully, the [.United States Internal Revenue Service](IRS) doesn’t extend their estimate again and finds in my favor.
-
-### 401k
-
-I’m setting 401k contributions to 17 percent. 
-
-When I called Fidelity that was the percent they said would get me close over the course of my paychecks without counting bonuses. 15 percent was my estimate based on the 19,500 USD contribution limit and seemed to be a decent sweet spot for the net paycheck amount; less than 15 percent and tax benefit isn't as apparent. It also helps ensure I get the full employer match as my plan doesn’t offer a [true-up provision](https://www.forbes.com/sites/ashleaebeling/2017/05/26/beware-these-401k-match-traps/?sh=714f64c391c6).
-
-### HSA
-
-As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/contributions/) can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say contributed on a regular basis throughout the year up to the limit. Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce my cash position I decided to front-load the contribution; contributing the full amount for the year.
-
-The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible. (I also moved the padding money in my M1 Finance account to the three Pies there.)
-
-### Roth IRA
-
-I'm not sure I’ll front-load the Roth IRA. 
-
-I have multiple income streams and I'm not sure what that could mean for my ability to contribute the full amount in the future.
-
-The modified adjusted gross  income limit for the full amount in 2022 is 125,000 USD. Between HSA and 401k contributions I should be more than okay.
-
-With that said, the other revenue streams might be increasing. 8fold is pretty consistent and we don't have a lot in the way of expenses. Book sales still happen occasionally coupled with other contract work. And I'm looking to start promoting and selling my artwork this year.
-
-Therefore, I'm starting to think I'd rather be safe than sorry. Basically, I would start back-loading the Roth IRA. Building up to 6,000 USD at least throughout 2022 and seeing what I can contribute when I file taxes during 2023. It's almost a hybrid of what I was thinking of doing this year; if I didn't have all this cash sitting around.
-
-What I was planning to do this year was to start contributing to the Roth IRA after filing taxes for 2021. So, from roughly April of 2022 I would start contributing which would mean I would not have contributed the full amount by the end of 2022 and could do the math in 2023 to see if I could max it out or would need to shift to putting the money in the Traditional IRA or taxable account.
-
-### Traditional IRA
-
-The initial deposit I did from the transfer is still doing its thing.
-
-## Too much cash
-
-When I was getting back to broke, I never thought I’d say I had too much cash. When I first started tracking things via [Personal Capital](https://www.personalcapital.com), the retirement planning feature had roughly a 98 percent success rate—now it shows 78 percent.
-
-Three things happened during the drop in success probability. The first is I started holding all this cash. The second is a serious dip in the market. The third is the continued change toward my target allocation. 
-
-I’m discounting the impact of the allocation for now because the success probability didn’t change while I was moving toward the allocation; the drop seemed to happen almost over night.
-
-That leaves the dip in the market and the cash. Watching the ups and downs over the last couple of months, my total portfolio is no longer tracking as closely as it once did. Now it’s a difference of a few percentage points. Initially it was only a couple.
-
-With that as the rationale, I’m blaming holding so much cash as the issue and will be doing what I can to rectify the situation with a quickness while still allowing for the possibility the IRS will find I owe money somehow or someway.
-
-With that said, I decided to throw some of the cash into the extended market fund in my taxable brokerage account. This should cause the fair market value of each holding to be within the bands at the highest level; buying the dip (compared to highest fair market value to date), as it were. 
-
-My insurance deductibles pie has also hit the target value. I plan to start an emergency fund pie as well. The target value for the emergency fund pie will be roughly 3 to 6 months and use either the Mark 1.1 or 1.2 setups. I'll also continue holding 3 to 6 months worth of cash as runway.
-
-## Taxes
-
-Given the tax-related situation that's happening right now I'm planning to create a list of all the folks I may receive tax-related forms from as a sort of checklist.
+I also increased the amount allowed for debt because I pay for most things with credit cards and rarely are they paid off prior to publishing, despite being paid off each paycheck.
 
 ## FI experiments
 
-I started multiple portfolios as a single deposit experiment as a sort of control group for the plan going from now until becoming financially independent. 
+Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 
-The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and time-in, not timing the market principles.
+The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking.
 
-The Mark 1.0 portfolio holds a risk-parity style portfolio split between 50 percent 100 percent stock index fund (see Mark 0.0), 25 percent in negative correlation (long-term treasuries), 13 percent gold, 6 percent commodities, and 3 percent in both United States and international real estate.
-
-The portfolios between Mark 0.0 and 1.0 start introducing the other components by reducing the amount allocated to the equities. The 1.1 and 1.2 introduce a different commodities setup. Specifically, a different commodities fund at either 6 percent or the entire 13 percent.
+For this paycheck the Mark 0 is down just over 5 percent, however, the Mark 1 mixes are only down 3 percent.
 
 {!! fi-experiments !!}
+
+{!! next-previous !!}

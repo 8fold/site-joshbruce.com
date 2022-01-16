@@ -2,7 +2,7 @@
 title: January 15th, 2022 paycheck
 created: 20220115
 data:
-- [Debt, 0, 0, 0.5]
+- [Debt, 0, 1, 0.5]
 - [Cash, 5, 10, 11.1]
 - [Low correlation, 0, 1, 0.8]
 - [Negative correlation, 0, 1, 0.8]
@@ -27,11 +27,13 @@ fi-experiments:
 
 {!! data !!}
 
-When my net worth was negative, I wasn't too worried about legacy and documenting things; probably not the wisest course of action. My finances would be pretty easy for anyone to deal with and close out my business with the living. Now it's more complex.
+When my net worth was negative, I wasn't worried about legacy and documenting things; probably not the wisest course of action. It would’ve been pretty easy to deal with my finances and close out my business with the living.
+
+Now it's more complex.
 
 Brokerage accounts, retirement accounts, personal and business accounts, and so on. After looking around for solutions to help automate and digitize this process, I came across three things:
 
-1. [Family Emergency Binder](https://smartmoneymamas.com/ice-binder/): This is the one I actually purchased to get a feel but, if you do a search, you can find a lot of resources along this line.
+1. [Family Emergency Binder](https://smartmoneymamas.com/ice-binder/): This is the one I purchased to get a feel but, if you do a search, you can find a lot of resources along this line.
 2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
 3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
 
@@ -39,7 +41,7 @@ During 2021, I didn't get much traction on putting legacy documents together bec
 
 ## Retirement accounts
 
-Contribution limits for some retirement accounts up for 2022.
+Contribution limits for some retirement accounts are up for 2022.
 
 - 1,000 [.United States Dollars](USD) [for the 401k](https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500).
 - Only 50 USD [for the [.Health Savings Account](HSA)](https://www.fool.com/retirement/plans/hsa/contribution-limits/).
@@ -47,7 +49,7 @@ Contribution limits for some retirement accounts up for 2022.
 
 The income limits for contributing the full amount to a Roth IRA [has gone up](https://www.irs.gov/retirement-plans/plan-participant-employee/amount-of-roth-ira-contributions-that-you-can-make-for-2022) 4,000 USD [compared to 2021](https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2021).
 
-If you fall into the reduced amount level due to income there's still a fair bit of math that's needed. It's still confusing as well.
+If you fall into the reduced amount level due to income there's still a fair bit of math needed. It's still confusing as well.
 
 Historical research indicates lump-sum investing could beat dollar cost averaging by 2.3 percent in returns, however, increases the potential for losses; as summarized in [this Forbes article](https://www.forbes.com/sites/robertberger/2021/02/12/dollar-cost-averaging-vs-lump-sum-investing-how-to-decide/?sh=5d861c917c50).
 
@@ -61,7 +63,7 @@ Fidelity did a calculation and determined that, without bonuses, this percentage
 
 ### HSA
 
-As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/contributions/) can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say I contributed on a regular basis throughout the year up to the limit (dollar cost averaging). Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce [my cash position](#too-much-cash) I decided to front-load the contribution; contributing the full amount for the year.
+As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/contributions/) can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say I contributed on a regular basis throughout the year up to the limit (dollar cost averaging). Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce [my cash position](#too-much-cash) I decided to front-load the contribution; contributing the full amount for 2022.
 
 The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible as early as possible; [time in the market outweighing timing the market](/finances/#values).
 
@@ -69,13 +71,13 @@ The market and my portfolios are down at the moment and I want to take advantage
 
 Decided to shift to back-loading the Roth IRA.
 
-While my base income from the day-job doesn't cause me to fall into the reduced contribution window, I do plan in starting to sell various products.
+While my base income from the day-job doesn't cause me to fall into the reduced contribution window, I do plan on starting to sell various products.
 
 With the regular income; increased, taxable income (dividends); revenue generated by 8fold; and the possibility of income from selling products, I'd rather be safe than sorry.
 
-The modified adjusted gross  income limit for the full amount in 2022 is 125,000 USD. Between HSA and 401k contributions I should be okay.
+The modified adjusted gross  income limit for the full amount in 2022 is 125,000 USD. Between HSA and 401k contributions I should be more than okay.
 
-Doing a straight back-load is something of a hybrid for what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had paid my taxes. Then contribute about 500 USD per month, which would mean I would still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to the get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it.
+Doing a straight back-load is something of a hybrid from what I had been considering before. The plan before 2022 was to wait to start contributing for 2022 until I had filed my taxes. Then contribute about 500 USD per month, which would mean I’d still have a gap at the beginning of the year and could lump-sum the difference if I qualified. And, if I only qualified for the reduced amount then I could adjust. Trying to get the benefits of dollar cost averaging and lump-sum investing seems like a level of complexity that's not really worth it.
 
 ### Traditional IRA
 
@@ -85,7 +87,9 @@ The initial deposit I did from the transfer is still doing its thing.
 
 I never thought I'd say I had too much cash; especially given my history with money in general and previous negative net worth specifically. Now, I'm starting to see how the concept of too much cash could work.
 
-When I initially set up [Personal Capital](https://www.personalcapital.com), the retirement planning feature had roughly a 98 percent success probability. Over the last few months it dropped to 78 percent. Three happened that could have contributed to the reduced success probability:
+When I initially set up [Personal Capital](https://www.personalcapital.com), the retirement planning feature had roughly a 98 percent success probability. Over the last few months it dropped to 78 percent. (I adjusted the projections a bit based on actual spending last year and will talk more about this for the February 1st paycheck.)
+
+Three major things happened that could have contributed to the reduced success probability:
 
 1. holding cash,
 2. decent dip in the equities market, and
@@ -93,9 +97,9 @@ When I initially set up [Personal Capital](https://www.personalcapital.com), the
 
 I'm discounting the impact from balancing into the portfolio because as I was moving toward the allocation prior to the other two events the success probability didn't seem to be dropping.
 
-Watching the ups and downs in the market and my overall portfolio, I don't seem to be tracking as closely with the total stock market index (the benchmark I use). When dips happen it seems that small- and mid-cap stocks are hit first; a leading indicator of a possible dip in the large-cap stocks. Given I'm balancing into a more even distribution across small-, mid-, and large-cap stocks, I could see this having an impact as the difference between my portfolio and the benchmark has gone from a couple of percentage points difference to a few points difference over the last couple of month.
+Watching the ups and downs in the market and my overall portfolio, I don't seem to be tracking as closely with the total stock market index (the benchmark I use). When dips happen it seems that small- and mid-cap stocks are hit first; a leading indicator of a possible dip in the more large-cap stocks. Given I'm balancing into a more even distribution across small-, mid-, and large-cap stocks, I could see this having an impact as the difference between my portfolio and the benchmark has gone from a couple of percentage points difference to a few points difference over the last couple of month.
 
-When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/finances/#principles) seems to still be holding true.) I also appreciate having the two separated index funds because it helps me buy low; especially at the beginning of my journey. If the extended market fund is less than the total market fund compared to the percentage they should be when I do my contribution, then I buy the extended market and vice versa. If I were drawing down on the portfolio, I would sell whatever was up in comparison; thereby, buying low and selling high.
+When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/finances/#principles) seems to still be holding true.) I also appreciate having the two index funds to create the equities portion of the portfolio because it helps me buy low; especially at the beginning of my journey. Always buying what’s low, while selling what’s high.
 
 With that in mind, I think the main factor in the low performance over the last couple of months was holding so much cash.
 
@@ -113,13 +117,17 @@ When the IRS said they were extending their deadline for a resolution, I started
 2. I took the padding cash in my M1 Finance account and bought into the various pies. I would have continued contributing to the pies until the IRS came back with a resolution.
 3. I took half of what was in my savings account and bought the extended market index fund.
 
-This got me close to the maximum (what you see above).
+Effectively living [the idea](https://www.investopedia.com/articles/investing/012116/warren-buffett-be-fearful-when-others-are-greedy.asp):
 
-The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable, interest income that I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth.
+> Be greedy when others are fearful and fearful when others are greedy.
 
-When I actually got paid, I did a pretty hard reset on cash. I'm not sure what the percentage will be once everything settles; we'll see with the next paycheck.
+These moves brought my cash position down to just above the maximum band of 10 percent I’ve set (see introduction).
 
-(Hopefully this also means I'll be receiving the returns for the past years I asked for from the IRS.)
+The IRS got back to me and found somewhat in my favor. I didn't owe for the inheritance itself, however, there was taxable interest income I did owe for. This reduced the amount owed from thousands of dollars to a little over a hundred. I put the check in the mail on the twelfth.
+
+When I actually got paid, I did a pretty hard reset on cash; purchasing more of the extended market fund. I'm not sure what the percentage will be once the cash in-transit settles; we'll see with the next paycheck. (I’m estimating it will be closer to 5 percent.)
+
+(Hopefully this also means I'll be receiving the tax returns for the past years I asked for from the IRS.)
 
 ## FI experiments
 
@@ -136,3 +144,5 @@ The hypothesis is that when the Mark 0.0 mix is down, it will be down more than 
 For this paycheck the Mark 0 is down just over 5 percent, however, the Mark 1 mixes are only down 3 percent.
 
 {!! fi-experiments !!}
+
+{!! next-previous !!}

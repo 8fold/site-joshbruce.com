@@ -166,3 +166,5 @@ I can't double dip though. Therefore, this will give me a chance to see what hap
 My understanding is that I can go to the doctor. Do the self-insured thing. Once I get all the bills, I can submit them to the indemnity insurance company I'm using. They could deny it for some reason. At which point I can pass it to my employer's health insurance provider (the devil I know, so to speak). If I have to submit it to my employer's health insurance, then I'll likely cancel the auxiliary coverage and keep the employer-provided or grab an ACA plan.
 
 If it works, and the HSA is stable, I'll cancel the employer-provided or ACA plan. At a 3600 USD maximum contribution per year to the HSA, we have some time (thinking two or three years at the most).
+
+{!! next-previous !!}

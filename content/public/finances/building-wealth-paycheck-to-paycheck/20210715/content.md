@@ -35,3 +35,5 @@ I'm admittedly concerned I'm not putting enough in the Operating Expenses and Ru
 The desktop fund has matured and is available. Given I've decided if I get a desktop computer it will be a newer Mac mini instead of the 2021 iMac, I can use about half the money saved in the desktop fund to help me dial in.
 
 I'm putting more into the Future Earth pie with M1 Finance than the Brand pie right now to keep moving the overall portfolio into balance. The Future Earth pie has a higher percentage in small- and mid-cap [.US](United States) equities than the Brand pie.
+
+{!! next-previous !!}
