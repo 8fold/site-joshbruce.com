@@ -259,3 +259,5 @@ I'm appreciating the lightweight approach I’m using for categorizing expenses.
 For example, I really need to cut down on eating out. Next to housing-related expenses, eating out is my next highest; followed closely by purchasing regular food.
 
 Because of the aforementioned throughout this entry, 2021 will hopefully be an anomaly and 2022 will see more consistency and fall off in certain areas. For example, earlier this year I spent the money to buy into a lifetime membership to an organization. That was just over 1,000 USD. That made membership fees my fourth highest category. So, basically, housing, dining, groceries, then memberships in that order. That's out of the ordinary and shouldn't be the case moving forward.
+
+{!! next-previous !!}

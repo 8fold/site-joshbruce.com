@@ -142,6 +142,4 @@ When my last paycheck for the year comes in, I’ll reduce my per paycheck perce
 
 This year has been interesting as I keep shifting allocation figures around. Next year I’m hoping for more consistent redistribution amounts across the board. I am appreciating that the overall portfolio is coming into balance.
 
-
-
-
+{!! next-previous !!}

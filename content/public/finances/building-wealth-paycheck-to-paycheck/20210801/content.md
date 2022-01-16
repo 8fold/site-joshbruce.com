@@ -55,7 +55,4 @@ I have the Mac mini now, which means the television will get used a bit more, lu
 
 My mailbox rules finished syncing with iCloud and I am appreciating a pre-sorted iOS inbox. I also appreciate not having to plug in my laptop and take up desktop space with the laptop. The improved cable management is also a nice addition. I am curious how this could affect things like laptop longevity.
 
-
-
-
-
+{!! next-previous !!}

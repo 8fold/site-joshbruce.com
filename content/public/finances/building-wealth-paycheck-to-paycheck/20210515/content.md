@@ -145,3 +145,5 @@ A popular refrain with me is: You can’t change the past, only determine how to
 Then there are the principles I hold, specifically “past performance doesn’t guarantee future performance.” My approach isn’t grounded in performance, it’s grounded in my values and principles; I keep coming back to this. And, if I do change something it should be grounded in the same manner, which means changing my values and principles or at least reframing them.
 
 Odd emotions seeping into the brain. Walking up a mountain playing with a yo-yo is a metaphor used by [The Money Guy Show](https://www.moneyguy.com/) and I think it's an apt metaphor. And, for me right now, it feels more like walking up a mountain while *riding* the yo-yo.
+
+{!! next-previous !!}
