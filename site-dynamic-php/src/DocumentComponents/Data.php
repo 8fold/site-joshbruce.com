@@ -21,17 +21,23 @@ class Data
             $low     = $row[1];
             $high    = $row[2];
 
-            $detail = 'hold';
+            $detail = '';
             if ($current > $high) {
                 $detail = 'decrease';
 
             } elseif ($current < $low) {
                 $detail = 'increase';
 
+            } else {
+                $detail = 'hold';
+
             }
 
+            $label  = Element::span($label)->build();
+            $parenthetical = Element::span(' (' . $detail . ')')->build();
+
             $listHeadings[] = Element::li(
-                $label . " ({$detail})",
+                $label . $parenthetical,
                 Element::ul(
                     Element::li(
                         Element::b('current: '),
@@ -48,13 +54,13 @@ class Data
                         $high
                     )
                 )
-            );
+            )->props('data-icon ' . $detail);
         }
 
         if (count($listHeadings) === 0) {
             return '';
 
         }
-        return Element::ul(...$listHeadings)->build();
+        return Element::ul(...$listHeadings)->props('is data-list')->build();
     }
 }
