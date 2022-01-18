@@ -59,9 +59,17 @@ Bottom line is, contributing the way I am to get to the portfolio balance I’m 
 
 Documents should start becoming available in February. I keep forgetting that there’s such a thing as a standard deduction, which reduces my taxable income anyway.
 
-This is important to remember because of the Roth Individual Retirement Account income limits. 
+Standard deduction is important to remember because of the Roth Individual Retirement Account income limits restricting contributions. 
 
 With the standard deduction on top of the deductible contributions to other retirement accounts, I’m definitely good for last year. Still planning on back-loading for this year; contributing in 2023 for the 2022 tax year.
+
+## Credit cards
+
+All but one of my credit cards is a cash rewards card.
+
+I went ahead and cashed out my primary card, which means over 200 United States Dollars into the savings account of my secondary institution. The plan is to move that balance to my operating expense account. I’m expecting to help buy a new mattress for the move and this combined amount will help cover that, which means I should be able to continue investing and reducing the cash balance for essentials.
+
+My secondary and tertiary cards automatically deposit reward points as cash. Having the primary card not do this automatically is a hiding money hack. Maybe I should specify this in my [investment policy](/finances/investment-policy/#emergency-fund-cash-and-credit); specifically, is there a cap on how Miami points I can sit on that aren’t earning dividends? Right now, the answer is no and I think there should be.
 
 ## Site updates
 
