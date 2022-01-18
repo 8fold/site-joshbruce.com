@@ -51,9 +51,9 @@ In short, when The United States Federal lowers interest rates people are more w
 
 The term normalizing event was thrown out there.
 
-The approach I’m going for is based on [fundamentals](/finances/); at least for the investments I’m working with. I’m also still on the beginning side of accumulation, not drawdown. Therefore, I’m not rebalancing through selling, I’m doing it through contributing. The oldest money I’ll have invested will be roughly 30 before I have to take required minimum distributions ([72 as of this writing](https://www.investor.gov/financial-tools-calculators/calculators/required-minimum-distribution-calculator)), if things go according to the plan as of this writing (taxable around 50 years of age, tax-deferred around 60, and tax-free around 70).
+The approach I’m going for is based on [fundamentals](/finances/); at least for the investments I’m working with. I’m also still on the beginning side of accumulation, not drawdown. Therefore, I’m not rebalancing through selling, I’m doing it through contributing. The oldest money I’ll have invested will be roughly 30 before I have to take required minimum distributions ([72 as of this writing](https://www.investor.gov/financial-tools-calculators/calculators/required-minimum-distribution-calculator)), if things go according to the plan as of this writing (taxable around 50 years of age, tax-deferred around 60, and tax-free around 70). So, as people move from the riskier small- and mid-cap arenas and more toward large-cap and possibly dividend stocks, the price per share decreases, which decreases the price per share of my index funds.
 
-Bottom line is, contributing the way I am to get to the portfolio balance I’m looking for still ensures, as much as possible, that I’m buying low; presuming the value will be higher in the future, which it should be due to inflation alone.
+Bottom line is, contributing the way I am to get to the portfolio balance I’m looking for still ensures, as much as possible, that I’m buying low; presuming the value of the small- and mid-caps will be higher in the future, which they should be due to inflation alone.
 
 ## Taxes
 
