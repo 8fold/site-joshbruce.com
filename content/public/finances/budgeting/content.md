@@ -48,21 +48,27 @@ The Operating Expenses and Investing Pass-through accounts don't earn dividends,
 
 ## Categories
 
-I've seen folks use accounting software and have a category for every little thing. Further, some accounting software comes with a set of starter categories. I prefer additive systems over subtractive systems.
+Categories in accounting software can quickly turn into the problem I’ve seen categories and tagging in the blogosphere and project management tools; every transaction needing its own category. This approach can quickly lead to overwhelm as, across the entire income and expenses ledger, each purchase garners only a few percentage points. This hides useful metrics.
 
-With an additive system you start with bare bones constraints and setup; then add on what you need to do what you need and want to do. With a subtractive system you are given everything and the kitchen sink up front, just in case you need it.
+With this in mind, I prefer additive systems over subtractive systems.
 
-In my [coaching practice](/coaching/) I've realized that the kitchen sink approach can often lead to an invisible hand that drives people to find ways to use capabilities of the system even if they don't need them:
+With an additive system you start with bare bones constraints and setup; then add what you need when you need to. With subtractive systems you are given everything and the kitchen sink up front, just in case you need it later.
+
+In my [coaching practice](/coaching/) I've realized that the kitchen sink approach can often lead to an invisible hand driving people to find ways to use capabilities of the system even if they don't need them:
 
 > Why are we doing X? Because we can.
 
 Anyhoo.
 
-I want to have a minimal set of categories. This makes it easier for me to remember which categories exist and tends to give me enough information to visualize income and expenses quickly. Because systems come with some more accounting standard categories I don't want to delete the initial set either. Enter the workaround; prefix the categories you use with a special character—I use the hyphen (-).
+I want to have a minimal set of categories. This makes it easier for me to remember which categories exist and tends to give me enough information to visualize income and expenses quickly. 
 
-So, if I see a category of `Fuel`, I know I don't use that category, because it doesn't start with a hyphen. If I see a category of `- Food` on the other hand, I know I use that one.
+Instead of `Phone - landline` and `Phone - mobile`, I have `Electronics`. The bills for purchasing electronic equipment (like a cellphone) fall under this category. The bills for services that make these tools function (service and internet, for example), also fall under this category. One category covering a lot ground and making it easier to see the impact of all my electronics, regardless of a particular service needed to make it function the way it was intended.
 
-Prefixing with a special character is also something of a computer hack. When software is used to sort a list of items symbols tend to come before number, which come before letters.
+Unfortunately, for me at least, most accounting software come with a bunch of categories, just in case you need it. Enter the workaround; prefix the categories you use with a special character—I use the hyphen (-).
+
+So, if I see a category of `Fuel`, I know I don't use that category, because it doesn't start with a hyphen. And, I may never use it even if I had a car; refueling might go under `- Transportation`, along with the car payments. If I wanted to track fuel, I might rename the provided `Fuel` to `- Transportation - fuel`, for example. 
+
+Prefixing with a special character is also something of a computer hack. When software is used to sort a list of items symbols tend to come before numbers, which come before letters.
 
 So, when the dropdown is expanded in my accounting app, the categories that start with the hyphen are at the top of the list:
 
@@ -72,12 +78,14 @@ Apples
 Fuel
 ```
 
-This means I can quickly scan down through the list of categories I actually use before scanning of the categories that have never been used or are no longer being used (more on this in a moment).
+This means I can quickly scan down through the list of categories I actually use before scanning the unused or no longer being used categories (more on this in a moment).
 
-When I first set up the accounting app, I created a `Miscellaneous expenses` category and a `Miscellaneous revenue` category (I won't use the hyphenated versions for the purposes of these inline examples). Then I went through and reconciled a single month. With each transaction I asked myself if this was something I want to track specifically; that's where the `Food` category came from. As I continued reconciling though, I decided I want to track dining out separately, which is where the `Food - dining` came from.
+When I first set up the accounting app, I created a `Miscellaneous expenses` category and a `Miscellaneous revenue` category (I won't use the hyphenated versions for the purposes of these inline examples). Then I went through and reconciled a single month. With each transaction I asked myself if this was something I want to track specifically; that's where the `Food` category came from. As I continued reconciling though, I decided I want to track dining out separately, which is where the `Food - dining` category came from.
 
-As of this writing I still smoke tobacco and walk to convenience stores every couple of days to get cigarettes and snacks. I could categorize this as `Food` because of the snacks, but both are actually luxuries that could be cut from my life, if needed. So, I created a `Habits - tobacco` category and another for `Food - snacks`. The `Habits - tobacco` category lets me track spending specific to that habit. 
+As of this writing I still smoke tobacco and walk to convenience stores every couple of days to get a pack of cigarettes and snacks. I could categorize this as `Food` because of the snacks, but both are actually luxuries that could be cut from my life, if needed. So, I created a `Habits - tobacco` category and another for `Food - snacks`. The `Habits - tobacco` category lets me track spending specific to that habit. 
 
-For things I don't buy very often, like clothes, I can just use the `Miscellaneous expenses` category. For things I spend regularly on, I can create a different category. For example, I pay rent regularly, it gets flagged as `Housing`. This is also where other bills related to the apartment go; like electricity, water, internet, and so on. If I want to track something specifically, I can create a different category. When I no longer feel like tracking that specific element, I can stop using the category.
+For things I don't buy very often, like clothes, I can just use the `Miscellaneous expenses` category. For things I spend regularly on, I can create a different category. 
 
-For example, in early 2021 thanks to the `Food - dining` category I learned I spent thousands of dollars dining out; this was way more than my tobacco habit, in fact. For someone who's not into food this is excessive. So, in 2022, I decided to adjust both `Food - dining` and `Food - snacks`. If both of those categories become small enough, I'll stop using them.
+For example, I pay rent regularly, it gets flagged as `Housing`. This is also where other bills related to the apartment go; like electricity, water, internet, and so on. If I want to track something specifically, I can create a different category. When I no longer feel like tracking that specific item, I can stop using the category and maybe put those transactions under a different, higher-level category.
+
+For example, in early 2021 thanks to the `Food - dining` category I learned I spent thousands of dollars dining out; this was way more than my tobacco habit, in fact. For someone who's not into food it was excessive. So, in 2022, I decided to adjust both `Food - dining` and `Food - snacks`. If both of those categories become small enough, I'll stop using the categories.
