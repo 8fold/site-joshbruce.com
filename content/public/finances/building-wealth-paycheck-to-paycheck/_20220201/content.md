@@ -41,6 +41,28 @@ Over time, the allowed maximum for both debt and cash should decrease. This is b
 
 The transfer from Health Savings Administrators went through.
 
+## The market
+
+I’m still watching the markets and it’s interesting to watch as things shift. 
+
+I was watching [Graham Stephan](https://youtu.be/LLKg24IVuhc) and, cognitive bias being what it is, I think the interpretation is correct.
+
+In short, when The United States Federal lowers interest rates people are more willing to take on riskier and more speculative investments and purchases. When the interest rates go up, people go back to more fundamental-based and lower risk approaches. This is partially due to lower risk alternatives, like bonds, tend to have higher interest rates and become more appealing. 
+
+The term normalizing event was thrown out there.
+
+The approach I’m going for is based on [fundamentals](/finances/); at least for the investments I’m working with. I’m also still on the beginning side of accumulation, not drawdown. Therefore, I’m not rebalancing through selling, I’m doing it through contributing. The oldest money I’ll have invested will be roughly 30 before I have to take required minimum distributions ([72 as of this writing](https://www.investor.gov/financial-tools-calculators/calculators/required-minimum-distribution-calculator)), if things go according to the plan as of this writing (taxable around 50 years of age, tax-deferred around 60, and tax-free around 70).
+
+Bottom line is, contributing the way I am to get to the portfolio balance I’m looking for still ensures, as much as possible, that I’m buying low; presuming the value will be higher in the future, which it should be due to inflation alone.
+
+## Taxes
+
+Documents should start becoming available in February. I keep forgetting that there’s such a thing as a standard deduction, which reduces my taxable income anyway.
+
+This is important to remember because of the Roth Individual Retirement Account income limits. 
+
+With the standard deduction on top of the deductible contributions to other retirement accounts, I’m definitely good for last year. Still planning on back-loading for this year; contributing in 2023 for the 2022 tax year.
+
 ## Site updates
 
 I finally got around to updating the visualization for the portfolio. I decided against the image methodology [I initially considered](/finances/building-wealth-paycheck-to-paycheck/20210301/); I still have the visualization in the spreadsheet.
