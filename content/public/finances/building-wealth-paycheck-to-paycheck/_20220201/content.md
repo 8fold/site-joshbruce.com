@@ -39,7 +39,9 @@ Over time, the allowed maximum for both debt and cash should decrease. This is b
 
 ## Health Savings Account
 
-The transfer from Health Savings Administrators went through.
+The transfer from Health Savings Administrators went through. I did lose roughly 2 USD from the original contribution and I’m okay with that. 
+
+The primary purpose of the move was to get away from Health Savings Administrators. Further, the price I’m buying in at seems lower than when initially bought in, so, it should all come out in the wash, so to speak.
 
 ## The market
 
