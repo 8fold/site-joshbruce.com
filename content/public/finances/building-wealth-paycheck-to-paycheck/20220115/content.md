@@ -133,7 +133,7 @@ When I actually got paid, I did a pretty hard reset on cash; purchasing more of 
 
 I started multiple portfolios as a single deposit, control group to experiment with my portfolio plan going from now until becoming financially independent.
 
-The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and [time in over timing the market principles]((/finances/#values).
+The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and [time in over timing the market principles](/finances/#values).
 
 The Mark 1.0 portfolio holds a risk-parity style portfolio split between 50 percent 100 percent stock index fund (see Mark 0.0), 25 percent in negative correlation (long-term treasuries), and 25 percent in alternatives (13 percent gold, 6 percent commodities, and 3 percent in both United States and international real estate).
 
