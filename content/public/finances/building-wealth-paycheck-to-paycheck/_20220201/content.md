@@ -43,6 +43,8 @@ The transfer from Health Savings Administrators went through. I did lose roughly
 
 The primary purpose of the move was to get away from Health Savings Administrators. Further, the price I’m buying in at seems lower than when initially bought in, so, it should all come out in the wash, so to speak.
 
+Beyond buying into the extended market fund in my Health Savings Account, I went ahead and did a final contribution to my Roth Individual Retirement Account for 2021 and preemptively bought in to the M1 Finance pies. I don’t have any more cash I’d feel comfortable throwing at the dip right now, so, pretty sure excitement’s over for now. (Famous last words.)
+
 ## The market
 
 I’m still watching the markets and it’s interesting to see things shift. Further, it’s interesting to note that the psychology of it is a desire to jump in sooner rather than later.
