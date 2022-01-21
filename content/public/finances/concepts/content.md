@@ -64,19 +64,28 @@ Federal long-term capital gains rules basically have [their own graduated tax](h
 
 Basically, looking at it from an ethical social engineering perspective, the federal government is trying to incentivize long-term saving and investing through the tax code with things like tax deductions for putting cash into various savings vehicles, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Account, tax-free withdrawals. Further, if you're living strictly on capital gains from various investments, you can live a modest lifestyle without paying any taxes; the moment you go over that 40,000 USD point though, you pay 15% tax on the amount you went over. So, also incentivizing extravagance.
 
+And, let's say you purchased Stock A for 20,000 USD and Stock B for 20,000 USD. A year later Stock A is worth 70,000 USD and Stock B is worth 10,000 USD. Stock has a capital gain of 50,000 USD and Stock B has a capital loss of 10,000 USD. You sell both and get 80,000 USD. Based on Stock A alone, you'd owe 15 percent on 10,000 USD (9,999 USD really, but still). However, you should be able to take a tax deduction for the 10,000 USD capital loss from Stock B, which means you would pay 0 tax…depending on the type of account and presuming the initial 40,000 USD investment was done with post-tax money. Now the new 50,000 USD has been taxed and can't be taxed again, because the government can't tax the same dollar twice.
+
+As of this writing, the government doesn't tax ownership of assets like stocks and bonds. This distinguishes them from assets like homes and automobiles.
+
 ## Being rich and looking rich aren't the same  
 
 ## Glossary
 
+Bonds
+:    A loan issued by a company or government whereby you purchase the bond with a promise of repayment with interest. *Bonds are different than shares because shares imply some form of ownership, while bonds do not.*
+
 Capital gain
+:    An increase in value of an asset compared to the cost basis.
 
 Capital loss
+:    A decrease in value of an asset compared to the cost basis.
 
 Cost basis
 :    The amount of money it took to acquire an asset.
 
 Fair market value
-:    The amount you can expect to receive when converting an asset into cash through the sale of that asset.
+:    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
 
 Gambling
 :    You trade currency to participate in an activity or for an asset with a high probability of losing money. (Compare to saving, investing, and speculating.)
@@ -101,6 +110,12 @@ Management (passive)
 
 Mutual fund
 :    A collection of assets held in trust; usually represented as shares using pooled resources of the shareholders and available to the public. *Mutual fund shareholders are not direct owners of the assets being purchased and do not have voting privileges.*
+
+Realized
+:    Whether or not a capital gain or loss has occurred. *The point at which we can say money has been earned or lost.*
+
+Unrealized
+:    Whether or not a capital gain or loss *would* occur. *The point at which we can have an idea of the fair market value of an asset; an appraisal on a house, for example, establishes the unrealized gain or loss in value.*
 
 Saving
 :    You receive income in the form of currency and hold it.
