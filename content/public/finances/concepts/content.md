@@ -86,6 +86,17 @@ There’s a sort of template phrasing that goes like this:
 
 There are plenty more of these turns of phrase out there, the point being that in one aspect the person looks rich, while in another aspect the person appears poor. [Yahoo! Finance](https://finance.yahoo.com/news/millionaires-america-2020-50-states-201203665.html) references research from Phoenix Marketing International stating there are over 8 million households who can claim millionaire status. With that said, most of them are unknown to us. We usually only hear about those who are more lavish or loud about it. 
 
+## Accumulation and drawdown
+
+Finances can be divided into two primary modes:
+
+1. accumulation and
+2. drawdown.
+
+When in accumulation mode, you will be receiving revenue from an outside source; employment, sales, and similar. Someone else’s assets become yours. When in drawdown, you will be giving your assets to someone else or otherwise liquidating them.
+
+In accumulation mode, you typically want to purchase assets that are less expensive per unit. In drawdown, you typically want to sell the assets that have increased in value.
+
 ## Glossary
 
 Bonds
@@ -121,11 +132,20 @@ Index fund
 Investing
 :    You trade currency for an asset that historically increases in value over time with the intent of exchanging it for more currency than you paid at a later time. (Compare to saving, speculating, and gambling.)
 
+Lot
+:    A pool of assets (ex. Stocks) purchased at the same time and at the same cost basis.
+
 Management (active)
 :    A style of asset management whereby an individual or team of individuals actively choose assets to buy and sell and when; often with the intent of beating the returns of a benchmark index.
 
 Management (passive)
 :    A style of asset management whereby an individual or team of individuals choose assets to buy and sell based on a standardized methodology; often an index.
+
+Market (bear)
+:    A bear market occurs when the overall value of assets in a broad-based collection of assets drops by 20 percent or more.
+
+Market (bull)
+:    A bull market is when the overall value of assets in a broad-based collection of assets increases by 20 percent or more; usually in a two month period.
 
 Mutual fund
 :    A collection of assets held in trust; usually represented as shares using pooled resources of the shareholders and available to the public. *Mutual fund shareholders are not direct owners of the assets being purchased and do not have voting privileges.*
