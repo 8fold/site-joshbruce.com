@@ -15,7 +15,7 @@ So, in a way, these are letters to a future version of myself who maybe had an a
 
 The biggest difference between saving and investing, as I've taken to using the terms, is that saving involves currency while investing involves conversion to something else.
 
-Cash is a liquid asset and can typically be traded directly for goods and services. It seems that the way we deal with people holding cash is to create more of it. By creating more of it, we typically cause inflation. This is similar to when a company [dilutes its stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more in response to there being a concentration in the hands of one or more investors. In a way, currency is a share in something, usually a community of some sort, which would include nation-states.
+Cash is a liquid asset and can typically be traded directly for goods and services. It seems that the way we deal with people hording cash is to create more of it. By creating more of it, we typically cause inflation. This is similar to when a company [dilutes its stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more in response to there being a concentration in the hands of one or more investors. In a way, currency is a share in something, usually a community of some sort, which would include nation-states.
 
 With that said, a house is also an asset and would be considered a relatively illiquid asset. You take cash and convert it into holding the house. Generally speaking, it would be strange to convert the house directly into another asset, specifically cash. In some cases it could take months if not years. The time it takes to convert the asset back into cash is why it would be considered relatively illiquid as assets go.
 
@@ -41,7 +41,39 @@ Speculating is similar to gambling only the probability of a positive return on 
 
 Investing is similar to speculating only the probability of a positive return on the cash spend is higher than either speculating or gambling. It's not to say it's guaranteed just that history demonstrates a positive return is probable.
 
+## Net worth isn't the same as cash on hand
+
+As of today, I'm part of the six-figure club, which is to say I have a net worth of roughly 100,000 [.United States Dollars](USD); this doesn't mean I have that in liquid cash. When we say someone is a millionaire or billionaire it's because, if we liquidated their assets, they would, in theory, have that much cash. However, if we liquidated their assets, eventually the fair market value of the assets would drop. 
+
+The United States government can't tax the same dollar twice. So, as of right now and my understanding, if I put 100 USD of after-tax money into a savings account and that 100 USD earns 10 USD in dividends, I could get taxed on the 10 USD but not the 100 USD which was already taxed. 
+
+Further, if I take that same 100 USD and buy shares in a mutual fund or a stock, I can't be taxed on that 100 USD (cost basis). If that stock generates dividends, the dividends could be taxed. If the fair market value of the stock goes up to 110 USD and I sell the the stock, I can be taxed on the capital gain of 10 USD…but not the original 100 USD. If I don't sell the stock, I don't get taxed on it. Stocks aren't taxed in the same way other hard assets are; like houses, cars, and so on.
+
+I'm still looking for non-partisan primary sources and, given the rules of the game, this seems reasonable. The majority (over 80 percent) of taxes collected by the federal government are collected from individuals, not corporations (not speculating why). 97 percent of taxes paid comes from 50 percent of tax payers. There are two ways to pay 0 taxes:
+
+- have a taxable income of 0 USD or
+- have acquired less than a certain in long-term capital gains.
+
+(Taxes in the United States are freaking weird.)
+
+Gross income and taxable income aren't the same thing. Let's say you work somewhere and earn less than or equal to 12,500 USD in 2021 and you are filing your taxes a single person. Your taxable income is 0 USD because of the standard deduction everyone gets to take. Let's say you earned 32,000 USD and you contributed the full amount of 19,500 USD to your 401k, you're taxable income would be at 0 as well. Let's say you earned 35,600 USD you maxed out the 401k and maxed out an [.Health Savings Account](HSA) contribution for the year; taxable income of roughly 0. (Check out [this calculator](https://www.taxact.com/tools/tax-bracket-calculator).)
+
+Now, let's say you threw 100 USD of after-tax money into the aforementioned stock then sold it 10 months later for 110 USD. The 100 USD wouldn't have tax implication, but the 10 USD would. Further, because the capital gains were less than 12 months old, it would count toward your total regular income as opposed to falling under the long-term capital gains rules.
+
+Federal long-term capital gains rules basically have [their own graduated tax](https://www.fool.com/research/capital-gains-tax-rates/). If it's less than 40,000 USD or so, you pay 0 percent in tax. Similar to the regular tax bracket if you do all the saving ever.
+
+Basically, looking at it from an ethical social engineering perspective, the federal government is trying to incentivize long-term saving and investing through the tax code with things like tax deductions for putting cash into various savings vehicles, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Account, tax-free withdrawals. Further, if you're living strictly on capital gains from various investments, you can live a modest lifestyle without paying any taxes; the moment you go over that 40,000 USD point though, you pay 15% tax on the amount you went over. So, also incentivizing extravagance.
+
+## Being rich and looking rich aren't the same  
+
 ## Glossary
+
+Capital gain
+
+Capital loss
+
+Cost basis
+:    The amount of money it took to acquire an asset.
 
 Fair market value
 :    The amount you can expect to receive when converting an asset into cash through the sale of that asset.
