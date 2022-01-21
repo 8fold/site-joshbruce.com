@@ -70,6 +70,22 @@ As of this writing, the government doesn't tax ownership of assets like stocks a
 
 ## Being rich and looking rich aren't the same  
 
+A couple more interesting sets of figures that I plan to consider further regarding sources and accuracy.
+
+The first set has to do with those with a net worth of a million USD or more. Roughly 80 percent of millionaires are considered first generation, which is to say they didn’t inherit a million USD. Further, 60 percent of them didn’t inherit more than 100,000 USD. Finally, a majority (over 50 percent) didn’t reach a net worth of a million USD until after age 50 and most of their net worth was inside an employer-sponsored retirement plan (like a 401k).
+
+The second set of figures has to do with generational wealth; what I’ve heard called the wealth wash cycle. 50 percent of inherited wealth will be lost by the second generation and 90 percent will be lost by the third generation. I’m not sure if this includes inheritance to multiple parties. What if 10 million USD is divided amongst 10 siblings; one million each? Does this data set mean 5 million USD will be lost by the second generation, that 5 of the siblings will lose all of their inheritance, or does it include both. (It’s worth noting that this isn’t to say generational wealth doesn’t exist or that something like trickle down economics works at a scale large enough to matter.)
+
+There’s a sort of template phrasing that goes like this:
+
+> X rich, Y poor.
+
+**Life rich, cash (or retirement) poor:** Is sometimes used as shorthand to describe some whose lifestyle gives the appearance of having a lot of money, however, when viewed from a per paycheck basis, they don’t have a lot of cash flow or discretionary funds. This could be traveling, owning expensive assets like cars, something else, or a combination. “They must be rich,” might be a response made when viewing from the outside.
+
+**House (or car) rich, cash (or retirement) poor:** Similar to the previous only this time it’s a particular type of asset. Having one million USD home or car that accounts for the majority of their net worth.
+
+There are plenty more of these turns of phrase out there, the point being that in one aspect the person looks rich, while in another aspect the person appears poor. [Yahoo! Finance](https://finance.yahoo.com/news/millionaires-america-2020-50-states-201203665.html) references research from Phoenix Marketing International stating there are over 8 million households who can claim millionaire status. With that said, most of them are unknown to us. We usually only hear about those who are more lavish or loud about it. 
+
 ## Glossary
 
 Bonds
@@ -83,6 +99,9 @@ Capital loss
 
 Cost basis
 :    The amount of money it took to acquire an asset.
+
+Expense ratio
+:    The ongoing cost for managing a mutual fund. *The percent is a per year number, however, the percent is usually divided by roughly 365 to generate a Daily percent, which is charged daily.*
 
 Fair market value
 :    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
@@ -110,6 +129,9 @@ Management (passive)
 
 Mutual fund
 :    A collection of assets held in trust; usually represented as shares using pooled resources of the shareholders and available to the public. *Mutual fund shareholders are not direct owners of the assets being purchased and do not have voting privileges.*
+
+Net worth
+:    The amount remaining after adding together the fair market value of all assets and subtracting the fair market value of all liabilities.
 
 Realized
 :    Whether or not a capital gain or loss has occurred. *The point at which we can say money has been earned or lost.*
