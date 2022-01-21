@@ -11,14 +11,14 @@ data:
 - [US equities - large, 24, 35, 37.9]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 44.42, 45.19, 47.71]
-- [0.2, 40.93, 41.68, 43.83]
-- [0.4, 40.99, 41.73, 43.74]
-- [0.6, 41.01, 41.75, 43.54]
-- [0.8, 41.16, 41.84, 43.36]
-- [1.0, 44.76, 44.45, 46.87]
-- [1.1, 44.66, 45.35, 46.76]
-- [1.2, 44.64, 45.32, 46.73]
+- [0.0, 43.49, 45.19, 47.71]
+- [0.2, 40.17, 41.68, 43.83]
+- [0.4, 40.35, 41.73, 43.74]
+- [0.6, 40.48, 41.75, 43.54]
+- [0.8, 40.78, 41.84, 43.36]
+- [1.0, 44.44, 44.45, 46.87]
+- [1.1, 44.35, 45.35, 46.76]
+- [1.2, 44.32, 45.32, 46.73]
 ---
 
 # February 1st, 2022 paycheck
@@ -51,7 +51,7 @@ I’m still watching the markets and it’s interesting to see things shift. Fur
 
 I was watching [Graham Stephan](https://youtu.be/LLKg24IVuhc) and, cognitive bias being what it is, I think the interpretation of various reports is correct.
 
-In short, when The United States Federal Reserve lowers interest rates people are more willing to take on riskier and more speculative investments and purchases. When the interest rates go up, people go back to more fundamental-based and lower risk approaches. This is partially due to lower risk alternatives, like bonds, tending to have higher yields and becoming more appealing. 
+In short, when The United States Federal Reserve lowers interest rates people are more willing to take on riskier and more speculative investments and purchases. When the interest rates go up, people tend to move from growth to value when it comes to equities. This is partially due to lower risk alternatives, like bonds, tending to have higher yields and becoming more appealing. 
 
 The term “normalizing event” was thrown out there and I need to see if this is a term to add to my lexicon. Is it the same as a “correction” and how different is it from a bear market, recession, or depression? (Makes me think creating a glossary here would be helpful.)
 
