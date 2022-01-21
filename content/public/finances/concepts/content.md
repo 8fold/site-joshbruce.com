@@ -27,7 +27,15 @@ Finally, just because I use cash to purchase an asset doesn't mean I've made an 
 
 ## Investing, speculating, and gambling aren't the same
 
+I think it will be easier and more direct to take these in reverse order compared to the heading.
 
+I go to a casino (or a [Chuck E. Cheese](https://en.wikipedia.org/wiki/Chuck_E._Cheese)). I trade my cash for tokens or chips. I use those tokens or chips to participate in various games. As I play I win and lose tokens. If I win tokens, the value of the asset I purchased (my pool of tokens) has gone up. If I lose tokens, the value of the asset I purchased has gone down. At the end of my time playing, I can exchange the tokens for cash. The majority of people lose money; that's what makes it gambling.
+
+In the case of carnival-like systems, such as Chuck E. Cheese, it's pretty clever. I trade a dollar for [four metal tokens](https://en.wikipedia.org/wiki/Chuck_E._Cheese#Video_arcade) that can only be spent at Chuck E. Cheese; metal feels more expensive than paper. I spend those to play [skee-ball](https://www.skeeball.com). As I play, I earn paper tickets (feel less expensive than the tokens). Further, I often receive a higher quantity of the paper tickets compared to the number of tokens used to play the game in the first place; I'm getting more, so to speak. Then I can trade those paper tickets in for a toy of some kind, which is usually worth less than the amount of actual cash it took for me to play the game. Gambling (or, in this case, most of us would probably just consider this spending money not expecting a higher return on the investment; unlike the casino).  
+
+Speculating is similar to gambling only the probability of a positive return on the cash spend is higher but still highly uncertain. Cryptocurrencies, for example, as of this writing could be considered speculative. The speculative nature comes in part because they are highly volatile when it comes to fair market value, they're a newer technological implementation of the old guard concepts, and the regulations for them specifically and the services that have emerged to support them haven't been nailed down. Further, the primary way to increase profit compared to the cash spend is based on someone else in the future being willing to pay more than you paid. 
+
+Investing is similar to speculating only the probability of a positive return on the cash spend is higher than either speculating or gambling. It's not to say it's guaranteed just that history demonstrates a positive return is probable.
 
 ## Glossary
 
