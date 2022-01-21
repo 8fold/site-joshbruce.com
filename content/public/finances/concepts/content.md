@@ -130,6 +130,28 @@ In general, I would say that we don't want dividends to automatically reinvest. 
 
 ## Bulls, bears, and corrections
 
+Most days, the United States stock market is, well, just the stock market. With that said, there are certain events that have been given names. It's also important to note that, from what I understand, there's a difference between events happening "the market" and events happening to folks in general, however, the two may experience good and bad at the same time.
+
+A bull market means fair market values of things are tending to increase roughly 20 percent in a two month stretch; a bear market is the opposite. A correction is a decrease of 10 percent in a short period of time. A crash is a decrease of 40 percent or more.
+
+So, from highest to lowest the market goes like this:
+
+1. bull (20 percent up),
+2. stable,
+3. correction (10 percent down),
+4. bear (20 percent down),
+5. crash (40 percent or more).
+
+Since 1900 corrections have occurred [about once a year](https://awealthofcommonsense.com/2013/11/difference-crash-correction/) and last about 4 months. Bear markets have happened roughly every 3.5 years and last roughly one year. Crashes have happened roughly once every 12 years. Of course, all of this depends what you're looking at and how it's reported and doesn't account for how long it took for the market to recover to its pre-crash value.
+
+Corrections are typically short-term events, as the name implies, once the market has corrected we should be in a roughly stable state. And, for the most part, historically the stable state is roughly an 8 percent increase year over year.
+
+A recession and depression are not necessarily related to the stock market. Instead these are general terms for how businesses and employment are functioning. Granted if business begins to shrink and employment does the same, chances are people won't be pumping money into the stock market.
+
+With that said, these are factors when consider risk tolerance and risk capacity.
+
+## Risk tolerance and risk capacity
+
 
 
 ## Being rich and looking rich aren't the same  
