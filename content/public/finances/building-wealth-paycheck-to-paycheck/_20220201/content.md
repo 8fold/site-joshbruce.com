@@ -27,37 +27,41 @@ fi-experiments:
 
 {!! data !!}
 
-In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I was able to identify areas where I should adjust with regard to spending and saving. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
+In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I was able to identify areas where I should adjust spending and saving. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
 
-Because of the minimal categories I could quickly see which expenses were more of a one-off for that year and probably not something I wanted to progress into the future. Because all the expenses were tracked by Wave I was able to see exactly how much I spent overall. Subtracting the one-off expenses from the total, I was able to readjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success.
+Because of the minimal categories I could quickly see which expenses were more of a one-off for that year and probably not something I wanted to progress into the future. Because all the expenses were tracked by Wave I was able to see exactly how much I spent overall. Subtracting the one-off expenses from the total, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success.
 
 Personal Capital uses the [You Index™️](https://support.personalcapital.com/hc/en-us/articles/201169610-What-is-the-You-Index-), which looks at what I actually have syncing with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio still outranks the comparative portfolios available.
 
 The ability to see income versus expenses reenforces the notion of [budgeting](/finances/budgeting/) as a means of tracking (not restricting) as well as the idea of looking at a net worth statement each year proposed by Brian and Bo from [The Money Guy Show](https://www.moneyguy.com/resources/) (and others in the financial planning space).
 
-Over time, the allowed maximum for both debt and cash should decrease. This is because the maximum is based on an overall percentage of the portfolio's value. As the balance increases, the maximums should decrease; 1 percent of a 100 [.United States Dollars](USD) is a lot different than 1 percent of 10,000 USD. In other words, my spending won’t change much, however, as a percentage of the overall portfolio, it will be less.
+Over time, the allowed maximum for both debt and cash should decrease. This is because the maximum is based on an overall percentage of the portfolio's value. As the balance increases, the maximums should decrease; 1 percent of 100 [.United States Dollars](USD) is a lot different than 1 percent of 10,000 USD. In other words, my spending won’t change much, however, as a percentage of the overall portfolio, it will be less.
 
 ## Health Savings Account
 
-The transfer from Health Savings Administrators went through. I did lose roughly 2 USD from the original contribution and I’m okay with that. 
+The transfer from HealthSavings Administrators went through. I did lose roughly 2 USD from the original contribution and I’m okay with that. 
 
-The primary purpose of the move was to get away from Health Savings Administrators. Further, the price I’m buying in at seems lower than when initially bought in, so, it should all come out in the wash, so to speak.
+The primary purpose of the move was to get away from HealthSavings Administrators. Further, the price I’m buying in at seems lower than when initially bought in, so, it should all come out in the wash, so to speak.
 
-Beyond buying into the extended market fund in my Health Savings Account, I went ahead and did a final contribution to my Roth Individual Retirement Account for 2021 and preemptively bought in to the M1 Finance pies. I don’t have any more cash I’d feel comfortable throwing at the dip right now, so, pretty sure excitement’s over for now. (Famous last words.)
+Beyond buying into the extended market fund in my Health Savings Account, I went ahead and did a final contribution to my Roth Individual Retirement Account for 2021 and preemptively bought in to the M1 Finance pies. 
+
+These moves were primarily to bring the cash portion into the 5 percent arena and help being the equities more in line with their targets as well.
 
 ## The market
 
-I’m still watching the markets and it’s interesting to see things shift. Further, it’s interesting to note that the psychology of it is a desire to jump in sooner rather than later.
+I’m still watching the markets and it’s interesting to see things shift. Further, it’s interesting to note that the psychology of it is a desire I feel to jump in sooner rather than later.
 
-I was watching [Graham Stephan](https://youtu.be/LLKg24IVuhc) and, cognitive bias being what it is, I think the interpretation of various reports is correct.
+I was watching [Graham Stephan](https://youtu.be/LLKg24IVuhc) and, cognitive bias being what it is, I think the interpretation of various reports he points to is correct.
 
 In short, when The United States Federal Reserve lowers interest rates people are more willing to take on riskier and more speculative investments and purchases. When the interest rates go up, people tend to move from growth to value when it comes to equities. This is partially due to lower risk alternatives, like bonds, tending to have higher yields and becoming more appealing. 
 
-The term “normalizing event” was thrown out there and I need to see if this is a term to add to my lexicon. Is it the same as a “correction” and how different is it from a bear market, recession, or depression? (Makes me think creating a glossary here would be helpful.)
+The term “normalizing event” was thrown out there and I need to see if this is a term to add to [my lexicon](/finances/concepts/#glossary). Is it the same as a correction, a bear market, or crash? (Decided to start a glossary, see previous link.)
 
-The approach I’m going for is based on [fundamentals](/finances/); at least for the investments I’m working with. I’m also still on the beginning side of accumulation, not drawdown. Therefore, I’m not rebalancing through selling and shifting, I’m doing it through contributing. Others, on the other hand, may be rebalancing through shifting, which means I’m buying theirs as they buy other, less risky assets.
+The approach I’m going for is based on [fundamentals](/finances/); at least for the investments I’m working with. I’m also still on the beginning side of [accumulation, not drawdown](/finances/concepts/#accumulation-drawdown-and-rebalancing). Therefore, I’m not rebalancing through selling one thing and buying another; instead, I’m earning income and buying things that are lower than their target percent. 
 
-The oldest money I’ll have invested will be roughly 30 years old before I have to take required minimum distributions ([72 as of this writing](https://www.investor.gov/financial-tools-calculators/calculators/required-minimum-distribution-calculator)), if things go according to plan as of this writing (drawing down taxable accounts around 50 years of age, tax-deferred around 60, and tax-free around 70). So, as people move from the riskier small- and mid-cap arenas and more toward large-cap and possibly dividend stocks, the price per share decreases for the small- and mod-cap assets, which decreases the price per share of my index funds.
+Other people, during this time, may be rebalancing and not necessarily exiting.
+
+The oldest money I’ll have invested by the time I withdraw it should be roughly 30 years old, if things go according to plan as of this writing (drawing down taxable accounts around 50 years of age, tax-deferred around 60, and tax-free around 70 the age of the investments will be 10, 20, and 30 years old, respectively). So, as people move from the riskier small- and mid-cap arenas and more toward large-cap, stocks, bonds, and commodities, the price per share decreases for the small- and mod-cap, which decreases the price per share of my index funds.
 
 Bottom line is, contributing the way I am to get to the portfolio balance I’m looking for still ensures, as much as possible, that I’m buying low; presuming the value of the small- and mid-caps will be higher in the future, which they should be due to inflation alone.
 
