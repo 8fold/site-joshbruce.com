@@ -45,7 +45,7 @@ Investing is similar to speculating only the probability of a positive return on
 
 ## Net worth isn't the same as cash on hand
 
-As of today, I'm part of the six-figure club, which is to say I have a net worth greater 100,000 [.United States Dollars](USD) and less than 1 million USD; this doesn't mean I have that in liquid cash. When we say someone is a millionaire or billionaire it's because, if we liquidated their assets and paid off their liabilities, they would, in theory, have that much cash. However, if we liquidated their assets, eventually the fair market value of the assets would drop. 
+As of today, I'm part of the six-figure club, which is to say I have a net worth greater than 100,000 [.United States Dollars](USD) and less than 1 million USD; this doesn't mean I have that in liquid cash. When we say someone is a millionaire or billionaire it's because, if we liquidated their assets and paid off their liabilities, they would, in theory, have that much cash. However, if we liquidated their assets, eventually the fair market value of the assets would drop. 
 
 The United States government can't tax the same dollar twice. So, as of right now and my understanding, if I put 100 USD of after-tax money into a savings account and that 100 USD earns 10 USD in dividends, I could get taxed on the 10 USD but not the 100 USD which was already taxed. 
 
