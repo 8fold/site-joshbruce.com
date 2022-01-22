@@ -29,6 +29,8 @@ Technically I can also look at it a different way. The moment I purchased the as
 
 Finally, just because I use cash to purchase an asset doesn't mean I've made an investment.
 
+In terms of accounts and language saving accounts (or any accounts that hold currency) have a balance while investment accounts have a value. This may seem like a minor semantic debate but it can go a long a way in reenforcing the reality that investment aren’t money.
+
 ## Investing, speculating, and gambling aren't the same
 
 I think it will be easier and more direct to take these in reverse order compared to the heading.
@@ -62,19 +64,27 @@ There are two ways to pay 0 taxes:
 
 Gross income and taxable income aren't the same thing. 
 
-Let's say you work somewhere and earn less than or equal to 12,500 USD in 2021 and you are filing your taxes as a single person. Your taxable income is 0 USD because of the standard deduction everyone gets to take. Let's say you earned 32,000 USD and you contributed the full amount of 19,500 USD to your 401k, you're taxable income would be at 0 as well. Let's say you earned 35,600 USD you maxed out the 401k and maxed out an [.Health Savings Account](HSA) contribution for the year; taxable income of roughly 0. (Check out [this calculator](https://www.taxact.com/tools/tax-bracket-calculator).)
+Let's say you work somewhere and earn less than or equal to 12,500 USD in 2021 and you are filing your taxes as a single person. Your taxable income is 0 USD because of the standard deduction everyone gets to take. Let's say you earned 32,000 USD and you contributed the full amount of 19,500 USD to your 401k, you're taxable income would be at 0 as well. Let's say you earned 35,600 USD you maxed out the 401k and maxed out a [.Health Savings Account](HSA) for the year; taxable income of roughly 0. (Check out [this calculator](https://www.taxact.com/tools/tax-bracket-calculator).)
 
 Now, let's say you threw 100 USD of after-tax money into the aforementioned stock then sold it 10 months later for 110 USD. The 100 USD wouldn't be taxed, but the 10 USD would count as regular, taxable income. 
 
 Federal long-term capital gains rules have [their own progressive tax](https://www.fool.com/research/capital-gains-tax-rates/). If it's less than 40,000 USD or so, you pay 0 percent in tax. Similar to the regular tax bracket if you do all the saving ever.
 
-Basically, looking at it from an ethical social engineering perspective, the federal government is trying to incentivize long-term saving and investing through the tax code with tax deductions, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Account, tax-free withdrawals. Further, if you're living strictly on capital gains from various investments (retired), you can live a modest lifestyle without paying any taxes; the moment you go over that 40,000 USD point though, you pay 15% tax on the amount you went over. So, also disincentivizing extravagant living.
+Basically, looking at it from an ethical social engineering perspective, the federal government is incentivizing long-term saving and investing through the tax code with tax deductions, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Account, tax-free withdrawals. Further, if you're living strictly on capital gains from various investments (retired), you can live a modest lifestyle without paying any taxes; the moment you go over that 40,000 USD point though, you pay 15 percent tax on the amount you went over. So, also disincentivizing extravagant living.
 
-Now, let's say you purchased Stock A for 20,000 USD and Stock B for 20,000 USD. A year later Stock A is worth 70,000 USD and Stock B is worth 10,000 USD. Stock A has a capital gain of 50,000 USD and Stock B has a capital loss of 10,000 USD. You sell both and get 80,000 USD. Based on Stock A alone, you'd owe 15 percent on 10,000 USD (9,999 USD really, but still). However, you should be able to take a tax deduction for the 10,000 USD capital loss from Stock B, which means you would pay 0 tax…depending on the type of account and presuming the initial 40,000 USD investment was done with post-tax money. Now the new 50,000 USD has been taxed and can't be taxed again, because the government can't tax the same dollar twice. (There's something called a wash sale rule for you to be able to take the tax deduction for the loss though. It's related to how long it was since you last purchased the asset, even with dividends from the asset, when you sold it, and whether or not you purchased the same asset again within a certain period of time. In short, don't try to game the system, the house typically wins and its a gamble.)
+Now, let's say you purchased Stock A for 20,000 USD and Stock B for 20,000 USD. A year later Stock A is worth 70,000 USD and Stock B is worth 10,000 USD. 
 
- Some time later you purchase Stock A again for 25,000 USD and Stock C for 25,000 USD. A while later Stock A is worth 75,000 USD and Stock C is worth 15,000 USD. You sell both and get 90,000 USD. Reduced by the 50,000 put in and another 10,000 USD for the capital loss, you most likely pay 0 taxes. Now you can do the same thing with 45,000 USD to each stock. (Again, don't try to play this style of game; it's just messed up and weird and similar outcomes should be possible through easier means when we talk about accumulation and drawdown. What we're doing here is increasing our cost basis while minimizing the tax implications; letting the tax-tail wag the investment dog.)
+Stock A has a capital gain of 50,000 USD and Stock B has a capital loss of 10,000 USD. You sell both and get 80,000 USD. Based on Stock A alone, you'd owe 15 percent on 10,000 USD (9,999 USD really, but still). However, you should be able to take a tax deduction for the 10,000 USD capital loss from Stock B, which means you would pay 0 tax…depending on the type of account and presuming the initial 40,000 USD investment was done with after-tax money. 
 
-Also, net worth has nothing to do with actual worth as a human. To be more accurate it's just financial net worth. If all assets were liquidated and all liabilities were paid off, the difference is financial net worth.
+Now the new 50,000 USD has been taxed and can't be taxed again, because the government can't tax the same dollar twice. (There's something called a wash sale rule for you to be able to take the tax deduction for the loss though. Be aware, don’t let the tax-tail wag the investment dog, and, in short, don't try to game the system, like with any gamble, the house usually wins.)
+
+Anyhoo.
+
+Some time later you purchase Stock A again for 25,000 USD and Stock C for 25,000 USD. A while later Stock A is worth 75,000 USD and Stock C is worth 15,000 USD; same change as before. You sell both and get 90,000 USD. 90,000 USD minus the 50,000 USD after-tax money used to buy the stocks, minus the 10,000 USD capital loss, leaves 30,000 USD in potentially taxable income, which falls into the 0 percent tax bracket.
+
+(Again, don't try to play this style of game. Similar outcomes are possible through easier means when we talk about accumulation and drawdown. What we're doing here is increasing our cost basis while minimizing the tax implications; letting the tax-tail wag the investment dog.)
+
+Also worth a note: Net worth has nothing to do with actual worth as a human. To be more accurate it's just financial net worth. If all assets were liquidated and all liabilities were paid off, the difference is financial net worth. Some people with high net worth are great humans, others not so much. Some people with low net worth are great humans, others not so much.
 
 ## Accumulation, drawdown, and rebalancing
 
@@ -89,29 +99,37 @@ In accumulation mode, you want to purchase assets that are less valuable per uni
 
 Being able to shift strategies between purchasing low and selling high is one reason for having more than one investment vehicle available; this is *not* the same as diversification. 
 
-For example, I'm currently operating a variation on what is sometimes called the VTSAX and chill approach. In short, this approach asks us to increase income while reducing expenses and investing the difference in a total stock market index fund (specifically [VTSAX](https://investor.vanguard.com/mutual-funds/profile/VTSAX) in this case) and just hold on for the ride. As the cost per share of the index fund goes up, we are constantly buying in at the higher price; thereby, increasing our average cost basis. When the cost per share goes down, we are buying low. In no case are we selling or divesting to something else. For me, I'm using two index funds to allow me to divest a bit without selling.
+For example, I'm currently operating a variation on what is sometimes called the VTSAX and chill approach. In short, this approach asks us to increase income while reducing expenses and investing the difference in a total stock market index fund (specifically [VTSAX](https://investor.vanguard.com/mutual-funds/profile/VTSAX) as the name suggests). 
 
-One index fund is a total stock market index fund and is distributed based on market capitalization, favoring larger companies; larger companies get a higher percentage of each invested dollar. The other index fund is also based on market capitalization and favors companies with smaller market capitalizations. This means one of the index funds may have a lower fair market value than the other and I can contribute to the one with the lower fair market value instead of continuing to push money into the companies with higher price per share.
+With this strategy the portfolio is 100 percent equities with a very low expense ratio and complexity. VTSAX and chill is essentially the approach recommended by JL Collins in [*The Simple Path to Wealth*](https://www.thesimplepathtowealth.com) to those in accumulation mode.
 
-This isn't strictly rebalancing. Mainly because I'm not selling anything, however, the outcome is similar because I'm typically purchasing at lower cost first to get the portfolio into balance. One of the added benefits of rebalancing is that it's a way of increasing the average cost basis of your assets without having to play strange buying and selling games (see previous section). 
+VTSAX is a fine strategy. I chose to go with a two fund approach, partially because I couldn’t find a single fund that would get the same outcome. I’m still practically 100 percent equities, which means my portfolio should perform roughly 90 percent similar to VTSAX alone. However, I can push money into the lower of the two and maintain balance or sell the higher of the two and maintain balance.
 
-When I shift to drawing down, I will do the opposite. Selling at the higher value and maintaining the same overall percentages in my portfolio.
+This isn't strictly speaking rebalancing because I’m not selling anything. With rebalancing, we sell the things that have gone too high and buy more of the lower value things. Just because they are lower value doesn’t mean they’ve gone down in value, just that they are a lower percentage. Over time, the act of selling something of higher value you paid less for will help to increase your cost basis without playing strange buying and selling games (see previous section). 
 
-For example, the targets I've established for my portfolio is to have roughly 33 percent in small-, mid-, and large-cap United States stocks. If the fair market value of the small-cap portion is less than 33 percent, when I put more money, I will buy in to that portion of the portfolio; same if any of the portions fit shit criteria. If shifted to drawdown mode, I'd sell the assets that were above the 33 percent mark, which would cause the percentage of the lower percentage assets to increase by comparison.
+I want my equities to be roughly 33 percent in small-, mid-, and large-cap stocks. Let’s say my portfolio has a fair market value of 100 USD. However, that 100 USD in value is 25 USD in both small- and mid-cap and 50 USD in large-cap.
 
-I feel a more detailed example with dollar amounts might be warranted. Let's say my portfolio has 100 USD in it. 25 USD in small-cap, 25 USD in mid-cap, and 50 USD in large-cap; the target is an even distribution across the three. If I was in accumulation mode and had 100 USD to put in, I'd purchase 42 USD in small- and mid-cap while only purchasing around 16 USD in large-cap, which would result in roughly 66 USD being in all three. If I were in drawdown mode and needed 50 USD, I would withdraw 34 USD from the large-cap and 8 USD from the small- and mid-cap portions, which would put the portfolio back into the target balance. If I were rebalancing the portfolio, I would sell 16 USD from the large-cap and put 8 USD into the other two.
+Let’s say I’m in accumulation mode and have 100 USD to put in. This would bring the value of the portfolio to 200 USD. I want even distribution across three buckets; 200 USD divided by 3 is roughly 66 USD, therefore, I want to try and get each bucket to 66 USD. 42 USD to the small- and mid-cap and 16 to the large-cap; back in balance.
 
-Purchase based on what's low and sell based on what's high using target percentages not the total of gains or losses. Granted this generically speaking and there sometimes other things to consider, however, these other considerations may not result in anything more than a micro-optimization compared to the primary consideration.
+Let’s say I’m in drawdown mode with the same out of balance portfolio and want withdraw 50 USD from the bank of Josh. This would leave my portfolio at 50 USD in value. 50 USD divided by 3 is roughly 16 USD, so, I want the remaining value for each bucket to be 16 USD. I’ll sell 34 USD in large-cap and 8 USD for both small- and mid-cap.
 
-Index funds are internally rebalanced regularly, however, these internal rebalancing events don't affect your cost basis, to the best of my knowledge. Rebalancing your portfolio by selling one thing to buy another thing will alter your cost basis.
+Let’s say I’m just wanting to rebalance. Current value of 100 USD divided by 3 buckets leaves a target value of around 33 USD each. So, I’ll sell 16 USD of the large-cap and purchase 8 USD worth of the small- and mid-cap.
+
+In the last 2 cases it’d be worth noting and accounting for taxes. 
+
+In accumulation mode, we’re buying what’s low. In drawdown mode, we’re selling what’s high. 
+
+While there may be other things to consider they will probably have less impact overall compared to these two things; sometimes referred to as micro-optimizations.
+
+Index funds are internally rebalanced regularly, however, these internal rebalancing events don't affect your cost basis. Rebalancing your portfolio by selling one thing to buy another thing will alter your cost basis.
 
 ## Cost basis, capital gains (or losses), and methods
 
-You buy 100 shares of an index fund for 1 USD each (lot 1); 100 USD on day one. On day two you buy another 100 shares of the same index fund for 2 USD each (lot 2); 200 USD. Your total cost basis is 300 USD and you have 200 shares valued at 2 USD each. On day three the fair market value of the shares you own is 400 USD. 
+You buy 100 shares of an index fund for 1 USD each (lot 1); 100 USD on day one. On day two you buy another 100 shares of the same index fund for 2 USD each (lot 2); 200 USD. Your total cost basis is 300 USD and you have 200 shares valued at 2 USD each; total value of 400 USD. 
 
-300 USD is your cost basis and 100 USD is an unrealized capital gain, which is spread across two lots. (If the fair market value was 200 USD, the 100 USD is an unrealized capital loss.)
+300 USD is your cost basis and 100 USD is an unrealized capital gain. (If the fair market value was 200 USD, the 100 USD is an unrealized capital loss.)
 
-Let's say you want to sell 50 USD worth of shares at 2 USD each; 25 of your 200 shares. There are multiple [methods the transaction can be performed](https://investor.vanguard.com/taxes/cost-basis/methods) (the link is for Vanguard and other brokerage firms should allow for similar):
+Let's say you want to sell 50 USD worth of shares at 2 USD each; 25 of your 200 shares. The transaction can be performed using [one of a few methods](https://investor.vanguard.com/taxes/cost-basis/methods) (the link is for Vanguard and other brokerage firms should allow for similar):
 
 1. average cost;
 2. first in, first out;
@@ -126,11 +144,13 @@ Highest in, first out sells the shares based on the price paid, not the date of 
 
 Lot ID basically means you get to look at each individual lot and shares you have purchased and choose which to sell. This offers the most flexibility, requires the most work, and carries the most risk should undesired results occur. With this method, you may decide to sell a bunch of shares in something that had a lot of capital gains along with something else that had some capital losses and offset the gains and taxable footprint.
 
-In general, I would say that we don't want dividends to automatically reinvest. Instead, have the dividends kick out into the settlement account, then purchase back into whatever makes the most sense. The exception here might be for accounts that either don't have more than one asset, or, the account is tax-free or tax-deferred.
+In general, I would say that we don't want dividends to automatically reinvest. Instead, have the dividends kick out into the settlement account, then purchase back into whatever makes the most sense (see previous section). The exception here might be for accounts that either don't have more than one asset, or, the account is tax-free or tax-deferred.
+
+Something else to consider when buying and selling is the concept of a limit order. A limit order basically says only buy this thing if the price per unit is this amount or less. Further, only sell this thing at this price or higher. Limit orders can help avoid bad timing during steep fluctuations. While the steep fluctuations may not happen often, it sucks to place an order to sell 10 shares of something at 2 USD each only to have the fair market value drop to 1 USD each before your order is settled.
 
 ## Bulls, bears, and corrections
 
-Most days, the United States stock market is, well, just the stock market. With that said, there are certain events that have been given names. It's also important to note that, from what I understand, there's a difference between events happening "the market" and events happening to folks in general, however, the two may experience good and bad at the same time.
+Most days, the United States stock market is, well, just the stock market. With that said, there are certain named events. It's also important to note that, from what I understand, there's a difference between events happening to "the market" and events happening to folks in general, however, the two may experience good and bad at the same time.
 
 A bull market means fair market values of things are tending to increase roughly 20 percent in a two month stretch; a bear market is the opposite. A correction is a decrease of 10 percent in a short period of time. A crash is a decrease of 40 percent or more.
 
@@ -142,13 +162,13 @@ So, from highest to lowest the market goes like this:
 4. bear (20 percent down),
 5. crash (40 percent or more).
 
-Since 1900 corrections have occurred [about once a year](https://awealthofcommonsense.com/2013/11/difference-crash-correction/) and last about 4 months. Bear markets have happened roughly every 3.5 years and last roughly one year. Crashes have happened roughly once every 12 years. Of course, all of this depends what you're looking at and how it's reported and doesn't account for how long it took for the market to recover to its pre-crash value.
+Since 1900 corrections have occurred [about once a year](https://awealthofcommonsense.com/2013/11/difference-crash-correction/) and last about 4 months; think of this as a rebalance of a portfolio. Bear markets have happened roughly every 3.5 years and last roughly one year. Crashes have happened roughly once every 12 years (depending on the data used).
 
-Corrections are typically short-term events, as the name implies, once the market has corrected we should be in a roughly stable state. And, for the most part, historically the stable state is roughly an 8 percent increase year over year.
+Corrections are typically short-term events, as the name implies, once the market has corrected we should be in a roughly stable state. And, for the most part, historically the stable state is an 8 percent increase year over year.
 
 A recession and depression are not necessarily related to the stock market. Instead these are general terms for how businesses and employment are functioning. Granted if business begins to shrink and employment does the same, chances are people won't be pumping money into the stock market.
 
-With that said, these are factors when consider risk tolerance and risk capacity.
+With that said, these are factors when considering risk tolerance and risk capacity.
 
 ## Risk tolerance and risk capacity
 
@@ -213,6 +233,9 @@ Index fund
 Investing
 :    You trade currency for an asset that historically increases in value over time with the intent of exchanging it for more currency than you paid at a later time. (Compare to saving, speculating, and gambling.)
 
+Limit order
+:    Specify the dollar amount for buying or selling securities.
+
 Lot
 :    A pool of assets (ex. Stocks) purchased at the same time and at the same cost basis.
 
@@ -252,6 +275,9 @@ Unrealized
 Saving
 :    You receive income in the form of currency and hold it.
 :    You spend less on an item than you normally would. *The "normally would" being the operative phrase. Purchasing something on sale that you would not have purchased is a bit different.* (Compare to investing, speculating, and gambling.)
+
+Securities
+:    A fungible, negotiable instrument that holds some type of monetary value. *See stock and bond, for example.*
 
 Share
 :    See stock
