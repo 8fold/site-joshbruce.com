@@ -51,7 +51,7 @@ The United States government can't tax the same dollar twice. So, as of right no
 
 Further, if I take that same 100 USD and buy shares in a mutual fund or a stock, I can't be taxed on that 100 USD (cost basis). If that stock generates dividends, the dividends could be taxed. If the fair market value of the stock goes up to 110 USD and I sell the stock, I can be taxed on the capital gain of 10 USD…but not the original 100 USD. If I don't sell the stock, I don't get taxed on it. Stocks aren't taxed in the same way other hard assets are; like houses, cars, and so on.
 
-I'm still looking for non-partisan primary sources for the following and, given the rules of the game, this seems reasonable. The majority (over 80 percent) of taxes collected by the federal government are collected from individuals, not corporations (not speculating why). 97 percent of taxes paid comes from 50 percent of tax payers. 40 percent of taxes are paid by the top 1 percent of earners (those earning over 500,000 USD per year in taxable income). (Again, haven't found primary sources that didn't include some for of slant or misrepresentation of those numbers.)
+I'm still looking for non-partisan primary sources for the following and, given the rules of the game, this seems reasonable. The majority (over 80 percent) of taxes collected by the federal government are collected from individuals, not corporations (not speculating why). 97 percent of taxes paid comes from 50 percent of tax payers. 40 percent of taxes are paid by the top 1 percent of earners (those earning over 500,000 USD per year in taxable income). (Again, haven't found primary sources that didn't include some form of slant or misrepresentation of those numbers.)
 
 There are two ways to pay 0 taxes:
 
