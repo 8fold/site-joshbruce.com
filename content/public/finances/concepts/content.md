@@ -152,7 +152,7 @@ With that said, these are factors when consider risk tolerance and risk capacity
 
 ## Risk tolerance and risk capacity
 
-
+I have a high risk tolerance and, right now, I have a high risk capacity. I'm pretty confident my job and income will continue for at least another year. I have an emergency fund capable of carrying me a little bit. 
 
 ## Being rich and looking rich aren't the same  
 
@@ -245,6 +245,13 @@ Realized
 
 Rebalancing
 :    The act of selling an asset with higher fair market value than other assets and using the funds from that sale to purchase assets with the lower fair market value to bring the percentages of all assets back to their targets.
+
+Risk capacity
+:    How much risk you "must" take on to reach your financial goals.
+:    How long you're able to continue on when things go pear-shaped. *You may have a high risk tolerance but not be able to survive if things go pear-shaped.*
+
+Risk tolerance
+:    How much uncertainty you're willing to take on.
 
 Unrealized
 :    Whether or not a capital gain or loss *would* occur. *The point at which we can have an idea of the fair market value of an asset; an appraisal on a house, for example, establishes the unrealized gain or loss in value.*
