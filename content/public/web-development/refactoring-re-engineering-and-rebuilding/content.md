@@ -57,7 +57,7 @@ If you work in an organization with a lot of rules and governance, chances are y
 
 ## Rebuilding
 
-I [rebuilt this site](https://joshbruce.com/web-development/2021-site-in-depth) with these things in mind, in fact; the only things I kept were the [.CSS](Cascading Style Sheet) and the libraries I use for building HTML ([HTML Builder](https://github.com/8fold/php-html-builder) and the [CommonMark extension](https://github.com/8fold/commonmark-fluent-markdown)). I maintain the code for both of those packages (dependent on myself).
+I [rebuilt this site](/web-development/2021-site-in-depth) with these things in mind, in fact; the only things I kept were the [.CSS](Cascading Style Sheet) and the libraries I use for building HTML ([HTML Builder](https://github.com/8fold/php-html-builder) and the [CommonMark extension](https://github.com/8fold/commonmark-fluent-markdown)). I maintain the code for both of those packages (dependent on myself).
 
 And, in under 48 hours, I redesigned the site, removed my dependency on a framework, and improved my workflows.
 
