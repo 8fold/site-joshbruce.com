@@ -298,6 +298,7 @@ Stock
 
 Sunk cost fallacy
 :    The idea that a company or organization is more likely to continue with a project if they have already invested a lot of money, time, or effort in it, even when continuing is not the best thing to do. *Throwing good money after bad.*
+:    The desire to avoid selling something at a loss.
 
 Tax location
 :    The type of account in which various securities are held and how they are treated for tax purposes.
