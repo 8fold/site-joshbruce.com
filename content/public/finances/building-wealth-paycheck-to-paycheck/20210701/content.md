@@ -30,3 +30,5 @@ The regular 150 USD is going toward the HSA (have not transferred out of HealthS
 The hope is that by the end of 2021 I'll be able to achieve the desired portfolio balance without selling any positions. I should also have a better idea on percentages to go to the various places on a paycheck by paycheck basis; still dialing in.
 
 This is the paycheck in which I should have done the redistribution from the Profit account. Having done it in June, I won't do it this time.
+
+{!! next-previous !!}

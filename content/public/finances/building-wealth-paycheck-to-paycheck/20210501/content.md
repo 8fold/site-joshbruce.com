@@ -128,3 +128,5 @@ Line of credit: I have a personal line of credit with my primary institution. Th
 Another account: Another option, which I'm setting up is to have the funds drawn from another account automatically; specifically the Runway account. To be clear, there will be a chain here; like an overdraft conga line. If the Operating Expense account is about to go negative, money should get transferred from the line of credit. If the line of credit is maxed out, funds should be drawn from the Runway account. If funds aren't available in the Runway account, funds should come from the Hold account. The idea is to set up the distribution and redistribution ratios in a way that this never happens.
 
 At no point should funds be taken from the Taxes account.
+
+{!! next-previous !!}

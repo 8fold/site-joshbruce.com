@@ -32,3 +32,4 @@ I sold my position at my other [.HSA](health savings account) provider. Now that
 
 Waiting for the transfer to the HSA provider I will be sticking with for the foreseeable future.
 
+{!! next-previous !!}

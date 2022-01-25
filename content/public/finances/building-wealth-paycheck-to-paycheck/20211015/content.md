@@ -25,3 +25,5 @@ I’m still cash heavy but spending cash is pretty easy; though I’ll most like
 We’re planning on moving in the beginning of 2022. The target area should be a little less expensive than where we are now.
 
 And equities have started to bounce back.
+
+{!! next-previous !!}

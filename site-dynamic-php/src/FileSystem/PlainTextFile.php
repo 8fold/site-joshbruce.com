@@ -227,6 +227,22 @@ class PlainTextFile
     }
 
     /**
+     * @return array<int, int[]|float[]>
+     */
+    public function fiExperiments(): array
+    {
+        $frontmatter = $this->frontMatter();
+        if (
+            array_key_exists('fi-experiments', $frontmatter) and
+            $data = $frontmatter['fi-experiments'] and
+            is_array($data)
+        ) {
+            return $data;
+        }
+        return [];
+    }
+
+    /**
      * @return string[]
      */
     private function titleParts(): array

@@ -71,3 +71,5 @@ So, 50 is the taxable accounts. 55 any 401(k) funds I might have. 60 is any Trad
 I won’t be burning these accounts to zero between activations, that’s just when I’ll be able to access them.
 
 First things first though, cash down and stocks up; that's what we're looking at over the next few paychecks. I've been blessed with a big shovel and a low total lifestyle cost and I'm hoping it won't take long to get aligned.
+
+{!! next-previous !!}

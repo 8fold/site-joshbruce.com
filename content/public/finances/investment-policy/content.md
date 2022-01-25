@@ -1,7 +1,7 @@
 ---
 title: Investment Policy
 created: 20210216
-updated: 20210828
+updated: 20220124
 coming-soon:
 - review agile manifesto
 ---
@@ -16,7 +16,7 @@ I started with the outline developed by [The White Coat Investor](https://www.wh
 
 ## Financial goals
 
-In keeping with the [meet in the middle](/finances/) practice, I want to reverse engineer from the least acceptable to most acceptable retirement ages that are both most likely.
+In keeping with the [meet in the middle](/finances/) practice, I want to reverse engineer from the least acceptable to most acceptable retirement ages that are both most likely for reaching [.financial independence](FI).
 
 This gives me what I refer to as a Coast FI stack. Five Coast FI numbers with decreasing retirement ages, up until the point that the age I should be able to achieve the number corresponds (roughly) with the retirement:
 
@@ -47,9 +47,10 @@ This gives me what I refer to as a Coast FI stack. Five Coast FI numbers with de
 	4. Starting balance of: $322,304
 - FIRE: $500,000
 
-### Details
+<details>
+<summary>Details</summary>
 
-I created this using a Coast FI calculator. Coast FI is the amount of money you would need to maintain your current total lifestyle cost at a specified future age or date, without having to save another dollar; the invested amount will grow to within a "safe withdrawal rate" by the specified age.
+I created the Coast FI stack using a Coast FI calculator. Coast FI is the amount of money you would need to maintain your current total lifestyle cost at a specified future age or date, without having to save another dollar; the invested amount will grow to within a "safe withdrawal rate" by the specified age.
 
 I used the [Coast FI calculator from Wallet Burst](https://walletburst.com/tools/coast-fire-calc/) (I can’t speak to the quality of content on the rest of the site, but I appreciated the calculator).
 
@@ -59,7 +60,7 @@ My current total lifestyle cost is roughly $17,760 and I used **$20,000** to giv
 
 I set the monthly contributions to **$4,000**, which is somewhat optimistic and will be adjusted if month-after-month I'm not able to achieve that amount. With that said, these numbers do not include 401(k) contributions made along the way beyond the initial net worth at 41.
 
-This data can be used to generate a static [.FIRE](financial independence retire early) number: `total lifestyle cost * 25`. My FIRE number is $500,000.
+This data can be used to generate a static [.financial independence retire early](FIRE) number: `total lifestyle cost * 25`. My FIRE number is $500,000.
 
 Because the numbers account for inflation, they will be in current dollars but may be higher actual balances in the future (1 USD being worth 0.60 cents later means 1 future dollar may be roughly 1.40 USD at that future time).
 
@@ -70,6 +71,8 @@ For the last row to be achieved, I need to make an extra $2,000 in contributions
 There's my primary retirement goal; able to “retire” by 50. By breaking it down I’m setting micro-goals that aren’t a decade away. Let me see if I can get the $155K by age 43. If I do that, let me see if I can get the $170K. And so on. And, if I can make that first one, then I'm in a comfortable position to believe that I will be able to retire at the latest acceptable time for me, which should come with other benefits I'm not counting on (social security, medicare, and the like).
 
 Another thing I appreciate about the table is that it's not bullets and a lot of words. I can scan down the left column for how old I am, scan across and see how close I am to achieving that level of investment, which is not representing my total net worth (traditional savings accounts, real estate, and similar).
+
+</details>
 
 ## Investments
 
@@ -83,12 +86,13 @@ The items in the following that are taken directly (or paraphrased) from White C
 - I will contribute at least $100 per paycheck to long-term savings.
 - I will use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand [.USD](United States dollars); year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
+- For the equities portion of my portfolios, I will strive to be evenly distributed between small-, mid-, and large-cap stocks.
 
 Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
 
 ## Asset allocation
 
-Investments will be in three brokerage accounts:
+Investments will be in three brokerage accounts (tax buckets):
 
 - Roth IRA:
 	- post-tax going in (taxes are paid),
@@ -103,64 +107,64 @@ Investments will be in three brokerage accounts:
 	- taxed on dividends gained, and
 	- taxed on capital gains upon withdrawal (realized).
 
-For the taxable account there are potential tax advantages for selling a position with capital losses. It's called tax loss harvesting. I don't plan on doing anything there unless or until I fully understand it.
+For the taxable account there are potential tax advantages for selling a position with capital losses; referred to a [tax-loss harvesting](https://www.investopedia.com/terms/t/taxgainlossharvesting.asp). I don't plan on doing anything intentionally with tax-loss harvesting unless or until I understand it.
 
-I have multiple buckets (I'll put debts in this description despite them not being assets in the strictest sense), each is given a range of percentages it can or should be during any given pay period.
+I have multiple groups for macro-asset classes from debt to lard-cap [.United States](US) equities. I do include debt despite debt being a liability in accounting terminology. Each macro-asset class is given a range of percentages (similar to [Bollinger Bands](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands)) representing the proportion the value of each asset class should be each [paycheck or payout](/finances/building-wealth-paycheck-to-paycheck/).
 
-The cash accounts use the flow-based approach described in [May 1 Paycheck](/finances/building-wealth-paycheck-to-paycheck/20210501/) and [Time- and Flow-Oriented Budgets](/finances/budgeting/). I'm sure over time these percentages will need to shift and, as they do, this table will be updated. I'm also not going to be very strict on the actuals matching or being within the targets.
+Cash is a portion of the portfolio, however, while in [accumulation mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), the objective will be to keep cash at a minimum and view it as the reserve portion of the portfolio. From a long-term perspective, I'm hoping to build the cash reserve to be one year's worth of expenses by the time I step away from traditional employment.
 
 ### Coast FI 1 (43 years old)
 
-When I reach Coast FI 1 (or leaving my current employer), I will likely roll my 401(k) into my Traditional IRA account. I am considering leaving one 401(k) open somewhere to draw from around age 55, depending on the rules of the 401(k) as this would save me from having to wait until 60.
+Once I reach Coast FI 1, I plan to begin moving toward a risk parity style portfolio by adding long-term treasuries and a little gold to the mix. If I leave my current employer, I may decide to roll the 401k there to my new employer, or, push it into a Traditional [.Individual Retirement Account](IRA). 
 
 ### Coast FI 2 (44 years old)
 
-Contemplate opening bond or similar income-generating accounts inside the IRA accounts. These dividends are non-taxable and would be rolled directly into the equity fund(s) in those accounts. This shouldn't count as a contribution; therefore, I can max out the contributions to the IRAs, if possible while using the IRAs to maintain overall portfolio balance, which will probably see bond limits to 1 and 2 percent.
+Coast FI 2 would see me increase diversification with an increase in long-term treasuries and gold and the addition of US [.Real Estate Investment Trusts](REITs).
 
 ### Coast FI 3 (46 years old)
 
-Increase bond limits to 2 and 4 percent.
+Increase bond and gold exposure. Introduce commodities to the mix.
 
 ### Coast FI 4 (48 years old)
 
-Increase bond limits to 4 and 8 percent.
+Decrease US equities exposure while increasing exposure to other asset classes and add in non-US REITs.
 
 ### FIRE-able (50 years old)
 
-Increase bond limits to 20 and 30 percent.
+Decrease US equities exposure while increasing exposure to the other asset classes in proportion.
 
-At this point, I should have enough in the taxable account to continue living my modest lifestyle until age 60, when I can start withdrawing from the IRAs. I hope to be in a position where I am earning income from non-investment sources; the plan shifts at this point, based on current conditions and over the next two years.
+At they point, the taxable account should be able to support my modest lifestyle for 10 years.
 
-1. I'll save up to one year's worth of expenses in cash.
-2. If I'm planning on pulling the cord at the end of the two years (to either retire or take a drastic pay cut — Barista FIRE), I will adjust to a 70 percent stock holding.
+At age 60 I'll be able to lean on the tax-deferred accounts, which should have balances high enough to cover me for another 10 years. This time will also give me a chance to let the taxable accounts cool down.
+
+I plan on reserving the tax-free accounts until age 70. If there are funds still available in the tax-deferred buckets, I will continuing leaning more on those, however. The rationale being that when I reach age 72, I will be required to take minimum distributions from the tax-deferred accounts.
+
+I plan on having some form of earned income until my passing. This will be through books, art, and the like, which I'll create on my own schedule an not because I necessarily need to in order to survive.
 
 ### Beyond FIRE
 
-I have no idea.
+No idea.
 
-The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk; one of the Agile values is adapting to change over following a plan.
+The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk. One of the Agile values is adapting to change over following a plan, so, I will adjust as time progresses. In other words, this is a plan like any other, once met with reality it may become moot.
 
-In other words, this is a plan like any other, once met with reality it may become rather moot.
+What makes me feel comfortable about it is it's based on the value of the portfolio, which is the crux of the whole thing. So, if time slips a bit, I still have the same goal and, once I hit Coast FI 1, the retirement date is acceptable, though not ideal.
 
-What makes me feel comfortable about it is it's based on the value of the portfolio, which is the crux of the whole thing. So, if time slips a bit, I still have the same goal and, once I hit the first Coast FI number, the retirement date is acceptable, though not ideal.
+<details>
+<summary>Details</summary>
 
-### Details
+Asset allocation is the proportion of each asset class compared to the overall portfolio. Tax location is related to the tax treatment of funds flowing in and out of the portfolio. Diversification is about choosing asset classes that have [low correlation](https://www.portfoliovisualizer.com/asset-correlations) to each other.
 
-Asset allocation is about how much of your portfolio is in different types of buckets. The rule of thumb here being to diversify. Before broad-based index funds and the like, being diversified meant choosing individual businesses in a variety of industries. You might have invested in a few technology companies, a few manufacturing, a few energy, and so on. When it comes to index funds, these rules don't have to apply, because you could have a single fund that touches the entire market (at least the entire market traded through the channel you're using - the US exchanges in my case).
+In the beginning I aim to keep over 90 percent of the value in US equities. Over the time during accumulation mode this will shift to a more diversified, risk parity portfolio. Regardless of time, I hope to maintain roughly equal distribution across US equities based on market capitalization.
 
-- In the beginning, while actively maintain traditional employment, the portfolio will be 95-99% equities and 1-5% bonds; preferring higher equities.
-- I will strive to favor equal distribution across the entire American stock market (all US businesses traded on the exchange); favoring small-cap businesses when not equally weighted.
-- Diversification beyond equities and bonds will not be done until achieving level 1 Coast FI, if ever.
+</details>
 
 ## Emergency fund (cash and credit)
 
-Most of my emergency fund will use revolving loans; I'm sure someone's head somewhere just exploded. The reason I think this is a decent choice is my revolving loans have relatively low interest rates; less than 11 percent.
+As counterintuitive as it may sound, the majority of my emergency fund will reside in revolving loans. These loans have relatively low interest rates and I'm taking a somewhat hard stance on what constitutes an emergency; a trip a few months from now is not an emergency and I should try and save what I can before the trip.
 
-I also have a wide definition of "cash" when it comes to this emergency fund; in short, cash means I can get my hands on it within 5 days and it is earmarked for short-term needs (one year or less).
+I also have a broad definition of cash when it comes to this emergency fund. Money already in risk parity style holdings may be considered cash should an emergency arise. (For the purposes of tracking, they will not be considered cash, however.) These minor holdings should have the lowest risk and volatility while achieving a higher rate of return compared to liquid cash. As such, only 3 to 6 months will be in liquid cash while in accumulation mode, which would shift to roughly 12 months in drawdown mode.
 
-Anywhere from 1 to 2 months in traditional savings and checking accounts. Another 2 to 3 months in a tax-exempt bond fund. Insurance deductibles in an equities portfolio designed to earn dividends, have a yield greater than 3 percent, and afford me the opportunity to vote on matters presented to owners; dividends will be moved elsewhere.
-
-Replacement costs for tools like cellphone, laptop, and the like will be saved over time. The tool will only be replaced if the current one no longer serves or the new one will bring as much joyful utility as the current one.
+These long-term savings accounts, if you will, will also be used to save for and replace things like cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life; just because the time is right and there's a new model, doesn't mean I should buy it right then. 
 
 ## Housing and paying off debt
 
@@ -170,9 +174,9 @@ Replacement costs for tools like cellphone, laptop, and the like will be saved o
 
 ## Spend and giving
 
-- I will use the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) method to help automate these decisions and habits.
-- This will occur every time income is received.
-- Contributions will be done in a way that helps maintain desired asset allocations.
+- I'll use the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) method to help automate these decisions and habits.
+- This method will be used every time income is received.
+- Contributions will be done in a way that helps maintain desired asset allocations and tax location.
 
 ## Changes
 

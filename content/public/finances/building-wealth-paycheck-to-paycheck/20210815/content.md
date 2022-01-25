@@ -34,3 +34,4 @@ Further, the stock market seems to be taking a beating again in the middle of th
 
 Overall the portfolio seems to be rebalancing pretty well. I'm considering adding another line to the table for alternatives. It would primarily be for when I reach drawdown and would be starting at 0 percent given I'm still in hardcore accumulation status until at least the first Coast FI number is reached.
 
+{!! next-previous !!}

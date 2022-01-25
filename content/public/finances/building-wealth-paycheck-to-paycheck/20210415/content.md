@@ -73,3 +73,5 @@ The M1 Finance portfolio is mainly for insurance deductibles per the [Financial 
 ## Medical expenses
 
 Nothing new here.
+
+{!! next-previous !!}

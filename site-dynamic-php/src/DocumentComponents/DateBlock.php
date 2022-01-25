@@ -35,7 +35,7 @@ class DateBlock
         if ($file->updated()) {
             $label      = 'Updated';
             $date       = $file->updated();
-            $schemaProp = 'dateCreated';
+            $schemaProp = 'dateModified';
 
             $times[] = self::timestamp($label, $date, $schemaProp);
         }

@@ -30,3 +30,5 @@ About to hit the maximum on 401k contributions. Need to email my employer to con
 Beyond that, pretty boring and the [.FI](Financial Independence) portfolios are proving themselves out as it relates to the risk parity portfolio concept. The 100 percent equities portfolio shows down roughly 3 percent while the risk parity should down only a little over 1 percent. I think I will start doing paycheck-to-paycheck comparisons similar to what Frank Vasquez does with the portfolios on [Risk Parity Radio](https://www.riskparityradio.com). I think it would be a better way for comparison and tracking over time; especially since I did the contribution accidentally the other day and started two of them after all the others. I can't tell if the others are actually doing better, or if it's just because they haven't been around as long.
 
 So, yeah, pretty boring.
+
+{!! next-previous !!}

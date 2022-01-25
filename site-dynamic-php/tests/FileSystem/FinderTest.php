@@ -12,6 +12,10 @@ use JoshBruce\SiteDynamic\Environment;
 
 final class FinderTest extends LiveContentTestCase
 {
+    private const PUBLISHED_COUNT = 49;
+
+    private const DRAFT_COUNT = 11;
+
     /**
      * @test
      *
@@ -20,14 +24,16 @@ final class FinderTest extends LiveContentTestCase
      */
     public function published_content_count(): void // phpcs:ignore
     {
+        $publishedCount = self::PUBLISHED_COUNT;
+
         $this->assertCount(
-            45,
+            $publishedCount,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()
         );
 
         $this->assertSame(
-            45,
+            $publishedCount,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->publishedContent()->count()
         );
@@ -41,14 +47,16 @@ final class FinderTest extends LiveContentTestCase
      */
     public function draft_content_count(): void // phpcs:ignore
     {
+        $draftCount = self::DRAFT_COUNT;
+
         $this->assertCount(
-            9,
+            $draftCount,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->draftContent()
         );
 
         $this->assertSame(
-            9,
+            $draftCount,
             Finder::init(self::pathToContentPublic(), Environment::CONTENT_FILENAME)
                 ->draftContent()->count()
         );

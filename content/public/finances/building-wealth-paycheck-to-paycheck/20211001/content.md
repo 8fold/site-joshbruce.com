@@ -47,3 +47,5 @@ Anyway, given I’m just starting these experiments, there’s not enough data t
 Doing the math again, 18 percent was too low for the 401k. I decided to capture the amount for the given percent and will bump it back up to 20 percent for the next paycheck.
 
 Sold my tax-exempt bonds and used it as the base to buy into the extended market fund. That puts me almost to my preferred two fund approach. Still waiting to see if my request to change the funds available in my 401k will go through.
+
+{!! next-previous !!}
