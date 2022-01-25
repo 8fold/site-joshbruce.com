@@ -5,7 +5,7 @@ created: 20220123
 
 # Investing
 
-For me, I’m fond of the principles espoused by Bogle and Dalio. Further, I’m appreciating the 10 question approach proposed by the book *Money for the Rest of Us*. Finally, I’m seeing the benefit of a risk parity approach to investing in drawdown.
+For me, I’m fond of the principles espoused by Bogle and Dalio, which I give credit to the [Risk Parity Radio podcast](https://www.riskparityradio.com/podcast) for introducing me to, specifically episodes 1, 3, 5, 7, and 9. Further, I’m appreciating the 10 question approach proposed by the book *Money for the Rest of Us* by J David Stein. Finally, I’m seeing the benefit of a risk parity approach to investing in [drawdown mode](https://joshbruce.com/finances/concepts/#accumulation-drawdown-and-rebalancing) or if I had a lower risk tolerance, capacity, or both.
 
 ## The principles 
 

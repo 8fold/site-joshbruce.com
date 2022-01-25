@@ -54,8 +54,9 @@ The following sections begin with my personal values, principles, practices, and
 4. Think win-win and meeting in the middle.
 5. Pay yourself first.
 6. Promote dividends earned in vehicles returning less than 7% per year to vehicles that historically return higher.
-7. Higher rates of return should be lowest piriority consideration when making decisions (see previous).
+7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
 8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/).
+9. Don't take out a loan to buy an investment; investing on margin.
 
 ## Tools
 
