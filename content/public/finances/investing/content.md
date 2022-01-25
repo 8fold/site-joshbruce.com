@@ -113,4 +113,4 @@ Unfortunately, these aren’t available for my 401k, so, 3 more funds:
 9. VGSLX, VNQ; and
 10. VGRLX, VNQI.
 
-This seems like it’s breaking the simplicity principle, but the simplicity is in the macro-allocation. The rest happens due to other constraints and opportunities.
+This seems like it’s breaking the simplicity principle, but the simplicity is in the macro-allocation. The rest happens due to other constraints and opportunities to achieve the macro-allocation.
