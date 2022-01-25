@@ -198,6 +198,12 @@ Another item of note is how somewhat common being a millionaire is in the United
 
 ## Glossary
 
+Asset allocation
+:    The proportion of each asset class within a portfolio.
+
+Basis point
+:    One-hundredth of one percent. *Increasing or decreasing by one basis point is 0.01 percent change in either direction.*
+
 Bonds
 :    A loan issued by a company or government whereby you purchase the bond with a promise of repayment with interest. *Bonds are different than shares because shares imply some form of ownership, while bonds do not.*
 
@@ -223,7 +229,7 @@ Fair market value
 :    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
 
 Gambling
-:    You trade currency to participate in an activity or for an asset with a high probability of losing money. (Compare to saving, investing, and speculating.)
+:    You trade currency to participate in an activity or for an asset with a high probability of losing money. *In some cases this may feel like purchasing a product, like a car, which we don't tend to view as gambling in the way we would purchasing a lottery ticket.* (Compare to saving, investing, and speculating.)
 
 Hedge fund
 :    A privately available mutual fund.
@@ -235,7 +241,7 @@ Index fund
 :    A mutual fund intended to follow a benchmark index of assets. *The Dow Jones Industrial Average is an index and there are mutual funds that try and match its performance; those mutual funds are index funds.*
 
 Investing
-:    You trade currency for an asset that historically increases in value over time with the intent of exchanging it for more currency than you paid at a later time. (Compare to saving, speculating, and gambling.)
+:    Purchasing a security that produces some form of income and historically increases in fair market value. *A home you live in would not necessarily qualify, however, a house where you collect rent would.* (Compare to saving, speculating, and gambling.)
 
 Liquidity
 :    How easily a given security can be traded for products and services in a given context.
@@ -280,12 +286,6 @@ Risk capacity
 Risk tolerance
 :    How much uncertainty you're willing to take on.
 
-Sunk cost fallacy
-:    The idea that a company or organization is more likely to continue with a project if they have already invested a lot of money, time, or effort in it, even when continuing is not the best thing to do. *Throwing good money after bad.*
-
-Unrealized
-:    Whether or not a capital gain or loss *would* occur. *The point at which we can have an idea of the fair market value of an asset; an appraisal on a house, for example, establishes the unrealized gain or loss in value.*
-
 Saving
 :    You receive income in the form of currency and hold it.
 :    You spend less on an item than you normally would. *The "normally would" being the operative phrase. Purchasing something on sale that you would not have purchased is a bit different.* (Compare to investing, speculating, and gambling.)
@@ -294,7 +294,17 @@ Share
 :    See stock
 
 Speculating
-:    You trade currency for an asset that you *believe* will be worth more at a later time, however, the outcome is highly uncertain. (Compare to saving, investing, and gambling.)
+:    You participate in an activity or purchase a product that does not generate income on its own, however, you believe it will increase in value in the future and you can sell it for a profit compared to the total cost you paid. *Buying a home you do not collect rent from would most likely fall under this heading.* (Compare to saving, investing, and gambling.)
 
 Stock
 :    An asset held to represent partial ownership of an enterprise. *All private and public companies have stocks; regardless of participation in a stock exchange. Further, stock ownership often comes with the responsibility and privilege of voting on certain decisions made by the company.*
+
+Sunk cost fallacy
+:    The idea that a company or organization is more likely to continue with a project if they have already invested a lot of money, time, or effort in it, even when continuing is not the best thing to do. *Throwing good money after bad.*
+:    The desire to avoid selling something at a loss.
+
+Tax location
+:    The type of account in which various securities are held and how they are treated for tax purposes.
+
+Unrealized
+:    Whether or not a capital gain or loss *would* occur. *The point at which we can have an idea of the fair market value of an asset; an appraisal on a house, for example, establishes the unrealized gain or loss in value.*
