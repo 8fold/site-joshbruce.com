@@ -32,13 +32,13 @@ In times of stress, I can come back to these and center myself from a time when 
     - genetic legacy.
 4. The most constrained over the most funded.
 5. United States over International.
-6. Passive management over 
-		- passive investing over
-		- active investing over
-		- active management.
-7. Index funds over 
-		- individual stocks over 
-		- bonds.
+6. Passive management over
+    - passive investing over
+    - active investing over
+    - active management.
+7. Index funds over
+    - individual stocks over
+    - bonds.
 8. Equities (ownership) over bonds (lending).
 9. Small, local businesses over
     - large, multinational businesses over
