@@ -311,9 +311,9 @@ main, article {
     border-radius: var(--3-px);
     margin-top: var(--m-spacer);
     padding: .5em .5em 0;
-    font-weight: var(--bold-font);
 
     & summary {
+      font-weight: var(--bold-font);
       color: var(--key);
       cursor: var(--pointer);
       margin: -.5em -.5em 0;
@@ -516,9 +516,10 @@ ul[is="data-list"] {
     }
 
     details {
-      font-weight: var(--bold-font);
+      // font-weight: var(--bold-font);
 
       & summary {
+        // font-weight: var(--bold-font);
         color: var(--key-light);
       }
     }
