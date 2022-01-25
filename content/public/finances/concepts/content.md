@@ -201,6 +201,9 @@ Another item of note is how somewhat common being a millionaire is in the United
 Asset allocation
 :    The proportion of each asset class within a portfolio.
 
+Basis point
+:    One-hundredth of one percent. *Increasing or decreasing by one basis point is 0.01 percent change in either direction.*
+
 Bonds
 :    A loan issued by a company or government whereby you purchase the bond with a promise of repayment with interest. *Bonds are different than shares because shares imply some form of ownership, while bonds do not.*
 
