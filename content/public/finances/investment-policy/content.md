@@ -76,40 +76,44 @@ Another thing I appreciate about the table is that it's not bullets and a lot of
 
 ## Investments
 
-The items in the following that are taken directly (or paraphrased) from White Coat Investor are indicated in italics.
+Italics indicate items taken directly (or paraphrased) from the White Coat Investor.
 
 - *I will strive to minimize the effects of taxes and expenses on our investment returns.*
 - *My primary investment vehicles will be broad-based index funds, preferably in tax-advantaged accounts.*
 - *I will buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.*
 - My savings rate and returns will be determined on a per-paycheck basis as a natural result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) workflow.
-- I will do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
-- I will contribute at least $100 per paycheck to long-term savings.
-- I will use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
-- Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand [.USD](United States dollars); year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
-- For the equities portion of my portfolios, I will strive to be evenly distributed between small-, mid-, and large-cap stocks.
+- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
+- I’ll contribute at least $100 per paycheck to long-term savings.
+- I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
+- Retirement withdrawal rate will be 3.5 percent. If portfolio increases 50 percent over 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdraw twenty thousand [.United States dollars](USD); year 2 withdraw 20,000 USD; year 3 withdraw 20,000 USD; year 4, if portfolio value is 50 percent more than year 1, withdraw 22,000 USD. Presuming next 4 years do the same, withdraw 24,200 USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
+- For the equities portion of my portfolio, I’ll strive to be evenly distributed between small-, mid-, and large-cap stocks.
 
-Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
+Note: Each are aligned with the financial [values, principles, and practices](/finances/).
 
 ## Asset allocation
 
-Investments will be in three brokerage accounts (tax buckets):
+Investments will be in four tax buckets:
 
-- Roth IRA:
-	- post-tax going in (taxes are paid),
-	- tax-exempt while growing, and
-	- tax-exempt on withdrawal.
-- Tax-deferred (traditional IRA-like):
-	- potentially pre-tax going in (I make too much annually to qualify),
+- Taxable
+  - post-tax going in,
+	- taxed on dividends, and
+	- taxed on capital gains upon withdrawal (realized).
+- Tax-deferred (traditional IRA and 401k, for example):
+	- potentially pre-tax going in,
 	- tax-exempt while growing, and
 	- taxed on withdrawal.
-- Taxable:
+- Tax-free (Roth):
 	- post-tax going in,
-	- taxed on dividends gained, and
-	- taxed on capital gains upon withdrawal (realized).
+	- tax-exempt while growing, and
+	- tax-exempt on withdrawal.
+- Triple-tax advantaged
+  - pre-tax (or tax-deductible) going in,
+  - tax-exempt while growing, and
+  - potentially tax-exempt on withdrawal.
 
 For the taxable account there are potential tax advantages for selling a position with capital losses; referred to a [tax-loss harvesting](https://www.investopedia.com/terms/t/taxgainlossharvesting.asp). I don't plan on doing anything intentionally with tax-loss harvesting unless or until I understand it.
 
-I have multiple groups for macro-asset classes from debt to lard-cap [.United States](US) equities. I do include debt despite debt being a liability in accounting terminology. Each macro-asset class is given a range of percentages (similar to [Bollinger Bands](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands)) representing the proportion the value of each asset class should be each [paycheck or payout](/finances/building-wealth-paycheck-to-paycheck/).
+I have multiple groups for macro-asset classes from debt to large-cap [.United States](US) equities. I do include debt despite debt being a liability in accounting terminology. Each macro-asset class is given a range of percentages (similar to [Bollinger Bands](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands)) representing the proportion the value of each asset class should be each [paycheck or payout](/finances/building-wealth-paycheck-to-paycheck/).
 
 Cash is a portion of the portfolio, however, while in [accumulation mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), the objective will be to keep cash at a minimum and view it as the reserve portion of the portfolio. From a long-term perspective, I'm hoping to build the cash reserve to be one year's worth of expenses by the time I step away from traditional employment.
 
@@ -154,7 +158,7 @@ What makes me feel comfortable about it is it's based on the value of the portfo
 
 Asset allocation is the proportion of each asset class compared to the overall portfolio. Tax location is related to the tax treatment of funds flowing in and out of the portfolio. Diversification is about choosing asset classes that have [low correlation](https://www.portfoliovisualizer.com/asset-correlations) to each other.
 
-In the beginning I aim to keep over 90 percent of the value in US equities. Over the time during accumulation mode this will shift to a more diversified, risk parity portfolio. Regardless of time, I hope to maintain roughly equal distribution across US equities based on market capitalization.
+In the beginning I aim to keep over 90 percent of the value in US equities. Over the time during accumulation mode this will shift to a more diversified, risk parity portfolio.
 
 </details>
 
@@ -168,9 +172,40 @@ These long-term savings accounts, if you will, will also be used to save for and
 
 ## Housing and paying off debt
 
-- Monthly housing expenses will be no more than 25-30% of my net income.
-- I will not seek to own my own home unless it is part of an assisted living strategy.
+- Monthly housing expenses will be less than 30% of my net income.
+- I will not seek to own my own home unless it’s part of an assisted living strategy, generates rental income, or both.
 - Debt will be avoided when possible and paid off immediately, while maintaining at least a 10% contribution per paycheck to savings and investments.
+
+## Cash reserves, dollar cost averaging, and out of cycle purchasing
+
+Cash reserves and emergency funds aren’t, strictly speaking, the same thing. Emergency funds are for when things go wrong. Cash reserves are for taking advantage of opportunities related to long-term saving.
+
+The foundation of my investing uses dollar cost averaging on a per paycheck (or per deposit) basis.
+
+A portion of each paycheck is held in reserve; up to the upper cash limit of the portfolio (ex. 10 percent per paycheck, if the max cash band is 10 percent).
+
+Every three months or so, the reserve will be considered and a portion may be spent on long-term savings. 
+
+Out of cycle formula:
+
+```
+Z / ((X + Y) / 2) = A
+
+X = 52 week low
+Y = 52 week high
+Z = current price
+A = fractional percent
+```
+
+If the price of a security is 5–30 percent less than the result of the out of cycle formula and I’m confident of future returns, reserve funds may be used to purchase that security out of cycle (within the three month time horizon). If the price drops more than 40 percent, future out of cycle purchases must be frozen (and all future purchase may be reduced or frozen). Multiple purchases with the three month time horizon may be made as long as they are 7 days apart; no more than 10 out of cycle transactions may be made. 
+
+The percentage of reserve funds that may be used to purchase a security that’s dropped in price must not exceed the proportion of the drop based on confidence of future return. (A drop of 2 percent with low confidence of return, maybe don’t do anything. A drop of 5 percent with very high confidence, maybe use 5 percent of the reserves.) 
+
+Out of cycle reserve spending is limited to one transaction, toward one security in a 7 day period. 
+
+This reduces risk of buying too early and far into a dip that’s only started.
+
+This reduces risk of over-investing and ensures due consideration before performing out-of-cycle purchases.
 
 ## Spend and giving
 
