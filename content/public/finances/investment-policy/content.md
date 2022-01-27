@@ -113,23 +113,32 @@ I have multiple groups for macro-asset classes from debt to lard-cap [.United St
 
 Cash is a portion of the portfolio, however, while in [accumulation mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), the objective will be to keep cash at a minimum and view it as the reserve portion of the portfolio. From a long-term perspective, I'm hoping to build the cash reserve to be one year's worth of expenses by the time I step away from traditional employment.
 
-### Coast FI 1 (43 years old)
+<details>
+<summary>Coast FI 1 (43 years old)</summary>
 
 Once I reach Coast FI 1, I plan to begin moving toward a risk parity style portfolio by adding long-term treasuries and a little gold to the mix. If I leave my current employer, I may decide to roll the 401k there to my new employer, or, push it into a Traditional [.Individual Retirement Account](IRA). 
 
-### Coast FI 2 (44 years old)
+</details>
+<details>
+<summary>Coast FI 2 (44 years old)</summary>
 
 Coast FI 2 would see me increase diversification with an increase in long-term treasuries and gold and the addition of US [.Real Estate Investment Trusts](REITs).
 
-### Coast FI 3 (46 years old)
+</details>
+<details>
+<summary>Coast FI 3 (46 years old)</summary>
 
 Increase bond and gold exposure. Introduce commodities to the mix.
 
-### Coast FI 4 (48 years old)
+</details>
+<details>
+<summary>Coast FI 4 (48 years old)</summary>
 
 Decrease US equities exposure while increasing exposure to other asset classes and add in non-US REITs.
 
-### FIRE-able (50 years old)
+</details>
+<details>
+<summary>FIRE-able (50 years old)</summary>
 
 Decrease US equities exposure while increasing exposure to the other asset classes in proportion.
 
@@ -141,13 +150,17 @@ I plan on reserving the tax-free accounts until age 70. If there are funds still
 
 I plan on having some form of earned income until my passing. This will be through books, art, and the like, which I'll create on my own schedule an not because I necessarily need to in order to survive.
 
-### Beyond FIRE
+</details>
+<details>
+<summary>Beyond FIRE</summary>
 
 No idea.
 
 The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk. One of the Agile values is adapting to change over following a plan, so, I will adjust as time progresses. In other words, this is a plan like any other, once met with reality it may become moot.
 
 What makes me feel comfortable about it is it's based on the value of the portfolio, which is the crux of the whole thing. So, if time slips a bit, I still have the same goal and, once I hit Coast FI 1, the retirement date is acceptable, though not ideal.
+
+</details>
 
 <details>
 <summary>Details</summary>
@@ -165,6 +178,12 @@ As counterintuitive as it may sound, the majority of my emergency fund will resi
 I also have a broad definition of cash when it comes to this emergency fund. Money already in risk parity style holdings may be considered cash should an emergency arise. (For the purposes of tracking, they will not be considered cash, however.) These minor holdings should have the lowest risk and volatility while achieving a higher rate of return compared to liquid cash. As such, only 3 to 6 months will be in liquid cash while in accumulation mode, which would shift to roughly 12 months in drawdown mode.
 
 These long-term savings accounts, if you will, will also be used to save for and replace things like cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life; just because the time is right and there's a new model, doesn't mean I should buy it right then. 
+
+### Credit cards
+
+All credit cards will include some type of reward system; primarily cash back. Credit cards will be used for the majority of purchases and should be limited to those purchases that would have been made anyway.
+
+All cards, except the primary card, will have the funds automatically converted and deposited regularly. The primary card may hold update to 200 USD worth of points before some, if not all, of those points need to be converted to cash.
 
 ## Housing and paying off debt
 
