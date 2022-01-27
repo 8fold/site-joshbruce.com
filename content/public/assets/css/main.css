@@ -298,6 +298,9 @@ main details summary, article details summary{
   margin:-0.5em -0.5em 0;
   padding:0.5em;
 }
+main details + [is=heading-wrapper], article details + [is=heading-wrapper]{
+  margin-top:var(--xl-spacer);
+}
 
 nav > ul{
   margin:var(--0-spacer);
