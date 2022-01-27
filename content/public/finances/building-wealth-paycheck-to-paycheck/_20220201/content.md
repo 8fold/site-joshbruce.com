@@ -27,9 +27,9 @@ fi-experiments:
 
 {!! data !!}
 
-In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I was able to identify areas where I should adjust spending and saving. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
+In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I identified areas where I should adjust spending and saving. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
 
-Because of the minimal categories I could quickly see which expenses were more of a one-off for that year and probably not something I wanted to progress into the future. Because all the expenses were tracked by Wave I was able to see exactly how much I spent overall. Subtracting the one-off expenses from the total, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success.
+Minimal categories allowed me to see which expenses were more of a one-off for 2021 and something I wanted to minimize in 2022. Subtracting one-off expenses from my total expenses, I adjusted my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success.
 
 Personal Capital uses the [You Index™️](https://support.personalcapital.com/hc/en-us/articles/201169610-What-is-the-You-Index-), which looks at what I actually have syncing with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio still outranks the comparative portfolios available.
 
