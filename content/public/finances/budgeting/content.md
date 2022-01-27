@@ -89,3 +89,40 @@ For things I don't buy very often, like clothes, I can just use the `Miscellaneo
 For example, I pay rent regularly, it gets flagged as `Housing`. This is also where other bills related to the apartment go; like electricity, water, internet, and so on. If I want to track something specifically, I can create a different category. When I no longer feel like tracking that specific item, I can stop using the category and maybe put those transactions under a different, higher-level category.
 
 For example, in early 2021 thanks to the `Food - dining` category I learned I spent thousands of dollars dining out; this was way more than my tobacco habit, in fact. For someone who's not into food it was excessive. So, in 2022, I decided to adjust both `Food - dining` and `Food - snacks`. If both of those categories become small enough, I'll stop using the categories.
+
+## Spending cash reserves 
+
+Cash reserves are different than an emergency fund in that cash reserves are there for times of opportunity while emergency funds are there for times of strife.
+
+A portion of each paycheck is set aside for cash reserves. The following events open the possibility of spending cash reserves:
+
+<details>
+<summary>Too much cash</summary>
+
+Barring extenuating circumstances (like possibly owing thousands of dollars), if the balance of cash reserves causes the cash portion of the portfolio to be higher than the maximum set, cash may be immediately spent to buy a security in the portfolio.
+
+</details>
+
+<details>
+<summary>90 day cool down</summary>
+
+If it’s been 90 days since the last spend from cash reserves, up to 50 percent of the cash reserves balance can be used to buy a security in the portfolio.
+
+</details>
+
+<details>
+<summary>Buying the dip</summary>
+
+If the current price of a security is 3–30 percent less than the average of the 52 week high and low, cash reserves may be used to purchase that security.
+
+The percent of cash reserves that may be used is equal to the percent the security is down.
+
+If the security is down 5 percent, you may use up to 5 percent of the cash reserves to purchase the security.
+
+<details>
+
+Constraints on how cash reserves may be spent:
+
+1. Each spend can only be used to purchase one security.
+2. There must be at least 7 days between spends, regardless of event timings.
+3. If the current price of a security is 30 percent or more less than the average of the 52 week high and low, cash reserves cannot be used to purchase that security.
