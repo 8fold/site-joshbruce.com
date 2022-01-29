@@ -80,7 +80,7 @@ Vanguard doesn’t offer a gold or commodities fund with similar performance to 
 
 I don’t want the mix provided by VTSAX alone, so, I’ve add a sixth fund: VEXAX.
 
-In some cases, I don’t have the ability to purchase into the index fund at Vanguard or I want to purchase using a different tool, which brings in [.Exchange Traded Fund](ETF) equivalents; GLDM and PDBC are both ETFs. Mutual funds typically have minimum initial deposit requirements and must be done directly with the company offering the fund. ETFs are mutual funds that trade like stocks. When an ETF has a mutual fund equivalent, performance characteristics are often similar and there are details we won’t go into related to the concept of purchasing fractional shares. 
+In some cases, I don’t have the ability to purchase into the index fund at Vanguard or I want to purchase using a different tool, which brings in [.Exchange Traded Fund](ETF) equivalents; GLDM and PDBC are both ETFs. Mutual funds typically have minimum initial deposit requirements and must be done directly with the company offering the fund. ETFs are mutual funds that trade like stocks. When an ETF has a mutual fund equivalent, performance characteristics are often similar and there are details we won’t go into related to the concept of purchasing fractional shares.
 
 This gives me a list of mix-and-match securities:
 
@@ -115,6 +115,6 @@ Unfortunately, these aren’t available for my 401k as of this writing, so, 3 mo
 9. VGSLX, VNQ; and
 10. VGRLX, VNQI.
 
-This seems like it’s breaking the simplicity principle, but the simplicity is mainly in the macro-allocation; 50 percent equities, 25 percent long-term treasuries, 13 percent gold, 6 percent commodities, and 6 percent real estate. The complexity of multiple funds is due to other constraints and opportunities to achieve the macro-allocation. I use tools that simplify the actual purchasing; automated decision making. 
+This seems like it’s breaking the simplicity principle, but the simplicity (for me) is in the macro-allocation; 50 percent equities, 25 percent long-term treasuries, 13 percent gold, 6 percent commodities, and 6 percent real estate. The complexity of multiple funds is due to other constraints and opportunities to achieve the macro-allocation. I use tools that simplify the actual purchasing; automated decision making.
 
 The 401k contributions happen automatically and I adjust on occasion to maintain the balance of the portfolio. The HSA and Individual Retirement Accounts have one fund, so, when I make contributions it only has one place to go. The pies in M1 Finance have the percentages set already and automatically distributes the purchase based on the allocations set. That leaves one account with two equities funds at the moment and I buy based on whether my allocation to small-caps is lower or higher than I want; if lower, VEXAX and, if higher, buy VTSAX.
