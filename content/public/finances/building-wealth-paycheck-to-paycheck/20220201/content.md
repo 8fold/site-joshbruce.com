@@ -2,8 +2,8 @@
 title: February 1st, 2022 paycheck
 created: 20220201
 data:
-- [Debt, 0, 1, 0.7]
-- [Cash, 5, 10, 7.0]
+- [Debt, 0, 1, 0.8]
+- [Cash, 5, 10, 7.1]
 - [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.9]
 - [US equities - small, 24, 35, 27.7]
@@ -89,8 +89,6 @@ The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the o
 
 {!! fi-experiments !!}
 
-{!! next-previous !!}
-
 ## The market
 
 This is the first long-running correction I’ve been through, or at least that I’ve been aware of. As anticipated I’m not freaking out or considering selling, which I’m taking as a good sign. With that said, my risk tolerance and perceived risk capacity has me going the opposite direction and probably a bit too quickly, so, I’m setting up some guidelines and guardrails for myself on building and deploying cash reserves.
@@ -117,3 +115,5 @@ I still believe those purchases will serve me well given the time horizons. The 
 Believe the updated approach will help curb that in the future; only time will tell.
 
 There's also something, I keep forgetting, which is that the portfolio is heavier in small-cap stocks than the total stock market funds, therefore, it has a tendency to fall faster and deeper while rebounding higher and faster (sometimes).
+
+{!! next-previous !!}
