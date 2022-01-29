@@ -73,9 +73,9 @@ I updated the [investment policy](/finances/investment-policy/#emergency-fund-ca
 
 ## Site updates
 
-Updated the visualization for the portfolio at the beginning of these entries. 
+Updated the visualization for the portfolio at the beginning of these entries.
 
-Decided against the image approach [I initially considered](/finances/building-wealth-paycheck-to-paycheck/20210301/); I still have the chart in the spreadsheet. 
+Decided against the image approach [I initially considered](/finances/building-wealth-paycheck-to-paycheck/20210301/); I still have the chart in the spreadsheet.
 
 Hope you enjoy the visualization and I was pretty happy with it from a [web development](/web-development/) perspective because I kept the same markup and, because it's built with a template using the same data, all the previous pages were automatically updated; this isn't particularly new or exciting as it's been a part of web development for years, but it's sometimes the little things that bring the most joy.
 
@@ -108,10 +108,12 @@ And, here we are, almost exactly one year in since I started investing and it ap
 
 My earlier frustrations about holding so much cash waiting for the outcome with the [.Internal Revenue Service](IRS) had that money burning a hole in my pocket. Add to that the Health SavingsAdministrators thing and I was chomping at the bit, so to speak. Unfortunately, that means, like some others, I might have bought the dip a bit heavy too early.
 
-I’ve heard this said by a few others, “I don’t have cash left to continue buying the dip.” Initially I was aware a dip was happening but that’s not why I wanted to buy in; I wanted get money moved so I wouldn’t be thinking about it anymore. However, as the dip kept getting deeper, I found myself wishing I had those cash reserves back. 
+I’ve heard this said by a few others, “I don’t have cash left to continue buying the dip.” Initially I was aware a dip was happening but that’s not why I wanted to buy in; I wanted get money moved so I wouldn’t be thinking about it anymore. However, as the dip kept getting deeper, I found myself wishing I had those cash reserves back.
 
 Emotions got the better of me; not on the fear side, but the greedy side.
 
 I still believe those purchases will serve me well given the time horizons. The front-loaded HSA is 30 years out, representing the highest lump sum purchases. The others were somewhat more spread out over the month. With that said, I wanted a way to keep that from happening again.
 
 Believe the updated approach will help curb that in the future; only time will tell.
+
+There's also something, I keep forgetting, which is that the portfolio is heavier in small-cap stocks than the total stock market funds, therefore, it has a tendency to fall faster and deeper while rebounding higher and faster (sometimes).
