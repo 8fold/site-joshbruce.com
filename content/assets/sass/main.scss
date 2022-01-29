@@ -319,6 +319,10 @@ main, article {
       margin: -.5em -.5em 0;
       padding: .5em;
     }
+
+    & + [is="heading-wrapper"] {
+      margin-top: var(--xl-spacer);
+    }
   }
 }
 
