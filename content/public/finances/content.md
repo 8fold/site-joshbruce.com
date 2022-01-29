@@ -71,6 +71,7 @@ In times of stress, I can come back to these and center myself from a time when 
 6. Promote dividends earned in securities returning less than 7% per year to securities that historically return higher.
 7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
 8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/).
+9. Don't take out a loan to buy an investment; investing on margin.
 
 ## Tools
 

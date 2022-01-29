@@ -21,7 +21,7 @@ The response was: I've never had a developer ask me that. Let me check.
 
 The three of us got on the phone.
 
-I came into the project 18 months in and it was slated for 36 months. It was converting a static site with roughly 1,500 pages. We were converting it to a [dynamic, database-driven site](https://joshbruce.com/web-development/static-dynamic-and-interactive/). For the first 18 months the client had done everything by committee and it took them that long to agree on a design for the home page.
+I came into the project 18 months in and it was slated for 36 months. It was converting a static site with roughly 1,500 pages. We were converting it to a [dynamic, database-driven site](/web-development/static-dynamic-and-interactive/). For the first 18 months the client had done everything by committee and it took them that long to agree on a design for the home page.
 
 The client finally realized design and management by committee wasn't really conducive to getting things done, so, that's where the person who was sending me all these emails came from.
 
@@ -75,4 +75,4 @@ Went back out the third week and took time off from the day job. By the end of t
 
 With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me; my lifestyle is conducive to this end.
 
-So, here we are; doing [Scrum Master shit](https://joshbruce.com/coaching/being-a-scrum-master/).
+So, here we are; doing [Scrum Master shit](/coaching/being-a-scrum-master/).
