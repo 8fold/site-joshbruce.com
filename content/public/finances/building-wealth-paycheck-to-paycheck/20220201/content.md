@@ -29,6 +29,8 @@ fi-experiments:
 
 A lot going on here.
 
+I'm moving the weekend before the first and decided to post on January 29 because not much will change by the first.
+
 In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I identified areas where I should adjust saving and spending. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
 
 Because of the minimal categories I saw which expenses were more of a one-off for 2021 something to minimize in 2022. Subtracting the one-off expenses from the total expenses, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success; at least until the most recent dip, which qualifies as a correction or, possibly, a bear market.
