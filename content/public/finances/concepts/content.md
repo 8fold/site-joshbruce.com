@@ -201,6 +201,10 @@ Another item of note is how somewhat common being a millionaire is in the United
 Asset allocation
 :    The proportion of each asset class within a portfolio.
 
+Back-loading
+:    Often associated with retirement accounts or similar accounts with contribution limits.
+:    Reaching the contribution limit later in a given period. *Compare to front-loading.*
+
 Basis point
 :    One-hundredth of one percent. *Increasing or decreasing by one basis point is 0.01 percent change in either direction.*
 
@@ -213,20 +217,24 @@ Capital gain
 Capital loss
 :    A decrease in value of an asset compared to the cost basis.
 
-Correction
-:    A decrease 
-
 Cost basis
 :    The amount of money it took to acquire an asset.
 
 Diversification
 :    Holding multiple assets wherein some assets may increase in value while others decrease in value at different degrees or direction. *One asset may increase while the other decreases or vice versa, or, one asset will rise or fall in fair market value faster or slower than another.*
 
+Dollar cost averaging
+:    Investing on a regular basis of a fixed dollar amount regardless of current value and price on the premise that the average value and price of the security will rise. *Compare to lump-sum investing.*
+
 Expense ratio
 :    The ongoing cost for managing a mutual fund. *The percent is a per year number, however, the percent is usually divided by roughly 365 to generate a Daily percent, which is charged daily.*
 
 Fair market value
 :    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
+
+Front-loading
+:    Often associated with retirement accounts or similar accounts with contribution limits.
+:    Investing as much as possible as early as possible to achieve the maximum contribution for a given period. *Compare to back-loading.*
 
 Gambling
 :    You trade currency to participate in an activity or for an asset with a high probability of losing money. *In some cases this may feel like purchasing a product, like a car, which we don't tend to view as gambling in the way we would purchasing a lottery ticket.* (Compare to saving, investing, and speculating.)
@@ -248,6 +256,9 @@ Liquidity
 
 Lot
 :    A pool of assets (ex. Stocks) purchased at the same time and at the same cost basis.
+
+Lump-sum investing
+:    Investing with a single dollar amount at a given time. *Compare to dollar cost averaging.*
 
 Management (active)
 :    A style of asset management whereby an individual or team of individuals actively choose assets to buy and sell and when; often with the intent of beating the returns of a benchmark index.
