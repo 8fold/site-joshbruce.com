@@ -27,7 +27,12 @@ fi-experiments:
 
 {!! data !!}
 
+I’m considering a new pie for the FI experiments. The premise behind it would be to not consider cash reserves and spending money as something outside the portfolio; a more holistic view, if you will. I’m thinking 5 percent cash, which means the portfolio would look something like this:
 
+- 49 percent US equities. 
+- 24.5 percent negative correlation.
+- 21.5 percent alternatives.
+- 5 percent cash.
 
 ## FI experiments
 
