@@ -39,6 +39,12 @@ Of course, if they leave it as is, my net pay would probably be less, which I’
 
 Basically, as long as I’m not taking a pay cut, I should be okay.
 
+## The market
+
+It’s still down. I’m still dollar cost averaging in. I’m still throwing in a bit extra when and where I feel comfortable per the the [budgeting parameters](/finances/budgeting/#spending-cash-reserves) for cash reserves. 
+
+If I was in [drawdown mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), I wouldn’t be trying to slip more in, I don’t think. If I were closer to when I’m thinking of flipping the switch to drawdown mode, I’d probably be building more toward the Mark 1 (or 2) allocations.
+
 ## Mark 2.0?
 
 I’m considering a new pie for the FI experiments. The premise behind it would be to not consider cash reserves and spending money as something outside the portfolio; a more holistic view, if you will. I’m thinking 5 percent cash, which means the portfolio would look something like this:
