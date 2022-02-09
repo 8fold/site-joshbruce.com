@@ -54,9 +54,7 @@ I’m considering a new pie for the FI experiments. The premise behind it would 
 - 21.5 percent alternatives.
 - 5 percent cash.
 
-The problem is I’m not aware of an [.Exchange Traded Fund](ETF) that would be correlated directly with cash. A money market fund might do it and I’m considering short-term treasury bonds. According to [Portfolio Visualizer](https://www.portfoliovisualizer.com/asset-correlations) correlations, short-term treasuries have a 0.3 correlation with cash and the money market ETF I tried was around 0.66. 
-
-The correlation is 0.33 with cash, so, it’s at least positively correlated. I did look at a money market ETF as well, and while it’s a higher correlation, it’s not the 1 I was hoping for; basically twice the correlation of the short-term treasuries. 
+The problem is I’m not aware of an [.Exchange Traded Fund](ETF) that would be correlated directly with cash. A money market fund might do it and I’m considering short-term treasury bonds. According to [Portfolio Visualizer](https://www.portfoliovisualizer.com/asset-correlations) correlations, short-term treasuries have a 0.3 correlation with cash and a money market ETF I found was around 0.66. While tgeyre both positively correlated, neither is a 1.
 
 ## FI experiments
 
