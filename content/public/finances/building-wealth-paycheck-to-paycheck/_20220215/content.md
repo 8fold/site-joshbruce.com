@@ -27,21 +27,25 @@ fi-experiments:
 
 {!! data !!}
 
+The portfolio at a high level is now in balance; each category is within the range of values set.
+
 Moved from Tennessee to Kentucky. 
 
-It’ll be interesting from a financial perspective because I’m going from a state with no income tax to a state with income tax. I’m not sure the total impact that’ll have on what I’ll be able to put away.
+It’ll be interesting from a financial perspective. Tennessee and Washington state before that, didn’t have income tax, Kentucky does. This could impact how much I’m able to put away each paycheck.
 
-My employer also has one of those income is adjusted for where you live policies. So, my income could go up, down, or stay the same. I really could see arguments for any of the three. 
+My employer has a policy that income is adjusted for where you live. So, my income could go up, down, or stay the same. I really could see arguments for any of the three. 
 
-Because I’m paying state income tax, I could see my salary going up to maintain a similar net paycheck. Because rent is slightly cheaper, I could see my salary going down. Depending on the estimated impact of both of those, I could see my employer saying they’ll just leave it as it is.
+Because I’m paying state income tax, salary could go up to maintain a similar net take home amount. Rent is slightly cheaper; salary goes down. Depending on the estimated impact of both, employer may leave it the same.
 
-Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the tax rate is a flat tax of 5 percent, which would be less than the amount I spent on dining out and membership fees last year; both of which I’m planning to receive this year.
+Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the state income tax rate is a flat 5 percent, which would be less than the amount I spent on dining out and membership fees last year; both of which I’m planning to reduce this year.
 
-Basically, as long as I’m not taking a pay cut, I should be okay.
+Basically, as long as I’m not taking a pay cut, I should be okay. I did ask for a 5 percent increase in pay to offset the taxes and we’ll see where we go.
 
 ## The market
 
-It’s still down. I’m still dollar cost averaging in. I’m still throwing in a bit extra when and where I feel comfortable per the the [budgeting parameters](/finances/budgeting/#spending-cash-reserves) for cash reserves. 
+The market’s still down compared to the 52 week high and seems to be flatlining there; only minor adjustments day to day. 
+
+I’m still dollar cost averaging in. I’m still throwing in a bit extra when and where I feel comfortable per the the [budgeting parameters](/finances/budgeting/#spending-cash-reserves) on cash reserves. 
 
 If I was in [drawdown mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), I wouldn’t be trying to slip more in, I don’t think. If I were closer to when I’m thinking of flipping the switch to drawdown mode, I’d probably be building more toward the Mark 1 (or 2) allocations.
 
