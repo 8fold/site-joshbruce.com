@@ -173,23 +173,26 @@ In the beginning I aim to keep over 90 percent of the value in US equities. Over
 
 ## Emergency fund (cash and credit)
 
-As counterintuitive as it may sound, the majority of my emergency fund will reside in revolving loans. These loans have relatively low interest rates and I'm taking a somewhat hard stance on what constitutes an emergency; a trip a few months from now is not an emergency and I should try and save what I can before the trip.
+As counterintuitive as it may sound, the majority of my emergency fund will use revolving loans. These loans have relatively low interest rates and I'm taking a somewhat hard stance on what constitutes an emergency; a trip a few months from now is not an emergency and I should try and save what I can before the trip.
 
 I also have a broad definition of cash when it comes to this emergency fund. Money already in risk parity style holdings may be considered cash should an emergency arise. (For the purposes of tracking, they will not be considered cash, however.) These minor holdings should have the lowest risk and volatility while achieving a higher rate of return compared to liquid cash. As such, only 3 to 6 months will be in liquid cash while in accumulation mode, which would shift to roughly 12 months in drawdown mode.
 
-These long-term savings accounts, if you will, will also be used to save for and replace things like cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life; just because the time is right and there's a new model, doesn't mean I should buy it right then. 
+These long-term savings accounts, if you will, arr also used to save for and replace things like my cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life. I’m other words, just because I’ve saved enough and there's a new model, doesn't mean I should buy it. 
 
 ### Credit cards
 
-All credit cards will include some type of reward system; primarily cash back. Credit cards will be used for the majority of purchases and should be limited to those purchases that would have been made anyway.
+All credit cards intended for day-to-day use will have a reward system; usually cash back. Credit cards intended for emergency use only should be as low interest as possible as they may carry a balance from one statement period to the next.
 
-All cards, except the primary card, will have the funds automatically converted and deposited regularly. The primary card may hold update to 200 USD worth of points before some, if not all, of those points need to be converted to cash.
+Most purchases and spending will be done using credit cards. 
+
+All cards, except the primary, will have cash back funds automatically converted and deposited regularly. The primary card may hold up to 200 USD worth of points before some, if not all, of those points need to be converted to cash.
 
 ## Housing and paying off debt
 
-- Monthly housing expenses will be no more than 25-30% of my net income.
-- I will not seek to own my own home unless it is part of an assisted living strategy.
-- Debt will be avoided when possible and paid off immediately, while maintaining at least a 10% contribution per paycheck to savings and investments.
+- Monthly housing expenses will be less than or equal to 25-30% of my net income.
+- I will not seek to own my own home unless it is part of an assisted living or subletting strategy.
+- Debt will be avoided when possible and paid off as soon as possible (preferring immediate payoff).
+- Maintain at least a 10% contribution per paycheck to savings and investments.
 
 ## Spend and giving
 
