@@ -1,5 +1,5 @@
 ---
-title: February 15th, 2022 paycheck
+title: March 1st, 2022 paycheck
 created: 20220215
 data:
 - [Debt, 0, 1, 0]

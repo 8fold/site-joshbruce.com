@@ -3,12 +3,12 @@ title: February 15th, 2022 paycheck
 created: 20220215
 data:
 - [Debt, 0, 1, 0]
-- [Cash, 5, 10, 7]
+- [Cash, 5, 10, 5.3]
 - [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 27.7]
-- [US equities - mid, 24, 35, 25.9]
-- [US equities - large, 24, 35, 36.5]
+- [US equities - small, 24, 36, 29.9]
+- [US equities - mid, 24, 36, 26.6]
+- [US equities - large, 24, 36, 36]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 42.65, 41.76, 47.71]
