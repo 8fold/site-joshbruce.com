@@ -37,7 +37,7 @@ My employer has a policy that salary is adjusted for where you live. So, my inco
 
 Because I’m paying state income tax, salary could go up to maintain a similar net take home amount. Rent is slightly cheaper; salary goes down. Depending on the estimated impact of both, employer may leave it the same.
 
-Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the state income tax rate is a flat 5 percent, which would be less than the amount I spent on dining out and membership fees last year; both of which I’m planning to reduce this year.
+Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the state income tax rate is a flat 5 percent, which would be less than the amount I spent on dining out and membership fees 2021; both of which I’m planning to reduce in 2022.
 
 Basically, as long as I’m not taking a pay cut, I should be okay. I did ask for a 5 percent increase in pay to offset the taxes and we’ll see where we go.
 
