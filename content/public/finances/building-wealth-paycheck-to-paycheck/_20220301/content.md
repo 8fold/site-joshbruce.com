@@ -36,7 +36,15 @@ I put in the maximum contribution allowed, the estimated number of paychecks rem
 1. high enough to receive full employer match (6 percent in this case) and
 2. low enough to not hit the maximum contribution limit by the end of the year (maximize employer match as I don’t have a true-up provision).
 
+## The IRS
 
+Received another letter from the [.United States Internal Revenue Service](IRS). This one stated they received my correspondence from January, which I knew because it was sent certified mail and the enclosed check was cashed. However, this wasn’t the, “the case is now closed,” letter I was hoping for.
+
+Instead, it was another letter informing me they would be in touch again within 90 days.
+
+I’m starting to think this won’t be over until they review each return year I requested in 2021. At this rate it could take a while.
+
+Such is life. Definitely an interesting experience.
 
 ## FI experiments
 
