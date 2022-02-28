@@ -54,4 +54,21 @@ Thinking each mode will be given a section of this page, a standalone page, or b
 
 ### Should have
 
-1. Electric motor.
+1. Electric engine.
+
+## Sleeping 
+
+Sleeping mode happens roughly once per day for about 8 hours. During this time most other modes are unnecessary.
+
+### Must have
+
+1. Sleep one comfortably.
+2. A way to easily switch to restroom mode.
+
+### Should have
+
+1. Sleep two comfortably; full XL.
+
+### Could have
+
+1. Queen sized mattress.
