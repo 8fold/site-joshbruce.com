@@ -1,6 +1,6 @@
 ---
 title: March 1st, 2022 paycheck
-created: 20220301
+created: 20220228
 data:
 - [Debt, 0, 1, 0.1]
 - [Cash, 5, 10, 6.8]
