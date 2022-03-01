@@ -3,12 +3,12 @@ title: February 15th, 2022 paycheck
 created: 20220215
 data:
 - [Debt, 0, 1, 0]
-- [Cash, 5, 10, 7]
+- [Cash, 5, 10, 5.3]
 - [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 27.7]
-- [US equities - mid, 24, 35, 25.9]
-- [US equities - large, 24, 35, 36.5]
+- [US equities - small, 24, 36, 29.9]
+- [US equities - mid, 24, 36, 26.6]
+- [US equities - large, 24, 36, 36]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 42.65, 41.76, 47.71]
@@ -37,7 +37,7 @@ My employer has a policy that salary is adjusted for where you live. So, my inco
 
 Because I’m paying state income tax, salary could go up to maintain a similar net take home amount. Rent is slightly cheaper; salary goes down. Depending on the estimated impact of both, employer may leave it the same.
 
-Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the state income tax rate is a flat 5 percent, which would be less than the amount I spent on dining out and membership fees last year; both of which I’m planning to reduce this year.
+Of course, if they leave it as is, my net pay would probably be less, which I’m not a fan of. With that said, as of this writing, the state income tax rate is a flat 5 percent, which would be less than the amount I spent on dining out and membership fees 2021; both of which I’m planning to reduce in 2022.
 
 Basically, as long as I’m not taking a pay cut, I should be okay. I did ask for a 5 percent increase in pay to offset the taxes and we’ll see where we go.
 
