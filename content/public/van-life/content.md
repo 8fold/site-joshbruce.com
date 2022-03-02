@@ -150,3 +150,6 @@ I love showers. I never thought I’d be able to handle life without them. Then 
 
 1. A shower; recirculating.
 2. A way to choose continuous flow or on-demand water flow.
+
+## Restroom 
+
