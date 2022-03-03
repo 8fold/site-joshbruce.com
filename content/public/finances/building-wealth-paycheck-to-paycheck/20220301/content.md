@@ -21,7 +21,7 @@ fi-experiments:
 - [1.2, 44.22, 43.76, 46.73]
 ---
 
-# February 15th, 2022 paycheck
+# March 1st, 2022 paycheck
 
 {!! dateblock !!}
 

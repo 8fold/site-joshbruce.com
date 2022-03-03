@@ -1,6 +1,6 @@
 ---
-title: March 1st, 2022 paycheck
-created: 20220228
+title: March 15th, 2022 paycheck
+created: 20220315
 data:
 - [Debt, 0, 1, 0.1]
 - [Cash, 5, 10, 6.8]
@@ -21,40 +21,29 @@ fi-experiments:
 - [1.2, 44.22, 43.76, 46.73]
 ---
 
-# February 15th, 2022 paycheck
+# March 15th, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
-Reduced 401k allocation to 16 percent.
+Reduced 401k allocation to 12 percent. A bonus check came in and there’s still quite a bit of year left. In the future I’ll probably start around 15 percent instead of 17.
 
-Part of my finance spreadsheet is for tracking 401k contributions. 
+Updated the [January 15th paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#hsa) entry regarding the [.Health Savings Account](HSA). In short:
 
-I put in the maximum contribution allowed, the estimated number of paychecks remaining for the year, and how much has been contributed. This way I know ahead of time if I should increase or decrease my allocation. The goal is to always have the allocation percentage to be:
+> So, the federal contribution limit divided by the number of months I was enrolled in a qualified health plan gives me my actual annual contribution limit.￼
 
-1. high enough to receive full employer match (6 percent in this case) and
-2. low enough to not hit the maximum contribution limit by the end of the year (maximize employer match as I don’t have a true-up provision).
+Still not sure what’s going on with the [.United States Internal Revenue Service](IRS). However, I’ve decided to bring in an accountant this year to double-check all the things.
 
-Because of changes to how I pay rent I’m going to hold a balance of 1,000 [.United States Dollars](USD) in the operating expense account. This will give me a chance to see how lean I can run that account moving forward; just don’t feel comfortable with the 100 USD I was keeping.
+The income tax for Kentucky was taken out, while not devastating on a per paycheck basis, I’m still estimating around 5,000 [.United States Dollars](USD) per year between base pay and bonuses. Which brings us to the rub: possible pay cut. 
 
-I also received a bonus this paycheck and was able to throw more at the extended market index fund. This also means I will need to reduce the 401k contribution for the next paycheck.
+Like I said in the [February 15th 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220215/) my employer adjusts pay based on physical address. The back office work has hit the point where I can see the proposed, adjusted salary. It’s a drop of 3 percent for base salary and bonuses.
 
-## The IRS
+So, my maximum gross pay would drop 3 percent and my net pay drops by about 5 percent. Estimated inflation is up 7 percent. And my bills at the moment are roughly the same.
 
-Received another letter from the [.United States Internal Revenue Service](IRS). This one stated they received my correspondence from January, which I knew because it was sent certified mail and the enclosed check was cashed. However, this wasn’t the, “the case is now closed,” letter I was hoping for.
+Not cool.
 
-Instead, it was another letter informing me they would be in touch again within 90 days.
-
-I’m starting to think this won’t be over until they review each return year I requested in 2021. At this rate it could take a while.
-
-Such is life. Definitely an interesting experience.
-
-## The pies
-
-The insurance deductibles pie now has a value that can cover my insurance deductibles if necessary. 
-
-Chances are I won’t sell or withdraw from it unless I need to cover it all in one go. Instead, I’ll pay out of pocket and divert the money that was going to that pie to other investments and savings.
+My manager and I are making the case for the amounts to be adjusted. Like I said before, we’ll see how this goes.
 
 ## FI experiments
 
