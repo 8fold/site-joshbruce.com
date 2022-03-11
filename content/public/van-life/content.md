@@ -213,3 +213,30 @@ Generally speaking, I don’t have company. When I hang out with people we’re 
 2. Computer; preferably laptop (mainly for software development work until it becomes easy to do from tablets and smartphones).
 3. A way to recharge devices.
 4. A way to recharge battery banks.
+
+### Should have
+
+1. Roughly 300 watts solar power.
+2. Roughly 600 watts of rechargeable batteries; preferably lightweight lithium.
+
+### Could have
+
+1. A standalone inverter.
+2. A larger screen or television.
+3. Seating for 4.
+
+## Integration 
+
+With the modes listed out along with the must, should, could and won’t haves we can combine them all and we get a minimally viable product.
+
+We can also see opportunities for multi-purposing some things. For example, for work I need a large, flat surface and for eating I would like a large flat surface. Could these be the same surfaces?
+
+If I wanted to create a weighting state to help prioritize things, I could see how many opportunities a thing provides. For example, I’m pretty sure I could use the same flat surface for work, eating, *and* sleeping. This would give the flat surface a weight of 3, while everything else at the moment is a 1.
+
+Believe it or not, I’m not much of a planner. With that said, I do appreciate the idea of measuring twice and cutting once along with the idea that you spend less time considering what to do with things that are easy to change in the future. 
+
+Put another way:
+
+Where I put a piece of mail in my house is very easy to change in the future; not much consideration necessary. Moving a heavy piece of furniture, on the other hand, probably a bit more consideration. Adding an extension to a house would probably be even more consideration.
+
+The more things I can make easy to change in the future, the less measuring and planning necessary.
