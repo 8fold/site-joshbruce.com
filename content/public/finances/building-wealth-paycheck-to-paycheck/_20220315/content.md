@@ -2,23 +2,23 @@
 title: March 15th, 2022 paycheck
 created: 20220315
 data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 5, 10, 6.8]
-- [Low correlation, 0, 1, 0.9]
+- [Debt, 0, 1, 0.4]
+- [Cash, 5, 10, 8.5]
+- [Low correlation, 0, 1, 1]
 - [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 30.1]
-- [US equities - mid, 24, 35, 26]
-- [US equities - large, 24, 35, 34.1]
+- [US equities - small, 24, 35, 30.2]
+- [US equities - mid, 24, 35, 25.3]
+- [US equities - large, 24, 35, 33.1]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 42.70, 42.65, 47.71]
-- [0.2, 39.49, 39.38, 43.83]
-- [0.4, 39.70, 39.53, 43.74]
-- [0.6, 39.99, 39.72, 43.54]
-- [0.8, 40.52, 40.14, 43.36]
-- [1.0, 44.33, 43.87, 46.87]
-- [1.1, 44.24, 43.78, 46.76]
-- [1.2, 44.22, 43.76, 46.73]
+- [0.0, 41.16, 42.70, 47.71]
+- [0.2, 38.12, 39.49, 43.83]
+- [0.4, 38.43, 39.70, 43.74]
+- [0.6, 38.85, 39.99, 43.54]
+- [0.8, 39.68, 40.52, 43.36]
+- [1.0, 43.69, 44.33, 46.87]
+- [1.1, 43.61, 44.24, 46.76]
+- [1.2, 43.60, 44.22, 46.73]
 ---
 
 # March 15th, 2022 paycheck
@@ -79,7 +79,7 @@ The reason I started the M1 Finance account is that I could easily earmark chunk
 
 I have four pies (ear-marked balances):
 
-1. van life,
+1. [van life](/van-life/),
 2. electronics,
 3. insurance deductibles, and
 4. the [.financial independence](FI) experiments.
@@ -106,6 +106,8 @@ Equities are still down. The FI experiments into risk parity asset allocations c
 For the first few months of 2021 it was a steady upward trend. Meanwhile, 2022 is basically a plateau. Given I do believe the market will go up eventually and we’ll before I’ll need to exchange anything for cash, this is a pretty good opportunity and I’m planning to take advantage while I can.
 
 Looking at the portfolio for the last 90 days I’m tracking closer to the total stock market. Looking over the last year though and I definitely under performed; something we chalked up to holding all that cash for the IRS.
+
+The risk parity experiments seem to be holding true during a downturn; the Mark 1 is down roughly half of the Mark 0.
 
 ## FI experiments
 
