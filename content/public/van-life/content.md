@@ -52,6 +52,7 @@ Thinking each mode will be given a section of this page, a standalone page, or b
 
 1. Roughly 20 [.miles per gallon](mpg) unladen.
 2. At least 1 full-size spare tire.
+3. Ability to use maps offline; paper maps as fallback.
 
 ### Should have
 
