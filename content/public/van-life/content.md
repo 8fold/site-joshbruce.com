@@ -1,5 +1,6 @@
 ---
 title: Van life
+created: 20220311
 ---
 
 # Van life
