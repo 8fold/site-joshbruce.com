@@ -2,23 +2,23 @@
 title: March 15th, 2022 paycheck
 created: 20220315
 data:
-- [Debt, 0, 1, 0.4]
-- [Cash, 5, 10, 8.5]
+- [Debt, 0, 1, 0.1]
+- [Cash, 5, 10, 7.2]
 - [Low correlation, 0, 1, 1]
 - [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 30.2]
-- [US equities - mid, 24, 35, 25.3]
-- [US equities - large, 24, 35, 33.1]
+- [US equities - small, 24, 35, 30.6]
+- [US equities - mid, 24, 35, 25.7]
+- [US equities - large, 24, 35, 33.6]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 41.16, 42.70, 47.71]
-- [0.2, 38.12, 39.49, 43.83]
-- [0.4, 38.43, 39.70, 43.74]
-- [0.6, 38.85, 39.99, 43.54]
-- [0.8, 39.68, 40.52, 43.36]
-- [1.0, 43.69, 44.33, 46.87]
-- [1.1, 43.61, 44.24, 46.76]
-- [1.2, 43.60, 44.22, 46.73]
+- [0.0, 39.72, 42.70, 47.71]
+- [0.2, 36.84, 39.49, 43.83]
+- [0.4, 37.19, 39.70, 43.74]
+- [0.6, 37.69, 39.99, 43.54]
+- [0.8, 38.55, 40.52, 43.36]
+- [1.0, 42.56, 44.33, 46.87]
+- [1.1, 42.50, 44.24, 46.76]
+- [1.2, 42.51, 44.22, 46.73]
 ---
 
 # March 15th, 2022 paycheck
@@ -27,7 +27,7 @@ fi-experiments:
 
 {!! data !!}
 
-Reduced 401k allocation to 12 percent. A bonus check came in with [the previous check](/finances/building-wealth-paycheck-to-paycheck/20220301/) and there’s still quite a bit of 2022 left. In the future I’ll probably start around 15 percent instead of 17.
+Reduced 401k allocation to 12 percent. A bonus check came in with [the previous check](/finances/building-wealth-paycheck-to-paycheck/20220301/) and there’s still quite a bit of 2022 left. In the future I’ll probably start around 15 percent instead of 17; presuming I maintain the same or similar salary.
 
 Updated the [January 15th paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#hsa) entry regarding the [.Health Savings Account](HSA). In short:
 
@@ -51,7 +51,7 @@ My manager and I are making the case for the amounts to be adjusted. Like I said
 
 Decided to close my Uphold account, which means selling my [.Basic Attention Tokens](BATs). I’m also pretty sure I’ll shutdown the M1 Finance account.
 
-This tax season along with the continued interaction with the IRS has me really wanting to simplify and consolidate things. A practice I think of as [pruning the trees](/design-your-life/pruning-the-trees); trying these various investment providers and approaches was growth and exploration.
+This tax season along with the continued interaction with the IRS has me really wanting to simplify and consolidate things. A practice I think of as [pruning the trees](/design-your-life/pruning-the-trees); trying these various investment providers and approaches was growth and exploration mode—now I want to find tight and sustainable—anyone should be able to come in and take over, if needed.
 
 A while back I grabbed the [Brave browser](https://brave.com). It interested me mainly because the premise is users getting reimbursed for their attention; a concept similar to (and possibly inspired by) the work and ideas of [Jaron Lanier](https://www.ted.com/talks/jaron_lanier_how_we_need_to_remake_the_internet). The browser does a good job blocking ads (and optionally showing Brave ads) and, if you sign up for [Brave Rewards](https://brave.com/brave-rewards/) you earn a crypto token called [BAT](https://basicattentiontoken.org). The BAT can be exchanged in various ways using a crypto wallet and exchange. The exchange I used is [Uphold](https://uphold.com/en-us). When exchanging BAT for USD, it’s just like selling almost anything that can go up or down in value, which means there’s a tax form involved.
 
@@ -91,15 +91,15 @@ So, I need to make the decision soon and I’m preparing for the possibility by 
 Outside of spreadsheet tracking, I could open a separate taxable brokerage account for each fund, but I’m appreciating the idea of a minimal number of accounts and sub-accounts. Further, there should come a point where almost everything is under one roof; Vanguard. Two things hold me back from doing it now:
 
 1. The main bit is Vanguard doesn’t offer [dollar-based investing](https://www.fidelity.com/learning-center/trading-investing/fractional-shares) (or fractional shares) for non-mutual fund vehicles; specifically [.exchange-traded funds](ETFs).
-2. My long-term treasuries need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard.
+2. My long-term treasuries and real east are investment trusts need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard, which offer fractional shares.
 
 Arguably, mutual funds are going the way of the dodo and ETFs are their replacement. However, the only way to do fractional shares at Vanguard is using their mutual funds; note, this isn’t the same as investing in Vanguard by purchasing their ETFs elsewhere using fractional shares—like M1 Finance or Fidelity. Further, trading non-Vanguard ETFs at Vanguard is possible and commission free (as long as trades are done online), however, the trade must be done at the full share price of the holding; again, not fractional. Even trading Vanguard ETFs at Vanguard is the same way, so, at least they’re consistently applying the rule.
 
 ## The market
 
-Equities are still down. The FI experiments with risk parity asset allocations continue proving themselves. It’s interesting to look at my net worth over the last year.
+Equities are still down compared to their 52 week high. The [.Financial Independence](FI) experiments with risk parity asset allocations continue proving themselves. It’s interesting to look at my net worth over the last year.
 
-For the first few months of 2021 it was a steady upward climb. Meanwhile, 2022 is basically a plateau. Given I do believe the market will go up eventually and long before I’ll need exchange things for cash, this is a pretty good opportunity and I’m taking advantage while I can; buying the dip.
+For the first few months of 2021 it was a steady upward climb. Meanwhile, 2022 is basically a plateau. Given I do believe the market will go up eventually and long before I’ll need to exchange things for cash, this is a pretty good opportunity and I’m taking advantage while I can; buying the dip.
 
 Looking at the portfolio for the last 90 days I’m tracking closer to the total stock market. Looking at the last year though, I definitely under performed; something we chalked up to holding all that cash for the IRS, which ended up being unnecessary.
 
@@ -113,11 +113,11 @@ There's a graph showing the allocation of my portfolio for the major asset class
 
 ### Paycheck table
 
-The top section has the Coast [.FI](Financial Independence) numbers along with the target age for each. I've set up conditional highlighting rules for each Coast FI. If I hit the net worth target by the time I reach the given age, it should go green.
+The top section has the Coast FI numbers along with the target age for each. I've set up conditional highlighting rules for each Coast FI number. If I hit the net worth target by the time I reach the given age, it should go green.
 
 The next section shows the target cost basis for each tax bucket by the end of the 10 years I'm planning for. This shows me roughly how much I should be putting in each bucket per paycheck.
 
-The next section is what I use to quickly rough out the planned distributions for each check. The layout was inspired by the book and resources from [Profit First](https://profitfirstbook.com). I enter the inflows in the upper rows and there are percentages and ranges for each account. I increase and decrease amounts until I've distributed roughly 100 percent of the inflows to the other accounts. The ranges are generated primarily by the next section along with the credit card balances in some of the other tables.
+The next section is what I use to quickly rough out the planned distributions for each check. The layout was inspired by the book and resources from [Profit First](https://profitfirstbook.com). I enter the inflows in the upper rows and there are percentages and ranges for each account; row. I increase and decrease amounts until I've distributed roughly 100 percent of the inflows to the other accounts. The ranges are generated primarily by the next section along with the credit card balances in some of the other tables.
 
 The last section of the table has my known, recurring expenses. I've separated the expenses into 3 categories: base, utility, and convenience. I appreciate this strategy because if I need to cut spending, the first things to go will be the conveniences. If I need to cut more, I might be able to manipulate the ones in the utility category. If I need to cut more, well, that's getting pretty serious and I probably need outside help.
 
@@ -127,9 +127,9 @@ When I get paid, I fill out this table real quick to lay in the initial plan. Th
 
 Multiple tables representing each institution and account; Vanguard has 3 separate tables, for example, because there are three different tax buckets.
 
-I sign into the various account apps and update the spreadsheet values for each account as they appear in the app—not accounting for money "in flight" that hasn't altered the value of the account; this is why the debt number is greater than 0 and cash is a bit higher than it really is—the credit cards haven’t been paid in full by the time I post.
+I sign into the various account apps and update the spreadsheet values for each account as they appear in the app—not accounting for money "in flight" that hasn't altered the value of the account; this is why the debt number is greater than 0 and cash is a bit higher than it really is—the credit cards haven’t been paid in full by the time I post; or, they have and new charges have posted.
 
-Once I've updated the account tables, the data entry is complete, except for what I do to get the numbers for these posts (more on that later). From here, I have a few more tables that consolidate the data entered here.
+Once I've updated the account tables, the data entry is complete, except for what I do to get the numbers for these posts (more on that later). From here, I have a few more tables that automatically consolidate the data entered here.
 
 ### Consolidation tables
 
@@ -147,7 +147,7 @@ The last table in this group consolidates each holding regardless of tax bucket.
 
 Because I'm in accumulation mode and part of my plan includes preparing money to be invested, these tables also help me decide where to put those funds. (As of this writing, most of the investing money I set aside has been going into the extended market fund, however, it appears that could start to change…the table shows me that.)
 
-One more stop before I have the information to update the graph and for one of these posts.
+One more stop before I have the information to update the graph and numbers for one of these posts.
 
 ### Asset allocation tables
 
@@ -157,7 +157,7 @@ I have a table that takes each cash account, index fund, ETF, and so on and calc
 
 I analyze the portfolio and enter the percent in stocks into another table along with the percent of small-, mid-, and large-cap. Those percentages feed into another table, which is used to update the graph and gives me the numbers for the opening of these posts.
 
-This last step is only necessary because I'm not charting the actual holdings within the portfolio. I'm charting more generic asset classes, like alternatives and small-cap equities. Tracking this way helps keep me grounded because I don't feel tied into a specific holding or vehicle and I can choose different equities if I want just as long as I maintain the allocation for the asset class.
+This last step is only necessary because I'm not charting the actual holdings within the portfolio. I'm charting more generic asset classes, like alternatives and small-cap equities. Tracking this way helps keep me stay grounded because I don't feel tied into a specific holding or vehicle and I can choose different equities if I want just as long as I maintain the allocation for the asset class.
 
 ### Miscellaneous tables
 
@@ -165,7 +165,7 @@ The last three tables are there to help me track current and historical data not
 
 The first table is related to the 401k. I track how much is contributed based on the percent I've set and the total contributed for the year. I adjust the number of paychecks I have remaining for the year with each contribution and this table tells me how likely I am to get close to the annual contribution limit in order to maximize my employer's contribution.
 
-The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last year, without consideration for the asset allocation of my portfolio). 
+The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last 52weeks, without consideration for the asset allocation of my portfolio). 
 
 The third table is similar to the second only it tracks things based on what I actually paid for each holding on a given day. So, the low and high here is the lowest I paid since I started tracking. 
 
