@@ -91,7 +91,7 @@ So, I need to make the decision soon and I’m preparing for the possibility by 
 Outside of spreadsheet tracking, I could open a separate taxable brokerage account for each fund, but I’m appreciating the idea of a minimal number of accounts and sub-accounts. Further, there should come a point where almost everything is under one roof; Vanguard. Two things hold me back from doing it now:
 
 1. The main bit is Vanguard doesn’t offer [dollar-based investing](https://www.fidelity.com/learning-center/trading-investing/fractional-shares) (or fractional shares) for non-mutual fund vehicles; specifically [.exchange-traded funds](ETFs).
-2. My long-term treasuries and real east are investment trusts need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard, which offer fractional shares.
+2. My long-term treasuries and real estate investment trusts need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard, which offer fractional shares.
 
 Arguably, mutual funds are going the way of the dodo and ETFs are their replacement. However, the only way to do fractional shares at Vanguard is using their mutual funds; note, this isn’t the same as investing in Vanguard by purchasing their ETFs elsewhere using fractional shares—like M1 Finance or Fidelity. Further, trading non-Vanguard ETFs at Vanguard is possible and commission free (as long as trades are done online), however, the trade must be done at the full share price of the holding; again, not fractional. Even trading Vanguard ETFs at Vanguard is the same way, so, at least they’re consistently applying the rule.
 
