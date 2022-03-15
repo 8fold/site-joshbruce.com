@@ -133,7 +133,7 @@ Once I've updated the account tables, the data entry is complete, except for wha
 
 ### Consolidation tables
 
-These tables consolidate the numbers for each account table and consolidate them based on tax bucket; essentially creating tax bucket portfolios.
+These tables consolidate the numbers for each account table puts them in tables based on tax bucket; essentially creating tax bucket portfolios.
 
 Each row is a holding in the tax bucket; regardless of whether the account is with Vanguard, Fidelity, M1 Finance, a credit union, or somewhere else.
 
