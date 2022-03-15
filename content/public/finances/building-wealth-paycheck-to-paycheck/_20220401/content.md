@@ -29,6 +29,10 @@ fi-experiments:
 
 Bumped the 401k contribution back up to 15 percent.
 
+## Odd place
+
+
+
 ## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
