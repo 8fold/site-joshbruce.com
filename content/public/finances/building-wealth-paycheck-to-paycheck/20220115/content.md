@@ -67,6 +67,8 @@ As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/con
 
 The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible as early as possible; [time in the market outweighing timing the market](/finances/#values).
 
+UPDATE: The ability to front-load is true, however, some restrictions and risks apply; contributions are pro-rated. I need to be enrolled in a qualified plan at the start of each calendar month. So, the federal contribution limit divided by the number of months I was enrolled in a qualified health plan gives me my actual annual contribution limit. By contributing the federal limit now I’m betting on not losing coverage until at least the end of the year.
+
 ### Roth IRA
 
 Decided to shift to back-loading the Roth IRA.
