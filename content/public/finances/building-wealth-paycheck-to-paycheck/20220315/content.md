@@ -141,7 +141,7 @@ Each holding has a target percentage within the sub-portfolio. I take the balanc
 
 If the current value is less than the target value, the table tells me to try and add more to that holding. If the current value is greater than the target value, the table tells me to leave it alone.
 
-The last table in this group consolidates each holding regardless of tax bucket. If I were to rebalance the portfolio, these tables would show me what to buy and sell.
+The last table in this group consolidates each holding regardless of tax bucket; the overall portfolio. If I were to rebalance the portfolio, these tables would show me what to buy and sell.
 
 (M1 Finance has automated rebalancing, which is fine, but I don’t plan to rebalance that often. I’m also planning to move away from M1 Finance anyway.)
 
