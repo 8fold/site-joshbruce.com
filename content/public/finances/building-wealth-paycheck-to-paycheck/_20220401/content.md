@@ -43,6 +43,14 @@ The best description I have for where my mind is right now is burned out.
 
 I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runaway from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
 
+I’m waiting to see if this is just a passing thing or a more general, long running sense of ennui and malaise. If it’s the latter, I’m not sure how I might go about expediting the plan, without endangering the potential for joy in that path.
+
+I think Becca has the right of it though when she said:
+
+> Im trying to not make any life altering changes while there’s still a pandemic going on.
+
+Im hoping to be able set aside a certain amount of time each day toward researching and reflecting on the van life question and working toward and marketing my other work and projects.
+
 ## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
