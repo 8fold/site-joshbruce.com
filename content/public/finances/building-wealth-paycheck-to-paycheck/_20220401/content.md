@@ -29,9 +29,19 @@ fi-experiments:
 
 Bumped the 401k contribution back up to 15 percent.
 
+## Cash
+
+Before I shifted to using the risk parity portfolios for things like electronics I started down the same cash path I had used for years. This meant opening share certificates with a credit union that I could continue making deposits to.
+
+One matured and I took that money and moved it to the extended market index fund; thereby, reducing the amount of cash on hand.
+
 ## Odd place
 
+The longer, and more in-depth, I go with [van life](/van-life/) the more impatient I find myself growing. I’ve never been particularly ambitious when it comes to my career. Things changed a bit when I found myself homeless and in a crazy amount of student loan debt.
 
+The best description I have for where my mind is right now is burned out.
+
+I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runaway from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
 
 ## FI experiments
 
