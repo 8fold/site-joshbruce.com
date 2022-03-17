@@ -33,7 +33,9 @@ Bumped the 401k contribution back up to 15 percent.
 
 Before I shifted to using the risk parity portfolios for things like electronics I started down the same cash path I had used for years. This meant opening share certificates with a credit union that I could continue making deposits to.
 
-One matured and I took that money and moved it to the extended market index fund; thereby, reducing the amount of cash on hand.
+One matured and I took that money and moved it to savings. 
+
+I debated buying the extended market index fund per the [buying a dip](/finances/budgeting/#spending-cash-reserves) protocol for spending cash reserves, however, I decided to hold until after speaking with the accountant about my taxes.
 
 ## Odd place
 
@@ -42,6 +44,8 @@ The longer, and more in-depth, I go with [van life](/van-life/) the more impatie
 The best description I have for where my mind is right now is burned out.
 
 I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runaway from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
+
+With that said, given my lifestyle, chances are van life won’t actually be a money saving move. No car payment. Minimal insurance cost. No car-related expenses. All of that changes the moment I get a vehicle and those costs may equal rent and utilities. So, I don’t think the running toward something is financial, it’s just different.
 
 I’m waiting to see if this is just a passing thing or a more general, long running sense of ennui and malaise. If it’s the latter, I’m not sure how I might go about expediting the plan, without endangering the potential for joy in that path.
 
