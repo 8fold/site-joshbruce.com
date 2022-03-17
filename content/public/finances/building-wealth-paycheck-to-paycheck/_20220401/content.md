@@ -37,6 +37,14 @@ One matured and I took that money and moved it to savings.
 
 I debated buying the extended market index fund per the [buying a dip](/finances/budgeting/#spending-cash-reserves) protocol for spending cash reserves, however, I decided to hold until after speaking with the accountant about my taxes.
 
+## Taxes
+
+The accountant was wonderful and easily managed getting through my documents. 
+
+I qualify for a refund.
+
+This means, once I receive the refund, I’ll perform the distribution as described in [my budgeting protocols](/finances/budgeting/#transferring-from-the-tax-account). So, cash reserves will go down soon, especially if the market stays down. With that said, over the course of this year the cash on hand will be high as I am planning to backload the Roth [.Individual Retirement Account](IRA) for the 2022 tax year.
+
 ## Odd place
 
 The longer, and more in-depth, I go with [van life](/van-life/) the more impatient I find myself growing. I’ve never been particularly ambitious when it comes to my career. Things changed a bit when I found myself homeless and in a crazy amount of student loan debt.
