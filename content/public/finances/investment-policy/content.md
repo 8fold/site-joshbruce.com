@@ -1,7 +1,7 @@
 ---
 title: Investment Policy
 created: 20210216
-updated: 20220124
+updated: 20220321
 coming-soon:
 - review agile manifesto
 ---
@@ -93,8 +93,6 @@ Italics indicate items taken directly (or paraphrased) from the White Coat Inves
 - I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
 - I’ll contribute at least $100 per paycheck to long-term savings.
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
-- Retirement withdrawal rate will be 3.5 percent. If portfolio increases 50 percent over 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdraw twenty thousand [.United States dollars](USD); year 2 withdraw 20,000 USD; year 3 withdraw 20,000 USD; year 4, if portfolio value is 50 percent more than year 1, withdraw 22,000 USD. Presuming next 4 years do the same, withdraw 24,200 USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
-	- Revisit
 - For the equities portion of my portfolio, I’ll strive to be evenly distributed between small-, mid-, and large-cap stocks.
 
 Note: Each bullet is aligned to my financial [values, principles, and practices](/finances/).
