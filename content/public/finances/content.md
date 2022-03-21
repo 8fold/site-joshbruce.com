@@ -32,13 +32,13 @@ In times of stress, I can come back to these and center myself from a time when 
     - genetic legacy.
 4. The most constrained over the most funded.
 5. United States over International.
-6. Passive management over 
-		- passive investing over
-		- active investing over
-		- active management.
-7. Index funds over 
-		- individual stocks over 
-		- bonds.
+6. Passive management over
+    - passive investing over
+    - active investing over
+    - active management.
+7. Index funds over
+    - individual stocks over
+    - bonds.
 8. Equities (ownership) over bonds (lending).
 9. Small, local businesses over
     - large, multinational businesses over
@@ -71,6 +71,7 @@ In times of stress, I can come back to these and center myself from a time when 
 6. Promote dividends earned in securities returning less than 7% per year to securities that historically return higher.
 7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
 8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/).
+9. Don't take out a loan to buy an investment; investing on margin (no leveraged investments).
 
 ## Tools
 

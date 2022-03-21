@@ -37,7 +37,7 @@ Brokerage accounts, retirement accounts, personal and business accounts, and so 
 2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
 3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
 
-During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220101/). Hoping 2022 will be different.
+During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](/finances/building-wealth-paycheck-to-paycheck/20220101/). Hoping 2022 will be different.
 
 ## Retirement accounts
 
@@ -66,6 +66,8 @@ Fidelity did a calculation and determined that, without bonuses, this percentage
 As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/contributions/) can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say I contributed on a regular basis throughout the year up to the limit (dollar cost averaging). Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce [my cash position](#too-much-cash) I decided to front-load the contribution; contributing the full amount for 2022.
 
 The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible as early as possible; [time in the market outweighing timing the market](/finances/#values).
+
+UPDATE: The ability to front-load is true, however, some restrictions and risks apply; contributions are pro-rated. I need to be enrolled in a qualified plan at the start of each calendar month. So, the federal contribution limit divided by the number of months I was enrolled in a qualified health plan gives me my actual annual contribution limit. By contributing the federal limit now I’m betting on not losing coverage until at least the end of the year.
 
 ### Roth IRA
 

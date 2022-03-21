@@ -231,6 +231,9 @@ Expense ratio
 Fair market value
 :    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
 
+Frontload
+:    Associated to accounts with contribution limits (ex. 6,000 USD per year) and refers to cotributing as much as possible as early as possible.
+
 Gambling
 :    You trade currency to participate in an activity or for an asset with a high probability of losing money. *In some cases this may feel like purchasing a product, like a car, which we don't tend to view as gambling in the way we would purchasing a lottery ticket.* (Compare to saving, investing, and speculating.)
 
@@ -304,9 +307,13 @@ Stock
 
 Sunk cost fallacy
 :    The idea that a company or organization is more likely to continue with a project if they have already invested a lot of money, time, or effort in it, even when continuing is not the best thing to do. *Throwing good money after bad.*
+:    The desire to avoid selling something at a loss.
 
 Tax location
 :    The type of account in which various securities are held and how they are treated for tax purposes.
+
+True-up provision
+:    Often related to retirement accounts where a third party conyributes as well (ex  401k with employer match), which allows front-loading of contributions by the employee while the employer dollar cost averages up to the full match throughout the year. 
 
 Unrealized
 :    Whether or not a capital gain or loss *would* occur. *The point at which we can have an idea of the fair market value of an asset; an appraisal on a house, for example, establishes the unrealized gain or loss in value.*

@@ -38,9 +38,11 @@ class NextPrevious
         $iterator = array_values(iterator_to_array($finder));
         for ($i = 0; $i < count($iterator); $i++) {
             $fileInfo = $iterator[$i];
+            // @phpstan-ignore-next-line
             if ($fileInfo->getRealPath() === $file->path()) {
                 if (array_key_exists($i - 1, $iterator)) {
                     $pInfo = $iterator[$i - 1];
+                    // @phpstan-ignore-next-line
                     $pFile = PlainTextFile::from($pInfo, $file->root());
                     $pHref = $pFile->path(full: false, omitFilename: true);
                     $previous = Element::li(
@@ -51,6 +53,7 @@ class NextPrevious
 
                 if (array_key_exists($i + 1, $iterator)) {
                     $nInfo = $iterator[$i + 1];
+                    // @phpstan-ignore-next-line
                     $nFile = PlainTextFile::from($nInfo, $file->root());
 
                     $pathCheck = $nFile->path(omitFilename: true);

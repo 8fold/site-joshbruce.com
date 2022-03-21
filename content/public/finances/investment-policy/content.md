@@ -124,23 +124,32 @@ I have multiple groups for macro-asset classes from debt to large-cap [.United S
 
 Cash is a portion of the portfolio, however, while in [accumulation mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), the objective will be to keep cash at a minimum and view it as the reserve portion of the portfolio. From a long-term perspective, I'm hoping to build the cash reserve to be one year's worth of expenses by the time I step away from traditional employment.
 
-### Coast FI 1 (43 years old)
+<details>
+<summary>Coast FI 1 (43 years old)</summary>
 
 Once I reach Coast FI 1, I plan to begin moving toward a risk parity style portfolio by adding long-term treasuries and a little gold to the mix. If I leave my current employer, I may decide to roll the 401k there to my new employer, or, push it into a Traditional [.Individual Retirement Account](IRA). 
 
-### Coast FI 2 (44 years old)
+</details>
+<details>
+<summary>Coast FI 2 (44 years old)</summary>
 
 Coast FI 2 would see me increase diversification with an increase in long-term treasuries and gold and the addition of commodities.
 
-### Coast FI 3 (46 years old)
+</details>
+<details>
+<summary>Coast FI 3 (46 years old)</summary>
 
 Increase bond, gold, and commodities exposure. 
 
-### Coast FI 4 (48 years old)
+</details>
+<details>
+<summary>Coast FI 4 (48 years old)</summary>
 
 Decrease US equities exposure while increasing exposure to other asset classes.
 
-### FIRE-able (50 years old)
+</details>
+<details>
+<summary>FIRE-able (50 years old)</summary>
 
 Decrease US equities exposure while increasing exposure to the other asset classes in proportion.
 
@@ -152,13 +161,17 @@ I plan on reserving the tax-free accounts until age 70. If there are funds still
 
 I plan on having some form of earned income until my passing. This will be through books, art, and the like, which I'll create on my own schedule and not because I necessarily need to in order to survive.
 
-### Beyond FIRE
+</details>
+<details>
+<summary>Beyond FIRE</summary>
 
 No idea.
 
 The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk. One of the Agile values is adapting to change over following a plan, so, I’ll adjust as time progresses. In other words, this is a plan like any other, once met with reality it may become moot.
 
 What makes me feel comfortable about it is it's based on the value of the portfolio, which is the crux of the whole thing. So, if time slips a bit, I still have the same goal and, once I hit Coast FI 1, the retirement date is acceptable, though not ideal.
+
+</details>
 
 <details>
 <summary>Details</summary>
