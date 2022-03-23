@@ -217,4 +217,4 @@ Constraints on how cash reserves may be spent:
 1. Each spend can only be used to purchase one security.
 2. Purchasing the security cannot put the portfolio out of balance.
 3. There must be at least 7 days between spends, regardless of event timings.
-4. If the current price of a security is down more than 30 of the 52 week high, cash reserves cannot be used to purchase that security.
+4. If the current price of a security is down more than 30 percent of the 52 week high, cash reserves cannot be used to purchase that security.
