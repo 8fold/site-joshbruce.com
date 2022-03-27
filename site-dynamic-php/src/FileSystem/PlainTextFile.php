@@ -68,6 +68,19 @@ class PlainTextFile
         return '';
     }
 
+    public function alias(): bool|string
+    {
+        $frontMatter = $this->frontMatter();
+        if (
+            array_key_exists('alias', $frontMatter) and
+            $path = $frontMatter['alias'] and
+            is_string($path)
+        ) {
+            return $path;
+        }
+        return false;
+    }
+
     public function title(): string
     {
         $frontMatter = $this->frontMatter();
@@ -289,6 +302,7 @@ class PlainTextFile
     private function processRawContent(): void
     {
         $contents = file_get_contents($this->path());
+
         if (is_string($contents)) {
             $parts = explode(self::FRONT_MATTER_DELIMITER, $contents);
             if (

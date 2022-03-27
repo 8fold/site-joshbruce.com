@@ -113,6 +113,16 @@ class RequestHandler implements RequestHandlerInterface
             );
         }
 
+        // TODO: remove after major release
+        if ($file->alias() !== false) {
+            $file = PlainTextFile::at(
+                $this->contentPublic() . '/!' . $file->alias() . '/content.md',
+                $this->contentPublic()
+            );
+            // var_dump($file->content());
+            // die("here");
+        }
+
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
