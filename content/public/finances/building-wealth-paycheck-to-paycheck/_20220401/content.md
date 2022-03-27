@@ -27,7 +27,7 @@ fi-experiments:
 
 {!! data !!}
 
-Bumped the 401k contribution back up to 15 percent.
+Bumped the 401k contribution back up to 17 percent.
 
 ## Cash
 
