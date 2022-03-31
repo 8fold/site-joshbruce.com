@@ -27,7 +27,7 @@ fi-experiments:
 
 {!! data !!}
 
-Bumped the 401k contribution back up to 15 percent.
+Bumped the 401k contribution back up to 17 percent.
 
 ## Cash
 
@@ -44,6 +44,12 @@ The accountant was wonderful and easily managed getting through my documents.
 I qualify for a refund.
 
 This means, once I receive the refund, I’ll perform the distribution as described in [my budgeting protocols](/finances/budgeting/#transferring-from-the-tax-account). So, cash reserves will go down soon, especially if the market stays down. With that said, over the course of this year the cash on hand will be high as I am planning to backload the Roth [.Individual Retirement Account](IRA) for the 2022 tax year.
+
+## Buying the dip
+
+I’m starting to expedite the rebalancing of my 401k by selling out of the large-cap gains. Instead of doing a percent based approach I’m buying in however much the other two are down.
+
+So, if the small-cap is down by 1,000 [.United States Dollar](USD), I’ll sell 1,000 USD of the large-cap to buy the small-cap.
 
 ## Odd place
 
