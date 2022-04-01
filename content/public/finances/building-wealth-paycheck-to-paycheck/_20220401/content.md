@@ -47,15 +47,15 @@ This means, once I receive the refund, I’ll perform the distribution as descri
 
 ## 401k
 
-My 401k doesn't have the two equity funds I would like it to have (I've asked my employer to see if they can be added). Therefore, to get the mix I want according to the [investment policy](/finances/investment-policy/#investments) I need to have a total small-, mid-, and large-cap fund. 
+My 401k doesn't have the two equity funds I’d like to use (I've asked my employer if they can be added). Therefore, to get the mix I want from the [investment policy](/finances/investment-policy/#investments) I need to have a total small-, mid-, and large-cap fund. 
 
-The short of it is that I initially started with a target retirement fund aimed at 2060 retirement year. Then I sold out of that position in favor of the large-cap fund. Since then, I've had contributions going into the small- and mid-cap funds to move slowly toward the desired allocation in each.
+The short of it is that I initially started with a target retirement fund with 2060 retirement year. I sold out of that position in favor of the large-cap fund. Since then, I've had contributions going into the small- and mid-cap funds to move slowly toward the desired allocation in each.
 
-The large-cap fund has a capital gain of a few thousand dollars and it will take roughly two years contributing up to the limit to achieve the target allocation. Because there's a dip in the market and these funds have a time horizon of about 20 years, I've decided to start manual rebalancing.
+The large-cap fund has a capital gain of a few thousand dollars and it’ll take roughly two years contributing up to the limit to achieve the target allocation. Because there's a dip in the market and these funds have a time horizon of about 20 years, I've decided to start manual rebalancing.
 
-For this paycheck I took about 1,000 USD from the large-cap and moved it to the small-cap, which is roughly the amount the value is down compared to the cost basis. I also took a few hundred dollars and put it to the mid-cap fund as well. 
+The small-cap fund is hovering at being about 1,000 USD down from the cost basis. I’ve put 1,000 from the large-cap to small-cap twice. I did the same thing with the mid-cap, which was only down a few hundred dollars.
 
-I'm going to see if I can get to the target allocation before the end of 2022. With that said, it's my understanding I can't take advantage of tax loss harvesting in a 401k account, so, I will only move the gains. The benefits, as I see them:
+I'm going to see if I can get to the target allocation before the end of 2022. With that said, it's my understanding I can't take advantage of tax loss harvesting in a 401k account, so, I’ll only move the gains. The benefits, as I see them:
 
 1. not paying capital gains taxes because it's not a withdraw (and the dollar amounts for the year would fall into the 0 percent tax band),
 2. I'm taking advantage of buying low and selling high despite being limited in what I can contribute each year (this benefit is because there's more than one fund), and
