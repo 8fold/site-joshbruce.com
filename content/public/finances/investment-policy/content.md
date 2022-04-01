@@ -10,15 +10,17 @@ coming-soon:
 
 {!!dateblock!!}
 
-An investment policy is entered between a financial advisor and yourself. In my case, I am the financial advisor and think it is beneficial to enter an agreement with myself when I am at peace. I want to do it while I'm at peace and in a good place because when things go pear-shaped I can come back to the mechanical side of things.
+Investment policies are entered into between you and a financial advisor. They establish the [guidelines and guardrails](/design-your-life/guidelines-and-guardrails/) for your investments. They are created in times of peace to help automate decision-making when shit goes pear-shaped.
 
-I started with the outline developed by [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/) and here is my investment policy.
+For me, as of this writing, I’m both the client and advisor.
+
+I started with the outline developed by [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/).
 
 ## Financial goals
 
-In keeping with the [meet in the middle](/finances/) practice, I want to reverse engineer from the least acceptable to most acceptable retirement ages that are both most likely for reaching [.financial independence](FI).
+In keeping with the [meet in the middle](/finances/) practice, I created what I call my Coast [.financial independence](FI) stack.
 
-This gives me what I refer to as a Coast FI stack. Five Coast FI numbers with decreasing retirement ages, up until the point that the age I should be able to achieve the number corresponds (roughly) with the retirement:
+I estimated my FI number to be 500,000 [.United States Dollars](USD) based 8 percent returns, 3 percent inflation, and 4 percent withdraw rate. Then I calculated a coast FI number to reach my FI number by age 67, then 65, and so on.
 
 - Coast FI 1: $155,034
 	1. Starting at age: 41
@@ -54,62 +56,57 @@ I created the Coast FI stack using a Coast FI calculator. Coast FI is the amount
 
 I used the [Coast FI calculator from Wallet Burst](https://walletburst.com/tools/coast-fire-calc/) (I can’t speak to the quality of content on the rest of the site, but I appreciated the calculator).
 
-I chose a growth rate of **8%**, which might be considered conservative for the market in general. I chose an inflation rate of **3%**, which is the average for the last 100 years and higher than any given year from 2010 to 2021. I used the rule of thumb for a safe withdrawal rate of **4%**, which hypothesizes that you can draw down your net worth by 4% each year and live off those investments alone for around 30 years, at least.
+I chose a growth rate of 8 percent, which might be considered conservative for the market in general. I chose an inflation rate of three percent, which is the average for the last 100 years and higher than any given year from 2010 to 2021. I used the rule of thumb for a safe withdrawal rate of 4 percent, which hypothesizes that you can draw down your net worth by 4 percent each year and live off those investments alone for around 30 years, at least.
 
-My current total lifestyle cost is roughly $17,760 and I used **$20,000** to give myself a bit of a raise. I still don’t have a normal year’s worth of data to confirm this specific dollar amount. Also, this is total cost of lifestyle, not income. As of August 2021 my expenses were at 19,000 USD, however, 2021 is an outlier year given things I’ve purchased and paid for in full as it were.
+Because the numbers account for inflation, they’ll be in current dollars but may be higher actual balances in the future (1 USD being worth 0.60 cents later means 1 future dollar may be roughly 1.40 USD at that future time).
 
-I set the monthly contributions to **$4,000**, which is somewhat optimistic and will be adjusted if month-after-month I'm not able to achieve that amount. With that said, these numbers do not include 401(k) contributions made along the way beyond the initial net worth at 41.
+This gave me the Coast FI number and age at which I should hit that number. I changed the net worth to be that Coast FI number. I changed the starting age to be the age the calculator estimated I’d hit that number. And I reduced the acceptable retirement age.
 
-This data can be used to generate a static [.financial independence retire early](FIRE) number: `total lifestyle cost * 25`. My FIRE number is $500,000.
-
-Because the numbers account for inflation, they will be in current dollars but may be higher actual balances in the future (1 USD being worth 0.60 cents later means 1 future dollar may be roughly 1.40 USD at that future time).
-
-This gave me the Coast FI number and the age at which I should hit that number. I changed the net worth to be that Coast FI number. I changed the starting age to be the age the calculator estimated I’d hit that number. And I reduced the acceptable retirement age.
-
-For the last row to be achieved, I need to make an extra $2,000 in contributions per month, which should be covered and a bit more by the 401(k) I'm not formally putting in calculations.
-
-There's my primary retirement goal; able to “retire” by 50. By breaking it down I’m setting micro-goals that aren’t a decade away. Let me see if I can get the $155K by age 43. If I do that, let me see if I can get the $170K. And so on. And, if I can make that first one, then I'm in a comfortable position to believe that I will be able to retire at the latest acceptable time for me, which should come with other benefits I'm not counting on (social security, medicare, and the like).
-
-Another thing I appreciate about the table is that it's not bullets and a lot of words. I can scan down the left column for how old I am, scan across and see how close I am to achieving that level of investment, which is not representing my total net worth (traditional savings accounts, real estate, and similar).
+There's my primary retirement goal; able to “retire” by 50. By breaking it down using this Coast FI stack, I’m setting micro-goals that aren’t a decade away. Let me see if I can get the 155,000 USD by age 43. If I do that, let me see if I can get the 170,000 USD. And so on. And, if I can make that first one, then I'm in a comfortable position to believe I’ll be able to retire by the least acceptable retirement age for me, which should come with other benefits I'm not counting on (social security, medicare, and the like).
 
 </details>
 
 ## Investments
 
-The items in the following that are taken directly (or paraphrased) from White Coat Investor are indicated in italics.
+Italics represent things taken directly, or paraphrased, from White Coat Investor.
 
 - *I will strive to minimize the effects of taxes and expenses on our investment returns.*
 - *My primary investment vehicles will be broad-based index funds, preferably in tax-advantaged accounts.*
 - *I will buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.*
-- My savings rate and returns will be determined on a per-paycheck basis as a natural result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) workflow.
-- I will do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
-- I will contribute at least $100 per paycheck to long-term savings.
+- My savings rate and returns will be determined on a per-paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) workflow.
+- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my personal investments.
+- I’ll contribute at least $100 per paycheck to long-term savings; dollar cost averaging will be my primary mode of contributing.
 - I will use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
-- Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand [.USD](United States dollars); year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
-- For the equities portion of my portfolios, I will strive to be evenly distributed between small-, mid-, and large-cap stocks.
+- Retirement withdrawal rate will be 3.5 percent. If portfolio increases by 50 percent over the course of 3 years, increase annual withdrawal by 10 percent (not the withdrawal rate). ex. Year 1 withdrawal twenty thousand USD]; year 2 withdrawal twenty thousand USD; year 3 withdrawal twenty thousand USD; year 4, if portfolio value is 50 percent more than in year 1, withdrawal twenty-two thousand. Presuming next 4 years do the same, withdrawal twenty-four thousand two hundred USD. (Modifications are possible depending on [age and health](https://www.choosefi.com/flexible-spending-rules-for-early-retirees/)).
+- For the equities portion of my portfolio, I’ll strive to be evenly distributed between small-, mid-, and large-cap stocks.
+- I will approach my liquid investments as a single portfolio regardless of tax treatment. This means the portfolio will have a cash component and would not include collectibles, homes, or similar assets that typically take longer to sell than a few days.
 
 Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
 
 ## Asset allocation
 
-Investments will be in three brokerage accounts (tax buckets):
+Investments will be in four brokerage accounts (tax buckets):
 
-- Roth IRA:
+- Triple tax-advantaged (ex. HSA):
+	- pre-tax (or tax-deductible) going in,
+	- tax-exempt while growing, and
+	- tax-exempt on withdrawal.
+- Tax-free (ex. Roth IRA):
 	- post-tax going in (taxes are paid),
 	- tax-exempt while growing, and
 	- tax-exempt on withdrawal.
-- Tax-deferred (traditional IRA-like):
+- Tax-deferred (ex. traditional IRA):
 	- potentially pre-tax going in (I make too much annually to qualify),
 	- tax-exempt while growing, and
 	- taxed on withdrawal.
-- Taxable:
+- Taxable (ex. savings accounts):
 	- post-tax going in,
 	- taxed on dividends gained, and
 	- taxed on capital gains upon withdrawal (realized).
 
-For the taxable account there are potential tax advantages for selling a position with capital losses; referred to a [tax-loss harvesting](https://www.investopedia.com/terms/t/taxgainlossharvesting.asp). I don't plan on doing anything intentionally with tax-loss harvesting unless or until I understand it.
+For the taxable account there are potential tax advantages for selling a position with capital losses; referred to as [tax-loss harvesting](https://www.investopedia.com/terms/t/taxgainlossharvesting.asp). I don't plan on doing anything intentionally with tax-loss harvesting unless or until I understand it.
 
-I have multiple groups for macro-asset classes from debt to lard-cap [.United States](US) equities. I do include debt despite debt being a liability in accounting terminology. Each macro-asset class is given a range of percentages (similar to [Bollinger Bands](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands)) representing the proportion the value of each asset class should be each [paycheck or payout](/finances/building-wealth-paycheck-to-paycheck/).
+I have multiple groups for macro-asset classes from debt to large-cap [.United States](US) equities. I do include debt despite debt being a liability in accounting parlance. Each macro-asset class is given a range of percentages (similar to [Bollinger Bands](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands)) representing the proportion the value of each asset class should be with each [paycheck or payout](/finances/building-wealth-paycheck-to-paycheck/).
 
 Cash is a portion of the portfolio, however, while in [accumulation mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), the objective will be to keep cash at a minimum and view it as the reserve portion of the portfolio. From a long-term perspective, I'm hoping to build the cash reserve to be one year's worth of expenses by the time I step away from traditional employment.
 
@@ -152,7 +149,7 @@ I plan on having some form of earned income until my passing. This will be throu
 
 </details>
 <details>
-<summary>Beyond FIRE</summary>
+<summary>Beyond FI</summary>
 
 No idea.
 
