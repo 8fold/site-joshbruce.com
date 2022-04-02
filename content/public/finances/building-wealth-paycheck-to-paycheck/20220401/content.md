@@ -2,23 +2,23 @@
 title: April 1st, 2022 paycheck
 created: 20220401
 data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 5, 10, 7.2]
-- [Low correlation, 0, 1, 1]
-- [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 30.6]
-- [US equities - mid, 24, 35, 25.7]
-- [US equities - large, 24, 35, 33.6]
+- [Debt, 0, 1, 0.2]
+- [Cash, 5, 10, 6.7]
+- [Low correlation, 0, 1, 0.9]
+- [Negative correlation, 0, 1, 0.8]
+- [US equities - small, 24, 35, 32.9]
+- [US equities - mid, 24, 35, 26.5]
+- [US equities - large, 24, 35, 31]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 39.72, 42.70, 47.71]
-- [0.2, 36.84, 39.49, 43.83]
-- [0.4, 37.19, 39.70, 43.74]
-- [0.6, 37.69, 39.99, 43.54]
-- [0.8, 38.55, 40.52, 43.36]
-- [1.0, 42.56, 44.33, 46.87]
-- [1.1, 42.50, 44.24, 46.76]
-- [1.2, 42.51, 44.22, 46.73]
+- [0.0, 43.69, 39.72, 47.71]
+- [0.2, 40.13, 36.84, 43.83]
+- [0.4, 40.14, 37.19, 43.74]
+- [0.6, 40.30, 37.69, 43.54]
+- [0.8, 40.81, 38.55, 43.36]
+- [1.0, 44.72, 42.56, 46.87]
+- [1.1, 44.64, 42.50, 46.76]
+- [1.2, 44.63, 42.51, 46.73]
 ---
 
 # April 1st, 2022 paycheck
@@ -62,6 +62,32 @@ I'm going to see if I can get to the target allocation before the end of 2022. W
 3. I can continue dollar-cost-averaging through contributions *and* slowly rebalancing.
 
 I'm also considering setting up automatic notifications when the target allocation is off; not automating the rebalancing yet. I've set a calendar event a couple months from now to revisit that consideration.
+
+## Buying the dip
+
+I saw a video the other day entitled: Why Buying the Stock Market Dip is Bad Advice.
+
+Given that I am currently buying the dip, so to speak, I decided to give a listen. The arguments seem to as follows:
+
+1. Blindly continuing to buy a stock because it’s cheaper is a bad idea. The price could be dropping because it was overvalued to begin with. Therefore, individual stock investors should reevaluate their holdings regularly.
+2. People haven’t defined for themselves what a dip is in terms of percentage and time horizons. 
+3. All buying the dip is, is sitting on the sideline with cash trying to time when to actually deploy the money; therefore, it’s timing the market. Psychologically there’s a belief that the market will dip a little bit more instead of throwing in all the cash sitting on the sidelines. Therefore, dollar cost averaging is a better approach.
+
+I think this is an unfair assessment of the situation.
+
+First, totally agree that blindly continuing to buy something just because it’s dropping in price is a bad move and any investment should be reevaluated regularly. My preference for reevaluating is every time I’m about to buy it. If it were more expensive, would I still buy it? If yes, buying while cheaper makes sense. If no, maybe I still shouldn’t buy it.
+
+Second, again, totally agree we should be defining percentages and time spans. My range as of this writing for deploying more than what I normally do is a dip of 3 to 30 percent. If one of my holdings drops more than 3 percent I can buy out of my normal sequence and timings. If one of my holdings drops more than 30 percent, then I can’t. The timings are a bit different though. Instead of focusing on how long the drop has been, I look at how long it’s been since I deployed money out of the normal cycle and rotation.
+
+Third, this is where the video kinda goes south for me. Because it adds more detail to what it means to buy the dip. Specifically, the presumption that folks are *only* buying the dip. I would be interested to see data related to this; like the number of people sitting around waiting and watching for a dip before buying. For me, buying the dip is in addition to, not instead of, my dollar cost averaging approach.
+
+Every time I get paid, I put enough into my 401k to get the full employer match and contribute the max allowed by the end of the year. I have a target allocation for holdings in the 401k, which means I’m buying the cheaper holdings; dollar cost averaging style. Would I be willing pay more to buy the holding that is down from its 52 week high (and isn’t occupying the desired proportion of the mix)? Yes. Which is why I’m doing internal exchanges of the gains; rebalancing style. Im not doing it in a single exchange either, so, still dollar cost averaging.
+
+Every time I get paid I put money into my taxable brokerage account as well; dollar cost averaging. I also save a bit to possibly got into my Roth IRA once I know if I can max that out or not before filing taxes. Every quarter I can take some of this money and buy more. Or, when there’s a dip, I can take a portion equal to the dip of a single holding and buy it. Of course, this might mean at the end of the year I might need to save more to put toward the Roth IRA, and that’s okay.
+
+Lastly, because I look at my portfolio as a whole, which includes cash, I don’t think of it as money sitting on the sidelines; it’s just money in my portfolio which I can move around to purchase things and keep the portfolio in balance.
+
+Anyway, so, yeah, still buying the dip per the [investor policy](/finances/investment-policy/) and [spending cash reserves](/finances/budgeting/#spending-cash-reserves) budgeting strategy.
 
 ## Odd place
 
