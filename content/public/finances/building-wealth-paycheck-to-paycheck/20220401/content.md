@@ -81,9 +81,9 @@ Second, again, totally agree we should be defining percentages and time spans. M
 
 Third, this is where the video kinda goes south for me. Because it adds more detail to what it means to buy the dip. Specifically, the presumption that folks are *only* buying the dip. I would be interested to see data related to this; like the number of people sitting around waiting and watching for a dip before buying. For me, buying the dip is in addition to, not instead of, my dollar cost averaging approach.
 
-Every time I get paid, I put enough into my 401k to get the full employer match and contribute the max allowed by the end of the year. I have a target allocation for holdings in the 401k, which means I’m buying the cheaper holdings; dollar cost averaging style. Would I be willing pay more to buy the holding that is down from its 52 week high (and isn’t occupying the desired proportion of the mix)? Yes. Which is why I’m doing internal exchanges of the gains; rebalancing style. Im not doing it in a single exchange either, so, still dollar cost averaging.
+Every time I get paid, I put enough into my 401k to get the full employer match and contribute the max allowed by the end of the year. I have a target allocation for holdings in the 401k, which means I’m buying the cheaper holdings; dollar cost averaging style. Would I be willing to pay more to buy the holding that’s down from its 52 week high (and isn’t occupying the desired proportion of the mix)? Yes. Which is why I’m doing internal exchanges of the gains; rebalancing style. Im not doing it in a single exchange either, so, still dollar cost averaging.
 
-Every time I get paid I put money into my taxable brokerage account as well; dollar cost averaging. I also save a bit to possibly got into my Roth IRA once I know if I can max that out or not before filing taxes. Every quarter I can take some of this money and buy more. Or, when there’s a dip, I can take a portion equal to the dip of a single holding and buy it. Of course, this might mean at the end of the year I might need to save more to put toward the Roth IRA, and that’s okay.
+Every time I get paid I put money into my taxable brokerage account as well; dollar cost averaging. I also save a bit to possibly go into my Roth IRA once I know if I can max that out or not before filing taxes. Every quarter I can take some of this money and buy more. Or, when there’s a dip, I can take a portion equal to the dip of a single holding and buy it. Of course, this might mean at the end of the year I might need to save more to put toward the Roth IRA, and that’s okay.
 
 Lastly, because I look at my portfolio as a whole, which includes cash, I don’t think of it as money sitting on the sidelines; it’s just money in my portfolio which I can move around to purchase things and keep the portfolio in balance.
 
@@ -95,7 +95,7 @@ The longer, and more in-depth, I go with [van life](/van-life/) the more impatie
 
 The best description I have for where my mind is right now is burned out.
 
-I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runaway from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
+I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runa way from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
 
 With that said, given my lifestyle, chances are van life won’t actually be a money saving move. No car payment. Minimal insurance cost. No car-related expenses. All of that changes the moment I get a vehicle and those costs may equal rent and utilities. So, I don’t think the running toward something is financial, it’s just different.
 
@@ -103,9 +103,9 @@ I’m waiting to see if this is just a passing thing or a more general, long run
 
 I think Becca has the right of it though when she said:
 
-> Im trying to not make any life altering changes while there’s still a pandemic going on.
+> I’m trying to not make any life altering changes while there’s still a pandemic going on.
 
-Im hoping to be able set aside a certain amount of time each day toward researching and reflecting on the van life question and working toward and marketing my other work and projects.
+Im hoping to be able to set aside a certain amount of time each day toward researching and reflecting on the van life question and working toward and marketing my other work and projects.
 
 ## FI experiments
 
