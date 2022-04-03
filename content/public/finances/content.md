@@ -9,17 +9,17 @@ updated: 20220124
 
 {!!dateblock!!}
 
-Talking money has always felt foreign and is one of those subjects socialized to be taboo. Whether you're doing well or poorly, you don't talk about it. Further, either way, someone somewhere will have negative things to say about the fact; either you did it to yourself or you didn't earn it. At least that appears to be the ethos of the United States when it comes to money.
+Talking money has always felt foreign and is one of those subjects socialized to be taboo. Whether you're doing well or poorly, you don't talk about money. Further, someone somewhere will have negative say about you; either you did it to yourself or you didn't earn it. At least that appears to be the ethos of the United States when it comes to money.
 
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I do have it.
 
-I worked for six for a credit union and was trained on multiple topics while there. In the call center I talked with an average of 200 people per day and was introduced to a lot of individual strategies.
+I spent six years working with a credit union and was trained on multiple topics while there. In the call center I talked with an average of 200 people per day and was introduced to a lot of individual strategies.
 
 As a coach whose worked with multiple clients from the Federal Government to Fortune 500 companies and micro-businesses, I focus on optimization, gamification, and productivity.  Much of this involves automated decision-making, as much is possible and practical. In other words, when faced with an event, I help my clients be in a position to respond quickly because the decision on how to respond has already been made; this is also something I try to practice in my own life.
 
-When the 2020 pandemic hit, there was no question what I would do. With my values, principles, practices, and tools as a foundation I called the client I was working for at the time and told them I would be moving from Washington state to Tennessee; I would have done the move regardless—I was stating intent, not asking permission. They understood and didn't remove from the project. I spent the [15 Days to Slow the Spread](https://trumpwhitehouse.archives.gov/articles/15-days-slow-spread/) to prepare for the move and the following 3 days actually moving.
+When the 2020 pandemic hit, there was no question what I would do. With my values, principles, practices, and tools as a foundation I called the client and told them I’d be moving from Washington state to Tennessee; I would have done the move regardless—I was stating intent, not asking permission. They understood and didn't remove from the project. I spent the [15 Days to Slow the Spread](https://trumpwhitehouse.archives.gov/articles/15-days-slow-spread/) to prepare for the move and the following 3 days actually moving.
 
-The following section describe my personal values, principles, practices, and tools with a focus on financial, however, they may overlap into areas beyond the financial.
+The following section described my personal values, principles, practices, and tools with a focus on the financial, however, they may overlap into areas beyond the financial.
 
 In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
 
@@ -53,11 +53,11 @@ In times of stress, I can come back to these and center myself from a time when 
 
 ## Principles
 
-1. Corporate profits favors owners; owning equity shares makes you an owner of the company.
+1. Corporate profits favor owners; owning equity shares makes you an owner of the company.
 2. The borrower is slave to the lender; owning bonds makes you the lender to the government or corporation.
 3. Dividends created in a security don't need to compound in that security.
 4. If you want to go fast, go alone. If you want to go far, go together.
-5. Rising tides lift all boats and don't get caught skinny dipping during receding tides.
+5. Rising tides lift all boats and don't get caught skinny dipping during when they recede.
 6. Money is food, not blood.
 7. The macro-allocation principle.
 

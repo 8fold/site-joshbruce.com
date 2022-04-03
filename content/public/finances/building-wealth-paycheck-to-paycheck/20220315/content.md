@@ -91,7 +91,7 @@ So, I need to make the decision soon and I’m preparing for the possibility by 
 Outside of spreadsheet tracking, I could open a separate taxable brokerage account for each fund, but I’m appreciating the idea of a minimal number of accounts and sub-accounts. Further, there should come a point where almost everything is under one roof; Vanguard. Two things hold me back from doing it now:
 
 1. The main bit is Vanguard doesn’t offer [dollar-based investing](https://www.fidelity.com/learning-center/trading-investing/fractional-shares) (or fractional shares) for non-mutual fund vehicles; specifically [.exchange-traded funds](ETFs).
-2. My long-term treasuries and real east are investment trusts need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard, which offer fractional shares.
+2. My long-term treasuries and real estate investment trusts need to hit a value of 3,000 USD before I can buy into the mutual fund version at Vanguard, which offer fractional shares.
 
 Arguably, mutual funds are going the way of the dodo and ETFs are their replacement. However, the only way to do fractional shares at Vanguard is using their mutual funds; note, this isn’t the same as investing in Vanguard by purchasing their ETFs elsewhere using fractional shares—like M1 Finance or Fidelity. Further, trading non-Vanguard ETFs at Vanguard is possible and commission free (as long as trades are done online), however, the trade must be done at the full share price of the holding; again, not fractional. Even trading Vanguard ETFs at Vanguard is the same way, so, at least they’re consistently applying the rule.
 
@@ -133,7 +133,7 @@ Once I've updated the account tables, the data entry is complete, except for wha
 
 ### Consolidation tables
 
-These tables consolidate the numbers for each account table and consolidate them based on tax bucket; essentially creating tax bucket portfolios.
+These tables consolidate the numbers for each account table puts them in tables based on tax bucket; essentially creating tax bucket portfolios.
 
 Each row is a holding in the tax bucket; regardless of whether the account is with Vanguard, Fidelity, M1 Finance, a credit union, or somewhere else.
 
@@ -141,7 +141,7 @@ Each holding has a target percentage within the sub-portfolio. I take the balanc
 
 If the current value is less than the target value, the table tells me to try and add more to that holding. If the current value is greater than the target value, the table tells me to leave it alone.
 
-The last table in this group consolidates each holding regardless of tax bucket. If I were to rebalance the portfolio, these tables would show me what to buy and sell.
+The last table in this group consolidates each holding regardless of tax bucket; the overall portfolio. If I were to rebalance the portfolio, these tables would show me what to buy and sell.
 
 (M1 Finance has automated rebalancing, which is fine, but I don’t plan to rebalance that often. I’m also planning to move away from M1 Finance anyway.)
 
@@ -165,7 +165,7 @@ The last three tables are there to help me track current and historical data not
 
 The first table is related to the 401k. I track how much is contributed based on the percent I've set and the total contributed for the year. I adjust the number of paychecks I have remaining for the year with each contribution and this table tells me how likely I am to get close to the annual contribution limit in order to maximize my employer's contribution.
 
-The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last 52weeks, without consideration for the asset allocation of my portfolio). 
+The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last 52 weeks, without consideration for the asset allocation of my portfolio). 
 
 The third table is similar to the second only it tracks things based on what I actually paid for each holding on a given day. So, the low and high here is the lowest I paid since I started tracking. 
 
