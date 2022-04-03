@@ -29,12 +29,10 @@ class LogList
 
         $logLinks = [];
         foreach ($finder as $fileInfo) {
-            // @phpstan-ignore-next-line
             if ($fileInfo->getRealPath() === $file->path()) {
                 continue;
             }
 
-            // @phpstan-ignore-next-line
             $f = PlainTextFile::from($fileInfo, $file->root());
 
             $title = $f->title();
