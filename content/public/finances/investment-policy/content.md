@@ -1,7 +1,7 @@
 ---
 title: Investment Policy
 created: 20210216
-updated: 20220124
+updated: 20220321
 coming-soon:
 - review agile manifesto
 ---
@@ -52,7 +52,7 @@ I estimated my FI number to be 500,000 [.United States Dollars](USD) based 8 per
 <details>
 <summary>Details</summary>
 
-I created the Coast FI stack using a Coast FI calculator. Coast FI is the amount of money you would need to maintain your current total lifestyle cost at a specified future age or date, without having to save another dollar; the invested amount will grow to within a "safe withdrawal rate" by the specified age.
+A coast FI number is calculated using multiple variables:
 
 I used the [Coast FI calculator from Wallet Burst](https://walletburst.com/tools/coast-fire-calc/) (I can’t speak to the quality of content on the rest of the site, but I appreciated the calculator).
 
@@ -81,7 +81,7 @@ Italics represent things taken directly, or paraphrased, from White Coat Investo
 - For the equities portion of my portfolio, I’ll strive to be evenly distributed between small-, mid-, and large-cap stocks.
 - I will approach my liquid investments as a single portfolio regardless of tax treatment. This means the portfolio will have a cash component and would not include collectibles, homes, or similar assets that typically take longer to sell than a few days.
 
-Notice each of these are aligned with my financial [values, principles, and practices](/finances/).
+Note: Each bullet is aligned to my financial [values, principles, and practices](/finances/).
 
 ## Asset allocation
 
@@ -101,8 +101,12 @@ Investments will be in four brokerage accounts (tax buckets):
 	- taxed on withdrawal.
 - Taxable (ex. savings accounts):
 	- post-tax going in,
-	- taxed on dividends gained, and
-	- taxed on capital gains upon withdrawal (realized).
+	- tax-exempt while growing, and
+	- tax-exempt on withdrawal.
+- Triple-tax advantaged
+  - pre-tax (or tax-deductible) going in,
+  - tax-exempt while growing, and
+  - potentially tax-exempt on withdrawal.
 
 For the taxable account there are potential tax advantages for selling a position with capital losses; referred to as [tax-loss harvesting](https://www.investopedia.com/terms/t/taxgainlossharvesting.asp). I don't plan on doing anything intentionally with tax-loss harvesting unless or until I understand it.
 
@@ -113,25 +117,25 @@ Cash is a portion of the portfolio, however, while in [accumulation mode](/finan
 <details>
 <summary>Coast FI 1 (43 years old)</summary>
 
-Once I reach Coast FI 1, I plan to begin moving toward a risk parity style portfolio by adding long-term treasuries and a little gold to the mix. If I leave my current employer, I may decide to roll the 401k there to my new employer, or, push it into a Traditional [.Individual Retirement Account](IRA). 
+Once I reach Coast FI 1, I plan to begin moving toward a risk parity style portfolio by adding long-term treasuries and a little gold to the mix. If I leave my current employer, I may decide to roll the 401k there to my new employer, or, push it into a Traditional [.Individual Retirement Account](IRA).
 
 </details>
 <details>
 <summary>Coast FI 2 (44 years old)</summary>
 
-Coast FI 2 would see me increase diversification with an increase in long-term treasuries and gold and the addition of US [.Real Estate Investment Trusts](REITs).
+Coast FI 2 would see me increase diversification with an increase in long-term treasuries and gold and the addition of commodities.
 
 </details>
 <details>
 <summary>Coast FI 3 (46 years old)</summary>
 
-Increase bond and gold exposure. Introduce commodities to the mix.
+Increase bond, gold, and commodities exposure.
 
 </details>
 <details>
 <summary>Coast FI 4 (48 years old)</summary>
 
-Decrease US equities exposure while increasing exposure to other asset classes and add in non-US REITs.
+Decrease US equities exposure while increasing exposure to other asset classes.
 
 </details>
 <details>
@@ -139,13 +143,13 @@ Decrease US equities exposure while increasing exposure to other asset classes a
 
 Decrease US equities exposure while increasing exposure to the other asset classes in proportion.
 
-At they point, the taxable account should be able to support my modest lifestyle for 10 years.
+At this point, the taxable account should be able to support my modest lifestyle for 10 years.
 
-At age 60 I'll be able to lean on the tax-deferred accounts, which should have balances high enough to cover me for another 10 years. This time will also give me a chance to let the taxable accounts cool down.
+At age 60 I'll be able to lean on the tax-deferred accounts, which should have balances high enough to cover me for another 10 years. From the age of 60 to 70 should give a chance for the taxable account to cool off.
 
-I plan on reserving the tax-free accounts until age 70. If there are funds still available in the tax-deferred buckets, I will continuing leaning more on those, however. The rationale being that when I reach age 72, I will be required to take minimum distributions from the tax-deferred accounts.
+I plan on reserving the tax-free accounts until age 70. If there are funds still available in the tax-deferred buckets, I’ll continuing leaning more on those, however. The rationale being that when I reach age 72, I’ll be required to take minimum distributions from the tax-deferred accounts.
 
-I plan on having some form of earned income until my passing. This will be through books, art, and the like, which I'll create on my own schedule an not because I necessarily need to in order to survive.
+I plan on having some form of earned income until my passing. This will be through books, art, and the like, which I'll create on my own schedule and not because I necessarily need to in order to survive.
 
 </details>
 <details>
@@ -153,7 +157,7 @@ I plan on having some form of earned income until my passing. This will be throu
 
 No idea.
 
-The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk. One of the Agile values is adapting to change over following a plan, so, I will adjust as time progresses. In other words, this is a plan like any other, once met with reality it may become moot.
+The fact my Agile-brain has even allowed me to come up with a 10 year "plan" is crazy-talk. One of the Agile values is adapting to change over following a plan, so, I’ll adjust as time progresses. In other words, this is a plan like any other, once met with reality it may become moot.
 
 What makes me feel comfortable about it is it's based on the value of the portfolio, which is the crux of the whole thing. So, if time slips a bit, I still have the same goal and, once I hit Coast FI 1, the retirement date is acceptable, though not ideal.
 
@@ -162,34 +166,35 @@ What makes me feel comfortable about it is it's based on the value of the portfo
 <details>
 <summary>Details</summary>
 
-Asset allocation is the proportion of each asset class compared to the overall portfolio. Tax location is related to the tax treatment of funds flowing in and out of the portfolio. Diversification is about choosing asset classes that have [low correlation](https://www.portfoliovisualizer.com/asset-correlations) to each other.
+Asset allocation is the proportion of each asset class compared to the value of the overall portfolio. Tax location is related to the tax treatment of funds flowing in and out of the portfolio. Diversification is about choosing asset classes that have [low correlation](https://www.portfoliovisualizer.com/asset-correlations) to each other.
 
-In the beginning I aim to keep over 90 percent of the value in US equities. Over the time during accumulation mode this will shift to a more diversified, risk parity portfolio. Regardless of time, I hope to maintain roughly equal distribution across US equities based on market capitalization.
+In the beginning I aim to keep over 90 percent of the value in US equities. Over the course of accumulation mode this allocation will shift to a more diversified, risk parity portfolio.
 
 </details>
 
 ## Emergency fund (cash and credit)
 
-As counterintuitive as it may sound, the majority of my emergency fund will use revolving loans. These loans have relatively low interest rates and I'm taking a somewhat hard stance on what constitutes an emergency; a trip a few months from now is not an emergency and I should try and save what I can before the trip.
+As counterintuitive as it may sound, the majority of my emergency fund will reside in revolving loans. These loans have relatively low interest rates and I'm taking a somewhat hard stance on what constitutes an emergency; a trip a few months from now is not an emergency and I should try and save what I can before the trip to pay for it.
 
-I also have a broad definition of cash when it comes to this emergency fund. Money already in risk parity style holdings may be considered cash should an emergency arise. (For the purposes of tracking, they will not be considered cash, however.) These minor holdings should have the lowest risk and volatility while achieving a higher rate of return compared to liquid cash. As such, only 3 to 6 months will be in liquid cash while in accumulation mode, which would shift to roughly 12 months in drawdown mode.
+I also have a broad definition of cash when it comes to this emergency fund. Money already in risk parity style holdings may be considered cash should an emergency arise. (For the purposes of tracking, these earmarked funds aren’t considered cash, however.) These minor holdings should have the lowest risk and volatility while achieving a higher rate of return compared to liquid cash. As such, while in accumulation mode, only 3 to 6 months will be in liquid cash, which would shift to roughly 12 months in drawdown mode.
 
-These long-term savings accounts, if you will, arr also used to save for and replace things like my cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life. I’m other words, just because I’ve saved enough and there's a new model, doesn't mean I should buy it. 
-
-### Credit cards
-
-All credit cards intended for day-to-day use will have a reward system; usually cash back. Credit cards intended for emergency use only should be as low interest as possible as they may carry a balance from one statement period to the next.
-
-Most purchases and spending will be done using credit cards. 
-
-All cards, except the primary, will have cash back funds automatically converted and deposited regularly. The primary card may hold up to 200 USD worth of points before some, if not all, of those points need to be converted to cash.
+These long-term savings accounts, if you will, will also be used to save for and replace things like cellphone, laptop, and so on. These tools will only be replaced if the current version no longer serves its intended purpose in my life; just because the time is right, I have the means, and there's a new model, doesn't mean I should buy it right then.
 
 ## Housing and paying off debt
 
-- Monthly housing expenses will be less than or equal to 25-30% of my net income.
-- I will not seek to own my own home unless it is part of an assisted living or subletting strategy.
-- Debt will be avoided when possible and paid off as soon as possible (preferring immediate payoff).
-- Maintain at least a 10% contribution per paycheck to savings and investments.
+- Monthly housing expenses will be less than 30% of my net income.
+- I’ll not seek to own my own home unless it’s part of an assisted living strategy, generates rental income, or both.
+- Debt will be avoided when possible and paid off immediately, while maintaining at least a 10 percent contribution per paycheck to savings and investments.
+
+## Cash reserves, dollar cost averaging, and out of cycle purchasing
+
+Cash reserves and emergency funds aren’t, strictly speaking, the same thing. Emergency funds are for when things go wrong. Cash reserves are for taking advantage of opportunities related to long-term saving.
+
+The foundation of my investing uses dollar cost averaging on a per paycheck (or per deposit) basis.
+
+A portion of each paycheck is held in reserve; up to the upper cash limit of the portfolio (ex. 10 percent per paycheck, if the max cash band is 10 percent).
+
+See [budgeting for details](/finances/budgeting/)
 
 ## Spend and giving
 

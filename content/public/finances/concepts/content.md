@@ -222,6 +222,9 @@ Cost basis
 Diversification
 :    Holding multiple assets wherein some assets may increase in value while others decrease in value at different degrees or direction. *One asset may increase while the other decreases or vice versa, or, one asset will rise or fall in fair market value faster or slower than another.*
 
+Dollar cost averaging
+:    Spending the same amount on a regular basis on investments regardles of the current fair market value of the security.
+
 Expense ratio
 :    The ongoing cost for managing a mutual fund. *The percent is a per year number, however, the percent is usually divided by roughly 365 to generate a Daily percent, which is charged daily.*
 
