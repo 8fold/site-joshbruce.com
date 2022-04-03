@@ -67,11 +67,11 @@ I'm also considering setting up automatic notifications when the target allocati
 
 I saw a video the other day entitled: Why Buying the Stock Market Dip is Bad Advice.
 
-Given that I am currently buying the dip, so to speak, I decided to give a listen. The arguments seem to as follows:
+Given that I am currently buying the dip, so to speak, I decided to give a listen. The arguments seem to be as follows:
 
 1. Blindly continuing to buy a stock because it’s cheaper is a bad idea. The price could be dropping because it was overvalued to begin with. Therefore, individual stock investors should reevaluate their holdings regularly.
 2. People haven’t defined for themselves what a dip is in terms of percentage and time horizons. 
-3. All buying the dip is, is sitting on the sideline with cash trying to time when to actually deploy the money; therefore, it’s timing the market. Psychologically there’s a belief that the market will dip a little bit more instead of throwing in all the cash sitting on the sidelines. Therefore, dollar cost averaging is a better approach.
+3. All buying the dip is, is sitting on the sideline with cash trying to time when to actually deploy the money; therefore, it’s timing the market, which is bad. Psychologically there’s a belief that the market will dip a little bit more, so, you keep waiting for the deeper dip instead of throwing in all the cash sitting on the sidelines. Therefore, dollar cost averaging is a better approach.
 
 I think this is an unfair assessment of the situation.
 
