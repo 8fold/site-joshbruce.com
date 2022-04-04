@@ -25,6 +25,8 @@ use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 use JoshBruce\SiteDynamic\Documents\FullNav;
 use JoshBruce\SiteDynamic\Documents\Sitemap;
 
+use JoshBruce\SiteDynamic\FileSystem\Aliases;
+
 /**
  * Immutable and read-only class for responding to requests.
  *
@@ -59,21 +61,51 @@ class RequestHandler implements RequestHandlerInterface
         $status  = 200;
         $headers = [];
 
-        $isRequestingFile = $this->isRequestingFile();
+        $file = FileForRequest::at($this->request(), $this->environment());
 
-        $path = $this->contentPublic() . $this->requestPath();
-        if (! $isRequestingFile and ! $this->isRequestingXml()) {
-            $path = $this->contentPublic() .
-                $this->requestPath() .
-                $this->environment()->contentFilename();
+        // requesting file
+        // requesting xml
+        // otherwise: requesting content.md (file)
 
-        }
+        // file not found
 
-        $file = File::at($path, $this->contentPublic());
+        // head only response
 
-        if ($file->notFound()) {
+        // returning file
+
+        // returning text-based content (xml or content)
+
+
+
+
+
+
+
+
+
+
+
+
+//         $isRequestingFile = $this->isRequestingFile();
+//
+//         $path = '';
+//         $file = false;
+//         if ($this->isRequestingFile() or $this->isRequestingXml()) {
+//             $path = $this->contentPublic() . $this->requestPath();
+//             $file = File::at($path, $this->contentPublic());
+//
+//         } else {
+//             $file = Aliases::from(
+//                 $this->requestPath(),
+//                 $this->environment()
+//             );
+//
+//         }
+
+        if ($file == false) {
             $status = 404;
             $path   = $this->contentPublic() . '/error-404.md';
+            $file   = PlainTextFile::at($path, $this->contentPublic());
 
         } else {
             $headers = [
@@ -89,7 +121,8 @@ class RequestHandler implements RequestHandlerInterface
             );
 
         } elseif (
-            $isRequestingFile and
+            $status !== 404 and
+            $this->isRequestingFile() and
             $resource = @\fopen($file->path(), 'r') and
             is_resource($resource)
         ) {
@@ -101,7 +134,7 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        $file = PlainTextFile::at($path, $this->contentPublic());
+        // $file = PlainTextFile::at($path, $this->contentPublic());
 
         if ($file->template() === 'sitemap') {
             return new PsrResponse(
@@ -111,16 +144,6 @@ class RequestHandler implements RequestHandlerInterface
                     Sitemap::create($file, $this->environment())
                 )
             );
-        }
-
-        // TODO: remove after major release
-        if ($file->alias() !== false) {
-            $file = PlainTextFile::at(
-                $this->contentPublic() . '/!' . $file->alias() . '/content.md',
-                $this->contentPublic()
-            );
-            // var_dump($file->content());
-            // die("here");
         }
 
         $pageTitle   = $file->pageTitle();
