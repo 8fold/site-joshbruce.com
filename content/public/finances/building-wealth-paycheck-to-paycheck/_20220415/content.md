@@ -41,13 +41,43 @@ Still [buying the dip](https://joshbruce.com/finances/building-wealth-paycheck-t
 
 ## The market
 
-My experience so far is that there’s usually a dip in the middle of the month and a rally at the beginning. I saw it again at the beginning of April, but it didn’t stick like it in previous months.
+My experience so far is that there’s usually a dip in the middle of the month and a rally at the beginning. I saw it again at the beginning of April, but it didn’t stick like it has in previous months.
 
 With that said, it’s still more of a plateau and up a little bit from  last month. 
 
 ## Odd place
 
 I’m feeling a bit better. 
+
+## Work
+
+I love what I do. It’s hella frustrating at times though. Anyway, this is more about work in general.
+
+I’ve never gotten an interview from an application via my résumé. On paper, I’m kinda crap; at least when written by me with input from others.
+
+I’ve asked for, and taken a lot of advice over the years. And, I’m going to try and do something different.
+
+First, I’ve decided to hire a professional résumé writer. To be fair, I’m hiring two. While I’m not actively pursuing other employment yet, I’m always open to possibilities and I want to try something I haven’t tried before.
+
+Seriously, over 20 years with applying via résumé and I’ve never received an interview that way. In the beginning I got my jobs by filling out the standard application. When I did full-time freelance, it was an accidental email and word-of-mouth. My father got me my first white collar job interview; I didn’t get that gig but I impressed someone on the panel enough that he decided he had to find me a job there. After getting laid off he got me hired back the second time. Every other time was via temporary agencies or a recruiter randomly calling me. Never a job or company I chose and sent my résumé to.
+
+Second, I’m bailing on most social media. A couple of the industry professionals I talked to mentioned the importance of getting on Twitter, reaching out to friends and family via social; because they’ll never turn you down, so to speak.
+
+To be fair, this was good advice and worked for them. However, as with most things, what works for one, doesn’t work for all; survivorship bias is real. I’ve been online since 1998. In that time I’ve received one interview based on my activity online; it was not a job I applied for—someone found me. Granted this was right at the dot-com bubble bursting, so, that fell through. I never realized how much this could negatively impact my perception of self-worth. One portion of the advice was to add value.
+
+Here’s the thing, I think everything I do could add value to someone. With that said, I also recognize that value is purely subjective; no one can tell you what is valuable to you.
+
+I often see this with teams I coach. For example, a popular refrain is: This meeting doesn’t add value to me.
+
+(I don’t know why my brain went here, but I’ll commit to continuing.)
+
+The meeting is a container, it has no stake or agency with which to create value. Therefore, the question I have is: What did you do to try and bring value to others in the meeting (or space)?
+
+That’s a hard thing to think about or consider. I need to consider the audience and try to be of service to them; instead of waiting (or demanding) they be of service to me first before I reciprocate. If everyone approaches that meeting with that stance, no one delivers value.
+
+Now imagine the Earth as that meeting, that container. Everyone waiting for others to deliver value to them before giving of themselves.
+
+Not the world I’d want to live in.
 
 ## FI experiments
 
