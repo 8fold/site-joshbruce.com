@@ -27,6 +27,29 @@ fi-experiments:
 
 {!! data !!}
 
+Small-caps are still down, so, still focused on buying the small-cap and extended market funds.
+
+I did go ahead and make a contribution to my Roth [.Individual Retirement Account](IRA). I also put a little extra using the [cash reserves protocol](/finances/budgeting/#spending-cash-reserves).
+
+I love balance and negation; that wasn’t left-field at all.
+
+For example, I would like to put Barbara Kruger’s *We have received orders not to move* next to my *Rosie the Riveter* tin poster. Two opposing messages. The former by a woman and feminist and the latter by a man commissioned by The Department of Defense.
+
+The negation I’m considering when it comes to finances and investing right now is:
+
+1. Be fearful when others are greedy and greedy when others are fearful. (Warren Buffett)
+2. A foolish consistency is the hobgoblin of little minds. (Ralph Waldo Emerson)
+
+Right now the small-cap index funds are dropping in price; currently down 20 percent from their 52 week high. This could be because people are running away from the small-caps to something else; fearful. Could be due to splits. Companies going to zero. All sorts of things. The [CNN Fear and Greed Index](https://www.cnn.com/markets/fear-and-greed) shows neutral as of writing with a slight lean toward fear.
+
+With that said, I’m consistently buying this asset class that’s down; consistently. Is this a foolish consistency? Am I throwing good money after bad? 
+
+My rationale at moment is that I’m still a decade or three away from wanting to use this money for something else. That’s a good time horizon for dividend reinvestment to help out even if the value of the shares stays where they are. 
+
+I’m also still watching the overall balance of the portfolio and I have room to continue buying the cheapest asset.
+
+Still could be a foolish consistency though. Again, I appreciate dichotomy in the world; though it can be frustrating.
+
 ## Taxes
 
 Forgot to give the accountant an [IP PIN](https://www.irs.gov/identity-theft-fraud-scams/retrieve-your-ip-pin), so, cutting it a bit close for filing this year.
