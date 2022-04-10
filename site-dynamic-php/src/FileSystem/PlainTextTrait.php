@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\FileSystem;
 
-// use DateTime;
+use DateTime;
 // use SplFileInfo;
 //
 use Symfony\Component\Yaml\Yaml;

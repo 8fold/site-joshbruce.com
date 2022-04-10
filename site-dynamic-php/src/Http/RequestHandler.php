@@ -103,7 +103,7 @@ class RequestHandler implements RequestHandlerInterface
 //
 //         }
 
-        if ($file == false) {
+        if ($file == false or $file->notFound()) {
             $status = 404;
             $path   = $this->contentPublic() . '/error-404.md';
             $file   = PlainTextFile::at($path, $this->contentPublic());

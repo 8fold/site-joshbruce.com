@@ -1,4 +1,4 @@
 ---
-alias: application/software-development
+alias: experiences/software-development
 title: Software development
 ---
