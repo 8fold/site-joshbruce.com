@@ -102,6 +102,36 @@ Now imagine the Earth as that meeting, that container. Everyone waiting for othe
 
 Not the world I’d want to live in.
 
+## A name for that
+
+A motif in my life is to start doing something original to me only to find out it’s been there the whole time. Now, I don’t have the ego to believe that out of roughly 8 billion people I’m going to come up with something completely original, so, for me, it’s more reassurance and affirmation when it happens.
+
+This is how it was with agile software development for me. I started doing it. Then, a few years later, learned it was a whole industry and predated my manifestation of by a decade for the Manifesto and a decade or two of practice before the writing of the Manifesto.
+
+Anyway.
+
+This time it’s something called [factor investing](https://www.investopedia.com/terms/f/factor-investing.asp). 
+
+Market-cap is a factor. The total stock market index fund I’m in is market-cap weighted, which is to say when I buy shares of the fund, more money goes toward companies with higher valuations. One underlying belief is that these companies have demonstrated that they know how to allocate resources, therefore, they are safer. Granted this goes against the past performance doesn’t guarantee future performance principle but it helps people sleep at night. There are 3 market-cap group: small, mid, and large. For me, I try to be evenly distributed across the 3; not purely market-cap weighted.
+
+Growth versus value is a factor. The total stock market index I’m in is currently heavily invested in large-cap growth. I say currently because it’s market-cap weighted, so, if investors who purchase individual holdings start shifting toward value, this fund should shift as well. And, a stock could shift from being a [growth stock to a value stock](https://www.investopedia.com/articles/professionals/072415/value-or-growth-stocks-which-best.asp) or vice versa based on price characteristics; whether the price is based on potential future earnings. Basically, this total stock market fund is saying I agree with the majority. For me, I would like to be relatively close to even split here as well; half growth and half value.
+
+Instead of growth and value alone, Personal Capital uses growth, value, and core; not sure what core means. With that said, it means I’m looking for one-third of each. As of this writing, I’m there. Not only that but it ends up being a bit more large-cap growth and small-cap value; similar to the [golden butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/). Also, as of this writing, this mix has outperformed a total stock market fund over the last 20 years. Also-also, that’s not the point, not why I’m doing it, and isn’t that big of a difference.
+
+The point (driving force) for me wanting a more even split across market-caps and growth versus value is a values-based decision. I value smaller companies over larger ones. I value present financials over speculated future earnings. So, a strategy that puts most of each dollar toward large-cap growth stocks is, well, antithetical to those values. With that said, I also believe investing in the whole stock market is a rational decision, so, I’m not going to exclude large-cap and growth. And lastly, I believe Bogle’s findings that any reasonably diversified portfolio will perform 90–94 percent the same as similar portfolios holding similar allocations.
+
+The crux of it is that if the was no diversity of approaches then the possibility of growing wealthy in the stock market probably wouldn’t exist.
+
+Some people favor growth over value, while others are the opposite. Historically value has returned more but recently (last decade or so) that hasn’t been the case. Some favor fund investing while others are trying to convince people to buy and hold one company. And so on.
+
+Each approach has stories of the survivors of that strategy; from day-trading individual stocks to buying and holding one company forever to one fund investing to whatever. 
+
+Ultimately, I want to choose a strategy that’s in keeping with my character (values, principles, practices, and tools), is flexible, and even inspires me to keep saving and investing. 
+
+There’s a joke about the top performing investors at Vanguard or Fidelity. When they studied the top performing portfolios they found the people who owned the accounts had either forgotten they had the account or they were dead. I don’t know if that’s true, but it drives home the point:
+
+> Find something you believe is worth buying. Buy it. And hold on to it until you believe it’s no longer worth owning.
+
 ## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
