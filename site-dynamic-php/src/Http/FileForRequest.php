@@ -23,7 +23,7 @@ class FileForRequest
         return (new static($request, $environment))->getFile();
     }
 
-    private final function __construct(
+    final private function __construct(
         private ServerRequestInterface $request,
         private Environment $environment
     ) {
