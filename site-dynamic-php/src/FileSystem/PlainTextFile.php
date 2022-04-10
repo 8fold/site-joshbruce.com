@@ -13,18 +13,18 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 
-use JoshBruce\SiteDynamic\FileSystem\FileTrait;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextTrait;
 
 class PlainTextFile
 {
-    use FileTrait;
+    use PlainTextTrait;
 
     private const FRONT_MATTER_DELIMITER = '---';
 
     /**
      * @var array<string, mixed>
      */
-    private array $frontMatter = [];
+    // private array $frontMatter = [];
 
     private string $content = '';
 
@@ -48,13 +48,14 @@ class PlainTextFile
     ): PlainTextFile {
         return new static($fileInfo, $root);
     }
-
-    public function hasMetadata(string $key): bool
-    {
-        $frontMatter = $this->frontMatter();
-        return array_key_exists($key, $frontMatter);
-    }
-
+//
+//     public function hasMetadata(string $key): bool
+//     {
+//         $frontMatter = $this->frontMatter();
+//         return array_key_exists($key, $frontMatter);
+//     }
+//
+/*
     public function template(): string
     {
         $frontMatter = $this->frontMatter();
@@ -67,7 +68,7 @@ class PlainTextFile
         }
         return '';
     }
-
+*/
     public function alias(): bool|string
     {
         $frontMatter = $this->frontMatter();
@@ -103,50 +104,58 @@ class PlainTextFile
         $parts = array_filter($this->titleParts());
         return implode(' | ', $parts);
     }
+//
+//     public function socialTitle(): string
+//     {
+//         $titles = $this->titleParts();
+//
+//         $t = [];
+//         $t[] = array_shift($titles);
+//         if (count($titles) > 0) {
+//             $t[] = array_pop($titles);
+//         }
+//         return implode(' | ', $t);
+//     }
+//
 
-    public function socialTitle(): string
-    {
-        $titles = $this->titleParts();
-
-        $t = [];
-        $t[] = array_shift($titles);
-        if (count($titles) > 0) {
-            $t[] = array_pop($titles);
-        }
-        return implode(' | ', $t);
-    }
-
+/*
     public function created(string $format = ''): string|int|false
     {
         return $this->dateField('created', $format);
     }
+*/
 
+/*
     public function moved(string $format = ''): string|int|false
     {
         return $this->dateField('moved', $format);
     }
+*/
 
+/*
     public function updated(string $format = ''): string|int|false
     {
         return $this->dateField('updated', $format);
     }
-
-    public function original(): string
-    {
-        $frontMatter = $this->frontMatter();
-        if (
-            array_key_exists('original', $frontMatter) and
-            $original = $frontMatter['original'] and
-            is_string($original)
-        ) {
-            return $original;
-        }
-        return '';
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
+*/
+//
+//     public function original(): string
+//     {
+//         $frontMatter = $this->frontMatter();
+//         if (
+//             array_key_exists('original', $frontMatter) and
+//             $original = $frontMatter['original'] and
+//             is_string($original)
+//         ) {
+//             return $original;
+//         }
+//         return '';
+//     }
+//
+//     /**
+//      * @return array<string, mixed>
+//      */
+/*
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {
@@ -154,7 +163,9 @@ class PlainTextFile
         }
         return $this->frontMatter;
     }
+*/
 
+/*
     public function content(): string
     {
         if (strlen($this->content) === 0) {
@@ -162,7 +173,9 @@ class PlainTextFile
         }
         return $this->content;
     }
+*/
 
+/*
     public function description(): string
     {
         $description = '';
@@ -222,39 +235,40 @@ class PlainTextFile
 
         return $description;
     }
-
-    /**
-     * @return array<int, int[]>
-     */
-    public function data(): array
-    {
-        $frontMatter = $this->frontMatter();
-        if (
-            array_key_exists('data', $frontMatter) and
-            $data = $frontMatter['data'] and
-            is_array($data)
-        ) {
-            return $data;
-        }
-        return [];
-    }
-
-    /**
-     * @return array<int, int[]|float[]>
-     */
-    public function fiExperiments(): array
-    {
-        $frontmatter = $this->frontMatter();
-        if (
-            array_key_exists('fi-experiments', $frontmatter) and
-            $data = $frontmatter['fi-experiments'] and
-            is_array($data)
-        ) {
-            return $data;
-        }
-        return [];
-    }
-
+*/
+//
+//     /**
+//      * @return array<int, int[]>
+//      */
+//     public function data(): array
+//     {
+//         $frontMatter = $this->frontMatter();
+//         if (
+//             array_key_exists('data', $frontMatter) and
+//             $data = $frontMatter['data'] and
+//             is_array($data)
+//         ) {
+//             return $data;
+//         }
+//         return [];
+//     }
+//
+//     /**
+//      * @return array<int, int[]|float[]>
+//      */
+//     public function fiExperiments(): array
+//     {
+//         $frontmatter = $this->frontMatter();
+//         if (
+//             array_key_exists('fi-experiments', $frontmatter) and
+//             $data = $frontmatter['fi-experiments'] and
+//             is_array($data)
+//         ) {
+//             return $data;
+//         }
+//         return [];
+//     }
+//
     /**
      * @return string[]
      */
@@ -280,6 +294,7 @@ class PlainTextFile
         return $this->titleParts;
     }
 
+/*
     private function dateField(
         string $key,
         string $format = ''
@@ -298,7 +313,9 @@ class PlainTextFile
         }
         return false;
     }
+*/
 
+/*
     private function processRawContent(): void
     {
         $contents = file_get_contents($this->path());
@@ -319,4 +336,5 @@ class PlainTextFile
             }
         }
     }
+*/
 }

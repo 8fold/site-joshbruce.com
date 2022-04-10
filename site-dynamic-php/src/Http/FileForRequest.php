@@ -10,6 +10,7 @@ use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 class FileForRequest
 {
@@ -18,7 +19,7 @@ class FileForRequest
     public static function at(
         ServerRequestInterface $request,
         Environment $environment
-    ): File|PlainTextFile|false {
+    ): File|PlainTextFile|PlainTextFileFromAlias|false {
         return (new static($request, $environment))->getFile();
     }
 
@@ -28,7 +29,7 @@ class FileForRequest
     ) {
     }
 
-    private function getFile(): File|PlainTextFile|false
+    private function getFile(): File|PlainTextFile|PlainTextFileFromAlias|false
     {
         if ($this->isRequestingXml()) {
             $file = $this->handleXml();
@@ -83,6 +84,7 @@ class FileForRequest
                 $privatePath,
                 $this->environment()->contentPrivate()
             );
+
         }
 
         return $file;
@@ -103,6 +105,47 @@ class FileForRequest
             $publicPath,
             $this->environment()->contentPublic()
         );
+
+        if ($file->notFound()) {
+            $privatePath = $this->environment()->contentPrivate() .
+                $this->requestPath();
+
+            $file = File::at(
+                $privatePath,
+                $this->environment()->contentPrivate()
+            );
+        }
+
+        return $file;
+    }
+
+    private function handleContent(): PlainTextFile|PlainTextFileFromAlias
+    {
+        $publicPath = $this->environment()->contentPublic() .
+            $this->requestPath() .
+            $this->environment()->contentFilename();
+
+        $file = PlainTextFile::at(
+            $publicPath,
+            $this->environment()->contentPublic()
+        );
+
+        if (
+            $file->found() and
+            $alias = $file->alias() and
+            $alias !== false
+        ) {
+            $privatePath = $this->environment()->contentPrivate() . '/' .
+                $alias . '/' .
+                $this->environment()->contentFilename();
+
+            $file = PlainTextFileFromAlias::at(
+                $privatePath,
+                $this->environment()->contentPrivate(),
+                $file
+            );
+
+        }
 
         return $file;
     }

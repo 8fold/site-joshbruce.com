@@ -20,6 +20,7 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 use JoshBruce\SiteDynamic\Documents\FullNav;
@@ -182,7 +183,7 @@ class RequestHandler implements RequestHandlerInterface
         );
     }
 
-    private function body(PlainTextFile $file): string
+    private function body(PlainTextFile|PlainTextFileFromAlias $file): string
     {
         $markdown = Markdown::processPartials(
             $file->content(),
