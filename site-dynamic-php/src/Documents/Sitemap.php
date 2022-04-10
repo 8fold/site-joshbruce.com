@@ -56,7 +56,7 @@ class Sitemap
             }
 
             $urls[$path] = Element::url(
-                Element::loc($f->canonicalUrl($environment->appUrl())),
+                Element::loc($f->canonicalUrl($environment->appUrl()) . '/'),
                 Element::lastmod($lastmod),
                 Element::priority($priority)
             );
