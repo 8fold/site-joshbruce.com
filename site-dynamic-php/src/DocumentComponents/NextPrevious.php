@@ -20,7 +20,13 @@ class NextPrevious
         PlainTextFile|PlainTextFileFromAlias $file,
         Environment $environment
     ): string {
-        $path  = $file->path(omitFilename: true);
+        $path = $file->path(omitFilename: true);
+        if (is_a($file, PlainTextFileFromAlias::class)) {
+            $file = $file->original();
+            $path = $file->path(omitFilename: true);
+        }
+
+        // $path  = $file->path(omitFilename: true);
         $parts = explode('/', $path);
         array_pop($parts);
         $path = implode('/', $parts);
