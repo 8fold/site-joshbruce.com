@@ -18,7 +18,12 @@ trait FileTrait
 
     public function notfound(): bool
     {
-        return ! $this->fileInfo()->isFile();
+        return ! $this->found();
+    }
+
+    public function found(): bool
+    {
+        return $this->fileInfo()->isFile();
     }
 
     public function root(): string
@@ -29,6 +34,7 @@ trait FileTrait
     public function path(bool $full = true, bool $omitFilename = false): string
     {
         $realPath = $this->fileInfo()->getRealPath();
+
         if (! $realPath) {
             return '';
         }
