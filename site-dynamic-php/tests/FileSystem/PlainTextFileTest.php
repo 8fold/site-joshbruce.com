@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Tests\FileSystem;
 
+use SplFileInfo;
+
 use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;

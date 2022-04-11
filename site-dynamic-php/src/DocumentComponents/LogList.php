@@ -6,6 +6,7 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -16,11 +17,17 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 class LogList
 {
     public static function create(
-        PlainTextFile $file,
+        PlainTextFile|PlainTextFileFromAlias $file,
         Environment $environment
     ): string {
+        $path = $file->path(omitFilename: true);
+        if (is_a($file, PlainTextFileFromAlias::class)) {
+            $file = $file->original();
+            $path = $file->path(omitFilename: true);
+        }
+
         $finder = Finder::init(
-            $file->path(omitFilename: true),
+            $path,
             $environment->contentFilename()
         )->publishedContent();
         if (count($finder) === 0) {
@@ -37,6 +44,7 @@ class LogList
 
             $title = $f->title();
             $href  = $f->canonicalUrl($environment->appUrl());
+
             if (! str_ends_with($href, '/')) {
                 $href = $href . '/';
             }
