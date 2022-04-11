@@ -103,7 +103,7 @@ abstract class LiveContentTestCase extends TestCase
             ->handle(
                 new ServerRequest(
                     method: 'GET',
-                    uri: '/web-development/this-site',
+                    uri: '/web-development/this-site/',
                     headers: [],
                     serverParams: $_SERVER
                 )

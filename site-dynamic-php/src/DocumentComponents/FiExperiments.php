@@ -7,11 +7,13 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 class FiExperiments
 {
-    public static function create(PlainTextFile $file): string
-    {
+    public static function create(
+        PlainTextFile|PlainTextFileFromAlias $file
+    ): string {
         $data = $file->fiExperiments();
 
         $listHeadings = [];

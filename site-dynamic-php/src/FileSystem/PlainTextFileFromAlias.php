@@ -23,18 +23,6 @@ class PlainTextFileFromAlias
 
     private const FRONT_MATTER_DELIMITER = '---';
 
-    /**
-     * @var array<string, mixed>
-     */
-    // private array $frontMatter = [];
-
-    // private string $content = '';
-
-    /**
-     * @var string[]
-     */
-    // private array $titleParts = [];
-
     public static function at(
         string $localPath,
         string $root,
@@ -62,7 +50,7 @@ class PlainTextFileFromAlias
     final private function __construct(
         private SplFileInfo $fileInfo,
         private string $root,
-        private $original
+        private PlainTextFile $original
     ) {
     }
 

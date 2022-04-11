@@ -6,6 +6,7 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
+use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -16,7 +17,7 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 class NextPrevious
 {
     public static function create(
-        PlainTextFile $file,
+        PlainTextFile|PlainTextFileFromAlias $file,
         Environment $environment
     ): string {
         $path  = $file->path(omitFilename: true);

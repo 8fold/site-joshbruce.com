@@ -42,6 +42,13 @@ class RequestHandler implements RequestHandlerInterface
 {
     private ServerRequestInterface $request;
 
+    private int $status = 200;
+
+    /**
+     * @var array<string, string>
+     */
+    private array $headers = [];
+
     private string $requestPath = '';
 
     private string $contentPublic = '';
@@ -59,116 +66,110 @@ class RequestHandler implements RequestHandlerInterface
     {
         $this->request = $request;
 
-        $status  = 200;
-        $headers = [];
+        $this->status   = 200;
+        $this->headers = [];
 
-        $file = FileForRequest::at($this->request(), $this->environment());
+        $path = $this->contentPublic() . $this->requestPath();
+        $file = File::at($path, $this->contentPublic());
+        if (str_ends_with($path, '/')) {
+            $path = $this->contentPublic() . $this->requestPath() .
+                $this->environment()->contentFilename();
+            $file = PlainTextFile::at($path, $this->contentPublic());
+        }
 
-        // requesting file
-        // requesting xml
-        // otherwise: requesting content.md (file)
+        if ($file->notFound()) {
+            $this->status = 404;
 
-        // file not found
+            if ($this->request()->getMethod() !== 'HEAD') {
+                $path = $this->contentPublic() . '/error-404.md';
+                $file = PlainTextFile::at($path, $this->contentPublic());
+                $body = $this->body($file);
 
-        // head only response
+                return new PsrResponse(
+                    status: $this->status(),
+                    headers: $this->headers(),
+                    body: Stream::create(
+                        HtmlDefault::create(
+                            $file->pageTitle(),
+                            $file->description(),
+                            ($this->requestPath() === '/')
+                            ? Element::main($body)
+                            : Element::article($body),
+                            $this->environment()
+                        )
+                    )
+                );
 
-        // returning file
-
-        // returning text-based content (xml or content)
-
-
-
-
-
-
-
-
-
-
-
-
-//         $isRequestingFile = $this->isRequestingFile();
-//
-//         $path = '';
-//         $file = false;
-//         if ($this->isRequestingFile() or $this->isRequestingXml()) {
-//             $path = $this->contentPublic() . $this->requestPath();
-//             $file = File::at($path, $this->contentPublic());
-//
-//         } else {
-//             $file = Aliases::from(
-//                 $this->requestPath(),
-//                 $this->environment()
-//             );
-//
-//         }
-
-        if ($file == false or $file->notFound()) {
-            $status = 404;
-            $path   = $this->contentPublic() . '/error-404.md';
-            $file   = PlainTextFile::at($path, $this->contentPublic());
-
-        } else {
-            $headers = [
+            }
+        } elseif ($this->isRequestingXml() or $this->isRequestingFile()) {
+            $this->headers = [
                 'Content-type' => $file->mimetype()
             ];
 
+            if ($this->request()->getMethod() === 'HEAD') {
+                // head-only response
+                return new PsrResponse(
+                    status: $this->status(),
+                    headers: $this->headers()
+                );
+
+            }
         }
 
         if ($this->request()->getMethod() === 'HEAD') {
+            // head-only response
             return new PsrResponse(
-                status: $status,
-                headers: $headers
+                status: $this->status(),
+                headers: $this->headers()
             );
+        }
 
-        } elseif (
-            $status !== 404 and
+        // non-text files
+        if (
             $this->isRequestingFile() and
             $resource = @\fopen($file->path(), 'r') and
             is_resource($resource)
         ) {
             return new PsrResponse(
-                status: $status,
-                headers: $headers,
+                status: $this->status(),
+                headers: $this->headers(),
                 body: Stream::create($resource)
             );
-
         }
 
-        // $file = PlainTextFile::at($path, $this->contentPublic());
-
-        if ($file->template() === 'sitemap') {
+        // text files
+        $file = PlainTextFile::at($path, $this->contentPublic());
+        if ($this->isRequestingXml() and $file->template() === 'sitemap') {
             return new PsrResponse(
-                status: $status,
-                headers: $headers,
+                status: $this->status(),
+                headers: $this->headers(),
                 body: Stream::create(
                     Sitemap::create($file, $this->environment())
                 )
             );
+
+        }
+
+        if ($file->alias()) {
+            $path = $this->environment()->contentPrivate() . '/' .
+                $file->alias() . '/' .
+                $this->environment()->contentFilename();
+            $file = PlainTextFileFromAlias::at(
+                $path,
+                $this->environment()->contentPrivate(),
+                $file
+            );
+
         }
 
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
 
-        if ($file->template() === 'full-nav') {
-            return new PsrResponse(
-                status: $status,
-                headers: $headers,
-                body: Stream::create(
-                    FullNav::create(
-                        $pageTitle,
-                        $description,
-                        Element::main($body),
-                        $this->environment()
-                    )
-                )
-            );
-        }
-
+        // text content response
         return new PsrResponse(
-            status: $status,
-            headers: $headers,
+            status: $this->status(),
+            headers: $this->headers(),
             body: Stream::create(
                 HtmlDefault::create(
                     $pageTitle,
@@ -181,6 +182,19 @@ class RequestHandler implements RequestHandlerInterface
                 )
             )
         );
+    }
+
+    private function status(): int
+    {
+        return $this->status;
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function headers(): array
+    {
+        return $this->headers;
     }
 
     private function body(PlainTextFile|PlainTextFileFromAlias $file): string

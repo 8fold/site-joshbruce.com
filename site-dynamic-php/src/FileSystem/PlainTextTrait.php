@@ -19,10 +19,18 @@ trait PlainTextTrait
 {
     use FileTrait;
 
+    private string $content = '';
+
     /**
      * @var array<string, mixed>
      */
     private array $frontMatter = [];
+
+    public function hasMetadata(string $key): bool
+    {
+        $frontMatter = $this->frontMatter();
+        return array_key_exists($key, $frontMatter);
+    }
 
     public function template(): string
     {
@@ -37,6 +45,9 @@ trait PlainTextTrait
         return '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function frontMatter(): array
     {
         if (count($this->frontMatter) === 0) {
@@ -166,6 +177,52 @@ trait PlainTextTrait
             }
         }
         return false;
+    }
+
+    /**
+     * @return array<int, int[]>
+     */
+    public function data(): array
+    {
+        $frontMatter = $this->frontMatter();
+        if (
+            array_key_exists('data', $frontMatter) and
+            $data = $frontMatter['data'] and
+            is_array($data)
+        ) {
+            return $data;
+        }
+        return [];
+    }
+
+
+    /**
+     * @return array<int, int[]|float[]>
+     */
+    public function fiExperiments(): array
+    {
+        $frontmatter = $this->frontMatter();
+        if (
+            array_key_exists('fi-experiments', $frontmatter) and
+            $data = $frontmatter['fi-experiments'] and
+            is_array($data)
+        ) {
+            return $data;
+        }
+        return [];
+    }
+
+    public function original(): string
+    {
+        $frontMatter = $this->frontMatter();
+        if (
+            array_key_exists('original', $frontMatter) and
+            $original = $frontMatter['original'] and
+            is_string($original)
+        ) {
+            return $original;
+        }
+        return '';
     }
 
 //     private const FRONT_MATTER_DELIMITER = '---';

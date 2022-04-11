@@ -34,6 +34,7 @@ trait FileTrait
     public function path(bool $full = true, bool $omitFilename = false): string
     {
         $realPath = $this->fileInfo()->getRealPath();
+
         if (! $realPath) {
             return '';
         }
