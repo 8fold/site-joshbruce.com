@@ -54,7 +54,7 @@ class PlainTextFileFromAlias
     ) {
     }
 
-    private function original(): PlainTextFile
+    public function original(): PlainTextFile
     {
         return $this->original;
     }

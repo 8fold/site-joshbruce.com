@@ -6,7 +6,7 @@ data:
 - [Cash, 2, 4, 8.08]
 - [Invest, 0, 0, 0]
 - [US Bonds - munis, 1, 2, 4.6]
-- ["US Bonds - [.Gov't](Government)", 0, 0.5, 0.01]
+- ["US Bonds - Government", 0, 0.5, 0.01]
 - [US equities - small, 30, 35, 17.52]
 - [US equities - mid, 30, 35, 22.5]
 - [US equities - large, 30, 35, 45.98]
