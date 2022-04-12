@@ -31,21 +31,41 @@ Making progress toward getting my 401k in balance. For the past few contribution
 
 ## Portfolio balance overall 
 
-Overall we’re looking pretty good. However, when it comes to the individual funds, it’s time to start buying the mid-cap in the 401k and the total stock market fund. 
+Looking pretty good. However, when it comes to individual funds, it’s time to buy the mid-cap in the 401k and the total stock market fund in the taxable account. 
 
-This is due in part to shoveling so much toward the small-cap favoring funds, however, that’s not the only reason. I’m going to add another fund; specifically, a cumulative factors fund.
+This is due in part to shoveling so much toward the the funds favoring small-cap, however, that’s not the only reason. 
 
-This is not an optimization move; I’m not doing it because I believe it will result in higher returns. Instead, it’s a psychological move to push the portfolio toward my values and principles.
+I’m thinking of adding another fund.
 
-The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced, more of my value will be in that company. Right now, that average heavily favors large-cap companies and I do not.
+This would not be an optimization move or because I expect to get higher returns; that would be denying the macro allocation principle. Instead, I’m looking at the overall distribution of the equities portion of the portfolio and wondering if I can tilt the mix away from core a bit.
 
-The extended market fund lets me shift the size factor ([.small minus big](SMB)) toward small- and mid-cap companies with the goal being a pretty even split between them. 
+The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced, more of my value will be in that company. Right now, the average portfolio heavily favors large-cap, growth stocks and I do not; when a company gets close to being too big to fail, it shouldn’t need more of my money to sustain itself.
 
-The multi-factor fund I’m pretty sure I’ll go with favors momentum (strong, recent performance), fundamentals (cash flow and conservative over aggressive), and value (low price compared to fundamentals). There are multiple identified factors and the one I lean toward is the Fama-French five-factor model, which doesn’t include momentum, however, incorporates the others found here. The goal here is to see what shifts to get closer to an even distribution between value, growth, and core according to the Personal Capital grid.
+The extended market fund lets me shift the size factor ([.small minus big](SMB)) toward small- and mid-cap companies with the goal being a pretty even split between the three. 
 
-Again, this isn’t optimization for outperformance; see [investment policy](/finances/investment-policy/)—mainly because of the macro-allocation principle: any reasonably diversified portfolio with perform over 90 percent the same as a similar portfolio with similar holdings.
+The multi-factor fund I’m pretty sure I’ll go with favors momentum (strong, recent performance), fundamentals (cash flow and conservative over aggressive investing), and value (low price compared to fundamentals). There are multiple identified factors and models (recent learning on my part). I’m appreciating the Fama-and-French five-factor model, which doesn’t include momentum, however, incorporates the others found in this fund—to the best of my knowledge. The goal here is to see what shifts to get closer to an even distribution between value and growth with a smaller percentage of core according to the Personal Capital grid. I’m pretty evenly split right but the portfolio isn’t at its target allocations overall yet.
 
-Of course, if more people decide to follow this path, the more the total stock market fund will reflect these holdings, which should mean I’d be able to sell off the more specific funds.
+
+
+More specifically, and looking at returns, with the total stock market fund almost 80 percent of the returns are from large-cap companies. Further, half of the returns are specifically from large-cap, growth stocks. That’s not me. When a company hits a certain point in its growth, I would like to cash out a bit; unless I buy the individual stock because I just believe in the company that much and want to be a full-fledged owner instead of an owner by proxy.
+
+By adding the extended market fund, the returns shift to something a bit more evenly distributed. Roughly 28 percent of returns coming from large-cap, growth; roughly 32 percent from mid-cap, growth; and the remainder from small-cap, split almost evenly between growth and value.
+
+Bringing in a small amount (about 10 percent) toward the multi-factor fund shifts returns a bit more. Roughly 27 percent from large-cap, growth; roughly 33 percent from mid-cap, growth; and the rest from small-cap. The difference here being only about 16 percent is from small-cap, growth leaving roughly 23 percent being small-cap, value.
+
+In theory, this would put me more in smaller companies that favor fundamentals rather than growth while still letting me ride the rise (and fall) of companies as they progress from small to possibly large and back again (see Kodak).
+
+A couple things of note are:
+
+1. The multi-factor fund has only been around since 2018.
+2. These are returns, not concentrations.
+3. I don’t know of a tool that can give me the matrix view from Personal Capital using a projected portfolio of index funds and exchange traded funds; the Personal Capital is based on my actual portfolio not a target I built.
+
+With that said, I’m going to keep working toward the allocation for the two fund solution and see where that gets me before adding a third.
+
+Again, this isn’t optimization for outperformance (I might actually do worse, if folks continue to do the straight total cap-weighted stock market and chill method; see [investment policy](/finances/investment-policy/). It’s about aligning the portfolio to my character.
+
+Of course, if more people follow this path, the more the total stock market fund will reflect this allocation mix, which should mean I’d be able to sell off the extended and multi-factor funds. (Every investment style is necessary to make each perform better and worse though, so, you do you.)
 
 ## Odd place
 
