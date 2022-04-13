@@ -51,14 +51,16 @@ By adding the extended market fund, the returns shift to something a bit more ev
 
 Bringing in a small amount (about 10 percent) toward the multi-factor fund shifts returns a bit more. Roughly 27 percent from large-cap, growth; roughly 33 percent from mid-cap, growth; and the rest from small-cap. The difference here being only about 16 percent is from small-cap, growth leaving roughly 23 percent being small-cap, value.
 
-(The aggregate expense ratios of this writing would be 0.04, 0.05, and 0.07, respectively. So, not grotesque.)
+What helps me psychologically here is based on market capitalization, each size is returning their concentration. In other words, with the cap-weighted total stock market, 50 percent of returns are from 70 percent of the investment. Meanwhile, with this allocation, each cap-weight is contributing about what it’s concentration is projected to be; small-cap is estimated at 37 percent concentration and accounts for 39 percent of historical returns, mid-cap is about 30 percent concentration, and large-cap is about 33 percent concentration.
+
+(The aggregate expense ratios as of this writing would be 0.04, 0.05, and 0.07, respectively. So, not grotesque.)
 
 In theory, this would put me more in smaller companies that favor fundamentals rather than growth, which is more me. I can still ride the rise (and fall) of companies as they progress from small to possibly large and back again (see Kodak), however, it’s more of a byproduct and less of the goal itself.
 
 A couple things of note are:
 
 1. The multi-factor fund has only been around since 2018.
-2. These are returns, not concentrations.
+2. These are returns, not concentrations based on value versus growth.
 3. I don’t know of a tool that can give me the matrix view from Personal Capital using a projected portfolio of index funds and exchange traded funds; the Personal Capital matrix is based on my actual portfolio not a target I built.
 
 With that said, I’m going to keep working toward the allocation for the two fund solution and see where that gets me before adding a third.
