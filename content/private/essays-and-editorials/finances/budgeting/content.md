@@ -5,7 +5,7 @@ created: 20220414
 
 # Budgeting
 
-I've always been torn on the word "budget." Mainly because I think the connotation of the word has overtaken the denotation (common use) of the word, which is:
+I'm torn on the word "budget." I think the connotation has overtaken the denotation (common use), which is:
 
 > an estimate of income and expenditure for a set period of time.
 
@@ -16,160 +16,205 @@ Unfortunately, many think of budgeting in terms of another word whose connotatio
 > 1. the kinds of food that a person, animal, or community habitually eats
 > 2. a special course of food to which one restricts oneself, either to lose weight or for medical reasons
 
-When we talk about the bad rap of the word budget, we’re talking about that second usage. In other words, budget means restricting spending, not estimating income and expenses in a given period. 
+When we talk about the bad rap of budget, we’re talking about the second usage. In other words, budget means restricting spending, not estimating income and expenses in a given period. 
 
 I don't do restriction well. Hell, I barely do delayed gratification well.
 
 Budget can be both a verb and a noun. Budget as a verb means to allow a certain amount of money to be allocated toward something in a budget (noun).
 
-Just like you have a diet (the food you habitually eat), you have a budget. The question here is how intentional and transparent is that budget (diet)? How mindful are you of that budget (diet)?
+Just like you have a diet (the food you habitually eat), you have a budget. The question is how intentional and transparent is that budget (diet)? How mindful are you of that budget (diet)?
 
 To talk budgeting we need to talk about bookkeeping.
 
-To keep the diet metaphor going bookkeeping is equivalent to calorie tracking. How many did you eat? How many did you burn? Only, for finances, it’s income and expenses alongside credits and debits; the latter can be hella confusing sometimes.
+To keep the diet metaphor going bookkeeping is equivalent to calorie tracking. How many did you eat? How many did you burn? For finances it's money. How much came in? How much was spent?
 
-## Chart of accounts
+Chances are, a third-party somewhere gives you money; that's income. Make a list of your income sources; for example:
 
-You don’t have to become an expert in the jargon; I’m certainly not. With that said, the concepts and tools just exist, so, capturing them in a way that’s easy for you makes a lot of sense. What we’re building is what’s called a chart of accounts; which for our purposes is a technical term for labels and categories that fall into five buckets:
+- income
+	- W2 employment
+	- 1099 work
+	- friends and family
 
-1. income,
-2. expenses,
-3. assets,
-4. liabilities, and
-5. equity.
+These could also be the names of people or companies outside of yourself who give you money. When you receive money it becomes yours and is deposited to an account (even if it's in a coffee can). Let's make a list of all the places you have money; for example:
 
-For money to move from one place to another we need to debit an account (label or category) and credit another; because we create two entries it’s called double-entry bookkeeping.
+- cash and banks
+		- cookie jar
+		- XYZ credit union
+		- ABC broker
 
-For income, the list we’re creating is a list of in come sources. If you have a business or side hustle it’s recommended you have a completely different set of books and, at minimum, a different set of accounts; this makes taxes easier. For most of us we will have at least two sources of income:
+Once you have the money (or asset), chances are you are going to give that money to some third-party, usually in trade for something else; these are expenses. Make a list of expenses, for example:
 
-1. paycheck and
-2. interest income.
+- operating expenses
+	- housing
+	- food
+	- miscellaneous
 
-These are categories and will be applied when creating entries.
-
-Let’s flip to expenses, which is also a list of categories. To keep it simple and absolutely bare bones let’s start with one category: miscellaneous expenses.
-
-With income we are receiving money from a third-party and putting it into an account. With expenses we are sending money to a third-party from an account.
-
-(The financial industry uses the same words to cover a lot of ground, which can get confusing.)
-
-Accounts are labels under assets and liabilities, within different buckets; all about that hierarchy.
-
-For most of us we’ll have a checking and savings account, which looks like this as a list in our chart of accounts:
+If you operate on a cash-only basis like I did when I was younger, this is good enough. Also, congratulations, you've created what is formally referred to as a "chart of accounts" in the world of bookkeeping. Granted, it would look more like this:
 
 - assets
-	- cash and bank 
-		- savings
-		- checking
-
-Let’s say you still use cash on occasion, this is still an account and might look like this:
-
-- assets
-	- cash and bank 
-		- cash in hand
-		- savings
-		- checking
-
-Same word. Multiple contexts. Fun!
-
-All right, liabilities are very similar. Let’s say you have a credit card and a car loan:
-
-- assets
-	- cash and bank 
-		- cash in hand
-		- savings
-		- checking
-- liabilities 
-	- credit cards
-		- main card
-	- loans
-		- main car
-
-Equity is mainly for business ownership, so, we’ll skip it as it’s not ubiquitous. Therefore, our full chart of accounts looks like this:
-
-- assets
-	- cash and bank 
-		- cash in hand
-		- savings
-		- checking
-- liabilities 
-	- credit cards
-		- main card
-	- loans
-		- main car
+	- cash and banks
+		- cookie jar
+		- Savings at XYZ credit union
+		- Checking at XYZ credit union
+		- Index fund at ABC broker
 - income
 	- income
-		- paycheck
-	- other income
-		- interest income (dividends)
+		- W2 employment
+		- 1099 work
+		- friends and family
 - expenses
-	- operating expenses 
-		- miscellaneous expenses
+	- operating expenses
+		- housing
+		- food
+		- miscellaneous
 
-In the time of free financial tools and aggregators, you don’t need to do this by hand. With that said, starting with pen-and-paper can be helpful in learning and recognizing the non-pen-and-paper bits.
+Yeah, it can get a bit redundant in the use of words; like income and account. Each of the third-level bullets (like "housing") are called account. Each second-level bullet is called an account. Each first-level bullet is called an account. So, you might have the housing account inside the operating expenses account in the expense account. No confusion possible there.
 
-When you get paid, there’s an entry to make and a category to apply. When you pay a bill, there’s an entry to make and a category to apply.
+The financial industry likes hierarchy. The first- and third-level bullets are really the ones to pay the most attention to.
 
-You use your credit card to buy a pair of shoes for 100 [.United States Dollars](USD). The entry goes in the credit card account, categorized as miscellaneous expense. 
+Next up is the ledger (or logbook). In food diet terms this is tracking where and how many calories you consumed and where and how many calories you burned; only it's money.
 
-You receive a paycheck for 1,000 USD. The entry goes in whichever asset account received it, categorized as paycheck; let’s say checking.
+In the 21st century, a lot of this is automated—and that automation may not be helping much is you're not actively participating; however, it's great for getting a feel for history.
 
-Net worth is assets minus liabilities. Using these two accounts, you’d have a financial net worth of 900 USD.
+1. I have direct deposit and it's put into my Checking at XYZ credit union account; the entry is made for me automatically. For bookkeeping purposes I will categorize this as "W2 employment."
+2. I made a rent payment from my Checking at XYZ credit union; the entry is made for me automatically. For bookkeeping purposes I will categorize this as "housing."
 
-You pay the credit card. Create an entry to expense 100 USD from the checking account and another to add 100 USD to the negative balance of credit card. Both entries are categorized as a transfer.
+I might go back through my transactions and update the categories, or, I might just start from this point forward. By assigning the entries to income and expense accounts (categories), I can see groupings for where money comes from and where it goes.
 
-Financial net worth is still 900 USD. The difference now is that you don’t have any liabilities.
+To continue the food diet metaphor, when I started logging calories coming in (income) I was relieved to discover that I consumed about 2,000 calories per day; however, I was shocked to discover that most of those came from the food category of "soda" or "junk food" or "snacks." 
 
-With this list of accounts with different providers and categories of income and expenses, you can track your budget from a historical perspective (calorie counting) and plan for the future (meal planning). 
+And that's what keeping a ledger is all about. It's great that my accounts never go negative, however, I may have no idea how much I'm spending and where. We're raising awareness to examine our habits; what we do naturally. 
 
-Let’s talk about expanding the list of expense categories.
+It tends to be harder to change a habit if you decide on what should change before raising awareness of what's there first.
 
-## Categories
+I didn't need to exercise more when I started tracking my food diet. I needed to change where my calories came from. That move gave me a greater return than exercise.
 
-This is where I used to get the most overwhelmed. 
+In financial terms, cutting out a daily 5 [.United States Dollars](USD) purchase, may not have the greater actual and psychological return as, say, cutting out a cable (or streaming service) bill you never use that costs 200 USD per month.
 
-In my youth I remember buying accounting software for the time. It was on those “now I feel like an adult” purchases. I opened it up and started adding accounts. Even in 1998 I could sync it with my credit union. 
+So, don't change things, track the things for a month or so. To bring up an old chestnut attributed to producer Martin Gabel: Don't just do something; stand there.
 
-The transactions filled themselves in but weren’t categorized. I went to the first one and hit the dropdown to apply a category. The list had like 50 entries or something and freaked out a bit.
+Let's go back to the chart of accounts for a moment and why automation is helpful.
 
-But I was an adult. This is adults did. I was going to do it. And I did—for about three paychecks.
+I got my first credit card when I was around 18 years old, which is roughly the same time I got my first car loan. That's a whole other set of accounts.
 
-I found myself not being consistent in how I categorized certain things because there were so many similar categories available by default in the software. I stopped using the software and stopped tracking my budget. If that’s what adults did, I wanted nothing to do with it.
+- liabilities
+	- revolving loans (like credit cards, lines of credit, and so on)
+		- Credit card at XYZ credit union
+	- terminal loans (like car and home loans, they have a term)
+		- Car loan at XYZ credit union
 
-Here’s the thing. I’m better with additive systems. Give me a blank canvas and the guidelines and guardrails for something and I’ll figure it out. Chuck the kitchen sink at me and make me feel like I *must* do something a certain way and I’m probably gonna bail.
+So, I have an account at XYZ credit union. This account has multiple sub-accounts: savings, checking, credit card, car loan. For bookkeeping purposes though, I have account types: income, expense, asset, and liability. Each has sub-types. Each sub-type contains a single account (or product). Yep, not confusing at all.
 
-So, here’s the guidelines and guardrails I gave myself:
+Anyway, this is the full chart of accounts as of right now:
 
-1. As few categories as possible.
-2. Focus on capabilities, not low-level, atomic buckets.
+- assets
+	- cash and banks
+		- cookie jar
+		- Savings at XYZ credit union
+		- Checking at XYZ credit union
+		- Index fund at ABC broker
+- liabilities
+	- revolving loans (like credit cards, lines of credit, and so on)
+		- Credit card at XYZ credit union
+	- terminal loans (like car and home loans, they have a term)
+		- Car loan at XYZ credit union
+- income
+	- income
+		- W2 employment
+		- 1099 work
+		- friends and family
+- expenses
+	- operating expenses
+		- housing
+		- food
+		- miscellaneous
 
-Back to the food metaphor.
+If we take the total balance of all the assets and subtract the total balance of all the liabilities we arrive at net worth. It's getting hard to use the food diet analogy. Net worth is like your body weight and composition. If we take our total income and subtract our total expenses we arrive at profit; am I consuming more calories, less calories, or the same number of calories as I expend?
 
-The miscellaneous expense category is equivalent to calories; I ate something. It’s just a generic was of saying, “I spent money on something.” When I was a kid and I spent money mainly on entertainment and snacks, that’s the only category that really made sense.
+Each account under assets and liabilities has a ledger. The ledger contains entries. For each transaction there are two entries. One entry will be positive and the other will be negative. If we add the entries together, they should equal to zero. This is called double-entry bookkeeping.
 
-With that said, maybe I want to break it down a bit. I could do it by individual meal, or, my preference, of macros. For nutrition that fat, protein, and carbohydrates. Don’t care if you had chicken one day and beef the next; how much protein was involved? For finances you might start with food and shelter; while still having the miscellaneous expense category.
+The more complex and common flow in 2022 goes something like this
 
-You buy a candy bar, food category. Prepared meals from your gym, food. One of those boxes meal subscription services, food. That latte you bought on Tuesday, food. You pay for a friend at a restaurant, food.
+1. Income comes in, which automatically creates a single entry in the Checking at XYZ credit union ledger; I categorize the income as W2 employment.
+2. I pay for groceries using my Credit card at XYZ credit union, which automatically creates a single, negative entry in the credit card's ledger; I categorize the expense as food.
+3. I pay the credit card from the checking account, which automatically creates a negative entry in the Checking at XYZ credit union account and a positive entry in the Credit card at XYZ credit union account; no categories needed (they are a transfer), and we have two entries that equal zero when added together.
 
-I knew that same word with multiple uses pattern would come in handy.
+The logging can be pretty much automated, which is powerful. And, with great power comes great responsibility.
 
-Electric bill, housing. Internet service provider, housing. And so on.
+When I took a bookkeeping lesson to get better at this one of the things the professional bookkeeper told me that he sees all the time is:
 
-The categories are there to give you information and perspective, not to track every minute detail.
+1. people don't categorize their income and expenses and
+2. people don't reconcile their accounts.
 
-Of course, you have the option of tracking things a bit further. In nutrition terms this starting to look at micros. Maybe you’re finding yourself spending a lot on food. Break it down for a while; maybe have snacks and dining as sub-categories. Now you can see how much you spent on groceries (just food), candy (food-snacks), and eating out (food-dining).
+I also remember talking to someone a while back about the importance of balancing your statements (or checkbook, if you prefer) and they had no idea what I was talking about.
 
-You notice snacks are consuming more of your budget than you realized and you decide to change that habit. Maybe you really like eating out, so, you decide the money you save on not buying snacks can be shifted to having better dining experiences.
+So, let's get into it. This is the review and reflect stage from [action loops](/my-books/triumph-over-time/) (or [sharpening the saw](/examinations/the-7-habits-of-highly-effective-people/) or [Sprint Review](https://scrumguides.org/scrum-guide.html#sprint-review)), whatever makes you comfortable.
 
-We didn’t “cut calories” we modified how they were spent.
+We're going to regularly look at the ledgers of our accounts and make sure things are as they should be. Mainly we're looking at the transactions to make sure the entires are valid (no one's run off with our credit card) and the entries have the correct income and expense account applied. As of this writing, I tend to do this once or twice a week.
+
+When it comes to reconciling most folks do this when the statement for the previous period becomes available. In short, reconciling is looking at the beginning and ending balances for the account according to the statement and comparing that against the beginning and ending balances for the account according to your records and ledgers.
+
+Which brings us to account aggregators and bookkeeping software (or physical accounting ledgers, if that's how you roll).
+
+As of this writing I use [Wave](https://www.waveapps.com) as my bookkeeping software of choice. The idea is to put all your ledgers in one place, which reduces time. Wave has the ability to link to various financial institutions and automatically update the ledgers for the accounts. There are a slew of similar tools and alternatives; up to and including doing it by hand—maybe it's a meditative act for you to slow down and capture it all in writing (when I get to a certain point in life I might actually do that myself)—no judgment.
+
+So, you get a statement from the institution where the account is. You're going to look at when the first and last transactions took place. You're going to look at the running balance on your ledger on the same first and last day. If they're the same, your account has been reconciled.
+
+Seriously, that's all you're doing.
+
+In some of the software choices you'll go to a specific area to reconcile, put in the statement closing date and the ending balance, and hit enter. As long as you've been keeping up with refining the ledgers, you should be done.
+
+If the balances don't match, that's will you'll find yourself doing a more in-depth reconciliation. I try to make sure I have the right start and end dates along with the correct ending balance. Then I just go through each entry in that ledger to see if one was missed or duplicated; with software I find duplication is more often the issue than missing one.
+
+And that's it.
+
+Everything up to this point is part of budgeting. Well, that's what some would call tracking, which they distinguish from the act of budgeting; I don't really distinguish between the two. For me it would be like breaking down distinguishing eating as not including acquiring, cooking, and preparing the meal. It's all eating.
+
+Moving on.
+
+Now that you have the ledgers and expense accounts, you can see where your money is going and you have the information to change whatever you like in what that looks like for you.
+
+A budget can look a lot of different ways. Maybe you're into the envelope and cash thing. Maybe you give yourself a spending limit on certain categories. Maybe you decide to use percentages; 20 percent of expenses can be for dining out. Maybe you decide not to change a darn thing.
+
+You do you.
+
+## Expense accounts (categories)
+
+Where I see people getting overwhelmed with the whole bookkeeping thing is that they become very micro-management about it. And, most software manufacturers aren't helping; but they think they are—but it can turn into [analysis paralysis](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice) real quick.
+
+When I opened my first accounting software I was like, "This puts me one step closer to being an adult!" I bought it with my own money. Installed it on a computer I purchased. I was heading up the adulting escalator and skipping steps along the way.
+
+I added my accounts and synced the transactions; mind you this is like around the year 2000, so, it took a minute. Then I started going through entries to categorize things. I clicked the list of expense categories and there was about three dozen to choose from. I'm trying to distinguish between gas for the car, versus automobile maintenance, versus auto insurance.
+
+I bailed on that software so quick it was ridiculous. It was just so overwhelming I couldn't handle it. Every once in a while I'd get a wild hair to try again and each time I ran away. 20 years later, I finally said, "All right, I'm going to do this, but I'm going to do it on my terms."
+
+Just because the examples are there, doesn't mean I have to use them unless they actually help me; and you can do the same.
+
+Even if I did use all the categories, the information I would glean from doing it wouldn't really help me anyway because I know what it would look like. The highest percent would be rent or mortgage. The next would most likely be groceries. Meanwhile, the total cost of ownership for my car would be hidden because it would be subdivided into these smaller categories.
+
+So, here's what I say: start big and all-encompassing.
+
+If you want, just delete all the pre-created categories and create one called miscellaneous expenses. The information gleaned here won't be very helpful because it will be 100 percent and you still get an idea of what part of your budget (diet) to change to get the most return.
+
+For the average person housing is their number one expense; don't break it down though. If it's required for the smooth operation of your house, use the housing category. How often will need to use the "replace air filter" category or the "replace water heater" category? Probably not often. Home internet service. Home streaming service. Instead of separate categories, just put it all under housing.
+
+Then pick a threshold.
+
+Of your net income, how what percentage of expenses should be for housing. Every financial professional I listen to says a good range is 25 to 35 percent. If things stat breaking beyond those bounds, then maybe create another more specific category and name it something that indicates it's a sub-category; housing-subscriptions, for example. Internet, cable, streaming services would go under this category for a time. This way you can see that specific thing and decide if you're going to try and target it for a change.
+
+When you buy a plunger or some other thing related to maintaining the house in good, working condition, maybe put it under the housing category as well. 
+
+Going back to the food diet analogy, I started with a calories category. Then I started breaking it down by transactions; junk versus Whole Foods. I found out most of my caloric intake was from junk and probably contributed more to my lack of physical fitness more than lack of movement; I walked everywhere and stood at my desk—most of my day I was participating in at least medium to high levels of activity.
+
+Once you get the sub-categories under control a bit from a lifestyle perspective (I don't drink or buy soda anymore), stop using that category as a separate category and go back to putting under the more generic category.
 
 ## Summary
 
 There is no money, only food. Every dollar we spend turns into food for someone somewhere at some point.
 
-A budget is like a diet in that if have money (eat), you have one. A budget is not just about controlling and restricting your spending.
+A budget is like a diet in that if you have money (eat), you have a budget (diet). A budget is not about controlling and restricting your spending, it's about becoming aware of the habit.
 
-Income is money coming in from a third party. An expense is an expense going to a third-party. A transfer is money you move from one of your accounts to another.
+Income is money coming in from third parties. An expense money going to a third-party. A transfer is money you move from one of your accounts to another.
 
 A chart of accounts is a list of the places that give you money, categories for how you spend money, and the various accounts that facilitate both.
 
