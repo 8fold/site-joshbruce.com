@@ -33,7 +33,7 @@ Making progress toward getting my 401k in balance. For the past few contribution
 
 Looking pretty good. However, when it comes to individual funds, it’s time to buy the mid-cap in the 401k and the total stock market fund in the taxable account. 
 
-This is due in part to shoveling so much toward the the funds favoring small-cap, however, that’s not the only reason. 
+This is due in part to shoveling so much toward the funds favoring small-cap, however, that’s not the only reason. 
 
 I’m thinking of adding another fund.
 
@@ -49,9 +49,9 @@ More specifically, and looking at returns, with the total stock market fund almo
 
 By adding the extended market fund, the returns shift to something a bit more evenly distributed. Roughly 28 percent of returns coming from large-cap, growth; roughly 32 percent from mid-cap, growth; and the remainder from small-cap, split almost evenly between growth and value.
 
-Bringing in a small amount (about 10 percent) toward the multi-factor fund shifts returns a bit more. Roughly 27 percent from large-cap, growth; roughly 33 percent from mid-cap, growth; and the rest from small-cap. The difference here being only about 16 percent is from small-cap, growth leaving roughly 23 percent being small-cap, value.
+Bringing in a small amount (about 10 percent) toward the multi-factor fund shifts returns a bit more. Roughly 27 percent from large-cap, growth; roughly 33 percent from mid-cap, growth; and the rest from small-cap. The difference here being only about 16 percent is from small-cap, growth leaving roughly 23 percent for small-cap, value.
 
-What helps me psychologically here is based on market capitalization, each size is returning their concentration. In other words, with the cap-weighted total stock market, 50 percent of returns are from 70 percent of the investment. Meanwhile, with this allocation, each cap-weight is contributing about what it’s concentration is projected to be; small-cap is estimated at 37 percent concentration and accounts for 39 percent of historical returns, mid-cap is about 30 percent concentration, and large-cap is about 33 percent concentration.
+What helps me psychologically here is based on market capitalization, each size is returning their concentration. In other words, with the cap-weighted total stock market, 50 percent of returns are from 70 percent of the investment. Meanwhile, with this allocation, each cap-weight is contributing about what its concentration is projected to be; small-cap is estimated at 37 percent concentration and accounts for 39 percent of historical returns, mid-cap is about 30 percent concentration, and large-cap is about 33 percent concentration.
 
 (The aggregate expense ratios as of this writing would be 0.04, 0.05, and 0.07, respectively. So, not grotesque.)
 
