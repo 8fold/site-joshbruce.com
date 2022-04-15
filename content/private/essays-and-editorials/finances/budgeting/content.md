@@ -208,6 +208,22 @@ Going back to the food diet analogy, I started with a calories category. Then I 
 
 Once you get the sub-categories under control a bit from a lifestyle perspective (I don't drink or buy soda anymore), stop using that category as a separate category and go back to putting under the more generic category.
 
+## Expense accounts (needs versus wants)
+
+For each expense account it might be helpful to add some details.
+
+1. A description; this can help bookkeepers and tax professionals understand what you mean by a label.
+2. A target percent and range (could also be a dollar amount); something like 30 percent plus or minus 5 percent of net income, which can be helpful during review periods.
+3. Whether the expense is a need or want.
+
+Tiffany Aliche, in the book [*Get Good with Money: ten simple steps to become financially whole*](https://thebudgetnista.com) identifies different labels or buckets. I think [Frank Vasquez](https://www.riskparityradio.com) uses the term [.KLO](keeping the lights on). Conceptually we can break it down like this:
+
+1. Need: Necessary to maintain quality of life and it costs this much (rent or mortgage).
+2. Utility: Same as need only the price fluctuates based on my usage (gas in a car).
+3. Want (or convenience): Similar to need and utility and could be cut without having a great impact on quality of life if it went away (most snacks).
+
+Money's getting a little tight, without looking at my budget I can easily target different things. Cut out or dramatically reduce conveniences (this is eating out less for me). Cut out of dramatically reduce utilities (for many this could be something like keeping the house warmer in summer and cooler in winder). And, if the belt still isn't loose enough to breather, really consider whether I *need* this thing (I had a car for almost a decade, which I believe I needed; I haven't had a car for a decade, because I realized that was a utility and convenience for me—not a need.)
+
 ## Summary
 
 There is no money, only food. Every dollar we spend turns into food for someone somewhere at some point.
@@ -219,3 +235,5 @@ Income is money coming in from third parties. An expense money going to a third-
 A chart of accounts is a list of the places that give you money, categories for how you spend money, and the various accounts that facilitate both.
 
 Don’t overwhelm yourself or let software manufacturers do it for you. This is your world and, when it comes to the details (like categories of expenses), there is no right or wrong.
+
+Setting targets (percent or dollar amounts) and giving yourself a range above and below is like giving yourself a thermostat for your finances. Reduce the percent for the things that aren't a hell yes and increase the things that are. If money is getting a little tight, adjust the targets accordingly for the things you can.
