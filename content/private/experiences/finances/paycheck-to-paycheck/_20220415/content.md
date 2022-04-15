@@ -2,7 +2,7 @@
 title: April 15th, 2022 paycheck
 created: 20220415
 data:
-- [Debt, 0, 1, 0.2]
+- [Debt, 0, 1, 1.3]
 - [Cash, 5, 10, 6.7]
 - [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.8]
@@ -72,6 +72,16 @@ Of course, if more people follow this path, the more the total stock market fund
 ## Odd place
 
 Feeling a bit better now.
+
+I’ve decided to try and improve my résumé as well. That might seem left field but I’ve actually never gotten a job I’ve applied to with a résumé; in 20 years.
+
+Over the years I’ve tried a lot of formats; chronological, functional, hybrid. Lots of numbers. Just a few numbers. One page, five pages. All the history. Only the last 10 years. Just the facts and slightly silly.
+
+Over the years I’ve received at least a thousand rejection letters; not a single interview from the résumé to a job I actually pursued. In fact, my career is kind of like my dating life; they find me.
+
+Anyway, I’m bringing in the professionals. I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
+
+We’ll see how it goes. Paying for all that, coupled with market being down, is why my debt is a bit high at the moment.
 
 ## FI experiments
 
