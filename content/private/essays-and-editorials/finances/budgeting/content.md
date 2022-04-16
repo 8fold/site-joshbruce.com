@@ -190,7 +190,7 @@ I bailed on that software so quick it was ridiculous. It was just so overwhelmin
 
 Just because the examples are there, doesn't mean I have to use them unless they actually help me; and you can do the same.
 
-Even if I did use all the categories, the information I would glean from doing it wouldn't really help me anyway because I know what it would look like. The highest percent would be rent or mortgage. The next would most likely be groceries. Meanwhile, the total cost of ownership for my car would be hidden because it would be subdivided into these smaller categories.
+Even if I did use all the categories, the information I would glean from doing it wouldn't really help me anyway because I know what it would look like. The highest percent would be rent or mortgage. The next would most likely be groceries. Meanwhile, the [total cost of ownership](/finances/total-cost-of-ownership/) for my car would be hidden because it would be subdivided into these smaller categories.
 
 So, here's what I say: start big and all-encompassing.
 

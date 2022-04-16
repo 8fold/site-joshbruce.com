@@ -15,8 +15,3 @@ Put another way, the difference between knowledge and wisdom as expressed in the
 
 This area of the site isn’t about education, information, or knowledge, it’s about how I’m taking the thoughts, research, and my own books and applying them to my day-to-day life.
 
-My books
-Essays & Editorials
-Exams
-Experiences
-
