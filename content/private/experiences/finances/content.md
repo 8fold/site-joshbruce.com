@@ -9,7 +9,7 @@ updated: 20220124
 
 {!!dateblock!!}
 
-Talking money has always felt foreign and is one of those subjects socialized to be taboo. Whether you're doing well or poorly, you don't talk about money. Further, someone somewhere will have negative say about you; either you did it to yourself or you didn't earn it. At least that appears to be the ethos of the United States when it comes to money.
+Talking money has always felt foreign and is one of those subjects socialized to be taboo. Whether you're doing well or poorly, you don't talk about money. Further, someone somewhere will have negative to say about you; either you did it to yourself or you didn't earn it. At least that appears to be the ethos of the United States when it comes to money.
 
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I do have it.
 
