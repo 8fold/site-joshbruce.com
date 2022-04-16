@@ -17,6 +17,22 @@ The alphabet soup:
 - ICAgile Certified Professional - Agile Team Facilitation
 - [.BFA](Bachelor of Fine Arts) with a focus in studio arts
 
+## Values
+
+1. Autonomy: When I do the [Motivators exercise](/design-your-life/motivators/) on myself, the ability to “choose my own adventure” ranks second; every time.
+2. My values and principles over social norms and mores.
+3. Intellectual legacy over
+    - financial legacy over
+    - genetic legacy. 
+
 ## Principles
 
 1. Never enter anything without an exit strategy.
+
+## Practices 
+
+4. Think win-win and meeting in the middle.
+10. Don’t bet on others to fail.
+3. Maximize the number of people supporting your progress.
+ 
+In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
