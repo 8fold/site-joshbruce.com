@@ -1,9 +1,7 @@
 ---
 title: Budgeting
 created: 20210704
-updated: 20220115
-coming-soon:
-- review Profit First
+updated: 20220415
 ---
 
 # Budgeting
@@ -182,108 +180,57 @@ Typically I'm only investing in one or two investments per paycheck, so, minimal
 
 I don't have any terminal loans anymore and I pay the cards off each month. Each card syncs automatically with Wave; except the Apple Card because it's not available like that yet. However, outside of subscriptions with Apple and apps it doesn't get used much. Updating the transactions for the Apple Card are part of the transaction refinement described in the Assets section.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Distributions
 
-Every paycheck, or every two weeks, I redistribute money; I only post here on the first and fifteenth though.
+I post to the [paycheck-by-paycheck](/finances/building-wealth-paycheck-to-paycheck/) area every first and fifteenth. However, I get paid every two weeks as of this writing; so, I distribute money about every two weeks.
 
-### Establishing the baseline
+Money comes into the income account.
 
-I don't remember the resource or resources I pulled this idea from; believe it was an episode of the [Choose FI podcast](https://www.choosefi.com/listen/choose-fi-podcast/). It goes like this, there are three types of expenses:
+I update the balance trackers in my spreadsheet. 
 
-1. basic,
-2. utility, and
-3. convenience.
+Mainly I’m trying to get the balances of my credit cards. The credit card balances plus any bills I can’t pay by credit card sets the minimum distribution to the expense account.
 
-Basic expenses are those things that are required and tend to be fixed; keeping the lights on expenses. For example, you might consider house payments or rent to be basic.
+I have estimated amounts for my recurring expenses that creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from this account to the expense account.
 
-It’s worth noting that required here is as much psychological as it may be literal. “If I want to keep X in my life, I need to spend Y” as opposed to, “I need to spend Y to survive.” Living in my car for a year quickly taught me the difference.
+Then I have percents set that establishes the minimum and maximum dollar amounts for the other accounts. This is where most of the decisions and possibly wiggling occurs.
 
-Utility are required expenses, however, may be less required than what you consider basic. Further, you have some control over how much you spend without changing providers or the item itself. For example, electricity, food, and taxes.
+Once I have that figured out I head over to Wave.
 
-Convenience are expenses that add to your life and could be cut entirely or reduced dramatically. For example, insurance on electronics and some subscription services.
+I’ll look at each account to make sure the transactions are valid and verified. I’ll also create any missing entries. If there’s a mistake or something like that I’ll make note of which institution or institutions I need to call and I won’t proceed until I can make the calls.
 
-Capture all of these expenses along with:
+Otherwise, I’ll create the entries for the transfers from the income account to the other accounts. Then I’ll add entries to pay the credit cards. Finally I’ll create entries for investments.
 
-1. how much the expense will be (even if an estimate),
-2. how many paychecks will be received between payments, and
-3. which type of expense it is.
+Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan. I want to make sure the expense account will end up with the desired reserve amount, or close to it, after all the money finishes moving.
 
-Do this for each known future expense.
-
-I have a cellphone I believe needs to be replaced every 4 or 5 years. The phone will be around 800 [.United States Dollars](USD), I will receive roughly 120 paychecks between replacements, and it's a basic expense. It's a basic expense because I consider communication to be a requirement and while I have flexibility in the phone I purchase, I plan on purchasing the same or similar phone as the one I have. The affordance of being able to make and receive phone calls is the requirement.
-
-Coupled to the cellphone, I have a service plan. The amount is roughly 35 USD per month, I’ll receive at least 2 paychecks between statements, and it's a basic expense because for the phone to serve its required purpose it must have service.
-
-I need food to survive. I spend anywhere from 50 to 70 USD per week on food, I'll receive 0.5 paychecks between replenishments, and I consider it a utility expense. I consider food to be a utility expense because within some range, I have the ability to control how much I spend per week on food; coupons, sales, member card discounts, just eating less, and so on.
-
-In 2021 I spent 1,750 USD on tobacco products for the year, I’ll receive roughly 26 paychecks in a year, and I consider tobacco products to be a convenience expense.
-
-Once you've got enough these known future expenses in place to have seated the habit of capturing them, determine how much per paycheck you'll set aside for each expense and where you'll put it.
-
-If I'm planning to need the money in one year or less, I'll typically put it in the Runway account. Any longer than a year, it typically goes into an investment account of some sort.
-
-The goal here is to know, roughly, what your minimum living expenses could be and establish a priority should things go pear-shaped.
-
-For example, at present I have a laptop and a desktop computer. I set aside a certain amount per paycheck to replace both. I consider the laptop to be a utility expense while the desktop is a convenience. If things go sideways and it comes time to replace one, the other, or both, chances are I'd only replace the laptop. All of the money set aside for the smooth operation of my electronic hardware is placed in a conservative investment account because I plan on keeping each device for roughly 5 years.
-
-### Preparing for known future expenses
-
-With the aforementioned in place and money squirreled away to cover those known expenses, I'm ready to figure out distributions using [Wave](https://www.waveapps.com) to create a plan.
-
-Every paycheck, I sum the total balance of each credit card I have and each bill that’s due. I make sure the Operating Expenses account will be left at around 100 USD after paying each credit card and bill. Sometimes this requires moving money from the Runway account; usually when paying rent or purchasing the item I had been preparing for.
-
-I sum all the partial payments for known future expenses due within the next 12 months and put that in the Runway account.
-
-I sum all known future expenses due after 12 months or more and put those into the conservative securities I have for each.
-
-That covers short-term needs.
-
-### Preparing for unknown future expenses
-
-Making sure I can keep the lights on out of the way, time to move on to preparing for the known unknowns. (This could be called preparing for retirement.)
-
-My employer is responsible for paying the majority of my taxes, however, I generate extra income from various sources including dividends on savings and investments. Therefore, I make sure I'm putting a bit aside to cover the possibility of owing taxes. As of this writing, I have 2 percent of each check going to the Tax account.
-
-I distribute at least 100 USD up to the maximum cash percentage set by the asset allocation of the portfolio to Cash Reserves account.
-
-Whatever remains goes toward the taxable brokerage account and Roth Individual Retirement Account.
+Finally I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
 
 ## Transferring from the Tax account
 
-The maximum transfer is 80 percent of the available balance. Transfers are made to the Cash Reserves account. The following criteria must be met:
+After filing taxes, if I owe taxes, I’ll transfer money from the tax account to the expense account and pay the taxes; further, the percent from income distributions going to the tax account will be increased by 1. 
 
-1. taxes for the year were filed and accepted by the Government; and
-2. if money is owed, it was paid out of the Tax account and received by the Government; or
-3. if a refund is expected, it was received and deposited to the Income account and transferred to the Tax account.
+If I qualify for a refund, it must be received prior to the next bit. (When the refund is received, it will be treated as income and distributed accordingly.)
 
-This move puts money back into circulation within the system; see next section.
+Next is determining how much to transfer to the savings account.
 
-If money is owed, the amount sent to the Tax account must be increased by at least 1 percent.
+- x: Balance of the tax account as of January first of the tax year.
+- y: Total deposits to the tax account during the tax year.
+- z: Total transferred to expense account to pay owed taxes.
+- a: Pool available to transfer to savings account
+
+```x + y - z = a```
+
+I can transfer up to 80 percent of the pool to the savings account. This move puts money back into circulation within the system; see next section.
 
 If money is owed, and there isn't enough in the Tax account to cover the amount, cash should be withdrawn from the accounts in the following order:
 
-1. Cash Reserves,
-2. Runway.
+1. savings,
+2. runway.
 
 If more money is needed, something has gone horribly wrong and you should be consulting with accountants and attorneys.
 
-## Spending cash reserves
+## Spending savings
 
-Cash reserves are different than an emergency fund in that cash reserves are there for times of opportunity while emergency funds are there for times of strife.
-
-A portion of each paycheck is set aside for cash reserves; not to exceed the maximum cash reserve percent and it cannot cause the proportion of cash in the portfolio to go over the maximum cash allowed.
+Money in the savings account is different than an emergency fund in that it’s there to take advantage of opportunities instead of crisis.
 
 The following events open the possibility of spending cash reserves (or not setting aside a percentage):
 
