@@ -1,4 +1,4 @@
 ---
-title: Budgeting
+title: Finances
 alias: essays-and-editorials/finances
 ---
