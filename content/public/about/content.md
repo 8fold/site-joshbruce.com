@@ -23,16 +23,18 @@ The alphabet soup:
 2. My values and principles over social norms and mores.
 3. Intellectual legacy over
     - financial legacy over
-    - genetic legacy. 
+    - genetic legacy.
 
 ## Principles
 
 1. Never enter anything without an exit strategy.
+2. There's no such thing as intrinsic value, only perceived value.
+3. Scarcity alone doesn't make something more valuable.
 
-## Practices 
+## Practices
 
 4. Think win-win and meeting in the middle.
 10. Don’t bet on others to fail.
 3. Maximize the number of people supporting your progress.
- 
+
 In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
