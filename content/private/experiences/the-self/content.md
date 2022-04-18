@@ -29,10 +29,12 @@ In times of stress, I can come back to these and center myself from a time when 
 
 ### Practices
 
-1. -isms aren't good; ageism, racism, sexism, elitism…
+1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); ageism, racism, sexism, elitism…
 2. Think win-win and meeting in the middle.
 3. Don’t bet on others to fail.
 4. Maximize the number of people supporting your progress.
+5. Extend grace and ask before assuming malicious intent.
+6. Informed consent.
 
 ## My oath
 
