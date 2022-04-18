@@ -77,3 +77,29 @@ Just to Reuters.
 Remove connection from the short list; bringing the list to seven. Add these to the list; bringing the list to 12. Sort (and optionally distance). Reflect.
 
 From this exercise I can start to get a sense of some basic values: purpose and autonomy, for example. This self-knowledge can help me reflect on practices and tools I use; are they in keeping with these values?
+
+## For the group
+
+Ive started using this exercise with teams and it’s been very insightful. As a coach I use the results to help me communicate with my partners in the group. 
+
+For example, if a group ranks purpose and mastery high on their list, then exploring and explaining the why behind things and giving resources can be beneficial for group communication and dynamics. Contrast with a group that doesn’t place those high on their list, the same communication style could be seen as a waste of time or patronizing; nobody cares about your book recommendations just tell me what to do.
+
+Another thing I appreciate about this exercise is it can be done asynchronously; it can be difficult for a group of harried individuals to pause as a group and be introspective without major anxiety. I often create a survey with the short version in it and ask everyone in the group to sort it. Once I have the results I can apply rank voting to them.
+
+Some tools will do the stack rank for you. I like to have the numbers though. So, on the vertical I’ll list the motivator and on the horizontal I’ll list the respondents (myself included, I’m part of the group, not an outsider staring into a fish bowl). If the motivator is number one from someone it’s given a value of 8 (or 12 for the long version). The next highest is 7 (or 11). And so on down the line. 
+
+Once I have all the numbers for everyone, I’ll get the mean, median, and mode for each motivator and sort them highest to lowest. This gives the motivators for the group. It can also show me diverse the group is; if everyone has the same order, the group is very similar. 
+
+The goal isn’t diversity or similarity, knowing which you have can just help inform possibilities; for example, I find diverse groups end up discussing things more (especially when consensus building), in part because the topic needs to cover the person high on purpose (the why) as well as the person high on numbers (gimme the data) on top of the person high on connection (how will this impact relationship); if everyone is high on purpose, just discussing the why might be enough. If, on the other hand, you have the diverse group and only cover the why, the other people in the group may feel left out or that they didn’t get a lot of value from the exchange.
+
+For another example, consider representatives democracies with their congresses and parliaments. A lot of people, representing a lot of people. Can take a long time to get anything started much less finished; not necessarily a bad thing. For those types of groups to align quickly takes specific events and circumstances, which are typically out of the ordinary.
+
+And just like with the self, this can be a springboard into other activities of discovery by asking questions like: how do we demonstrate we value this? Granted, if the group has connection low on the list having a group event to explore this may not work as anticipated.
+
+## One other thing
+
+I often get asked whether participants should respond from a work context or a life in general context.
+
+My reply is that you should respond however you feel most comfortable. If you only want to share work-you, go for it. If you only want to share life-you, go for it. If you’re willing to share whole-you, go for it.
+
+This hesitation and position is another chance for reflection. 
