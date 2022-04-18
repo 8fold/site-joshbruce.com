@@ -56,3 +56,7 @@ A theme inherent to my practice of coaching individuals is awareness and intent;
 Some of us are unaware and unintentional in our character. Many of the exercises I use and have developed are designed to increase awareness to manifest intent.
 
 The Motivators Exercise, for example, is a values-oriented exercise. The 5 Ps Exercise focuses on identifying principles and practices. Tools come into play when we explore how you accomplish things or how your values, principles, and practices are made manifest; the Motivators and 5 Ps exercises are tools I use to help others practice awareness and intent, which I value.
+
+Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defying and capturing it can you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
+
+When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/about/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.

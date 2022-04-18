@@ -45,3 +45,39 @@ The alphabet soup:
 3. Maximize the number of people supporting your progress.
 
 In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
+
+## Motivators exercise results
+
+Here are my results from the [Motivators Exercise](/essays-and-editorials/motivators/).
+
+Short version:
+
+1. purpose,
+2. autonomy,
+3. mastery,
+4. connection,
+5. numbers,
+6. process,
+7. prestige, and
+8. sticks.
+
+Regarding range and distance between, sticks is so far from the others I feel comfortable saying I am practically anti-stick. If I signed up for the negative consequence, I see that differently. Further, the top four are pretty close to one another and may even shift around based on context. Finally, the remaining are also pretty close to one another but aren’t exceptionally close to the top four.
+
+Extended version:
+
+1. purpose,
+2. autonomy,
+3. **physical touch (I’m big on hugs and high-fives)**,
+4. **words of affirmation**,
+5. **quality time**,
+6. mastery,
+7. numbers,
+8. **acts of service**,
+9. **receiving gifts**,
+10. process,
+11. prestige, and
+12. sticks.
+
+Awareness and intent.
+
+Beyond the valuation portion, one of the things this exercise revealed to me is why I’m not particularly ambitious when it comes to finances. It also helped inform my practice of negotiating raises and charging for my services; if left to my own devices I would remain a starving artist, so to speak, I value numbers generally (and money specifically) so little.
