@@ -57,6 +57,14 @@ Some of us are unaware and unintentional in our character. Many of the exercises
 
 The Motivators Exercise, for example, is a values-oriented exercise. The 5 Ps Exercise focuses on identifying principles and practices. Tools come into play when we explore how you accomplish things or how your values, principles, and practices are made manifest; the Motivators and 5 Ps exercises are tools I use to help others practice awareness and intent, which I value.
 
+Identifying your values, principles, practices (or habits), and tools is nonlinear. You don’t need to figure out your life’s purpose *before* determining your values *before* stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that’s a practice. Or start listing tools you use and ask why you use that tool.
+
+Feel like an example is in order. I use pen-and-paper (tools) for capturing todo items (practice) because I don’t want to forget and I don’t want my mind cluttered. The last bit is in keeping with the principle: Your mind is for having ideas, not storing them. Further, the last bit is in keeping with my value of integrity (keeping my word to self and others). 
+
+I have more examples I could throw at you. However, I value simplicity, therefore, I hope the pen-and-paper example demonstrates how starting from anywhere and reflecting on why can you into the other areas as well; anxiety of the blank canvas.
+
+The Motivators exercise is a way to get away from the writer’s block often comes from being asked to figure out what you want to be if you grow up.
+
 Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defying and capturing it can you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
 
 When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/about/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.

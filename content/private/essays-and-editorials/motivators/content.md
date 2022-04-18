@@ -57,21 +57,23 @@ I had a [.Chief Executive Officer](CEO) tell me money was his top motivator. Whe
 
 Let’s see what the expanded version looks like. Basically we’re going to replace “connection” with each of the five love languages. 
 
+Words of affirmation 
+:    Verbal compliments or words of appreciation.
 
+Quality time 
+:    Giving someone your undivided attention; not just sitting on the couch together. 
 
+Receiving gifts
+:    For the most part this is what it sounds like, receiving physical tokens of things you appreciate; they act as a reminder.
 
+Acts of service 
+:    Doing things others would like you to do.
 
+Physical touch
+:    Again, very much what it sounds like. 
 
+Just to Reuters.
 
-
-
+Remove connection from the short list; bringing the list to seven. Add these to the list; bringing the list to 12. Sort (and optionally distance). Reflect.
 
 From this exercise I can start to get a sense of some basic values: purpose and autonomy, for example. This self-knowledge can help me reflect on practices and tools I use; are they in keeping with these values?
-
-And this is how I find identifying your values, principles, practices (or habits), and tools goes. It’s nonlinear. You don’t need to figure out your life’s purpose *before* determining your values *before* stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that’s a practice. Or start listing tools you use and ask why you use that tool.
-
-Feel like another example is in order. I use pen-and-paper (tools) for capturing todo items (practice) because I don’t want to forget and I don’t want my mind cluttered. The last bit is in keeping with the principle: Your mind is for having ideas, not storing them. Further, the last bit is in keeping with my value of integrity (keeping my word to self and others). 
-
-There’s more but I want to keep it simple; another value I have. Hopefully it demonstrates the non-linear nature and how the simplest starting point can roll you into other things.
-
-The Motivators exercise is a way to get away from the writer’s block often comes from being asked to figure out what you want to be if you grow up.
