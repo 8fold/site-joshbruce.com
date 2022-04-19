@@ -1,8 +1,8 @@
-—
+---
 title: Motivators
 created: 20210620
 updated: 20220417
-—
+---
 
 # The Motivators exercise by Josh Bruce
 

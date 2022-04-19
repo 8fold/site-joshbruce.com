@@ -134,7 +134,7 @@ class PlainTextFile
     }
 */
 
-/*
+
     public function original(): string
     {
         $frontMatter = $this->frontMatter();
@@ -147,7 +147,6 @@ class PlainTextFile
         }
         return '';
     }
-*/
 
 /*
     public function frontMatter(): array

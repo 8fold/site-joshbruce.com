@@ -54,8 +54,19 @@ class PlainTextFileFromAlias
     ) {
     }
 
-    public function original(): PlainTextFile
+    public function original(bool $meta = false): PlainTextFile|string
     {
+        if ($meta) {
+            $frontMatter = $this->frontMatter();
+            if (
+                array_key_exists('original', $frontMatter) and
+                $original = $frontMatter['original'] and
+                is_string($original)
+            ) {
+                return $original;
+            }
+            return '';
+        }
         return $this->original;
     }
     // public function hasMetadata(string $key): bool
