@@ -12,9 +12,9 @@ use JoshBruce\SiteDynamic\Environment;
 
 final class FinderTest extends LiveContentTestCase
 {
-    private const PUBLISHED_COUNT = 63;
+    private const PUBLISHED_COUNT = 65;
 
-    private const DRAFT_COUNT = 10;
+    private const DRAFT_COUNT = 8;
 
     /**
      * @test
