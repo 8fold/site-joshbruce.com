@@ -17,26 +17,26 @@ I focus a lot on character and culture; values, principles, practices, and tools
 
 ## Values
 
-4. The most constrained over the most funded.
-5. United States over International.
-6. Passive management over
+1. The most constrained over the most funded.
+2. United States over International.
+3. Passive management over
     - passive investing over
     - active investing over
     - active management.
-7. Index funds over
+4. Index funds over
     - individual stocks over
     - bonds.
-8. Equities (ownership) over bonds (lending).
-9. Small, local businesses over
+5. Equities (ownership) over bonds (lending).
+6. Small, local businesses over
     - large, multinational businesses over
     - local governments over
     - state governments over
     - federal governments.
-10. Cooperative business structures over
+7. Cooperative business structures over
     - privately held over
     - publicly traded.
-11. Time in the market over timing the market.
-12. Being in the market over beating the market.
+8. Time in the market over timing the market.
+9. Being in the market over beating the market.
 
 ## Principles
 
