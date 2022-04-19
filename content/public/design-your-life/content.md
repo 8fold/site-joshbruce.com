@@ -8,6 +8,8 @@ updated: 20211109
 
 {!!dateblock!!}
 
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 This is one of those "when I was a kid" stories, fair warning; I'll try to be brief.
 
 When I was 15 and for the rest of secondary school, my house was a gap hearing spot for my friends. We got together pretty much every day and even called those get together days gatherings. Mostly we just wanted a place we felt safe to be ourselves.
