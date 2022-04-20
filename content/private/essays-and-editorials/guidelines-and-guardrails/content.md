@@ -1,13 +1,13 @@
-—
-title: Guidelines and guardrails 
+---
+title: Guidelines and guardrails
 created: 20211115
-—
+---
 
-# Guidelines and guardrails 
+# Guidelines and guardrails
 
 {!!dateblock!!}
 
-This could also be called something like: X won’t save you. 
+This could also be called something like: X won’t save you.
 
 I used the turn of phrase, X won’t save you, first with a client when they told: If I put the right process in place and execute it repeatedly, then all would be right with the world.
 
@@ -15,7 +15,7 @@ I responded:
 
 > Process won’t save you.
 
-Humans aren’t machines executing code in a stepwise fashion. The hardware and software, if you will, that allows me to function in the world is different than the hardware and software that allows you to function in the world. 
+Humans aren’t machines executing code in a stepwise fashion. The hardware and software, if you will, that allows me to function in the world is different than the hardware and software that allows you to function in the world.
 
 In short, humans are a hot mess.
 
@@ -27,9 +27,9 @@ The African proverb comes to mind:
 
 > If you want to go fast, go alone. If you want to go far, go together.
 
-All of this is why I no longer believe in the existence of an uncuttable approach to existing as a human or “being productive.” At least not in formulaic detail. 
+All of this is why I no longer believe in the existence of an uncuttable approach to existing as a human or “being productive.” At least not in formulaic detail.
 
-And that’s a fucking struggle. 
+And that’s a fucking struggle.
 
 It’s easy to say, “If *those* people would just do X, then life would be better for everyone.” It’s difficult to say to yourself, “I’m shaming, blaming, and possibly being elitist as fuck right now.”
 
@@ -39,7 +39,7 @@ Imagine you’re standing in the middle of a road. Down the center is a line. To
 
 That line down the center of the road is a guideline. The more I stick to it, the safer I am. Of course, sticking so closely to the guideline means I might miss seeing and experiencing the “outside world” ([Buddha as protected prince](https://en.m.wikipedia.org/wiki/Gautama_Buddha) or [all science no philosophy](https://m.imdb.com/title/tt0089886/)). But, that’s my choice to make. My line to draw. My line to toe.
 
-Where things tend to get dicey is when someone else tells us what lines to toe. 
+Where things tend to get dicey is when someone else tells us what lines to toe.
 
 When I’m brought in as a coach it’s often to help with adoption and transformation. When I ask who chose the tool for tracking work, it’s rarely the people doing the work. When I ask if managers and “leadership” are tracking their work in the same tool, the answer is often no. When I ask who chose the process the team is supposed to use, it’s rarely the people doing the work; and, again, rarely is management and leadership trying to use a similar process.
 
@@ -47,7 +47,7 @@ When I’m brought in as a coach it’s often to help with adoption and transfor
 
 Then these same managers and leaders get frustrated because the people they manage (or lead) don’t feel empowered to make decisions and keep asking management for direction and what they should do next. (So much self-inflicted baggage.)
 
-Guardrails are more hardcore than guidelines. 
+Guardrails are more hardcore than guidelines.
 
 A habit I’ve gotten into, which some may find strange, is walking down the hallway to my apartment door with my eyes closed. I’ve never run into the walls. Granted, I’ve never gone the whole length without opening my eyes, re-centering, and realigning myself. The center is the guideline, the walls of the hallway are the guardrails. I walk slowly. The faster I go, the more often I open my eyes and readjust.
 
@@ -98,7 +98,7 @@ I’m not sure how to meander gently to this last bit right now, so, let’s mak
 
 > Don’t try and bend the spoon, that’s impossible. Instead try and realize the truth [there is no spoon]. Then you’ll see it’s not the spoon that bends, it’s only yourself. ([The Matrix](https://youtu.be/uAXtO5dMqEI))
 
-I don’t change people or organizations; I can’t control them. I can only control myself. 
+I don’t change people or organizations; I can’t control them. I can only control myself.
 
 Therefore, I bend myself in the areas I’m willing and able to meet them where they are. Then we both figure out where we want to go together and possibly for how long. I think I’ve grown a lot over the years due in no small part to the clients I’ve served. I hope they feel the same about me.
 

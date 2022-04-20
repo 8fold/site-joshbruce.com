@@ -22,7 +22,7 @@ class NextPrevious
     ): string {
         $path = $file->path(omitFilename: true);
         if (is_a($file, PlainTextFileFromAlias::class)) {
-            $file = $file->original();
+            $file = $file->antialias();
             $path = $file->path(omitFilename: true);
         }
 
