@@ -37,7 +37,7 @@ class OriginalContentNotice
 
         $original = $file->original();
         if (is_a($file, PlainTextFileFromAlias::class)) {
-            $original = $file->original(true);
+            $original = $file->original();
         }
         list($href, $platform) = explode(' ', $original, 2);
 

@@ -54,19 +54,8 @@ class PlainTextFileFromAlias
     ) {
     }
 
-    public function original(bool $meta = false): PlainTextFile|string
+    public function antialias(): PlainTextFile
     {
-        if ($meta) {
-            $frontMatter = $this->frontMatter();
-            if (
-                array_key_exists('original', $frontMatter) and
-                $original = $frontMatter['original'] and
-                is_string($original)
-            ) {
-                return $original;
-            }
-            return '';
-        }
         return $this->original;
     }
     // public function hasMetadata(string $key): bool
@@ -120,9 +109,7 @@ class PlainTextFileFromAlias
 
     public function pageTitle(): string
     {
-        return $this->original()->pageTitle();
-        // $parts = array_filter($this->titleParts());
-        // return implode(' | ', $parts);
+        return $this->antialias()->pageTitle();
     }
 
 //     public function socialTitle(): string
