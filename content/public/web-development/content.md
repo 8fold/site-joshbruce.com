@@ -8,6 +8,8 @@ updated: 20211105
 
 {!!dateblock!!}
 
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 I differentiate [software development](/software-development/) from web development in the sense that all web development is software development but not all software development is web development. Web development is software development in a specific context, with contextual [constraints](/web-development/on-constraints/).
 
 Generally speaking, when I do develop software, I do it for the web. Further, I take a user down approach. (I never reach, "the metal".) However, after poking around and looking I can say that, at a reasonable level of abstraction, developing software feels the same.
