@@ -11,7 +11,6 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use JoshBruce\SiteDynamic\DocumentComponents\Data;
 use JoshBruce\SiteDynamic\DocumentComponents\DateBlock;
@@ -83,7 +82,7 @@ class Markdown
 
     public static function processPartials(
         string $body,
-        PlainTextFile|PlainTextFileFromAlias $file,
+        PlainTextFile $file,
         Environment $environment
     ): string {
         $partials = [];

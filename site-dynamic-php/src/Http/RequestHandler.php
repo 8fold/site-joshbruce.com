@@ -20,7 +20,6 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
 use JoshBruce\SiteDynamic\Documents\FullNav;
@@ -150,18 +149,6 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        if ($file->alias()) {
-            $path = $this->environment()->contentPrivate() . '/' .
-                $file->alias() . '/' .
-                $this->environment()->contentFilename();
-            $file = PlainTextFileFromAlias::at(
-                $path,
-                $this->environment()->contentPrivate(),
-                $file
-            );
-
-        }
-
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
@@ -197,7 +184,7 @@ class RequestHandler implements RequestHandlerInterface
         return $this->headers;
     }
 
-    private function body(PlainTextFile|PlainTextFileFromAlias $file): string
+    private function body(PlainTextFile $file): string
     {
         $markdown = Markdown::processPartials(
             $file->content(),

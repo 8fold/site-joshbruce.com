@@ -10,7 +10,6 @@ use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 class FileForRequest
 {
@@ -19,7 +18,7 @@ class FileForRequest
     public static function at(
         ServerRequestInterface $request,
         Environment $environment
-    ): File|PlainTextFile|PlainTextFileFromAlias|false {
+    ): File|PlainTextFile|false {
         return (new static($request, $environment))->getFile();
     }
 
@@ -29,7 +28,7 @@ class FileForRequest
     ) {
     }
 
-    private function getFile(): File|PlainTextFile|PlainTextFileFromAlias|false
+    private function getFile(): File|PlainTextFile|false
     {
         if ($this->isRequestingXml()) {
             $file = $this->handleXml();
@@ -119,7 +118,7 @@ class FileForRequest
         return $file;
     }
 
-    private function handleContent(): PlainTextFile|PlainTextFileFromAlias
+    private function handleContent(): PlainTextFile
     {
         $publicPath = $this->environment()->contentPublic() .
             $this->requestPath() .
@@ -129,23 +128,6 @@ class FileForRequest
             $publicPath,
             $this->environment()->contentPublic()
         );
-
-        if (
-            $file->found() and
-            $alias = $file->alias() and
-            $alias !== false
-        ) {
-            $privatePath = $this->environment()->contentPrivate() . '/' .
-                $alias . '/' .
-                $this->environment()->contentFilename();
-
-            $file = PlainTextFileFromAlias::at(
-                $privatePath,
-                $this->environment()->contentPrivate(),
-                $file
-            );
-
-        }
 
         return $file;
     }
