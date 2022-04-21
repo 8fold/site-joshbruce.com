@@ -8,6 +8,8 @@ updated: 20211105
 
 {!!dateblock!!}
 
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 The term "modern" is an odd one, freighted with baggage. In the context of web development it seems even stranger given that I’m older than the public web.
 
 In some cases the term modern feels rather ageist when it’s used to say, “I won’t use anything from a certain number of years ago”—the new shiny is better than old reliable. I remember using [CSS Zen Garden](http://csszengarden.com) as a reference to demonstrate how flexible minimal, semantic markup can be due to the use and ubiquity of [.CSS](cascading style sheets). The retort from the development team at the time was that CSS Zen Garden was an "old" site.

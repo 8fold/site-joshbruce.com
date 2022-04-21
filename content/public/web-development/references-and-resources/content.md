@@ -5,6 +5,10 @@ created: 20211112
 
 # Web references and resources
 
+{!! dateblock !!}
+
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 A curated list of references and resources for developing on the web.
 
 I consider the following as canonical in nature because they are created and maintained by a recognized officiating body for web standards; specifically, the [.w3c](World-Wide Web Consortium):
