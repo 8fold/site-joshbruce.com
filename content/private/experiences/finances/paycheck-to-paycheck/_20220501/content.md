@@ -1,6 +1,6 @@
 ---
-title: April 15th, 2022 paycheck
-created: 20220415
+title: May 1st, 2022 paycheck
+created: 20220501
 data:
 - [Debt, 0, 1, 1.3]
 - [Cash, 5, 10, 6.7]
@@ -27,67 +27,73 @@ fi-experiments:
 
 {!! data !!}
 
-Making progress toward getting my 401k in balance. For the past few contributions I’ve been ramping up the small-cap fund via buying the dip; now it’s almost to the point of the same cost basis as the S&P 500 fund. I decided to shift my contribution from 80-20 favoring the small-cap to 20-80 favoring the mid-cap. I plan on continuing to sell the large-cap gains and buying the small- and mid-cap funds. Once it’s balanced I’ll change to an even split and rebalance as necessary.
+Still rebalancing the 401k. It’s going pretty well. 
+
+I’m also finding, for me, checking my portfolio apps everyday is helping my anxiety and fear. Unpacking my relationship with money and being broke.
+
+Since part of this exercise is to become more comfortable talking about money, let’s lean into this.
+
+Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My teenage years, by income, we would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, while my father was still active military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods that we could barely afford; money felt like a heavy burden for half that time and the other half felt like we were the richest people on the planet—at least for me.
+
+I graduated college when I was around 25 years old, with over 100,000 [.United States Dollars](USD) in student loan and credit card debt. I could afford to eat or make payments, but not both. I ended up going back to school to keep the loans in deferment. I’ve never been particularly ambitious when it comes to money or advancing in a career. With that said, I couldn’t just keep racking up debt the way I was. 
+
+I was attending graduate school when I was living in my car in 2010 around age 30. 
+
+Luck struck me twice and I dropped out of graduate school with class left to go, which I failed twice for some reason. The first stroke of luck was recruiter calling me out of the blue for a gig doing content entry for an online company. They almost 60,000 USD per year to have copy content from documents and paste into online forms; this is when I really started reconsidering the whole value versus time trade when it came to money. A few months in the second bit of luck struck.
+
+My dad and I were talking one night and I remember telling how I couldn’t get an interview to find a job. This was during the rail-end of The Great Recession and he said one of those unhelpful positivity lines: It’s the economy, son, no one’s hiring.
+
+I still remember I was driving around the area surrounding the truck stop I slept at and I said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurred out, “I’m living in my car for fuck’s sake.”
+
+The tone of the call changed dramatically and her said, “You want me to get you an interview with the company I work for?”
+
+I said, “I’m not really down for nepotism, pops.”
+
+He replied, “I can’t get you the job, but I can get you the interview.”
+
+I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; I don’t even remember why I bought a suit. The panel interview went well; I didn’t get the job.
+
+But apparently I impressed one of the panelists well enough that he decided I needed to work there and he found me a different job.
+
+So, putting the stories in chronological order: homeless and working temporarily for the 2010 Census, homeless and being interviewed for a consulting company, when I got the contract at the online content company I got an apartment, and then I got a phone interview for the consulting company in Virginia and moved.
+
+With a decade of being in poverty based on my own income and homeless for a year, I reflected a lot and was determined to not let my lifestyle creep. Instead, I focused on being content with what I had.
+
+It was like being a kid again. Back from that time I felt like we were the richest family ever; only it was just me. It still is.
+
+With that said, from an income perspective, I’m at the [upper side of middle class](https://www.investopedia.com/financial-edge/0912/which-income-class-are-you.aspx). I became debt-free at the tail end of 2020.
+
+And, here we are.
+
+From a lifestyle and influence perspective, I’m at the upper end of the lower class.
+
+While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate for their connotation. 
 
 ## Portfolio balance overall 
 
-Looking pretty good. However, when it comes to individual funds, it’s time to buy the mid-cap in the 401k and the total stock market fund in the taxable account. 
-
-This is due in part to shoveling so much toward the the funds favoring small-cap, however, that’s not the only reason. 
-
-I’m thinking of adding another fund.
-
-This would not be an optimization move or because I expect to get higher returns; that would be denying the macro allocation principle. Instead, I’m looking at the overall distribution of the equities portion of the portfolio and wondering if I can tilt the mix away from core a bit.
-
-The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced (or I purchase more lots), more of my value will be in that company. Right now, the average portfolio heavily favors large-cap, growth stocks and I do not; when a company gets close to being too big to fail, it shouldn’t need more of my money to sustain itself.
-
-The extended market fund lets me shift the size factor toward small- and mid-cap companies with the goal being a pretty even split between the three. 
-
-The multi-factor fund I’m pretty sure I’ll go with favors momentum (strong, recent performance), fundamentals (cash flow and conservative over aggressive investing), and value (low price compared to fundamentals). There are multiple identified factors and models out there (recent learning on my part). I’m appreciating the Fama-and-French five-factor model, which doesn’t include momentum, however, incorporates the others found in this fund—to the best of my knowledge. The goal here is to see what shifts to get closer to an even distribution between value and growth with a smaller percentage of core according to the Personal Capital grid. I’m pretty evenly split right now but the portfolio isn’t at its target allocations overall yet.
-
-More specifically, and looking at returns, with the total stock market fund almost 80 percent of the returns are from large-cap companies. Further, half of the returns are specifically from large-cap, growth stocks. That’s not me. When a company hits a certain point in its growth, I would like to cash out a bit; unless I buy the individual stock because I just believe in the company that much and want to be a full-fledged owner instead of an owner by proxy.
-
-By adding the extended market fund, the returns shift to something a bit more evenly distributed. Roughly 28 percent of returns coming from large-cap, growth; roughly 32 percent from mid-cap, growth; and the remainder from small-cap, split almost evenly between growth and value.
-
-Bringing in a small amount (about 10 percent) toward the multi-factor fund shifts returns a bit more. Roughly 27 percent from large-cap, growth; roughly 33 percent from mid-cap, growth; and the rest from small-cap. The difference here being only about 16 percent is from small-cap, growth leaving roughly 23 percent being small-cap, value.
-
-What helps me psychologically here is based on market capitalization, each size is returning their concentration. In other words, with the cap-weighted total stock market, 50 percent of returns are from 70 percent of the investment. Meanwhile, with this allocation, each cap-weight is contributing about what it’s concentration is projected to be; small-cap is estimated at 37 percent concentration and accounts for 39 percent of historical returns, mid-cap is about 30 percent concentration, and large-cap is about 33 percent concentration.
-
-(The aggregate expense ratios as of this writing would be 0.04, 0.05, and 0.07, respectively. So, not grotesque.)
-
-In theory, this would put me more in smaller companies that favor fundamentals rather than growth, which is more me. I can still ride the rise (and fall) of companies as they progress from small to possibly large and back again (see Kodak), however, it’s more of a byproduct and less of the goal itself.
-
-A couple things of note are:
-
-1. The multi-factor fund has only been around since 2018.
-2. These are returns, not concentrations based on value versus growth.
-3. I don’t know of a tool that can give me the matrix view from Personal Capital using a projected portfolio of index funds and exchange traded funds; the Personal Capital matrix is based on my actual portfolio not a target I built.
-
-With that said, I’m going to keep working toward the allocation for the two fund solution and see where that gets me before adding a third.
-
-Again, this isn’t optimization for outperformance (I might actually have lower returns if folks continue to do the straight total cap-weighted stock market and chill method); see [investment policy](/finances/investment-policy/). This is about aligning the portfolio to my character.
-
-Of course, if more people follow this path, the more the total stock market fund will reflect this allocation mix, which should mean I’d be able to sell off the extended and multi-factor funds. With that said, I believe every investment style is necessary to make each perform better and worse, so, you do you.
+Because I’m considering a new fund I’ve decided to add it to the spreadsheet and assign a target percent. So, while the balance is fine for the purposes of these entries, the index funds are out of balance. I need more in the mid-cap in the 401k and I need more in the regular total stock market fund.
 
 ## Odd place
 
-Feeling a bit better now.
+Feeling better.
 
-I’ve decided to try and improve my résumé as well. That might seem left field but I’ve actually never gotten a job I’ve applied to with a résumé; in 20 years.
+Part of the professional résumé writing experience is sending the résumé to a position. While I’m not actively looking as if I need to leave where I am, I am participating in the process.
 
-Over the years I’ve tried a lot of formats; chronological, functional, hybrid. Lots of numbers. Just a few numbers. One page, five pages. All the history. Only the last 10 years. Just the facts and slightly silly.
+I have hired two different professionals and signed up for a webinar where we will learn how to improve our résumés ourselves.
 
-Over the years I’ve received at least a thousand rejection letters; not a single interview from the résumé to a job I actually pursued. In fact, my career is kind of like my dating life; they find me.
+For the purposes of experimentation I started both professionals from the same original résumé.
 
-Anyway, I’m bringing in the professionals. I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
+The first résumé came out as a more functional, one-pager. It has some graphic elements and some of my personality. It does have the chronological elements with one story for each engagement. 
 
-We’ll see how it goes. Paying for all that, coupled with market being down, is why my debt is a bit high at the moment.
+The second one came out as a more standard, two-pager. It’s simple, with a clean layout with a fair amount of white space. 
 
-## FI experiments
+I learned a lot about my own limiting beliefs regarding a résumé from both professionals. 
 
-Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+I’ve applied for a position with the first. Seven days later, an interview was scheduled. That’s never happened to me before. To be fair in the process of tracking the experiment, I was introduced to someone at the company; however, I have instances in the past where even that didn’t actually get me an interview. In one case I actually did a pre-interview before submitting the résumé; after submitting, the feedback received was that if the pre-interview hadn’t taken place I never would have made it—I did not get that job, nor did I get a follow-up attempt.
 
-The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
+I have not applied for anything using the second one.
+
+The webinar was also helpful and is based on the concepts of *Start with Why* by Simon Sinek.
 
 {!! fi-experiments !!}
 
