@@ -6,6 +6,8 @@ updated: 20220417
 
 # The self
 
+{!! dateblock !!}
+
 Here's where you can see the big picture of me. I will mainly use the exercises found in my books and the [essays and editorials](/essays-and-editorials/) area of the site.
 
 In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
