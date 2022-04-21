@@ -54,7 +54,7 @@ class PlainTextFileFromAlias
     ) {
     }
 
-    public function original(): PlainTextFile
+    public function antialias(): PlainTextFile
     {
         return $this->original;
     }
@@ -109,9 +109,7 @@ class PlainTextFileFromAlias
 
     public function pageTitle(): string
     {
-        return $this->original()->pageTitle();
-        // $parts = array_filter($this->titleParts());
-        // return implode(' | ', $parts);
+        return $this->antialias()->pageTitle();
     }
 
 //     public function socialTitle(): string

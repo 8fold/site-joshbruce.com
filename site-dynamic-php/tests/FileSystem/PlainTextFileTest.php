@@ -15,9 +15,8 @@ final class PlainTextFileTest extends LiveContentTestCase
     public static function migratedContent(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() .
-                '/web-development/on-constraints/internet-bandwidth/content.md',
-            self::pathToContentPublic()
+            self::pathToContentPrivate() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
+            self::pathToContentPrivate()
         );
     }
 

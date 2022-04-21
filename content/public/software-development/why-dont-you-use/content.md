@@ -9,6 +9,8 @@ updated: 20211109
 
 {!!dateblock!!}
 
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 Since 1998 I have always created the platform used by my website. Be it Adobe Flash, PHP, or trying to write one in Swift. Inevitably someone asks me why I feel the need to reinvent the wheel or why I think I'm "better" or "too good" for those other platforms.
 
 Not to sound too "get off my lawn" about the whole situation I'll say: I've tried other platforms, continue to try other platforms, and continue to come back to the ones I've built.
