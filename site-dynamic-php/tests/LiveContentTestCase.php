@@ -27,6 +27,11 @@ abstract class LiveContentTestCase extends TestCase
         return __DIR__ . '/../../content/public';
     }
 
+    public static function pathToContentPrivate(): string
+    {
+        return __DIR__ . '/../../content/private';
+    }
+
     public static function rootContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
@@ -46,8 +51,8 @@ abstract class LiveContentTestCase extends TestCase
     public static function thisInternetBandwidthContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() . '/web-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
-            self::pathToContentPublic()
+            self::pathToContentPrivate() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
+            self::pathToContentPrivate()
         );
     }
 

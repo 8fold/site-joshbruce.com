@@ -14,7 +14,7 @@ final class FinderTest extends LiveContentTestCase
 {
     private const PUBLISHED_COUNT = 65;
 
-    private const DRAFT_COUNT = 8;
+    private const DRAFT_COUNT = 1;
 
     /**
      * @test
