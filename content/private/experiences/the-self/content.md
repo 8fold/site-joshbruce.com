@@ -20,12 +20,14 @@ In times of stress, I can come back to these and center myself from a time when 
 3. Intellectual legacy over
     - financial legacy over
     - genetic legacy.
+4. Character over personality.
 
 ### Principles
 
 1. Never enter anything without an exit strategy.
 2. There's no such thing as intrinsic value, only perceived value.
 3. Scarcity alone doesn't make something more valuable.
+4. Intent and impact are not mutually inclusive or exclusive.
 
 ### Practices
 
@@ -35,6 +37,7 @@ In times of stress, I can come back to these and center myself from a time when 
 4. Maximize the number of people supporting your progress.
 5. Extend grace and ask before assuming malicious intent.
 6. Informed consent.
+7. Don’t assume or presume intent.
 
 ## My oath
 
