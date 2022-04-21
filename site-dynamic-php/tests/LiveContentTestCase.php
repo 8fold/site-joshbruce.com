@@ -27,11 +27,6 @@ abstract class LiveContentTestCase extends TestCase
         return __DIR__ . '/../../content/public';
     }
 
-    public static function pathToContentPrivate(): string
-    {
-        return __DIR__ . '/../../content/private';
-    }
-
     public static function rootContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
@@ -43,7 +38,7 @@ abstract class LiveContentTestCase extends TestCase
     public static function thisSiteContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() . '/web-development/this-site/content.md',
+            self::pathToContentPublic() . '/experiences/software-development/this-site/content.md',
             self::pathToContentPublic()
         );
     }
@@ -51,8 +46,8 @@ abstract class LiveContentTestCase extends TestCase
     public static function thisInternetBandwidthContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPrivate() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
-            self::pathToContentPrivate()
+            self::pathToContentPublic() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
+            self::pathToContentPublic()
         );
     }
 
@@ -108,7 +103,7 @@ abstract class LiveContentTestCase extends TestCase
             ->handle(
                 new ServerRequest(
                     method: 'GET',
-                    uri: '/web-development/this-site/',
+                    uri: '/experiences/software-development/this-site/',
                     headers: [],
                     serverParams: $_SERVER
                 )

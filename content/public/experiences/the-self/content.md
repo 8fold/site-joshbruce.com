@@ -1,6 +1,5 @@
 ---
 title: The self
-alias: experiences/the-self
 created: 19790717
 updated: 20220417
 ---
