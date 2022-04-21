@@ -8,6 +8,8 @@ disclaimer: "I'm not a doctor much less your doctor nor am I a personal stylist.
 
 {!!dateblock!!}
 
+> I’m working on updating the structure and format of the site. **This page will be deleted.**
+
 Given my historical journal entries it seems every six years or so I get a bug in my ear to look at my physical health, physical appearance, style and whatnot.
 
 In 2009 it was urban obstacle course style with [Parkour](https://en.wikipedia.org/wiki/Parkour) and [Freerunning](https://en.wikipedia.org/wiki/Freerunning). I was more about Parkour than Freerunning.
