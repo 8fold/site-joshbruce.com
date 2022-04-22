@@ -284,8 +284,8 @@ class PlainTextFile
                 $path  = implode('/', $parts);
 
                 if (str_contains($path, $this->root)) {
-                    $titles[] = PlainTextFile::at($path . '/content.md', $this->root)
-                        ->title();
+                    $f = PlainTextFile::at($path . '/content.md', $this->root);
+                    $titles[] = $f->title();
                 }
             }
             $this->titleParts = $titles;
