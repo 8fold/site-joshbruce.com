@@ -331,6 +331,10 @@ nav > ul {
   padding: var(--0-spacer);
   list-style: var(--none);
 
+  > li {
+      margin-top: var(--m-spacer);
+  }
+
   > li:first-of-type {
     margin-bottom: var(--m-spacer);
   }

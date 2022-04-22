@@ -212,7 +212,7 @@ Once it’s verified in Wave,I’ll hop through the apps (or websites) for the i
 
 To ensure is dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding.
 
-## Tax account
+### Tax account
 
 I rarely owe taxes. While I could keep socking away in the tax account for when I retire, I would rather put the majority of this money to work once I know I don’t owe taxes for the year.
 
@@ -238,7 +238,7 @@ If money is owed, and there isn't enough in the Tax account to cover the amount,
 
 If more money is needed, something has gone horribly wrong and you should be consulting with accountants and attorneys.
 
-## Spending savings
+### Spending savings
 
 Money in the savings account is different than an emergency fund in that it’s there to take advantage of opportunities instead of crisis.
 

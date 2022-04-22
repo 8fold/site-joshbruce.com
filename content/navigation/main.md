@@ -1,4 +1,5 @@
-- [Josh bruce](/)
+- [Home](/)
+- [My books](/books/)
 - [Essays and editorials](/essays-and-editorials/)
     - [Motivators](/design-your-life/motivators/)
     - [The 5 Ps](/essays-and-editorials/the-5-ps/)

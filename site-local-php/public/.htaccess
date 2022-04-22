@@ -20,9 +20,7 @@ ErrorDocument 500 /error-500.html
 	Header add Allow "GET, HEAD"
 
 	# Handle redirects
-	# Delete 2023 04
-	RedirectMatch 301 /about/ /experiences/the-self/
-	RedirectMatch 301 /coaching/being-a-scrum-master /experiences/agile-software-development/scrum/being-a-scrum-master/
+	# Delete 2022 migration 2023 04
 
 	# Prepare to rewrite
 	RewriteCond %{REQUEST_FILENAME} !-d

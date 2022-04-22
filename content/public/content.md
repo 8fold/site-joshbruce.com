@@ -10,11 +10,12 @@ Welcome to the rabbit-hole.
 
 My name is Josh Bruce (shocker); I don't play rugby—do a search—the failings of not having an internet-unique name.
 
-The site is divided into three areas; with a fourth on the way.
+The site is divided into the following areas:
 
-1. [Essays and editorials](/essays-and-editorials/) are my consolidated thoughts on various topics.
-2. [Examinations and summaries](/examinations/) is where I review and reflect on the media which helps inform my consolidated thoughts.
-3. [Experiences](/experiences/) is where I talk about applying the consolidated thoughts.
+1. [My books](/books/) are books I've written or am in the (sometimes extended) process of writing; I'm driven by feedback and pull (demand).
+2. [Essays and editorials](/essays-and-editorials/) are my consolidated thoughts on various topics.
+3. [Examinations and summaries](/examinations/) is where I review and reflect on the media which helps inform my consolidated thoughts.
+4. [Experiences](/experiences/) is where I talk about applying the consolidated thoughts.
 
 I'm a multifaceted being, just like you, and this site covers my whole and authentic [self](/experiences/the-self/).
 

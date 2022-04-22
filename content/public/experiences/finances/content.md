@@ -11,7 +11,7 @@ updated: 20220416
 
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I have it.
 
-I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is parter of the broader [personal character](/about/).
+I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is parter of the broader [personal character](/experiences/the-self/).
 
 ## Values
 
@@ -53,7 +53,8 @@ I focus a lot on character and culture; values, principles, practices, and tools
 5. Pay yourself first.
 6. Promote dividends earned in securities returning less than 7% per year to securities that historically return higher.
 7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
-8. [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/).
+8. [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/).
+9. [Personal budget](/experiences/finances/personal-budget/).
 9. No leveraged investing.
 10. No shorting stocks.
 
@@ -66,4 +67,4 @@ I focus a lot on character and culture; values, principles, practices, and tools
 5. One or more federally insured, interest bearing savings accounts.
 6. One or more regulated retirement accounts.
 7. One or more regulated taxable accounts.
-8. A well-maintained [investment policy](/finances/investment-policy/).
+8. A well-maintained [investment policy](/experiences/finances/investment-policy/).
