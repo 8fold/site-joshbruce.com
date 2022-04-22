@@ -18,4 +18,4 @@ The site is divided into three areas; with a fourth on the way.
 
 I'm a multifaceted being, just like you, and this site covers my whole and authentic [self](/experiences/the-self/).
 
-So, sit back and get lost a little lost with me.
+So, sit back, relax, and get lost for a while with me.

@@ -9,8 +9,6 @@ updated: 20220416
 
 {!!dateblock!!}
 
-> I'm working on updating the structure and format of the site. Part of this change is separating the experiences and experiments (how I'm doing things) from the more informational aspects. So, if you're looking for information related to finances, you can find that over at the under construction [essays and editorials](/essays-and-editorials/finances/) area.
-
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I have it.
 
 I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is parter of the broader [personal character](/about/).

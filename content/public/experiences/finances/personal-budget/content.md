@@ -8,8 +8,6 @@ updated: 20220415
 
 {!!dateblock!!}
 
-> I'm working on updating the structure and format of the site. Part of this change is separating the experiences and experiments (how I'm doing things) from the more informational aspects. So, if you're looking for budgeting information, you can find that over at the under construction [essays and editorials](/essays-and-editorials/finances/budgeting/) area.
-
 This is an evergreen post describing how I am budgeting as of this writing.
 
 ## Income

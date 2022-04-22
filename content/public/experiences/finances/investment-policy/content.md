@@ -8,8 +8,6 @@ updated: 20220417
 
 {!!dateblock!!}
 
-> I'm working on updating the structure and format of the site. Part of this change is separating the experiences and experiments (how I'm doing things) from the more informational aspects. So, if you're looking for information or thoughts on investment policies, you can find that over at the under construction [essays and editorials](/essays-and-editorials/finances/investment-policies/) area.
-
 For me, as of this writing, I’m both the client and advisor.
 
 I started with the outline developed by [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/).
