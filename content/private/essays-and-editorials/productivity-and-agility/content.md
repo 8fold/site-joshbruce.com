@@ -15,9 +15,9 @@ These qualities are interconnected. If one lever is increased, most likely, othe
 
 Let’s consider a cheetah and a tortoise.
 
-When the cheetah is moving at top speed, the context is eating and survival; it’s not always that way. Further, the speed lever is topped out and the efficiency lever is very low; the physical qualities of the cheetah are such that it’s essentially hyperventilating as it runs. Finally, if the cheetah is not effective in its hunt, it could either overheat while running or never eat; in either case it dies.
+When the cheetah is moving at top speed, the context is eating and survival; it’s not always moving at top speed. Further, the speed lever is topped out and the efficiency lever is very low; the physical qualities of the cheetah are such that it’s essentially hyperventilating as it runs. Finally, if the cheetah is not effective in its hunt, it could either overheat while running or never eat; in either case it dies.
 
-Meanwhile, the tortoise is physically limited in how fast it can move. The distance the speed lever can go up is not the same as the one for the cheetah. Luckily, the context of the tortoise, when it comes to food, doesn’t require chasing live food. Efficiency is relatively high for breathing and arguably lower for movement.
+Meanwhile, the tortoise is physically limited in how fast it can move. The distance the speed lever can go up is not the same as the one for the cheetah. Luckily, the context of the tortoise, when it comes to eating, doesn’t require chasing live food. Efficiency is relatively high for breathing and arguably lower for movement.
 
 Both the cheetah and tortoise are considered productive, to a certain degree, because they survive.
 
@@ -31,9 +31,9 @@ Consider an Olympic sprinter. Their mission is to go as fast as they can over a 
 
 Agility would be measured by their ability to change direction, stop, or respond to another hazard.
 
-Agility depends on the frequency feedback (feedback loops) and your ability to interpret and adjust based on the feedback.
+Agility depends on the frequency of feedback (feedback loops) and your ability to interpret and adjust based on the feedback.
 
-If I go my entire life without receiving feedback on my negative behavior, if I ever do receive feedback on my negative behavior my agility may be low there. However, if I receive feedback everyday or hour, and I interpret and adjust, I hopefully improve my interactions with other humans.
+Let’s say I have some negative behavior. If I don’t receive feedback on that negative behavior for, say, a decade or longer then it will most likely be harder for me to adjust; low agility. I’m already sprinting with the habit.
 
 ## Productivity theater
 
