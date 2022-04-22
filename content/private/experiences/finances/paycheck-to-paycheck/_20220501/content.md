@@ -2,26 +2,26 @@
 title: May 1st, 2022 paycheck
 created: 20220501
 data:
-- [Debt, 0, 1, 1.3]
-- [Cash, 5, 10, 6.7]
+- [Debt, 0, 1, 2]
+- [Cash, 3, 9, 8.2]
 - [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 24, 35, 32.9]
-- [US equities - mid, 24, 35, 26.5]
-- [US equities - large, 24, 35, 31]
+- [US equities - small, 25, 38, 33.8]
+- [US equities - mid, 25, 38, 27.3]
+- [US equities - large, 25, 37, 27.7]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 41.96, 43.69, 47.71]
-- [0.2, 38.43, 40.13, 43.83]
-- [0.4, 38.40, 40.14, 43.74]
-- [0.6, 38.60, 40.30, 43.54]
-- [0.8, 39.35, 40.81, 43.36]
-- [1.0, 43.35, 44.72, 46.87]
-- [1.1, 43.24, 44.64, 46.76]
-- [1.2, 43.21, 44.63, 46.73]
+- [0.0, 41.35, 41.96, 47.71]
+- [0.2, 38.06, 38.43, 43.83]
+- [0.4, 38.07, 38.40, 43.74]
+- [0.6, 38.29, 38.60, 43.54]
+- [0.8, 39.04, 39.35, 43.36]
+- [1.0, 43.02, 43.35, 46.87]
+- [1.1, 42.92, 43.24, 46.76]
+- [1.2, 42.89, 43.21, 46.73]
 ---
 
-# April 15th, 2022 paycheck
+# May 1st, 2022 paycheck
 
 {!! dateblock !!}
 
@@ -43,29 +43,29 @@ Luck struck me twice and I dropped out of graduate school with class left to go,
 
 My dad and I were talking one night and I remember telling how I couldn’t get an interview to find a job. This was during the rail-end of The Great Recession and he said one of those unhelpful positivity lines: It’s the economy, son, no one’s hiring.
 
-I still remember I was driving around the area surrounding the truck stop I slept at and I said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurred out, “I’m living in my car for fuck’s sake.”
+I still remember I was driving around the area surrounding the truck stop I slept at and I said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurted out, “I’m living in my fucking car.” (Nothing against van life but there’s a difference between choosing it and there’s something to be said for tailoring the message to the audience.)
 
-The tone of the call changed dramatically and her said, “You want me to get you an interview with the company I work for?”
+The tone of the call changed dramatically and he asked, “You want me to get you an interview with the company I work for?”
 
 I said, “I’m not really down for nepotism, pops.”
 
 He replied, “I can’t get you the job, but I can get you the interview.”
 
-I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; I don’t even remember why I bought a suit. The panel interview went well; I didn’t get the job.
+I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; it was required for my public speaking course. The panel interview went well; I didn’t get the job.
 
-But apparently I impressed one of the panelists well enough that he decided I needed to work there and he found me a different job.
+But apparently I impressed one of the panelists well enough that he decided I needed to work there and he found me a different job; friends to this day.
 
 So, putting the stories in chronological order: homeless and working temporarily for the 2010 Census, homeless and being interviewed for a consulting company, when I got the contract at the online content company I got an apartment, and then I got a phone interview for the consulting company in Virginia and moved.
 
-With a decade of being in poverty based on my own income and homeless for a year, I reflected a lot and was determined to not let my lifestyle creep. Instead, I focused on being content with what I had.
+With a decade of being in poverty based on my own income and homeless for a year, I reflected a lot and was determined to not let my lifestyle creep—ever. Instead, I focused on being content with what I have.
 
-It was like being a kid again. Back from that time I felt like we were the richest family ever; only it was just me. It still is.
+It was like being a kid again. Back from that time when I felt like we were the richest family ever; only it was just me.
 
 With that said, from an income perspective, I’m at the [upper side of middle class](https://www.investopedia.com/financial-edge/0912/which-income-class-are-you.aspx). I became debt-free at the tail end of 2020.
 
 And, here we are.
 
-From a lifestyle and influence perspective, I’m at the upper end of the lower class.
+From a lifestyle and influence perspective, I’m at the upper end of lower class.
 
 While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate for their connotation. 
 
@@ -77,23 +77,27 @@ Because I’m considering a new fund I’ve decided to add it to the spreadsheet
 
 Feeling better.
 
-Part of the professional résumé writing experience is sending the résumé to a position. While I’m not actively looking as if I need to leave where I am, I am participating in the process.
+Part of the professional résumé writing experience is sending the résumé to a position. While I’m not actively looking, I am participating in the process; more of a passive thing.
 
-I have hired two different professionals and signed up for a webinar where we will learn how to improve our résumés ourselves.
+I have hired two different professionals and signed up for a webinar where we’ll learn how to improve our résumés ourselves.
 
 For the purposes of experimentation I started both professionals from the same original résumé.
 
-The first résumé came out as a more functional, one-pager. It has some graphic elements and some of my personality. It does have the chronological elements with one story for each engagement. 
+The first résumé came out as a more functional, one-pager. It has some graphic elements and some of my personality in the copy. It does have the chronological elements with one story for each engagement over the last decade. 
 
-The second one came out as a more standard, two-pager. It’s simple, with a clean layout with a fair amount of white space. 
+The second one came out as a more standard, two-pager. It’s simple, with a clean layout and fair amount of white space. 
 
 I learned a lot about my own limiting beliefs regarding a résumé from both professionals. 
 
-I’ve applied for a position with the first. Seven days later, an interview was scheduled. That’s never happened to me before. To be fair in the process of tracking the experiment, I was introduced to someone at the company; however, I have instances in the past where even that didn’t actually get me an interview. In one case I actually did a pre-interview before submitting the résumé; after submitting, the feedback received was that if the pre-interview hadn’t taken place I never would have made it—I did not get that job, nor did I get a follow-up attempt.
+I’ve applied for a position with the first. Seven days later, an interview was scheduled. 
 
-I have not applied for anything using the second one.
+That’s never happened to me before. To be fair, in the process of tracking the experiment, I was introduced to someone at the company; however, I have instances in the past where even that didn’t actually get me an interview. In one case I actually did a pre-interview before submitting the résumé; after submitting, the feedback received was that if the pre-interview hadn’t taken place I never would have made it to a phone call—I did not get that job, nor did I get a follow-up attempt.
+
+I have not applied for anything using the second résumé as we are still working together.
 
 The webinar was also helpful and is based on the concepts of *Start with Why* by Simon Sinek.
+
+As this relates to finances, it was definitely a hit to my purse. However, given my 20 year history of submitting résumés and the fact that, at least on paper, I’d like to have this gig, the investment has already paid dividends in improved mental health.
 
 {!! fi-experiments !!}
 
