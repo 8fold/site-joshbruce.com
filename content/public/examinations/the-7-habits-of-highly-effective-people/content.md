@@ -1,20 +1,23 @@
 ---
 title: The 7 Habits of Highly Effective People
+created: 20220413
 ---
 
 # The 7 Habits of Highly Effective People
 
+{!! dateblock !!}
+
 *The 7 Habits of Highly Effective People* was originally published in 1989 and has had multiple editions published since then. There's a certain humility to Covey's presentation of the material. When asked:
 
 > “How did you come up with the ideas in The 7 Habits?”
-> 
+>
 > Covey replied, "I didn't."
-> 
+>
 > In follow-up, Covey was asked, “What do you mean? You wrote the book.”
 >
 > Covey responded, “Yes, I wrote the book, but the principles were known long before me.” He continued, “They are more like natural laws. All I did was put them together, to synthesize them for people.”
 
-The previous is a slightly paraphrased story within the 25th anniversary edition of the book. 
+The previous is a slightly paraphrased story within the 25th anniversary edition of the book.
 
 Covey focuses on perception and paradigms. How do we see the world, our place in it, and what mental models (paradigms) we use to exist. He “was also deeply immersed in an in-depth study of the success literature published in the United States since 1776.” With 200 years worth of material to study, Covey recognized a shift in paradigms.
 
@@ -25,11 +28,11 @@ Covey saw this as a paradigm shift within the success literature. Away from the 
 It's worth noting that Covey didn't view the paradigms of the character and personality ethics as binary with one being inherently good and the other evil, respectively. Instead, he recognized what he called primary and secondary traits and that the character ethic is primary while the personality ethic is secondary, stating:
 
 > I am not suggesting that elements of the Personality Ethic—personality growth, communication skill training, and education in the field of influence strategies and positive thinking—are not beneficial, in fact sometimes essential for success. I believe they are. But these are secondary, not primary traits. […]
-> 
+>
 > If I try to use human influence strategies and tactics of how to get other people to do what I want, to work better, to be more motivated, to like me and each other—while my character is fundamentally flawed, marked by duplicity and insincerity—then, in the long run, I cannot be successful. […]
 >
 > There are, of course, situations where people have character strength but they lack communication skills, and that undoubtedly affects the quality of relationships as well. But the effects are still secondary. […]
-> 
+>
 > In the words of Thoreau, “For every thousand hacking at the leaves of evil, there is one striking at the root.” We can only achieve quantum improvements in our lives as we quit hacking at the leaves of attitude and behavior and get to work on the root, the paradigms from which our attitudes and behaviors flow. […]
 >
 > The Character Ethic is based on the fundamental idea that there are principles that govern human effectiveness—natural laws in the human dimension that are just as real, just as unchanging and unarguably “there” as laws such as gravity are in the physical dimension.
@@ -48,7 +51,7 @@ Covey described the work resulting in The 7 Habits of Highly Effective People bo
 
 Character, as described by Covey, is basically "a composite of our habits." A habit is defined in the book “For our purposes, we will define a habit as the intersection of *knowledge*, *skill*, and *desire*.”
 
-Covey states that the seven habits are not independent "psych-up formulas." Instead in “harmony with the natural laws of growth, they provide an incremental, sequential, highly integrated approach to the development of personal and interpersonal effectiveness.” This nature results in a maturity continuum from dependence, to independence, to interdependence. 
+Covey states that the seven habits are not independent "psych-up formulas." Instead in “harmony with the natural laws of growth, they provide an incremental, sequential, highly integrated approach to the development of personal and interpersonal effectiveness.” This nature results in a maturity continuum from dependence, to independence, to interdependence.
 
 Dependence is the you space: You feed me. Independence is the I space: I feed me. Interdependence is the we space: We feed each other.
 
@@ -62,7 +65,7 @@ Covey describes effectiveness as follows:
 >
 > Excessive focus on P results in ruined health, worn-out machines, depleted bank accounts, and broken relationships. Too much focus on PC is like a person who runs three or four hours a day, bragging about the extra ten years of life it creates, unaware he’s spending them running.
 
-As Covey alludes to, each habit builds on the others; not independent formulas. Without the first habit, the second habit is almost impossible, and without the first three habits the next three are almost impossible as well. In this sense I'm reminded of the concept of holons where each part is a whole made of other holons. In a way, the habits could be laid out as concentric circles; instead of the hourglass-like model used by Covey. (Though Covey's is probably easier to read and the boundaries between each habit might be semipermeable. 
+As Covey alludes to, each habit builds on the others; not independent formulas. Without the first habit, the second habit is almost impossible, and without the first three habits the next three are almost impossible as well. In this sense I'm reminded of the concept of holons where each part is a whole made of other holons. In a way, the habits could be laid out as concentric circles; instead of the hourglass-like model used by Covey. (Though Covey's is probably easier to read and the boundaries between each habit might be semipermeable.
 
 ## Private victory
 
@@ -84,7 +87,7 @@ It is habit of not only taking action, but also taking responsibility as describ
 
 In this way, being proactive is the opposite habit of what has been described as learned helplessness.
 
-Covey does acknowledge that: 
+Covey does acknowledge that:
 
 > [T]his is very hard to accept emotionally, especially if we have had years and years of explaining our misery in the name of circumstance or someone else’s behavior. But until a person can say deeply and honestly, “I am what I am today because of the choices I made yesterday,” that person cannot say, “I choose otherwise."
 
@@ -92,7 +95,7 @@ Covey does acknowledge that:
 
 In a way, being proactive is acknowledging that I am an actor in and upon the world outside myself; not an inanimate object being acted up by the outside world.
 
-This comes by recognizing the difference between what Covey describes as the circle influence and the circle of concern. I can influence myself, my choices, my responses. Further, while I may be concerned about other, their choices, and response, I have little-to-no influence over them—that is their responsibility and circle of influence. It's worth noting that Covey didn't think these were static; instead, a person's circle of influence can grow to encompass more and more of the outside world; or less and less. 
+This comes by recognizing the difference between what Covey describes as the circle influence and the circle of concern. I can influence myself, my choices, my responses. Further, while I may be concerned about other, their choices, and response, I have little-to-no influence over them—that is their responsibility and circle of influence. It's worth noting that Covey didn't think these were static; instead, a person's circle of influence can grow to encompass more and more of the outside world; or less and less.
 
 Another thing Covey points out is that part of being proactive is making and keeping commitments. If someone asks me to do something, I have the responsibility to verify with myself before saying yes or no because I influence where I will and won't be and what I will and will not participate in. Covey states: "The commitments we make to ourselves and to others, and our integrity to those commitments, is the essence and clearest manifestation of our proactivity."
 
@@ -110,7 +113,7 @@ Everything is created twice, Covey says, there is the mental creation and the ph
 
 Habit two is self leadership. Leading yourself toward the mental image of the first creation.
 
-The primary exercise for this habit (chapter) is creating a personal mission statement. The examples are interesting because it doesn't lock you into the sentence or paragraph structure, in fact, the first example shown is a bulleted list. Another is multiple short paragraphs. The objective here is to focus “on what you want to be (character) and to do (contributions and achievements) and on the values or principles upon which being and doing are based.” 
+The primary exercise for this habit (chapter) is creating a personal mission statement. The examples are interesting because it doesn't lock you into the sentence or paragraph structure, in fact, the first example shown is a bulleted list. Another is multiple short paragraphs. The objective here is to focus “on what you want to be (character) and to do (contributions and achievements) and on the values or principles upon which being and doing are based.”
 
 Covey also discusses the importance of being principle-centered instead of say, money-centered, spouse-centered, and so on. This is to move away from being centered around something "out there" and instead being centered around something more timeless and unchanging. Money can be taken away. The same could be said with a spouse. Principles, on the other hand, just exist.
 
@@ -173,7 +176,7 @@ Step one: identify your roles. Step two: identify your goal or goals for the wee
 
 As Covey says, “The key is not to prioritize what’s on your schedule, but to schedule your priorities.” (Note: See calendar blocking.)
 
-For long-term planning we look at our mission, roles, and set goals. For weekly organizing we look at our roles and goals to create plans and schedule or delegate those plans. 
+For long-term planning we look at our mission, roles, and set goals. For weekly organizing we look at our roles and goals to create plans and schedule or delegate those plans.
 
 If you've ever said, "I don't own my schedule" that would be a quadrant one or two position and looks more like second generation. What separates the fourth generation from the second and third is starting from a principle-centered position. We can fit the emergencies and less important things in the gaps between the important things.
 
@@ -193,7 +196,7 @@ The focus is on the result, not the how. The constraints and limitations are in 
 
 > “Before moving into the area of public victory, we should remember that effective interdependence can only be built on a foundation of true independence. Private Victory precedes Public Victory.”
 
-This is when we start working with others. Here, Covey describes something refers to as the emotional bank account. 
+This is when we start working with others. Here, Covey describes something refers to as the emotional bank account.
 
 When in relationship with another person you have an account and the other person has an account. Our interactions, or lack thereof, makes deposits and withdrawals to and from that account. (Note: See The Five Love Languages.)
 
@@ -228,7 +231,7 @@ Covey closes by describe five aspects of achieving the habit.
 Character is the foundation and there are three essential traits:
 
 1. Integrity: The value we place on ourselves.
-2. Maturity: The balance between courage and consideration. 
+2. Maturity: The balance between courage and consideration.
 3. Abundance mentality: If I believe there's plenty to go around, I don't need to worry about taking from or losing what I have. It's the opposite of the scarcity mentality which says, "There's only one pie and the bigger the slice someone else gets, the less there is left for me."
 
 Relationships are next aspect. Back to the emotional bank account. I need to have a high balance with you. You need to have a high balance with me. This increases trust and credibility. When the account balances are high and we're both thinking win-win, it becomes a springboard for the sixth habit.
@@ -243,7 +246,7 @@ Agreements are the next aspect; sometimes referred to as performance agreements 
 
 I was an art major. In the beginning each assignment came with a description of the piece, in general, I was to create. I sculpture made of wood and metal with a minimum and maximum height, width, and depth; this covers the first and second aspect of an agreement. I hand the money in my pocket, myself and possibly friends I call in for help, and the ability to use various tools and materials in the studio; resources. The sculpture needed to be done on a certain date and appear to be finished; accountability. If I didn't meet the deadline I would get a poor grade and, if it seemed finished and was a nice piece, I'd get a high mark; consequences.
 
-Systems are the next aspect. The grading system in the previous story is such a system. My grade was independent of the grades of others; no competition. This system often fosters students working together and helping one another. 
+Systems are the next aspect. The grading system in the previous story is such a system. My grade was independent of the grades of others; no competition. This system often fosters students working together and helping one another.
 
 Processes are the final aspect and speak to how we go about achieving win-win mindsets. Covey describes a four step process as an example:
 
@@ -273,7 +276,7 @@ This requires communication. One model Covey uses rates trust and cooperation on
 > And the combination of those ingredients—the high Emotional Bank Account, thinking Win/Win, and seeking first to understand—creates the ideal environment for synergy.
 >
 > Buddhism calls this “the middle way.” Middle in this sense does not mean compromise; it means higher, like the apex of the triangle. […]
-> 
+>
 > They synergize. They communicate back and forth until they come up with a solution they both feel good about. It’s better than the solutions either of them originally proposed. It’s better than compromise. It’s a synergistic solution that builds P and PC.
 >
 > Instead of a transaction, it’s a transformation. They get what they both really want and build their relationship in the process.
@@ -283,7 +286,7 @@ He discusses the importance of humility in how you see the world:
 > If I think I see the world as it is, why would I want to value the differences? Why would I even want to bother with someone who’s “off track”? My paradigm is that I am objective; I see the world as it is. Everyone else is buried by the minutiae, but I see the larger picture. That’s why they call me a supervisor—I have super vision.
 >
 > If that’s my paradigm, then I will never be effectively interdependent, or even effectively independent, for that matter. I will be limited by the paradigms of my own conditioning.
-> 
+>
 > The person who is truly effective has the humility and reverence to recognize his own perceptual limitations and to appreciate the rich resources available through interaction with the hearts and minds of other human beings. That person values the differences because those differences add to his knowledge, to his understanding of reality. When we’re left to our own experiences, we constantly suffer from a shortage of data.
 
 Covey discusses this habit in various contexts like business, school, and family. Covey closes the habit with the example of the seven habits themself:
@@ -303,9 +306,9 @@ The introduction is the summary:
 > “Can’t you see?” comes the impatient reply. “I’m sawing down this tree.”
 >  
 > “You look exhausted!” you exclaim. “How long have you been at it?”
-> 
+>
 > “Over five hours,” he returns, “and I’m beat! This is hard work.”
-> 
+>
 > “Well, why don’t you take a break for a few minutes and sharpen that saw?” you inquire. “I’m sure it would go a lot faster.”
 >
 > “I don’t have time to sharpen the saw,” the man says emphatically. “I’m too busy sawing!”
