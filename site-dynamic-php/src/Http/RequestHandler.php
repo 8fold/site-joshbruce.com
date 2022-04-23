@@ -84,20 +84,13 @@ class RequestHandler implements RequestHandlerInterface
             if (
                 ! $this->isRequestingXml() and
                 ! $this->isRequestingFile() and
-                file_exists($possible301Path)) {
-                $possible301PathContent = $possible301Path . 'content.md';
-                if (
-                    file_exists($possible301PathContent) and
-                    $f301 = PlainTextFile::at($possible301PathContent, $migrationPath) and
-                    $f301->hasMetadata('alias') and
-                    $frontMatter = $f301->frontMatter() and
-                    $alias = $frontMatter['alias']
-                ) {
-                    return new PsrResponse(
-                        status: 301,
-                        headers: ['Location' => '/' . $alias . '/']
-                    );
-                }
+                file_exists($possible301Path) and
+                $alias = $this->shouldRedirect($possible301Path, $migrationPath)
+            ) {
+                return new PsrResponse(
+                    status: 301,
+                    headers: ['Location' => '/' . $alias . '/']
+                );
             }
 
             $this->status = 404;
@@ -228,6 +221,27 @@ class RequestHandler implements RequestHandlerInterface
         );
 
         return Markdown::markdownConverter()->convert($markdown);
+    }
+
+    private function shouldRedirect(
+        string $path,
+        string $migrationPath
+    ): string|false {
+        $possible301PathContent = $path . 'content.md';
+        if (file_exists($possible301PathContent)) {
+            $f301 = PlainTextFile::at($possible301PathContent, $migrationPath);
+            if ($f301->hasMetadata('alias')) {
+                $frontMatter = $f301->frontMatter();
+                if (
+                    $alias = $frontMatter['alias'] and
+                    is_string($alias)
+                ) {
+                    return $alias;
+
+                }
+            }
+        }
+        return false;
     }
 
     private function isRequestingFile(): bool
