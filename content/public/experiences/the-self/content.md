@@ -1,5 +1,6 @@
 ---
 title: The self
+template: person
 created: 19790717
 updated: 20220417
 ---
