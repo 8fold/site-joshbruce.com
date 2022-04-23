@@ -9,15 +9,15 @@ As it stands, I view productivity as balancing efficiency, effectiveness, scope,
 
 Efficiency is about waste; input minus output. Effectiveness is about quality; not only the quality of the outcome but of the journey in producing the outcome. Scope is about the quantity; this is usually limited to the amount of stuff. Speed is just time over distance.
 
-You can think of these as levers, which is popular in the parlance of our time. 
+You can think of these as levers, which is popular in the parlance of our time.
 
 These qualities are interconnected. If one lever is increased, most likely, other levels will need to be decreased. Further, there is no universal and timeless position. There is only appropriate to the context.
 
 Let’s consider a cheetah and a tortoise.
 
-When the cheetah is moving at top speed, the context is eating and survival; it’s not always that way. Further, the speed lever is topped out and the efficiency lever is very low; the physical qualities of the cheetah are such that it’s essentially hyperventilating as it runs. Finally, if the cheetah is not effective in its hunt, it could either overheat while running or never eat; in either case it dies.
+When the cheetah is moving at top speed, the context is eating and survival; it’s not always moving at top speed. Further, the speed lever is topped out and the efficiency lever is very low; the physical qualities of the cheetah are such that it’s essentially hyperventilating as it runs. Finally, if the cheetah is not effective in its hunt, it could either overheat while running or never eat; in either case it dies.
 
-Meanwhile, the tortoise is physically limited in how fast it can move. The distance the speed lever can go up is not the same as the one for the cheetah. Luckily, the context of the tortoise, when it comes to food, doesn’t require chasing live food. Efficiency is relatively high for breathing and arguably lower for movement.
+Meanwhile, the tortoise is physically limited in how fast it can move. The distance the speed lever can go up is not the same as the one for the cheetah. Luckily, the context of the tortoise, when it comes to eating, doesn’t require chasing live food. Efficiency is relatively high for breathing and arguably lower for movement.
 
 Both the cheetah and tortoise are considered productive, to a certain degree, because they survive.
 
@@ -31,9 +31,9 @@ Consider an Olympic sprinter. Their mission is to go as fast as they can over a 
 
 Agility would be measured by their ability to change direction, stop, or respond to another hazard.
 
-Agility depends on the frequency feedback (feedback loops) and your ability to interpret and adjust based on the feedback.
+Agility depends on the frequency of feedback (feedback loops) and your ability to interpret and adjust based on the feedback.
 
-If I go my entire life without receiving feedback on my negative behavior, if I ever do receive feedback on my negative behavior my agility may be low there. However, if I receive feedback everyday or hour, and I interpret and adjust, I hopefully improve my interactions with other humans.
+Let’s say I have some negative behavior. If I don’t receive feedback on that negative behavior for, say, a decade or longer then it will most likely be harder for me to adjust; low agility. I’m already sprinting with the habit.
 
 ## Productivity theater
 
@@ -41,11 +41,11 @@ There are a couple things often associated with productivity I have a low tolera
 
 For me, this means I’m busy and moving, but I’m not actually improving things around me.
 
-I use to work at McDonald’s. When it comes to standardization, they used to it on lock; been years and not sure they still do. Cooking this type of thing? This how to do it. Food item been on a shelf this long? Do this with it. 
+I use to work at McDonald’s. When it comes to standardization, they used to it on lock; been years and not sure they still do. Cooking this type of thing? This how to do it. Food item been on a shelf this long? Do this with it.
 
 All of it was listed somewhere with a timeline associated to it. Even cleaning different areas of the place.
 
-Sometimes though, not often but sometimes, there was nothing to do; we were idle. 
+Sometimes though, not often but sometimes, there was nothing to do; we were idle.
 
 Being idle was not allowed. So, we were instructed to either leave the floor (eyesight of customers) or stand there looking busy; broom in hand or wiping the same spot on the counter.
 
