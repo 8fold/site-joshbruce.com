@@ -9,13 +9,13 @@ created: 20220413
 
 *The 7 Habits of Highly Effective People* was originally published in 1989 and has had multiple editions published since then. There's a certain humility to Covey's presentation of the material. When asked:
 
-> “How did you come up with the ideas in The 7 Habits?”
+> "How did you come up with the ideas in The 7 Habits?"
 >
 > Covey replied, "I didn't."
 >
-> In follow-up, Covey was asked, “What do you mean? You wrote the book.”
+> In follow-up, Covey was asked, "What do you mean? You wrote the book."
 >
-> Covey responded, “Yes, I wrote the book, but the principles were known long before me.” He continued, “They are more like natural laws. All I did was put them together, to synthesize them for people.”
+> Covey responded, "Yes, I wrote the book, but the principles were known long before me." He continued, "They are more like natural laws. All I did was put them together, to synthesize them for people."
 
 The previous is a slightly paraphrased story within the 25th anniversary edition of the book.
 
