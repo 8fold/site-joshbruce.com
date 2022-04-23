@@ -20,10 +20,8 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 
 use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
-use JoshBruce\SiteDynamic\Documents\FullNav;
 use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 use JoshBruce\SiteDynamic\FileSystem\Aliases;
@@ -78,6 +76,23 @@ class RequestHandler implements RequestHandlerInterface
         }
 
         if ($file->notFound()) {
+            // run check against 2022 migration
+            // TODO: delete 2023/04
+            $migrationPath = $this->environment()->contentRoot() .
+                '/_2022-migration';
+            $possible301Path = $migrationPath . $this->requestPath();
+            if (
+                ! $this->isRequestingXml() and
+                ! $this->isRequestingFile() and
+                file_exists($possible301Path) and
+                $alias = $this->shouldRedirect($possible301Path, $migrationPath)
+            ) {
+                return new PsrResponse(
+                    status: 301,
+                    headers: ['Location' => '/' . $alias . '/']
+                );
+            }
+
             $this->status = 404;
 
             if ($this->request()->getMethod() !== 'HEAD') {
@@ -150,21 +165,18 @@ class RequestHandler implements RequestHandlerInterface
 
         }
 
-        if ($file->alias()) {
-            $path = $this->environment()->contentPrivate() . '/' .
-                $file->alias() . '/' .
-                $this->environment()->contentFilename();
-            $file = PlainTextFileFromAlias::at(
-                $path,
-                $this->environment()->contentPrivate(),
-                $file
-            );
-
-        }
-
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
+        $type = 'BlogPosting';
+        if (
+            $file->hasMetadata('template') and
+            $fm = $file->frontMatter() and
+            $template = $fm['template'] === 'person'
+        ) {
+            $type = 'Person';
+
+        }
 
         // text content response
         return new PsrResponse(
@@ -174,10 +186,13 @@ class RequestHandler implements RequestHandlerInterface
                 HtmlDefault::create(
                     $pageTitle,
                     $description,
-                    ($this->requestPath() === '/')
+                    (
+                        $this->requestPath() === '/' or
+                        $this->requestPath() === '/full-navigation/'
+                    )
                     ? Element::main($body)
                     : Element::article($body)
-                        ->props("typeof BlogPosting", "vocab https://schema.org/"),
+                        ->props("typeof {$type}", "vocab https://schema.org/"),
                     $this->environment()
                 )
             )
@@ -197,7 +212,7 @@ class RequestHandler implements RequestHandlerInterface
         return $this->headers;
     }
 
-    private function body(PlainTextFile|PlainTextFileFromAlias $file): string
+    private function body(PlainTextFile $file): string
     {
         $markdown = Markdown::processPartials(
             $file->content(),
@@ -206,6 +221,27 @@ class RequestHandler implements RequestHandlerInterface
         );
 
         return Markdown::markdownConverter()->convert($markdown);
+    }
+
+    private function shouldRedirect(
+        string $path,
+        string $migrationPath
+    ): string|false {
+        $possible301PathContent = $path . 'content.md';
+        if (file_exists($possible301PathContent)) {
+            $f301 = PlainTextFile::at($possible301PathContent, $migrationPath);
+            if ($f301->hasMetadata('alias')) {
+                $frontMatter = $f301->frontMatter();
+                if (
+                    $alias = $frontMatter['alias'] and
+                    is_string($alias)
+                ) {
+                    return $alias;
+
+                }
+            }
+        }
+        return false;
     }
 
     private function isRequestingFile(): bool

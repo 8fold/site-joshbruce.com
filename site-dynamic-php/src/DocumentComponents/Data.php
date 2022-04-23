@@ -7,12 +7,11 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 class Data
 {
     public static function create(
-        PlainTextFile|PlainTextFileFromAlias $file
+        PlainTextFile $file
     ): string {
         $data = $file->data();
 

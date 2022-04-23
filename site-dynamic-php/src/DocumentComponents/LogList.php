@@ -6,7 +6,6 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 
 use JoshBruce\SiteDynamic\FileSystem\Finder;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -17,14 +16,10 @@ use JoshBruce\SiteDynamic\Content\Markdown;
 class LogList
 {
     public static function create(
-        PlainTextFile|PlainTextFileFromAlias $file,
+        PlainTextFile $file,
         Environment $environment
     ): string {
         $path = $file->path(omitFilename: true);
-        if (is_a($file, PlainTextFileFromAlias::class)) {
-            $file = $file->antialias();
-            $path = $file->path(omitFilename: true);
-        }
 
         $finder = Finder::init(
             $path,

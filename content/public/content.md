@@ -1,35 +1,23 @@
 ---
 title: Josh Bruce's personal site
 created: 20210101
+updated: 20220423
 header_quote: Welcome to the rabbit-hole.
 copyright: Joshua C. Bruce
 copyright_year: 2004
 ---
 
-Hello,
+Welcome to the rabbit-hole.
 
-My name is Josh Bruce (shocker).
+My name is Josh Bruce (shocker); I don't play rugby—do a search—the failings of not having an internet-unique name. With that said, I'm fascinated by human thought ([memetics](https://en.wikipedia.org/wiki/Memetics)), the human experience, and how we interact with each other and those thoughts and ideas.
 
-I've been creating content online since 1998 on various platforms. In 2020 I felt my content had become spread all over the place and I've decided to consolidate it here.
+The site is divided into the following areas:
 
-Fair warning, I’m a multi-faceted being and will do my best to create logical separations and experiences for the various topics discussed.
+1. [My books](/books/) are books I've written or am in the (sometimes extended) process of writing; I'm driven by feedback and pull (demand).
+2. [Essays and editorials](/essays-and-editorials/) are my consolidated thoughts on various topics.
+3. [Examinations and summaries](/examinations/) is where I review and reflect on the media which helps inform my consolidated thoughts.
+4. [Experiences](/experiences/) is where I talk about applying the consolidated thoughts.
 
-With each site iteration I try and push myself related to design, experience, and content. The big push into discomfort for me this time is in the realm of [finance](/finances/) with other content coming back to life in this new home as the mood strikes me.
+I'm a multifaceted being, just like you, and this site covers my whole and authentic [self](/experiences/the-self/).
 
-I tend toward minimalism, which means I delete a lot more content than I keep. Until recently I didn't know a good way to handle this when creating content. I've decided to go with three types of posts:
-
-Evergreen
-:    Entries created once and updated multiple times as information changes; the [investment policy](/finances/investment-policy/), for example. These minimize the number of redundant entries and ensure the information you receive is up to date based on current knowledge and experience.
-
-Serialized
-:    Content ordered by date, each entry acting as a snapshot in time for a larger topic (a traditional blog); the [building wealth paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck/) series, for example.
-
-Ad-Hoc
-:    Similar to serialized content in that it represents a snapshot in time; however, it may not represent a long running topic to warrant more than one entry.
-
-I hope you enjoy!
-
-Cheers,<br>
-Josh
-
-ps. Some content may be flagged for creation but not yet created or moved. This is where you, the reader, can help prioritize the order content gets created and moved by providing feedback and creating "pull" for the creation of that content.
+So, sit back, relax, and get lost for a while with me.

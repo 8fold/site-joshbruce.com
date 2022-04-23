@@ -43,8 +43,8 @@ class Sitemap
 
             $path = $f->path(full: false, omitFilename: true);
 
-            $zeroPriority = '/finances/building-wealth-paycheck-to-paycheck/';
-            $onePriority  = '/finances';
+            $zeroPriority = '/experiences/finances/paycheck-to-paycheck/';
+            $onePriority  = '/experiences/finances';
 
             $priority = 0.5;
             if (str_starts_with($path, $zeroPriority)) {

@@ -9,12 +9,11 @@ use DateTime;
 use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 class DateBlock
 {
     public static function create(
-        PlainTextFile|PlainTextFileFromAlias $file
+        PlainTextFile $file
     ): string {
         $times = [];
 

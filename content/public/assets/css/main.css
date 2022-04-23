@@ -307,6 +307,9 @@ nav > ul{
   padding:var(--0-spacer);
   list-style:var(--none);
 }
+nav > ul > li{
+  margin-top:var(--m-spacer);
+}
 nav > ul > li:first-of-type{
   margin-bottom:var(--m-spacer);
 }

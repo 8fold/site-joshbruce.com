@@ -7,7 +7,6 @@ namespace JoshBruce\SiteDynamic\DocumentComponents;
 use Eightfold\HTMLBuilder\Element;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-use JoshBruce\SiteDynamic\FileSystem\PlainTextFileFromAlias;
 
 use JoshBruce\SiteDynamic\Content\Markdown;
 
@@ -16,7 +15,7 @@ class OriginalContentNotice
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
     public static function create(
-        PlainTextFile|PlainTextFileFromAlias $file
+        PlainTextFile $file
     ): string {
         $parts = explode('/', $file->root());
         $parts = array_slice($parts, 0, -1);
@@ -36,9 +35,6 @@ class OriginalContentNotice
         }
 
         $original = $file->original();
-        if (is_a($file, PlainTextFileFromAlias::class)) {
-            $original = $file->original();
-        }
         list($href, $platform) = explode(' ', $original, 2);
 
         $fContent = preg_replace(

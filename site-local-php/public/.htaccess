@@ -20,11 +20,7 @@ ErrorDocument 500 /error-500.html
 	Header add Allow "GET, HEAD"
 
 	# Handle redirects
-	# Delete 2021 12
-	RedirectMatch 301 /self-improvement /design-your-life/
-	RedirectMatch 301 /self-improvement/motivators /design-your-life/motivators/
-	RedirectMatch 301 /web-development/2021-site-in-depth /web-development/this-site/2021/
-	RedirectMatch 301 /web-development/site-stats /web-development/this-site/stats/
+	# Delete 2022 migration 2023 04
 
 	# Prepare to rewrite
 	RewriteCond %{REQUEST_FILENAME} !-d
