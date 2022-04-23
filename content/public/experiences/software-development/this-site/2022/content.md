@@ -7,7 +7,7 @@ created: 20220423
 
 {!!dateblock!!}
 
-I decided to dramatically change the information architecture of the site. 
+I decided to dramatically change the information architecture of the site.
 
 This type of changes falls under the practices of [pruning the trees](/essays-and-editorials/pruning-the-trees/) and [refactoring, re-engineering, and rebuilding](/essays-and-editorials/software-development/refactoring-re-engineering-and-rebuilding/).
 
@@ -70,12 +70,12 @@ I will use three categories or styles of pages:
 - [web.dev](https://web.dev/measure/): All stats (except PWA) SHOULD be greater than 95 percent.
     1. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
     2. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
-    3. Performance - 100, Accessibility - 100, Best practices - 100, SEO - 100
+    3. n/a
 - [pingdom](https://tools.pingdom.com): Testing from Asia (seemed the longest delay); performance grade MUST be B or higher and SHOULD be A.
-    1. Grade A, Load time 929ms
-    2. Grade A, Load time 2.04s
-    3. Grade A, Load time 880ms
+    1. Grade A, Load time 822ms
+    2. Grade A, Load time 772ms
+    3. n/a
 - [keycdn](https://tools.keycdn.com/speed) (speed test): Testing from Tokyo based on delay for pingdom; grade MUST be A.
-    1. Grade A, Load time 1.05s
-    2. Grade A, Load time 2.42s
-    3. Grade A, Load time 937.25ms
+    1. Grade A, Load time 896ms
+    2. Grade A, Load time 902ms
+    3. n/a
