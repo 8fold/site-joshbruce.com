@@ -12,6 +12,8 @@ Here's where you can see the big picture of me. I will mainly use the exercises 
 
 In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
 
+My name is <span property="name">Josh Bruce</span>.
+
 ## Character
 
 ### Values

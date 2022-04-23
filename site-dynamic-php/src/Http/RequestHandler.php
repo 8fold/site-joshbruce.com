@@ -22,7 +22,6 @@ use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
-use JoshBruce\SiteDynamic\Documents\FullNav;
 use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 use JoshBruce\SiteDynamic\FileSystem\Aliases;
@@ -77,6 +76,30 @@ class RequestHandler implements RequestHandlerInterface
         }
 
         if ($file->notFound()) {
+            // run check against 2022 migration
+            // TODO: delete 2023/04
+            $migrationPath = $this->environment()->contentRoot() .
+                '/_2022-migration';
+            $possible301Path = $migrationPath . $this->requestPath();
+            if (
+                ! $this->isRequestingXml() and
+                ! $this->isRequestingFile() and
+                file_exists($possible301Path)) {
+                $possible301PathContent = $possible301Path . 'content.md';
+                if (
+                    file_exists($possible301PathContent) and
+                    $f301 = PlainTextFile::at($possible301PathContent, $migrationPath) and
+                    $f301->hasMetadata('alias') and
+                    $frontMatter = $f301->frontMatter() and
+                    $alias = $frontMatter['alias']
+                ) {
+                    return new PsrResponse(
+                        status: 301,
+                        headers: ['Location' => '/' . $alias . '/']
+                    );
+                }
+            }
+
             $this->status = 404;
 
             if ($this->request()->getMethod() !== 'HEAD') {
@@ -152,6 +175,15 @@ class RequestHandler implements RequestHandlerInterface
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
+        $type = 'BlogPosting';
+        if (
+            $file->hasMetadata('template') and
+            $fm = $file->frontMatter() and
+            $template = $fm['template'] === 'person'
+        ) {
+            $type = 'Person';
+
+        }
 
         // text content response
         return new PsrResponse(
@@ -161,10 +193,13 @@ class RequestHandler implements RequestHandlerInterface
                 HtmlDefault::create(
                     $pageTitle,
                     $description,
-                    ($this->requestPath() === '/')
+                    (
+                        $this->requestPath() === '/' or
+                        $this->requestPath() === '/full-navigation/'
+                    )
                     ? Element::main($body)
                     : Element::article($body)
-                        ->props("typeof BlogPosting", "vocab https://schema.org/"),
+                        ->props("typeof {$type}", "vocab https://schema.org/"),
                     $this->environment()
                 )
             )
