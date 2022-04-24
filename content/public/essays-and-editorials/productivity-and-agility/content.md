@@ -56,3 +56,15 @@ The value argument here was the psychology of the customers.
 If they don’t see us doing something, they may believe the store isn’t clean or we don’t care for the store; theater.
 
 What I saw this sometimes inspire is a lack of desire to improve processes or become more efficient. It doesn’t matter if I figure out a way to clean the bathroom in half the time, because I’m not rewarded with relaxation afterward. Of course, this also means during busy times I may not get a window of opportunity to clean the bathroom.
+
+## On idleness
+
+One of the promises of advancements in productivity has been more free time.
+
+The premise being: If you can create the same output with less input, you can have more free time. And yet, we often see people who accomplish the ability to increase value delivery while reducing input and we throw more stuff at them. The promised benefit of increased productivity consistently being moved.
+
+I’m a productivity super freak. For some, they want to get stuff done so they can move on to the things they want to do. For me, I often want to get stuff done—specifically in a more productive fashion—because I love the feeling of flow. The more flow and idle time I can create, the more I can respond productively to an emergency.
+
+The hours put in are not related to the value delivered. The effort put in isn’t related to the value delivered.
+
+If the value delivered was based on more time and effort, then [Rube Goldberg machines](https://en.m.wikipedia.org/wiki/Rube_Goldberg_machine) would be *the* machines of industry.
