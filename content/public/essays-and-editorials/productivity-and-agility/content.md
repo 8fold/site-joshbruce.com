@@ -1,6 +1,7 @@
 ---
 title: Productivity and agility
 created: 20220421
+updated: 20220423
 ---
 
 # Productivity and agility
