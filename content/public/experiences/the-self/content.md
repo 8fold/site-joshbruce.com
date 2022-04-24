@@ -33,6 +33,7 @@ My name is <span property="name">Josh Bruce</span>.
 2. Scarcity alone doesn't make something more valuable.
 3. Intent and impact are not mutually inclusive or exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
+5. You never know, for sure, how you’ll respond to a situation until you’re in that situation.
 
 ### Practices
 
