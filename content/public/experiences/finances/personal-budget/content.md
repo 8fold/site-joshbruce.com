@@ -174,7 +174,7 @@ The more primary products used under a single provider, the more tightly coupled
 			- Quaternary credit card: A low rate card with no rewards or similar program.
 			- Line of credit: Used for overdraft protection on the checking account.
 		- Secondary credit union
-			- Primary credit card: A rewards card that has three percent cash back on the types of establishments I uses most.
+			- Primary credit card: A rewards card that has three percent cash back on the types of establishments I use most.
 		- Tertiary bank
 			- Secondary credit card: A rewards card that has one-point-five percent cash back on all purchases, which is what I use for items that don't have better rewards with the other cards.
 		- Apple
