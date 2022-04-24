@@ -206,7 +206,7 @@ Otherwise, I’ll create the entries for the transfers from the income account t
 
 Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account will end up with the desired reserve amount, or close to it, after all the money finishes moving.
 
-Once it’s verified in Wave,I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
+Once it’s verified in Wave, I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
 
 ## Recirculating
 
