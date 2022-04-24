@@ -25,6 +25,7 @@ My name is <span property="name">Josh Bruce</span>.
     - financial legacy over
     - genetic legacy.
 4. Character over personality.
+5. Simplicity 
 
 ### Principles
 

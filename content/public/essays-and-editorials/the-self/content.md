@@ -63,7 +63,7 @@ Feel like an example is in order. I use pen-and-paper (tools) for capturing todo
 
 I have more examples I could throw at you. However, I value simplicity, therefore, I hope the pen-and-paper example demonstrates how starting from anywhere and reflecting on why can you into the other areas as well; anxiety of the blank canvas.
 
-The Motivators exercise is a way to get away from the writer’s block often comes from being asked to figure out what you want to be if you grow up.
+The Motivators exercise is a way to get away from the writer’s block that often comes from being asked to figure out what you want to be if you grow up.
 
 Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defying and capturing it can you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
 
