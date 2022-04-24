@@ -210,7 +210,7 @@ Once it’s verified in Wave, I’ll hop through the apps (or websites) for the 
 
 ## Recirculating
 
-To ensure is dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding.
+To ensure every dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding.
 
 ### Tax account
 
@@ -225,7 +225,7 @@ Next is determining how much to transfer to the savings account.
 - x: Balance of the tax account as of January first of the tax year.
 - y: Total deposits to the tax account during the tax year.
 - z: Total transferred to expense account to pay owed taxes.
-- a: Pool available to transfer to savings account
+- a: Pool available to transfer to savings account.
 
 ```x + y - z = a```
 
@@ -247,14 +247,14 @@ The following events open the possibility of spending from savings (or not setti
 <details>
 <summary>Too much cash</summary>
 
-Barring extenuating circumstances (like owing thousands of dollars), if the balance of cash reserves causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy a single security in the portfolio.
+Barring extenuating circumstances (like owing thousands of dollars), if the balance of savings causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy a single security in the portfolio.
 
 </details>
 
 <details>
 <summary>90 day cool down</summary>
 
-If it’s been 90 days since the last spend from cash reserves, up to 50 percent of the cash reserves balance can be used to buy a single security in the portfolio.
+If it’s been 90 days since the last spend from savings, up to 50 percent of the savings balance can be used to buy a single security in the portfolio.
 
 </details>
 
