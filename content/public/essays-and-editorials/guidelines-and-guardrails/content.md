@@ -9,7 +9,7 @@ created: 20211115
 
 This could also be called something like: X won’t save you.
 
-I used the turn of phrase, X won’t save you, first with a client when they told: If I put the right process in place and execute it repeatedly, then all would be right with the world.
+I used the turn of phrase, X won’t save you, first with a client when they said: If I put the right process in place and execute it repeatedly, then all would be right with the world.
 
 I responded:
 
