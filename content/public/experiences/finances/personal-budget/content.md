@@ -158,7 +158,7 @@ Most of the brokerage accounts are only deposited to and I don’t plan on withd
 
 The accounts at the secondary and tertiary institutions aren't really used.
 
-That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and entries—the prepare part of the action loop. Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
+That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and entries—the prepare part of [the action loop](/books/#triumph-over-time). Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
 
 Typically I'm only investing in one or two holdings per paycheck, so, minimal activity there as well.
 
