@@ -35,7 +35,7 @@ It’s easy to say, “If *those* people would just do X, then life would be bet
 
 Which brings us to guidelines and guardrails.
 
-Imagine you’re standing in the middle of a road. Down the center is a line. To your left and right, there are short barriers. Beyond the barriers is some gravel and glass. Beyond the gravel and glass are cliff edges. At the bottom of the cliff are jagged rocks and boulders and the height is pretty substantial.
+Imagine you’re standing in the middle of a road. Down the center is a line. To your left and right, there are short barriers. Beyond the barriers is some gravel and broken glass. Beyond the gravel and glass are cliff edges. At the bottom of the cliff are jagged rocks and boulders and the height is pretty substantial.
 
 That line down the center of the road is a guideline. The more I stick to it, the safer I am. Of course, sticking so closely to the guideline means I might miss seeing and experiencing the “outside world” ([Buddha as protected prince](https://en.m.wikipedia.org/wiki/Gautama_Buddha) or [all science no philosophy](https://m.imdb.com/title/tt0089886/)). But, that’s my choice to make. My line to draw. My line to toe.
 
@@ -78,7 +78,7 @@ For one client it took us three years and two leadership changes to decide using
 
 My place and context is different, therefore, I had to change my approach; even though I’ve been in similar situations quite often.
 
-It’s easy to fall in the trap that others need to change. And, if we all share the view that others need to change, then nothing can change; from *The 7 Habits* book, “If you think the problem ‘out there,’ that thought is the problem.” For me, it’s an exercise in empathy and self-reflection. It’s about putting myself in their shoes by learning their history and why certain things trigger certain responses. It’s about reflecting on my own history and learning and acknowledging how little I know to be certain.
+It’s easy to fall in the trap that others need to change. And, if we all share the view that others need to change, then nothing can change; from [*The 7 Habits*](/examinations/the-7-habits-of-highly-effective-people/) book, “If you think the problem is ‘out there,’ that thought is the problem.” For me, it’s an exercise in empathy and self-reflection. It’s about putting myself in their shoes by learning their history and why certain things trigger certain responses. It’s about reflecting on my own history and learning and acknowledging how little I know to be certain.
 
 > What gets us into trouble is not what we don’t know. It’s what we know for sure that just ain’t so. (Mark Twain)
 
