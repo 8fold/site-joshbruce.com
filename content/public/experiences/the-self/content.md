@@ -28,10 +28,10 @@ My name is <span property="name">Josh Bruce</span>.
 
 ### Principles
 
-1. Never enter anything without an exit strategy.
-2. There's no such thing as intrinsic value, only perceived value.
-3. Scarcity alone doesn't make something more valuable.
-4. Intent and impact are not mutually inclusive or exclusive.
+1. There's no such thing as intrinsic value, only perceived value.
+2. Scarcity alone doesn't make something more valuable.
+3. Intent and impact are not mutually inclusive or exclusive.
+4. Your mind is for having ideas, not storing them (David Allen).
 
 ### Practices
 
@@ -42,6 +42,8 @@ My name is <span property="name">Josh Bruce</span>.
 5. Extend grace and ask before assuming malicious intent.
 6. Informed consent.
 7. Don’t assume or presume intent.
+8. Never enter anything without an exit strategy.
+9. Don’t become addicted to brain crack (Ze Frank).
 
 ## My oath
 
