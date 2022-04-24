@@ -12,4 +12,5 @@ At the same time, this will be a curated examination and not a catch-all for *ev
 
 ## Books
 
+- [*Getting Things Done*](/examinations/getting-things-done/) by David Allen
 - [*The 7 Habits of Highly Effective People*](/examinations/the-7-habits-of-highly-effective-people/) by Stephen Covey
