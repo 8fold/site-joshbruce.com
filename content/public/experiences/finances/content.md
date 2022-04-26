@@ -11,7 +11,7 @@ updated: 20220416
 
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I have it.
 
-I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is parter of the broader [personal character](/experiences/the-self/).
+I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is part of the broader [personal character](/experiences/the-self/).
 
 ## Values
 
