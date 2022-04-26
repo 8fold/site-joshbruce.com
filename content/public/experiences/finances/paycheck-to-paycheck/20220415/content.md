@@ -39,13 +39,13 @@ I’m thinking of adding another fund.
 
 This would not be an optimization move or because I expect to get higher returns; that would be denying the macro allocation principle. Instead, I’m looking at the overall distribution of the equities portion of the portfolio and wondering if I can tilt the mix away from core a bit.
 
-The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced (or I purchase more lots), more of my value will be in that company. Right now, the average portfolio heavily favors large-cap, growth stocks and I do not; when a company gets close to being too big to fail, it shouldn’t need more of my money to sustain itself.
+The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced (or I purchase more lots), more of my value will be in that company. Right now, the average portfolio heavily favors large-cap, growth stocks and I do not; when a company gets close to being too big to fail, it shouldn’t need more of my money to sustain itself. Further, the average portfolio favors technology, which, having lived through the dot-com bubble as someone trying to break into web design and development, I have my doubts. Finally, if you shift the sector of your company (to technology) because you believe it’ll increase the stock price—not value to your customers—that’s also not me; might feel like a straw man and was an argument stated to me, so, anecdotal, not a straw man.
 
 The extended market fund lets me shift the size factor toward small- and mid-cap companies with the goal being a pretty even split between the three. 
 
 The multi-factor fund I’m pretty sure I’ll go with favors momentum (strong, recent performance), fundamentals (cash flow and conservative over aggressive investing), and value (low price compared to fundamentals). There are multiple identified factors and models out there (recent learning on my part). I’m appreciating the Fama-and-French five-factor model, which doesn’t include momentum, however, incorporates the others found in this fund—to the best of my knowledge. The goal here is to see what shifts to get closer to an even distribution between value and growth with a smaller percentage of core according to the Personal Capital grid. I’m pretty evenly split right now but the portfolio isn’t at its target allocations overall yet.
 
-More specifically, and looking at returns, with the total stock market fund almost 80 percent of the returns are from large-cap companies. Further, half of the returns are specifically from large-cap, growth stocks. That’s not me. When a company hits a certain point in its growth, I would like to cash out a bit; unless I buy the individual stock because I just believe in the company that much and want to be a full-fledged owner instead of an owner by proxy.
+More specifically, and looking at returns, with the total stock market fund almost 80 percent of the returns are from large-cap companies. Further, half of the returns are specifically from large-cap, growth stocks. That’s not me. When a company hits a certain point in its growth, I’d like to cash out a bit; unless I buy the individual stock because I just believe in the company that much and want to be a full-fledged owner instead of an owner by proxy.
 
 By adding the extended market fund, the returns shift to something a bit more evenly distributed. Roughly 28 percent of returns coming from large-cap, growth; roughly 32 percent from mid-cap, growth; and the remainder from small-cap, split almost evenly between growth and value.
 
@@ -79,7 +79,9 @@ Over the years I’ve tried a lot of formats; chronological, functional, hybrid.
 
 Over the years I’ve received at least a thousand rejection letters; not a single interview from the résumé to a job I actually pursued. In fact, my career is kind of like my dating life; they find me.
 
-Anyway, I’m bringing in the professionals. I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
+Anyway, I’m bringing in the professionals. 
+
+I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
 
 We’ll see how it goes. Paying for all that, coupled with market being down, is why my debt is a bit high at the moment.
 
