@@ -2,7 +2,7 @@
 title: The self
 template: person
 created: 19790717
-updated: 20220417
+updated: 20220425
 ---
 
 # The self
@@ -42,6 +42,9 @@ My name is <span property="name">Josh Bruce</span>.
 5. Extend grace and ask before assuming malicious intent.
 6. Informed consent.
 7. Don’t assume or presume intent.
+8. Give credit where it is due and for specific, concrete reasons.
+9. Receive credit graciously and correct attribution when necessary; see previous.
+10. Give and receive compliments and thanks for specific, concrete reasons.
 
 ## My oath
 
