@@ -83,7 +83,7 @@ Anyway, I’m bringing in the professionals.
 
 I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
 
-We’ll see how it goes. Paying for all that, coupled with market being down, is why my debt is a bit high at the moment.
+We’ll see how it goes. Paying for all that, coupled with the market being down, is why my debt is a bit high at the moment.
 
 ## FI experiments
 
