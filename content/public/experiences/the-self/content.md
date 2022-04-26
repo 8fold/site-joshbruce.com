@@ -32,6 +32,7 @@ My name is <span property="name">Josh Bruce</span>.
 2. There's no such thing as intrinsic value, only perceived value.
 3. Scarcity alone doesn't make something more valuable.
 4. Intent and impact are not mutually inclusive or exclusive.
+5. If you want to go fast, go alone. If you want to go far, go together.
 
 ### Practices
 

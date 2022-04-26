@@ -41,10 +41,9 @@ I focus a lot on character and culture; values, principles, practices, and tools
 1. Corporate profits favor owners; owning equity shares makes you an owner of the company.
 2. The borrower is slave to the lender; owning bonds makes you the lender to the government or corporation.
 3. Dividends created in a security don't need to compound in that security.
-4. If you want to go fast, go alone. If you want to go far, go together.
-5. Rising tides lift all boats and don't get caught skinny dipping during when they recede.
-6. Money is food, not blood.
-7. The macro-allocation principle.
+4. Rising tides lift all boats and don't get caught skinny dipping during when they recede.
+5. Money is food, not time or blood.
+6. The macro-allocation principle.
 
 ## Practices
 

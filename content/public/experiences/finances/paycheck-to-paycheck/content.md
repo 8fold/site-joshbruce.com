@@ -23,7 +23,7 @@ These desires and what I knew of myself became my [budgeting method](/finances/b
 
 This series chronicles the moves I started making regarding finances—at least from April of 2021 as I didn't really think about it in the first couple of months of 2021.
 
-I'll probably avoid talking dollar amounts mainly because, for me, the systems and habits should be applicable regardless of dollar amounts. My income can be pretty volatile and I don't want a system that depends on me making a certain amount of money. I think it's easier to adjust percentages and think in those terms than it is to think in terms of dollar amounts—I'm not what I consider to be a numbers-oriented person. Besides, the basic system and habits worked when I was living in my car and still work now that I'm not.
+I'll probably avoid talking dollar amounts mainly because, for me, the systems and habits should be applicable regardless of dollar amounts. My income can be pretty volatile and I don't want a system that depends on me making a certain amount of money. I think it's easier to adjust percentages and think in those terms than it is to think in terms of dollar amounts—I'm not what I consider to be a [numbers-oriented person](/design-your-life/motivators/). Besides, the basic system and habits worked when I was living in my car and still work now that I'm not.
 
 ## Conclusion
 
