@@ -29,13 +29,17 @@ fi-experiments:
 
 Still rebalancing the 401k. It’s going pretty well. 
 
-I’m also finding, for me, checking my portfolio apps everyday is helping my anxiety and fear. Unpacking my relationship with money and being broke.
+I’m finding, for me, checking my portfolio apps everyday is helping my anxiety and fear. Unpacking my relationship with money and being broke.
 
-Since part of this exercise is to become more comfortable talking about money and, by extension improve my own relationships to money, let’s lean into this.
+Since part of this exercise is to become more comfortable talking about money and, by extension, improve my own relationships to money, let’s lean into this.
 
-Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My teenage years, by income, my family would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford; money felt like a heavy burden for half that time and the other half, my early childhood, felt like we were the richest people on the planet—at least for me. From birth to adulthood, early childhood was my happiest and most content time.
+Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My teenage years, by income, my family would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford. 
 
-I graduated college when I was around 25 years old, with over 100,000 [.United States Dollars](USD) in student loan and credit card debt. I could afford to food and rent or make payments on debts, but not both. I ended up going back to school to keep the student loans in deferment; taking on more debt to avoid paying of the debts I had. I’ve never been particularly ambitious when it comes to money or advancing in a career; I’ve also never been particularly adept at writing résumés. With that said, I couldn’t just keep racking up debt the way I was. 
+For my teenage years money felt like a burden. For my childhood I felt like I had the richest family ever. 
+
+From birth to adulthood, early childhood was my happiest and most content time.
+
+I graduated college when I was around 25 years old, with over 100,000 [.United States Dollars](USD) in student loan and credit card debt. I could afford to pay for food and rent or make payments on debts, but not both. I ended up going back to school to keep the student loans in deferment; taking on more debt to avoid defaulting on the debts I had. I’ve never been particularly ambitious when it comes to money or advancing in a career; I’ve also never been particularly adept at writing résumés. With that said, I couldn’t just keep racking up debt the way I was. 
 
 I was attending graduate school when I was living in my car in 2010 around age 30; the homeless graduate student.
 
@@ -45,7 +49,7 @@ The first stroke of luck was a recruiter calling me out of the blue for a gig do
 
 My dad and I were talking one night and I remember telling him how I couldn’t get an interview to find a job. This was during the tail-end of The Great Recession and he said one of those unhelpful positivity lines: It’s the economy, son, no one’s hiring.
 
-I still remember I was driving around the area surrounding the truck stop I would sleep at and I said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurted out, “I’m living in my fucking car!” (Nothing against van life but there’s a difference between choosing it and there’s something to be said for tailoring the message to the audience.)
+I still remember I was driving around the area surrounding the truck stop I slept at and said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurted out, “I’m living in my fucking car!” (Nothing against van life but there’s a difference between choosing it and there’s something to be said for tailoring the message to the audience to get through.)
 
 The tone of the call changed dramatically and he asked, “You want me to get you an interview with the company I work for?”
 
@@ -67,19 +71,23 @@ With that said, from an income perspective, I’m at the [upper side of middle c
 
 And, here we are.
 
-From a lifestyle and influence perspective, I’m at the upper end of lower class. From an income perspective, I’m at the upper end of middle class.
+From a lifestyle and influence perspective, I’m at the lower end of middle class. From an income perspective, I’m at the upper end of middle class.
 
 While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate for their connotation. 
 
 ## Portfolio balance overall 
 
-Because I’m considering a new fund I’ve decided to add it to the spreadsheet and assign a target percent. So, while the balance is fine for the purposes of these entries, the index funds are out of balance. I need more in the mid-cap in the 401k and I need more in the regular total stock market fund.
+Because I’m considering a new fund I’ve decided to add it to the spreadsheet and assign a target percent. So, while the balance is fine for the purposes of these entries, the index funds are out of balance for the portfolio. I need more in the mid-cap in the 401k and I need more in the regular total stock market fund.
 
 Once I get the cost basis of each fund in the 401k to be around the same amount I’ll set the contributions to be split evenly between the three funds. Until then, I plan to continue shifting the gains from the large-cap to the mid-cap.
 
 For the rest of the portfolio I’m going to keep putting money into the total stock market fund until it’s at the new balance targets.
 
 Once those things happen I plan on looking at how the portfolio is distributed according to the Personal Capital chart and decide if the factor-based portfolio is worthwhile.
+
+Right now the grid generated by Personal Capital is feeling more comfortable to me. With that said, it’s still a bit heavy on the growth side, which the multi-factor fund should help tilt.
+
+![9 square grid showing large, mid, and small cap vertically and value, core, growth horizontally. Relatively even distribution vertically while percent of growth increases in each.](/media/paycheck-to-paycheck/pc-grid-20220428.jpg)
 
 ## Odd place
 
