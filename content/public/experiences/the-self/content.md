@@ -46,6 +46,7 @@ My name is <span property="name">Josh Bruce</span>.
 7. Don’t assume or presume intent.
 8. Never enter anything without an exit strategy.
 9. Don’t become addicted to brain crack (Ze Frank).
+10. Follow those you view as “ahead” of you based on your own criteria and aid those who see themselves as behind you based on *their* criteria; it’s a dance, not a line.
 
 ## My oath
 
