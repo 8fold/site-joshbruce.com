@@ -11,7 +11,7 @@ updated: 20220416
 
 I'm not financially ambitious and haven't had a record of earning money; however, I'm pretty good at allocating money when I have it.
 
-I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is parter of the broader [personal character](/experiences/the-self/).
+I focus a lot on character and culture; values, principles, practices, and tools. This page describes my financial character, which is part of the broader [personal character](/experiences/the-self/).
 
 ## Values
 
@@ -42,7 +42,7 @@ I focus a lot on character and culture; values, principles, practices, and tools
 2. The borrower is slave to the lender; owning bonds makes you the lender to the government or corporation.
 3. Dividends created in a security don't need to compound in that security.
 4. If you want to go fast, go alone. If you want to go far, go together.
-5. Rising tides lift all boats and don't get caught skinny dipping during when they recede.
+5. Rising tides lift all boats and don't get caught skinny dipping when they recede.
 6. Money is food, not blood.
 7. The macro-allocation principle.
 
