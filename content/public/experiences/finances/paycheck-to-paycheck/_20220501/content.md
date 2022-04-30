@@ -2,23 +2,23 @@
 title: May 1st, 2022 paycheck
 created: 20220501
 data:
-- [Debt, 0, 1, 2]
-- [Cash, 3, 9, 8.2]
-- [Low correlation, 0, 1, 0.9]
+- [Debt, 0, 1, 0.1]
+- [Cash, 3, 9, 6.9]
+- [Low correlation, 0, 1, 1]
 - [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 33.8]
-- [US equities - mid, 25, 38, 27.3]
-- [US equities - large, 25, 37, 27.7]
+- [US equities - small, 25, 38, 34.5]
+- [US equities - mid, 25, 38, 28]
+- [US equities - large, 25, 37, 27.5]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 41.35, 41.96, 47.71]
-- [0.2, 38.06, 38.43, 43.83]
-- [0.4, 38.07, 38.40, 43.74]
-- [0.6, 38.29, 38.60, 43.54]
-- [0.8, 39.04, 39.35, 43.36]
-- [1.0, 43.02, 43.35, 46.87]
-- [1.1, 42.92, 43.24, 46.76]
-- [1.2, 42.89, 43.21, 46.73]
+- [0.0, 39, 41.96, 47.71]
+- [0.2, 35.92, 38.43, 43.83]
+- [0.4, 36.09, 38.40, 43.74]
+- [0.6, 36.47, 38.60, 43.54]
+- [0.8, 37.37, 39.35, 43.36]
+- [1.0, 41.33, 43.35, 46.87]
+- [1.1, 41.22, 43.24, 46.76]
+- [1.2, 41.19, 43.21, 46.73]
 ---
 
 # May 1st, 2022 paycheck
@@ -31,9 +31,9 @@ Still rebalancing the 401k. It’s going pretty well.
 
 I’m finding, for me, checking my portfolio apps everyday is helping my anxiety and fear. Unpacking my relationship with money and being broke.
 
-Since part of this exercise is to become more comfortable talking about money and, by extension, improve my own relationships to money, let’s lean into this.
+Since part of this exercise is to become more comfortable talking about money and, by extension, improve my own relationship to money, let’s lean into this.
 
-Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My teenage years, by income, my family would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford. 
+Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My family income when I was a teenager would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active duty military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford. 
 
 For my teenage years money felt like a burden. For my childhood I felt like I had the richest family ever. 
 
@@ -47,7 +47,7 @@ Luck struck me twice and I dropped out of graduate school with one class to go, 
 
 The first stroke of luck was a recruiter calling me out of the blue for a gig doing content entry for an online content company. They paid almost 60,000 USD per year to have me copy content from documents and paste the content into online forms; this is when I really started reconsidering the whole value versus time trade when it came to money. A few months into that gig the second bit of luck struck.
 
-My dad and I were talking one night and I remember telling him how I couldn’t get an interview to find a job. This was during the tail-end of The Great Recession and he said one of those unhelpful positivity lines: It’s the economy, son, no one’s hiring.
+My dad and I were talking one night and I remember telling him how I couldn’t get an interview to land a job. This was during the tail-end of The Great Recession and he said one of those unhelpful positivity lines: It’s the economy, son, no one’s hiring.
 
 I still remember I was driving around the area surrounding the truck stop I slept at and said, “You know, I’m calling bullshit on that, pops. I apply to over a dozen jobs a day. People are hiring; they’re just not hiring me.” Then I just blurted out, “I’m living in my fucking car!” (Nothing against van life but there’s a difference between choosing it and there’s something to be said for tailoring the message to the audience to get through.)
 
@@ -57,7 +57,9 @@ I said, “I’m not really down for nepotism, pops.”
 
 He replied, “I can’t get you the job, but I can get you the interview.”
 
-I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; it was required for my public speaking course. The panel interview went well; I didn’t get the job.
+I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; it was required for my public speaking course in college. 
+
+The panel interview went well; I didn’t get the job.
 
 But apparently I impressed one of the panelists well enough that he decided I needed to work there and he got me an interview for a different job; friends to this day.
 
@@ -65,7 +67,7 @@ So, putting the stories in chronological order: homeless and working temporarily
 
 With a decade of being in poverty based on my own income and homeless for a year, I reflected a lot and was determined to not let my lifestyle creep—ever. Instead, I focused on being content with what I had.
 
-It was like being a kid again. Back from that time when I felt like we were the richest family ever; only it was just me.
+It was like being a kid again. Back from the time when I felt like we were the richest family ever; only it was just me.
 
 With that said, from an income perspective, I’m at the [upper side of middle class](https://www.investopedia.com/financial-edge/0912/which-income-class-are-you.aspx). I became debt-free at the tail-end of 2020.
 
@@ -73,7 +75,7 @@ And, here we are.
 
 From a lifestyle and influence perspective, I’m at the lower end of middle class. From an income perspective, I’m at the upper end of middle class.
 
-While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate for their connotation. 
+While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate me for their connotation. 
 
 ## Portfolio balance overall 
 
@@ -89,7 +91,7 @@ Right now the grid generated by Personal Capital is feeling more comfortable to 
 
 ![9 square grid showing large, mid, and small cap vertically and value, core, growth horizontally. Relatively even distribution vertically while percent of growth increases in each.](/media/paycheck-to-paycheck/pc-grid-20220428.jpg)
 
-I will add, for the [.financial independence](FI) experiments, each portfolio variation except the all equities allocation has a rebalancing token available. According to my [personal investment policy](/experiences/finances/investment-policy/#rebalancing-the-portfolio) I have the ability to rebalance all of them except Mark 0. The next step is to wait until July, because that’s the earliest I would be allowed to rebalance the portfolios according to the rules I’ve set for myself.
+I will add, for the [.financial independence](FI) experiments, each portfolio variation except the all equities allocation has a rebalancing token available. According to my [personal investment policy](/experiences/finances/investment-policy/#rebalancing-the-portfolio) I have the ability to rebalance all of them except Mark 0. The next step is to wait until July, because that’s the earliest I’d be allowed to rebalance the portfolios according to the rules I’ve set for myself.
 
 It’s worth noting that because I’m in the process of closing my M1 Finance account, I may not rebalance at all; choosing to withdraw the funds instead. I’m also not dollar cost averaging into the fund portfolios at the moment and won’t be rebalancing them, even if they have a token available. I may leave the account open for a little while longer for the purposes of the FI experiments, which are proving viable during this downward swing.
 
@@ -99,7 +101,7 @@ Feeling better.
 
 Part of the professional résumé writing experience is sending the résumé to a position. While I’m not actively looking, I am participating in the process; more of a passive thing.
 
-I have hired two different professional résumé writers and signed up for a webinar where we’ll learn how to improve our résumés.
+I’ve hired two different professional résumé writers and signed up for a webinar where we’ll learn how to improve our résumés.
 
 For the purposes of experimentation I started both professionals from the same original résumé.
 
@@ -107,21 +109,27 @@ The first résumé came out as a more functional, one-pager. It has some graphic
 
 The second one came out as a more standard, two-pager. It’s simple, with a clean layout and fair amount of white space. 
 
+The second professional also helped me with the LinkedIn profile.
+
 I learned a lot about my own limiting beliefs regarding a résumé from both professionals. 
 
-I’ve applied for a position with the first. Seven days later, an interview was scheduled. Five days later, I had the initial discussion. I’m supposed to hear from someone who can answer benefit questions and there three more rounds; if I make it.
+Using the one-pager résumé I applied to a position that has me written all over it. I used the second resume to apply to the top gig I sent to that professional.
 
-Getting an interview, much less this quickly, has never happened to me before. 
+The day after updating the LinkedIn profile two recruiters reached out to me. I followed up with both and the first requested a résumé; I sent the one-pager. 
 
-To be fair, in the process of tracking the experiment, I was introduced to someone at the company; however, I have instances in the past where even that didn’t actually get me an interview. In one case I actually did a pre-interview before submitting the résumé; after submitting, the feedback received was that if the pre-interview hadn’t taken place I never would have made it to a phone call (according to the recruiter)—I did not get that job and I didn’t get an interview from a follow-up attempt.
+This has never happened to me.
 
-I have not applied for anything using the second résumé as we are still working together.
+For the first position using the one-pager I got an interview a week later; I believe someone from benefits is supposed to reach out to me soon. For the second position using the one-pager it’s been less than two days and I’ll be doing a first round video interview by the time this is published.
 
-The webinar was also helpful and is based on the concepts of *Start with Why* by Simon Sinek.
+For the position I applied for with the two-pager I haven’t heard back yet, but it’s only been a couple of days.
 
-As this relates to finances, the expense was definitely a hit to my purse. However, given my 20 year history of submitting résumés and the fact that, at least on paper, I’d like to have the gig I interviewed for, the investment has already paid dividends in improved mental health.
+Really appreciating the first company a great deal and had a lot of fun at the interview.
 
-I finished up with the second professional who improved [my LinkedIn profile](https://www.linkedin.com/in/josh-c-bruce). This too has already started providing dividends. Definitely improving my mood and making me consider that social media platform in a different light.
+To be fair, in the process of tracking the experiment, I was introduced to someone at the first company; however, I have instances in the past where even that didn’t actually get me an interview. In one case (in 2022) I did a pre-interview before submitting my old résumé; after submitting, the feedback received was that if the pre-interview hadn’t taken place and the person didn’t tell the recruiter about me, I never would have made it to a phone call—I didn’t get that job and I didn’t get an interview from a follow-up attempt a month or so later.
+
+The webinar was helpful and is based on the concepts of *Start with Why* by Simon Sinek.
+
+As this relates to finances, the expense was definitely a hit to my purse. However, given my 20 year history of submitting résumés the investment has already paid dividends in improved mental health.
 
 {!! fi-experiments !!}
 
