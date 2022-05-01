@@ -9,7 +9,7 @@ This is what can be described as the I-perspective.
 
 The individual.
 
-There are three questions humans tend to ask themselves and seek to answer for themselves during the lifetime:
+There are three questions humans tend to ask themselves and seek to answer for themselves during their lifetime:
 
 1. Where did I come from?
 2. Where am I going?
@@ -25,7 +25,7 @@ With that out of the way, let's focus on the third question; in pragmatic terms.
 
 (This third question is why the self-help—or self-improvement—industry exists. An estimate from [MarketResearch.com](https://blog.marketresearch.com/the-10-billion-self-improvement-market-adjusts-to-new-generation) says the self-help industry in the United States will grow to over 13 billion [.United States Dollars](USD) in 2022.)
 
-I haven't meant an individual yet who would deny that, at the highest level, they are here to lead a fulfilling life as defined by them.
+I haven't met an individual yet who would deny that, at the highest level, they are here to lead a fulfilling life as defined by them.
 
 Even when we subjugate our desires to the will of another, as long as we are doing it willingly, that's a fulfilling life.
 
@@ -35,7 +35,7 @@ That's a bit abstract and we'll need to get more concrete. Exploring this questi
 
 ## Character 
 
-Character is to individual what culture is to [the group](/essays-and-editorials/the-group/).
+Character is to the individual what culture is to [the group](/essays-and-editorials/the-group/).
 
 Character is your personal set of values, principles, practices, and tools.
 
@@ -55,7 +55,7 @@ A theme inherent to my practice of coaching individuals is awareness and intent;
 
 Some of us are unaware and unintentional in our character. Many of the exercises I use and have developed are designed to increase awareness to manifest intent.
 
-The Motivators Exercise, for example, is a values-oriented exercise. The 5 Ps Exercise focuses on identifying principles and practices. Tools come into play when we explore how you accomplish things or how your values, principles, and practices are made manifest; the Motivators and 5 Ps exercises are tools I use to help others practice awareness and intent, which I value.
+The [Motivators Exercise](/essays-and-editorials/motivators/), for example, is a values-oriented exercise. [The 5 Ps Exercise](/essays-and-editorials/the-5-ps/) focuses on identifying principles and practices. Tools come into play when we explore how you accomplish things or how your values, principles, and practices are made manifest; the Motivators and 5 Ps exercises are tools I use to help others practice awareness and intent, which I value.
 
 Identifying your values, principles, practices (or habits), and tools is nonlinear. You don’t need to figure out your life’s purpose *before* determining your values *before* stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that’s a practice. Or start listing tools you use and ask why you use that tool.
 
@@ -63,8 +63,8 @@ Feel like an example is in order. I use pen-and-paper (tools) for capturing todo
 
 I have more examples I could throw at you. However, I value simplicity, therefore, I hope the pen-and-paper example demonstrates how starting from anywhere and reflecting on why can you into the other areas as well; anxiety of the blank canvas.
 
-The Motivators exercise is a way to get away from the writer’s block often comes from being asked to figure out what you want to be if you grow up.
+The Motivators exercise is a way to get away from the writer’s block that often comes from being asked to figure out what you want to be if you grow up.
 
-Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defying and capturing it can you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
+Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defining and capturing it can help you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
 
 When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/about/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.

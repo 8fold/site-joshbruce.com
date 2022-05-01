@@ -158,7 +158,7 @@ Most of the brokerage accounts are only deposited to and I don’t plan on withd
 
 The accounts at the secondary and tertiary institutions aren't really used.
 
-That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and entries—the prepare part of the action loop. Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
+That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and entries—the prepare part of [the action loop](/books/#triumph-over-time). Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
 
 Typically I'm only investing in one or two holdings per paycheck, so, minimal activity there as well.
 
@@ -174,7 +174,7 @@ The more primary products used under a single provider, the more tightly coupled
 			- Quaternary credit card: A low rate card with no rewards or similar program.
 			- Line of credit: Used for overdraft protection on the checking account.
 		- Secondary credit union
-			- Primary credit card: A rewards card that has three percent cash back on the types of establishments I uses most.
+			- Primary credit card: A rewards card that has three percent cash back on the types of establishments I use most.
 		- Tertiary bank
 			- Secondary credit card: A rewards card that has one-point-five percent cash back on all purchases, which is what I use for items that don't have better rewards with the other cards.
 		- Apple
@@ -206,11 +206,11 @@ Otherwise, I’ll create the entries for the transfers from the income account t
 
 Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account will end up with the desired reserve amount, or close to it, after all the money finishes moving.
 
-Once it’s verified in Wave,I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
+Once it’s verified in Wave, I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
 
 ## Recirculating
 
-To ensure is dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding.
+To ensure every dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding.
 
 ### Tax account
 
@@ -225,7 +225,7 @@ Next is determining how much to transfer to the savings account.
 - x: Balance of the tax account as of January first of the tax year.
 - y: Total deposits to the tax account during the tax year.
 - z: Total transferred to expense account to pay owed taxes.
-- a: Pool available to transfer to savings account
+- a: Pool available to transfer to savings account.
 
 ```x + y - z = a```
 
@@ -247,14 +247,14 @@ The following events open the possibility of spending from savings (or not setti
 <details>
 <summary>Too much cash</summary>
 
-Barring extenuating circumstances (like owing thousands of dollars), if the balance of cash reserves causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy a single security in the portfolio.
+Barring extenuating circumstances (like owing thousands of dollars), if the balance of savings causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy a single security in the portfolio.
 
 </details>
 
 <details>
 <summary>90 day cool down</summary>
 
-If it’s been 90 days since the last spend from cash reserves, up to 50 percent of the cash reserves balance can be used to buy a single security in the portfolio.
+If it’s been 90 days since the last spend from savings, up to 50 percent of the savings balance can be used to buy a single security in the portfolio.
 
 </details>
 

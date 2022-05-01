@@ -25,14 +25,16 @@ My name is <span property="name">Josh Bruce</span>.
     - financial legacy over
     - genetic legacy.
 4. Character over personality.
+5. Simplicity 
 
 ### Principles
 
-1. Never enter anything without an exit strategy.
-2. There's no such thing as intrinsic value, only perceived value.
-3. Scarcity alone doesn't make something more valuable.
-4. Intent and impact are not mutually inclusive or exclusive.
-5. If you want to go fast, go alone. If you want to go far, go together.
+1. There's no such thing as intrinsic value, only perceived value.
+2. Scarcity alone doesn't make something more valuable.
+3. Intent and impact are not mutually inclusive or exclusive.
+4. Your mind is for having ideas, not storing them (David Allen).
+5. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
+6. Negatively criticizing something is not the same as thinking critically about the thing.
 
 ### Practices
 
@@ -43,13 +45,20 @@ My name is <span property="name">Josh Bruce</span>.
 5. Extend grace and ask before assuming malicious intent.
 6. Informed consent.
 7. Don’t assume or presume intent.
-8. Give credit where it is due and for specific, concrete reasons.
-9. Receive credit graciously and correct attribution when necessary; see previous.
-10. Give and receive compliments and thanks for specific, concrete reasons.
+8. Never enter anything without an exit strategy.
+9. Don’t become addicted to brain crack (Ze Frank).
+10. Follow those you view as “ahead” of you based on your own criteria (you choose) and aid those who see themselves as behind you based on *their* criteria (they choose); it’s a dance, not a line.
+11. Give credit and compliments where they are due.
+    - Accept credit and compliments graciously.
+    - Correct credit and compliments if another is the reason (see parent).
+12. Be specific with credit and compliments.
+13. Whenever possible, praise in public; criticize in private. 
+14. [The 7 habits of highly effective people](/examinations/the-7-habits-of-highly-effective-people/).
+15. Have fewer opinions about people and more about behavior; behaviors can change, but Sam is always Sam.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
 
 I reflected on it for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 
