@@ -2,7 +2,7 @@
 title: The self
 template: person
 created: 19790717
-updated: 20220417
+updated: 20220425
 ---
 
 # The self
@@ -33,8 +33,9 @@ My name is <span property="name">Josh Bruce</span>.
 2. Scarcity alone doesn't make something more valuable.
 3. Intent and impact are not mutually inclusive or exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
-5. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
-6. Negatively criticizing something is not the same as thinking critically about the thing.
+5. If you want to go fast, go alone. If you want to go far, go together.
+6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
+7. Negatively criticizing something is not the same as thinking critically about the thing.
 
 ### Practices
 
@@ -58,7 +59,7 @@ My name is <span property="name">Josh Bruce</span>.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
 
 I reflected on it for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 

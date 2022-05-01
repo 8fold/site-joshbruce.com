@@ -41,18 +41,17 @@ I focus a lot on character and culture; values, principles, practices, and tools
 1. Corporate profits favor owners; owning equity shares makes you an owner of the company.
 2. The borrower is slave to the lender; owning bonds makes you the lender to the government or corporation.
 3. Dividends created in a security don't need to compound in that security.
-4. If you want to go fast, go alone. If you want to go far, go together.
-5. Rising tides lift all boats and don't get caught skinny dipping when they recede.
-6. Money is food, not blood.
-7. The macro-allocation principle.
+4. Rising tides lift all boats and don't get caught skinny dipping when they recede.
+5. Money is food, not blood.
+6. The macro-allocation principle.
 
 ## Practices
 
 1. Maximize revenue, minimize spending, save and invest the gap.
-2. Combined expense ratio less than 1%.
+2. Combined expense ratio less than one percent.
 5. Pay yourself first.
-6. Promote dividends earned in securities returning less than 7% per year to securities that historically return higher.
-7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
+6. Promote dividends earned in securities returning less than seven percent per year to securities that historically return higher.
+7. Chasing returns should not be the basis of any decision (see previous).
 8. [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/).
 9. [Personal budget](/experiences/finances/personal-budget/).
 9. No leveraged investing.
@@ -60,8 +59,8 @@ I focus a lot on character and culture; values, principles, practices, and tools
 
 ## Tools
 
-1. [Personal Capital](https://www.personalcapital.com) for tracking the majority of my portfolio; some providers can’t be linked, but it gets me close enough. In particular I appreciate the "You Index" and "Asset Allocation" tools.
-2. [Wave](https://www.waveapps.com) for personal and business accounting.
+1. [Personal Capital](https://www.personalcapital.com) for tracking the majority of my portfolio; some providers can’t be linked, but it’s close enough. In particular I appreciate the "You Index" and "Asset Allocation" tools.
+2. [Wave](https://www.waveapps.com) for personal and business bookkeeping.
 3. [Stripe](https://stripe.com) and [Square](https://squareup.com/us/en) for payment processing, appointments, and the like.
 4. One insured spending account: All non-business outflows come from this account.
 5. One or more federally insured, interest bearing savings accounts.
