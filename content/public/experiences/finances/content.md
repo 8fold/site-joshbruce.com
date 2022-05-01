@@ -50,7 +50,7 @@ I focus a lot on character and culture; values, principles, practices, and tools
 1. Maximize revenue, minimize spending, save and invest the gap.
 2. Combined expense ratio less than 1%.
 5. Pay yourself first.
-6. Promote dividends earned in securities returning less than 7% per year to securities that historically return higher.
+6. Promote dividends earned in securities returning less than seven percent per year to securities that historically return higher.
 7. Higher rates of return should be lowest priority consideration when making decisions (see previous).
 8. [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/).
 9. [Personal budget](/experiences/finances/personal-budget/).
