@@ -33,8 +33,9 @@ My name is <span property="name">Josh Bruce</span>.
 2. Scarcity alone doesn't make something more valuable.
 3. Intent and impact are not mutually inclusive or exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
-5. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
-6. Negatively criticizing something is not the same as thinking critically about the thing.
+5. If you want to go fast, go alone. If you want to go far, go together.
+6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
+7. Negatively criticizing something is not the same as thinking critically about the thing.
 
 ### Practices
 
