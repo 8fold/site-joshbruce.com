@@ -5,6 +5,8 @@ created: 20220414
 
 # Budgeting
 
+{!! dateblock !!}
+
 I'm torn on the word "budget." I think the connotation has overtaken the denotation (common use), which is:
 
 > an estimate of income and expenditure for a set period of time.
