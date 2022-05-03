@@ -8,7 +8,6 @@ update: 20220502
 
 {!! dateblock !!}
 
-
 There is no money, only food. 
 
 Every dollar we spend turns into food for someone somewhere at some point.
