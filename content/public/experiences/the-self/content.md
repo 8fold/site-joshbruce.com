@@ -25,7 +25,7 @@ My name is <span property="name">Josh Bruce</span>.
     - financial legacy over
     - genetic legacy.
 4. Character over personality.
-5. Simplicity 
+5. Simplicity
 
 ### Principles
 
@@ -36,6 +36,7 @@ My name is <span property="name">Josh Bruce</span>.
 5. If you want to go fast, go alone. If you want to go far, go together.
 6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
+8. Great value doesn't require grand gestures.
 
 ### Practices
 
@@ -53,7 +54,7 @@ My name is <span property="name">Josh Bruce</span>.
     - Accept credit and compliments graciously.
     - Correct credit and compliments if another is the reason (see parent).
 12. Be specific with credit and compliments.
-13. Whenever possible, praise in public; criticize in private. 
+13. Whenever possible, praise in public; criticize in private.
 14. [The 7 habits of highly effective people](/examinations/the-7-habits-of-highly-effective-people/).
 15. Have fewer opinions about people and more about behavior; behaviors can change, but Sam is always Sam.
 
