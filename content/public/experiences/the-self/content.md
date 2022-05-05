@@ -37,6 +37,7 @@ My name is <span property="name">Josh Bruce</span>.
 6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
 8. Great value doesn't require grand gestures.
+9. Final doesn't exist.
 
 ### Practices
 
