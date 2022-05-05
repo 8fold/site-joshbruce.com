@@ -1,5 +1,5 @@
 ---
-title: May 15th, 2022 paycheck
+title: May 15h, 2022 paycheck
 created: 20220515
 data:
 - [Debt, 0, 1, 0.1]
@@ -21,15 +21,17 @@ fi-experiments:
 - [1.2, 41.19, 41.19, 46.73]
 ---
 
-# May 25th, 2022 paycheck
+# May 15th, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
-Believe I did the final sell-to-but rebalancing in the 401k. The current values for all three funds are relatively similar. I’m going to shift to roughly even distribution across all three from the contributions made.
+Believe I did the final sell-to-buy rebalancing in the 401k. The current values for all three funds are similar. I’m going to shift to roughly even distribution across all three from the contributions made after this paycheck.
 
-## Portfolio balance overall 
+The portfolio balance, based on the individual funds (not the same as the allocations used for the list above), is mostly in balance. I'm hoping over the next couple of paychecks the percentages will be between somewhere in the middle of the bands and I can see how the Personal Capital grid shakes out.
+
+Right now it's still about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on the growth side, and will most likely stay that way by the time I get where I want to be with the percentage-based allocations. So, June or July I'll decide whether to introduce the multi-factor fund.
 
 ## Odd place
 
