@@ -1,6 +1,6 @@
 ---
-title: May 1st, 2022 paycheck
-created: 20220501
+title: May 15th, 2022 paycheck
+created: 20220515
 data:
 - [Debt, 0, 1, 0.1]
 - [Cash, 3, 9, 6.9]
