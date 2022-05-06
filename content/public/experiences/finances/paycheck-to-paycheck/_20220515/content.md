@@ -27,11 +27,11 @@ fi-experiments:
 
 {!! data !!}
 
-Believe I did the final sell-to-buy rebalancing in the 401k. The current values for all three funds are similar. I’m going to shift to roughly even distribution across all three from the contributions made after this paycheck.
+Believe I did the final sell-to-buy rebalancing in the 401k. The current values for all three funds are similar. I’m going to shift to roughly even distribution across all three after this paycheck.
 
-The portfolio balance, based on the individual funds (not the same as the allocations used for the list above), is mostly in balance. I'm hoping over the next couple of paychecks the percentages will be between somewhere in the middle of the bands and I can see how the Personal Capital grid shakes out.
+The portfolio balance, based on individual funds (not the same as allocations used for the list above), is mostly in balance. Need more total market and less extended market. I'm hoping that over the next couple of paychecks they will be close to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in a bit early.
 
-Right now it's still about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on the growth side, and will most likely stay that way by the time I get where I want to be with the percentage-based allocations. So, June or July I'll decide whether to introduce the multi-factor fund.
+Right now the grid is about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on the growth side, and will likely stay that way by the time I get where I want to be with the percentage-based allocations. So, June or July I'll decide whether to introduce the multi-factor fund.
 
 ## Odd place
 
