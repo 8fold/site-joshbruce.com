@@ -2,6 +2,8 @@
 title: My books
 ---
 
+# My books
+
 I tend to favor publishing ebooks, which may be updated on occasion; buy once, keep forever. Once a print version is made available, however, the book will be considered a first edition and no content changes will be made, unless a new edition is published. I'm still working through how this works for audiobook versions; how much like an ebook are they?
 
 ## Triumph over Time
