@@ -29,6 +29,8 @@ fi-experiments:
 
 Believe I did the final sell-to-but rebalancing in the 401k. The current values for all three funds are relatively similar. I’m going to shift to roughly even distribution across all three from the contributions made.
 
+This time I didn’t put anything in savings per [my personal budget](/experiences/finances/personal-budget/) to buy a dip. I would’ve been able to use 15 percent of the total savings balance to purchase the total United States equity fund.
+
 ## Portfolio balance overall 
 
 ## Odd place
