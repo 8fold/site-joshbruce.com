@@ -27,14 +27,13 @@ fi-experiments:
 
 {!! data !!}
 
-Believe I did the final sell-to-buy rebalancing in the 401k. The current values for all three funds are similar. I’m going to shift to roughly even distribution across all three after this paycheck.
+Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to an even distribution across all three funds.
 
-This time I didn’t put anything in savings per [my personal budget](/experiences/finances/personal-budget/) to buy a dip. I would’ve been able to use 15 percent of the total savings balance to purchase the total United States equity fund.
+I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took that along with what I normally would have invested; see per [my personal budget](/experiences/finances/personal-budget/) to buy a dip.
 
-## Portfolio balance overall 
-The portfolio balance, based on individual funds (not the same as allocations used for the list above), is mostly in balance. Need more total market and less extended market. I'm hoping that over the next couple of paychecks they will be close to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in a bit early.
+The portfolio balance, based on individual funds (not the same as allocations used for the list above), is in balance. Need more total market and less extended market to get closer to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in a bit early.
 
-Right now the grid is about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on the growth side, and will likely stay that way by the time I get where I want to be with the percentage-based allocations. So, June or July I'll decide whether to introduce the multi-factor fund.
+Right now the grid is about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on growth, and will likely stay that way by the time I get where I want to be with the percentage-based allocations for individual funds. So, June or July I'll decide whether to introduce the multi-factor fund.
 
 ## Odd place
 
@@ -44,9 +43,9 @@ I’ve actually had more recruiters and leads than ever. It’s quite a strange 
 
 I’m also feeling like the relationship rotation thing is working out.
 
-I’ve also modified my weekly review a bit. Before I had a calendar event set up as the tickler. I’d open the event and translate the content to my actions list. Now I’m using the Reminders app and seeing how that goes. I don’t think I’ll ever abandon the notebook or notebook-like setup though. 
+I’ve modified my weekly review a bit. Before I had a calendar event set up as the tickler. I’d open the event and translate the content to my [actions list](/examinations/getting-things-done/). Now I’m using the Reminders app and seeing how that goes; think I’ll always have a notebook as well though.
 
-When I was in graduate school for secondary education I had to get observation hours by going schools and, well, observing classes. On school I went to almost didn’t let me come back because I used my phone for note taking and whatnot. The perception was that I was playing games or sending text messages; not what I was actually doing. This was around 2010 though, so, not sure the stigma is still there. However, handwriting is still faster for me compared to data entry in my phone.
+When I was in graduate school for secondary education I had to get observation hours by going to schools and, well, observing classes. One school I went to almost didn’t let me come back because I used my phone for note taking and whatnot. The perception was I was playing games or sending text messages; not what I was actually doing. This was around 2010 though, so, not sure the stigma is still there. However, handwriting is faster for me compared to data entry on my phone.
 
 So, if it’s something that must be done on a certain date, it goes on the calendar. If it’s a recurring, tickler type thing, it goes in the Reminders app. Everything else will most likely be in a notebook somewhere.
 
