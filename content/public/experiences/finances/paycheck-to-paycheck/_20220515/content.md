@@ -27,13 +27,17 @@ fi-experiments:
 
 {!! data !!}
 
-Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to an even distribution across all three funds.
+Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to an even distribution across all three funds for future contributions.
 
-I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took that along with what I normally would have invested; see per [my personal budget](/experiences/finances/personal-budget/) to buy a dip.
+I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took the 15 percent plus what I’d normally invest; per [my personal budget](/experiences/finances/personal-budget/) for buying a dip.
 
-The portfolio balance, based on individual funds (not the same as allocations used for the list above), is in balance. Need more total market and less extended market to get closer to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in a bit early.
+The portfolio balance, based on individual funds (not the same as allocations used for the list above), is in balance. Need more total market and less extended market to get closer to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in to the new fund a bit early.
 
 Right now the grid is about the same as the [previous paycheck](/experiences/finances/paycheck-to-paycheck/20220501/#portfolio-balance-overall). A bit heavy on growth, and will likely stay that way by the time I get where I want to be with the percentage-based allocations for individual funds. So, June or July I'll decide whether to introduce the multi-factor fund.
+
+I’ve never bought an [.exchange trade fund](ETF) through Vanguard. Further, Vanguard doesn’t allow partial shares. Finally, Fidelity does allow partial shares and the ability to purchase non-Fidelity funds commission free. Therefore, I’m debating on going through Fidelity for the multi-factor fund; however, I’m also considering going through Vanguard.
+
+Going through Vanguard would mean I need to purchase full shares of the ETF. ETFs tend to carry some tax advantages over mutual funds because the realized gains and losses will be tied directly to my buying and selling. I’m debating on converting the mutual funds to a blend of ETFs and mutual funds for the same general holding.
 
 ## Odd place
 
