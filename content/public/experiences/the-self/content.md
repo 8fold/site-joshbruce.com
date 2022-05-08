@@ -58,6 +58,7 @@ My name is <span property="name">Josh Bruce</span>.
 13. Whenever possible, praise in public; criticize in private.
 14. [The 7 habits of highly effective people](/examinations/the-7-habits-of-highly-effective-people/).
 15. Have fewer opinions about people and more about behavior; behaviors can change, but Sam is always Sam.
+16. Capture everything.
 
 ## My oath
 
