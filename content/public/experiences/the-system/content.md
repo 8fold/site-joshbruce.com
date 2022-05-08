@@ -73,6 +73,8 @@ I'm building the list slowly. In some cases it's folks I knew in my primary and 
 
 Some people are only meant to be "Facebook friends" and there's nothing wrong with that. Further, some people start as close friends and become "Facebook friends" and there's nothing wrong with that either.
 
+**If incapacitated**, these folks should be notified, however, they may not be one of the key people listed in the Contact app section below.
+
 ### The reviews
 
 This is a group of lists in the Reminders app and stores recurring maintenance tasks.
@@ -123,6 +125,10 @@ I use Apple's Contacts app to store contact information and related details for 
 I take notes about people, have their birthdays there, which also appear on my calendar; instead of depending on social media platforms to let me know.
 
 The Contacts app is quite capable. Every time I think about getting a fully-fledged relationship management software, I try to see if I can accomplish something similar with what I have, and I haven't found the combination of the Contacts app and the other free apps listed lacking in that regard.
+
+**Key people** is a group in the Contacts app and is a list of people who should be contacted should shit go pear-shaped. The idea is that at least three of those people would be able to work together to handle whatever is going on; they are the break-the-glass crew.
+
+There are other groups for medical, insurance, and so on.
 
 ## Notes app
 
