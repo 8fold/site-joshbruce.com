@@ -36,6 +36,7 @@ My name is <span property="name">Josh Bruce</span>.
 5. If you want to go fast, go alone. If you want to go far, go together.
 6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
+8. Role does not dictate behavior.
 
 ### Practices
 
