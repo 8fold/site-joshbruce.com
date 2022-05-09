@@ -25,24 +25,26 @@ My name is <span property="name">Josh Bruce</span>.
     - financial legacy over
     - genetic legacy.
 4. Character over personality.
-5. Simplicity
+5. Simplicity.
+6. The values from [The Manifesto for Agile Software Development](https://agilemanifesto.org); replacing the word “software” with “solutions.”
 
 ### Principles
 
-1. There's no such thing as intrinsic value, only perceived value.
-2. Scarcity alone doesn't make something more valuable.
-3. Intent and impact are not mutually inclusive or exclusive.
+1. Intrinsic value doesn’t exist; only perceived value.
+2. Scarcity alone doesn't make something valuable.
+3. Intent and impact are neither mutually inclusive nor exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
-5. If you want to go fast, go alone. If you want to go far, go together.
+5. If you want to go fast, go alone. If you want to go far, go together (African proverb).
 6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
-8. Great value doesn't require grand gestures.
-9. Final doesn't exist.
+8. Role does not dictate behavior.
+9. Great value doesn't require grand gestures.
+10. Final doesn't exist.
+11. The principles from [The Manifesto for Agile Software Development](https://agilemanifesto.org); replacing the word "software" with "solutions" and where developer means anyone working to aid in moving toward the common benefit.
 
 ### Practices
 
 1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); ageism, racism, sexism, elitism…
-2. Think win-win and meeting in the middle.
 3. Don’t bet on others to fail.
 4. Maximize the number of people supporting your progress.
 5. Extend grace and ask before assuming malicious intent.
@@ -59,12 +61,14 @@ My name is <span property="name">Josh Bruce</span>.
 14. [The 7 habits of highly effective people](/examinations/the-7-habits-of-highly-effective-people/).
 15. Have fewer opinions about people and more about behavior; behaviors can change, but Sam is always Sam.
 16. Capture everything.
+17. If you’re no good to yourself, you won’t be any good to others.
+18. Ruthlessly chase simplicity.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewerg who exclaimed: This is great, why limit it to being a Scrum Master‽
 
-I reflected on it for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
+I reflected on the question for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 
 1. I will not intentionally cause you pain (individually or collectively) without a) fair warning or b) providing an “easy out” only requiring initiative on your part.
 2. I will not ask you to do something I am not ready to do, willing to do, able to do, or am not already doing myself.
