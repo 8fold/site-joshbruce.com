@@ -7,6 +7,7 @@
     - [The group](/essays-and-editorials/the-group/)
     - [Guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/)
     - [Productivity and agility](/essays-and-editorials/productivity-and-agility/)
+    - [The action loop](/essays-and-editorials/action-loop/)
 - [Examinations and summaries](/examinations/)
 - [Experiences](/experiences/)
     - [The self](/experiences/the-self/)

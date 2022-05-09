@@ -69,7 +69,7 @@ I tend to think of it in terms of battery packs:
 2. mental, and
 3. emotional.
 
-If you perform physical activity for a while and hit a point where you can't do one more movement, that's physical fatigue. My foggy-brain-day represents mental fatigue. If I'm not able to site with my emotions, I'm likely experiencing emotional fatigue. 
+If you perform physical activity for a while and hit a point where you can't do one more movement, that's physical fatigue. My foggy-brain-day represents mental fatigue. If I'm not able to sit with my emotions, I'm likely experiencing emotional fatigue. 
 
 Rest, which may include sleep, is probably the most universal recharging activity and can help to recharge all the batteries. It's also possible you can recharge a battery by performing actions that require that battery—odd as that might sound; writing this article required mental energy, however, it was recharging and invigorating for me. Having interactions with people you don't appreciate may be emotionally draining for you while interacting with people you love and adore may be recharging.
 
