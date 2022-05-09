@@ -26,22 +26,22 @@ My name is <span property="name">Josh Bruce</span>.
     - genetic legacy.
 4. Character over personality.
 5. Simplicity 
+6. The values from The Manifesto for Agile Software Development; replacing the word “software” with “solutions.”
 
 ### Principles
 
 1. There's no such thing as intrinsic value, only perceived value.
-2. Scarcity alone doesn't make something more valuable.
-3. Intent and impact are not mutually inclusive or exclusive.
+2. Scarcity alone doesn't make something valuable.
+3. Intent and impact are neither mutually inclusive nor exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
-5. If you want to go fast, go alone. If you want to go far, go together.
+5. If you want to go fast, go alone. If you want to go far, go together (African proverb).
 6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
 8. Role does not dictate behavior.
 
 ### Practices
 
-1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); ageism, racism, sexism, elitism…
-2. Think win-win and meeting in the middle.
+1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); ageism, racism, sexism, elitism… 
 3. Don’t bet on others to fail.
 4. Maximize the number of people supporting your progress.
 5. Extend grace and ask before assuming malicious intent.
@@ -57,11 +57,11 @@ My name is <span property="name">Josh Bruce</span>.
 13. Whenever possible, praise in public; criticize in private. 
 14. [The 7 habits of highly effective people](/examinations/the-7-habits-of-highly-effective-people/).
 15. Have fewer opinions about people and more about behavior; behaviors can change, but Sam is always Sam.
-16. If you’re no good to yourself, you won’t any good to others.
+16. If you’re no good to yourself, you won’t be any good to others.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewerg who exclaimed: This is great, why limit it to being a Scrum Master‽
 
 I reflected on it for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 
