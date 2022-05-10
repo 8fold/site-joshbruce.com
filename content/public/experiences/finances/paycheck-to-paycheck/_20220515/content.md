@@ -45,9 +45,11 @@ This is an interesting time, the bumpiest for me so far.
 
 The extended market funds have dropped 30 percent from their 52 week highs, so, no more shoveling that direction.
 
-The total small-cap and non-US real estate has almost done the same.
+The total small-cap and non-US real estate has almost had the same level of drop. 
 
+I have rebalancing tokens for all the asset allocations except the Mark 0 mix in my [investment policy](/experiences/finances/investment-policy/#asset-allocation). We’ll see what July brings.
 
+With that said, overall, 2022 is still looking more like a plateau than a dip for me. And, even with that observation, the net worth of my portfolio is less than my capital investment in it. Such is the way of things.
 
 ## Odd place
 
