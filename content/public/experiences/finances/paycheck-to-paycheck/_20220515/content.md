@@ -39,6 +39,16 @@ I’ve never bought an [.exchange trade fund](ETF) through Vanguard. Further, Va
 
 Going through Vanguard would mean I need to purchase full shares of the ETF. ETFs tend to carry some tax advantages over mutual funds because the realized gains and losses will be tied directly to my buying and selling. I’m debating on converting the mutual funds to a blend of ETFs and mutual funds for the same general holding.
 
+## Rough ride
+
+This is an interesting time, the bumpiest for me so far.
+
+The extended market funds have dropped 30 percent from their 52 week highs, so, no more shoveling that direction.
+
+The total small-cap and non-US real estate has almost done the same.
+
+
+
 ## Odd place
 
 Definitely feeling better.
