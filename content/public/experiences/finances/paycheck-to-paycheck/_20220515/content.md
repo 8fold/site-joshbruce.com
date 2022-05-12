@@ -65,6 +65,50 @@ When I was in graduate school for secondary education I had to get observation h
 
 So, if it’s something that must be done on a certain date, it goes on the calendar. If it’s a recurring, tickler type thing, it goes in the Reminders app. Everything else will most likely be in a notebook somewhere.
 
+## Surgery
+
+Got hit with appendicitis the other day; that sucked.
+
+I ate breakfast as usual. Then within an hour, my abdomen started hurting. A vomited, a lot; could even hold down water. Called my doctor.
+
+Screening over the phone he said: Think you just bought yourself a visit to the emergency room.
+
+He told me which hospital to go to. (He even told me if Becca couldn’t take me he could because calendar was open; he’s great. Becca bailed on work and we went.
+
+Checked in with the emergency desk. Then waited about 30 minutes before getting my first round of vitals done. The nurse apologized for the wait. I said: No worries, triage sucks. She said; This isn’t even triage, it’s greeting.
+
+Another 30 minutes or so and I gave blood and urine.
+
+Then, five hours from the time we got there, I got checked in. Then, 7 hours from the time we got there (about 10 [.post-meridian](pm)), we were taken to get scanned and whatnot. By this point the pain has started to subside.
+
+Around midnight I was diagnosed with appendicitis and admitted.
+
+Tried to sleep, but it was sparse. Becca was able to stay the whole time. In the morning I was told I’d go to surgery that day.
+
+I scrubbed down as per the instructions from the doctors and nurses. It was a typical big hospital experience from the interactions piece; short visits, nurses more than doctors, and I met the doctor who’d be working on  and the anesthesiologist for about five minutes before going under the knife.
+
+Went in. Went to sleep. Woke up nauseated as fuck. Before surgery they had me on so much shit it was unreal. I don’t do drugs; to the point of avoiding aspirin. My resting heart rate is from 50 to 60 bests per minute; everyone found that interesting. I mentioned all this before being put under, but we still went with all the drugs ever. 
+
+When I got back to my room, I sat up and asked Becca to bring me something to vomit in. Mostly liquid but still.
+
+Stayed sitting for a bit and then stood. In less than hour I walked to the window nearest my room and with a nurse escort. About 30 minutes later I asked for assistance again to walk the full length of the hallway. Shortly after that, we checked out.
+
+They brought a wheelchair out to take me to the car. I asked if I could just walk; I wanted as much of that shot out of my system as soon as possible and I didn’t think sitting would help to that end.
+
+Got in the car, Becca drove us home.
+
+Ordered some blind food that’d be easy to digest. Popped an ibuprofen and went bed.
+
+It was hard to find a comfortable position; stomach and back are much it. There are three small holes in my abdominal. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If it try to line on either side it either stretch or gets crushed; both of which are painful. 
+
+With that said, I don’t have the appendix pain anymore nor do I feel it in my back. Basically we’re down to one point of pain.
+
+Given how much I’m billed on an hourly basis, I made the joke: I wonder if they’ll me charge back my hourly rate against the cost of my bill.
+
+My hope is that billing me didn’t start until I was actually through the doors from the waiting to the actual hospital. 
+
+So, going to be slowing my investments down a bit while I wait for the bills.
+
 {!! fi-experiments !!}
 
 {!! next-previous !!}
