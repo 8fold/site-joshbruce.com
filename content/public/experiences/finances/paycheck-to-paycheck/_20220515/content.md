@@ -1,5 +1,5 @@
 ---
-title: May 15h, 2022 paycheck
+title: May 15th, 2022 paycheck
 created: 20220515
 data:
 - [Debt, 0, 1, 0.1]
@@ -27,9 +27,9 @@ fi-experiments:
 
 {!! data !!}
 
-Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to an even distribution across all three funds for future contributions.
+Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to a more even distribution across all three funds for future contributions.
 
-I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took the 15 percent plus what I’d normally invest; per [my personal budget](/experiences/finances/personal-budget/) for buying a dip.
+I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took the 15 percent plus what I’d normally invest; per [my personal budget](/experiences/finances/personal-budget/) for buying a dip. (Seven days later, I did put in 19 percent of the savings balance into the total stock market fund; also in keeping with the personal budget.)
 
 The portfolio balance, based on individual funds (not the same as allocations used for the list above), is in balance. Need more total market and less extended market to get closer to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in to the new fund a bit early.
 
