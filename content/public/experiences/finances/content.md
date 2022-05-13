@@ -48,7 +48,6 @@ I focus a lot on character and culture; values, principles, practices, and tools
 ## Practices
 
 1. Maximize revenue, minimize spending, save and invest the gap.
-2. Combined expense ratio less than one percent.
 5. Pay yourself first.
 6. Promote dividends earned in securities returning less than seven percent per year to securities that historically return higher.
 7. Chasing returns should not be the basis of any decision (see previous).
