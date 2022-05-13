@@ -54,8 +54,9 @@ I focus a lot on character and culture; values, principles, practices, and tools
 7. Chasing returns should not be the basis of any decision (see previous).
 8. [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/).
 9. [Personal budget](/experiences/finances/personal-budget/).
-9. No leveraged investing.
-10. No shorting stocks.
+10. Follow the [investment policy](/experiences/finances/investment-policy/).
+11. No leveraged investing.
+12. No shorting stocks.
 
 ## Tools
 
