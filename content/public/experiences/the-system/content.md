@@ -5,6 +5,8 @@ created: 20220507
 
 # My productivity system
 
+{!! dateblock !!}
+
 I'm going to describe how I get stuff done. Writing it down in this post is a somewhat morbid exercise as this post is doubling as a way for someone to come in and take over if I'm incapacitated.
 
 The tools are less important than the capabilities afforded by them.
@@ -25,7 +27,7 @@ A semipermeable hard landscape, if you will; somewhere between the calendar desc
 
 I use multiple calendars within the app.
 
-- I have a shareable calendar I use for my events, which I can share with friends and family. 
+- I have a shareable calendar I use for my events, which I can share with friends and family.
 - Becca has shared her calendar with me, which lets me see her schedule of things; similar to my shareable calendar.
 - Becca and I have a calendar for events where the two of us will be involved or needed. The first two calendars let us see where each other are prior to discussing possible joint adventures.
 
@@ -45,7 +47,7 @@ The vast majority of reminders are set to repeat, which is easier done using an 
 
 I check the Reminders app after looking at the Calendar app; mainly for the automatically generated "Today" list, which shows all items I've set to do that day or any past due reminders.
 
-I use this app for most things maintenance. 
+I use this app for most things maintenance.
 
 I should note, with most of these reminders, I don't need to wait *until* the date to perform the associated action. Instead these reminders act as, well, reminders; an accountability partner poking their head up and saying, "Hey, just in case you haven't done it already, you should do this thing." If I've already done something near when a reminder shows up in the Today list, I can just mark it as done and move on.
 
@@ -82,7 +84,7 @@ This is a group of lists in the Reminders app and stores recurring maintenance t
 I have a list for:
 
 1. weekly,
-2. monthly,  
+2. monthly,
 3. quarterly, and
 4. annually.
 
@@ -108,7 +110,7 @@ I have various other lists I use as a way to capture things outside the main act
 
 ## The Forge and Crucible
 
-The Forge is the generic name I give to things I'm just sorta thinking about doing; these may never happen and may be removed, but I get them out of my head. The Crucible is reserved for things I'm actively pursuing, near-term. 
+The Forge is the generic name I give to things I'm just sorta thinking about doing; these may never happen and may be removed, but I get them out of my head. The Crucible is reserved for things I'm actively pursuing, near-term.
 
 Most of my near-term, one-off actions goes into a notebook; paper or digital. With either version I try to distinguish between three roles. With the paper notebook, I use different color inks. With the digital notebook, I use different line weights.
 
@@ -120,7 +122,7 @@ I do this because it helps me see, at a glance, where I might be falling behind 
 
 ## Contacts app
 
-I use Apple's Contacts app to store contact information and related details for individuals; however, it's becoming way more than that. 
+I use Apple's Contacts app to store contact information and related details for individuals; however, it's becoming way more than that.
 
 I take notes about people, have their birthdays there, which also appear on my calendar; instead of depending on social media platforms to let me know.
 
@@ -134,7 +136,7 @@ There are other groups for medical, insurance, and so on.
 
 I use Apple's Notes app for many things. Mainly I track my online accounts, share notes with Becca for a regular check-in she and I have, scan documents, and, well, taking notes.
 
-I have a bunch of pinned and locked notes. They store lists of all my online accounts. As soon as I sign up for something, or, let's be honest, discover I had an account somewhere I forgot about, I put it on a list in one of these pinned and locked notes. I have a monthly reminder set to go through the list and delete things, update passwords, and so on. 
+I have a bunch of pinned and locked notes. They store lists of all my online accounts. As soon as I sign up for something, or, let's be honest, discover I had an account somewhere I forgot about, I put it on a list in one of these pinned and locked notes. I have a monthly reminder set to go through the list and delete things, update passwords, and so on.
 
 Becca and I share a note of topics to discuss during a weekly check-in we've set up with each other to handle the business part of partnership.
 
