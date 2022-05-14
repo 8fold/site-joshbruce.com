@@ -1,24 +1,24 @@
 ---
 title: May 15th, 2022 paycheck
-created: 20220515
+created: 20220513
 data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 3, 9, 6.9]
-- [Low correlation, 0, 1, 1]
+- [Debt, 0, 1, 0.4]
+- [Cash, 3, 9, 7]
+- [Low correlation, 0, 1, 0.9]
 - [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 34.5]
-- [US equities - mid, 25, 38, 28]
-- [US equities - large, 25, 37, 27.5]
+- [US equities - small, 25, 38, 33.4]
+- [US equities - mid, 25, 38, 28.6]
+- [US equities - large, 25, 37, 28]
 fi-experiments:
 # label, current, previous, start
-- [0.0, 39, 39, 47.71]
-- [0.2, 35.92, 35.92, 43.83]
-- [0.4, 36.09, 36.09, 43.74]
-- [0.6, 36.47, 36.47, 43.54]
-- [0.8, 37.37, 37.37, 43.36]
-- [1.0, 41.33, 41.33, 46.87]
-- [1.1, 41.22, 41.22, 46.76]
-- [1.2, 41.19, 41.19, 46.73]
+- [0.0, 37.33, 39, 47.71]
+- [0.2, 34.43, 35.92, 43.83]
+- [0.4, 34.61, 36.09, 43.74]
+- [0.6, 35.03, 36.47, 43.54]
+- [0.8, 36, 37.37, 43.36]
+- [1.0, 39.85, 41.33, 46.87]
+- [1.1, 39.74, 41.22, 46.76]
+- [1.2, 39.71, 41.19, 46.73]
 ---
 
 # May 15th, 2022 paycheck
@@ -29,7 +29,7 @@ fi-experiments:
 
 Sold more of the large-cap in the 401k to purchase more of the mid-cap. The current values for all three funds seem close enough to say that rebalancing is complete. After this paycheck I’m going to shift to a more even distribution across all three funds for future contributions.
 
-I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took the 15 percent plus what I’d normally invest; per [my personal budget](/experiences/finances/personal-budget/) for buying a dip. (Seven days later, I did put in 19 percent of the savings balance into the total stock market fund; also in keeping with the personal budget.)
+I didn’t put money into savings this time. The total [.United States](US) stock market fund is down 15 percent, so, I took the 15 percent plus what I’d normally invest and bought more shares; per [my personal budget](/experiences/finances/personal-budget/) for buying a dip. (Seven days later, I did put in 19 percent of the savings balance toward the total stock market fund; also in keeping with the personal budget.)
 
 The portfolio balance, based on individual funds (not the same as allocations used for the list above), is in balance. Need more total market and less extended market to get closer to the targets; the middle point between the guardrails. Once that happens, we can take a look at the Personal Capital grid and start shifting things; if I don't go in to the new fund a bit early.
 
@@ -69,43 +69,45 @@ So, if it’s something that must be done on a certain date, it goes on the cale
 
 Got hit with appendicitis the other day; that sucked.
 
-I ate breakfast as usual. Then within an hour, my abdomen started hurting. A vomited, a lot; could even hold down water. Called my doctor.
+I ate breakfast as usual. Then within an hour, my abdomen started hurting. A vomited, a lot; couldn’t even hold down water. Called my doctor.
 
 Screening over the phone he said: Think you just bought yourself a visit to the emergency room.
 
-He told me which hospital to go to. (He even told me if Becca couldn’t take me he could because calendar was open; he’s great. Becca bailed on work and we went.
+He told me which hospital to go to. (He even told me if Becca couldn’t take me he could because his calendar was open; he’s great. Becca bailed on work and we went.
 
 Checked in with the emergency desk. Then waited about 30 minutes before getting my first round of vitals done. The nurse apologized for the wait. I said: No worries, triage sucks. She said; This isn’t even triage, it’s greeting.
 
 Another 30 minutes or so and I gave blood and urine.
 
-Then, five hours from the time we got there, I got checked in. Then, 7 hours from the time we got there (about 10 [.post-meridian](pm)), we were taken to get scanned and whatnot. By this point the pain has started to subside.
+Then, five hours from the time we got there, I got checked in. Then, 7 hours from the time we got there (about 10 [.post-meridian](pm)), we were taken to get scanned and whatnot. By this point the pain had started to subside.
 
 Around midnight I was diagnosed with appendicitis and admitted.
 
 Tried to sleep, but it was sparse. Becca was able to stay the whole time. In the morning I was told I’d go to surgery that day.
 
-I scrubbed down as per the instructions from the doctors and nurses. It was a typical big hospital experience from the interactions piece; short visits, nurses more than doctors, and I met the doctor who’d be working on  and the anesthesiologist for about five minutes before going under the knife.
+I scrubbed down as per the instructions from the doctors and nurses. It was a typical big hospital experience from the interactions piece; short visits, nurses more than doctors, and I met the surgeon and anesthesiologist separately for about five minutes before going under the knife.
 
-Went in. Went to sleep. Woke up nauseated as fuck. Before surgery they had me on so much shit it was unreal. I don’t do drugs; to the point of avoiding aspirin. My resting heart rate is from 50 to 60 bests per minute; everyone found that interesting. I mentioned all this before being put under, but we still went with all the drugs ever. 
+Went in. Went to sleep. Woke up nauseated as fuck. 
+
+Before surgery they had me on so much shit it was unreal. I don’t do drugs; to the point of avoiding aspirin. My resting heart rate is from 50 to 60 beats per minute; everyone found that interesting. I mentioned that I’m pretty chill and probably wouldn’t need all of that “calm you down stuff” before being put under, but we went with all the drugs ever. 
 
 When I got back to my room, I sat up and asked Becca to bring me something to vomit in. Mostly liquid but still.
 
-Stayed sitting for a bit and then stood. In less than hour I walked to the window nearest my room and with a nurse escort. About 30 minutes later I asked for assistance again to walk the full length of the hallway. Shortly after that, we checked out.
+Stayed sitting for a bit, then stood. In less than an hour my nurse escort and I walked to the window nearest my room. About 30 minutes later I asked for assistance again to walk the full length of the hallway. Shortly after that, we checked out.
 
-They brought a wheelchair out to take me to the car. I asked if I could just walk; I wanted as much of that shot out of my system as soon as possible and I didn’t think sitting would help to that end.
+They brought a wheelchair out to take me to the car. I asked if I could just walk; I wanted as much of that shit out of my system as soon as possible and I didn’t think sitting would help achieve that.
 
 Got in the car, Becca drove us home.
 
-Ordered some blind food that’d be easy to digest. Popped an ibuprofen and went bed.
+Ordered some bland food that’d be easy to digest. Popped an ibuprofen and went bed.
 
-It was hard to find a comfortable position; stomach and back are much it. There are three small holes in my abdominal. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If it try to line on either side it either stretch or gets crushed; both of which are painful. 
+It was hard to find a comfortable position; stomach and back are pretty much it. There are three small holes in my abdominal. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If I lie on either side it either stretches or gets crushed; both of which are painful. 
 
 With that said, I don’t have the appendix pain anymore nor do I feel it in my back. Basically we’re down to one point of pain.
 
-Given how much I’m billed on an hourly basis, I made the joke: I wonder if they’ll me charge back my hourly rate against the cost of my bill.
+Given how much I’m billed on an hourly basis, I made the joke: I wonder if they’ll let me charge back my hourly rate against the cost of my bill.
 
-My hope is that billing me didn’t start until I was actually through the doors from the waiting to the actual hospital. 
+My hope is that billing me didn’t start until I was actually through the doors from the waiting area to the actual hospital. 
 
 So, going to be slowing my investments down a bit while I wait for the bills.
 
