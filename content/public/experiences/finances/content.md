@@ -48,14 +48,14 @@ I focus a lot on character and culture; values, principles, practices, and tools
 ## Practices
 
 1. Maximize revenue, minimize spending, save and invest the gap.
-2. Combined expense ratio less than one percent.
 5. Pay yourself first.
 6. Promote dividends earned in securities returning less than seven percent per year to securities that historically return higher.
 7. Chasing returns should not be the basis of any decision (see previous).
 8. [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/).
 9. [Personal budget](/experiences/finances/personal-budget/).
-9. No leveraged investing.
-10. No shorting stocks.
+10. Follow the [investment policy](/experiences/finances/investment-policy/).
+11. No leveraged investing.
+12. No shorting stocks.
 
 ## Tools
 
