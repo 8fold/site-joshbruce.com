@@ -27,6 +27,7 @@ My name is <span property="name">Josh Bruce</span>.
 4. Character over personality.
 5. Simplicity.
 6. The values from [The Manifesto for Agile Software Development](https://agilemanifesto.org); replacing the word “software” with “solutions.”
+7. Abundance over scarcity mindset.
 
 ### Principles
 
@@ -41,6 +42,7 @@ My name is <span property="name">Josh Bruce</span>.
 9. Great value doesn't require grand gestures.
 10. Final doesn't exist.
 11. The principles from [The Manifesto for Agile Software Development](https://agilemanifesto.org); replacing the word "software" with "solutions" and where developer means anyone working to aid in moving toward the common benefit.
+12. Time is not labor; no one’s time is more valuable than anyone else’s. 
 
 ### Practices
 
