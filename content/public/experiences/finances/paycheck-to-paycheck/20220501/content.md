@@ -131,6 +131,12 @@ The webinar was helpful and is based on the concepts of *Start with Why* by Simo
 
 As this relates to finances, the expense was definitely a hit to my purse. However, given my 20 year history of submitting résumés the investment has already paid dividends in improved mental health.
 
+## FI experiments
+
+Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+
+The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
+
 {!! fi-experiments !!}
 
 {!! next-previous !!}

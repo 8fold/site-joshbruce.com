@@ -69,13 +69,13 @@ So, if it’s something that must be done on a certain date, it goes on the cale
 
 Got hit with appendicitis the other day; that sucked.
 
-I ate breakfast as usual. Then within an hour, my abdomen started hurting. A vomited, a lot; couldn’t even hold down water. Called my doctor.
+I ate breakfast as usual. Then within an hour, my abdomen started hurting. I vomited, a lot; couldn’t even hold down water. Called my doctor.
 
 Screening over the phone he said: Think you just bought yourself a visit to the emergency room.
 
 He told me which hospital to go to. (He even told me if Becca couldn’t take me he could because his calendar was open; he’s great. Becca bailed on work and we went.
 
-Checked in with the emergency desk. Then waited about 30 minutes before getting my first round of vitals done. The nurse apologized for the wait. I said: No worries, triage sucks. She said; This isn’t even triage, it’s greeting.
+Checked in with the emergency desk. Then waited about 30 minutes before getting my first round of vitals done. The nurse apologized for the wait. I said: No worries, triage sucks. She said: This isn’t even triage, it’s greeting.
 
 Another 30 minutes or so and I gave blood and urine.
 
@@ -97,13 +97,13 @@ Stayed sitting for a bit, then stood. In less than an hour my nurse escort and I
 
 They brought a wheelchair out to take me to the car. I asked if I could just walk; I wanted as much of that shit out of my system as soon as possible and I didn’t think sitting would help achieve that.
 
-Got in the car, Becca drove us home.
+Got in the car, Becca drove us home. (And nursed me back to normal—she’s awesome.)
 
 Ordered some bland food that’d be easy to digest. Popped an ibuprofen and went bed.
 
-It was hard to find a comfortable position; stomach and back are pretty much it. There are three small holes in my abdominal. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If I lie on either side it either stretches or gets crushed; both of which are painful. 
+It was hard to find a comfortable position; stomach and back are pretty much it. There are three small holes in my abdomen. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If I lie on either side it either stretches or gets crushed; both of which are painful. 
 
-With that said, I don’t have the appendix pain anymore nor do I feel it in my back. Basically we’re down to one point of pain.
+With that said, I don’t have the appendix pain anymore nor do I feel it in my back. Basically we’re down to one point of pain; same level, different side—balance is restored.
 
 Given how much I’m billed on an hourly basis, I made the joke: I wonder if they’ll let me charge back my hourly rate against the cost of my bill.
 
@@ -111,6 +111,15 @@ My hope is that billing me didn’t start until I was actually through the doors
 
 So, going to be slowing my investments down a bit while I wait for the bills.
 
+Saturday update (day 5; day 3 since surgery): I debated not taking an ibuprofen tonight. They gave me stronger and I haven’t touched it.
+
+## FI experiments
+
+Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+
+The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
+
 {!! fi-experiments !!}
+
 
 {!! next-previous !!}
