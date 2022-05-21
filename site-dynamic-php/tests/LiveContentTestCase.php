@@ -38,7 +38,7 @@ abstract class LiveContentTestCase extends TestCase
     public static function thisSiteContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() . '/web-development/this-site/content.md',
+            self::pathToContentPublic() . '/experiences/software-development/this-site/content.md',
             self::pathToContentPublic()
         );
     }
@@ -46,7 +46,7 @@ abstract class LiveContentTestCase extends TestCase
     public static function thisInternetBandwidthContentFile(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() . '/web-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
+            self::pathToContentPublic() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
             self::pathToContentPublic()
         );
     }
@@ -103,7 +103,7 @@ abstract class LiveContentTestCase extends TestCase
             ->handle(
                 new ServerRequest(
                     method: 'GET',
-                    uri: '/web-development/this-site',
+                    uri: '/experiences/software-development/this-site/',
                     headers: [],
                     serverParams: $_SERVER
                 )

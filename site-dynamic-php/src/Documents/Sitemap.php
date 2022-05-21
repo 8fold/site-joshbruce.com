@@ -43,20 +43,32 @@ class Sitemap
 
             $path = $f->path(full: false, omitFilename: true);
 
-            $zeroPriority = '/finances/building-wealth-paycheck-to-paycheck/';
-            $onePriority  = '/finances';
+            $onePriorityEssays = '/essays-and-editorials/';
+            $onePriorityBooks  = '/books/';
+            $pointSevenFive    = '/experiences/';
+            $pointOnePriority  = '/experiences/finances';
+            $zeroPriority      = '/experiences/finances/paycheck-to-paycheck/';
 
             $priority = 0.5;
-            if (str_starts_with($path, $zeroPriority)) {
+            if (
+                str_starts_with($path, $onePriorityBooks) or
+                str_starts_with($path, $onePriorityEssays)
+            ) {
+                $priority = 1.0;
+
+            } elseif (str_starts_with($path, $pointOnePriority)) {
+                $priority = 0.1;
+
+            } elseif (str_starts_with($path, $zeroPriority)) {
                 $priority = 0.0;
 
-            } elseif (str_starts_with($path, $onePriority)) {
-                $priority = 0.1;
+            } elseif (str_starts_with($path, $pointSevenFive)) {
+                $priority = 0.75;
 
             }
 
             $urls[$path] = Element::url(
-                Element::loc($f->canonicalUrl($environment->appUrl())),
+                Element::loc($f->canonicalUrl($environment->appUrl()) . '/'),
                 Element::lastmod($lastmod),
                 Element::priority($priority)
             );

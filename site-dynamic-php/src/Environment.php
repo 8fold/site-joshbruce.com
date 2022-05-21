@@ -72,6 +72,18 @@ class Environment
         return '';
     }
 
+    public function contentPrivate(): string
+    {
+        $contentPublic = $this->contentPublic();
+        if (strlen($contentPublic) > 0) {
+            $parts = explode('/', $contentPublic);
+            array_pop($parts);
+            $parts[] = 'private';
+            return implode('/', $parts);
+        }
+        return '';
+    }
+
     private function contentPublicFileInfo(): SplFileInfo
     {
         if (! isset($this->contentPublicFileInfo)) {

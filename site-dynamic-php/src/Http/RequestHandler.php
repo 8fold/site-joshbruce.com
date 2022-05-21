@@ -22,8 +22,9 @@ use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
-use JoshBruce\SiteDynamic\Documents\FullNav;
 use JoshBruce\SiteDynamic\Documents\Sitemap;
+
+use JoshBruce\SiteDynamic\FileSystem\Aliases;
 
 /**
  * Immutable and read-only class for responding to requests.
@@ -38,6 +39,13 @@ use JoshBruce\SiteDynamic\Documents\Sitemap;
 class RequestHandler implements RequestHandlerInterface
 {
     private ServerRequestInterface $request;
+
+    private int $status = 200;
+
+    /**
+     * @var array<string, string>
+     */
+    private array $headers = [];
 
     private string $requestPath = '';
 
@@ -56,97 +64,152 @@ class RequestHandler implements RequestHandlerInterface
     {
         $this->request = $request;
 
-        $status  = 200;
-        $headers = [];
-
-        $isRequestingFile = $this->isRequestingFile();
+        $this->status   = 200;
+        $this->headers = [];
 
         $path = $this->contentPublic() . $this->requestPath();
-        if (! $isRequestingFile and ! $this->isRequestingXml()) {
-            $path = $this->contentPublic() .
-                $this->requestPath() .
+        $file = File::at($path, $this->contentPublic());
+        if (str_ends_with($path, '/')) {
+            $path = $this->contentPublic() . $this->requestPath() .
                 $this->environment()->contentFilename();
-
+            $file = PlainTextFile::at($path, $this->contentPublic());
         }
 
-        $file = File::at($path, $this->contentPublic());
-
         if ($file->notFound()) {
-            $status = 404;
-            $path   = $this->contentPublic() . '/error-404.md';
+            // run check against 2022 migration
+            // TODO: delete 2023/04
+            $migrationPath = $this->environment()->contentRoot() .
+                '/_2022-migration';
+            $possible301Path = $migrationPath . $this->requestPath();
+            if (
+                ! $this->isRequestingXml() and
+                ! $this->isRequestingFile() and
+                file_exists($possible301Path) and
+                $alias = $this->shouldRedirect($possible301Path, $migrationPath)
+            ) {
+                return new PsrResponse(
+                    status: 301,
+                    headers: ['Location' => '/' . $alias . '/']
+                );
+            }
 
-        } else {
-            $headers = [
+            $this->status = 404;
+
+            if ($this->request()->getMethod() !== 'HEAD') {
+                $path = $this->contentPublic() . '/error-404.md';
+                $file = PlainTextFile::at($path, $this->contentPublic());
+                $body = $this->body($file);
+
+                return new PsrResponse(
+                    status: $this->status(),
+                    headers: $this->headers(),
+                    body: Stream::create(
+                        HtmlDefault::create(
+                            $file->pageTitle(),
+                            $file->description(),
+                            ($this->requestPath() === '/')
+                            ? Element::main($body)
+                            : Element::article($body),
+                            $this->environment()
+                        )
+                    )
+                );
+
+            }
+        } elseif ($this->isRequestingXml() or $this->isRequestingFile()) {
+            $this->headers = [
                 'Content-type' => $file->mimetype()
             ];
 
+            if ($this->request()->getMethod() === 'HEAD') {
+                // head-only response
+                return new PsrResponse(
+                    status: $this->status(),
+                    headers: $this->headers()
+                );
+
+            }
         }
 
         if ($this->request()->getMethod() === 'HEAD') {
+            // head-only response
             return new PsrResponse(
-                status: $status,
-                headers: $headers
+                status: $this->status(),
+                headers: $this->headers()
             );
+        }
 
-        } elseif (
-            $isRequestingFile and
+        // non-text files
+        if (
+            $this->isRequestingFile() and
             $resource = @\fopen($file->path(), 'r') and
             is_resource($resource)
         ) {
             return new PsrResponse(
-                status: $status,
-                headers: $headers,
+                status: $this->status(),
+                headers: $this->headers(),
                 body: Stream::create($resource)
             );
-
         }
 
+        // text files
         $file = PlainTextFile::at($path, $this->contentPublic());
-
-        if ($file->template() === 'sitemap') {
+        if ($this->isRequestingXml() and $file->template() === 'sitemap') {
             return new PsrResponse(
-                status: $status,
-                headers: $headers,
+                status: $this->status(),
+                headers: $this->headers(),
                 body: Stream::create(
                     Sitemap::create($file, $this->environment())
                 )
             );
+
         }
 
         $pageTitle   = $file->pageTitle();
         $description = $file->description();
         $body        = $this->body($file);
+        $type = 'BlogPosting';
+        if (
+            $file->hasMetadata('template') and
+            $fm = $file->frontMatter() and
+            $template = $fm['template'] === 'person'
+        ) {
+            $type = 'Person';
 
-        if ($file->template() === 'full-nav') {
-            return new PsrResponse(
-                status: $status,
-                headers: $headers,
-                body: Stream::create(
-                    FullNav::create(
-                        $pageTitle,
-                        $description,
-                        Element::main($body),
-                        $this->environment()
-                    )
-                )
-            );
         }
 
+        // text content response
         return new PsrResponse(
-            status: $status,
-            headers: $headers,
+            status: $this->status(),
+            headers: $this->headers(),
             body: Stream::create(
                 HtmlDefault::create(
                     $pageTitle,
                     $description,
-                    ($this->requestPath() === '/')
+                    (
+                        $this->requestPath() === '/' or
+                        $this->requestPath() === '/full-navigation/'
+                    )
                     ? Element::main($body)
                     : Element::article($body)
-                        ->props("typeof BlogPosting", "vocab https://schema.org/"),
+                        ->props("typeof {$type}", "vocab https://schema.org/"),
                     $this->environment()
                 )
             )
         );
+    }
+
+    private function status(): int
+    {
+        return $this->status;
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function headers(): array
+    {
+        return $this->headers;
     }
 
     private function body(PlainTextFile $file): string
@@ -158,6 +221,27 @@ class RequestHandler implements RequestHandlerInterface
         );
 
         return Markdown::markdownConverter()->convert($markdown);
+    }
+
+    private function shouldRedirect(
+        string $path,
+        string $migrationPath
+    ): string|false {
+        $possible301PathContent = $path . 'content.md';
+        if (file_exists($possible301PathContent)) {
+            $f301 = PlainTextFile::at($possible301PathContent, $migrationPath);
+            if ($f301->hasMetadata('alias')) {
+                $frontMatter = $f301->frontMatter();
+                if (
+                    $alias = $frontMatter['alias'] and
+                    is_string($alias)
+                ) {
+                    return $alias;
+
+                }
+            }
+        }
+        return false;
     }
 
     private function isRequestingFile(): bool

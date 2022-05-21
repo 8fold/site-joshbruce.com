@@ -1,9 +1,8 @@
 ---
 title: Full navigation
 description: This pages lists links to all the content available on the site.
-template: full-nav
 ---
 
 # All content
 
-{!!full-nav!!}
+{!! full-nav !!}

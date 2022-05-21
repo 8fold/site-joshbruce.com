@@ -10,8 +10,9 @@ use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 class FiExperiments
 {
-    public static function create(PlainTextFile $file): string
-    {
+    public static function create(
+        PlainTextFile $file
+    ): string {
         $data = $file->fiExperiments();
 
         $listHeadings = [];

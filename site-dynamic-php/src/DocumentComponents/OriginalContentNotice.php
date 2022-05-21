@@ -14,8 +14,9 @@ class OriginalContentNotice
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
-    public static function create(PlainTextFile $file): string
-    {
+    public static function create(
+        PlainTextFile $file
+    ): string {
         $parts = explode('/', $file->root());
         $parts = array_slice($parts, 0, -1);
 

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\SiteDynamic\Tests\FileSystem;
 
+use SplFileInfo;
+
 use JoshBruce\SiteDynamic\Tests\LiveContentTestCase;
 
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
@@ -13,8 +15,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     public static function migratedContent(): PlainTextFile
     {
         return PlainTextFile::at(
-            self::pathToContentPublic() .
-                '/web-development/on-constraints/internet-bandwidth/content.md',
+            self::pathToContentPublic() . '/essays-and-editorials/software-development/on-constraints/internet-bandwidth/content.md', // phpcs:ignore
             self::pathToContentPublic()
         );
     }
@@ -60,7 +61,7 @@ final class PlainTextFileTest extends LiveContentTestCase
     public function page_social_titles(): void // phpcs:ignore
     {
         $this->assertSame(
-            'This site | Web development | Josh Bruce’s personal site',
+            'This site | Software development | Experiences | Josh Bruce’s personal site',
             self::thisSiteContentFile()->pageTitle()
         );
 
