@@ -139,6 +139,7 @@ These are my results from [The 5 Ps](/essays-and-editorials/the-5-ps/) exercise 
 ### Peeves
 
 1. Not seeking consent.
+2. Assuming or presuming to know what’s going on in my (or someone else’s) head.
 
 ### Pedagogies
 
