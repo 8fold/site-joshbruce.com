@@ -2,7 +2,7 @@
 title: The self
 template: person
 created: 19790717
-updated: 20220425
+updated: 20220522
 ---
 
 # The self
@@ -117,6 +117,32 @@ Extended version:
 Awareness and intent.
 
 Beyond the valuation portion (sorting), one of the things this exercise revealed to me is why I haven't been particularly ambitious when it comes to finances or progressing up the career ladder; low on numbers and low on prestige. It helped inform my practice of negotiating raises and charging for my services; if left to my own devices I would remain a starving artist, so to speak, I value numbers generally (and money specifically) so little. Further, it helped guide me to roles that fit me well, like Scrum Master; primarily influence-based, not authority- or title-based.
+
+## The 5 Ps results
+
+These are my results from [The 5 Ps](/essays-and-editorials/the-5-ps/) exercise as of May 22, 2022.
+
+### Passions
+
+1. Reducing suffering.
+2. Experiencing the oddity of consciousness and the human experience.
+3. Helping others do the above.
+
+### Pensives
+
+1. Software development.
+
+### Prohibitions
+
+1. Knowingly participating in a falsehood.
+
+### Peeves
+
+1. Not seeking consent.
+
+### Pedagogies
+
+1. Learn more formal philosophy.
 
 ## Credentials
 
