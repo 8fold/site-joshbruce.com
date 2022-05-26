@@ -38,7 +38,7 @@ Individuals aged 13 to 18 must provide written consent from their parent or lega
 
 ## Security
 
-If you find a security vulnerability with any Service, please let Joshua Bruce know.
+If you find a security vulnerability with any Service, please let Joshua Bruce know by posting an issue in the [provided repository](https://github.com/8fold/site-joshbruce.com).
 
 ## Incorporated rules and policies
 
@@ -54,7 +54,7 @@ Information you send us and referral information may be tied directly to you as 
 
 ### Disclosure of your information
 
-As a rule, we do not share your personal information.
+As a rule, we do not collect or share your personal information.
 
 We will not sell your personal information.
 
@@ -64,9 +64,9 @@ If we're going to share your information in response to legal processes, we will
 
 ## Miscellaneous
 
-**Disclaimer of warranty.** Joshua Bruce provides the Services to you as is. You use them at your own risk and discretion. That means they do not come with any warranty. None expressed, none implied. No implied warranty of merchantability, fitness for a particular purpose, availability, security, title, or non-infringement.
+**Disclaimer of warranty.** Joshua Bruce provides the Services to you as-is. You use them at your own risk and discretion. That means they do not come with any warranty. None expressed, none implied. No implied warranty of merchantability, fitness for a particular purpose, availability, security, title, or non-infringement.
 
-**Limitation of Liability.** Joshua Bruce will not be liable to you for any damages that arise from your use of the Services. This includes if Services are hacked or become unavailable. This includes all types of damages (indirect, incidental, consequential, special, or exemplary). And it includes all kinds of legal claims, such as breach of contract, breach of warranty, tort, or any other loss.
+**Limitation of Liability.** Joshua Bruce will not be liable to you for any damages arising from your use of the Services. This includes if Services are hacked or become unavailable. This includes all types of damages (indirect, incidental, consequential, special, or exemplary). And it includes all kinds of legal claims, such as breach of contract, breach of warranty, tort, or any other loss.
 No waiver. If Joshua Bruce does not exercise a particular right under these Terms, that does not waive the right to do so.
 
 **Severability.** If any provision of these terms is found invalid by a court of competent jurisdiction, you agree that the court should try to give effect to the parties' intentions as reflected in the provision that other provisions of the Terms will remain in full effect.
