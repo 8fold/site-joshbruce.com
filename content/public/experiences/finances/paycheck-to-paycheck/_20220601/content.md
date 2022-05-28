@@ -57,6 +57,11 @@ The advice came from multiple sources over multiple years. It’s on me that I l
 
 So, let’s progress.
 
+I want to see what I can do making my own choices, in part to avoid the possibility of scapegoating someone else. These are my choices and my actions. They are informed by multiple sources and I’m watching it work.
+
+Overall the advice was generic and doing make me feel like my [personal character](/experiences/the-self/) would inform the advice.
+
+The recommendation was Personal Capital’s [Smart Weighting](https://www.personalcapital.com/wealth-management/smart-weighting) performs, which is similar to what I’m going for; somewhat equal weighting across size, value, and sector (the affirming part). With that said, the advisor did mention that they tend to shoot for 60 percent in large-cap, which was the first point where it felt less personalized and more cookie cutter advice; the one solution to fit them all. I explained my desire and reasoning for equal distribution and the conversation tilted a bit; still felt like a pitch to get assets under management but we definitely broke out of the script a bit.
 
 
 
