@@ -59,28 +59,11 @@ So, let’s progress.
 
 I want to see what I can do making my own choices, in part to avoid the possibility of scapegoating someone else. These are my choices and my actions. They are informed by multiple sources and I’m watching it work.
 
-Overall the advice was generic and doing make me feel like my [personal character](/experiences/the-self/) would inform the advice.
+Overall the advice was generic and didn’t make me feel like my [personal character](/experiences/the-self/) would inform the advice.
 
 The recommendation was Personal Capital’s [Smart Weighting](https://www.personalcapital.com/wealth-management/smart-weighting) performs, which is similar to what I’m going for; somewhat equal weighting across size, value, and sector (the affirming part). With that said, the advisor did mention that they tend to shoot for 60 percent in large-cap, which was the first point where it felt less personalized and more cookie cutter advice; the one solution to fit them all. I explained my desire and reasoning for equal distribution and the conversation tilted a bit; still felt like a pitch to get assets under management but we definitely broke out of the script a bit.
 
 They recommended 800,000 USD, which is higher than the 600,000 USD I have for this writing and I’m not sure how they think we would hit that in a decade; I didn’t ask and they didn’t offer.
-
-
-
-
-
-
-
-
-I decided not to take them in as my financial advisors; to be fair they would have had to do something pretty special for me to say yes. They’re retirement number was 800,000 [.United States Dollars](USD), which is close to what I have at the moment. The advisor also asked a question I hadn’t really considered before: What are you using as a benchmark? I stumbled through a response that equated to: I don’t have one because it’s hard.
-
-The first part of the call wasn’t mainly looking at where I was, which I can get from the dashboard. Roughly 33 percent in each market-cap. The recommendation was to be about 60, 20, 20 in large, mid, and small, respectively. 60-20-20 could be achieved with a total stock market fund along with a small-cap fund; of course, this wouldn’t give you the exact internal allocation of what Personal Capital is offering.
-
-I explained the reasons I had for the market-cap weighting strategy I am using.
-
-Then we talked about sector weighting; the recommendation was roughly even distribution across the sectors. Admittedly I’m not weighted as evenly as I’d like, however, my expense ratio at the moment is 0.04 percent. Meanwhile, if you did a 50-50 total stock market and small-cap value, it’d put the sector allocations closer to equal. With that said, my current allocation is more evenly distributed than the standard total stock market, which is almost 25 percent technology; my allocation is around 20 percent.
-
-Regarding the benchmark question I think I’d have to see how Personal Capital’s [Smart Weighting](https://www.personalcapital.com/wealth-management/smart-weighting) performs, because I haven’t found a single fund (or index) that tries to do what they (and I) are doing. Beyond that, I look at the benchmarks provided by Personal Capital, the comparison between Personal Capital’s You Index (based on my linked accounts) and their recommendation, and how well I sleep at night.
 
 ## FI experiments 
 
