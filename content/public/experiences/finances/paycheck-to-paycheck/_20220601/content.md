@@ -63,6 +63,8 @@ Overall the advice was generic and doing make me feel like my [personal characte
 
 The recommendation was Personal Capital’s [Smart Weighting](https://www.personalcapital.com/wealth-management/smart-weighting) performs, which is similar to what I’m going for; somewhat equal weighting across size, value, and sector (the affirming part). With that said, the advisor did mention that they tend to shoot for 60 percent in large-cap, which was the first point where it felt less personalized and more cookie cutter advice; the one solution to fit them all. I explained my desire and reasoning for equal distribution and the conversation tilted a bit; still felt like a pitch to get assets under management but we definitely broke out of the script a bit.
 
+They recommended 800,000 USD, which is higher than the 600,000 USD I have for this writing and I’m not sure how they think we would hit that in a decade; I didn’t ask and they didn’t offer.
+
 
 
 
