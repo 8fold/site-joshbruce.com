@@ -1,5 +1,5 @@
 ---
-title: The 7 Habits of Highly Effective People
+title: The 7 Habits of Highly Effective People by Stephen R. Covey
 created: 20220413
 ---
 

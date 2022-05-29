@@ -1,5 +1,5 @@
 ---
-title: Getting Things Done
+title: Getting Things Done by David Allen
 created: 20220424
 ---
 
