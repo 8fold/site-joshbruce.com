@@ -12,4 +12,5 @@
 - [Experiences](/experiences/)
     - [The self](/experiences/the-self/)
     - [Finances](/experiences/finances/)
-- [Full list](/full-navigation/)
+- [Full naivgation](/full-navigation/)
+- [Support this site and content](/support/)
