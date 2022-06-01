@@ -12,7 +12,6 @@ use JoshBruce\SiteDynamic\Environment;
 
 final class FinderTest extends LiveContentTestCase
 {
-
     private const PUBLISHED_COUNT = 76;
 
     private const DRAFT_COUNT = 5;
