@@ -113,7 +113,7 @@ So, going to be slowing my investments down a bit while I wait for the bills.
 
 Saturday update (day 5; day 3 since surgery): I debated not taking an ibuprofen tonight. They gave me stronger and I haven’t touched it.
 
-## FI experiments
+## FI experiments 
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 
