@@ -27,6 +27,11 @@ fi-experiments:
 
 {!! data !!}
 
+Learned that fractional shares will be coming to Vanguard soon. Right now it’s being tested out with a random selection of investors. In the meantime, I wanted to figure out a way to get the benefits of [.exchange traded funds](ETFs); mainly the control over realized gains and losses.
+
+I converted most of my
+mutual fund stake to their exchange traded fund equivalent. This way, when I get paid, I can go ahead and send over `x` amount, buy as many ETF shares as possible with it, and send the remaining balance to the mutual fund.
+
 ## Surgery
 
 I seem to be all healed up. The human body is an amazing thing.
