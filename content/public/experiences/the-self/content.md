@@ -127,10 +127,12 @@ These are my results from [The 5 Ps](/essays-and-editorials/the-5-ps/) exercise 
 1. Reducing suffering.
 2. Experiencing the oddity of consciousness and the human experience.
 3. Helping others do the above.
+4. Taking on and amplifying the voice of those unwilling or unable to speak for themselves.
 
 ### Pensives
 
 1. Software development.
+2. Working with people not of my choosing.
 
 ### Prohibitions
 
@@ -139,6 +141,7 @@ These are my results from [The 5 Ps](/essays-and-editorials/the-5-ps/) exercise 
 ### Peeves
 
 1. Not seeking consent.
+2. People who assume or presume to know what is going on in someone’s mind.
 
 ### Pedagogies
 
