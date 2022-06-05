@@ -32,6 +32,8 @@ Learned that fractional shares will be coming to Vanguard soon. Right now it’s
 I converted most of my
 mutual fund stake to their exchange traded fund equivalent. This way, when I get paid, I can go ahead and send over `x` amount, buy as many ETF shares as possible with it, and send the remaining balance to the mutual fund.
 
+I’m starting to get used to how money flows in the new place. As a result I’ve dropped my self-imposed minimum balance from 1,000 [.United States Dollars](USD) to 500 USD.
+
 ## Surgery
 
 I seem to be all healed up. The human body is an amazing thing.
