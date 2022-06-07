@@ -38,6 +38,20 @@ I’m starting to get used to how money flows in the new place. As a result I’
 
 I seem to be all healed up. The human body is an amazing thing.
 
+## Future things
+
+I’m considering expanding the breakdown for the components. It would use the `meter` element from [.hypertext markup language](HTML) to make it feel a bit more graphic, while maintaining the accessibility, which is important.
+
+As I was thinking about the meter bit, I got to thinking I could include the value, growth, and core breakdown for the equities portion.
+
+I’m not sure I want to add that level of complexity and bookkeeping though. The justification would need to go beyond these entries. I’m also not sure how much value it’d bring to readers or myself, to be fair.
+
+To be honest I was thinking of getting rid of the breakdown entirely, but I do find it somewhat helpful on my end and it does guide my investment decisions. Just not sure the same would happen for the value, growth, and core components.
+
+Maybe I’ll see how switching to using meters looks and revisit the idea.
+
+If you’d like to share your thoughts, [hit me up](/support/).
+
 ## FI experiments 
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
