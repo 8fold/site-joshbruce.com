@@ -38,6 +38,16 @@ I’m starting to get used to how money flows in the new place. As a result I’
 
 I seem to be all healed up. The human body is an amazing thing.
 
+## What to invest in
+
+When I put money into investments it’s about one percent of my overall net worth, so, I can see the impact on the overall goal; roughly equal between size and value-growth.
+
+With the [previous check](/experiences/finances/paycheck-to-paycheck/20220601/) I purchased the total stock market, which shifted growth by about one percent. This time I put it against the extended market fund, which pushed value one percent.
+
+The reason I did the total market was because the extended market was down beyond 30 percent. The reason I did the extended market this time was because it was down just in 30 percent. So, I’m basically purchasing the cheapest fund compared to its 52 week high that is less than a 30 percent drop and won’t throw the portfolio out of balance.
+
+Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip using the rules in my [personal budget](/experiences/finances/personal-budget/#spending-savings). 
+
 ## Future things
 
 I’m considering expanding the breakdown for the components. It would use the `meter` element from [.hypertext markup language](HTML) to make it feel a bit more graphic, while maintaining the accessibility, which is important.
