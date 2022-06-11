@@ -52,7 +52,13 @@ Having said that, I’d like to start getting into the multi-factor fund. So, ne
 
 I mentioned recently that the impact of "all the volatility" of "the market" for me was mainly a plateau. Of course, this could all change tomorrow—for better or worse—but, for now, it's a plateau. I want to show a bit more than just tell on this one because I think it's an interesting illustration of the power of perspective.
 
+The following images are snapshots of my net worth according to [Personal Capital](https://www.personalcapital.com). 
 
+The first image is basically the past 90 days. The are four horizontal bands, so to speak. My net worth starts at the top of the second band on day one and ends at the top of the third one on day 90. At its lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.
+
+Looking at this I might be freaking out because humans tend to reset the scale of charts. In this case, I may look at the chart and think I’ve almost hit zero once and have only managed to go up one band. But, here’s the thing, each band represents roughly four percent of my overall net worth.
+
+So, the first image is hiding, for lack of a better term, 84 percent of my net worth, if the bottom of the chart was zero.
 
 ## Future things
 
