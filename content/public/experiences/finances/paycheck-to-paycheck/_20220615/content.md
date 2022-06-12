@@ -54,11 +54,23 @@ I mentioned recently that the impact of "all the volatility" of "the market" for
 
 The following images are snapshots of my net worth according to [Personal Capital](https://www.personalcapital.com). 
 
-The first image is basically the past 90 days. The are four horizontal bands, so to speak. My net worth starts at the top of the second band on day one and ends at the top of the third one on day 90. At its lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.
+The first image is basically the past 90 days. There are four horizontal bands, so to speak. My net worth starts at the top of the second band on day one and ends at the top of the third one on day 90. At its lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.
 
 Looking at this I might be freaking out because humans tend to reset the scale of charts. In this case, I may look at the chart and think I’ve almost hit zero once and have only managed to go up one band. But, here’s the thing, each band represents roughly four percent of my overall net worth.
 
 So, the first image is hiding, for lack of a better term, 84 percent of my net worth, if the bottom of the chart was zero.
+
+The second image is taken from the same span of months from 2021 and it appears to be a steady climb upward. There are three horizontal bands. My net worth starts at the top of the first band on the first day and ends just above the third band on the last day.
+
+The thing with the second image is that each band represents twice as much change than the first. So, if each band in the first image were 5 [.United States Dollars](USD) each band in the second image would be 10 USD.
+
+Rendering charts can be difficult though and I don’t think there’s any manipulation happening here.
+
+Designers often want to represent the highest-high and lowest low. Typically, we want to fill the screen. We want to trust that viewers will look at the scale and see the shifts, while visually dramatic represent only a fraction of the overall net worth and change over time.
+
+Granted, most of this upward movement is because I’m still putting money in; the value of the portfolio is down a few thousand dollars compared to the cost basis.
+
+The third image shows the time from just before I started tracking in [Personal Capital](https://www.personalcapital.com) up to June of this year. There are three bands, each representing a third of my net worth. The initial spike is from setting up and syncing my accounts. The steady climb that follows is primarily from my contributions; it’s too early for the effects of compounding and increased valuation to really take hold. The vertical line represents January first of 2022; when the volatility struck. And, for me, this where the plateau started. Further, this chart doesn’t seem nearly as scary as the first or as demotivating as the second.
 
 ## Future things
 
