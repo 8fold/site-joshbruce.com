@@ -1,6 +1,6 @@
 ---
 title: June 15th, 2022 paycheck
-created: 20220601
+created: 20220615
 data:
 - [Debt, 0, 1, 0.5]
 - [Cash, 3, 9, 7.3]
@@ -29,8 +29,7 @@ fi-experiments:
 
 Learned that fractional shares will be coming to Vanguard soon. Right now it’s being tested out with a random selection of investors. In the meantime, I wanted to figure out a way to get the benefits of [.exchange traded funds](ETFs); mainly the control over realized gains and losses.
 
-I converted most of my
-mutual fund stake to their exchange traded fund equivalent. This way, when I get paid, I can go ahead and send over `x` amount, buy as many ETF shares as possible with it, and send the remaining balance to the mutual fund.
+I converted most of my mutual fund stake to their exchange traded fund equivalent. This way, when I get paid, I can go ahead and send over `x` amount, buy as many ETF shares as possible with it, and send the remaining balance to the mutual fund.
 
 I’m starting to get used to how money flows in the new place. As a result I’ve dropped my self-imposed minimum balance from 1,000 [.United States Dollars](USD) to 500 USD.
 
@@ -40,23 +39,27 @@ I seem to be all healed up. The human body is an amazing thing.
 
 ## What to invest in
 
-When I put money into investments it’s about one percent of my overall net worth, so, I can see the impact on the overall goal; roughly equal between size and value-growth.
+When I put money into investments it’s about one percent of my overall net worth right now; as my net worth grows, however, the impact of each contribution will diminish. With that in mind, I want to get the portfolio to a target balance early to hopefully be able to maintain that balance moving forward.
+
+When it comes to the size question, I'm in a good place, however, when it comes to value versus growth, every time I put into the total stock market fund, growth increases too much.
 
 With the [previous check](/experiences/finances/paycheck-to-paycheck/20220601/) I purchased the total stock market, which shifted growth by about one percent. This time I put it against the extended market fund, which pushed value one percent.
 
-The reason I did the total market was because the extended market was down beyond 30 percent. The reason I did the extended market this time was because it was down just in 30 percent. So, I’m basically purchasing the cheapest fund compared to its 52 week high that is less than a 30 percent drop and won’t throw the portfolio out of balance.
+The extended market was down over 30 percent from its 52 week high, which means I won't put more money into it according to my [personal budget](/experiences/finances/personal-budget/#spending-savings). With this check, the extended market was down a little over 20 percent but less than 30. So, I’m basically purchasing the cheapest fund compared to its 52 week high within the guardrails of the budget.
 
-Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip using the rules in my [personal budget](/experiences/finances/personal-budget/#spending-savings). 
+Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip in accordance with the personal budget. 
 
 ## The plateau
 
-I mentioned recently that the impact of "all the volatility" of "the market" for me was mainly a plateau. Of course, this could all change tomorrow—for better or worse—but, for now, it's a plateau. I want to show a bit more than just tell on this one because I think it's an interesting illustration of the power of perspective.
+I mentioned recently the impact of "all the volatility" in "the market" for me was mainly a plateau. Of course, this could all change tomorrow—for better or worse—but, for now, it's a plateau. I want to show more than tell on this because I think it's an interesting illustration of the power of perspective.
 
 The following images are snapshots of my net worth according to [Personal Capital](https://www.personalcapital.com). 
 
-The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third one on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.
+The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third band on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. 
 
-![The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third one on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.](/media/paycheck-to-paycheck/net-worth-202203-202206.png)
+Hence, the plateau.
+
+![The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third band on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. Hence, the plateau.](/media/paycheck-to-paycheck/net-worth-202203-202206.png)
 
 Looking at this I might be freaking out because humans tend to reset the scale of charts. In this case, I may look at the chart and think I’ve almost hit zero once and have only managed to go up one band. But, here’s the thing, each band represents roughly four percent of my overall net worth.
 
@@ -70,9 +73,9 @@ The thing with the second image is that each band represents twice as much chang
 
 Rendering charts can be difficult though and I don’t think there’s any manipulation happening here.
 
-Designers often want to represent the highest-high and lowest low. Typically, we want to fill the screen. We want to trust that viewers will look at the scale and see the shifts, while visually dramatic represent only a fraction of the overall net worth and change over time.
+Designers often want to represent the highest-high and lowest-low. Typically, we want to fill the screen. We want to trust that viewers will look at the scale and see the shifts in comparison to that. Unfortunately, while it adds visual drama, it represents a fraction of the net worth and change over time.
 
-Granted, most of this upward movement is because I’m still putting money in; the value of the portfolio is down a few thousand dollars compared to the cost basis.
+To be clear, most of this upward movement is because I’m putting money in; the value of the portfolio is down in value by about 10,000 USD compared to the cost basis; so, roughly 10 percent of the portfolio.
 
 The third image shows the time from just before I started tracking in [Personal Capital](https://www.personalcapital.com) up to June of this year. There are three bands, each representing a third of my net worth. The initial spike is from setting up and syncing my accounts. The steady climb that follows is primarily from my contributions; it’s too early for the effects of compounding and increased valuation to really take hold. The vertical line represents January first of 2022; when the volatility struck. And, for me, this where the plateau started. Further, this chart doesn’t seem nearly as scary as the first or as demotivating as the second.
 
