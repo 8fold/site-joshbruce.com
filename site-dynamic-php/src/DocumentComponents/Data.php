@@ -17,8 +17,22 @@ class Data
 
         $listHeadings = [];
         foreach ($data as $row) {
-            if (count($row) === 4) {
-                $listHeadings[] = self::list_from_1_0($row);
+            if (count($row) === 4 and array_key_exists(0, $row)) {
+                $label = strval($row[0]);
+                $min   = floatval($row[1]);
+                $max   = floatval($row[2]);
+                $value = floatval($row[3]);
+                $listHeadings[] = self::list_from_1_1($label, $min, $max, $value);
+
+            } elseif (count($row) === 4 and array_key_exists('label', $row)) {
+                $label = strval($row['label']);
+                $min   = floatval($row['min']);
+                $max   = floatval($row['max']);
+                $value = floatval($row['value']);
+                $listHeadings[] = self::list_from_1_1($label, $min, $max, $value);
+
+            } elseif (array_key_exists('label', $row)) {
+
             }
         }
 
@@ -29,18 +43,20 @@ class Data
         return Element::ul(...$listHeadings)->props('is data-list')->build();
     }
 
-    private static function list_from_1_0(array $row): Element
-    {
-        $label   = $row[0];
-        $current = $row[3];
-        $low     = $row[1];
-        $high    = $row[2];
-
+    private static function list_from_1_2(
+        string $label,
+        float $min,
+        float $max,
+        float $value,
+        float|bool $low = false,
+        float|bool $high = false,
+        float|bool $optimum = false
+    ): Element {
         $detail = '';
-        if ($current > $high) {
+        if ($value > $max) {
             $detail = 'decrease';
 
-        } elseif ($current < $low) {
+        } elseif ($value < $min) {
             $detail = 'increase';
 
         } else {
@@ -51,25 +67,69 @@ class Data
         $label  = Element::span($label)->build();
         $parenthetical = Element::span(' (' . $detail . ')')->build();
 
+        $current = Element::li(
+            Element::b('current: '),
+            $value
+        );
+
+        $min = Element::li(
+            Element::abbr('min')->props('title minimum'),
+            ': ',
+            $min
+        );
+
+        $max = Element::li(
+            Element::abbr('max')->props('title maximum'),
+            ': ',
+            $max
+        );
+
+        if ($low !== false and $high !== false and $optimum !== false) {
+            $low = Element::li(
+                Element::b('low: '),
+                $low
+            );
+
+            $high = Element::li(
+                Element::b('high: '),
+                $high
+            );
+
+            $optimum = Element::li(
+                Element::b('optimum: '),
+                $optimum
+            );
+        }
+
         return Element::li(
             $label . $parenthetical,
             Element::ul(
-                Element::li(
-                    Element::b('current: '),
-                    $current
-                ),
-                Element::li(
-                    Element::abbr('min')->props('title minimum'),
-                    ': ',
-                    $low
-                ),
-                Element::li(
-                    Element::abbr('max')->props('title maximum'),
-                    ': ',
-                    $high
-                )
+                $current,
+                $min,
+                $max,
+                $low,
+                $high,
+                $optimum
             )
         )->props('data-icon ' . $detail);
+    }
 
+    private static function list_from_1_1(
+        string $label,
+        float $min,
+        float $max,
+        float $value
+    ): Element {
+        return self::list_from_1_2($label, $min, $max, $value);
+    }
+
+    private static function list_from_1_0(array $row): Element
+    {
+        $label   = strval($row[0]);
+        $low     = floatval($row[1]);
+        $high    = floatval($row[2]);
+        $current = floatval($row[3]);
+
+        return self::list_from_1_1($label, $low, $high, $current);
     }
 }
