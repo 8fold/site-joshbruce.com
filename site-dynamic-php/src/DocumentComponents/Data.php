@@ -17,45 +17,9 @@ class Data
 
         $listHeadings = [];
         foreach ($data as $row) {
-            $label   = $row[0];
-            $current = $row[3];
-            $low     = $row[1];
-            $high    = $row[2];
-
-            $detail = '';
-            if ($current > $high) {
-                $detail = 'decrease';
-
-            } elseif ($current < $low) {
-                $detail = 'increase';
-
-            } else {
-                $detail = 'hold';
-
+            if (count($row) === 4) {
+                $listHeadings[] = self::list_from_1_0($row);
             }
-
-            $label  = Element::span($label)->build();
-            $parenthetical = Element::span(' (' . $detail . ')')->build();
-
-            $listHeadings[] = Element::li(
-                $label . $parenthetical,
-                Element::ul(
-                    Element::li(
-                        Element::b('current: '),
-                        $current
-                    ),
-                    Element::li(
-                        Element::abbr('min')->props('title minimum'),
-                        ': ',
-                        $low
-                    ),
-                    Element::li(
-                        Element::abbr('max')->props('title maximum'),
-                        ': ',
-                        $high
-                    )
-                )
-            )->props('data-icon ' . $detail);
         }
 
         if (count($listHeadings) === 0) {
@@ -63,5 +27,49 @@ class Data
 
         }
         return Element::ul(...$listHeadings)->props('is data-list')->build();
+    }
+
+    private static function list_from_1_0(array $row): Element
+    {
+        $label   = $row[0];
+        $current = $row[3];
+        $low     = $row[1];
+        $high    = $row[2];
+
+        $detail = '';
+        if ($current > $high) {
+            $detail = 'decrease';
+
+        } elseif ($current < $low) {
+            $detail = 'increase';
+
+        } else {
+            $detail = 'hold';
+
+        }
+
+        $label  = Element::span($label)->build();
+        $parenthetical = Element::span(' (' . $detail . ')')->build();
+
+        return Element::li(
+            $label . $parenthetical,
+            Element::ul(
+                Element::li(
+                    Element::b('current: '),
+                    $current
+                ),
+                Element::li(
+                    Element::abbr('min')->props('title minimum'),
+                    ': ',
+                    $low
+                ),
+                Element::li(
+                    Element::abbr('max')->props('title maximum'),
+                    ': ',
+                    $high
+                )
+            )
+        )->props('data-icon ' . $detail);
+
     }
 }
