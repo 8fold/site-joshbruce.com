@@ -2,13 +2,34 @@
 title: June 15th, 2022 paycheck
 created: 20220615
 data:
-- [Debt, 0, 1, 0.5]
-- [Cash, 3, 9, 7.3]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 33.1]
-- [US equities - mid, 25, 38, 28.5]
-- [US equities - large, 25, 37, 28.2]
+- label: Debt
+  min: 0
+  max: 1
+  value: 0.5
+- label: Cash
+  min: 3
+  max: 9
+  value: 7.3
+- label: Low correlation
+  min: 0
+  max: 1
+  value: 0.9
+- label: Negative correlation
+  min: 0
+  max: 1
+  value: 0.8
+- label: US equities - small
+  min: 25
+  max: 38
+  value: 33.1
+- label: US equities - mid
+  min: 25
+  max: 38
+  value: 28.5
+- label: US equities - large
+  min: 25
+  max: 37
+  value: 28.2
 fi-experiments:
 # label, current, previous, start
 - [0.0, 38.42, 37.33, 47.71]
