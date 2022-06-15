@@ -5,15 +5,15 @@ data:
 - label: Debt
   min: 0
   max: 1
-  value: 0.5
+  value: 0.7
 - label: Cash
   min: 3
   max: 9
-  value: 7.3
+  value: 8.1
 - label: Low correlation
   min: 0
   max: 1
-  value: 0.9
+  value: 1
 - label: Negative correlation
   min: 0
   max: 1
@@ -21,15 +21,15 @@ data:
 - label: US equities - small
   min: 25
   max: 38
-  value: 33.1
+  value: 31.3
 - label: US equities - mid
   min: 25
   max: 38
-  value: 28.5
+  value: 27.7
 - label: US equities - large
   min: 25
   max: 37
-  value: 28.2
+  value: 30
 fi-experiments:
 # label, current, previous, start
 - [0.0, 34.72, 38.42, 47.71]
