@@ -48,6 +48,10 @@ The reason I did the total market was because the extended market was down beyon
 
 Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip using the rules in my [personal budget](/experiences/finances/personal-budget/#spending-savings). 
 
+With all that said, if things keep going as they are, the multi-factor fund will be the only one I can purchase because the other two will be down over 30 percent from their 52 week high.
+
+It’s probably worth noting that using the 52 week high is somewhat arbitrary and is only used to determine what’s down the most. The balance of the portfolio is the primary factor in determining what to purchase.
+
 ## The plateau
 
 I mentioned recently that the impact of "all the volatility" of "the market" for me was mainly a plateau. Of course, this could all change tomorrow—for better or worse—but, for now, it's a plateau. I want to show a bit more than just tell on this one because I think it's an interesting illustration of the power of perspective.
