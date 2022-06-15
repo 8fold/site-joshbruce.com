@@ -32,14 +32,14 @@ data:
   value: 28.2
 fi-experiments:
 # label, current, previous, start
-- [0.0, 38.42, 37.33, 47.71]
-- [0.2, 35.35, 34.43, 43.83]
-- [0.4, 35.47, 34.61, 43.74]
-- [0.6, 35.83, 35.03, 43.54]
-- [0.8, 36.78, 36, 43.36]
-- [1.0, 40.69, 39.85, 46.87]
-- [1.1, 40.58, 39.74, 46.76]
-- [1.2, 40.55, 39.71, 46.73]
+- [0.0, 34.72, 38.42, 47.71]
+- [0.2, 32.09, 35.35, 43.83]
+- [0.4, 32.33, 35.47, 43.74]
+- [0.6, 32.88, 35.83, 43.54]
+- [0.8, 34.12, 36.78, 43.36]
+- [1.0, 38.01, 40.69, 46.87]
+- [1.1, 37.89, 40.58, 46.76]
+- [1.2, 37.86, 40.55, 46.73]
 ---
 
 # June 15th, 2022 paycheck
@@ -69,6 +69,10 @@ With the [previous check](/experiences/finances/paycheck-to-paycheck/20220601/) 
 The extended market was down over 30 percent from its 52 week high, which means I won't put more money into it according to my [personal budget](/experiences/finances/personal-budget/#spending-savings). With this check, the extended market was down a little over 20 percent but less than 30. So, I’m basically purchasing the cheapest fund compared to its 52 week high within the guardrails of the budget.
 
 Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip in accordance with the personal budget. 
+
+With all that said, if things keep going as they are, the multi-factor fund will be the only one I can purchase because the other two will be down over 30 percent from their 52 week high.
+
+It’s probably worth noting that using the 52 week high is somewhat arbitrary and is only used to determine what’s down the most. The balance of the portfolio is the primary factor in determining what to purchase.
 
 ## The plateau
 
