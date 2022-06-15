@@ -3,7 +3,10 @@ data:
 - label: Debt
   min: 0,
   max: 1,
-  value: 0.5
+  value: 0.5,
+  low: 0.25,
+  high: 0.75,
+  optimum: 0.5
 - label: Cash
   min: 3
   max: 9

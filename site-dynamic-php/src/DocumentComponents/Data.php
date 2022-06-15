@@ -22,17 +22,32 @@ class Data
                 $min   = floatval($row[1]);
                 $max   = floatval($row[2]);
                 $value = floatval($row[3]);
-                $listHeadings[] = self::list_from_1_1($label, $min, $max, $value);
+                $listHeadings[] = self::list_from_1_2($label, $min, $max, $value);
 
             } elseif (count($row) === 4 and array_key_exists('label', $row)) {
                 $label = strval($row['label']);
                 $min   = floatval($row['min']);
                 $max   = floatval($row['max']);
                 $value = floatval($row['value']);
-                $listHeadings[] = self::list_from_1_1($label, $min, $max, $value);
+                $listHeadings[] = self::list_from_1_2($label, $min, $max, $value);
 
-            } elseif (array_key_exists('label', $row)) {
-
+            } elseif (array_key_exists('low', $row)) {
+                $label   = strval($row['label']);
+                $min     = floatval($row['min']);
+                $max     = floatval($row['max']);
+                $value   = floatval($row['value']);
+                $low     = floatval($row['low']);
+                $high    = floatval($row['high']);
+                $optimum = floatval($row['optimum']);
+                $listHeadings[] = self::list_from_1_2(
+                    $label,
+                    $min,
+                    $max,
+                    $value,
+                    $low,
+                    $high,
+                    $optimum
+                );
             }
         }
 
@@ -112,24 +127,5 @@ class Data
                 $optimum
             )
         )->props('data-icon ' . $detail);
-    }
-
-    private static function list_from_1_1(
-        string $label,
-        float $min,
-        float $max,
-        float $value
-    ): Element {
-        return self::list_from_1_2($label, $min, $max, $value);
-    }
-
-    private static function list_from_1_0(array $row): Element
-    {
-        $label   = strval($row[0]);
-        $low     = floatval($row[1]);
-        $high    = floatval($row[2]);
-        $current = floatval($row[3]);
-
-        return self::list_from_1_1($label, $low, $high, $current);
     }
 }
