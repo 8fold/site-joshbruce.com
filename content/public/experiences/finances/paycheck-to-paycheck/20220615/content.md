@@ -100,11 +100,23 @@ Rendering charts can be difficult though and I don’t think there’s any manip
 
 Designers often want to represent the highest-high and lowest-low. Typically, we want to fill the screen. We want to trust that viewers will look at the scale and see the shifts in comparison to that. Unfortunately, while it adds visual drama, it represents a fraction of the net worth and change over time.
 
-To be clear, most of this upward movement is because I’m putting money in; the value of the portfolio is down in value by about 10,000 USD compared to the cost basis; so, roughly 10 percent of the portfolio.
+To be clear, most of this upward movement is because I’m putting money in; the value of the portfolio is down in value by over 20,000 USD compared to the cost basis (principal); so, roughly 10 percent of the portfolio.
 
 The third image shows the time from just before I started tracking in [Personal Capital](https://www.personalcapital.com) up to June of this year. There are three bands, each representing a third of my net worth. The initial spike is from setting up and syncing my accounts. The steady climb that follows is primarily from my contributions; it’s too early for the effects of compounding and increased valuation to really take hold. The vertical line represents January first of 2022; when the volatility struck. And, for me, this where the plateau started. Further, this chart doesn’t seem nearly as scary as the first or as demotivating as the second.
 
 ![The third image shows the time from just before I started tracking in Personal Capital up to June of this year. There are three bands, each representing a third of my net worth. The initial spike is from setting up and syncing my accounts. The steady climb that follows is primarily from my contributions; it’s too early for the effects of compounding and increased valuation to really take hold. The vertical line represents January first of 2022; when the volatility struck. And, for me, this where the plateau started.](/media/paycheck-to-paycheck/net-worth-202101-202206.png)
+
+## My first bear market
+
+From what I understand, the [.Standards and Poor’s 500 index](S&P 500) officially entered bear market status. As I track what to invest in next, the bear market status seems to be reflected there as well. 
+
+The extended market fund is down 35 percent from its 52 week high, which means, as of this writing, I won’t be throwing any extra that way. The total stock market fund is down 25 percent from its 52 week high, which means I could put money toward it. The multi-factor fund is down 17 percent from its 52 week high.
+
+In theory, given how 2021 closed out, the total stock market fund will most likely close lower than 30 percent from the 52 week high soon.
+
+The speculation is the market went down as interest rates are slated to go up again to try and curtail inflation a bit. Meanwhile, those investing on leverage are bailing out and many who jumped in during the good times are panic-selling; at least that seems to be the assessment I’m seeing the most.
+
+Regardless, we’ll just keep on as we are for now; stress testing the approach and refining as we go.
 
 ## Future things
 
