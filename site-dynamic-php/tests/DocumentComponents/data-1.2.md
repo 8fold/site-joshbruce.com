@@ -1,0 +1,34 @@
+---
+data:
+- label: Debt
+  min: 0,
+  max: 1,
+  value: 0.5,
+  low: 0.25,
+  high: 0.75,
+  optimum: 0.5
+- label: Cash
+  min: 3
+  max: 9
+  value: 7.3
+- label: Low correlation
+  min: 0
+  max: 1
+  value: 0.9
+- label: Negative correlation
+  min: 0
+  max: 1
+  value: 0.8
+- label: US equities - small
+  min: 25
+  max: 38
+  value: 33.1
+- label: US equities - mid
+  min: 25
+  max: 38
+  value: 28.5
+- label: US equities - large
+  min: 25
+  max: 37
+  value: 28.2
+---
