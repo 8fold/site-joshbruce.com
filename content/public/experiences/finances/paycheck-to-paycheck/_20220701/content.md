@@ -83,7 +83,7 @@ The recent market volatility has me considering inner bands as well.
 
 The idea comes from a couple articles I saw on rebalancing strategies. In one article tolerance bands were set to be more narrow on assets with higher volatility and the bands were set wider for assets with lower volatility; this way your selling when the more volatile asset is up and buying only when it’s down. The other article is the one that brought up the idea of only rebalancing to the point of being within the bands bands, not to the absolute target. 
 
-The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing then. Finally, if the balance tilts Bretons the power bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date or time frame.
+The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing token and would only need to rebalance to get within the inner bands. Finally, if the balance tilts Bretons the power bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date 
 
 
 
