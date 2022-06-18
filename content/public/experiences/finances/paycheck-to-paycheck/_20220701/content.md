@@ -69,9 +69,26 @@ fi-experiments:
 
 {!! data !!}
 
-The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put the bull toward the multi-factor fund and the remaining to the total market fund. Even at over 30 percent down, the allocation to small-cap equities is the greatest portion, so, this is a good chance to see if the multi-factor fund does what I think it will; this is due to rebalancing the 401k.
+The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest operation of the portfolio, even with a decline of over 30 percent in the extended market fund.
 
-I’ve added some more numbers to the allocation mix; in part to facilitate a meter visualization but also to help guide purchasing. Frank Vasquez from [Risk Parity Radio](https://www.riskparityradio.com) mentioned a [Michael Kitces](https://www.kitces.com/blog/category/5-investments/) article (and research) that showed 20 percent, relative tolerance bands are pretty effective (believe [this the article](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/)).
+## Adjusting tolerances
+
+I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target percent it should be in the overall portfolio; for equities It’s roughly 30 percent. The minimum and maximum is determined by increasing and decreasing the target percent by a certain amount; for the equities I it’s roughly 20 percent from the 30 percent. I 20 percent because of an article by Michael Kitces describing [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). These bands 20 percent on either side of the target are relative tolerance bands, because relative to the target, if the value is between the bands, we don’t worry about rebalancing in the sense of selling something of high value proportion to buy something of low proportion to reset the values to their targets. 
+
+Let’s say I had a portfolio that was 60 percent stocks and 40 percent bonds. Over time, the stocks begin taking up, say, 70 percent of the portfolio. When I rebalance I’d sell enough of the stocks to buy enough of the bonds to get both back to the original targets. For straight rebalancing, this is what we do. 
+
+For me, as long s as we’re inside the tolerance bands, no rebalancing can occur.
+
+The recent market volatility has me considering inner bands as well.
+
+The idea comes from a couple articles I saw on rebalancing strategies. In one article tolerance bands were set to be more narrow on assets with higher volatility and the bands were set wider for assets with lower volatility; this way your selling when the more volatile asset is up and buying only when it’s down. The other article is the one that brought up the idea of only rebalancing to the point of being within the bands bands, not to the absolute target. 
+
+The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing then. Finally, if the balance tilts Bretons the power bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date or time frame.
+
+
+
+
+
 
 Brief explanation: Say you want your portfolio to be 60 percent equities and 40 percent bonds. Further, you’ve decided on 20 percent, relative tolerance bands. This means relative to the target, for our example, you’d rebalance if the percent of equities increased to 72 percent or dropped below 48 percent; for the bonds it’d be when they hit 48 percent or 32 percent, respectively. The relative part is twofold. First, it’s relative to the target. Second, the target is relative to the portfolio; not a fixed dollar amount.
 
