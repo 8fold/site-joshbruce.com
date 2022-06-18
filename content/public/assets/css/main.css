@@ -363,7 +363,7 @@ ul[is=data-list] > li > ul{
   list-style:none;
   text-align:left;
   display:grid;
-  grid-template-areas:"c c" "min max";
+  grid-template-areas:"c c" "min max" "meter meter";
 }
 ul[is=data-list] > li > ul > li:nth-of-type(1){
   margin:var(--m-spacer);
@@ -391,6 +391,16 @@ ul[is=data-list] > li > ul > li:nth-of-type(2){
 }
 ul[is=data-list] > li > ul > li:nth-of-type(3){
   grid-area:max;
+}
+ul[is=data-list] > li > ul > li:nth-of-type(4){
+  grid-area:meter;
+}
+ul[is=data-list] > li > ul > li:nth-of-type(4) meter{
+  display:block;
+  width:100%;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  background-color:var(--gray-lightest);
 }
 ul[is=data-list] > li[data-icon=hold] > ul > li:nth-of-type(1):after{
   content:var(--icon-hold);
@@ -483,7 +493,7 @@ article iframe[src*="https://jsfiddle.net"]{
   ul[is=data-list]{
     display:grid;
     gap:var(--m-spacer);
-    grid-template-columns:repeat(3, auto);
+    grid-template-columns:repeat(3, 1fr);
   }
   ul[is=data-list] > li{
     margin-bottom:var(--0-spacer);
