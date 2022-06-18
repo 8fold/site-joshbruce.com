@@ -1,6 +1,6 @@
 ---
-title: June 15th, 2022 paycheck
-created: 20220615
+title: July 1st, 2022 paycheck
+created: 20220701
 data:
 - label: Debt
   min: 0
@@ -63,13 +63,37 @@ fi-experiments:
 - [1.2, 37.86, 40.55, 46.73]
 ---
 
-# June 15th, 2022 paycheck
+# July 1st, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
+The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest operation of the portfolio, even with a decline of over 30 percent in the extended market fund.
+
+## Adjusting tolerances
+
+I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target percent it should be in the overall portfolio; for equities It’s roughly 30 percent. The minimum and maximum is determined by increasing and decreasing the target percent by a certain amount; for the equities I it’s roughly 20 percent from the 30 percent. I 20 percent because of an article by Michael Kitces describing [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). These bands 20 percent on either side of the target are relative tolerance bands, because relative to the target, if the value is between the bands, we don’t worry about rebalancing in the sense of selling something of high value proportion to buy something of low proportion to reset the values to their targets.
+
+Let’s say I had a portfolio that was 60 percent stocks and 40 percent bonds. Over time, the stocks begin taking up, say, 70 percent of the portfolio. When I rebalance I’d sell enough of the stocks to buy enough of the bonds to get both back to the original targets. For straight rebalancing, this is what we do.
+
+For me, as long s as we’re inside the tolerance bands, no rebalancing can occur.
+
+The recent market volatility has me considering inner bands as well.
+
+The idea comes from a couple articles I saw on rebalancing strategies. In one article tolerance bands were set to be more narrow on assets with higher volatility and the bands were set wider for assets with lower volatility; this way your selling when the more volatile asset is up and buying only when it’s down. The other article is the one that brought up the idea of only rebalancing to the point of being within the bands bands, not to the absolute target.
+
+The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing token and would only need to rebalance to get within the inner bands; not the target. Finally, if the balance tilts beyond the outer bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date
+
+The result should be that the equities don’t require rebalancing much, if ever, and the contributions or withdrawals will be enough to keep equities in line. I won’t speculate what will happen as the portfolio allocation shifts from the Mark 0 to something like the Mark 1.
+
 ## The plateau
+
+## Surgery
+
+The bills continue coming in and I’m not appreciating the healthcare industry at the moment.
+
+I live in the United States, so, complaining about the healthcare shouldn’t be much of a surprise.
 
 ## FI experiments
 
