@@ -83,24 +83,9 @@ The recent market volatility has me considering inner bands as well.
 
 The idea comes from a couple articles I saw on rebalancing strategies. In one article tolerance bands were set to be more narrow on assets with higher volatility and the bands were set wider for assets with lower volatility; this way your selling when the more volatile asset is up and buying only when it’s down. The other article is the one that brought up the idea of only rebalancing to the point of being within the bands bands, not to the absolute target. 
 
-The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing token and would only need to rebalance to get within the inner bands. Finally, if the balance tilts Bretons the power bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date 
+The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing token and would only need to rebalance to get within the inner bands; not the target. Finally, if the balance tilts beyond the outer bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date 
 
-
-
-
-
-
-Brief explanation: Say you want your portfolio to be 60 percent equities and 40 percent bonds. Further, you’ve decided on 20 percent, relative tolerance bands. This means relative to the target, for our example, you’d rebalance if the percent of equities increased to 72 percent or dropped below 48 percent; for the bonds it’d be when they hit 48 percent or 32 percent, respectively. The relative part is twofold. First, it’s relative to the target. Second, the target is relative to the portfolio; not a fixed dollar amount.
-
-The minimum and maximum for the allocation listed above is set using a target (optimum) and a deviation percentage. The deviation I use is 20 percent from the target; at least for the equities (for the other macro-allocations I’ve just set a percentage). As long as the value of the thing is within those bounds, the portfolio is considered balanced. 
-
-When I first started the portfolio was so heavily weighted that these wide minimum and maximum values gave me an achievable goal; get the allocation balanced in one year. With the recent volatility in the markets I’m starting to see how things shift with valuation and contributions. Further, the rationale of more volatile things being on tighter bands seems to make sense to me. So, I’m experimenting with inner bands.
-
-I’m not sure how this will play out in practice yet; therefore, I’m not updating the [investment policy](/experiences/finances/investment-policy/) or [personal budget](/experiences/finances/personal-budget/) quite yet.
-
-My thought at the moment is the inner bands will help guide the contributions, withdrawals, and acquisition of rebalancing tokens. Meanwhile, the outer bands will be for opportunistic rebalancing; if the portfolio is that out of balance, just rebalance immediately. However, it won’t be a strict rebalance where things are brought and sold in a way that the portfolio goes back to the targets; instead, getting to the inner bands will be good enough.
-
-The result should be that the equities don’t require rebalancing much, if ever, and the contributions or withdrawals will be enough to keep that portion in line. I won’t speculate what will happen as the portfolio allocation shifts from the Mark 0 to something like the Mark 1.
+The result should be that the equities don’t require rebalancing much, if ever, and the contributions or withdrawals will be enough to keep equities in line. I won’t speculate what will happen as the portfolio allocation shifts from the Mark 0 to something like the Mark 1.
 
 ## The plateau
 
