@@ -69,11 +69,32 @@ fi-experiments:
 
 {!! data !!}
 
-The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest operation of the portfolio, even with a decline of over 30 percent in the extended market fund.
+The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest proportion of the portfolio, even with a decline of over 30 percent in the extended market fund.
 
 ## Adjusting tolerances
 
-I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target percent it should be in the overall portfolio; for equities It’s roughly 30 percent. The minimum and maximum is determined by increasing and decreasing the target percent by a certain amount; for the equities I it’s roughly 20 percent from the 30 percent. I 20 percent because of an article by Michael Kitces describing [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). These bands 20 percent on either side of the target are relative tolerance bands, because relative to the target, if the value is between the bands, we don’t worry about rebalancing in the sense of selling something of high value proportion to buy something of low proportion to reset the values to their targets.
+I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target, or optimum, percent it should be in the overall portfolio; as of this writing:
+
+1. Debt should be 0 percent.
+2. Cash should be 6.
+3. Alternatives should be 0.
+4. Negative correlation should be 0.
+5. Small- and mid-cap equities should be 32.
+6. Large-cap should be 31.
+
+I’m in accumulation mode, therefore, the portfolio is as close as it can be to a109 percent equities portfolio. Each macro-allocation is then given a tolerance; a tolerable deviation from that target, which gives us the minimum and maximum for that asset class (listed above).
+
+Debt and cash can’t go lower than 0 and can’t be avoided given the way I pay bills and track this sorta thing, so, I use a static number to set the tolerance bands; same with alternatives and negative correlation.
+
+For equities, I use 20 percent, which was the optimum determined by an article on [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). 
+
+
+
+
+
+
+
+These bands 20 percent on either side of the target are relative tolerance bands, because relative to the target, if the value is between the bands, we don’t worry about rebalancing in the sense of selling something of high value proportion to buy something of low proportion to reset the values to their targets.
 
 Let’s say I had a portfolio that was 60 percent stocks and 40 percent bonds. Over time, the stocks begin taking up, say, 70 percent of the portfolio. When I rebalance I’d sell enough of the stocks to buy enough of the bonds to get both back to the original targets. For straight rebalancing, this is what we do.
 
