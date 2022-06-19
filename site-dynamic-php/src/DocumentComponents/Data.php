@@ -77,42 +77,9 @@ class Data
         float $value
     ): Element {
         $detail = self::detail($min, $max, $value);
-//         $detail = '';
-//         if ($value > $max) {
-//             $detail = 'decrease';
-//
-//         } elseif ($value < $min) {
-//             $detail = 'increase';
-//
-//         } else {
-//             $detail = 'hold';
-//
-//         }
 
         $label  = Element::span($label)->build();
         $parenthetical = Element::span(' (' . $detail . ')')->build();
-
-        // $meter = Element::li(
-        //     Element::meter()->props(
-        //         'min ' . $min,
-        //         'max ' . $max,
-        //         'value ' . $value
-        //     )
-        // );
-
-//         if ($low !== false and $high !== false and $optimum !== false) {
-//             $meter = Element::li(
-//                 Element::meter()->props(
-//                     'min ' . $min,
-//                     'low ' . $low,
-//                     'optimum ' . $optimum,
-//                     'high ' . $high,
-//                     'max ' . $max,
-//                     'value ' . $value
-//                 )
-//             );
-//
-//         }
 
         $current = Element::li(
             Element::b('current: '),
@@ -130,24 +97,6 @@ class Data
             ': ',
             $max
         );
-
-//         if ($low !== false and $high !== false and $optimum !== false) {
-//             $low = Element::li(
-//                 Element::b('low: '),
-//                 $low
-//             );
-//
-//             $high = Element::li(
-//                 Element::b('high: '),
-//                 $high
-//             );
-//
-//             $optimum = Element::li(
-//                 Element::b('optimum: '),
-//                 $optimum
-//             );
-//
-//         }
 
         return Element::li(
             $label . $parenthetical,
