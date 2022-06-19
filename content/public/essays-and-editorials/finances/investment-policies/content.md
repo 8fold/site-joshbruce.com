@@ -140,7 +140,7 @@ Rebalancing is the act of selling and buying holdings in a way that each holding
 
 There are various approaches out there and this should not be considered an exhaustive list:
 
-**Never** rebalancing is in keeping with ideas of [Jack Bogle](https://www.morningstar.com/articles/615379/bogle-be-sensible-about-rebalancing) (found of [Vanguard](https://investor.vanguard.com/corporate-portal/)):
+**Never** rebalancing is in keeping with ideas of [Jack Bogle](https://www.morningstar.com/articles/615379/bogle-be-sensible-about-rebalancing) (founder of [Vanguard](https://investor.vanguard.com/corporate-portal/)):
 
 > I am in a small minority on the idea of rebalancing. I don't think you need to do it. The data bear me out, because the higher-yielding asset is going to be stocks over the long term. That's the way the capital markets work. Not in every 10-year period, or even for that matter every 25-year period. But the higher-returning asset you're getting rid of to go into a lower-returning asset, so it dampens your returns, and the differences turn out to be, if you look at 25-year periods, very, very small. And sometimes rebalancing improves your returns. Sometimes it makes them worse.
 
@@ -172,8 +172,8 @@ x = m * (ta - f)
 - If `ta` ever falls below `f`; all assets should be converted to cash to maintain as much capital as possible.
 - Regarding `m`:
 	- If `m` is 0, risk is considered intolerable.
-	- If `m` is less than 1, risk is possibly, however, the risk account balance will never exceed the safety account balance (`f`).
-	- Calculating `m` can be a shot in the dark or a rule of thumb is offered: `m = 1 / max. drawdown`. If you believe (or have data support) that your portfolio will have a maximum drawdown of 20 percent, for example: `5 = 1 / 0.20`. (See [Investopedia](https://www.investopedia.com/terms/c/cppi.asp) article.)
+	- If `m` is less than 1, risk is tolerable, however, the safety account balance (`f`) will always be greater than the risk account balance (`x`).
+	- Calculating `m` can be a shot in the dark or a rule of thumb is offered: `m = 1 / max. drawdown`. If you believe (or have data to support) that your portfolio will have a maximum drawdown of 20 percent, for example: `5 = 1 / 0.20`. (See [Investopedia](https://www.investopedia.com/terms/c/cppi.asp) article.)
 
 The **while you're at it** strategy presumes you will either be putting money into or taking money out of your portfolio (see [Nerd Wallet](https://www.nerdwallet.com/article/investing/rebalance-portfolio-strategies) article). When you do, use that as a rebalancing opportunity, even though rebalancing is not the goal.
 
@@ -181,9 +181,16 @@ For example, I have a portfolio set with 90 percent equities and 10 percent cash
 
 The **home base** approach looks at the whole portfolio (as most of the strategies up to this point have as well; however, it will look at one or more of the tax buckets and accounts as the "home base" for rebalancing.
 
-Let's say you use a three tax bucket approach and you have money in all three buckets. However, you have more money in the tax-deferred bucket. This may become the bucket you use for rebalancing. You are moving toward a portfolio allocation of 90 percent equities, 5 percent bonds, and 5 percent cash valued at 1,000 USD. Right now you have 950 USD in equities and 50 USD in cash. In your taxable accounts, you have 100 USD in equities and the 50 USD in cash. In your tax-deferred accounts you 600 USD. In your tax-free accounts you have the remaining 150 USD. To put the portfolio in balance, you'll need 900 USD in equities, 50 USD in bonds, and 50 USD in cash. So, you sell 50 USD worth of the equities in your tax-deferred account and purchase 50 USD in bonds.
+Let's say you use a three tax bucket approach and you have money in all three buckets. However, you have more money in the tax-deferred bucket. This may become the bucket you use for rebalancing. You are moving toward a portfolio allocation of 90 percent equities, 5 percent bonds, and 5 percent cash valued at 1,000 USD. Right now you have:
 
-Note: The benefit of using a tax-favored account for this type of transaction is that you will most likely avoid any tax liability. However, the drawback is that in these types of accounts it's often difficult to take advantage of tax-loss harvesting.
+- 950 USD in equities and 50 USD in cash. 
+- In your taxable accounts, you have 100 USD in equities and 50 USD in cash. 
+- In your tax-deferred accounts you have 600 USD. 
+- In your tax-free accounts you have the remaining 150 USD. 
+
+To put the portfolio in balance, you'll need 900 USD in equities, 50 USD in bonds, and 50 USD in cash. So, you sell 50 USD worth of the equities in your tax-deferred account and purchase 50 USD in bonds.
+
+Note: The benefit of using a tax-favored account for this type of transaction is that you will most likely avoid any tax liability. However, the drawback is that in these types of accounts it's often difficult (read impossible) to take advantage of tax-loss harvesting.
 
 The **satellite (I treat all my children the same)** approach looks at each tax bucket (or brokerage account) as a separate portfolio with target allocations; use the same method for each satellite.
 

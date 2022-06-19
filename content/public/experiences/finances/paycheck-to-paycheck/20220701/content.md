@@ -86,27 +86,21 @@ I’m in accumulation mode, therefore, the portfolio is as close as it can be to
 
 Debt and cash can’t go lower than 0 and can’t be avoided given the way I pay bills and track this sorta thing, so, I use a static number to set the tolerance bands; same with alternatives and negative correlation.
 
-For equities, I use 20 percent, which was the optimum determined by an article on [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). 
+For equities, I use 20 percent from the target, which was the optimum percent, relative to a target, identified by an article on [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/). 
 
+The target is the guideline, and the tolerance bands are the [guardrails](/essays-and-editorials/guidelines-and-guardrails/).
 
+I’m starting to play with the idea I of inner bands as well.
 
+These inner bands are set above and below the target but not above and below the minimum and maximum. The more volatile something is, the narrower the bands; for example, small-cap stocks tend to fluctuate in value more than large-cap, therefore, the inner bands would be narrower for small-cap. The idea here is we want to sell when it’s up because it could down any moment and we want to buy when it’s down because it could shoot the moon at any moment; see Bitcoin in 2021.
 
+Note: Having the bands be narrower. For the riskier assets is counter to the suggestion of Frank Vasquez in [episode 181 of Risk Parity Radio](https://podcasts.apple.com/us/podcast/risk-parity-radio/id1525099266?i=1000566576318) where he suggests having the bands wider on the more volatile assets. The wider approach would result in less rebalancing than the narrower approach, however, you’d have to be able to stomach deeper drawdowns.
 
+Anyway, here’s how I plan on using these tolerance bands.
 
+For the most part, I want to be riding close to the target and will be using deposits and withdrawals to do so. The inner bands will be used to acquire rebalancing tokens in accordance with [my personal investment policy](/experiences/finances/investment-policy/#rebalancing-the-portfolio). The outer bands will be used for out of cycle rebalancing.
 
-These bands 20 percent on either side of the target are relative tolerance bands, because relative to the target, if the value is between the bands, we don’t worry about rebalancing in the sense of selling something of high value proportion to buy something of low proportion to reset the values to their targets.
-
-Let’s say I had a portfolio that was 60 percent stocks and 40 percent bonds. Over time, the stocks begin taking up, say, 70 percent of the portfolio. When I rebalance I’d sell enough of the stocks to buy enough of the bonds to get both back to the original targets. For straight rebalancing, this is what we do.
-
-For me, as long s as we’re inside the tolerance bands, no rebalancing can occur.
-
-The recent market volatility has me considering inner bands as well.
-
-The idea comes from a couple articles I saw on rebalancing strategies. In one article tolerance bands were set to be more narrow on assets with higher volatility and the bands were set wider for assets with lower volatility; this way your selling when the more volatile asset is up and buying only when it’s down. The other article is the one that brought up the idea of only rebalancing to the point of being within the bands bands, not to the absolute target.
-
-The way I’m thinking of using the inner bands is they would guide contributions and withdrawals. Further, if the balance goes beyond the inner bands, I get a rebalancing token and would only need to rebalance to get within the inner bands; not the target. Finally, if the balance tilts beyond the outer bands, immediate rebalancing could take place; instead, of waiting for the rebalancing date
-
-The result should be that the equities don’t require rebalancing much, if ever, and the contributions or withdrawals will be enough to keep equities in line. I won’t speculate what will happen as the portfolio allocation shifts from the Mark 0 to something like the Mark 1.
+The result should be that the equities don’t require rebalancing much, if ever, and the contributions or withdrawals will be enough to keep equities in line. I won’t speculate what will happen as the portfolio allocation shifts from the Mark 0 to something like the Mark 1 and I actually start introducing negative correlation and alternative assets.
 
 ## The plateau
 
