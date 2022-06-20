@@ -71,6 +71,8 @@ fi-experiments:
 
 The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest proportion of the portfolio, even with a decline of over 30 percent in the extended market fund.
 
+This is one of those double paycheck moments. I was paid on the 16th and again on the 1st. That means debt is slightly higher than it would have been otherwise; the surgery expenses have also contributed to this increase in debt still being here in the list above.
+
 ## Adjusting tolerances
 
 I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target, or optimal, percent it should be in the overall portfolio; as of this writing:
