@@ -53,14 +53,14 @@ data:
   value: 30
 fi-experiments:
 # label, current, previous, start
-- [0.0, 34.72, 38.42, 47.71]
-- [0.2, 32.09, 35.35, 43.83]
-- [0.4, 32.33, 35.47, 43.74]
-- [0.6, 32.88, 35.83, 43.54]
-- [0.8, 34.12, 36.78, 43.36]
-- [1.0, 38.01, 40.69, 46.87]
-- [1.1, 37.89, 40.58, 46.76]
-- [1.2, 37.86, 40.55, 46.73]
+- [0.0, 34.72, 34.72, 47.71]
+- [0.2, 32.09, 32.09, 43.83]
+- [0.4, 32.33, 32.33, 43.74]
+- [0.6, 32.88, 32.88, 43.54]
+- [0.8, 34.12, 34.12, 43.36]
+- [1.0, 38.01, 38.01, 46.87]
+- [1.1, 37.89, 37.89, 46.76]
+- [1.2, 37.86, 37.86, 46.73]
 ---
 
 # July 1st, 2022 paycheck
@@ -77,10 +77,10 @@ This is one of those double paycheck moments. I was paid on the 16th and again o
 
 I look at my portfolio mainly from the macro-allocation level listed above. Each macro-allocation has a target, or optimal, percent it should be in the overall portfolio; as of this writing:
 
-1. Debt should be 0 percent.
+1. Debt a target of 0 percent.
 2. Cash should be 6.
-3. Alternatives should be 0.
-4. Negative correlation should be 0.
+3. Alternatives 0.
+4. Negative correlation 0.
 5. Small- and mid-cap equities should be 32.
 6. Large-cap should be 31.
 
