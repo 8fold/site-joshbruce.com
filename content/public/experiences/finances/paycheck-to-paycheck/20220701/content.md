@@ -114,7 +114,11 @@ The result should be the equities don’t require rebalancing much, if ever, and
 
 ## The plateau
 
+The plateau is still doing the plateau thing. From a learning experience perspective I’m appreciating it. 
 
+The bull market from 2021 was great at building my confidence to feel like I might be able to do something with investments. 2022 is letting check my tolerance for volatility. As the joke goes, everyone is a genius in a bull market. The additional logic is that you hope the markets will be down when you start investing; so, I’m getting that out of the way early as well.
+
+Part of the rationale on hoping the markets are down when you start is that, on average, the United States has a bear market two of every 10 years. Therefore, you are getting shares when they are cheap (presuming the market will continue to go up later) and you’ll have a longer period of steady growth; at least until the next one.
 
 ## Surgery
 
