@@ -8,21 +8,21 @@ data:
   optimum: 0.3
   high: 0.5
   max: 1
-  value: 0.7
+  value: 0
 - label: Cash
   min: 3
   low: 4.5
   optimum: 6
   high: 7.5
   max: 9
-  value: 8.1
+  value: 7.2
 - label: Low correlation
   min: 0
   low: 0
   optimum: 0.3
   high: 0.5
   max: 1
-  value: 1
+  value: 0.9
 - label: Negative correlation
   min: 0
   low: 0
@@ -36,31 +36,31 @@ data:
   optimum: 31.6
   high: 33.5
   max: 38
-  value: 31.3
+  value: 33
 - label: US equities - mid
   min: 25
   low: 29.7
   optimum: 31.6
   high: 33.5
   max: 38
-  value: 27.7
+  value: 29.1
 - label: US equities - large
   min: 25
   low: 28.4
   optimum: 31
   high: 35.3
   max: 37
-  value: 30
+  value: 27.7
 fi-experiments:
 # label, current, previous, start
-- [0.0, 34.72, 34.72, 47.71]
-- [0.2, 32.09, 32.09, 43.83]
-- [0.4, 32.33, 32.33, 43.74]
-- [0.6, 32.88, 32.88, 43.54]
-- [0.8, 34.12, 34.12, 43.36]
-- [1.0, 38.01, 38.01, 46.87]
-- [1.1, 37.89, 37.89, 46.76]
-- [1.2, 37.86, 37.86, 46.73]
+- [0.0, 34.90, 34.72, 47.71]
+- [0.2, 32.40, 32.09, 43.83]
+- [0.4, 32.74, 32.33, 43.74]
+- [0.6, 33.33, 32.88, 43.54]
+- [0.8, 34.46, 34.12, 43.36]
+- [1.0, 38.29, 38.01, 46.87]
+- [1.1, 38.21, 37.89, 46.76]
+- [1.2, 38.21, 37.86, 46.73]
 ---
 
 # July 1st, 2022 paycheck
@@ -71,7 +71,8 @@ fi-experiments:
 
 The extended market fund is down more than 30 percent from its 52 week high, so, not putting any money toward that at the moment. Instead, I put as much as I could toward the multi-factor fund and the remaining to the total market fund. Due to rebalancing the 401k, small-cap equities represents the highest proportion of the portfolio, even with a decline of over 30 percent in the extended market fund.
 
-This is one of those double paycheck moments. I was paid on the 16th and again on the 1st. That means debt is slightly higher than it would have been otherwise; the surgery expenses have also contributed to this increase in debt still being in the list above.
+This is one of those double paycheck moments. I was paid on the 16th and again on the 1st. I did go ahead and pay my credit cards from the major hospital bills, which is why debt is at 0 instead of being over the maximum.
+It also brings my cash down to a more reasonable level.
 
 ## Adjusting tolerances
 
@@ -104,7 +105,7 @@ For example, small-cap stocks tend to fluctuate in value more than large-cap, th
 
 The idea here is a volatile asset may fall to the floor or shoot the moon at any moment, we don’t want to miss out when it’s down or stick around too long while it’s up; see Bitcoin in 2021.
 
-Note: Having the bands be narrower for the more volatile assets is counter to the suggestion of Frank Vasquez in [episode 181 of Risk Parity Radio](https://www.riskparityradio.com/podcast/episode/776861e5/episode-181-fun-with-rebalancing-schemes-and-more-financial-services-industry-malfeasance) where he suggests having the bands wider on the more volatile assets; if you have them be different at all compared to the 20 percent mark. The wider approach for more volatile assets would result in less rebalancing than the narrower approach.
+Note: Having the bands be narrower for the more volatile assets is counter to the suggestion of Frank Vasquez in [episode 181 of Risk Parity Radio](https://www.riskparityradio.com/podcast/episode/776861e5/episode-181-fun-with-rebalancing-schemes-and-more-financial-services-industry-malfeasance) where he suggests having the bands wider on the more volatile assets; if you have them be different at all compared to the 20 percent mark. The wider approach for more volatile assets would result in less rebalancing than the narrower approach; in theory.
 
 Anyway, here’s how I plan on using these inner tolerance bands.
 
@@ -116,9 +117,9 @@ The result should be the equities don’t require rebalancing much, if ever, and
 
 The plateau is still doing the plateau thing. From a learning experience perspective I’m appreciating it. 
 
-The bull market from 2021 was great at building my confidence to feel like I might be able to do something with investments. 2022 is letting check my tolerance for volatility. As the joke goes, everyone is a genius in a bull market. The additional logic is that you hope the markets will be down when you start investing; so, I’m getting that out of the way early as well.
+The bull market from 2021 was great at building my confidence to feel like I might be able to do something with investments. 2022 is letting me check my tolerance for volatility. As the joke goes, everyone is a genius in a bull market. The additional logic is that you hope the markets will be down when you start investing; so, I’m getting that out of the way early as well.
 
-Part of the rationale on hoping the markets are down when you start is that, on average, the United States has a bear market two of every 10 years. Therefore, you are getting shares when they are cheap (presuming the market will continue to go up later) and you’ll have a longer period of steady growth; at least until the next one.
+Part of the rationale on hoping the markets are down when you start is that, on average, the United States has a bear market two of every 10 years. Therefore, you are getting shares when they are cheap (presuming the market will continue to go up later) and you’ll have a longer period of steady growth; at least until the next bear market, correction, recession, or depression.
 
 ## Surgery
 
@@ -134,7 +135,7 @@ When I received the first bill I looked at the claim in the app. There are three
 2. What my insurance paid.
 3. How much I owe.
 
-All the numbers matched, so, I paid the bill through the app and didn’t think much about it.
+All the numbers on the bill matched the claim, so, I paid the bill through the app and didn’t think much about it.
 
 The second bill came in and it was two pages. I was able to match two of the three numbers from the first page to a claim in the app. I wasn’t able to match any of the numbers on the second page to a single claim in the app.
 
@@ -142,19 +143,19 @@ Instead, the second page has three line items and a single amount owed. If I too
 
 The kicker? As if that wasn’t enough. The breakdown of services didn’t match from the details of the claim in the app compared to the bill. 
 
-When I went back to look at the details for page one? None of those matched either.
+When I went back to look at the details for page one? None of those service descriptions matched either.
 
 It’s the twenty-first century and this is the best we can do?
 
-I can’t reconcile these bills in a definitive way. I called the insurance provider and they couldn’t explain why this was the case and basically had the same level of confidence I did that the items on page two were for the claims in the app.
+I can’t reconcile these bills in a definitive way. I called the insurance provider and they couldn’t explain why this was the case and basically had the same level of confidence I did that the items on page two of the second bill were for the claims in the app.
 
 A better experience…
 
-The hospital bills the insurance company. The insurance company negotiates the price, pays the total amount, and bills me what I owe.
+The hospital bills the insurance company. The insurance company negotiates the price, pays the total amount, and bills me what I owe. I pay extra to the insurance company.
 
 Like a credit card.
 
-A full payment service. My contract is with the insurance provider, not the hospital. My financial interactions are with the provider, not the hospital.
+A full payment service. My contract is with the insurance provider, not the hospital. My financial interactions are with the insurance provider, not the hospital.
 
 When I got in a car accident, my insurance company paid the bill and I paid them any extra. I did not pay the mechanic.
 
