@@ -58,18 +58,6 @@ class Data
         return Element::ul(...$listHeadings)->props('is data-list')->build();
     }
 
-    private static function listFrom2(
-        string $label,
-        float $min,
-        float $max,
-        float $value,
-        float|bool $low,
-        float|bool $high,
-        float|bool $optimum
-    ): Element {
-
-    }
-
     private static function listFrom12(
         string $label,
         float $min,
