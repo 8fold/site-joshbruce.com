@@ -58,26 +58,25 @@ class Data
         return Element::ul(...$listHeadings)->props('is data-list')->build();
     }
 
-    private static function listFrom12(
+    private static function listFrom2(
         string $label,
         float $min,
         float $max,
         float $value,
-        float|bool $low = false,
-        float|bool $high = false,
-        float|bool $optimum = false
+        float|bool $low,
+        float|bool $high,
+        float|bool $optimum
     ): Element {
-        $detail = '';
-        if ($value > $max) {
-            $detail = 'decrease';
 
-        } elseif ($value < $min) {
-            $detail = 'increase';
+    }
 
-        } else {
-            $detail = 'hold';
-
-        }
+    private static function listFrom12(
+        string $label,
+        float $min,
+        float $max,
+        float $value
+    ): Element {
+        $detail = self::detail($min, $max, $value);
 
         $label  = Element::span($label)->build();
         $parenthetical = Element::span(' (' . $detail . ')')->build();
@@ -99,33 +98,25 @@ class Data
             $max
         );
 
-        if ($low !== false and $high !== false and $optimum !== false) {
-            $low = Element::li(
-                Element::b('low: '),
-                $low
-            );
-
-            $high = Element::li(
-                Element::b('high: '),
-                $high
-            );
-
-            $optimum = Element::li(
-                Element::b('optimum: '),
-                $optimum
-            );
-        }
-
         return Element::li(
             $label . $parenthetical,
             Element::ul(
                 $current,
                 $min,
-                $max,
-                $low,
-                $high,
-                $optimum
+                $max
             )
         )->props('data-icon ' . $detail);
+    }
+
+    private static function detail(float $min, float $max, float $value): string
+    {
+        if ($value > $max) {
+            return 'decrease';
+
+        } elseif ($value < $min) {
+            return 'increase';
+
+        }
+        return 'hold';
     }
 }

@@ -44,6 +44,8 @@ I focus a lot on character and culture; values, principles, practices, and tools
 4. Rising tides lift all boats and don't get caught skinny dipping when they recede.
 5. Money is food, not blood.
 6. The macro-allocation principle.
+7. Most individual stocks will drop from their all time high and not return to that high; many will go to 0.
+8. The value of the total stock market tends to rise steadily over time.
 
 ## Practices
 
