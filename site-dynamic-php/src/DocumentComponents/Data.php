@@ -43,10 +43,7 @@ class Data
                     $label,
                     $min,
                     $max,
-                    $value,
-                    $low,
-                    $high,
-                    $optimum
+                    $value
                 );
             }
         }
