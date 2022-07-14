@@ -108,7 +108,7 @@ So, pretty sure:
 3. I’m going to see about getting a total stock market and extended market fund added to offerings at my new employer.
 4. And, I’ll see about getting eyes on it using Personal Capital so I’m not manually tracking things.
 
-None of this has to happen any time soon. Who knows? Maybe the market will be back up by the time I actually do it.
+None of this has to happen any time soon. Who knows? Maybe the market will be back up by the time I actually do it. Though, if I did it now, I’d be selling low and buying low, because I’m definitely not going to cash. We shall see.
 
 ## Adjusting tolerances
 
