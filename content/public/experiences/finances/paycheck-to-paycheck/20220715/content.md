@@ -1,4 +1,4 @@
-—
+---
 title: July 15th, 2022 paycheck
 created: 20220715
 data:
@@ -15,14 +15,14 @@ data:
   optimum: 6
   high: 7.5
   max: 9
-  value: 7.2
+  value: 5.4
 - label: Low correlation
   min: 0
   low: 0
   optimum: 0.3
   high: 0.5
   max: 1
-  value: 0.9
+  value: 0.8
 - label: Negative correlation
   min: 0
   low: 0
@@ -36,32 +36,32 @@ data:
   optimum: 31.6
   high: 33.5
   max: 38
-  value: 33
+  value: 33.7
 - label: US equities - mid
   min: 25
   low: 29.7
   optimum: 31.6
   high: 33.5
   max: 38
-  value: 29.1
+  value: 29.4
 - label: US equities - large
   min: 25
   low: 28.4
   optimum: 31
   high: 35.3
   max: 37
-  value: 27.7
+  value: 28.6
 fi-experiments:
 # label, current, previous, start
-- [0.0, 34.90, 34.72, 47.71]
-- [0.2, 32.40, 32.09, 43.83]
-- [0.4, 32.74, 32.33, 43.74]
-- [0.6, 33.33, 32.88, 43.54]
-- [0.8, 34.46, 34.12, 43.36]
-- [1.0, 38.29, 38.01, 46.87]
-- [1.1, 38.21, 37.89, 46.76]
-- [1.2, 38.21, 37.86, 46.73]
-—
+- [0.0, 34.91, 34.90, 47.71]
+- [0.2, 32.40, 32.40, 43.83]
+- [0.4, 32.70, 32.74, 43.74]
+- [0.6, 33.17, 33.33, 43.54]
+- [0.8, 34.07, 34.46, 43.36]
+- [1.0, 37.68, 38.29, 46.87]
+- [1.1, 37.60, 38.21, 46.76]
+- [1.2, 37.59, 38.21, 46.73]
+---
 
 # July 15th, 2022 paycheck
 
