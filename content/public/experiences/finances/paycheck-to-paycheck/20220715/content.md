@@ -79,7 +79,7 @@ I started a new job and should be able to explore the world of employee stock pu
 
 The options to invest in with my new employer are somewhat limited and foreign. The index funds they have aren’t publicly listed like those at my previous employer. Further, they have a lot of target date funds and an S&P 500. There is a mid-cap, but I’m not entirely sure how it will function. I’m also not sure I can link the account to Personal Capital.
 
-So, I’m leaning toward rolling over the 401k into my Traditional [.Individual Retirement Account].
+So, I’m leaning toward rolling over the 401k into my Traditional [.Individual Retirement Account](IRA).
 
 I called the custodian for the 401k and they said I had three options:
 
