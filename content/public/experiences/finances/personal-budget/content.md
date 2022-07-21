@@ -1,7 +1,7 @@
 ---
 title: Personal budget
 created: 20210704
-updated: 20220415
+updated: 20220721
 ---
 
 # Personal budget
@@ -268,11 +268,11 @@ If it’s been 90 days since the last spend from savings, up to 50 percent of th
 <details>
 <summary>Buying a dip</summary>
 
-If the current price of a security is 3–30 percent less than its 52 week high, savings may be used to purchase that security.
+If the current price of a security is 10 to 30 percent less than its 52 week high, savings may be used to purchase that security.
 
 The percent of savings available for use is equal to the percent the security is down.
 
-For example, if the security is down 5 percent, you may use up to 5 percent of the savings balance to purchase the security.
+For example, if the security is down 15 percent, you may use up to 15 percent of the savings balance to purchase the security.
 
 </details>
 

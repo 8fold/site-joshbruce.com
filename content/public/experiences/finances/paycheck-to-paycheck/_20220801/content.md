@@ -77,14 +77,21 @@ fi-experiments:
 
 ## Rolling over the 401k
 
+Still going to be rolling the 401k from my previous employer to the Traditional [.Individual Retirement Account](IRA).
 
-## Adjusting tolerances
+I was concerned about contributing to my 401k at the new employer because I didn’t want to get penalized for going over the annual contribution limit. Further, I didn’t want to have to watch and adjust it myself.
 
+When I called they told me the [.Internal Revenue Service](IRS) would notify them, if I reached the maximum, so, there’s nothing for me to do on my end and I can contribute as normal.
 
+## Buying the dip
 
-## The plateau
+The extended market was only down 30 percent from its 52 week high, so, I bought some more shares in accordance with [my personal budget](/experiences/finances/personal-budget/#spending-savings).
 
+According to CNN’s [Fear and Greed index](https://www.cnn.com/markets/fear-and-greed) the stock market is less fearful than it’s been. I’ve only recently found this meter, however, it seems pretty useful when trying “be fearful when others are greedy and greedy when others are fearful,” as Warren Buffett would say.
 
+With that said, I changed what I consider a dip worth buying to be.
+
+The lower bounds is now 10 percent instead of 5. Corrections are 10 percentage or more, bear markets are 20 percent or more, crashes are 30 percent or more; roughly speaking. By increasing the lower bounds, I’m only buying a dip when there’s a correction or bear market, otherwise, I’m using the 90 day cool down or excess cash protocols. 
 
 ## FI experiments
 
