@@ -14,6 +14,9 @@ use Nyholm\Psr7\Response as PsrResponse;
 
 use Eightfold\HTMLBuilder\Element;
 
+use Eightfold\Amos\Content;
+use Eightfold\Amos\Documents\Sitemap;
+
 use JoshBruce\SiteDynamic\Environment;
 
 use JoshBruce\SiteDynamic\Content\Markdown;
@@ -22,7 +25,7 @@ use JoshBruce\SiteDynamic\FileSystem\File;
 use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
 
 use JoshBruce\SiteDynamic\Documents\HtmlDefault;
-use JoshBruce\SiteDynamic\Documents\Sitemap;
+// use JoshBruce\SiteDynamic\Documents\Sitemap;
 
 use JoshBruce\SiteDynamic\FileSystem\Aliases;
 
@@ -159,7 +162,13 @@ class RequestHandler implements RequestHandlerInterface
                 status: $this->status(),
                 headers: $this->headers(),
                 body: Stream::create(
-                    Sitemap::create($file, $this->environment())
+                    Sitemap::create(
+                        Content::init(
+                            $this->environment()->contentRoot(),
+                            $this->environment()->appUrl()
+                        ),
+                        $this->environment()->appUrl()
+                    )->build()
                 )
             );
 

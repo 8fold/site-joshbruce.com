@@ -35,6 +35,7 @@
   },
   "autoload": {
     "psr-4": {
+      "Eightfold\\Amos\\": "./site-dynamic-php/src/Amos",
       "JoshBruce\\SiteDynamic\\": "./site-dynamic-php/src",
       "JoshBruce\\SiteStatic\\": "./site-static-html/src"
     }
