@@ -69,7 +69,9 @@ fi-experiments:
 
 {!! data !!}
 
+Decided to start with a straight S&P 500 fund at my new employer.
 
+This is the first paycheck I’ve received with them. It will also be the first time I’ve ever received a signing bonus.
 
 
 
