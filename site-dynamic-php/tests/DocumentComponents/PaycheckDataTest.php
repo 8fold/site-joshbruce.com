@@ -17,19 +17,6 @@ final class PaycheckDataTest extends LiveContentTestCase
     /**
      * @test
      */
-    public function data_returns_expected_html_for_1_2(): void // phpcs:ignore
-    {
-        $expected = file_get_contents(__DIR__ . '/data-1.2-expected.html');
-
-        $data = PlainTextFile::at(__DIR__ . '/data-1.2.md', __DIR__);
-        $result = Data::create($data) . "\n";
-
-        $this->assertSame($expected, $result);
-    }
-
-    /**
-     * @test
-     */
     public function data_returns_expected_html_for_1_1(): void // phpcs:ignore
     {
         $expected = file_get_contents(__DIR__ . '/data-1.0-expected.html');
