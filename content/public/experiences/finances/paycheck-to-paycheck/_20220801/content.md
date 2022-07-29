@@ -71,7 +71,7 @@ fi-experiments:
 
 New employer 401k will be in a straight S&P 500 fund, for now.
 
-First paycheck from my new employer. First time receiving a signing bonus as well. The numbers I use for my distributions aren't changing inside the spreadsheet, income is income. At first, I was thinking I would put the entire signing bonus into the Tax account. The rationale was that there is a one year "clawback" provision, so, if I don't stay with the employer for a year, I would owe them the signing bonus money back. 
+First paycheck from my new employer. First time receiving a signing bonus as well. The numbers I use for my distributions aren't changing inside the spreadsheet, income is income. At first, I was thinking I would put the entire signing bonus into the Tax account. The rationale was that there is a one year "clawback" provision, so, if I don't stay with the employer for a year, I would owe them the signing bonus money back.
 
 The rationale for *not* putting it into the Tax account.
 
@@ -93,7 +93,7 @@ I'll be buying into the multi-factor fund with the investing account money. The 
 
 ## Rolling over the 401k
 
-Still holding the 401k for the moment. I'm not in a rush and it will take a month or two for the whole transaction to happen.
+Still holding the old 401k for the moment. I'm not in a rush and it will take a month or two for the whole transaction to happen.
 
 I get no tax benefit for selling at a loss. I'm still psychologically okay because I can still look at it as losing two-thirds of my employer contributions. I'm thinking of setting two triggers. One is a percent and the other is a date.
 
