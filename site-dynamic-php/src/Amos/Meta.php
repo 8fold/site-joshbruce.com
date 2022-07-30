@@ -7,7 +7,7 @@ use StdClass;
 
 class Meta
 {
-    private StdClass|false $decodedJson;
+    private StdClass|false $decodedJson = false;
 
     public static function init(string|false $json): self
     {
@@ -38,7 +38,7 @@ class Meta
 
     private function decodedJson(): StdClass|false
     {
-        if (isset($this->decodedJson) === false) {
+        if ($this->decodedJson === false) {
             $decoded = json_decode($this->json(), false);
             if ($decoded === null) {
                 $this->decodedJson = false;
