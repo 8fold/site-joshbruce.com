@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Eightfold\Amos\Documents;
 
 use SplFileInfo;
+use DateTime;
 
 use Symfony\Component\Finder\Finder;
 
@@ -78,7 +79,14 @@ class Sitemap
                 $lastmod = $meta->value(for: 'created');
 
             }
-            $lastmod = date_format(date_create(strval($lastmod)), 'Y-m-d');
+
+            $date = date_create($lastmod);
+            if (
+                $date !== false and
+                is_a($date, DateTime::class)
+            ) {
+                $lastmod = $date->format('Y-m-d');
+            }
 
             $priority = 0.5;
             if ($meta->valueExists(for: 'priority')) {

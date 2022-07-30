@@ -7,20 +7,25 @@ use StdClass;
 
 class Meta
 {
-    private StdClass $decodedJson;
+    private StdClass|false $decodedJson;
 
-    public static function init(string $json): self
+    public static function init(string|false $json): self
     {
         return new self($json);
     }
 
-    final private function __construct(private string $json)
+    final private function __construct(private string|false $json)
     {
     }
 
     public function valueExists(string $for): bool
     {
-        return property_exists($this->decodedJson(), $for);
+        if ($this->decodedJson() !== false) {
+            // is_a($this->decodedJson(), StdClass::class) === false) {
+            // return false;
+            return property_exists($this->decodedJson(), $for);
+        }
+        return false;
     }
 
     public function value(string $for): string
@@ -28,18 +33,25 @@ class Meta
         if ($this->valueExists($for)) {
             return $this->decodedJson()->{$for};
         }
+        return '';
     }
 
-    private function decodedJson(): StdClass
+    private function decodedJson(): StdClass|false
     {
         if (isset($this->decodedJson) === false) {
-            $this->decodedJson = json_decode($this->json(), false);
+            $decoded = json_decode($this->json(), false);
+            if ($decoded === null) {
+                $this->decodedJson = false;
+            }
         }
         return $this->decodedJson;
     }
 
     private function json(): string
     {
+        if ($this->json === false) {
+            return '';
+        }
         return $this->json;
     }
 }

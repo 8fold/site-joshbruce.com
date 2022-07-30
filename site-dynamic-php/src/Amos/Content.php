@@ -77,10 +77,14 @@ class Content
 
     public function markdown(string $at, bool $isContent = true): string
     {
-        if ($isContent === false) {
-            return file_get_contents($this->root() . $at);
+        $content = ($isContent === false)
+            ? file_get_contents($this->root() . $at)
+            : file_get_contents($this->contentPath($at));
+
+        if ($content === false) {
+            return '';
         }
-        return file_get_contents($this->contentPath($at));
+        return $content;
     }
 
     public function convertedContent(string $at): string

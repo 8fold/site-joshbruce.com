@@ -164,8 +164,7 @@ class RequestHandler implements RequestHandlerInterface
                 body: Stream::create(
                     Sitemap::create(
                         Content::init(
-                            $this->environment()->contentRoot(),
-                            $this->environment()->appUrl()
+                            $this->environment()->contentRoot()
                         ),
                         $this->environment()->appUrl()
                     )->build()
