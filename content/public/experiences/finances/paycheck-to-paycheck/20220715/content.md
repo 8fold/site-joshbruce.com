@@ -67,8 +67,6 @@ fi-experiments:
 
 {!! dateblock !!}
 
-{!! data !!}
-
 Extended market fund is still down around 30 percent from its 52 week high, so, not putting money there. The multi-factor fund is almost at its minimum for the portfolio. I’m still buying the dip using the total stock market fund, which should be pushing the large-cap portion up a bit.
 
 I’m noticing the small-cap value portion of the portfolio is holding pretty steady at 9 percent, which is what we were hoping for.
@@ -95,7 +93,7 @@ When I was talking with the agent I remember exclaiming that I didn’t want to 
 
 When I got off the phone though, I started thinking maybe I’m not really losing much, if anything.
 
-If I cashed out, I’d lose. I would be paying taxes, penalties, and be in a down position to boot. If I rolled it into my employer 401k there’d be a bit of anxiety there because I couldn’t track it the way I’ve grown accustomed. 
+If I cashed out, I’d lose. I would be paying taxes, penalties, and be in a down position to boot. If I rolled it into my employer 401k there’d be a bit of anxiety there because I couldn’t track it the way I’ve grown accustomed.
 
 Meanwhile, going with the Traditional IRA, I know the custodian, have access to all the funds, and so on. Further, I can set it up like the other accounts at Vanguard with the mutual fund and [.Exchange Traded Fund](ETF) combination to get rid of the little bit of cash that’s in there. Finally, I‘d have one less account to worry about.
 
@@ -116,14 +114,12 @@ After adding the [inner bands](/experiences/finances/paycheck-to-paycheck/202207
 
 ## The plateau
 
-Yep, it’s still a plateau. Even with the surgery my net worth is still hovering around what it been since the beginning of 2022; it’s actually a little higher, just not the steady incline I saw in 2021. 
+Yep, it’s still a plateau. Even with the surgery my net worth is still hovering around what it been since the beginning of 2022; it’s actually a little higher, just not the steady incline I saw in 2021.
 
 ## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 
 The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
-
-{!! fi-experiments !!}
 
 {!! next-previous !!}

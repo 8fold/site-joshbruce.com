@@ -19,8 +19,8 @@
   "require": {
     "php": "^8.0",
     "ext-fileinfo": "*",
-    "8fold/commonmark-fluent-markdown": "^0.10.0",
-    "8fold/php-html-builder": "^0.5.3",
+    "8fold/commonmark-fluent-markdown": "^1.0",
+    "8fold/php-html-builder": "^1.0",
     "laminas/laminas-httphandlerrunner": "^2.1",
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
