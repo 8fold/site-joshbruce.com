@@ -1,4 +1,3 @@
-
 ---
 title: Being a Scrum Master
 created: 20180924
