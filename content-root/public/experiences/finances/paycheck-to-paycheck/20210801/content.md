@@ -2,17 +2,6 @@
 title: August 1st, 2021 paycheck
 created: 20210709
 updated: 20210803
-data:
-- [Debt, 0, 0, 0]
-- [Cash, 2, 4, 9.94]
-- [Invest, 0, 0, 0]
-- [US Bonds - munis, 1, 2, 3.80]
-- ["US Bonds - Government", 0, 0.5, 0.01]
-- [US equities - small, 30, 35, 18.14]
-- [US equities - mid, 30, 35, 22.25]
-- [US equities - large, 30, 35, 45.22]
-- [Int. bonds, 0, 0, 0]
-- [Int. equities, 0, 2, 1.41]
 ---
 
 # August 1st, 2021 paycheck

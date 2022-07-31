@@ -2,14 +2,6 @@
 title: October 1st, 2021 paycheck
 created: 20210918
 updated: 20211001
-data:
-- [Debt, 0, 0, 0.4]
-- [Cash, 5, 10, 16.5]
-- [Low correlation, 0, 1, 0.4]
-- [Negative correlation, 0, 1, 0.4]
-- [US equities - small, 24, 35, 20.2]
-- [US equities - mid, 24, 35, 22.9]
-- [US equities - large, 24, 35, 39.1]
 ---
 
 # October 1st, 2021 paycheck

@@ -1,14 +1,6 @@
 ---
 title: May 15th, 2022 paycheck
 created: 20220513
-data:
-- [Debt, 0, 1, 0.4]
-- [Cash, 3, 9, 7]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 33.4]
-- [US equities - mid, 25, 38, 28.6]
-- [US equities - large, 25, 37, 28]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 37.33, 39, 47.71]
@@ -45,7 +37,7 @@ This is an interesting time, the bumpiest for me so far.
 
 The extended market funds have dropped 30 percent from their 52 week highs, so, no more shoveling that direction.
 
-The total small-cap and non-US real estate has almost had the same level of drop. 
+The total small-cap and non-US real estate has almost had the same level of drop.
 
 I have rebalancing tokens for all the asset allocations except the Mark 0 mix in my [investment policy](/experiences/finances/investment-policy/#asset-allocation). We’ll see what July brings.
 
@@ -87,9 +79,9 @@ Tried to sleep, but it was sparse. Becca was able to stay the whole time. In the
 
 I scrubbed down as per the instructions from the doctors and nurses. It was a typical big hospital experience from the interactions piece; short visits, nurses more than doctors, and I met the surgeon and anesthesiologist separately for about five minutes before going under the knife.
 
-Went in. Went to sleep. Woke up nauseated as fuck. 
+Went in. Went to sleep. Woke up nauseated as fuck.
 
-Before surgery they had me on so much shit it was unreal. I don’t do drugs; to the point of avoiding aspirin. My resting heart rate is from 50 to 60 beats per minute; everyone found that interesting. I mentioned that I’m pretty chill and probably wouldn’t need all of that “calm you down stuff” before being put under, but we went with all the drugs ever. 
+Before surgery they had me on so much shit it was unreal. I don’t do drugs; to the point of avoiding aspirin. My resting heart rate is from 50 to 60 beats per minute; everyone found that interesting. I mentioned that I’m pretty chill and probably wouldn’t need all of that “calm you down stuff” before being put under, but we went with all the drugs ever.
 
 When I got back to my room, I sat up and asked Becca to bring me something to vomit in. Mostly liquid but still.
 
@@ -101,19 +93,19 @@ Got in the car, Becca drove us home. (And nursed me back to normal—she’s awe
 
 Ordered some bland food that’d be easy to digest. Popped an ibuprofen and went bed.
 
-It was hard to find a comfortable position; stomach and back are pretty much it. There are three small holes in my abdomen. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If I lie on either side it either stretches or gets crushed; both of which are painful. 
+It was hard to find a comfortable position; stomach and back are pretty much it. There are three small holes in my abdomen. One just above the belly button, another just above my crotch, and the last is on the left side. The one on the left side is the painful one. If I lie on either side it either stretches or gets crushed; both of which are painful.
 
 With that said, I don’t have the appendix pain anymore nor do I feel it in my back. Basically we’re down to one point of pain; same level, different side—balance is restored.
 
 Given how much I’m billed on an hourly basis, I made the joke: I wonder if they’ll let me charge back my hourly rate against the cost of my bill.
 
-My hope is that billing me didn’t start until I was actually through the doors from the waiting area to the actual hospital. 
+My hope is that billing me didn’t start until I was actually through the doors from the waiting area to the actual hospital.
 
 So, going to be slowing my investments down a bit while I wait for the bills.
 
 Saturday update (day 5; day 3 since surgery): I debated not taking an ibuprofen tonight. They gave me stronger and I haven’t touched it.
 
-## FI experiments 
+## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 

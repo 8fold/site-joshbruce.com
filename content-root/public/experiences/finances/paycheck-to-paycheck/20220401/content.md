@@ -1,14 +1,6 @@
 ---
 title: April 1st, 2022 paycheck
 created: 20220401
-data:
-- [Debt, 0, 1, 0.2]
-- [Cash, 5, 10, 6.7]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 24, 35, 32.9]
-- [US equities - mid, 24, 35, 26.5]
-- [US equities - large, 24, 35, 31]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 43.69, 39.72, 47.71]

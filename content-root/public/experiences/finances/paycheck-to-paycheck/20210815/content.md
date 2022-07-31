@@ -1,17 +1,6 @@
 ---
 title: August 15th, 2021 paycheck
 created: 20210905
-data:
-- [Debt, 0, 0, 0]
-- [Cash, 2, 4, 9.94]
-- [Invest, 0, 0, 0]
-- [US Bonds - munis, 1, 2, 3.65]
-- ["US Bonds - Government", 0, 0.5, 0.01]
-- [US equities - small, 30, 35, 18.22]
-- [US equities - mid, 30, 35, 22.47]
-- [US equities - large, 30, 35, 45.83]
-- [Int. bonds, 0, 0, 0]
-- [Int. equities, 0, 2, 1.42]
 ---
 
 # August 15th, 2021 paycheck

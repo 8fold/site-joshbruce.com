@@ -1,14 +1,6 @@
 ---
 title: March 1st, 2022 paycheck
 created: 20220228
-data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 5, 10, 6.8]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 30.1]
-- [US equities - mid, 24, 35, 26]
-- [US equities - large, 24, 35, 34.1]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 42.70, 42.65, 47.71]
@@ -29,7 +21,7 @@ fi-experiments:
 
 Reduced 401k allocation to 16 percent.
 
-Part of my finance spreadsheet is for tracking 401k contributions. 
+Part of my finance spreadsheet is for tracking 401k contributions.
 
 I put in the maximum contribution allowed, the estimated number of paychecks remaining for the year, and how much has been contributed. This way I know ahead of time if I should increase or decrease my allocation. The goal is to always have the allocation percentage to be:
 
@@ -52,7 +44,7 @@ Such is life. Definitely an interesting experience.
 
 ## The pies
 
-The insurance deductibles pie now has a value that can cover my insurance deductibles if necessary. 
+The insurance deductibles pie now has a value that can cover my insurance deductibles if necessary.
 
 Chances are I won’t sell or withdraw from it unless I need to cover it all in one go. Instead, I’ll pay out of pocket and divert the money that was going to that pie to other investments and savings.
 

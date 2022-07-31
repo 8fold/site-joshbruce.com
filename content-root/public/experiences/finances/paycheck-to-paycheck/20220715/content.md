@@ -1,56 +1,6 @@
 ---
 title: July 15th, 2022 paycheck
 created: 20220715
-data:
-- label: Debt
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0
-- label: Cash
-  min: 3
-  low: 4.5
-  optimum: 6
-  high: 7.5
-  max: 9
-  value: 5.4
-- label: Low correlation
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0.8
-- label: Negative correlation
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0.8
-- label: US equities - small
-  min: 25
-  low: 29.7
-  optimum: 31.6
-  high: 33.5
-  max: 38
-  value: 33.7
-- label: US equities - mid
-  min: 25
-  low: 29.7
-  optimum: 31.6
-  high: 33.5
-  max: 38
-  value: 29.4
-- label: US equities - large
-  min: 25
-  low: 28.4
-  optimum: 31
-  high: 35.3
-  max: 37
-  value: 28.6
 fi-experiments:
 # label, current, previous, start
 - [0.0, 34.91, 34.90, 47.71]
@@ -95,7 +45,7 @@ When I was talking with the agent I remember exclaiming that I didn’t want to 
 
 When I got off the phone though, I started thinking maybe I’m not really losing much, if anything.
 
-If I cashed out, I’d lose. I would be paying taxes, penalties, and be in a down position to boot. If I rolled it into my employer 401k there’d be a bit of anxiety there because I couldn’t track it the way I’ve grown accustomed. 
+If I cashed out, I’d lose. I would be paying taxes, penalties, and be in a down position to boot. If I rolled it into my employer 401k there’d be a bit of anxiety there because I couldn’t track it the way I’ve grown accustomed.
 
 Meanwhile, going with the Traditional IRA, I know the custodian, have access to all the funds, and so on. Further, I can set it up like the other accounts at Vanguard with the mutual fund and [.Exchange Traded Fund](ETF) combination to get rid of the little bit of cash that’s in there. Finally, I‘d have one less account to worry about.
 
@@ -116,7 +66,7 @@ After adding the [inner bands](/experiences/finances/paycheck-to-paycheck/202207
 
 ## The plateau
 
-Yep, it’s still a plateau. Even with the surgery my net worth is still hovering around what it been since the beginning of 2022; it’s actually a little higher, just not the steady incline I saw in 2021. 
+Yep, it’s still a plateau. Even with the surgery my net worth is still hovering around what it been since the beginning of 2022; it’s actually a little higher, just not the steady incline I saw in 2021.
 
 ## FI experiments
 

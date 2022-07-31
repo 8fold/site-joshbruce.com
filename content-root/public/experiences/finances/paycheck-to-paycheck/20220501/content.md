@@ -1,14 +1,6 @@
 ---
 title: May 1st, 2022 paycheck
 created: 20220430
-data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 3, 9, 6.9]
-- [Low correlation, 0, 1, 1]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 34.5]
-- [US equities - mid, 25, 38, 28]
-- [US equities - large, 25, 37, 27.5]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 39, 41.96, 47.71]
@@ -27,23 +19,23 @@ fi-experiments:
 
 {!! data !!}
 
-Still rebalancing the 401k. It’s going pretty well. 
+Still rebalancing the 401k. It’s going pretty well.
 
 I’m finding, for me, checking my portfolio apps everyday is helping my anxiety and fear. Unpacking my relationship with money and being broke.
 
 Since part of this exercise is to become more comfortable talking about money and, by extension, improve my own relationship to money, let’s lean into this.
 
-Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My family income when I was a teenager would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active duty military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford. 
+Until I was 30 years old my income had me seated just below, or far below, the [poverty line as of 2021](https://www.investopedia.com/terms/f/fpl.asp). My family income when I was a teenager would be considered upper-middle to lower-upper class, but my father had a fair amount of debt to contend with. Prior to that, my childhood, while my father was still active duty military, we were middle class and my parents tried so hard to put us in good schools and neighborhoods we could barely afford.
 
-For my teenage years money felt like a burden. For my childhood I felt like I had the richest family ever. 
+For my teenage years money felt like a burden. For my childhood I felt like I had the richest family ever.
 
 From birth to adulthood, early childhood was my happiest and most content time.
 
-I graduated college when I was around 25 years old, with over 100,000 [.United States Dollars](USD) in student loan and credit card debt. I could afford to pay for food and rent or make payments on debts, but not both. I ended up going back to school to keep the student loans in deferment; taking on more debt to avoid defaulting on the debts I had. I’ve never been particularly ambitious when it comes to money or advancing in a career; I’ve also never been particularly adept at writing résumés. With that said, I couldn’t just keep racking up debt the way I was. 
+I graduated college when I was around 25 years old, with over 100,000 [.United States Dollars](USD) in student loan and credit card debt. I could afford to pay for food and rent or make payments on debts, but not both. I ended up going back to school to keep the student loans in deferment; taking on more debt to avoid defaulting on the debts I had. I’ve never been particularly ambitious when it comes to money or advancing in a career; I’ve also never been particularly adept at writing résumés. With that said, I couldn’t just keep racking up debt the way I was.
 
 I was attending graduate school when I was living in my car in 2010 around age 30; the homeless graduate student.
 
-Luck struck me twice and I dropped out of graduate school with one class to go, which I failed twice for some reason. 
+Luck struck me twice and I dropped out of graduate school with one class to go, which I failed twice for some reason.
 
 The first stroke of luck was a recruiter calling me out of the blue for a gig doing content entry for an online content company. They paid almost 60,000 USD per year to have me copy content from documents and paste the content into online forms; this is when I really started reconsidering the whole value versus time trade when it came to money. A few months into that gig the second bit of luck struck.
 
@@ -57,7 +49,7 @@ I said, “I’m not really down for nepotism, pops.”
 
 He replied, “I can’t get you the job, but I can get you the interview.”
 
-I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; it was required for my public speaking course in college. 
+I said okay. The interview was scheduled. I paid to take a shower and drove to Virginia. I put on the suit I’d purchased some years prior; it was required for my public speaking course in college.
 
 The panel interview went well; I didn’t get the job.
 
@@ -75,9 +67,9 @@ And, here we are.
 
 From a lifestyle and influence perspective, I’m at the lower end of middle class. From an income perspective, I’m at the upper end of middle class.
 
-While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate me for their connotation. 
+While I know rationally these labels are positions in a hierarchy, things like lower and upper class frustrate me for their connotation.
 
-## Portfolio balance overall 
+## Portfolio balance overall
 
 Because I’m considering a new fund I’ve decided to add it to the spreadsheet and assign a target percent. So, while the balance is fine for the purposes of these entries, the index funds are out of balance for the portfolio. I need more in the mid-cap in the 401k and I need more in the regular total stock market fund.
 
@@ -105,17 +97,17 @@ I’ve hired two different professional résumé writers and signed up for a web
 
 For the purposes of experimentation I started both professionals from the same original résumé.
 
-The first résumé came out as a more functional, one-pager. It has some graphic elements and some of my personality in the copy. It does have the chronological elements with one story for each engagement over the last decade. 
+The first résumé came out as a more functional, one-pager. It has some graphic elements and some of my personality in the copy. It does have the chronological elements with one story for each engagement over the last decade.
 
-The second one came out as a more standard, two-pager. It’s simple, with a clean layout and fair amount of white space. 
+The second one came out as a more standard, two-pager. It’s simple, with a clean layout and fair amount of white space.
 
 The second professional also helped me with the LinkedIn profile.
 
-I learned a lot about my own limiting beliefs regarding a résumé from both professionals. 
+I learned a lot about my own limiting beliefs regarding a résumé from both professionals.
 
 Using the one-pager résumé I applied to a position that has me written all over it. I used the second resume to apply to the top gig I sent to that professional.
 
-The day after updating the LinkedIn profile two recruiters reached out to me. I followed up with both and the first requested a résumé; I sent the one-pager. 
+The day after updating the LinkedIn profile two recruiters reached out to me. I followed up with both and the first requested a résumé; I sent the one-pager.
 
 This has never happened to me.
 

@@ -2,14 +2,6 @@
 title: November 15th, 2021 paycheck
 created: 20211101
 updated: 20211115
-data:
-- [Debt, 0, 0, 0.9]
-- [Cash, 5, 10, 15.2]
-- [Low correlation, 0, 1, 0.3]
-- [Negative correlation, 0, 1, 0.3]
-- [US equities - small, 24, 35, 21.8]
-- [US equities - mid, 24, 35, 23.4]
-- [US equities - large, 24, 35, 38.3]
 ---
 
 # November 15th, 2021 paycheck

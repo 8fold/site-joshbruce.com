@@ -87,7 +87,7 @@ class Site
     {
         $path = $this->metaPath($at);
 
-        if (file_exists($path) === false) {
+        if (is_file($path) === false) {
             return false;
         }
 
@@ -109,6 +109,21 @@ class Site
         }
 
         return file_get_contents($path);
+    }
+
+    public function decodedJsonFile(string $named, string $at): StdClass|false
+    {
+        $path = $this->publicRoot() . $at . $named;
+        if (is_file($path) === false) {
+            return false;
+        }
+        $json    = file_get_contents($path);
+        $decoded = json_decode($json);
+
+        if ($decoded === false or $decoded === null) {
+            return false;
+        }
+        return $decoded;
     }
 
     public function isPublishedContent(string $at): bool

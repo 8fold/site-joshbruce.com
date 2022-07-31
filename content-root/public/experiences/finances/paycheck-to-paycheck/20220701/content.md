@@ -1,56 +1,6 @@
 ---
 title: July 1st, 2022 paycheck
 created: 20220701
-data:
-- label: Debt
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0
-- label: Cash
-  min: 3
-  low: 4.5
-  optimum: 6
-  high: 7.5
-  max: 9
-  value: 7.2
-- label: Low correlation
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0.9
-- label: Negative correlation
-  min: 0
-  low: 0
-  optimum: 0.3
-  high: 0.5
-  max: 1
-  value: 0.8
-- label: US equities - small
-  min: 25
-  low: 29.7
-  optimum: 31.6
-  high: 33.5
-  max: 38
-  value: 33
-- label: US equities - mid
-  min: 25
-  low: 29.7
-  optimum: 31.6
-  high: 33.5
-  max: 38
-  value: 29.1
-- label: US equities - large
-  min: 25
-  low: 28.4
-  optimum: 31
-  high: 35.3
-  max: 37
-  value: 27.7
 fi-experiments:
 # label, current, previous, start
 - [0.0, 34.90, 34.72, 47.71]
@@ -89,19 +39,19 @@ I’m in accumulation mode, therefore, the portfolio is as close as it can be to
 
 Debt and cash can’t go lower than 0 and can’t be avoided given the way I pay bills and track this sorta thing, so, I use a static number to set the tolerance bands for debt and cash; same with alternatives and negative correlation.
 
-For equities, I use 20 percent from the target, which was the optimal percent, relative to a target, identified by an article on [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.riskparityradio.com). 
+For equities, I use 20 percent from the target, which was the optimal percent, relative to a target, identified by an article on [rebalancing and tolerance bands](https://www.kitces.com/blog/best-opportunistic-rebalancing-frequency-time-horizons-vs-tolerance-band-thresholds/), which I believe I first heard referenced by [Risk Parity Radio](https://www.riskparityradio.com).
 
 The target is the guideline, and the tolerance bands are the [guardrails](/essays-and-editorials/guidelines-and-guardrails/).
 
 I’m starting to play with the idea of inner bands as well.
 
-These inner bands are set above and below the target but not above or below the minimum and maximum. The more volatile something is, the narrower the inner bands. 
+These inner bands are set above and below the target but not above or below the minimum and maximum. The more volatile something is, the narrower the inner bands.
 
 For example, small-cap stocks tend to fluctuate in value more than large-cap, therefore, the inner bands would be narrower for small-cap. Here’s roughly what that looks like:
 
 - small-cap inner bands are 30 to 34 percent of the portfolio,
-- large-cap is 27 to 35 percent of the portfolio, and 
-- mid-cap is, well, somewhere between those two. 
+- large-cap is 27 to 35 percent of the portfolio, and
+- mid-cap is, well, somewhere between those two.
 
 The idea here is a volatile asset may fall to the floor or shoot the moon at any moment, we don’t want to miss out when it’s down or stick around too long while it’s up; see Bitcoin in 2021.
 
@@ -115,7 +65,7 @@ The result should be the equities don’t require rebalancing much, if ever, and
 
 ## The plateau
 
-The plateau is still doing the plateau thing. From a learning experience perspective I’m appreciating it. 
+The plateau is still doing the plateau thing. From a learning experience perspective I’m appreciating it.
 
 The bull market from 2021 was great at building my confidence to feel like I might be able to do something with investments. 2022 is letting me check my tolerance for volatility. As the joke goes, everyone is a genius in a bull market. The additional logic is that you hope the markets will be down when you start investing; so, I’m getting that out of the way early as well.
 
@@ -141,7 +91,7 @@ The second bill came in and it was two pages. I was able to match two of the thr
 
 Instead, the second page has three line items and a single amount owed. If I took the total of two of the line items the amount owed matched one claim from the app. Further, if I took the third line item it matched a different claim in the app. When I added the two claims in the app together, I got the single amount owed from page two.
 
-The kicker? As if that wasn’t enough. The breakdown of services didn’t match from the details of the claim in the app compared to the bill. 
+The kicker? As if that wasn’t enough. The breakdown of services didn’t match from the details of the claim in the app compared to the bill.
 
 When I went back to look at the details for page one? None of those service descriptions matched either.
 

@@ -1,17 +1,6 @@
 ---
 title: June 1, 2021 paycheck
 created: 20210601
-data:
-- [Debt, 0, 0, 0.05]
-- [Cash, 2, 4, 8.08]
-- [Invest, 0, 0, 0]
-- [US Bonds - munis, 1, 2, 4.6]
-- ["US Bonds - Government", 0, 0.5, 0.01]
-- [US equities - small, 30, 35, 17.52]
-- [US equities - mid, 30, 35, 22.5]
-- [US equities - large, 30, 35, 45.98]
-- [Int. bonds, 0, 0, 0]
-- [Int. equities, 0, 2, 1.22]
 ---
 
 # June 1, 2021 paycheck

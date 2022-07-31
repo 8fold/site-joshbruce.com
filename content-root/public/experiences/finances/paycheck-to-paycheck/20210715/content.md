@@ -1,17 +1,6 @@
 ---
 title: July 15th, 2021 paycheck
 created: 20210704
-data:
-- [Debt, 0, 0, 0.16]
-- [Cash, 2, 4, 9.94]
-- [Invest, 0, 0, 0]
-- [US Bonds - munis, 1, 2, 4.06]
-- ["US Bonds - Government", 0, 0.5, 0.01]
-- [US equities - small, 30, 35, 17.92]
-- [US equities - mid, 30, 35, 22.62]
-- [US equities - large, 30, 35, 45.15]
-- [Int. bonds, 0, 0, 0]
-- [Int. equities, 0, 2, 1.41]
 ---
 
 # July 15th, 2021 paycheck

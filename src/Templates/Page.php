@@ -17,6 +17,7 @@ use JoshBruce\Site\Partials\NextPrevious;
 use JoshBruce\Site\Partials\ArticleList;
 use JoshBruce\Site\Partials\LogList;
 use JoshBruce\Site\Partials\OriginalContentNotice;
+use JoshBruce\Site\Partials\Data;
 
 class Page implements Buildable
 {
@@ -56,7 +57,8 @@ class Page implements Buildable
                         'next-previous' => NextPrevious::class,
                         'article-list' => ArticleList::class,
                         'loglist' => LogList::class,
-                        'original' => OriginalContentNotice::class
+                        'original' => OriginalContentNotice::class,
+                        'data' => Data::class
                     ]
                 )
             );

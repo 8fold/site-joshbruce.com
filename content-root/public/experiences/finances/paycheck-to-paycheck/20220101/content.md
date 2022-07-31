@@ -1,14 +1,6 @@
 ---
 title: January 1st, 2022 paycheck
 created: 20211230
-data:
-- [Debt, 0, 0, 0.6]
-- [Cash, 5, 10, 15.8]
-- [Low correlation, 0, 1, 0.7]
-- [Negative correlation, 0, 1, 0.6]
-- [US equities - small, 24, 35, 22]
-- [US equities - mid, 24, 35, 22.5]
-- [US equities - large, 24, 35, 37.9]
 ---
 
 # January 1st, 2022 paycheck

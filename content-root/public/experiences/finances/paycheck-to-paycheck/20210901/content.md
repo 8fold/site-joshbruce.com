@@ -2,14 +2,6 @@
 title: September 1st, 2021 paycheck
 created: 20210816
 updated: 20210901
-data:
-    - [Debt, 0, 0, 0.2]
-    - [Cash, 5, 10, 14.7]
-    - [Low correlation, 0, 1, 0.4]
-    - [Negative correlation, 0, 1, 0.4]
-    - [US equities - small, 24, 35, 18.9]
-    - [US equities - mid, 24, 35, 22.8]
-    - [US equities - large, 24, 35, 42.1]
 ---
 
 # September 1st, 2021 paycheck

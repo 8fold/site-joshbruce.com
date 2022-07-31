@@ -2,17 +2,6 @@
 title: July 1st, 2021 paycheck
 created: 20210619
 updated: 20211031
-data:
-    - [Debt, 0, 0, 0.28]
-    - [Cash, 2, 4, 9.94]
-    - [Invest, 0, 0, 0]
-    - [US Bonds - munis, 1, 2, 4.14]
-    - ["US Bonds - Government", 0, 0.5, 0.01]
-    - [US equities - small, 30, 35, 18.01]
-    - [US equities - mid, 30, 35, 22.69]
-    - [US equities - large, 30, 35, 45.22]
-    - [Int. bonds, 0, 0, 0]
-    - [Int. equities, 0, 2, 1.42]
 ---
 
 # July 1st, 2021 paycheck

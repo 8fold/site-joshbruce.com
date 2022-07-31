@@ -1,14 +1,6 @@
 ---
 title: January 15th, 2022 paycheck
 created: 20220115
-data:
-- [Debt, 0, 1, 0.5]
-- [Cash, 5, 10, 11.1]
-- [Low correlation, 0, 1, 0.8]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 24, 35, 24.6]
-- [US equities - mid, 24, 35, 24.4]
-- [US equities - large, 24, 35, 37.4]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 45.19, 47.71, 47.71]

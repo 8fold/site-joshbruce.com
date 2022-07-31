@@ -2,14 +2,6 @@
 title: September 15th, 2021 paycheck
 created: 20210904
 updated: 20210917
-data:
-- [Debt, 0, 0, 0.5]
-- [Cash, 5, 10, 15.7]
-- [Low correlation, 0, 1, 0.3]
-- [Negative correlation, 0, 1, 0.4]
-- [US equities - small, 24, 35, 20.0]
-- [US equities - mid, 24, 35, 23.0]
-- [US equities - large, 24, 35, 39.9]
 ---
 
 # September 15th, 2021 paycheck

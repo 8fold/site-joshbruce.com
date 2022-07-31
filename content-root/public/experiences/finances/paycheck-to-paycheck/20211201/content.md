@@ -1,14 +1,6 @@
 ---
 title: December 1st, 2021 paycheck
 created: 20211115
-data:
-- [Debt, 0, 0, 0.8]
-- [Cash, 5, 10, 16.1]
-- [Low correlation, 0, 1, 0.6]
-- [Negative correlation, 0, 1, 0.6]
-- [US equities - small, 24, 35, 21.4]
-- [US equities - mid, 24, 35, 22.6]
-- [US equities - large, 24, 35, 37.8]
 ---
 
 # December 1st, 2021 paycheck

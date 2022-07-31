@@ -1,14 +1,6 @@
 ---
 title: April 15th, 2022 paycheck
 created: 20220415
-data:
-- [Debt, 0, 1, 1.3]
-- [Cash, 5, 10, 6.7]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 24, 35, 32.9]
-- [US equities - mid, 24, 35, 26.5]
-- [US equities - large, 24, 35, 31]
 fi-experiments:
 # label, current, previous, start
 - [0.0, 41.96, 43.69, 47.71]
@@ -29,11 +21,11 @@ fi-experiments:
 
 Making progress toward getting my 401k in balance. For the past few contributions I’ve been ramping up the small-cap fund via buying the dip; now it’s almost to the point of the same cost basis as the S&P 500 fund. I decided to shift my contribution from 80-20 favoring the small-cap to 20-80 favoring the mid-cap. I plan on continuing to sell the large-cap gains and buying the small- and mid-cap funds. Once it’s balanced I’ll change to an even split and rebalance as necessary.
 
-## Portfolio balance overall 
+## Portfolio balance overall
 
-Looking pretty good. However, when it comes to individual funds, it’s time to buy the mid-cap in the 401k and the total stock market fund in the taxable account. 
+Looking pretty good. However, when it comes to individual funds, it’s time to buy the mid-cap in the 401k and the total stock market fund in the taxable account.
 
-This is due in part to shoveling so much toward the funds favoring small-cap, however, that’s not the only reason. 
+This is due in part to shoveling so much toward the funds favoring small-cap, however, that’s not the only reason.
 
 I’m thinking of adding another fund.
 
@@ -41,7 +33,7 @@ This would not be an optimization move or because I expect to get higher returns
 
 The cap-weighted total stock market fund lets me hold the average investment portfolio of all investors. If someone buys more stock in a company, it’s market capitalization goes up and, when the index fund is rebalanced (or I purchase more lots), more of my value will be in that company. Right now, the average portfolio heavily favors large-cap, growth stocks and I do not; when a company gets close to being too big to fail, it shouldn’t need more of my money to sustain itself. Further, the average portfolio favors technology, which, having lived through the dot-com bubble as someone trying to break into web design and development, I have my doubts. Finally, if you shift the sector of your company (to technology) because you believe it’ll increase the stock price—not value to your customers—that’s also not me; might feel like a straw man and was an argument stated to me, so, anecdotal, not a straw man.
 
-The extended market fund lets me shift the size factor toward small- and mid-cap companies with the goal being a pretty even split between the three. 
+The extended market fund lets me shift the size factor toward small- and mid-cap companies with the goal being a pretty even split between the three.
 
 The multi-factor fund I’m pretty sure I’ll go with favors momentum (strong, recent performance), fundamentals (cash flow and conservative over aggressive investing), and value (low price compared to fundamentals). There are multiple identified factors and models out there (recent learning on my part). I’m appreciating the Fama-and-French five-factor model, which doesn’t include momentum, however, incorporates the others found in this fund—to the best of my knowledge. The goal here is to see what shifts to get closer to an even distribution between value and growth with a smaller percentage of core according to the Personal Capital grid. I’m pretty evenly split right now but the portfolio isn’t at its target allocations overall yet.
 
@@ -79,7 +71,7 @@ Over the years I’ve tried a lot of formats; chronological, functional, hybrid.
 
 Over the years I’ve received at least a thousand rejection letters; not a single interview from the résumé to a job I actually pursued. In fact, my career is kind of like my dating life; they find me.
 
-Anyway, I’m bringing in the professionals. 
+Anyway, I’m bringing in the professionals.
 
 I’ve hired one writer and career coach; we’re testing the iteration she came to. I have a session with a second résumé writer in a few days; we’ll be starting from the same point as the first—with my most recent two attempts. And I signed up for a webinar from Simon Sinek and gang to improve my résumé; I’ll be starting with the one from the first writer.
 
