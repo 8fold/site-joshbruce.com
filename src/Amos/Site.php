@@ -12,8 +12,11 @@ use Psr\Http\Message\ResponseInterface;
 use Nyholm\Psr7\Response;
 use Nyholm\Psr7\Stream;
 
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
+use Eightfold\Amos\Documents\Page;
 use Eightfold\Amos\Documents\Sitemap;
 
 class Site
@@ -46,8 +49,10 @@ class Site
 
     private RequestInterface $request;
 
-    private UriInterface $uri;
-
+    /**
+     *
+     * @var array<string, string>
+     */
     private array $templates = [
         'default' => Page::class
     ];
@@ -91,13 +96,19 @@ class Site
             return false;
         }
 
-        $json    = file_get_contents($path);
-        $decoded = json_decode($json);
-
-        if ($decoded === false) {
+        $json = file_get_contents($path);
+        if ($json === false) {
             return false;
         }
-        return $decoded;
+
+        $decoded = json_decode($json);
+        if (
+            is_object($decoded) and
+            is_a($decoded, StdClass::class)
+        ) {
+            return $decoded;
+        }
+        return false;
     }
 
     public function content(string $at): string
@@ -108,7 +119,11 @@ class Site
             return '';
         }
 
-        return file_get_contents($path);
+        $content = file_get_contents($path);
+        if ($content === false) {
+            return '';
+        }
+        return $content;
     }
 
     public function decodedJsonFile(string $named, string $at): StdClass|false
@@ -117,13 +132,21 @@ class Site
         if (is_file($path) === false) {
             return false;
         }
-        $json    = file_get_contents($path);
-        $decoded = json_decode($json);
 
-        if ($decoded === false or $decoded === null) {
+        $json = file_get_contents($path);
+        if ($json === false) {
             return false;
         }
-        return $decoded;
+
+        $decoded = json_decode($json);
+        if (
+            is_object($decoded) and
+            is_a($decoded, StdClass::class)
+        ) {
+            return $decoded;
+        }
+
+        return false;
     }
 
     public function isPublishedContent(string $at): bool
@@ -150,6 +173,13 @@ class Site
         return $this->request;
     }
 
+    /**
+     *
+     * @param string $default
+     * @param array<string, string> $templates
+     *
+     * @return self
+     */
     public function setTemplates(
         string $default,
         array $templates = []
@@ -161,6 +191,10 @@ class Site
         return $this;
     }
 
+    /**
+     *
+     * @return array<string, string>
+     */
     public function templates(): array
     {
         return $this->templates;
@@ -186,16 +220,18 @@ class Site
             );
 
         } elseif (str_contains($this->requestPath(), '.')) {
-            $path = $this->content()->publicContentRoot() . $this->requestPath();
+            $path = $this->publicRoot() . $this->requestPath();
             if (file_exists($path)) {
                 $mime = mime_content_type($path);
 
-                return new Response(
-                    status: 200,
-                    headers: ['Content-type' => mime_content_type($path)],
-                    body: Stream::create(@\fopen($path, 'r'))
-                );
-
+                $resource = @\fopen($path, 'r');
+                if (is_resource($resource)) {
+                    return new Response(
+                        status: 200,
+                        headers: ['Content-type' => mime_content_type($path)],
+                        body: Stream::create($resource)
+                    );
+                }
             }
         }
 

@@ -40,23 +40,12 @@ class PageTitle implements Buildable
         $titles = [];
         while (count($filtered) > 0) {
             $path = '/' . implode('/', $filtered) . '/';
-            $meta = $this->site()->meta(at: $path);
-            if (property_exists($meta, 'title') === false) {
-                $titles[] = '';
-            }
-            $titles[] = Markdown::convertTitle($meta->title);
+            $titles[] = $this->title(at: $path);
 
             array_pop($filtered);
         }
 
-        $meta = $this->site()->meta(at: '/');
-        if (property_exists($meta, 'title') === false) {
-            $titles[] = '';
-
-        } else {
-            $titles[] = Markdown::convertTitle($meta->title);
-
-        }
+        $titls[] = $this->title(at: '/');
 
         $titles = array_filter($titles);
 
@@ -66,5 +55,14 @@ class PageTitle implements Buildable
     public function __toString(): string
     {
         return $this->build();
+    }
+
+    private function title(string $at): string
+    {
+        $meta = $this->site()->meta(at: $at);
+        if (is_object($meta) and property_exists($meta, 'title')) {
+            return Markdown::convertTitle($meta->title);
+        }
+        return '';
     }
 }

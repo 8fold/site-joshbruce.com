@@ -33,6 +33,10 @@ class ArticleList implements Buildable
         }
 
         $contents = scandir($path);
+        if ($contents === false) {
+            return '';
+        }
+
         $links = [];
         foreach ($contents as $content) {
             if (
@@ -48,7 +52,10 @@ class ArticleList implements Buildable
             $href = $this->site()->requestPath() . '/' . $content;
 
             $meta = $this->site()->meta($href);
-            if (property_exists($meta, 'title')) {
+            if (
+                is_object($meta) and
+                property_exists($meta, 'title')
+            ) {
                 $links[] = Element::li(
                     Element::a($meta->title)->props('href ' . $href)
                 );

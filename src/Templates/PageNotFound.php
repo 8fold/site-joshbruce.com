@@ -42,9 +42,14 @@ class PageNotFound implements Buildable
             file_exists($meta) and
             $json = file_get_contents($meta) and
             $decoded = json_decode($json) and
+            is_object($decoded) and
             property_exists($decoded, 'title')
         ) {
             $pageTitle = $decoded->title;
+        }
+
+        if (is_string($markdown) === false) {
+            return '';
         }
 
         return Main::create($this->site())

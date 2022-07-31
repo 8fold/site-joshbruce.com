@@ -66,10 +66,13 @@ class FullNav implements Buildable
             );
 
             $json = file_get_contents($fullPath);
+            if ($json === false) {
+                continue;
+            }
+
             $meta = json_decode($json);
             if (
-                $meta === false or
-                $meta === null or
+                is_object($meta) === false or
                 property_exists($meta, 'title') === false
             ) {
                 continue;

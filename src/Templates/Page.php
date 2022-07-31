@@ -67,8 +67,8 @@ class Page implements Buildable
                 )
             );
 
-        if (property_exists($meta, 'schemaType')) {
-            $maain = $main->setSchemaType($meta->schemaType);
+        if (is_object($meta) and property_exists($meta, 'schemaType')) {
+            $main = $main->setSchemaType($meta->schemaType);
         }
 
         return $main->build();

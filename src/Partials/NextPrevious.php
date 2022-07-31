@@ -11,10 +11,6 @@ use Eightfold\Amos\Site;
 
 class NextPrevious implements Buildable
 {
-    private Meta $meta;
-
-    private Content $content;
-
     public static function create(Site $site): self
     {
         return new self($site);
@@ -48,6 +44,10 @@ class NextPrevious implements Buildable
         }
 
         $contents     = scandir($parentPath);
+        if ($contents === false) {
+            return '';
+        }
+
         $foundCurrent = false;
         $previousPath     = '';
         $nextPath         = '';

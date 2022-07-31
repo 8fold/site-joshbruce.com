@@ -27,12 +27,16 @@ class LogList implements Buildable
 
     public function build(): string
     {
-       $path = $this->site()->publicRoot() . $this->site()->requestPath();
+        $path = $this->site()->publicRoot() . $this->site()->requestPath();
         if (is_dir($path) === false) {
             return '';
         }
 
         $contents = scandir($path);
+        if ($contents === false) {
+            return '';
+        }
+
         $links = [];
         foreach ($contents as $content) {
             if (
@@ -47,7 +51,7 @@ class LogList implements Buildable
             $href = $this->site()->requestPath() . '/' . $content;
 
             $meta = $this->site()->meta($href);
-            if (property_exists($meta, 'title')) {
+            if (is_object($meta) and property_exists($meta, 'title')) {
                 $index = intval($content);
                 $links[$index] = Element::li(
                     Element::a($meta->title)->props('href ' . $href)

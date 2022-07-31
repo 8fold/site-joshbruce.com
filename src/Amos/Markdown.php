@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos;
 
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use Eightfold\Amos\Site;
@@ -60,6 +62,14 @@ class Markdown
         return self::$titleConverter;
     }
 
+    /**
+     *
+     * @param Site $site
+     * @param string $markdown
+     * @param array<string, string> $components
+     *
+     * @return string
+     */
     public static function convert(
         Site $site,
         string $markdown,
@@ -80,6 +90,14 @@ class Markdown
         return strip_tags(self::singletonTitleConverter()->convert($title));
     }
 
+    /**
+     *
+     * @param Site $site
+     * @param string $markdown
+     * @param array<string, string> $components
+     *
+     * @return string
+     */
     private static function proccessPartials(
         Site $site,
         string $markdown,

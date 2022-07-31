@@ -14,10 +14,6 @@ use Eightfold\Amos\Site;
 
 class Navigation implements Buildable
 {
-    private UriInterface $uri;
-
-    private string $domain = '';
-
     public static function create(Site $site): self
     {
         return new self($site);
@@ -32,6 +28,13 @@ class Navigation implements Buildable
         return $this->site;
     }
 
+    /**
+     *
+     * @param string $title
+     * @param string $titleShort
+     *
+     * @return Element[]
+     */
     private function spans(string $title, string $titleShort): array
     {
         return [
