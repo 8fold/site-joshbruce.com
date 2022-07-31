@@ -73,7 +73,7 @@ This makes me think that maybe there's no such thing as refactoring.
 
 Is it really possible to put someone on a team (or alter code in some way) wherein the external behavior doesn't change at least a little bit?
 
-I talked about [staying as small as possible](/web-development/on-constraints/internet-bandwidth/) for as long as possible and I would say that applies to team size as well. I was in an interview once and was asked when I thought it was appropriate to scale.
+I talked about [staying as small as possible](/essays-and-editorials/software-development/on-constraints/internet-bandwidth/) for as long as possible and I would say that applies to team size as well. I was in an interview once and was asked when I thought it was appropriate to scale.
 
 That's a loaded question. When we talk about scaling we usually only talk about it in terms of scaling up. More code. More people. And I think those two things are mutually inclusive. The more people independently contributing to a codebase, the more code there will be. We rarely talk about scaling down though.
 

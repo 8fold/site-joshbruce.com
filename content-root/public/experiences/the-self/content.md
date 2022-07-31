@@ -19,7 +19,7 @@ My name is <span property="name">Josh Bruce</span>.
 
 ### Values
 
-1. Autonomy: When I do the [Motivators exercise](/design-your-life/motivators/) on myself, the ability to “choose my own adventure” ranks second; every time.
+1. Autonomy: When I do the [Motivators exercise](/essays-and-editorials/motivators/) on myself, the ability to “choose my own adventure” ranks second; every time.
 2. My values and principles over social norms and mores.
 3. Intellectual legacy over
     - financial legacy over
@@ -42,7 +42,7 @@ My name is <span property="name">Josh Bruce</span>.
 9. Great value doesn't require grand gestures.
 10. Final doesn't exist.
 11. The principles from [The Manifesto for Agile Software Development](https://agilemanifesto.org); replacing the word "software" with "solutions" and where developer means anyone working to aid in moving toward the common benefit.
-12. Time is not labor; no one’s time is more valuable than anyone else’s. 
+12. Time is not labor; no one’s time is more valuable than anyone else’s.
 
 ### Practices
 

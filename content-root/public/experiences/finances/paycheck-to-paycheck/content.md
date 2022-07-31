@@ -19,7 +19,7 @@ I see finances in terms of two primary scales:
 
 To appease the tinkerer and risk taker in me, I needed a method where I was hands-on; moving things around and logging into accounts—feeling like those scenes in movies where hackers are doing all this insane stuff on computers that is literally impossible and not how computers work. With that said, I wanted decision making to be as automated as possible. I didn't want to have to call or sign on to a bunch of places to cancel automatic payments should I find myself living in my car again or couch surfing because I couldn't afford to pay rent somewhere.
 
-These desires and what I knew of myself became my [budgeting method](/finances/budgeting/).
+These desires and what I knew of myself became my [budgeting method](/experiences/finances/personal-budget/).
 
 This series chronicles the moves I started making regarding finances—at least from April of 2021 as I didn't really think about it in the first couple of months of 2021.
 
