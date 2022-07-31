@@ -18,6 +18,7 @@ use JoshBruce\Site\Partials\ArticleList;
 use JoshBruce\Site\Partials\LogList;
 use JoshBruce\Site\Partials\OriginalContentNotice;
 use JoshBruce\Site\Partials\Data;
+use JoshBruce\Site\Partials\FiExperiments;
 
 class Page implements Buildable
 {
@@ -58,7 +59,8 @@ class Page implements Buildable
                         'article-list' => ArticleList::class,
                         'loglist' => LogList::class,
                         'original' => OriginalContentNotice::class,
-                        'data' => Data::class
+                        'data' => Data::class,
+                        'fi-experiments' => FiExperiments::class
                     ]
                 )
             );
