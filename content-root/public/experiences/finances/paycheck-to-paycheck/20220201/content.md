@@ -13,7 +13,7 @@ A lot going on here.
 
 I'm moving the weekend before the first and decided to post on January 29 because not much will change by the first.
 
-In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/finances/building-wealth-paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I identified areas where I should adjust saving and spending. Let's focus on the saving piece as mentioned in the previous[paycheck](/finances/building-wealth-paycheck-to-paycheck/20220115/#too-much-cash).
+In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/experiences/finances/paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I identified areas where I should adjust saving and spending. Let's focus on the saving piece as mentioned in the previous[paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#too-much-cash).
 
 Because of the minimal categories I saw which expenses were more of a one-off for 2021 something to minimize in 2022. Subtracting the one-off expenses from the total expenses, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success; at least until the most recent dip, which qualifies as a correction or, possibly, a bear market.
 
@@ -59,7 +59,7 @@ I updated the [investment policy](/finances/investment-policy/#emergency-fund-ca
 
 Updated the visualization for the portfolio at the beginning of these entries.
 
-Decided against the image approach [I initially considered](/finances/building-wealth-paycheck-to-paycheck/20210301/); I still have the chart in the spreadsheet.
+Decided against the image approach [I initially considered](/experiences/finances/paycheck-to-paycheck/20210301/); I still have the chart in the spreadsheet.
 
 Hope you enjoy the visualization and I was pretty happy with it from a [web development](/web-development/) perspective because I kept the same markup and, because it's built with a template using the same data, all the previous pages were automatically updated; this isn't particularly new or exciting as it's been a part of web development for years, but it's sometimes the little things that bring the most joy.
 
@@ -67,7 +67,7 @@ I increased the maximum allowed for debt to 1 percent because I pay for most thi
 
 ## FI experiments
 
-Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+Details are in the [January 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#fi-experiments).
 
 The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
 
@@ -79,7 +79,7 @@ This is the first long-running correction I’ve been through, or at least that 
 
 In short, always dollar cost average each paycheck to reach the targets set for the various accounts. If cash is beyond the bands and I’m not saving for a larger purchase, go ahead and increase investment purchases. Every three months or so since the last purchase using reserves and on a paycheck day, take half of the reserves and increase investment purchase. If there’s a dip in the market, cash reserves may be used to purchase out of cycle compared to the two aforementioned events; with constraints.
 
-More details available in the [paycheck-to-paycheck](/finances/building-wealth-paycheck-to-paycheck/) main page.
+More details available in the [paycheck-to-paycheck](/experiences/finances/paycheck-to-paycheck/) main page.
 
 I’ve heard multiple parties in the investment space say that, counterintuitive as it might be, one of the best things that could happen to you when you start investing is a crash. There are two reasons they often give:
 

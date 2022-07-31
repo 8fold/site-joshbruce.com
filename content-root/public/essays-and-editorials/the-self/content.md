@@ -67,4 +67,4 @@ The Motivators exercise is a way to get away from the writer’s block that ofte
 
 Character is something we all have; like a diet or [budget](/essays-and-editorials/finances/budgeting/). Intentionally defining and capturing it can help you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
 
-When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/about/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.
+When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/experiences/the-self/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.

@@ -13,7 +13,7 @@ Here's something I never thought I'd say:
 
 > I've adjusted my spreadsheet to allow me to track my finances based on [my investment policy](/finances/investment-policy/) and easily share it here in the form of an image.
 
-Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/finances/building-wealth-paycheck-to-paycheck/) is the only one that's lasted longer than a month.
+Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/experiences/finances/paycheck-to-paycheck/) is the only one that's lasted longer than a month.
 
 I've just finished listening to The Simple Path to Wealth by J.L. Collins and I've made it up to Unit 7 of [Choose [.FI](financial independence)'s](/reviews-and-summaries/choose-fi/) Financial Independence 101 course.
 
