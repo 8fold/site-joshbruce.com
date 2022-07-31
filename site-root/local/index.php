@@ -13,7 +13,6 @@ require __DIR__ . '/../../vendor/autoload.php';
 use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 
 use Eightfold\Amos\Site;
-use Eightfold\Amos\Content;
 
 use Nyholm\Psr7Server\ServerRequestCreator;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -33,8 +32,8 @@ $request = (new ServerRequestCreator(
 (new SapiEmitter())->emit(
     Site::init(
         withDomain: 'http://com.joshbruce:8889',
-        contentIn: Content::init(__DIR__ . '/../../content-root')
-    )->templates(
+        contentIn: __DIR__ . '/../../content-root'
+    )->setTemplates(
         default: Page::class,
         templates: [
             'error404' => PageNotFound::class
