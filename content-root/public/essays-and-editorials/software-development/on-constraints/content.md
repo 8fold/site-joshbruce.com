@@ -15,4 +15,4 @@ Anyway, the idea of constraints is liberating to some and a complete non-starter
 
 ## The series
 
-- [Internet bandwidth](/web-development/on-constraints/internet-bandwidth/)
+{!! article-list !!}
