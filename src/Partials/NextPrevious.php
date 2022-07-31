@@ -9,17 +9,6 @@ use Eightfold\XMLBuilder\Contracts\Buildable;
 use Eightfold\HTMLBuilder\Element;
 //
 use Eightfold\Amos\Site;
-// use Eightfold\Amos\Meta;
-// use Eightfold\Amos\Content;
-//
-// use JoshBruce\SiteDynamic\FileSystem\Finder;
-// use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-//
-//
-//
-// use JoshBruce\SiteDynamic\Environment;
-//
-// use JoshBruce\SiteDynamic\Content\Markdown;
 
 class NextPrevious implements Buildable
 {
