@@ -7,6 +7,6 @@ created: 20220423
 
 {!! dateblock !!}
 
-## Essay
+## Essays
 
 {!! article-list !!}
