@@ -223,6 +223,11 @@ nav[is=main-nav] > ul > li > a.current{
   color:var(--gray-lightest);
 }
 
+@media (prefers-color-scheme: dark){
+  nav[is=main-nav] > ul > li > a{
+    color:var(--gray-lightest);
+  }
+}
 body{
   min-height:var(--vw-0);
   max-width:var(--line-length);
