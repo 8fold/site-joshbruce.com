@@ -16,6 +16,7 @@ use JoshBruce\Site\Partials\DateBlock;
 use JoshBruce\Site\Partials\NextPrevious;
 use JoshBruce\Site\Partials\ArticleList;
 use JoshBruce\Site\Partials\LogList;
+use JoshBruce\Site\Partials\OriginalContentNotice;
 
 class Page implements Buildable
 {
@@ -54,7 +55,8 @@ class Page implements Buildable
                         'dateblock' => DateBlock::class,
                         'next-previous' => NextPrevious::class,
                         'article-list' => ArticleList::class,
-                        'loglist' => LogList::class
+                        'loglist' => LogList::class,
+                        'original' => OriginalContentNotice::class
                     ]
                 )
             );
