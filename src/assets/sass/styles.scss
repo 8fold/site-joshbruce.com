@@ -6,6 +6,8 @@
 @forward 'main-nav';
 @forward 'back-to-top';
 
+@forward 'footer';
+
 html {
   scroll-padding-top: 44pt;
   @include mixins.at-media {
@@ -402,12 +404,3 @@ ul[is="data-list"] {
 .notice {
   font-size: var(--xs-font);
 }
-
-footer {
-  margin-top: var(--l-spacer);
-  & > p {
-    text-align: var(--center);
-    font-size: var(--xs-font);
-  }
-}
-
