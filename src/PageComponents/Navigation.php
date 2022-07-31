@@ -51,10 +51,9 @@ class Navigation implements Buildable
         ];
 
         $l = [];
-        $requestPath = $this->site()->requestPath();
+        $requestPath = $this->site()->requestPath() . '/';
         foreach ($links as $link) {
             list($href, $ts, $title) = explode(' ', $link, 3);
-            $id = str_replace('/', '', $href);
 
             $a = Element::a(
                 ...$this->spans($title, $ts)
