@@ -150,7 +150,7 @@ For example, as of this writing, my 401k is out of balance and there is a dip in
 
 ### Personal portfolio
 
-I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](http://com.joshbruce-dynamic:8889/finances/investment-policy/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using five fund types to achieve this:
+I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policy/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using five fund types to achieve this:
 
 1. [.Cap-weighted](Market capitalization weighted), total US equities fund; roughly 4,100 stocks.
 2. Cap-weighted, extended US equities fund; roughly 3,700 stocks. This helps achieve even distribution across small-, mid-, and large-cap stocks.
