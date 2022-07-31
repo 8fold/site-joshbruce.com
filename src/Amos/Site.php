@@ -186,18 +186,14 @@ class Site
 
         $this->createMarkdownConverter();
         if ($this->isPublishedContent($this->requestPath()) === false) {
-            $template = $this->templates['error404'];
-            $path = $this->content()->root() . '/errors/404/content.md';
+            $path = $this->contentRoot() . '/errors/404/content.md';
             if (file_exists($path)) {
+                $template = $this->templates['error404'];
                 return new Response(
                     status: 404,
                     headers: ['Content-type' => 'text/html'],
                     body: Stream::create(
-                        $template::create(
-                            $this->content(),
-                            $this->request(),
-                            $this->domain()
-                        )->build()
+                        $template::create($this)->build()
                     )
                 );
             }
