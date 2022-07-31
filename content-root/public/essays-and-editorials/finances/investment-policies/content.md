@@ -7,7 +7,7 @@ created: 20220416
 
 {!! dateblock !!}
 
-Investment policies are entered into between you and a financial advisor. They establish the [guidelines and guardrails](/design-your-life/guidelines-and-guardrails/) for your investments. They are created in times of peace to help automate decision-making when shit goes pear-shaped.
+Investment policies are entered into between you and a financial advisor. They establish the [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) for your investments. They are created in times of peace to help automate decision-making when shit goes pear-shaped.
 
 It's possible for you to play both the advisor and the client, you are multifaceted. The difficult part is that sometimes these two facets need to be at odds with one another. Advisors, like mentors (or sometimes coaches), need to be willing and able to ask powerful, and sometimes tough, questions.
 
@@ -54,7 +54,7 @@ Like I said, financial independence is the easy target for the why of saving and
 
 What you might find is that some (if not a lot) of the things you are running toward you don't need to wait until you've achieved FI.
 
-For the next few sections, you can look at my [investment policy](/finances/investment-policy/); I used the one from [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/) as a base and will modify it as I continue on my journey.
+For the next few sections, you can look at my [investment policy](/experiences/finances/investment-policy/); I used the one from [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/) as a base and will modify it as I continue on my journey.
 
 ## Financial goals
 
@@ -183,10 +183,10 @@ The **home base** approach looks at the whole portfolio (as most of the strategi
 
 Let's say you use a three tax bucket approach and you have money in all three buckets. However, you have more money in the tax-deferred bucket. This may become the bucket you use for rebalancing. You are moving toward a portfolio allocation of 90 percent equities, 5 percent bonds, and 5 percent cash valued at 1,000 USD. Right now you have:
 
-- 950 USD in equities and 50 USD in cash. 
-- In your taxable accounts, you have 100 USD in equities and 50 USD in cash. 
-- In your tax-deferred accounts you have 600 USD. 
-- In your tax-free accounts you have the remaining 150 USD. 
+- 950 USD in equities and 50 USD in cash.
+- In your taxable accounts, you have 100 USD in equities and 50 USD in cash.
+- In your tax-deferred accounts you have 600 USD.
+- In your tax-free accounts you have the remaining 150 USD.
 
 To put the portfolio in balance, you'll need 900 USD in equities, 50 USD in bonds, and 50 USD in cash. So, you sell 50 USD worth of the equities in your tax-deferred account and purchase 50 USD in bonds.
 
