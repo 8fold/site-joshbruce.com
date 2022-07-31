@@ -48,12 +48,12 @@ class Data implements Buildable
                 property_exists($row, 'optimum')
             ) {
                 $label   = $row->label;
-                $min     = floatval($row->min);
-                $max     = floatval($row->max);
-                $value   = floatval($row->value);
-                $low     = floatval($row->low);
-                $high    = floatval($row->high);
-                $optimum = floatval($row->optimum);
+                $min     = $row->min;
+                $max     = $row->max;
+                $value   = $row->value;
+                $low     = $row->low;
+                $high    = $row->high;
+                $optimum = $row->optimum;
 
                 $listHeadings[] = self::listFrom12($label, $min, $max, $value);
 
@@ -64,9 +64,9 @@ class Data implements Buildable
                 property_exists($row, 'value')
             ) {
                 $label = $row->label;
-                $min   = floatval($row->min);
-                $max   = floatval($row->max);
-                $value = floatval($row->value);
+                $min   = $row->min;
+                $max   = $row->max;
+                $value = $row->value;
 
                 $listHeadings[] = self::listFrom12(
                     $label,
@@ -91,11 +91,11 @@ class Data implements Buildable
 
     private static function listFrom12(
         string $label,
-        float $min,
-        float $max,
-        float $value
+        string $min,
+        string $max,
+        string $value
     ): Element {
-        $detail = self::detail($min, $max, $value);
+        $detail = self::detail(floatval($min), floatval($max), floatval($value));
 
         $label  = Element::span($label)->build();
         $parenthetical = Element::span(' (' . $detail . ')')->build();
