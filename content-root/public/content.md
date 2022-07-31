@@ -15,8 +15,8 @@ The site is divided into the following areas:
 
 1. [My books](/books/) are books I've written or am in the (sometimes extended) process of writing; I'm driven by feedback and pull (demand).
 2. [Essays and editorials](/essays-and-editorials/) are my consolidated thoughts on various topics.
-3. [Examinations and summaries](/examinations/) is where I review and reflect on the media which helps inform my consolidated thoughts.
-4. [Experiences](/experiences/) is where I talk about applying the consolidated thoughts.
+3. [Experiences](/experiences/) is where I talk about applying the consolidated thoughts.
+4. [Examinations and summaries](/examinations/) is where I review and reflect on the media which helps inform my consolidated thoughts.
 
 I'm a multifaceted being, just like you, and this site covers my whole and authentic [self](/experiences/the-self/).
 
