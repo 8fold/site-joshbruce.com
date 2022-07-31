@@ -114,12 +114,12 @@ class Main implements Buildable
                     Element::li(
                         Element::a(
                             'terms'
-                        )->props('href https://4th.earth/legal/')
+                        )->props('href /legal/')
                     ),
                     Element::li(
                         Element::a(
                             'support'
-                        )->props('href https://4th.earth/support/')
+                        )->props('href /support/')
                     )
                 )
             ),
