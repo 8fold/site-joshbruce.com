@@ -49,7 +49,7 @@ As of this writing, there's a minimum number of dependencies. There's a minimum 
 
 So, what does this say about me?
 
-When it comes to [motivators](/design-your-life/motivators/), autonomy is ranked number two almost every time; I don't like depending too much on others and I tend to help others not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
+When it comes to [motivators](/essays-and-editorials/motivators/), autonomy is ranked number two almost every time; I don't like depending too much on others and I tend to help others not be dependent on me. I'm a minimalist in my lifestyle when it comes to people and property. I also tend to refactor what I say to deliver the most impact possible with the fewest words I can consider [at the time](https://quoteinvestigator.com/2012/04/28/shorter-letter/); I try to be to the point. I favor mobility and agility in my life.
 
 I describe the code and the code describes me.
 
