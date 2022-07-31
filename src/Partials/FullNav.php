@@ -12,15 +12,6 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Markdown;
 
-// namespace JoshBruce\SiteDynamic\DocumentComponents;
-//
-// use JoshBruce\SiteDynamic\Environment;
-//
-// use JoshBruce\SiteDynamic\FileSystem\Finder;
-// use JoshBruce\SiteDynamic\FileSystem\PlainTextFile;
-//
-// use JoshBruce\SiteDynamic\Content\Markdown;
-
 class FullNav implements Buildable
 {
     public static function create(Site $site): self
@@ -45,11 +36,6 @@ class FullNav implements Buildable
 
         $publicRoot = $this->site()->publicRoot();
         $contentFilename = 'content.md';
-//         die('here');
-//         $contentFilename = $environment->contentFilename();
-//
-//         $finder = Finder::init($file->root(), $contentFilename)
-//             ->publishedContent()->getIterator()->depth('>= 1');
 
         $files = [];
         foreach ($finder as $fileInfo) {
@@ -107,7 +93,7 @@ class FullNav implements Buildable
 
             $markdownList .= $listItem;
         }
-// die(var_dump($markdownList));
+
         return Markdown::convert($this->site(), $markdownList);
     }
 

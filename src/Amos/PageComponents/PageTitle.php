@@ -30,16 +30,6 @@ class PageTitle implements Buildable
         return $this->site;
     }
 
-//     private function content(): Content
-//     {
-//         return $this->contentIn;
-//     }
-//
-//     private function request(): RequestInterface
-//     {
-//         return $this->request;
-//     }
-
     public function build(): string
     {
         $path = $this->site()->requestPath();
