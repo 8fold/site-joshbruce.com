@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: var(--l-spacer);
+  margin-bottom: var(--xs-spacer);
+  font-family: var(--head-font);
+  font-size: clamp(30pt, 9.375vw, 35pt);
+  line-height: var(--l-line-height);
+
+  + ol, + ul, + p {
+    margin-top: var(--0-spacer);
+    padding-top: var(--0-spacer);
+  }
+}
+
+h1 {
+  margin-top: var(--m-spacer);
+}
+
+h2 {
+  font-size: var(--xl-font);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--l-font);
+  text-align: var(--center);
+}
+
+code {
+  font-family: var(--code-font);
+  font-size: var(--xs-font);
+}
+
+pre {
+  overflow-y: var(--scroll);
+  -ms-overflow-style: var(--none); /* IE and Edge */
+  scrollbar-width: var(--none); /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: var(--none);
+  }
+}
+
+blockquote {
+  margin: var(--m-spacer);
+  font-style: var(--italic);
+}
+
+a:hover {
+  cursor: var(--pointer);
+}
+
+a {
+  font-weight: var(--bold-font);
+  text-decoration: var(--none);
+  color: var(--key);
+  transition: var(--transition-color);
+
+  &:hover {
+    color: var(--gray-darker);
+  }
+}
+
+a[rel~=noreferrer]:after {
+  content: var(--icon-new-window);
+  display: var(--inline-block);
+  margin-left: var(--2xs-spacer);
+  position: var(--relative);
+  top: var(--icon-lift-spacer);
+  font-size: var(--xs-font);
+}
+

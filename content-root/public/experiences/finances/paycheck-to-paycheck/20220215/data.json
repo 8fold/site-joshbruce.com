@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "label": "Debt",
+      "min": "0",
+      "max": "1",
+      "value": "0"
+    },
+    {
+      "label": "Cash",
+      "min": "5",
+      "max": "10",
+      "value": "5.3"
+    },
+    {
+      "label": "Low correlation",
+      "min": "0",
+      "max": "1",
+      "value": "0.9"
+    },
+    {
+      "label": "Negative correlation",
+      "min": "0",
+      "max": "1",
+      "value": "0.9"
+    },
+    {
+      "label": "US equities - small",
+      "min": "24",
+      "max": "35",
+      "value": "29.9"
+    },
+    {
+      "label": "US equities - mid",
+      "min": "24",
+      "max": "35",
+      "value": "26.6"
+    },
+    {
+      "label": "US equities - large",
+      "min": "24",
+      "max": "35",
+      "value": "36"
+    }
+  ]
+}
