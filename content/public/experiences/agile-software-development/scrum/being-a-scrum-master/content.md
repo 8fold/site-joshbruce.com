@@ -32,8 +32,6 @@ I've held many job titles. It's only been since 2015 that any of them were that 
 
 Time to do Scrum Master shit, the baseline of which being the values called out in the Scrum Guide: commitment, courage, focus, openness and respect.
 
-***
-
 ## The Scrum Guide
 
 A quick note on the distinction between accountability and responsibility.
@@ -138,8 +136,6 @@ I really appreciate Lyssa Adkins, author of *Coaching Agile Teams*, for coming o
 
 For me, if you're not trying to implement Scrum, use Agile Coach for the job titles. Of course, the intent of language is sometimes not the way it is used and this could confuse recruiters.
 
-***
-
 ## Revisiting what qualifies experience?
 
 ![Tweet from Andy Hunt, reading: Itʼs even worse for kids just out of college. “Entry level” with years of experience required! Donʼt think they understand the concept of entry level.](/media/coaching/entry-level-andy-hunt-tweet.png)
@@ -159,8 +155,6 @@ It's lift and shift.
 Lifting someone who's worked at Bank A for 20 years and shifting them to Bank B seems safer than hiring someone "off the street."
 
 This is how we end up hiring someone who's been a Scrum Master for 15 years and watch them struggle. Maybe they spent 15 years in the same organization, with the same team, and the organization didn't change much over that time. In that 15 years they had one class and never revisited that education. Taken further, maybe the organization "went Agile" by shifting the title Project Manager to Scrum Master without actually changing the responsibilities and accountabilities of the person.
-
-***
 
 ## Time in grade
 

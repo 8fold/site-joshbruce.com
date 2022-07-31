@@ -19,4 +19,6 @@ I don't think it will ever be flashy, as it were—I'm not the flashy person. In
 
 I will do what I can to keep a running log of significant changes and thoughts, detailed in the posts listed below:
 
-- [2021](/web-development/this-site/2021)
+## Details
+
+{!! article-list !!}

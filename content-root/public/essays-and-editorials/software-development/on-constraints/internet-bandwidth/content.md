@@ -57,8 +57,6 @@ TDD basically says, break your functional requirements down into smaller technic
 
 To the backstory!
 
-***
-
 <i>A gentleman I know is learning how to be a software developer. He posted code the other day for a game he's building. It's a type of counter game.
 From the code he posted, I pulled out these two functional requirements (there's a finish to the game, but this article will be rather long with a lot of examples already):</i>
 
@@ -76,8 +74,6 @@ I did chime in on it though, because there was a deeper issue—the conditions c
 I said, "Here's a challenge for you. There are a few ways to do it given the technology stack you are using: remove the conditional entirely and allow for an infinite number of items. You can also remove your dependency on JQuery. Who knows, maybe this game will become a code kata for you to learn other languages; your own, personal FizzBuzz."
 Then I realized, this is the perfect example to demonstrate this constraint.
 Let's begin!
-
-***
 
 <i>Note: I've never built something like this. I've never seen these requirements. What follows is not me saying "look how awesome I am" (I actually think I'm a pretty poor developer all things considered); instead, it's demonstrating the importance of properly phrasing and applying constraints. (Now, I wrote the constraint; so, I know the intent…tell me how you could break the intent without breaking the rule, and I'll update the phrasing.)</i>
 
@@ -432,8 +428,6 @@ Most library and framework developers do not actively try to deprecate themselve
 
 (I actually respect the [Bourbon](https://www.bourbon.io) team a lot for this, removing functions from their library as CSS gains the ability natively.)
 
-***
-
 ## Anti-pattern creep
 
 (This is the area of the half-kidding jokes, and heaviest snark, I think. Starting now in fact.)
@@ -719,8 +713,6 @@ But, "I'm not a designer" is the retort I hear most…
 "Then you have 7 hours to practice and become more cross-functional and learn a new skill…become more 'full-stack'," is the counter I will offer, with sincere love and respect for all that you are; after-all I still say I'm not a "developer" because I really like "designing" things; so, I make development go faster to spend more time thinking and designing new things instead of continuing to complicate what's already there.
 
 Thanks for letting me get that off my chest. I really do appreciate it.
-
-***
 
 Seriously though. We were done with the requirements at the 4th iteration.
 

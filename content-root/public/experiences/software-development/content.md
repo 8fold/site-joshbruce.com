@@ -29,3 +29,7 @@ In their defense it hadn't seen an update in a pretty long time (years, plural).
 Now I work in [.IT](information technology) as an [Agile Coach](https://agilemanifesto.org) and [Scrum Master](https://scrumguides.org), which is pretty interesting considering I still tend to say I'm not a software developer and my college career was in fine arts, which sometimes felt like the distant cousin of the other liberal arts. (Fine arts majors build things instead of writing about things, but our deliverables have roughly the same probability of becoming viable in the economic marketplace as philosophers, sociologists, or even art historians   .)
 
 So, all that to say, if you're looking for someone who fancies themselves a hacker extreme or caped-crusading coder who knows everything from binary through Assembly to the moon, I'm not the guy. But, I've been around the block and I've seen some stuff, I guess.
+
+## Thoughts
+
+{!! article-list !!}
