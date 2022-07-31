@@ -14,6 +14,8 @@ use JoshBruce\Site\Documents\Main;
 
 use JoshBruce\Site\Partials\DateBlock;
 use JoshBruce\Site\Partials\NextPrevious;
+use JoshBruce\Site\Partials\ArticleList;
+use JoshBruce\Site\Partials\LogList;
 
 class Page implements Buildable
 {
@@ -48,7 +50,9 @@ class Page implements Buildable
                     $markdown,
                     [
                         'dateblock' => DateBlock::class,
-                        'next-previous' => NextPrevious::class
+                        'next-previous' => NextPrevious::class,
+                        'article-list' => ArticleList::class,
+                        'loglist' => LogList::class
                     ]
                 )
             )->build();
