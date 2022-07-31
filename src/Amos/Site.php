@@ -203,11 +203,6 @@ class Site
             }
         }
 
-        if (property_exists($this->meta($this->requestPath()), 'template'))
-        {
-            die('has template');
-        }
-
         $template = $this->templates['default'];
         return new Response(
             status: 200,

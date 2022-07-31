@@ -41,7 +41,9 @@ class Page implements Buildable
             return '';
         }
 
-        return Main::create($this->site())
+        $meta = $this->site()->meta(at: $path);
+
+        $main = Main::create($this->site())
             ->setPageTitle(
                 PageTitle::create($this->site())->build()
             )->setBody(
@@ -55,7 +57,13 @@ class Page implements Buildable
                         'loglist' => LogList::class
                     ]
                 )
-            )->build();
+            );
+
+        if (property_exists($meta, 'schemaType')) {
+            $maain = $main->setSchemaType($meta->schemaType);
+        }
+
+        return $main->build();
     }
 
     public function __toString(): string

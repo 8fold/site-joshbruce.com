@@ -19,6 +19,8 @@ class Main implements Buildable
 
     private string $body = '';
 
+    private string $schemaType = 'BlogPosting';
+
     public static function create(Site $site): self
     {
         return new self($site);
@@ -45,6 +47,12 @@ class Main implements Buildable
         return $this;
     }
 
+    public function setSchemaType(string $type): self
+    {
+        $this->schemaType = $type;
+        return $this;
+    }
+
     private function pageTitle(): string
     {
         return $this->pageTitle;
@@ -53,6 +61,11 @@ class Main implements Buildable
     private function body(): string
     {
         return $this->body;
+    }
+
+    private function schemaType(): string
+    {
+        return $this->schemaType;
     }
 
     public function build(): string
@@ -91,6 +104,9 @@ class Main implements Buildable
             Element::article(
                 Element::section(
                     $this->body()
+                )->props(
+                    'typeof ' . $this->schemaType(),
+                    'vocab https://schema.org/'
                 )
             )->props('id main', 'role main'),
             Element::footer(
