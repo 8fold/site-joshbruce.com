@@ -11,6 +11,8 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\Amos\Site;
 
 use Eightfold\Amos\PageComponents\Favicons;
+use Eightfold\Amos\PageComponents\Copyright;
+
 use JoshBruce\Site\PageComponents\Navigation;
 
 class Main implements Buildable
@@ -126,7 +128,8 @@ class Main implements Buildable
                             'support'
                         )->props('href /support/')
                     )
-                )
+                ),
+                Copyright::create('Joshua C. Bruce', '2004')
             ),
             Element::a(
                 Element::span(
