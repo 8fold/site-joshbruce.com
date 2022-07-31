@@ -1,0 +1,52 @@
+{
+  "experiments": [
+    {
+      "label": "Mark 0.0",
+      "current": "42.70",
+      "previous": "42.65",
+      "start": "47.71"
+    },
+    {
+      "label": "Mark 0.2",
+      "current": "39.49",
+      "previous": "39.38",
+      "start": "43.83"
+    },
+    {
+      "label": "Mark 0.4",
+      "current": "30.70",
+      "previous": "39.53",
+      "start": "43.74"
+    },
+    {
+      "label": "Mark 0.6",
+      "current": "39.99",
+      "previous": "39.72",
+      "start": "43.54"
+    },
+    {
+      "label": "Mark 0.8",
+      "current": "40.52",
+      "previous": "40.14",
+      "start": "43.36"
+    },
+    {
+      "label": "Mark 1.0",
+      "current": "44.33",
+      "previous": "43.87",
+      "start": "46.87"
+    },
+    {
+      "label": "Mark 1.1",
+      "current": "44.24",
+      "previous": "43.78",
+      "start": "46.76"
+    },
+    {
+      "label": "Mark 1.2",
+      "current": "44.22",
+      "previous": "43.76",
+      "start": "46.73"
+    }
+  ]
+}

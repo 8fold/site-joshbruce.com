@@ -35,16 +35,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Eightfold\\Amos\\": "./site-dynamic-php/src/Amos",
-      "JoshBruce\\SiteDynamic\\": "./site-dynamic-php/src",
-      "JoshBruce\\SiteStatic\\": "./site-static-html/src"
+      "Eightfold\\Amos\\": "./src/Amos",
+      "JoshBruce\\Site\\": "./src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "JoshBruce\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests",
-      "JoshBruce\\SiteLocal\\Tests\\": "./site-local-php/tests",
-      "JoshBruce\\SiteStatic\\Tests\\": "./site-static-html/tests"
+      "Eightfold\\Amos\\Tests\\": "./tests/Amos",
+      "JoshBruce\\Site\\Tests\\": "./tests"
     }
   },
   "config": {

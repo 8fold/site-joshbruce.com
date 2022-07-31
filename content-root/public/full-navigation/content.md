@@ -1,0 +1,3 @@
+# All content
+
+{!! full-nav !!}
