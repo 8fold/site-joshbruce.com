@@ -15,7 +15,7 @@ I spent six years working with a credit union and was trained on multiple financ
 
 As a coach whose worked with multiple clients from the Federal Government to Fortune 500 companies and micro-businesses, I focus on optimization, gamification, and productivity.  Much of this involves automated decision-making, as much is possible and practical. In other words, when faced with an event, I help my clients be in a position to respond quickly because the decision on how to respond has already been made—or feels obvious because of their embodied character; this is also something I practice in my own life.
 
-When the 2020 pandemic hit, there was no question what I would do. With my [personal character](/about/) as a foundation I called the client and told them I’d be moving from Washington state to Tennessee; I would have done the move regardless—I was stating intent, not asking permission. They understood and didn't remove me from the project. I spent the [15 Days to Slow the Spread](https://trumpwhitehouse.archives.gov/articles/15-days-slow-spread/) to prepare for the move and the following 3 days making the drive.
+When the 2020 pandemic hit, there was no question what I would do. With my [personal character](/experiences/the-self/) as a foundation I called the client and told them I’d be moving from Washington state to Tennessee; I would have done the move regardless—I was stating intent, not asking permission. They understood and didn't remove me from the project. I spent the [15 Days to Slow the Spread](https://trumpwhitehouse.archives.gov/articles/15-days-slow-spread/) to prepare for the move and the following 3 days making the drive.
 
 ## Saving isn't investing
 
@@ -25,17 +25,17 @@ Cash is a liquid asset traded directly for goods and services.
 
 In the case of the [.United States Dollar](USD), the Federal Reserve is the only sanctioned entity that can create or destroy it. The USD is similar to many other currencies found around the world.
 
-Because cash doesn't typically rot (like foodstuffs), it affords (pun intended) the opportunity for hoarding; being taken out of circulation by private individuals. To combat hoarding, the creators and destroyers of the currency tend to print more of it. Currencies can be seen as a share in the entity who (or for whom) the currency is created; in the case of the USD, it's a share in the United States. Therefore, printing more of the currency is similar to when companies [dilute their stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more shares; this is different than [splitting the stock](https://www.investopedia.com/ask/answers/what-stock-split-why-do-stocks-split/). 
+Because cash doesn't typically rot (like foodstuffs), it affords (pun intended) the opportunity for hoarding; being taken out of circulation by private individuals. To combat hoarding, the creators and destroyers of the currency tend to print more of it. Currencies can be seen as a share in the entity who (or for whom) the currency is created; in the case of the USD, it's a share in the United States. Therefore, printing more of the currency is similar to when companies [dilute their stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more shares; this is different than [splitting the stock](https://www.investopedia.com/ask/answers/what-stock-split-why-do-stocks-split/).
 
 A company may dilute its stock whenever it wants to, however, it’s often done when ownership becomes too concentrated with a single entity.
 
 So, people hoard cash, which effectively takes it out of circulation, the supply of cash in circulation decreases, if demand for the currency increases or even remains the same, those in charge of the currency print more of it. This often results in the value of the stock decreasing (deflation), at least in the short-term.
 
-The money printers may also take money out of circulation. In corporate terms, this is a stock buyback; the company itself buys its own stock and holds or destroys those shares. 
+The money printers may also take money out of circulation. In corporate terms, this is a stock buyback; the company itself buys its own stock and holds or destroys those shares.
 
 The money printers (US Federal Reserve, for example) have a few ways to do it.
 
-This is a very simplified explanation. Having said that, the general rule of thumb is the more cash gets put into circulation and the easier it becomes to attain said cash the higher prices will go; resulting in inflation. 
+This is a very simplified explanation. Having said that, the general rule of thumb is the more cash gets put into circulation and the easier it becomes to attain said cash the higher prices will go; resulting in inflation.
 
 Cash is considered a liquid asset as it can be traded directly for products and services. This is in contrast to more illiquid assets, like a house. Typically we don't trade houses for products and services, they must be sold (liquidated to cash). The time it takes to convert a house to cash can be weeks, months, or, in some cases, years.
 
@@ -47,11 +47,11 @@ This bears repeating:
 
 Looked at a different way, the moment I purchase an asset (convert cash to something else), I've "lost" the money because it's no longer cash. From that point forward, the questions are: What is the fair market value of the thing I purchased? And, how much income has been generated?
 
-If the fair market value is more than I paid, I haven't made money, I have an unrealized gain. If I sell the thing at the higher value, I have a realized gain in capital; made money. 
+If the fair market value is more than I paid, I haven't made money, I have an unrealized gain. If I sell the thing at the higher value, I have a realized gain in capital; made money.
 
-If the fair market value is less than I paid for it, I haven't lost money, I have an unrealized loss. If I sell it for the lower amount, I have a realized loss in capital. 
+If the fair market value is less than I paid for it, I haven't lost money, I have an unrealized loss. If I sell it for the lower amount, I have a realized loss in capital.
 
-If the asset pays me (usually in the form of dividends), I’ve made money. These dividends are classified outside the fair market value, however, the two are related. So, it’s possible to sell an asset for an unrealized loss that has produced a profit for you. 
+If the asset pays me (usually in the form of dividends), I’ve made money. These dividends are classified outside the fair market value, however, the two are related. So, it’s possible to sell an asset for an unrealized loss that has produced a profit for you.
 
 At all other points, the asset is just increasing or decreasing in fair market value; I'm neither making or losing money.
 
@@ -91,7 +91,7 @@ Investing is similar to speculating only the probability of a positive return on
 
 ### The 10 questions
 
-These 10 questions represent a proposed method of determining if something is an investment, speculation, or gamble and are proposed by J. David Stein in his book *Money for the Rest of Us*. 
+These 10 questions represent a proposed method of determining if something is an investment, speculation, or gamble and are proposed by J. David Stein in his book *Money for the Rest of Us*.
 
 1. What is it?
 2. Is it investing, speculating, or gambling?
@@ -127,7 +127,7 @@ In other words, the change isn’t because I think my mix will outperform anythi
 
 ## Net worth isn't the same as cash on hand
 
-As of this writing, I'm part of the six-figure club, which is to say I have a net worth greater than 100,000 USD and less than 1 million USD; this doesn't mean I have that in cash. 
+As of this writing, I'm part of the six-figure club, which is to say I have a net worth greater than 100,000 USD and less than 1 million USD; this doesn't mean I have that in cash.
 
 When we say someone is a millionaire or billionaire it's because, if we liquidated their assets and paid off their liabilities, they would, in theory, have that much cash remaining. However, if we liquidated their assets, eventually the fair market value of the assets would likely drop in value (scarcity model and mindset).
 
@@ -191,7 +191,7 @@ When you buy stock in a company it typically grants you the right to vote on cer
 
 If you own shares directly, you can vote on topics in-person or [by proxy](https://www.investopedia.com/terms/p/proxy-vote.asp). When you own mutual funds, on the other hand, you typically forfeit voting rights for the entity issuing the underlying security. You are purchasing shares of the fund, not the underlying security, therefore, the company operating the fund has the voting rights as the owners of the underlying security. Granted there are around 4,000 companies in The New York Stock Exchange as of this writing and, if you were asked to possibly participate in a vote every time one came up for every company, that’d be your full-time job; instead fund investors delegate that responsibility to someone else.
 
-This can sometimes create the aforementioned concentration in ownership. A broker issues an index fund. Loads of people invest in that fund. That broker has weighted voting rights for the underlying securities. 
+This can sometimes create the aforementioned concentration in ownership. A broker issues an index fund. Loads of people invest in that fund. That broker has weighted voting rights for the underlying securities.
 
 (This drive for decentralization that results in centralization is a motif in human existence; the former reduces risk and the latter lowers barriers to entry. The New York Stock Exchange is a centralized method of investing in individual, decentralized companies. Mutual funds are a centralized method for investing one or more exchanges while delegating certain risks and responsibilities.)
 
@@ -214,14 +214,14 @@ First in, first out sells the oldest lots first. This increases the possibility 
 
 Highest in, first out sells the shares based on the price paid, not the date of purchase and will sell the more expensive ones first. As a result, this method should take better advantage of both capital gains and losses, however, (as stated in the link) in limited cases short-term capital gains or losses may be realized before long-term.
 
-Lot ID means you get to look at each lot and shares you've purchased and choose which to sell. Selling by lot ID offers the most flexibility, requires the most work, and carries the most risk should undesired results occur. 
+Lot ID means you get to look at each lot and shares you've purchased and choose which to sell. Selling by lot ID offers the most flexibility, requires the most work, and carries the most risk should undesired results occur.
 
 That covers withdraw methods in brief, let’s talk earned income (dividends).
 
 When it comes to dividends there are usually two options:
 
 1. automatically reinvest in the security that generated the income and
-2. don’t. 
+2. don’t.
 
 When it comes to taxable accounts, I’m a fan of not reinvesting automatically. I’d let earned income spit out of the security; into a cash account. Then I’d put aside a percent in an account for paying future taxes. (Note: Some types of accounts don’t have cash accounts and dividends must be reinvested in the security that generated them—one of my 401k retirement accounts, for example.)
 
@@ -363,7 +363,7 @@ Mutual fund
 Net worth
 :    The amount remaining after adding together the fair market value of all assets and subtracting the fair market value of all liabilities.
 
-Asset portfolio 
+Asset portfolio
 :    All assets owned by one or more legal entities; typically the assets are grouped by types.
 :    Portfolios may be made up of one or more sub-portfolios. *You may have a portfolio made of cash, bonds, and equities. The “equity portfolio” may be broken up by sector, market capitalization, region, or some combination.*
 
