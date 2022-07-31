@@ -45,9 +45,9 @@ class FiExperiments implements Buildable
                 property_exists($row, 'start')
             ) {
                 $label    = $row->label;
-                $current  = floatval($row->current);
-                $previous = floatval($row->previous);
-                $start    = floatval($row->start);
+                $current  = $row->current;
+                $previous = $row->previous;
+                $start    = $row->start;
 
                 $previousChange = self::calculateChangeBetween($current, $previous);
                 $startChange    = self::calculateChangeBetween($current, $start);
@@ -94,13 +94,18 @@ class FiExperiments implements Buildable
     }
 
     private static function calculateChangeBetween(
-        float $first,
-        float $second
-    ): float {
+        string $first,
+        string $second
+    ): string {
+        $first = floatval($first);
+        $second = floatval($second);
+
         $difference = $first - $second;
         $decimal    = $difference / $second;
         $percent    = $decimal * 100;
 
-        return round($percent, 2);
+        $result = round($percent, 2);
+
+        return strval($result);
     }
 }
