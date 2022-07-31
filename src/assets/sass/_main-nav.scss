@@ -75,3 +75,9 @@ nav[is="main-nav"] {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  nav[is="main-nav"] > ul > li > a {
+    color: var(--gray-lightest);
+  }
+}
