@@ -9,7 +9,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
 
-class Data
+class Data implements Buildable
 {
     public static function create(Site $site): self
     {

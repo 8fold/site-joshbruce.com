@@ -12,7 +12,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Markdown;
 
-class OriginalContentNotice
+class OriginalContentNotice implements Buildable
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
