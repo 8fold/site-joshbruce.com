@@ -147,7 +147,7 @@ We're moving to a new city and state. I was asked whether we were planning on ow
 
 > We're pretty much renters for life, I think.
 
-The response was a good one regarding how many people look at buying a home as an investment, so, what was I planning to do for retirement. Given that you're here, chances are you already know, if you've read the [opening page](/finances) and the [investment policy](/finances/invest-policy), so, I want to take a different tack for this one.
+The response was a good one regarding how many people look at buying a home as an investment, so, what was I planning to do for retirement. Given that you're here, chances are you already know, if you've read the [opening page](/experiences/finances/) and the [investment policy](/experiences/finances/invest-policy/), so, I want to take a different tack for this one.
 
 Not that any of us needs a reason beyond wanting and not wanting to do something but, the big thing is, I don't view any use-asset as an investment.
 

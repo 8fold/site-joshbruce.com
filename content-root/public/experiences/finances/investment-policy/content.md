@@ -59,7 +59,7 @@ Would you like support my work and goals?
 - My primary investment vehicles will be broad-based index funds.
 - I’ll leverage tax-advantaged accounts and vehicles as much as possible.
 - I’ll buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.
-- My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/finances/building-wealth-paycheck-to-paycheck/) workflow.
+- My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
 - I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based market capitalization, value, and growth.
 - I’ll contribute at least 300 USD per paycheck to long-term savings; dollar cost averaging will be my primary mode of contributing.
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
@@ -114,7 +114,7 @@ I have created multiple allocations based on the portfolio's net worth using the
 	- US Treasuries: 20 to 30 percent; target of 25
 	- Equities: 40 to 60 percent; target of 50
 
-This progression ensures I reduce volatility based on the net worth of the portfolio, not my age or calendar year. 
+This progression ensures I reduce volatility based on the net worth of the portfolio, not my age or calendar year.
 
 I have a [high risk tolerance and capacity](/essays-and-editorials/finances/investment-policies/); in part because I don't think I'll stop earning income and I'm content with my minimal lifestyle.
 
@@ -144,7 +144,7 @@ This might sound complicated, and that's kinda the point; I'm dissuading myself 
 
 Let's say it's June 2020 and the portfolio goes out of balance; I receive a rebalancing token. July 2020 comes along; I'm able to spend the token to rebalance the portfolio using the valuations on that day and I decide to rebalance. August 2020 the portfolio is out of balance; I receive a rebalancing token, but I can't rebalance again until July 2021. July 2021 comes along and the portfolio is in balance, so, I decide not to rebalance at that time; I retain the token. December 2021 comes along and the portfolio goes out of balance again and I decide to rebalance at that time; I have the token, December 2021 is greater than July 2020 and July 2021.
 
-Note: These are [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/), not hard and fast rules. Further, sometimes restrictions in an account may cause me to change how I go about certain things. 
+Note: These are [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/), not hard and fast rules. Further, sometimes restrictions in an account may cause me to change how I go about certain things.
 
 For example, as of this writing, my 401k is out of balance and there is a dip in two of the three holdings. I’d like to take advantage of those dips. I'm limited by how much I can put into this account; therefore, I am selling the highest performing fund to buy the two dipping funds.
 
