@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace JoshBruce\Site\Partials;
 
 use Eightfold\XMLBuilder\Contracts\Buildable;
-//
+
 use Eightfold\HTMLBuilder\Element;
-//
+
 use Eightfold\Amos\Site;
 
 class NextPrevious implements Buildable
