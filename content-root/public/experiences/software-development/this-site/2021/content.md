@@ -9,7 +9,7 @@ created: 20211031
 
 I think I'm going to call this one the quick and considerate update.
 
-The main focus of this site is text-based ramblings. The Internet has come a long way since I started. My understanding of it and [software development](/software-development/) has also come a long way.
+The main focus of this site is text-based ramblings. The Internet has come a long way since I started. My understanding of it and [software development](/essays-and-editorials/software-development/) has also come a long way.
 
 ## Considerate (lots of firsts)
 
@@ -54,7 +54,7 @@ It's conjecture in that I didn't ask users, however, I don't know any of my user
 
 It may be hard to tell given how much animation and transitions play in modern interface design, but some people really don't do well with all that motion.
 
-Therefore, I want to be considerate of that. In the [style sheet](/assets/css/main.css) there is a media query that says `prefers-reduced-motion`, at least as of this writing. By default, any CSS transitions that could cause a lot of movement are placed here.
+Therefore, I want to be considerate of that. In the style sheet there is a media query that says `prefers-reduced-motion`, at least as of this writing. By default, any CSS transitions that could cause a lot of movement are placed here.
 
 We might call this: reduced-motion-first design.
 
@@ -106,7 +106,7 @@ My server will also compress certain file types before they are transferred to y
 
 One of these files that gets compressed before being sent should be the CSS. Since switching to using CSS properties almost exclusively to define my "design system," I've noticed a slight improvement when the CSS is compressed. Once you receive the compressed file, it will be uncompressed and displayed for you. This all happens automatically.
 
-Because I use the libraries I do for generating the HTML, it's actually minified, which is to say stripped of extra whitespace that's used to make it easier to read. For a non-HTML example, look at the [minified version](/assets/css/main.min.css) of the CSS served with this page; as opposed to the [non-minified version](/assets/css/main.css) I've been linking to up to this point. If you look at the raw HTML source for this page, you'll notice it's mostly one continuous line of text.
+Because I use the libraries I do for generating the HTML, it's actually minified, which is to say stripped of extra whitespace that's used to make it easier to read. For a non-HTML example, look at the minified version of the CSS served with this page; as opposed to the non-minified version I've been linking to up to this point. If you look at the raw HTML source for this page, you'll notice it's mostly one continuous line of text.
 
 ### Let the browser and server be a browser and server
 

@@ -21,6 +21,6 @@ What I appreciate about this 5 mini-portfolio setup is how it's helping instill 
 
 ## This site
 
-Mainly I've been working on [this site](/web-development/this-site), to be honest. It's been an interesting exercise and experience. I'm appreciating this evolution given [my history on the web](/web-development/my-history-on-the-web/). But, that's for a different section of the site.
+Mainly I've been working on [this site](/experiences/software-development/this-site/), to be honest. It's been an interesting exercise and experience. I'm appreciating this evolution given [my history on the web](/experiences/software-development/being-online/). But, that's for a different section of the site.
 
 {!! next-previous !!}

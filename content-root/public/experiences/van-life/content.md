@@ -44,7 +44,7 @@ The modes identified:
 7. dressing, and
 8. entertaining (self and others).
 
-Thinking each mode will be given a section of this page, a standalone page, or both. Given [my profession](/coaching/) at the moment, thinking I’ll start with the [MoSCoW method](https://en.m.wikipedia.org/wiki/MoSCoW_method), while used as a prioritization technique, I’m using it primarily to distinguish between a minimally viable product and a more comfortable one.
+Thinking each mode will be given a section of this page, a standalone page, or both. Given my profession at the moment, thinking I’ll start with the [MoSCoW method](https://en.m.wikipedia.org/wiki/MoSCoW_method), while used as a prioritization technique, I’m using it primarily to distinguish between a minimally viable product and a more comfortable one.
 
 ## Traveling
 
