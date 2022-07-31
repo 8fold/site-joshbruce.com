@@ -97,6 +97,6 @@ Went back to mom's the third week and took time off from the day job. By the end
 
 With the promise to not be a developer for corporate ever again and a history of being a punk with a fuck-off attitude, I decided being a Scrum Master and Agile Coach was probably more suitable for me; my lifestyle is conducive to this end.
 
-So, there I was (2012), formally doing [Scrum Master shit](/coaching/being-a-scrum-master/).
+So, there I was (2012), formally doing [Scrum Master shit](/experiences/agile-software-development/scrum/being-a-scrum-master/).
 
 {!! article-list !!}

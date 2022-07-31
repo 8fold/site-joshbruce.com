@@ -58,7 +58,7 @@ This isn't about gatekeeping, it's about awareness of a profession and the respo
 
 On social media the other day someone made a list of all the things a web developer "needs" to know in order to call themselves a web developer. The list did not include [.HTML](Hypertext Markup Language), which is how the web displays things. That's gatekeeping: You won't be let in unless.
 
-With that said, in my own [journey on the web](/web-development/my-history-on-the-web/), I've learned a lot that I did not know when I first started calling myself a web designer and developer. Initially I didn't feel comfortable calling myself a web developer because I didn't write code. I still don't feel comfortable calling myself a web developer. And, there is no canonical reference for web developer as a profession; for better and worse.
+With that said, in my own [journey on the web](/experiences/software-development/being-online/), I've learned a lot that I did not know when I first started calling myself a web designer and developer. Initially I didn't feel comfortable calling myself a web developer because I didn't write code. I still don't feel comfortable calling myself a web developer. And, there is no canonical reference for web developer as a profession; for better and worse.
 
 When it comes to being a Scrum Master, I find myself referencing the Scrum Guide all the time; because that's part of my accountability when I take on the mantle of Scrum Master. Now, it's not the *only* thing I reference.
 

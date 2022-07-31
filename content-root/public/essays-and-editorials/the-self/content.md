@@ -21,7 +21,7 @@ Whether you believe you came from a deity, stardust, or something else, I can't 
 
 Yet, throughout history, humans have performed serious pain and suffering because of their beliefs regarding these two questions.
 
-With that out of the way, let's focus on the third question; in pragmatic terms. 
+With that out of the way, let's focus on the third question; in pragmatic terms.
 
 (This third question is why the self-help—or self-improvement—industry exists. An estimate from [MarketResearch.com](https://blog.marketresearch.com/the-10-billion-self-improvement-market-adjusts-to-new-generation) says the self-help industry in the United States will grow to over 13 billion [.United States Dollars](USD) in 2022.)
 
@@ -33,7 +33,7 @@ That's a bit abstract and we'll need to get more concrete. Exploring this questi
 
 (We'll explore the other two questions, but in a much shorter time-scale.)
 
-## Character 
+## Character
 
 Character is to the individual what culture is to [the group](/essays-and-editorials/the-group/).
 
@@ -59,12 +59,12 @@ The [Motivators Exercise](/essays-and-editorials/motivators/), for example, is a
 
 Identifying your values, principles, practices (or habits), and tools is nonlinear. You don’t need to figure out your life’s purpose *before* determining your values *before* stating your principles and so on. Instead, you can start by cataloging your practices and asking yourself why that’s a practice. Or start listing tools you use and ask why you use that tool.
 
-Feel like an example is in order. I use pen-and-paper (tools) for capturing todo items (practice) because I don’t want to forget and I don’t want my mind cluttered. The last bit is in keeping with the principle: Your mind is for having ideas, not storing them. Further, the last bit is in keeping with my value of integrity (keeping my word to self and others). 
+Feel like an example is in order. I use pen-and-paper (tools) for capturing todo items (practice) because I don’t want to forget and I don’t want my mind cluttered. The last bit is in keeping with the principle: Your mind is for having ideas, not storing them. Further, the last bit is in keeping with my value of integrity (keeping my word to self and others).
 
 I have more examples I could throw at you. However, I value simplicity, therefore, I hope the pen-and-paper example demonstrates how starting from anywhere and reflecting on why can you into the other areas as well; anxiety of the blank canvas.
 
 The Motivators exercise is a way to get away from the writer’s block that often comes from being asked to figure out what you want to be if you grow up.
 
-Character is something we all have; like a diet or [budget](/finances/budgeting/). Intentionally defining and capturing it can help you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
+Character is something we all have; like a diet or [budget](/essays-and-editorials/finances/budgeting/). Intentionally defining and capturing it can help you find your way in dark spaces; a North Star or flashlight for who you are and want to be.
 
 When I feel like I’m losing myself or otherwise experiencing an identity crisis, I can always go back to my [character sheet](/about/) and see who I said I was when I wasn’t in crisis or panic. With that said crisis and panic mode often reveals our true character or at least aspects of our character we maybe weren’t aware of before.

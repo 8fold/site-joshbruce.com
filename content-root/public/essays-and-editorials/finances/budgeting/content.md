@@ -1,5 +1,5 @@
 ---
-title: Budgeting 
+title: Budgeting
 created: 20220414
 update: 20220502
 ---
@@ -8,7 +8,7 @@ update: 20220502
 
 {!! dateblock !!}
 
-There is no money, only food. 
+There is no money, only food.
 
 Every dollar we spend turns into food for someone somewhere at some point.
 
@@ -19,7 +19,7 @@ A budget is like a diet in that if you have money (eat), you have a budget (diet
 
 This says:
 
-1. First, if you eat food, you have a diet. 
+1. First, if you eat food, you have a diet.
 2. Second, if you restrict yourself to a specific course of food—not out of habit—you are practicing a diet.
 
 When we think of the word "budget," it's often similar to the second common use of the word diet; we restrict ourselves in some way to accomplish some other goal or satisfy some other need. However, the common usage of the term budget is: an estimate of income and expenditure for a set period of time. This usage is more in keeping with the first from the word diet.
@@ -38,13 +38,13 @@ In action loop terms, we're looking at performing, planning, and both review and
 
 ## Tracking
 
-Tracking in diet terms, is looking at what we're eating and when. Further, we can break this down into calories, macronutrients, and micronutrients; your body doesn't care if it's a carrot or a cupcake, only what it's made of. 
+Tracking in diet terms, is looking at what we're eating and when. Further, we can break this down into calories, macronutrients, and micronutrients; your body doesn't care if it's a carrot or a cupcake, only what it's made of.
 
-Tracking in budget terms, is looking at money coming in and going out of your life. Tracking is bookkeeping. 
+Tracking in budget terms, is looking at money coming in and going out of your life. Tracking is bookkeeping.
 
 While you can be as detailed as you want, I find the more we can apply the simplicity principle, the less friction there is to the act of tracking itself.
 
-Whether we're talking about food or money, tracking is there to increase transparency and raise our awareness. 
+Whether we're talking about food or money, tracking is there to increase transparency and raise our awareness.
 
 I had no idea I ate that much junk food and I had no idea I spent that much on eating out.
 
@@ -79,14 +79,14 @@ When you receive money you create an entry; a deposit. The entry should have at 
 4. Date: The day the money was received.
 5. Description (or details): An optional, freeform note to help you remember where it came from. This is where you might put "fast food restaurant" instead of having a separate account for it in your chart of accounts.
 
-This is bookkeeping though and this is money coming in from a third-party, therefore, there is an account where you actually make this entry, which is different from the account *for* the entry. 
+This is bookkeeping though and this is money coming in from a third-party, therefore, there is an account where you actually make this entry, which is different from the account *for* the entry.
 
 In this case, the previous entry will go into an asset account; let's say this person gets paid in cash:
 
 3. assets
 	- cash
 
-So, we open up our cash ledger and create the entry as a line item in that ledger. 
+So, we open up our cash ledger and create the entry as a line item in that ledger.
 
 Let's say this person needs to pay rent, that's a different account in our chart of accounts; specifically an expense account. Expenses are when we give money *to* a third-party; the opposite of income:
 
@@ -101,7 +101,7 @@ This person will pay in cash, because that's how they roll, so, we’ll make ano
 4. Date: First of the month.
 5. Description (or details): My half of rent.
 
-Liabilities are the opposite of assets and represent money you owe, but have not paid, to third-parties. 
+Liabilities are the opposite of assets and represent money you owe, but have not paid, to third-parties.
 
 These are typically loans; revolving or terminal. Revolving loans typically have a limit and you can borrow money without filling out more paperwork as long as the balance owed is not greater than or equal to the limit. Terminal loans typically have a term—a specified number of payments or time period in which the loan balance needs to reach zero; there is no gap between the amount you can borrow and the balance remaining.
 
@@ -125,7 +125,7 @@ The first entry is a withdrawal from their checking asset account; a negative nu
 
 Asset and liability accounts maintain running balances; income and expense accounts (typically) do not—unless you are doing strict, hardcore double-entry bookkeeping (because your income is an expense for someone else, we just typically don't track it unless we're running our own business). To get your financial net worth, add the balances for all your asset accounts together and subtract the total balances of all your liability accounts; what's left is your financial net worth.
 
-That's tracking. 
+That's tracking.
 
 It's one of the core habits for just about anything you want to do or accomplish in life, which is why we see it repeated in almost all professions.
 
@@ -164,9 +164,9 @@ If you give money to someone, that's an expense (or a gift); you don't expect an
 
 Let's say I give you 10 USD and don't expect anything in return. The entry might be a withdrawal from my cash asset account and categorized as "gifts given" or something; an expense. Let's say you then give me 10 USD, the entry might be a deposit to my cash asset account and categorized as "gifts received" or something; income. Alternatively, I could mark the gift from you as a refund of my prior expense, instead of marking the gift from you as income.
 
-The point here goes back to the bookkeeping training I did and something the mentor discussed, which is the idea of bookkeeping being to tell the story of your money in a way that anyone should be able to read. 
+The point here goes back to the bookkeeping training I did and something the mentor discussed, which is the idea of bookkeeping being to tell the story of your money in a way that anyone should be able to read.
 
-Entries and methods should be consistent and describe intent in the simplest terms. 
+Entries and methods should be consistent and describe intent in the simplest terms.
 
 ## Forecasting
 
@@ -208,7 +208,7 @@ This is your world. You make the rules. You set the expectations.
 
 Reconciling is looking at tracking versus forecasting and seeing if the two are aligned. This is where the power of using automated tracking and financial institutions instead of cash shows up.
 
-When you use a credit card, checks, debit card, and similar payment methods, your financial institution creates entries for you. Then they send you a statement, which usually comes out monthly, quarterly, or annually. 
+When you use a credit card, checks, debit card, and similar payment methods, your financial institution creates entries for you. Then they send you a statement, which usually comes out monthly, quarterly, or annually.
 
 You look at your ledgers covering the same time period as the statement and compare the ending balance for both on a given date. If they match, chances are you're reconciled; meaning what you tracked is what your accountability partner (your financial institution) tracked—cross checked and verified. If the ending balances are different, you may want to go through, entry for entry, and see who is incorrect.
 
@@ -218,21 +218,21 @@ You can also do a review, which is similar to reconciliation, only you're not us
 
 Where I see people getting overwhelmed with bookkeeping is over management and categorization. And, most software manufacturers aren't helping; but the software manufacturers think they're being helpful—but it can quickly turn into [analysis paralysis](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice).
 
-When I opened my first accounting software around the year 2000 I was like, "This puts me one step closer to being an adult!" I bought the software with my own money. Installed it on a computer I purchased with money I earned. 
+When I opened my first accounting software around the year 2000 I was like, "This puts me one step closer to being an adult!" I bought the software with my own money. Installed it on a computer I purchased with money I earned.
 
 I was heading up the adulting escalator and skipping steps along the way.
 
 I added my accounts and synced the transactions. Then I started going through entries to categorize things. I clicked the list of expense categories and there was about three dozen to choose from. I'm sitting there trying to distinguish between gas for the car, versus automobile maintenance, versus auto insurance.
 
-I quickly bailed on that software. 
+I quickly bailed on that software.
 
 It was overwhelming, I couldn't handle it. Every once in a while I'd get a wild hair to try again and each time I ran away. 20 years later, I said, "All right, I'm going to do this, but I'm going to do it on my terms."
 
 Just because the examples are there, doesn't mean I have to use them unless they actually help me; and you can do the same.
 
-Even if I did use all the categories provided out of the box, the information I'd glean wouldn't be helpful because of what it would look like. 
+Even if I did use all the categories provided out of the box, the information I'd glean wouldn't be helpful because of what it would look like.
 
-The highest percent would be rent or mortgage. The next would most likely be groceries. Meanwhile, the [total cost of ownership](/finances/total-cost-of-ownership/) for my car would be hidden because it’d be divided into smaller categories such as fuel, insurance, repairs, oil changes; individually they're not much, but collectively they might add up to or surpass my rent or mortgage.
+The highest percent would be rent or mortgage. The next would most likely be groceries. Meanwhile, the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/) for my car would be hidden because it’d be divided into smaller categories such as fuel, insurance, repairs, oil changes; individually they're not much, but collectively they might add up to or surpass my rent or mortgage.
 
 So, here's what I say: start broad, then narrow down.
 
@@ -240,7 +240,7 @@ If you want, delete all the pre-created categories and create one called miscell
 
 Instead, let's create a bucket that's smaller than miscellaneous but helps discern total cost of ownership for something.
 
-For the average person, housing is their number one expense; don't break it down though. If a transaction is required for the smooth operation of your house, use the housing expense account. 
+For the average person, housing is their number one expense; don't break it down though. If a transaction is required for the smooth operation of your house, use the housing expense account.
 
 How often will you need to use the "replace air filter" category or the "replace water heater" category? Probably not often. Further, if you go to a store and buy batteries for the smoke detectors and air filters, chances are you're not going to split the entry between the two; if you want to create separate categories, go for it, but it can become a bit tedious and may obfuscate the story of your money.
 
@@ -250,11 +250,11 @@ Then pick a threshold for that account (or fund).
 
 Of your net income, what percentage of expenses should be for housing?
 
-Every financial professional I listen to says a good range for housing is 25 to 35 percent. 
+Every financial professional I listen to says a good range for housing is 25 to 35 percent.
 
 If things start breaking beyond those bounds, look at your expenses. Maybe creating some sub-categories would be helpful to get a feel for a specific expense. Housing-subscriptions, for example, where all subscription services go—internet, cable, streaming services, and so on. This way you can see that specific thing and decide if you're going to try and target it for a change. Once you make the changes, you can always stop using the housing-subscriptions expense account and put all those back under the more generic housing expense account.
 
-When you buy a plunger or similar thing related to maintaining the house in good, working condition, put it under the housing category. This helps avoid being penny-wise and pound-foolish; if you buy a 5 USD coffee once a month, cutting that out of your expenses isn't going to have the same impact as cutting 200 USD per month from your housing expenses. 
+When you buy a plunger or similar thing related to maintaining the house in good, working condition, put it under the housing category. This helps avoid being penny-wise and pound-foolish; if you buy a 5 USD coffee once a month, cutting that out of your expenses isn't going to have the same impact as cutting 200 USD per month from your housing expenses.
 
 Going back to the diet analogy, I started with a calories category. Then I started breaking it down by transactions; junk versus whole foods. I found out most of my caloric intake was from junk and probably contributed more to my lack of physical fitness than lack of activity; I walked everywhere and stood at my desk, so, most of my day I was participating in at least medium to high levels of activity.
 
@@ -276,4 +276,4 @@ Let's money's getting tight. You can look at your chart of expense accounts and 
 
 If things still feel like they'd be too tight, I might even reexamine the need categories.
 
-For a decade I thought I needed a car *and* an apartment. Then my car became my apartment for a year; an apartment was no longer a need. I went car-free a year later; a car was no longer a need. As of this writing, I've been car-free for a decade and my new guideline is more either but not both; either I will have rent or a car, but likely not both. 
+For a decade I thought I needed a car *and* an apartment. Then my car became my apartment for a year; an apartment was no longer a need. I went car-free a year later; a car was no longer a need. As of this writing, I've been car-free for a decade and my new guideline is more either but not both; either I will have rent or a car, but likely not both.

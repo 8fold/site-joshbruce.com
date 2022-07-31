@@ -30,7 +30,7 @@ An investment policy can help you to put these things in balance.
 
 [Budgeting](/essays-and-editorials/finances/budgeting/) is more in the YOLO and FOMO space. Investing is more in the living forever space.
 
-The investment policy is a strategic document to help establish [guidelines and guardrails](/design-your-life/guidelines-and-guardrails/) for your financial future. It's important it be written down because it will be an anchor for you to visit when shit goes pear-shaped, because things always go pear-shaped.
+The investment policy is a strategic document to help establish [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) for your financial future. It's important it be written down because it will be an anchor for you to visit when shit goes pear-shaped, because things always go pear-shaped.
 
 ## Your why
 
