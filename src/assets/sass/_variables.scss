@@ -3,6 +3,8 @@
   --body-font: "Open Sans", "Helvetica Neue", Verdana, sans-serif;
   --code-font: Consolas, monaco, monospace;
 
+  --max-width: 1100px;
+
   --x-bold-font: 600;
   --bold-font: 500;
   --medium-font: 300;
@@ -31,6 +33,7 @@
   --red-light: #F77E68;
   --green: #0D7220;
   --green-light: #83F598;
+  --background-color: var(--gray-lightest);
 
   --vw-0: 0vw;
 
@@ -63,13 +66,13 @@
   --transition-color: color 0.25s;
   --center: center;
   --left: left;
-  --inline-block: inline-block;
   --solid: solid;
   --dashed: dashed;
   --transparent: transparent;
   --relative: relative;
   --absolute: absolute;
   --italic: italic;
+  --inline-block: inline-block;
   --block: block;
   --both: both;
   --hidden: hidden;

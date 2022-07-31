@@ -1,0 +1,38 @@
+@use 'mixins';
+
+a#back-to-top {
+  display: flex;
+  height: 44pt;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  position: fixed;
+  top: calc(100vh - 44pt);
+  left: 49.5vw;
+  text-decoration: none;
+
+  @include mixins.at-media {
+    width: 100vw;
+    left: 0;
+  }
+
+  & > span {
+    display: block;
+    max-width: var(--max-width);
+
+    &:before {
+      display: var(--inline-block);
+      content: var(--icon-increase);
+      position: var(--relative);
+      right: var(--xs-spacer);
+    }
+
+    &:after {
+      display: var(--inline-block);
+      content: var(--icon-increase);
+      position: var(--relative);
+      left: var(--xs-spacer);
+    }
+  }
+}
