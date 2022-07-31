@@ -1,0 +1,32 @@
+footer {
+  padding-top: 40pt;
+  padding-bottom: 60pt;
+  text-align: center;
+  font-size: var(--xs-font);
+  line-height: 1.5rem;
+
+  & > ul {
+    display: block;
+    margin: var(--m-spacer) auto;
+    list-style: none;
+
+    & > li {
+      display: inline-block;
+      & > a {
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-left: 1rem;
+        }
+      }
+
+      &:first-of-type:after, &:nth-of-type(2):after {
+        content: '|';
+      }
+    }
+  }
+
+  & > p {
+      margin: 0;
+  }
+}

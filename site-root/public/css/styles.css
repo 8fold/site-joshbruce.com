@@ -265,6 +265,34 @@ a#back-to-top > span:after{
   left:var(--xs-spacer);
 }
 
+footer{
+  padding-top:40pt;
+  padding-bottom:60pt;
+  text-align:center;
+  font-size:var(--xs-font);
+  line-height:1.5rem;
+}
+footer > ul{
+  display:block;
+  margin:var(--m-spacer) auto;
+  list-style:none;
+}
+footer > ul > li{
+  display:inline-block;
+}
+footer > ul > li > a{
+  margin-right:1rem;
+}
+footer > ul > li > a:last-of-type{
+  margin-left:1rem;
+}
+footer > ul > li:first-of-type:after, footer > ul > li:nth-of-type(2):after{
+  content:"|";
+}
+footer > p{
+  margin:0;
+}
+
 html{
   scroll-padding-top:44pt;
 }
@@ -284,7 +312,7 @@ body{
   font-size:var(--m-font);
   line-height:var(--m-line-height);
   font-weight:var(--light-font);
-  margin-bottom:44pt;
+  margin-bottom:66pt;
 }
 
 [is=dateblock]{
@@ -551,13 +579,5 @@ article iframe[src*="https://jsfiddle.net"]{
 }
 
 .notice{
-  font-size:var(--xs-font);
-}
-
-footer{
-  margin-top:var(--l-spacer);
-}
-footer > p{
-  text-align:var(--center);
   font-size:var(--xs-font);
 }
