@@ -337,3 +337,5 @@ He then reiterates humility when he says:
 > I personally struggle with much of what I have shared in this book. But the struggle is worthwhile and fulfilling. It gives meaning to my life and enables me to love, to serve, and to try again.
 
 It's not about perfectly executing in every waking moment but in striving to improve and be more effective.
+
+[Read my personal reflections on The 7 Habits of Highly Effective People](/examinations/the-7-habits-of-highly-effective-people/reflection/)
