@@ -92,7 +92,7 @@ class Main implements Buildable
             Element::link()->omitEndTag()
                 ->props(
                     'rel stylesheet',
-                    'href /css/styles.min.css',
+                    'href /css/styles.min.css?v=1.0.0',
                     'type text/css'
                 ),
             Element::script()->props(
