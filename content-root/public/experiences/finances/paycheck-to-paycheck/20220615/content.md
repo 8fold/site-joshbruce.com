@@ -1,45 +1,6 @@
 ---
 title: June 15th, 2022 paycheck
 created: 20220615
-data:
-- label: Debt
-  min: 0
-  max: 1
-  value: 0.7
-- label: Cash
-  min: 3
-  max: 9
-  value: 8.1
-- label: Low correlation
-  min: 0
-  max: 1
-  value: 1
-- label: Negative correlation
-  min: 0
-  max: 1
-  value: 0.8
-- label: US equities - small
-  min: 25
-  max: 38
-  value: 31.3
-- label: US equities - mid
-  min: 25
-  max: 38
-  value: 27.7
-- label: US equities - large
-  min: 25
-  max: 37
-  value: 30
-fi-experiments:
-# label, current, previous, start
-- [0.0, 34.72, 38.42, 47.71]
-- [0.2, 32.09, 35.35, 43.83]
-- [0.4, 32.33, 35.47, 43.74]
-- [0.6, 32.88, 35.83, 43.54]
-- [0.8, 34.12, 36.78, 43.36]
-- [1.0, 38.01, 40.69, 46.87]
-- [1.1, 37.89, 40.58, 46.76]
-- [1.2, 37.86, 40.55, 46.73]
 ---
 
 # June 15th, 2022 paycheck
@@ -68,7 +29,7 @@ With the [previous check](/experiences/finances/paycheck-to-paycheck/20220601/) 
 
 The extended market was down over 30 percent from its 52 week high, which means I won't put more money into it according to my [personal budget](/experiences/finances/personal-budget/#spending-savings). With this check, the extended market was down a little over 20 percent but less than 30. So, I’m basically purchasing the cheapest fund compared to its 52 week high within the guardrails of the budget.
 
-Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip in accordance with the personal budget. 
+Having said that, I’d like to start getting into the multi-factor fund. So, next paycheck I’ll probably go the full amount in the multi-factor fund and then continue purchasing the dip in accordance with the personal budget.
 
 With all that said, if things keep going as they are, the multi-factor fund will be the only one I can purchase because the other two will be down over 30 percent from their 52 week high.
 
@@ -78,9 +39,9 @@ It’s probably worth noting that using the 52 week high is somewhat arbitrary a
 
 I mentioned recently the impact of "all the volatility" in "the market" for me was mainly a plateau. Of course, this could all change tomorrow—for better or worse—but, for now, it's a plateau. I want to show more than tell on this because I think it's an interesting illustration of the power of perspective.
 
-The following images are snapshots of my net worth according to [Personal Capital](https://www.personalcapital.com). 
+The following images are snapshots of my net worth according to [Personal Capital](https://www.personalcapital.com).
 
-The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third band on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band. 
+The first image is the past 90 days. There are five horizontal bands, equally distributed; it's important that each band represents the same amount of net worth. My net worth starts at the top of the second band on day one and ends at the top of the third band on day 90. At my net worth's lowest we hit the top of the first band; the highest is just above the top of the fourth band. And, for most of it, we’re riding along the top of the third band.
 
 Hence, the plateau.
 
@@ -108,7 +69,7 @@ The third image shows the time from just before I started tracking in [Personal 
 
 ## My first bear market
 
-From what I understand, the [.Standards and Poor’s 500 index](S&P 500) officially entered bear market status. As I track what to invest in next, the bear market status seems to be reflected there as well. 
+From what I understand, the [.Standards and Poor’s 500 index](S&P 500) officially entered bear market status. As I track what to invest in next, the bear market status seems to be reflected there as well.
 
 The extended market fund is down 35 percent from its 52 week high, which means, as of this writing, I won’t be throwing any extra that way. The total stock market fund is down 25 percent from its 52 week high, which means I could put money toward it. The multi-factor fund is down 17 percent from its 52 week high.
 
@@ -132,7 +93,7 @@ Maybe I’ll see how switching to using meters looks and revisit the idea.
 
 If you’d like to share your thoughts, [hit me up](/support/).
 
-## FI experiments 
+## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 

@@ -1,24 +1,6 @@
 ---
 title: June 1st, 2022 paycheck
 created: 20220601
-data:
-- [Debt, 0, 1, 0.5]
-- [Cash, 3, 9, 7.3]
-- [Low correlation, 0, 1, 0.9]
-- [Negative correlation, 0, 1, 0.8]
-- [US equities - small, 25, 38, 33.1]
-- [US equities - mid, 25, 38, 28.5]
-- [US equities - large, 25, 37, 28.2]
-fi-experiments:
-# label, current, previous, start
-- [0.0, 38.42, 37.33, 47.71]
-- [0.2, 35.35, 34.43, 43.83]
-- [0.4, 35.47, 34.61, 43.74]
-- [0.6, 35.83, 35.03, 43.54]
-- [0.8, 36.78, 36, 43.36]
-- [1.0, 40.69, 39.85, 46.87]
-- [1.1, 40.58, 39.74, 46.76]
-- [1.2, 40.55, 39.71, 46.73]
 ---
 
 # June 1st, 2022 paycheck
@@ -27,21 +9,21 @@ fi-experiments:
 
 {!! data !!}
 
-Received a bonus this paycheck. 
+Received a bonus this paycheck.
 
-Despite the bonus I decided to do a normal distribution. I know the hospital bills are going to be coming in shortly. Of course, they need to go to insurance first. My insurance is a high deductible plan, so, I’ll be paying quite a bit out of pocket. I’ll be saving the receipts though for use against my [.Health Savings Account](HSA) some time in the future. 
+Despite the bonus I decided to do a normal distribution. I know the hospital bills are going to be coming in shortly. Of course, they need to go to insurance first. My insurance is a high deductible plan, so, I’ll be paying quite a bit out of pocket. I’ll be saving the receipts though for use against my [.Health Savings Account](HSA) some time in the future.
 
 ## Surgery
 
-Recovering pretty well. 
+Recovering pretty well.
 
 Until the 16th of May I pretty much just lied in bed. I was taking ibuprofen every six hours. I’d get up regularly to walk and whatnot.
 
 As of May 28th, I can move pretty normally. I’m avoiding picking at the incision sites, which also means the surgical glue is still holding on a bit. My body hair is growing back, which is causing some interesting sensations there with the glue.
 
-## Advisor report 
+## Advisor report
 
-Had my follow-up with the advisor from [Personal Capital](https://www.personalcapital.com). This is my second consultation with an advisor in general. 
+Had my follow-up with the advisor from [Personal Capital](https://www.personalcapital.com). This is my second consultation with an advisor in general.
 
 It was reaffirming and I decided against taking them on as my advisors and planners.
 
@@ -71,9 +53,9 @@ An interesting thing was the question about what benchmarks I use to assess how 
 
 First, I don’t compare much against other indexes because I don’t know of one tracking something similar to what I’m doing. Not saying it doesn’t exist, just don’t know of one. Further, I’d rather look at the portfolio compared to itself more than other things.
 
-Second, I do use the other indexes listed in Personal Capital. The goal is that I’m close to the recent history of each. 
+Second, I do use the other indexes listed in Personal Capital. The goal is that I’m close to the recent history of each.
 
-## FI experiments 
+## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
 

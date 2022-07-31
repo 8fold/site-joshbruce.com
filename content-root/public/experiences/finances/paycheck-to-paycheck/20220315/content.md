@@ -1,24 +1,6 @@
 ---
 title: March 15th, 2022 paycheck
 created: 20220315
-data:
-- [Debt, 0, 1, 0.1]
-- [Cash, 5, 10, 7.2]
-- [Low correlation, 0, 1, 1]
-- [Negative correlation, 0, 1, 0.9]
-- [US equities - small, 24, 35, 30.6]
-- [US equities - mid, 24, 35, 25.7]
-- [US equities - large, 24, 35, 33.6]
-fi-experiments:
-# label, current, previous, start
-- [0.0, 39.72, 42.70, 47.71]
-- [0.2, 36.84, 39.49, 43.83]
-- [0.4, 37.19, 39.70, 43.74]
-- [0.6, 37.69, 39.99, 43.54]
-- [0.8, 38.55, 40.52, 43.36]
-- [1.0, 42.56, 44.33, 46.87]
-- [1.1, 42.50, 44.24, 46.76]
-- [1.2, 42.51, 44.22, 46.73]
 ---
 
 # March 15th, 2022 paycheck
@@ -35,9 +17,9 @@ Updated the [January 15th paycheck](https://joshbruce.com/finances/building-weal
 
 Still not sure what’s going on with the [.United States Internal Revenue Service](IRS). However, I’ve decided to bring in an accountant this year to double-check all the things.
 
-The income tax for Kentucky was taken out of this check, while not devastating on a per paycheck basis, I’m still estimating around 5,000 [.United States Dollars](USD) per year between base pay and bonuses. 
+The income tax for Kentucky was taken out of this check, while not devastating on a per paycheck basis, I’m still estimating around 5,000 [.United States Dollars](USD) per year between base pay and bonuses.
 
-Which brings us to the rub: possible pay cut. 
+Which brings us to the rub: possible pay cut.
 
 Like I said in the [February 15th 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220215/) my employer adjusts pay based on physical address. The back office work has hit the point where I can see the proposed, adjusted salary. It’s a drop of 3 percent for base pay and bonuses.
 
@@ -57,25 +39,25 @@ A while back I grabbed the [Brave browser](https://brave.com). It interested me 
 
 With the summary of how I got to having an account with Uphold out of the way, I’m shutting down my account and no longer actively or passively participating in the earning or exchanging of BAT.
 
-When I moved I updated my address with all the institutions in my world. They all went as you might expect, until I got to Uphold. I couldn’t update the state through the online form. 
+When I moved I updated my address with all the institutions in my world. They all went as you might expect, until I got to Uphold. I couldn’t update the state through the online form.
 
-Emailed support, who put me through a digitized verification process, which included driver’s license and selfie authentication; which may or may not be security theater or something out of a conspiracy theory, but who knows. Anyway, once verified they asked me to send [.personally identifiable information](PII) in the form of updated identification, utility bill, or rental agreement via unencrypted email. 
+Emailed support, who put me through a digitized verification process, which included driver’s license and selfie authentication; which may or may not be security theater or something out of a conspiracy theory, but who knows. Anyway, once verified they asked me to send [.personally identifiable information](PII) in the form of updated identification, utility bill, or rental agreement via unencrypted email.
 
-The idea of privacy online is pretty much a fantasy. However, after the hoops I jumped through verifying myself, you’re telling me you (or I) can’t just fill out a quick form online to change the state? Further, if it were the same state, I *could* change the address. 
+The idea of privacy online is pretty much a fantasy. However, after the hoops I jumped through verifying myself, you’re telling me you (or I) can’t just fill out a quick form online to change the state? Further, if it were the same state, I *could* change the address.
 
-I updated insurance policies, payroll, three bank accounts in as many states, and other financial and non-financial accounts without having to do the identification plus selfie verification and none of them required sending documentation and, if they did, it wasn’t as an attachment using standard email protocols. The combination of “security is in our DNA” and “send us documentation that has more than your new address via email” broke my brain; the first quote being direct the second is a paraphrase. 
+I updated insurance policies, payroll, three bank accounts in as many states, and other financial and non-financial accounts without having to do the identification plus selfie verification and none of them required sending documentation and, if they did, it wasn’t as an attachment using standard email protocols. The combination of “security is in our DNA” and “send us documentation that has more than your new address via email” broke my brain; the first quote being direct the second is a paraphrase.
 
 So, quick opportunity cost check, I decided to close the account, stop using Brave, and stop looking at BAT integrations. One less thing to concern myself with each tax season. (I do admit, it was nice getting a little something for surfing the internet and I’ll see if I can find an ad blocker as good as the Brave browser.)
 
-The choice to shutdown [M1 Finance](https://m1.com) is a bit more straightforward; just one less vendor and tax form to worry about. 
+The choice to shutdown [M1 Finance](https://m1.com) is a bit more straightforward; just one less vendor and tax form to worry about.
 
-I appreciate the M1 Finance platform. I don’t appreciate some of the marketing aspects of the company; I said it was okay to send notifications on my phone to see what they’d be and every notification has been a product promotion, meanwhile, when my tax documents were ready, no notification via phone or email (at least I don’t think I got an email). 
+I appreciate the M1 Finance platform. I don’t appreciate some of the marketing aspects of the company; I said it was okay to send notifications on my phone to see what they’d be and every notification has been a product promotion, meanwhile, when my tax documents were ready, no notification via phone or email (at least I don’t think I got an email).
 
 This raises the question of where to move those investments.
 
 Right now I’m leaning toward [Fidelity](https://www.fidelity.com) though I’d prefer [Vanguard](https://investor.vanguard.com/corporate-portal/). Fidelity has my 401k and [.Health Savings Account](HSA) while Vanguard has my [.Individual Retirement Accounts](IRAs) and main taxable brokerage account.
 
-The reason I started the M1 Finance account is that I could easily earmark chunks of value while minimizing the number of underlying investments. 
+The reason I started the M1 Finance account is that I could easily earmark chunks of value while minimizing the number of underlying investments.
 
 I have four pies:
 
@@ -105,7 +87,7 @@ Looking at the portfolio for the last 90 days I’m tracking closer to the total
 
 ## The spreadsheet
 
-I’ve simplified the spreadsheet I use. 
+I’ve simplified the spreadsheet I use.
 
 [Apple Numbers](https://www.apple.com/numbers/) has the ability to add multiple tables to the same sheet and I'm using that capability pretty shamelessly. I'm not concerned with aesthetics at the moment as I want to make sure it's functional.
 
@@ -137,7 +119,7 @@ These tables consolidate the numbers for each account table puts them in tables 
 
 Each row is a holding in the tax bucket; regardless of whether the account is with Vanguard, Fidelity, M1 Finance, a credit union, or somewhere else.
 
-Each holding has a target percentage within the sub-portfolio. I take the balance of the bucket multiplied by the percentage for each holding to get a target USD amount. The last column in the table has the current USD value for the holding. 
+Each holding has a target percentage within the sub-portfolio. I take the balance of the bucket multiplied by the percentage for each holding to get a target USD amount. The last column in the table has the current USD value for the holding.
 
 If the current value is less than the target value, the table tells me to try and add more to that holding. If the current value is greater than the target value, the table tells me to leave it alone.
 
@@ -153,7 +135,7 @@ One more stop before I have the information to update the graph and numbers for 
 
 This is how I derive the numbers you see at the top of these posts (and update the graph mentioned earlier).
 
-I have a table that takes each cash account, index fund, ETF, and so on and calculates what percentage it's occupying compared to my total financial net worth. This table is set up to be exported as a [.CSV](Comma-Separated Value) file and imported into the backtest tool of [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio). 
+I have a table that takes each cash account, index fund, ETF, and so on and calculates what percentage it's occupying compared to my total financial net worth. This table is set up to be exported as a [.CSV](Comma-Separated Value) file and imported into the backtest tool of [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio).
 
 I analyze the portfolio and enter the percent in stocks into another table along with the percent of small-, mid-, and large-cap. Those percentages feed into another table, which is used to update the graph and gives me the numbers for the opening of these posts.
 
@@ -165,9 +147,9 @@ The last three tables are there to help me track current and historical data not
 
 The first table is related to the 401k. I track how much is contributed based on the percent I've set and the total contributed for the year. I adjust the number of paychecks I have remaining for the year with each contribution and this table tells me how likely I am to get close to the annual contribution limit in order to maximize my employer's contribution.
 
-The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last 52 weeks, without consideration for the asset allocation of my portfolio). 
+The second table is mainly for those times during the year where I put in extra. It looks at the value of each index fund and ETF. I enter the current value, the 52 week high, and the 52 week low. I derive the average from those two numbers and get a percent difference for the current value compared to the high, low, and average. Because I'm in accumulation mode, if a particular holding is down, I'll put the money toward that, which means I'm buying low (at least compared to the value of the holding itself over the last 52 weeks, without consideration for the asset allocation of my portfolio).
 
-The third table is similar to the second only it tracks things based on what I actually paid for each holding on a given day. So, the low and high here is the lowest I paid since I started tracking. 
+The third table is similar to the second only it tracks things based on what I actually paid for each holding on a given day. So, the low and high here is the lowest I paid since I started tracking.
 
 While it may not seem like it, the time spent on data entry is greatly decreased compared to what it used to be and I'm feeling pretty good about it at the moment. Further, the amount of information and feedback that’s been automated and now available has greatly increased. I’m considering automating further but now we’re starting to get into actual software development.
 
