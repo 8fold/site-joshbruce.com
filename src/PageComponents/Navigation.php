@@ -10,7 +10,7 @@ use Psr\Http\Message\UriInterface;
 
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Content;
+use Eightfold\Amos\Site;
 
 class Navigation implements Buildable
 {
@@ -18,43 +18,18 @@ class Navigation implements Buildable
 
     private string $domain = '';
 
-    public static function create(
-        Content $contentIn,
-        RequestInterface $request
-    ): self {
-        return new self($contentIn, $request);
-    }
-
-    final private function __construct(
-        private Content $contentIn,
-        private RequestInterface $request
-    ) {
-    }
-
-    private function request(): RequestInterface
+    public static function create(Site $site): self
     {
-        return $this->request;
+        return new self($site);
     }
 
-    private function uri(): UriInterface
+    final private function __construct(private Site $site)
     {
-        if (isset($this->uri) === false) {
-            $this->uri = $this->request()->getUri();
-        }
-        return $this->uri;
     }
 
-    private function domain(): string
+    public function site(): Site
     {
-        if (strlen($this->domain) === 0) {
-            $this->domain = $this->uri()->getAuthority();
-        }
-        return $this->domain;
-    }
-
-    private function path(): string
-    {
-        return $this->uri()->getPath();
+        return $this->site;
     }
 
     private function spans(string $title, string $titleShort): array
@@ -76,7 +51,7 @@ class Navigation implements Buildable
         ];
 
         $l = [];
-        $requestPath = $this->path();
+        $requestPath = $this->site()->requestPath();
         foreach ($links as $link) {
             list($href, $ts, $title) = explode(' ', $link, 3);
             $id = str_replace('/', '', $href);
