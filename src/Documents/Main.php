@@ -113,6 +113,11 @@ class Main implements Buildable
                 Element::ul(
                     Element::li(
                         Element::a(
+                            'all content'
+                        )->props('href /full-navigation/')
+                    ),
+                    Element::li(
+                        Element::a(
                             'terms'
                         )->props('href /legal/')
                     ),

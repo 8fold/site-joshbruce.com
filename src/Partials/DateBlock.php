@@ -10,12 +10,9 @@ use Eightfold\XMLBuilder\Contracts\Buildable;
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
-use Eightfold\Amos\Meta;
 
 class DateBlock implements Buildable
 {
-    private Meta $meta;
-
     public static function create(Site $site): self
     {
         return new self($site);

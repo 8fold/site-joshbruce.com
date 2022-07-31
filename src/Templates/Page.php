@@ -19,6 +19,7 @@ use JoshBruce\Site\Partials\LogList;
 use JoshBruce\Site\Partials\OriginalContentNotice;
 use JoshBruce\Site\Partials\Data;
 use JoshBruce\Site\Partials\FiExperiments;
+use JoshBruce\Site\Partials\FullNav;
 
 class Page implements Buildable
 {
@@ -54,13 +55,14 @@ class Page implements Buildable
                     $this->site(),
                     $markdown,
                     [
-                        'dateblock' => DateBlock::class,
-                        'next-previous' => NextPrevious::class,
-                        'article-list' => ArticleList::class,
-                        'loglist' => LogList::class,
-                        'original' => OriginalContentNotice::class,
-                        'data' => Data::class,
-                        'fi-experiments' => FiExperiments::class
+                        'dateblock'      => DateBlock::class,
+                        'next-previous'  => NextPrevious::class,
+                        'article-list'   => ArticleList::class,
+                        'loglist'        => LogList::class,
+                        'original'       => OriginalContentNotice::class,
+                        'data'           => Data::class,
+                        'fi-experiments' => FiExperiments::class,
+                        'full-nav'       => FullNav::class
                     ]
                 )
             );
