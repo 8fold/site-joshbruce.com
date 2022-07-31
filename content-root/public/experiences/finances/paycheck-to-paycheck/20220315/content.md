@@ -9,9 +9,9 @@ created: 20220315
 
 {!! data !!}
 
-Reduced 401k allocation to 12 percent. A bonus check came in with [the previous check](/finances/building-wealth-paycheck-to-paycheck/20220301/) and there’s still quite a bit of 2022 left. In the future I’ll probably start around 15 percent instead of 17; presuming I maintain the same or similar salary.
+Reduced 401k allocation to 12 percent. A bonus check came in with [the previous check](/experiences/finances/paycheck-to-paycheck/20220301/) and there’s still quite a bit of 2022 left. In the future I’ll probably start around 15 percent instead of 17; presuming I maintain the same or similar salary.
 
-Updated the [January 15th paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#hsa) entry regarding the [.Health Savings Account](HSA). In short:
+Updated the [January 15th paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#hsa) entry regarding the [.Health Savings Account](HSA). In short:
 
 > So, the federal contribution limit divided by the number of months I was enrolled in a qualified health plan gives me my actual annual contribution limit.￼
 
@@ -21,7 +21,7 @@ The income tax for Kentucky was taken out of this check, while not devastating o
 
 Which brings us to the rub: possible pay cut.
 
-Like I said in the [February 15th 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220215/) my employer adjusts pay based on physical address. The back office work has hit the point where I can see the proposed, adjusted salary. It’s a drop of 3 percent for base pay and bonuses.
+Like I said in the [February 15th 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220215/) my employer adjusts pay based on physical address. The back office work has hit the point where I can see the proposed, adjusted salary. It’s a drop of 3 percent for base pay and bonuses.
 
 So, my maximum gross pay would drop 3 percent and my net pay drops by about 5 percent. Estimated inflation is up 7 percent. And my bills at the moment are roughly the same.
 
@@ -155,7 +155,7 @@ While it may not seem like it, the time spent on data entry is greatly decreased
 
 ## FI experiments
 
-Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+Details are in the [January 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#fi-experiments).
 
 The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
 

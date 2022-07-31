@@ -19,7 +19,7 @@ Brokerage accounts, retirement accounts, personal and business accounts, and so 
 2. [FidSafe](https://www.fidsafe.com): An as of now free place to store documents and grant access to those documents via encrypted cloud storage.
 3. [Living Together by NOLO](https://www.nolo.com/legal-encyclopedia/living-together): Becca and I have no plans to get married, however, this can be problematic in the United States (not sure about elsewhere) when it comes to hospital stays and decision making on behalf of each other.
 
-During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](/finances/building-wealth-paycheck-to-paycheck/20220101/). Hoping 2022 will be different.
+During 2021, I didn't get much traction on putting legacy documents together because that wasn't [the focus for that year](/experiences/finances/paycheck-to-paycheck/20220101/). Hoping 2022 will be different.
 
 ## Retirement accounts
 

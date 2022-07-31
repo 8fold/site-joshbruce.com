@@ -79,7 +79,7 @@ Sleeping mode happens roughly once per day for about 8 hours. During this time m
 
 Much like sleep mode, work mode happens roughly once per day and lasts roughly 8 hours.
 
-For example, I’m writing this on my phone while preparing to go full sleep mode in the apartment. I also just did a release of the site for the [March 1st, 2022 paycheck](/finances/building-wealth-paycheck-to-paycheck/20220301/), which was updated and released using my phone; from writing and updating the spreadsheets to submitting and committing the pull request to deploying to my host.
+For example, I’m writing this on my phone while preparing to go full sleep mode in the apartment. I also just did a release of the site for the [March 1st, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220301/), which was updated and released using my phone; from writing and updating the spreadsheets to submitting and committing the pull request to deploying to my host.
 
 I love the twenty-first century for the most part.
 
