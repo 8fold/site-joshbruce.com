@@ -229,6 +229,9 @@ nav[is=main-nav] > ul > li > a.current{
   nav[is=main-nav] > ul > li > a{
     color:var(--gray-lightest);
   }
+  nav[is=main-nav]{
+    background-color:var(--gray-darkest);
+  }
 }
 a#back-to-top{
   display:flex;
@@ -265,6 +268,11 @@ a#back-to-top > span:after{
   left:var(--xs-spacer);
 }
 
+@media (prefers-color-scheme: dark){
+  a#back-to-top{
+    background-color:var(--gray-darkest);
+  }
+}
 footer{
   padding-top:40pt;
   padding-bottom:60pt;

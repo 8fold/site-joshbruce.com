@@ -80,4 +80,8 @@ nav[is="main-nav"] {
   nav[is="main-nav"] > ul > li > a {
     color: var(--gray-lightest);
   }
+
+  nav[is="main-nav"] {
+    background-color: var(--gray-darkest);
+  }
 }

@@ -36,3 +36,9 @@ a#back-to-top {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  a#back-to-top {
+    background-color: var(--gray-darkest);
+  }
+}
