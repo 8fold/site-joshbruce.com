@@ -1,4 +1,4 @@
-# August 1st, 2022 paycheck
+# August 15th, 2022 paycheck
 
 {!! dateblock !!}
 
@@ -51,7 +51,7 @@ At least, I'm enjoying it better than anything else I've used or created over th
 
 ## FI experiments
 
-Details are in the [January 15th, 2022 paycheck](https://joshbruce.com/finances/building-wealth-paycheck-to-paycheck/20220115/#fi-experiments).
+Details are in the [January 15th, 2022 paycheck](/finances/paycheck-to-paycheck/20220115/#fi-experiments).
 
 The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
 
