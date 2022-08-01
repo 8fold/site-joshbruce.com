@@ -13,7 +13,7 @@ This type of changes falls under the practices of [pruning the trees](/essays-an
 
 I appreciate organic growth and change in most things.
 
-As I was creating content and sort of throwing stuff in where appropriate it started to become more difficult for me to keep track of. I knew I wanted to a section for [my books](/my-books/), for example, and I couldn't think of a place for it to fit. I also realized the subjects seemed less important—to me—than the style of the entries.
+As I was creating content and sort of throwing stuff in where appropriate it started to become more difficult for me to keep track of. I knew I wanted to a section for [my books](/books/), for example, and I couldn't think of a place for it to fit. I also realized the subjects seemed less important—to me—than the style of the entries.
 
 I still have the same three article types from the [2021](/experiences/software-development/this-site/2021/) version:
 

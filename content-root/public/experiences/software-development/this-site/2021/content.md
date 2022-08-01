@@ -112,7 +112,7 @@ Because I use the libraries I do for generating the HTML, it's actually minified
 
 That's a long headline.
 
-For [modern web development](/web-development/modern-web-development/) we have a tendency to get in the way of or replace the capabilities we get for free from the browser-server relationship. Instead of clicking a link and the browser responding, we jump in the way using JS to see if we need to do something before handing it to the browser to then do what it would have done anyway. Before delivering a response to a request on the server-side, we jump in the way and reroute things (guilty of both).
+For modern web development we have a tendency to get in the way of or replace the capabilities we get for free from the browser-server relationship. Instead of clicking a link and the browser responding, we jump in the way using JS to see if we need to do something before handing it to the browser to then do what it would have done anyway. Before delivering a response to a request on the server-side, we jump in the way and reroute things (guilty of both).
 
 We want to minimize how much we use our code to replace or intercede with the browser and server.
 

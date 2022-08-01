@@ -61,7 +61,7 @@ Updated the visualization for the portfolio at the beginning of these entries.
 
 Decided against the image approach [I initially considered](/experiences/finances/paycheck-to-paycheck/20210301/); I still have the chart in the spreadsheet.
 
-Hope you enjoy the visualization and I was pretty happy with it from a [web development](/web-development/) perspective because I kept the same markup and, because it's built with a template using the same data, all the previous pages were automatically updated; this isn't particularly new or exciting as it's been a part of web development for years, but it's sometimes the little things that bring the most joy.
+Hope you enjoy the visualization and I was pretty happy with it from a web development perspective because I kept the same markup and, because it's built with a template using the same data, all the previous pages were automatically updated; this isn't particularly new or exciting as it's been a part of web development for years, but it's sometimes the little things that bring the most joy.
 
 I increased the maximum allowed for debt to 1 percent because I pay for most things with credit cards and rarely are they paid off prior to publishing, despite being paid off each paycheck.
 
