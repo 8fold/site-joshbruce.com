@@ -45,7 +45,7 @@ class PageTitle implements Buildable
             array_pop($filtered);
         }
 
-        $titls[] = $this->title(at: '/');
+        $titles[] = $this->title(at: '/');
 
         $titles = array_filter($titles);
 
