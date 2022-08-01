@@ -73,7 +73,7 @@ In 2021 I decided to change that.
 
 My employer doesn't offer a match for HSA contributions and the provider they work with didn't have any index funds I was remotely interested in. So, the only positives with using my employer's provider would be the fees are covered and I would receive the tax deduction with each paycheck instead of having to do it as part of my tax filing at the end of the year. So, I decided to go ahead and do it on my own through a provider I chose.
 
-Enter [HealthSavings Administrators](https://healthsavings.com).
+Enter HealthSavings Administrators (which is no more).
 
 I liked them from the word go. They had the index funds I wanted. They partnered with a brokerage firm I trust and use. They didn't feel like a big-box-bank. And, I could even call them and get someone on the phone if I had a question. Opened an account almost immediately.
 

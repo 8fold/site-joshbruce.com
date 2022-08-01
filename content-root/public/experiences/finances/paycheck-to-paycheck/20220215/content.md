@@ -27,9 +27,9 @@ Basically, as long as I’m not taking a pay cut, I should be okay. I did ask fo
 
 The market’s still down compared to the 52 week high and seems to be flatlining there; only minor adjustments day to day.
 
-I’m still dollar cost averaging in. I’m still throwing in a bit extra when and where I feel comfortable per the [budgeting parameters](/finances/budgeting/#spending-cash-reserves) on cash reserves.
+I’m still dollar cost averaging in. I’m still throwing in a bit extra when and where I feel comfortable per the [budgeting parameters](/experiences/finances/personal-budget/#spending-cash-reserves) on cash reserves.
 
-If I was in [drawdown mode](/finances/concepts/#accumulation-drawdown-and-rebalancing), I wouldn’t be trying to slip more in, I don’t think. If I were closer to when I’m thinking of flipping the switch to drawdown mode, I’d probably be building more toward the Mark 1 (or 2) allocations.
+If I was in [drawdown mode](/essays-and-editorials/finances/#accumulation-drawdown-and-rebalancing), I wouldn’t be trying to slip more in, I don’t think. If I were closer to when I’m thinking of flipping the switch to drawdown mode, I’d probably be building more toward the Mark 1 (or 2) allocations.
 
 ## Mark 2.0?
 

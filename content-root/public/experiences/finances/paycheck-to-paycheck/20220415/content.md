@@ -47,7 +47,7 @@ A couple things of note are:
 
 With that said, I’m going to keep working toward the allocation for the two fund solution and see where that gets me before adding a third.
 
-Again, this isn’t optimization for outperformance (I might actually have lower returns if folks continue to do the straight total cap-weighted stock market and chill method); see [investment policy](/finances/investment-policy/). This is about aligning the portfolio to my character.
+Again, this isn’t optimization for outperformance (I might actually have lower returns if folks continue to do the straight total cap-weighted stock market and chill method); see [investment policy](/experiences/finances/investment-policy/). This is about aligning the portfolio to my character.
 
 Of course, if more people follow this path, the more the total stock market fund will reflect this allocation mix, which should mean I’d be able to sell off the extended and multi-factor funds. With that said, I believe every investment style is necessary to make each perform better and worse, so, you do you.
 

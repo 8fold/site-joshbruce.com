@@ -65,7 +65,7 @@ Would you like support my work and goals?
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - I’ll approach my liquid investments as a single portfolio regardless of tax treatment. This means the portfolio will have a cash component and would not include collectibles, homes, or similar assets that take more than a few days to sell.
 
-Note: Each bullet is aligned to my [financial character](/finances/).
+Note: Each bullet is aligned to my [financial character](/experiences/finances/).
 
 ## Asset allocation
 
@@ -150,7 +150,7 @@ For example, as of this writing, my 401k is out of balance and there is a dip in
 
 ### Personal portfolio
 
-I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policy/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using five fund types to achieve this:
+I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policy/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using five fund types to achieve this:
 
 1. [.Cap-weighted](Market capitalization weighted), total US equities fund; roughly 4,100 stocks.
 2. Cap-weighted, extended US equities fund; roughly 3,700 stocks. This helps achieve even distribution across small-, mid-, and large-cap stocks.

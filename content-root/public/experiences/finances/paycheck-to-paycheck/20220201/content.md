@@ -13,13 +13,13 @@ A lot going on here.
 
 I'm moving the weekend before the first and decided to post on January 29 because not much will change by the first.
 
-In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/experiences/finances/paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/finances/budgeting/) I identified areas where I should adjust saving and spending. Let's focus on the saving piece as mentioned in the previous[paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#too-much-cash).
+In 2021 I started using [Wave](https://www.waveapps.com) as my primary accounting platform after my [fallout with Intuit](/experiences/finances/paycheck-to-paycheck/20220101/). Because of my [consolidated approach to categorizing transactions](/essays-and-editorials/finances/budgeting/) I identified areas where I should adjust saving and spending. Let's focus on the saving piece as mentioned in the previous[paycheck](/experiences/finances/paycheck-to-paycheck/20220115/#too-much-cash).
 
 Because of the minimal categories I saw which expenses were more of a one-off for 2021 something to minimize in 2022. Subtracting the one-off expenses from the total expenses, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success; at least until the most recent dip, which qualifies as a correction or, possibly, a bear market.
 
 Personal Capital uses the [You Index™️](https://support.personalcapital.com/hc/en-us/articles/201169610-What-is-the-You-Index-), which looks at the accounts I have synced with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio outranks the comparative portfolios available.
 
-The ability to see income versus expenses reenforces the notion of [budgeting](/finances/budgeting/) as a means of tracking (not restricting) spending to establish the total cost of lifestyle number. Further, I'm appreciating the idea of looking at a net worth statement each year proposed by Brian and Bo from [The Money Guy Show](https://www.moneyguy.com/resources/) (and others in the financial planning space).
+The ability to see income versus expenses reenforces the notion of [budgeting](/essays-and-editorials/finances/budgeting/) as a means of tracking (not restricting) spending to establish the total cost of lifestyle number. Further, I'm appreciating the idea of looking at a net worth statement each year proposed by Brian and Bo from [The Money Guy Show](https://www.moneyguy.com/resources/) (and others in the financial planning space).
 
 Over time, the upper bands for both debt and cash should decrease. This is because the maximum is based on a percentage of the portfolio's value. As the value increases, the maximums should decrease; 1 percent of 100 [.United States Dollars](USD) is a lot different than 1 percent of 10,000 USD. In other words, my spending won’t change much, however, as a percentage of the portfolio, it'll be less.
 
@@ -53,7 +53,7 @@ All but one of my credit cards is a cash rewards card.
 
 I cashed out my primary card, which had about 200 USD in points available, and put the money in the savings account of my secondary institution. This money will help to purchase the new mattress when we move.
 
-I updated the [investment policy](/finances/investment-policy/#emergency-fund-cash-and-credit) to account for the operation of the credit card reward points.
+I updated the [investment policy](/experiences/finances/investment-policy/#emergency-fund-cash-and-credit) to account for the operation of the credit card reward points.
 
 ## Site updates
 

@@ -11,7 +11,7 @@ coming-soon:
 
 Here's something I never thought I'd say:
 
-> I've adjusted my spreadsheet to allow me to track my finances based on [my investment policy](/finances/investment-policy/) and easily share it here in the form of an image.
+> I've adjusted my spreadsheet to allow me to track my finances based on [my investment policy](/experiences/finances/investment-policy/) and easily share it here in the form of an image.
 
 Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/experiences/finances/paycheck-to-paycheck/) is the only one that's lasted longer than a month.
 
@@ -33,7 +33,7 @@ For example, as of me writing this, I had a pretty hefty balance on my credit ca
 
 When this paycheck landed I had a cash reserve of about four months of housing and food. My target right now is to basically have enough for the current month plus one-half or all of the next month. This will grow back up over time and I feel comfortable taking the risk in order to get the dollars into “the market” earlier.
 
-The cash reserve is currently held in these certificate-like vehicles at my credit union. I have one for each month of the year and they’re part of my more [time-oriented](/finances/time-oriented-budgeting/) approach. There’s usually a penalty if I withdraw early. So, for now, this transition to the more lean approach will just happen naturally.
+The cash reserve is currently held in these certificate-like vehicles at my credit union. I have one for each month of the year and they’re part of my more [time-oriented](/experiences/finances/personal-budget/) approach. There’s usually a penalty if I withdraw early. So, for now, this transition to the more lean approach will just happen naturally.
 
 Given this is the first year, I'm wanting to keep it simple and straightforward; minimal moving parts.
 
