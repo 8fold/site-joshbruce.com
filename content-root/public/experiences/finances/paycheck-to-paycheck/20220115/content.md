@@ -45,9 +45,9 @@ Fidelity did a calculation and determined that, without bonuses, this percentage
 
 ### HSA
 
-As I understand it, [HSA contributions](https://healthsavings.com/about-hsas/contributions/) can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say I contributed on a regular basis throughout the year up to the limit (dollar cost averaging). Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce [my cash position](#too-much-cash) I decided to front-load the contribution; contributing the full amount for 2022.
+As I understand it, HSA contributions can be front-loaded, back-loaded, or staggered. Last-year, I staggered, which is to say I contributed on a regular basis throughout the year up to the limit (dollar cost averaging). Back-loading means I could contribute for the previous tax year up to the filing date. This time, in an effort to reduce [my cash position](#too-much-cash) I decided to front-load the contribution; contributing the full amount for 2022.
 
-The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible as early as possible; [time in the market outweighing timing the market](/finances/#values).
+The market and my portfolios are down at the moment and I want to take advantage of that dip as much as possible as early as possible; [time in the market outweighing timing the market](/experiences/finances/#values).
 
 UPDATE: The ability to front-load is true, however, some restrictions and risks apply; contributions are pro-rated. I need to be enrolled in a qualified plan at the start of each calendar month. So, the federal contribution limit divided by the number of months I was enrolled in a qualified health plan gives me my actual annual contribution limit. By contributing the federal limit now I’m betting on not losing coverage until at least the end of the year.
 
@@ -83,7 +83,7 @@ I'm discounting the impact from balancing into the portfolio because as I was mo
 
 Watching the ups and downs in the market and my overall portfolio, I don't seem to be tracking as closely with the total stock market index (the benchmark I use). When dips happen it seems that small- and mid-cap stocks are hit first; a leading indicator of a possible dip in the more large-cap stocks. Given I'm balancing into a more even distribution across small-, mid-, and large-cap stocks, I could see this having an impact as the difference between my portfolio and the benchmark has gone from a couple of percentage points difference to a few points difference over the last couple of month.
 
-When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/finances/#principles) seems to still be holding true.) I also appreciate having the two index funds to create the equities portion of the portfolio because it helps me buy low; especially at the beginning of my journey. Always buying what’s low, while selling what’s high.
+When I backtest the portfolio through [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) though, it still shows the difference being nominal; lower than holding the total stock market, but higher than holding just the extended market. (The [macro-allocation principle](/experiences/finances/#principles) seems to still be holding true.) I also appreciate having the two index funds to create the equities portion of the portfolio because it helps me buy low; especially at the beginning of my journey. Always buying what’s low, while selling what’s high.
 
 With that in mind, I think the main factor in the low performance over the last couple of months was holding so much cash.
 
@@ -117,7 +117,7 @@ When I actually got paid, I did a pretty hard reset on cash; purchasing more of 
 
 I started multiple portfolios as a single deposit, control group to experiment with my portfolio plan going from now until becoming financially independent.
 
-The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and [time in over timing the market principles](/finances/#values).
+The Mark 0.0 portfolio holds the 100 percent stock index fund split. The smaller split is 34 percent in a total stock market fund, which favors large-cap growth. The larger split is 66 percent in a total stock market fund (billed as "extended market"), which favors small- and mid-cap equities. This combination results in a roughly even distribution between small-, mid-, and large-cap stocks. This is in keeping with the [investment policy](/experiences/finances/investment-policy/) and the [macro-allocation](/finances/#principles) and [time in over timing the market principles](/experiences/finances/#values).
 
 The Mark 1.0 portfolio holds a risk-parity style portfolio split between 50 percent 100 percent stock index fund (see Mark 0.0), 25 percent in negative correlation (long-term treasuries), and 25 percent in alternatives (13 percent gold, 6 percent commodities, and 3 percent in both United States and international real estate).
 

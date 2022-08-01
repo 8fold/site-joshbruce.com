@@ -17,7 +17,7 @@ Before I shifted to using the risk parity portfolios for things like electronics
 
 One matured and I took that money and moved it to savings.
 
-I debated buying the extended market index fund per the [buying a dip](/finances/budgeting/#spending-cash-reserves) protocol for spending cash reserves, however, I decided to hold until after speaking with the accountant about my taxes.
+I debated buying the extended market index fund per the [buying a dip](/experiences/finances/personal-budget/#spending-cash-reserves) protocol for spending cash reserves, however, I decided to hold until after speaking with the accountant about my taxes.
 
 ## Taxes
 
@@ -25,11 +25,11 @@ The accountant was wonderful and easily managed getting through my documents.
 
 I qualify for a refund.
 
-This means, once I receive the refund, I’ll perform the distribution as described in [my budgeting protocols](/finances/budgeting/#transferring-from-the-tax-account). So, cash reserves will go down soon, especially if the market stays down. With that said, over the course of this year the cash on hand will be high as I am planning to backload the Roth [.Individual Retirement Account](IRA) for the 2022 tax year.
+This means, once I receive the refund, I’ll perform the distribution as described in [my budgeting protocols](/experiences/finances/personal-budget/#transferring-from-the-tax-account). So, cash reserves will go down soon, especially if the market stays down. With that said, over the course of this year the cash on hand will be high as I am planning to backload the Roth [.Individual Retirement Account](IRA) for the 2022 tax year.
 
 ## 401k
 
-My 401k doesn't have the two equity funds I’d like to use (I've asked my employer if they can be added). Therefore, to get the mix I want from the [investment policy](/finances/investment-policy/#investments) I need to have a total small-, mid-, and large-cap fund.
+My 401k doesn't have the two equity funds I’d like to use (I've asked my employer if they can be added). Therefore, to get the mix I want from the [investment policy](/experiences/finances/investment-policy/#investments) I need to have a total small-, mid-, and large-cap fund.
 
 The short of it is that I initially started with a target retirement fund with 2060 retirement year. I sold out of that position in favor of the large-cap fund. Since then, I've had contributions going into the small- and mid-cap funds to move slowly toward the desired allocation in each.
 
@@ -69,15 +69,15 @@ Every time I get paid I put money into my taxable brokerage account as well; dol
 
 Lastly, because I look at my portfolio as a whole, which includes cash, I don’t think of it as money sitting on the sidelines; it’s just money in my portfolio which I can move around to purchase things and keep the portfolio in balance.
 
-Anyway, so, yeah, still buying the dip per the [investor policy](/finances/investment-policy/) and [spending cash reserves](/finances/budgeting/#spending-cash-reserves) budgeting strategy.
+Anyway, so, yeah, still buying the dip per the [investor policy](/experiences/finances/investment-policy/) and [spending cash reserves](/experiences/finances/personal-budget/#spending-cash-reserves) budgeting strategy.
 
 ## Odd place
 
-The longer, and more in-depth, I go with [van life](/van-life/) the more impatient I find myself growing. I’ve never been particularly ambitious when it comes to my career. Things changed a bit when I found myself homeless and in a crazy amount of student loan debt.
+The longer, and more in-depth, I go with [van life](/experiences/van-life/) the more impatient I find myself growing. I’ve never been particularly ambitious when it comes to my career. Things changed a bit when I found myself homeless and in a crazy amount of student loan debt.
 
 The best description I have for where my mind is right now is burned out.
 
-I love what I do. I do believe you can [design a life](/design-your-life/) you don’t need to runa way from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
+I love what I do. I do believe you can design a life you don’t need to runa way from. What I’m feeling isn’t trying to run from where I am, but run toward something different.
 
 With that said, given my lifestyle, chances are van life won’t actually be a money saving move. No car payment. Minimal insurance cost. No car-related expenses. All of that changes the moment I get a vehicle and those costs may equal rent and utilities. So, I don’t think the running toward something is financial, it’s just different.
 

@@ -9,7 +9,7 @@ created: 20210515
 
 Think I've finally settled on a graphic for this series. It's a simple line chart and took me a moment to iterate to this point.
 
-From about 2006 until 2020 I had been using the same [time-oriented](/finances/time-oriented-budgeting/) approach. While I appreciated that approach for getting out of debt, I found it didn't serve me in where I was going after getting back to broke.
+From about 2006 until 2020 I had been using the same time-oriented approach. While I appreciated that approach for getting out of debt, I found it didn't serve me in where I was going after getting back to broke.
 
 I'm a proponent of [zero-based budgeting](https://www.investopedia.com/terms/z/zbb.asp) even before I knew what it was called or that it was formally labeled something. I'm also a proponent of the [envelope budgeting system](https://en.wikipedia.org/wiki/Envelope_system), which I didn't know had a name beyond what my high school personal finance teacher told us. I tend to equate the envelope system to [Fund Accounting](https://en.wikipedia.org/wiki/Fund_accounting), which is used by not-for-profit organizations (including the US Federal Government). Each fund is essentially an envelope and every dollar that comes in is shifted or earmarked for one of those envelopes, leaving a zero-balance for the Income account.
 
@@ -124,7 +124,7 @@ Then a voice in my head said, “Stop comparing it to other things, judge it on 
 
 One interesting part is that based on backtesting the portfolio, I know when it drops, it will typically drop lower than the total stock market; it's a byproduct of the even market-cap distribution. Yet, here I am, doubting the design.
 
-Another interesting part is I didn't create the portfolio based solely or primarily on performance — a fool's errand, right? If the principle is that the average person (me included) won't out perform the market on a regular basis, why is performance suddenly feeling like a painful thing? (Told you checking daily was a meditative exercise.) But, no, I based the portfolio and my [investment policy](/finances/investment-policy/) on values and principles I hold.
+Another interesting part is I didn't create the portfolio based solely or primarily on performance — a fool's errand, right? If the principle is that the average person (me included) won't out perform the market on a regular basis, why is performance suddenly feeling like a painful thing? (Told you checking daily was a meditative exercise.) But, no, I based the portfolio and my [investment policy](/experiences/finances/investment-policy/) on values and principles I hold.
 
 Anyway.
 

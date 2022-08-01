@@ -15,7 +15,7 @@ I had a coaching session with a [Wave Advisor](https://www.waveapps.com/wave-adv
 
 I was introduced to a book and labels I didn't know existed.
 
-For the last 15 years I've been using a [time-based](/finances/time-oriented-budgeting/) approach that mimics the envelope method. I had my trusty spreadsheet. Income would come in. I'd account for paying myself first. Next I pay bills that can't be paid with credit cards; rent, for example. Then the focus was on the revolving loans (credit cards and lines of credit), followed by any terminal loans (student loans and car loans). Then there was a section for preparing for future, known expenses. A cash allowance I gave myself came next. Then there was long-term investing and savings.
+For the last 15 years I've been using a time-based approach that mimics the envelope method. I had my trusty spreadsheet. Income would come in. I'd account for paying myself first. Next I pay bills that can't be paid with credit cards; rent, for example. Then the focus was on the revolving loans (credit cards and lines of credit), followed by any terminal loans (student loans and car loans). Then there was a section for preparing for future, known expenses. A cash allowance I gave myself came next. Then there was long-term investing and savings.
 
 I loved this spreadsheet.
 
