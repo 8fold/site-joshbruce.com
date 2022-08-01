@@ -61,7 +61,7 @@ The reason I started the M1 Finance account is that I could easily earmark chunk
 
 I have four pies:
 
-1. [van life](/van-life/),
+1. [van life](/experiences/van-life/),
 2. electronics,
 3. insurance deductibles, and
 4. the [.financial independence](FI) experiments.

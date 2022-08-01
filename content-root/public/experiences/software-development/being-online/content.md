@@ -15,7 +15,7 @@ There seems to be a renaissance of the server-side applications. The monolithic 
 
 Meanwhile some organizations and businesses are just starting their microservice and single-page client-side web app journey.
 
-Which of these is on the [bleeding edge](/web-development/modern-web-development/) and which is behind the curve?
+Which of these is on the bleeding edge and which is behind the curve?
 
 Or, maybe, they're both fine. The question I have is: Are you *choosing* the approach that best suits your needs, context, and constraints? If your company went all [.GM](General Motors) tomorrow, could you maintain your website?
 
@@ -58,7 +58,7 @@ I remember working with a developer in the last year of my previous project (see
 
 Initially he was pretty much all-in on the single-page, client-side web app approach. As we talked he started to shift. Testing and accessibility became a focus and he really appreciated the idea of progressive enhancement.
 
-I was channeling my frustration into creating the “on constraints” series and I don't know how much the one on [internet bandwidth](/web-development/on-constraints/internet-bandwidth/) got him thinking about progressive enhancement and the idea of how the Internet evolves, but it was after sending him that one that he basically altered his approach.
+I was channeling my frustration into creating the “on constraints” series and I don't know how much the one on [internet bandwidth](/essays-and-editorials/software-development/on-constraints/internet-bandwidth/) got him thinking about progressive enhancement and the idea of how the Internet evolves, but it was after sending him that one that he basically altered his approach.
 
 The idea is evolution in general.
 
