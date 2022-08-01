@@ -37,7 +37,7 @@ The cash reserve is currently held in these certificate-like vehicles at my cred
 
 Given this is the first year, I'm wanting to keep it simple and straightforward; minimal moving parts.
 
-I’m still learning how taxes work with the different types of investment accounts I now have. The [Choose FI Financial Independence 101 course](/reviews-and-summaries/choose-fi/) also taught me something new; how progressive taxes work. I didn’t know that all your money wasn’t taxed at your marginal tax rate; the tax rate you qualify for based on income. Instead, there’s a thing called the effective tax rate.
+I’m still learning how taxes work with the different types of investment accounts I now have. The Choose FI Financial Independence 101 course also taught me something new; how progressive taxes work. I didn’t know that all your money wasn’t taxed at your marginal tax rate; the tax rate you qualify for based on income. Instead, there’s a thing called the effective tax rate.
 
 I make roughly 100,000 [.USD](United States Dollars) annually at the moment. This means:
 
