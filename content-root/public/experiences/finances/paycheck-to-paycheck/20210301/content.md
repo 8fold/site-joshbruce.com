@@ -15,7 +15,7 @@ Here's something I never thought I'd say:
 
 Seriously, I cannot tell you how much I dislike spreadsheets. The spreadsheet I use to [build wealth living paycheck to paycheck](/experiences/finances/paycheck-to-paycheck/) is the only one that's lasted longer than a month.
 
-I've just finished listening to The Simple Path to Wealth by J.L. Collins and I've made it up to Unit 7 of [Choose [.FI](financial independence)'s](/reviews-and-summaries/choose-fi/) Financial Independence 101 course.
+I've just finished listening to The Simple Path to Wealth by J.L. Collins and I've made it up to Unit 7 of Choose [.FI](financial independence)'s Financial Independence 101 course.
 
 I'm 41 and will be 42 in July, this is year one.
 
