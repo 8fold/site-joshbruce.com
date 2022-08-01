@@ -17,7 +17,7 @@ In 2021 I started using [Wave](https://www.waveapps.com) as my primary accountin
 
 Because of the minimal categories I saw which expenses were more of a one-off for 2021 something to minimize in 2022. Subtracting the one-off expenses from the total expenses, I was able to adjust my projected retirement needs in [Personal Capital](https://www.personalcapital.com/?variant=bright-hp), which caused the estimated success rate to go from 78 percent back to 98 percent probability of success; at least until the most recent dip, which qualifies as a correction or, possibly, a bear market.
 
-Personal Capital uses the [You Index™️](https://support.personalcapital.com/hc/en-us/articles/201169610-What-is-the-You-Index-), which looks at the accounts I have synced with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio outranks the comparative portfolios available.
+Personal Capital uses the You Index™️, which looks at the accounts I have synced with them. When I go to [Portfolio Charts](https://portfoliocharts.com/portfolio/portfolio-matrix/) and plug in the Mark 1 portfolio asset allocation, that portfolio outranks the comparative portfolios available.
 
 The ability to see income versus expenses reenforces the notion of [budgeting](/essays-and-editorials/finances/budgeting/) as a means of tracking (not restricting) spending to establish the total cost of lifestyle number. Further, I'm appreciating the idea of looking at a net worth statement each year proposed by Brian and Bo from [The Money Guy Show](https://www.moneyguy.com/resources/) (and others in the financial planning space).
 

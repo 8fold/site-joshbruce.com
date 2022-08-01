@@ -51,7 +51,7 @@ Enter [IRS Form 4506](https://www.irs.gov/forms-pubs/about-form-4506). You can r
 
 A few months later I received the note from the IRS saying I had substantial unreported, taxable income from my mother's death and owed taxes on it plus fees and penalties; the amount was almost 17,000 USD. The impact here being my request for returns spurred what, for me, feels like an audit, but is probably more aptly described as a review.
 
-I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/pub/irs-pdf/f1099r_21.pdf) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the box specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
+I neglected to send and reference an [IRS 1099-R Form](https://www.irs.gov/forms-pubs/about-form-1099-r) with my 2020 taxes; my fault. However, the bank where the annuity came from did send a copy of the form to the IRS. Box 2a, the box specifying how much of the distribution is taxable, was left blank. Under normal circumstances, blank means zero on tax forms. However, in this particular case it was apparently read as "all of it."
 
 Contacted an accountant who was kind enough to explain things to me (without charge). Contacted the bank and asked them to update the form to specifically say zero; they did. Took all of those documents along with other letters stating the distribution is not taxable income and faxed them to the IRS. I believe I was given 30 days from the time stamped on the first letter to respond; that's a pretty good sense of urgency and I think I did it within 10 days.
 
@@ -147,7 +147,7 @@ We're moving to a new city and state. I was asked whether we were planning on ow
 
 > We're pretty much renters for life, I think.
 
-The response was a good one regarding how many people look at buying a home as an investment, so, what was I planning to do for retirement. Given that you're here, chances are you already know, if you've read the [opening page](/experiences/finances/) and the [investment policy](/experiences/finances/invest-policy/), so, I want to take a different tack for this one.
+The response was a good one regarding how many people look at buying a home as an investment, so, what was I planning to do for retirement. Given that you're here, chances are you already know, if you've read the [opening page](/experiences/finances/) and the [investment policy](/experiences/finances/investment-policy/), so, I want to take a different tack for this one.
 
 Not that any of us needs a reason beyond wanting and not wanting to do something but, the big thing is, I don't view any use-asset as an investment.
 
