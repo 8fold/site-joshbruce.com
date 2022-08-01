@@ -38,10 +38,10 @@ Around 2008 I had a roommate. His family was from Laos. One day we talked about 
 
 In the morning you would go into the community and beg for food until noon. Some people would give the food with no other benefit than charity. Others would trade for counsel, a lesson, or labor. Others still would refuse. Once midday came, everyone would go back to temple, cook the food, and eat. The rest of the day was for meditation.
 
-My roommate said he was considering it. I loved the story and he invited me along saying, “You’re more of a monk than I am.” I didn’t take the trip, unfortunately. He, on the other hand, moved to Laos. Started teaching. Meet his wife. They have a child. 
+My roommate said he was considering it. I loved the story and he invited me along saying, “You’re more of a monk than I am.” I didn’t take the trip, unfortunately. He, on the other hand, moved to Laos. Started teaching. Met his wife. They have a child. 
 
 The you’re more of a monk than I am struck me particularly funny because it made me think of the first time I heard of the beggar’s bowl. 
 
 It was around 2005. I was attending college and dating a woman who brought it up in the context of me “wandering from place to place, talking to people, and carrying around my beggar’s bowl.”
 
-These experiences got me thinking about the idea of employment and the idea of “will work for food.” All money exchange is eventually exchanged for food. In this sense we are all wandering around with our beggar’s bowls trading service in the hopes of getting enough food to survive and possibly strive. Further, we’re all living [paycheck to paycheck](/experiences/finances/paycheck-to-paycheck/).
+These experiences got me thinking about the idea of employment and the idea of “will work for food.” All money exchange is eventually exchanged for food. In this sense we are all wandering around with our beggar’s bowls trading service in the hopes of getting enough food to survive and possibly thrive. Further, we’re all living [paycheck to paycheck](/experiences/finances/paycheck-to-paycheck/).
