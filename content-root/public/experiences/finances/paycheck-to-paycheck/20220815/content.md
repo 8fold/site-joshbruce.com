@@ -14,6 +14,7 @@ Updated the spreadsheet based on these new details:
 
 1. I added a chart for the total portfolio using individual vehicles. The chart I use for these posts show the macro-allocations. This new chart shows me which individual funds are down or up compared to their targets and ranges. When I created the chart, the portfolio was in balance, however, it was high in the extended market and low in the multi-factor and total stock market funds.
 2. I use [Apple Numbers](https://www.apple.com/numbers/) with multiple tables in one sheet. I changed the arrangement of calculated tables I don't need to do data entry on. I did the same thing with the tables where I do perform data entry.
+3. I reduced the target allocation for the small- and mid- funds in my old 401k by 1 percent as I won’t be putting more toward those in the future. I increased the target percent for the extended market and S&P 500 funds by 1 percent each. This should account for the new 401k while I’m still holding the old.
 
 ## Rolling over the 401k
 
