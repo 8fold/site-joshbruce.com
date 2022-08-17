@@ -170,7 +170,7 @@ I see emergencies as having two qualities:
 
 For the most urgent emergencies, I will use debt and mitigate the cost for each specific type of emergency.
 
-- A personal loan is used for instances of my expense account becoming overdrawn. This insures I avoid one-time fees and the loan can be paid back separately compared to other forms of debt. The available limit of this line of credit will be equal to roughly three month's worth of living expenses, which can't be paid by way of credit cards.
+- A personal loan is used for instances of my expense account becoming overdrawn. This ensures I avoid one-time fees and the loan can be paid back separately compared to other forms of debt. The available limit of this line of credit will be equal to roughly three month's worth of living expenses, which can't be paid by way of credit cards.
 - I’ll maintain a total credit limit equal to one year's worth of expenses.
 
 Liquid cash will be held in the allocation stated in the previous section and described in my [personal budget](/experiences/finances/personal-budget/).
