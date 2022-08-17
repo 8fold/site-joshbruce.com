@@ -1,26 +1,36 @@
-# August 15th, 2022 paycheck
+# September 1st, 2022 paycheck
 
 {!! dateblock !!}
 
 {!! data !!}
 
-My new employer has an extended market fund. After two calls we were able to find the public equivalent and, come to find out, it tracks very closely to the extended market fund I already have. I changed the allocation to be 66-34 percent in the extended market and S&P 500, respectively.
+![Screenshot of net worth via Personal Capital from January 2021 to August 2022 showing a steady rise until January 2021 where the value plateaus until the end of July 2022 before rising dramatically in comparison](/media/paycheck-to-paycheck/net-worth-202101-202208.png)
 
-The portfolio as a whole was a bit out of balance over the intervening weeks before this paycheck; less than 1 percent over in cash. Contributions and buying the dip fixed that. Contributions went to the multi-factor fund and buying the dip went toward the extended market fund the first Thursday between paychecks and the total stock market the second week. The percent-based approach to [buying a dip](/experiences/finances/personal-budget/#spending-savings) seems to be proving itself viable.
+The last time showed an image like the one above was in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau and how the different charts could emotionally make me react due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
 
-Updated the spreadsheet based on these new details:
+I've stopped contributing to my M1 Finance account. I've been contributing to my taxable brokerage account and [buying the dip](/experiences/finances/personal-budget/#spending-savings) every week for the past few weeks. And, I was rebalancing my 401k at my former employer. So, the M1 Finance account acts something like a control as it's invested in pretty much the same things as everywhere else.
 
-1. I added a chart for the total portfolio using individual securities. The chart I use for these posts show the macro-allocations. This new chart shows me which individual funds are down or up compared to their targets and ranges. When I created the chart, the portfolio was in balance, however, it was high in the extended market and low in the multi-factor and total stock market funds.
-2. I use [Apple Numbers](https://www.apple.com/numbers/) with multiple tables in one sheet. I changed the arrangement of calculated tables I don't need to do data entry on. I did the same with the tables where I do perform data entry.
-3. I reduced the target allocation for the small- and mid-cap funds in my old 401k by 1 percent as I won’t be putting more toward those in the future. I increased the target percent for the extended market and S&P 500 funds by 1 percent each. This should account for the new 401k while I’m still holding the old.
+As of this writing, my main M1 Finance Pie is down roughly 20 percent; that's the control, no new contributions. My main Taxable Brokerage Account is down roughly 12 percent. The 401k at my former employer is down roughly 9 percent.
+
+Further, looking at the the FI Experiments below we can see that the Mark 0 portfolio has been down roughly 15 percent while the Mark 1 portfolios have been down roughly 12 percent; roughly one-third to one-fourth less than the Mark 1, which is where we are with the M1 Finance Pie compared to either of the other accounts.
+
+So, the advice from those I pay the most attention to I feel has been cross-checked and verified:
+
+1. Choose your portfolio allocation and stick with it for as long as it makes sense.
+2. Buy what's down either in value, percent of portfolio, or both whether selling anything or not.
+3. Sell what's high to buy what's low, withdraw to cash, or both.
+4. Have more than one security in your portfolio; cash does count, however, I'm going with having multiple non-cash securities.
+	5. Further, specifically have assets with low or negative correlation. The small- and mid-cap funds did drop further than the large-cap, which dropped more than the multi-factor fund.
 
 ## Rolling over the 401k
 
-I’m still holding the old 401k, which is going up a bit as the market does a slight rebound.
+Still holding the 401k with my previous employer. The S&P 500 fund is a bit, specifically enough to counteract the drawdown in the other two funds. Instead of selling them, I decided to sell those gains and buy into the other two funds.
 
-I’m still planning on sending it to the Traditional Individual Retirement Account.
+So, I'm selling roughly 2,000 [.United States Dollars](USD) of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds.
 
-Just not sure when.
+The rationale for this is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here.
+
+Because as individual shares increase in value, I will have more of them, which, in theory, means I won't have to wait for the market rebound as far as I would have otherwise.
 
 ## FI experiments
 
