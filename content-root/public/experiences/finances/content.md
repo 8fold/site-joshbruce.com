@@ -1,10 +1,3 @@
----
-title: Finances
-disclaimer: "I'm not a financial planner or advisor and don't play one on the Internet. This content is for informational and entertainment purposes only and does not constitute advice. Please consult with your financial advisors and financial institutions."
-created: 20210216
-updated: 20220416
----
-
 # Finances
 
 {!!dateblock!!}
@@ -64,6 +57,8 @@ I focus a lot on character and culture; values, principles, practices, and tools
 1. [Personal Capital](https://www.personalcapital.com) for tracking the majority of my portfolio; some providers can’t be linked, but it’s close enough. In particular I appreciate the "You Index" and "Asset Allocation" tools.
 2. [Wave](https://www.waveapps.com) for personal and business bookkeeping.
 3. [Stripe](https://stripe.com) and [Square](https://squareup.com/us/en) for payment processing, appointments, and the like.
+4. [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) for backtesting portfolios and other research on individual investment securities; though there is a wide range of tools available.
+5. [Portfolio Charts](https://portfoliocharts.com) for the known portfolios and macro-allocation tools.
 4. One insured spending account: All non-business outflows come from this account.
 5. One or more federally insured, interest bearing savings accounts.
 6. One or more regulated retirement accounts.
