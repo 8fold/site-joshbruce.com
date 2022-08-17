@@ -48,7 +48,13 @@ If you don't have a medical plan that allows for an HSA, no worries; open a Roth
 
 The sixth step is about reaching the maximum you can contribute to your employer-sponsored retirement accounts.
 
-Similar to IRAs and HSAs there are annual contribution limits for employer-sponsored retirement accounts. Once you reach that maximum, you've completed this step.
+Similar to IRAs and HSAs there are annual contribution limits for employer-sponsored retirement accounts. And here there's some wiggle room, again, guardrails.
+
+Up to this point, we're looking for a target savings rate of 25 percent of your gross income. So, if you make 20,000 USD per year, if you're saving and investing 5,000 USD per year toward all of the steps up to and including this one, you can move on to the next step. This was mentioned in the August 17th, 2022 episode of the show.
+
+The idea here is that some folks do not earn enough money to actually hit over 20,000 USD in their 401k, another 6,000 or more USD in their Roth IRA, and another 3,000 or more in their HSA; you would need to make at least 30,000 USD per year to do that and some folks simply aren't in a position to put all that toward investment accounts and still live.
+
+So, the higher-order goal is a savings rate of roughly 25 percent up to this point. Once you do that, then start looking at the other steps.
 
 ## Hyper-accumulation
 
