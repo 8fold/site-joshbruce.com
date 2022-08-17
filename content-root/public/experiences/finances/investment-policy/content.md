@@ -150,15 +150,16 @@ For example, as of this writing, my 401k is out of balance and there is a dip in
 
 ### Personal portfolio
 
-I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policies/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using five fund types to achieve this:
+I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policies/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using six fund types to achieve this:
 
 1. [.Cap-weighted](Market capitalization weighted), total US equities fund; roughly 4,100 stocks.
 2. Cap-weighted, extended US equities fund; roughly 3,700 stocks. This helps achieve even distribution across small-, mid-, and large-cap stocks.
 3. Cap-weighted, total US small-cap equities fund; roughly 2,000 stocks.
 4. Cap-weighted, total US mid-cap equities fund; roughly 828 stocks.
 5. Cap-weighted, [.Standards and Poors](S&P) 500 US equities fund; roughly 500 large-cap stocks.
+6. Multi-factor fund.
 
-Because of the funds are cap-weighted, and different, there will be overlap at the individual stock level, which is fine.
+Because most of the funds are cap-weighted, cover most of the market, and different, there will be overlap at the individual stock level, which is fine.
 
 I'm contemplating adding a sixth fund, which would be a: Multi-factor fund which ignores cap-weighting; roughly 590 stocks.
 
