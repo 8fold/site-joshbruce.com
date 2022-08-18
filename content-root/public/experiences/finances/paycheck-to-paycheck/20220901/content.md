@@ -6,13 +6,13 @@
 
 ![Screenshot of net worth via Personal Capital from January 2021 to August 2022 showing a steady rise until January 2021 where the value plateaus until the end of July 2022 before rising dramatically in comparison](/media/paycheck-to-paycheck/net-worth-202101-202208.png)
 
-The last time showed an image like the one above was in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau and how the different charts could emotionally make me react due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
+The last time I showed an image like the one above was in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau and how the different charts could emotionally make me react due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
 
 I've stopped contributing to my M1 Finance account. I've been contributing to my taxable brokerage account and [buying the dip](/experiences/finances/personal-budget/#spending-savings) every week for the past few weeks. And, I was rebalancing my 401k at my former employer. So, the M1 Finance account acts something like a control as it's invested in pretty much the same things as everywhere else.
 
-As of this writing, my main M1 Finance Pie is down roughly 20 percent; that's the control, no new contributions. My main Taxable Brokerage Account is down roughly 12 percent. The 401k at my former employer is down roughly 9 percent.
+As of this writing, my main M1 Finance Pie is down roughly 20 percent; that's the control, no new contributions. My main Taxable Brokerage Account is down roughly 12 percent. The 401k at my former employer is down roughly 9 percent; rebalancing with no new contributions.
 
-Further, looking at the the FI Experiments below we can see that the Mark 0 portfolio has been down roughly 15 percent while the Mark 1 portfolios have been down roughly 12 percent; roughly one-third to one-fourth less than the Mark 1, which is where we are with the M1 Finance Pie compared to either of the other accounts.
+Further, looking at the [FI Experiments](#fi-experiments) below we can see that the Mark 0 portfolio has been down roughly 15 percent while the Mark 1 portfolios have been down roughly 12 percent; roughly one-third to one-fourth less than the Mark 1, which is where we are with the M1 Finance Pie compared to either of the other accounts.
 
 So, the advice from those I pay the most attention to I feel has been cross-checked and verified:
 
@@ -27,6 +27,8 @@ I did manage to add the HSA and 401k for my new employer to Personal Capital. So
 I'm feeling pretty comfortable that I have the information and practical experience now to go ahead and start selling off the M1 Finance account to eventually close it down; reduce the paperwork and level of effort needed for publishing each of these posts.
 
 ## Closing out M1 Finance
+
+Odd as it may sound, I’m going to start contributing to the M1 Finance account again.
 
 ## Rolling over the 401k
 
