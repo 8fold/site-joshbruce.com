@@ -36,13 +36,17 @@ The idea of tax-loss harvesting is beyond my scope of control and understanding 
 
 So, here's the plan, well, here's the setup.
 
-I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section. The second and third slice were for longer-term future expenses; specifically insurance deductibles (see The Foo by The Money Guy Show)
+I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section (using [various asset allocations](/experiences/finances/investment-policy/#asset-allocation)). The second and third slice were for longer-term future expenses (using the Mark 1 asset allocation); specifically insurance deductibles (see [The Foo by The Money Guy Show](/examinations/money-guy-foo/)) and electronics because the former tends to only happen every 5 to 7 years and the latter is roughly the same. The fourth Slice was using the Mark 0 asset allocation to save toward that [van-life](/experiences/van-life/) future. Initially each Slice was 25 percent of the base Pie and I would contribute money to each Slice individually.
 
+The problem I ran into was that throwing money at M1 Finance was causing the portfolio to get out of balance related to negative correlated and alternative asset classes. Further, when I had my taxes done it was one more statement I needed wait on, there was also a correction required even though it didn't change the outcome of my taxes. Finally, it's one more account for me to check every paycheck.
 
- to start by selling the commodity funds, which are up over 30 percent at the moment. I should result in short-term capital gains for me, which means that money will be taxed at ordinary income, with that said, it's around 100 [.United States Dollars](USD) as of this writing.
+I already changed the percent for the FI Experiments Slice to be 1 percent, changed the percent for the insurance deductibles and electronics Slices to be 2 percent, and set the van-life Slice to be 95 percent.
 
+Now, here's the plan.
 
+I'm going to sell the commodities funds, which are up over 30 percent at the moment; that's above the cost basis. This will result in short-term capital gains, which will be taxed at my normal income, however, it should be around 100 USD.
 
+This will increase the cash available in the settlement fund, which I will throw into the root Pie to be distributed across all 4 Slices based on the target percents of each holding.
 
 ## Rolling over the 401k
 
