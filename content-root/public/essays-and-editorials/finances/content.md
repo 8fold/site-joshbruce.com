@@ -283,6 +283,20 @@ There are plenty more of these turns of phrase, the point being that in one aspe
 
 Another item of note is how somewhat common being a millionaire is in the United States. [Yahoo! Finance](https://finance.yahoo.com/news/millionaires-america-2020-50-states-201203665.html) references research from Phoenix Marketing International stating there are over 8 million households who can claim millionaire status. With that said, most of them are unknown to us. We usually only hear about those who are more lavish or loud about “being rich.” While this is only a little over 2 percent of the US population, the population of the US includes all individuals, including children, not households or groups, which is what the study was looking at.
 
+## Double-entry bookkeeping
+
+Double-entry bookkeeping is a method of record where each transaction has two entries take from two, different accounts in a charts of accounts. One entry will remove money from the account, while the second entry will add money to the account.
+
+The balances of income and expense accounts typically won't be tracked by you as that money comes in or goes to third-parties. Asset and liability accounts, however, will usually have the balances tracked.
+
+You get paid. This money comes from an income account (maybe named for the employer or type of employment); a negative number (expense) on the employer's ledger.
+
+This income gets deposited to your checking account at a financial institution (an asset account); a positive number.
+
+You pay a bill with a credit card. This money is transferred from the credit card ledger to the service provider; a negative number (expense account) and the service provider receives the money as a positive number (income).
+
+You pay the credit card from your checking account. This money is subtracted from the checking account (one entry) and added to the credit card account (second entry).
+
 ## Glossary
 
 Asset allocation
@@ -299,6 +313,9 @@ Capital gain
 
 Capital loss
 :    A decrease in value of an asset compared to the cost basis.
+
+Char of accounts
+:    A categorized list of all accounts used in bookkeeping.
 
 Cost basis
 :    The amount of money it took to acquire an asset.

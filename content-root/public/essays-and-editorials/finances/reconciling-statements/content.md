@@ -1,78 +1,110 @@
 # Reconciling statements
 
-Investopedia haș a pretty good definition presented in their accounting article on [reconciliation](https://www.investopedia.com/terms/r/reconciliation.asp). While their article is geared toward business, the same is true for any legal entity, including a person.
+Reconciling statements is the act of comparing the information you have from your bookkeeping to the records of another source; usually the custodian of an account. A sanity check.
+
+While the Investopedia article on [reconciliation](https://www.investopedia.com/terms/r/reconciliation.asp) is geared toward business, the same is true for any legal entity, including a person.
+
+Two things are presumed when it comes to reconciliation:
+
+1. The account is held somewhere other than in your head.
+2. The somewhere else is keeping their own records on your activity within those accounts.
+
+A general recommendation is that you do [double-entry bookkeeping](/essays-and-editorials/finances/#double-entry-bookkeeping).
 
 As of this writing I use [Wave](https://www.waveapps.com) for my accounting and budgeting software. I really appreciate the experience for double-entry bookkeeping and reconciliation.
 
-In double-entry bookkeeping there are always two entries in two different accounts. One subtracts money from the balance and the other adds money to a balance. Expense accounts, like "Food" don't have a running balance and typically don't need to be reconciliation. It's recommended that Asset accounts, like "Cash on hand," be reconciled regularly.
+Different accounts and institutions have different intervals for the generation of statements. These statements will typically show starting and ending balances for each account or security; there is no standard across institutions—so, each statement starts as an exercise in learning where the information is and what it's called. 
 
-In short, reconciliation is comparing the entries from two different ledgers. The first is your ledger; what I keep in Wave. The second is the ledger for the institution (or custodian) of the account being reconciled; typically using a statement.
+- The starting balance of one statement should match the ending balance of the previous statement.
+- The running balance in your ledger should match the ending balance shown on the statement for the given date.
 
-Different accounts and institutions have different intervals for the generation of these statements. These statements will typically have a starting balance and an ending balance; there is no standard across institutions—so, each statement starts as an exercise in learning where the information is and what it's called. 
+I'd say there are three levels of reconciliation.
 
-The starting balance should match the ending balance for the previous period. The ending balance should match the balance you have in your ledger as of the same ending date. If either of these balance pairs don't match then there are transactions that are missing or that shouldn't be there, which launches us into a more in-depth form of reconciliation. If the statement starting and ending balance match yours, chances are you don't need to do anything further; the account has been reconciled. With that said, it's possible for the balances to match while the individual transactions don't.
+1. Surface: Check the statement ending balance and your ledger balance on that date. If they match, you're probably okay; the caution here is that you may have duplicate entries you're not aware of.
+2. Entry-for-entry: If the surface-level reconciliation doesn't work out, chances are transactions are missing, your ledger might have too many transactions, or, most often, the posting dates between your ledger and the statement might be causing the balances to be off.
+3. Audit: This is when we feel like we need to do multiple reconciliations across multiple statements.
 
-For example, I was verifying my bank account with an institution that makes a micro-deposit and withdrawal to make sure they have the correct account information. This results in a deposit to my account and a withdrawal a day or two later; resulting in a 0 [.United States Dollar](USD) change in the account. When I reconciled I realized I had two deposits and two withdrawals when there was supposed to only be on. 
-
-If you don't use any type of accounting software, or don't keep a ledger, then reconciliation may be an opportunity to look at the list of transactions on an account to verify you recognize them; the no math approach.
+I recently did an audit of my accounts for 2021, which prompted me to write this. Mostly because reconciling investment statements has been pretty frustrating and inconsistent, but I think I have it sorted.
 
 ## Cash and credit card accounts
 
-Between cash (and credit cards) and investments, I find cash to be easier to reconcile. Or, to put it a different way, these types of accounts feel more intuitive and straightforward.
+I find cash and credit card accounts to be much easier to reconcile than investments. With that said, not all loan accounts are the same. For some loan accounts you may have an entry for interest on the loan, or, you'll want to locate the principle balance as opposed to the amount owed, which will fluctuate like the value of investments.
 
 I'm going to presume you use software or keep a ledger with a running balance.
 
 Look at your statement. Most likely there is a place on the statement that starts with something like, "Starting" or "Prior" or "Previous" and ends with "as of" a date. There should also be a place on the statements that starts with something like, "Ending" or "New" or just "Balance." There might be other information that is not really going to help you when it comes to reconciliation as well.
 
+The following is from a bank statement:
+
 ![Portion of a bank statement showing Beginning Balance of $0.01, End Balance of $0.01, and $0.01 for both deposits and withdrawals](/media/finances/bank-statement-balances.png)
+
+The following is from a credit card statement:
 
 ![Portion of a credit card statement showing Previous Balance of $103.56, New Balance of $346.47, and a censored block for fees and other transaction types associated with the account](/media/finances/credit-card-statement-balances.png)
 
-In you ledger, go to the entry with the same date as the statement starting date, or the entry just before that date. Look at the running balance; it should match. Now go to the entry with the same date as the statement ending date, or the entry just before that date; the running balance in your ledger should match the balance on the statement. 
+In your ledger, go to the entry with the same date as the statement starting date, or the entry just before that date. Look at the running balance; it should match. Now go to the entry with the same date as the statement ending date, or the entry just before that date; the running balance in your ledger should match the balance on the statement. 
 
-Accounting software should make this easier for you. In Wave, [for example](https://support.waveapps.com/hc/en-us/articles/208621636-How-to-use-Account-Reconciliation), I put in the ending date for the statement and the ending balance, if it matches the Wave voodoo happening in the background, I'm reconciled. If it doesn't match, I'm taken to a detailed view of the transactions in my ledger so I can figure out what I've missed.
+Accounting software should make this easier for you. In Wave, [for example](https://support.waveapps.com/hc/en-us/articles/208621636-How-to-use-Account-Reconciliation), I put in the ending date for the statement and the ending balance, if it matches the Wave voodoo happening in the background, I'm reconciled. If it doesn't match, I'm taken to a detailed view of the transactions in my ledger for that period so I can figure out what I've missed.
 
 ## Investments
 
-I was so frustrated trying to reconcile my investment accounts. I think I have it sorted though.
+- Focus on total cost or total cost basis.
+- Avoid looking at entries that have the word "sweep" in them; they are transitory transactions for settling purposes.
+- Favor the transaction or trade date, not the settlement date for entries.
 
-My initial frustration was that all of my contributions were being tracked as expenses, because they were going to other institutions. So, the first hurdle was ensuring I had all of my asset accounts listed in my [Chart of Accounts](https://support.waveapps.com/hc/en-us/articles/115004972106-Understanding-your-chart-of-accounts).
+After many statements, phone calls, and false starts, I believe I've figured out a way to reconcile the statements I receive for investments. I've also decided to be a little more judgmental on institutions based on their statements and the ease with which I can reconcile the accounts.
 
-Next is the fact that investment accounts aren't cash and the value (or balance) fluctuates. I buy a share for 1 USD, it goes up in value by 50 percent, my ending "balance" (the value of the share) is 1.50 USD, but there are no transactions to account for those day-to-day fluctuations.
+Let's start with the accounting software for creating your ledger.
 
-So, instead, we reconcile against cost basis or total cost; not the average of either of those things because that won't reconcile smoothly; I speak from experience.
+For each bucket of securities, I have an account in my chart of accounts. (Note: For M1 Finance, I only added the base Pie to my charter me accounts.) When I purchase more shares, I record money leaving one account and going to the settlement (or cash) account at the broker; negative entry from the first and positive entry to the second. Then I transfer the money from the settlement account to the account representing the security.
+
+Because there doesn't seem to be standardization across the industry on statements for investment and retirement accounts, I'm going to break this up into three types of statements based on the style and information I've seen for each.
+
+## Settlement account and total cost (basis)
+
+These statements will typically list each security at the top for a summary view. The first security is often the settlement (or cash) account, which can be reconciled just like any other cash account (see above). The other summary entries are usually separated by the security.
+
+![Portion of a Vanguard statement showing the money market settlement account on the first line; with price on and balance on the statement end date as well as the balance for the same date the previous year. An entry for a single security is on the second line showing the name of the fund, the average price per share, total cost, quantity, price on and balance on the last date of the statement, as well as, the balance on the same date the previous year.](/media/finances/investment-statement.png)
+
+What's nice here is that each security will list the total cost (basis), not the average or just the fair market value on a specific date. The total cost on the statement should match the running balance in your ledger on that date.
+
+If it doesn't, you'll want to look for (and at) the individual entries to ensure you haven't missed anything. I typically do the bookkeeping for these accounts manually and sometimes don't add the dividend entries when they happen, for example.
+
+Generally speaking, when looking at the individual entries, avoid entries that say things like "sweep in" or "sweep out," which basically means, "this money isn't really in an account yet" or "this money is in transit, but we're going to tell you about it anyway."
 
 Total cost includes:
 
 1. Every purchase of the security.
-2. Dividends that are earned and reinvested; there will typically be two entries in the statement for this, however, you may only wan to use one entry for your accounting. The first entry on the custodian's statement will be the dividends going into the [settlement ether (account)](https://investor.vanguard.com/investor-resources-education/online-trading/settlement-fund) before being put back into the security.
-3. Realized gains (usually only for mutual funds).
-4. Realized losses(usually only for mutual funds).
-5. Any administration fees outside the expense ratio of the fund; 401k and similar retirement accounts—check your statements and with the custodian of the account.
+2. Dividends earned and reinvested; there will typically be two entries in the statement for this, however, you may only want to use one entry for your accounting. The first entry on the custodian's statement will be the dividends going into the [sweep account](https://investor.vanguard.com/investor-resources-education/online-trading/settlement-fund) before being put back into the security.
+3. Realized gains (usually only for mutual funds when you didn't sell any shares).
+4. Realized losses(usually only for mutual funds when you didn't sell any shares).
+5. Any administration fees outside the expense ratio of the securities; 401k and similar retirement accounts—check your statements and with the custodian of the account.
 
-All of these should appear as transactions on the statement from the custodian and on your ledger.  
+All of these should appear as entries on the statement from the custodian and on your ledger.
 
-What's not included in total cost are the day-to-day values of the shares.
+Statements that have total cost should be able to reconcile without being even a penny off.
 
-What made this so confusing for me was the number of transactions I saw on the statement for what, for me, were very simple transactions.
-
-In my head there's two entries:
-
-1. The withdrawal from my pass-through account at my credit union.
-2. The purchase of shares in the security.
-
-What I see on the statement is sometimes three or four entries for one complete transaction:
-
-1. The withdrawal from my pass-through account.
-2. The deposit to the custodian.
-3. The purchase of the shares in the security.
-4. A posting of the funds to a settlement account.
-
-Not only that, but these entries use language like sweep in and sweep, which I don't know what that means. And when the numbers were off, it just made it difficult to actually reconcile and figure out what happened. 
-
-Anyway, pretty overwhelming.
-
-Use trade date, not settlement date for transactions.
+If your statements don't show total cost, chances are you have one of the other types of statements. Note: This is when I start questioning whether I want to continue using this broker for that account.
 
 
+## Faux securities
 
+This is pretty much focused on platforms like M1 Finance. These statements list don't show total cost while showing a lot of other information that doesn't help in reconciling accounts; percent of portfolio, percent change, and so on. However, they essentially let you create your own mutual fund.
+
+You pick multiple securities and place them into a holding bucket. Each security has a percent of that bucket they can occupy. When you contribute money, it's distributed in a way to make the bucket balanced based on the those percentages.
+
+When you look at the bucket, it will tell you total cost and how much you are up or down. When you look at the statement it only shows the individual holdings, without showing total cost.
+
+The leg up the have over the next style of statement is that you can at least look at the buckets, which one or more of them will be in your accounting software to validate against. The statement, however, is somewhat useless for reconciling purposes; I still download it each month to have for my records.
+
+Sign in to the app. You should see a cash account, which can be reconciled like any cash account; even with the statement. Then look at each bucket you have in your accounting tool of choice; I only have the primary bucket in the accounting software.
+
+The problem is there is no way that I'm aware of to pull a total cost on a given date. Which makes these types of accounts and statements pretty much the same as the next section when it comes to reconciling. 
+
+## No total cost, possibly no entries
+
+To be fair, I've seen these primarily with employer-sponsored retirement plans. Basically, these types of statements are not useful for reconciling purposes.
+
+I still download the statement, however, I reconcile against the individual entries listed on the custodian's website. It's pretty tedious and I've messed up here more than anywhere else.
+
+With that said, I've contacted the custodians and requested they change the statements to make them easier to reconcile or asked them where to find the information I was looking for.
