@@ -28,13 +28,27 @@ I'm feeling pretty comfortable that I have the information and practical experie
 
 ## Closing out M1 Finance
 
-Odd as it may sound, I’m going to start contributing to the M1 Finance account again.
+Odd as it may sound, I’m going to start contributing to the M1 Finance account again to begin the close-out process.
+
+After looking at it, and seeing how buying the dip has been somewhat helpful over these last few paychecks, there are a couple of realizations I've come to.
+
+The idea of tax-loss harvesting is beyond my scope of control and understanding to the point where I don't want to touch selling anything that's down while I'm still in accumulation mode; wash sale rules and guidance are just too strange (see [Investopedia Tax-Loss Harvesting article](https://www.investopedia.com/articles/taxes/08/tax-loss-harvesting.asp). The other piece of this is seeing the possibility of shortening the affects of a drawdown by continuing to purchase and reinvest dividends.
+
+So, here's the plan, well, here's the setup.
+
+I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section. The second and third slice were for longer-term future expenses; specifically insurance deductibles (see The Foo by The Money Guy Show)
+
+
+ to start by selling the commodity funds, which are up over 30 percent at the moment. I should result in short-term capital gains for me, which means that money will be taxed at ordinary income, with that said, it's around 100 [.United States Dollars](USD) as of this writing.
+
+
+
 
 ## Rolling over the 401k
 
 Still holding the 401k with my previous employer. The S&P 500 fund is a bit, specifically enough to counteract the drawdown in the other two funds. Instead of selling them, I decided to sell those gains and buy into the other two funds.
 
-So, I'm selling roughly 2,000 [.United States Dollars](USD) of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds.
+So, I'm selling roughly 2,000 USD of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds.
 
 The rationale for this is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here.
 
