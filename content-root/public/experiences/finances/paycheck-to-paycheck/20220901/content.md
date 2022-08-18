@@ -20,7 +20,13 @@ So, the advice from those I pay the most attention to I feel has been cross-chec
 2. Buy what's down either in value, percent of portfolio, or both whether selling anything or not.
 3. Sell what's high to buy what's low, withdraw to cash, or both.
 4. Have more than one security in your portfolio; cash does count, however, I'm going with having multiple non-cash securities.
-	5. Further, specifically have assets with low or negative correlation. The small- and mid-cap funds did drop further than the large-cap, which dropped more than the multi-factor fund.
+	1. Further, specifically have assets with low or negative correlation. The small- and mid-cap funds did drop further than the large-cap, which dropped more than the multi-factor fund.
+
+I did manage to add the HSA and 401k for my new employer to Personal Capital. So, hoping that works moving forward.
+
+I'm feeling pretty comfortable that I have the information and practical experience now to go ahead and start selling off the M1 Finance account to eventually close it down; reduce the paperwork and level of effort needed for publishing each of these posts.
+
+## Closing out M1 Finance
 
 ## Rolling over the 401k
 
