@@ -36,19 +36,27 @@ The idea of tax-loss harvesting is beyond my scope of control and understanding 
 
 So, here's the plan, well, here's the setup.
 
-I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section (using [various asset allocations](/experiences/finances/investment-policy/#asset-allocation)). The second and third slice were for longer-term future expenses (using the Mark 1 asset allocation); specifically insurance deductibles (see [The Foo by The Money Guy Show](/examinations/money-guy-foo/)) and electronics because I only tap insurance deductibles every 5 to 7 years and purchase electronics at roughly the same time-scale. The fourth Slice was using the Mark 0 asset allocation to save toward [van-life](/experiences/van-life/) future. Initially each Slice was 25 percent of the base Pie and I would contribute money to each Slice individually.
+I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section for now. The second and third slice were for longer-term future expenses (using the Mark 1 [asset allocation](/experiences/finances/investment-policy/#asset-allocation)); specifically insurance deductibles (see [The Foo by The Money Guy Show](/examinations/money-guy-foo/)) and electronics because I only tap insurance deductibles every 5 to 7 years and purchase electronics at roughly the same time-scale. The fourth Slice was using the Mark 0 asset allocation to save toward [van-life](/experiences/van-life/) (most likely 5 to 10 years out as well). Initially each Slice was 25 percent of the base Pie and I would contribute money to each Slice individually.
 
-The problem I ran into was that throwing money at M1 Finance was causing the portfolio to get out of balance related to negative correlation and alternative asset classes. Further, when I had my taxes done it was one more statement I needed to wait on, there was also a correction required even though it didn't change the outcome of my taxes. Finally, it's one more account for me to check every paycheck.
+The problem I ran into was that throwing money at M1 Finance was causing the portfolio to get out of balance related to negative correlation and alternative asset classes; at least compared to where I want to be right now. Further, when I had my taxes done, it was one more statement I needed to wait on, there was also a correction required even though it didn't change the outcome of my taxes. Finally, it's one more account for me to check every paycheck.
 
-I already changed the percent for the FI Experiments Slice to be 1 percent of the main Pie, changed the percent for the insurance deductibles and electronics Slices to be 2 percent each, and I set the van-life Slice to be 95 percent.
+I already changed the target percent for the FI Experiments Slice to be 1 percent of the main Pie, changed the percent for the insurance deductibles and electronics Slices to be 2 percent each, and I set the van-life Slice to be 95 percent. After that change, all of these Slices are far out of balance.
 
 Now, here's the plan.
 
-I’ve added the multi-factor fund to my equal equities Pie that was 34 percent total stock market and 66 percent extended market. Now it’s 60-30-10 in total stock market, extended market, and multi-factor, respectively. Changing it at the Pie level means every Pie that has it as a Slice was updated as well; convenient that. When I do my regular investing it will go to the multi-factor fund in the van-life Pie for a while because I’m not rebalancing by selling anything and they’re the farthest off from their targets. When I buy the dip I can by the total stock market fund directly; at least for now. When I reinvest dividends it’ll go to the main Pie to be distributed as needed. 
+I’ve added the multi-factor fund to my equal equities Pie that was 34 percent total stock market and 66 percent extended market. Now it’s 60-30-10 in total stock market, extended market, and multi-factor, respectively. Changing it at the Pie level means every Pie that has it as a Slice was updated as well; convenient that. 
 
-I'm going to sell the commodity funds, which are up over 30 percent at the moment. This will result in short-term capital gains, which will be taxed at my regular income tax, however, it should only be around 100 USD. When I sell it’ll go into the cash account and I’ll reinvest it to the main Pie; just like if it were dividends.
+When I do my regular contributions I’ll send the money to M1. Because the other three slices are way over their targets, no money will go there; going to the one farthest below it’s target instead—the van-life Slice. Further, since the multi-factor fund is also below its target it’ll be filled up first. (Dividends will be reinvested into the main Pie in the same manner as regular contributions.)
 
-As Pies have positive value compared to the cost basis, I’ll sell them; not sure what I’ll do with the cash.
+When I buy the dip, it’ll most likely go to the M1 account but toward a specific Slice because, as of this writing, I’m less than one percent too low in the total stock market fund and [the guidelines](/experiences/finances/personal-budget/#spending-savings) suggest that I shouldn’t do something that causes the portfolio to go farther out of balance.
+
+This should solve the issue of too much going toward the alternatives and negative correlation securities while I’m trying to be the Mark 0 asset allocation.
+
+I’m to sell funds as they reach a positive return state; either shifting the cash elsewhere or putting it into the main Pie.
+
+For example, the commodity funds are up over 30 percent at the moment. I’ll sell those after capturing the FI Experiment data for this post. The gains should be a low dollar amount, so, the long-term will be at a 0 percent tax bracket while the long-term will be treated like regular income.
+
+We can’t avoid making mistakes or taking losses entirely and I’m glad to be doing it now while the dollar amounts aren’t substantial compared to my total lifestyle cost or cash flow ability.
 
 ## Rolling over the 401k
 
