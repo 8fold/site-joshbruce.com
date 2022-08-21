@@ -59,6 +59,10 @@ I focus a lot on character and culture; values, principles, practices, and tools
 3. [Stripe](https://stripe.com) and [Square](https://squareup.com/us/en) for payment processing, appointments, and the like.
 4. [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) for backtesting portfolios and other research on individual investment securities; though there is a wide range of tools available.
 5. [Portfolio Charts](https://portfoliocharts.com) for the known portfolios and macro-allocation tools.
+6. [MorningStart Portfolio Tools](https://www.morningstar.com/funds/xnas/vtsax/portfolio) for looking at weights.
+	- Search for a fund in the top navigation.
+	- Choose "portfolio" on the fund-level navigation.
+	- Choose "weight" on stock style.
 4. One insured spending account: All non-business outflows come from this account.
 5. One or more federally insured, interest bearing savings accounts.
 6. One or more regulated retirement accounts.
