@@ -68,6 +68,61 @@ The rationale for this is I've seen how much rebalancing through contributions h
 
 Because as individual shares increase in value, I will have more of them, which, in theory, means I won't have to wait for the market rebound as far as I would have otherwise.
 
+## Recalibrating the portfolio (again)
+
+I recently made the time to figure out [Morningstar's ticker tool](https://www.morningstar.com/funds/xnas/vtsax/portfolio) and updated the spreadsheet to show me my equities in the grid of small-, mid-, and large-cap compared to value, growth, and blend.
+
+This has led me to adjust the targets for each of the individual funds I'm invested in.
+
+I appreciate Personal Capital's grid-view, however, they sub-divide for alternatives and Real Estate Investment Trusts in a way that wasn't giving me the picture I wanted.
+
+Now, instead of relying on Portfolio Visualizer, that seems to only look at small-, mid-, and large-cap, without adding in value, growth, and blend; or, relying on Personal Capital's grid-view that seems to bucket things in a way my brain isn't calibrated to, I can use the Morningstar grid data for each individual security. 
+
+My current, personal blended portfolio looks something like this:
+
+- Large-cap value: Roughly 8 percent.
+- Large-cap growth: Roughly 15 percent.
+- Large-cap blend: Roughly 12 percent.
+- Mid-cap value: Roughly 8 percent.
+- Mid-cap growth: Roughly 8 percent.
+- Mid-cap blend: Roughly 14 percent.
+- Small-cap value: Roughly 13 percent.
+- Small-cap growth: Roughly 7 percent.
+- Large-cap bland: Roughly 15 percent.
+
+The previous list includes the 401k from my previous employer, which I'm planning to roll into my Traditional Individual Retirement Account; selling off two funds to zero. The mix after doing the roll over will look something like this:
+
+- Large-cap value: Roughly 8 percent.
+- Large-cap growth: Roughly 15 percent.
+- Large-cap blend: Roughly 11 percent (changed, lower).
+- Mid-cap value: Roughly 8 percent.
+- Mid-cap growth: Roughly 9 percent (changed, higher).
+- Mid-cap blend: Roughly 12 percent (changed, lower).
+- Small-cap value: Roughly 13 percent.
+- Small-cap growth: Roughly 7 percent.
+- Large-cap bland: Roughly 15 percent.
+
+Right now, I'm severely underweight in the multi-factor fund and overweight in the extended market fund.
+
+I'll continue buying the multi-factor fund via M1 Finance and my recalibrated total United States equities Pie; while still following the plan laid out in the [Closing out M1 Finance section](#closing-out-m1-finance) and my [investment policy](/experiences/finances/investment-policy/). 
+
+Feel a bit like [Tony Stark](https://youtu.be/y0brSA1cyzw) at the moment:
+
+> Get ready for a major remodel, fellas, we're back in hardware mode.
+
+### Process improvement
+
+Right now, when I make these posts, to get the lead-in data at the top, I have to jump through a fair amount of hoops:
+
+1. I update all the values for my various holdings.
+2. This populates a table I export to a comma-separated values file.
+3. I upload the file to Portfolio Visualizer.
+4. Then I update a different table with the percent equities and the small-, mid-, and large-cap breakdowns.
+5. Updating that table updates the table I use for posting here.
+6. I do a cross-check every once in a while with Personal Capital by adding all the small-, mid-, and large-cap percentages to see if I'm totally off somewhere.
+
+I'm hoping to have a setup whereby I don't need to do the exporting, uploading, and updating. 
+
 ## FI experiments
 
 Details are in the [January 15th, 2022 paycheck](/finances/paycheck-to-paycheck/20220115/#fi-experiments).
