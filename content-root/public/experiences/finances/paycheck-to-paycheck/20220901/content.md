@@ -106,6 +106,8 @@ Right now, I'm severely underweight in the multi-factor fund and overweight in t
 
 I'll continue buying the multi-factor fund via M1 Finance and my recalibrated total United States equities Pie; while still following the plan laid out in the [Closing out M1 Finance section](#closing-out-m1-finance) and my [investment policy](/experiences/finances/investment-policy/). 
 
+Note: Even though I’m shifting the targets for the funds in a way that makes the individual securities out of balance, the macro-allocations are still in balance.
+
 Feel a bit like [Tony Stark](https://youtu.be/y0brSA1cyzw) at the moment:
 
 > Get ready for a major remodel, fellas, we're back in hardware mode.
