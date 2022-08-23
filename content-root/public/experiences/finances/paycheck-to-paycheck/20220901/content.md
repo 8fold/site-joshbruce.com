@@ -52,7 +52,7 @@ When I buy the dip, it’ll most likely go to the M1 account but toward a specif
 
 This should solve the issue of too much going toward the alternatives and negative correlation securities while I’m trying to be the Mark 0 asset allocation.
 
-I’m to sell funds as they reach a positive return state; either shifting the cash elsewhere or putting it into the main Pie.
+I’m going to sell funds as they reach a positive return state; either shifting the cash elsewhere or putting it into the main Pie (or a slice within that pie.
 
 For example, the commodity funds are up over 30 percent at the moment. I’ll sell those after capturing the FI Experiment data for this post. The gains should be a low dollar amount, so, the long-term will be at a 0 percent tax bracket while the long-term will be treated like regular income.
 
