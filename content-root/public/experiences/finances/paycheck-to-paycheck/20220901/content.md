@@ -131,6 +131,8 @@ I’m also considering displaying the breakdown of value, growth, and blend for 
 
 ## FI experiments
 
+This data was taken on August 22nd, 2022 and will be the last in the series for now.
+
 Details are in the [January 15th, 2022 paycheck](/finances/paycheck-to-paycheck/20220115/#fi-experiments).
 
 The hypothesis is when the Mark 0.0 mix is down, it‘ll be down more than the others. Further, when the Mark 0.0 is up, the others will be up and not too far behind the Mark 0.0. We will track the change since the previous paycheck as well as the change since we started tracking January 2022.
