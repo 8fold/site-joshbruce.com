@@ -78,7 +78,7 @@ I appreciate Personal Capital's grid-view, however, they sub-divide for alternat
 
 Now, instead of relying on Portfolio Visualizer, that seems to only look at small-, mid-, and large-cap, without adding in value, growth, and blend; or, relying on Personal Capital's grid-view that seems to bucket things in a way my brain isn't calibrated to, I can use the Morningstar grid data for each individual security. 
 
-My current, personal blended portfolio looks something like this:
+My current, personal blended portfolio looks something like this for targets:
 
 - Large-cap value: Roughly 8 percent.
 - Large-cap growth: Roughly 15 percent.
@@ -121,7 +121,11 @@ Right now, when I make these posts, to get the lead-in data at the top, I have t
 5. Updating that table updates the table I use for posting here.
 6. I do a cross-check every once in a while with Personal Capital by adding all the small-, mid-, and large-cap percentages to see if I'm totally off somewhere.
 
-I'm hoping to have a setup whereby I don't need to do the exporting, uploading, and updating. 
+I’ve adjusted the setup to use the Morningstar data for portfolio spread within the matrix. This means I only need to update the values and the rest is handled for me. Every year I’ll check the Morningstar data to verify I’m still using the correct percentages.
+
+This is going to save me a fair amount of time. This improvement, coupled with this being the last entry with the [FI Experiments section](#fi-experiments) should reduce update time by a few minutes at the least.
+
+I’m also considering displaying the breakdown of value, growth, and blend for each market-cap weight.
 
 ## FI experiments
 
