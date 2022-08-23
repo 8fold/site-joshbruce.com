@@ -6,25 +6,33 @@
 
 ![Screenshot of net worth via Personal Capital from January 2021 to August 2022 showing a steady rise until January 2021 where the value plateaus until the end of July 2022 before rising dramatically in comparison](/media/paycheck-to-paycheck/net-worth-202101-202208.png)
 
-The last time I showed an image like the one above was in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau and how the different charts could emotionally make me react due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
+I showed an image like the one above in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau and how the different charts could emotionally make me react due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
 
-I've stopped contributing to my M1 Finance account. I've been contributing to my taxable brokerage account and [buying the dip](/experiences/finances/personal-budget/#spending-savings) every week for the past few weeks. And, I was rebalancing my 401k at my former employer. So, the M1 Finance account acts something like a control as it's invested in pretty much the same things as everywhere else.
+In 2022 I decided to stop contributing to the M1 Finance account, however, I'm planning on changing this up; see the [Closing out M1 Finance section](#closing-out-m1-finance). Meanwhile, every week for the past few weeks I've been [buying the dip](/experiences/finances/personal-budget/#spending-savings) in my primary taxable brokerage account and rebalancing the 401k from my previous employer.
 
-As of this writing, my main M1 Finance Pie is down roughly 20 percent; that's the control, no new contributions. My main Taxable Brokerage Account is down roughly 12 percent. The 401k at my former employer is down roughly 9 percent; rebalancing with no new contributions.
+The M1 Finance account, along with the other accounts I'm not making contributions to act as a control, so to speak, for the following findings; the percentages are based on all time, not year to date:
 
-Further, looking at the [FI Experiments](#fi-experiments) below we can see that the Mark 0 portfolio has been down roughly 15 percent while the Mark 1 portfolios have been down roughly 12 percent; roughly one-third to one-fourth less than the Mark 1, which is where we are with the M1 Finance Pie compared to either of the other accounts.
+1. My main M1 Finance Pie is down around 20 percent; no continued contributions or rebalancing, not reinvesting dividends.
+2. My Traditional [.Individual Retirement Account](IRA) is down around 15 percent; no continued contributions or rebalancing, reinvesting dividends.
+3. My Roth IRA is down around 13 percent; no continued contributions or rebalancing, reinvesting dividends.
+4. My primary [.Health Savings Account](HSA) is down about 17 percent; no continued contributions (since beginning of the year), reinvesting dividends.
 
-So, the advice from those I pay the most attention to I feel has been cross-checked and verified:
+Compare these control accounts to the ones with continued contributions and rebalancing:
 
-1. Choose your portfolio allocation and stick with it for as long as it makes sense.
-2. Buy what's down either in value, percent of portfolio, or both whether selling anything or not.
-3. Sell what's high to buy what's low, withdraw to cash, or both.
-4. Have more than one security in your portfolio; cash does count, however, I'm going with having multiple non-cash securities.
-	1. Further, specifically have assets with low or negative correlation. The small- and mid-cap funds did drop further than the large-cap, which dropped more than the multi-factor fund.
+1. The 401k with my former employer is down around 5 percent.
+2. The primary taxable brokerage account is down about 10 percent.
 
-I did manage to add the HSA and 401k for my new employer to Personal Capital. So, hoping that works moving forward.
+The investment literature says this should be the case. Therefore, I'm considering this confirmation regarding:
 
-I'm feeling pretty comfortable that I have the information and practical experience now to go ahead and start selling off the M1 Finance account to eventually close it down; reduce the paperwork and level of effort needed for publishing each of these posts.
+- choose your allocation and stick with it for as long as it makes sense;
+- buying what's down (either value, portfolio allocation, or both), which requires having more than one security in the portfolio;
+- dollar-cost averaging, rebalancing, or both;
+- hold securities that are not 100 percent correlated; and
+- time to recover can be reduced when the previous are in place.
+
+## Accounts at my new employer
+
+I managed to add the HSA and 401k for my new employer to [Personal Capital](https://www.personalcapital.com). The HSA doesn't have a balance yet and I'm hoping, once it does, it will actually show as well; currently displaying an error.
 
 ## Closing out M1 Finance
 
@@ -32,51 +40,62 @@ Odd as it may sound, I’m going to start contributing to the M1 Finance account
 
 After looking at it, and seeing how buying the dip has been somewhat helpful over these last few paychecks, there are a couple of realizations I've come to.
 
-The idea of tax-loss harvesting is beyond my scope of control and understanding to the point where I don't want to touch selling anything that's down while I'm still in accumulation mode; wash sale rules and guidance are just too strange (see [Investopedia Tax-Loss Harvesting article](https://www.investopedia.com/articles/taxes/08/tax-loss-harvesting.asp). The other piece of this is seeing the possibility of shortening the affects of a drawdown by continuing to purchase and reinvesting dividends.
+First, the hope is, through continued contributions, I'll be able to shorten the drawdown duration for the securities in the account. Second, the idea of tax-loss harvesting is beyond my scope of control and understanding to the point I don't want to touch selling anything that's down while I'm still in accumulation mode; wash sale rules and guidance are too strange (see [Investopedia Tax-Loss Harvesting article](https://www.investopedia.com/articles/taxes/08/tax-loss-harvesting.asp)).
 
 So, here's the plan, well, here's the setup.
 
-I have the main Pie with four Slices, which are each Pies; potentially confusing, but that's how [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) works. One Slice is for the [FI Experiments](#fi-exeriments), again, this will be the last article with that section for now. The second and third slice were for longer-term future expenses (using the Mark 1 [asset allocation](/experiences/finances/investment-policy/#asset-allocation)); specifically insurance deductibles (see [The Foo by The Money Guy Show](/examinations/money-guy-foo/)) and electronics because I only tap insurance deductibles every 5 to 7 years and purchase electronics at roughly the same time-scale. The fourth Slice was using the Mark 0 asset allocation to save toward [van-life](/experiences/van-life/) (most likely 5 to 10 years out as well). Initially each Slice was 25 percent of the base Pie and I would contribute money to each Slice individually.
+The main M1 Finance Pie has 4 slices, which are Pies as well (see [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) on how it works):
 
-The problem I ran into was that throwing money at M1 Finance was causing the portfolio to get out of balance related to negative correlation and alternative asset classes; at least compared to where I want to be right now. Further, when I had my taxes done, it was one more statement I needed to wait on, there was also a correction required even though it didn't change the outcome of my taxes. Finally, it's one more account for me to check every paycheck.
+1. [FI Experiments](#fi-exeriments) is a Pie for tracking the various asset allocations for testing purposes. This will be the last post with those in there as I believe I've learned what I can from that experiment.
+2. The initial purpose for this Pie was a way to save for purchases that are on a 5 to 7 year rotation; I have since changed my mental model around that, so, that's why I stopped contributing. It uses the Mark 1 asset allocation.
+3. The initial purpose of the third Pie was to save up for insurance deductibles per [The Financial Order of Operations](/examinations/money-guy-foo/); again, I've changed my mental model and the cash portion of my portfolio should cover this effectively now. It uses the Mark 1 asset allocation.
+4. The initial purpose of the fourth Pie was to save up for [van-life](/experiences/van-life/), which is a long-term goal (over 7 years); therefore, it uses the Mark 0 asset allocation.
 
-I already changed the target percent for the FI Experiments Slice to be 1 percent of the main Pie, changed the percent for the insurance deductibles and electronics Slices to be 2 percent each, and I set the van-life Slice to be 95 percent. After that change, all of these Slices are far out of balance.
+Instead of contributing to the main Pie to have the money distributed tot he sub-Pies based on the percent allocation. In the beginning of my investing journey I wanted to be able to earmark money for specific purposes and this seemed like a logical way of doing it; now I'm starting to think of the securities in a more generic sense, which renders this approach useless. Further, as I was saving up for all these future purposes it was difficult for me to keep the portfolio in balance; for example, the value of the negative correlation assets is still high for where I want to be despite not putting more money into Pies with those securities.
+
+In the main Pie I changed the FI Experiments Slice to be 1 percent of the main Pie, which means it should take a moment until future contributions go into that pie because it currently occupies 5 percent of the main Pie.
+
+I changed the second and third Slices to be 2 percent each. The electronics Slice currently occupies around 10 percent of the main Pie and the insurance deductibles Slice occupies around 60 percent of the main Pie.
+
+I changed the van-life Slice to be the remaining 95 percent of the main Pie; currently occupying around 25 percent. This means future contributions will start by going this Slice until it reaches around 95 percent, which should keep us from getting out of balance in the negative correlation assets.
 
 Now, here's the plan.
 
-I’ve added the multi-factor fund to my equal equities Pie that was 34 percent total stock market and 66 percent extended market. Now it’s 60-30-10 in total stock market, extended market, and multi-factor, respectively. Changing it at the Pie level means every Pie that has it as a Slice was updated as well; convenient that. 
+I updated the Mark 1 Pie to include the multi-factor fund and changed the allocation described in the [Recalibrating the portfolio (again) section](#recalibrating-the-portfolio-again); 40-33-27 for the extended market, total market, and multi-factor fund respectively. (Note: Changing the Pie itself means anywhere the Mark 1 Pie is being used was updated; convenient that.) I updated all the other Pies to reduce the non-equities Pie to 1 percent and raised the equities Pie as needed to get the containing Pie to 100 percent.
 
-When I do my regular contributions I’ll send the money to M1. Because the other three slices are way over their targets, no money will go there; going to the one farthest below it’s target instead—the van-life Slice. Further, since the multi-factor fund is also below its target it’ll be filled up first. (Dividends will be reinvested into the main Pie in the same manner as regular contributions.)
+I sold the commodity funds, which are part of the alternatives (low-correlation) listed above; they were up around 30 percent when I sold. As the other securities become positive, I plan on selling them. When you remove a Slice in M1 Finance the cash is reinvested in the rest of the Pie; this is not want I want to do. 
 
-When I buy the dip, it’ll most likely go to the M1 account but toward a specific Slice because, as of this writing, I’m less than one percent too low in the total stock market fund and [the guidelines](/experiences/finances/personal-budget/#spending-savings) suggest that I shouldn’t do something that causes the portfolio to go farther out of balance.
+Instead, what I do is reduce the allocation of the Slice to 1 percent, sell the Slice for its current value. If the security goes up or down between trading days, the value should be near zero, at which point I remove it from the Pie and let the pennies reinvest. It feels clunky, but I don't know a way to say, "M1 Finance, please sell this and don't reinvest it in this Pie." This mainly impacts folks still in accumulation mode, I think. Anyway, I want this cash to end up in the settlement account to choose what I want to do with it later.
 
-This should solve the issue of too much going toward the alternatives and negative correlation securities while I’m trying to be the Mark 0 asset allocation.
+Any cash in the M1 Finance settlement account will be used to purchase the main Pie; not taken out of M1 Finance until I'm ready to close out the account:
 
-I’m going to sell funds as they reach a positive return state; either shifting the cash elsewhere or putting it into the main Pie (or a slice within that pie.
+1. contributions,
+2. dividends, and
+3. the sale of other securities.
 
-For example, the commodity funds are up over 30 percent at the moment. I’ll sell those after capturing the FI Experiment data for this post. The gains should be a low dollar amount, so, the long-term will be at a 0 percent tax bracket while the long-term will be treated like regular income.
+I'm still debating on what this will look like moving forward for the contributions aspect.
+
+Will I do all contributions to M1 Finance or a percent of the total. When I buy the dip, will it go to M1 Finance or not. And so on. Regardless, part of the reason for doing it this way is because the total cost basis in the M1 Finance account is lower than anywhere else, which means it should rebalance, adjust, and recover sooner compared to the cost basis.
 
 We can’t avoid making mistakes or taking losses entirely and I’m glad to be doing it now while the dollar amounts aren’t substantial compared to my total lifestyle cost or cash flow ability.
 
 ## Rolling over the 401k
 
-Still holding the 401k with my previous employer. The S&P 500 fund is a bit, specifically enough to counteract the drawdown in the other two funds. Instead of selling them, I decided to sell those gains and buy into the other two funds.
+Continuing to hold the 401k with my previous employer. The S&P 500 fund was up and I used part of those gains to buy the other funds; roughly 2,000 USD of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds.
 
-So, I'm selling roughly 2,000 USD of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds.
+The rationale for this is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here; that's the hypothesis and we'll see how it plays out.
 
-The rationale for this is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here.
-
-Because as individual shares increase in value, I will have more of them, which, in theory, means I won't have to wait for the market rebound as far as I would have otherwise.
+If I only roll the funds over and put it all in one security the portfolio will be out of balance. What I plan to do is to buy securities in a way that the Traditional IRA becomes a microcosm of the target allocation; including an S&P 500 fund.
 
 ## Recalibrating the portfolio (again)
 
-I recently made the time to figure out [Morningstar's ticker tool](https://www.morningstar.com/funds/xnas/vtsax/portfolio) and updated the spreadsheet to show me my equities in the grid of small-, mid-, and large-cap compared to value, growth, and blend.
+Recently made the time to figure out [Morningstar's ticker tool](https://www.morningstar.com/funds/xnas/vtsax/portfolio) and updated the spreadsheet to show me my equities in the grid of small-, mid-, and large-cap compared to value, growth, and blend.
 
-This has led me to adjust the targets for each of the individual funds I'm invested in.
+This has led me to adjust the targets for each of the individual funds.
 
-I appreciate Personal Capital's grid-view, however, they sub-divide for alternatives and Real Estate Investment Trusts in a way that wasn't giving me the picture I wanted.
+I appreciate Personal Capital's grid-view, however, they sub-divide for alternatives and Real Estate in a way that wasn't giving me the picture in a way that helps my brain.
 
-Now, instead of relying on Portfolio Visualizer, that seems to only look at small-, mid-, and large-cap, without adding in value, growth, and blend; or, relying on Personal Capital's grid-view that seems to bucket things in a way my brain isn't calibrated to, I can use the Morningstar grid data for each individual security. 
+Now, instead of relying on Portfolio Visualizer, that seems limited to small-, mid-, and large-cap, without adding value, growth, and blend; or, relying on Personal Capital's grid-view that has more buckets than I want. Instead, I can use the Morningstar grid data for each security. 
 
 My current, personal blended portfolio looks something like this for targets:
 
@@ -90,7 +109,9 @@ My current, personal blended portfolio looks something like this for targets:
 - Small-cap growth: Roughly 7 percent.
 - Large-cap bland: Roughly 15 percent.
 
-The previous list includes the 401k from my previous employer, which I'm planning to roll into my Traditional Individual Retirement Account; selling off two funds to zero. The mix after doing the roll over will look something like this:
+The previous list includes the 401k from my previous employer, which I'm planning to roll into my Traditional Individual Retirement Account. I'll sell everything from all three funds, however, my current employer will be picking up the S&P 500 fund, so, it's not going away entirely. 
+
+The mix after doing the rollover will look something like this:
 
 - Large-cap value: Roughly 8 percent.
 - Large-cap growth: Roughly 15 percent.
@@ -100,7 +121,7 @@ The previous list includes the 401k from my previous employer, which I'm plannin
 - Mid-cap blend: Roughly 12 percent (changed, lower).
 - Small-cap value: Roughly 13 percent.
 - Small-cap growth: Roughly 7 percent.
-- Large-cap bland: Roughly 15 percent.
+- Small-cap blend: Roughly 15 percent.
 
 Right now, I'm severely underweight in the multi-factor fund and overweight in the extended market fund.
 
