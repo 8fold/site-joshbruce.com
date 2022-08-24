@@ -127,6 +127,18 @@ The mix after doing the rollover will look something like this:
 - Small-cap growth: Roughly 7 percent.
 - Small-cap blend: Roughly 15 percent.
 
+For a basis of comparison, the following is for the Vanguard S&P 500 fund, which is quite similar to other, similar index funds:
+
+- Large-cap value: Roughly 18 percent.
+- Large-cap growth: Roughly 36 percent.
+- Large-cap blend: Roughly 31 percent (changed, lower).
+- Mid-cap value: Roughly 4 percent.
+- Mid-cap growth: Roughly 3 percent (changed, higher).
+- Mid-cap blend: Roughly 9 percent (changed, lower).
+- Small-cap value: Roughly 0 percent.
+- Small-cap growth: Roughly 0 percent.
+- Small-cap blend: Roughly 0 percent.
+
 Right now, I'm severely underweight in the multi-factor fund and overweight in the extended market fund.
 
 I'll continue buying the multi-factor fund via M1 Finance and my recalibrated total United States equities Pie; while still following the plan laid out in the [Closing out M1 Finance section](#closing-out-m1-finance) and my [investment policy](/experiences/finances/investment-policy/). 
