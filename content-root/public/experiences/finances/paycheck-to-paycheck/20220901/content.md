@@ -25,10 +25,12 @@ Compare these control accounts to the ones with continued contributions and reba
 The investment literature says this should be the case. Therefore, I'm considering this confirmation regarding:
 
 - choose your allocation and stick with it for as long as it makes sense;
-- buying what's down (either value, portfolio allocation, or both), which requires having more than one security in the portfolio;
-- dollar-cost averaging, rebalancing, or both;
+- buy what's down (either value, portfolio allocation, or both), which requires having more than one security in the portfolio;
+- dollar-cost average, rebalance, or both;
 - hold securities that are not 100 percent correlated; and
 - time to recover can be reduced when the previous are in place.
+
+For buying the dip this time, I went with the total stock market fund in the primary taxable brokerage account. At the fund level, the portfolio is overweight in the extended market fund (see [Recalibrating portfolio](#recalibrating-the portfolio-again)), so, decided against buying of it. I’m underweight in the multi-factor fund, but it’s only down 9 percent (not 10 or more), which, according to the [buying a dip](/experiences/finances/personal-budget/#spending-savings) protocol means I can’t buy more of it with this money. So, by process of elimination, the total stock market fund wins out.
 
 ## Accounts at my new employer
 
@@ -61,7 +63,7 @@ I changed the van-life Slice to be the remaining 95 percent of the main Pie; cur
 
 Now, here's the plan.
 
-I updated the Mark 1 Pie to include the multi-factor fund and changed the allocation described in the [Recalibrating the portfolio (again) section](#recalibrating-the-portfolio-again); 40-33-27 for the extended market, total market, and multi-factor fund respectively. (Note: Changing the Pie itself means anywhere the Mark 1 Pie is used was updated; convenient that.) I updated all the other Pies to reduce the non-equities Pie to 1 percent and raised the equities Pie as needed to get the containing Pie to 100 percent.
+I updated the Mark 1 Pie to include the multi-factor fund and changed the allocation described in the [Recalibrating the portfolio (again) section](#recalibrating-the-portfolio-again); 40-33-27 for the extended market, total market, and multi-factor fund respectively. (Note: Changing the Pie itself means anywhere the Mark 1 Pie is used was updated; convenient that.) I updated all the other Pies to reduce the non-equities Slice to 1 percent and raised the equities Slice as needed to get the containing Pie to 100 percent.
 
 I sold the commodity funds, which are part of the alternatives (low-correlation) listed above; they were up around 30 percent when I sold. As the other securities become positive, I plan on selling them. When you remove a Slice in M1 Finance the cash is reinvested in the rest of the Pie; this is not want I want to do. 
 
@@ -89,7 +91,7 @@ Continuing to hold the 401k with my previous employer. The S&P 500 fund was up a
 
 The rationale for this is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here; that's the hypothesis and we'll see how it plays out.
 
-If I only roll the funds over and put it all in one security the portfolio will be out of balance. What I plan to do is buy securities in a way that the Traditional IRA becomes a microcosm of the target allocation; including an S&P 500 fund, which has only existed in the 401k and helps me achieve the desired spread for equities.
+If I only roll the funds over and put it all in one security the portfolio will be out of balance. What I plan to do is buy securities in a way that the Traditional IRA becomes a microcosm of the target allocation; including an S&P 500 fund, which has only existed in the 401k up to this point and helps me achieve the desired spread for equities.
 
 ## Recalibrating the portfolio (again)
 
@@ -97,51 +99,49 @@ Recently made the time to figure out [Morningstar's ticker tool](https://www.mor
 
 This has led me to adjust the targets for each of the individual funds.
 
-I appreciate Personal Capital's grid-view, however, they sub-divide for alternatives and Real Estate in a way that wasn't giving me the picture in a way that helps my brain.
-
-Now, I don’t need to rely on Portfolio Visualizer, that seems limited to small-, mid-, and large-cap, without adding value, growth, and blend or Personal Capital's grid-view that has more buckets than I want. Instead, I can use the Morningstar grid data for each security and let the spreadsheet build it. 
+With this move, I don’t need to rely on Portfolio Visualizer, which seems limited to small-, mid-, and large-cap, without adding value, growth, and blend or Personal Capital's grid-view that has more buckets than I want. Instead, I can use the Morningstar grid data for each security and let the spreadsheet build the view for me. 
 
 My current, personal blended portfolio looks something like this for targets:
 
 - Large-cap value: Roughly 8 percent.
-- Large-cap growth: Roughly 15 percent.
 - Large-cap blend: Roughly 12 percent.
+- Large-cap growth: Roughly 15 percent.
 - Mid-cap value: Roughly 8 percent.
-- Mid-cap growth: Roughly 8 percent.
 - Mid-cap blend: Roughly 14 percent.
+- Mid-cap growth: Roughly 8 percent.
 - Small-cap value: Roughly 13 percent.
-- Small-cap growth: Roughly 7 percent.
 - Large-cap bland: Roughly 15 percent.
+- Small-cap growth: Roughly 7 percent.
 
-The previous list includes the 401k from my previous employer, which I'm planning to roll into my Traditional Individual Retirement Account. I'll sell everything from all three funds, however, only two (the small- and mid-cap funds will stay gone). 
+The list includes the 401k from my previous employer, which I'm planning to roll into my Traditional IRA. I'll sell everything from all three funds, however, only two (the small- and mid-cap funds will stay gone). 
 
 The mix after doing the rollover will look something like this:
 
 - Large-cap value: Roughly 8 percent.
-- Large-cap growth: Roughly 15 percent.
 - Large-cap blend: Roughly 11 percent (changed, lower).
+- Large-cap growth: Roughly 15 percent.
 - Mid-cap value: Roughly 8 percent.
-- Mid-cap growth: Roughly 9 percent (changed, higher).
 - Mid-cap blend: Roughly 12 percent (changed, lower).
+- Mid-cap growth: Roughly 9 percent (changed, higher).
 - Small-cap value: Roughly 13 percent.
-- Small-cap growth: Roughly 7 percent.
 - Small-cap blend: Roughly 15 percent.
+- Small-cap growth: Roughly 7 percent.
 
 For a basis of comparison, the following is for the Vanguard S&P 500 fund, which is quite similar to other, similar index funds:
 
 - Large-cap value: Roughly 18 percent.
+- Large-cap blend: Roughly 31 percent.
 - Large-cap growth: Roughly 36 percent.
-- Large-cap blend: Roughly 31 percent (changed, lower).
 - Mid-cap value: Roughly 4 percent.
-- Mid-cap growth: Roughly 3 percent (changed, higher).
-- Mid-cap blend: Roughly 9 percent (changed, lower).
+- Mid-cap growth: Roughly 3 percent.
+- Mid-cap blend: Roughly 9 percent.
 - Small-cap value: Roughly 0 percent.
 - Small-cap growth: Roughly 0 percent.
 - Small-cap blend: Roughly 0 percent.
 
-Right now, I'm severely underweight in the multi-factor fund and overweight in the extended market fund.
+(To read more on calculating the matrix, check out: [Calculate portfolio matrix](/essays-and-editorials/finances/calculate-portfolio-matrix/).)
 
-I'll continue buying the multi-factor fund via M1 Finance and my recalibrated total United States equities Pie; while still following the plan laid out in the [Closing out M1 Finance section](#closing-out-m1-finance) and my [investment policy](/experiences/finances/investment-policy/). 
+Right now, I'm severely underweight in the multi-factor fund and slightly overweight in the extended market fund.
 
 Note: Even though I’m shifting the targets for the funds in a way that makes the individual securities out of balance, the macro-allocations are still in balance.
 
