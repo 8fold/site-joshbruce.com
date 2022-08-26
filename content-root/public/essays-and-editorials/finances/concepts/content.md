@@ -4,6 +4,20 @@
 
 These are various concepts I’m picking up from various resources, mainly situations where I’ve lived it, heard multiple resources discus, or, more often, both.
 
+- [Saving isn’t investing](#saving-isnt-investing)
+- [The three principles of investing](#the-three-principles-of-investing)
+- [Investing, speculating, and gambling aren’t the same](#investing-speculating-and-gambling-arent-the-same)
+- [The 10 questions](#the-10-questions)
+- [Net worth isn’t the same as cash on hand](#net-worth-isnt-the-same-as-cash-on-hand)
+- [Accumulation, drawdown, and rebalancing](#accumulation-drawdown-and-rebalancing)
+- [Owning equity shares versus funds](#owning-equity-shares-versus-funds)
+- [Cost basis, capital gains (or losses), and methods](#cost-basis-capital-gains-or-losses-and-methods)
+- [Bulls, bears, and corrections](#bulls-bears-and-corrections)
+- [Risk tolerance and risk capacity](#risk-tolerance-and-risk-capacity)
+- [Being rich and looking rich aren’t the same](#being-rich-and-looking-rich-arent-the-same)
+- [Double-entry bookkeeping](#double-entry-bookkeeping)
+- [Glossary](#glossary)
+
 ## Saving isn’t investing
 
 The biggest difference between saving and investing, as I’ve taken to using the terms, is saving involves currency while investing involves conversion to some other asset; specifically an asset that generates income and is believed to increase or hold its original value (cost basis) over time. Arguably, investing is a type of saving.
