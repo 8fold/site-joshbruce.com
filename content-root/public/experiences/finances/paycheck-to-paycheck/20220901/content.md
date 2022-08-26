@@ -34,6 +34,8 @@ The investment literature says this should be the case and my personal experienc
 
 For buying the dip this time, I went with the total stock market fund in the primary taxable brokerage account. At the fund level of the portfolio, I’m overweight in the extended market fund (see [Recalibrating portfolio](#recalibrating-the portfolio-again)), so, decided against buying the extended market fund. I’m underweight in the multi-factor fund, but it’s only down 9 percent (not 10 or more), which, according to the [buying a dip](/experiences/finances/personal-budget/#spending-savings) protocol means I can’t buy more of it with this money. So, by process of elimination, the total stock market fund wins out; automated decision making.
 
+Note: I also received the final check from my former employer.
+
 ## Accounts at my new employer
 
 I managed to link my 401k to [Personal Capital](https://www.personalcapital.com) and the balance is showing. 
