@@ -13,6 +13,7 @@ At the same time, this will be a curated examination and not a catch-all for *ev
 ## Books
 
 - [*Getting Things Done*](/examinations/getting-things-done/) by David Allen
+- [*Procrastinate on Purpose*](/examinations/procrastinate-on-purpose/) by Rory Vaden
 - [*The 7 Habits of Highly Effective People*](/examinations/the-7-habits-of-highly-effective-people/) by Stephen Covey
 
 ## Free resources
@@ -21,3 +22,4 @@ Note: Depending on how you define "free"; in some cases you'll be trading your e
 
 - [The Financial Order of Operations](/examinations/money-guy-food/)
 - [The 7 Baby Steps](/examinations/ramsey-solutions-the-7-baby-steps/)
+- [How to Multiply Your Time](/examinations/procrastinate-on-purpose/) by Rory Vaden
