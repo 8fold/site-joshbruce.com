@@ -2,50 +2,50 @@
   "experiments": [
     {
       "label": "Mark 0.0",
-      "current": "38.37",
-      "previous": "34.91",
+      "current": "38.74",
+      "previous": "40.64",
       "start": "47.71"
     },
     {
       "label": "Mark 0.2",
-      "current": "35.33",
-      "previous": "32.40",
+      "current": "35.50",
+      "previous": "37.17",
       "start": "43.83"
     },
     {
       "label": "Mark 0.4",
-      "current": "35.43",
-      "previous": "32.70",
+      "current": "35.46",
+      "previous": "37.06",
       "start": "43.74"
     },
     {
       "label": "Mark 0.6",
-      "current": "35.70",
-      "previous": "33.17",
+      "current": "35.58",
+      "previous": "37.13",
       "start": "43.54"
     },
     {
       "label": "Mark 0.8",
-      "current": "36.43",
-      "previous": "34.07",
+      "current": "36.21",
+      "previous": "37.65",
       "start": "43.36"
     },
     {
       "label": "Mark 1.0",
-      "current": "40.11",
-      "previous": "37.68",
+      "current": "39.78",
+      "previous": "41.27",
       "start": "46.87"
     },
     {
       "label": "Mark 1.1",
-      "current": "40.04",
-      "previous": "37.60",
+      "current": "39.67",
+      "previous": "41.16",
       "start": "46.76"
     },
     {
       "label": "Mark 1.2",
-      "current": "40.03",
-      "previous": "37.59",
+      "current": "39.63",
+      "previous": "41.12",
       "start": "46.73"
     }
   ]
