@@ -6,7 +6,7 @@
 
 ![Screenshot of net worth via Personal Capital from January 2021 to August 2022 showing a steady rise until January 2021 where the value plateaus until the end of July 2022 before rising dramatically in comparison](/media/paycheck-to-paycheck/net-worth-202101-202208.png)
 
-I showed an image like the one above in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau I was experiencing and how the different charts could emotionally make me respond due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
+I showed an image like the one above in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau I was experiencing and how the different charts could influence my response due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
 
 In 2022 I decided to stop contributing to the M1 Finance account, however, I'm planning on changing this up; see the [Closing out M1 Finance section](#closing-out-m1-finance). Meanwhile, every week for the past few weeks I've been [buying the dip](/experiences/finances/personal-budget/#spending-savings) in my primary taxable brokerage account and rebalancing the 401k from my previous employer; this is in addition to my regular contributions.
 
@@ -55,11 +55,11 @@ So, here's the plan, well, here's the setup.
 The main M1 Finance Pie has 4 slices, which are Pies as well (see [M1 Finance](https://help.m1.com/hc/en-us/articles/115012405467-Invest-in-a-second-Pie) on how it works):
 
 1. [FI Experiments](#fi-exeriments) is a Pie for tracking the various asset allocations for testing purposes. This will be the last post with those in there as I believe I've learned what I can from that experiment.
-2. The initial purpose for this Pie was a way to save for purchases that are on a 5 to 7 year rotation; I have since changed my mental model, so, that's one reason why I stopped contributing to M1 Finance. It uses the Mark 1 asset allocation.
-3. The initial purpose of the third Pie was to save up for insurance deductibles per [The Financial Order of Operations](/examinations/money-guy-foo/); again, I've changed my mental model and the cash portion of my portfolio should cover this effectively now. The Pie uses the Mark 1 asset allocation.
+2. The second Pie was for near-term (every 5 to 7 years) purchases, such as electronics; I’ve changed my mental model, and that's one reason I stopped contributing to M1 Finance. It uses the Mark 1 asset allocation.
+3. The initial purpose of the third Pie was to save up for insurance deductibles per [The Financial Order of Operations](/examinations/money-guy-foo/); again, I've changed my mental model and the cash portion of my portfolio should cover this now. The Pie uses the Mark 1 asset allocation.
 4. The initial purpose of the fourth Pie was to save up for [van-life](/experiences/van-life/), which is a long-term goal (over 7 years); therefore, it uses the Mark 0 asset allocation.
 
-Instead of contributing to the main Pie, I would choose a sub-Pie and buy it. In the beginning of my investing journey I wanted to be able to earmark money for specific purposes and this seemed like a logical way of doing it; now I'm starting to think of the securities in a more generic way, which renders this approach useless. Further, as I was saving for all these future purposes it was difficult for me to keep the portfolio in balance; for example, the value of the negative correlation assets is still high for where I want to be despite not putting more money into Pies with those securities.
+Instead of contributing to the main Pie, I would choose a sub-Pie and buy it. In the beginning of my investing journey I wanted to be able to earmark money for specific purposes and this seemed like a logical way of doing it; now I'm starting to think of the securities in a more generic way, which renders this approach obsolete. Further, as I was saving for all these future purposes it was difficult for me to keep the portfolio in balance; for example, the value of the negative correlation assets is still high for where I want to be despite not putting more money into Pies with those securities.
 
 How did I adjust things?
 
@@ -71,7 +71,7 @@ I changed the van-life Slice to be the remaining 95 percent of the main Pie; cur
 
 Now, here's the plan.
 
-I updated the Mark 1 Pie to include the multi-factor fund and changed the allocation described in the [Recalibrating the portfolio (again) section](#recalibrating-the-portfolio-again); 40-33-27 for the extended market, total market, and multi-factor fund, respectively. (Note: Changing the Pie itself means anywhere the Mark 1 Pie is used was updated; convenient that.) I updated all the other Pies to reduce the non-equities Slice to 1 percent and raised the equities Slice as needed to get the containing Pie to 100 percent.
+I updated the Mark 1 Pie to include the multi-factor fund and changed the allocation described in the [Recalibrating the portfolio (again) section](#recalibrating-the-portfolio-again); 40-33-27 for the extended market, total market, and multi-factor fund, respectively. (Note: Changing the Pie itself means anywhere the Mark 1 Pie is used was updated; convenient that.) I updated all the other Pies to reduce the non-equities Slice to 1 percent and raised the equities Slice as needed to get the Pie to 100 percent.
 
 I sold the commodity funds, which are part of the alternatives (low-correlation) listed above; they were up around 30 percent when I sold. As the other securities become positive, I plan on selling them. 
 
@@ -89,7 +89,9 @@ I'm still debating on what contributions look like moving forward.
 
 Will I do all contributions to M1 Finance or a percent of the total contribution? When I buy the dip, will it go to M1 Finance or not?
 
-It’s also worth noting that even though I have all these Pies and Slices, they all use the same underlying securities. So, even if a Pie shows a loss, I might end up in a gain situation for a holding.
+For this paycheck, I split my normal contribution between the multi-factor fund in the main taxable brokerage account and M1 Finance. When I bought the dip it went to the total stock market fund in the main taxable brokerage account.
+
+It’s worth noting that even though I have all these Pies and Slices, they use the same underlying securities. So, even if a Pie shows a loss, I might end up in a gain situation for a holding.
 
 Regardless, part of the reason for doing it this way is because the total cost basis in the M1 Finance account is lower than anywhere else, which means it should rebalance, adjust, and recover faster compared to the other accounts with higher total costs and values; smaller contributions move the needle farther.
 
@@ -97,11 +99,11 @@ We can’t avoid making mistakes, experimenting, or taking losses and I’m glad
 
 ## Rolling over the 401k
 
-Continuing to hold the 401k with my previous employer. The S&P 500 fund was up and I used part of those gains to buy the other funds; roughly 2,000 USD of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds. (From here on, I will be following the buy a dip protocol because psychologically I don’t have any feelings of regret compared to doing something more akin to a full rebalance.)
+Continuing to hold the 401k with my previous employer. The S&P 500 fund was up and I used part of those gains to buy the other funds; roughly 2,000 USD of the S&P 500 to buy 1,000 USD each of the total small- and total mid-cap index funds. (From here on, I will be following the buy a dip protocol because psychologically I don’t have any feelings of regret using the buy a dip protocol compared to doing something more akin to a full rebalance.)
 
-The rationale for continuing to selling and buying is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here; that's the hypothesis and we'll see how it plays out. I’m only hoping to reach near zero (a value closer to what I and my former employer have put in).
+The rationale for continuing to sell and buy is I've seen how much rebalancing through contributions has been helping with taxable accounts during this downturn and I believe it will continue to be helpful here; that's the hypothesis and we'll see how it plays out. I’m only hoping to reach near zero (a value closer to what I and my former employer have put in) by September or October.
 
-As for the rollover itself, if I only purchase one security, the portfolio will be out of balance. Further, the Traditional IRA will be marinating until around 2030. Finally, I’m not looking to make future contributions to the account. Therefore, the Traditional IRA will use the Mark 0 asset allocation. While this may put the rest of the portfolio out of balance, it won’t be as out of balance had I only bought one security and I shouldn’t feel a need to watch it very closely, if at all.
+As for the rollover itself, if I only purchase one security, the portfolio will be out of balance. Further, the Traditional IRA will be marinating until around 2030. Finally, I’m not looking to make future, regular contributions to the account. Therefore, the Traditional IRA will use the Mark 0 asset allocation. While this may put the rest of the portfolio out of balance, it won’t be as out of balance had I only bought one security and I shouldn’t feel a need to watch it very closely, if at all.
 
 ## Recalibrating the portfolio (again)
 
@@ -111,7 +113,7 @@ This has led me to adjust the targets for each of the individual funds.
 
 With this move, I don’t need to rely on Portfolio Visualizer, which seems limited to small-, mid-, and large-cap, without adding value, growth, and blend or Personal Capital's grid-view that has more buckets than I want. Instead, I can use the Morningstar grid data for each security and let the spreadsheet build the view for me. 
 
-My current, personal blended portfolio looks something like this for targets:
+My current, personal blended portfolio looks something like this for where it will settle based on targets for the individual funds:
 
 - Large-cap value: Roughly 8 percent.
 - Large-cap blend: Roughly 12 percent.
@@ -120,7 +122,7 @@ My current, personal blended portfolio looks something like this for targets:
 - Mid-cap blend: Roughly 14 percent.
 - Mid-cap growth: Roughly 8 percent.
 - Small-cap value: Roughly 13 percent.
-- Large-cap bland: Roughly 15 percent.
+- Small-cap blend: Roughly 15 percent.
 - Small-cap growth: Roughly 7 percent.
 
 The list includes the 401k from my previous employer, which I'm planning to roll into my Traditional IRA. I'll sell everything from all three funds, however, only two (the small- and mid-cap funds will stay gone). 
@@ -151,8 +153,6 @@ For a basis of comparison, the following is for the Vanguard S&P 500 fund, which
 
 (To read more on calculating the matrix, check out: [Calculate portfolio matrix](/essays-and-editorials/finances/calculate-portfolio-matrix/).)
 
-Right now, I'm severely underweight in the multi-factor fund and slightly overweight in the extended market fund.
-
 Note: Even though I’m shifting the targets for the funds in a way that makes the individual securities out of balance, the macro-allocations are still in balance.
 
 Feel a bit like [Tony Stark](https://youtu.be/y0brSA1cyzw) at the moment:
@@ -174,7 +174,7 @@ I’ve adjusted the setup to use the Morningstar data for portfolio spread withi
 
 This is going to save me a fair amount of time. This improvement, coupled with this being the last entry with the [FI Experiments section](#fi-experiments) should reduce update time by a few minutes per post at the least.
 
-I’m also considering displaying the breakdown of value, growth, and blend for each market-cap weight in the lead-in.
+I’m also considering displaying the breakdown of value, growth, and blend for each market-cap weight in the lead-in data.
 
 ## FI experiments
 
