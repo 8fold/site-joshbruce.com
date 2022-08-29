@@ -106,4 +106,17 @@ The top of the funnel is priority solution. The bottom of the funnel is priority
 
 Eliminate is giving yourself permission to ignore; @there is nothing so useless as doing efficiently that which shouldn’t be done at all” (Peter Drucker). Saying “yes” is saying “no” to an infinite number of other things. Saying “no” is hard, but necessary and Vaden gives examples of saying “no.”
 
-Automate is the permission to invest.
+Automate is the permission to invest. 
+
+First group (not likely to be wealthy, governed by impulse): Do I want this coffee? Yes. What do I have to do to get the coffee? 
+
+Second group (most likely to comfortable, but not wealthy): Do I want this coffee? Yes. Do I have the money? 
+
+Third group (most likely to be wealthy over time): Do I want this coffee? Yes. If I spend this money on coffee, it’s money I won’t be spending somewhere else (investing)? 
+
+Is this 5 USD coffee worth 50 USD to me 30 years from now; presumes 8 percent compounding interest rate.
+
+Is the benefit now worth more than the potential benefit later, if I make a different choice? Delayed gratification.
+
+
+
