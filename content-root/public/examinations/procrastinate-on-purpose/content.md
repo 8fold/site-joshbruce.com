@@ -49,10 +49,5 @@ The second chapter begins with the parable of the professor with a jar filled wi
 
 Vaden poses a hypothetical day in which the day was 100 percent efficient; all water. Eventually what you’d find is that the jar of your day would eventually overflow. Why? Because there is more to do than you ever could do. This can lead to the idea that if I can move faster, then I can fit this all in; what Vaden calls one-dimensional, linear thinking. Vaden points to the semantics of the phrase “time management” as part of the reason for getting stuck in the one-dimensional, linear way of thinking.
 
-It implies or suggests you should manage your time to fit the most stuff in. But, Caden mentions that time management isn’t possible; only self-management. You can’t start, stop, speed up, or slow down time. You can go faster or slower, but time progresses at the same rate regardless. You can, however, choose what you focus on by managing your self. Once you realize this, you are ready to
+It implies or suggests you should manage your time to fit the most stuff in. But, Vaden mentions that time management isn’t possible; only self-management. You can’t start, stop, speed up, or slow down time. You can go faster or slower, but time progresses at the same rate regardless. You can, however, choose what you focus on by managing your self. Once you realize this, you are ready to
 prioritize your time.
-
-
-
-
-
