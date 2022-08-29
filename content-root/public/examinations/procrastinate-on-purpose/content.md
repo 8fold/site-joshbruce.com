@@ -119,4 +119,3 @@ Is this 5 USD coffee worth 50 USD to me 30 years from now; presumes 8 percent co
 Is the benefit now worth more than the potential benefit later, if I make a different choice? Delayed gratification.
 
 
-
