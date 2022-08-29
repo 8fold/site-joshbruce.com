@@ -2,6 +2,8 @@
 
 A super short summary is available as a [TEDx Talk](https://youtu.be/y2X7c9TUQJ8).
 
+Each chapter ends with a recap of the major points made during the chapter:
+
 1. Priority dilution is the new procrastination; it often effects the overachievers.
 2. Many common catchphrases we hear about time management aren’t shared by true multipliers.
 3. Telling people how busy you are is a self-defeating pattern that erodes your feeling of ownership and control, thwarting your creativity to find solutions to your challenges.
@@ -10,9 +12,15 @@ A super short summary is available as a [TEDx Talk](https://youtu.be/y2X7c9TUQJ8
 6. Results are what matter; if you focus on results without limiting your ideas on how to create those results, you’ll come up with amazing results.
 7. The average person spends 1 hour per day looking for stuff.
 8. The average person over 65 spends 48 hours per week watching television.
-9. Managing time is one-dimensional thinking. Managing priority is two-dimensional thinking. 
+9. Managing time is one-dimensional thinking. Managing priority is two-dimensional thinking. There is no such thing as time-management, only self-management.
 10. There is always more to do than you have time for. 
 11. Prioritizing is building the necessary skill of moving one task in front of all the others. However, prioritizing doesn’t create more time, instead, we borrow from one area to apply to another.
+12. Multipliers use three-dimensional thinking to manage time: urgency, importance, and significance.
+13. The way to deal with fires isn’t to put them out faster, it’s to get ahead of them so you don’t have the fire in the first place.
+14. “Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away” (Antoine de Saint-Exupéry).
+15. The most immediate area of improvement when it comes to managing our time is taking inventory of the things we can simply stop doing.
+16. Most of us are afraid to say, “no.”
+17. You are always saying “no” to something. You aren’t doing anyone any favors by saying yes to that which you want to say “no.” You can say “No” and still be nice.
 
 There is no such thing as time management, only self-management. Time and urgency gives us the tool of prioritization, what Vaden refers to as two-dimensional thinking. The limit of prioritizing things doesn't do anything to create more time and does nothing to help you accomplish the other items on the todo list.
 
@@ -63,6 +71,39 @@ Unfortunately, shifting priorities consistently keeps us from finding the ever e
 
 There has to something you’re missing. There has to be a better way. And there is.
 
+Multiply your time.
 
+Is it better to be 50 percent done with 100 percent of the things? Or 100 percent done with one percent of the things? 
 
+Enter three-dimensional self-management. Multipliers add the additional calculation of significance: `x + (y * z)`
 
+X is urgency, answering: How soon does this matter? Y is importance, answer: How much does this matter? Z is significance, answering: How long will this matter?
+
+Emphasizing importance and significance helps to offset or reduce a false sense of urgency. Just because something is urgent, doesn’t mean it’s important or significant. This emphasis on urgency is where priority dilution comes from.
+
+Imagine working in a call center. The urgent thing is answering calls and delivering great customer service. A significant thing might be to create and deliver training to help improve the customer service delivered by others. Vaden points out he’s not saying one is more important than the other or which one you should choose regardless of other factors. 
+
+Choosing how to use your time is not peddle logical, it’s emotional. Managing emotions is another part of self-management. Multipliers give themselves permission; specifically five permissions that multipliers to multiply their time.
+
+## The focus funnel
+
+At the time are all the tasks coming into your purview. A multiplier asks the following in this order:
+
+1. Can I eliminate this?
+    - Yes: Remove it.
+    - No: Next question.
+2. Can I automate this?
+    - Yes: Automate it.
+    - No: Next question.
+3. Can I delegate this?
+    - Yes: Delegate it.
+    - No: Next question.
+4. Task must be done and must be done by you. Can this wait until later?
+    - No: What Vaden calls “concentrate.”
+    - Yes: What Vaden calls “procrastinate on purpose.” Return task to top of funnel.
+
+The top of the funnel is priority solution. The bottom of the funnel is priority concentrate.
+
+Eliminate is giving yourself permission to ignore; @there is nothing so useless as doing efficiently that which shouldn’t be done at all” (Peter Drucker). Saying “yes” is saying “no” to an infinite number of other things. Saying “no” is hard, but necessary and Vaden gives examples of saying “no.”
+
+Automate is the permission to invest.
