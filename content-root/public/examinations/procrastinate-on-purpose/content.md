@@ -10,6 +10,9 @@ A super short summary is available as a [TEDx Talk](https://youtu.be/y2X7c9TUQJ8
 6. Results are what matter; if you focus on results without limiting your ideas on how to create those results, you’ll come up with amazing results.
 7. The average person spends 1 hour per day looking for stuff.
 8. The average person over 65 spends 48 hours per week watching television.
+9. Managing time is one-dimensional thinking. Managing priority is two-dimensional thinking. 
+10. There is always more to do than you have time for. 
+11. Prioritizing is building the necessary skill of moving one task in front of all the others. However, prioritizing doesn’t create more time, instead, we borrow from one area to apply to another.
 
 There is no such thing as time management, only self-management. Time and urgency gives us the tool of prioritization, what Vaden refers to as two-dimensional thinking. The limit of prioritizing things doesn't do anything to create more time and does nothing to help you accomplish the other items on the todo list.
 
@@ -52,6 +55,13 @@ Vaden poses a hypothetical day in which the day was 100 percent efficient; all w
 It implies or suggests you should manage your time to fit the most stuff in. But, Caden mentions that time management isn’t possible; only self-management. You can’t start, stop, speed up, or slow down time. You can go faster or slower, but time progresses at the same rate regardless. You can, however, choose what you focus on by managing your self. Once you realize this, you are ready to
 prioritize your time.
 
+This introduction leads to what is referred to as two-dimensional time management with the concept of the time management matrix. On one axis is important and not important and, on the second axis, is urgent and not urgent. Priority.
+
+This is followed by a description of priority dilution, which is the mantra: When everything is a priority then nothing is. Too many urgent things that are also important. The power of prioritizing is putting one task in front of another. 
+
+Unfortunately, shifting priorities consistently keeps us from finding the ever elusive balance we hear so much about. 
+
+There has to something you’re missing. There has to be a better way. And there is.
 
 
 
