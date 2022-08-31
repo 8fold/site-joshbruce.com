@@ -4,6 +4,8 @@
 
 {!! data !!}
 
+Note: For the above data I'm only including the vested amount from the 401k until the total amount is vested. So, there will be a spike in a couple of years.
+
 ![Screenshot of net worth via Personal Capital from January 2021 to August 2022 showing a steady rise until January 2021 where the value plateaus until the end of July 2022 before rising dramatically in comparison](/media/paycheck-to-paycheck/net-worth-202101-202208.png)
 
 I showed an image like the one above in the [June 15th, 2022 paycheck](/experiences/finances/paycheck-to-paycheck/20220615/). In that write up it was to illustrate the plateau I was experiencing and how the different charts could influence my response due to volatility. This time I'm showing it more as a way of illustrating a benefit to rebalancing (selling high and buying low) and buying what is down the farthest (through dollar cost averaging contributions and extra contributions, if possible).
@@ -34,7 +36,7 @@ The investment literature says this should be the case and my personal experienc
 
 For buying the dip this time, I went with the total stock market fund in the primary taxable brokerage account. At the fund level of the portfolio, I’m overweight in the extended market fund (see [Recalibrating portfolio](#recalibrating-the portfolio-again)), so, decided against buying the extended market fund. I’m underweight in the multi-factor fund, but it’s only down 9 percent (not 10 or more), which, according to the [buying a dip](/experiences/finances/personal-budget/#spending-savings) protocol means I can’t buy more of it with this money. So, by process of elimination, the total stock market fund wins out; automated decision making.
 
-Note: I also received the final check from my former employer.
+Note: I also received the final check from my former employer. The multi-factor fund was down around 10 percent on Wednesday, so, when I buy the dip on Thursday, it'll be to the multi-factor fund.
 
 ## Accounts at my new employer
 
