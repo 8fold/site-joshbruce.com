@@ -20,25 +20,36 @@ These are various concepts I’m picking up from various resources, mainly situa
 
 ## Saving isn’t investing
 
-The biggest difference between saving and investing, as I’ve taken to using the terms, is saving involves currency while investing involves conversion to some other asset; specifically an asset that generates income and is believed to increase or hold its original value (cost basis) over time. Arguably, investing is a type of saving.
+The biggest difference between saving and investing, as I’ve taken to using the terms, is saving involves currency while investing involves converting currency to a different asset; specifically an asset that generates income and is believed to increase or maintain its original value (cost basis) over time. Arguably, investing is a type of saving.
 
 Cash is a liquid asset traded directly for goods and services.
 
-In the case of the [.United States Dollar](USD), the Federal Reserve is the only sanctioned entity that can create or destroy it. The USD is similar to many other currencies found around the world.
+In the case of the [.United States Dollar](USD), the Federal Reserve is the only sanctioned entity that can create or destroy money. The USD is similar to many other currencies found around the world.
 
-Because cash doesn’t typically rot (like foodstuffs), it affords (pun intended) the opportunity for hoarding; being taken out of circulation by private individuals. To combat hoarding, the creators and destroyers of the currency tend to print more of it. Currencies can be seen as a share in the entity who (or for whom) the currency is created; in the case of the USD, it’s a share in the United States. Therefore, printing more of the currency is similar to when companies [dilute their stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more shares; this is different than [splitting the stock](https://www.investopedia.com/ask/answers/what-stock-split-why-do-stocks-split/).
+Because cash doesn’t typically rot (like foodstuffs), it affords (pun intended) the opportunity for hoarding; being taken out of circulation by private individuals. To combat hoarding, the creators and destroyers of the currency tend to print more of it. This creation and destruction may impact purchasing power. During times of inflation, how much you can purchase for a single unit of currency reduces; reduced purchasing power, which can be viewed as the money rotting. During times of deflation, increased purchasing power, how much you can purchase per unit of currency increases; yes, this can happen and can be seen as the food regenerating itself.
 
-A company may dilute its stock whenever it wants to, however, it’s often done when ownership becomes too concentrated with a single entity.
+Currencies can be seen as a share in the entity who (or for whom) the currency is created; in the case of the USD, it’s a share in the United States. Therefore, printing more of the currency is similar to when companies [dilute their stock](https://www.investopedia.com/ask/answers/06/dilutivestock.asp) by issuing more shares; this is different than [splitting the stock](https://www.investopedia.com/ask/answers/what-stock-split-why-do-stocks-split/).
 
-So, people hoard cash, which effectively takes it out of circulation, the supply of cash in circulation decreases, if demand for the currency increases or even remains the same, those in charge of the currency print more of it. This often results in the value of the stock decreasing (deflation), at least in the short-term.
+A company may dilute its stock whenever it wants to, however, it’s often done when ownership becomes too concentrated with a single entity; hoarding.
+
+So, people hoard cash, which effectively takes it out of circulation, the supply of cash in circulation decreases, if demand for the currency increases or even remains the same, those in charge of the currency print more of it; by issuing more or splitting what’s already out there. This may result in the value of the stock decreasing, at least in the short-term.
 
 The money printers may also take money out of circulation. In corporate terms, this is a stock buyback; the company itself buys its own stock and holds or destroys those shares.
 
 The money printers (US Federal Reserve, for example) have a few ways to do it.
 
-This is a very simplified explanation. Having said that, the general rule of thumb is the more cash gets put into circulation and the easier it becomes to attain said cash the higher prices will go; resulting in inflation.
+This is a very simplified explanation of currencies. 
 
-Cash is considered a liquid asset as it can be traded directly for products and services. This is in contrast to more illiquid assets, like a house. Typically we don’t trade houses for products and services, they must be sold (liquidated to cash). The time it takes to convert a house to cash can be weeks, months, or, in some cases, years.
+Having said that, the general rule of thumb goes like this:
+
+1. If supply is high and demand is the low, the perceived value of the thing goes down. 
+2. If supply is high and demand is high, the perceived value remains the same.
+3. If supply is low and demand is low, the perceived value remains the same.
+4. If supply is low and demand is high, the perceived value increases. 
+
+When thinking in terms of price for goods and services (expenses not assets), you can switch the term “value” for “cost” in the list above.
+
+Cash is considered a liquid asset as it can be traded directly for goods and services. This is in contrast to more illiquid assets, like a house. Typically we don’t trade houses for goods and services, they must be sold (liquidated to cash). The time it takes to convert a house to cash can be weeks, months, or, in some cases, years.
 
 The only way to lose money from an investment is to sell the asset for less than you purchased it for. (Beware the sunk cost fallacy.)
 
@@ -66,29 +77,28 @@ The **macro-allocation principle** says that portfolios made of similar asset cl
 
 The **Holy Grail of Investing** says that asset classes have an environment in which they perform best. Consider a quad chart. The first column is an inflationary environment where the purchasing power of a currency reduces. The second column is a deflationary environment; purchasing power of the same currency increases. The top row is a growth environment. The bottom row is a compressing environment. What we want to do, according to this principle, is choose different asset classes that perform well in each environment and then set proportions to our comfort. In general, this means equities, bonds, gold, and something like commodities (or literally commodities). The key is that each asset class should have low- or negative-correlation with the others.
 
-The **simplicity principle** says we want to abide by the previous two principles while minimizing the number of securities and fees; simple.
+The **simplicity principle** says we want to minimize the number of securities and fees to balance preservation and return of capital; simple.
 
 ## Investing, speculating, and gambling aren’t the same
 
 I think it’ll be easier and more direct to take these in reverse order compared to the heading.
 
-I go to a casino (or a [Chuck E. Cheese](https://en.wikipedia.org/wiki/Chuck_E._Cheese)). I trade cash for tokens or chips. I use those tokens or chips to participate in various games. As I play I win and lose tokens. If I win more tokens than I started with, the value of the asset I purchased (my pool of tokens) has gone up. If I lose tokens, the value of the asset I purchased has gone down. At the end of my time playing, I can exchange the tokens for cash. The majority of people who go to the casino leave with less cash; that’s what makes it gambling.
+I go to a casino (or a [Chuck E. Cheese](https://en.wikipedia.org/wiki/Chuck_E._Cheese)). I trade cash for tokens or chips; I’ve lost money. I use those tokens or chips to participate in various games. As I play I win and lose tokens. If I win more tokens than I started with, the value of the asset I purchased (my pool of tokens) has gone up. If I lose tokens, the value of the asset I purchased has gone down. At the end of my time playing, I can exchange the tokens for cash. The majority of people who go to the casino leave with less cash; that’s what makes it gambling.
 
-In the case of carnival-like systems, such as Chuck E. Cheese, it’s pretty clever. I trade a dollar for [4 metal tokens](https://en.wikipedia.org/wiki/Chuck_E._Cheese#Video_arcade) that can only be spent at Chuck E. Cheese; metal feels more expensive than paper and I traded one paper thing for four metal things. I spend the tokens to play [skee-ball](https://www.skeeball.com). As I play, I earn paper tickets (feel less expensive than the tokens), however, I often receive a higher quantity of paper tickets compared to the number of tokens used to play the game (one token and I get eight tickets); I feel like I’m getting more for the exchange. I can trade those paper tickets in for a toy of some kind, which is usually worth less than the amount of cash it took for me to play the game. Further, I’m often left with one or two tickets, tokens, or both that can’t be converted directly to cash and might cause me to purchase more tokens to zero out. The activity and contrast of the trades makes it feel like I’m winning though and the concept of sunk cost can entice me to continue playing and losing monetary value in the exchange; it’s gambling.
+In the case of carnival-like systems, such as Chuck E. Cheese, it’s pretty clever. I trade a dollar for [4 metal tokens](https://en.wikipedia.org/wiki/Chuck_E._Cheese#Video_arcade) that can only be spent at Chuck E. Cheese; metal feels more expensive than paper and I traded one paper thing for four metal things. I spend the tokens to play [skee-ball](https://www.skeeball.com). As I play, I earn paper tickets (feel less expensive than the tokens), however, I often receive a higher quantity of paper tickets compared to the number of tokens used to play the game (one token and I get eight tickets); I feel like I’m getting more for the exchange. I can trade those paper tickets in for a toy of some kind, which usually cost less than the amount of cash it took for me to play the game. Further, I’m often left with one or two tickets, tokens, or both that can’t be converted directly to cash and might cause me to purchase more tokens to zero out. The activity and contrast of the trades makes it feel like I’m winning though and the concept of sunk cost can entice me to continue playing and losing monetary value in the exchange; it’s gambling.
 
-In the case of carnivals we’d likely call it spending money and not gambling because we’re usually not hoping for nor expecting a higher value return compared to the cash put in, which is different than how many feel about going to the casino or playing the lottery.
+In the case of carnivals we’d likely call it spending money and not gambling because we’re usually not hoping for, nor expecting, a higher value return compared to the cash put in, which is different than how many of us feel going to the casino or playing the lottery.
 
 Speculating is similar to gambling only the probability of a positive return on the cash spent is higher though uncertain.
 
 Cryptocurrencies, for example, as of this writing, could be considered speculative. The speculative nature comes in part because they are:
 
 1. highly volatile when it comes to fair market value,
-2. a newer technological implementation of the [same old concepts](https://www.investopedia.com/terms/c/community_currencies.asp) (like community currencies, casino chips, Chuck E. Cheese, and, yes, government-backed currencies), and
-3. the regulations for them and the service industry that’s emerged to support cryptocurrencies are also in flux.
+2. a newer technological implementation of the [same old concepts](https://www.investopedia.com/terms/c/community_currencies.asp) (like community currencies, casino chips, Chuck E. Cheese, and, yes, government-backed currencies),
+3. the regulations for them and the service industry that’s emerged to support cryptocurrencies are also in flux, and
+4. the income generation is highly dependent on someone else being willing to pay more than you did (they don’t generate income as a result of the productive effort of others).
 
-Further, the primary way to increase profit compared to the cash spent is based solely on someone else in the future being willing to pay more than you paid.
-
-Investing is similar to speculating only the probability of a positive return on the cash spent is higher than either speculating or gambling and, at least in terms of stocks and bonds, income is generated regularly. It’s not guaranteed you’ll earn income or the value will increase, we just have a history demonstrating a positive return; in the case of the New York Stock Exchange in the US, that history starts in 1792, however, tracking data took a minute and many datasets go back to around 1900. If you own a home and do not charge rent, not an investment (most likely a use asset). If you do charge rent, the house could be seen as an invested because income is generated. Having cash in an interest-bearing savings account is not an investment because the value (purchasing power) of the currency tends to decrease.
+Investing is similar to speculating only the probability of a positive return on the cash spent is higher than either speculating or gambling and, at least in terms of stocks and bonds, income is generated regularly. It’s not guaranteed you’ll earn income or the value will increase, we just have a history demonstrating a positive return; in the case of the New York Stock Exchange in the US, that history starts in 1792, however, tracking data took a minute and many datasets go back to around 1900. If you own a home and do not charge rent, not an investment (most likely a use asset). If you do charge rent, the house could be seen as an investment because income is generated. Having cash in an interest-bearing savings account is not an investment because the value (purchasing power) of the currency (individual asset) tends to decrease.
 
 ### The 10 questions
 
@@ -109,7 +119,7 @@ What I appreciate about this approach is it helps cover the age-old advice (anot
 
 Let’s take VTSAX in a 100 percent equities portfolio.
 
-1. An index fund purchasing shares of every company registered with The New York Stock Exchange in proportion to the market capitalization of the company.
+1. First question: An index fund purchasing shares of every company registered with The New York Stock Exchange in proportion to the market capitalization of the company.
 2. Investing: it pays dividends and each share may increase or decrease in value over time.
 3. It invests in all stocks available in the New York Stock Exchange, therefore, the likelihood of going to 0 is minimal and, if it does, there are probably bigger concerns than the value of the portfolio. It pays dividends on a regular basis. Vanguard is owned by its investors. VTSAX is a long-running, well-known, and relatively liquid security. And so on.
 4. It could lose value compared to what I’ve put in and could take a long time to recover. And so on.
@@ -122,23 +132,23 @@ Let’s take VTSAX in a 100 percent equities portfolio.
 
 It’s important to note that the majority of responses are not based on emotion. With that said, adding in more emotional considerations aren’t inherently a problem.
 
-For example, I tend to favor even distribution across small-, mid-, and large-cap companies when it comes to investing in the United States stock market. VTSAX favors large-cap companies; putting a higher proportion of each dollar spent toward companies that have already raised or earned a lot of money. Because I prefer equal distribution, I added other funds that afford me the opportunity to distribute my contributions more evenly across cap-weights. These additional funds slightly increases expense ratios, volatility, and complexity. Further, the macro allocation principle tells us the equities portion of the portfolio will perform roughly the same regardless, so, it’s not that this allocation will outperform.
+For example, I tend to favor even distribution across small-, mid-, and large-cap companies when it comes to investing in the United States stock market. VTSAX favors large-cap companies; putting a higher proportion of each dollar spent toward companies that have already raised or earned a lot of money. Because I prefer equal distribution, I added other funds that afford me the opportunity to distribute my contributions more evenly across cap-weights. These additional funds increases expense ratios, volatility, and complexity slightly. Further, the macro allocation principle tells us the equities portion of the portfolio will perform roughly the same regardless, so, it’s not that this allocation will outperform or underperform.
 
-In other words, the change isn’t because I think my mix will outperform anything; it makes me feel better and is better aligned to my financial character.
+In other words, the modifications aren’t because I think my mix will outperform anything; it makes me feel better and is better aligned to my [financial character](/experiences/finances/).
 
 ## Net worth isn’t the same as cash on hand
 
 As of this writing, I’m part of the six-figure club, which is to say I have a net worth greater than 100,000 USD and less than 1 million USD; this doesn’t mean I have that in cash.
 
-When we say someone is a millionaire or billionaire it’s because, if we liquidated their assets and paid off their liabilities, they would, in theory, have that much cash remaining. However, if we liquidated their assets, eventually the fair market value of the assets would likely drop in value (scarcity model and mindset).
+When we say someone is a millionaire or billionaire it’s because, if we liquidated their assets and paid off their liabilities, they would, in theory, have that much cash remaining. However, if we liquidated their assets, eventually the fair market value of the assets would likely drop (scarcity model and mindset).
 
-The US Government can’t tax the same dollar twice. So, as of right now and my understanding, if I put 100 USD of after-tax money into a savings account and that 100 USD earns 10 USD in dividends, I could get taxed on the 10 USD but not the 100 USD which was already taxed. Only realized gains or losses have potential tax implications; not money that has already been taxed. (As of 2022, [legislation is being considered](https://investmentu.com/unrealized-gains-tax/) that would tax unrealized gains for people with an income—or net worth—over a certain threshold. It seems like another way to combat hoarding and put money back into circulation; however, this would done by the Government, not the US Federal Reserve.)
+The US Government can’t tax the same dollar twice. So, as of right now and my understanding, if I put 100 USD of after-tax money into a savings account and that 100 USD earns 10 USD in dividends, I could get taxed on the 10 USD but not the 100 USD which was already taxed. Only realized gains or losses have potential tax implications; not money that has already been taxed. (As of 2022, [legislation is being considered](https://investmentu.com/unrealized-gains-tax/) that would tax unrealized gains for people with an income—or net worth—over a certain threshold. It seems like another way to combat hoarding and put money back into circulation; however, this would be done by the Government, not the US Federal Reserve.)
 
 I’m still looking for non-partisan primary sources for the following and, given the rules of the tax game, this seems reasonable. The majority (over 80 percent) of taxes collected by the US Government are collected from individuals, not corporations (not speculating why). 97 percent of taxes paid come from 50 percent of tax payers. 40 percent of taxes are paid by the top 1 percent of earners (those earning over 500,000 USD per year in taxable income). (Again, haven’t found primary sources that didn’t include some form of slant or misrepresentation of those numbers.)
 
 There are two ways to pay zero taxes:
 
-- have a taxable income of zeroUSD or
+- have a taxable income of zero USD or
 - have acquired less than a certain amount in long-term capital gains.
 
 (Taxes in the United States are weird; I think I understand how we got here from an infinite game perspective, but still.)
@@ -147,7 +157,7 @@ Gross income and taxable income aren’t the same thing.
 
 Let’s say you work somewhere and earn less than or equal to 12,500 USD in 2021 and you are filing your taxes as a single person. Your taxable income is zero USD because of the standard deduction everyone gets to take.
 
-Let’s say you earned 32,000 USD and you contributed the full amount of 19,500 USD to your 401k (in 2021), you’re taxable income should be zero USD; the 12,500 USD standard deduction and the 19,500 USD to a retirement plan that lowers your adjusted gross income.
+Let’s say you earned 32,000 USD and you contributed the full amount of 20,500 USD to your 401k (in 2022), you’re taxable income should be zero USD; the 12,500 USD standard deduction and the 20,500 USD to a retirement plan that lowers your adjusted gross income.
 
 Let’s say you earned 35,600 USD. You maxed out the 401k and maxed out a [.Health Savings Account](HSA) contribution for the year; taxable income of roughly zero USD. (Check out [this calculator](https://www.taxact.com/tools/tax-bracket-calculator).)
 
@@ -155,11 +165,11 @@ Now, let’s say you threw 100 USD of after-tax money into the aforementioned st
 
 Federal long-term capital gains rules have [their own progressive tax](https://www.fool.com/research/capital-gains-tax-rates/).
 
-Let’s say you invested 60,000 after-tax USD, a few years later it’s now worth 100,000 USD. If you sell for the whole 100,000 USD the 60,000 USD doesn’t have any tax implications because it’s been taxed. The 40,000 USD in gains is not taxed because the long-term capital gains progressive tax is zero percent on up to 40,000 USD (in 2021). You now have 100,000 USD and have paid zeros taxes on it. Granted, you had to have earned 60,000 and invested it, then waited long enough for it to increase in value by 40,000 USD; you are paid for patience and investing in the redistribution of assets.
+Let’s say you invested 60,000 after-tax USD, a few years later it’s now worth 100,000 USD. If you sell for the whole 100,000 USD the 60,000 USD doesn’t have any tax implications because it’s been taxed. The 40,000 USD in gains is not taxed because the long-term capital gains progressive tax is zero percent on up to 40,000 USD (in 2021). You now have 100,000 USD and have paid zero taxes on it. Granted, you had to have earned 60,000, been taxed on it, and invested it, then waited long enough for it to increase in value by 40,000 USD; you are paid for patience and investing in the redistribution of assets.
 
-Basically, looking at it from an ethical social engineering perspective, the US Government is trying to incentivize long-term saving and investing through the tax code with tax deductions, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Account, tax-free withdrawals. Further, if you’re living strictly on capital gains from various investments (retired), you can live a modest lifestyle without paying any taxes; the moment you go over that 40,000 USD point though, you pay 15% tax on the amount you went over. So, also incentivizing modest living.
+Basically, looking at it from an ethical social engineering perspective, the US Government is trying to incentivize long-term saving and investing through the tax code with tax deductions, tax-free growth, and in the case of HSAs and the Roth Individual Retirement Accounts, tax-free withdrawals. Further, if you’re living strictly on capital gains from various investments (retired), you can live a modest lifestyle without paying any more taxes; the moment you go over that 40,000 USD point though, you pay 15% tax on the amount you went over. So, also incentivizing modest living.
 
-One more thing: Net worth has nothing to do with actual worth as a human. To be more accurate it’s financial net worth. If all assets were liquidated and all liabilities were paid off, the difference is financial net worth, which is arguably a small part of your actual worth as a human. Finally, some may say financial net worth has nothing to do with your worth as a human.
+One more thing: Net worth has nothing to do with actual worth as a human. To be more accurate it’s financial net worth. If all assets were liquidated and all liabilities were paid off, the difference is financial net worth, which is arguably a small part of your actual worth as a human. Finally, some may say financial net worth has nothing to do with your worth as a human while others might say it’s a reflection of your contributions to society.
 
 ## Accumulation, drawdown, and rebalancing
 
@@ -176,11 +186,11 @@ Being able to shift strategies between purchasing low and selling high is one re
 
 For example, as of this writing, I’m operating a variation on what is sometimes called the VTSAX and chill approach. In short, this approach asks us to increase income while reducing expenses and investing the difference in a total stock market index fund (specifically [VTSAX](https://investor.vanguard.com/mutual-funds/profile/VTSAX)) and hold on for the ride. As the cost per share of the index fund goes up, we are constantly buying in at the higher price; thereby, increasing our average cost basis. When the cost per share goes down, we are buying low. In no case are we selling or divesting to something else. (For details on what I’m doing, check out the [personal finances](/experiences/finances/) area.
 
-Mutual funds are internally rebalanced on a regular basis. You should be able to see the rebalancing strategy by examining the prospectus for the index fund. When the index fund is rebalanced, it can impact your tax liability; this is why some people want to avoid investing directly in index funds and may, instead, invest in [.exchange traded funds](ETFs) so they can have more control over the tax implications.
+Mutual funds are internally rebalanced on a regular basis. You should be able to see the rebalancing strategy by examining the prospectus for the index fund. When the index fund is rebalanced, it can impact your tax liability; this is why some people want to avoid investing directly in mutual funds (indexed or otherwise) and may, instead, invest in [.exchange traded funds](ETFs) so they can have more control over the tax implications.
 
-Rebalancing is resetting the allocations of a portfolios to a specific target amount (or close to it.) Rebalancing can be accomplished by purchasing a specific asset to increase its allocation; often done when in accumulation mode. It can also be done by selling a specific asset to decrease its allocation; often during drawdown. Or you can do both by selling something with a high allocation and purchasing something with a low allocation; often done at a specific time or when a certain event has occurred.
+Rebalancing is resetting the allocations of a portfolio to a specific target amount (or close to it). Rebalancing can be accomplished by purchasing a specific asset to increase its allocation; often done when in accumulation mode. It can also be done by selling a specific asset to decrease its allocation; often during drawdown. Or you can do both by selling something with a high allocation and purchasing something with a low allocation; often done at a specific time or when a certain event has occurred.
 
-Rebalancing requires establishing targets for more than on asset type. If you only have cash, no rebalancing is possible. If you have more than one security, on the other hand, rebalancing using either of the three methods becomes possible.
+Rebalancing requires establishing targets for more than one asset type. If you only have cash, no rebalancing is possible. If you have more than one security, on the other hand, rebalancing using either of the three methods becomes possible.
 
 ## Owning equity shares versus funds
 
@@ -188,7 +198,7 @@ Index funds are a form of mutual fund. A mutual fund is a way for individuals to
 
 There are also voting implications and differences.
 
-When you buy stock in a company it typically grants you the right to vote on certain issues. Each share you hold gives you a weighted vote overall; this is where the term “controlling interest” comes into play. A person or group may hold so many shares in a company that, if they all agree, the result of votes performed by other shareholders doesn’t really matter; however, if those with controlling don’t agree, the votes from other shareholders can break the tie. In the United States this is similar to the Federal Government delegated a decision to the states and the states delegating the decision to the people.
+When you buy stock in a company it typically grants you the right to vote on certain issues. Each share you hold gives you a weighted vote overall; this is where the term “controlling interest” comes into play. A person or group may hold so many shares in a company that, if they all agree, the result of votes performed by other shareholders doesn’t really matter; however, if those with controlling interest don’t agree, the votes from other shareholders can break the tie. In the United States this is similar to the Federal Government delegating a decision to the states and the states delegating the decision to the people.
 
 If you own shares directly, you can vote on topics in-person or [by proxy](https://www.investopedia.com/terms/p/proxy-vote.asp). When you own mutual funds, on the other hand, you typically forfeit voting rights for the entity issuing the underlying security. You are purchasing shares of the fund, not the underlying security, therefore, the company operating the fund has the voting rights as the owners of the underlying security. Granted there are around 4,000 companies in The New York Stock Exchange as of this writing and, if you were asked to possibly participate in a vote every time one came up for every company, that’d be your full-time job; instead fund investors delegate that responsibility to someone else.
 
@@ -228,7 +238,7 @@ When it comes to taxable accounts, I’m a fan of not reinvesting automatically.
 
 So, if a security spits out 100 USD in dividends, part of that could be taxed at ordinary income (or capital gains). Let’s say my marginal tax rate was 10 percent, I’d take 10 USD and put it aside just in case I owe taxes, then I’d do something with the other 90 USD; most likely invest it either in the security that generated it or something that was down from an allocation perspective.
 
-For tax-advantaged accounts you don’t pay taxes on the earned income. Further, exchanges within the account typically aren’t classified as taxable events; even capital losses—no tax loss harvesting available. If there’s only one security in the account, reinvesting dividends is fine for the sake of simplicity and taking advantage of compounding. When there’s more than one security it can get a little trickier, but defaulting to reinvesting is probably fine because you always rebalance by buying and selling.
+For tax-advantaged accounts you don’t pay taxes on the earned income. Further, exchanges (selling something to by something else) within the account typically aren’t classified as taxable events; even capital losses—no tax loss harvesting available. If there’s only one security in the account, reinvesting dividends is fine for the sake of simplicity and taking advantage of compounding. When there’s more than one security it can get a little trickier, but defaulting to reinvesting is probably fine because you always rebalance by buying and selling.
 
 ## Bulls, bears, and corrections
 
@@ -250,7 +260,7 @@ Corrections tend to be short-term events, as the name implies, once the market h
 
 I’ll try to be explicit in saying The New York Stock Exchange because “the stock market” is a misnomer, because not all stocks available for purchase are in The New York Stock Exchange. There are roughly 4,000 companies listed on The New York Stock Exchange, as of this writing, and there are literally millions of businesses registered in the United States, all of which have at least one stock or share. This is why I try to avoid using the term “the market,” because “the market” is vast and The New York Stock Exchange represents a fraction; diverse as it might be, you have to be a certain type of business to even be listed there (no judgment on the businesses that are or are not listed).
 
-A recession and depression are not necessarily related to the stock market in general. Instead these are terms for how employment, businesses, and consumption are functioning. [A recession occurs when](https://www.investopedia.com/terms/r/recession.asp) a reduction in [.Gross Domestic Product](GDP) is seen for two or more consecutive quarters. [A depression](https://www.investopedia.com/terms/d/depression.asp) is a recession on steroids; the financial is often more severe, the effects can be felt for years, and increased unemployment may be included.
+A recession and depression are not necessarily related to the stock market in general. Instead these are terms for how employment, businesses, and consumption are functioning. [A recession occurs when](https://www.investopedia.com/terms/r/recession.asp) a reduction in [.Gross Domestic Product](GDP) is seen for two or more consecutive quarters and (very important “and” here) the [NBER](https://www.nber.org) says it’s a recession. [A depression](https://www.investopedia.com/terms/d/depression.asp) is a recession on steroids; the financial impact is often more severe, the effects can be felt for years, and increased unemployment may be included.
 
 Even though “the market” and whether a region is experiencing a recession or depression aren’t mutually inclusive they aren’t mutually exclusive either. Exchanges can be in a bull phase while the rest of the economy is in recession. With that said, if people have less disposable income and fear for the stability of their income, chances are they’re not putting extra into exchanges.
 
@@ -270,7 +280,7 @@ A couple more interesting sets of figures I plan to consider further regarding s
 
 The first set has to do with those with a net worth of a million USD or more. Roughly 80 percent of millionaires are considered first generation, which is to say they didn’t inherit a million USD. Further, 60 percent of them didn’t inherit more than 100,000 USD. Finally, a majority (over 50 percent) didn’t reach a net worth of a million USD until after age 50 and most of their net worth was inside an employer-sponsored retirement plan (like a 401k) and their home.
 
-The second set of figures has to do with generational wealth; what I’ve heard called the wealth wash cycle. 50 percent of inherited wealth will be lost by the second generation and 90 percent will be lost by the third generation. I’m not sure if this includes inheritance to multiple parties. What if 10 million USD is divided amongst 10 siblings; one million each? Does this dataset mean 5 million USD will be lost by the second generation, that 5 of the siblings will lose all of their inheritance, or does it include both. (It’s worth noting that this isn’t to say generational wealth doesn’t exist or that something like trickle down economics works at a scale large enough to matter; just that the data indicates this happens.)
+The second set of figures has to do with generational wealth; what I’ve heard called the wealth wash cycle. 50 percent of inherited wealth will be lost by the second generation and 90 percent will be lost by the third generation. I’m not sure if this includes inheritance to multiple parties. What if 10 million USD is divided amongst 10 siblings; one million each? Does this dataset mean 5 million USD will be lost by the second generation, that 5 of the siblings will lose all of their inheritance, or does it include both. (It’s worth noting that this isn’t to say generational wealth doesn’t exist or that something like trickle down economics works at a scale large enough to matter; just that the data indicates a redistribution of wealth happens and we don’t necessarily know where it goes.)
 
 There’s a sort of template phrasing that goes like this:
 
@@ -282,13 +292,13 @@ There’s a sort of template phrasing that goes like this:
 
 There are plenty more of these turns of phrase, the point being that in one aspect the person looks rich, while in another aspect the person appears poor.
 
-Another item of note is how somewhat common being a millionaire is in the United States. [Yahoo! Finance](https://finance.yahoo.com/news/millionaires-america-2020-50-states-201203665.html) references research from Phoenix Marketing International stating there are over 8 million households who can claim millionaire status. With that said, most of them are unknown to us. We usually only hear about those who are more lavish or loud about “being rich.” While this is only a little over 2 percent of the US population, the population of the US includes all individuals, including children, not households or groups, which is what the study was looking at.
+Another item of note is how somewhat common being a millionaire is in the United States. [Yahoo! Finance](https://finance.yahoo.com/news/millionaires-america-2020-50-states-201203665.html) references research from Phoenix Marketing International stating there are over 8 million households who can claim millionaire status. With that said, most of them are unknown to us. We usually only hear about those who are more lavish or loud about “being rich.” While 8 million is only a little over 2 percent of the US population, the population of the US includes all individuals, including children, not households or groups, which is what the study was looking at.
 
 ## Double-entry bookkeeping
 
-Double-entry bookkeeping is a method of record where each transaction has two entries take from two, different accounts in a charts of accounts. One entry will remove money from the account, while the second entry will add money to the account.
+Double-entry bookkeeping is a method of record keeping where each transaction has two entries in two, different accounts in a chart of accounts. One entry will remove money from the account, while the second entry will add money to the account.
 
-The balances of income and expense accounts typically won’t be tracked by you as that money comes in or goes to third-parties. Asset and liability accounts, however, will usually have the balances tracked.
+The balances of income and expense accounts typically won’t be tracked by you as that money comes in from or goes to third-parties. Asset and liability accounts, however, will usually have the balances tracked.
 
 You get paid. This money comes from an income account (maybe named for the employer or type of employment); a negative number (expense) on the employer’s ledger.
 
@@ -297,6 +307,10 @@ This income gets deposited to your checking account at a financial institution (
 You pay a bill with a credit card. This money is transferred from the credit card ledger to the service provider; a negative number (expense account) and the service provider receives the money as a positive number (income).
 
 You pay the credit card from your checking account. This money is subtracted from the checking account (one entry) and added to the credit card account (second entry).
+
+## Timing and types
+
+
 
 ## Glossary
 
