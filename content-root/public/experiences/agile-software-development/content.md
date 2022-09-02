@@ -7,19 +7,19 @@ created: 20211218
 
 {!! dateblock !!}
 
-In 2005 I was attending university, one year to go. I was also working for a credit union in Ohio. I made a promise to myself that if I was working at the same place, in the same capacity one year *after* I graduated, I wouldn't be working there anymore.
+In 2005 I was attending university, one year to go. I was also working for a credit union in Ohio. I made a promise to myself that if I was working at the same place, in the same capacity one year *after* graduation, I wouldn't be working there anymore.
 
-*Two year and a lot of twists, turns, bumps, bruises, and bouts of depression later.*
+*Two years and a lot of twists, turns, bumps, bruises, and bouts of depression later.*
 
-I quit the credit union one year after I graduated university. I moved out the apartment I had been living in as I had no income and no job; I stayed at a friend's house who I had been housesitting for while her and her family were on assignment. (It was her idea and I initially turned it down.) I consolidated and purged everything I owned until I could fit it all in my used Hyundai Elantra from circa 2000.
+One year after graduating, I quit. Having no income, job, or prospects, I moved out of my apartment and into the house of a friend I had been housesitting for. (It was her idea and I initially turned it down.) I consolidated and purged everything I owned until I could fit it all in my used Hyundai Elantra from circa 2000.
 
-I probably could have gone back to the boutique advertising agency I had worked at for a bit while testing things out but, after reflecting on life for a while and reading a couple self-help books in her library, I decided I needed to get out of Ohio.
+I probably could have gone back to the boutique advertising agency I worked at for a bit but, after reflecting on life for a while and reading a couple self-help books in her library, I decided I needed to get out of Ohio.
 
 I found a roommate situation in Atlanta, Georgia and moved down there.
 
 *Long story short.*
 
-I received an email one day by accident asking a different Josh if they could look at the email newsletter code and figure out why something wasn't working. I replied stating that I'm pretty sure I wasn't the intended recipient, that I had applied for a gig with the person and was turned down, and how I thought their email newsletter could be fixed.
+I received an email one day by accident asking a different Josh if they could look at the cod of an email newsletter to fix a bug. I replied stating I'm pretty sure I wasn't the intended recipient, that I had applied for a gig with the person and was turned down, and how I thought their email newsletter could be fixed.
 
 The reply came instantly: Sorry, yes, wrong Josh. Thanks for the help. I might have something for you.
 
@@ -67,7 +67,7 @@ When I walked into the team room almost the first words out of the technical lea
 
 Everyone on the team started explaining things. It sounded familiar. With that said, it felt like there was some nuance missing from my experience on the informal, bumping into walls, side of the equation.
 
-I went home that night and tried to find all the canonical and primary resources I could to get a feel for what "the industry" thought this was all about. My two main artifacts were the: The Manifesto for Agile Software Development and The Scrum Guide.
+I went home that night and tried to find all the canonical and primary resources I could to get a feel for what "the industry" thought this was all about. My two main artifacts were the: [The Manifesto for Agile Software Development](https://agilemanifesto.org) and [The Scrum Guide](https://scrumguides.org).
 
 I started looking up who the original signers were and following them on social media. I started soaking up as much content as I could; Kent Beck, Ken Schwaber, and "Pragmatic" Dave Thomas were the biggies for me.
 
@@ -87,7 +87,7 @@ I determined they too were "my tribe."
 
 During this time I also spent a year being a developer for corporate. The experience was so horrible chances are I’ll never accept a developer position for corporate ever again.
 
-Also during this time my mother called and told me her house was being foreclosed on. Being agile and principle-centered, I didn't miss a beat, the decision was already made. The next week I worked with my client and employer to being able to work remote and I researched some things related to owning a home, private mortgages, and foreclosures.
+Also during this time my mother called and told me her house was being foreclosed on. Being agile and principle-centered, I didn't miss a beat, the decision was already made. The next week I worked with my client and employer to work remote and I researched some things related to owning a home, private mortgages, and foreclosures.
 
 Week two I flew out and worked the day job for most of the day while getting a grip on things in the evenings. One of the people who lived with my mom at the time told her: You had to have told him ahead of time, he's handling this too easily to not have been prepared. Mom responded:
 
