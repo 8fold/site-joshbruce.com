@@ -6,7 +6,7 @@
 
 I reduced the target percents for the small- and mid-cap funds in the 401k at my former employer by 2 percent each. I increased the target percent for the other four funds in my portfolio by 1 percent each. The multi-factor fund is the only one below its minimum after doing so, therefore, still building its balance up.
 
-The multi-factor fund is down more than 10 percent from its 52 week high, so, I went ahead and bought it per the [buying a dip protocol]().
+The multi-factor fund is down more than 10 percent from its 52 week high, so, I went ahead and bought it per the [buying a dip protocol](/experiences/finances/personal-budget/#spending-savings).
 
 The extended market fund was down over 30 percent and is almost at its new maximum target, so, no money that direction. I’d like to create some head room in the extended market fund anyway so when I contribute to my Roth IRA I don’t throw the portfolio out of balance at the fund level.
 
