@@ -16,6 +16,33 @@ I increased the amount going to my 401k to ensure I reach the annual contributio
 
 Interest rates on money market accounts have gone up to over 1 percent at my primary credit union; the regular savings account is still less than 0.25 percent. So, I converted the [tax-hold account](/experiences/finances/personal-budget/#assets) to a money market account. Initially when I set all this up I wasn't expecting to carry a large balance in the tax-hold account, however, as I keep running the [distribution](/experiences/finances/personal-budget/#distributions) and [recirculation](/experiences/finances/personal-budget/#recirculating) protocols, the balance is increasing enough to make a difference. After this change all of my savings accounts should be earning more than 1 percent, which makes me feel better as the cash balances grow along with the rest of the portfolio.
 
+## Purchasing [.Exchange Traded Funds](ETF) at Vanguard
+
+While I’m focusing on Vanguard, the some of the following may apply elsewhere as well.
+
+I was listening to the [Rational Reminder podcast](https://rationalreminder.ca) and they talked about advice from Avantis (no link because I’m not sure which one). The two main pieces of advice were:
+
+1. Use limit orders; add a couple cents to the current value before initiating the purchase.
+2. Don’t purchase in the first 30 minutes of the exchange being opened.
+
+One of the criticisms I hear for not going with Vanguard is they don’t offer fraction shares or dollar-based investing for ETFs; you need to purchase whole shares. I think that’s changing (I mentioned it in one of my previous paycheck posts).
+
+Vanguard mutual funds are dollar-based investing (fractional shares); you can contribute in 1 dollar increments. The downside is you first need to put in the minimum for the fund.
+
+With that said, you may be able to buy into ETFs in 1 dollar increments as well, as long as you choose market order type as the type of purchase, which means you want to buy as many shares as possible for a certain dollar amount at the current market price. Doing so may result in fractional shares.
+
+A [limit order](https://investor.vanguard.com/investor-resources-education/online-trading/stock-order-types) says: I want to buy X number of shares at, or below, this price. The benefit here being that you might be able to get a price lower than the current market price, or, even less than the price you said you were willing to pay; I’ve had a couple times when this was the case.
+
+What I plan to do is the bulk of my orders using limit ordering, then fill the gap with market ordering (commonly referred to as dollar-based or fractional shares). This means I should be able to go ahead convert the rest of my mutual funds to ETFs and maintain the ability to do dollar-based purchasing.
+
+On to the first 30 minutes thing. 
+
+Generally, the first and last 30 minutes are more volatile than the in-between times. My understanding is that the overnight and weekend trades are settling in. So, if you put a limit order in before the market opens, it’s possible the value of the security will rise above what you set the limit order to and, if the value doesn’t fall enough, your order won’t execute. This has happened a couple of times as I’ve been experimenting with things.
+
+Vanguard will potentially purchase at market open; before the first minutes. For mutual funds, Vanguard waits until around the end of the trading day. M1 Finance automatically waits until after the first 30 minutes; however, as of this writing, they don’t offer a way to perform limit orders.
+
+What I plan to do is wait for the first hour to go by before putting in my limit orders. Could be slightly later or earlier depending, but I want the price to be more settled before I submit the order.
+
 ## So, that happened
 
 Earlier this year I moved to the Louisville, Kentucky. Every week for the past six or seven months, I've been shopping at the same Kroger. I don't own a car and bring a duffel bag with me to hold all the purchases. To help curb the desire to over shop, I go in with a list and only get extra things if I have all the things on the list and room left in the bag. Having the duffel bag is also helpful because I don't have the plastic bags cutting into my hands as I walk home; a little over a mile in this instance. Put another way and in short, I don't use a cart; I walk around the store and just shove stuff in the bag.
