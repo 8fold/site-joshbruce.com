@@ -166,4 +166,24 @@ Instead, just do this one thing every time.
 
 Kind of like when I get pulled over while driving. I put the car in park. I take the keys out and put them on the dashboard. I pull out my wallet. I roll the window down a third of the way. I put both hands on top of the steering wheel and wait. 
 
+## Changes to diet and spending 
+
+While the above story isn’t directly impacting these choices, it could definitely be interpreted that way.
+
+I thought I had written about this before, but can’t seem to find it.
+
+As part of my preparation for van life, I would like to reduce how much I need to cook with a pan and fire. Further, I had an issue with my foot that we’re treating as a [gout flare](https://en.m.wikipedia.org/wiki/Gout); a recommendation here is to reduce uric acid in the blood, which means reducing purine intake. Finally, as part of my preparation to hike the [Appalachian Trail](https://appalachiantrail.org) I’d like to increase my regular mileage per week; according to the [Health app](https://www.apple.com/ios/health/), I average about 5,000 steps per day.
+
+For breakfast, I typically eat half a pound of sausage for breakfast, which accounts for roughly half of my purine intake for the day. This is an estimate as purines aren’t typically found on nutrition labels; however, I tried to extrapolate from a [research paper](https://pubmed.ncbi.nlm.nih.gov/32312146/) and a website whose numbers seemed to match. (If you have primary research sources into this, I’d be interested in seeing more.) The plan over the last month was to not change my diet and let the medications do their thing. I’d get tested again to see where we are and then change the diet a bit; specifically, replace the sausage with something else that would give similar caloric intake as well as macro-nutrient distribution (fat, carbohydrates, and protein).
+
+A mix of cashews and pumpkin seeds (pepita) seems like it would do the trick; not sure about purine levels specifically, however, plant material generally has less than meat-based foods.
+
+Chances are, I won’t be buying these from the grocery store on a weekly basis. Instead, I’ll get raw nuts from [Nuts.com](https://nuts.com). They are a smaller company than Kroger, which fits with my desire to favor small and local. Further, their prices can meet or beat those offered by Kroger. Finally, regardless the cost of the nuts would be less than that of the sausage.
+
+We’ll see how this change goes.
+
+I’ve also decided to no longer purchase tobacco products from Kroger. I started buying them there at the peak of summer to reduce the time spent in the summer heat, however, I’d rather get the extra walking; it just so happens to further reduce how much I spend at Kroger each week.
+
+For now, we’ll keep the rest of my diet the same and see how this change impacts quality of life before changing other things.
+
 {!! next-previous !!}
