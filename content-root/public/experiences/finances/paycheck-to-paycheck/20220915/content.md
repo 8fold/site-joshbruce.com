@@ -4,17 +4,21 @@
 
 {!! data !!}
 
-I reduced the target percents for the small- and mid-cap funds in the 401k at my former employer by 2 percent each. I increased the target percent for the other four funds in my portfolio by 1 percent each. The multi-factor fund is the only one below its minimum after doing so, therefore, still building the balance of the multi-factor fund.
+I reduced the target percents for the small- and mid-cap funds in the 401k at my former employer and raised the target percents for the multi-factor and S&P 500 funds to their post-rollover targets. Further, I increased the targets for the total and extended market funds to bring the total equities portion back up to 94 percent of the total portfolio.
 
-The multi-factor fund is down more than 10 percent from its 52 week high, so, I went ahead and bought it per the [buying a dip protocol](/experiences/finances/personal-budget/#spending-savings).
-
-The extended market fund was down over 30 percent and is almost at its new maximum target, so, no money that direction. I’d like to create some head room in the extended market fund anyway so when I contribute to my Roth [.Individual Retirement Account](IRA) I don’t throw the portfolio out of balance at the fund level.
+All contributions and [buying the dip](/experiences/finances/personal-budget/#spending-savings) opportunities went toward the multi-factor fund.
 
 I’ve decided to look at the M1 Finance account like a single security. This thought occurred to me as on a couple of days it was down over 30 percent and I asked myself how I felt about putting money into it and decided it should follow the same rules as any other fund. Essentially, each Pie in M1 Finance is creating your own fund made of multiple underlying securities; thereby, creating a new security.
 
 I increased the amount going to my 401k to ensure I reach the annual contribution limit.
 
 Interest rates on money market accounts have gone up to over 1 percent at my primary credit union; the regular savings account is still less than 0.25 percent. So, I converted the [tax-hold account](/experiences/finances/personal-budget/#assets) to a money market account. Initially when I set all this up I wasn't expecting to carry a large balance in the tax-hold account, however, as I keep running the [distribution](/experiences/finances/personal-budget/#distributions) and [recirculation](/experiences/finances/personal-budget/#recirculating) protocols, the balance is increasing enough to make a difference. After this change all of my savings accounts should be earning more than 1 percent, which makes me feel better as the cash balances grow along with the rest of the portfolio.
+
+## 401k rollover 
+
+As of this writing, the 401k at my former employer is still down. If I were to close it on this day, I’d lose 20 percent of the employer contributions, which I’m calling good enough.
+
+Therefore, I went ahead and initiated the process of doing the rollover; a process that can take 4 to 6 weeks.
 
 ## Update on the dip
 
