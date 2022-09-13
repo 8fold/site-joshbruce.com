@@ -16,6 +16,14 @@ I increased the amount going to my 401k to ensure I reach the annual contributio
 
 Interest rates on money market accounts have gone up to over 1 percent at my primary credit union; the regular savings account is still less than 0.25 percent. So, I converted the [tax-hold account](/experiences/finances/personal-budget/#assets) to a money market account. Initially when I set all this up I wasn't expecting to carry a large balance in the tax-hold account, however, as I keep running the [distribution](/experiences/finances/personal-budget/#distributions) and [recirculation](/experiences/finances/personal-budget/#recirculating) protocols, the balance is increasing enough to make a difference. After this change all of my savings accounts should be earning more than 1 percent, which makes me feel better as the cash balances grow along with the rest of the portfolio.
 
+## Update on the dip
+
+The total stock market fund in the Vanguard taxable account actually showed a positive return for a moment. However, the total stock market funds in M1 Finance still show a negative return. I’m taking as a further demonstration of buying dips and minimizing the number of separate instances of a given fund.
+
+Definitely want to close the M1 Finance account soon, but I’m stepping back from contributing to M1 Finance as I continue to build up the multi-factor fund.
+
+I’m still thinking I’ll start the 401k rollover process come October, which should help with re-establishing balance at the fund level.
+
 ## Purchasing [.Exchange Traded Funds](ETF) at Vanguard
 
 While I’m focusing on Vanguard, the some of the following may apply elsewhere as well.
