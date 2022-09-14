@@ -64,7 +64,11 @@ class Navigation implements Buildable
             if ($requestPath === '/' and $href === $requestPath) {
                 $a = Element::a(
                     ...$this->spans($title, $ts)
-                )->props('href ' . $href, 'class current');
+                )->props(
+                    'href ' . $href,
+                    'class current',
+                    'aria-current true'
+                );
 
             } elseif (
                 $href !== '/' and
@@ -72,7 +76,11 @@ class Navigation implements Buildable
             ) {
                 $a = Element::a(
                     ...$this->spans($title, $ts)
-                )->props('href ' . $href, 'class current');
+                )->props(
+                    'href ' . $href,
+                    'class current',
+                    'aria-current true'
+                );
 
             }
 

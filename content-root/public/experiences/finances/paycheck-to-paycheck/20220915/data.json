@@ -4,7 +4,7 @@
       "label": "Debt",
       "min": "0",
       "low": "0",
-      "optimum": "0.3",
+      "optimum": "0",
       "high": "0.5",
       "max": "1",
       "value": "0.2"
@@ -12,56 +12,56 @@
     {
       "label": "Cash",
       "min": "3",
-      "low": "4.5",
+      "low": "3.9",
       "optimum": "6",
-      "high": "7.5",
+      "high": "8.1",
       "max": "9",
-      "value": "6.6"
+      "value": "10.1"
     },
     {
       "label": "Low correlation",
       "min": "0",
       "low": "0",
-      "optimum": "0.3",
+      "optimum": "0",
       "high": "0.5",
       "max": "1",
-      "value": "0.5"
+      "value": "0.8"
     },
     {
       "label": "Negative correlation",
       "min": "0",
       "low": "0",
-      "optimum": "0.3",
+      "optimum": "0",
       "high": "0.5",
       "max": "1",
-      "value": "0.6"
+      "value": "1"
     },
     {
       "label": "US equities - small",
-      "min": "25",
-      "low": "29.7",
-      "optimum": "31.6",
-      "high": "33.5",
-      "max": "38",
-      "value": "36"
+      "min": "27.1",
+      "low": "31.8",
+      "optimum": "34",
+      "high": "35.9",
+      "max": "40.6",
+      "value": "35.7"
     },
     {
       "label": "US equities - mid",
-      "min": "25",
-      "low": "29.7",
-      "optimum": "31.6",
-      "high": "33.5",
-      "max": "38",
-      "value": "29.8"
+      "min": "21.9",
+      "low": "24.8",
+      "optimum": "27",
+      "high": "30.1",
+      "max": "32.9",
+      "value": "27.8"
     },
     {
       "label": "US equities - large",
-      "min": "25",
-      "low": "28.4",
-      "optimum": "31",
-      "high": "35.3",
-      "max": "37",
-      "value": "26.1"
+      "min": "25.7",
+      "low": "27.8",
+      "optimum": "32",
+      "high": "36.6",
+      "max": "38.6",
+      "value": "24"
     }
   ]
 }

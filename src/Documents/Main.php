@@ -79,10 +79,10 @@ class Main implements Buildable
                 'name viewport',
                 'content width=device-width,initial-scale=1'
             ),
-            Element::meta()->omitEndTag()->props(
-                'name description',
-                'content A tabletop role playing game for the ages.'
-            ),
+            // Element::meta()->omitEndTag()->props(
+            //     'name description',
+            //     'content A tabletop role playing game for the ages.'
+            // ),
             Favicons::create(
                 themeColor: '#ffffff',
                 path: '/favicons',
