@@ -22,11 +22,11 @@ Until then, I plan to keep contributing to the multi-factor fund. Further, I pla
 
 I converted all my mutual funds at Vanguard to [.Exchange Traded Funds](ETFs). Read more [below](#purchasing-etfs-at-vanguard).
 
-Interest rates on money market accounts have gone up to over 1 percent at my primary credit union; the regular savings account is still less than 0.25 percent. So, I converted the [tax-hold account](/experiences/finances/personal-budget/#assets) to a money market account. 
+Interest rates on money market accounts have gone up to over 1 percent at my primary credit union; the regular savings account is still less than 0.25 percent. So, I converted the [tax-hold account](/experiences/finances/personal-budget/#assets) to a money market account.
 
 Initially when I set all this up I wasn't expecting to carry a large balance in the tax-hold account, however, as I keep running the [distribution](/experiences/finances/personal-budget/#distributions) and [recirculation](/experiences/finances/personal-budget/#recirculating) protocols, the balance is increasing enough to make a difference when it comes to dividends. After this change all of my savings accounts should be earning more than 1 percent, which makes me feel better as the cash balances grow along with the rest of the portfolio.
 
-## 401k rollover 
+## 401k rollover
 
 I initiated the process with Vanguard who was kind enough to create a nice letter with instructions. Part of those instructions were to give the letter to Fidelity. Unfortunately, on the Fidelity side, they said to call an eight hundred number because they would send *me* the check, which I would then forward to the outside financial institution (Vanguard).
 
@@ -80,7 +80,7 @@ A [limit order](https://investor.vanguard.com/investor-resources-education/onlin
 
 What I plan to do is use limit ordering for the bulk of my purchases, then fill the gap with market orders, which, for me, allows for fractional shares.
 
-On to the first 30 minutes thing. 
+On to the first 30 minutes thing.
 
 Generally, the first and last 30 minutes are more volatile than the in-between times. My understanding is that the overnight and weekend trades are settling in. So, if you put a limit order in before the market opens, it’s possible the price of the security will rise above what you set the limit order to and, if the value doesn’t fall enough throughout the day, your order won’t execute. This has happened a couple of times as I’ve been experimenting with things.
 
@@ -88,7 +88,7 @@ Vanguard will potentially purchase at market open; before the first 30 minutes. 
 
 What I plan to do is wait for the first hour to go by before putting in my limit orders. Could be slightly later or earlier depending, but I want the price to be more settled before I submit the order.
 
-I was able to figure out the reconciling of the initial conversion I did earlier this year and converted the rest of my mutual funds at Vanguard to ETFs. 
+I was able to figure out the reconciling of the initial conversion I did earlier this year and converted the rest of my mutual funds at Vanguard to ETFs.
 
 Initially, I did a small conversion, leaving the minimum starting balance for each mutual fund. This way, I could purchase the ETFs by the share, then any residual money I had I could throw it into the mutual fund for fractional shares. I did this with the multi-factor fund in fact.
 
@@ -102,7 +102,7 @@ For the most part I go around the same time on the same day of the week and buy 
 
 This time, as I was getting my chicken thighs, I did what I normally do; get the thighs that weigh around 3.2 pounds (across 8 boneless, skinless thighs) then wrap the package in the vegetable bags from the store to try and minimize chicken juice getting into the duffel bag.
 
-Behind me there was an employee with a shopping cart somewhat full of items talking to another employee. All I heard was, "I bet they're actually the same group." 
+Behind me there was an employee with a shopping cart somewhat full of items talking to another employee. All I heard was, "I bet they're actually the same group."
 
 I put the chicken into my duffel bag and headed to the breakfast sausage and grabbed the three I needed. Next up were the carrots. Last was the broccoli, which I put in another lightweight plastic bag, and walked about 15 feet to weigh them. Then I started heading to the checkout, marking stuff off my list.
 
@@ -154,13 +154,13 @@ The bagger responded, "No, I got it."
 
 The cashier seemed almost surprised.
 
-"If I could go ahead and get four packs of these?" I asked, showing my pack of cigarettes. 
+"If I could go ahead and get four packs of these?" I asked, showing my pack of cigarettes.
 
 We added those to the bill. The Kroger Pay QR code got scanned. The bagger did not pack things very well and couldn't zip the duffel.
 
 I said, "Don't worry about it, I'll figure it out."
 
-I made sure I had my receipt, as always. I grabbed the unzipped duffel and started toward the doors. 
+I made sure I had my receipt, as always. I grabbed the unzipped duffel and started toward the doors.
 
 From behind me the police officer said, "Hey!" and started walking toward me as I remembered they had my license. They gave it back we started walking out of the store.
 
@@ -172,7 +172,7 @@ I said, "That's good to know. Is there a place we can move so we're not blocking
 
 "Sure," they replied and we stepped outside.
 
-I put the unzipped bag down and started shifting things into their proper position. 
+I put the unzipped bag down and started shifting things into their proper position.
 
 The officer asked, "Is that your receipt?"
 
@@ -188,7 +188,7 @@ I stammered a bit at the question, and they continued, "I'm running your name al
 
 Just then I heard the speaker say, "Josh Bruce," but I didn't hear anything after that.
 
-The officer handed the receipt back to me just as I finished reorganizing my purchases. The officer said, "Have a nice day and use the carts from now on." 
+The officer handed the receipt back to me just as I finished reorganizing my purchases. The officer said, "Have a nice day and use the carts from now on."
 
 "Will do," I said. "Do I need to sign anything?"
 
@@ -206,7 +206,7 @@ Worth noting, the statute is [Kentucky 433.234](https://www.lawserver.com/law/st
 
 > (1) Willful concealment of unpurchased merchandise of any store or other mercantile establishment on the premises of such store shall be prima facie evidence of an intent to deprive the owner of his property without paying the purchase price therefor.
 
-Everywhere I've lived and most videos I've seen show the act of shoplifting being once the person exits the building with the unpurchased items, while still being on the property. But, the letter of the law is "willful concealment," which could be accurate, despite the bag being unzipped the entire time I'm in the store and my inability to conceal the bag itself. 
+Everywhere I've lived and most videos I've seen show the act of shoplifting being once the person exits the building with the unpurchased items, while still being on the property. But, the letter of the law is "willful concealment," which could be accurate, despite the bag being unzipped the entire time I'm in the store and my inability to conceal the bag itself.
 
 Inconsistency and lack of communication is the issue in this system; most systems, if we're being honest.
 
@@ -216,11 +216,11 @@ I've been to convenience stores with signs that read something like:
 
 I love social systems because I'm always thinking of the style of behavior it could inspire; manifest and latent functions and dysfunctions (see [Wikipedia entry](https://en.wikipedia.org/wiki/Manifest_and_latent_functions_and_dysfunctions)).
 
-On the one hand, the environmentally-friendly crowd says, "Bring your own bags." On the other hand, this particular store on this particular day and Kentucky law says, "Use the cart to do your shopping, not the bags you're bringing." 
+On the one hand, the environmentally-friendly crowd says, "Bring your own bags." On the other hand, this particular store on this particular day and Kentucky law says, "Use the cart to do your shopping, not the bags you're bringing."
 
-Humans have a tendency toward what I'll call pattern blindness. 
+Humans have a tendency toward what I'll call pattern blindness.
 
-Once something becomes a pattern or ubiquitous long enough, we stop seeing the distinct instances of the pattern. 
+Once something becomes a pattern or ubiquitous long enough, we stop seeing the distinct instances of the pattern.
 
 Most of us, don't look to the right side on webpages anymore; that's where the ads are—or, at least where they used to be before interleaving them with the content because people weren't looking at or clicking them anymore. We can spend a lot of time on a page peppered with ads and not even see them because we know what and where to look (or not look). Twins are weird, except if you go to the [twins festival](https://twinsdays.org) where being a single is weird.
 
@@ -238,7 +238,7 @@ The generalization part of me said, "I wonder if I should just stop shopping at 
 
 The part of me that tends toward conjecture and explanation started wondering if the person was new, maybe a newly-minted manager fresh from training filled with horror stories and numbers about how much shoplifting costs the company; I've seen it before when I worked retail. Maybe they had a run of shoplifting that day or recently and it was recency bias; everyone is a threat. I started wondering what the possible story the employee was telling themselves was; were they a hero that day? Did they see themselves as stopping a potential shoplifter and making them pay for the goods they would have otherwise stolen? (Instead of what actually happened.)
 
-After considering and reconciling, what it really boils down to is trying to figure out a single rule for myself that covers the most ground possible. I can only control myself and, after years of anecdotal experience, I can't change "the system." What I can do, is walk into a store, check with employees toward the front that having my bag is okay, and asking how the person I'm talking with suggests I handle the bag in the store. Of course, if the store has a sign posted about what to do with bags, then that solves the problem of finding an employee. 
+After considering and reconciling, what it really boils down to is trying to figure out a single rule for myself that covers the most ground possible. I can only control myself and, after years of anecdotal experience, I can't change "the system." What I can do, is walk into a store, check with employees toward the front that having my bag is okay, and asking how the person I'm talking with suggests I handle the bag in the store. Of course, if the store has a sign posted about what to do with bags, then that solves the problem of finding an employee.
 
 This would be something I would apply to *all* stores, not just Kroger.
 
@@ -248,9 +248,9 @@ If I'm in Kentucky, do this. Or, if I'm at this Kroger in Kentucky, do this, but
 
 Instead, just do this one thing every time.
 
-Kind of like when I get pulled over while driving. I put the car in park. I take the keys out of the ignition, thereby, stopping the motor, and put the keys on the dashboard. I pull out my wallet. I roll the window down a third of the way. I put both hands on top of the steering wheel and wait. 
+Kind of like when I get pulled over while driving. I put the car in park. I take the keys out of the ignition, thereby, stopping the motor, and put the keys on the dashboard. I pull out my wallet. I roll the window down a third of the way. I put both hands on top of the steering wheel and wait.
 
-## Changes to diet and spending 
+## Changes to diet and spending
 
 While the above story isn’t directly impacting the following choices, it is definitely interesting timing that could be interpreted that way.
 
@@ -258,7 +258,7 @@ I thought I had written about this before, but can’t seem to find it.
 
 As part of my preparation for [van life](/experiences/van-life/) I’d like to reduce how much I need to cook with a pan and fire. Further, I had an issue with my foot that we’re treating as a [gout flare](https://en.m.wikipedia.org/wiki/Gout); a recommendation here is to reduce uric acid in the blood, which means reducing purine intake, apparently. Finally, as part of my preparation to section-hike the [Appalachian Trail](https://appalachiantrail.org) I’d like to increase my regular walking distance per week; according to the [Health app](https://www.apple.com/ios/health/), I average about 5,000 steps per day.
 
-For breakfast, I typically eat half a pound of sausage, which accounts for roughly half of my purine intake for the day and 25 percent of my calories. This is an estimate as purines aren’t typically found on nutrition labels; however, I tried to extrapolate from a [research paper](https://pubmed.ncbi.nlm.nih.gov/32312146/) and a website whose numbers seemed to match said research paper. (If you have primary research sources into purine content of various foodstuffs, I’d be interested in seeing more.) 
+For breakfast, I typically eat half a pound of sausage, which accounts for roughly half of my purine intake for the day and 25 percent of my calories. This is an estimate as purines aren’t typically found on nutrition labels; however, I tried to extrapolate from a [research paper](https://pubmed.ncbi.nlm.nih.gov/32312146/) and a website whose numbers seemed to match said research paper. (If you have primary research sources into purine content of various foodstuffs, I’d be interested in seeing more.)
 
 The plan over the last month was to not change my diet and let the medications do their thing. I’d get tested again to see where we are and then change the diet a bit; specifically, replace the sausage with something else that would give similar caloric intake as well as macro-nutrient distribution (fat, carbohydrates, and protein) while reducing purine intake.
 
