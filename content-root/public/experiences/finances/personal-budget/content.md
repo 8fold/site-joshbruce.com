@@ -1,9 +1,3 @@
----
-title: Personal budget
-created: 20210704
-updated: 20220721
----
-
 # Personal budget
 
 {!!dateblock!!}
