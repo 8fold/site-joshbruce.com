@@ -2,7 +2,11 @@
 
 {!! dateblock !!}
 
-René Descartes once said: I think, therefore, I am. This was part of a small text he wrote entitled *Meditations in First Philosophy*. In it he was pondering the existence of god (in a secular sense). He concluded that he existed because he had a mental idea of self; I think (of an “I”), therefore, I am (a thing that most likely exists). Further, turning that conclusion into a premise, he continued that because he could envision a being one might call god, god must exist. For our purposes though, this is more about how he started this exercise.
+René Descartes once said: 
+
+> I think, therefore, I am. 
+
+This was part of a small text he wrote entitled *Meditations in First Philosophy*. In it he was pondering the existence of god (in a secular sense). He concluded that he existed because he had a mental idea of self; I think (of an “I”), therefore, I am (a thing that most likely exists). Further, turning that conclusion into a premise, he continued that because he could envision a being one might call god, god must exist. For our purposes though, this is more about how he started this exercise.
 
 Where Descartes started was to raze everything he thought to be true to the ground. Or, as Yoda might say, to unlearn what he had learned. A naive approach. A beginner’s mind. And so on.
 
@@ -64,6 +68,8 @@ You are approached by three people:
 
 How do you divide your tokens? How are you deciding?
 
+Each of these people gave a certain number of tokens as well. For example, the United States market has shows that the first person has about 24 tokens, the second person has about 40 tokens, and the third person has about 36 tokens.
+
 ## 11 specialists 
 
 You have 100 tokens you intend on trading with other people with a potential to earn dividends along with the hope of thing purchase increasing in value over time.
@@ -84,4 +90,13 @@ You have 100 tokens you intend on trading with other people with a potential to 
 
 How do you want to divide things? Why?
 
+Maybe you want to be distributed evenly. Maybe you want to avoid one as much as possible. Maybe you just want to make sure you don’t have more than a certain percent in any one of them.
+
+## 4,000 individuals
+
+There are roughly 4,000 equities available for purchase in the New York Stock Exchange. Each falls into the size question, the value-blend-growth question, and the sector question.
+
+How do you decide? Do you even want to decide?
+
+The farther down this exercise you go the more complexity and time may be involved.
 
