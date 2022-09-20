@@ -28,6 +28,10 @@ Maybe you believe that someone who has amassed 70 tokens must know how to alloca
 
 This means the first person still has 10 and the second still has 20 while the third now has 170; the gap between the person with the least and the most has almost tripled—going from 60 to 160.
 
+Maybe you want to go the opposite of the previous and give 100 tokens to the first person. This is akin to a total small market fund.
+
+This means the first person now has 110 tokens, the send still has  20 tokens, and the third still has  70 tokens; the distance between the person with the least and most is 90.
+
 Maybe you’re inclined to distribute the money to each of them based on how much they already have (any capitalization-weighted mutual fund), thereby, giving more to the person with the most while giving a little to everyone. This is akin a total stock market mutual fund; total stock market and chill.
 
 This means the first person has 20 tokens, the second has 40, and the third has 140; everyone’s token count doubles and the gap between the one with the most and the one with the least goes from 50 to 120.
@@ -36,12 +40,48 @@ Maybe you think people who have money don’t need (or possibly deserve) more. S
 
 This means the first person now has 65 tokens, the second person has 60 tokens, and the third person has 65 tokens as well; the gap between the person with the least and most went from 50 to 5, and two people now have the same amount.
 
-Maybe you giving the same amount to each person feels the most appropriate to you. You 34 tokens to the and 33 tokens to the other two. There are lots of ways to do this with mutual funds.
+Maybe giving the same amount to each person feels the most appropriate to you. You 34 tokens to the and 33 tokens to the other two. There are lots of ways to do this with mutual funds.
 
 This means the first person now has 44 tokens, the second has 53 tokens, and the third person has 103. The gap between the one with the most and the one with the least goes from 50 to about 60.
 
 What values, principles, and practices guide your choice?
 
 No judgment. Nothing from me or the outside world saying, “You should do it this way.” What feels right to you and why?
+
+This uses a quantitative approach to choosing. Next we’ll consider the more qualitative.
+
+## Three motivated people
+
+There’s going to be less walkthrough from here on out. 
+
+You have 100 tokens you intend on trading with other people with a potential to earn dividends along with the hope of thing purchase increasing in value over time.
+
+You are approached by three people:
+
+1. is believed to be worth more than their current cost,
+2. is somewhere between the first and third in their motivations, and
+3. is believed to have greater future earnings.
+
+How do you divide your tokens? How are you deciding?
+
+## 11 specialists 
+
+You have 100 tokens you intend on trading with other people with a potential to earn dividends along with the hope of thing purchase increasing in value over time.
+
+11 people walk up to you, each is a specialist in a given field (sector):
+
+1. basic materials,
+2. consumer cyclical,
+3. financial services,
+4. real estate,
+5. consumer defensive,
+6. healthcare,
+7. utilities,
+8. communication services,
+9. energy,
+10. industrials, and
+11. technologies.
+
+How do you want to divide things? Why?
 
 
