@@ -6,6 +6,80 @@
 
 ## 401k rollover
 
+I received the check from the 401k at my former employer.
+
+I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting like I originally thought. The agent was awesome and did curb my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard did make the money available for immediate trading; I still waited. 
+
+It took two business days to hit my settlement account. I spent those two business days (and the weekend) figuring out how I would disperse the cash.
+
+I didn't want to repeat what happened to my [.Health Savings Accounts](HSA) this year. If you don't know, when the market started down its correction and bear market path, I maxed out my HSA for the year. Unfortunately, that was only the tip of the dip and I could have spread that out more evenly; lesson learned. That mistake, for lack of a better term was the impetus behind creating the [spending savings protocols](/experiences/finances/personal-budget/#spending-savings).
+
+This rollover falls under the "Too much cash" protocol because now the portfolio as a whole went from its target 6 percent cash, to 10 percent cash when I took the three funds to 0, and is now around 40 percent cash. The too much cash protocol, as of this writing, basically allows me to put in as much as I want toward one or more securities. When I created it, I wasn't expecting it to be from a windfall-style scenario, so, I've updated the protocol to loosen the guardrails a bit; initially all the money had to go to a single security and now it can toward multiple securities as long as it doesn't throw the portfolio out of balance.
+
+With that said, I don't want to do it all in a single move; avoiding the HSA debacle from earlier in 2022. What I'm going to do instead is something akin to the buying a dip protocol, only on a daily basis instead of requiring a 7 day cool off period.
+
+Here are the guardrails around this experiment.
+
+Until the available cash is so low it just makes sense to do dollar-based (fractional share) purchases I'll only use limit orders. I'll only commit 50 percent of the available cash each day to creating the limit orders. Further, I'll create multiple, one day limit orders for each fund using the target equity mix. Finally, each limit order will be based on the initial price when I start creating the orders for the day.
+
+Who's ready for some numbers and an example?
+
+The target percentage for each fund is:
+
+1. 15 percent total stock market.
+2. 47 percent extended market.
+3. 25 percent multi-factor.
+4. 13 S&P 500.
+
+Let's say the available cash was 30,000 [.United States Dollars]. On day 1, I'd be able to commit 15,000 USD to purchasing shares.
+
+If I was doing it straight, that would be:
+
+1. 2,250 USD to the total stock market,
+2. 7.050 USD to the extended market,
+3. 3,750 USD to the multi-factor, and
+4. 1,950 USD to the S&P 500.
+
+Given the way limit orders work and the experience I had with the HSA though, I'd like to subdivide even more. So, instead of doing straight, I'm doing 3 limit orders for each fund. There's what I'll call a normal tier, a single-dip tier, and a double-dip tier:
+
+1. The normal tier is what's quickly becoming the normal way I put in limit orders, which is the initial price plus 2 cents; using 13 percent of the available money for the fund.
+2. The single-dip tier is 1 percent less than the initial price; using 33 percent of the available money for the fund.
+3. The double-dip tier is 2 percent less than the initial price; using 53 percent of the available money for the fund.
+
+Each tier is a different percent of the total amount committed; thank the maker for spreadsheet software.
+
+Back to the 15,000 USD example. We'll only run through the total stock market fund to give you a sense of it; let's say the initial price of the total stock market was 100 USD and I have the 2,250 USD available to put toward it:
+
+1. Normal tier at 100.02 USD per share with a maximum available of 292.50 USD I can put toward purchasing shares; 2 full shares in this case.
+2. Single-dip tier at 90 USD per share with a maximum available of 742.50 USD; 8 full shares.
+3. Double-dip tier at 80 USD per share with a maximum available of 1125 USD; 14 full shares.
+
+If the price rises above the 2 cents (0.0002 percent in this case), none of the orders will execute. If the price stays at or below the 0.0002 percent threshold, the first order will most likely execute. If the price drops to 1 percent, the first and second orders should execute. If the price drops to 2 percent, all three orders should execute.
+
+### Day one results
+
+The first day I ran this experiment I was still figuring out putting in multiple limit orders at once because I normally only do the one limit order and then a market order to finish up, so, I didn't have the double-dip orders in place.
+
+I definitely can see the thrill in day-trading a bit based on this first day. 
+
+I put in 8 limit orders. 4 for the the 2 cents above the initial price when I set them up and 4 for the 1 percent dip.
+
+None of them executed when the market opened.
+
+I was feeling a bit of excitement or anxiety as I was considering what I should do. Of course, my answer to myself was, "Nothing" but it definitely took a bit of convincing. The mantra became: No worries, if none of them execute today, you'll just do the same thing tomorrow.
+
+The prices kept going up. I'd look at the Vanguard app about once an hour in between doing day-job things; I wanted to sit with why I felt compelled to look at least long enough for the desire to grow old and subside. Then, just before noon, I stopped looking. I ran to an appointment related to the whole gout thing and came back. Toward late afternoon, I looked.
+
+Every one of my limit orders executed, except one. The multi-factor fund was still hovering above the 1 percent dip mark. That was a good feeling. Finished up the day and looked again; the last limit order executed.
+
+All 8 limit orders executed. Further, if I had put in the double-dip tier limit orders, they too would have executed. I'm not feeling bad about it though because I'll get the opportunity on day 2.
+
+### Day two results
+
+This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, it's still the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.)
+
+I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and put in the limit orders.
+
 ## Closing M1 Finance
 
 ## Update on the dip

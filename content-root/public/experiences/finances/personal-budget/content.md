@@ -1,7 +1,7 @@
 ---
 title: Personal budget
 created: 20210704
-updated: 20220721
+updated: 20220921
 ---
 
 # Personal budget
@@ -219,7 +219,7 @@ To ensure every dollar is working toward its highest, long-term potential there 
 
 ### Tax account
 
-I rarely owe taxes. 
+I rarely owe taxes.
 
 While I could keep socking money away in the tax account for when I retire, I’d rather put the majority of this money to work once I know I don’t owe taxes for the year.
 
@@ -254,7 +254,7 @@ The following events open the possibility of spending from savings (or not setti
 <details>
 <summary>Too much cash</summary>
 
-Barring extenuating circumstances (like owing thousands of dollars), if the balance of savings causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy a single security in the portfolio.
+Barring extenuating circumstances (like owing thousands of dollars), if the balance of savings causes the cash portion of the portfolio to be higher than the maximum established, cash may be immediately spent to buy one or more securities in the portfolio as long as it doesn't cause the portfolio to go out of balance and favoring purchasing a single security within the portfolio.
 
 </details>
 
