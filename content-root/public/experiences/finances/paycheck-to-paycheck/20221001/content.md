@@ -8,19 +8,19 @@
 
 I received the check from the 401k at my former employer.
 
-I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting like I originally thought. The agent was awesome and did curb my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard did make the money available for immediate trading; I still waited. 
+I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting the physical check like I thought I’d have to. The agent was awesome and curbed my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard did make the money available for immediate trading; I still waited until it was in my settlement fund. 
 
-It took two business days to hit my settlement account. I spent those two business days (and the weekend) figuring out how I would disperse the cash.
+It took two business days to hit my settlement fund. I spent those two business days (and the weekend) figuring out how I would disperse the cash.
 
-I didn't want to repeat what happened to my [.Health Savings Accounts](HSA) this year. If you don't know, when the market started down its correction and bear market path, I maxed out my HSA for the year. Unfortunately, that was only the tip of the dip and I could have spread that out more evenly; lesson learned. That mistake, for lack of a better term was the impetus behind creating the [spending savings protocols](/experiences/finances/personal-budget/#spending-savings).
+I didn't want to repeat what happened to my [.Health Savings Accounts](HSA) this year. If you don't know, when the market started down its correction and bear market path, I maxed out my HSA for the year. Unfortunately, that was only the tip of the dip and I could have spread that out more evenly; lesson learned. That mistake, for lack of a better term, was the impetus behind creating the [spending savings protocols](/experiences/finances/personal-budget/#spending-savings).
 
-This rollover falls under the "Too much cash" protocol because now the portfolio as a whole went from its target 6 percent cash, to 10 percent cash when I took the three funds to 0, and is now around 40 percent cash. The too much cash protocol, as of this writing, basically allows me to put in as much as I want toward one or more securities. When I created it, I wasn't expecting it to be from a windfall-style scenario, so, I've updated the protocol to loosen the guardrails a bit; initially all the money had to go to a single security and now it can toward multiple securities as long as it doesn't throw the portfolio out of balance.
+This rollover falls under the "Too much cash" protocol because now the portfolio as a whole went from its target 6 percent cash, to 10 percent cash when I took the three funds at my former employer to 0, and is now around 40 percent cash. The too much cash protocol, as of this writing, basically allows me to put in as much as I want toward one or more securities. When I created it, I wasn't expecting it to be from a windfall-style scenario, so, I've updated the protocol to loosen the guardrails a bit; initially all the money had to go to a single security and now it can go toward multiple securities as long as it doesn't throw the portfolio out of balance.
 
-With that said, I don't want to do it all in a single move; avoiding the HSA debacle from earlier in 2022. What I'm going to do instead is something akin to the buying a dip protocol, only on a daily basis instead of requiring a 7 day cool off period.
+With that said, I don't want to do it all in a single move; avoiding the HSA debacle from earlier in 2022. What I'm going to do instead is combining the buying a dip 90 day cool down protocols. I’ll be doing it daily and using half the cash in the account.
 
 Here are the guardrails around this experiment.
 
-Until the available cash is so low it just makes sense to do dollar-based (fractional share) purchases I'll only use limit orders. I'll only commit 50 percent of the available cash each day to creating the limit orders. Further, I'll create multiple, one day limit orders for each fund using the target equity mix. Finally, each limit order will be based on the initial price when I start creating the orders for the day.
+Until the available cash is so low it just makes sense to do dollar-based (fractional share) purchases I'll only use limit orders. I'll only commit 50 percent of the available cash each day to creating the limit orders. Further, I'll create multiple, one day limit orders for each fund using the target equity mix as the guideline. Finally, each limit order will be based on the initial price when I start creating the orders for that fund for the day.
 
 Who's ready for some numbers and an example?
 
@@ -31,12 +31,12 @@ The target percentage for each fund is:
 3. 25 percent multi-factor.
 4. 13 S&P 500.
 
-Let's say the available cash was 30,000 [.United States Dollars]. On day 1, I'd be able to commit 15,000 USD to purchasing shares.
+Let's say the available cash was 30,000 [.United States Dollars](USD). On day 1, I'd be able to commit 15,000 USD to purchasing shares.
 
 If I was doing it straight, that would be:
 
 1. 2,250 USD to the total stock market,
-2. 7.050 USD to the extended market,
+2. 7,050 USD to the extended market,
 3. 3,750 USD to the multi-factor, and
 4. 1,950 USD to the S&P 500.
 
@@ -48,17 +48,20 @@ Given the way limit orders work and the experience I had with the HSA though, I'
 
 Each tier is a different percent of the total amount committed; thank the maker for spreadsheet software.
 
-Back to the 15,000 USD example. We'll only run through the total stock market fund to give you a sense of it; let's say the initial price of the total stock market was 100 USD and I have the 2,250 USD available to put toward it:
+Back to the 15,000 USD example. We'll only run through the total stock market fund to give you a sense of it; let's say the initial price of the total stock market was 100 USD per share and I have the 2,250 USD available to put toward it:
 
 1. Normal tier at 100.02 USD per share with a maximum available of 292.50 USD I can put toward purchasing shares; 2 full shares in this case.
 2. Single-dip tier at 90 USD per share with a maximum available of 742.50 USD; 8 full shares.
-3. Double-dip tier at 80 USD per share with a maximum available of 1125 USD; 14 full shares.
+3. Double-dip tier at 80 USD per share with a maximum available of 1,125 USD; 14 full shares.
 
-If the price rises above the 2 cents (0.0002 percent in this case), none of the orders will execute. If the price stays at or below the 0.0002 percent threshold, the first order will most likely execute. If the price drops to 1 percent, the first and second orders should execute. If the price drops to 2 percent, all three orders should execute.
+If the price rises above the 2 cents (0.0002 percent of the initial price in this case), none of the orders will execute. If the price stays at or below the 0.0002 percent threshold, the first order will most likely execute. If the price drops to 1 percent, the first and second orders should execute. If the price drops to 2 percent, all three orders should execute.
+
+I say “should” because one or more people need to be on the other side of the trade selling shares at or below the price, and in the quantity, set by my
+limit order. Luckily, the funds I’m using are fairly liquid.
 
 ### Day one results
 
-The first day I ran this experiment I was still figuring out putting in multiple limit orders at once because I normally only do the one limit order and then a market order to finish up, so, I didn't have the double-dip orders in place.
+The first day I ran this experiment I was still figuring out putting in multiple limit orders at once because I normally only do the one limit order and then a market order to finish up after the limit order executes, so, I didn't have the double-dip orders in place.
 
 I definitely can see the thrill in day-trading a bit based on this first day. 
 
@@ -72,7 +75,7 @@ The prices kept going up. I'd look at the Vanguard app about once an hour in bet
 
 Every one of my limit orders executed, except one. The multi-factor fund was still hovering above the 1 percent dip mark. That was a good feeling. Finished up the day and looked again; the last limit order executed.
 
-All 8 limit orders executed. Further, if I had put in the double-dip tier limit orders, they too would have executed. I'm not feeling bad about it though because I'll get the opportunity on day 2.
+All 8 limit orders executed. Further, if I had put in the double-dip tier limit orders, they would not have executed.
 
 ### Day two results
 
