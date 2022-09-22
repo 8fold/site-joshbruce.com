@@ -8,7 +8,7 @@
 
 I received the check from the 401k at my former employer.
 
-I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting like I originally thought. The agent was awesome and did curb my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard did make the money available for immediate trading; I still waited. 
+I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting like I originally thought. The agent was awesome and did curb my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard has a policy based on account value when it comes to check deposits and transfers. Long story short, some of the money was available, however, all of it wouldn't be available until after 7 days. (I did ask Vanguard to update their user interface to be a bit more explicit about what's available and what's not available.)
 
 It took two business days to hit my settlement account. I spent those two business days (and the weekend) figuring out how I would disperse the cash.
 
@@ -76,15 +76,19 @@ All 8 limit orders executed. Further, if I had put in the double-dip tier limit 
 
 ### Day two results
 
-This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, it's still the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.)
+This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.)
 
-I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and put in the limit orders.
+I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and was able to put in 4 more limit orders. If all of these orders execute, then I'll need to wait until the 7 days are up and I can spend all the cash.
+
+In the future, if I do this again and if Vanguard hasn't updated their user interface to be a bit more accurate and explicit with how much is available, I'll probably go with 25 percent instead of 50 percent and ask how much is actually available and use that number until everything becomes available.
 
 ## Closing M1 Finance
 
+Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
+
 ## Update on the dip
 
-As I continue with the founds I’m appreciating their similarities and differences. On the day-to-day none of them moves dramatically different than the others; [macro-allocation principle](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing)—they’re all United States equities. With that said they are all down different amounts from their 52 week high and their share price is different enough to keep it interesting.
+As I continue with the four funds I’m appreciating their similarities and differences. On the day-to-day none of them moves dramatically different than the others; [macro-allocation principle](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing)—they’re all United States equities. With that said they are all down different amounts from their 52 week high and their share price is different enough to keep it interesting.
 
 The S&P 500 fund is at around 300 [.United States Dollars](USD) per share and is down around 18 percent. The total stock market fund is around 200 USD and down 19 percent. The extended market fund is about 140 USD and down about 29 percent. And, the multi-factor fund is at 95 USD and down 14 percent.
 
