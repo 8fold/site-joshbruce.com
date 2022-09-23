@@ -89,11 +89,17 @@ In the future, if I do another rollover, and if Vanguard hasn't updated their us
 
 With that said, I need to wait the remaining 7 days.
 
-## Day 3–7
+### Days 3–6
 
 Waited for the funds to be available for real.
 
-I did update the investment policy and will try to use a 3 limit order approach with my future contributions; updated the spreadsheet to make this easier.
+I did update the [investment policy](/experiences/finances/investment-policy/#investments) and will try to use a 3 limit order approach with my future contributions; updated the spreadsheet to make this easier.
+
+As of September 23 2022 the price of the extended market fund is back to where it was around the same day in 2020; now I have [that Cher song](https://youtu.be/9n3A_-HRFfc) stuck in my head. If I look at all four funds over the past 10 years (or as far back as they go) the price on this day seems like where it would have been if the trend hand continued without the pandemic run up. I’m using this to speculate anything, just an interesting observation. Another observation is that each fund share price was higher than their 52 week low and 20 percent or more down from their 52 week high.
+
+The CNN Fear and Greed index hit extreme fear again; not surprising. 
+
+### Day 7 results
 
 ## Closing M1 Finance
 
