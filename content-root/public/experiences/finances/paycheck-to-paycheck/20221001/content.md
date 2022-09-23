@@ -81,7 +81,7 @@ All 8 limit orders executed. Further, if I had put in the double-dip tier limit 
 
 ### Day two results
 
-This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.)
+This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.) I used the three limit order protocol and all three executed, then I did a market order for the remaining, which was even cheaper.
 
 I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and was able to put in 4 more limit orders. Only 3 of the 4 executed.
 
