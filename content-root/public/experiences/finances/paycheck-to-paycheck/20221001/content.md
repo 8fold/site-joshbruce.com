@@ -135,7 +135,7 @@ I don’t have enough experiences to make this part of my [investment policy sta
 
 The last 30 days we’ve been treating my foot pain as gout via medication. Had uric acid blood levels checked and they’re down 1.3 from where they were.
 
-Experiment will be to keep same medication level and replace the sausage with a combination of cashews and pumpkin seeds.
+Experiment will be to keep same medication level and replace the sausage with a combination of cashews and pumpkin seeds. I’ve already purchased the bulk nuts in bulk and, as of this writing, only have 3 days worth of sausage to go through.
 
 We’ll run this for 30 days and have the levels checked again.
 
