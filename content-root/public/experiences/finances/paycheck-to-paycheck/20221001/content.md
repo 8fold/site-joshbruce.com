@@ -81,9 +81,17 @@ All 8 limit orders executed. Further, if I had put in the double-dip tier limit 
 
 This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.)
 
-I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and was able to put in 4 more limit orders. If all of these orders execute, then I'll need to wait until the 7 days are up and I can spend all the cash.
+I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and was able to put in 4 more limit orders. Only 3 of the 4 executed.
 
-In the future, if I do this again and if Vanguard hasn't updated their user interface to be a bit more accurate and explicit with how much is available, I'll probably go with 25 percent instead of 50 percent and ask how much is actually available and use that number until everything becomes available.
+In the future, if I do another rollover, and if Vanguard hasn't updated their user interface to be a bit more accurate and explicit with how much is available, I'll probably go with 25 percent instead of 50 percent and ask how much is actually available and use that number until everything becomes available.
+
+With that said, I need to wait the remaining 7 days.
+
+## Day 3–7
+
+Waited for the funds to be available for real.
+
+I did update the investment policy and will try to use a 3 limit order approach with my future contributions; updated the spreadsheet to make this easier.
 
 ## Closing M1 Finance
 
