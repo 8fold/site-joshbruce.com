@@ -4,6 +4,8 @@
 
 {!! data !!}
 
+My operating expense account was below the minimum I established because something came up, so, a bit extra went toward bringing that back up.
+
 ## 401k rollover
 
 I received the check from the 401k at my former employer.
