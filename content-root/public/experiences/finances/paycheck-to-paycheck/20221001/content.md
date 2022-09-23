@@ -133,4 +133,12 @@ I don’t have enough experiences to make this part of my [investment policy sta
 
 ## Changes to diet and spending
 
+The last 30 days we’ve been treating my foot pain as gout via medication. Had uric acid blood levels checked and they’re down 1.3 from where they were.
+
+Experiment will be to keep same medication level and replace the sausage with a combination of cashews and pumpkin seeds.
+
+We’ll run this for 30 days and have the levels checked again.
+
+Because my body tends to get interesting whenever dietary changes are made, Becca came up with a daily checklist I can fill out easily and I’ve added it to my health spreadsheet.
+
 {!! next-previous !!}
