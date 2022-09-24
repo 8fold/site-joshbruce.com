@@ -137,6 +137,22 @@ I don’t have enough experiences to make this part of my [investment policy sta
 
 ## So, that happened
 
+The first time I went back to the store I grabbed a cart and asked someone up front if they wouldn’t mind watching my bag for me; they didn’t mind and they did so. 
+
+As I was waiting to check someone asked the employee about the bag on the ground. The other employee said, “A customer just gave it to me to watch.”
+
+It seemed the employee who asked about it felt some sort of way about it, but walked away. 
+
+The second time I did the same thing and the employee said, “We can’t hold bags up front anymore. You can carry it with you.”
+
+“All right,” I responded, “I’m just trying to avoid being accused of shoplifting again.”
+
+“I understand,” the employee responded with a smile.
+
+The bag is a sizable 35 liter duffel and could take up the basket of a large cart by itself. Luckily I went with one of the larger carts with the rack under the basket; not the double-stacked, smaller carts.
+
+It’s an interesting departure from what I’ve been doing for the 4 or 5 years; on a weekly basis. With that said, I appreciate the education.
+
 ## Changes to diet and spending
 
 The last 30 days we’ve been treating my foot pain as gout via medication. Had uric acid blood levels checked and they’re down 1.3 from where they were.
