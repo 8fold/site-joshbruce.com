@@ -101,6 +101,8 @@ The CNN Fear and Greed index hit extreme fear again; not surprising.
 
 ### Day 7 results
 
+I skipped buying the total stock market since it was the only one I could fully order with the money made available from the deposit. I put in the 6 limit orders for the multi-factor and extended market funds. I could only put in two for the S&P 500 fund though; the price per share is just too high for how much I was throwing in at the time; I decided to go down to 25 percent instead of 50.
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
