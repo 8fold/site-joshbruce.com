@@ -115,6 +115,8 @@ Only 4 of the 12 orders executed.
 
 I decided to look back in time and realized that the current prices for all of the funds are at or below where they were when I started this whole thing in 2021. This has caused be to narrow the steps for the limit orders. I'll still have the 2 cent over tier, however, I will be setting the next tier to a 0.5 percent drop and the third tier to be a 1 percent drop; instead of 1 and 2 percent, respectively.
 
+### Day 9 results
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
