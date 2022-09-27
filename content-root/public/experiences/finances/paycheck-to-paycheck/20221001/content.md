@@ -103,6 +103,18 @@ The CNN Fear and Greed index hit extreme fear again; not surprising.
 
 I skipped buying the total stock market since it was the only one I could fully order with the money made available from the deposit. I put in the 6 limit orders for the multi-factor and extended market funds. I could only put in two for the S&P 500 fund though; the price per share is just too high for how much I was throwing in at the time; I decided to go down to 25 percent instead of 50.
 
+5 of the 8 limit orders executed this time.
+
+The portfolio is almost within the bounds of being in balance except for the cash portion.
+
+### Day 8 results
+
+I did 12 limit orders this day and changed the percentages a bit to simplify. Starting with the percents; they are now 15 percent for 2 cents over current price, 35 percent for the 1 percent below current price, and 50 percent for the 2 percent below current price. At these new percents the S&P 500 for 2 cents over still didn't equate to a single share, however, this would have made the allocation of the Traditional IRA even more out of balance when it came to the S&P 500 funds; so, I went ahead and did 1 share at 2 cents over the current price.
+
+Only 4 of the 12 orders executed.
+
+I decided to look back in time and realized that the current prices for all of the funds are at or below where they were when I started this whole thing in 2021. This has caused be to narrow the steps for the limit orders. I'll still have the 2 cent over tier, however, I will be setting the next tier to a 0.5 percent drop and the third tier to be a 1 percent drop; instead of 1 and 2 percent, respectively.
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
@@ -118,6 +130,8 @@ So, for the same price as one S&P 500 fund share, I could get just over 3 shares
 There was also a few times when the extended market dropped more than 30 percent, so, I couldn’t buy the dip with more of it, but I could still buy the other funds.
 
 Pretty cool.
+
+We're also hitting the point where 52 weeks ago the New York Stock Exchange, and subsequently the mutual funds I own, started increasing in price. Therefore, the percent each fund is down from its 52 week high despite being higher than their 52 week low. For example, the extended market fund is down 37 percent compared to its high and 1 percent up from its low. 
 
 ## Purchasing ETFs at Vanguard
 
