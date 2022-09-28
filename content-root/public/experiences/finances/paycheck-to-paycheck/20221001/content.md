@@ -115,6 +115,8 @@ Only 4 of the 12 orders executed.
 
 I decided to look back in time and realized that the current prices for all of the funds are at or below where they were when I started this whole thing in 2021; the extended market fund is back to where it was when the COVID dip happened. This has caused me to narrow the steps for the limit orders. I'll still have the 2 cent over tier, however, I will be setting the next tier to a 0.5 percent drop and the third tier to a 1 percent drop; instead of 1 and 2 percent, respectively.
 
+On that note, both real estate investment trust funds I was using are hit pretty hard. The international one is below its lowest point in 2020 and the stateside one is about 15 dollars up.
+
 ### Day 9 results
 
 ## Closing M1 Finance
