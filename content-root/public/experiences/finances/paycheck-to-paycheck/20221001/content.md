@@ -119,6 +119,8 @@ On that note, both real estate investment trust funds I was using are hit pretty
 
 ### Day 9 results
 
+Equities had a good day; only 2 of the 12 limit orders executed. I’m going to switch to a market order, a 2 cent over order, and a 0.5 percent down order.
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
