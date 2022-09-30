@@ -6,23 +6,34 @@
 
 My operating expense account was below the minimum I established because something came up, so, a bit extra went toward bringing that back up.
 
+Still buying the dip via the multi-factor fund. 
+
+Experimenting with some different purchasing strategies; see [401k rollover](#401-rollover).
+
+I received dividends and they were reinvested.
+
 ## 401k rollover
 
-I received the check from the 401k at my former employer.
+I received the check from the 401k at my former employer. I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting; per the Vanguard instructions. 
 
-I called Vanguard and was surprised to learn I could deposit the check using the mobile app instead of overnighting like I originally thought. The agent was awesome and did curb my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard has a policy based on account value when it comes to check deposits and transfers. Long story short, some of the money was available, however, all of it wouldn't be available until after 7 days. (I did ask Vanguard to update their user interface to be a bit more explicit about what's available and what's not available.)
+The agent was awesome and curbed my expectations by telling me it could still take two weeks to hit my settlement fund. With that said, Vanguard has a policy based on account value when it comes to check deposits and transfers. Long story short, some money was available, however, all of it wouldn't be available until after 7 days. (I asked Vanguard to update the user interface to be more explicit about what's available and what's not; similar to check holds with my primary credit union.)
 
 It took two business days to hit my settlement fund. I spent those two business days (and the weekend) figuring out how I would disperse the cash.
 
-I didn't want to repeat what happened to my [.Health Savings Accounts](HSA) this year. If you don't know, when the market started down its correction and bear market path, I maxed out my HSA for the year. Unfortunately, that was only the tip of the dip and I could have spread that out more evenly; lesson learned. That mistake, for lack of a better term, was the impetus behind creating the [spending savings protocols](/experiences/finances/personal-budget/#spending-savings).
+I didn't want to repeat my experience with my [.Health Savings Accounts](HSA) this year. If you don't know, when the market started down its correction and bear market path, I maxed out my HSA for the year. Unfortunately, that was the tip of the dip and I could have spread that out more evenly; lesson learned. That mistake, for lack of a better term, was the impetus behind creating the [spending savings protocols](/experiences/finances/personal-budget/#spending-savings).
 
-This rollover falls under the "Too much cash" protocol because now the portfolio as a whole went from its target 6 percent cash, to 10 percent cash when I took the three funds at my former employer to 0, and is now around 40 percent cash. The too much cash protocol, as of this writing, basically allows me to put in as much as I want toward one or more securities. When I created it, I wasn't expecting it to be from a windfall-style scenario, so, I've updated the protocol to loosen the guardrails a bit; initially all the money had to go to a single security and now it can go toward multiple securities as long as it doesn't throw the portfolio out of balance.
+This rollover falls under the "Too much cash" protocol because now the portfolio as a whole went from its target 6 percent cash, to 10 percent cash when I took the three funds at my former employer to 0, and is around 40 percent cash as of this writing. 
 
-With that said, I don't want to do it all in a single move; avoiding the HSA debacle from earlier in 2022. What I'm going to do instead is combining the buying a dip 90 day cool down protocols. I’ll be doing it daily and using half the cash in the account.
+The too much cash protocol, as of this writing, basically allows me to put in as much as I want toward one or more securities. When I created it, I wasn't expecting a windfall scenario, so, I've updated the protocol to loosen the guardrails; initially all the money had to go to a single security and now it can go toward multiple securities as long as it doesn't throw the portfolio out of balance.
 
-Here are the guardrails around this experiment.
+With that said, I don't want to do it all in a single move; avoiding the HSA debacle from earlier in 2022. What I'm going to do instead is combining the buying a dip 90 day cool down protocols. I’ll be buying daily and using a percent of the cash in the account.
 
-Until the available cash is so low it just makes sense to do dollar-based (fractional share) purchases I'll only use limit orders. I'll only commit 50 percent of the available cash each day to creating the limit orders. Further, I'll create multiple, one day limit orders for each fund using the target equity mix as the guideline. Finally, each limit order will be based on the initial price when I start creating the orders for that fund for the day.
+Here are the guardrails around this experiment:
+
+1. favor limit orders (and purchasing whole shares) instead of dollar-based (fractional shares).
+2. only commit 50 percent of less of the cash available until the balance is too low to bother.
+3. create as many orders as needed to disperse the amount for the day using the target equity mix for the Mark 0 portfolio.
+4. base each limit order on the opening price of the share.
 
 Who's ready for some numbers and an example?
 
@@ -33,7 +44,7 @@ The target percentage for each fund is:
 3. 25 percent multi-factor.
 4. 13 S&P 500.
 
-Let's say the available cash was 30,000 [.United States Dollars](USD). On day 1, I'd be able to commit 15,000 USD to purchasing shares.
+Let's say the available cash was 30,000 [.United States Dollars](USD). On day 1, I'd be able to commit up to 15,000 USD to purchasing shares.
 
 If I was doing it straight, that would be:
 
@@ -42,7 +53,9 @@ If I was doing it straight, that would be:
 3. 3,750 USD to the multi-factor, and
 4. 1,950 USD to the S&P 500.
 
-Given the way limit orders work and the experience I had with the HSA though, I'd like to subdivide even more. So, instead of doing straight, I'm doing 3 limit orders for each fund. There's what I'll call a normal tier, a single-dip tier, and a double-dip tier:
+Given the way limit orders work and the experience I had with the HSA though, I'd like to subdivide even more. So, instead of doing the straight method, I'm doing 2 or more limit orders for each fund. 
+
+For this example, let's say I have 3 limit orders to make for each fund:
 
 1. The normal tier is what's quickly becoming the normal way I put in limit orders, which is the initial price plus 2 cents; using 13 percent of the available money for the fund.
 2. The single-dip tier is 1 percent less than the initial price; using 33 percent of the available money for the fund.
@@ -56,74 +69,134 @@ Back to the 15,000 USD example. We'll only run through the total stock market fu
 2. Single-dip tier at 90 USD per share with a maximum available of 742.50 USD; 8 full shares.
 3. Double-dip tier at 80 USD per share with a maximum available of 1,125 USD; 14 full shares.
 
-If the price rises above the 2 cents (0.0002 percent of the initial price in this case), none of the orders will execute. If the price stays at or below the 0.0002 percent threshold, the first order will most likely execute. If the price drops to 1 percent, the first and second orders should execute. If the price drops to 2 percent, all three orders should execute.
+If the price rises (and stays) above the 2 cents (0.0002 percent of the initial price in this case), none of the orders will execute. If the price stays at or below the 0.0002 percent threshold, the first order will most likely execute. If the price drops by 1 percent, the first and second orders should execute. If the price drops by 2 percent, all three orders should execute.
 
-I say “should” because one or more people need to be on the other side of the trade selling shares at or below the price, and in the quantity, set by my
-limit order. Luckily, the funds I’m using are fairly liquid.
+I say “should” because one or more people need to be on the other side of the trade selling shares at or below the price, and in the quantity, set by my limit order. Luckily, the funds I’m using are fairly liquid.
 
 ### Day one results
 
-The first day I ran this experiment I was still figuring out putting in multiple limit orders at once because I normally only do the one limit order and then a market order to finish up after the limit order executes, so, I didn't have the double-dip orders in place.
-
-I definitely can see the thrill in day-trading a bit based on this first day.
+Day one was the first time I had placed multiple limit orders for a single fund, so, I didn't have the double-dip orders in place. I see the thrill in day-trading based on this first day, however, I'm not gonna go there.
 
 I put in 8 limit orders. 4 for the the 2 cents above the initial price when I set them up and 4 for the 1 percent dip.
 
 None of them executed when the market opened.
 
-I was feeling a bit of excitement or anxiety as I was considering what I should do. Of course, my answer to myself was, "Nothing" but it definitely took a bit of convincing. The mantra became: No worries, if none of them execute today, you'll just do the same thing tomorrow.
+Excitement or anxiety (or both) filled me as I was considering what I should do. 
 
-The prices kept going up. I'd look at the Vanguard app about once an hour in between doing day-job things; I wanted to sit with why I felt compelled to look at least long enough for the desire to grow old and subside. Then, just before noon, I stopped looking. I ran to an appointment related to the whole gout thing and came back. Toward late afternoon, I looked.
+My answer to myself was, "Nothing" but it took convincing. The mantra became: No worries, if none of them execute today, you'll do the same thing tomorrow.
 
-Every one of my limit orders executed, except one. The multi-factor fund was still hovering above the 1 percent dip mark. That was a good feeling. Finished up the day and looked again; the last limit order executed.
+The prices kept going up. I'd look at the Vanguard app about once an hour in-between doing day-job things; I wanted to meditate on why I was compelled to look, so, I just kept looking. 
 
-All 8 limit orders executed. Further, if I had put in the double-dip tier limit orders, they would not have executed.
+Just before noon, I stopped looking. 
+
+I ran to an appointment related to the whole gout thing and came back. Toward late afternoon, I looked.
+
+Every one of my limit orders executed, except one. The multi-factor fund was hovering above the 1 percent dip mark. That was a good feeling. Finished up the day and looked again; the last limit order executed.
+
+All 8 limit orders executed. Further, if I had put in the double-dip tier limit orders, they would not have executed; there might be something to having only the single-dip.
 
 ### Day two results
 
-This was my buy the dip day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular, automated contributions for now.) I used the three limit order protocol and all three executed, then I did a market order for the remaining, which was even cheaper.
+This was a "buy the dip" day, and I did; I went with the multi-factor fund. From a portfolio allocation-perspective, the multi-factor fund is the lowest next to the S&P 500. However, I have the S&P 500 and an extended market fund in the 401k at my current employer, so, want to avoid both of those and the total stock market is getting filled in through the redistribution of cash in the Traditional [.Individual Retirement Account](IRA). (Besides, and worth noting, the extended market fund is down over 30 percent compared to its 52 week high anyway; so, only regular contributions for now.) 
+
+I used the three limit order protocol and all three executed, then I did a market order for the remaining, which was even cheaper.
 
 I updated the quick spreadsheet tables I threw together with the cash now available in the settlement fund and was able to put in 4 more limit orders. Only 3 of the 4 executed.
 
-In the future, if I do another rollover, and if Vanguard hasn't updated their user interface to be a bit more accurate and explicit with how much is available, I'll probably go with 25 percent instead of 50 percent and ask how much is actually available and use that number until everything becomes available.
+In the future, if I do another rollover, and if Vanguard hasn't updated their user interface to be more explicit with how much is available, I'll probably:
 
-With that said, I need to wait the remaining 7 days.
+1. go with 25 percent instead of 50 and 
+2. call to ask how much is actually available when the funds appear in the Settlement Fund.
+
+With that said, I need to wait the remaining 7 days before I can do more purchases.
 
 ### Days 3–6
 
 Waited for the funds to be available for real.
 
-I did update the [investment policy](/experiences/finances/investment-policy/#investments) and will try to use a 3 limit order approach with my future contributions; updated the spreadsheet to make this easier.
+I updated the [investment policy](/experiences/finances/investment-policy/#investments) and will try to use a similar limit order approach with my future contributions; updated the spreadsheet to make this easier.
 
-As of September 23 2022 the price of the extended market fund is back to where it was around the same day in 2020; now I have [that Cher song](https://youtu.be/9n3A_-HRFfc) stuck in my head. If I look at all four funds over the past 10 years (or as far back as they go) the price on this day seems like where it would have been if the trend hand continued without the pandemic run up. I’m using this to speculate anything, just an interesting observation. Another observation is that each fund share price was higher than their 52 week low and 20 percent or more down from their 52 week high.
+As of September 23, 2022 the price of the extended market fund is back to where it was around the same day in 2020; now I have [that Cher song](https://youtu.be/9n3A_-HRFfc) stuck in my head. With that said, each fund is up from its 52 week low, which are all above any high or low period from the last 5 to 10 years.
 
 The CNN Fear and Greed index hit extreme fear again; not surprising. 
 
 ### Day 7 results
 
-I skipped buying the total stock market since it was the only one I could fully order with the money made available from the deposit. I put in the 6 limit orders for the multi-factor and extended market funds. I could only put in two for the S&P 500 fund though; the price per share is just too high for how much I was throwing in at the time; I decided to go down to 25 percent instead of 50.
+I skipped buying the total stock market since it was the only one I could order with the money made available from the deposit. I put in the 6 limit orders for the multi-factor and extended market funds. I could only put in 2 orders for the S&P 500 fund though; the price per share is too high for how much I was throwing in at the time; I decided to go down to 25 percent instead of 50.
 
 5 of the 8 limit orders executed this time.
 
-The portfolio is almost within the bounds of being in balance except for the cash portion.
+The greater portfolio is almost within the bounds of being in balance except for the cash portion.
 
 ### Day 8 results
 
-I did 12 limit orders this day and changed the percentages a bit to simplify. Starting with the percents; they are now 15 percent for 2 cents over current price, 35 percent for the 1 percent below current price, and 50 percent for the 2 percent below current price. At these new percents the S&P 500 for 2 cents over still didn't equate to a single share, however, this would have made the allocation of the Traditional IRA even more out of balance when it came to the S&P 500 funds; so, I went ahead and did 1 share at 2 cents over the current price.
+I did 12 limit orders this day and changed the percentages to simplify. 
+
+Starting with the percents; they are now 15 percent for 2 cents over current price, 35 percent for the 1 percent below current price, and 50 percent for the 2 percent below current price. At these new percents the S&P 500 for 2 cents over didn't equate to a single share, however, this would have made the allocation of the Traditional IRA even more out of balance when it came to the S&P 500 fund; so, I went ahead and did 1 share at 2 cents over the current price.
 
 Only 4 of the 12 orders executed.
 
-I decided to look back in time and realized that the current prices for all of the funds are at or below where they were when I started this whole thing in 2021; the extended market fund is back to where it was when the COVID dip happened. This has caused me to narrow the steps for the limit orders. I'll still have the 2 cent over tier, however, I will be setting the next tier to a 0.5 percent drop and the third tier to a 1 percent drop; instead of 1 and 2 percent, respectively.
-
-On that note, both real estate investment trust funds I was using are hit pretty hard. The international one is below its lowest point in 2020 and the stateside one is about 15 dollars up.
+I decided to look back in time and realized that the current prices for all the funds are around where they were when I started this whole thing in 2021; the extended market fund is back to where it was when the COVID dip happened. This has caused me to narrow the steps for the limit orders. I'll have the 2 cent over tier, however, I'll be setting the next tier to a 0.5 percent drop and the third tier to a 1 percent drop; instead of 1 and 2 percent, respectively.
 
 ### Day 9 results
 
-Equities had a good day; only 2 of the 12 limit orders executed. I’m going to switch to a market order, a 2 cent over order, and a 0.5 percent down order.
+Equities had a good day in the sense they went up in price; only 2 of the 12 limit orders executed. I’m going to switch to a market order, a 2 cent over order, and a 0.5 percent down order the next day; just to see what happens.
+
+### Day 10 results
+
+I used the spreadsheet table to determine how many shares to buy. I increased the total amount to try and contribute 50 percent of available money. I set my orders to continue allocating 15 percent to the market price, 25 percent to two cents over, and 50 percent to 0.5 percent below. This means less shares were purchased at the initial price and more would be purchased if there was a 0.5 percent drop.
+
+What I appreciate about this approach is I'm limiting myself in the sense I only want to buy X number of shares at the initial price (plus or minus). Further, I appreciate the idea that I'm always buying at least 1 share, even if it's at, or below, or above the initial price. For example, I didn't have enough, based on the allocation, to purchase 1 or more shares of the S&P 500 and total stock market funds; however, I asked Vanguard to buy 1 share no matter what. 
+
+The prices of the funds went down 2 percent within a couple hours of opening, so, I could have received a better deal had I done the 2 cents over, the 1 percent down, and the 2 percent down method and I reflected on that a bit. All 12 orders executed immediately. 
+
+I'm looking for the setup that scratches the most itches for me, including achieving my overall investment goals. Further, and on that score, I don't know when I'll have this much liquid cash during a volatile time to experiment without feeling like I'm missing out on an upswing or throwing in too much all at once.
+
+This method with the market orders seems to be helping keep the values for each fund near their targets more consistently, which I'm thinking is a good thing.
+
+I'm considering two more experiments.
+
+The first setup would be something like:
+
+1. 15 percent (or 1 share) at market price.
+2. 35 percent (or 1 share) at 2 cents above initial price (or current price, if lower than initial price).
+3. 50 percent (or 1 share) at 1 percent below initial price.
+
+The second setup would add a tier and look like:
+
+1. 10 percent (or 1 share) at market price.
+2. 20 percent (or 1 share) at 2 cents above initial price (or current price, if lower than initial price).
+3. 30 percent (or 1 share) at 1 percent below initial price.
+4. 40 percent (or 1 share) at 2 percent below initial price.
+
+Both of these scenarios should resolve some psychological baggage I've been experiencing, which is I'm in accumulation mode and don't want cash sitting on the side for an extended period; I'm always buying at least 1 share at the current market price. Further, both of these still take more advantage of dips in the market price of a share in the fund, which helps satisfy that desire. Also, I think it's a balance between scratching the tinkerer's itch and automated decision making. Finally, using the lower price between initial and current makes me feel more comfortable about the "wait until after the market has been open 30 minutes or more" rule of thumb.
+
+One drawback here is both scenarios increase bookkeeping overhead due to the number of potential transactions.
+
+Another drawback is that both setups make me feel like I should have two rounds or placing orders, or, I should adhere more strictly to the rule of thumb of not placing orders before 10 in the morning Eastern Time.
+
+I decided to look at the current value compared to the initial amount of the check and discovered the current value of the account was less than 2 percent down compared to the initial value. If I had done the lump-sum approach, it would be down roughly 6 or more percent; this is what happened with the HSA in 2022, so, it feels like further affirmation on this approach.
+
+### Day 11 results
+
+I'm thinking the two setups would actually perform better in different circumstances. 
+
+If the price of the funds are up, I think the 15 (at market), 35 (at 2 cents over), and 50 (at 1 percent down) would be the better option. If the price of the funds are down, I think the 10 (at market), 20 (at 2 cents over), 30 (at 1 percent down), and 40 (at 2 percent down) would be better.
+
+On day 9, the market closed up, which made me want to throw more money in on day 10, just in case it went up even more—get in early. Unfortunately, the price of the funds dropped on day 10 and in some cases to that 2 percent threshold. 
+
+This is starting to feel a bit like market timing, however, this is experimentation mode, so, I'm not beating myself about it. Knowing me, I'll do this for a while before stopping after I feel I've learned what I can from the exercise.
+
+The goal of both setups is to always be buying and get as much as I can at or below current and initial prices.
+
+The funds were down on day 10, so, I decided to go with the 10, 20, 30, 40 setup.
+
 
 ## Closing M1 Finance
 
 Main M1 Finance Pie is still down over 30 percent and I'm working through the 401k rollover, so, no money went this way.
+
+I earned dividends and reinvested them in the main Pie.
 
 ## Update on the dip
 
@@ -184,5 +257,13 @@ Experiment will be to keep same medication level and replace the sausage with a 
 We’ll run this for 30 days and have the levels checked again.
 
 Because my body tends to get interesting whenever dietary changes are made, Becca came up with a daily checklist I can fill out easily and I’ve added it to my health spreadsheet.
+
+Update: After being off the anti-inflammatory for a week, had another flare. Not only that, but it was bad; way worse than the first.
+
+Part of this was probably exacerbated by having an ingrown toenail that had become inflamed when I accidentally nipped my toe when trying to remove the offending corner.
+
+Went to a podiatrist who removed the ingrown portion of the toenail; we did not apply the acid to keep that part of the toenail from growing back. They also prescribed a different anti-inflammatory to handle the flare. After 24 hours I was feeling much better.
+
+Further, my primary doctor and I decided to go back on the anti-inflammatory we were using and to double the dose of the medication to reduce the uric acid serum in my blood. We'll do this for another 30 days and check the uric acid levels again; the goal would be another 2 point reduction, which should get us to a point where my body is no longer producing enough uric acid to also [create the crystals](https://en.wikipedia.org/wiki/Gout) that result in the inflammation.
 
 {!! next-previous !!}
