@@ -181,16 +181,21 @@ I decided to look at the current value compared to the initial amount of the che
 
 I'm thinking the two setups would actually perform better in different circumstances. 
 
-If the price of the funds are up, I think the 15 (at market), 35 (at 2 cents over), and 50 (at 1 percent down) would be the better option. If the price of the funds are down, I think the 10 (at market), 20 (at 2 cents over), 30 (at 1 percent down), and 40 (at 2 percent down) would be better.
+If the price of the funds are up, I think the 15 (at market), 35 (at 2 cents over), and 50 (at 1 percent down) would be better. If the price of the funds are down, I think the 10 (at market), 20 (at 2 cents over), 30 (at 1 percent down), and 40 (at 2 percent down) would be better.
 
 On day 9, the market closed up, which made me want to throw more money in on day 10, just in case it went up even more—get in early. Unfortunately, the price of the funds dropped on day 10 and in some cases to that 2 percent threshold. 
 
-This is starting to feel a bit like market timing, however, this is experimentation mode, so, I'm not beating myself about it. Knowing me, I'll do this for a while before stopping after I feel I've learned what I can from the exercise.
+This is starting to feel like market timing, however, this is experimentation mode, so, I'm not beating myself about it. Knowing me, I'll do this for a while before stopping after I feel I've learned what I can from the exercise.
 
 The goal of both setups is to always be buying and get as much as I can at or below current and initial prices.
 
 The funds were down on day 10, so, I decided to go with the 10, 20, 30, 40 setup.
 
+14 orders, 8 executed.
+
+### Day 12 results
+
+The funds were down on day 11 and went pretty well, so, going with the 10, 20, 30, 40 again.
 
 ## Closing M1 Finance
 
