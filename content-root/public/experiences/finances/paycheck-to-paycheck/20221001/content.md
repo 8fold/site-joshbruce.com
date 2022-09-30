@@ -142,6 +142,8 @@ I decided to look back in time and realized that the current prices for all the 
 
 Equities had a good day in the sense they went up in price; only 2 of the 12 limit orders executed. I’m going to switch to a market order, a 2 cent over order, and a 0.5 percent down order the next day; just to see what happens.
 
+There was actually a moment on this day where value exceeded the original amount of the check received. Unfortunately, the check and value on this day wasn’t more than the value of the 401k on the day I asked for the check, but a good sign, I think.
+
 ### Day 10 results
 
 I used the spreadsheet table to determine how many shares to buy. I increased the total amount to try and contribute 50 percent of available money. I set my orders to continue allocating 15 percent to the market price, 25 percent to two cents over, and 50 percent to 0.5 percent below. This means less shares were purchased at the initial price and more would be purchased if there was a 0.5 percent drop.
