@@ -23,9 +23,15 @@ I'm starting to reconsider what I consider trying to time the market to be; [mor
 
 ### Day 12 results
 
-The funds were down on day 11, which went well, so, going with the 10, 20, 30, 40 again. But that will be for the next paycheck.
+Went with the 10, 20, 30, 40 again; I didn’t contribute to the total stock market or the S&P 500 funds since the orders executed last pat paycheck, which was unexpected.
+
+Going to convert to a one week interval from here until out of cash.
 
 ## Closing M1 Finance
+
+Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, with their first round of buys could happen after the first 30 minutes of the market being open; without paying for it.
+
+Basically more reasons for me to preference Vanguard or similar over M1 Finance.
 
 ## Update on the dip
 
@@ -43,7 +49,9 @@ Or, another one that's been coming to mind as of late (and previously):
 
 > If you have a bunch of cash sitting on the sidelines it can cause a cash-drag on the portfolio.
 
-There are similar sentiments related to this idea. I started thinking about these sentiments recently as I've been doing the [401k rollover](#401k-rollover), because what I'm doing fits pretty closely to the [Investopedia article](https://www.investopedia.com/terms/m/markettiming.asp) description of market timing; however, I'm not sure if what I'm doing there actually is, strictly speaking, market timing.
+There are similar sentiments related to this idea. I started thinking about these sentiments recently as I've been doing the [401k rollover](#401k-rollover), because what I'm doing fits pretty closely to the [Investopedia article](https://www.investopedia.com/terms/m/markettiming.asp) description of market timing; however, I'm not sure if what I'm doing there actually is market timing, strictly speaking.
+
+What’s the difference between market timing and taking advantage of an otherwise unfortunate circumstance; buying a dip?
 
 The main assumption when it comes to the hot-takes regarding market timing is the idea that you are moving all the value from being in the market to being out of the market or selling a large chunk from one place to move it to another place. From the article:
 
@@ -77,7 +85,9 @@ I'm not waiting for the bottom of this dip, recession, or depression (whatever i
 
 The timing for me and investing has been fascinating.
 
-I started contributing to the 401k at my former employer in 2019, just up to the employer match. I turned up the contributions in 2021 to hit the annual limit; the run-up to 2022. My contributions to that account ended in July. I sold everything in mid-September. This means most of the gains made in 2021 were lost. With that said, if I did the math right, looking at total cost versus total value at the time of sale, I lost anywhere from 50 to 75 percent of the value of my former employer's contributions. Let's say the total cost put in was 50,000 [.United States Dollars](USD). Further, let's say it was a 6 percent match, which would be 3,000 USD. I missed out on (or lost) up to 2,250 USD. With that said, for this hypothetical, I still walked away with 47,750 USD I didn't have before.
+I started contributing to the 401k at my former employer in 2019, just up to the employer match. I turned up the contributions in 2021 to hit the annual limit; the run-up to 2022. My contributions to that account ended in July, 2022. I sold everything in mid-September. This means most of the gains made in 2021 were lost. With that said, if I did the math right, looking at total cost versus total value at the time of sale, I lost anywhere from 50 to 75 percent of the value of my former employer's contributions. 
+
+Let's say the total cost put in was 50,000 [.United States Dollars](USD). Further, let's say it was a 6 percent match, which would be 3,000 USD. I missed out on (or lost) up to 2,250 USD. With that said, for this hypothetical, I still walked away with 47,750 USD I didn't have before.
 
 Beyond that, I've been contributing the annual limits to my Roth IRA and HSA along with putting money into my taxable brokerage account; without fail.
 
@@ -87,7 +97,7 @@ Anyway.
 
 I don't know what the market will do. I'm not guessing at what it might do. When it will hit bottom. How long it will take to recover. I have no control there. However, I can see what the market is doing and has been doing in the past few days, weeks, and months; and it's still going down with blips here and there.   
 
-I remember in 2021 when I was working the misunderstanding with the [.Internal Revenue Service](IRS), I was so impatient and concerned over the "cash-drag" having all this cash was causing on my portfolio. Eventually, I decided to go ahead and deploy that cash; or, at least a majority of it. Now, I still own those shares, and their value is less than the initial cost; to be clear, this is fine, the important thing is to learn to no chase returns, which is what it felt like in retrospect—serious case of [.Fear Of Missing Out](FOMO). And it cuts both ways as happened in the beginning of 2022 because I didn't want to miss out on the dip—only for it to continue throughout the year and up to this point; returning pretty much to where it was 12 months ago from a price per share perspective. Meanwhile, the value of my portfolio overall has continued to increase slowly or plateau, so, I'm finding that to be pretty fascinating and helpful in dealing with the psychology of things.
+I remember in 2021 when I was working out the misunderstanding with the [.Internal Revenue Service](IRS), I was so impatient and concerned over the "cash-drag" having all the cash to potentially pay taxes and fees. Eventually, I decided to go ahead and deploy that cash; or, at least a majority of it. Now, I still own those shares, and their value is less than the initial cost; to be clear, this is fine, the important thing is to learn to not chase returns, which is what it felt like in retrospect—serious case of [.Fear Of Missing Out](FOMO). And it cuts both ways as happened in the beginning of 2022 because I didn't want to miss out on the dip—only for it to continue throughout the year and up to this point; returning pretty much to where it was 12 months ago from a price per share perspective. Meanwhile, the value of my portfolio overall has continued to increase slowly or plateau, so, I'm finding that to be pretty fascinating and helpful in dealing with the psychology of things.
 
 My thoughts right now are that it's more important to be consistent once you start. When I started investing it was because I felt I was in a position to commit to investing regularly.
 
