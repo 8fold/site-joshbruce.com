@@ -19,13 +19,19 @@ I'm down to about 25 percent of the rollover cash still in the account. I'm thin
 4. this money has about a 17 year incubation period, and
 5. the market is still consistently going down from week-to-week.
 
-I'm starting to reconsider what I consider trying to time the market to be; [more on that below](#timing-the-market).
+I'm starting to reconsider what constitutes market timing for me; [more on that below](#timing-the-market).
 
 ### Day 12 results
 
 Went with the 10, 20, 30, 40 again; I didn’t contribute to the total stock market or the S&P 500 funds since the orders executed last pat paycheck, which was unexpected.
 
-Going to convert to a one week interval from here until out of cash.
+The market closed up, so, this seems like a good time to try the other setup.
+
+2 of the 8 orders executed; the ones at the current market price.
+
+### Day 13 results
+
+Went with the 15, 35, 50 this time since the market closed up during day 12.
 
 ## Closing M1 Finance
 
