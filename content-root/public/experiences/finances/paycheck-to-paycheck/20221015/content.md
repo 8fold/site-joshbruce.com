@@ -33,6 +33,14 @@ The market closed up, so, this seems like a good time to try the other setup.
 
 Went with the 15, 35, 50 this time since the market closed up during day 12.
 
+Market closed down.
+
+6 of the 6 orders executed; only the multi-factor and extended market funds.
+
+### Day 14 results
+
+Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this time because the values were almost at their targets.
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, with their first round of buys could happen after the first 30 minutes of the market being open; without paying for it.
