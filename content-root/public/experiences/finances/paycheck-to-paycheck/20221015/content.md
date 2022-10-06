@@ -31,7 +31,19 @@ The market closed up, so, this seems like a good time to try the other setup.
 
 ### Day 13 results
 
-Went with the 15, 35, 50 this time since the market closed up during day 12.
+Went with the 15, 35, 50 this time since the market closed up during day 12. 
+
+The market spiked and this just sort of settled in for the day; definitely understanding the notion of waiting for the market to be open for 30 minutes before placing regular limit orders. This time I created the 6 orders the night before.
+
+The orders were for the multi-factor and extended market funds and not the total market or S&P 500 because the former occupy less than their target percent for the allocation and the latter occupy more.
+
+At the fund level, the overall portfolio is almost in a balanced state, which is exciting. Also, the current value of the Traditional IRA is greater than than the check I received from the plan with my former employer. In fact, it's about where the value was when I requested the the check in the first place, which is exciting to see.
+
+2 of the 6 orders executed; the ones at current market price.
+
+### Day 14 results
+
+Went with the 15, 35, 50 this time since the market closed up during day 13. Created the orders at the end of day 13.
 
 ## Closing M1 Finance
 
