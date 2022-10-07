@@ -4,6 +4,8 @@
 
 {!! data !!}
 
+Still working through the 401k rollover.
+
 ## 401k rollover
 
 Hindsight being what it is, I'm actually pretty glad that I withdrew the funds from my 401k when I did. I was considering leaving it in until it was actually up again, but given what's happened with a deeper drop and my subsequent ability to purchase over time I think no longer having those fees is pretty awesome. 
@@ -49,11 +51,21 @@ Market closed down.
 
 6 of the 6 orders executed; only the multi-factor and extended market funds.
 
-### Day 14 results
+### Day 15 results
 
-Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this time because the values were almost at their targets.
+Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this time because the values were almost at their targets. I increased the percent to contribute to 50 percent of the remaining cash balance; the amount of money remaining is starting to get to a point where less than 50 percent means not really buying much of anything.
 
 At the fund-level, the S&P 500 fund is under its minimum; everything else is at least above the minimum. At the style- or factor-level, we’re above the minimums. And, of course, at the allocation for the data above we’re also within limits&hellip;except cash.
+
+This was a [buy the dip day](https://joshbruce.com/experiences/finances/personal-budget/#spending-savings), but I decided not to. The extended market fund is down the most from its 52 week high; however, it's down over 30 percent, so, can't do that one. The total stock market fund is getting close to its maximum allocation and I'm still putting money that way from the rollover, so, didn't want to go there either. The S&P 500 fund is below its minimum, but I'd prefer not to add it to the taxable account, if I can avoid it and, beyond that, it's part of my current 401k and I'm buying more of it as part of the rollover and should be above its minimum soon; so, avoiding it as well. The multi-factor fund is within the thresholds, however, it's only down about 15 percent, which isn't a lot as a percent of the balance of my savings account, so, decided to just leave it as is.
+
+If the extended market fund had been 30 percent or less down, I would have bought the dip.
+
+11 of the 16 orders executed.
+
+### Day 16 results
+
+Market was down on day 15, so, going with the 10, 20, 30, 40 again. Further, for the Mark 0 allocation inside the Traditional IRA, the S&P 500 fund is a bit heavy; skipping it this time. Finally, the multi-factor fund counted for 2 of the 5 orders that didn't execute on day 15, so, we'll see how this goes. All of the funds are within 2 percent of their target and I still have enough cash to put them where they need to be in the next day or two; that's without following either of the two setups, unfortunately.
 
 ## Closing M1 Finance
 
@@ -63,9 +75,11 @@ Basically more reasons for me to preference Vanguard or similar over M1 Finance.
 
 ## Update on the dip
 
-On the first of October, 2022 I did a quick history check and discovered that the price for each fund (except the multi-factor fund) was at about what it was in 2020; cue [Cher](https://youtu.be/9n3A_-HRFfc). For the extended market fund, it was actually lower.
+On the first of October, 2022 I did a quick history check and discovered the price for each fund (except the multi-factor fund) was at about what it was in 2020; cue [Cher](https://youtu.be/9n3A_-HRFfc). For the extended market fund, it was actually lower.
 
 ## Changes to diet and spending
+
+The removal of the breakfast sausage and replacing with the combination of cashews and pumpkin seeds seems to be going pretty well. However, I'm still taking an anti-inflammatory, which I don't want to do for an extended period of time but, whenever I stop, the pain starts coming back. I'm hoping to experiment with taking the anti-inflammatory every other day instead of every day to see how that goes. The body is pretty amazing at healing itself and inflammation is a part of that and I don't want to get in the way of my body's natural responses, if possible.
 
 ## Timing the market
 
