@@ -67,6 +67,10 @@ If the extended market fund had been 30 percent or less down, I would have bough
 
 Market was down on day 15, so, going with the 10, 20, 30, 40 again. Further, for the Mark 0 allocation inside the Traditional IRA, the S&P 500 fund is a bit heavy; skipping it this time. Finally, the multi-factor fund counted for 2 of the 5 orders that didn't execute on day 15, so, we'll see how this goes. All of the funds are within 2 percent of their target and I still have enough cash to put them where they need to be in the next day or two; that's without following either of the two setups, unfortunately.
 
+The multi-factor fund in the Traditional IRA is still down 1 percent. The other funds are roughly where they need to be; slightly over. Despite the loss in value of the funds, the value of the Traditional IRA is just above the value of the check received for the rollover, which is a good thing. Feeling pretty good about the choice to do the rollover when I did.
+
+All 16 orders executed; 4 were for a regular contribution to the multi-factor fund. 
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, with their first round of buys could happen after the first 30 minutes of the market being open; without paying for it.
