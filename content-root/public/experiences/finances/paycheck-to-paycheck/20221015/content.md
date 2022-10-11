@@ -71,6 +71,38 @@ The multi-factor fund in the Traditional IRA is still down 1 percent. The other 
 
 All 16 orders executed; 4 were for a regular contribution to the multi-factor fund. 
 
+### Day 17 results
+
+Market was down on day 16; doing a modified 10, 20, 30, 40. Instead of buying a share at the current market price, I only did limit orders for the 20, 30, 40 percent. I only bought the multi-factor and extended market funds.
+
+This was my normal contribution day as well and that went toward the multi-factor fund.
+
+7 of 12 orders executed.
+
+### Day 18 results
+
+Market was down on day 17; doing another modified 10, 20, 30, 40. Again, only did the 20, 30, 40 percent this time and only toward the multi-factor and extend market funds, which are the lowest compared to their target allocations.
+
+The value of the Traditional IRA is less than 2 percent down from the original check amount, which I'm viewing as a win. I can feel the thrill of this getting a bit old, to be honest. Part of the tactile indicator is that I'm losing track of the actual days based on these entries; this might actually be day 19. With that said, the experiment is going well as I keep seeing the benefit of using limit orders.
+
+For example, my normal contribution went well, however, I still have a bit of cash left over because it wasn't spent on shares purchased at the market price. This is causing my cash to be spread across multiple accounts (a bit in the primary credit union, a bit in the taxable brokerage account, and a bit in the Traditional IRA), however, it's not making me feel overwhelmed or like that money isn't being optimized. Therefore, my conclusion at the moment is that letting the price per share come to me is a worthwhile venture.
+
+5 of 6 orders executed.
+
+### Day 19 results
+
+Market was interesting. It closed down, however, not by much compared to its opening. It was fascinating to watch because there was a decent drop in the first hour. Two hours later it was up and stayed that way for about 3 hours. The it dropped and went up a little bit before the close and after hours. Again, I can definitely see the thrill involved with day-trading, however, I'm really appreciating the set and forget afforded by limit orders; despite the, "I can always try again tomorrow," if they don't always execute.
+
+I think I'm going to change my setups to exclude market price purchases.
+
+If the market was down the previous day, we go with 2 cents over the opening price, 1 percent under, and 2 percent under at 15, 35, and 50 percent, respectively. If the market was up the previous day, we go with 2 cents over and 1 percent under the opening price at 40 and 60 percent respectively.
+
+1 percent down fluctuations seem more common than 2 percent down, even on days when the price per share is up compared to its opening price. Further, those 1 percent down compared to the opening price have happened even on days when the prices go up right at opening.
+
+The overall portfolio is in balance; even at the fund level, including cash. Though it's close because of where the cash and S&P 500 positions are.
+
+
+
 ## Closing M1 Finance
 
 Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, with their first round of buys could happen after the first 30 minutes of the market being open; without paying for it.
