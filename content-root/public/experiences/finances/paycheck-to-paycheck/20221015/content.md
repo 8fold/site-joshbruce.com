@@ -101,6 +101,32 @@ If the market was down the previous day, we go with 2 cents over the opening pri
 
 The overall portfolio is in balance; even at the fund level, including cash. Though it's close because of where the cash and S&P 500 positions are.
 
+I don't recall how the orders went on this day.
+
+### Day 20 results
+
+The funds were down on day 19 and I did the 15, 35, and 50 percent. The funds closed down, but just barely.
+
+The price per share was interesting again today. All of the funds except the extended market fund just sorta skipped like a stone across a pond. The extended market fund went down beyond 1 percent, but not beyond 2 percent, before finishing the day like a stone skipping across the same pond.
+
+I followed the spreadsheet recommendations, which said I could do 3 orders for the extended market fund and 2 orders for the multi-factor fund.
+
+In October 2020 there was a dip in all 4 funds; this was about the same price just before the COVID dip in February 2020. As of this day, the price per share for the S&P 500 and total market fund were roughly where they were just before that dip. Meanwhile, the multi-factor fund is managing to stay above its price around that time. Further, the extended market fund is actually below its price before and after that dip. Again, I believe this shows the tighter correlation between the two large-cap funds, which isn't surprising, as well as the lower correlation between all 4 of the funds; at least right now. Again, the price and performance difference seems to be enough to keep things interesting.
+
+2 of 5 orders executed.
+
+### Day 21 results
+
+Funds were down in price on day 20, so, going with the 15, 35, 50 again. This time the multi-factor fund is the only fund under its target, so, only going to put money toward it.
+
+The portfolio, at the fund level, is no longer in balance. The S&P 500 fund is lower than its minimum and it's overweight in the Traditional IRA, so, not buying more shares there. Given that I'm only putting in orders for a single fund I increased the cash available for orders to 100 percent, which allows me to follow the spreadsheet recommendations of 1 share for 2 cents over opening price, 2 shares at 1 percent down, and 3 shares at 2 percent down.
+
+Had a good uptick this day, but it didn't start that way, and the value of the Traditional IRA is greater than the initial amount of the check from the 401k. This is interesting because all of the funds, except the multi-factor fund have a price per share that is substantially lower than when the check was deposited. In other words, this investment approach seems to be working as desired, which is good.
+
+2 of 3 orders executed.
+
+### Day 22 results
+
 
 
 ## Closing M1 Finance
