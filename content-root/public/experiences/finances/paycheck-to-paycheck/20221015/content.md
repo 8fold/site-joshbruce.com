@@ -156,7 +156,7 @@ On the first of October, 2022 I did a quick history check and discovered the pri
 
 The removal of the breakfast sausage and replacing with the combination of cashews and pumpkin seeds seems to be going well. However, I'm still taking an anti-inflammatory, which I don't want to do for an extended period but, whenever I stop, the pain starts coming back. I'm hoping to experiment with taking the anti-inflammatory every other day instead of every day to see how that goes. The body is pretty amazing at healing itself and inflammation is part of that and I don't want to get in the way of my body's natural responses, if possible.
 
-With that said, I've spent a lot of time watching instructional videos on how to give pedicures and have purchased an entire setup for myself. Hopefully, I can avoid ingrown toenails in the future, which I think exacerbate the problem with the whole gout situation.
+With that said, I've spent a lot of time watching instructional videos on how to give pedicures and have purchased an entire setup for myself. Hopefully, I can avoid ingrown toenails in the future, which I think exacerbate the problem with the whole gout situation. Not to be crass, but so much dead and dry skin removed from around and under the toenail of my right foot.
 
 ## Timing the market
 
