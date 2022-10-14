@@ -144,9 +144,9 @@ For the most part, the Traditional IRA is in the target allocation.
 
 ## Closing M1 Finance
 
-Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, with their first round of buys could happen after the first 30 minutes of the market being open; without paying for it.
+Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, just rechecked something I thought I checked before which is part of the way they make money is through [payment for order flow](https://en.m.wikipedia.org/wiki/Payment_for_order_flow), which I don’t appreciate.
 
-Basically more reasons for me to preference Vanguard or similar over M1 Finance.
+This gets a bit dicey though. According to the Wikipedia article linked above and as of today, Vanguard also does payment for order flow, however, according to [their own documentation](https://investor.vanguard.com/investor-resources-education/article/payment-for-order-flow-what-you-need-to-know), Vanguard doesn’t do payment for order flow. Meanwhile, the most reputable source I could find for M1 Finance on the matter was their [Wikipedia page](https://en.m.wikipedia.org/wiki/M1_Finance), which states they accept payment for order flow.
 
 ## Update on the dip
 
