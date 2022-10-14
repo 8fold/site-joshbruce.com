@@ -16,7 +16,7 @@
       "optimum": "6",
       "high": "8",
       "max": "9",
-      "value": "15.9"
+      "value": "6.1"
     },
     {
       "label": "Low correlation",
@@ -43,7 +43,7 @@
       "optimum": "35",
       "high": "37",
       "max": "42",
-      "value": "32.1"
+      "value": "35.9"
     },
     {
       "label": "US equities - mid",
@@ -52,7 +52,7 @@
       "optimum": "27",
       "high": "30",
       "max": "33",
-      "value": "24.9"
+      "value": "27.7"
     },
     {
       "label": "US equities - large",
@@ -61,7 +61,7 @@
       "optimum": "31",
       "high": "35",
       "max": "37",
-      "value": "25.9"
+      "value": "29.1"
     }
   ]
 }

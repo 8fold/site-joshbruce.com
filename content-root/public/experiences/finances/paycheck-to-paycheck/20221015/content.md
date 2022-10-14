@@ -32,7 +32,7 @@ The market spiked and then settled in for the day; definitely understanding the 
 
 The orders were for the multi-factor and extended market funds and not the total market or S&P 500 because the former occupy less than their target percent for the allocation and the latter occupy more.
 
-At the fund level, the portfolio as a whole is almost in a balanced state, which is exciting. Also, the current value of the Traditional IRA is greater than the check received. In fact, it's about where the value was when I requested the check, which is exciting to see.
+At the fund level, the portfolio as a whole is almost in a balanced state, which is exciting. Also, the current value of the Traditional [.Individual Retirement Account](IRA) is greater than the check received. In fact, it's about where the value was when I requested the check, which is exciting to see.
 
 2 of the 6 orders executed; the ones at current market price.
 
@@ -144,19 +144,25 @@ For the most part, the Traditional IRA is in the target allocation.
 
 ## Closing M1 Finance
 
-Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed for limit orders. Further, just rechecked something I thought I checked before which is part of the way they make money is through [payment for order flow](https://en.m.wikipedia.org/wiki/Payment_for_order_flow), which I don’t appreciate.
+Main M1 Finance Pie was down almost 40 percent, so, not contributing more there yet. Wish M1 Finance allowed limit orders. Further, rechecked something regarding how M1 Finance makes money and discovered part of it is through [payment for order flow](https://en.m.wikipedia.org/wiki/Payment_for_order_flow), which I don’t appreciate.
 
-This gets a bit dicey though. According to the Wikipedia article linked above and as of today, Vanguard also does payment for order flow, however, according to [their own documentation](https://investor.vanguard.com/investor-resources-education/article/payment-for-order-flow-what-you-need-to-know), Vanguard doesn’t do payment for order flow. Meanwhile, the most reputable source I could find for M1 Finance on the matter was their [Wikipedia page](https://en.m.wikipedia.org/wiki/M1_Finance), which states they accept payment for order flow.
+This gets dicey though. 
+
+According to the Wikipedia article linked above as of today, Vanguard also does payment for order flow, however, according to [their own documentation](https://investor.vanguard.com/investor-resources-education/article/payment-for-order-flow-what-you-need-to-know), Vanguard doesn’t do payment for order flow. Meanwhile, the most reputable source I could find for M1 Finance on the matter was their [Wikipedia page](https://en.m.wikipedia.org/wiki/M1_Finance), which states they accept payment for order flow and it wasn't listed on the payment for order flow wikipedia page.
 
 ## Update on the dip
 
 On the first of October, 2022 I did a quick history check and discovered the price for each fund (except the multi-factor fund) was at about what it was in 2020; cue [Cher](https://youtu.be/9n3A_-HRFfc). For the extended market fund, it was actually lower.
 
+For where the funds closed the day of this posting, the trend line is as if the 2021 spike didn't happen. So, if "the market" had just continued as it had been, it would be where we are today.
+
+Again, cue Cher.
+
 ## Changes to diet and spending
 
-The removal of the breakfast sausage and replacing with the combination of cashews and pumpkin seeds seems to be going well. However, I'm still taking an anti-inflammatory, which I don't want to do for an extended period but, whenever I stop, the pain starts coming back. I'm hoping to experiment with taking the anti-inflammatory every other day instead of every day to see how that goes. The body is pretty amazing at healing itself and inflammation is part of that and I don't want to get in the way of my body's natural responses, if possible.
+The removal of the breakfast sausage and replacing with the combination of cashews and pumpkin seeds is going well. However, I'm still taking an anti-inflammatory, which I don't want to do for an extended period but, whenever I stop taking them, the pain starts coming back. I'm hoping to experiment with taking the anti-inflammatory every other day instead of every day to see how that goes. The body is pretty amazing at healing itself and inflammation is part of that and I don't want to get in the way of my body's natural responses, if possible.
 
-With that said, I've spent a lot of time watching instructional videos on how to give pedicures and have purchased an entire setup for myself. Hopefully, I can avoid ingrown toenails in the future, which I think exacerbate the problem with the whole gout situation. Not to be crass, but so much dead and dry skin removed from around and under the toenail of my right foot.
+With that said, I've spent a lot of time watching instructional videos on how to give pedicures and purchased an entire setup for myself. Hopefully, I can avoid ingrown toenails in the future, which I think exacerbates the problem with the whole gout situation. Not to be crass, but so much dead and dry skin removed from around and under the toenail of my right foot.
 
 ## Timing the market
 
@@ -168,7 +174,9 @@ Or, another one that's been coming to mind as of late (and previously):
 
 > If you have a bunch of cash sitting on the sidelines it can cause a cash-drag on the portfolio.
 
-There are similar sentiments related to this idea. I started thinking about these sentiments recently as I've been doing the [401k rollover](#401k-rollover), because what I'm doing fits pretty closely to the [Investopedia article](https://www.investopedia.com/terms/m/markettiming.asp) description of market timing; however, I'm not sure if what I'm doing there actually is market timing, strictly speaking.
+There are similar sentiments related to this idea. 
+
+I started thinking about these sentiments recently as I've been doing the [401k rollover](#401k-rollover), because what I'm doing fits pretty closely to the [Investopedia article](https://www.investopedia.com/terms/m/markettiming.asp) description of market timing; however, I'm not sure if what I'm doing there is market timing, strictly speaking.
 
 What’s the difference between market timing and taking advantage of an otherwise unfortunate circumstance; buying a dip?
 
@@ -186,21 +194,21 @@ Another one I like is:
 
 Here's why I think what I'm doing is different:
 
-1. I'm not using one or more predictive methods as the basis for my decisions.
+1. I'm not using one or more predictive methods as the basis for my decisions; not even gut decisions.
 2. I'm not planning on making this my main, or even regular strategy; still buy-and-hold and dollar cost averaging as usual.
 3. I'm not selling anything with the purpose of moving it to somewhere else.
 
 I don't think this is me trying to convince myself of anything; rather, it's me trying to learn and understand something.
 
-I didn't sell the 401k at my former employer because I thought it would keep going down while something else would either not go down as much or would actually go up in the short-term. In part I did it to simplify things:
+I didn't sell the 401k at my former employer because I thought it would keep going down while something else would either not go down as much or would go up in the short-term. In part I did it to simplify things:
 
 1. one less account to babysit,
 2. reduce the places and types of funds used, and
 3. reduce recurring administrative fees.
 
-Instead of having a 401k at one place, another somewhere else, and a Traditional [.Individual Retirement Account](IRA) somewhere else, I only have the 401k and Traditional IRA. Instead of having a small-, mid-, and large-cap fund (a restriction set by my former employer in the account), I have the exact 4 funds I want at the moment and the ability to choose from many more. Instead of having the expense ratios for the funds in addition to administrative costs on the account, I only have the expense ratios of the funds.
+Instead of having a 401k at one place, another somewhere else, and a Traditional IRA somewhere else, I only have the 401k and Traditional IRA. Instead of having a small-, mid-, and large-cap fund (a restriction set by my former employer in the account), I have the exact 4 funds I want and the ability to choose from many more. Instead of expense ratios for funds in addition to administrative costs on the account, I only have the expense ratios of the funds.
 
-I'm not waiting for the bottom of this dip, recession, or depression (whatever it decides it wants to be when it grows up) before starting my regular contributions again (I never stopped them in the first place). I'm not even waiting for the bottom to put the 401k rollover money back into the market.
+I'm not waiting for the bottom of this dip, recession, or depression (whatever it decides it wants to be when it grows up) before starting my regular contributions again (I never stopped). I'm not even waiting for the bottom to put the 401k rollover money back into the market.
 
 The timing for me and investing has been fascinating.
 
@@ -216,7 +224,7 @@ Anyway.
 
 I don't know what the market will do. I'm not guessing at what it might do. When it will hit bottom. How long it will take to recover. I have no control there. However, I can see what the market is doing and has been doing in the past few days, weeks, and months; and it's still going down with blips here and there.   
 
-I remember in 2021 when I was working out the misunderstanding with the [.Internal Revenue Service](IRS), I was so impatient and concerned over the "cash-drag" having all the cash to potentially pay taxes and fees. Eventually, I decided to go ahead and deploy that cash; or, at least a majority of it. Now, I still own those shares, and their value is less than the initial cost; to be clear, this is fine, the important thing is to learn to not chase returns, which is what it felt like in retrospect—serious case of [.Fear Of Missing Out](FOMO). And it cuts both ways as happened in the beginning of 2022 because I didn't want to miss out on the dip—only for it to continue throughout the year and up to this point; returning pretty much to where it was 12 months ago from a price per share perspective. Meanwhile, the value of my portfolio overall has continued to increase slowly or plateau, so, I'm finding that to be pretty fascinating and helpful in dealing with the psychology of things.
+I remember in 2021 when I was working out the misunderstanding with the [.Internal Revenue Service](IRS), I was so impatient and concerned over the "cash-drag" as I held cash to potentially pay taxes and fees. Eventually, I decided to go ahead and deploy that cash; or, at least a majority of it. I still own those shares, and their value is less than the initial cost; to be clear, this is fine, the important thing is to learn to not chase returns, which is what it felt like in retrospect—serious case of [.Fear Of Missing Out](FOMO). And it cuts both ways as happened in the beginning of 2022 because I didn't want to miss out on the dip—only for it to continue throughout the year and up to this point; returning pretty much to where it was 12 months ago from a price per share perspective. Meanwhile, the value of my portfolio overall has continued to increase slowly or plateau, so, I'm finding that to be pretty fascinating and helpful in dealing with the psychology of things.
 
 My thoughts right now are that it's more important to be consistent once you start. When I started investing it was because I felt I was in a position to commit to investing regularly.
 
