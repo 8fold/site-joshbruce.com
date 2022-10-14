@@ -127,7 +127,13 @@ Had a good uptick this day, but it didn't start that way, and the value of the T
 
 ### Day 22 results
 
+Funds were up on day 21, went with the 40 and 60 approach. Both the multi-factor and extended market funds were down compared to their target allocation, so, went with both of them.
 
+An odd thing happened though, Vanguard wouldn’t let me put in all 4 orders. I was able to do both orders that were 2 cents over the closing price from day 21, but couldn’t do either order for 1 percent less. 
+
+As an experiment I placed a market order for one share of the multi-factor fund and was able to do so. However, when I tried to do the same with the extended market fund, I wasn’t able to. 
+
+In all 3 cases I received a modal window stating that my order couldn’t be completed and I needed to call Vanguard during normal business hours. This a first for me, so, I’ll call and see if there’s something I should be paying attention to. For example, this is the first day where I saw low or no shares in the ask and bid lines when setting up the order.
 
 ## Closing M1 Finance
 
