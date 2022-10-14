@@ -8,24 +8,17 @@ Still working through the 401k rollover.
 
 ## 401k rollover
 
-Hindsight being what it is, I'm actually pretty glad that I withdrew the funds from my 401k when I did. I was considering leaving it in until it was actually up again, but given what's happened with a deeper drop and my subsequent ability to purchase over time I think no longer having those fees is pretty awesome. 
+Hindsight being what it is, I'm glad I withdrew the funds from the 401k at my former employer when I did. I was considering leaving it in until it was up again, but given what's happened with a deeper drop and my subsequent ability to purchase over time I think no longer having those fees and account is pretty awesome. 
 
-I was looking at Personal Capital and it showed my day-to-day losses were less than the three benchmarks I compare against. 
+I was looking at [Personal Capital](https://www.personalcapital.com) and it showed my day-to-day losses were less than the three benchmarks I compare against. 
 
-I'm down to about 25 percent of the rollover cash still in the account. I'm thinking of no longer doing daily purchases and moving to weekly; 
-
-1. purchasing every day is starting to lose its appeal,
-2. over 80 percent of the cash is in the funds,
-3. I'm still making my regular contributions,
-4. the overall portfolio is almost back in balance (except for cash),
-4. this money has about a 17 year incubation period, and
-5. the market is still consistently going down from week-to-week.
+I'm down to about 25 percent of the rollover cash still in the account. I considered moving from daily to weekly purchases, but opted to just draw all the cash down instead.
 
 I'm starting to reconsider what constitutes market timing for me; [more on that below](#timing-the-market).
 
 ### Day 12 results
 
-Went with the 10, 20, 30, 40 again; I didn’t contribute to the total stock market or the S&P 500 funds since the orders executed last pat paycheck, which was unexpected.
+Went with the 10, 20, 30, 40 again; I didn’t contribute to the total stock market or S&P 500 funds since the orders executed last paycheck, which was unexpected.
 
 The market closed up, so, this seems like a good time to try the other setup.
 
@@ -35,11 +28,11 @@ The market closed up, so, this seems like a good time to try the other setup.
 
 Went with the 15, 35, 50 this time since the market closed up during day 12. 
 
-The market spiked and this just sort of settled in for the day; definitely understanding the notion of waiting for the market to be open for 30 minutes before placing regular limit orders. This time I created the 6 orders the night before.
+The market spiked and then settled in for the day; definitely understanding the notion of waiting for the market to be open for 30 minutes before placing regular limit orders. This time I created the 6 orders the night before.
 
 The orders were for the multi-factor and extended market funds and not the total market or S&P 500 because the former occupy less than their target percent for the allocation and the latter occupy more.
 
-At the fund level, the overall portfolio is almost in a balanced state, which is exciting. Also, the current value of the Traditional IRA is greater than than the check I received from the plan with my former employer. In fact, it's about where the value was when I requested the the check in the first place, which is exciting to see.
+At the fund level, the portfolio as a whole is almost in a balanced state, which is exciting. Also, the current value of the Traditional IRA is greater than the check received. In fact, it's about where the value was when I requested the check, which is exciting to see.
 
 2 of the 6 orders executed; the ones at current market price.
 
@@ -49,15 +42,17 @@ Went with the 15, 35, 50 this time since the market closed up during day 13. Cre
 
 Market closed down.
 
-6 of the 6 orders executed; only the multi-factor and extended market funds.
+6 of 6 orders executed; only the multi-factor and extended market funds.
 
 ### Day 15 results
 
-Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this time because the values were almost at their targets. I increased the percent to contribute to 50 percent of the remaining cash balance; the amount of money remaining is starting to get to a point where less than 50 percent means not really buying much of anything.
+Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this time because the values were almost at their targets. I increased the percent to contribute to 50 percent of the remaining cash balance; the amount of money remaining is starting to get to a point where less than 50 percent means not being able to buy much of anything.
 
-At the fund-level, the S&P 500 fund is under its minimum; everything else is at least above the minimum. At the style- or factor-level, we’re above the minimums. And, of course, at the allocation for the data above we’re also within limits&hellip;except cash.
+At the fund-level, the S&P 500 fund is under its minimum; everything else is at least above the minimum. At the style- or factor-level, we’re above the minimums. And, of course, at the allocation for the data above we’re within limits; mostly because of cashing out.
 
-This was a [buy the dip day](https://joshbruce.com/experiences/finances/personal-budget/#spending-savings), but I decided not to. The extended market fund is down the most from its 52 week high; however, it's down over 30 percent, so, can't do that one. The total stock market fund is getting close to its maximum allocation and I'm still putting money that way from the rollover, so, didn't want to go there either. The S&P 500 fund is below its minimum, but I'd prefer not to add it to the taxable account, if I can avoid it and, beyond that, it's part of my current 401k and I'm buying more of it as part of the rollover and should be above its minimum soon; so, avoiding it as well. The multi-factor fund is within the thresholds, however, it's only down about 15 percent, which isn't a lot as a percent of the balance of my savings account, so, decided to just leave it as is.
+This was a [buy the dip day](https://joshbruce.com/experiences/finances/personal-budget/#spending-savings), but I decided not to. 
+
+The extended market fund is down the most from its 52 week high; however, it's down over 30 percent, so, can't do that one. The total stock market fund is getting close to its maximum allocation and I'm still putting money that way from the rollover, so, didn't want to go there either. The S&P 500 fund is below its minimum, but I'd prefer not to add it to the taxable account, if I can avoid it and, beyond that, it's part of my current 401k and I'm buying more of it as part of the rollover and should be above its minimum soon; so, avoiding it. The multi-factor fund is within the thresholds, however, it's only down about 15 percent, which isn't a lot as a percent of the balance of my savings account, so, decided to just leave it as is.
 
 If the extended market fund had been 30 percent or less down, I would have bought the dip.
 
@@ -67,7 +62,7 @@ If the extended market fund had been 30 percent or less down, I would have bough
 
 Market was down on day 15, so, going with the 10, 20, 30, 40 again. Further, for the Mark 0 allocation inside the Traditional IRA, the S&P 500 fund is a bit heavy; skipping it this time. Finally, the multi-factor fund counted for 2 of the 5 orders that didn't execute on day 15, so, we'll see how this goes. All of the funds are within 2 percent of their target and I still have enough cash to put them where they need to be in the next day or two; that's without following either of the two setups, unfortunately.
 
-The multi-factor fund in the Traditional IRA is still down 1 percent. The other funds are roughly where they need to be; slightly over. Despite the loss in value of the funds, the value of the Traditional IRA is just above the value of the check received for the rollover, which is a good thing. Feeling pretty good about the choice to do the rollover when I did.
+The multi-factor fund in the Traditional IRA is still down 1 percent. The other funds are roughly where they need to be; slightly over. Despite the loss in value of the funds, the value of the Traditional IRA is above the value of the check received for the rollover, which is a good thing. Feeling good about the choice to do the rollover when I did.
 
 All 16 orders executed; 4 were for a regular contribution to the multi-factor fund. 
 
@@ -75,43 +70,41 @@ All 16 orders executed; 4 were for a regular contribution to the multi-factor fu
 
 Market was down on day 16; doing a modified 10, 20, 30, 40. Instead of buying a share at the current market price, I only did limit orders for the 20, 30, 40 percent. I only bought the multi-factor and extended market funds.
 
-This was my normal contribution day as well and that went toward the multi-factor fund.
-
 7 of 12 orders executed.
 
 ### Day 18 results
 
 Market was down on day 17; doing another modified 10, 20, 30, 40. Again, only did the 20, 30, 40 percent this time and only toward the multi-factor and extend market funds, which are the lowest compared to their target allocations.
 
-The value of the Traditional IRA is less than 2 percent down from the original check amount, which I'm viewing as a win. I can feel the thrill of this getting a bit old, to be honest. Part of the tactile indicator is that I'm losing track of the actual days based on these entries; this might actually be day 19. With that said, the experiment is going well as I keep seeing the benefit of using limit orders.
+The value of the Traditional IRA is less than 2 percent down from the original check amount, which I'm viewing as a win. I can feel the thrill of this getting old, to be honest. Part of the tactile indicator is I'm losing track of the days based on these entries; this might be day 19. With that said, the experiment is going well as I keep seeing the benefit of using limit orders.
 
-For example, my normal contribution went well, however, I still have a bit of cash left over because it wasn't spent on shares purchased at the market price. This is causing my cash to be spread across multiple accounts (a bit in the primary credit union, a bit in the taxable brokerage account, and a bit in the Traditional IRA), however, it's not making me feel overwhelmed or like that money isn't being optimized. Therefore, my conclusion at the moment is that letting the price per share come to me is a worthwhile venture.
+For example, my normal contribution went well, however, I have cash left over because it wasn't spent on shares purchased at the market price. This is causing my cash to be spread across multiple accounts (a bit in the primary credit union, a bit in the taxable brokerage account, and a bit in the Traditional IRA), however, it's not making me feel overwhelmed or like that money isn't being optimized. Therefore, my conclusion at the moment is letting the price per share come to me is a worthwhile venture.
 
 5 of 6 orders executed.
 
 ### Day 19 results
 
-Market was interesting. It closed down, however, not by much compared to its opening. It was fascinating to watch because there was a decent drop in the first hour. Two hours later it was up and stayed that way for about 3 hours. The it dropped and went up a little bit before the close and after hours. Again, I can definitely see the thrill involved with day-trading, however, I'm really appreciating the set and forget afforded by limit orders; despite the, "I can always try again tomorrow," if they don't always execute.
+Market was interesting. It closed down, however, not by much compared to its opening. It was fascinating to watch because there was a decent drop in the first hour. Two hours later it was up and stayed up for about 3 hours. Then it dropped and went up a little before the close and after hours. Again, I can see the thrill involved with day-trading, however, I'm appreciating the set and forget afforded by limit orders; despite the, "I can always try again tomorrow," if they don't execute.
 
-I think I'm going to change my setups to exclude market price purchases.
+I'm going to change my setups to exclude market price purchases.
 
-If the market was down the previous day, we go with 2 cents over the opening price, 1 percent under, and 2 percent under at 15, 35, and 50 percent, respectively. If the market was up the previous day, we go with 2 cents over and 1 percent under the opening price at 40 and 60 percent respectively.
+If the market was down the previous day, we go with 2 cents over opening price, 1 percent under, and 2 percent under at 15, 35, and 50 percent, respectively. If the market was up the previous day, we go with 2 cents over and 1 percent under opening price at 40 and 60 percent, respectively.
 
 1 percent down fluctuations seem more common than 2 percent down, even on days when the price per share is up compared to its opening price. Further, those 1 percent down compared to the opening price have happened even on days when the prices go up right at opening.
 
-The overall portfolio is in balance; even at the fund level, including cash. Though it's close because of where the cash and S&P 500 positions are.
+The portfolio is in balance; even at the fund level, including cash. Though it's close because of where the cash and S&P 500 positions are.
 
-I don't recall how the orders went on this day.
+I don't recall how the orders went this day.
 
 ### Day 20 results
 
-The funds were down on day 19 and I did the 15, 35, and 50 percent. The funds closed down, but just barely.
+The funds were down on day 19 and I did the 15, 35, and 50 percent. The funds closed down, but barely.
 
-The price per share was interesting again today. All of the funds except the extended market fund just sorta skipped like a stone across a pond. The extended market fund went down beyond 1 percent, but not beyond 2 percent, before finishing the day like a stone skipping across the same pond.
+The price per share was interesting again today. All the funds except the extended market fund sorta skipped like a stone across a pond. The extended market fund went down beyond 1 percent, but not beyond 2 percent, before finishing the day like a stone skipping across the same pond.
 
 I followed the spreadsheet recommendations, which said I could do 3 orders for the extended market fund and 2 orders for the multi-factor fund.
 
-In October 2020 there was a dip in all 4 funds; this was about the same price just before the COVID dip in February 2020. As of this day, the price per share for the S&P 500 and total market fund were roughly where they were just before that dip. Meanwhile, the multi-factor fund is managing to stay above its price around that time. Further, the extended market fund is actually below its price before and after that dip. Again, I believe this shows the tighter correlation between the two large-cap funds, which isn't surprising, as well as the lower correlation between all 4 of the funds; at least right now. Again, the price and performance difference seems to be enough to keep things interesting.
+In October 2020 there was a dip in all 4 funds; this was about the same price just before the COVID dip in February 2020. As of this day, the price per share for the S&P 500 and total market fund were roughly where they were just before that dip. Meanwhile, the multi-factor fund is managing to stay above its price around that time. Further, the extended market fund is below its price before and after that dip. Again, I believe this shows the tighter correlation between the two large-cap funds, which isn't surprising, as well as the lower correlation between all 4 funds; at least right now. Again, the price and performance difference seems to be enough to keep things interesting.
 
 2 of 5 orders executed.
 
@@ -119,21 +112,35 @@ In October 2020 there was a dip in all 4 funds; this was about the same price ju
 
 Funds were down in price on day 20, so, going with the 15, 35, 50 again. This time the multi-factor fund is the only fund under its target, so, only going to put money toward it.
 
-The portfolio, at the fund level, is no longer in balance. The S&P 500 fund is lower than its minimum and it's overweight in the Traditional IRA, so, not buying more shares there. Given that I'm only putting in orders for a single fund I increased the cash available for orders to 100 percent, which allows me to follow the spreadsheet recommendations of 1 share for 2 cents over opening price, 2 shares at 1 percent down, and 3 shares at 2 percent down.
+The portfolio, at the fund level, is no longer in balance. The S&P 500 fund is lower than its minimum and it's overweight in the Traditional IRA, so, not buying more shares there. Given I'm putting in orders for a single fund, I increased the cash available for orders to 100 percent, which allows me to follow the spreadsheet recommendations of 1 share for 2 cents over opening price, 2 shares at 1 percent down, and 3 shares at 2 percent down.
 
-Had a good uptick this day, but it didn't start that way, and the value of the Traditional IRA is greater than the initial amount of the check from the 401k. This is interesting because all of the funds, except the multi-factor fund have a price per share that is substantially lower than when the check was deposited. In other words, this investment approach seems to be working as desired, which is good.
+Had a good uptick this day, but it didn't start that way, and the value of the Traditional IRA is greater than the initial amount of the check from the 401k. This is interesting because all the funds, except the multi-factor fund have a price per share that is substantially lower than when the check was deposited. In other words, this investment approach seems to be working as desired, which is good.
 
 2 of 3 orders executed.
 
 ### Day 22 results
 
-Funds were up on day 21, went with the 40 and 60 approach. Both the multi-factor and extended market funds were down compared to their target allocation, so, went with both of them.
+Funds were up on day 21, went with the 40 and 60 approach. Both the multi-factor and extended market funds were down compared to their target allocation, so, went with those two funds. I decided to go ahead and cash out and into the funds.
 
 An odd thing happened though, Vanguard wouldn’t let me put in all 4 orders. I was able to do both orders that were 2 cents over the closing price from day 21, but couldn’t do either order for 1 percent less. 
 
 As an experiment I placed a market order for one share of the multi-factor fund and was able to do so. However, when I tried to do the same with the extended market fund, I wasn’t able to. 
 
-In all 3 cases I received a modal window stating that my order couldn’t be completed and I needed to call Vanguard during normal business hours. This a first for me, so, I’ll call and see if there’s something I should be paying attention to. For example, this is the first day where I saw low or no shares in the ask and bid lines when setting up the order.
+For both purchases at 1 percent down I received a modal window stating my order couldn’t be completed and I needed to call Vanguard during normal business hours. This a first for me, so, I called and as is the case when you get support on the line, I was able to place the orders; no known reason as to why the orders in the morning didn't go through.
+
+Most of the funds are down around 4 percent compared to when I started the rollover. The value of my Traditional IRA is down a little over 1 percent. I'm taking that as success.
+
+After looking at performance of the funds every day for the last couple of weeks, I'm struck by another benefit to the 4 funds I've chosen as the core of the equities portion of the portfolio. I'll go ahead and recap all of them:
+
+1. Their price per share is different, which gives flexibility; the multi-factor, as of this writing, is around 100 [.United States Dollars](USD), the total stock market is around 180 USD, the S&P 500 fund is around 330 USD, and the extended market is around 130 USD. So, I don't think I'll ever feel like I'm not able to purchase one or more shares in one or more funds at a reasonable price to keep the portfolio in balance; even if it's not perfectly on target at the fund level.
+2. Each fund (except the multi-factor) is pretty standard, which should make them easy to find or find corollaries for in things like employer-sponsored retirement accounts.
+3. The new thing is while they're all closely correlated according to [Portfolio Visualizer data](https://www.portfoliovisualizer.com/asset-correlations) the reduced volatility of the multi-factor fund seems to lend itself well as ballast for the other three and, historically, there have been times when one fund is down while another is up. (Note: The multi-factor fund is only a few years old at this point.)
+
+Toward the closing for the day I did a quick single share to each fund except the S&P 500 to cash out.
+
+For the most part, the Traditional IRA is in the target allocation. 
+
+10 of 10 orders executed.
 
 ## Closing M1 Finance
 
@@ -199,7 +206,7 @@ The timing for me and investing has been fascinating.
 
 I started contributing to the 401k at my former employer in 2019, just up to the employer match. I turned up the contributions in 2021 to hit the annual limit; the run-up to 2022. My contributions to that account ended in July, 2022. I sold everything in mid-September. This means most of the gains made in 2021 were lost. With that said, if I did the math right, looking at total cost versus total value at the time of sale, I lost anywhere from 50 to 75 percent of the value of my former employer's contributions. 
 
-Let's say the total cost put in was 50,000 [.United States Dollars](USD). Further, let's say it was a 6 percent match, which would be 3,000 USD. I missed out on (or lost) up to 2,250 USD. With that said, for this hypothetical, I still walked away with 47,750 USD I didn't have before.
+Let's say the total cost put in was 50,000 USD. Further, let's say it was a 6 percent match, which would be 3,000 USD. I missed out on (or lost) up to 2,250 USD. With that said, for this hypothetical, I still walked away with 47,750 USD I didn't have before.
 
 Beyond that, I've been contributing the annual limits to my Roth IRA and HSA along with putting money into my taxable brokerage account; without fail.
 
