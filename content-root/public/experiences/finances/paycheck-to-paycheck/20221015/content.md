@@ -50,7 +50,7 @@ Went with the 10, 20, 30, and 40 percent this time. Went toward all 4 funds this
 
 At the fund-level, the S&P 500 fund is under its minimum; everything else is at least above the minimum. At the style- or factor-level, we’re above the minimums. And, of course, at the allocation for the data above we’re within limits; mostly because of cashing out.
 
-This was a [buy the dip day](https://joshbruce.com/experiences/finances/personal-budget/#spending-savings), but I decided not to. 
+This was a [buy the dip day](/experiences/finances/personal-budget/#spending-savings), but I decided not to. 
 
 The extended market fund is down the most from its 52 week high; however, it's down over 30 percent, so, can't do that one. The total stock market fund is getting close to its maximum allocation and I'm still putting money that way from the rollover, so, didn't want to go there either. The S&P 500 fund is below its minimum, but I'd prefer not to add it to the taxable account, if I can avoid it and, beyond that, it's part of my current 401k and I'm buying more of it as part of the rollover and should be above its minimum soon; so, avoiding it. The multi-factor fund is within the thresholds, however, it's only down about 15 percent, which isn't a lot as a percent of the balance of my savings account, so, decided to just leave it as is.
 
