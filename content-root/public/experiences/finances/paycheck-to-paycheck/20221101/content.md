@@ -4,6 +4,10 @@
 
 {!! data !!}
 
+Given I now have the extended market and S&P 500 in my 401k I’m hoping the taxable account will be limited to just the total market and multi-factor funds. My initial intent was to only have the total market fund in the taxable account. Unfortunately, I couldn’t contribute enough to small- and mid-caps via the Roth [.Individual Retirement Account](IRA) and [.Health Savings Account](HSA) to put the portfolio into balance.
+
+Right now the total market fund is at its high end, the extended market is edging its way there, and the S&P 500 fund is just above its minimum threshold. So, for now, still contributing to the multi-factor fund.
+
 ## 401k rollover
 
 The rollover was completed in the previous paycheck. 
