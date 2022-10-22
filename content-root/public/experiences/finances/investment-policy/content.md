@@ -57,7 +57,7 @@ Would you like support my work and goals?
     - If purchasing 3 shares or more, I will use 3 limit orders; one at two cents above initial price, the second at 1 percent less than the initial price, and the third at 1.5 to 2 percent less than the initial price. If possible and practical, the will be 15 percent of the total contribution amount, the second will be 30 percent, and the third will be the remaining total contribution. (Buy low.)
 - My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
 - I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based on market capitalization, value, and growth.
-    - I’ll strive for 20 percent or less in any one sector. 
+    - I’ll strive for 20 percent or less in any one sector.
     - I’d prefer the portfolio not have more than 1 percent in a single company’s stock.
 - I’ll contribute at least 10 percent per paycheck to long-term savings (striving for 50 percent or more); dollar cost averaging will be my primary mode of contributing.
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
@@ -152,7 +152,7 @@ I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finan
 
 1. [.Cap-weighted](Market capitalization weighted), total US equities fund; roughly 4,100 stocks.
 2. Cap-weighted, extended US equities fund; roughly 3,700 stocks. This helps achieve even distribution across small-, mid-, and large-cap stocks.
-3. Multi-factor fund of funds; roughly 550 stocks. This helps achieve even distribution across value, blend and growth.
+3. Multi-factor fund of funds; roughly 550 stocks. This helps achieve even distribution across value, blend, and growth.
 4. S&P 500 fund; roughly 500 stocks. This is the fund found in most 401k plans I’ve been exposed to and helps tip the large-cap away from growth.
 
 Because most of the funds are cap-weighted, cover most of the market, and are different, there will be overlap at the individual stock level, which is fine.
