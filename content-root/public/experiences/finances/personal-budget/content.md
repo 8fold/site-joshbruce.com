@@ -197,21 +197,40 @@ I update the balance trackers in my spreadsheet.
 
 Mainly I’m trying to get the balances of my credit cards. The credit card balances plus any bills I can’t pay by credit card sets the minimum distribution to the expense account.
 
-I have estimated amounts for my recurring expenses that creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
+Estimates for recurring expenses creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
 
-Then I have percents set that establish the minimum and maximum dollar amounts for the other accounts. This is where most of the decisions and possible wiggling occurs.
+I have percents establishing the minimum and maximum dollar amounts for the other accounts. This is where most of the decisions and possible wiggling occurs.
 
-Once I have the distributions for that paycheck figured out in the spreadsheet I head over to Wave.
+Once the distributions for the paycheck are figured out in the spreadsheet I head over to Wave.
 
-I’ll look at each account to make sure the transactions are valid and verified. I’ll create any missing entries in the manual accounts (like the Apple Card). If there’s a mistake or something, I’ll make note of which institution or institutions I need to call and I won’t proceed until I make those calls.
+I look at each account to make sure the transactions are valid and verified. I create missing entries in the manual accounts (like the Apple Card); I also remove any errant transactions. If there’s a mistake or something I need to call about, I make note the institution or institutions and don’t proceed until making those calls.
 
-If no mistakes are are found, I’ll create the entries for the transfers from the income account to the other accounts I listed in the spreadsheet; I might adjust the numbers, if needed—it’s usually not needed though. I’ll add entries to pay the credit cards from the expense account. Finally, I’ll create entries for investments.
+If no mistakes are found, I create the entries for the transfers from the income account to the other accounts in the spreadsheet; I might adjust the numbers, if needed—it’s usually not needed. I’ll add entries to pay the credit cards from the expense account. Finally, I create entries for investments; [see below](#buying-shares).
 
-Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account will end up with the desired reserve amount, or close to it, after all the money finishes moving.
+Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account ends up with the desired reserve amount, or close to it, after all the money finishes moving.
 
-Once I’ve verified the plan in Wave, I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
+Once the plan is verified in Wave, I hop through the apps (or websites) for the institutions and actually set the transactions in motion.
 
 I usually do this the morning I get paid before rolling out of bed, so, not tedious and doesn’t require copious amounts of brain power or decision making.
+
+### Buying shares
+
+I transfer money from the income account to the investment pass-through account, which sets the available funds for investing.
+
+I use [limit orders](https://www.investopedia.com/terms/l/limitorder.asp) to purchase shares in the funds used. There are two setups used, based on if the price per share went up or down in the previous trading day.
+
+If the price per share finished the day up, there are 2 limit orders placed:
+
+1. 40 percent of available funds may be used if the price per share is 2 cents over the opening price or lower.
+2. 60 percent of available funds may be used if the price per share is 1 percent less than the opening price or lower.
+
+If the price per share finished the day down, there are 3 limit orders placed:
+
+1. 15 percent of available funds may be used if the price per share is 2 cents over the opening price or lower.
+2. 35 percent of available funds may be used if the price per share is 1 percent less than the opening price or lower.
+3. 50 percent of available funds may be used if the price per share is 2 percent less than the opening price or lower.
+
+Trades may be placed daily if funds continue to be available. This usually happens if some of the trades do not execute or just by the nature of the setups. The setups are taken in whole, not in part; so, I couldn't place limits orders only 2 cents over, for example.
 
 ## Recirculating
 
