@@ -22,6 +22,10 @@ If you don't know, the taxable brokerage account is there for me to use between 
 
 With that said, having the extended market fund in the taxable account will kick off dividends and give me added flexibility, so, no plans to remove it from the taxable brokerage account; especially not while we're going through this downturn. 
 
+It's worth noting that the value of the account after the 4 day rally in prices is almost back to where the value of the 401k was at its peak and despite the fund prices being down 15 to 30 percent from their 52 week high.
+
+The experiment of selling and buying back in described in the previous two paychecks seems validated.
+
 ## Closing M1 Finance
 
 Starting to think this won’t happen in 2022.
@@ -39,6 +43,16 @@ My foot feels much better.
 Diet change is going well.
 
 I've stepped back the anti-inflammatories to be around every other day. I've also started looking into seeing a chiropractor, physical therapist, or both as my awareness of the pain in the toe is still there; just from switching to taking the anti-inflammatories every other day.
+
+## Buying funds at Vanguard
+
+Vanguard sent a notice through their app, which indicated that the dollar-based (fractional shares) functionality was rolled out to all investors.
+
+When you place your buy order, you can pick number of shares or a dollar amount. Then for the order type, choose Market.
+
+Using a market order for a specified dollar amount results in dollar-based ordering (including the potential for fractional shares).
+
+I was silently opted in to the pilot program and started using it a lot before switching to the latest iteration described and linked to in the introduction. For market orders, I'll be taking advantage of the dollar-based investing; for limit orders, you can't, because you are specifying the number of shares and the highest price you're willing to pay.
 
 ## Spreadsheet update
 
