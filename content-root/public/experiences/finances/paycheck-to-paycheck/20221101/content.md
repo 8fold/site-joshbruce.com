@@ -34,6 +34,19 @@ Starting to think this won’t happen in 2022.
 
 Didn't put anything toward the dip this time.
 
+With that said, because I wanted to participate in buying the dip as much as possible, I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't have a rule in place that stops that possibility (I don't think).
+
+I won't let it drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
+
+As the value of the equity funds dropped, however, the allocation to cash increased (as expected) and I decided to capitalize on that based on my current context:
+
+1. stable income,
+2. minimal fear of that income going away near-term,
+3. striving to add the multi-factor fund to the portfolio, and
+4. trying to get the portfolio close to the targets for each fund.
+
+With that said, if the rally continues, the amount I'll be putting toward cash will need to increase in order to keep the portfolio in balance. Again, this would be expected given that the cash portion is measured as a part of the overall portfolio; not as a set aside. 
+
 ## Changes to diet and spending
 
 Did another full self pedicure. Removed a fair amount of the big toenail on my right foot. It was kinda strange. I removed more of the dead skin under the nail and trimmed to the attachment point. 
