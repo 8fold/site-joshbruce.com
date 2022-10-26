@@ -215,22 +215,33 @@ I usually do this the morning I get paid before rolling out of bed, so, not tedi
 
 ### Buying shares
 
-I transfer money from the income account to the investment pass-through account, which sets the available funds for investing.
+This applies primarily to taxable accounts as tax-deferred and tax-free accounts use a more strict "buy what's available at whatever price currently exists" strategy. 
 
-I use [limit orders](https://www.investopedia.com/terms/l/limitorder.asp) to purchase shares in the funds used. There are two setups used, based on if the price per share went up or down in the previous trading day.
+I transfer money from the income account to the investment pass-through account. This amount is added to any money in the settlement fund of the taxable account. The sum gives me the amount of cash I can use for investing.
 
-If the price per share finished the day up, there are 2 limit orders placed:
+[Limit orders](https://www.investopedia.com/terms/l/limitorder.asp) are the primary method of purchasing shares. The primary driver for decision making is the previous day's results of the fund or funds I want to purchase with the cash; did the price rise or fall?
 
-1. 40 percent of available funds may be used if the price per share is 2 cents over the opening price or lower.
-2. 60 percent of available funds may be used if the price per share is 1 percent less than the opening price or lower.
+The amount of cash available for an individual fund is divided into three potential orders; a 15 percent amount, 35 percent amount, and 50 percent amount. The fund or funds to purchase is decided mainly on current allocation in the portfolio and whether they're up or down compared to the 52 week high, low, or average; favoring purchasing shares in those things which are down (see [buying the dip](#spending-savings)). Trades may be placed daily if cash continues to be available.
 
-If the price per share finished the day down, there are 3 limit orders placed:
+The following may be taken in whole or in part, starting with the first trade.
 
-1. 15 percent of available funds may be used if the price per share is 2 cents over the opening price or lower.
-2. 35 percent of available funds may be used if the price per share is 1 percent less than the opening price or lower.
-3. 50 percent of available funds may be used if the price per share is 2 percent less than the opening price or lower.
+<details>
+<summary>The price rose</summary>
 
-Trades may be placed daily if funds continue to be available. This usually happens if some of the trades do not execute or just by the nature of the setups. The setups are taken in whole, not in part; so, I couldn't place limits orders only 2 cents over, for example.
+1. 15 percent of the funds available are used for dollar-based purchasing using the specific dollar amount resulting from the 15 percent calculation.
+2. 35 percent of the funds available are used to create a limit order where the price is set at 2 cents more than the opening price for the day; using the number of full shares you can purchase for that amount.
+3. 50 percent of the funds available are used to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+
+</details>
+
+<details>
+<summary>The price fell</summary>
+
+1. 15 percent of the funds available are used to create a limit order where the price is set at 2 cents more than the opening price for the day.
+2. 35 percent of the funds available are used to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+3. 35 percent of the funds available are used to create a limit order where the price is set at 2 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+
+</details>
 
 ## Recirculating
 
