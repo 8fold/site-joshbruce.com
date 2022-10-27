@@ -55,6 +55,13 @@ My foot feels much better.
 
 Diet change is going well.
 
+## Personal Capital
+
+I’m debating on closing my Personal Capital account.
+
+The allocation breakdown seems off.
+
+401k classified as unclassified.
 I've stepped back the anti-inflammatories to be around every other day. I've also started looking into seeing a chiropractor, physical therapist, or both as my awareness of the pain in the toe is still there; just from switching to taking the anti-inflammatories every other day.
 
 ## Buying funds at Vanguard
