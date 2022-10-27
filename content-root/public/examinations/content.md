@@ -1,7 +1,3 @@
----
-title: Examinations and summaries
----
-
 # Examinations and summaries
 
 I value diversification of thought a great. In pursuit of this value, I expose myself to a lot of different and disparate content. This area of the site is where I practice empathy.
@@ -20,6 +16,6 @@ At the same time, this will be a curated examination and not a catch-all for *ev
 
 Note: Depending on how you define "free"; in some cases you'll be trading your email address, so, be aware.
 
-- [The Financial Order of Operations](/examinations/money-guy-food/)
+- [The Financial Order of Operations](/examinations/money-guy-foo/)
 - [The 7 Baby Steps](/examinations/ramsey-solutions-the-7-baby-steps/)
 - [How to Multiply Your Time](/examinations/procrastinate-on-purpose/) by Rory Vaden
