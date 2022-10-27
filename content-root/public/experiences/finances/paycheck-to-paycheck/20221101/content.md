@@ -14,6 +14,8 @@ I realized a flaw in my spreadsheet; [more on that below](#spreadsheet-update). 
 
 When I did my regular contribution toward the multi-factor fund using the 15, 35, 50 limit order setup, the funds (and the market) rallied a bit and none of the orders executed. I did the 40-60 setup the next three trading days, and none of the orders executed. I decided to modify the setups again; these changes are described in the [investing section](/experiences/finances/personal-budget/#investing) of the personal budget. 
 
+The [Fear and Greed Index](https://www.cnn.com/markets/fear-and-greed) started tilting toward the greed side of neutral around October 26. Feels good at the moment. Of course, the values of things could go back to falling, but I believe I’ve learned a lot from this experience and I’m appreciating the updates to the personal budget and systems I use.
+
 ## 401k rollover
 
 The rollover was completed in the previous paycheck. 
@@ -36,7 +38,7 @@ Didn't put anything toward the dip this time.
 
 With that said, because I wanted to participate in buying the dip as much as possible, I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't think I have a rule in place that stops that stops me from doing it.
 
-I won't let runway account drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
+I won't let the runway account drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
 
 As the value of the equity funds dropped, the allocation to cash increased (as expected) and I decided to capitalize on that based on my current context:
 
@@ -56,6 +58,8 @@ My foot feels much better.
 Diet change is going well.
 
 I've stepped back the anti-inflammatories to be around every other day. I've also started looking into seeing a chiropractor, physical therapist, or both as my awareness of the pain in the toe is still there; just from switching to taking the anti-inflammatories every other day.
+
+I’ve decided to look into sports medicine caregivers to see what they can determine from examining my gait and whatnot.
 
 ## Personal Capital
 
