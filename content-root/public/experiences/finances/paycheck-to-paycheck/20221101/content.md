@@ -36,7 +36,7 @@ Starting to think this won’t happen in 2022.
 
 Didn't put anything toward the dip this time.
 
-With that said, because I wanted to participate in buying the dip as much as possible, I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't think I have a rule in place that stops that stops me from doing it.
+With that said, because I wanted to participate in buying the dip as much as possible (and all things medical), I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't think I have a rule in place that stops that stops me from doing it.
 
 I won't let the runway account drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
 
