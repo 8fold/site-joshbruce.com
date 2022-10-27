@@ -40,6 +40,14 @@ My foot feels much better.
 
 Diet change is going well.
 
+## Personal Capital
+
+I’m debating on closing my Personal Capital account.
+
+The allocation breakdown seems off.
+
+401k classified as unclassified.
+
 ## Spreadsheet update
 
 I recently updated the [Morningstar data](https://www.morningstar.com) for the funds I use. Some of them are shifting away from growth, toward blend and value; the joys of market-cap weighting. What I realized after updating those numbers was that the graph I use adjusted in an undesirable way; specifically, for the 9 factors (or styles) of:
