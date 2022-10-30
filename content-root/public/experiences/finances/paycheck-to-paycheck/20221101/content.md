@@ -10,7 +10,7 @@ At the fund-level, the portfolio is in balance. The total market fund is at its 
 
 I changed the settings for what to do with capital gains and dividends in the Traditional IRA. Instead of reinvesting automatically, they’ll go into the settlement fund, which affords me the opportunity to choose how to reinvest them. 
 
-I realized a flaw in my spreadsheet; [more on that below](#spreadsheet-update). I changed how I plan to update the Morningstar data for each fund in my portfolio; going from annually to quarterly. In July 2022 I put the data in. Then, on a whim, I decided to do it again this paycheck and realized the numbers shifted enough to impact the portfolio.
+I realized a flaw in my spreadsheet; [more on that below](#spreadsheet-update). I changed how I plan to update the Morningstar data for each fund in my portfolio; going from annually to quarterly. In July 2022 I put the data in. Then, on a whim, I decided to update the data this paycheck and realized the numbers shifted enough to impact the portfolio.
 
 When I did my regular contribution toward the multi-factor fund using the 15, 35, 50 limit order setup, the funds (and the market) rallied a bit and none of the orders executed. I did the 40-60 setup over the next three trading days, and none of the orders executed. I decided to modify the setups again; these changes are described in the [investing section](/experiences/finances/personal-budget/#investing) of the personal budget. 
 
@@ -24,7 +24,7 @@ If you don't know, the taxable brokerage account is there for me to use between 
 
 With that said, having the extended market fund in the taxable account will kick off dividends and give me added flexibility, so, no plans to remove it from the taxable brokerage account; especially not while we're going through this downturn. 
 
-It's worth noting that the value of the Traditional IRA after the 4 day rally in prices is almost back to where the value of the 401k was at its peak and despite the fund prices being down 15 to 30 percent from their 52 week high.
+It's worth noting that the value of the Traditional IRA after the 4 day rally in prices is almost back to where the value of the 401k was at its peak; that’s despite the fund prices being down 15 to 30 percent from their 52 week high.
 
 The experiment of selling and buying back described in the previous two paychecks seems validated.
 
@@ -40,7 +40,7 @@ With that said, because I wanted to participate in buying the dip as much as pos
 
 I won't let the runway account drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
 
-As the value of the equity funds dropped, the allocation to cash increased (as expected) and I decided to capitalize on that based on my current context:
+As the value of the equity funds dropped, the allocation to cash increased (as expected) and I decided to capitalize on that by purchasing more based on my current context:
 
 1. stable income,
 2. minimal fear of that income going away near-term,
@@ -51,15 +51,17 @@ With that said, if the rally continues, the amount I'll be putting toward cash w
 
 ## Changes to diet and spending
 
-Did another full self pedicure. Removed a fair amount of the big toenail on my right foot. It was kinda strange. I removed more of the dead skin under the nail and trimmed to the attachment point. 
+Did two more self pedicures. Removed a fair amount of the big toenail on my right foot. It was kinda strange. I removed more of the dead skin under the nail and trimmed to the attachment point. 
 
-My foot feels much better. 
+Had an impacted toenail on the left and did what I could remove dead skin and trim to the attachment point there as well.
+
+My feet feel much better from that perspective. 
 
 Diet change is going well.
 
-I've stepped back the anti-inflammatories to be around every other day. On days I don't take an anti-inflammatory, I can feel the pain coming back slightly. 
+I've stepped back the anti-inflammatories to be around every other day. On days I don't take an anti-inflammatory, I can feel the pain coming back slightly. I’m developing what appears to be a slight [hematoma](https://en.m.wikipedia.org/wiki/Hematoma) at the joint on my right foot and at the top of the toe. I’m also starting to feel slight pain in the left big toe. Both toes shift more than they used to; almost like they’re trying to find where they’re supposed to be. I can still the tendons and ligaments in the right ankle more than normal for me.
 
-I’ve decided to look into sports medicine caregivers to see what they can determine from examining my gait and whatnot.
+I’ve decided to look into sports medicine service providers to see what they can determine from examining my gait and whatnot.
 
 ## Personal Capital
 
@@ -68,6 +70,8 @@ I’m debating on closing my Personal Capital account.
 The allocation breakdown seems off.
 
 My current 401k is categorized as unclassified, which means it's not being used as part of the equities portion of my portfolio. This makes sense to a certain degree as the funds are institutional, not publicly available. However, they do have public equivalence, which I use for my personal tracking.
+
+Further, some of the funds I use for small- and mid-cap are being listed as real estate and similar alternatives, which is throwing off the matrix compared to what I have in the spreadsheet.
 
 ## Buying funds at Vanguard
 
