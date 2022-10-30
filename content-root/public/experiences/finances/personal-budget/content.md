@@ -197,21 +197,61 @@ I update the balance trackers in my spreadsheet.
 
 Mainly I’m trying to get the balances of my credit cards. The credit card balances plus any bills I can’t pay by credit card sets the minimum distribution to the expense account.
 
-I have estimated amounts for my recurring expenses that creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
+Estimates for recurring expenses creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
 
-Then I have percents set that establish the minimum and maximum dollar amounts for the other accounts. This is where most of the decisions and possible wiggling occurs.
+I have percents establishing minimum and maximum dollar amounts for the other accounts. This is where most decisions and wiggling occurs.
 
-Once I have the distributions for that paycheck figured out in the spreadsheet I head over to Wave.
+Once the distributions for the paycheck are figured out in the spreadsheet I head over to Wave.
 
-I’ll look at each account to make sure the transactions are valid and verified. I’ll create any missing entries in the manual accounts (like the Apple Card). If there’s a mistake or something, I’ll make note of which institution or institutions I need to call and I won’t proceed until I make those calls.
+I look at each account to make sure the transactions are valid and verified. I create missing entries in the manual accounts (like the Apple Card); I also remove any errant transactions. If there’s a mistake or something I need to call about, I make note the institution or institutions and don’t proceed until making those calls.
 
-If no mistakes are are found, I’ll create the entries for the transfers from the income account to the other accounts I listed in the spreadsheet; I might adjust the numbers, if needed—it’s usually not needed though. I’ll add entries to pay the credit cards from the expense account. Finally, I’ll create entries for investments.
+If no mistakes are found, I create the entries for the transfers from the income account to the other accounts in the spreadsheet; I might adjust the numbers, if needed—it’s usually not needed. I’ll add entries to pay the credit cards from the expense account. Finally, I create entries for investments; [see below](#buying-shares).
 
-Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account will end up with the desired reserve amount, or close to it, after all the money finishes moving.
+Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account ends up with the desired reserve amount, or close to it, after all the money finishes moving.
 
-Once I’ve verified the plan in Wave, I’ll hop through the apps (or websites) for the institutions and actually set the transactions in motion.
+Once the plan is verified in Wave, I hop through the apps (or websites) for the institutions and actually set the transactions in motion.
 
 I usually do this the morning I get paid before rolling out of bed, so, not tedious and doesn’t require copious amounts of brain power or decision making.
+
+### Investing
+
+A portion of the distributions goes toward investing; otherwise known as, long-term savings. This section refers to cash beyond what is pulled out of each paycheck prior to me receiving it in the income account; includes taxable brokerage, HSA, Traditional IRA, and Roth IRA accounts—any account with a cash aspect. 
+
+
+
+
+
+
+
+
+
+This applies primarily to taxable accounts as tax-deferred and tax-free accounts use a more strict "buy what's available at whatever price currently exists" strategy. 
+
+I transfer money from the income account to the investment pass-through account. This amount is added to any money in the settlement fund of the taxable account. The sum gives me the amount of cash I can use for investing.
+
+[Limit orders](https://www.investopedia.com/terms/l/limitorder.asp) are the primary method of purchasing shares. The primary driver for decision making is the previous day's results of the fund or funds I want to purchase with the cash; did the price rise or fall?
+
+The amount of cash available for an individual fund is divided into three potential orders; a 15 percent amount, 35 percent amount, and 50 percent amount. The fund or funds to purchase is decided mainly on current allocation in the portfolio and whether they're up or down compared to the 52 week high, low, or average; favoring purchasing shares in those things which are down (see [buying the dip](#spending-savings)). Trades may be placed daily if cash continues to be available.
+
+The following may be taken in whole or in part, starting with the first trade.
+
+<details>
+<summary>The price rose</summary>
+
+1. 15 percent of the cash available is for dollar-based purchasing using the specific dollar amount resulting from the 15 percent calculation; market orders.
+2. 35 percent of the cash available is to create a limit order where the price is set at 2 cents more than the opening price for the day; using the number of full shares you can purchase for that amount.
+3. 50 percent of the cash available is to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+
+</details>
+
+<details>
+<summary>The price fell</summary>
+
+1. 15 percent of the cash available is to create a limit order where the price is set at 2 cents more than the opening price for the day.
+2. 35 percent of the cash available is to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+3. 35 percent of the cash available is to create a limit order where the price is set at 2 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
+
+</details>
 
 ## Recirculating
 
