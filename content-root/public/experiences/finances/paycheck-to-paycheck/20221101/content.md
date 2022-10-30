@@ -6,13 +6,13 @@
 
 Given I have the extended market and S&P 500 in my 401k I’m hoping the taxable account will be limited to the total market and multi-factor funds moving forward. My initial intent was to only have the total market fund in the taxable account. Unfortunately, I couldn’t contribute enough to small- and mid-caps via the Roth [.Individual Retirement Account](IRA) and [.Health Savings Account](HSA) to keep the portfolio in balance.
 
-Right now the total market fund is at its high end, the extended market is edging its way there, and the S&P 500 fund is just above its minimum threshold. So, for now, I'm continuing to contribute to the multi-factor fund.
+At the fund-level, the portfolio is in balance. The total market fund is at its high end, the extended market is edging its way there, and the S&P 500 fund is just above its minimum threshold. So, for now, I'm continuing to contribute to the multi-factor fund, which is just above its low threshold.
 
 I changed the settings for what to do with capital gains and dividends in the Traditional IRA. Instead of reinvesting automatically, they’ll go into the settlement fund, which affords me the opportunity to choose how to reinvest them. 
 
 I realized a flaw in my spreadsheet; [more on that below](#spreadsheet-update). I changed how I plan to update the Morningstar data for each fund in my portfolio; going from annually to quarterly. In July 2022 I put the data in. Then, on a whim, I decided to do it again this paycheck and realized the numbers shifted enough to impact the portfolio.
 
-When I did my regular contribution toward the multi-factor fund using the 15, 35, 50 limit order setup, the funds (and the market) rallied a bit and none of the orders executed. I did the 40-60 setup the next three trading days, and none of the orders executed. I decided to modify the setups again; these changes are described in the [investing section](/experiences/finances/personal-budget/#investing) of the personal budget. 
+When I did my regular contribution toward the multi-factor fund using the 15, 35, 50 limit order setup, the funds (and the market) rallied a bit and none of the orders executed. I did the 40-60 setup over the next three trading days, and none of the orders executed. I decided to modify the setups again; these changes are described in the [investing section](/experiences/finances/personal-budget/#investing) of the personal budget. 
 
 The [Fear and Greed Index](https://www.cnn.com/markets/fear-and-greed) started tilting toward the greed side of neutral around October 26. Feels good at the moment. Of course, the values of things could go back to falling, but I believe I’ve learned a lot from this experience and I’m appreciating the updates to the personal budget and systems I use.
 
@@ -36,7 +36,7 @@ Starting to think this won’t happen in 2022.
 
 Didn't put anything toward the dip this time.
 
-With that said, because I wanted to participate in buying the dip as much as possible (and all things medical), I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't think I have a rule in place that stops that stops me from doing it.
+With that said, because I wanted to participate in buying the dip as much as possible (and all things medical that happened this year), I let the [runway account](/experiences/finances/personal-budget/#assets) get reduced a fair bit by not putting in the minimum from the spreadsheet; a risky move, but I don't think I have a rule in place that stops me from doing it.
 
 I won't let the runway account drop below 3 month's of expenses, however, prior to the dip, the balance was much higher.
 
@@ -47,7 +47,7 @@ As the value of the equity funds dropped, the allocation to cash increased (as e
 3. striving to add the multi-factor fund to the portfolio, and
 4. trying to get the portfolio close to the targets for each fund.
 
-With that said, if the rally continues, the amount I'll be putting toward cash will need to increase in order to keep the portfolio in balance. Again, this would be expected given that the cash portion is measured as a part of the overall portfolio; not as a set aside. 
+With that said, if the rally continues, the amount I'll be putting toward cash will need to increase in order to keep the portfolio in balance. Again, this would be expected given that the cash portion is measured as part of the portfolio; not as a set aside. 
 
 ## Changes to diet and spending
 
@@ -57,7 +57,7 @@ My foot feels much better.
 
 Diet change is going well.
 
-I've stepped back the anti-inflammatories to be around every other day. I've also started looking into seeing a chiropractor, physical therapist, or both as my awareness of the pain in the toe is still there; just from switching to taking the anti-inflammatories every other day.
+I've stepped back the anti-inflammatories to be around every other day. On days I don't take an anti-inflammatory, I can feel the pain coming back slightly. 
 
 I’ve decided to look into sports medicine caregivers to see what they can determine from examining my gait and whatnot.
 
