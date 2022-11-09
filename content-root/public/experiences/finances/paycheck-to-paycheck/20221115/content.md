@@ -4,7 +4,15 @@
 
 {!! data !!}
 
+For a while I was experiencing a bug with Vanguard. In short, the percentages were stuck. For example, the Traditional [.Individual Retirement Account](IRA) showed down almost 50 percent, despite the account being positive. Each account and the aggregate had problems.
 
+It seems the issue was fixed.
+
+Overall, the combined total value of the Vanguard accounts is down around 6 percent. Down 10 for the taxable, up 40 for the Traditional IRA, and down 14 for the Roth IRA.
+
+The Main Pie at M1 Finance still shows down around 30 percent.
+
+Again, I think this demonstrates what we hope to see when you’re able to keep contributing. 
 
 ## 401k rollover
 
