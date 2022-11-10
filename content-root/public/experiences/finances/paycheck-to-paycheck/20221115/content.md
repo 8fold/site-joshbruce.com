@@ -20,24 +20,16 @@ I’m considering this another confirmation of this approach for both psychologi
 
 ## 401k rollover
 
-
+Definitely feeling good about the decisions here. This section probably won’t be here moving forward.
 
 ## Closing M1 Finance
 
-
+I’m still trying to reach a tighter balance at the fund level before actively contributing here.
 
 ## Update on the dip
 
- 
+ No extra cash going toward the dip.
 
 ## Changes to diet and spending
-
-
-
-## Personal Capital
-
-
-
-
 
 {!! next-previous !!}
