@@ -22,6 +22,8 @@ I’m considering this another confirmation of this approach for both psychologi
 
 Definitely feeling good about the decisions here. This section probably won’t be here moving forward.
 
+During this paycheck the value of the Traditional IRA hit the same value as the peak value when the money was in the 401k.
+
 ## Closing M1 Finance
 
 I’m still trying to reach a tighter balance at the fund level before actively contributing here.
