@@ -98,7 +98,12 @@ class Main implements Buildable
             Element::script()->props(
                 'src /js/interactive.min.js',
                 'type text/javascript'
-            )
+            ),
+            Element::link()->omitEndTag()
+                ->props(
+                    'rel me',
+                    'href https://phpc.social/@itsjoshbruce'
+                )
         )->body(
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
