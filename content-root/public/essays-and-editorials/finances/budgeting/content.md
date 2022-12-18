@@ -6,7 +6,7 @@ There is no money, only food.
 
 Every dollar we spend turns into food for someone somewhere at some point.
 
-A budget is like a diet in that if you have money (eat), you have a budget (diet). We'll look at two of the common uses for the term diet:
+A budget is like a diet in that if you have money (eat), you have a budget (diet). We'll look at two of the standard definitions for the term diet:
 
 > 1. the kinds of food that a person, animal, or community habitually eats
 > 2. a special course of food to which one restricts oneself, either to lose weight or for medical reasons
@@ -28,7 +28,7 @@ No judgment. And in either case, there are three primary activities:
 2. forecasting, and
 3. reconciling.
 
-In action loop terms, we're looking at performing, planning, reviewing, and reflecting, respectively.
+In [action loop](/essays-and-editorials/action-loop/) terms, we're looking at performing, planning, and reviewing and reflecting, respectively.
 
 ## Tracking
 
@@ -38,7 +38,7 @@ Tracking, in budget terms, is looking at money coming in and going out of your l
 
 While you can be as detailed as you want, I find the more we can apply the simplicity principle, the less friction there is to the act of tracking itself.
 
-Whether we're talking about food or money, tracking is there to increase transparency and raise our awareness.
+Whether we're talking food or money, tracking is there to increase transparency and raise awareness.
 
 I had no idea I ate that much junk food, and I had no idea I spent that much on eating out.
 
@@ -71,7 +71,7 @@ When you receive money, you create a deposit entry. The entry should have at lea
 2. Amount: How much was received?
 3. Deposit or withdraw (credit or debit): Whether money was received or removed from an account. (The terms credit and debit can get confusing in the professional bookkeeping context, so I use deposit and withdrawal instead.)
 4. Date: The day money was received.
-5. Description (or details): An optional, freeform note to help remember the source of money. You might put "fast food restaurant" instead of having a separate account in your chart of accounts.
+5. Description (or details): An optional, freeform note to help remember the source of or destination for money. You might put "fast food restaurant" instead of having a separate account in your chart of accounts.
 
 We’re talking bookkeeping though, and this is money coming in from a third party; therefore, there is an account where you make this entry, which is different from the account *for* the entry.
 
@@ -111,7 +111,7 @@ Let's look at a complete flow of money; distributions. The chart of accounts loo
 5. liabilities
 	- credit card at XYZ credit union
 
-This person gets paid and creates an entry in their checking ledger, a deposit to the checking asset account. They make an entry for paying their rent in their checking ledger, a withdrawal from the checking asset account. They create an entry for groceries in their credit card ledger, a withdrawal from the credit card liability account. They create two entries for making the payment to their credit card.
+This person gets paid and creates a deposit entry in their checking asset account. They make a withdrawal entry to pay rent in their checking asset account. They create a withdrawal entry for groceries in their credit card liabilities account. They create two entries for making the payment to their credit card.
 
 Here is where double-entry bookkeeping comes into play.
 
@@ -130,7 +130,7 @@ Some credit cards (liability accounts) have reward programs. For bookkeeping pur
 1. bonus incentives and
 2. cashback from use.
 
-Typically both of these are represented as points. These points can be converted into something else, like cash. If you convert points to currency, create an entry in the ledger for the account in which it was deposited.
+Typically both of these are represented as points. These points can be converted into something else, like cash. If you convert points to money, create an entry in the ledger for the account in which it was deposited.
 
 Bonus incentives are received just for opening a card and are considered bonuses above and beyond any other rewards. When used for cash, the cash is tracked as income and may have associated tax liabilities. Generally speaking, you won't need to worry about tax liability unless the amount is over a certain threshold and if you receive a Form 1099-MISC from the card issuer (see [Investopedia article](https://www.investopedia.com/ask/answers/110614/are-credit-card-rewards-considered-taxable-income-irs.asp)).
 
@@ -138,7 +138,7 @@ Cash-back reward points from using the card are seen as rebates or refunds on pu
 
 I've seen a couple of ways to track and account for cash rewards from using the card.
 
-First, the cash is tracked as non-taxable income when you convert the points to currency and have that cash deposited in an asset account. Second, the money is tracked as a refund against another expense; some reward programs let you do this in the reward software—choosing a transaction to bring to zero by converting points, for example. The third is a hybrid of the first two in that cash is deposited to an asset account; however, it’s categorized as a refund on the ledger of any expense account.
+First, the cash is tracked as non-taxable income when you convert the points to cash deposited in an asset account. Second, the money is tracked as a refund against another expense; some reward programs let you do this in the reward software—choosing a transaction to bring to zero by converting points, for example. The third is a hybrid of the first two in that cash is deposited to an asset account; however, it’s categorized as a refund on the ledger of an expense account.
 
 So, in the first scenario, you acquire reward points, convert them to cash, and have that cash deposited into a checking asset account. The entry goes on the checking ledger and is categorized as non-taxable income.
 
@@ -156,7 +156,7 @@ The benefit of the third approach is you can help offset other expenses; the tri
 
 If you give money to someone, that's an expense (or a gift); you don't expect any repayment. If you loan money to someone, that's an asset—potentially strange but true; you might have expected that to be a liability.
 
-Let's say I give you 10 USD and don't expect anything in return. The entry might be a withdrawal from my cash asset account and categorized as "gifts given" or something, an expense. Let's say you give me 10 USD; the entry might be a deposit to my cash asset account and categorized as "gifts received" or something; income. Alternatively, I could mark your gift to me as a refund of my prior expense instead of income.
+Let's say I give you 10 USD and don't expect anything in return. The entry might be a withdrawal from my cash asset account and categorized as "gifts given" or something, an expense. Let's say you give me 10 USD; the entry might be a deposit to my cash asset account and categorized as "gifts received" or something; income. Alternatively, I could mark your gift to me as a refund of a prior expense instead of income.
 
 The point here goes back to the bookkeeping training I did and something the mentor discussed, which is the idea of bookkeeping being to tell the story of your money in a way anyone should be able to read.
 
@@ -176,7 +176,7 @@ The opposite end of this could be considered the [anti-budget](https://affordany
 
 A synthesis of these is achieved by tracking. Tracking shows me how far I am from the guideline I've set for myself. Then, I can focus on changing one thing and not worrying about the rest.
 
-For example, I may notice the amount I spend eating out is higher than how much I spend on regular groceries. The guideline I've set for myself is to spend less on dining out than I do on groceries. So, over the next couple of weeks or months, I decided to cut back on how much I'm eating out.
+For example, I may notice the amount I spend eating out is higher than how much I spend on regular groceries. The guideline I've set for myself is to spend less on dining out than on groceries. So, over the following weeks or months, I might decide to cut back on how much I'm eating out.
 
 I'm changing my budget *after* having data about my current budget; back to food.
 
@@ -232,7 +232,7 @@ So, here's what I say: start broad, then narrow down.
 
 If you want, delete all the pre-created categories and create one called miscellaneous expenses. The information gleaned from having one expense account won't be helpful because “miscellaneous” will be 100 percent of your budget.
 
-Instead, let's create a bucket smaller than miscellaneous but helps discern the total cost of ownership for something.
+Instead, let's create a bucket smaller than miscellaneous but discerns the total cost of ownership for something.
 
 For the average person, housing is their number one expense; don't break it down, though. If a transaction is required for the smooth operation of your house, use the housing expense account.
 
@@ -270,4 +270,4 @@ Let's say money's getting tight. You can look at your expense accounts and quick
 
 If things still feel like they'd be too tight, I might even reexamine the need categories.
 
-For a decade, I thought I needed a car *and* an apartment. Then my car became my apartment for a year; an apartment was no longer a need. I went car-free a year later; a car was no longer a need. As of this writing, I've been car-free for a decade, and my new guideline is more either but not both; either I will have rent or a car, but likely not both.
+For a decade, I thought I needed a car *and* an apartment. Then my car became my apartment for a year; an apartment was no longer a need. I went car-free a year later; a car was no longer a need. As of this writing, I've been car-free for a decade, and my new guideline is more either but not both; I will have rent or a car, but likely not both.
