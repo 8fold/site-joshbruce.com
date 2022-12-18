@@ -6,39 +6,40 @@
 
 This is a double paycheck. The first came in on December 16 and the second on December 30.
 
-On the first check, the target for investing was the multi-factor fund. It was down the previous day so, went with the 2 cent over, 1 percent down, and 2 percent down limit orders. All three orders executed. 
+On the first check, I targeted the multi-factor fund, which was down the previous day, so I went with the 2 cents over, 1 percent down, and 2 percent down limit orders. All three orders were executed. 
 
 ## Allocations
 
-When 2022 started I was overweight large-cap equities. I started rebalancing my 401k at my former employer and, at the fund level, I became overweight in the extended market fund. I became overweight because the extended market fund is in all the accounts for two reasons:
+When 2022 started, large-cap equities were over their maximum. So I started rebalancing my 401k at my former employer. At the fund level, the extended market fund started reaching its maximum because it's in all the accounts for two reasons:
 
-1. I was trying to keep up with the large-cap allocation in my 401k to hit the target allocation; didn't work.
-2. The extended market holds the longest time horizon, so to speak.
+1. I was trying to keep up with the large-cap allocation in my 401k to hit the target allocation.
+2. The extended market fund has the longest time horizon, so to speak.
 
-Initially I started with the extended market fund only being my [.Health Savings Account](HSA) and Roth [.Individual Retirement Account](IRA) because I don't plan on withdrawing from those until around age 70. Then the extended market fund was added to the taxable brokerage account because I wasn't able to keep up with my 401k going to the S&P 500 only. I also had a rollover from a 401k at another employer that went into my Traditional IRA, in an extended market fund.
+I started with the extended market fund only being my [.Health Savings Account](HSA) and Roth [.Individual Retirement Account](IRA) because I don't plan on withdrawing from those accounts until around age 70. Next, I added the extended market fund to the taxable brokerage account because I couldn't keep up with my 401k going only to the S&P 500 fund. Finally, I rolled over a 401k at a former employer into my Traditional IRA using the extended market fund.
 
-No matter what I did though, I couldn't keep up with how much was going into the S&P 500. So, I did a series of reallocations in my 401k to a total small- and total mid-cap fund; just 33-33-33 percent to each and in each. 
+No matter what I did, I couldn't get the small-cap funds to keep up with what was going to the S&P 500 in my 401k. So I reallocated the 401k to be a 33-33-33 split between total small-cap, total mid-cap, and S&P 500 funds. After reallocating, small-cap equities, in general, and the extended market fund, in particular, were near their maximums. 
 
-Once that was complete, I was overweight in the extended market fund and pretty heavy in small-cap equities in general. Then I switched employers midway through 2022.
+I switched employers midway through 2022.
 
-I did a rollover of the 401k from my former employer into my Traditional IRA and that went well; see previous paychecks. This resulted in an allocation closer to the targets, however, the total market fund was a bit on the high side.
+I rolled over the 401k from my former employer to my Traditional IRA—that went well; see previous paychecks. This resulted in an allocation closer to the targets for the overall portfolio; however, the total market fund was high.
 
-My new employer offers an extended market fund in their 401k offerings. I set the allocation to be 66 percent toward the extended market fund and 34 percent toward the S&P 500 fund. Last I checked with [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) this gives a roughly even distribution across small-, mid-, and large-cap equities; tilted more toward small. I've been considering switching the allocation per paycheck to be a 50-50 split instead.
+My new employer offers an extended market and S&P 500 fund in their 401k. Last I checked [Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio), an allocation of 66 percent in an extended market fund and 34 percent in the S&P 500 creates roughly an even split between small-, mid-, and large-cap equities. Therefore, I set the allocation in my 401k to be 66 percent toward the extended market fund and 34 percent toward the S&P 500 fund. The value of the extended market fund may head toward its upper limit again. In that case, I'll switch the allocation in the 401k to be closer to a 50-50 split.
 
+The maximum contribution to the 401k, Roth IRA, and HSA will be increasing in 2023, according to the [Internal Revenue Service](https://www.irs.gov/newsroom/401k-limit-increases-to-22500-for-2023-ira-limit-rises-to-6500). 22,500 [.United States Dollars](USD) for the 401k, 6,500 USD for IRA, and 3,850 USD for the HSA, which is up from 20,500 USD, 6,000 USD, and 3,650 USD, respectively. I plan to take advantage of these limit increases, which increases the likelihood that the extended market fund will move toward its upper limit. I'll keep an eye on how things are moving at the fund level and adjust as needed.
 
-Last I checked, this allocation gives me the almost even distribution between small-, mid-, and large-cap equities I'm looking for. I've been considering changing the allocation in my 401k to be more of a fifty-fifty split because, at the fund level, the extended market is still pretty high.
+For now, we're good.
 
 ## Dining out adjustments
 
-Coming into 2022 I set a goal for myself, which was to spend more money on regular food than on dining out. I did not make it.
+In 2022, I set a goal to spend more money on regular food than dining out. But unfortunately, I didn't make it.
 
-I managed to spend about 20 percent less on dining out in 2022 than I did in 2021 though. Further, the distance between the two was not a dramatic.
+I spent about 20 percent less on dining out in 2022 than I did in 2021. Further, the distance between the two was less dramatic in 2022. So I'll take those as positives.
 
-Going into 2023 I'm going to set the same goal and see how it goes.
+Going into 2023, I'll set the same goal and see how it goes.
 
-I'll try and use my previous strategy of eating out once a month, usually around the first (or the paycheck for the first) of the month.
+I'll use my previous strategy from years past of eating out once a month, usually around the first (or the paycheck for the first) of the month.
 
-Of course, the less I eat out, the more I will naturally spend on groceries.
+Of course, the less I eat out, the more I'll naturally spend on groceries.
 
 ## Skill improvement
 
@@ -46,16 +47,16 @@ I signed up for [Grammarly](https://grammarly.com).
 
 ## Health and wellness
 
-Quick recap: A few months ago I had a sever pain in the big toe of my right foot; then again a month later. While I did not experience all the [symptoms of gout](https://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897), that's what we diagnosed and treated it as. We checked my uric acid levels, and they did indicate slight hyperuricemia ([high uric acid levels](https://www.mayoclinic.org/symptoms/high-uric-acid-level/basics/definition/sym-20050607)). Found a research paper on [purine levels in 80 food products](https://pubmed.ncbi.nlm.nih.gov/32312146/). I created a spreadsheet to detail the calories, macronutrient, and micronutrient content of the food I eat regularly; including purine content when I could find actual numbers. My normal breakfast, the breakfast sausage in particular, seemed to be the main culprit; I couldn't find specific numbers for the sausage itself and used the more general "pork" levels from the paper. Switched out the sausage for a blend of pumpkin seeds (pipitas) and cashews. This switch maintained my caloric intake and macronutrient levels while increasing micronutrients (including electrolytes).
+**Quick recap:** A few months ago, I had severe pain in the big toe of my right foot, then again a month later. While I did not experience all the [symptoms of gout](https://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897), that's what we diagnosed and treated it as. We checked my uric acid levels, and they did indicate slight hyperuricemia ([high uric acid levels](https://www.mayoclinic.org/symptoms/high-uric-acid-level/basics/definition/sym-20050607)). Found a research paper on [purine levels in 80 food products](https://pubmed.ncbi.nlm.nih.gov/32312146/). I created a spreadsheet tracking foods I eat regularly. Specifically, I wanted to track calories, macronutrients, micronutrients, and purine levels when I could find them. I identified breakfast to be the most likely culprit. I switched the 8 ounces of breakfast sausage for 100 grams each of cashews and pumpkin seeds (pepitas). This switch maintained my caloric intake and macronutrient levels while increasing micronutrients (including electrolytes) while reducing the purine content by roughly 50 percent.
 
-While exploring this problem I went to a pediatrist and sports physician. 
+While exploring this problem, I went to a podiatrist and sports physician. 
 
-The podiatrist agreed on the diagnosis of hyperuricemia (condition) and gout (attack). We removed an ingrown toenail on my right big toe. I learned how to give myself pedicures, which seemed to help in general; it was one of those things where I didn't know I was uncomfortable until I became more comfortable. Had some toenail fungus with some dehydration of the toenails and started using a nail mycosis solution on a regular basis. I managed to remove the impacted portion of the big toenail on my left foot.
+The podiatrist agreed to diagnose it as hyperuricemia (condition) and gout (attack). We removed an ingrown toenail on my right big toe. I learned and started giving myself pedicures, which helped in general. It was one of those things where I didn't know I was uncomfortable until I became more comfortable. Had some toenail fungus with some dehydration of the toenails and started using a nail mycosis solution regularly. I removed the impacted portion of the big toenail on my left foot.
 
-The sports physician pointed out some weaknesses in the kinetic chain of my right leg and recommended some exercises to strengthen that whole thing; specifically hip raises. He also recognized my upper thoracic spine was a bit locked and we cracked that, which helped. 
+The sports physician pointed out some weaknesses in the kinetic chain of my right leg and recommended some exercises to strengthen that whole thing, specifically hip raises. In addition, he recognized my upper thoracic spine was a bit locked, so we cracked it to loosen it up, which helped. 
 
-I've been off the anti-inflammatories (mainly [colchicine](https://www.ncbi.nlm.nih.gov/books/NBK431102/)) for about a month. The week as I'm writing this I also haven't been taking the medication to reduce the uric acid in my blood ([allopurinol](https://www.ncbi.nlm.nih.gov/books/NBK499942/)).
+I've been off the anti-inflammatories (mainly [colchicine](https://www.ncbi.nlm.nih.gov/books/NBK431102/)) for about a month. The week I'm writing this, I also haven't been taking the medication to reduce the uric acid in my blood ([allopurinol](https://www.ncbi.nlm.nih.gov/books/NBK499942/)).
 
-The second toenail on my right foot had the worst of the fungus. The regular use of the nail mycosis and "thinning" of the toenail using a light buffer block on the top of the toenail has caused some of he "dead" layers (lack of a better term) of the toenail to fall off completely. I'm also noticing the new growth of both my big toe and second is noticeably less thick than the nail that was there. So, my guess is there was definitely some stuff between the layers of the nails.
+The second toenail on my right foot had the worst fungus. The regular use of the nail mycosis and "thinning" of the toenail using a light buffer block on the top of the toenail has caused some "dead" layers (lack of a better term) of the toenail to fall off entirely. Also, the new growth of both my big toe and second toe is noticeably less thick than the nail that was there. So, there was definitely some stuff between the layers of the nails.
 
 {!! next-previous !!}
