@@ -1,4 +1,4 @@
-# December 15th, 2022 paycheck
+# January 1st, 2023 paycheck
 
 {!! dateblock !!}
 
