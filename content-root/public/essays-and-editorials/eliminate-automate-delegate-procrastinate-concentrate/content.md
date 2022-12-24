@@ -14,7 +14,7 @@ The debate on multitasking rages on. However, in general, humans (and computers)
 
 Principle: When you say "yes" to one thing, you are simultaneously saying "no" to an infinite number of other things.
 
-There are an infinite number of things you could try to do. I could set my apartment on fire, jump out the window, or decide to hold my breath. Of course, when we think of possibilities we often limit ourselves to things with relative high probability; the probability of doing the aforementioned is pretty low, so, it probably doesn't come to mind in my list of possibilities. With that said, when I say "yes" to one thing, like writing this article, I'm simultaneously so "no" to all the others; at least in the immediate. 
+There are an infinite number of things you could try to do. I could set my apartment on fire, jump out the window, or decide to hold my breath. Of course, when we think of possibilities we often limit ourselves to things with relative high probability; the probability of doing the aforementioned is pretty low, so, it probably doesn't come to mind in my list of possibilities. With that said, when I say "yes" to one thing, like writing this article, I'm simultaneously saying "no" to all the others; at least in the immediate. 
 
 The easiest way to eliminate something is to say "yes" to one thing. We are eliminating all the others, at least in the near-term.
 
