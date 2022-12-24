@@ -68,6 +68,6 @@ Note: Waiting for some other event, isn't procrastinating. For example, I cannot
 
 The desire here is that I intentionally procrastinate, as opposed to avoid doing something because of psychological or physical concerns.
 
-What you may find, while procrastinating on something, is the need to do it gets removed (eliminate) or you discover a service that allows you to automate or delegate it to someone or something else. Humans have survived this long in no small part because we are constantly looking for a finding ways to offload things we don't want to do to others who don't mind it as much as we do.
+What you may find, while procrastinating on something, is the need to do it gets removed (eliminate) or you discover a service that allows you to automate or delegate it to someone or something else. Humans have survived this long in no small part because we are constantly looking for and finding ways to offload things we don't want to do to others who don't mind it as much as we do.
 
 With that said, sometimes you lack that privilege. If I'm wild camping in the woods, for example, I have to literally do my laundry, because I'm not taking my washing machine with me. Further, I may not even have a bucket, detergent, and so on.
