@@ -4,9 +4,29 @@
 
 {!! data !!}
 
-This is a double paycheck. The first came in on December 16, and the second on December 30.
+It’s hard to believe this series is almost two years old. I’m pretty sure this is a record for me with consistently posting content. Historically I go in fits and starts.
 
-On the first check, I targeted the multi-factor fund, which was down the previous day, so I went with the 2 cents over, 1 percent down, and 2 percent down limit orders. All three orders were executed. 
+Basically I’d post everyday for about a month and then disappear for a few months.
+
+With that said, happy new year.
+
+That is, if this represents a new year to you in the calendar you follow.
+
+It’s fascinating how much significance human societies have placed on dates and times. We wait for the end of the year to change our lives and ourselves; new year, new me. Or maybe a birthday. Or a holiday. Or some other arbitrary day we recognize as an anniversary of something.
+
+It’s arbitrary.
+
+Man-made.
+
+One of my mantras is: Every day is a holiday.
+
+Of course, we operate in a world that doesn’t work that way and it really sucks when you go to your favorite restaurant only to discover they’re closed because calendars.
+
+Anyway!
+
+This is a double paycheck. The first came in on December 16 and the second on December 30.
+
+On the first check, I targeted the multi-factor fund, which was down the previous day, so I went with the 2 cents over, 1 percent down, and 2 percent down limit orders. All three orders were executed.
 
 ## Allocations
 
@@ -17,7 +37,7 @@ When 2022 started, large-cap equities were over their maximum. So I started reba
 
 I started with the extended market fund only being my [.Health Savings Account](HSA) and Roth [.Individual Retirement Account](IRA) because I don't plan on withdrawing from those accounts until around age 70. Next, I added the extended market fund to the taxable brokerage account because I couldn't keep up with my 401k going only to the S&P 500 fund. Finally, I rolled over a 401k at a former employer into my Traditional IRA using the extended market fund.
 
-No matter what I did, I couldn't get the small-cap funds to keep up with what was going to the S&P 500 in my 401k. So I reallocated the 401k to be a 33-33-33 split between total small-cap, total mid-cap, and S&P 500 funds. After reallocating, small-cap equities, in general, and the extended market fund, in particular, were near their maximums. 
+No matter what I did, I couldn't get the small-cap funds to keep up with what was going to the S&P 500 in my 401k. So I reallocated the 401k to be a 33-33-33 split between total small-cap, total mid-cap, and S&P 500 funds. After reallocating, small-cap equities, in general, and the extended market fund, in particular, were near their maximums.
 
 I switched employers midway through 2022.
 
@@ -55,17 +75,17 @@ I signed up for [Grammarly](https://grammarly.com).
 
 **Quick recap:** A few months ago, I had severe pain in the big toe of my right foot, then again a month later. While I did not experience all the [symptoms of gout](https://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897), that's what we diagnosed and treated it as. We checked my uric acid levels, and they did indicate slight hyperuricemia ([high uric acid levels](https://www.mayoclinic.org/symptoms/high-uric-acid-level/basics/definition/sym-20050607)). Found a research paper on [purine levels in 80 food products](https://pubmed.ncbi.nlm.nih.gov/32312146/).
 
-I don't classify myself as a spreadsheet, but I am creating another one. 
+I don't classify myself as a spreadsheet, but I am creating another one.
 
-This spreadsheet tracks the foods I eat regularly. I track calories; purine levels (based on the paper above); fats, carbohydrates, and proteins (macronutrients); and vitamins and minerals (micronutrients). 
+This spreadsheet tracks the foods I eat regularly. I track calories; purine levels (based on the paper above); fats, carbohydrates, and proteins (macronutrients); and vitamins and minerals (micronutrients).
 
 Breakfast came in as the most likely culprit for high purine content. So I swapped 8 ounces of breakfast sausage for 100 grams each of cashews and pumpkin seeds (pepitas). When it came to calories and macronutrients, things stayed the same. However, for micronutrients, my electrolytes shifted dramatically; sodium went down 50 percent, phosphorous dropped 75 percent, and potassium doubled. As for the purines, they dropped an estimated 75 percent.
 
-While exploring this problem, I went to a podiatrist and sports physician. 
+While exploring this problem, I went to a podiatrist and sports physician.
 
 The podiatrist agreed to the hyperuricemia (condition) and gout (attack) diagnoses. We removed an ingrown toenail on my right big toe. I learned and started giving myself pedicures, which helped in general. It was one of those things where I didn't know I was uncomfortable until I became more comfortable. Had some toenail fungus with some dehydration of the toenails and started using a nail mycosis solution regularly. I removed the impacted portion of the big toenail on my left foot.
 
-The sports physician pointed out some weaknesses in the kinetic chain of my right leg and recommended some exercises to strengthen that whole thing, specifically hip raises. In addition, he recognized my upper thoracic spine was a bit locked, so we cracked it to loosen it up, which helped. 
+The sports physician pointed out some weaknesses in the kinetic chain of my right leg and recommended some exercises to strengthen that whole thing, specifically hip raises. In addition, he recognized my upper thoracic spine was a bit locked, so we cracked it to loosen it up, which helped.
 
 I've been off the anti-inflammatories (mainly [colchicine](https://www.ncbi.nlm.nih.gov/books/NBK431102/)) for about a month. The week I'm writing this, I also haven't been taking the medication to reduce the uric acid in my blood ([allopurinol](https://www.ncbi.nlm.nih.gov/books/NBK499942/)).
 
@@ -79,7 +99,7 @@ Becca and I were contemplating changing our housing situation. But, in the end, 
 2. Multiple measuring devices like decibel meters, wind gauges, and thermometers to put numbers to our claims of sound, airflow from the [.heating, ventilation, and cooling](HVAC) unit, and temperature issues.
 3. A second space heater (and fan) for my office space because, due to number 2, it gets ridiculously cold or hot depending on outside temperatures.
 
-I'm hoping this will be the last of it, and I can exercise some discipline in the first few months of 2023, at the least to overcompensate. 
+I'm hoping this will be the last of it, and I can exercise some discipline in the first few months of 2023, at the least to overcompensate.
 
 As a bit of comedy, most of the latest purchases will arrive Friday and Saturday. So many boxes for New Year's Eve.
 
