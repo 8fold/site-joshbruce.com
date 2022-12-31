@@ -68,7 +68,7 @@ My name is <span property="name">Josh Bruce</span>.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewerg who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
 
 I reflected on the question for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 

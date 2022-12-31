@@ -14,7 +14,7 @@ The debate on multitasking rages on. However, in general, humans (and computers)
 
 Principle: When you say "yes" to one thing, you are simultaneously saying "no" to an infinite number of other things.
 
-There are an infinite number of things you could try to do. I could set my apartment on fire, jump out the window, or decide to hold my breath. Of course, when we think of possibilities we often limit ourselves to things with relative high probability; the probability of doing the aforementioned is pretty low, so, it probably doesn't come to mind in my list of possibilities. With that said, when I say "yes" to one thing, like writing this article, I'm simultaneously so "no" to all the others; at least in the immediate. 
+There are an infinite number of things you could try to do. I could set my apartment on fire, jump out the window, or decide to hold my breath. Of course, when we think of possibilities we often limit ourselves to things with relative high probability; the probability of doing the aforementioned is pretty low, so, it probably doesn't come to mind in my list of possibilities. With that said, when I say "yes" to one thing, like writing this article, I'm simultaneously saying "no" to all the others; at least in the immediate. 
 
 The easiest way to eliminate something is to say "yes" to one thing. We are eliminating all the others, at least in the near-term.
 
@@ -68,6 +68,6 @@ Note: Waiting for some other event, isn't procrastinating. For example, I cannot
 
 The desire here is that I intentionally procrastinate, as opposed to avoid doing something because of psychological or physical concerns.
 
-What you may find, while procrastinating on something, is the need to do it gets removed (eliminate) or you discover a service that allows you to automate or delegate it to someone or something else. Humans have survived this long in no small part because we are constantly looking for a finding ways to offload things we don't want to do to others who don't mind it as much as we do.
+What you may find, while procrastinating on something, is the need to do it gets removed (eliminate) or you discover a service that allows you to automate or delegate it to someone or something else. Humans have survived this long in no small part because we are constantly looking for and finding ways to offload things we don't want to do to others who don't mind it as much as we do.
 
 With that said, sometimes you lack that privilege. If I'm wild camping in the woods, for example, I have to literally do my laundry, because I'm not taking my washing machine with me. Further, I may not even have a bucket, detergent, and so on.
