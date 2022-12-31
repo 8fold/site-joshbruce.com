@@ -28,6 +28,10 @@ This is a double paycheck. The first came in on December 16 and the second on De
 
 On the first check, I targeted the multi-factor fund, which was down the previous day, so I went with the 2 cents over, 1 percent down, and 2 percent down limit orders. All three orders were executed.
 
+On the second check, I targeted the multi-factor fund, which was up the previous day, so I went with the market price (fractional shares), 2 cents over, and 1 percent down. Two of the three executed.
+
+I also received the last dividends of the year and put those to work where I could.
+
 ## Allocations
 
 When 2022 started, large-cap equities were over their maximum. So I started rebalancing my 401k at my former employer. At the fund level, the extended market fund started reaching its maximum because it's in all the accounts for two reasons:
@@ -35,7 +39,7 @@ When 2022 started, large-cap equities were over their maximum. So I started reba
 1. I was trying to keep up with the large-cap allocation in my 401k to hit the target allocation.
 2. The extended market fund has the longest time horizon, so to speak.
 
-I started with the extended market fund only being my [.Health Savings Account](HSA) and Roth [.Individual Retirement Account](IRA) because I don't plan on withdrawing from those accounts until around age 70. Next, I added the extended market fund to the taxable brokerage account because I couldn't keep up with my 401k going only to the S&P 500 fund. Finally, I rolled over a 401k at a former employer into my Traditional IRA using the extended market fund.
+I started with the extended market fund only being in my [.Health Savings Account](HSA) and Roth [.Individual Retirement Account](IRA) because I don't plan on withdrawing from those accounts until around age 70. Next, I added the extended market fund to the taxable brokerage account because I couldn't keep up with my 401k going only to the S&P 500 fund. Finally, I rolled over a 401k at a former employer into my Traditional IRA using the extended market fund.
 
 No matter what I did, I couldn't get the small-cap funds to keep up with what was going to the S&P 500 in my 401k. So I reallocated the 401k to be a 33-33-33 split between total small-cap, total mid-cap, and S&P 500 funds. After reallocating, small-cap equities, in general, and the extended market fund, in particular, were near their maximums.
 
@@ -47,9 +51,9 @@ My new employer offers an extended market and S&P 500 fund in their 401k. Last I
 
 The maximum contribution to the 401k, Roth IRA, and HSA will be increasing in 2023, according to the [Internal Revenue Service](https://www.irs.gov/newsroom/401k-limit-increases-to-22500-for-2023-ira-limit-rises-to-6500):
 
-22,500 [.United States Dollars](USD) for the 401k, up from 20,500 USD.
-6,500 USD for IRA, up from 6,000 USD.
-3,850 USD for the HSA, up from 3,650 USD.
+- 22,500 [.United States Dollars](USD) for the 401k, up from 20,500 USD.
+- 6,500 USD for IRA, up from 6,000 USD.
+- 3,850 USD for the HSA, up from 3,650 USD.
 
 I plan to take advantage of these limit increases, which increases the likelihood that the extended market fund will move toward its upper limit. I'll keep an eye on how things are moving at the fund level and adjust as needed.
 
@@ -75,7 +79,7 @@ I signed up for [Grammarly](https://grammarly.com).
 
 **Quick recap:** A few months ago, I had severe pain in the big toe of my right foot, then again a month later. While I did not experience all the [symptoms of gout](https://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897), that's what we diagnosed and treated it as. We checked my uric acid levels, and they did indicate slight hyperuricemia ([high uric acid levels](https://www.mayoclinic.org/symptoms/high-uric-acid-level/basics/definition/sym-20050607)). Found a research paper on [purine levels in 80 food products](https://pubmed.ncbi.nlm.nih.gov/32312146/).
 
-I don't classify myself as a spreadsheet, but I am creating another one.
+I don't classify myself as a spreadsheet person, but I am creating another one.
 
 This spreadsheet tracks the foods I eat regularly. I track calories; purine levels (based on the paper above); fats, carbohydrates, and proteins (macronutrients); and vitamins and minerals (micronutrients).
 
@@ -102,5 +106,15 @@ Becca and I were contemplating changing our housing situation. But, in the end, 
 I'm hoping this will be the last of it, and I can exercise some discipline in the first few months of 2023, at the least to overcompensate.
 
 As a bit of comedy, most of the latest purchases will arrive Friday and Saturday. So many boxes for New Year's Eve.
+
+## Death in the family
+
+A family member passed away the last week of the year. It sucks and I’m glad they’re no longer suffering.
+
+My employer responded well and I traveled to the funeral. 
+
+From a finance’s perspective, it’s an unexpected cost (not that it matters). With that said, it’s worth it to be with family during this time and things like this is why I have the runway account and asset allocation that includes cash. I’m also privileged to have a good salary and low expenses; flexibility.
+
+I’m in a good place.
 
 {!! next-previous !!}
