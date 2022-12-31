@@ -30,7 +30,7 @@ On the first check, I targeted the multi-factor fund, which was down the previou
 
 On the second check, I targeted the multi-factor fund, which was up the previous day, so I went with the market price (fractional shares), 2 cents over, and 1 percent down. Two of the three executed.
 
-I also received the last dividends of the year and put those to work where I could.
+I also received the last dividends of the year and put those to work where I could. Finally, I cashed out my reward points on the primary credit card.
 
 ## Allocations
 
