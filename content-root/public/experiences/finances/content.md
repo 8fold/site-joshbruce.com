@@ -63,8 +63,9 @@ I focus a lot on character and culture; values, principles, practices, and tools
 	- Search for a fund in the top navigation.
 	- Choose "portfolio" on the fund-level navigation.
 	- Choose "weight" on stock style.
-4. One insured spending account: All non-business outflows come from this account.
-5. One or more federally insured, interest bearing savings accounts.
-6. One or more regulated retirement accounts.
-7. One or more regulated taxable accounts.
-8. A well-maintained [investment policy](/experiences/finances/investment-policy/).
+7. [Fear and Greed Index by CNN](https://www.cnn.com/markets/fear-and-greed).
+8. One insured spending account: All non-business outflows come from this account.
+9. One or more federally insured, interest bearing savings accounts.
+10. One or more regulated retirement accounts.
+11. One or more regulated taxable accounts.
+12. A well-maintained [investment policy](/experiences/finances/investment-policy/).

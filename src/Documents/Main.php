@@ -79,10 +79,10 @@ class Main implements Buildable
                 'name viewport',
                 'content width=device-width,initial-scale=1'
             ),
-            Element::meta()->omitEndTag()->props(
-                'name description',
-                'content A tabletop role playing game for the ages.'
-            ),
+            // Element::meta()->omitEndTag()->props(
+            //     'name description',
+            //     'content A tabletop role playing game for the ages.'
+            // ),
             Favicons::create(
                 themeColor: '#ffffff',
                 path: '/favicons',
@@ -98,7 +98,12 @@ class Main implements Buildable
             Element::script()->props(
                 'src /js/interactive.min.js',
                 'type text/javascript'
-            )
+            ),
+            Element::link()->omitEndTag()
+                ->props(
+                    'rel me',
+                    'href https://phpc.social/@itsjoshbruce'
+                )
         )->body(
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
