@@ -1,9 +1,3 @@
----
-title: Personal Investment Policy
-created: 20210216
-updated: 20220417
----
-
 # Personal Investment Policy
 
 {!!dateblock!!}
@@ -14,14 +8,14 @@ I started with the outline developed by [The White Coat Investor](https://www.wh
 
 ## My why
 
-I want to be able to cater to the most constrained with my time and knowledge. These folks may not be able to afford high-cost fees for coaching, mentoring, and consulting. With that said, I need to ensure I can survive; secure my own mask before helping others, so to speak.
+I want to be able to cater to the most constrained with my time and knowledge. These folks may not be able to afford the fees for coaching, mentoring, and consulting. With that said, I need to ensure my survival; secure my own mask before helping others, so to speak. Hustle culture holds little interest for me. I’d rather trade value for money than time for the same.
 
-I want to travel and fade into the background whenever I want without worrying where my next meal will come from. Hustle culture holds little interest for me. I’d rather trade value for money than time for the same.
+I want to travel and fade into the background whenever I want without worrying where my next meal comes from.
 
 Coast FI stack revisited April 16, 2022:
 
 - FI number is 750,000 [.United States dollars](USD), higher than initial estimate of 500,000 USD.
-- This is because estimated spending in retirement was set to 30,000 USD based on 2021 [tracking](/essays-and-editorials/finances/budgeting/).
+- This is because estimated spending in retirement was increased to 30,000 USD based on 2021 [tracking](/essays-and-editorials/finances/budgeting/).
 
 - Coast FI 1: 221,477 USD
     1. Starting at age: 42
@@ -49,7 +43,7 @@ Coast FI stack revisited April 16, 2022:
     3. Retire by age: 53
     4. Starting net worth of: 507,630 USD
 
-This adjusts my original target from FI by 52 to FI by 53. I'm hoping I can increase some revenue streams outside of the day job.
+This adjusts my original target from FI by 52 to FI by 53. I'm hoping I can increase revenue m outside the day job.
 
 Would you like support my work and goals?
 
@@ -59,9 +53,13 @@ Would you like support my work and goals?
 - My primary investment vehicles will be broad-based index funds.
 - I’ll leverage tax-advantaged accounts and vehicles as much as possible.
 - I’ll buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.
+- I’ll use limit whenever possible.
+    - If purchasing 3 shares or more, I will use 3 limit orders; one at two cents above initial price, the second at 1 percent less than the initial price, and the third at 1.5 to 2 percent less than the initial price. If possible and practical, the will be 15 percent of the total contribution amount, the second will be 30 percent, and the third will be the remaining total contribution. (Buy low.)
 - My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
-- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based market capitalization, value, and growth.
-- I’ll contribute at least 300 USD per paycheck to long-term savings; dollar cost averaging will be my primary mode of contributing.
+- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based on market capitalization, value, and growth.
+    - I’ll strive for 20 percent or less in any one sector.
+    - I’d prefer the portfolio not have more than 1 percent in a single company’s stock.
+- I’ll contribute at least 10 percent per paycheck to long-term savings (striving for 50 percent or more); dollar cost averaging will be my primary mode of contributing.
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - I’ll approach my liquid investments as a single portfolio regardless of tax treatment. This means the portfolio will have a cash component and would not include collectibles, homes, or similar assets that take more than a few days to sell.
 
@@ -124,14 +122,14 @@ As of this writing I'm able to cashflow my lifestyle without needing assistance 
 
 I am of the mind that rebalancing should be minimal, if ever and use a [hybrid approach](/essays-and-editorials/finances/investment-policies/).
 
-Rebalancing, for me, means bringing the value of the holdings to within the specified range for each holding, not to the target. Therefore, if each asset class is within the specified range, the portfolio is considered in balance, regardless of any underlying holdings.
+Rebalancing, for me, means bringing the value of the holdings to within the specified range for each holding, not necessarily to the target. Therefore, if each asset class is within the specified range, the portfolio is considered in balance, regardless of underlying holdings.
 
 - I have a fixed cash allocation, but no floor (specified minimal cash amount) at the moment.
-- I'm in accumulation mode and use the while you're at it approach when purchasing; and would do similar in drawdown mode.
+- I'm in accumulation mode and use the “while you're at it” approach when purchasing; and would do similar in drawdown mode.
 - I've also combined the calendar and percentage-of-portfolio approaches, which I’ll call the event-driven, date-executed strategy.
 
 1. Decide which portfolio from above is the target; Mark 1, for example.
-2. Establish one or more rebalancing intervals and dates; I’ll start with annually around my birthday. (I've seen many suggestions—sometimes they even contradict one another and are all based on past performance, which isn't guaranteed. Further, if everyone rebalances on the same day, weird stuff can happen, so, random dates are good.)
+2. Establish one or more rebalancing intervals and dates; I’ll start with annually around my birthday. (I've seen many suggestions—sometimes they even contradict one another and are all based on past performance, which doesn’t guarantee future peer. Further, if everyone rebalances on the same day, weird stuff can happen, so, random dates are good.)
 3. Choose the event-based criteria:
     - if the portfolio goes out of balance and you don't hold a rebalancing token, receive one rebalancing token;
     - today's date:
@@ -150,16 +148,14 @@ For example, as of this writing, my 401k is out of balance and there is a dip in
 
 ### Personal portfolio
 
-I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policies/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using six fund types to achieve this:
+I'm in accumulation mode. I'm pursuing my [Coast FI 1 number](/experiences/finances/investment-policy/#my-why), therefore, I'm building toward the [Mark 0](/essays-and-editorials/finances/investment-policies/#asset-allocation) asset allocation. This portfolio has as its macro-allocations: cash and equities. I'm using four fund types to achieve this:
 
 1. [.Cap-weighted](Market capitalization weighted), total US equities fund; roughly 4,100 stocks.
 2. Cap-weighted, extended US equities fund; roughly 3,700 stocks. This helps achieve even distribution across small-, mid-, and large-cap stocks.
-3. Cap-weighted, total US small-cap equities fund; roughly 2,000 stocks.
-4. Cap-weighted, total US mid-cap equities fund; roughly 828 stocks.
-5. Cap-weighted, [.Standards and Poors](S&P) 500 US equities fund; roughly 500 large-cap stocks.
-6. Multi-factor fund; to tilt portfolio toward value and ignore cap-weighting.
+3. Multi-factor fund of funds; roughly 550 stocks. This helps achieve even distribution across value, blend, and growth.
+4. S&P 500 fund; roughly 500 stocks. This is the fund found in most 401k plans I’ve been exposed to and helps tip the large-cap away from growth.
 
-Because most of the funds are cap-weighted, cover most of the market, and different, there will be overlap at the individual stock level, which is fine.
+Because most of the funds are cap-weighted, cover most of the market, and are different, there will be overlap at the individual stock level, which is fine.
 
 ## Emergency fund
 

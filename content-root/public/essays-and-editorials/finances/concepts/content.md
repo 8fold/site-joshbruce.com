@@ -1,8 +1,8 @@
-# Financial concepts 
+# Financial concepts
 
 {!! dateblock !!}
 
-These are various concepts I’m picking up from various resources, mainly situations where I’ve lived it, heard multiple resources discus, or, more often, both.
+These are various concepts I’m picking up from various resources, mainly situations I’ve lived, heard multiple resources discuss, or, more often, both.
 
 - [Saving isn’t investing](#saving-isnt-investing)
 - [The three principles of investing](#the-three-principles-of-investing)
@@ -34,54 +34,54 @@ A company may dilute its stock whenever it wants to, however, it’s often done 
 
 So, people hoard cash, which effectively takes it out of circulation, the supply of cash in circulation decreases, if demand for the currency increases or even remains the same, those in charge of the currency print more of it; by issuing more or splitting what’s already out there. This may result in the value of the stock decreasing, at least in the short-term.
 
-The money printers may also take money out of circulation. In corporate terms, this is a stock buyback; the company itself buys its own stock and holds or destroys those shares.
+The money printers may also take money out of circulation. In corporate terms, this is a stock buyback; the company buys its stock and holds or destroys those shares.
 
 The money printers (US Federal Reserve, for example) have a few ways to do it.
 
-This is a very simplified explanation of currencies. 
+This is a very simplified explanation of currencies.
 
 Having said that, the general rule of thumb goes like this:
 
-1. If supply is high and demand is the low, the perceived value of the thing goes down. 
+1. If supply is high and demand is the low, the perceived value of the thing goes down.
 2. If supply is high and demand is high, the perceived value remains the same.
 3. If supply is low and demand is low, the perceived value remains the same.
-4. If supply is low and demand is high, the perceived value increases. 
+4. If supply is low and demand is high, the perceived value increases.
 
 When thinking in terms of price for goods and services (expenses not assets), you can switch the term “value” for “cost” in the list above.
 
 Cash is considered a liquid asset as it can be traded directly for goods and services. This is in contrast to more illiquid assets, like a house. Typically we don’t trade houses for goods and services, they must be sold (liquidated to cash). The time it takes to convert a house to cash can be weeks, months, or, in some cases, years.
 
-The only way to lose money from an investment is to sell the asset for less than you purchased it for. (Beware the sunk cost fallacy.)
+The only way to lose money from an investment is to sell the asset for less than you purchased it. (Beware the sunk cost fallacy.)
 
 This bears repeating:
 
-> The only way to lose money from an investment is to sell the asset for less than you purchased it for.
+> The only way to lose money from an investment is to sell the asset for less than you purchased it.
 
-Looked at a different way, the moment I purchase an asset (convert cash to something else), I’ve “lost” the money because it’s no longer cash. From that point forward, the questions are: What is the fair market value of the thing I purchased? And, how much income has been generated?
+Another way of looking at it, the moment I purchase an asset (convert cash to something else), I’ve “lost” the money because it’s no longer cash. From that point forward, the questions are: What is the fair market value of the thing I purchased? And how much income has been generated?
 
-If the fair market value is more than I paid, I haven’t made money, I have an unrealized gain. If I sell the thing at the higher value, I have a realized gain in capital; made money.
+If the fair market value is more than I paid, I haven’t made money; I have an unrealized gain. If I sell the thing at a higher value, I have a realized capital gain; made money.
 
-If the fair market value is less than I paid for it, I haven’t lost money, I have an unrealized loss. If I sell it for the lower amount, I have a realized loss in capital.
+If the fair market value is less than I paid for it, I haven’t lost money; I have an unrealized loss. If I sell it for a lower amount, I have a realized capital loss.
 
-If the asset pays me (usually in the form of dividends), I’ve made money. These dividends are classified outside the fair market value, however, the two are related. So, it’s possible to sell an asset for an unrealized loss that has produced a profit for you.
+If the asset pays me (usually in the form of dividends), I’ve made money. These dividends are classified outside the fair market value; however, the two are related. So, it’s possible to sell an asset for an unrealized loss that has produced a profit for you.
 
-At all other points, the asset is just increasing or decreasing in fair market value; I’m neither making or losing money.
+At all other points, the asset is just increasing or decreasing in fair market value; I’m neither making nor losing money.
 
 Finally, just because I use cash to purchase something doesn’t mean I’ve made an investment.
 
 ### The three principles of investing
 
-These three principles are attributed to [Jack Bogle](https://en.wikipedia.org/wiki/John_C._Bogle) (founder of [Vanguard](https://investor.vanguard.com/corporate-portal/)) and [Ray Dalio](https://en.wikipedia.org/wiki/Ray_Dalio) (from the hedge fund [Bridgewater Associates](https://en.wikipedia.org/wiki/Bridgewater_Associates)). (I credit Frank Vasquez from [Risk Parity Radio](https://www.riskparityradio.com) with introducing me to these.)
+These three principles are attributed to [Jack Bogle](https://en.wikipedia.org/wiki/John_C._Bogle) (founder of [Vanguard](https://investor.vanguard.com/corporate-portal/)) and [Ray Dalio](https://en.wikipedia.org/wiki/Ray_Dalio) (from the hedge fund [Bridgewater Associates](https://en.wikipedia.org/wiki/Bridgewater_Associates)). (I credit Frank Vasquez from [Risk Parity Radio](https://www.riskparityradio.com) for introducing me to these.)
 
-The **macro-allocation principle** says that portfolios made of similar asset classes in similar proportions will act over 90 percent the same. All 100 percent stock portfolios will act over 90 percent the same, for example. This means changes to the proportions within the asset classes are somewhat moot when it comes to returns, gains, losses, and so on.
+The **macro-allocation principle** says that portfolios made of similar asset classes in similar proportions will act over 90 percent the same. All 100 percent stock portfolios will act over 90 percent the same, for example. Changes to the proportions within the asset classes are somewhat moot regarding returns, gains, losses, and so on.
 
-The **Holy Grail of Investing** says that asset classes have an environment in which they perform best. Consider a quad chart. The first column is an inflationary environment where the purchasing power of a currency reduces. The second column is a deflationary environment; purchasing power of the same currency increases. The top row is a growth environment. The bottom row is a compressing environment. What we want to do, according to this principle, is choose different asset classes that perform well in each environment and then set proportions to our comfort. In general, this means equities, bonds, gold, and something like commodities (or literally commodities). The key is that each asset class should have low- or negative-correlation with the others.
+The **Holy Grail of Investing** says that asset classes have an environment where they perform best. Consider a quad chart. The first column is an inflationary environment where the purchasing power of a currency reduces. The second column is a deflationary environment; purchasing power of the same currency increases. The top row is a growth environment. The bottom row is a compressing environment. What we want to do, according to this principle, is choose different asset classes that perform well in each environment and then set proportions to our comfort. In general, this means equities, bonds, gold, and commodities. The key is that each asset class should have a low or negative correlation with the others.
 
 The **simplicity principle** says we want to minimize the number of securities and fees to balance preservation and return of capital; simple.
 
 ## Investing, speculating, and gambling aren’t the same
 
-I think it’ll be easier and more direct to take these in reverse order compared to the heading.
+It’ll be easier and more direct to take these in reverse order compared to the heading.
 
 I go to a casino (or a [Chuck E. Cheese](https://en.wikipedia.org/wiki/Chuck_E._Cheese)). I trade cash for tokens or chips; I’ve lost money. I use those tokens or chips to participate in various games. As I play I win and lose tokens. If I win more tokens than I started with, the value of the asset I purchased (my pool of tokens) has gone up. If I lose tokens, the value of the asset I purchased has gone down. At the end of my time playing, I can exchange the tokens for cash. The majority of people who go to the casino leave with less cash; that’s what makes it gambling.
 
@@ -89,7 +89,7 @@ In the case of carnival-like systems, such as Chuck E. Cheese, it’s pretty cle
 
 In the case of carnivals we’d likely call it spending money and not gambling because we’re usually not hoping for, nor expecting, a higher value return compared to the cash put in, which is different than how many of us feel going to the casino or playing the lottery.
 
-Speculating is similar to gambling only the probability of a positive return on the cash spent is higher though uncertain.
+Speculating is similar to gambling, only the probability of a positive return on the cash spent is higher though uncertain.
 
 Cryptocurrencies, for example, as of this writing, could be considered speculative. The speculative nature comes in part because they are:
 

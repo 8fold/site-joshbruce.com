@@ -34,7 +34,7 @@ The investment literature says this should be the case and my personal experienc
 - hold securities that are not 100 percent correlated; and
 - time to recover can be reduced when the aforementioned are in place.
 
-For buying the dip this time, I went with the total stock market fund in the primary taxable brokerage account. At the fund level of the portfolio, I’m overweight in the extended market fund (see [Recalibrating portfolio](#recalibrating-the portfolio-again)), so, decided against buying the extended market fund. I’m underweight in the multi-factor fund, but it’s only down 9 percent (not 10 or more), which, according to the [buying a dip](/experiences/finances/personal-budget/#spending-savings) protocol means I can’t buy more of it with this money. So, by process of elimination, the total stock market fund wins out; automated decision making.
+For buying the dip this time, I went with the total stock market fund in the primary taxable brokerage account. At the fund level of the portfolio, I’m overweight in the extended market fund (see [Recalibrating portfolio](#recalibrating-the-portfolio-again)), so, decided against buying the extended market fund. I’m underweight in the multi-factor fund, but it’s only down 9 percent (not 10 or more), which, according to the [buying a dip](/experiences/finances/personal-budget/#spending-savings) protocol means I can’t buy more of it with this money. So, by process of elimination, the total stock market fund wins out; automated decision making.
 
 Note: I also received the final check from my former employer. The multi-factor fund was down around 10 percent on Wednesday, so, when I buy the dip on Thursday, it'll be to the multi-factor fund.
 
