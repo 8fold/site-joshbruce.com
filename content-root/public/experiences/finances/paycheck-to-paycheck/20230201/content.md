@@ -10,6 +10,10 @@ The available balance wouldn’t let me purchase a full share at 2 cents above t
 
 I’m starting to feel like I understand what normal fluctuations feel like day-to-day. I’m not checking the Stocks app as often as I once was. Daily has turned into every few days. With that said, it’s multiple times on those days.
 
+I’m going to be closing down my Personal Capital account. It’s been nice. They have a good tool. I signed up for the free consultation and now they’re calling me regularly to follow-up. I don’t want to waste their time and it felt less like a consultation and more like sales pitch. Beyond that I’ve written about the limitations or discrepancies I’m finding with their tool.
+
+The tool itself definitely seems like a loss leader to get more assets under management. Can’t fault them for that. However, I’m looking for advice and examination when I want or need it, and preferably for a one-time fee per visit.
+
 ## Allocations
 
 The extended market fund is still creeping up. I’m going to change the allocation in my 401k next paycheck. I’m thinking of jumping straight to the 50-50 split. 
