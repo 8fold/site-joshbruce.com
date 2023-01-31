@@ -8,7 +8,7 @@ I had cash in the settlement account after the previous check. The multi-factor 
 
 The available balance wouldn’t let me purchase a full share at 2 cents above the previous ending price, so I didn’t put any orders in on Wednesday.
 
-For the regular investing round, when I got my paycheck, the multi-factor fund was up, and I did the market price, 2 cents over, and 1 percent down limit orders—only 2 of the 3 executed.
+For the regular investing round, when I got my paycheck, the multi-factor fund was up, and I did the market price, 2 cents over, and 1 percent down limit orders—only 2 of the 3 executed. Did the same thing the next trading day—1 of the 3 executed.
 
 I’m starting to understand what normal fluctuations feel like day-to-day. I’m not checking the Stocks app as often as I was. Daily has turned into every few days. With that said, it’s multiple times on those days.
 
