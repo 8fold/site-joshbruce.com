@@ -28,6 +28,18 @@ If you don't know where the `.profile` file is, a complete path is:
 6. Launch a terminal (or the Terminal app).
 7. Type `source ~/.profile` (to refresh the profile contents).
 
+Also, the MAMP version of [Composer](https://getcomposer.org) may throw a bunch of deprecation warnings. Perfectly normal, perfectly healthy. In Terminal run the following:
+
+```
+composer self-update
+```
+
+And that should resolve the problem.
+
+If you don't want to use the MAMP version of Composer, you can also install `composer.phar` somewhere and update the path in the `.profile` file to point there instead.
+
+I'm just looking for as few extra things I need to remember to do, which is why I use MAMP in the first place.
+
 ## What had happened was
 
 My MacBook Pro was having power issues. I sent it in for diagnostic and repair. They replaced the logic board. Replacing the logic board means I basically got a new laptop back. Right down to the version of macOS installed. 
