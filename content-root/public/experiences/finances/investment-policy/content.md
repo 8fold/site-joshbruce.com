@@ -53,7 +53,7 @@ Would you like support my work and goals?
 - My primary investment vehicles will be broad-based index funds.
 - I’ll leverage tax-advantaged accounts and vehicles as much as possible.
 - I’ll buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.
-- I’ll use limit orders when possible.
+- I’ll use [limit orders](https://www.investopedia.com/terms/l/limitorder.asp) when possible.
     - If the price per share of the asset I’m  purchasing was up the previous day, I will create:
         - a market order at market price (partial shares),
         - a limit order at 2 cents over the market price, and

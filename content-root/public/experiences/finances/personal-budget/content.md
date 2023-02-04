@@ -213,46 +213,6 @@ Once the plan is verified in Wave, I hop through the apps (or websites) for the 
 
 I usually do this the morning I get paid before rolling out of bed, so, not tedious and doesn’t require copious amounts of brain power or decision making.
 
-### Investing
-
-A portion of the distributions goes toward investing; otherwise known as, long-term savings. This section refers to cash beyond what is pulled out of each paycheck prior to me receiving it in the income account; includes taxable brokerage, HSA, Traditional IRA, and Roth IRA accounts—any account with a cash aspect. 
-
-
-
-
-
-
-
-
-
-This applies primarily to taxable accounts as tax-deferred and tax-free accounts use a more strict "buy what's available at whatever price currently exists" strategy. 
-
-I transfer money from the income account to the investment pass-through account. This amount is added to any money in the settlement fund of the taxable account. The sum gives me the amount of cash I can use for investing.
-
-[Limit orders](https://www.investopedia.com/terms/l/limitorder.asp) are the primary method of purchasing shares. The primary driver for decision making is the previous day's results of the fund or funds I want to purchase with the cash; did the price rise or fall?
-
-The amount of cash available for an individual fund is divided into three potential orders; a 15 percent amount, 35 percent amount, and 50 percent amount. The fund or funds to purchase is decided mainly on current allocation in the portfolio and whether they're up or down compared to the 52 week high, low, or average; favoring purchasing shares in those things which are down (see [buying the dip](#spending-savings)). Trades may be placed daily if cash continues to be available.
-
-The following may be taken in whole or in part, starting with the first trade.
-
-<details>
-<summary>The price rose</summary>
-
-1. 15 percent of the cash available is for dollar-based purchasing using the specific dollar amount resulting from the 15 percent calculation; market orders.
-2. 35 percent of the cash available is to create a limit order where the price is set at 2 cents more than the opening price for the day; using the number of full shares you can purchase for that amount.
-3. 50 percent of the cash available is to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
-
-</details>
-
-<details>
-<summary>The price fell</summary>
-
-1. 15 percent of the cash available is to create a limit order where the price is set at 2 cents more than the opening price for the day.
-2. 35 percent of the cash available is to create a limit order where the price is set at 1 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
-3. 35 percent of the cash available is to create a limit order where the price is set at 2 percent less than the opening price for the day; using the number of full shares you can purchase for that amount.
-
-</details>
-
 ## Recirculating
 
 To ensure every dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding; usually long-term savings.
