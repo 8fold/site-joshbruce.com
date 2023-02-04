@@ -53,8 +53,16 @@ Would you like support my work and goals?
 - My primary investment vehicles will be broad-based index funds.
 - I’ll leverage tax-advantaged accounts and vehicles as much as possible.
 - I’ll buy, hold, and not panic during market corrections; unless I lose all faith in American businesses, governments, and money.
-- I’ll use limit whenever possible.
-    - If purchasing 3 shares or more, I will use 3 limit orders; one at two cents above initial price, the second at 1 percent less than the initial price, and the third at 1.5 to 2 percent less than the initial price. If possible and practical, the will be 15 percent of the total contribution amount, the second will be 30 percent, and the third will be the remaining total contribution. (Buy low.)
+- I’ll use limit orders when possible.
+    - If the price per share of the asset I’m  purchasing was up the previous day, I will create:
+        - a market order at market price (partial shares),
+        - a limit order at 2 cents over the market price, and
+        - a limit order at 1 percent less than market price.
+     - If the price per share was down the previous day, I will create:
+        - a limit order at 2 cents over the market price,
+        - a limit order at 1 percent less than market price, and
+        - a limit order at 2 percent less than market price.
+     - The first order will be 15 percent of the total to be invested. The second order will be 35 percent of the total to be invested. The third order will be 50 percent of the total to be invested.
 - My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
 - I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based on market capitalization, value, and growth.
     - I’ll strive for 20 percent or less in any one sector.
