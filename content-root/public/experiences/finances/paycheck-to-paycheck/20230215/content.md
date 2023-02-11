@@ -22,9 +22,9 @@ When I received my paycheck the multi-factor fund was down, and I placed the fol
 2. 1 percent down; didn’t execute.
 3. 2 percent down; didn’t execute.
 
-Will try again on Monday.
+Will try again Monday.
 
-I’m appreciating the funds I’ve chosen a bit more as I watch the price per share move. The S&P 500, total stock market, and extended market funds are all closely correlated; if one is going down, they all do. However, on multiple occasions the multi-factor fund has been stable or going up while the other three go down; not dramatically, but still. Further, the extended market has also been down while the others have been up.
+I’m appreciating the funds chosen as I watch the price per share move. The S&P 500, total stock market, and extended market funds are all closely correlated; if one is going down, they all tend to. However, on multiple occasions the multi-factor fund has been stable or going up while the other three go down; not dramatically, but still. Further, the extended market has also been down while the others have been up.
 
 These differences in fluctuations affirm the [slight correlation-based diversification](https://www.portfoliovisualizer.com/asset-correlations?s=y&symbols=VFMF%2CVTI%2CVOO%2CVXF&timePeriod=2&tradingDays=60&months=36) between the funds. The total market and S&P 500 funds are 100 percent correlated. The extended market fund is roughly 95 percent correlated with those two and the multi-factor fund. And the multi-factor fund is roughly 95 percent correlated with the other three.
 
