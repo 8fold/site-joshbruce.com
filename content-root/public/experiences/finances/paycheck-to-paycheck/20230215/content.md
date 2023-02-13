@@ -26,9 +26,11 @@ Will try again Monday.
 
 The multi-factor fund was up, and I placed the following limit orders:
 
-1. Market price (fractional shares);
-2. 2 cents over;
+1. Market price (fractional shares); executed.
+2. 2 cents over; execute.
 3. 1 percent down;
+
+The interesting part here is that the market price executed at a price lower than 2 cents over, but the 2 cents over executed at 2 cents over. I wonder if this is part of the limit order? In other words, will it always execute at the limit price or will it possibly execute at less. I think I’ve seen an order execute at a lower price than I set. We’ll see I guess.
 
 ## Correlation-based diversification 
 
@@ -59,5 +61,7 @@ The big toenail on my right foot has these two lateral steps at the moment. I’
 On my left foot, the second toenail is in a similar boat with a noticeable lateral step into a thinner nail. 
 
 Then there’s the second toenail on my right foot which seems like it’s just falling apart. It has a lateral step. It also has shed layers of the mail at the tip that is getting caught on my socks. I’m hoping this temporary.
+
+This got me thinking about how many folks might believe they have “think toenails” and the reason is actually because there’s something between the layers pushing them apart.
 
 {!! next-previous !!}
