@@ -27,10 +27,16 @@ Will try again Monday.
 The multi-factor fund was up, and I placed the following limit orders:
 
 1. Market price (fractional shares); executed.
-2. 2 cents over; execute.
-3. 1 percent down;
+2. 2 cents over; executed.
+3. 1 percent down; did not execute.
 
 The interesting part here is that the market price executed at a price lower than 2 cents over, but the 2 cents over executed at 2 cents over. I wonder if this is part of the limit order? In other words, will it always execute at the limit price or will it possibly execute at less. I think I’ve seen an order execute at a lower price than I set. We’ll see I guess.
+
+The fund was up the previous day and there was still enough cash in the settlement fund to do 3 limit orders. I did the following:
+
+1. Market price (fractional shares); executed.
+2. 2 cents over;.
+3. 1 percent down;.
 
 ## Correlation-based diversification 
 
