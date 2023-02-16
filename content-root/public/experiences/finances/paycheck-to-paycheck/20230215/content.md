@@ -35,8 +35,14 @@ The interesting part here is that the market price executed at a price lower tha
 The fund was up the previous day and there was still enough cash in the settlement fund to do 3 limit orders. I did the following:
 
 1. Market price (fractional shares); executed.
-2. 2 cents over;.
-3. 1 percent down;.
+2. 2 cents over; executed.
+3. 1 percent down; did not execute.
+
+The S&P 500 fund was down, but all the others were up. Again, I’m appreciating the choice of funds (more below). There was enough left in the settlement account to place more limit orders, which were as follows:
+
+1. Market price (fractional shares); executed.
+2. 2 cents over; executed.
+3. 1 percent down; executed.
 
 ## Correlation-based diversification 
 
