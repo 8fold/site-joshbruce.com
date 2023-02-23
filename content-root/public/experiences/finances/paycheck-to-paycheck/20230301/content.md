@@ -18,11 +18,13 @@ I had enough left from the bonus and the orders not executing that I placed anot
 2. 1 percent down; executed.
 3. 2 percent down; executed.
 
-After recalibrating the values for the accounts I found the cash portion of the portfolio was occupying 7 percent of the portfolio’s value. This falls into the process I have to [90 day cool down](/experiences/finances/personal-budget/#spending-savings) under spending savings. I transferred money from savings and placed 3 more limit orders:
+After recalibrating the values for the accounts I found the cash portion of the portfolio was occupying 7 percent of the portfolio’s value. This falls into the process I have for a [90 day cool down](/experiences/finances/personal-budget/#spending-savings) under spending savings. I transferred money from savings and placed 3 more limit orders:
 
 1. 2 cents over; executed.
 2. 1 percent down; did not execute.
 3. 2 percent down; did not execute.
+
+
 
 ## 401k and 402g
 
