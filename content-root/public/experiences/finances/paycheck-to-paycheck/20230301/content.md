@@ -24,7 +24,11 @@ After recalibrating the values for the accounts I found the cash portion of the 
 2. 1 percent down; did not execute.
 3. 2 percent down; did not execute.
 
+I did the same limit orders the next trading day:
 
+1. 2 cents over;.
+2. 1 percent down;.
+3. 2 percent down;.
 
 ## 401k and 402g
 
