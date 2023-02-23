@@ -26,9 +26,11 @@ After recalibrating the values for the accounts I found the cash portion of the 
 
 I did the same limit orders the next trading day:
 
-1. 2 cents over;.
-2. 1 percent down;.
-3. 2 percent down;.
+1. 2 cents over; executed.
+2. 1 percent down; didn’t execute.
+3. 2 percent down; didn’t execute.
+
+Then my regular check came in. I added a bit on top of what was left from the bonus.
 
 ## 401k and 402g
 
