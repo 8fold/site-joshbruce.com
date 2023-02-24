@@ -2,6 +2,27 @@
 
 {!! dateblock !!}
 
+Assertions:
+
+1. Everyone has a portfolio.
+2. Every portfolio has 5 types or categories.
+3. Each type is based on characteristics, not the thing itself.
+4. The things may move between types based on historical performance.
+
+The 5 types are:
+
+1. Liabilities and expenses.
+2. Short-term and income (assets).
+3. Growth assets.
+4. Negative correlation.
+5. Low correlation.
+
+## Liabilities and expenses 
+
+Standard bookkeeping definitions apply when it comes to characteristics.
+
+
+
 Not sure why this has been playing in my head recently, but here we are. I will start from the broad concepts and work down to the details. I will use contract-like language in the sense that defined terms will be capitalized throughout this article.
 
 Assets are things you have that could be converted into cash (also known as liquidating). Liabilities are things you have that oblige you to repay. Net Worth is the result of taking the sum of the value of all your assets and subtracting the sum of the value of all your Liabilities.
