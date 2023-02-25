@@ -14,12 +14,66 @@ The 5 types are:
 1. Liabilities and expenses.
 2. Short-term and income (assets).
 3. Growth assets.
-4. Negative correlation.
-5. Low correlation.
+4. Negative correlation assets.
+5. Low correlation assets.
 
 ## Liabilities and expenses 
 
-Standard bookkeeping definitions apply when it comes to characteristics.
+Standard bookkeeping definitions apply when it comes to characteristics for things we’d say are this type, specifically:
+
+1. A negative or neutral real rate of return.
+2. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
+
+When we say real rate of return we’re talking about annual yields less inflation. 
+
+I have a utility bill I pay each month (an expense). When inflation is a positive percent, we say we’re in an inflationary environment. When inflation is negative, we say we’re in a deflationary environment. In an inflationary environment, my utility bill will most likely increase over time for the same amount of use. In a deflationary environment, my utility bill may decrease for the same amount of use.
+
+Let’s try a different example.
+
+Let’s say I have a car loan. The APR is 6 percent; this is a negative percent because it’s what I owe on top of the original balance of the loan. Let’s say inflation is 4 percent. This loan has a real rate of return of negative 10 percent.
+
+Now, let’s say we’re in a deflationary environment and inflation is negative 7 percent. The auto loan now has a real rate of return of 1 percent. I realize this may sound odd, but it’s possibly. Not likely, but possible. More likely would be a deflationary period with higher interest rates on the loan.
+
+Again, what qualifies a thing to fall into this type is that the real rate of return is negative or near 0.
+
+## Short-term and income (assets)
+
+Short-term and income (assets) are characterized by:
+
+1. Will be exchanged within 12 to 84 months.
+2. Historically have exhibited a low (often negative) real rate of return.
+3. Things of this type can typically be easily be exchanged for products and services.
+4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+
+By historically we’re talking in terms of a decade or more. I tend to look at things in terms of 10, 20, 30, and 40 years.
+
+It’s possible that something can move between types. Moving between types is often a slow process. Because it’s often a slow process is why we look at historical data in terms of decades; often giving more weight the recent period.
+
+The most universal falling into this type is cash. 
+
+It’s important to note that cash isn’t the only thing with these characteristics. Short-term treasury bills in the [.United States](US) would also fit this type. A regular savings account at a financial institution. A share certificate or certificate of deposit.
+
+Let’s go for an example.
+
+You have a dollar (or whatever the equivalent name is in your economy). If inflation is 1 percent, the dollar has a real rate of return of negative 1 percent, and you are in an inflationary environment. If inflation is negative 1 percent, the dollar has a real rate of return of 1 percent, and you are in a deflationary environment. Historically, there are more inflationary years than deflationary years.
+
+So, when we look at things in terms of decades, we would need to have a decade (or longer) of positive real rates of return before we would move something like cash to a different type in our portfolio. 
+
+The historical precedent being a negative real rate of return for things of this type is one reason many in the finance space advise against leaving cash under your mattress “doing nothing.” Instead, we want to put our dollars to work, either by paying for liabilities or buying other things in other categories.
+
+Let’s say you have a dollar in a savings account. The savings account has an APY of 1 percent. Let’s say we’re in an inflationary environment, and inflation is 3 percent. The real rate of return of the dollar is negative 2 percent. If we were in a deflationary environment, say negative 3 percent, the real rate of return for the dollar would be 4 percent.
+
+## The portfolio everyone has
+
+If you participate in any style of economy your portfolio will have the previous two types.
+
+Products and services you’re spending money on and the money you are holding or using to pay for the products and services.
+
+Because we have more than 1 type, we can create a portfolio allocation.
+
+
+
+
 
 
 
