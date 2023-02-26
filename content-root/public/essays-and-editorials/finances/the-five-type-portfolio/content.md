@@ -71,6 +71,79 @@ Products and services you’re spending money on and the money you are holding o
 
 Because we have more than 1 type, we can create a portfolio allocation.
 
+We want to establish [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) for each type compared to the total of the portfolio.
+
+In this context the guideline is a target for the type. You may also have 2 to 4 guardrails. If we only do 2, they will establish a minimum and a maximum. If we use 4, there will be minimum, low, high, and maximum. Then we want to consider, and preferably capture, what will happen if the proportion of the type goes below the low or medium, and above the high or maximum.
+
+For most of us, we want our liabilities to be a low proportion and our other assets to be higher. I recommend starting from where you are.
+
+1. Take all the balances of your liabilities and add them together. (Optionally, you could include regular bills as well.)
+2. Add up the current value of all your short-term assets.
+3. Add those two numbers together; to get the total portfolio balance.
+4. Divide the balance of your liabilities by the total portfolio balance to get the proportion of your liabilities.
+5. Divide the value of your short-term assets by the total portfolio balance to get the proportion of your short-term assets.
+6. Subtract you liabilities from you short-term assets to get your net worth (presuming your portfolio only has these two types).
+
+When I graduated university I had:
+
+1. about 126,000 [.United States Dollars](USD) in liabilities, and 
+2. about 1,000 USD in short-term assets. 
+3. My total portfolio balance was 127,000.
+4. My liabilities occupied 99 percent of the portfolio.
+5. My short-term assets occupied the remaining 1 percent.
+6. My net worth was negative 125,000 USD.
+
+If I would have done this exercise back then I probably would have had a panic attack, curled into a ball for a while, and cried a lot. (Instead, I suffered through depression for about three years straight despite not doing this exercise. I also buried my head in the sand when it came to my money.)
+
+If present-me were in that situation and did this exercise, I think I could handle it much better.
+
+I know the current state of the universe. I know I don’t want that to continue being the state of the universe.
+
+I’d start by setting the guidelines and guardrails for the liabilities. 99 percent would be the maximum. 89 percent would be high. 79 percent would be the target. 0 would be the low and minimum.
+
+While I’d like my liabilities to be lower than 79 percent, I don’t do well with super audacious goals. So, once I hit the 79 percent mark, maybe I’d set that to be the high or maximum and calibrate the other 2 accordingly.
+
+For short-term assets, I would have set the minimum to be 1 percent (where I was), the low to be 3, the target to be 6, the high to be 8, and the maximum to be 9.
+
+With this perspective, it’s still a numbers game, and still somewhat overwhelming. However, it can be psychologically less daunting. Instead of trying to move a needle over 100,000 USD while making 20,000 USD per year, I’m just trying to move a percentage point or two.
+
+I might also start looking at the next type in our portfolio.
+
+## Growth assets
+
+Growth assets are characterized by:
+
+1. Not sure when or if you’ll need to convert them to short-term assets.
+2. Historically have exhibited a positive (or high) real rate of return compared to other options.
+3. Things of this type typically aren’t easily exchanged directly for products and services.
+4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+
+In the United States the most well known are equities; also known as shares in [.United States](US) companies. According to [Statista](https://www.statista.com/statistics/710711/return-on-equities-bonds-bills-usa/), the real rate of return for US equities from 2002 to 2019 was 7 percent per year. 
+
+For comparison, the real rate of return for my regular savings account (short-term assets) was around negative 2 percent.
+
+Two things I want to make sure of here:
+
+1. The rate of return includes dividends paid to shareholders and appreciation of the share value; also known as resell value or Capital appreciation.
+2. Growth assets as a type can be a bit confusing because there is a specific style of equity called growth, that’s not what we’re talking about.
+
+Typically, when you buy growth assets you are exchanging your short-term assets for a different asset. In the case of US equities, you exchange for a share in the company. In the case of mutual funds, you’re buying a share in the fund; in turn the custodian of the fund buys individual equities.
+
+Further, one of the things that makes growth assets what they are is [the risk premium](https://www.investopedia.com/terms/r/riskpremium.asp). The risk premium is the excess return compared to the risk free rate return. Risk is different than volatility. Risk refers to the possibility of loss. Volatility refers to the swings of value for the asset. They are related, but not the same.
+
+Let’s go back to our example portfolio:
+
+- Liabilities: minimum and low of 0, target of 79, high of 89, and a maximum of 99 percent. Current percent of 99.
+- Short-term assets: minimum of 1, low of 3, target of 6, high of 8, and maximum of 9. Current percent of 1.
+
+If I were to add growth assets, I’d look at the targets and get them to add to 100 percent:
+
+- Liabilities: 79 percent.
+- Short-term assets: 6 percent.
+- Growth assets: 15 percent. The minimum I would have set at that time would have been 0. A low of 5 percent. A high of 20, and maximum of 25 percent.
+
+
+
 
 
 
