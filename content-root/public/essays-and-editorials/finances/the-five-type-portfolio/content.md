@@ -12,44 +12,42 @@ Assertions:
 The 5 types are:
 
 1. Liabilities and expenses.
-2. Short-term and income (assets).
+2. Short-term assets and income.
 3. Growth assets.
 4. Negative correlation assets.
 5. Low correlation assets.
 
 ## Liabilities and expenses 
 
-Standard bookkeeping definitions apply when it comes to characteristics for things we’d say are this type, specifically:
+Standard bookkeeping definitions apply when it comes to characteristics for things we’d say are of this type, specifically:
 
 1. A negative or neutral real rate of return.
 2. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
 
-When we say real rate of return we’re talking about annual yields less inflation. 
+When we say real rate of return we’re talking about percentage rate less inflation. Typically finance folks don’t apply real rate of return to liabilities. 
 
-I have a utility bill I pay each month (an expense). When inflation is a positive percent, we say we’re in an inflationary environment. When inflation is negative, we say we’re in a deflationary environment. In an inflationary environment, my utility bill will most likely increase over time for the same amount of use. In a deflationary environment, my utility bill may decrease for the same amount of use.
+If I lend you money and you pay me back over time. For you it’s an expense. For me it’s an asset. Further, for me, I would look in terms of real rate of return. What I’m suggesting here is you do the same because doing so can help draw the line between high interest debt and low interest.
 
-Let’s try a different example.
+For example, you have a student loan with an interest rate of 3 percent. You have the opportunity to buy into a growth asset with a guaranteed nominal rate of return of 10 percent.
 
-Let’s say I have a car loan. The APR is 6 percent; this is a negative percent because it’s what I owe on top of the original balance of the loan. Let’s say inflation is 4 percent. This loan has a real rate of return of negative 10 percent.
+Let’s say inflation is 3 percent. The real rate of the loan becomes 6 and the real rate of the growth asset become 7. Looking at it through this lens, paying the loan or buying into the growth asset are about equal. 
 
-Now, let’s say we’re in a deflationary environment and inflation is negative 7 percent. The auto loan now has a real rate of return of 1 percent. I realize this may sound odd, but it’s possibly. Not likely, but possible. More likely would be a deflationary period with higher interest rates on the loan.
+Let’s try an inflation rate of 0. The loan becomes 3 percent and the growth asset becomes 10 percent. Probably more worthwhile to buy into the growth asset.
 
-Again, what qualifies a thing to fall into this type is that the real rate of return is negative or near 0.
+And finally, let’s set inflation at 8 percent. The loan becomes 11 and the growth asset becomes 2 percent. Maybe pay the loan.
 
-## Short-term and income (assets)
+## Short-term assets and income
 
-Short-term and income (assets) are characterized by:
+Short-term assets and income and tend to have the following characteristics:
 
-1. Will be exchanged within 12 to 84 months.
+1. 12 to 84 month time horizon.
 2. Historically have exhibited a low (often negative) real rate of return.
-3. Things of this type can typically be easily be exchanged for products and services.
+3. Things of this type can typically be easily exchanged for products and services or used to pay debts public and private.
 4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
 
-By historically we’re talking in terms of a decade or more. I tend to look at things in terms of 10, 20, 30, and 40 years.
+When we say historically we’re talking in terms of a decade or more for the thing under consideration. I tend to look at things in terms of 10, 20, 30, and 40 years.
 
-It’s possible that something can move between types. Moving between types is often a slow process. Because it’s often a slow process is why we look at historical data in terms of decades; often giving more weight the recent period.
-
-The most universal falling into this type is cash. 
+As of this writing, the most ubiquitous thing falling into this type is cash. 
 
 It’s important to note that cash isn’t the only thing with these characteristics. Short-term treasury bills in the [.United States](US) would also fit this type. A regular savings account at a financial institution. A share certificate or certificate of deposit.
 
@@ -59,9 +57,9 @@ You have a dollar (or whatever the equivalent name is in your economy). If infla
 
 So, when we look at things in terms of decades, we would need to have a decade (or longer) of positive real rates of return before we would move something like cash to a different type in our portfolio. 
 
-The historical precedent being a negative real rate of return for things of this type is one reason many in the finance space advise against leaving cash under your mattress “doing nothing.” Instead, we want to put our dollars to work, either by paying for liabilities or buying other things in other categories.
+The historical precedent being a negative real rate of return for things of this type is one reason many in the finance space advise against leaving cash under your mattress “doing nothing.” Instead, we want to “put our dollars to work,” either by paying for liabilities or buying other asset types.
 
-Let’s say you have a dollar in a savings account. The savings account has an APY of 1 percent. Let’s say we’re in an inflationary environment, and inflation is 3 percent. The real rate of return of the dollar is negative 2 percent. If we were in a deflationary environment, say negative 3 percent, the real rate of return for the dollar would be 4 percent.
+Let’s say you have a dollar in a savings account. The savings account has an APY of 1 percent. Let’s say we’re in an inflationary environment, and inflation is 3 percent. The real rate of return of the dollar is negative 2 percent. If we were in a deflationary environment, say negative 3 percent, the real rate of return for the dollar would be 4 percent. If the real rate of return stayed positive long enough (decades), we might consider cash to be a growth type.
 
 ## The portfolio everyone has
 
@@ -69,20 +67,22 @@ If you participate in any style of economy your portfolio will have the previous
 
 Products and services you’re spending money on and the money you are holding or using to pay for the products and services.
 
-Because we have more than 1 type, we can create a portfolio allocation.
+Because we have more than 1 type in this portfolio, we can establish [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) (also known as the allocation) for each type compared to the total of the portfolio. 
 
-We want to establish [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) for each type compared to the total of the portfolio.
+In this context the guideline is a target for the type. You may also have 2 to 4 guardrails. If we only do 2, they will establish a minimum and a maximum. If we use 4, there will be minimum, low, high, and maximum. 
 
-In this context the guideline is a target for the type. You may also have 2 to 4 guardrails. If we only do 2, they will establish a minimum and a maximum. If we use 4, there will be minimum, low, high, and maximum. Then we want to consider, and preferably capture, what will happen if the proportion of the type goes below the low or medium, and above the high or maximum.
+After setting the guidelines and guardrails we want to consider, and preferably capture, what will happen if the proportion of the type goes below the low or minimum, and above the high or maximum.
 
-For most of us, we want our liabilities to be a low proportion and our other assets to be higher. I recommend starting from where you are.
+Let’s do it!
 
 1. Take all the balances of your liabilities and add them together. (Optionally, you could include regular bills as well.)
 2. Add up the current value of all your short-term assets.
 3. Add those two numbers together; to get the total portfolio balance.
 4. Divide the balance of your liabilities by the total portfolio balance to get the proportion of your liabilities.
 5. Divide the value of your short-term assets by the total portfolio balance to get the proportion of your short-term assets.
-6. Subtract you liabilities from you short-term assets to get your net worth (presuming your portfolio only has these two types).
+6. Subtract your liabilities from you short-term assets to get your net worth (presuming your portfolio only has these two types).
+
+No judgment, blame, or shame here. This is just making things transparent; we’re washing windows. This is sometimes easier said than done depending on what’s revealed.
 
 When I graduated university I had:
 
@@ -93,11 +93,11 @@ When I graduated university I had:
 5. My short-term assets occupied the remaining 1 percent.
 6. My net worth was negative 125,000 USD.
 
-If I would have done this exercise back then I probably would have had a panic attack, curled into a ball for a while, and cried a lot. (Instead, I suffered through depression for about three years straight despite not doing this exercise. I also buried my head in the sand when it came to my money.)
+Back then I didn’t do this exercise. Instead I buried my head in the sand. While money wasn’t the only reason, it played a large part in me suffering from depression for over 3 years straight. 
 
-If present-me were in that situation and did this exercise, I think I could handle it much better.
+If present-me were in that situation and did this exercise, I think I could handle it much better even at the same income level I had back then.
 
-I know the current state of the universe. I know I don’t want that to continue being the state of the universe.
+The results of this exercise gives me the current state of my financial universe. 
 
 I’d start by setting the guidelines and guardrails for the liabilities. 99 percent would be the maximum. 89 percent would be high. 79 percent would be the target. 0 would be the low and minimum.
 
