@@ -93,11 +93,40 @@ When I graduated university I had:
 5. My short-term assets occupied the remaining 1 percent.
 6. My net worth was negative 125,000 USD.
 
-Back then I didn’t do this exercise. Instead I buried my head in the sand. While money wasn’t the only reason, it played a large part in me suffering from depression for over 3 years straight. 
+Back then I didn’t do this exercise. Instead I put blinders on and as long as I could pay the immediate bills, I figured that was good enough. While money wasn’t the only reason, it played a large part in me suffering from depression for over 3 years straight. 
 
-If present-me were in that situation and did this exercise, I think I could handle it much better even at the same income level I had back then.
+If present-me were in that situation and did this exercise, I think I could handle it much better even at the same income I had back then.
 
-The results of this exercise gives me the current state of my financial universe. 
+The results of this exercise gives us the state of my financial universe. 
+
+Let’s establish the initial guidelines and guardrails.
+
+1. Liabilities:
+    - Maximum: 99 percent
+    - High: 89
+    - Target: 79
+    - Low: 0
+    - Minimum: 0
+2. Short-term assets:
+    - Maximum: 100
+    - High: 90
+    - Target: 6
+    - Low: 4
+    - Minimum: 3
+
+Why did I choose those numbers?
+
+I don’t want my liabilities to go higher than they already are. If they do, I will promise myself that every extra dollar will go to pay them down.
+
+
+
+
+
+
+
+
+
+
 
 I’d start by setting the guidelines and guardrails for the liabilities. 99 percent would be the maximum. 89 percent would be high. 79 percent would be the target. 0 would be the low and minimum.
 
