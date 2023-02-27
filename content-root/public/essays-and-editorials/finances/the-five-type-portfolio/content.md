@@ -9,6 +9,195 @@ Assertions:
 3. Each type is based on characteristics, not the thing itself.
 4. Things may move between types based on historical performance.
 
+Let’s try a layer cake analogy.
+
+We’ll have a plate, up to two layers in the cake, and potential for icing and sprinkles.
+
+The plate represents your liabilities and expenses; time or money you exchange with other people. Everyone gets a plate.
+
+The base layer of the cake are your short-term assets and income; lifetime you have or money you exchange with other people, usually on liabilities. Everyone has at least one layer to their cake. For some people it might be small as a proportion of the plate, their liabilities are greater than their short-term assets. Do others this layer might be edge-to-edge and 4 times thicker than the plate; the frugal folks. And all points in between.
+
+The second layer represent what we call your growth assets. Not everyone has this layer. For others, this layer dwarfs the first layer.
+
+The icing is where we would put negatively correlated assets. These are things that tend act differently than growth assets. Not everyone has icing. Some people’s have more icing than they do the first and second layers of the cake.
+
+The sprinkles are assets with a low correlation to the other layers and icing. Again, some people really like sprinkles, possibly to the point of only having the first layer and sprinkles.
+
+From a quantity perspective, you can have all the same volume of stuff making up this dessert. However, When looking at the ratio of these components can shift. And they can shift for all sorts of reasons. 
+
+Let’s go deeper.
+
+We’ll give the general characteristics of each, some things that fall into each as of this writing, and how one gets larger or smaller in volume without necessarily changing the quantity of things in it.
+
+## The plate (liabilities and expenses)
+
+Characteristics:
+
+1. You give something you have to someone else one-time or on a regular basis.
+2. Historically, real rate is often the most negative compared to the 5 dessert components.
+3. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
+
+By “historically” we’re talking in terms of decades; 10, 20, 30, 40 and so on years. We typically give more weight to recent data, as things do change and revolve over time. What was true 40 years ago may not be true now, and including the data from 40 years ago could skew averages and medians.
+
+When I say “real rate” we take the APR and add the inflation rate.
+
+You borrow money from me, it goes here. We agree to a 0 percent APR and inflation is at 3 percent. The real rate for this loan is 3 percent.
+
+Ingredients that go into making the plate:
+
+1. Recurring bills: Like utilities, rent, food, and similar purchases.
+2. Terminal loans: Like a mortgage or car loan.
+3. Revolving loans: Like credit cards and lines of credit.
+4. Future replacement costs: A cellphone has a useful life of 2 to 5 years. A roof has a useful life of 15 to 20 years.
+
+This is not an exhaustive list. And the key characteristic is that you can’t eat a plate. The ingredients making up the plate are for and to someone else.
+
+There are 4 major things that can make the plate grow and shrink; 2 are most likely out of your control:
+
+1. Inflation and deflation.
+2. An emergency.
+3. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation.
+4. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
+
+It’s worth noting that the plate can grow and shrink independently from the other parts of the dessert; just like all the other parts of the dessert.
+
+Inflation is the tendency for the same quantity of products and services to cost more in the over time. This also goes back to the commentary on favoring recent data. Let’s look at the [.United States Bureau of Labor Statics](BLS) [.Consumer Price Index](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm) data. We’ll use all items for each month.
+
+From February 2022 through January 2023 (12 months), the average rate of inflation was: 7.9 percent. From February 2013 through January 2023 (120 months or 10 year) the average was: 2.5 percent. From February 2003 through January 2023 (20 years) the average was: 2.49 percent.
+
+There were some deflation months in 2009. Of course, that was during [The Great Recession](https://en.m.wikipedia.org/wiki/Great_Recession), and inflation was an average of 3 to 4 percent the previous year.
+
+Let me say, the me living in 2023 is impacted my be the last year than the last 20 years. Again, giving slightly more weight to recent data seems valid in this context.
+
+So, in the last year, the plate has increased by almost 8 percent. Out of your control.
+
+In 2022, I had appendicitis leading to an [appendectomy](https://en.m.wikipedia.org/wiki/Appendectomy), my plate got bigger because of an emergency.
+
+Hedonic adaptation is more within your control. You get a raise. You buy a more expensive thing. You’ve made your plate bigger because the cost to replace might be the same, but if you stick with the cheaper version, it would be less expensive. 
+
+The Diderot effect is when you buy, say, a new pair of shoes. Now you feel the need to replace your wardrobe because all your clothes are really old. Then you decide to replace your furniture, because your new clothes seem so out of place compared to the sofa you bought 15 years ago with the multiple stains. You’ve made the plate bigger.
+
+## The first layer of the cake (short-terms assets and income)
+
+Characteristics:
+
+1. Someone gives you something they have one-time or on a regular basis.
+2. Historically, real rate is negative or neutral compared to the 5 dessert components.
+3. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+
+Non-exhaustive list of ingredients that go into making the first layer:
+
+1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. Could be the [.United States Dollar](USD), gold coins back in the day, or cigarettes in those old prison movies.
+2. Short-term bonds: Bonds with a maturity date of 1 year or less.
+3. Certificates of deposit and share certificates: Cash held at a bank for a period, usually less than 10 years.
+
+Some things that cause this layer to get bigger and smaller:
+
+1. Inflation and deflation.
+2. An emergency.
+3. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation.
+4. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
+
+Yep. Same list as the plate.
+
+The biggest addition here is to spend less, make more, or both.
+
+A recommended precursor to spending less (and most things really) is to get an idea of where you are; also known as tracking. Focus on the items that take up the most space. The plate gets smaller and it’s possible this layer actually increases in volume.
+
+The truth of making more is that often, as your salary increases, there aren’t mechanisms that cause regular increases. In some cases you’ll need to advocate for yourself or change how you earn income.
+
+This is one reason I include liabilities in the portfolio. Paying off liabilities takes a bite of the cake, while make the plate proportionally smaller.
+
+I have 5,000 USD in liabilities. I have 5,000 USD in short-term assets. My ratio is 50:50. I spend 4,000 USD from short-term assetS to pay a liability. Now, my liabilities are 1,000 USD and my short-term assets are 1,000 USD; still 50:50.
+
+To change the allocation, we must change something else; spend less, earn more, or both. 
+
+Go ahead and pay off the credit card, but don’t run it up again; spend less. Be good at what you do and ask for a raise or increase your prices; earn more. Or both.
+
+Let’s say I pay off the 5,000 USD using the 5,000 USD. The plate is still there (inflation and other bills), and I have no first layer on my cake. Then I earn 1,000 USD. My first layer is back. Let’s say I have 200 USD in bills to pay; the portfolio is about 20:80.
+
+Some people are in a position where the phrase “feast or famine” truly applies. Further, in some cases they cannot see alternatives. Finally, sometimes they can see an alternative but feel it doesn’t apply to them.
+
+Next layer!
+
+## The second layer (growth assets)
+
+Characteristics:
+
+1. You typically convert short-term assets into something else you then own; not a liability.
+2. Historically, real rate is positive and higher than all other elements of this dessert.
+3. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+4. Has a resell value that fluctuates.
+
+Non-exhaustive list of ingredients that go into making the first layer:
+
+1. Corporate equities: Ownership shares in companies publicly and privately held.
+2. Some forms and organization of tangible things (real estate, artwork, and antique cars, for example).
+3. Mutual and index funds in various forms that invest in corporate equities: You purchase a share in the fund, and the custodian of the fund purchases share in companies based on some guidelines and guardrails established for the fund.
+
+Three main things causing this layer to grow and shrink:
+
+1. Selling the things.
+2. Buying more of those things.
+3. Appreciation and depreciation of the things.
+
+The fact we are buying something other than currency is also why this is a different layer to the cake. With that said, it’s important to note and remember that things can shift; assets becoming one with the plate or things that were once growth assets fitting more into short-term assets.
+
+You can charge whatever you want for the thing. Some questions this relationship raises:
+
+1. When do you need the short-term asset from the sale?
+2. Will someone pay what you’re asking?
+3. If so, will they do it in a timely manner?
+4. Will you need to replace the thing with something similar?
+
+This brings up the idea of liquidity. Liquidity is the time and cost it takes for something to be exchanged for something else. Short-term assets are considered very liquid, mainly because cash falls in there. Growth assets are usually considered to have low liquidity, this is a small contributing factor to their growth nature.
+
+Back in the day, and I mean 50-plus years ago, buying shares in a publicly traded company was pretty prohibitive because of the lack of liquidity. We’re talking old school here. Let’s assume you could buy direct. You would give someone your money. They would generate a piece of paper representing your share in the company. You’d wait to get the paper. You would then have to hold onto it as proof of ownership. (Think paper money, only it’s not cash and you usually can’t trade it directly for products and services.)
+
+If you wanted to self the share, you’d have to find someone willing to buy it. They’d have to give you money. You’d have to transfer ownership to this other person. Then give them the piece of paper. (Like transferring the title for a car or house.)
+
+If you had to go through a broker (most times you did), you might have to pay fees of hundreds of dollars to pay them to do it for you.
+
+In the twenty-first century though, there are way more options with varying fees ranging from 0 to a couple percent. Publicly traded company shares have become more liquid. And, the old school way still exists; old doesn’t mean bad or extinct. 
+
+Compare that to a tangible asset like a painting. Again, you purchase the thing. You wait for the thing. Sometimes there’s a letter of authenticity you’ll want to keep. Now you want to sell the artwork. How long will it take you to find someone willing to pay what you’re charging?
+
+Regardless, once sold, this layer gets a little smaller in volume.
+
+The other, and probably main reason growth assets have the qualities they have is [the risk premium](https://www.investopedia.com/terms/r/riskpremium.asp). Liquidity, or lack thereof, is a type of risk. However, it’s not usually the one people think about in this context. Often we conflate risk with volatility. Volatility is how much the thing you bought appreciates or depreciates in a given period.
+
+The real risk is the likelihood that you won’t be able to sell the thing you bought 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The 5 types are:
 
 1. Liabilities and expenses.
@@ -22,7 +211,6 @@ The 5 types are:
 Standard bookkeeping definitions apply when it comes to characteristics for things we’d say are of this type, specifically:
 
 1. A negative or neutral real rate of return.
-2. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
 
 When we say "real rate of return," we talk about a percentage rate less inflation. Typically finance folks don’t apply real rate of return to liabilities. If I lend you money and you pay me back over time. For you, it’s a liability. For me, it’s an asset. 
 
