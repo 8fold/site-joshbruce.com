@@ -247,7 +247,7 @@ If more money is needed, something has gone horribly wrong and you should be con
 
 ### Spending savings
 
-Money in the savings account is different than an emergency fund in that it’s there to take advantage of opportunities instead of crisis.
+Money in the savings account is different than an emergency fund in that it’s there to take advantage of opportunities instead of responding to crises.
 
 The following events open the possibility of spending from savings (or not setting aside a percentage of income to savings):
 
