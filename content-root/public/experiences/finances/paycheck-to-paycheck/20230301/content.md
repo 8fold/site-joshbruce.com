@@ -68,4 +68,6 @@ Im appreciating this approach mainly because it’s asset independent. Further, 
 
 I’m working on an essay for it.
 
+This could impact how I open these articles because I’m considering shifting the data at the top to reflect this 5 type concept.
+
 {!! next-previous !!}
