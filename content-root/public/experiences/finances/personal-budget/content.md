@@ -1,9 +1,3 @@
----
-title: Personal budget
-created: 20210704
-updated: 20220921
----
-
 # Personal budget
 
 {!!dateblock!!}
@@ -221,29 +215,11 @@ To ensure every dollar is working toward its highest, long-term potential there 
 
 I rarely owe taxes.
 
-While I could keep socking money away in the tax account for when I retire, I’d rather put the majority of this money to work once I know I don’t owe taxes for the year.
+While I could keep socking money away in the tax account for when I retire, I’d rather put the majority of this money to work.
 
-After filing taxes, if I owe anything, I’ll transfer money from the tax account to the expense account and pay the taxes; further, the percent from income distributions going to the tax account will be increased by 1.
+If I owe taxes, up to 100 percent of the tax account may be used to pay the amount owed. Further, if there isn’t enough in the tax account, the savings may be used, followed by the runway account; if that’s not enough it’s probably time to get attorneys and accountants involved. Finally, the from income to transfer to the tax account will be increased at least 1 percent.
 
-If I qualify for a refund, it must be received prior to the next bit. (When the refund is received, it will be treated as income and distributed accordingly.)
-
-Next is determining how much to transfer to the savings account.
-
-- x: Balance of the tax account as of January first of the tax year.
-- y: Total deposits to the tax account during the tax year.
-- z: Total transferred to expense account to pay owed taxes.
-- a: Pool available to transfer to savings account.
-
-```x + y - z = a```
-
-I can transfer up to 80 percent of the pool to the savings account. This move puts money back into circulation within the system; see next section.
-
-If money is owed, and there isn't enough in the Tax account to cover the amount, cash should be withdrawn from the accounts in the following order:
-
-1. savings,
-2. runway.
-
-If more money is needed, something has gone horribly wrong and you should be consulting with accountants and attorneys.
+If I qualify for a refund, the refunded amount will be treated as income from a distribution perspective. Further, up to 80 percent of the balance of the tax account may be transferred either to the savings account, the runway account, or both. Finally, up to 100 percent of the savings may immediately be used to contribute up to maximum for the Roth IRA. (Note: This can be done before submitting the tax documents or receiving the refund.)
 
 ### Spending savings
 
