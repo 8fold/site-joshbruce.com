@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
 
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
 
-class FiExperiments implements Buildable
+class FiExperiments implements Stringable
 {
     public static function create(Site $site): self
     {
@@ -25,7 +25,7 @@ class FiExperiments implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $meta = $this->site()->decodedJsonFile(
             named: '/fi-experiments.json',
@@ -85,12 +85,7 @@ class FiExperiments implements Buildable
             return '';
 
         }
-        return Element::ul(...$listHeadings)->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul(...$listHeadings);
     }
 
     private static function calculateChangeBetween(

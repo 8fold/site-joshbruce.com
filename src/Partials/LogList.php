@@ -3,13 +3,14 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\Amos\Site;
 
 use Eightfold\HTMLBuilder\Element;
 
-class LogList implements Buildable
+class LogList implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -25,7 +26,7 @@ class LogList implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $path = $this->site()->publicRoot() . $this->site()->requestPath();
         if (is_dir($path) === false) {
@@ -61,11 +62,6 @@ class LogList implements Buildable
 
         krsort($links);
 
-        return Element::ul(...$links)->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul(...$links);
     }
 }

@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos\PageComponents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\HTMLBuilder\Element;
 
@@ -11,7 +12,7 @@ use Eightfold\HTMLBuilder\Element;
  * We use https://realfavicongenerator.net to generate favicon-related assets.
  * We presume the names of these assets will not be changed.
  */
-class Favicons implements Buildable
+class Favicons implements Stringable // Buildable
 {
     /**
      *
@@ -69,42 +70,42 @@ class Favicons implements Buildable
         return $this->safariTabColor;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
-        return Element::link()->omitEndTag()->props(
+        return (string) Element::link()->omitEndTag()->props(
             'rel apple-touch-icon',
             'sizes 180x180',
             'href ' . $this->path() . '/apple-touch-icon.png'
-        )->build()
+        )
         . Element::link()->omitEndTag()->props(
             'rel icon',
             'type image/png',
             'sizes 32x32',
             'href ' . $this->path() . '/favicon-32x32.png'
-        )->build()
+        )
         . Element::link()->omitEndTag()->props(
             'rel icon',
             'type image/png',
             'sizes 16x16',
             'href ' . $this->path() . '/favicon-16x16.png'
-        )->build()
+        )
         . Element::link()->omitEndTag()->props(
             'rel manifest',
             'href ' . $this->path() . '/site.webmanifest'
-        )->build()
+        )
         . Element::link()->omitEndTag()->props(
             'rel mask-icon',
             'href ' . $this->path() . '/safari-pinned-tab.svg',
             'color ' . $this->safariTabColor()
-        )->build()
+        )
         . Element::link()->omitendTag()->props(
             'rel shortcut icon',
             'href ' . $this->path() . '/favicon.ico'
-        )->build()
+        )
         . Element::meta()->omitEndTag()->props(
             'name msapplication-TileColor',
             'content ' . $this->msAppTileColor()
-        )->build()
+        )
         . Element::meta()->omitEndTag()->props(
             'name msapplication-config',
             'content ' . $this->path() . '/browserconfig.xml'
@@ -112,11 +113,6 @@ class Favicons implements Buildable
         . Element::meta()->omitEndTag()->props(
             'name theme-color',
             'color ' . $this->themeColor()
-        )->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        );
     }
 }

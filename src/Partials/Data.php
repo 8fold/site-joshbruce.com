@@ -3,13 +3,14 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
 
-class Data implements Buildable
+class Data implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -25,7 +26,7 @@ class Data implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $meta = $this->site()->decodedJsonFile(
             named: '/data.json',
@@ -81,12 +82,7 @@ class Data implements Buildable
             return '';
 
         }
-        return Element::ul(...$listHeadings)->props('is data-list')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul(...$listHeadings)->props('is data-list');
     }
 
     private static function listFrom12(
@@ -97,8 +93,8 @@ class Data implements Buildable
     ): Element {
         $detail = self::detail(floatval($min), floatval($max), floatval($value));
 
-        $label  = Element::span($label)->build();
-        $parenthetical = Element::span(' (' . $detail . ')')->build();
+        $label  = (string) Element::span($label);
+        $parenthetical = (string) Element::span(' (' . $detail . ')');
 
         $current = Element::li(
             Element::b('current: '),

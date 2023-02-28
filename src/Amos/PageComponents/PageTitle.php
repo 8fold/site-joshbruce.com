@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos\PageComponents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Psr\Http\Message\RequestInterface;
 
@@ -14,7 +15,7 @@ use Eightfold\Amos\Meta;
 
 use Eightfold\Amos\Markdown;
 
-class PageTitle implements Buildable
+class PageTitle implements Stringable // Buildable
 {
     public static function create(Site $site): PageTitle
     {
@@ -30,7 +31,7 @@ class PageTitle implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $path = $this->site()->requestPath();
 
@@ -50,11 +51,6 @@ class PageTitle implements Buildable
         $titles = array_filter($titles);
 
         return trim(implode(' | ', $titles));
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
     }
 
     private function title(string $at): string
