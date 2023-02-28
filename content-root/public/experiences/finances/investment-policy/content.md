@@ -2,19 +2,19 @@
 
 {!!dateblock!!}
 
-For me, as of this writing, I’m both the client and advisor.
+As of this writing, I’m both the client and advisor.
 
 I started with the outline developed by [The White Coat Investor](https://www.whitecoatinvestor.com/how-to-write-an-investing-personal-statement/).
 
 ## My why
 
-I want to be able to cater to the most constrained with my time and knowledge. These folks may not be able to afford the fees for coaching, mentoring, and consulting. With that said, I need to ensure my survival; secure my own mask before helping others, so to speak. Hustle culture holds little interest for me. I’d rather trade value for money than time for the same.
+I want to be able to cater to the most constrained with my time and knowledge. These folks may be unable to afford the fees for coaching, mentoring, and consulting. With that said, I need to ensure my survival; secure my mask before helping others, so to speak. Hustle culture holds little interest to me. I’d rather trade value for money than time for the same.
 
-I want to travel and fade into the background whenever I want without worrying where my next meal comes from.
+I want to travel and fade into the background whenever I want without worrying about where my next meal comes from.
 
-Coast FI stack revisited April 16, 2022:
+Coast FI stack revisited on April 16, 2022:
 
-- FI number is 750,000 [.United States dollars](USD), higher than initial estimate of 500,000 USD.
+- The FI number is 750,000 [.United States dollars](USD), higher than the initial estimate of 500,000 USD.
 - This is because estimated spending in retirement was increased to 30,000 USD based on 2021 [tracking](/essays-and-editorials/finances/budgeting/).
 
 - Coast FI 1: 221,477 USD
