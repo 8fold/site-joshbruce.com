@@ -21,27 +21,27 @@ Coast FI stack revisited April 16, 2022:
     1. Starting at age: 42
     2. Achieved by age: 44
     3. Retire by age: 67
-    4. Starting net worth of: 126,000 USD
+    4. Starting net worth of 126,000 USD
 - Coast FI 2: 269,207 USD
     1. Starting at age: 44
     2. Achieved by age: 45
     3. Retire by age: 65
-    4. Starting net worth of: 221,477 USD
+    4. Starting net worth of 221,477 USD
 - Coast FI 3: 360,763 USD
     1. Starting at age: 45
     2. Achieved by age: 47
     3. Retire by age: 60
-    4. Starting net worth of: 269,207 USD
+    4. Starting net worth of 269,207 USD
 - Coast FI 4: 507,630 USD
     1. Starting at age: 47
     2. Achieved by age: 50
     3. Retire by age: 55
-    4. Starting net worth of: 360,763 USD
+    4. Starting net worth of 360,763 USD
 - Coast FI 5: 647,878 USD
     1. Starting at age: 50
     2. Achieved by age: 53
     3. Retire by age: 53
-    4. Starting net worth of: 507,630 USD
+    4. Starting net worth of 507,630 USD
 
 This adjusts my original target from FI by 52 to FI by 53. I'm hoping I can increase revenue m outside the day job.
 
@@ -58,21 +58,25 @@ Would you like support my work and goals?
     - If the price per share of the asset I’m  purchasing was up the previous day, I will create:
         - a market order at market price (partial shares),
         - a limit order at 2 cents over the market price, and
-        - a limit order at 1 percent less than market price.
+        - a limit order at 1 percent less than the market price.
      - If the price per share was down the previous day, I will create:
         - a limit order at 2 cents over the market price,
-        - a limit order at 1 percent less than market price, and
-        - a limit order at 2 percent less than market price.
-     - The first order will be 15 percent of the total to be invested. The second order will be 35 percent of the total to be invested. The third order will be 50 percent of the total to be invested.
-- My savings rate and returns will be determined on a per paycheck basis as a result of the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
-- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities this means somewhat evenly across the total New York Stock Exchange based on market capitalization, value, and growth.
+        - a limit order at 1 percent less than the market price, and
+        - a limit order at 2 percent less than the market price.
+     - In either case
+	     - the first order will be 15 percent of the investable amount,
+	     - the second will be 35 percent, and
+	     - the third will be 50 percent.
+	     - ex. 100 dollars, 15 dollars for the first order, 35 for the second, and 50 for the third.
+- My savings rate and returns will be determined per paycheck due to the [Building Wealth Paycheck to Paycheck](/experiences/finances/paycheck-to-paycheck/) workflow.
+- I’ll do what I can to vote with my dollars on the individual level and spread the level evenly in my investments; for equities, this means somewhat evenly across the total New York Stock Exchange based on market capitalization, value, and growth.
     - I’ll strive for 20 percent or less in any one sector.
-    - I’d prefer the portfolio not have more than 1 percent in a single company’s stock.
+    - I’d prefer the portfolio not to have more than 1 percent in a single company’s stock.
 - I’ll contribute at least 10 percent per paycheck to long-term savings (striving for 50 percent or more); dollar cost averaging will be my primary mode of contributing.
 - I’ll use a modified [total stock market and chill](https://www.liveoffdividends.com/financial-independence-order-of-operations/) strategy.
 - I’ll approach my liquid investments as a single portfolio regardless of tax treatment. This means the portfolio will have a cash component and would not include collectibles, homes, or similar assets that take more than a few days to sell.
 
-Note: Each bullet is aligned to my [financial character](/experiences/finances/).
+Note: Each bullet aligns with my [financial character](/experiences/finances/).
 
 ## Asset allocation
 
@@ -85,71 +89,71 @@ Note: Each bullet is aligned to my [financial character](/experiences/finances/)
 I have created multiple allocations based on the portfolio's net worth using the Coast FI stack above:
 
 - Mark 0: Coast FI 1
-	- Debt: 0 to 1 percent; target of 0
-	- Cash: 3 to 9 percent; target of 6
-	- Alternatives: 0 to 1 percent; target of 0
-	- [.United States](US) Treasuries: 0 to 1 percent; target of 0
-	- Equities: 91 to 97 percent; target of 94
+	- Liabilities: 0 to 1 percent; target of 0.
+	- Short-term assets: 3 to 9 percent; target of 6.
+	- Growth assets: 91 to 97 percent; target of 94.
+	- Negative correlation assets: 0 to 1 percent; target of 0.
+	- Low correlation assets; target of 0.
 - Mark 0.2: Coast FI 2
-	- Debt: same
-	- Cash: same
-	- Alternatives: same
-	- US Treasuries: 0 to 2 percent; target of 2
-	- Equities: 74 to 97 percent; target of 92
+	- Liabilities: same.
+	- Short-term assets: same.
+	- Growth assets: 74 to 97 percent; target of 92.
+	- Negative correlation assets: 0 to 2 percent; target of 2.
+	- Low correlation assets: same.
 - Mark 0.4: Coast FI 3
-	- Debt: same
-	- Cash: same
-	- Alternatives: 0 to 2 percent; target of 2
-	- US Treasuries: 6 to 10 percent; target of 8
-	- Equities: 67 to 97 percent; target of 84
+	- Liabilities: same.
+	- Short-term assets: same.
+	- Growth assets: 67 to 97 percent; target of 84.
+	- Negative correlation assets: 6 to 10 percent; target of 8.
+	- Low correlation assets: 0 to 2 percent; target of 2.
 - Mark 0.6: Coast FI 4
-	- Debt: same
-	- Cash: same
-	- Alternatives: 3 to 5 percent; target of 4
-	- [.United States](US) Treasuries: 13 to 19 percent; target of 16
-	- Equities: 59 to 89 percent; target of 74
+	- Liabilities: same.
+	- Short-term assets: same.
+	- Growth assets: 59 to 89 percent; target of 74.
+	- Negative correlation assets: 13 to 19 percent; target of 16
+	- Low correlation assets: 3 to 5 percent; target of 4
 - Mark 0.8: Coast FI 4
-	- Debt: same
-	- Cash: same
-	- Alternatives: 10 to 16 percent; target of 13
-	- US Treasuries: 17 to 25 percent; target of 21
-	- Equities: 48 to 72 percent; target of 60
+	- Liabilities: same.
+	- Short-term assets: same.
+	- Growth assets: 48 to 72 percent; target of 60.
+	- Negative correlation assets: 17 to 25 percent; target of 21.
+	- Low correlation: 10 to 16 percent; target of 13.
 - Mark 1: Coast FI 4 and beyond
-	- Debt: same
-	- Cash: same
-	- Alternatives: 15 to 23 percent; target of 19
-	- US Treasuries: 20 to 30 percent; target of 25
-	- Equities: 40 to 60 percent; target of 50
+	- Liabilities: same.
+	- Short-term assets: same.
+	- Growth assets: 40 to 60 percent; target of 50.
+	- Negative correlation assets: 20 to 30 percent; target of 25.
+	- Low correlation assets: 15 to 23 percent; target of 19
 
-This progression ensures I reduce volatility based on the net worth of the portfolio, not my age or calendar year.
+This progression ensures I reduce volatility based on the estimated value of the portfolio, not my age or calendar year.
 
-I have a [high risk tolerance and capacity](/essays-and-editorials/finances/investment-policies/); in part because I don't think I'll stop earning income and I'm content with my minimal lifestyle.
+I have a [high-risk tolerance and capacity](/essays-and-editorials/finances/investment-policies/), partly because I don't think I'll stop earning income, and I'm content with my minimal lifestyle.
 
-As of this writing I'm able to cashflow my lifestyle without needing assistance from the portfolio. I enjoy what I do most days, so, I don't see my income dropping dramatically for the next few years at least.
+As of this writing, I can cashflow my lifestyle without needing assistance from the portfolio. I enjoy what I do most days, so I don't see my income dropping dramatically for the next few years at least.
 
 ### Rebalancing the portfolio
 
-I am of the mind that rebalancing should be minimal, if ever and use a [hybrid approach](/essays-and-editorials/finances/investment-policies/).
+I think rebalancing should be minimal, if ever, and use a [hybrid approach](/essays-and-editorials/finances/investment-policies/).
 
-Rebalancing, for me, means bringing the value of the holdings to within the specified range for each holding, not necessarily to the target. Therefore, if each asset class is within the specified range, the portfolio is considered in balance, regardless of underlying holdings.
+Rebalancing, for me, means bringing the value of the holdings to within the specified range for each holding, not necessarily to the target. Therefore, if each asset class is within the specified range, the portfolio is considered balanced, regardless of underlying holdings.
 
-- I have a fixed cash allocation, but no floor (specified minimal cash amount) at the moment.
-- I'm in accumulation mode and use the “while you're at it” approach when purchasing; and would do similar in drawdown mode.
+- I currently have a fixed cash allocation but no floor (specified minimal cash amount).
+- I'm in accumulation mode and use the “while you're at it” approach when purchasing, and would do similar in drawdown mode.
 - I've also combined the calendar and percentage-of-portfolio approaches, which I’ll call the event-driven, date-executed strategy.
 
 1. Decide which portfolio from above is the target; Mark 1, for example.
-2. Establish one or more rebalancing intervals and dates; I’ll start with annually around my birthday. (I've seen many suggestions—sometimes they even contradict one another and are all based on past performance, which doesn’t guarantee future peer. Further, if everyone rebalances on the same day, weird stuff can happen, so, random dates are good.)
+2. Establish one or more rebalancing intervals and dates; I’ll start with annually around my birthday. (I've seen many suggestions—sometimes they contradict one another and are all based on past performance, which doesn’t guarantee future performance. Further, if everyone rebalances on the same day, weird stuff can happen, so random dates are good.)
 3. Choose the event-based criteria:
     - if the portfolio goes out of balance and you don't hold a rebalancing token, receive one rebalancing token;
     - today's date:
         - must be greater than the token's creation date,
-        - must be greater than the date of the previous executed rebalancing, and
+        - must be greater than the date of the previously executed rebalancing, and
         - must be greater than the rebalancing date following the creation date of the token; and
     - when rebalancing is performed, the token is spent (no longer in my possession).
 
 This might sound complicated, and that's kinda the point; I'm dissuading myself from doing a "full" rebalance out of emotion and a possible false sense of urgency. However, this method gives me flexibility in execution.
 
-Let's say it's June 2020 and the portfolio goes out of balance; I receive a rebalancing token. July 2020 comes along; I'm able to spend the token to rebalance the portfolio using the valuations on that day and I decide to rebalance. August 2020 the portfolio is out of balance; I receive a rebalancing token, but I can't rebalance again until July 2021. July 2021 comes along and the portfolio is in balance, so, I decide not to rebalance at that time; I retain the token. December 2021 comes along and the portfolio goes out of balance again and I decide to rebalance at that time; I have the token, December 2021 is greater than July 2020 and July 2021.
+Let's say it's June 2020, and the portfolio goes out of balance; I receive a rebalancing token. July 2020 comes along; I can spend the token to rebalance the portfolio using the valuations on that day, and I decide to rebalance. August 2020, the portfolio is out of balance; I receive a rebalancing token, but I can't rebalance it until July 2021. July 2021 comes along, and the portfolio is in balance, so I decide not to rebalance at that time; I retain the token. December 2021 comes along, and the portfolio goes out of balance again, and I decide to rebalance at that time; I have the token December 2021 is greater than July 2020 and July 2021.
 
 Note: These are [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/), not hard and fast rules. Further, sometimes restrictions in an account may cause me to change how I go about certain things.
 
