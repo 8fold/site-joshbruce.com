@@ -3,11 +3,12 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos\PageComponents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\HTMLBuilder\Element;
 
-class Copyright implements Buildable
+class Copyright implements Stringable // Buildable
 {
     public static function create(
         string $holder,
@@ -22,20 +23,15 @@ class Copyright implements Buildable
     ) {
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $time = date('Y');
         if (strlen($this->startYear) > 0) {
             $time = $this->startYear . '–' . $time;
         }
 
-        return Element::p(
+        return (string) Element::p(
             'Copyright © ' . $time . ' ' . $this->holder . '. All rights reserved.'
-        )->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        );
     }
 }

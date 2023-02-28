@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Symfony\Component\Finder\Finder;
 
@@ -12,7 +13,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Markdown;
 
-class FullNav implements Buildable
+class FullNav implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -28,7 +29,7 @@ class FullNav implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $finder = (new Finder())->files()->name('meta.json')->in(
             $this->site()->publicRoot()
@@ -98,10 +99,5 @@ class FullNav implements Buildable
         }
 
         return Markdown::convert($this->site(), $markdownList);
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
     }
 }

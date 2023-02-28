@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use StdClass;
 
@@ -12,7 +13,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Markdown;
 
-class OriginalContentNotice implements Buildable
+class OriginalContentNotice implements Stringable // Buildable
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
@@ -44,7 +45,7 @@ class OriginalContentNotice implements Buildable
         return $content;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $noticeMarkdown = $this->originalNotice();
         if (strlen($noticeMarkdown) === 0) {
@@ -75,10 +76,5 @@ class OriginalContentNotice implements Buildable
         }
 
         return Markdown::convert($this->site(), $noticeMarkdown);
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
     }
 }

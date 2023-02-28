@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Templates;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\Amos\Site;
 
@@ -21,7 +22,7 @@ use JoshBruce\Site\Partials\Data;
 use JoshBruce\Site\Partials\FiExperiments;
 use JoshBruce\Site\Partials\FullNav;
 
-class Page implements Buildable
+class Page implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -37,7 +38,7 @@ class Page implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $path = $this->site()->requestPath();
         $markdown = $this->site()->content(at: $path);
@@ -49,7 +50,7 @@ class Page implements Buildable
 
         $main = Main::create($this->site())
             ->setPageTitle(
-                PageTitle::create($this->site())->build()
+                (string) PageTitle::create($this->site())
             )->setBody(
                 Markdown::convert(
                     $this->site(),
@@ -71,11 +72,6 @@ class Page implements Buildable
             $main = $main->setSchemaType($meta->schemaType);
         }
 
-        return $main->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) $main;
     }
 }

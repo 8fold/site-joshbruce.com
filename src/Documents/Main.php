@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Documents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
@@ -15,7 +16,7 @@ use Eightfold\Amos\PageComponents\Copyright;
 
 use JoshBruce\Site\PageComponents\Navigation;
 
-class Main implements Buildable
+class Main implements Stringable // Buildable
 {
     private string $pageTitle = '';
 
@@ -70,9 +71,9 @@ class Main implements Buildable
         return $this->schemaType;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
-        return Document::create(
+        return (string) Document::create(
             $this->pageTitle()
         )->head(
             Element::meta()->omitEndTag()->props(
@@ -141,11 +142,6 @@ class Main implements Buildable
                     'to top'
                 )
             )->props('id back-to-top', 'href #skip-nav')
-        )->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        );
     }
 }

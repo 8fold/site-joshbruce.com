@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;
@@ -12,7 +13,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
 
-class Navigation implements Buildable
+class Navigation implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -43,7 +44,7 @@ class Navigation implements Buildable
         ];
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $links = [
             '/ H Home',
@@ -87,13 +88,8 @@ class Navigation implements Buildable
             $l[] = Element::li($a);
         }
 
-        return Element::nav(
+        return (string) Element::nav(
             Element::ul(...$l)->props('class col-' . count($links))
-        )->props('is main-nav')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        )->props('is main-nav');
     }
 }
