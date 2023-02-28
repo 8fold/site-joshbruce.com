@@ -3,14 +3,15 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Templates;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
+// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Markdown;
 
 use JoshBruce\Site\Documents\Main;
 
-class PageNotFound implements Buildable
+class PageNotFound implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -26,7 +27,7 @@ class PageNotFound implements Buildable
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $errorPath = $this->site()->contentRoot() . '/errors/404';
 
@@ -52,18 +53,13 @@ class PageNotFound implements Buildable
             return '';
         }
 
-        return Main::create($this->site())
+        return (string) Main::create($this->site())
             ->setPageTitle($pageTitle)
             ->setBody(
                 Markdown::convert(
                     $this->site(),
                     $markdown
                 )
-            )->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+            );
     }
 }

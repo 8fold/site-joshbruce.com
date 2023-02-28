@@ -215,7 +215,7 @@ class Site
                 status: 200,
                 headers: ['Content-type' => 'application/xml'],
                 body: Stream::create(
-                    Sitemap::create($this)->build()
+                    (string) Sitemap::create($this)
                 )
             );
 
@@ -244,7 +244,7 @@ class Site
                     status: 404,
                     headers: ['Content-type' => 'text/html'],
                     body: Stream::create(
-                        $template::create($this)->build()
+                        (string) $template::create($this)
                     )
                 );
             }
@@ -255,7 +255,7 @@ class Site
             status: 200,
             headers: ['Content-type' => 'text/html'],
             body: Stream::create(
-                $template::create($this)->build()
+                (string) $template::create($this)
             )
         );
     }

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos\Documents;
 
+use Stringable;
 use SplFileInfo;
 use DateTime;
 
@@ -30,7 +31,7 @@ use Eightfold\Amos\Site;
  * 0.3-0.0: FAQs, outdated info, old press releases, completely static pages that
  *          are still relevant enough to keep from deleting entirely.
  */
-class Sitemap
+class Sitemap implements Stringable
 {
     public static function create(Site $site): self
     {
@@ -46,7 +47,7 @@ class Sitemap
         return $this->site;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $metaFilePaths = (new Finder())->files()->name('meta.json')
             ->in($this->site()->publicRoot());
@@ -98,13 +99,8 @@ class Sitemap
             );
         }
 
-        return Document::urlset(
+        return (string) Document::urlset(
             ...$urls
-        )->props('xmlns http://www.sitemaps.org/schemas/sitemap/0.9')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        )->props('xmlns http://www.sitemaps.org/schemas/sitemap/0.9');
     }
 }

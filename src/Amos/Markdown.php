@@ -132,7 +132,7 @@ class Markdown
 
                 $markdown = str_replace(
                     $replacements[$i],
-                    $template::create($site)->build(),
+                    (string) $template::create($site),
                     $markdown
                 );
             }

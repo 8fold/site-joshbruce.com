@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
+use Stringable;
 use DateTime;
 
 use Eightfold\XMLBuilder\Contracts\Buildable;
@@ -11,7 +12,7 @@ use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
 
-class DateBlock implements Buildable
+class DateBlock implements Stringable // Buildable
 {
     public static function create(Site $site): self
     {
@@ -37,17 +38,17 @@ class DateBlock implements Buildable
         }
 
         if ($date = DateTime::createFromFormat('Ymd', strval($date))) {
-            $time = Element::time($date->format('M j, Y'))
+            $time = (string) Element::time($date->format('M j, Y'))
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
                     'content ' . $date->format('Y-m-d')
-                )->build();
+                );
             return Element::p("{$label}: {$time}");
         }
         return '';
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $meta = $this->site()->meta(at: $this->site()->requestPath());
         if ($meta === false) {
@@ -82,11 +83,6 @@ class DateBlock implements Buildable
         if (count($times) === 0) {
             return '';
         }
-        return Element::div(...$times)->props('is dateblock')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::div(...$times)->props('is dateblock');
     }
 }
