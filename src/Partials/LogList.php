@@ -4,13 +4,12 @@ declare(strict_types=1);
 namespace JoshBruce\Site\Partials;
 
 use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\Amos\Site;
 
 use Eightfold\HTMLBuilder\Element;
 
-class LogList implements Stringable // Buildable
+class LogList implements Stringable
 {
     public static function create(Site $site): self
     {
