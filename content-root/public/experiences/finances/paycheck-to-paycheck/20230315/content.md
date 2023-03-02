@@ -23,7 +23,9 @@ There was enough remaining to place another set of orders. The extended market f
 Extended market fund was up the previous day. Had enough remaining to place the following orders:
 
 1. Market; executed.
-2. 2 cents over; .
-3. 1 percent down; .
+2. 2 cents over; executed.
+3. 1 percent down; executed.
+
+Not enough cash left in the Roth IRA settlement fund to place more orders.
 
 {!! next-previous !!}
