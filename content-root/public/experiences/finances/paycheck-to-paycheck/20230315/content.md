@@ -17,7 +17,13 @@ I verified that I can contribute the full amount to my Roth [.Individual Retirem
 There was enough remaining to place another set of orders. The extended market fund was down the previous day, so I placed the following limit orders:
 
 1. 2 cents over; executed.
-2. 1 percent down; .
-3. 2 percent down; .
+2. 1 percent down; did not execute.
+3. 2 percent down; did not execute.
+
+Extended market fund was up the previous day. Had enough remaining to place the following orders:
+
+1. Market; executed.
+2. 2 cents over; .
+3. 1 percent down; .
 
 {!! next-previous !!}
