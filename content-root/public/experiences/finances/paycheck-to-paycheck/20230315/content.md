@@ -26,6 +26,20 @@ Extended market fund was up the previous day. Had enough remaining to place the 
 2. 2 cents over; executed.
 3. 1 percent down; executed.
 
-Not enough cash left in the Roth IRA settlement fund to place more orders.
+Not enough cash left in the Roth IRA settlement account to place more orders.
+
+## Dollar cost averaging 
+
+This paycheck was an interesting learning experience from a dollar cost averaging perspective. 
+
+All of the [.Exchange Traded Funds](ETFs) I hold are down compared to their 52 week high. The multi-factor fund is down less than 2 percent, the others are still down over 10 percent.
+
+I stopped actively contributing to my [M1 Finance](https://m1.com ) account a while ago, the main pie showed a total return of negative 18 percent. Meanwhile, I’ve continued to dollar cost average and buy the dip in my [Vanguard](https://investor.vanguard.com/home) accounts is at a total return of 2 percent.
+
+To be clear, this observation isn’t about the platform, it’s about the behavior. 
+
+Continuously buying means any upward movement from a valley becomes amplified compared to if I had put the same amount of money in at a peak and didn’t contribute again.
+
+Regardless, with the current strategy and plan, most of the value of my portfolio will be from contributions I’m making, not interest or growth. I knew this when I started. With that said, it’s nice to see the portfolio has a positive return overall and, at least in the case of Vanguard is at an all time high for total return.
 
 {!! next-previous !!}
