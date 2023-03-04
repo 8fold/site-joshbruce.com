@@ -32,15 +32,18 @@ We’ll give the general characteristics of each, some things that fall into eac
 
 ## The plate (liabilities and expenses)
 
-Characteristics:
+Primary characteristics:
 
 1. You give something you have to someone else once or regularly.
-2. Historically, the real rate is often the most negative compared to the other components.
+2. Historically, the real rate is the most negative compared to the other components.
 3. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
+4. Interest rates are working against your net worth.
 
-By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can skew averages and medians.
+By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can hide more recent data due to averages and medians.
 
-When I say “real rate,” we take the APR and add the inflation rate.
+Real rate is adjusting the rate of the thing by inflation. You have an auto loan with a 4 percent APR. inflation is 2 percent. The real rate for the auto loan is 6 percent. Technically the real rate for the auto loan would be negative 6 percent because the APR and inflation are working against your net worth.
+
+For assets, the interest rate is positive (working for you), but inflation is still negative. If you have a savings account earning 1 percent and inflation is 2 percent, the real rate of the savings account is negative 1 percent. Not as negative as the auto loan, which is why that savings account may not be classified as a liability in the portfolio.
 
 Ingredients that go into making the plate:
 
@@ -76,12 +79,12 @@ The Diderot effect is when you buy a new pair of shoes. Now you decide to replac
 
 ## The first brownie (short-term assets and income)
 
-Characteristics:
+Primary characteristics:
 
-1. Someone gives you something they have once or regularly.
-2. Historically, the real rate is negative or neutral compared to the other categories.
-3. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
-4. The value (purchasing power) favors deflationary environments.
+1. Performs better in deflationary and contracting environments.
+2. Someone gives you something they have once or regularly.
+3. Historically, the real rate is negative or neutral compared to the other categories.
+4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
 
 A non-exhaustive list of ingredients that go into making the first brownie:
 
@@ -139,14 +142,15 @@ Next brownie!
 
 ## The second brownie (growth assets)
 
-Characteristics:
-
-1. You typically convert short-term assets into something else you own, not a liability.
+1. Performs better in growth environments. (This includes resell value, the ability to purchase cash and other short-term assets.)
 2. Historically, the real rate is positive and higher than the other categories.
 3. Interest rates are in terms of APY and indicate excess money given to you.
-4. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and it's rare someone is willing to give you 2 dollars for 1.
+
+Secondary characteristics:
+
+1. You typically convert short-term assets into something else you then own, not a liability.
+2. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and it's rare someone is willing to give you 2 dollars for 1.
 5. When you sell the thing, it becomes a short-term asset. Even if you sell with the intention of immediately purchasing another asset.
-6. Tends to favor growth environments.
 
 A non-exhaustive list of ingredients that go into making the second brownie:
 
@@ -204,14 +208,16 @@ Many growth assets will pay some form of income, whether dividends or rent. The 
 
 ## The condiments (negative correlation assets)
 
-Characteristics:
+Primary characteristics:
 
-1. You typically convert short-term assets into something else you own, not a liability.
-2. Historically, the real rate may increase while other categories (specifically growth assets) decrease. The real rate is normally lower than growth assets or slightly negative.
+1. Performs better in inflationary and contraction environments.
+2. Historically, are more negatively correlated to growth assets. 
 3. Interest rates are in terms of APY and indicate excess money given to you.
-4. Has a resell value that fluctuates.
-5. When you sell the thing, it becomes a short-term asset.
-6. Tend to favor inflationary and contraction environments.
+2. Historically, the real rate is lower than growth assets.
+
+Secondary characteristics:
+
+1. Same as growth assets.
 
 In the United States, the asset type with the highest negative correlation historically to corporate equities is:
 
@@ -240,14 +246,13 @@ Corporate equities historically have a positive real rate of return. Historicall
 
 ## The sprinkles (low correlation assets)
 
-Characteristics:
+1. Performs better in inflationary environments.
+2. Historically, they have a low correlation with things in the other categories.
+3. Interest rates are in terms of APY and indicate excess money given to you.
 
-1. You typically convert short-term assets into something else you own, not a liability.
-2. Historically, the real rate may increase while other categories decrease, not limited to growth assets. The real rate is normally lower than growth assets or slightly negative.
-3. Interest rates are in terms of APY and indicate excess money given to you. But, there may not always be income generated.
-4. Has a resell value that fluctuates.
-5. When you sell the thing, it becomes a short-term asset.
-6. Tends to favor inflationary environments.
+Secondary characteristics:
+
+1. Same as growth assets.
 
 In the United States, two asset types that historically fit these characteristics are:
 
