@@ -42,4 +42,14 @@ Continuously buying means any upward movement from a valley becomes amplified co
 
 Regardless, with the current strategy and plan, most of the value of my portfolio will be from contributions I’m making, not interest or growth. I knew this when I started. With that said, it’s nice to see the portfolio has a positive return overall and, at least in the case of Vanguard is at an all time high for total return.
 
+## New year, new me?
+
+Every year, I reflect on The Motivators Exercise](/essays-and-editorials/motivators/). [My motivators](/experiences/the-self/#motivators-exercise-results/) changed slightly.
+
+Process and acts of service moved open on the extended version. Therefore, I moved a connection above mastery. 
+
+I may be expanding my conception of process to go beyond the order and operations of things and including the [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/). While they aren’t strictly about the order of things or the steps taken, they do create the container.
+
+I may change the motivator to reflect that.
+
 {!! next-previous !!}
