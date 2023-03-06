@@ -67,7 +67,7 @@ From February 2022 through January 2023 (12 months), the average inflation rate 
 
 There were some deflation months in 2009. 2009 was during [The Great Recession](https://en.m.wikipedia.org/wiki/Great_Recession), and inflation averaged 3 to 4 percent the previous year.
 
-Notice that inflation for the last year is almost triple the last 10 and 20 years. That's because the data from 1 year ago is dragging down (or hiding) the most recent data. And I don't know about you, but the roughly 8 percent impacts present-me much more than the percentages from 10 and 20 years ago. Again, a reason for giving more weight to the recent data.
+Notice that inflation for the last year is almost triple the last 10 and 20 years. That's because the data from 10 and 20 years ago is dragging down (or hiding) the most recent data. And I don't know about you, but the roughly 8 percent impacts present-me much more than the percentages from 10 and 20 years ago. Again, a reason for giving more weight to the recent data.
 
 Regardless, the plate has increased by almost 8 percent due to inflation, and it's out of my direct control and influence.
 
