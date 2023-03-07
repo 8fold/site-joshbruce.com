@@ -2,6 +2,12 @@ Accessibility
 
 {!!dateblock!!}
 
+I was asked to build a lightweight web shop experience for a client. I also needed a web shop for my alter ego. I wanted to make a good experience, not just a usable experience for users of [.Assistive Technologies](ATs). I posed the question online for examples of a good experience to examine what was under the hood.
+
+A short conversation and a “thank you” later, and I started reflecting on my addiction to thinking in terms of accessibility. I tend to apply it to all things, but with software in particular, two stories came to mind.
+
+## The portfolio sit
+
 Around 2005 I went from mainly Flash-based websites to the [.Linux, Apache, MySQL, and PHP](LAMP) stack. I was introduced to [Zeldman](https://en.m.wikipedia.org/wiki/Jeffrey_Zeldman), [Jared Spool](https://en.m.wikipedia.org/wiki/Jared_Spool), and others in realm of usability. The emphasis at the time was the [semantic web](https://en.m.wikipedia.org/wiki/Semantic_Web ) and accessibility.
 
 While I didn’t jump in as far as others, for me, accessibility became a passion. 
@@ -48,9 +54,9 @@ I don’t remember much after that.
 
 I was hooked on accessibility. 
 
-In the years since it’s become easier for developers who don’t require [.Assistive Technologies](ATs) to use them, specifically screen readers. However, it’s not the same as someone practiced at them who knows workarounds to common implementation patterns that are less than accessible and it’s not common practice among developers (including myself).
+In the years since it’s become easier for developers who don’t require ATs to use them, specifically screen readers. However, it’s not the same as someone practiced at them who knows workarounds to common implementation patterns that are less than accessible and it’s not common practice among developers (including myself).
 
-***
+## The Government site
 
 In 2015, I was working as an agile coach (and the front-end architect) for a Government website.
 
@@ -86,14 +92,16 @@ Three more years of fighting and I ended up off the program. Roughly two years l
 
 I didn’t do an assessment.
 
-***
+## The conclusion
 
 With over 20 years of part-time and full-time designing, developing, and playing online I’m surprised at the arguments we make regarding how to approach web development. Some are new, but most aren’t. And many boil down to: I want to develop using the new shiny things. (Often reminds me of [a scene from Jurassic Park](https://youtu.be/lpuS7_NPv6U).)
 
 Side note: My first interview for web design was in 2001. The [.Chief Information Officer](CIO) of the startup asked me if I did any JavaScript development; the new shiny was 6 years old back then.
 
-It honestly feels like little has changed since 2005 when it comes to adoption of semantics, accessibility, and approaches like [progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement). (And it feels like not much has changed since the 1960s when it comes to software development.)
+It honestly feels like little has changed since 2005 when it comes to adoption of semantics, accessibility, and approaches like [progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement) for web development. (And it feels like not much has changed since the 1960s when it comes to software development.)
+
+The physical world seems to be evolving faster, which seems odd given how mailable digital spaces can be. I wonder how much of that is related to legislation and building codes.
 
 I appreciate folks who have taken up the torch and continue to fight the good fight. I appreciate that some of the folks I followed back in the day are still fighting the good fight. I’m enjoying seeing more diversity along these lines in the developer space. And I still manage to convert some folks when we talk. 
 
-This is one of those areas of life where I wish progress didn’t take generations to manifest.
+Accessibility is one of those areas of life where I wish progress didn’t take generations to manifest. Especially since generations have already passed to get us this far.
