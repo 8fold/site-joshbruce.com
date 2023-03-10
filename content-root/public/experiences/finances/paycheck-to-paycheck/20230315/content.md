@@ -34,6 +34,10 @@ I contributed to the 401k automatically. I contributed the regular amount to the
 
 All of the funds were down the previous day. However, when I entered the amount I could spend and the current price of the multi-factor fund, I couldn’t buy a full share at 2 cents above market price; if the fund had been up the previous day I could because, per the [investment policy statement](/experiences/finances/investment-policy/#investments) I would’ve been in dollar-based investing territory. So the cash will just stay there instead in one of the savings accounts at the credit. It’ll still earn dividends.
 
+Speaking of dividends. 
+
+The long-term United States Treasury fund in the M1 account spit out a couple dollars, and I put it against the main pie. Ultimately the money toward the S&P 500 fund.
+
 ## Dollar cost averaging 
 
 This paycheck was an interesting learning experience from a dollar cost averaging perspective. 
@@ -60,6 +64,32 @@ I may change the motivator to reflect that.
 
 ## Fucking toe
 
-It’s been a while since I had any health issues. 
+It’s been a while since I had health issues. COVID made it into the house, dodged that bullet again; still haven’t tested positive. No more surgeries. And the foot was feeling great for a few months.
+
+I decided to start doing some intentional exercise. I don’t consider it working out. Not even enough to be considered a warmup. My daily goals are:
+
+1. A one minute [plank](https://en.m.wikipedia.org/wiki/Plank_(exercise)).
+2. 10 body weight [squats](https://youtu.be/BZ1TUVr4LFk).
+3. 1 regular [pushup](https://m.youtube.com/watch?v=IODxDxX7oi4).
+4. 1 [inverted row](https://en.m.wikipedia.org/wiki/Inverted_row).
+5. 20 [hip abductions](https://youtu.be/cz1gh_aYn5k), both sides.
+6. 10 [hip raises](https://youtu.be/UPcXgTL09lU).
+7. 10 [ankle rolls](https://youtu.be/J9YA1_f_juA), both directions, both sides.
+
+This isn’t a routine in that I don’t have to do them in one sitting. Maybe I do the plank, and a couple hours later, the push up, and so on.
+
+I was a little disheartened that the plank was so hard. Everything else, while difficult, felt like I could do more.
+
+I started on Monday. By Friday the big toe on my right foot was back to [hating life](/experiences/finances/paycheck-to-paycheck/20230101/#health-and-wellness). I don’t think it was the movements I was doing. I actually think it’s from sitting.
+
+Let me explain.
+
+During the workday I typically stand. Every so often I’ll sit on a 12 inch step. One day in particular I sat on this step a lot. The next day, I could feel a bit of pain in my toe. To be fair, I’m also working on some web development client work, and I’ve been sitting a lot while doing that.
+
+I can’t do the regular plank because I don’t want to bend the toe. I decided to use bent knee push ups when something like this is happening; 2 instead of 1. Everything else is the same.
+
+I took a colchicine that Friday. I increased my water intake that entire week. I elevated the foot as often as I could. 
+
+My annual checks are due, so we’ll see where the uric acid levels are. And we’ll see how this goes.
 
 {!! next-previous !!}
