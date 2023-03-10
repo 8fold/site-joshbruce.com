@@ -62,7 +62,9 @@ I may be expanding my conception of process to go beyond the order and operation
 
 I may change the motivator to reflect that.
 
-## Fucking toe
+## Health and wellness
+
+Fucking toe edition.
 
 It’s been a while since I had health issues. COVID made it into the house, dodged that bullet again; still haven’t tested positive. No more surgeries. And the foot was feeling great for a few months.
 
