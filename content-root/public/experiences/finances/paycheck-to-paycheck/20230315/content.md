@@ -28,6 +28,12 @@ Extended market fund was up the previous day. Had enough remaining to place the 
 
 Not enough cash left in the Roth IRA settlement account to place more orders.
 
+I made the maximum contribution to the Roth IRA. This brought my short-term assets down to 3 percent of the portfolio. 3 percent in the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
+
+I contributed to the 401k automatically. I contributed the regular amount to the [.Health Savings Account](HSA). I put the amount I’d normally invest into the runway account. I put the regular amount to savings and the tax account. And I paid the credit cards. The remaining amount I transferred to the Federal Money Market account at Vanguard; as if I were going to place the limit orders.
+
+All of the funds were down the previous day. However, when I entered the amount I could spend and the current price of the multi-factor fund, I couldn’t buy a full share at 2 cents above market price; if the fund had been up the previous day I could because, per the [investment policy statement](/experiences/finances/investment-policy/#investments) I would’ve been in dollar-based investing territory. So the cash will just stay there instead in one of the savings accounts at the credit. It’ll still earn dividends.
+
 ## Dollar cost averaging 
 
 This paycheck was an interesting learning experience from a dollar cost averaging perspective. 
@@ -51,5 +57,9 @@ Process and acts of service moved open on the extended version. Therefore, I mov
 I may be expanding my conception of process to go beyond the order and operations of things and including the [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/). While they aren’t strictly about the order of things or the steps taken, they do create the container.
 
 I may change the motivator to reflect that.
+
+## Fucking toe
+
+It’s been a while since I had any health issues. 
 
 {!! next-previous !!}
