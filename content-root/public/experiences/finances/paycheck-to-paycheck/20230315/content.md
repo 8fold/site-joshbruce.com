@@ -38,6 +38,12 @@ Speaking of dividends.
 
 The long-term United States Treasury fund in the M1 account spit out a couple dollars, and I put it against the main pie. Ultimately the money toward the S&P 500 fund.
 
+The fall of Silicon Valley Bank has me wanting to take advantage of downturns. My short-term assets went up to about 5.5 percent, just under the 6 percent target. I received a small check from the insurance from the [death in the family](/experiences/finances/paycheck-to-paycheck/20230101/#death-in-the-family). I transferred enough to Vanguard to reach the limit to buy 1 share at 2 cents over. This opened the doors to create all 3 limit orders:
+
+1. 2 cents over;.
+2. 1 percent down;.
+3. 2 percent down;.
+
 ## Dollar cost averaging 
 
 This paycheck was an interesting learning experience from a dollar cost averaging perspective. 
