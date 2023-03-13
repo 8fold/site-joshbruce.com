@@ -8,7 +8,7 @@ I modified the data to use [the universal portfolio](/essays-and-editorials/fina
 
 I updated the experience for the main page of this series. Instead of the full list of entries, I broke previous years into disclosures and only list the current year.
 
-I verified that I can contribute the full amount to my Roth [.Individual Retirement Account](IRA), I transferred the remaining amount to prepare to purchase the extended market fund. The extended market fund was up the previous day, so I placed the following limit orders: 
+My tax person verified I can contribute the full amount to my Roth [.Individual Retirement Account](IRA). I transferred the contribution from savings into the IRA. The extended market fund was up the previous day, so I placed the following limit orders: 
 
 1. market price; executed.
 2. 2 cents under; executed.
@@ -28,35 +28,43 @@ Extended market fund was up the previous day. Had enough remaining to place the 
 
 Not enough cash left in the Roth IRA settlement account to place more orders.
 
-I made the maximum contribution to the Roth IRA. This brought my short-term assets down to 3 percent of the portfolio. 3 percent in the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
+This contribution coupled with the orders brought short-term assets down to 3 percent of the portfolio. 3 percent in the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
 
-I contributed to the 401k automatically. I contributed the regular amount to the [.Health Savings Account](HSA). I put the amount I’d normally invest into the runway account. I put the regular amount to savings and the tax account. And I paid the credit cards. The remaining amount I transferred to the Federal Money Market account at Vanguard; as if I were going to place the limit orders.
+I contributed to the 401k automatically. I contributed the regular amount to the [.Health Savings Account](HSA). I put the amount I’d normally invest into the runway account. I put the regular amount to savings and the tax account. And I paid the credit cards. The remaining amount I transferred to the Federal Money Market account at Vanguard; as if I were going to place orders.
 
-All of the funds were down the previous day. However, when I entered the amount I could spend and the current price of the multi-factor fund, I couldn’t buy a full share at 2 cents above market price; if the fund had been up the previous day I could because, per the [investment policy statement](/experiences/finances/investment-policy/#investments) I would’ve been in dollar-based investing territory. So the cash will just stay there instead in one of the savings accounts at the credit. It’ll still earn dividends.
+All of the funds were down the previous day. However, when I entered the amount I could spend and the current price of the multi-factor fund, I couldn’t buy a full share at 2 cents above market price. If the fund had been up the previous day the first order would have been at market price and fractional, therefore, I could’ve placed orders per the [investment policy statement](/experiences/finances/investment-policy/#investments). The fund wasn’t up though, so the cash stayed in the money market fund instead in one of the savings accounts at the credit union. It’ll still earn dividends.
 
 Speaking of dividends. 
 
-The long-term United States Treasury fund in the M1 account spit out a couple dollars, and I put it against the main pie. Ultimately the money toward the S&P 500 fund.
+The long-term United States Treasury fund in the M1 account spit out a couple dollars, and I put it against the main pie. Ultimately the money went toward the S&P 500 fund.
 
-The fall of Silicon Valley Bank has me wanting to take advantage of downturns. My short-term assets went up to about 5.5 percent, just under the 6 percent target. I received a small check from the insurance from the [death in the family](/experiences/finances/paycheck-to-paycheck/20230101/#death-in-the-family). I transferred enough to Vanguard to reach the limit to buy 1 share at 2 cents over. This opened the doors to create all 3 limit orders:
+The fall of Silicon Valley Bank has me wanting to take advantage of downturns. My short-term assets went up to about 5.5 percent, just under the 6 percent target. I was a beneficiary on the life insurance policy for a family member who [recently passed away](/experiences/finances/paycheck-to-paycheck/20230101/#death-in-the-family). My portion was less than 1,000 USD. While grateful, I’d still prefer the family be alive. It’s one of those bittersweet things. 
 
-1. 2 cents over;.
-2. 1 percent down;.
-3. 2 percent down;.
+For the most part it went through the same flow as any money coming in. Some went to the tax prep account. Some to savings. This time most went to the [runway account](/experiences/finances/personal-budget/#assets). However, I started by calculating how much I’d need to add to what was already in the settlement fund in the taxable brokerage account to buy 1 full share at 2 cents over market price; it was less than 70 dollars.
+
+(I’m going to beat this drum until financial folks I listen to stop saying a limitation of the Vanguard platform is you can’t do fractional shares; they have [fractional shares]((https://investor.vanguard.com/investor-resources-education/article/investing-in-vanguard-etfs) on [.Exchange Traded Funds](ETFs). The reason I needed enough to buy 1 full share is [based on my rules](/experiences/finances/investment-policy/#investments), not the Vanguard platform. I only do fractional shares when a fund is up the previous day and only with the first 15 percent of the investable cash. Back to the story at hand.)
+
+I transferred enough to buy 1 share at 2 cents over market price. This opened the door to create all 3 limit orders:
+
+1. 2 cents over; executed.
+2. 1 percent down; executed.
+3. 2 percent down; executed.
+
+10 minutes into the market opening, all 3 executed. Midday the value per share jumped up higher than I purchased them for. This falls under [buying a dip](/experiences/finances/personal-budget/#spending-savings) in that the price for the multi-factor fund was 10 percent down from its 52 week high.
 
 ## Dollar cost averaging 
 
 This paycheck was an interesting learning experience from a dollar cost averaging perspective. 
 
-All of the [.Exchange Traded Funds](ETFs) I hold are down compared to their 52 week high. The multi-factor fund is down less than 2 percent, the others are still down over 10 percent.
+All the ETFs I hold are down compared to their 52 week high. The multi-factor fund is down less than 2 percent, the others are still down over 10 percent.
 
-I stopped actively contributing to my [M1 Finance](https://m1.com ) account a while ago, the main pie showed a total return of negative 18 percent. Meanwhile, I’ve continued to dollar cost average and buy the dip in my [Vanguard](https://investor.vanguard.com/home) accounts is at a total return of 2 percent.
+I stopped actively contributing to my [M1 Finance](https://m1.com ) account a while ago, the main pie showed a total return of negative 18 percent. Meanwhile, I’ve continued to dollar cost average and buy the dip in my [Vanguard](https://investor.vanguard.com/home) accounts; the Vanguard account was up 2 percent on the same day I checked M1.
 
 To be clear, this observation isn’t about the platform, it’s about the behavior. 
 
 Continuously buying means any upward movement from a valley becomes amplified compared to if I had put the same amount of money in at a peak and didn’t contribute again.
 
-Regardless, with the current strategy and plan, most of the value of my portfolio will be from contributions I’m making, not interest or growth. I knew this when I started. With that said, it’s nice to see the portfolio has a positive return overall and, at least in the case of Vanguard is at an all time high for total return.
+Regardless, with the current strategy and plan, most of the value of my portfolio will be from contributions I’m making, not interest or appreciation. I knew this when I started. With that said, it’s nice to see the portfolio has a positive return overall and, at least in the case of Vanguard is at an all time high for total return.
 
 ## New year, new me?
 
