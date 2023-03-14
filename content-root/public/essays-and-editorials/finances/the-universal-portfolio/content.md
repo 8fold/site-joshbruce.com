@@ -8,7 +8,7 @@ Assertions:
 2. Every portfolio has 5 categories.
 3. Each category can grow and shrink independently of the other categories.
 4. Each category is based on characteristics, not the thing itself.
-5. Things may move between types based on historical performance.
+5. Things may move between categories based on historical performance.
 
 Let's use dessert as a metaphor.
 
@@ -32,15 +32,18 @@ We’ll give the general characteristics of each, some things that fall into eac
 
 ## The plate (liabilities and expenses)
 
-Characteristics:
+Primary characteristics:
 
 1. You give something you have to someone else once or regularly.
-2. Historically, the real rate is often the most negative compared to the other components.
+2. Historically, the real rate is the most negative compared to the other components.
 3. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
+4. Interest rates are working against your net worth.
 
-By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can skew averages and medians.
+By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can hide more recent data due to averages and medians.
 
-When I say “real rate,” we take the APR and add the inflation rate.
+Real rate is adjusting the rate of the thing by inflation. You have an auto loan with a 4 percent APR. inflation is 2 percent. The real rate for the auto loan is 6 percent. Technically the real rate for the auto loan would be negative 6 percent because the APR and inflation are working against your net worth.
+
+For assets, the interest rate is positive (working for you), but inflation is still negative. If you have a savings account earning 1 percent and inflation is 2 percent, the real rate of the savings account is negative 1 percent. Not as negative as the auto loan, which is why that savings account may not be classified as a liability in the portfolio.
 
 Ingredients that go into making the plate:
 
@@ -64,7 +67,7 @@ From February 2022 through January 2023 (12 months), the average inflation rate 
 
 There were some deflation months in 2009. 2009 was during [The Great Recession](https://en.m.wikipedia.org/wiki/Great_Recession), and inflation averaged 3 to 4 percent the previous year.
 
-Notice that inflation for the last year is almost triple the last 10 and 20 years. That's because the data from 1 year ago is dragging down (or hiding) the most recent data. And I don't know about you, but the roughly 8 percent impacts present-me much more than the percentages from 10 and 20 years ago. Again, a reason for giving more weight to the recent data.
+Notice that inflation for the last year is almost triple the last 10 and 20 years. That's because the data from 10 and 20 years ago is dragging down (or hiding) the most recent data. And I don't know about you, but the roughly 8 percent impacts present-me much more than the percentages from 10 and 20 years ago. Again, a reason for giving more weight to the recent data.
 
 Regardless, the plate has increased by almost 8 percent due to inflation, and it's out of my direct control and influence.
 
@@ -76,17 +79,17 @@ The Diderot effect is when you buy a new pair of shoes. Now you decide to replac
 
 ## The first brownie (short-term assets and income)
 
-Characteristics:
+Primary characteristics:
 
-1. Someone gives you something they have once or regularly.
-2. Historically, the real rate is negative or neutral compared to the other categories.
-3. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
-4. The value (purchasing power) favors deflationary environments.
+1. Performs better in deflationary and contracting environments.
+2. Someone gives you something they have once or regularly.
+3. Historically, the real rate is negative or neutral compared to the other categories.
+4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
 
 A non-exhaustive list of ingredients that go into making the first brownie:
 
 1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. Could be the [.United States Dollar](USD), precious metal coins back in the day, or cigarettes in those old prison movies.
-2. Short-term bonds: Bonds with a 1 to 3 years maturity date.
+2. Short-term bonds: Bonds with a 1 to 3 year maturity date.
 3. Certificates of deposit and share certificates: Cash held at a bank for a period, usually less than 10 years.
 
 Some things that cause this brownie to get bigger and smaller:
@@ -101,7 +104,7 @@ Yep. Almost the same list as the plate.
 
 This reveals the notion of spending less, earning more, or both.
 
-Some might say compounding has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a later section. Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
+Some might say compounding has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a [later section](#compounding). Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
 
 A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as tracking. Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them. 
 
@@ -139,14 +142,15 @@ Next brownie!
 
 ## The second brownie (growth assets)
 
-Characteristics:
-
-1. You typically convert short-term assets into something else you own, not a liability.
+1. Performs better in growth environments. (This includes resell value, the ability to purchase cash and other short-term assets.)
 2. Historically, the real rate is positive and higher than the other categories.
 3. Interest rates are in terms of APY and indicate excess money given to you.
-4. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and it's rare someone is willing to give you 2 dollars for 1.
+
+Secondary characteristics:
+
+1. You typically convert short-term assets into something else you then own, not a liability.
+2. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and it's rare someone is willing to give you 2 dollars for 1.
 5. When you sell the thing, it becomes a short-term asset. Even if you sell with the intention of immediately purchasing another asset.
-6. Tends to favor growth environments.
 
 A non-exhaustive list of ingredients that go into making the second brownie:
 
@@ -198,20 +202,22 @@ We often conflate risk with volatility. Volatility is how much the thing you bou
 
 Cost basis is what you paid for the thing plus any additional related costs for maintenance and improvement; also known as the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/). Just because you paid a lot for something doesn't mean someone later will pay your initial cost basis, much less anything extra. 
 
-I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had at the time, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them like an asset, we look at them like a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track similar things related to cars.
+I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had at the time, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them like an asset, we look at them like a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track total cost of ownership for most things.
 
 Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset. 
 
 ## The condiments (negative correlation assets)
 
-Characteristics:
+Primary characteristics:
 
-1. You typically convert short-term assets into something else you own, not a liability.
-2. Historically, the real rate may increase while other categories (specifically growth assets) decrease. The real rate is normally lower than growth assets or slightly negative.
+1. Performs better in inflationary and contraction environments.
+2. Historically, are more negatively correlated to growth assets. 
 3. Interest rates are in terms of APY and indicate excess money given to you.
-4. Has a resell value that fluctuates.
-5. When you sell the thing, it becomes a short-term asset.
-6. Tend to favor inflationary and contraction environments.
+2. Historically, the real rate is lower than growth assets.
+
+Secondary characteristics:
+
+1. Same as growth assets.
 
 In the United States, the asset type with the highest negative correlation historically to corporate equities is:
 
@@ -228,7 +234,9 @@ Yep. Same as the list for growth assets.
 
 Many negatively correlated assets have a lower risk premium. The things that fall into this part of our dessert also tend to be less volatile.
 
-When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds. Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended.
+When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds. 
+
+Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended.
 
 There are all types of companies, and they all have at least one share. They're not all growth assets; most will fail ("go to zero"). 
 
@@ -236,18 +244,19 @@ There are all types of bonds. Corporate bonds, state municipal bonds, and federa
 
 We say stocks and bonds as shorthand for growth and negative correlation. We want something with the characteristics described. Sticking with an asset type, despite a change in historical characteristics, would be a [foolish consistency](https://en.wikipedia.org/wiki/Self-Reliance).
 
-Corporate equities historically have a positive real rate of return. Historically, negative correlation assets increase their real return rate when growth assets are decreasing in theirs. If this relationship changes over a long enough period, we might want to look for a different asset type. We'll go into depth on correlations in a later section.
+Corporate equities historically have a positive real rate of return. Historically, negative correlation assets increase their real return rate when growth assets are decreasing in theirs. If this relationship changes over a long enough period, we might want to look for a different asset type. We'll go into depth on correlations in a [later section](#correlations).
 
 ## The sprinkles (low correlation assets)
 
-Characteristics:
+Primary characteristics:
 
-1. You typically convert short-term assets into something else you own, not a liability.
-2. Historically, the real rate may increase while other categories decrease, not limited to growth assets. The real rate is normally lower than growth assets or slightly negative.
-3. Interest rates are in terms of APY and indicate excess money given to you. But, there may not always be income generated.
-4. Has a resell value that fluctuates.
-5. When you sell the thing, it becomes a short-term asset.
-6. Tends to favor inflationary environments.
+1. Performs better in inflationary environments.
+2. Historically, they have a low correlation with things in the other categories.
+3. Interest rates are in terms of APY and indicate excess money given to you.
+
+Secondary characteristics:
+
+1. Same as [growth assets](#the-second-brownie-growth-assets).
 
 In the United States, two asset types that historically fit these characteristics are:
 
@@ -316,7 +325,7 @@ If I give you a dollar and only 10 percent of the amount you keep every day ther
 
 From day 1 to day 2, it's kinda, "meh." Even up to day 6, you might think, "I'd rather have the dollar a day" (indicative of a steady paycheck and short-term linear thinking). Heck, it's not actually interesting until days 25 to 30 because that's the tipping point. 
 
-That's where the 8 percent is more than you earned each day in the linear example. Then 5 days later, you're increasing by over double what you earned in the linear example. 5 days later, it's triple what you were increasing in the linear example, and you have roughly the same balance; you have caught up to your earnings from the linear paycheck example. 10 days later, it's 9 times the increase of the linear example and twice the balance.
+That's where the 10 percent is more than you earned each day in the linear example. Then 5 days later, you're increasing by over double what you earned in the linear example. 5 days later, it's triple what you were increasing in the linear example, and you have roughly the same balance; you have caught up to your earnings from the linear paycheck example. 10 days later, it's 9 times the increase of the linear example and twice the balance.
 
 The other thing we can take away from the exponential table is what's referred to as the rule of 72. Basically, divide 72 by any rate of return (APY), and you will arrive at roughly the number of compounding periods it will take for a specific dollar amount to double. In our case, 72 divided by 10 is 7.2. It took about 8 days to go from 1 dollar to 2. It took about 16 days to go from 2 dollars to 4. We hit 8 dollars around day 20. And so on.
 

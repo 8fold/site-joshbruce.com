@@ -1,10 +1,3 @@
----
-title: The self
-template: person
-created: 19790717
-updated: 20220522
----
-
 # The self
 
 {!! dateblock !!}
@@ -65,6 +58,7 @@ My name is <span property="name">Josh Bruce</span>.
 16. Capture everything.
 17. If you’re no good to yourself, you won’t be any good to others.
 18. Ruthlessly chase simplicity.
+19. Informed consent.
 
 ## My oath
 
@@ -90,10 +84,10 @@ Short version:
 
 1. purpose,
 2. autonomy,
-3. mastery,
-4. connection,
-5. numbers,
-6. process,
+3. connection,
+4. mastery,
+5. process,
+6. numbers,
 7. prestige, and
 8. sticks.
 
@@ -106,11 +100,11 @@ Extended version:
 3. **physical touch (I’m big on hugs and high-fives)**,
 4. **words of affirmation**,
 5. **quality time**,
-6. mastery,
-7. numbers,
-8. **acts of service**,
-9. **receiving gifts**,
-10. process,
+6. **acts of service**,
+7. mastery,
+8. process,
+9. numbers,
+10. **receiving gifts**,
 11. prestige, and
 12. sticks.
 

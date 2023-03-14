@@ -1,9 +1,3 @@
----
-title: Personal budget
-created: 20210704
-updated: 20220921
----
-
 # Personal budget
 
 {!!dateblock!!}
@@ -18,30 +12,32 @@ I have various streams of income, which I separate between:
 - W2 Bonuses,
 - Credit card rewards - non-taxable,
 - Credit card rewards - sign-up bonuses - non-taxable,
-- Sales, and
+- Sales and B2B services, and
 - Misc. (1099).
 
-The first two are the more generic categories for W2 employment; my day job(s). The second two are related to credit cards, which I tend to use for cash back and they’re labeled non-taxable as a hint to myself and tax professionals that these should not be considered part of my regular income; they are more like rebates. Sales is there for when I sell products I create or things I own. And, the last bucket is for work I do as a freelancer (tax form 1099) and similar.
+The first two are the more generic categories for W2 employment; my day job(s). The second two are related to credit cards, which I tend to use for cash back and they’re labeled non-taxable as a hint to myself and tax professionals that these should not be considered part of my regular income; they are more like rebates on expenses. Sales and B2B services are when I sell products I create or things I own or provide services to other businesses that won’t require a 1099. And, the last bucket is for work I do as a freelancer (tax form 1099) and similar.
 
 ## Expenses
 
 I'm not going to list all my categories here, though the list is short.
 
-I have education and entertainment. For example, books I want to learn from, are education while books I’m mainly reading for entertainment value are, well, entertainment. It’s not the type of media or method that causes something to be education or entertainment, it’s my intent when paying for the thing.
+I have education and entertainment. 
 
-Similarly I have a single electronics category. This category includes equipment purchases; like cellphone, laptop, and so on. Further, it includes related maintenance and service fees; like cellphone service, cloud storage, and the like. These are services related to the desired, smooth operation of the device. One category—not a separate category for everything. (I do the same with the housing category.)
+For example, books I want to learn from, are education while books I’m mainly reading for entertainment are, well, entertainment. It’s not the type of media or method that causes something to be education or entertainment, it’s my intent when buying the thing.
 
-Food, on the other hand, I have broken into three categories. There's food, which are groceries and food related to at home meals. There's the food-dining category, which is when I order out or go somewhere to eat. And there's food-snacks, which is things like candy bars and whatnot. It's worth noting that if I buy snacks at the grocery store, it just falls under the more generic food category.
+Similarly I have a single electronics category. This category includes equipment purchases; like cellphone, laptop, and so on. Further, it includes related maintenance and service fees; like cellphone service, cloud storage, and the like. These are services related to the desired, smooth operation of the device. One category—not a separate category for everything. (I do the same with housing.)
 
-I’m not micro-managing the categories and pennies. I want a few categories so I can see where most of the money is going from glancing at the pie chart created by [Wave](https://www.waveapps.com).
+Food, on the other hand, I have broken into three categories. There's food, which are groceries and food related to at home meals. There's the food-dining category, for when I order out or go somewhere to eat. And there's food-snacks, which are things like candy bars and whatnot. It's worth noting that if I buy snacks or toilet paper at the grocery store, it just falls under the more generic food category; I’m not categorizing down to the penny.
 
-I also have the miscellaneous category, which handles everything else. If the miscellaneous category becomes too large, I might look at the transactions and create a new category. For example, when I buy clothes, I mark it as a miscellaneous expense. If I start buying more clothes, more often I might create a clothing category for a while to see if this is a new habit that will continue into the future, or, if buying more clothes, more often was just a short-term thing. If it turns out to be a short-term thing, I'll go back to using the miscellaneous category.
+I want a few categories so I can see where most of the money is going from glancing at the pie chart created by [Wave](https://www.waveapps.com).
+
+I also have the miscellaneous category, which handles everything else. If the miscellaneous category becomes too large, I might look at the transactions and create a new category. For example, when I buy clothes, I mark it as a miscellaneous expense. If I start buying more clothes, more often I might create a clothing category for a while to see if this is a new habit that will continue into the future, or, if buying more clothes, more often was just a short-term thing. If it turns out to be a short-term thing, I'll go back to using the miscellaneous category for clothes.
 
 Sometimes I just want to track an expense to make sure I'm not spending crazy without realizing. For example, I still smoke tobacco. I have a habit-tobacco category just for when I purchase tobacco products. This is also part of the visualization nature of budgeting. By seeing it, I can determine if the benefit is worth that cost; financially and possibly from a health perspective. The habit-tobacco category is a convenience and, if the belt needs tightening, I’ll reduce or cut it out.
 
 ## Assets
 
-This one will be a bit long because breaking it up a bit should make it easier to consume.
+This one will be a bit long because I’m breaking it up a bit to make it easier to consume.
 
 Part of my [personal character](/experiences/the-self/) is never enter anything without an exit strategy. Part of my [financial character](/experiences/finances/) is to favor cooperative structures over private businesses over publicly traded businesses. These are both reflected in my selection of institutions related to my asset accounts:
 
@@ -51,7 +47,7 @@ Part of my [personal character](/experiences/the-self/) is never enter anything 
 		- Secondary credit union: Same as above.
 		- Tertiary bank: A privately-owned, member bank, which is to say they have constraints on who can have accounts there.
 	- Brokers
-		- Primary broker: A shareholder owned brokerage firm; I buy the funds, I am a shareholder of the broker.
+		- Primary broker: A shareholder-owned brokerage firm; I buy the funds, I am a shareholder of the broker.
 		- Secondary broker: A privately owned firm.
 		- Tertiary broker: A privately owned firm, which I'm thinking of moving away from to try and simplify things a bit.
 
@@ -64,7 +60,7 @@ When it comes to liquid cash (bank accounts), I use a [fund accounting](https://
 		- Primary credit union
 			- Income: A spending account (checking) where all money received from third-parties goes; this starts the flow before money is distributed to other accounts.
 			- Expenses: A spending account for paying expenses; usually these expenses are due each month or shorter time-scales.
-			- Investing pass-through: A spending account where money is transferred; this is the only account brokers can deposit and withdrawal to and from, respectively.
+			- Investing pass-through: A spending account where money is transferred; this is the only account brokers can deposit and withdrawal to and from.
 			- Runway: A savings account for future, known expenses; usually due within two to 12 months.
 			- Savings: A savings account as an extension of the runway account *and* for taking advantage of long-term savings and investing opportunities, when available.
 			- Taxes: A savings account where I set aside a certain percentage of each dollar of income in case I owe taxes at the end of the year.
@@ -72,7 +68,7 @@ When it comes to liquid cash (bank accounts), I use a [fund accounting](https://
 			- Checking: Not used; it makes it easier to transfer money into the account from the expense account at the primary credit union.
 			- Savings: Not used, but required to open the account with the credit union.
 		- Tertiary bank
-			- Checking: Same as the secondary credit union checking account.
+			- No spending or savings accounts.
 		- Digital wallet(s): Apple Cash, PayPal, and similar.
 		- Cash on hand: Physical cash in my pockets, cookie jars, and the like.
 	- Brokers
@@ -95,7 +91,7 @@ Last we'll break down the brokerage accounts. Most of my investments are in inde
 			- Checking
 			- Savings
 		- Tertiary bank
-			- Checking
+			- No accounts
 		- Digital wallet(s)
 		- Cash on hand
 	- Brokers
@@ -109,14 +105,16 @@ Last we'll break down the brokerage accounts. Most of my investments are in inde
 		- Secondary broker
 			- Taxable - settlement fund: Same as Primary broker.
 			- Taxable - investment(s): Same as Primary broker.
-			- 401k - investment(s): There is no settlement account here and there are separate entries for each investment inside the 401k. For bookkeeping purposes I separate my contributions from the employer match.
-			- [.Health Savings Account](HSA) - cash account: Same as the various settlement funds. However, since this is an HSA where I can spend cash on medical expenses and whatnot, this also acts like a spending account. For my purposes though it's mainly a settlement fund.
-			- HSA - investment(s): Same as Primary broker.
+			- Primary [.Health Savings Account](HSA) - cash account: Same as the various settlement funds. However, since this is an HSA where I can spend cash on medical expenses and whatnot, this also acts like a spending account. For my purposes though it's mainly a settlement fund.
+			- Primary HSA - investment(s): Same as Primary broker.
 		- Tertiary broker
 			- Taxable - cash account: Same as settlement funds.
 			- Taxable - investment(s): Same other investment accounts.
+		- Quaternary broker
+			- 401k - investments: My current employer doesn’t use the same broker as my previous employer.
+			- Secondary HSA - cash account: Technically not the same company as the 401k, but my current employer deposits a lump sum on an annual basis. There are no investments there yet due to the nature of the account (a minimum balance in cash).
 
-Each broker offers traditional and Roth IRAs and taxable accounts. The broker for my 401k was chosen by my employer; the Traditional IRA is the fallback. The HSA is sort of the odd one out because I'm not using the provider selected by my employer and I don't have a tertiary fallback.
+The brokers for my 401k and secondary HSA was chosen by my employer; the Traditional IRA is the fallback. The primary HSA is sort of the odd one out because I'm not using the provider selected by my employer and I don't have a tertiary fallback.
 
 So, without the notes:
 
@@ -140,18 +138,21 @@ So, without the notes:
 		- Primary broker
 			- Taxable - settlement fund
 			- Taxable - investment(s)
-			- Traditional [.Individual Retirement Account](IRA) - settlement fund
+			- Traditional IRA - settlement fund
 			- Traditional IRA - investment(s)
 			- Roth IRA - settlement fund
 			- Roth IRA - investment(s)
 		- Secondary broker
 			- Taxable - settlement fund
 			- Taxable - investment(s)
-			- 401k - investment(s)
-			- [.Health Savings Account](HSA) - cash account
+			- Primary HSA - cash account
+			- Primary HSA - investments
 		- Tertiary broker
 			- Taxable - cash account
 			- Taxable - investment(s)
+		- Quaternary broker
+			- 401k investments 
+			- Secondary HSA - cash account
 
 You might be thinking this is complicated. And I would say with the available apps and how the accounts are actually used, it doesn't feel complicated; especially with the use of Wave, which I have syncing with the income and credit card accounts, which we'll get to later—but not the investment accounts.
 
@@ -159,7 +160,7 @@ Most of the brokerage accounts are only deposited to and I don’t plan on withd
 
 The accounts at the secondary and tertiary institutions aren't really used.
 
-That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and entries—the prepare part of [the action loop](/books/#triumph-over-time). Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
+That leaves the primary credit union. My paycheck goes into the income account. I use Wave and a spreadsheet to create a plan; takes about 15 minutes to create the plan and Wave entries—the prepare part of [the action loop](/books/#triumph-over-time). Then I spend another 45 minutes or so verifying transactions since the previous paycheck, transferring money, and making credit card payments.
 
 Typically I'm only investing in one or two holdings per paycheck, so, minimal activity there as well.
 
@@ -173,7 +174,7 @@ The more primary products used under a single provider, the more tightly coupled
 	- Revolving loans (credit cards, lines of credit, and so on)
 		- Primary credit union
 			- Quaternary credit card: A low rate card with no rewards or similar program.
-			- Line of credit: Used for overdraft protection on the expense account.
+			- Line of credit: Used for overdraft protection on the expense accounts.
 		- Secondary credit union
 			- Primary credit card: A rewards card that has three percent cash back on the types of establishments I use most.
 		- Tertiary bank
@@ -181,7 +182,7 @@ The more primary products used under a single provider, the more tightly coupled
 		- Apple
 			- Tertiary credit card: A rewards card that offers three percent cash back on Apple products and a limited number of other retailers. The card also offers two percent cash back when Apple Pay is used.
 
-The line of credit as a separate loan is interesting. Some financial institutions won’t let you have a personal line of credit for the purposes of automatically advancing to cover overdrafts on an account; they often prefer using a credit card instead.
+The line of credit as a separate loan is interesting. Some financial institutions won’t let you have a personal line of credit for the purposes of automatically advancing to cover overdrafts on an account; they often prefer using a credit card.
 
 If your checking account is about to negative, they’ll do a cash advance on the card. Here’s the rub though, in some cases, if you can’t pay the balance of the card, new purchases are prioritized over the cash advance amount. Further, the cash advance may be accruing interest daily instead once per statement period. So, if the institution only lets you use a credit card, see about opening a credit strictly for the purpose of overdraft protection.
 
@@ -193,19 +194,19 @@ I post to the [paycheck-to-paycheck](/experiences/finances/paycheck-to-paycheck/
 
 Money comes into the income account.
 
-I update the balance trackers in my spreadsheet.
+I update the balance trackers in the spreadsheet.
 
-Mainly I’m trying to get the balances of my credit cards. The credit card balances plus any bills I can’t pay by credit card sets the minimum distribution to the expense account.
+Mainly I’m trying to get the balances of the credit cards. The credit card balances plus any bills I can’t pay by credit card sets the minimum distribution to the expense account.
 
-Estimates for recurring expenses creates a minimum and maximum for what goes into the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
+Estimates for recurring expenses creates a recommendation for what should go to the runway account. Sometimes I’ll transfer money from the runway account to the expense account.
 
 I have percents establishing minimum and maximum dollar amounts for the other accounts. This is where most decisions and wiggling occurs.
 
 Once the distributions for the paycheck are figured out in the spreadsheet I head over to Wave.
 
-I look at each account to make sure the transactions are valid and verified. I create missing entries in the manual accounts (like the Apple Card); I also remove any errant transactions. If there’s a mistake or something I need to call about, I make note the institution or institutions and don’t proceed until making those calls.
+I look at each account to make sure the transactions are valid and verified. I create missing entries in the manual accounts (like the Apple Card); I also remove any errant transactions. If there’s a mistake or something I need to call about, I make note of the institution or institutions and don’t proceed until making those calls.
 
-If no mistakes are found, I create the entries for the transfers from the income account to the other accounts in the spreadsheet; I might adjust the numbers, if needed—it’s usually not needed. I’ll add entries to pay the credit cards from the expense account. Finally, I create entries for investments; [see below](#buying-shares).
+If no mistakes are found, I create the entries for the transfers from the income account to the other accounts in the spreadsheet; I might adjust the numbers, if needed. I’ll add entries to pay the credit cards from the expense account. Finally, I create entries for investments; [see below](#buying-shares).
 
 Doing this in Wave before actually doing it in the apps (or websites) for the institutions I can verify the outcome of the plan; measure twice, cut once. I want to make sure the expense account ends up with the desired reserve amount, or close to it, after all the money finishes moving.
 
@@ -215,35 +216,17 @@ I usually do this the morning I get paid before rolling out of bed, so, not tedi
 
 ## Recirculating
 
-To ensure every dollar is working toward its highest, long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding; usually long-term savings.
+To ensure every dollar is working toward its highest long-term potential there are events and circumstances during which money set aside for short-term (one year or less) savings can be moved to a different holding; usually long-term savings.
 
 ### Tax account
 
 I rarely owe taxes.
 
-While I could keep socking money away in the tax account for when I retire, I’d rather put the majority of this money to work once I know I don’t owe taxes for the year.
+While I could keep socking money away in the tax account for when I retire, I’d rather put the majority of this money into growth assets.
 
-After filing taxes, if I owe anything, I’ll transfer money from the tax account to the expense account and pay the taxes; further, the percent from income distributions going to the tax account will be increased by 1.
+If I owe taxes, up to 100 percent of the tax account may be used to pay the amount owed. Further, if there isn’t enough in the tax account, the savings may be used, followed by the runway account; if that’s not enough it’s probably time to get attorneys and accountants involved. Finally, the amount I transfer from income to the tax account will be increased at least 1 percent.
 
-If I qualify for a refund, it must be received prior to the next bit. (When the refund is received, it will be treated as income and distributed accordingly.)
-
-Next is determining how much to transfer to the savings account.
-
-- x: Balance of the tax account as of January first of the tax year.
-- y: Total deposits to the tax account during the tax year.
-- z: Total transferred to expense account to pay owed taxes.
-- a: Pool available to transfer to savings account.
-
-```x + y - z = a```
-
-I can transfer up to 80 percent of the pool to the savings account. This move puts money back into circulation within the system; see next section.
-
-If money is owed, and there isn't enough in the Tax account to cover the amount, cash should be withdrawn from the accounts in the following order:
-
-1. savings,
-2. runway.
-
-If more money is needed, something has gone horribly wrong and you should be consulting with accountants and attorneys.
+If I qualify for a refund, the refunded amount will be treated as income from a distribution perspective. Further, up to 80 percent of the balance of the tax account may be transferred either to the savings account, the runway account, or both. Finally, up to 100 percent of the savings may immediately be used to contribute up to the maximum to the Traditional IRA, Roth IRA, or both. (Note: This can be done before submitting the tax documents or receiving the refund.)
 
 ### Spending savings
 

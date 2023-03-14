@@ -29,5 +29,5 @@ I'll probably avoid talking dollar amounts mainly because, for me, the systems a
 
 The related entries are my journey paycheck-to-paycheck. They are listed in reverse chronological order.
 
-{!!loglist!!}
+{!!paycheck-loglist!!}
 
