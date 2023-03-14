@@ -42,7 +42,7 @@ The fall of Silicon Valley Bank has me wanting to take advantage of downturns. M
 
 For the most part, it went through the same flow as any money coming in. Some went to the tax prep account. Some to savings. This time most went to the [runway account](/experiences/finances/personal-budget/#assets). However, I started by calculating how much I’d need to add to what was already in the settlement fund in the taxable brokerage account to buy 1 full share at 2 cents over market price; it was less than 70 dollars.
 
-(I’m going to beat this drum until financial folks I listen to stop saying a limitation of the Vanguard platform is you can’t do fractional shares; they have [fractional shares]((https://investor.vanguard.com/investor-resources-education/article/investing-in-vanguard-etfs) on [.Exchange Traded Funds](ETFs). The reason I needed enough to buy 1 full share is [based on my rules](/experiences/finances/investment-policy/#investments), not the Vanguard platform. I only do fractional shares when a fund is up the previous day and only with the first 15 percent of the investable cash. Back to the story at hand.)
+(I’m going to beat this drum until financial folks I listen to stop saying a limitation of the Vanguard platform is you can’t do fractional shares; they have [fractional shares](https://investor.vanguard.com/investor-resources-education/article/investing-in-vanguard-etfs) on [.Exchange Traded Funds](ETFs). The reason I needed enough to buy 1 full share is [based on my rules](/experiences/finances/investment-policy/#investments), not the Vanguard platform. I only do fractional shares when a fund is up the previous day and only with the first 15 percent of the investable cash. Back to the story at hand.)
 
 I transferred enough to buy 1 share at 2 cents over the market price. Being able to purchase a full share with 15 percent of the investable cash opened the door to creating all 3 limit orders:
 
@@ -72,7 +72,7 @@ Regardless, with the current strategy and plan, most of the value of my portfoli
 
 ## New year, new me?
 
-Every year, I reflect on The Motivators Exercise](/essays-and-editorials/motivators/). [My motivators](/experiences/the-self/#motivators-exercise-results/) changed slightly.
+Every year, I reflect on [The Motivators Exercise](/essays-and-editorials/motivators/). [My motivators](/experiences/the-self/#motivators-exercise-results/) changed slightly.
 
 Process and acts of service moved up on the extended version. Therefore, I moved connection above mastery. 
 
