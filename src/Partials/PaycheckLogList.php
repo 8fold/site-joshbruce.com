@@ -36,7 +36,8 @@ class PaycheckLogList implements Stringable
         if ($contents === false) {
             return '';
         }
-
+        
+        $links = [];
         $currentYear = [];
         $years = [];
         foreach ($contents as $content) {
