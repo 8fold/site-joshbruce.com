@@ -68,6 +68,7 @@ class PaycheckLogList implements Stringable
 
         $return = '';
         if (count($currentYear) > 0) {
+            krsort($currentYear);
             $return = (string) Element::ul(...$currentYear);
         }
 
