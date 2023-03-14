@@ -28,7 +28,7 @@ The extended market fund was up the previous day. I had enough remaining to plac
 
 Not enough cash left in the Roth IRA settlement account to place more orders.
 
-This contribution, coupled with the orders, brought short-term assets down to 3 percent of the portfolio. 3 percent in the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
+This contribution, coupled with the orders, brought short-term assets down to 3 percent of the portfolio. 3 percent is the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
 
 I contributed to the 401k automatically. I contributed the regular amount to the [.Health Savings Account](HSA). I put the amount I’d typically invest into the runway account. I put the regular amount into savings and the tax account. And I paid the credit cards. The remaining amount I transferred to the Federal Money Market account at Vanguard; as if I were going to place orders.
 
