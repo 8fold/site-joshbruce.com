@@ -72,7 +72,7 @@ Regardless, with the current strategy and plan, most of the value of my portfoli
 
 ## New year, new me?
 
-Every year, I reflect on The Motivators Exercise](/essays-and-editorials/motivators/). [My motivators](/experiences/the-self/#motivators-exercise-results/) changed slightly.
+Every year, I reflect on [The Motivators Exercise](/essays-and-editorials/motivators/). [My motivators](/experiences/the-self/#motivators-exercise-results/) changed slightly.
 
 Process and acts of service moved up on the extended version. Therefore, I moved connection above mastery. 
 
