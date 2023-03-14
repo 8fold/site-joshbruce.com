@@ -73,7 +73,7 @@ class PaycheckLogList implements Stringable
         krsort($links);
 
         $pastYears = [];
-        foreach($links as $year => $items) {
+        foreach ($links as $year => $items) {
             krsort($items);
             $return .= (string) Element::details(
                 Element::summary(strval($year)),
