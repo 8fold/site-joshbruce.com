@@ -24,7 +24,7 @@ The condiments are negatively correlated assets. Compared to the second brownie 
 
 The sprinkles are assets with a low correlation to the other portions of the dessert. Again, some people really like sprinkles, possibly to the point of only having the first brownie and sprinkles. Other people avoid sprinkles entirely.
 
-From a quantity perspective, you can have the same volume of stuff making up this dessert. However, when looking at the ratio, these components can shift. And they can shift for all sorts of reasons. 
+From a quantity perspective, you can have the same volume of stuff making up this dessert. However, when looking at the ratio, these components can shift. And they can shift for all sorts of reasons.
 
 Let’s go deeper.
 
@@ -34,16 +34,29 @@ We’ll give the general characteristics of each, some things that fall into eac
 
 Primary characteristics:
 
-1. You give something you have to someone else once or regularly.
-2. Historically, the real rate is the most negative compared to the other components.
-3. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
-4. Interest rates are working against your net worth.
+1. These are things you give to someone else.
+2. Historically, the real rate is often the most negative compared to the other components.
+3. These things tend to be more advantageous in inflationary-growth economic environments.
+
+Secondary characteristics:
+
+1. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
 
 By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can hide more recent data due to averages and medians.
 
-Real rate is adjusting the rate of the thing by inflation. You have an auto loan with a 4 percent APR. inflation is 2 percent. The real rate for the auto loan is 6 percent. Technically the real rate for the auto loan would be negative 6 percent because the APR and inflation are working against your net worth.
+When I say “real rate,” we take the APR and add the inflation rate. APRs work against us, so we convert that number to a negative. (Assets have the same characteristic; we subtract inflation instead of adding.)
 
-For assets, the interest rate is positive (working for you), but inflation is still negative. If you have a savings account earning 1 percent and inflation is 2 percent, the real rate of the savings account is negative 1 percent. Not as negative as the auto loan, which is why that savings account may not be classified as a liability in the portfolio.
+When we talk about economic environments, we're alluding to the work of Bridgewater & Associates and Ray Dalio. This leads us to [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). In short, there are two axes. The horizontal axis goes from deflationary to inflationary. The vertical axis goes from growth to contraction. This gives us 4 (or 5) economic environments:
+
+1. Neutral: The center point. Prices aren't rising or falling and the economy is not growing or shrinking.
+2. Deflationary growth: Prices are falling, and the economy is growing.
+3. Inflationary growth: Prices and the economy are growing.
+4. Deflationary contracting: Prices and the economy are shrinking.
+5. Inflationary contracting: Prices are rising, and the economy is shrinking.
+
+And historically, different economic markets will spend a different percentage of time in each quadrant. The [.The United States of America](USA), for example, historically spends most of its time in inflationary-growth environments.
+
+It might seem counterintuitive that the liabilities and expenses are historically more advantageous in inflationary growth environments. However, loan interest rates in these environments tend to be lower, so borrowing money is cheaper. Further, if I buy in bulk now, I'm locking in a lower price compared to the future when prices rise. Alternatively, if we switch to a deflationary environment and I buy in bulk, I will be locking in a higher price compared to the future.
 
 Ingredients that go into making the plate:
 
@@ -54,14 +67,14 @@ Ingredients that go into making the plate:
 
 That's not an exhaustive list. And the key characteristic is that you can’t eat a plate. The ingredients making up the plate go to someone else.
 
-There are 4 major things that can make the plate grow and shrink; 2 are most likely out of your control:
+4 major things can make the plate grow and shrink; 2 are most likely out of your control:
 
-1. Inflation and deflation.
-2. An emergency.
-3. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation.
+1. Inflation and deflation,
+2. an emergency,
+3. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation, and
 4. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
 
-Inflation is the tendency for the same quantity of products and services to cost more over time; we're not discussing quality. This also goes back to the commentary on favoring recent data. Let’s look at the [.United States Bureau of Labor Statics](BLS) [.Consumer Price Index](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm) data. We’ll use the "all items" category for each month.
+Inflation is the tendency for the same quantity of products and services to cost more over time; we're not discussing quality. This also goes back to the commentary on favoring recent data. Let’s look at data from the [.United States Bureau of Labor Statics](BLS) [.Consumer Price Index](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm). We’ll use the "all items" category for each month.
 
 From February 2022 through January 2023 (12 months), the average inflation rate was: 7.9 percent. From February 2013 through January 2023 (120 months or 10 years), the average was: 2.5 percent. From February 2003 through January 2023 (20 years), the average was: 2.49 percent.
 
@@ -73,7 +86,7 @@ Regardless, the plate has increased by almost 8 percent due to inflation, and it
 
 In 2022, I had appendicitis leading to an [appendectomy](https://en.m.wikipedia.org/wiki/Appendectomy). My plate got bigger because of an emergency.
 
-Hedonic adaptation is more within your control. You get a raise. You buy a more expensive thing. You’ve made your plate bigger because you have to replace that thing, and if you replace it with the same thing, the price may be the same, but it's more than the first thing you replaced (this is why we can't have nice things). 
+Hedonic adaptation is more within your control. You get a raise. You buy a more expensive thing. You’ve made your plate bigger because you have to replace that thing, and if you replace it with the same thing, the price may be the same, but it's more than the first thing you replaced (this is why we can't have nice things).
 
 The Diderot effect is when you buy a new pair of shoes. Now you decide to replace your wardrobe because all your clothes are old compared to your shoes. Then you decide to replace your furniture because your new clothes seem so out of place compared to the sofa you bought 15 years ago with multiple stains. You’ve made the plate bigger.
 
@@ -81,32 +94,35 @@ The Diderot effect is when you buy a new pair of shoes. Now you decide to replac
 
 Primary characteristics:
 
-1. Performs better in deflationary and contracting environments.
-2. Someone gives you something they have once or regularly.
-3. Historically, the real rate is negative or neutral compared to the other categories.
-4. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+1. These are things you have or that someone gives you.
+2. Historically, the real rate is neutral or negative compared to the other categories.
+3. Historically, things in this category are more advantageous in deflationary environments.
+
+Secondary characteristics:
+
+1. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
 
 A non-exhaustive list of ingredients that go into making the first brownie:
 
-1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. Could be the [.United States Dollar](USD), precious metal coins back in the day, or cigarettes in those old prison movies.
-2. Short-term bonds: Bonds with a 1 to 3 year maturity date.
+1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. It could be the [.United States Dollar](USD), precious metal coins back in the day, or cigarettes in those old prison movies.
+2. Short-term bonds: Bonds with a 1- to 3-year maturity date.
 3. Certificates of deposit and share certificates: Cash held at a bank for a period, usually less than 10 years.
 
 Some things that cause this brownie to get bigger and smaller:
 
-1. Saving or reinvesting dividends.
-2. Inflation and deflation.
-3. An emergency.
-4. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation.
+1. Saving or reinvesting dividends,
+2. inflation and deflation,
+3. an emergency,
+4. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation, and
 5. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
 
 Yep. Almost the same list as the plate.
 
 This reveals the notion of spending less, earning more, or both.
 
-Some might say compounding has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a [later section](#compounding). Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
+Some might say reinvesting dividends has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a later section. Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
 
-A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as tracking. Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them. 
+A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as tracking. Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them.
 
 The plate gets smaller, and the brownie may increase in volume.
 
@@ -116,11 +132,11 @@ This is one reason I include liabilities in the portfolio. Paying off liabilitie
 
 I have 5,000 USD in liabilities. I have 5,000 USD in short-term assets. My ratio is 50:50. I spend 4,000 USD from short-term assets to pay a liability. My liabilities are 1,000 USD, and my short-term assets are 1,000 USD; still 50:50.
 
-To change the allocation, we must change something else; spend less, earn more or both. 
+To change the allocation, we must change something else; spend less, earn more or both.
 
-Go ahead and pay off the credit card, but don’t run it up again; spend less. Be good at what you do and ask for a raise or increase your prices; earn more. Or both. 
+Go ahead and pay off the credit card, but don’t run it up again; spend less. Be good at what you do and ask for a raise or increase your prices; earn more. Or both.
 
-Let’s say I pay off the 5,000 USD using the 5,000 USD. The plate is still there (mainly due to inflation and other bills), and I have no brownie. Then I earn 1,000 USD. My first brownie is back. Let’s say I have 200 USD in bills; the portfolio is about 20:80. I pay the bill, and the portfolio is 0:100. 
+Let’s say I pay off the 5,000 USD using the 5,000 USD. The plate is still there (mainly due to inflation and other bills), and I have no brownie. Then I earn 1,000 USD. My first brownie is back. Let’s say I have 200 USD in bills; the portfolio is about 20:80. I pay the bill, and the portfolio is 0:100.
 
 Some people are in a position where the phrase “feast or famine” truly applies. Further, in some cases, they can't see alternatives. Finally, sometimes they can see an alternative but feel it doesn’t apply to them or they will fail (including spending less or earning more).
 
@@ -160,7 +176,7 @@ A non-exhaustive list of ingredients that go into making the second brownie:
 
 Some primary things causing this layer to grow and shrink:
 
-1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp): Where we get the idea of greater risk, greater return, which isn't a hard truth; correlation is not causation. Just because it's risky doesn't mean there will be a reward (just look at most things we consider gambling). 
+1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp): Where we get the idea of greater risk, greater return, which isn't a hard truth; correlation is not causation. Just because it's risky doesn't mean there will be a reward (just look at most things we consider gambling).
 2. Selling some or buying more of the things.
 3. Appreciation and depreciation of those things.
 4. Reinvesting dividends.
@@ -178,9 +194,9 @@ You can charge whatever you want for the thing when you sell it. Some questions 
 
 This brings up the idea of liquidity. Liquidity is the time and cost it takes for something to be exchanged for something else. Short-term assets are considered very liquid, mainly because cash is an ingredient in that brownie. Growth assets usually have low liquidity. Low liquidity is a risk because you may be unable to "get at the money" when you need it. The risk premium at work.
 
-Back in the day, and I mean the 1970s and earlier back in the day, buying shares in a publicly traded company was pretty prohibitive because of the lack of liquidity. 
+Back in the day, and I mean the 1970s and earlier back in the day, buying shares in a publicly traded company was pretty prohibitive because of the lack of liquidity.
 
-We’re talking old-school here. 
+We’re talking old-school here.
 
 Let’s assume you could buy direct. You would give someone your money. They would generate a piece of paper representing your share in the company. You’d wait to get the paper. You would then have to hold it as proof of ownership. If the company ever decided to pay its shareholders, it must keep records of your ownership stake and cut you a check. You would also need to keep tabs in case you missed getting your cut, then use the paper to verify your claim of ownership. (Shares are like the corporate equivalent of printing money or a [community currency](https://en.wikipedia.org/wiki/List_of_community_currencies_in_the_United_States)).
 
@@ -188,30 +204,30 @@ If you wanted to sell the share, you’d have to find someone willing to buy it.
 
 If you had to go through a broker (most times you did), you might have to pay fees of hundreds of dollars to pay them to do all of that for you.
 
-In the twenty-first century, there are more options with varying fees ranging from 0 to a couple percent. Publicly traded company shares have become more liquid. And the old-school way still exists; old doesn’t mean bad or extinct. 
+In the twenty-first century, there are more options with varying fees ranging from 0 to a couple percent. Publicly traded company shares have become more liquid. And the old-school way still exists; old doesn’t mean bad or extinct.
 
 Compare that to a tangible asset like a painting. Again, you purchase the thing. You wait for the thing. Sometimes there’s a letter of authenticity you’ll want to keep. Now you want to sell the painting. How long does finding someone willing to pay what you’re charging take? Again, risk.
 
-Compare both to something you own and use, like a house. Historically, houses are growth assets. But, when you sell the manmade cave, you usually want to find another one. 
+Compare both to something you own and use, like a house. Historically, houses are growth assets. But, when you sell the manmade cave, you usually want to find another one.
 
 Regardless, the second brownie gets a little smaller in volume once sold.
 
-Let's go back to risk for a second. 
+Let's go back to risk for a second.
 
 We often conflate risk with volatility. Volatility is how much the thing you bought appreciates or depreciates in a given period. Volatility is great when it's going up and sucks when it's going down. The risky side of volatility is needing to sell and having to charge less than your cost basis for the thing being sold.
 
-Cost basis is what you paid for the thing plus any additional related costs for maintenance and improvement; also known as the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/). Just because you paid a lot for something doesn't mean someone later will pay your initial cost basis, much less anything extra. 
+Cost basis is what you paid for the thing plus any additional related costs for maintenance and improvement; also known as the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/). Just because you paid a lot for something doesn't mean someone later will pay your initial cost basis, much less anything extra.
 
 I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had at the time, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them like an asset, we look at them like a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track total cost of ownership for most things.
 
-Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset. 
+Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset.
 
 ## The condiments (negative correlation assets)
 
 Primary characteristics:
 
 1. Performs better in inflationary and contraction environments.
-2. Historically, are more negatively correlated to growth assets. 
+2. Historically, are more negatively correlated to growth assets.
 3. Interest rates are in terms of APY and indicate excess money given to you.
 2. Historically, the real rate is lower than growth assets.
 
@@ -234,11 +250,11 @@ Yep. Same as the list for growth assets.
 
 Many negatively correlated assets have a lower risk premium. The things that fall into this part of our dessert also tend to be less volatile.
 
-When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds. 
+When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds.
 
 Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended.
 
-There are all types of companies, and they all have at least one share. They're not all growth assets; most will fail ("go to zero"). 
+There are all types of companies, and they all have at least one share. They're not all growth assets; most will fail ("go to zero").
 
 There are all types of bonds. Corporate bonds, state municipal bonds, and federal government bonds. Short-, long-, and intermediate-term. Then there's the credit rating for the bond issuer; triple A, double A, and so on.
 
@@ -260,7 +276,7 @@ Secondary characteristics:
 
 In the United States, two asset types that historically fit these characteristics are:
 
-1. Commodities: A basic good often exchanged for similar goods. The goods include metals, energy, livestock and meat, and agriculture. 
+1. Commodities: A basic good often exchanged for similar goods. The goods include metals, energy, livestock and meat, and agriculture.
 2. Gold: A specific type of commodity that has been historically used as currency (or to back currencies); no longer the case in most contemporary economies. Gold does have some utility in electronics.
 
 Primary things causing this layer to grow and shrink:
@@ -275,7 +291,7 @@ Almost the same list as growth and negative correlation, but notice we took out 
 
 Back to the compounding debate and how much of a contributor it is.
 
-If I give you a dollar every day for 50 days, that's your paycheck. That's linear (we'll start skipping after the first 10 days, so keep track of the day column): 
+If I give you a dollar every day for 50 days, that's your paycheck. That's linear (we'll start skipping after the first 10 days, so keep track of the day column):
 
 |Day |On-hand |Increase |New balance |
 |:--:|:------:|:-------:|:----------:|
@@ -301,7 +317,7 @@ That's not bad. Double your money from day 1 to day 2. However, on day 3, the in
 
 Humans tend to have a difficult time thinking long-term and exponentially. We're much better at short-term and linear.
 
-If I give you a dollar and only 10 percent of the amount you keep every day thereafter, that's exponential: 
+If I give you a dollar and only 10 percent of the amount you keep every day thereafter, that's exponential:
 
 |Day |On-hand |Increase |New balance |
 |:--:|:------:|:-------:|:----------:|
@@ -323,7 +339,7 @@ If I give you a dollar and only 10 percent of the amount you keep every day ther
 |40  |36.86   |3.68     |40.54       |
 |50  |96.23   |9.62     |105.85      |
 
-From day 1 to day 2, it's kinda, "meh." Even up to day 6, you might think, "I'd rather have the dollar a day" (indicative of a steady paycheck and short-term linear thinking). Heck, it's not actually interesting until days 25 to 30 because that's the tipping point. 
+From day 1 to day 2, it's kinda, "meh." Even up to day 6, you might think, "I'd rather have the dollar a day" (indicative of a steady paycheck and short-term linear thinking). Heck, it's not actually interesting until days 25 to 30 because that's the tipping point.
 
 That's where the 10 percent is more than you earned each day in the linear example. Then 5 days later, you're increasing by over double what you earned in the linear example. 5 days later, it's triple what you were increasing in the linear example, and you have roughly the same balance; you have caught up to your earnings from the linear paycheck example. 10 days later, it's 9 times the increase of the linear example and twice the balance.
 
@@ -359,7 +375,7 @@ We'll only be able to do 10 years and roughly 19 years because the gold fund we'
 
 The hypotheses going in:
 
-1. Cash will have a 0 or slightly negative correlation with our representative growth asset. 
+1. Cash will have a 0 or slightly negative correlation with our representative growth asset.
 2. Growth assets will have a 0 or negative correlation with the other three.
 3. Long-term US Treasuries will have the greatest negative correlation with the growth asset.
 4. Gold will have a close to 0 correlation with the other three.
@@ -371,7 +387,7 @@ For 10 years, we'll go from [February 2013 to the end of January 2023](https://w
 3. Long-term US Treasuries are negatively correlated with the growth asset at -0.03; this does not confirm the hypothesis.
 4. Gold ranges in correlation with the other three from 0.06 (compared to the growth asset) to 0.4 (compared to long-term US Treasuries); this does not confirm the hypothesis.
 
-In this case, there are no assets meeting the negative correlation characteristics; more on that later. 
+In this case, there are no assets meeting the negative correlation characteristics; more on that later.
 
 Does this mean we should shift our thinking? Is this the proverbial paradigm shift you may have heard about? Do we need to find something else to replace long-term US Treasuries as a negative correlation asset before adding condiments to our portfolio? Or, if we already have long-term US Treasuries, should we rebalance into something else with a greater negative correlation?
 
