@@ -52,7 +52,7 @@ As I review this I'm struck by how it changes. So, I've decided to capture the c
 
 - 2021: FI by 52.
 - 2022: FI by 53.
-- 2023: FI by 57.
+- 2023: FI by 57 - increased initial retirement age to 72.
 
 All 3 years I achieved my saving and investing goals from a contribution perspective. However, 2022 was rough and we haven't recovered.
 
