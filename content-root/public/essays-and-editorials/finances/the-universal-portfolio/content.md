@@ -12,11 +12,11 @@ Assertions:
 
 Let's use dessert as a metaphor.
 
-We’ll have a plate, there's always a plate. We'll have at least one brownie, there's always one brownie. We may order another brownie. We can also add condiments such as whip cream, fruit compote, etc. Finally, we can add sprinkles like chocolate chips or similar.
+We’ll have a plate; there's always a plate. We'll have at least one brownie; there's always one brownie. We may order another brownie. We can also add condiments such as whip cream, fruit compote, etc. Finally, we can add sprinkles like chocolate chips or similar.
 
 The plate represents your liabilities and expenses, time or money you exchange with other people. Everyone gets a plate.
 
-The first brownie is your short-term assets and income, the lifetime you have, or money you exchange with other people, usually for liabilities and expenses. Everyone has at least one brownie. For some people, the brownie might be small compared to the plate, their liabilities are greater than their short-term assets. For others, the brownie might be edge-to-edge and 4 times thicker than the plate. And all points in between.
+The first brownie is your short-term assets and income, the lifetime you have, or money you exchange with other people, usually for liabilities and expenses. Everyone has at least one brownie. For some people, the brownie might be smaller than the plate; their liabilities are greater than their short-term assets. For others, the brownie might be edge-to-edge and 4 times thicker than the plate. And all points in between.
 
 The second brownie is what we call growth assets. Not everyone orders this brownie. For others, this brownie dwarfs the first brownie.
 
@@ -34,7 +34,7 @@ We’ll give the general characteristics of each, some things that fall into eac
 
 Primary characteristics:
 
-1. These are things you give to someone else.
+1. These are things you give someone else.
 2. Historically, the real rate is often the most negative compared to the other components.
 3. These things tend to be more advantageous in inflationary-growth economic environments.
 
@@ -46,17 +46,11 @@ By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and 
 
 When I say “real rate,” we take the APR and add the inflation rate. APRs work against us, so we convert that number to a negative. (Assets have the same characteristic; we subtract inflation instead of adding.)
 
-When we talk about economic environments, we're alluding to the work of Bridgewater & Associates and Ray Dalio. This leads us to [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). In short, there are two axes. The horizontal axis goes from deflationary to inflationary. The vertical axis goes from growth to contraction. This gives us 4 (or 5) economic environments:
+When we talk about economic environments, we're alluding to the work of Bridgewater & Associates and Ray Dalio. This leads us to [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing) and risk parity. 
 
-1. Neutral: The center point. Prices aren't rising or falling and the economy is not growing or shrinking.
-2. Deflationary growth: Prices are falling, and the economy is growing.
-3. Inflationary growth: Prices and the economy are growing.
-4. Deflationary contracting: Prices and the economy are shrinking.
-5. Inflationary contracting: Prices are rising, and the economy is shrinking.
+Imagine two columns. On the left is growth, and on the right is inflation. Now bisect those two columns with a line representing market expectations of the future. This creates two rows. The top row is rising, and the bottom row is falling. This creates 4 quadrants. We want to spread risk evenly across all 4 quadrants by selecting more advantageous things that historically fall into each of the 4 quadrants.
 
-And historically, different economic markets will spend a different percentage of time in each quadrant. The [.The United States of America](USA), for example, historically spends most of its time in inflationary-growth environments.
-
-It might seem counterintuitive that the liabilities and expenses are historically more advantageous in inflationary growth environments. However, loan interest rates in these environments tend to be lower, so borrowing money is cheaper. Further, if I buy in bulk now, I'm locking in a lower price compared to the future when prices rise. Alternatively, if we switch to a deflationary environment and I buy in bulk, I will be locking in a higher price compared to the future.
+It might seem counterintuitive that the liabilities and expenses are historically more advantageous in rising inflationary and growth environments. However, loan interest rates in growth environments tend to be lower, so borrowing money is cheaper. Further, if inflation is rising and I buy in bulk now, I'm locking in a lower price compared to the future when prices rise.
 
 Ingredients that go into making the plate:
 
@@ -102,7 +96,7 @@ Secondary characteristics:
 
 1. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
 
-A non-exhaustive list of ingredients that go into making the first brownie:
+Here is a non-exhaustive list of ingredients that go into making the first brownie:
 
 1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. It could be the [.United States Dollar](USD), precious metal coins back in the day, or cigarettes in those old prison movies.
 2. Short-term bonds: Bonds with a 1- to 3-year maturity date.
@@ -120,9 +114,9 @@ Yep. Almost the same list as the plate.
 
 This reveals the notion of spending less, earning more, or both.
 
-Some might say reinvesting dividends has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a later section. Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
+Some might say reinvesting dividends has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a [later section](/essays-and-editorials/finances/the-universal-portfolio/#compounding). Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
 
-A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as tracking. Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them.
+A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as [tracking](/essays-and-editorials/finances/budgeting/#tracking). Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them.
 
 The plate gets smaller, and the brownie may increase in volume.
 
@@ -132,7 +126,7 @@ This is one reason I include liabilities in the portfolio. Paying off liabilitie
 
 I have 5,000 USD in liabilities. I have 5,000 USD in short-term assets. My ratio is 50:50. I spend 4,000 USD from short-term assets to pay a liability. My liabilities are 1,000 USD, and my short-term assets are 1,000 USD; still 50:50.
 
-To change the allocation, we must change something else; spend less, earn more or both.
+To change the allocation, we must change something else; spend less, earn more, or both.
 
 Go ahead and pay off the credit card, but don’t run it up again; spend less. Be good at what you do and ask for a raise or increase your prices; earn more. Or both.
 
@@ -140,37 +134,26 @@ Let’s say I pay off the 5,000 USD using the 5,000 USD. The plate is still ther
 
 Some people are in a position where the phrase “feast or famine” truly applies. Further, in some cases, they can't see alternatives. Finally, sometimes they can see an alternative but feel it doesn’t apply to them or they will fail (including spending less or earning more).
 
-The last bit is about the environment. Bridgewater and Associates identified two spectrums for economic environments:
-
-1. growth to contraction and
-2. inflation to deflation.
-
-This gives us the baseline for a quad chart of 4 economic environments, I'll use a list instead of a chart:
-
-1. Inflation and growth.
-2. Deflation and contraction.
-3. Inflation and contraction.
-4. Deflation and growth.
-
-Each of these environments has a probability of happening. And each type of asset tends to do better in one of these environments. Diversification, in this model, comes from choosing uncorrelated assets that perform well in each type of environment, favoring those with a high probability of occurring and the one you're currently in.
-
 Next brownie!
 
 ## The second brownie (growth assets)
 
-1. Performs better in growth environments. (This includes resell value, the ability to purchase cash and other short-term assets.)
+Primary characteristics:
+
+1. These are assets, therefore, things you have.
 2. Historically, the real rate is positive and higher than the other categories.
-3. Interest rates are in terms of APY and indicate excess money given to you.
+3. Historically, they are more advantageous in growth environments.
 
 Secondary characteristics:
 
-1. You typically convert short-term assets into something else you then own, not a liability.
-2. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and it's rare someone is willing to give you 2 dollars for 1.
-5. When you sell the thing, it becomes a short-term asset. Even if you sell with the intention of immediately purchasing another asset.
+1. You typically convert short-term assets into something else you own, not a liability.
+2. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and someone is rarely willing to give you 2 dollars for 1.
+3. When you sell the thing, it becomes a short-term asset. Even if you sell with the intention of immediately purchasing another asset.
+4. Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset.
 
-A non-exhaustive list of ingredients that go into making the second brownie:
+Here is a non-exhaustive list of ingredients that go into making the second brownie:
 
-1. Corporate equities: Ownership shares in companies publicly and privately held.
+1. US corporate equities: Ownership shares in publicly and privately held companies.
 2. Some forms of tangible things (real estate, artwork, and antique cars, for example).
 3. Mutual and index funds in various forms that purchase corporate equities: You purchase a share in the fund, and the fund's custodian purchases shares in companies based on some [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) established for the fund.
 
@@ -192,15 +175,17 @@ You can charge whatever you want for the thing when you sell it. Some questions 
 3. If so, will they do it in a timely manner?
 4. Will you need to replace the thing with something similar?
 
-This brings up the idea of liquidity. Liquidity is the time and cost it takes for something to be exchanged for something else. Short-term assets are considered very liquid, mainly because cash is an ingredient in that brownie. Growth assets usually have low liquidity. Low liquidity is a risk because you may be unable to "get at the money" when you need it. The risk premium at work.
+This brings up the idea of liquidity. 
+
+Liquidity is the time and cost it takes for something to be exchanged for something else. Short-term assets are considered very liquid, mainly because cash is an ingredient in that brownie. Growth assets usually have low liquidity. Low liquidity is a risk because you may be unable to "get at the money" when needed. The risk premium at work.
 
 Back in the day, and I mean the 1970s and earlier back in the day, buying shares in a publicly traded company was pretty prohibitive because of the lack of liquidity.
 
 We’re talking old-school here.
 
-Let’s assume you could buy direct. You would give someone your money. They would generate a piece of paper representing your share in the company. You’d wait to get the paper. You would then have to hold it as proof of ownership. If the company ever decided to pay its shareholders, it must keep records of your ownership stake and cut you a check. You would also need to keep tabs in case you missed getting your cut, then use the paper to verify your claim of ownership. (Shares are like the corporate equivalent of printing money or a [community currency](https://en.wikipedia.org/wiki/List_of_community_currencies_in_the_United_States)).
+Let’s assume you could buy direct. You would give someone your money. They would generate a piece of paper representing your share in the company. You’d wait to get the paper. You would then have to hold it as proof of ownership. If the company ever decided to pay its shareholders a dividend, it must keep records of its ownership stake and cut you a check. You would also need to keep tabs in case you missed getting your cut, then use the paper to verify your claim of ownership. (Shares are like the corporate equivalent of printing money or a [community currency](https://en.wikipedia.org/wiki/List_of_community_currencies_in_the_United_States)).
 
-If you wanted to sell the share, you’d have to find someone willing to buy it. They’d have to give you money. You’d have to transfer ownership to this other person. Then give them the paper and let the company know to update their records. (Like transferring the title for a car or house.)
+If you wanted to sell the share, you’d have to find someone willing to buy it. They’d have to give you money. You’d have to transfer ownership to this other person. Then give them the paper and let the company know to update their records. (Like transferring the title for a car or house or the certificate of ownership for artwork.)
 
 If you had to go through a broker (most times you did), you might have to pay fees of hundreds of dollars to pay them to do all of that for you.
 
@@ -208,7 +193,7 @@ In the twenty-first century, there are more options with varying fees ranging fr
 
 Compare that to a tangible asset like a painting. Again, you purchase the thing. You wait for the thing. Sometimes there’s a letter of authenticity you’ll want to keep. Now you want to sell the painting. How long does finding someone willing to pay what you’re charging take? Again, risk.
 
-Compare both to something you own and use, like a house. Historically, houses are growth assets. But, when you sell the manmade cave, you usually want to find another one.
+Compare both to something you own and use, like a house. Historically, houses are growth assets. But, when you sell the manmade cave, you usually want to find another one. Further, they may act more like low-correlation assets if you're not charging rent.
 
 Regardless, the second brownie gets a little smaller in volume once sold.
 
@@ -218,26 +203,25 @@ We often conflate risk with volatility. Volatility is how much the thing you bou
 
 Cost basis is what you paid for the thing plus any additional related costs for maintenance and improvement; also known as the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/). Just because you paid a lot for something doesn't mean someone later will pay your initial cost basis, much less anything extra.
 
-I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had at the time, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them like an asset, we look at them like a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track total cost of ownership for most things.
-
-Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset.
+I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had then, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them as an asset. We look at them as a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track the total cost of ownership for most things.
 
 ## The condiments (negative correlation assets)
 
 Primary characteristics:
 
-1. Performs better in inflationary and contraction environments.
-2. Historically, are more negatively correlated to growth assets.
-3. Interest rates are in terms of APY and indicate excess money given to you.
-2. Historically, the real rate is lower than growth assets.
+1. Again, they're assets, so you have them.
+2. Historically, they have the greatest negative correlation to growth assets.
+3. Historically, they are more advantageous in contracting environments, hence the negative correlation to growth assets.
 
 Secondary characteristics:
 
-1. Same as growth assets.
+1. Has all the same secondary characteristics as growth assets.
+2. Interest rates are in terms of APY and indicate excess money given to you.
+3. Historically, the real rate is lower than growth assets.
 
-In the United States, the asset type with the highest negative correlation historically to corporate equities is:
+In the US, the asset type with the greatest negative correlation historically to US corporate equities is:
 
-1. Long-term US treasuries: A loan to a government with a maturity date of around 20 or more years.
+1. Long-term US treasuries: A loan to the US Government with a maturity date of around 20 or more years.
 
 Primary things causing this layer to grow and shrink:
 
@@ -252,40 +236,45 @@ Many negatively correlated assets have a lower risk premium. The things that fal
 
 When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds.
 
-Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended.
+Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended. Our intention is to say, "A diversified collection of growth and negative correlation assets for the economic market in which you're participating." We want something with the characteristics described, not a specific asset type. Sticking with an asset type, despite a change in historical characteristics for that asset type, would be a [foolish consistency](https://en.wikipedia.org/wiki/Self-Reliance).
 
 There are all types of companies, and they all have at least one share. They're not all growth assets; most will fail ("go to zero").
 
 There are all types of bonds. Corporate bonds, state municipal bonds, and federal government bonds. Short-, long-, and intermediate-term. Then there's the credit rating for the bond issuer; triple A, double A, and so on.
 
-We say stocks and bonds as shorthand for growth and negative correlation. We want something with the characteristics described. Sticking with an asset type, despite a change in historical characteristics, would be a [foolish consistency](https://en.wikipedia.org/wiki/Self-Reliance).
-
-Corporate equities historically have a positive real rate of return. Historically, negative correlation assets increase their real return rate when growth assets are decreasing in theirs. If this relationship changes over a long enough period, we might want to look for a different asset type. We'll go into depth on correlations in a [later section](#correlations).
+Corporate equities historically have a positive real rate. Historically, negative correlation assets increase their real rate when growth assets are decreasing in theirs. If this relationship changes over a long enough period, we might want to look for a different asset type. We'll go into depth on correlations in a [later section](#correlations).
 
 ## The sprinkles (low correlation assets)
 
 Primary characteristics:
 
-1. Performs better in inflationary environments.
-2. Historically, they have a low correlation with things in the other categories.
-3. Interest rates are in terms of APY and indicate excess money given to you.
+1. These are assets, so things you have.
+2. Historically, they have a low correlation with the other categories.
+3. More advantageous in inflationary environments.
 
 Secondary characteristics:
 
 1. Same as [growth assets](#the-second-brownie-growth-assets).
+2. In some cases, these things will not generate income.
 
-In the United States, two asset types that historically fit these characteristics are:
+In the US, there's an elephant in the room and a baby elephant:
 
-1. Commodities: A basic good often exchanged for similar goods. The goods include metals, energy, livestock and meat, and agriculture.
-2. Gold: A specific type of commodity that has been historically used as currency (or to back currencies); no longer the case in most contemporary economies. Gold does have some utility in electronics.
+1. Commodities (the elephant): A basic good often exchanged for similar goods. The goods include metals, energy, livestock and meat, and agriculture.
+2. Gold (the baby elephant): A specific type of commodity that has been historically used as currency (or to back currencies); no longer the case in most contemporary economies. Gold does have some utility in electronics.
 
-Primary things causing this layer to grow and shrink:
+Primary things causing sprinkles to grow and shrink:
 
 1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp).
 2. Selling some or buying more of the things.
 3. Appreciation and depreciation of those things.
 
-Almost the same list as growth and negative correlation, but notice we took out reinvesting dividends. Commodities typically don't pay a dividend. Further, when you sell them, they may be taxed differently than other types of assets. In this sense, they are less investment and more speculation [according to the definitions](/essays-and-editorials/finances/concepts/#investing-speculating-and-gambling-arent-the-same) laid out by J. David Stein.
+Almost the same list as growth and negative correlation, but notice we took out reinvesting dividends. Some commodities, like gold, don't pay a dividend. Further, when you sell them, they may be taxed differently than other types of assets. In this sense, they are less investment and more speculation [according to the definitions](/essays-and-editorials/finances/concepts/#investing-speculating-and-gambling-arent-the-same) laid out by J. David Stein.
+
+## One more thing on economic environments
+
+Notice the asset categories cover each of the four broad environments. When short-term assets are doing well, chances are low-correlation assets aren't, deflationary and inflationary, respectively. When growth assets are doing well, chances are negative-correlation assets aren't, growth and contraction, respectively.
+
+
 
 ## Compounding
 
@@ -360,9 +349,30 @@ We extracted the teeth. Almost 20 years and 3 more dentists later, the top wisdo
 
 It's difficult for humans to think long-term and exponentially. It's also difficult to understand and empathize with situations that aren't ours or those closest to us.
 
+Let's do one more table. This time, I'll give you a dollar a day and the 10 percent.
+
+|Day |On-hand |Dividends |Increase |New balance |
+|:--:|:------:|:--------:|:-------:|:----------:|
+|1   |0       |0         |1        |1           |
+|2   |1       |0.10      |1        |2.10        |
+|3   |2.10    |0.21      |1        |3.31        |
+|4   |3.31    |0.31      |1        |4.62        |
+|5   |4.62    |0.46      |1        |6.08        |
+|6   |6.08    |0.60      |1        |7.68        |
+|7   |7.68    |0.76      |1        |9.44        |
+|8   |9.44    |0.94      |1        |11.38       |
+|9   |11.38   |1.38      |1        |13.76       |
+|10  |13.76   |1.37      |1        |16.13       |
+
+We will stop here because, in 10 days, we've hit the tipping point.
+
+It's not the compounding that fuels everything. It's the compounding along with the continued contribution. Right now, each contribution of 1 dollar is roughly 1 percent of the total balance. Given enough time, at some point, the 1-dollar contribution will be less than 0.0001 percent.
+
 ## Correlations
 
-Two of the asset categories are in terms of correlation. Correlation is measured from -1 to 1. -1 means one of the things moves in the opposite direction of the other. 1 means both things move in the same direction. 0 means we're unsure in which direction one of them will move.
+Two of the asset categories are in terms of correlation. Correlation is measured from -1 to 1. -1 means one of the things moves in the opposite direction of the other. Positive 1 means both things move in the same direction. 0 means we're unsure which direction one of them will move; there doesn't seem to be a correlation.
+
+Consider a see-saw (or lever with the fulcrum dead center). If something is -1 compared to something else, as that something else moves, say, down, the other thing will move up the same distance. However, if something has a negative correlation of -0.5, it will move up half the distance the other side moved down. 
 
 Let's look at correlations of one asset type in each part of the dessert, not including the plate. We'll use the following proxies inside an asset correlation tool provided by Portfolio Visualizer:
 
