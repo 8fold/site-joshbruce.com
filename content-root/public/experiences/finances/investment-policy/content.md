@@ -88,42 +88,36 @@ Note: Each bullet aligns with my [financial character](/experiences/finances/).
 
 I have created multiple allocations based on the portfolio's net worth using the Coast FI stack above:
 
-- Mark 0: Coast FI 1
+- Mark 1: Coast FI 1
 	- Liabilities: 0 to 1 percent; target of 0.
 	- Short-term assets: 3 to 9 percent; target of 6.
 	- Growth assets: 91 to 97 percent; target of 94.
 	- Negative correlation assets: 0 to 1 percent; target of 0.
 	- Low correlation assets; target of 0.
-- Mark 0.2: Coast FI 2
+- Mark 2: Coast FI 2
 	- Liabilities: same.
 	- Short-term assets: same.
 	- Growth assets: 74 to 97 percent; target of 92.
 	- Negative correlation assets: 0 to 2 percent; target of 2.
 	- Low correlation assets: same.
-- Mark 0.4: Coast FI 3
+- Mark 3: Coast FI 3
 	- Liabilities: same.
 	- Short-term assets: same.
 	- Growth assets: 67 to 97 percent; target of 84.
 	- Negative correlation assets: 6 to 10 percent; target of 8.
 	- Low correlation assets: 0 to 2 percent; target of 2.
-- Mark 0.6: Coast FI 4
-	- Liabilities: same.
-	- Short-term assets: same.
-	- Growth assets: 59 to 89 percent; target of 74.
-	- Negative correlation assets: 13 to 19 percent; target of 16
-	- Low correlation assets: 3 to 5 percent; target of 4
-- Mark 0.8: Coast FI 4
+- Mark 4: Coast FI 4
 	- Liabilities: same.
 	- Short-term assets: same.
 	- Growth assets: 48 to 72 percent; target of 60.
 	- Negative correlation assets: 17 to 25 percent; target of 21.
 	- Low correlation: 10 to 16 percent; target of 13.
-- Mark 1: Coast FI 4 and beyond
+- Mark 5: Coast FI 5 and beyond
 	- Liabilities: same.
 	- Short-term assets: same.
 	- Growth assets: 40 to 60 percent; target of 50.
 	- Negative correlation assets: 20 to 30 percent; target of 25.
-	- Low correlation assets: 15 to 23 percent; target of 19
+	- Low correlation assets: 15 to 23 percent; target of 19.
 
 This progression ensures I reduce volatility based on the estimated value of the portfolio, not my age or calendar year.
 
