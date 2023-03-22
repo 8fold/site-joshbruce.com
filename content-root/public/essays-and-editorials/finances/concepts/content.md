@@ -73,9 +73,9 @@ Finally, just because I use cash to purchase something doesn’t mean I’ve mad
 
 These three principles are attributed to [Jack Bogle](https://en.wikipedia.org/wiki/John_C._Bogle) (founder of [Vanguard](https://investor.vanguard.com/corporate-portal/)) and [Ray Dalio](https://en.wikipedia.org/wiki/Ray_Dalio) (from the hedge fund [Bridgewater Associates](https://en.wikipedia.org/wiki/Bridgewater_Associates)). (I credit Frank Vasquez from [Risk Parity Radio](https://www.riskparityradio.com) for introducing me to these.)
 
-The **macro-allocation principle** says that portfolios made of similar asset classes in similar proportions will act over 90 percent the same. All 100 percent stock portfolios will act over 90 percent the same, for example. Changes to the proportions within the asset classes are somewhat moot regarding returns, gains, losses, and so on.
+The **macro-allocation principle** says that portfolios made of similar asset classes in similar proportions will act over 90 percent the same. For example, all 100 percent stock portfolios will act over 90 percent the same. Changes to the proportions within the asset classes are somewhat moot regarding returns, gains, losses, and so on.
 
-The **Holy Grail of Investing** says that asset classes have an environment where they perform best. Consider a quad chart. The first column is growth, the second column is inflation. The top row is rising, and the bottom row is falling. The midpoint is the market expectation of what will happen next. According to this principle, we want to evenly distribute risk across the 4 quadrants by choosing different asset classes that perform well in each environment, setting proportions to our comfort and the risk of each asset type. We do this by looking at the historical performance of each asset type and the correlation between asset types. From historical performance analysis, we find equities do better when the expectation is rising growth. Further, we find intermediate- and long-term treasuries (at least in The United States) have the greatest negative correlation to equities and do better in falling growth and inflationary environments. Commodities also do better in rising growth and inflation environments; however, they tend to have a low correlation with equities and treasuries.
+The **Holy Grail of Investing** says that asset classes have an environment where they perform best. Consider a quad chart. The first column is growth, and the second column is inflation. The top row is rising, and the bottom row is falling. The midpoint is the market expectation of what will happen next. According to this principle, we want to evenly distribute risk across the 4 quadrants by choosing different asset classes that perform well in each environment, setting proportions to our comfort and the risk of each asset type. We do this by looking at the historical performance of each asset type and the correlation between asset types. From historical performance analysis, we find equities do better when the expectation is rising growth. Further, we find intermediate- and long-term treasuries (at least in The United States) have the greatest negative correlation to equities and do better in falling growth and inflationary environments. Commodities also do better in rising growth and inflation environments; however, they tend to have a low correlation with equities and treasuries.
 
 The **simplicity principle** says we want to minimize the number of securities and fees to balance preservation and return of capital; simple.
 
@@ -318,16 +318,16 @@ Asset allocation
 :    The proportion of each asset class within a portfolio.
 
 Basis point
-:    One-hundredth of one percent. *Increasing or decreasing by one basis point is 0.01 percent change in either direction.*
+:    One-hundredth of one percent. *Increasing or decreasing by one basis point is a 0.01 percent change in either direction.*
 
 Bonds
-:    A loan issued by a company or government whereby you purchase the bond with a promise of repayment by the company or government with interest. *Bonds are different than shares because shares imply some form of ownership, while bonds do not.*
+:    A loan issued by a company or government whereby you purchase the bond with a promise of repayment by the company or government with interest. *Bonds differ from shares because shares imply some form of ownership, while bonds do not.*
 
 Capital gain
-:    An increase in value of an asset compared to the cost basis.
+:    An increase in the value of an asset compared to the cost basis.
 
 Capital loss
-:    A decrease in value of an asset compared to the cost basis.
+:    A decrease in the value of an asset compared to the cost basis.
 
 Char of accounts
 :    A categorized list of all accounts used in bookkeeping.
@@ -336,22 +336,22 @@ Cost basis
 :    The amount of money it took to acquire an asset.
 
 Diversification
-:    Holding multiple assets wherein some assets may increase in value while others decrease in value at different degrees or direction. *One asset may increase while the other decreases or vice versa, or, one asset will rise or fall in fair market value faster or slower than another.*
+:    Holding multiple assets wherein some assets may increase in value while others decrease at different degrees or directions. *One asset may increase while the other decreases or vice versa, or one asset will rise or fall in fair market value faster or slower than another.*
 
-Dollar cost averaging
-:    Spending an amount on a regular basis on investments regardles of the current fair market value of the security.
+Dollar-cost averaging
+:    Spending an amount regularly on investments regardless of the current fair market value of the security.
 
 Expense ratio
-:    The ongoing cost for managing a mutual fund. *The percent is a per year number, however, the percent is usually divided by roughly 365 to generate a Daily percent, which is charged daily.*
+:    The ongoing cost of managing a mutual fund. *The percent is a per-year number. However, the percent is usually divided by roughly 365 to generate a Daily percent, which is charged daily.*
 
 Fair market value
-:    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset; usually based on recent sales of similar assets.
+:    The amount you can reasonably expect to receive when converting an asset into cash through the sale of that asset, usually based on recent sales of similar assets.
 
 Frontload
-:    Associated to accounts with contribution limits (ex. 6,000 USD per year) and refers to cotributing as much as possible as early as possible.
+:    Associated to accounts with contribution limits (ex. 6,000 USD per year) and refers to contributing as much as possible as early as possible.
 
 Gambling
-:    You trade currency to participate in an activity or for an asset with a high probability of losing money. *In some cases this may feel like purchasing a product, like a car, which we don’t tend to view as gambling in the way we would purchasing a lottery ticket.* (Compare to saving, investing, and speculating.)
+:    You trade currency to participate in an activity or for an asset with a high probability of losing money. *In some cases, this may feel like purchasing a product, like a car, which we don’t tend to view as gambling in the way we would purchasing a lottery ticket.* (Compare to saving, investing, and speculating.)
 
 Hedge fund
 :    A privately available mutual fund.
