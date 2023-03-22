@@ -12,40 +12,49 @@ I want to be able to cater to the most constrained with my time and knowledge. T
 
 I want to travel and fade into the background whenever I want without worrying about where my next meal comes from.
 
-Coast FI stack revisited on April 16, 2022:
+Coast [.Financial Independence](FI) stack revisited on March 22, 2023:
 
 - The FI number is 750,000 [.United States dollars](USD), higher than the initial estimate of 500,000 USD.
 - This is because estimated spending in retirement was increased to 30,000 USD based on 2021 [tracking](/essays-and-editorials/finances/budgeting/).
 
-- Coast FI 1: 221,477 USD
-    1. Starting at age: 42
-    2. Achieved by age: 44
-    3. Retire by age: 67
-    4. Starting net worth of 126,000 USD
-- Coast FI 2: 269,207 USD
-    1. Starting at age: 44
+- Coast FI 1: 240,489 USD
+    1. Starting at age: 43
     2. Achieved by age: 45
-    3. Retire by age: 65
-    4. Starting net worth of 221,477 USD
-- Coast FI 3: 360,763 USD
+    3. Retire by age: 72
+    4. Starting net worth of 188,309 USD
+- Coast FI 2: 281,338 USD
     1. Starting at age: 45
-    2. Achieved by age: 47
+    2. Achieved by age: 46
+    3. Retire by age: 70
+    4. Starting net worth of 240,489 USD
+- Coast FI 3: 355,982 USD
+    1. Starting at age: 46
+    2. Achieved by age: 48
+    3. Retire by age: 65
+    4. Starting net worth of 281,338 USD
+- Coast FI 4: 468,448 USD
+    1. Starting at age: 48
+    2. Achieved by age: 51
     3. Retire by age: 60
-    4. Starting net worth of 269,207 USD
-- Coast FI 4: 507,630 USD
-    1. Starting at age: 47
-    2. Achieved by age: 50
-    3. Retire by age: 55
-    4. Starting net worth of 360,763 USD
-- Coast FI 5: 647,878 USD
-    1. Starting at age: 50
-    2. Achieved by age: 53
-    3. Retire by age: 53
-    4. Starting net worth of 507,630 USD
+    4. Starting net worth of 355,982 USD
+- Coast FI 5: 592,736 USD
+    1. Starting at age: 51
+    2. Achieved by age: 54
+    3. Retire by age: 57
+    4. Starting net worth of 468,448 USD
+- FI: 750,000 USD
+    1. Starting at age: 54
+    2. Achieved by age: 57
+    3. Retire by age: 57
+    4. Starting net worth of 592,736 USD
 
-This adjusts my original target from FI by 52 to FI by 53. I'm hoping I can increase revenue m outside the day job.
+As I review this I'm struck by how it changes. So, I've decided to capture the changes:
 
-Would you like support my work and goals?
+- 2021: FI by 52.
+- 2022: FI by 53.
+- 2023: FI by 57.
+
+All 3 years I achieved my saving and investing goals from a contribution perspective. However, 2022 was rough and we haven't recovered.
 
 ## Investments
 
