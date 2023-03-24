@@ -16,45 +16,49 @@ Coast [.Financial Independence](FI) stack revisited on March 22, 2023:
 
 - The FI number is 750,000 [.United States dollars](USD), higher than the initial estimate of 500,000 USD.
 - This is because estimated spending in retirement was increased to 30,000 USD based on 2021 [tracking](/essays-and-editorials/finances/budgeting/).
+- Setting the rate of return to 7 percent.
+- Safe withdrawal rate of 4 percent (conservative).
+- Inflation set at 3 percent.
+- I used the net income from Wave for the previous year rounded down to the nearest 10,000 USD divided by 12 for the monthly contribution amount.
 
-- Coast FI 1: 240,489 USD
+- Coast FI 1: 256,521 USD
     1. Starting at age: 43
-    2. Achieved by age: 45
+    2. Achieved by age: 44
     3. Retire by age: 72
-    4. Starting net worth of 188,309 USD
-- Coast FI 2: 281,338 USD
-    1. Starting at age: 45
-    2. Achieved by age: 46
+    4. Starting net worth of 188,310 USD
+- Coast FI 2: 288,551 USD
+    1. Starting at age: 44
+    2. Achieved by age: 45
     3. Retire by age: 70
-    4. Starting net worth of 240,489 USD
-- Coast FI 3: 355,982 USD
-    1. Starting at age: 46
-    2. Achieved by age: 48
+    4. Starting net worth of 256,521 USD
+- Coast FI 3: 365,110 USD
+    1. Starting at age: 45
+    2. Achieved by age: 47
     3. Retire by age: 65
-    4. Starting net worth of 281,338 USD
-- Coast FI 4: 468,448 USD
-    1. Starting at age: 48
-    2. Achieved by age: 51
+    4. Starting net worth of 288,551 USD
+- Coast FI 4: 480,459 USD
+    1. Starting at age: 47
+    2. Achieved by age: 49
     3. Retire by age: 60
-    4. Starting net worth of 355,982 USD
-- Coast FI 5: 592,736 USD
-    1. Starting at age: 51
-    2. Achieved by age: 54
-    3. Retire by age: 57
-    4. Starting net worth of 468,448 USD
+    4. Starting net worth of 365,110 USD
+- Coast FI 5: 632,252 USD
+    1. Starting at age: 49
+    2. Achieved by age: 52
+    3. Retire by age: 55
+    4. Starting net worth of 480,459 USD
 - FI: 750,000 USD
-    1. Starting at age: 54
-    2. Achieved by age: 57
-    3. Retire by age: 57
-    4. Starting net worth of 592,736 USD
+    1. Starting at age: 52
+    2. Achieved by age: 54
+    3. Retire by age: 54
+    4. Starting net worth of 632,252 USD
 
-As I review this I'm struck by how it changes. So, I've decided to capture the changes:
+Reviewing the Coast FI stack, I'm struck by how it changes. So, I've decided to capture the changes:
 
 - 2021: FI by 52.
 - 2022: FI by 53.
-- 2023: FI by 57 - increased initial retirement age to 72.
+- 2023: FI by 54 - increased initial retirement age to 72.
 
-All 3 years I achieved my saving and investing goals from a contribution perspective. However, 2022 was rough and we haven't recovered.
+All 3 years, I achieved my saving and investing goals from a contribution perspective. However, 2022 was rough, and we haven't recovered. 
 
 ## Investments
 
@@ -97,7 +101,7 @@ Note: Each bullet aligns with my [financial character](/experiences/finances/).
 
 I have created multiple allocations based on the portfolio's net worth using the Coast FI stack above:
 
-- Mark 1: Coast FI 1
+- Mark 1.1: Coast FI 1
 	- Liabilities: 0 to 1 percent; target of 0.
 	- Short-term assets: 3 to 9 percent; target of 6.
 	- Growth assets: 91 to 97 percent; target of 94.
@@ -105,34 +109,34 @@ I have created multiple allocations based on the portfolio's net worth using the
 	- Low correlation assets; target of 0.
 - Mark 2: Coast FI 2
 	- Liabilities: same.
-	- Short-term assets: same.
-	- Growth assets: 74 to 97 percent; target of 92.
-	- Negative correlation assets: 0 to 2 percent; target of 2.
-	- Low correlation assets: same.
+	- Short-term: same.
+	- Growth: 74 to 97 percent; target of 92.
+	- Negative correlation: 0 to 2 percent; target of 2.
+	- Low correlation: same.
 - Mark 3: Coast FI 3
 	- Liabilities: same.
-	- Short-term assets: same.
-	- Growth assets: 67 to 97 percent; target of 84.
-	- Negative correlation assets: 8 to 12 percent; target of 10.
-	- Low correlation assets: 0 to 2 percent; target of 0.
+	- Short-term: same.
+	- Growth: 67 to 97 percent; target of 84.
+	- Negative correlation: 8 to 12 percent; target of 10.
+	- Low correlation: 0 to 2 percent; target of 0.
 - Mark 4: Coast FI 4
 	- Liabilities: same.
-	- Short-term assets: 8 to 12 percent; target 10.
-	- Growth assets: 56 to 84 percent; target of 70.
-	- Negative correlation assets: same.
+	- Short-term: 8 to 12 percent; target 10.
+	- Growth: 56 to 84 percent; target of 70.
+	- Negative correlation: same.
 	- Low correlation: 8 to 12 percent; target of 10.
 - Mark 5: Coast FI 5 and beyond
 	- Liabilities: same.
-	- Short-term assets: 16 to 24; target of 20.
-	- Growth assets: 32 to 48 percent; target of 40.
-	- Negative correlation assets: 16 to 24 percent; target of 20.
-	- Low correlation assets: 16 to 24 percent; target of 20.
+	- Short-term: 16 to 24; target of 20.
+	- Growth: 32 to 48 percent; target of 40.
+	- Negative correlation: 16 to 24 percent; target of 20.
+	- Low correlation: 16 to 24 percent; target of 20.
 
 This progression ensures I reduce volatility based on the estimated value of the portfolio, not my age or calendar year.
 
 I have a [high-risk tolerance and capacity](/essays-and-editorials/finances/investment-policies/), partly because I don't think I'll stop earning income, and I'm content with my minimal lifestyle.
 
-As of this writing, I can cashflow my lifestyle without needing assistance from the portfolio. I enjoy what I do most days, so I don't see my income dropping dramatically for the next few years at least.
+As of this writing, I can cashflow my lifestyle without needing assistance from the portfolio. I enjoy what I do most days, so I don't see my income dropping dramatically for the next few years, at least.
 
 ### Rebalancing the portfolio
 
