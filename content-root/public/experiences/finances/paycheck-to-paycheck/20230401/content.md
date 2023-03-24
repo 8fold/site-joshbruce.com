@@ -4,66 +4,24 @@
 
 {!! data !!}
 
-For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half. Put away for the future Roth [.Individual Retirement Account](IRA) contribution. Was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. Sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
+For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half. I put away for the future Roth [.Individual Retirement Account](IRA) contribution. Was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. Sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
 
 It’s been a while since I discussed where each fund is compared to its target; the list above is an aggregate of the funds. Let’s talk fund allocations! (In a [later section](#fund-allocations) because it got longer than anticipated.)
 
 ## Fund allocations
 
-The total market fund is above its target and below its high guardrail. The extended market fund is above its target and below its high guardrail. The multi-factor fund is below its target and above its low guardrail. The S&P 500 fund is below its target and above its minimum guardrail.
+This turned into a whole thing.
 
-I’m still trying to keep the S&P 500 out of my taxable brokerage account because I’m still debating whether it’s part of the core strategy. If we think of the strategy from the inside-out, then it’s pretty much in the order of the previous paragraph: total stock market, extended market, multi-factor, and S&P 500. So, if I were to remove funds from the portfolio, I’d go in reverse order. And each fund helps accomplish a specific goal, and those goals may change.
+I'll try to present this logically, but getting here was an iterative process of examination, realization, and rabbit holes.
 
-The total stock market would be the bare minimum holding. It creates a broad base across every New York Stock Exchange equity traded. I aim to be relatively evenly distributed across small-, mid-, and large-cap companies, where the extended market fund comes in.
+At the fund level, the current fund allocation is as follows:
 
-In proportion to the total stock market fund, the extended market fund gives me a relatively even distribution across market capitalizations. The extended market fund is a total stock market fund without large-cap companies. If I could only pick 2 funds, they’d be the total stock market and extended market funds. Another goal is to be roughly evenly distributed across value, blend, and growth; this is independent of the small-, mid-, and large-cap goals in that I do *not* have the goal of being 11 percent in each of the 9 combinations. The value, blend, and growth goal bring in the multi-factor fund.
+1. 13 percent in the total stock market fund: Currently above the target and below its high guardrail, which automatically means it's below the maximum.
+2. 11 percent in the S&P 500 fund: Currently above its minimum and below the low guardrail.
+3. 45 percent in the extended market fund: Currently above the target and below the high guardrail.
+4. 24 percent in the multi-factor fund: Currently below the target and above its low guardrail.
 
-The total stock market and extended market funds are capitalization-weighted; the higher the company’s valuation, the more money, as a percentage, goes to that company per contribution. Historically this means the funds are mostly blended with a tilt toward growth. The multi-factor fund I chose is basically a total value fund, mainly mid-cap, with a slight tilt toward small-cap. If I only had 3 funds, it’d be the total stock market, the extended market, and the multi-factor fund. As I buy shares in the multi-factor fund, the portfolio starts tilting away from growth and toward value. With that said, these three funds can end up tilting the portfolio toward small-cap. Tilting more toward small-cap isn’t necessarily bad; it’s just not a goal, which is 1 reason the S&P 500 fund comes into play.
-
-The S&P 500 fund is there for 2 reasons. First, it’s the 1 I’ve found most often available in employer-sponsored retirement accounts, like a 401k, regardless of the other options. Second, it’s a large-cap blend fund. The first reason means it will most likely be part of the portfolio no matter what, and the second reason opens the door to managing small- and mid-cap exposure more easily. If the portfolio starts sliding toward small-cap a bit too much, I can buy more shares in the S&P 500. If the portfolio seems heavy in the mid-cap arena, I can buy more of the S&P 500.
-
-I want to avoid the S&P 500 fund being in the taxable brokerage account because it’s not part of the core and would be the first to go. Further, I want to keep things simple. Simplicity is one of [my core values](/experiences/the-self/#values) and is one of the [fundamental principles of investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing).
-
-Switching the 401k to be 50 percent S&P 500 and 50 percent extended market seems to be helping get the S&P 500 moving toward its target faster. It’s only been a couple of paychecks since making the shift, and the extended market has dropped from 66 percent to 61 percent in the 401k. 
-
-Contributing mainly to the multi-factor fund is also helping pull the extended market and total market funds down toward their respective targets.
-
-This got me thinking and is [continued below](#asset-allocations-and-fund-allocations-continued).
-
-## Health and wellness
-
-Annual bloodwork came back clear, except the uric acid levels shot up to almost 7. I'm back to taking allopurinol. Frustrating.
-
-I started doing some daily exercise movements again, except for the plank and the regular pushups.
-
-## Asset allocations and fund allocations continued
-
-Refining [The Universal Portfolio](/essays-and-editorials/finances/the-universal-portfolio/) concept made me dig deeper into The Holy Grail of Investing concept. Reflecting on the exploration results and learning how to use the tools better has me wanting to change the progression of portfolios.
-
-My goals as of this writing, primarily when it comes to equities:
-
-1. Roughly an even distribution across small-, mid-, and large-cap equities (growth).
-2. Roughly an even distribution across value, blend, and growth (growth).
-3. Maintain 6 percent cash (short-term assets).
-
-I revisited Portfolio Charts and [The Golden Butterfly](https://portfoliocharts.com/portfolio/golden-butterfly/) portfolio. The [withdrawal rates chart for The Golden Butterfly](https://portfoliocharts.com/portfolio/withdrawal-rates/) shows a safe withdrawal rate and perpetual withdrawal rate of about 8 percent for a 30-year retirement. The [withdrawal rates chart for the original Mark 1](https://portfoliocharts.com/portfolio/withdrawal-rates/?shortcode=ZUSAXAB09AC05AD10AH12AI11AJ05AK25AM06GA06GB11Z) shows a safe withdrawal rate and perpetual withdrawal rate of about 5 percent for a 30-year retirement. 
-
-The rate of return isn't one of the primary goals. However, I remembered that The Golden Butterfly portfolio did wind up with a roughly even distribution across market capitalizations, which *is* one of the goals. I got curious.
-
-I pulled [Morningstar](https://www.morningstar.com) data for the [Vanguard Small-cap Value [.Exchange-Traded Fund](ETF)](https://www.morningstar.com/etfs/arcx/vbr/portfolio) and used the spreadsheet to create the fund allocation for The Golden Butterfly. Here are the results for the style boxes:
-
-1. 34 percent value,
-2. 45.5 percent blend, 
-3. 20.5 percent growth,
-4. 36 percent large,
-5. 29.5 percent mid, and
-6. 34.5 percent small.
-
-The Golden Butterfly could almost achieve the goals by itself, the odd one being that growth would be 20 percent, not closer to 30. 
-
-I ran a [Portfolio Visualizer comparison](https://www.portfoliovisualizer.com/backtest-portfolio?s=y&timePeriod=4&startYear=1985&firstMonth=1&endYear=2023&lastMonth=12&calendarAligned=true&includeYTD=false&initialAmount=10000&annualOperation=0&annualAdjustment=0&inflationAdjusted=true&annualPercentage=0.0&frequency=4&rebalanceType=1&absoluteDeviation=5.0&relativeDeviation=25.0&leverageType=0&leverageRatio=0.0&debtAmount=0&debtInterest=0.0&maintenanceMargin=25.0&leveragedBenchmark=false&reinvestDividends=true&showYield=false&showFactors=false&factorModel=3&benchmarkSymbol=VTI&portfolioNames=true&portfolioName1=The+Golden+Butterfly+-+modified&portfolioName2=Mark+0&portfolioName3=Total+stock+market&symbol1=VTI&allocation1_1=47&allocation1_2=13&allocation1_3=94&symbol2=VBR&allocation2_1=47&allocation2_2=0&symbol3=VOO&allocation3_2=11&symbol4=VXF&allocation4_2=45&symbol5=VFMF&allocation5_2=25&symbol6=GLDM&allocation6_1=0&allocation6_2=0&allocation6_3=0&symbol7=VGSH&allocation7_1=6&allocation7_2=0&allocation7_3=6&symbol8=VGLT&allocation8_1=0&allocation8_2=0&allocation8_3=0&symbol9=CASHX&allocation9_2=6) between the Golden Butterfly equity portion with 6 percent cash and the Mark 0 as is. As expected, they performed almost equally, at least with the 4 years of data available given the multi-factor fund. 
-
-I started looking at the growth assets in the Mark 0 portfolio and was curious if I could get to a similar mix with 3 core funds instead of 4; simplification. I also noticed I had too many progressions due to an off-by-1 error (starting at 0 instead of 1), so, to reduce confusing myself any further, I renamed the Mark portfolios to match the Coast FI stack:
+Refining [The Universal Portfolio](/essays-and-editorials/finances/the-universal-portfolio/) concept made me dig deeper into The Holy Grail of Investing concept, and I [updated the financial concepts essay accordingly](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). While not directly related, I revisited my Coast FI stack and updated the [investment policy](/experiences/finances/investment-policy/#my-why) to reflect the update (more on that below). I discovered the [portfolio progressions](/experiences/finances/investment-policy/#asset-allocation) didn't match the Coast FI stack; stupid [off-by-one errors](https://en.wikipedia.org/wiki/Off-by-one_error), I blame [0-based numbering](https://en.wikipedia.org/wiki/Zero-based_numbering). I decided to rename the portfolios to just align directly with the Coast FI stack:
 
 1. Mark 0 became Mark 1.
 2. Mark 0.2 became Mark 2.
@@ -72,31 +30,39 @@ I started looking at the growth assets in the Mark 0 portfolio and was curious i
 5. Mark 0.8 became Mark 4.
 6. Mark 1 became Mark 5.
 
-Now I can follow standard [semantic versioning](https://semver.org) (too much time as a developer).
+(In my defense, I think the Mark 5 portfolio was for when I achieved the FI number. But that was just confusing, apparently.)
 
-I started plugging numbers into the spreadsheet. According to the spreadsheet, I ended up here to achieve a similar mix of styles as The Golden Butterfly.
+I won't move to the Mark 2 targets until I reach the Coast FI 1 value in the portfolio. Right now, we're still planted in the Mark 1 portfolio. This examination and improved understanding led me back to some of the tools.
 
-1. 13 percent total stock market fund.
-2. 53 percent small-cap value fund.
-3. 32 percent S&P 500 fund.
-4. 1 percent extended market fund.
-5. 1 percent multi-factor fund.
+My goals as of this writing, primarily when it comes to equities:
 
-To validate the spreadsheet, I ran another [Portfolio Visualizer comparison](https://www.portfoliovisualizer.com/backtest-portfolio?s=y&timePeriod=4&startYear=1985&firstMonth=1&endYear=2023&lastMonth=12&calendarAligned=true&includeYTD=false&initialAmount=10000&annualOperation=0&annualAdjustment=0&inflationAdjusted=true&annualPercentage=0.0&frequency=4&rebalanceType=1&absoluteDeviation=5.0&relativeDeviation=25.0&leverageType=0&leverageRatio=0.0&debtAmount=0&debtInterest=0.0&maintenanceMargin=25.0&leveragedBenchmark=false&reinvestDividends=true&showYield=false&showFactors=false&factorModel=3&benchmark=-1&benchmarkSymbol=VTI&portfolioNames=true&portfolioName1=The+Golden+Butterfly+-+Mark+1+cash&portfolioName2=Mark+1.1&portfolioName3=Mark+1&symbol1=VTI&allocation1_1=47&allocation1_2=12.22&allocation1_3=13&symbol2=VBR&allocation2_1=47&allocation2_2=49.82&symbol3=VOO&allocation3_2=30.08&allocation3_3=11&symbol4=VXF&allocation4_2=0.94&allocation4_3=45&symbol5=VFMF&allocation5_2=0.94&allocation5_3=25&symbol6=CASHX&allocation6_1=6&allocation6_2=6&allocation6_3=6) between:
-1. the Golden Butterfly equity fund allocation with cash,
-2. the proposed equity fund allocation with cash for Mark 1.1, and
-3. Mark 1. 
+1. Roughly an even distribution across small-, mid-, and large-cap equities (growth).
+2. Roughly an even distribution across value, blend, and growth (growth).
+3. Maintain 6 percent cash (short-term assets).
 
-The performance was roughly the same, as expected, given it was mostly equities. However, Mark 1 did perform a little better during the 2021 runup before normalizing in 2022. The exposures were also roughly the same, as expected, given the numbers in the spreadsheet were very close as well. I set a benchmark using a total stock market fund and found it performed better than all three during the 2021 runup before normalizing in 2022.
+(Goals 1 and 2 are independent; therefore, roughly 33 percent for each set of 3, not 11 percent for each pairing.)
 
-I ran [another comparison](https://www.portfoliovisualizer.com/backtest-portfolio?s=y&timePeriod=4&startYear=1985&firstMonth=1&endYear=2023&lastMonth=12&calendarAligned=true&includeYTD=false&initialAmount=10000&annualOperation=0&annualAdjustment=0&inflationAdjusted=true&annualPercentage=0.0&frequency=4&rebalanceType=1&absoluteDeviation=5.0&relativeDeviation=25.0&leverageType=0&leverageRatio=0.0&debtAmount=0&debtInterest=0.0&maintenanceMargin=25.0&leveragedBenchmark=false&reinvestDividends=true&showYield=false&showFactors=false&factorModel=3&benchmark=-1&benchmarkSymbol=VTI&portfolioNames=true&portfolioName1=The+Golden+Butterfly+-+Mark+5+cash&portfolioName2=Mark+5&symbol1=VTI&allocation1_1=20&allocation1_2=6&symbol2=VBR&allocation2_1=20&allocation2_2=21&symbol3=VOO&allocation3_2=13&symbol4=VXF&symbol5=VFMF&symbol6=CASHX&allocation6_1=6&allocation6_2=6&symbol7=VGSH&allocation7_1=14&allocation7_2=14&symbol8=VGLT&allocation8_1=20&allocation8_2=20&symbol9=GLDM&allocation9_1=20&allocation9_2=20), this time with:
+I looked at [The Golden Butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/) when I first started down the risk parity approach to portfolio construction. I thought it was viable because it tends to satisfy the first goal. I didn't go with it because according to the [portfolio matrix](https://portfoliocharts.com/portfolio/portfolio-matrix/?shortcode=ZUSAXAB15AC03AD08AH11AI09AJ04AK25AM06GA06GB13Z) comparison showed my portfolio ranked a bit higher. This was incorrect due to my understanding of the tools. Even though the Mark 1 portfolio performs similarly in most areas, my increased understanding of the tool made me revisit both portfolios under the withdrawal rates chart for both portfolios.
 
-1. the full Golden Butterfly and 
-2. a proposed Mark 5. 
+The [withdrawal rates chart for The Golden Butterfly](https://portfoliocharts.com/portfolio/withdrawal-rates/) shows a safe withdrawal rate and perpetual withdrawal rate of about 8 percent for a 30-year retirement. The [withdrawal rates chart for the original Mark 1](https://portfoliocharts.com/portfolio/withdrawal-rates/?shortcode=ZUSAXAB09AC05AD10AH12AI11AJ05AK25AM06GA06GB11Z) shows a safe withdrawal rate and perpetual withdrawal rate of about 5 percent for a 30-year retirement. The rate of return isn't a primary goal; however, there are two concerns I'm starting to have:
 
-I swapped 6 percent cash for The Golden Butterfly and reduced short-term treasuries to 14 percent. As expected, both portfolios performed roughly the same.
+1. The S&P 500 fund seems to be something I can't get away from; can I make part of the core funds used?
+2. Can I accomplish the goals with fewer funds?
 
-The conclusion was that I could:
+I took the Morningstar data for a small-cap value fund and tested the equity portion of The Golden Butterfly portfolio in the spreadsheet:
+
+1. Value was at 34 percent.
+2. Blend was around 45 percent.
+3. Growth was around 20 percent.
+4. Large-cap was 36 percent.
+5. Mid-cap was around 29 percent.
+6. Small-cap was around 34 percent.
+
+Even though blend is a bit high compared to 33 percent and growth is a bit low compared to 33 percent, this seems acceptable. To validate the spreadsheet, I ran some backtests with Portfolio Visualizer, comparing the as-is Mark 1 portfolio and The Golden Butterfly (adding 6 percent cash and reducing the short-term treasuries by 6 percent—both are short-term assets, according to The Universal Portfolio). 
+
+According to the backtests, performance was roughly the same, as expected, given it was mostly equities. However, Mark 1 did perform a little better during the 2021 runup before normalizing in 2022. The exposures were also roughly the same, as expected, given the numbers in the spreadsheet were very close as well. I set a benchmark using a total stock market fund and found the total stock market performed better than all three during the 2021 runup before normalizing in 2022.
+
+The conclusion for The Golden Butterfly was that I could:
 
 1. achieve the primary goals, 
 2. possibly increase the withdrawal rate, 
@@ -105,9 +71,45 @@ The conclusion was that I could:
 5. increase the allocation to short-term assets, and 
 6. reduce expenses.
 
-Further, this established The Golden Butterfly as the benchmark for the Mark series of portfolios, with a deep fallback of the total stock market.
+A 6-degree win. The 6-degree win turned into 6 milestone fund allocations. I'll try and put off selling anything for as long as possible. In part because they're all equity funds in what I'll call the Mark 1.1 portfolio, so there shouldn't be drastic performance changes. Further, I'm trying to avoid selling things in general. Finally, I really don't want to sell anything that's down.
 
-The original set of Mark portfolios, using the new numbering scheme:
+I used the spreadsheet to work toward being between the low and high guardrails for the 3 funds.
+
+Milestone 1:
+
+- introduces the small-cap value fund, 
+- halts the multi-factor fund, and 
+- reduces the extended market fund. 
+
+Milestone 2: 
+
+- temporarily increases the total stock market target, 
+- reduces the extended market to the same percent as the multi-factor fund, and 
+- increases the target for the small-cap value and S&P 500 funds.
+
+Milestone 3:
+
+- increases the small-cap value, 
+- decreases the extended market and multi-factor funds, and 
+- increases the S&P 500; at this point, 7 of the 9 style boxes are near the target, and mid- and small-cap growth are above their maximums. 
+
+Milestone 4 increases the small-cap value and the S&P 500 while reducing the total market, the extended market, and the multi-factor funds. 
+
+Milestone 5 does the same thing. 
+
+Milestone 6 removes the extended market and multi-factor funds while increasing the small-cap value fund; at this point, there will only be 3 equity funds in the portfolio, and the mix will be similar to The Golden Butterfly portfolio. 
+
+The Golden Butterfly Portfolio uses 20 percent total stock market and 20 percent small-cap value. Because it appears I can't get away from the S&P 500 fund to get close to the same style distribution we end up with:
+
+1. 12 percent total stock market,
+2. 51 percent small-cap value, and
+3. 31 percent S&P 500.
+
+Those numbers are just the equity portion of the Mark 1.1 portfolio. I'd still have 6 percent short-term assets in the form of cash. 
+
+How does this change the Mark portfolios?
+
+Because we're using The Universal Portfolio, it doesn't change much for what we'll call Mark 1.1 and Mark 2. However, it would change the others. Let's look at the as-is Mark stack.
 
 - Mark 1: Coast FI 1
 	- Liabilities: 0 to 1 percent; target of 0.
@@ -140,49 +142,39 @@ The original set of Mark portfolios, using the new numbering scheme:
 	- Negative correlation assets: 20 to 30 percent; target of 25.
 	- Low correlation assets: 15 to 23 percent; target of 19.
 
-Luckily, because we're using The Universal Portfolio model, things don't change that much, despite many things changing under the hood.
+Compare this to the new stack; we don't change the names for the Mark 2 through 5 because they haven't been released yet (can you tell I do software development, even as a hobby?). (The differences are emphasized.)
 
 - Mark 1.1: Coast FI 1
-	- No change at the top-level, underlying fund allocation, and funds change.
+	- No change at the top level, underlying fund allocation, and funds change.
 - Mark 2: Coast FI 2
+	- No change at the top level. Uses the equity fund allocation from Mark 1.1.
 - Mark 3: Coast FI 3
 	- Liabilities: same.
-	- Short-term assets: same.
-	- Growth assets: 67 to 97 percent; target of 84.
-	- *Negative correlation assets: 8 to 12 percent; target of 10.*
-	- *Low correlation assets: 0 to 2 percent; target of 0.*
+	- Short-term: same.
+	- Growth: 67 to 97 percent; target of 84.
+	- *Negative correlation: 8 to 12 percent; target of 10.*
+	- *Low correlation: 0 to 2 percent; target of 0.*
 - Mark 4: Coast FI 4
 	- Liabilities: same.
-	- *Short-term assets: 8 to 12 percent; target 10.*
-	- Growth assets: 56 to 84 percent; target of 70.
-	- Negative correlation assets: same.
+	- *Short-term: 8 to 12 percent; target 10.*
+	- Growth: 56 to 84 percent; target of 70.
+	- Negative correlation: same.
 	- *Low correlation: 8 to 12 percent; target of 10.*
 - Mark 5: Coast FI 5 and beyond
 	- Liabilities: same.
-	- *Short-term assets: 16 to 24; target of 20.*
-	- *Growth assets: 32 to 48 percent; target of 40.*
-	- *Negative correlation assets: 16 to 24 percent; target of 20.*
-	- *Low correlation assets: 16 to 24 percent; target of 20.*
+	- *Short-term: 16 to 24; target of 20.*
+	- *Growth: 32 to 48 percent; target of 40.*
+	- *Negative correlation: 16 to 24 percent; target of 20.*
+	- *Low correlation: 16 to 24 percent; target of 20.*
 
-Let's look at the proposed fund allocations that make up the Mark 1 portfolio:
+Mark 2 and 3's low correlation targets stay at 0 percent. Mark 4 increases low correlation by introducing 10 percent gold (half of The Golden Butterfly's 20 percent) and brings short-term assets to 10 percent by introducing 4 percent short-term treasuries. Mark 5, from a Univeral Portfolio perspective, becomes the variation of The Golden Butterfly. I say variation only because, at this point, we're planning to modify short-term assets to include cash, and unless I can convince my employer to have a total stock market fund in the 401k plan, the S&P 500 will be there.
 
-1. 13 percent total stock market fund.
-2. 53 percent small-cap value fund.
-3. 32 percent S&P 500 fund.
-4. 1 percent extended market fund.
-5. 1 percent multi-factor fund.
+Of course, the world could change dramatically by the time any considerations for short-term treasuries and gold come into play.
 
-These would probably be the same equity fund targets until Mark 4 or 5; if things remain the same. Mark 4 or 5 would be something like:
+## Health and wellness
 
-1. 14 percent total stock market fund.
-2. 54 percent small-cap value fund.
-3. 32 percent S&P 500 fund.
+Annual bloodwork came back clear, except the uric acid levels shot up to almost 7. I'm back to taking allopurinol. Frustrating.
 
-Most likely from selling the extended market and multi-factor fund to purchase other assets. I hope the S&P 500 fund will only be in the tax-deferred accounts. As I spend down the tax-deferred accounts, the internal fund allocations would begin shifting to:
-
-1. 50 percent total stock market fund.
-2. 50 percent small-cap value fund.
-
-Except for the decision to have 6 percent allocated to cash, I'd be fully in The Golden Butterfly portfolio. Of course, that'd be almost 27 years from now, so who knows, really?
+I started doing some daily exercise movements again, except for the plank and the regular pushups.
 
 {!! next-previous !!}
