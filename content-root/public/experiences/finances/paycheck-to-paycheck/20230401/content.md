@@ -4,9 +4,11 @@
 
 {!! data !!}
 
-For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half; wasn’t enough to place any orders. I put away for the future Roth [.Individual Retirement Account](IRA) contribution. Was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. Sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
+For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half; wasn’t enough to place any orders. I put away for the future Roth [.Individual Retirement Account](IRA) contribution in savings. I was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. I sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
 
 It’s been a while since I discussed where each fund is compared to its target; the list above is an aggregate of the funds. Let’s talk fund allocations! (In a [later section](#fund-allocations) because it got longer than anticipated.)
+
+I changed the future target mix in my 401k to the S&P 500 index fund to be 100 percent.
 
 ## Fund allocations
 
@@ -21,7 +23,7 @@ At the fund level, the current fund allocation is as follows:
 3. 45 percent in the extended market fund: Currently above the target and below the high guardrail.
 4. 24 percent in the multi-factor fund: Currently below the target and above its low guardrail.
 
-Refining [The Universal Portfolio](/essays-and-editorials/finances/the-universal-portfolio/) concept made me dig deeper into The Holy Grail of Investing concept, and I [updated the financial concepts essay accordingly](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). While not directly related, I revisited my Coast FI stack and updated the [investment policy](/experiences/finances/investment-policy/#my-why) to reflect the update (more on that below). I discovered the [portfolio progressions](/experiences/finances/investment-policy/#asset-allocation) didn't match the Coast FI stack; stupid [off-by-one errors](https://en.wikipedia.org/wiki/Off-by-one_error), I blame [0-based numbering](https://en.wikipedia.org/wiki/Zero-based_numbering). I decided to rename the portfolios to just align directly with the Coast FI stack:
+Refining [The Universal Portfolio](/essays-and-editorials/finances/the-universal-portfolio/) concept made me dig deeper into The Holy Grail of Investing concept, and I [updated the financial concepts essay accordingly](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). While not directly related, I revisited my Coast FI stack and updated the [investment policy](/experiences/finances/investment-policy/#my-why) to reflect the update (more on that below). I discovered the [portfolio progressions](/experiences/finances/investment-policy/#asset-allocation) didn't match the Coast FI stack; stupid [off-by-one errors](https://en.wikipedia.org/wiki/Off-by-one_error), I blame [0-based numbering](https://en.wikipedia.org/wiki/Zero-based_numbering). I decided to rename the portfolios to align directly with the Coast FI stack:
 
 1. Mark 0 became Mark 1.
 2. Mark 0.2 became Mark 2.
@@ -36,15 +38,15 @@ I won't move to the Mark 2 targets until I reach the Coast FI 1 value in the por
 
 My goals as of this writing, primarily when it comes to equities:
 
-1. Roughly an even distribution across small-, mid-, and large-cap equities (growth).
-2. Roughly an even distribution across value, blend, and growth (growth).
+1. Roughly an even distribution across small-, mid-, and large-cap equities (growth assets).
+2. Roughly an even distribution across value, blend, and growth (growth assets).
 3. Maintain 6 percent cash (short-term assets).
 
 (Goals 1 and 2 are independent; therefore, roughly 33 percent for each set of 3, not 11 percent for each pairing.)
 
-I looked at [The Golden Butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/) when I first started down the risk parity approach to portfolio construction. I thought it was viable because it tends to satisfy the first goal. I didn't go with it because according to the [portfolio matrix](https://portfoliocharts.com/portfolio/portfolio-matrix/?shortcode=ZUSAXAB15AC03AD08AH11AI09AJ04AK25AM06GA06GB13Z) comparison showed my portfolio ranked a bit higher. This was incorrect due to my understanding of the tools. Even though the Mark 1 portfolio performs similarly in most areas, my increased understanding of the tool made me revisit both portfolios under the withdrawal rates chart for both portfolios.
+I looked at [The Golden Butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/) when I first started down the risk parity approach to portfolio construction. I thought it was viable because it tends to satisfy the first goal. I didn't go with it because according to the [portfolio matrix](https://portfoliocharts.com/portfolio/portfolio-matrix/?shortcode=ZUSAXAB15AC03AD08AH11AI09AJ04AK25AM06GA06GB13Z) comparison showed my portfolio ranked a bit higher. This was incorrect due to my understanding of the tools. Even though the Mark 1 portfolio performs similarly in most areas, my increased understanding of the tool made me revisit the withdrawal rates chart for both portfolios.
 
-The [withdrawal rates chart for The Golden Butterfly](https://portfoliocharts.com/portfolio/withdrawal-rates/) shows a safe withdrawal rate and perpetual withdrawal rate of about 8 percent for a 30-year retirement. The [withdrawal rates chart for the original Mark 1](https://portfoliocharts.com/portfolio/withdrawal-rates/?shortcode=ZUSAXAB09AC05AD10AH12AI11AJ05AK25AM06GA06GB11Z) shows a safe withdrawal rate and perpetual withdrawal rate of about 5 percent for a 30-year retirement. The rate of return isn't a primary goal; however, there are two concerns I'm starting to have:
+The [withdrawal rates chart for The Golden Butterfly](https://portfoliocharts.com/portfolio/withdrawal-rates/) shows a safe withdrawal rate and perpetual withdrawal rate of about 8 percent for a 30-year retirement. The [withdrawal rates chart for the original Mark 1](https://portfoliocharts.com/portfolio/withdrawal-rates/?shortcode=ZUSAXAB09AC05AD10AH12AI11AJ05AK25AM06GA06GB11Z) shows a safe withdrawal rate and perpetual withdrawal rate of about 5 percent for a 30-year retirement. The rate of return and withdrawal rates isn't a primary goal; however, there are two concerns I'm starting to have:
 
 1. The S&P 500 fund seems to be something I can't get away from; can I make part of the core funds used?
 2. Can I accomplish the goals with fewer funds?
@@ -73,7 +75,7 @@ The conclusion for The Golden Butterfly was that I could:
 
 A 6-degree win. The 6-degree win turned into 6 milestone fund allocations. I'll try and put off selling anything for as long as possible. In part because they're all equity funds in what I'll call the Mark 1.1 portfolio, so there shouldn't be drastic performance changes. Further, I'm trying to avoid selling things in general. Finally, I really don't want to sell anything that's down.
 
-I used the spreadsheet to work toward being between the low and high guardrails for the 3 funds.
+I used the spreadsheet to step my way toward being between the low and high guardrails for the 3 funds.
 
 Milestone 1:
 
@@ -167,9 +169,15 @@ Compare this to the new stack; we don't change the names for the Mark 2 through 
 	- *Negative correlation: 16 to 24 percent; target of 20.*
 	- *Low correlation: 16 to 24 percent; target of 20.*
 
-Mark 2 and 3's low correlation targets stay at 0 percent. Mark 4 increases low correlation by introducing 10 percent gold (half of The Golden Butterfly's 20 percent) and brings short-term assets to 10 percent by introducing 4 percent short-term treasuries. Mark 5, from a Univeral Portfolio perspective, becomes the variation of The Golden Butterfly. I say variation only because, at this point, we're planning to modify short-term assets to include cash, and unless I can convince my employer to have a total stock market fund in the 401k plan, the S&P 500 will be there.
+Mark 2 and 3's low correlation targets stay at 0 percent. Mark 4 increases low correlation by introducing 10 percent gold (half of The Golden Butterfly's 20 percent) and brings short-term assets to 10 percent by introducing 4 percent short-term treasuries. Mark 5, from a Universal Portfolio perspective, becomes the variation of The Golden Butterfly. I say variation only because, at this point, we're planning to modify short-term assets to include cash, and unless I can convince my employer to have a total stock market fund in the 401k plan, the S&P 500 will be there.
 
 Of course, the world could change dramatically by the time any considerations for short-term treasuries and gold come into play.
+
+Toward the end of March, some dividends paid out. The newly introduced small-cap value fund was up the previous day and I was able to put in 3 limit orders:
+
+1. Market price;
+2. 2 cents over;
+3. 1 percent down;
 
 ## Health and wellness
 
