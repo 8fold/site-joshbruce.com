@@ -4,11 +4,13 @@
 
 {!! data !!}
 
-For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half; wasn’t enough to place any orders. I put away for the future Roth [.Individual Retirement Account](IRA) contribution in savings. I was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. I sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
+For this paycheck, short-term assets were down the farthest compared to its target (not including the S&P 500 fund). I reduced my regular investment amount by about half; it wasn’t enough to place any orders. I put away for the future Roth [.Individual Retirement Account](IRA) contribution in savings. I was able to reduce the amount going to the [.Health Savings Account](HSA) by a couple of dollars due to contributions to date. I sent the standard percentage to the tax-prep account. And the suggested transfer to the runway.
 
 It’s been a while since I discussed where each fund is compared to its target; the list above is an aggregate of the funds. Let’s talk fund allocations! (In a [later section](#fund-allocations) because it got longer than anticipated.)
 
 I changed the future target mix in my 401k to the S&P 500 index fund to be 100 percent.
+
+I received some dividends and was able to place some orders; only 2 market orders were executed.
 
 ## Fund allocations
 
@@ -32,9 +34,9 @@ Refining [The Universal Portfolio](/essays-and-editorials/finances/the-universal
 5. Mark 0.8 became Mark 4.
 6. Mark 1 became Mark 5.
 
-(In my defense, I think the Mark 5 portfolio was for when I achieved the FI number. But that was just confusing, apparently.)
+(In my defense, the Mark 5 portfolio was for when I achieved the FI number. But that wasn't very clear, apparently.)
 
-I won't move to the Mark 2 targets until I reach the Coast FI 1 value in the portfolio. Right now, we're still planted in the Mark 1 portfolio. This examination and improved understanding led me back to some of the tools.
+I'll move to the Mark 2 targets once I reach the Coast FI 1 value in the portfolio. Right now, we're still planted in the Mark 1 portfolio. This examination and improved understanding led me back to some of the tools.
 
 My goals as of this writing, primarily when it comes to equities:
 
@@ -44,11 +46,11 @@ My goals as of this writing, primarily when it comes to equities:
 
 (Goals 1 and 2 are independent; therefore, roughly 33 percent for each set of 3, not 11 percent for each pairing.)
 
-I looked at [The Golden Butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/) when I first started down the risk parity approach to portfolio construction. I thought it was viable because it tends to satisfy the first goal. I didn't go with it because according to the [portfolio matrix](https://portfoliocharts.com/portfolio/portfolio-matrix/?shortcode=ZUSAXAB15AC03AD08AH11AI09AJ04AK25AM06GA06GB13Z) comparison showed my portfolio ranked a bit higher. This was incorrect due to my understanding of the tools. Even though the Mark 1 portfolio performs similarly in most areas, my increased understanding of the tool made me revisit the withdrawal rates chart for both portfolios.
+I looked at [The Golden Butterfly portfolio](https://portfoliocharts.com/portfolio/golden-butterfly/) when I first started down the risk parity approach to portfolio construction. I thought it was viable because it tends to satisfy the first goal. I didn't go with it because according to the [portfolio matrix](https://portfoliocharts.com/portfolio/portfolio-matrix/?shortcode=ZUSAXAB15AC03AD08AH11AI09AJ04AK25AM06GA06GB13Z) comparison showed my portfolio ranked a bit higher. This was incorrect due to my understanding of the tools. Even though the Mark 1 portfolio performs similarly in most areas, my increased knowledge of the tool made me revisit the withdrawal rates chart for both portfolios.
 
 The [withdrawal rates chart for The Golden Butterfly](https://portfoliocharts.com/portfolio/withdrawal-rates/) shows a safe withdrawal rate and perpetual withdrawal rate of about 8 percent for a 30-year retirement. The [withdrawal rates chart for the original Mark 1](https://portfoliocharts.com/portfolio/withdrawal-rates/?shortcode=ZUSAXAB09AC05AD10AH12AI11AJ05AK25AM06GA06GB11Z) shows a safe withdrawal rate and perpetual withdrawal rate of about 5 percent for a 30-year retirement. The rate of return and withdrawal rates isn't a primary goal; however, there are two concerns I'm starting to have:
 
-1. The S&P 500 fund seems to be something I can't get away from; can I make part of the core funds used?
+1. The S&P 500 fund seems to be something I can't get away from; can I make it part of the core funds used?
 2. Can I accomplish the goals with fewer funds?
 
 I took the Morningstar data for a small-cap value fund and tested the equity portion of The Golden Butterfly portfolio in the spreadsheet:
@@ -62,18 +64,18 @@ I took the Morningstar data for a small-cap value fund and tested the equity por
 
 Even though blend is a bit high compared to 33 percent and growth is a bit low compared to 33 percent, this seems acceptable. To validate the spreadsheet, I ran some backtests with Portfolio Visualizer, comparing the as-is Mark 1 portfolio and The Golden Butterfly (adding 6 percent cash and reducing the short-term treasuries by 6 percent—both are short-term assets, according to The Universal Portfolio). 
 
-According to the backtests, performance was roughly the same, as expected, given it was mostly equities. However, Mark 1 did perform a little better during the 2021 runup before normalizing in 2022. The exposures were also roughly the same, as expected, given the numbers in the spreadsheet were very close as well. I set a benchmark using a total stock market fund and found the total stock market performed better than all three during the 2021 runup before normalizing in 2022.
+According to the backtests, performance was roughly the same, as expected, given it was primarily equities. However, Mark 1 did perform better during the 2021 runup before normalizing in 2022. The exposures were also roughly the same, as expected, given the numbers in the spreadsheet were very close as well.
 
 The conclusion for The Golden Butterfly was that I could:
 
 1. achieve the primary goals, 
 2. possibly increase the withdrawal rate, 
-3. reduce the number of funds, 
+3. reduce the number of funds (while making the S&P 500 a core part of the growth assets), 
 4. reduce the allocation to growth assets to 40 percent instead of 50, 
 5. increase the allocation to short-term assets, and 
 6. reduce expenses.
 
-A 6-degree win. The 6-degree win turned into 6 milestone fund allocations. I'll try and put off selling anything for as long as possible. In part because they're all equity funds in what I'll call the Mark 1.1 portfolio, so there shouldn't be drastic performance changes. Further, I'm trying to avoid selling things in general. Finally, I really don't want to sell anything that's down.
+A 6-degree win. The 6-degree win turned into 6 milestone fund allocations. I'll put off selling anything for as long as possible. In part because they're all equity funds in what I'll call the Mark 1.1 portfolio, so there shouldn't be drastic performance changes. Further, I'm trying to avoid selling things in general. Finally, I don't want to sell anything that's down.
 
 I used the spreadsheet to step my way toward being between the low and high guardrails for the 3 funds.
 
@@ -101,17 +103,19 @@ Milestone 5 does the same thing.
 
 Milestone 6 removes the extended market and multi-factor funds while increasing the small-cap value fund; at this point, there will only be 3 equity funds in the portfolio, and the mix will be similar to The Golden Butterfly portfolio. 
 
-The Golden Butterfly Portfolio uses 20 percent total stock market and 20 percent small-cap value. Because it appears I can't get away from the S&P 500 fund to get close to the same style distribution we end up with:
+The Golden Butterfly Portfolio uses 20 percent total stock market and 20 percent of small-cap value. Because it appears I can't get away from the S&P 500 fund to get close to the same style distribution we end up with:
 
 1. 12 percent total stock market,
 2. 51 percent small-cap value, and
 3. 31 percent S&P 500.
 
-Those numbers are just the equity portion of the Mark 1.1 portfolio. I'd still have 6 percent short-term assets in the form of cash. 
+Those numbers are just the growth assets portion of the Mark 1.1 portfolio. I'd still have 6 percent short-term assets in the form of cash. 
 
 How does this change the Mark portfolios?
 
-Because we're using The Universal Portfolio, it doesn't change much for what we'll call Mark 1.1 and Mark 2. However, it would change the others. Let's look at the as-is Mark stack.
+Because we're using The Universal Portfolio, it mostly stays the same for what we'll call Mark 1.1 and Mark 2. However, it would change the others. 
+
+Let's look at the "as of this writing" Mark stack.
 
 - Mark 1: Coast FI 1
 	- Liabilities: 0 to 1 percent; target of 0.
@@ -144,7 +148,7 @@ Because we're using The Universal Portfolio, it doesn't change much for what we'
 	- Negative correlation assets: 20 to 30 percent; target of 25.
 	- Low correlation assets: 15 to 23 percent; target of 19.
 
-Compare this to the new stack; we don't change the names for the Mark 2 through 5 because they haven't been released yet (can you tell I do software development, even as a hobby?). (The differences are emphasized.)
+Compare this to the new stack; we don't change the names for the Mark 2 through 5 because they have yet to be released (can you tell I do software development, even as a hobby?). (The differences are emphasized.)
 
 - Mark 1.1: Coast FI 1
 	- No change at the top level, underlying fund allocation, and funds change.
@@ -169,20 +173,23 @@ Compare this to the new stack; we don't change the names for the Mark 2 through 
 	- *Negative correlation: 16 to 24 percent; target of 20.*
 	- *Low correlation: 16 to 24 percent; target of 20.*
 
-Mark 2 and 3's low correlation targets stay at 0 percent. Mark 4 increases low correlation by introducing 10 percent gold (half of The Golden Butterfly's 20 percent) and brings short-term assets to 10 percent by introducing 4 percent short-term treasuries. Mark 5, from a Universal Portfolio perspective, becomes the variation of The Golden Butterfly. I say variation only because, at this point, we're planning to modify short-term assets to include cash, and unless I can convince my employer to have a total stock market fund in the 401k plan, the S&P 500 will be there.
+Mark 2 and 3's low correlation targets stay at 0 percent. Mark 4 increases low correlation by introducing 10 percent gold (half of The Golden Butterfly's 20 percent) and brings short-term assets to 10 percent by introducing 4 percent short-term treasuries. Finally, mark 5, from a Universal Portfolio perspective, becomes the variation of The Golden Butterfly. I say variation only because, at this point, we're planning to modify short-term assets to include cash, and unless I can convince my employer to have a total stock market fund in the 401k plan, the S&P 500 will be there.
 
 Of course, the world could change dramatically by the time any considerations for short-term treasuries and gold come into play.
-
-Toward the end of March, some dividends paid out. The newly introduced small-cap value fund was up the previous day and I was able to put in 3 limit orders:
-
-1. Market price;
-2. 2 cents over;
-3. 1 percent down;
 
 ## Health and wellness
 
 Annual bloodwork came back clear, except the uric acid levels shot up to almost 7. I'm back to taking allopurinol. Frustrating.
 
 I started doing some daily exercise movements again, except for the plank and the regular pushups.
+
+I tried to do a regular pushup, and my toe was not thrilled the next day. So I'll try a different tack with the medical profession for the next few visits and see how it works out.
+
+Instead of describing symptoms as the lead-in, I'll describe a goal. Then go into symptoms that cause me to be unable to achieve that goal.
+
+1. I want to be able to do at least one regular pushup every day.
+2. I currently can't do that because, when I do, I become incapacitated for a week because my toe is fucked up.
+
+We can treat the symptom all day, but if I can't achieve a simple goal, then we need to figure out how to track and treat the disease, so to speak.
 
 {!! next-previous !!}
