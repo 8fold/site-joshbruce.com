@@ -8,6 +8,8 @@
 
 @forward 'footer';
 
+@forward 'code-blocks';
+
 html {
   scroll-padding-top: 44pt;
   @include mixins.at-media {
