@@ -33,6 +33,8 @@ In both cases, a plain text editor and browser probably came preinstalled on you
 2. For Windows, [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) and Edge.
 3. Linux is beyond my wheelhouse, and from a cursory glance, there are many to choose from.
 
+Let’s do this.
+
 1. Create a directory called `/my-site` somewhere on your computer; recommend the desktop.
 2. Open your plain text editor.
 3. Type "Hello, World!"
