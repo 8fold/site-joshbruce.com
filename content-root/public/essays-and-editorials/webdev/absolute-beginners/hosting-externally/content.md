@@ -77,7 +77,7 @@ These are listed from what is typically the cheapest to the most expensive.
 
 In more technical terms, with shared hosting, if Person A has a site on the same shared device as your site, and their site crashes the server, your site is also unavailable to users until the server restarts.
 
-That said, shared hosting is mostly used by people who aren't making money from the Internet, don't see a lot of traffic, and are limited to one site per account (Person A, for example, has a site about their cat, and less than a thousand people a second want to look at it).
+That said, shared hosting is mostly used by people who aren't making money from the Internet, don't see a lot of traffic, and are limited to one site per account (Person A, for example, has a site about their cat, and less than a thousand people per second want to look at it).
 
 We've also been doing shared hosting for decades and have optimized them pretty well. For example, if Person A caused the site to crash enough times, they might get a yellow card, so to speak, or be moved to a different server or denied continued service by the provider. And, even if Person A does take the server down, chances are it'll be for a few seconds, not days or weeks.
 
