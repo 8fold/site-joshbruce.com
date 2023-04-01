@@ -97,7 +97,7 @@ Every HTML element (sometimes referred to as a tag) starts with a [left angle br
 
 The content may be plain text or other HTML elements for elements that allow content. For content elements, we want to create a closing tag. Closing tags are very similar to their opening tag. The only difference is adding a [forward slash](https://www.thesaurus.com/e/grammar/slash/) after the left angle bracket.
 
-The Internet (and software development generally) is built on atomic concepts that are repeated and combined to do amazing things; think [LEGO](https://www.lego.com/en-us). The construction of elements is a perfect example; if you can type three special characters (`<`, `>`, and `/`>), and some letters, you can create every HTML element and then some.
+The Internet (and software development generally) is built on atomic concepts that are repeated and combined to do amazing things; think [LEGO](https://www.lego.com/en-us). The construction of elements is a perfect example; if you can type three special characters (`<`, `>`, and `/`), and some letters, you can create every HTML element and then some.
 
 Right now, our `index.html` file is not what we call a well-formed HTML document. However, it works because most browsers try hard to make pages work.
 
