@@ -16,7 +16,7 @@ When I do this, here's what I say: Hey, Siri, call Lynn.
 
 "Lynn" is the human-friendly identifier. Siri takes that and brings up the service-friendly identifier, the phone number: XXX-XXX-XXXX. Siri then "dials" (sends a request) to a telephone service provider. Somewhere, the phone number is associated with a device-specific identifier (for a cellphone, it would be the SIM card identifier). The request makes it to Lynn's phone, and it starts ringing. 
 
-If they answer, an "Okay" response is sent back through the whole chain to my phone, and Lynn and I are connected. If Lynn doesn't answer, eventually, a "Request timed out" response will be sent back, or a voicemail service will answer for me and send back an "Okay" response. 
+If they answer, an "Okay" response is sent back through the whole chain to my phone, and Lynn and I are connected. If Lynn doesn't answer, eventually, a "Request timed out" response will be sent back, or a voicemail service will answer for Lynn and send back an "Okay" response. 
 
 The process flow is this:
 

@@ -33,7 +33,7 @@ The `/my-site` directory structure should look something like this now:
 
 We need to be able to reference the image from inside the `index.html` page. We'll need an element. This time we'll use a self-closing element, a technical way of saying, "It doesn't have a closing tag," unlike the paragraph element.
 
-The image element uses the `img` tag and two attributes. The first attribute is the source (`src`), and the second is an alternative description (`alt`). The `src` tells the browser where the image is. The `alt` describes the image. It will often be displayed if the image doesn’t load for reason, might also be displayed if you hover over the image, and (most importantly, will be read by screen readers.
+The image element uses the `img` tag and two attributes. The first attribute is the source (`src`), and the second is an alternative description (`alt`). The `src` tells the browser where the image is. The `alt` describes the image. It will often be displayed if the image doesn’t load for reason, might also be displayed if you hover over the image, and (most importantly, will be read by screen readers).
 
 Let's add the following somewhere inside the `body` element in the `index.html` file:
 

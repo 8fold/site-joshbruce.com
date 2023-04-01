@@ -205,7 +205,7 @@ So, let's add a language to the `index.html` file. We'll add it to the `html` el
 <span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
-This isn’t case-sensitive and could have been “en-us”; I copied it from the list and pasted it here. (There can be a lot of copying and pasting when it comes web design and development.)
+This isn’t case-sensitive and could have been “en-us”; I copied it from the list and pasted it here. (There can be a lot of copying and pasting when it comes to web design and development.)
 
 Our HTML page is well-formed (no errors) and has no warnings.
 
