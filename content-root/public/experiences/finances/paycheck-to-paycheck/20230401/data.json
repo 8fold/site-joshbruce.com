@@ -52,7 +52,7 @@
       "optimum": "28",
       "high": "31",
       "max": "34",
-      "value": "27"
+      "value": "27.4"
     },
     {
       "label": "Growth - US equities - large",
@@ -61,7 +61,7 @@
       "optimum": "36",
       "high": "40",
       "max": "42",
-      "value": "30"
+      "value": "29.5"
     }
   ]
 }
