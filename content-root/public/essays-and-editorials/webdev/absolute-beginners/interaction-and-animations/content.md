@@ -345,7 +345,7 @@ It's doing the blinking thing, though. It could be nice to have the background c
 <span class="line"><span style="color: #ADBAC7">...</span></span>
 <span class="line focus"></span>
 <span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
-<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">transition</span><span style="color: #ADBAC7">: background-color </span><span style="color: #6CB6FF">0.3</span><span style="color: #F47067">s</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">ease-out</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">transition</span><span style="color: #ADBAC7">: none;</span></span>
 <span class="line focus"><span style="color: #ADBAC7">  }</span></span>
 <span class="line"><span style="color: #ADBAC7">}</span></span>
 <span class="line"><span style="color: #ADBAC7">...</span></span>
