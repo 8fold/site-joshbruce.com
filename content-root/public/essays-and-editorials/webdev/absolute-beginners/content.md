@@ -54,19 +54,17 @@ Another set of principles is:
 
 Let's add another paragraph to the `index.html` file:
 
-```html{}{3}
-Hello, World!
-
-How are you?
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">Hello, World!</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #ADBAC7">How are you?</span></span>
+<span class="line"></span></code></pre>
 
 Refresh your browser.
 
 You'll probably see something like this:
 
-```html
-Hello, World! How are you?
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">Hello, World! How are you?</span></span>
+<span class="line"></span></code></pre>
 
 All the text appears on one line. That's not what we wanted; that's a problem.
 
@@ -76,19 +74,17 @@ Enter [.Hypertext Markup Language](HTML), specifically the paragraph element.
 
 We want to tell the browser when a paragraph starts and ends. Let's modify the `index.html` file again:
 
-```html
-<p>Hello, World!</p>
-
-<p>How are you?</p>
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 Refresh your browser, and you should see something like this:
 
-```html
-Hello, World!
-
-How are you?
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">Hello, World!</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">How are you?</span></span>
+<span class="line"></span></code></pre>
 
 Every HTML element (sometimes referred to as a tag) starts with a [left angle bracket](https://en.wikipedia.org/wiki/Bracket) (less than sign), followed by one or more letters, and followed by a right angle bracket. This describes the opening tag.
 
@@ -102,12 +98,11 @@ A well-formed HTML document starts with a document-type declaration.
 
 It's an element that won't be rendered on screen. In the early 2000s, there were a lot of declarations to choose from. Since around 2008, it became simplified with the [release of HTML5](https://en.wikipedia.org/wiki/HTML5). Let's add a document-type declaration to the top of `index.html`:
 
-```html{}{1}
-<!doctype html>
-<p>Hello, World!</p>
-
-<p>How are you?</p>
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 Refresh your browser, and nothing should change.
 
@@ -115,18 +110,17 @@ Notice that you can't *see* the document-type declaration on screen? That's beca
 
 Still not well-formed, but we're getting there.
 
-We need what's called a root element. A root element is an element that contains (wraps) all other elements and plain text you want the browser (interpreter) to interpret. 
+We need what's called a root element. A root element is an element that contains (wraps) all other elements and plain text you want the browser (interpreter) to interpret.
 
 For HTML pages, the root element is `html`:
 
-```html{}{2,6}
-<!doctype html>
-<html>
-  <p>Hello, World!</p>
-
-  <p>How are you?</p>
-</html>
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 This tells the browser that our HTML will start at the opening tag and end at the closing tag.
 
@@ -138,16 +132,15 @@ Something we value in web development is separating content from [metadata](http
 
 Our paragraphs are content, so let's wrap them in a `body` element:
 
-```html{}{3,7}
-<!doctype html>
-<html>
-  <body>
-    <p>Hello, World!</p>
-
-    <p>How are you?</p>
-  </body>
-</html>
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 Refresh the browser. Still works. Good times.
 
@@ -155,19 +148,18 @@ Still not well-formed because we're missing a piece of required metadata; the `t
 
 Even though the order of these elements doesn't matter, by convention, we put metadata at the top of a document. Let's add the title "My site" inside a `title` element, wrapped in the `head` element:
 
-```html{}{3-5}
-<!doctype html>
-<html>
-  <head>
-    <title>My site</title>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-
-    <p>How are you?</p>
-  </body>
-</html>
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;My site&lt;/</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 Refresh the browser. Something changed. It might not be obvious.
 
@@ -193,19 +185,18 @@ There are [standards](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_a
 
 So, let's add a language to the `index.html` file. We'll add it to the `html` element; however, we could add it to any element:
 
-```html{}{2}
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <title>My site</title>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-
-    <p>How are you?</p>
-  </body>
-</html>
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">lang</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;en-US&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;My site&lt;/</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;Hello, World!&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span></code></pre>
 
 Our HTML page is well-formed (no errors) and has no warnings.
 

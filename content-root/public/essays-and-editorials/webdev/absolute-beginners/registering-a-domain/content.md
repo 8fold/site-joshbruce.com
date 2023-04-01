@@ -2,7 +2,7 @@
 
 {!! dateblock !!}
 
-It surprised me when I learned I could register a domain name and not have a publicly accessible (hosted) website. Further, I could have hosting without having a domain name. 
+It surprised me when I learned I could register a domain name and not have a publicly accessible (hosted) website. Further, I could have hosting without having a domain name.
 
 Put another way. I could go to Media Temple, register my domain name, and not do anything with it. I could sign up for hosting at Dreamhost and upload files and directories. In this example, Media Temple would be the registrar, and Dreamhost would be the host. But, until I had the domain name point to the [Dreamhost "nameservers"](https://help.dreamhost.com/hc/en-us/articles/216385467-Nameservers-overview), I wouldn't have a publicly accessible website.
 
@@ -16,7 +16,7 @@ In short, you can have the same domain name for years, despite changing everythi
 
 Unlike phone numbers, at minimum, domain names need to be reregistered every year. When you purchase a domain name, you mainly purchase the top-level domain (TLD), the part after the dot (`.com`, `.net`, `.biz`, and so on). That's because, just like phone numbers, if the full domain name (`joshbruce.com`) is already in use, you can't buy it anyway.
 
-`.com` is by far the most common and popular in the United States, which means the chances are good that someone else already owns that easy-to-remember name you want for your site. `joshbruce.com` was owned by someone else for almost a decade before it became available (the other person stopped renewing), and I bought it. I've always been the owner of `joshuabruce.com`. 
+`.com` is by far the most common and popular in the United States, which means the chances are good that someone else already owns that easy-to-remember name you want for your site. `joshbruce.com` was owned by someone else for almost a decade before it became available (the other person stopped renewing), and I bought it. I've always been the owner of `joshuabruce.com`.
 
 That said, people are starting to get accustomed to non-dot-com domain names. Further, you can start getting clever with things. For example, my small business is an association of business professionals and owns `8fold.pro`—short, sweet, and to the point. Much better than EightfoldCoachingAssociates.com or, heaven forbid, bogging it down with hyphens because the unhyphenated `.com` was taken.
 
@@ -62,9 +62,8 @@ There should be a way to edit web hosting related to the domain name. Let's go t
 
 Here there should be a way to [change the web directory](https://help.dreamhost.com/hc/en-us/articles/360041534491-Changing-the-web-directory-assigned-to-a-domain) for the domain. We want to point the domain to the `/my-site` directory we uploaded in the [previous article](/essays-and-editorials/webdev/absolute-beginners/hosting-externally/). It should look something like this:
 
-```html
-/home/username/my-site
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">/home/username/my-site</span></span>
+<span class="line"></span></code></pre>
 
 Anything you don't want accessible to the public, don't put it in that directory.
 
