@@ -73,7 +73,7 @@ All right, with that out of the way, you'll most likely be presented with one or
 
 These are listed from what is typically the cheapest to the most expensive.
 
-**Shared hosting** is like a movie theatre with multiple screens. Everyone has the same access to the same number of screens, the same amount of concessions, all of that. Of course, if Person A decides to start a fire, we all have to leave.
+**Shared hosting** is like a movie theater with multiple screens. Everyone has the same access to the same number of screens, the same amount of concessions, all of that. Of course, if Person A decides to start a fire, we all have to leave.
 
 In more technical terms, with shared hosting, if Person A has a site on the same shared device as your site, and their site crashes the server, your site is also unavailable to users until the server restarts.
 
