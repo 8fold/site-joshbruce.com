@@ -14,27 +14,26 @@ We can do that, no problem.
 
 Let's open `main.css`. We'll add a property (`scroll-behavior`) to the `html` selector:
 
-```css{}{5,7-8}
-* {
-  font-family: sans-serif;
-}
-
-html {
-  background-color: #dddddd;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 15px;
-  padding: 10px;
-  border: 5px solid #000000;
-  background-color: #ffffff;
-}
-
-nav > ul > li:last-of-type {
-  font-weight: bold;
-}
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #8DDB8C">*</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-family</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">sans-serif</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#dddddd</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">scroll-behavior</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">smooth</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">15</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">10</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #6CB6FF">:last-of-type</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-weight</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">bold</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 Refresh the browser. Scroll to the top and click the inline anchor again. Your browser should animate down to the bottom of the page.
 
@@ -53,13 +52,12 @@ A new problem emerges. Some people don't do well with animations and things flyi
 
 There's a solution for that as well. We'll use a "media query" to remove the smooth scrolling if the user prefers reduced motion. Add the following to the bottom of `main.css`:
 
-```css
-@media (prefers-reduced-motion) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-reduced-motion) {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">scroll-behavior</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">auto</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 We can trust that things will work as expected. Or, we can test to ensure they are:
 
@@ -72,32 +70,30 @@ Around 2020, "dark mode" became a serious craze. It was a marketable feature for
 
 Maybe, maybe not. If you left the colors the way they were in [the previous article](/essays-and-editorials/webdev/absolute-beginners/interaction-and-animations/), we'd consider that "light" mode. We'll add another media query to the bottom of `main.css` (we'll do this in stages):
 
-```css
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000000;
-    color: #ffffff;
-  }
-}
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-color-scheme: dark) {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 We need to enable dark mode on your device to test it (links to how to do it on [macOS](https://support.apple.com/en-us/HT208976), [iOS](https://support.apple.com/en-us/HT210332), and [Windows](https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe)). (If you already have dark mode turned on, you're there.)
 
 This might cause a problem, though. Dark mode isn't just about making all the background colors black and making the font `color` white. It's designing a decent experience. Our border disappeared, and the gray background now seems much brighter than the foreground color. Let's fix that:
 
-```css{}{1-4,6,9-11}
-@media (prefers-color-scheme: dark) {
-  html {
-    background: #777777;
-  }
-
-  body {
-    border: 5px solid #aaaaaa;
-    background-color: #000000;
-    color: #ffffff;
-  }
-}
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-color-scheme: dark) {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">background</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#777777</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#aaaaaa</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  }</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 That's better. There's another problem. Contrast and colors. (Having dark mode work is easy. Having to design for it that's where the pain can come in. Maybe that's why, as of this writing, the Apple website doesn't support this functionality.)
 
@@ -112,32 +108,30 @@ We're going to do a couple of things here:
 
 Let's handle the light mode first. From a construction perspective, anything outside the scope of the media queries will be our default. We use the media queries to handle exceptions to the default. So, let's add the following to `main.css`:
 
-```css
-a {
-  color: #0300E4;
-}
-
-a:visited {
-  color: #4E1D86;
-}
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#0300E4</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:visited</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#4E1D86</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 `a` is the selector and will apply to all anchor elements; I used the browser's default color. `a:visited` uses a pseudo-class (similar to `last-of-type` we used before) that says, "Apply this to all anchor elements this user has visited." (Technically, it's about whether or not the target URL is in the browser history.)
 
 Now, let's modify dark mode with colors that are similar but achieve an acceptable contrast with the black background:
 
-```css
-@media (prefers-color-scheme: dark) {
-...
-  a {
-    color: #716fe7;
-  }
-
-  a:visited {
-    color: #8e5dc7;
-  }
-}
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-color-scheme: dark) {</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#716fe7</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:visited</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#8e5dc7</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 Same selectors, different contexts, and different properties.
 
@@ -145,66 +139,63 @@ The contrast problem is solved.
 
 Let's add more interaction to the links while we're here. When you hover over the links, let the underline disappear. We'll use another pseudo-class (`hover`). We only need to do this for the default portion of the CSS:
 
-```css{}{7-9}
-...
-
-a {
-  color: #0300E4;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  color: #4E1D86;
-}
-
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#0300E4</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:hover</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">text-decoration</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">none</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:visited</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#4E1D86</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 Of course, we could have it change color and other things.
 
-Let's fix something that's bothering me. 
+Let's fix something that's bothering me.
 
 For the page a user is on, we use plain text to help orient the user. That's the part we want to be bold, not the last element on each page. "About" is bold on the home page, and "About" is bold on the about page. We want "Home" to be bold on the home page and "About" to be bold on the about page. We'll add a `class` attribute to the list item for the page we are on:
 
-```html
-<!-- Home -->
-...
-
-<nav>
-  <ul>
-    <li class="current">Home</li>
-    <li><a href="./about/index.html">About</a></li>
-  </ul>
-</nav>
-
-....
-<!-- About -->
-...
-
-<nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li class="current">About</li>
-  </ul>
-</nav>
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">&lt;!-- Home --&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;current&quot;</span><span style="color: #ADBAC7">&gt;Home&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;./about/index.html&quot;</span><span style="color: #ADBAC7">&gt;About&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">....</span></span>
+<span class="line"><span style="color: #768390">&lt;!-- About --&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;../index.html&quot;</span><span style="color: #ADBAC7">&gt;Home&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;current&quot;</span><span style="color: #ADBAC7">&gt;About&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 Then we'll update the `main.css`:
 
-```css
-...
-
-nav > ul > li.current {
-  font-weight: bold;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #6CB6FF">.current</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-weight</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">bold</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 The dot in `li.current` means we're looking for a `class` attribute with a value of `current`. We could remove the `li` if we wanted to. If this were an `id` (like the `last-paragraph` for the inline anchor), we would use a hash (#) instead of a dot.
 
@@ -214,38 +205,37 @@ Let's keep messing with the navigation for a bit.
 
 Let's make the navigation look more like what we might expect from a website. Usually, the main navigation isn't a bulleted list, for example. We'll keep the list from an HTML perspective but override default styles. We'll remove the bullets, padding, and margin:
 
-```css
-...
 
-nav > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav > ul > li {
-  margin: 0;
-  padding: 0;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">list-style</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">none</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 Now the links should be in the top left corner of the `body` box.
 
 Let's center the links and increase the size of the links:
 
-```css
-...
-
-nav > ul > li > a {
-  display: block;
-  padding: 20px 0;
-  text-align: center;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">display</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">block</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">20</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">text-align</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">center</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 The selector specifically targets anchor elements.
 
@@ -255,42 +245,40 @@ You should notice that you can hover anywhere on the same line as the anchor, an
 
 The current page text seems a bit odd now. Let's convert it to an anchor:
 
-```html{}{1,6,12,17}
-<!--- Home -->
-...
-
-<nav>
-  <ul>
-    <li class="current"><a href="./index.html">Home</a></li>
-    <li><a href="./about/index.html">About</a></li>
-  </ul>
-</nav>
-
-...
-<!--- About -->
-...
-
-<nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li class="current"><a href="./index.html">About</a></li>
-  </ul>
-</nav>
-
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!--- Home --&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;current&quot;</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;./index.html&quot;</span><span style="color: #ADBAC7">&gt;Home&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;./about/index.html&quot;</span><span style="color: #ADBAC7">&gt;About&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line focus"><span style="color: #768390">&lt;!--- About --&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;../index.html&quot;</span><span style="color: #ADBAC7">&gt;Home&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;current&quot;</span><span style="color: #ADBAC7">&gt;&lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;./index.html&quot;</span><span style="color: #ADBAC7">&gt;About&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;&lt;/</span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 We still have the hyperlink reference (`href`), but we link to the page we're already on. Let's remove the underline from the link to the current page:
 
-```css
-...
-
-nav > ul > li.current > a {
-  text-decoration: none;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #6CB6FF">.current</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">text-decoration</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">none</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 The user can still hit the anchor element. They'll refresh the page.
 
@@ -300,16 +288,15 @@ We can, kind of. And the practice we're following is called [progressive enhance
 
 We could add the following to `main.css`:
 
-```css{}{3,5-6}
-...
-
-nav > ul > li.current > a {
-  text-decoration: none;
-  pointer-events: none;
-}
-
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #6CB6FF">.current</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">text-decoration</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">none</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">pointer-events</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">none</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 And, for people using pointer devices and browsers that support the `pointer-events` property, the link won't work. It won't even register the hover. With that said, a user could still tab to the anchor, hit return, and the link would work. So, good thing we have that default, lowest common denominator in place.
 
@@ -317,56 +304,52 @@ Let's take advantage of the links being boxes.
 
 I think having a transparent background for the current page is good. However, when the user hovers over another link, let's change the background color:
 
-```css
-...
-
-nav > ul > li > a:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:hover</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 Back to the atomic concept thing, this should be somewhat readable: When a user hovers over an anchor (`a`) element that is a child of a list item (`li`) that is the child of an unordered list (`ul`) that is the child of a navigation (`nav`) element, change the background color to black and the font color to white.
 
 We need to handle dark mode because only the font color changes in dark mode. So, let's go with a light gray with black text:
 
-
-```css
-@media (prefers-color-scheme: dark) {
-...
-
-  nav > ul > li > a:hover {
-    background-color: #aaaaaa;
-    color: #000000;
-  }
-}
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-color-scheme: dark) {</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #6CB6FF">:hover</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#aaaaaa</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 There we go.
 
 It's doing the blinking thing, though. It could be nice to have the background color fade in:
 
-```css{}{3,7-8,10,12-15}
-...
-
-nav > ul > li > a {
-  display: block;
-  padding: 20px 0;
-  text-align: center;
-  transition: background-color 0.3s ease-out;
-}
-
-@media (prefers-reduced-motion) {
-...
-
-  nav > ul > li > a {
-    transition: background-color 0.3s ease-out;
-  }
-}
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">display</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">block</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">20</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">text-align</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">center</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">transition</span><span style="color: #ADBAC7">: background-color </span><span style="color: #6CB6FF">0.3</span><span style="color: #F47067">s</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">ease-out</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (prefers-reduced-motion) {</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line focus"></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">nav</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">ul</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">li</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">transition</span><span style="color: #ADBAC7">: background-color </span><span style="color: #6CB6FF">0.3</span><span style="color: #F47067">s</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">ease-out</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 The transition property can be broken down into separate properties. What we're saying here is we want to apply a transition animation when the background color is changed for elements matching this selector. Further, we'd like the transition duration to be one-third of a second. Finally, we would like to use the ease-out keyframe style (starts fast and ends slower).
 
@@ -376,79 +359,75 @@ Let's shift to the desktop view for a second.
 
 This website is very wide. Humans are generally comfortable reading lines of text about 70 characters long. Let's set the maximum width of the `body` to 70 characters:
 
-```css{}{3,8-9}
-...
-
-body {
-  margin: 15px;
-  padding: 10px;
-  border: 5px solid #000000;
-  background-color: #ffffff;
-  max-width: 70ch;
-}
-
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">15</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">10</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">max-width</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">70</span><span style="color: #F47067">ch</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 A precedent has been set that the site's main content area is centered. Let's do that:
 
-```css{}{3,4,9}
-...
-
-body {
-  margin: 15px auto;
-  padding: 10px;
-  border: 5px solid #000000;
-  background-color: #ffffff;
-  max-width: 70ch;
-}
-
-...
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">15</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">auto</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">10</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">max-width</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">70</span><span style="color: #F47067">ch</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 Yep. Added four characters (`auto`) to center the content. Remember what we mentioned above regarding the shorthand; the first number is for the top and bottom, and the second is for the left and right. `auto` (for left and right) applies the same amount to both sides by default; centered.
 
 We have a problem.
 
-On mobile, we lose the 15-pixel margin on the left and right. 
+On mobile, we lose the 15-pixel margin on the left and right.
 
 Media query to the rescue!
 
-```css{}{3-5,12-17}
-...
-
-<!-- Put this back the way it was. -->
-body {
-  margin: 15px;
-  padding: 10px;
-  border: 5px solid #000000;
-  background-color: #ffffff;
-  max-width: 70ch;
-}
-
-<!-- Move the centering margin property here. -->
-@media (min-width: 720px) {
-  body {
-    margin: 15px auto;
-  }
-}
-```
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #ADBAC7">&lt;!-- Put this back the way it was. --</span><span style="color: #F47067">&gt;</span></span>
+<span class="line focus"><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">15</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">padding</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">10</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">max-width</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">70</span><span style="color: #F47067">ch</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line focus"><span style="color: #ADBAC7">&lt;!-- Move the centering margin property here. --</span><span style="color: #F47067">&gt;</span></span>
+<span class="line focus"><span style="color: #F47067">@media</span><span style="color: #ADBAC7"> (</span><span style="color: #6CB6FF">min-width</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">720</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">) {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">15</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">auto</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">  }</span></span>
+<span class="line focus"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 
 The media query says, "If the viewport width is greater than 720 pixels, do this." We're making a mobile-first approach, so desktop-specific differences can go here. (It's not the type of device that matters, it's the viewport, but we tend to use device language.)
 
 Lorem ipsum isn't easy to read, but it feels *really* hard to read right now. Let's increase the font size (`font-size`), the space between lines (`line-height`), and the space between paragraphs (`margin`):
 
-```css
-...
-
-p {
-  margin: 2rem 0;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-...
-```
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">margin</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">2</span><span style="color: #F47067">rem</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">0</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-size</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">1.25</span><span style="color: #F47067">rem</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">line-height</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">1.75</span><span style="color: #F47067">rem</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">...</span></span>
+<span class="line"></span></code></pre>
 
 We could keep doing this all day. And we should wrap this up to move on to the next topic.
 
