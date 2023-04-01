@@ -104,7 +104,7 @@ As you might have guessed, there's an element for that. We'll place the `style` 
 <span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
-The `type` attribute is optional in this context as many browsers will default to using a plain text (`text`) cascading stylesheet (`css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The `type` attribute is optional in this context as many browsers will default to using plain text cascading stylesheet (`text/css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 The asterisk (`*`) is referred to as a "selector" and means, "Apply this to all elements." The curly brackets are new to us but are common in programming languages. It's a syntax often used to define a "scope." Any styling information we place between the curly brackets will be applied to any element matching the selector.
 
