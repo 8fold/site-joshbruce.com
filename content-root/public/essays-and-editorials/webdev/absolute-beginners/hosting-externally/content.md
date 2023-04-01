@@ -37,7 +37,7 @@ I'll get the rough bit out of the way immediately.
 
 Avoid Network Solutions and GoDaddy.
 
-Both have a history of doing some interesting things or not being as secure and transparent as possible. For example, a while back, if you just wanted to see if a domain name was available but not register it yet, and you used Network Solutions to check, they'd register the domain for you, which meant you couldn't register it with anyone else ([2008 article](https://www.eweek.com/security/is-network-solutions-snatching-domain-names/)). And hackers infiltrated GoDaddy and managed to stay there for multiple years ([2023 article](https://www.wired.com/story/godaddy-hacked-3-years/)). On top of that, I've never had a good experience with their support, customer service, or software.
+Both have a history of doing some interesting things or not being as secure and transparent as possible. For example, a while back, if you just wanted to see if a domain name was available but not register it yet, and you used Network Solutions to check, they'd register the domain for you, which meant you couldn't register it through a different registrar ([2008 article](https://www.eweek.com/security/is-network-solutions-snatching-domain-names/)). And hackers infiltrated GoDaddy and managed to stay there for multiple years ([2023 article](https://www.wired.com/story/godaddy-hacked-3-years/)). On top of that, I've never had a good experience with their support, customer service, or software.
 
 I used Network Solutions around 2000 but grew frustrated and switched to Dreamhost around 2003. Switching was difficult mainly due to my lack of knowledge and Network Solutions' lack of customer service. I'm still using [Dreamhost](https://www.dreamhost.com). (That's not an affiliate link. And, if you go with Dreamhost and tell them I sent you, I get a discount.)
 
@@ -73,11 +73,11 @@ All right, with that out of the way, you'll most likely be presented with one or
 
 These are listed from what is typically the cheapest to the most expensive.
 
-**Shared hosting** is like a movie theatre with multiple screens. Everyone has the same access to the same number of screens, the same amount of concessions, all of that. Of course, if Person A decides to start a fire, we all have to leave.
+**Shared hosting** is like a movie theater with multiple screens. Everyone has the same access to the same number of screens, the same amount of concessions, all of that. Of course, if Person A decides to start a fire, we all have to leave.
 
 In more technical terms, with shared hosting, if Person A has a site on the same shared device as your site, and their site crashes the server, your site is also unavailable to users until the server restarts.
 
-That said, shared hosting is mostly used by people who aren't making money from the Internet, don't see a lot of traffic, and are limited to one site per account (Person A, for example, has a site about their cat, and less than a thousand people a second want to look at it).
+That said, shared hosting is mostly used by people who aren't making money from the Internet, don't see a lot of traffic, and are limited to one site per account (Person A, for example, has a site about their cat, and less than a thousand people per second want to look at it).
 
 We've also been doing shared hosting for decades and have optimized them pretty well. For example, if Person A caused the site to crash enough times, they might get a yellow card, so to speak, or be moved to a different server or denied continued service by the provider. And, even if Person A does take the server down, chances are it'll be for a few seconds, not days or weeks.
 
