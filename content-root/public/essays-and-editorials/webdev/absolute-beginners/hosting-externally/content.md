@@ -35,7 +35,7 @@ Let's start with the host.
 
 I'll get the rough bit out of the way immediately.
 
-I recommend avoiding Network Solutions and GoDaddy.
+Avoid Network Solutions and GoDaddy.
 
 Both have a history of doing some interesting things or not being as secure and transparent as possible. For example, a while back, if you just wanted to see if a domain name was available but not register it yet, and you used Network Solutions to check, they'd register the domain for you, which meant you couldn't register it with anyone else ([2008 article](https://www.eweek.com/security/is-network-solutions-snatching-domain-names/)). And hackers infiltrated GoDaddy and managed to stay there for multiple years ([2023 article](https://www.wired.com/story/godaddy-hacked-3-years/)). On top of that, I've never had a good experience with their support, customer service, or software.
 
