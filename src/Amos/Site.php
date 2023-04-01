@@ -14,7 +14,7 @@ use Nyholm\Psr7\Stream;
 
 use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
 
-use Spatie\CommonMarkShikiHighlighter\HighlightCodeExtension;
+// use Spatie\CommonMarkShikiHighlighter\HighlightCodeExtension;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
@@ -288,8 +288,8 @@ class Site
                 ->abbreviations()
         );
 
-        Markdown::singletonConverter()->addExtension(
-            new HighlightCodeExtension('github-dark-dimmed')
-        );
+        // Markdown::singletonConverter()->addExtension(
+        //     new HighlightCodeExtension('github-dark-dimmed')
+        // );
     }
 }
