@@ -31,7 +31,7 @@ $request = (new ServerRequestCreator(
 
 (new SapiEmitter())->emit(
     Site::init(
-        withDomain: 'http://com.joshbruce:8889',
+        withDomain: 'http://com.joshbruce:8888',
         contentIn: __DIR__ . '/../../content-root'
     )->setTemplates(
         default: Page::class,

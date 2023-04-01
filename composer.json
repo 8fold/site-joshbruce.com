@@ -24,6 +24,7 @@
     "laminas/laminas-httphandlerrunner": "^2.1",
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
+    "spatie/commonmark-shiki-highlighter": "^2.1",
     "symfony/finder": "^6.2"
   },
   "require-dev": {

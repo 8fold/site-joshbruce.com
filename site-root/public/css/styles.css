@@ -301,6 +301,21 @@ footer > p{
   margin:0;
 }
 
+.shiki{
+  padding:1rem;
+  border-radius:0.5rem;
+}
+
+.shiki.focus .line:not(.focus){
+  transition:all 0.3s ease-in;
+  filter:saturate(0) blur(1px);
+}
+
+.shiki.focus:hover .line{
+  transition:all 0.3 ease-out;
+  filter:saturate(0.7) blur(0);
+}
+
 html{
   scroll-padding-top:44pt;
 }
@@ -548,8 +563,8 @@ ul[is=data-list] > li[data-icon=decrease] > ul > li:nth-of-type(1):after{
     border-top:var(--1-px) var(--solid) var(--gray-lightest);
   }
   main img,
-main iframe[src*="https://jsfiddle.net"], article img,
-article iframe[src*="https://jsfiddle.net"]{
+  main iframe[src*="https://jsfiddle.net"], article img,
+  article iframe[src*="https://jsfiddle.net"]{
     border:3px solid var(--gray-lightest);
   }
   main details summary, article details summary{
