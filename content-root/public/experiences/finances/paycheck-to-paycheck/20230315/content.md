@@ -6,7 +6,7 @@
 
 I modified the data to use [the universal portfolio](/essays-and-editorials/finances/the-universal-portfolio/) language. Technically it was always using the same categories. I'm debating on combining the growth assets into one data point.
 
-I updated the experience for the main page of this series. Instead of the complete list of entries, I broke previous years into disclosures and only list out the current year.
+I updated the experience for [the main page of this series](/experiences/finances/paycheck-to-paycheck/20230315/). Instead of the complete list of entries, I broke previous years into disclosures and only list out the current year.
 
 My tax preparer verified I could contribute the full amount to my Roth [.Individual Retirement Account](IRA). I transferred the contribution from savings into the IRA. The extended market fund was up the previous day, so I placed the following limit orders: 
 
@@ -28,7 +28,7 @@ The extended market fund was up the previous day. I had enough remaining to plac
 
 Not enough cash left in the Roth IRA settlement account to place more orders.
 
-This contribution, coupled with the orders, brought short-term assets down to 3 percent of the portfolio. 3 percent in the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
+This contribution, coupled with the orders, brought short-term assets down to 3 percent of the portfolio. 3 percent is the low [guardrail](/essays-and-editorials/guidelines-and-guardrails/). I decided most of the paycheck would stay as short-term assets.
 
 I contributed to the 401k automatically. I contributed the regular amount to the [.Health Savings Account](HSA). I put the amount I’d typically invest into the runway account. I put the regular amount into savings and the tax account. And I paid the credit cards. The remaining amount I transferred to the Federal Money Market account at Vanguard; as if I were going to place orders.
 

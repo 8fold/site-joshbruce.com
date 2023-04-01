@@ -13,7 +13,7 @@ ErrorDocument 500 /error-500.html
 	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 	# Allow only the following request methods
-	RewriteCond %{REQUEST_METHOD} !^(GET) [NC]
+	RewriteCond %{REQUEST_METHOD} !^(GET|HEAD) [NC]
 	RewriteRule .* - [F,L,R=405]
 	Header add Access-Control-Allow-Methods "GET, HEAD"
 	Header add Allow "GET, HEAD"
