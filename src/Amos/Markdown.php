@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Eightfold\Amos;
 
+use League\CommonMark\Extension\ExtensionInterface as ExtensionInterface;
 use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
@@ -60,6 +61,12 @@ class Markdown
                 ->smartPunctuation();
         }
         return self::$titleConverter;
+    }
+
+    public function addExtension(ExtensionInterface $extension): static
+    {
+        self::singletonConverter()->getEnvironment()->addExtension($extension);
+        return $this;
     }
 
     /**
