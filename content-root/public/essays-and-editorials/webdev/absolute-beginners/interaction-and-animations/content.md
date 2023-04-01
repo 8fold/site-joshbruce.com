@@ -88,9 +88,9 @@ This might cause a problem, though. Dark mode isn't just about making all the ba
 <span class="line focus"><span style="color: #ADBAC7">  }</span></span>
 <span class="line"></span>
 <span class="line focus"><span style="color: #ADBAC7">  </span><span style="color: #8DDB8C">body</span><span style="color: #ADBAC7"> {</span></span>
-<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#aaaaaa</span><span style="color: #ADBAC7">;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">5</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">#aaaaaa</span><span style="color: #ADBAC7">;</span></span>
 <span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">background-color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#000000</span><span style="color: #ADBAC7">;</span></span>
-<span class="line focus"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">#ffffff</span><span style="color: #ADBAC7">;</span></span>
 <span class="line focus"><span style="color: #ADBAC7">  }</span></span>
 <span class="line focus"><span style="color: #ADBAC7">}</span></span>
 <span class="line"></span></code></pre>
