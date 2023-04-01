@@ -33,9 +33,9 @@ The `/my-site` directory structure should look something like this now:
 
 We need to be able to reference the image from inside the `index.html` page. We'll need an element. This time we'll use a self-closing element, a technical way of saying, "It doesn't have a closing tag," unlike the paragraph element.
 
-The image element uses the `img` tag and two attributes. The first attribute is the source (`src`), and the second is an alternative description (`alt`). The `src` tells the browser where the image is. The `alt` describes the image for the visually impaired or will be displayed if the image doesn't load for some reason.
+The image element uses the `img` tag and two attributes. The first attribute is the source (`src`), and the second is an alternative description (`alt`). The `src` tells the browser where the image is. The `alt` describes the image. It will often be displayed if the image doesn’t load for reason, might also be displayed if you hover over the image, and (most importantly, will be read by screen readers.
 
-Let's add the following somewhere in the `index.html` file:
+Let's add the following somewhere inside the `body` element in the `index.html` file:
 
 <pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">img</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">src</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;image.png&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">alt</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;A screenshot of my file explorer.&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
@@ -125,7 +125,7 @@ You may have noticed I kept saying "semantically" back there. That's because it'
 <span class="line focus"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">div</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
-However, this hides intent and burdens us to define what we mean when we use a `div` in this context, usually by adding more code. The [living HTML5 standard from the w3c](https://html.spec.whatwg.org) explicitly says of the [`div`](https://html.spec.whatwg.org/#the-div-element) element:
+However, this hides intent and burdens us to define what we mean when we use a `div` in this context, usually by adding more code; it’s poor communication. The [living HTML5 standard from the w3c](https://html.spec.whatwg.org) explicitly says of the [`div`](https://html.spec.whatwg.org/#the-div-element) element:
 
 > Authors are strongly encouraged to view the div element as an element of last resort, for when no other element is suitable. Use of more appropriate elements instead of the div element leads to better accessibility for readers and easier maintainability for authors.
 

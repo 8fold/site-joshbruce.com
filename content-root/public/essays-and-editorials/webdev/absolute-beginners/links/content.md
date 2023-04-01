@@ -140,7 +140,7 @@ When it comes to relative references and linking, there are three things to know
 
 The main drawback to fully qualified URLs is that all the links break if you move the files and directories. The main benefit is that if the content gets copied to another location and the links aren't altered, the links will return the user to the source of truth.
 
-The main drawback of relative URLs is that if a single page gets copied to another location, all the links are broken because they will be relative to that new location. The main benefit is that you can move the files and directories anywhere, and the links don't break.
+The main drawback of relative URLs is that if a single page gets copied to another location, all the links are broken because they will be relative to that new location. The main benefit is that you can move the files and directories anywhere (as a unit), and the links don't break.
 
 We're discussing this now because we're about to create another page. We will link to that other page. We'll want to use relative links because typing in the fully-qualified URL every time in this context would suck.
 
@@ -231,7 +231,7 @@ Refresh the browser.
 
 At the top of the page, you should see a bulleted list with the first item saying "Home" and the second saying "About." If you're on the home page, you should be able to click on the "About" link and see the about page. If you're on the about page, you should be able to click on the "Home" link and see the home page.
 
-If your operating system uses [backslashes](https://en.wikipedia.org/wiki/Backslash), you must change the forward slashes to backslashes.
+If your operating system uses [backslashes](https://en.wikipedia.org/wiki/Backslash), you might need to change the forward slashes to backslashes.
 
 Notice how we used the dot forward slash (./) on the home page to move from `/my-site` into `/my-site/about`. Further, we used the double dot forward slash (../) to move from the `/my-site/about` directory into the `/my-site` directory.
 

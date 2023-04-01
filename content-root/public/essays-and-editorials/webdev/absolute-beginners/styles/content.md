@@ -104,7 +104,7 @@ As you might have guessed, there's an element for that. We'll place the `style` 
 <span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
-The `type` attribute is optional in this context as many browsers will default to using a plain text (`text`) cascading stylesheet (`css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The `type` attribute is optional in this context as many browsers will default to using plain text cascading stylesheet (`text/css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 The asterisk (`*`) is referred to as a "selector" and means, "Apply this to all elements." The curly brackets are new to us but are common in programming languages. It's a syntax often used to define a "scope." Any styling information we place between the curly brackets will be applied to any element matching the selector.
 
@@ -384,12 +384,12 @@ Again, atomic things are used repeatedly to do some amazing things.
 
 Let's head back to the about page. No more styles. Let's modify  the `head` of this document as well:
 
-<pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- Home /my-site/index.html --&gt;</span></span>
+<pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- About /my-site/about/index.html --&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">lang</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;en-US&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">  &lt;</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;My site&lt;/</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">link</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">rel</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;stylesheet&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">type</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;text/css&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;./css/main.css&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;About | My site&lt;/</span><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">&gt;</span></span>
+<span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">link</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">rel</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;stylesheet&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">type</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;text/css&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;../css/main.css&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">  &lt;/</span><span style="color: #8DDB8C">head</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
