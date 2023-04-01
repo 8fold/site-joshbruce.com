@@ -20,13 +20,18 @@ Let's start by creating a website that "runs" locally. "Locally" is a slightly t
 
 What you'll need:
 
-1. A plain text editor: All operating systems come with one for free.
-	1. For macOS, [TextEdit](https://support.apple.com/guide/textedit/welcome/mac) will do just fine. In the menu, go to Format and click Make Plain Text.
-	2. For Windows, [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) will do just fine.
-	3. Linux is beyond my wheelhouse, and from a cursory glance, there are many to choose from.
-2. An internet browser: This doesn't need to be connected to the Internet. There are many to choose from, and one, most likely, came preinstalled on your computer.
+1. A plain text editor.
+2. An internet browser.
 
 That's it.
+
+Technically, you don’t even need an internet connection.
+
+In both cases, a plain text editor and browser probably came preinstalled on your computer, and if you don’t like the options that came preinstalled, many free alternatives exist:
+
+1. For macOS, [TextEdit](https://support.apple.com/guide/textedit/welcome/mac)(menu > Format > Make Plain Text) and Safari will do just fine.
+2. For Windows, [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) and Edge.
+3. Linux is beyond my wheelhouse, and from a cursory glance, there are many to choose from.
 
 1. Create a directory called `/my-site` somewhere on your computer; recommend the desktop.
 2. Open your plain text editor.
@@ -79,7 +84,7 @@ We want to tell the browser when a paragraph starts and ends. Let's modify the `
 <span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;How are you?&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
-Refresh your browser, and you should see something like this:
+Refresh your browser, and you should get something like this:
 
 <pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">Hello, World!</span></span>
 <span class="line"></span>
@@ -88,9 +93,9 @@ Refresh your browser, and you should see something like this:
 
 Every HTML element (sometimes referred to as a tag) starts with a [left angle bracket](https://en.wikipedia.org/wiki/Bracket) (less than sign), followed by one or more letters, and followed by a right angle bracket. This describes the opening tag.
 
-The content may be plain text or other HTML elements for elements that may also contain content. For content elements, we want to create a closing tag. Closing tags are very similar to their opening tag. The only difference is adding a [forward slash](https://www.thesaurus.com/e/grammar/slash/) after the left angle bracket.
+The content may be plain text or other HTML elements for elements that allow content. For content elements, we want to create a closing tag. Closing tags are very similar to their opening tag. The only difference is adding a [forward slash](https://www.thesaurus.com/e/grammar/slash/) after the left angle bracket.
 
-The Internet is built on atomic concepts that are repeated and combined to do amazing things. The construction of elements is a perfect example.
+The Internet (and software development generally) is built on atomic concepts that are repeated and combined to do amazing things; think [LEGO](https://www.lego.com/en-us). The construction of elements is a perfect example; if you can type three special characters (`<`, `>`, and `/`>), and some letters, you can create every HTML element and then some.
 
 Right now, our `index.html` file is not what we call a well-formed HTML document. However, it works because most browsers try hard to make pages work.
 
@@ -169,7 +174,7 @@ This is a well-formed HTML page because:
 
 1. It starts with a document-type declaration.
 2. It has a root `html` element.
-3. It has a `head` element with a `title` element; technically, it could be empty and still well-formed.
+3. It has a `head` element with a `title` element; technically, the title could be empty.
 4. It has a `body` element.
 5. All elements are opened and closed correctly.
 
@@ -198,9 +203,11 @@ So, let's add a language to the `index.html` file. We'll add it to the `html` el
 <span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">html</span><span style="color: #ADBAC7">&gt;</span></span>
 <span class="line"></span></code></pre>
 
+This isn’t case-sensitive and could have been “en-us”; I copied it from the list and pasted it here. (There can be a lot of copying and pasting when it comes web design and development.)
+
 Our HTML page is well-formed (no errors) and has no warnings.
 
-Text is lovely, but many like adding images to web pages. Seriously, it's one of the first things most people want to do online.
+Text is lovely, but many like adding images to web pages. Seriously, it's one of the first things people want to do online.
 
 [Let's add an image!](/essays-and-editorials/webdev/absolute-beginners/images/)
 
