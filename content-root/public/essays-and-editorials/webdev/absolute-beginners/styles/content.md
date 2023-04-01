@@ -51,7 +51,7 @@ Go ahead and refresh the browser. You should see the headline has gone from a se
 
 The level one heading doesn't have any children, so let's add the same style definition to the navigation element (`nav`):
 
-```html
+```html{}{1,8-13}
 <!-- About /my-site/about/index.html -->
 <!doctype html>
 <html lang="en-US">
@@ -83,8 +83,7 @@ Let's go ahead and make it so we can change the styles in one place and have the
 
 As you might have guessed, there's an element for that. We'll place the `style` element in the `head` of the document:
 
-``html
-```html
+```html{}{1,6-10}
 <!-- About /my-site/about/index.html -->
 <!doctype html>
 <html lang="en-US">
@@ -109,7 +108,7 @@ As you might have guessed, there's an element for that. We'll place the `style` 
 </html>
 ```
 
-The `type` attribute is optional in this context as many browsers will default to using plain text (`text`) cascading stylesheet (`css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The `type` attribute is optional in this context as many browsers will default to using a plain text (`text`) cascading stylesheet (`css`) as the [MIME-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 The asterisk (`*`) is referred to as a "selector" and means, "Apply this to all elements." The curly brackets are new to us but are common in programming languages. It's a syntax often used to define a "scope." Any styling information we place between the curly brackets will be applied to any element matching the selector.
 
@@ -129,9 +128,9 @@ With [Safari for macOS](https://developer.apple.com/safari/tools/), you need to 
 
 You get the idea.
 
-Let's change the background color of the applied to the `html` element (the whole screen):
+Let's change the background color of the `html` element (the whole screen):
 
-```html
+```html{}{1,6,11-14}
 <!-- About /my-site/about/index.html -->
 <!doctype html>
 <html lang="en-US">
@@ -168,7 +167,7 @@ Moving on!
 
 Let's apply a different color to the `body` element:
 
-```html
+```html{}{1,2,11-14}
 <!-- About /my-site/about/index.html -->
     <style>
       * {
@@ -200,7 +199,7 @@ The content box is a box that hugs the content. Padding will maintain the elemen
 
 All right, let's mess around. Remember, it's the Internet, and it's really hard to break. Let's style the `body` element a bit more:
 
-```html
+```html{}{1,2,11-16,18-19}
 <!-- About /my-site/about/index.html -->
     <style>
       * {
@@ -224,9 +223,9 @@ All right, let's mess around. Remember, it's the Internet, and it's really hard 
 
 We said, "The body should have 15 transparent pixels between it and the edge of its parent (`html`). There should be 10 pixels between the text inside the box and the edge of the box. There should be a 5-pixel wide border that's solid, and the color should be black."
 
-There's a shorthand for defining the border and individual aspects for setting margin and padding. The following will give you the same thing visual results:
+There's a shorthand for defining the border and individual aspects for setting margin and padding. The following will give you the same visual results:
 
-```html
+```html{}{1,2,11-20,22-23}
 <!-- About /my-site/about/index.html -->
     <style>
       * {
@@ -254,7 +253,7 @@ There's a shorthand for defining the border and individual aspects for setting m
 
 You can also be more specific with your selectors. For example, let's make the "About" in the navigation bold:
 
-```html
+```html{}{1,2,18-21}
 <!-- About /my-site/about/index.html -->
     <style>
       * {
@@ -288,7 +287,7 @@ This one is a bit rough to convert to regular language. We're going to work from
 
 Let's add some elements to the `body` of the about page to make this a bit clearer:
 
-```html
+```html{}{1,11-40}
 <!-- About /my-site/about/index.html -->
   <body>
     <nav>
@@ -383,7 +382,7 @@ And our about page should be back to looking like it did before we styled it.
 
 We're going to add the style to the home page first. Open `/my-site/idnex.html` and add the `link` element to the `head` with the following attributes:
 
-```html
+```html{}{1,6}
 <!-- Home /my-site/index.html -->
 <!doctype html>
 <html lang="en-US">
@@ -399,7 +398,7 @@ Again, atomic things are used repeatedly to do some amazing things.
 
 Let's head back to the about page. No more styles. Let's modify  the `head` of this document as well:
 
-```html
+```html{}{1,6}
 <!-- About /my-site/about/index.html -->
 <!doctype html>
 <html lang="en-US">
@@ -436,5 +435,5 @@ Yep, it's 20 years old. Its most recent refresh was in 2013. And you can still t
 
 Under the hood, over 99 percent of what you interact with online is HTML and CSS. Anything someone else has created or done, you can too. Or at least you can see how they did it.
 
-All right, time for [interaction and animations](//essays-and-editorials/software-development/beginning-web-development/interaction-and-animations-1/).
+All right, time for [interaction and animations](/essays-and-editorials/webdev/absolute-beginners/interaction-and-animations/).
 

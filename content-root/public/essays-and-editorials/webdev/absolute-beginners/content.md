@@ -36,7 +36,7 @@ That's it.
 5. Open the `/my-site` directory.
 6. Double-click the `index.html` file. If it doesn't automatically open in your default browser:
 	1. Open your browser.
-	2. Got to file.
+	2. Go to file.
 	3. Click open.
 	4. Find the `/my-site` directory.
 	5. Click on the `index.html` file.
@@ -54,7 +54,7 @@ Another set of principles is:
 
 Let's add another paragraph to the `index.html` file:
 
-```html
+```html{}{3}
 Hello, World!
 
 How are you?
@@ -64,13 +64,13 @@ Refresh your browser.
 
 You'll probably see something like this:
 
-```bash
+```html
 Hello, World! How are you?
 ```
 
-That's not what we wanted; that's a problem.
+All the text appears on one line. That's not what we wanted; that's a problem.
 
-It's happening because the browser does its best to interpret your intent. Browsers tend to ignore whitespace characters. So we need a way to communicate our intent to the browser (or client, if you're fancy). Our only expressed goal to the browser is we want those five words to appear on the screen.
+It's happening because the browser does its best to interpret your intent. Browsers tend to ignore whitespace characters. So we need a way to communicate our intent to the browser (or user agent, if you're fancy, and client, if you're somewhere in between). Our only expressed goal to the browser is we want those five words to appear on the screen; mission accomplished.
 
 Enter [.Hypertext Markup Language](HTML), specifically the paragraph element.
 
@@ -84,7 +84,7 @@ We want to tell the browser when a paragraph starts and ends. Let's modify the `
 
 Refresh your browser, and you should see something like this:
 
-```bash
+```html
 Hello, World!
 
 How are you?
@@ -100,9 +100,9 @@ Right now, our `index.html` file is not what we call a well-formed HTML document
 
 A well-formed HTML document starts with a document-type declaration.
 
-It's an element that won't be rendered on screen. In the early 2000s, there were lots of these available. Since around 2008, it became simplified with the [release of HTML5](https://en.wikipedia.org/wiki/HTML5). Let's add a document-type declaration to the top of `index.html`:
+It's an element that won't be rendered on screen. In the early 2000s, there were a lot of declarations to choose from. Since around 2008, it became simplified with the [release of HTML5](https://en.wikipedia.org/wiki/HTML5). Let's add a document-type declaration to the top of `index.html`:
 
-```html
+```html{}{1}
 <!doctype html>
 <p>Hello, World!</p>
 
@@ -115,9 +115,11 @@ Notice that you can't *see* the document-type declaration on screen? That's beca
 
 Still not well-formed, but we're getting there.
 
-We need what's called a root element. A root element is an HTML element containing (wrapping) all the other content, plain text, or other elements. For HTML pages, the root element is `html`:
+We need what's called a root element. A root element is an element that contains (wraps) all other elements and plain text you want the browser (interpreter) to interpret. 
 
-```html
+For HTML pages, the root element is `html`:
+
+```html{}{2,6}
 <!doctype html>
 <html>
   <p>Hello, World!</p>
@@ -136,7 +138,7 @@ Something we value in web development is separating content from [metadata](http
 
 Our paragraphs are content, so let's wrap them in a `body` element:
 
-```html
+```html{}{3,7}
 <!doctype html>
 <html>
   <body>
@@ -151,9 +153,9 @@ Refresh the browser. Still works. Good times.
 
 Still not well-formed because we're missing a piece of required metadata; the `title`.
 
-Even though the order of these elements doesn't matter, by convention, we put metadata at the top of a document. Let's add the title "My site" inside a `title` element, wrapped in the `head` element.
+Even though the order of these elements doesn't matter, by convention, we put metadata at the top of a document. Let's add the title "My site" inside a `title` element, wrapped in the `head` element:
 
-```html
+```html{}{3-5}
 <!doctype html>
 <html>
   <head>
@@ -179,7 +181,7 @@ This is a well-formed HTML page because:
 4. It has a `body` element.
 5. All elements are opened and closed correctly.
 
-The [w3c](https://www.w3.org) is a nonprofit organization that creates recommendations (sometimes called standards) for the web. The w3c offers a [markup validation service](https://validator.w3.org/#validate_by_input) that was all the rage in the early 2000s; we had badges and everything to let users know our site complied with the recommendations. If you go there and select "Validate by Direct Input" and paste the contents of your `index.html` file, it will come up with no errors. It will have a warning, though. Errors are bigger than warnings.
+The [w3c](https://www.w3.org) is a nonprofit organization that creates recommendations (sometimes called standards) for the web. The w3c offers a [markup validation service](https://validator.w3.org/#validate_by_input) that was all the rage in the early 2000s; we had badges and everything to let users know our site complied with the recommendations. If you go there and select "Validate by Direct Input" and paste the contents of your `index.html` file into the text box, it'll come up with no errors. It will have a warning, though. Errors are bigger than warnings.
 
 The warning should be something like this:
 
@@ -191,7 +193,7 @@ There are [standards](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_a
 
 So, let's add a language to the `index.html` file. We'll add it to the `html` element; however, we could add it to any element:
 
-```html
+```html{}{2}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -209,6 +211,6 @@ Our HTML page is well-formed (no errors) and has no warnings.
 
 Text is lovely, but many like adding images to web pages. Seriously, it's one of the first things most people want to do online.
 
-[Let's add an image!](/essays-and-editorials/software-development/beginning-web-development/images/)
+[Let's add an image!](/essays-and-editorials/webdev/absolute-beginners/images/)
 
 

@@ -1,10 +1,12 @@
 # What you like
 
-Life is too short and too long to spend it doing crap you don't like because you feel like you *need* to for some reason.
+{!! dateblock !!}
+
+Life's too short and too long to spend it doing crap you don't like because you feel like you *need* to for some reason.
 
 Some people really like creating user interfaces with [.Hypertext Markup Language](HTML), some people would rather use a tool to make that happen. Some people like styling things with [.Cascading Stylesheets](CSS), some people would rather use a tool. Some people don't like either and would rather use a template made by someone else.
 
-Some people want to make content and don't want to mess with any of that. Some people want to take someone else's content (or their one bit of content) and experiment with ways to change the look, feel, and experience.
+Some people want to make content and don't want to mess with any of that. Some people want to take someone else's content (or their one bit of content) and experiment with ways to change the look, feel, and experience (a la [CSS Zen Garden](http://www.csszengarden.com)).
 
 Some people like administering servers. They love optimizing and optimizing, and they couldn't care less about what's being served on the hardware.
 
@@ -48,7 +50,7 @@ You don't need a database. You don't need a framework or content management syst
 
 > I like designing interfaces and page layouts.
 
-Right on. Keep practicing HTML and CSS. I knew a user experience designer who would redo other people's sites through his lens. "Here's a site whose content I appreciate. However, I think the design could be improved. Here's the process I took. Here's the thinking. Here's the result."
+Right on. Keep practicing HTML and CSS. I knew a user experience designer who would redo other people's sites through their lens. "Here's a site whose content I appreciate. However, I think the design could be improved. Here's the process I took. Here's the thinking. Here's the result."
 
 They usually stuck with big corporate sites, New York Times, Google, and so on. They didn't go to `joshbruce.com` and say, "Here's how I would have done this."
 
@@ -92,10 +94,25 @@ I prefer [PHP](https://www.php.net) and [PHPC.social](https://phpc.social/gettin
 
 [Server-side Swift](https://www.swift.org/server/) also seems interesting; not a lot of infrastructure around it yet. I know a lot of folks who prefer [Python](https://www.python.org). Some people are into [Ruby](https://www.ruby-lang.org/en/). Even [Haskell](https://www.haskell.org) via [Happstack](https://www.happstack.com/page/view-page-slug/1/happstack). JavaScript, of course, via NGINX. Java. Whatever you're into.
 
-All of these languages have frameworks and libraries. Each of those will have its sub-cultures and communities. Laravel, Symfony, and so on for PHP. Ruby on Rails, Jekyll, and so on for Ruby. Django, Masonite, and so on for Python. I'm going to stop.
+All of these languages have frameworks and libraries. Each of those will have its sub-cultures and communities. Laravel, Symfony, and so on for PHP. Ruby on Rails, Jekyll, and so on for Ruby. Django, Masonite, and so on for Python. I'm going to stop now.
 
 My humble request is to avoid elitism and feeling inferior; a paradox, to be sure. Some people are hung up on being a "real" programmer. It's one of the most frustrating aspects of software development for me; we can be so mean to one another. 
 
 "I only do HTML and CSS. I'm not a real developer." Or, "I'm self-taught and don't have a computer science degree. I'm not a real developer." Or, "You don't write tests? I thought you were a *real* developer." 
 
 (I understand this is part of the human condition in many ways, and still, it seems exceptionally prevalent in the software development space.)
+
+## Conclusion
+
+The Internet is a magical thing comprised of the most mundane things (plain text, not even rich text). It can feel magical. 
+
+Seeing what others have done and are doing can fill people with a sense of, "I could never do that!" I don't think that's true. What is probably more accurate is, "I don't want to do that." And that's okay.
+
+Further, if you want to have a site on the Internet but don't want to make web design and development your career, that's okay too—don't let others give you shit for that. 
+
+Finally, if you're worried, people will give you shit, and that's the thing that's stopping you from starting. You have a friend in me. I will gladly hold space for you. 
+
+With that said, as always, I typically work on pull from folks letting me know the content they want to see (otherwise, I write about whatever and whenever). If you found this series helpful and would like to go beyond the absolute beginner topic (or would like a deeper dive into something from the absolute beginner space), let me know:
+
+- [PHPC.social](https://phpc.social/@itsjoshbruce) (Mastodon)
+- [LinkedIn](https://www.linkedin.com/in/josh-c-bruce/)

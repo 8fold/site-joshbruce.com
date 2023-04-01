@@ -1,12 +1,16 @@
 # Hosting (locally)
 
+{!! dateblock !!}
+
 We're going to get technical for a second. That's not the right word. We're going to get a bit semantic for a second.
 
 Web host, web server, and registrar.
 
 A registrar can register a human-friendly domain name with the folks who govern that sort of thing; technically, you could do it yourself, but there are so many low-cost service providers we tend to pay those folks to do it (around 20 [.United States Dollars](USD) per year). The governing organization has a name, and much like that person you dated in high school, it's not important until it is (like at reunions). We'll discuss that later; the registrar part, not the high school reunion part.
 
-A web server, for our purposes, is a software application running on a computer. The software allows the computer to accept requests from software on a computer and respond to those requests using web-based protocols. The computer is referred to as the "client," the software making the requests is the "user agent," and the computer accepting the requests and *serving* the responses is the "server." If you use iCloud, your Apple device is the client, your application is the user agent, and iCloud (generically speaking) is the server. Dropbox. Google Drive. Office 365. And so on, they're all servers. 
+A web server, for our purposes, is a software application running on a computer. The software allows the computer to accept requests from software on another computer and respond to those requests using web-based protocols. The computer is referred to as the "client," the software making the requests is the "user agent," and the computer accepting the requests and *serving* the responses is the "server." If you use iCloud, your Apple device is the client, your application is the user agent, and iCloud (generically speaking) is the server. Dropbox. Google Drive. Office 365. And so on, they're all servers. 
+
+A web host, again, for our purposes, is a service company who runs web servers that you can effectively rent.
 
 Here's the confusing part.
 
@@ -16,13 +20,13 @@ All right, let's get practical.
 
 Up to this point, the URL in your browser looked something like this:
 
-```bash
+```html
 file:///Users/{your user}/Desktop/my-site/index.html
 ```
 
 The `file` is the protocol. The `://` separates the protocol from the path. By creating a "local host," we can host your website on your computer and have it *be* a website. So, we can make the address bar look like this:
 
-```bash
+```html
 http://localhost:8888/
 
 http://localhost:8888/about/
@@ -59,7 +63,7 @@ With that disclaimer out of the way. Let's change our HTML to take advantage of 
 
 First, we can remove the explicit `index.html` in our links and references:
 
-```html
+```html{}{1,11-12,17,27-28}
 <!-- Home --->
 <!doctype html>
 <html lang="en-US">
@@ -100,7 +104,7 @@ We can remove the `index.html` part because the default settings of the server s
 
 We can also remove the relative links and references—the dots (with the caveat of adding any directory names when necessary):
 
-```html
+```html{}{1,11-12,17,27-28}
 <!-- Home --->
 <!doctype html>
 <html lang="en-US">
@@ -137,13 +141,13 @@ We can also remove the relative links and references—the dots (with the caveat
 
 We can do this because the server software changes the root directory to `/my-site` instead of your computer's literal root file directory (it wraps your file system).
 
-This local environment is the closest to what it will feel when (or if) you decide to go with an external web host. (More on that later.)
+This local environment is the closest to what it will feel like when (or if) you decide to go with an external web host. (More on that later.)
 
 Also, because the URLs we're using aren't fully qualified (we don't have the protocol and domain), we can upload the files to the external web host, and the site should work just fine. 
 
 The drawback is that the site will work without sending people back to your domain if someone takes the content and puts it under a different domain. (We might get to this at some point.) If that's a concern you have, you can make the paths into fully qualified URLs:
 
-```html
+```html{}{1,6,11-12,17,22,27-28}
 <!-- Home --->
 <!doctype html>
 <html lang="en-US">
@@ -180,8 +184,8 @@ The drawback is that the site will work without sending people back to your doma
 
 The problem that arises because of this solution is that when you upload these files to the external web host, you'll most likely need to change all the `http://localhost:8888` to something else.
 
-Beyond that, make sure to stop MAMP when you're done playing with your local host for the day.
+Beyond that, stop MAMP when you're done playing with your local host for the day.
 
 Welcome to the Internet! (Kind of.)
 
-Let's discuss [registering a domain and external hosting](/essays-and-editorials/software-development/beginning-web-development/hosting-externally/).
+Let's discuss [registering a domain and external hosting](/essays-and-editorials/webdev/absolute-beginners/hosting-externally/).

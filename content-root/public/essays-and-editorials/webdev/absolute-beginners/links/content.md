@@ -10,7 +10,7 @@ This brings up another principle:
 
 If you look at the address bar of your browser, you'll probably see something like this:
 
-```bash
+```html
 file://users/{your user}/Desktop/my-site/index.html
 ```
 
@@ -41,7 +41,7 @@ Something to remember about the `id` attribute is that it must be unique within 
 
 (I'll add another paragraph to keep the code samples relatively clean.)
 
-```html
+```html{}{13-14}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -62,7 +62,7 @@ Something to remember about the `id` attribute is that it must be unique within 
 
 Let's add a link to the top of the page that will target the last paragraph. We're going to add an unordered list (`ul`) to the top of the page that will have one list item (`li`), and inside the list item, we'll have an anchor (`a`) element. (A table of contents, if you will.)
 
-```html
+```html{}{7-11}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -80,7 +80,7 @@ Let's add a link to the top of the page that will target the last paragraph. We'
 
 If you refresh your browser, you should see a bulleted list with the text "The last paragraph" at the top. However, if you click on it, nothing happens. We must finish the anchor by adding a hyperlink reference (`href`) attribute. For inline links, we need to start with a hash (#) symbol, followed by the `id` of the target, `last-paragraph`:
 
-```html
+```html{}{9}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -89,7 +89,7 @@ If you refresh your browser, you should see a bulleted list with the text "The l
   <body>
     <ul>
       <li>
-        <a href="#last-paragraph>The last paragraph</a>
+        <a href="#last-paragraph">The last paragraph</a>
       </li>
     </ul>
 
@@ -138,11 +138,11 @@ All the dots, slashes, angle brackets, and tags are syntax. Non-human-friendly t
 When it comes to relative references and linking, there are three things to know:
 
 1. A forward slash (/) at the beginning means, "Start from the root."
-  1. `file://` in our example URL above.
+   1. `file://` in our example URL above.
 2. A dot followed by a forward slash (./) means, "Start from here and go down."
-	1. We could have used `./image.png` for the image `src` we did. We could not have used `/image.png` because that would have translated to `file://image.png`, and that's not where the image is.
+	 1. We could have used `./image.png` for the image `src` we did. We could not have used `/image.png` because that would have translated to `file://image.png`, and that's not where the image is.
 3. Two dots followed by a forward slash (../) means, "Start from here, go up one directory, then go down from there."
-	1. We create an example of this next.
+	 1. We create an example of this next.
 
 The main drawback to fully qualified URLs is that all the links break if you move the files and directories. The main benefit is that if the content gets copied to another location and the links aren't altered, the links will return the user to the source of truth.
 
@@ -179,7 +179,7 @@ And the about page HTML should look like this:
 
 Let's start by updating the `title`. There's a convention online to stack titles. It can help orient users similar to breadcrumbs but less divisive. So, let's add "About" in front of "My site" to end up with this:
 
-```html
+```html{}{4}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -192,7 +192,7 @@ Let's start by updating the `title`. There's a convention online to stack titles
 
 Let's add a level one heading:
 
-```html
+```html{}{7}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -207,7 +207,7 @@ Let's add a level one heading:
 
 Let's create a menu to switch between the home page and the about page easily. We're going to introduce the navigation element (`nav`):
 
-```html
+```html{}{1,5-10}
 <!-- About - /my-site/about/index.html -->
 ...
 
@@ -225,7 +225,7 @@ Let's create a menu to switch between the home page and the about page easily. W
 
 Go back to the `/my-site/index.html` file and paste the navigation there with a couple of changes:
 
-```html
+```html{}{1,5-10}
 <!-- Home - /my-site/index.html -->
 ...
 
@@ -263,4 +263,4 @@ You might also notice that these URLs don't seem like the ones you see online, a
 
 We're going this way to prepare you for a "modern" and live setup. Contemporary web URLs no longer use file names; using filenames isn't user-friendly. So, from a file system perspective, the Internet is a bunch of directories with a single file inside. Good times.
 
-All right, the next big thing folks want to do is make the site look better. So, next up, we'll [talk about styles](/essays-and-editorials/software-development/beginning-web-development/styles/).
+All right, the next big thing folks want to do is make the site look better. So, next up, we'll [talk about styles](/essays-and-editorials/webdev/absolute-beginners/styles/).

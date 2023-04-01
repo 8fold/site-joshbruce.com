@@ -2,7 +2,7 @@
 
 {!! dateblock !!}
 
-It may not feel like it, but you have almost everything you need to get started. As such, we're mainly expanding and reinforcing your knowledge from reading the [introduction to this series](/essays-and-editorials/software-development/beginning-web-development/).
+It may not feel like it, but you have almost everything you need to get started. As such, we're mainly expanding and reinforcing your knowledge from reading the [introduction to this series](/essays-and-editorials/webdev/absolute-beginners/).
 
 We left off having created an `index.html` file with the following content:
 
@@ -71,7 +71,7 @@ To automatically maintain the image's aspect ratio, try setting one of the attri
 
 Adding a caption (or giving credit) for the image might be nice. First, let's add some text after the image (would like to demonstrate something).
 
-```html
+```html{}{3}
 <img src="image.png" alt="A screenshot of my file explorer." width="200" height="auto">
 
 Image by Josh Bruce around 2023
@@ -98,7 +98,7 @@ What is the most semantically appropriate element to accomplish this?
 
 The `figure` element should suffice:
 
-```html
+```html{}{1,5}
 <figure>
   <img src="image.png" alt="A screenshot of my file explorer." width="200" height="auto">
 
@@ -112,7 +112,7 @@ What is the most semantically appropriate element to communicate the intent behi
 
 The `figcaption` element:
 
-```html
+```html{}{4}
 <figure>
   <img src="image.png" alt="A screenshot of my file explorer." width="200" height="auto">
 
@@ -126,7 +126,7 @@ First, nothing breaks. Second, the caption text appears above the image.
 
 You may have noticed I kept saying "semantically" back there. That's because it's easy to get things to display how we want them on the Internet with very few elements. There is a generic block-level element (called `div`) and a generic inline element (called `span`). If we wanted to accomplish a similar default layout, we could have done the following:
 
-```html
+```html{}{1,4-5}
 <div>
   <img src="image.png" alt="A screenshot of my file explorer." width="200" height="auto">
 
@@ -154,7 +154,7 @@ A search engine may grab all the `figure` elements on a page and display them in
 
 Speaking of landmark elements, another online convention is to have at least one level-one heading element (`h1`). Let's go ahead and convert the first paragraph to an `h1` element, and `index.html` should look something like this:
 
-```html
+```html{}{7}
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -177,4 +177,4 @@ While it's possible (technically and according to the specifications) to have mo
 
 You've probably noticed that the `h1` text became larger and bold. This is the default style being applied by the browser. 
 
-We'll get there, but first, we should talk about the next biggest feature that makes the Internet, [linking documents](../links/).
+We'll get there, but first, we should discuss the next biggest feature that makes the Internet the Inernet, [linking documents](/essays-and-editorials/webdev/absolute-beginners/links/).

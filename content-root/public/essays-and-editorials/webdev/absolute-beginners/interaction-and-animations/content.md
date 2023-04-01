@@ -8,13 +8,13 @@ Even though what we have so far is a "static site," it's still interactive. It m
 
 Let's start on the home page with the inline anchor.
 
-We jump to the bottom of the page when we click on the inline. Wouldn't it be cool if we scrolled smoothly down to it instead?
+When we click on the inline anchor, we skip right to the bottom of the page. Wouldn't it be cool if we scrolled smoothly down to it instead?
 
 We can do that, no problem.
 
-Let's open the `main.css`. We'll add a property (`scroll-behavior`) to the `html` selector:
+Let's open `main.css`. We'll add a property (`scroll-behavior`) to the `html` selector:
 
-```css
+```css{}{5,7-8}
 * {
   font-family: sans-serif;
 }
@@ -55,9 +55,9 @@ There's a solution for that as well. We'll use a "media query" to remove the smo
 
 ```css
 @media (prefers-reduced-motion) {
-	html {
-		scroll-behavior: auto;
-	}
+  html {
+    scroll-behavior: auto;
+  }
 }
 ```
 
@@ -70,14 +70,14 @@ We can trust that things will work as expected. Or, we can test to ensure they a
 
 Around 2020, "dark mode" became a serious craze. It was a marketable feature for all sorts of websites and applications. It must be difficult if the marketing department says, "We must tell the world!" (Magic!)
 
-Maybe, maybe not. If you left the colors the way they were in [the previous article](/essays-and-editorials/software-development/beginning-web-development/interaction-and-animations/), we'd consider that "light" mode. We'll add another media query to the bottom of `main.css` (we'll do this in stages):
+Maybe, maybe not. If you left the colors the way they were in [the previous article](/essays-and-editorials/webdev/absolute-beginners/interaction-and-animations/), we'd consider that "light" mode. We'll add another media query to the bottom of `main.css` (we'll do this in stages):
 
 ```css
 @media (prefers-color-scheme: dark) {
   body {
-		background-color: #000000;
-		color: #ffffff;
-	}
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
 ```
 
@@ -85,17 +85,17 @@ We need to enable dark mode on your device to test it (links to how to do it on 
 
 This might cause a problem, though. Dark mode isn't just about making all the background colors black and making the font `color` white. It's designing a decent experience. Our border disappeared, and the gray background now seems much brighter than the foreground color. Let's fix that:
 
-```css
+```css{}{1-4,6,9-11}
 @media (prefers-color-scheme: dark) {
-	html {
-		background: #777777;
-	}
+  html {
+    background: #777777;
+  }
 
   body {
-		border: 5px solid #aaaaaa;
-		background-color: #000000;
-		color: #ffffff;
-	}
+    border: 5px solid #aaaaaa;
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
 ```
 
@@ -103,14 +103,14 @@ That's better. There's another problem. Contrast and colors. (Having dark mode w
 
 The body copy is fine, but the links are the problem. In light mode, they're fine as the default, but there doesn't seem to be enough contrast in dark mode.
 
-My browser's default color for an unvisited link is a high-saturation blue (#0300E4). When I use [a contrast ratio](https://contrast-ratio.com/#%230300E4-on-%23000000) tool and enter black (#000000) as the background color and the saturated blue as the text color, the ratio comes back as 2.12. The default color for a visited link in my browser is a high-saturation purple (#4E1D86). When I put that in as the text color, the contrast ratio comes back as 1.84. For accessibility reasons (people being able to see the text compared to the background), we want at least 4.5.
+My browser's default color for an unvisited link is a high-saturation blue (#0300E4). When I use [a contrast ratio](https://contrast-ratio.com/#%230300E4-on-%23000000) tool and enter black (#000000) as the background color and saturated blue as the text color, the ratio comes back as 2.12. The default color for a visited link in my browser is a high-saturation purple (#4E1D86). When I put that in as the text color, the contrast ratio comes back as 1.84. For accessibility reasons (people being able to see the text compared to the background), we want at least 4.5.
 
 We're going to do a couple of things here:
 
 1. We'll set the colors explicitly for light and dark modes.
 2. We will introduce the concept of pseudo-classes, which you're already familiar with, at least in concept.
 
-Let's handle the light more first. From a construction perspective, anything outside the scope of the media queries will be our default. We use the media queries to handle exceptions to the default. So, let's add the following the `main.css`:
+Let's handle the light mode first. From a construction perspective, anything outside the scope of the media queries will be our default. We use the media queries to handle exceptions to the default. So, let's add the following to `main.css`:
 
 ```css
 a {
@@ -145,7 +145,7 @@ The contrast problem is solved.
 
 Let's add more interaction to the links while we're here. When you hover over the links, let the underline disappear. We'll use another pseudo-class (`hover`). We only need to do this for the default portion of the CSS:
 
-```css
+```css{}{7-9}
 ...
 
 a {
@@ -153,7 +153,7 @@ a {
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
@@ -165,7 +165,9 @@ a:visited {
 
 Of course, we could have it change color and other things.
 
-Let's fix something that's bothering me. For the page a user is on, we use plain text to help orient the user. That's the part we want to be bold, not the last element on each page. "About" is bold on the home page, and "About" is bold on the about page. We want "Home" to be bold on the home page and "About" to be bold on the about page. We'll add a `class` attribute to the list item for the page we are on:
+Let's fix something that's bothering me. 
+
+For the page a user is on, we use plain text to help orient the user. That's the part we want to be bold, not the last element on each page. "About" is bold on the home page, and "About" is bold on the about page. We want "Home" to be bold on the home page and "About" to be bold on the about page. We'll add a `class` attribute to the list item for the page we are on:
 
 ```html
 <!-- Home -->
@@ -204,9 +206,9 @@ nav > ul > li.current {
 ...
 ```
 
-The dot means we're looking for a `class` attribute with a value of `current`. We could remove the `li` if we wanted to. If this were an `id` (like the `last-paragraph` for the inline anchor), we would use a hash (#) instead of a dot.
+The dot in `li.current` means we're looking for a `class` attribute with a value of `current`. We could remove the `li` if we wanted to. If this were an `id` (like the `last-paragraph` for the inline anchor), we would use a hash (#) instead of a dot.
 
-The same class can be applied to multiple elements in a document. Because we have a pretty specific selector, though, just because add the `current` class to, say, a paragraph doesn't mean the font would become bold.
+The same class can be applied to multiple elements in a document. Because we have a pretty specific selector, though, if we add the `current` class to, say, a paragraph the font wouldn't become bold.
 
 Let's keep messing with the navigation for a bit.
 
@@ -249,11 +251,11 @@ The selector specifically targets anchor elements.
 
 We converted the anchor element from an inline to a block element. This causes the anchor to occupy the full width of the list item (which is already a block element). It also allows us to manipulate its padding, margin, border, and so on, like any other block element. The `padding` shorthand says, "I'd like 20 pixels of padding applied to the top and bottom, and 0 padding left and right." Then we center align the text.
 
-You should notice that you can never click (or hover) anywhere on the same line as the anchor, and the underline on the link goes away.
+You should notice that you can hover anywhere on the same line as the anchor, and the underline on the link goes away.
 
-The current page seems a bit odd now. Let's convert it to an anchor:
+The current page text seems a bit odd now. Let's convert it to an anchor:
 
-```html
+```html{}{1,6,12,17}
 <!--- Home -->
 ...
 
@@ -296,9 +298,9 @@ Why not disable the link?
 
 We can, kind of. And the practice we're following is called [progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement). The steps to "disable" the link may not be available to the user looking at the page. Therefore, having the link work and taking them to the correct page is a good default and will work for everyone regardless of browser.
 
-We could add the following to the `main.css`:
+We could add the following to `main.css`:
 
-```css
+```css{}{3,5-6}
 ...
 
 nav > ul > li.current > a {
@@ -319,8 +321,8 @@ I think having a transparent background for the current page is good. However, w
 ...
 
 nav > ul > li > a:hover {
-	background-color: #000000;
-	color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 ...
@@ -328,7 +330,7 @@ nav > ul > li > a:hover {
 
 Back to the atomic concept thing, this should be somewhat readable: When a user hovers over an anchor (`a`) element that is a child of a list item (`li`) that is the child of an unordered list (`ul`) that is the child of a navigation (`nav`) element, change the background color to black and the font color to white.
 
-We need to handle dark mode because only the font color changes in dark mode. So, let's got with a light gray with black text:
+We need to handle dark mode because only the font color changes in dark mode. So, let's go with a light gray with black text:
 
 
 ```css
@@ -346,7 +348,7 @@ There we go.
 
 It's doing the blinking thing, though. It could be nice to have the background color fade in:
 
-```css
+```css{}{3,7-8,10,12-15}
 ...
 
 nav > ul > li > a {
@@ -368,13 +370,13 @@ nav > ul > li > a {
 
 The transition property can be broken down into separate properties. What we're saying here is we want to apply a transition animation when the background color is changed for elements matching this selector. Further, we'd like the transition duration to be one-third of a second. Finally, we would like to use the ease-out keyframe style (starts fast and ends slower).
 
-All right, enough playing with the navigation for now. (You can keep going, but we should do something other things.)
+All right, enough playing with the navigation for now. (You can keep going, but we should do some other things.)
 
 Let's shift to the desktop view for a second.
 
 This website is very wide. Humans are generally comfortable reading lines of text about 70 characters long. Let's set the maximum width of the `body` to 70 characters:
 
-```css
+```css{}{3,8-9}
 ...
 
 body {
@@ -390,7 +392,7 @@ body {
 
 A precedent has been set that the site's main content area is centered. Let's do that:
 
-```css
+```css{}{3,4,9}
 ...
 
 body {
@@ -408,9 +410,11 @@ Yep. Added four characters (`auto`) to center the content. Remember what we ment
 
 We have a problem.
 
-We lose the 15-pixel margin on mobile now on the left and right. Media query to the rescue!
+On mobile, we lose the 15-pixel margin on the left and right. 
 
-```css
+Media query to the rescue!
+
+```css{}{3-5,12-17}
 ...
 
 <!-- Put this back the way it was. -->
@@ -479,4 +483,4 @@ Please, don't try and memorize any of this stuff. There won't be a pop quiz (at 
 	- [Piccalilli](https://piccalil.li), [personal site](https://andy-bell.co.uk), and [Set Studio](https://set.studio)
 		- Andy is one of the people who took up the torch from previous folks leading the charge for the semantic web, progressive enhancement, and genuinely improving the craft of web design and development (in my opinion, if that changes, I'll change this paragraph).
 
-All right, we made a thing. We have the fundamental knowledge to make more things. Let's talk about what some might call [getting real](/essays-and-editorials/software-development/beginning-web-development/hosting-locally/).
+All right, we made a thing. We have the fundamental knowledge to make more things. Let's talk about what some might call [getting real](/essays-and-editorials/webdev/absolute-beginners/hosting-locally/).
