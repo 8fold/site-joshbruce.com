@@ -52,6 +52,8 @@ You don't need a database. You don't need a framework or content management syst
 
 Right on. Keep practicing HTML and CSS. I knew a user experience designer who would redo other people's sites through their lens. "Here's a site whose content I appreciate. However, I think the design could be improved. Here's the process I took. Here's the thinking. Here's the result."
 
+I did something similar for a while. I’d go to a site, view the source, then recreate the same design usually with more semantic markup and less code (like 50–80 percent less HTML and CSS).
+
 They usually stuck with big corporate sites, New York Times, Google, and so on. They didn't go to `joshbruce.com` and say, "Here's how I would have done this."
 
 Check out the various design systems and user interface frameworks (so many design systems):
