@@ -54,6 +54,8 @@ Right on. Keep practicing HTML and CSS. I knew a user experience designer who wo
 
 They usually stuck with big corporate sites, New York Times, Google, and so on. They didn't go to `joshbruce.com` and say, "Here's how I would have done this."
 
+I did something similar for a while. I’d go to a site, view the source, then recreate the same design usually with more semantic markup and less code (like 50–80 percent less HTML and CSS).
+
 Check out the various design systems and user interface frameworks (so many design systems):
 
 - [US Web Design System](https://designsystem.digital.gov).
@@ -66,7 +68,7 @@ Check out the various design systems and user interface frameworks (so many desi
 
 Ah, not a problem.
 
-Find a website builder application. I recommend software you purchase once, not a subscription, but whatever floats your boat.
+Find a website builder application. I recommend software you purchase once, not a subscription, but whatever floats your boat. (There are free options, though I haven’t used any and, therefore, can’t recommend anything that is no-code.)
 
 Specifically, what we're talking about is a non-web-based piece of software. You'll create the site with the software, then export and upload the files it generates. (Most builders have built-in FTP clients to export directly to your host.)
 
@@ -74,7 +76,7 @@ Specifically, what we're talking about is a non-web-based piece of software. You
 
 If you're okay with paying a monthly premium, [Wix](https://www.wix.com/upgrade/website) provides hosting (point the domain there) and a web-based, what-you-see-is-what-you-get (WYSIWYG) editor; probably won't be able to take advantage of the storage on disk for non-site files though. 
 
-While I don't recommend Adobe applications anymore, you can get [Adobe DreamWeaver](https://www.adobe.com/products/dreamweaver.html) for about the same price as Wix every month; it's available for both macOS and Windows and has been around for over 20 years and will have similar capabilities as Blocs and RapidWeaver.
+While I don't recommend Adobe products anymore, you can get [Adobe DreamWeaver](https://www.adobe.com/products/dreamweaver.html) for about the same price as Wix every month; it's available for both macOS and Windows and has been around for over 20 years and will have similar capabilities as Blocs and RapidWeaver.
 
 I'm biased regarding writing my own HTML or heavily modifying the output of WYSIWYG editors. Still, I started with [FrontPage](https://en.wikipedia.org/wiki/Microsoft_FrontPage) in the drag-and-drop sense and switched to DreamWeaver when it was still [Macromedia](https://en.wikipedia.org/wiki/Macromedia) DreamWeaver mainly as a code editor and local previewer.
 
@@ -104,7 +106,7 @@ My humble request is to avoid elitism and feeling inferior; a paradox, to be sur
 
 ## Conclusion
 
-The Internet is a magical thing comprised of the most mundane things (plain text, not even rich text). It can feel magical. 
+The Internet is a magical thing comprised of the most mundane things (plain text, not even rich text).
 
 Seeing what others have done and are doing can fill people with a sense of, "I could never do that!" I don't think that's true. What is probably more accurate is, "I don't want to do that." And that's okay.
 

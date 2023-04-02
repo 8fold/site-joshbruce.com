@@ -117,7 +117,7 @@ Let's handle the light mode first. From a construction perspective, anything out
 <span class="line"><span style="color: #ADBAC7">}</span></span>
 <span class="line"></span></code></pre>
 
-`a` is the selector and will apply to all anchor elements; I used the browser's default color. `a:visited` uses a pseudo-class (similar to `last-of-type` we used before) that says, "Apply this to all anchor elements this user has visited." (Technically, it's about whether or not the target URL is in the browser history.)
+`a` is the selector and will apply to all anchor elements; I used the browser's default color. `a:visited` uses a pseudo-class (similar to `last-of-type` we used before) that says, "Apply this to all anchor elements this user has visited." (Technically, it's about whether or not the target URL is in the browser history; the URL is the center of the universe.)
 
 Now, let's modify dark mode with colors that are similar but achieve an acceptable contrast with the black background:
 
