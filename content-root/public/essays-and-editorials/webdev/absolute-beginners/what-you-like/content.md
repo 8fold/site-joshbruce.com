@@ -106,7 +106,7 @@ My humble request is to avoid elitism and feeling inferior; a paradox, to be sur
 
 ## Conclusion
 
-The Internet is a magical thing comprised of the most mundane things (plain text, not even rich text). It can feel magical. 
+The Internet is a magical thing comprised of the most mundane things (plain text, not even rich text).
 
 Seeing what others have done and are doing can fill people with a sense of, "I could never do that!" I don't think that's true. What is probably more accurate is, "I don't want to do that." And that's okay.
 
