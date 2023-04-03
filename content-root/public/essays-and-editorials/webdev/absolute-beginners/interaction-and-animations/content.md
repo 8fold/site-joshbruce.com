@@ -104,7 +104,7 @@ My browser's default color for an unvisited link is a high-saturation blue (#030
 We're going to do a couple of things here:
 
 1. We'll set the colors explicitly for light and dark modes.
-2. We will introduce the concept of pseudo-classes, which you're already familiar with, at least in concept.
+2. We will introduce the concept of pseudo-classes, which you're already familiar with, at least in practice.
 
 Let's handle the light mode first. From a construction perspective, anything outside the scope of the media queries will be our default. We use the media queries to handle exceptions to the default. So, let's add the following to `main.css`:
 
