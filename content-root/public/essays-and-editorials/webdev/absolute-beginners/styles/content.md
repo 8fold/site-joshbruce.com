@@ -273,7 +273,7 @@ The selector we want to look at is:
 <pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">nav &gt; ul &gt; li:last-of-type</span></span>
 <span class="line"></span></code></pre>
 
-This one is a bit rough to convert to regular language. We're going to work from right to left (inside–out): Apply this to the last list item (`li:last-of-type`), that's a child (`>`) of an unordered list (`ul`), which is a child (`>`) of a `nav` element.
+This one is a bit rough to convert to regular language. We're going to work from right to left (inside-out): Apply this to the last list item (`li:last-of-type`), that's a child (`>`) of an unordered list (`ul`), which is a child (`>`) of a `nav` element.
 
 Let's add some elements to the `body` of the about page to make this a bit clearer:
 
