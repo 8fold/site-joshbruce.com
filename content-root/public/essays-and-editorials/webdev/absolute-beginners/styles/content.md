@@ -182,7 +182,7 @@ When you refresh your browser, you should see a white box floating inside a gray
 
 Do you notice the white box (`body`) has some space to the left, right, and top?
 
-That's because of what's referred to as the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model) and the default style of your browser. Every element being displayed as a block has four "boxes," and they go in the following order from inside–outside:
+That's because of what's referred to as the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model) and the default style of your browser. Every element being displayed as a block has four "boxes," and they go in the following order from inside to outside:
 
 1. content,
 2. padding,
