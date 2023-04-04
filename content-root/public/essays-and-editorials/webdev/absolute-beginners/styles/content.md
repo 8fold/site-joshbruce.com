@@ -112,7 +112,7 @@ If you refresh your browser, you should see all the text is now in the same sans
 
 Just about any element can have a style applied to it. Whether it causes a visible change is a different story. For example, styling the `head` element probably won't visibly change anything because it's a hidden element.
 
-When styling websites, we tend to favor a mobile-first approach. That means designing and styling the website as if it were on a mobile device first, then alter as needed for the desktop and possibly tablet. There are a couple of ways to do mobile-first design (in no particular order):
+When styling websites, we tend to favor a mobile-first approach. That means designing and styling the website as if it were on a mobile device first, then alter as needed for the desktop and possibly tablet. There are a couple of ways to test mobile-first design (in no particular order):
 
 1. Make the browser narrow, like a mobile device.
 2. Use a mobile device.
