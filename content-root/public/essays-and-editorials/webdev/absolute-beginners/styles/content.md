@@ -367,7 +367,7 @@ The `main.css` file should look like this:
 
 And our about page should be back to looking like it did before we styled it.
 
-We're going to add the style to the home page first. Open `/my-site/idnex.html` and add the `link` element to the `head` with the following attributes:
+We're going to add the style to the home page first. Open `/my-site/index.html` and add the `link` element to the `head` with the following attributes:
 
 <pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- Home /my-site/index.html --&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
