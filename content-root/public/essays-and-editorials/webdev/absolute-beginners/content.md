@@ -176,8 +176,7 @@ This is a well-formed HTML page because:
 
 1. It starts with a document-type declaration.
 2. It has a root `html` element.
-3. It has a `head` element with a `title` element; technically, the title could be empty.
-4. It has a `body` element.
+3. It has a `head` element with a `title` element with at least one character inside it.
 5. All elements are opened and closed correctly.
 
 The [w3c](https://www.w3.org) is a nonprofit organization that creates recommendations (sometimes called standards) for the web. The w3c offers a [markup validation service](https://validator.w3.org/#validate_by_input) that was all the rage in the early 2000s; we had badges and everything to let users know our site complied with the recommendations. If you go there and select "Validate by Direct Input" and paste the contents of your `index.html` file into the text box, it'll come up with no errors. It will have a warning, though. Errors are bigger than warnings.

@@ -112,7 +112,7 @@ If you refresh your browser, you should see all the text is now in the same sans
 
 Just about any element can have a style applied to it. Whether it causes a visible change is a different story. For example, styling the `head` element probably won't visibly change anything because it's a hidden element.
 
-When styling websites, we tend to favor a mobile-first approach. That means designing and styling the website as if it were on a mobile device first, then alter as needed for the desktop and possibly tablet. There are a couple of ways to do mobile-first design (in no particular order):
+When styling websites, we tend to favor a mobile-first approach. That means designing and styling the website as if it were on a mobile device first, then alter as needed for the desktop and possibly tablet. There are a couple of ways to test mobile-first design (in no particular order):
 
 1. Make the browser narrow, like a mobile device.
 2. Use a mobile device.
@@ -182,7 +182,7 @@ When you refresh your browser, you should see a white box floating inside a gray
 
 Do you notice the white box (`body`) has some space to the left, right, and top?
 
-That's because of what's referred to as the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model) and the default style of your browser. Every element being displayed as a block has four "boxes," and they go in the following order from inside–outside:
+That's because of what's referred to as the [box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model) and the default style of your browser. Every element being displayed as a block has four "boxes," and they go in the following order from inside to outside:
 
 1. content,
 2. padding,
@@ -273,7 +273,7 @@ The selector we want to look at is:
 <pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #ADBAC7">nav &gt; ul &gt; li:last-of-type</span></span>
 <span class="line"></span></code></pre>
 
-This one is a bit rough to convert to regular language. We're going to work from right to left (inside–out): Apply this to the last list item (`li:last-of-type`), that's a child (`>`) of an unordered list (`ul`), which is a child (`>`) of a `nav` element.
+This one is a bit rough to convert to regular language. We're going to work from right to left (inside-out): Apply this to the last list item (`li:last-of-type`), that's a child (`>`) of an unordered list (`ul`), which is a child (`>`) of a `nav` element.
 
 Let's add some elements to the `body` of the about page to make this a bit clearer:
 
@@ -367,7 +367,7 @@ The `main.css` file should look like this:
 
 And our about page should be back to looking like it did before we styled it.
 
-We're going to add the style to the home page first. Open `/my-site/idnex.html` and add the `link` element to the `head` with the following attributes:
+We're going to add the style to the home page first. Open `/my-site/index.html` and add the `link` element to the `head` with the following attributes:
 
 <pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- Home /my-site/index.html --&gt;</span></span>
 <span class="line"><span style="color: #ADBAC7">&lt;!</span><span style="color: #8DDB8C">doctype</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">html</span><span style="color: #ADBAC7">&gt;</span></span>
