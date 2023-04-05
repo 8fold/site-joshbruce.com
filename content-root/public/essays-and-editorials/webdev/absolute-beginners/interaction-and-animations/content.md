@@ -437,7 +437,7 @@ If you made it this far, you have a solid foundation of how web design and devel
 
 Our focus up to now was to expose the simplicity of web design and development. A bunch of atomic concepts that, when combined, are greater than the sum of their parts. Add a bit of plain text written to communicate intent to a computer. And voila, you have the Internet.
 
-Next, we'll discuss getting to a point where people can see this somewhere other than on your computer. (No money required. Why do so many people think everything on the Internet should be free? In part, because most things required to build things for it are free, except the time and dedication of those who build the things—please, support creators.)
+Next, we'll discuss getting to a point where people can see this somewhere other than on your computer.
 
 That said, I want to give you more resources on HTML and CSS. We'll return to them in future articles (most likely), but these should help you fish for yourself.
 
