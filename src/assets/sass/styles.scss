@@ -380,6 +380,10 @@ ul[is="data-list"] {
       }
     }
   }
+
+  kbd>kbd {
+    border: var(--1-px) var(--solid) var(--gray-lightest);
+  }
 }
 
 @media only screen and (min-width: 600px) {
