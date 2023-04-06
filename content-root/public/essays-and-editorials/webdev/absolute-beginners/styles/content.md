@@ -410,7 +410,7 @@ Favor starting with the content and semantic markup. Then add to it.
 In the early 2000s Dave Shea created a site (and challenge) called [CSS Zen Garden](http://www.csszengarden.com/). The premise was pretty simple. Create a single HTML page with semantic markup and minimal "extra" HTML. Invite people to create stylesheets that modify the look and feel of that HTML. The only hardline rules are that you can't add JavaScript and you can't modify the HTML. Here are some of my favorites for demonstrating the flexibility of a well-formed document and stylesheets:
 
 1. [The original](http://www.csszengarden.com/001/); very 2000s.
-2. [Steel](http://www.csszengarden.com/219/); very animated and interactive.
+2. [Steel](http://www.csszengarden.com/219/); very animated and interactive on desktop, and readable version on mobile.
 3. [Mid Century Modern](http://www.csszengarden.com/221/); 70's retro and responsive (change the browser size).
 4. [Apothecary](http://www.csszengarden.com/218/); 20's woodcut style, also responsive.
 5. [Punkass](http://www.csszengarden.com/101/); a fixed-width collage aesthetic with a punk attitude.
