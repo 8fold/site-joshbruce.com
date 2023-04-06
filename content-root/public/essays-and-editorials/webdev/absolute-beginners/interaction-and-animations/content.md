@@ -44,6 +44,8 @@ If it doesn't, one of two things is most likely happening:
 2. The `main.css` stylesheet might be cached, so you're looking at an older version.
 	1. Holding down shift and clicking refresh on the browser should solve the problem.
 
+It’s worth noting that even though animation isn’t there, the inline anchor still works; the user still goes to the bottom. The key functionality isn’t the animation. The animation enhances what was already there.
+
 Woohoo! Problem solved.
 
 A new problem emerges. Some people don't do well with animations and things flying over the screen. Most operating systems can reduce motion and animations. We want to respect the user's preferences. That's another principle:
