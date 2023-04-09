@@ -2,416 +2,259 @@
 
 {!! dateblock !!}
 
+Not to be confused with [Cover's Universal Portfolio Algorithm](https://en.wikipedia.org/wiki/Universal_portfolio_algorithm). Or something like [The Ultimate Buy and Hold Portfolio](https://paulmerriman.com/ultimate-buy-and-hold-strategy/). This is not an allocation or management strategy. Instead, it's a model for conceptualizing, tracking, and making decisions (executing a management strategy).
+
 Assertions:
 
 1. Everyone has a portfolio.
 2. Every portfolio has 5 categories.
-3. Each category can grow and shrink independently of the other categories.
-4. Each category is based on characteristics, not the thing itself.
+3. Each category can grow and shrink independently.
+4. Each category is based on characteristics, not the things inside.
 5. Things may move between categories based on historical performance.
 
-Let's use dessert as a metaphor.
+The first 2 assertions are why it's called The Universal Portfolio.
 
-We’ll have a plate; there's always a plate. We'll have at least one brownie; there's always one brownie. We may order another brownie. We can also add condiments such as whip cream, fruit compote, etc. Finally, we can add sprinkles like chocolate chips or similar.
+We'll do this in 3 rounds with 3 asides to help define some terms.
 
-The plate represents your liabilities and expenses, time or money you exchange with other people. Everyone gets a plate.
+The first aside is that by "historical" in this context, we're talking in terms of decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
 
-The first brownie is your short-term assets and income, the lifetime you have, or money you exchange with other people, usually for liabilities and expenses. Everyone has at least one brownie. For some people, the brownie might be smaller than the plate; their liabilities are greater than their short-term assets. For others, the brownie might be edge-to-edge and 4 times thicker than the plate. And all points in between.
+The first round lists the categories. The second round outlines the primary characteristics of things in each category. The third round lists items that have fallen into each category historically.
 
-The second brownie is what we call growth assets. Not everyone orders this brownie. For others, this brownie dwarfs the first brownie.
+## The categories (round 1)
 
-The condiments are negatively correlated assets. Compared to the second brownie (growth assets), things in this portion of the dessert tend to increase while growth assets decrease and vice versa. Not everyone has condiments. Other people are like that relative who takes a tiny sliver of pumpkin pie and adds two cups of whipped cream.
+The first round is brief. We'll list the 5 categories:
 
-The sprinkles are assets with a low correlation to the other portions of the dessert. Again, some people really like sprinkles, possibly to the point of only having the first brownie and sprinkles. Other people avoid sprinkles entirely.
+1. Liabilities and outflows,
+2. short-term assets and inflows,
+3. growth assets,
+4. negative correlation assets, and
+5. low correlation assets.
 
-From a quantity perspective, you can have the same volume of stuff making up this dessert. However, when looking at the ratio, these components can shift. And they can shift for all sorts of reasons.
+## The characteristics (round 2)
 
-Let’s go deeper.
+We're going to get the other 2 asides out of the way.
 
-We’ll give the general characteristics of each, some things that fall into each category as of this writing, and how categories get larger or smaller in volume without necessarily changing the number of things in them.
+The second aside is around the "real rate." We adjust the interest rate by the inflation rate. For liabilities, we use a positive number for the interest rate, add the inflation rate, and convert the sum to a negative number. For assets, we use a positive number for the interest rate and subtract the inflation rate, leaving us with the real rate.
 
-## The plate (liabilities and expenses)
+A bill is an outflow. It has a 0 percent interest rate. Inflation is 3 percent, and the sum is 3, giving us a negative 3 when we're done. A credit card is a liability. It has a 20 percent interest rate, inflation is 3 percent, and the sum is 23 percent, giving us a negative 23 when we're done. A savings account is a short-term asset. It has a 3 percent interest rate. Inflation is 3 percent, leaving us with 0 as the real rate.
 
-Primary characteristics:
+The final aside is more in-depth.
 
-1. These are things you give someone else.
-2. Historically, the real rate is often the most negative compared to the other components.
-3. These things tend to be more advantageous in inflationary-growth economic environments.
+This is a derivative of [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). However, the result is similar. We'll end up with 4 quadrants. The horizontal axis goes from infinite deflation (left) to infinite inflation (right); in percent. The vertical axis goes from infinite growth (top) to infinite contraction (bottom). At any given time, the market you are [saving and investing](/essays-and-editorials/finances/concepts/#saving-isnt-investing) in is in one of the 4 quadrants, and you are operating in a market in one of the 4 quadrants. You can save and invest in a market different from the one you are operating in. The 4 quadrants are as follows:
 
-Secondary characteristics:
+1. deflationary-growth,
+2. inflationary-growth (2021, for example),
+3. deflationary-contracting, and
+4. inflationary-contracting (2022, for example).
 
-1. Interest rates are in terms of [.Annual Percentage Rate](APR) and indicate excess money given to someone else.
+A market can be at equilibrium, represented by the point where the scales cross. Historically, different types of holdings are more favorable in different environments.
 
-By “historically,” we’re talking in terms of decades; 10, 20, 30, 40, and so on years. We typically give more weight to recent data as things change and evolve over time. What was true 40 years ago may not be true now, and including data from 40 years ago can hide more recent data due to averages and medians.
+On to the primary characteristics of each category.
 
-When I say “real rate,” we take the APR and add the inflation rate. APRs work against us, so we convert that number to a negative. (Assets have the same characteristic; we subtract inflation instead of adding.)
+### Liabilities and outflows (characteristics)
 
-When we talk about economic environments, we're alluding to the work of Bridgewater & Associates and Ray Dalio. This leads us to [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing) and risk parity. 
+1. Things you owe or give to others.
+2. The real rate is the lowest (often negative) compared to the other categories.
+3. Historically, they are more favorable in all but deflationary-contracting environments.
 
-Imagine two columns. On the left is growth, and on the right is inflation. Now bisect those two columns with a line representing market expectations of the future. This creates two rows. The top row is rising, and the bottom row is falling. This creates 4 quadrants. We want to spread risk evenly across all 4 quadrants by selecting more advantageous things that historically fall into each of the 4 quadrants.
+It's worth a couple of clarifications and examples.
 
-It might seem counterintuitive that the liabilities and expenses are historically more advantageous in rising inflationary and growth environments. However, loan interest rates in growth environments tend to be lower, so borrowing money is cheaper. Further, if inflation is rising and I buy in bulk now, I'm locking in a lower price compared to the future when prices rise.
+Typically, in finances, we don't think of liabilities and outflows in terms of the real rate. There are two reasons we did it in The Universal Portfolio context. First, it reduces cognitive load; if I'm thinking of every category in terms of the real rate, I don't need to shift mentally—*if this* is a liability, *then* I don't use the real rate. Second, using the real rate can help increase the psychological impact when looking for "high-interest debt."
 
-Ingredients that go into making the plate:
+Next is that, in finances, we typically don't think of liabilities and outflows as favorable in any given economic environment. With that said, if you are in a growing economy, chances are interest rates will be low on loans. If you're in an inflationary economy, buying something now is "buying low" because prices are increasing. So, while these things aren't bringing in more money in a deflationary contracting environment, they're always going out and are costing less.
 
-1. Recurring bills: Utilities, rent, food, and similar purchases.
-2. Terminal loans: Like a mortgage or car loan.
-3. Revolving loans: Like credit cards and lines of credit.
-4. Future replacement costs: A cellphone has a useful life of 2 to 5 years. A roof has a useful life of 15 to 20 years. After that time, you'll probably want or need to buy a new one.
+In contracting times, interest rates tend to increase. As a result, it costs more to borrow money; therefore, liabilities are less favorable.
 
-That's not an exhaustive list. And the key characteristic is that you can’t eat a plate. The ingredients making up the plate go to someone else.
+Further, let's say a pack of chewing gum lasts you a year. At present, the cost of a pack of chewing is 1 [.United States Dollar](USD). The inflation rate for the last 10 years in the economy in which you are operating has been 7 percent. If the next 10 years are anything like the previous 10, that pack of gum will be 2 USD. If you have an extra 100 USD sitting around and buy 100 packs of gum, and the next 10 years are like the last 10 years, you have "bought low." If the next 10 years are deflationary at the same rate (only negative), then a pack of gum becomes 0.50 USD. You actually "bought high"; less favorable.
 
-4 major things can make the plate grow and shrink; 2 are most likely out of your control:
+The last 4 categories will be much shorter.
 
-1. Inflation and deflation,
-2. an emergency,
-3. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation, and
-4. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
+### Short-term assets and inflows (characteristics)
 
-Inflation is the tendency for the same quantity of products and services to cost more over time; we're not discussing quality. This also goes back to the commentary on favoring recent data. Let’s look at data from the [.United States Bureau of Labor Statics](BLS) [.Consumer Price Index](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm). We’ll use the "all items" category for each month.
+1. Things you have or receive.
+2. The historical real rate has been relatively neutral compared to the other categories.
+3. Historically, they are more favorable in deflationary environments.
 
-From February 2022 through January 2023 (12 months), the average inflation rate was: 7.9 percent. From February 2013 through January 2023 (120 months or 10 years), the average was: 2.5 percent. From February 2003 through January 2023 (20 years), the average was: 2.49 percent.
+### Growth assets (characteristics)
 
-There were some deflation months in 2009. 2009 was during [The Great Recession](https://en.m.wikipedia.org/wiki/Great_Recession), and inflation averaged 3 to 4 percent the previous year.
+1. Things you have or receive.
+2. The historical real rate has been the highest compared to all the categories.
+3. Historically, they are more favorable in growth environments (hence the name).
 
-Notice that inflation for the last year is almost triple the last 10 and 20 years. That's because the data from 10 and 20 years ago is dragging down (or hiding) the most recent data. And I don't know about you, but the roughly 8 percent impacts present-me much more than the percentages from 10 and 20 years ago. Again, a reason for giving more weight to the recent data.
+When we use the term "growth," we're not talking about [style boxes for equities](https://www.investopedia.com/terms/e/equity_stylebox.asp). Instead, we are talking about a favorable environment.
 
-Regardless, the plate has increased by almost 8 percent due to inflation, and it's out of my direct control and influence.
+### Negative correlation assets (characteristics)
 
-In 2022, I had appendicitis leading to an [appendectomy](https://en.m.wikipedia.org/wiki/Appendectomy). My plate got bigger because of an emergency.
+We're going to change up the second characteristic for this one.
 
-Hedonic adaptation is more within your control. You get a raise. You buy a more expensive thing. You’ve made your plate bigger because you have to replace that thing, and if you replace it with the same thing, the price may be the same, but it's more than the first thing you replaced (this is why we can't have nice things).
+1. Things you have or receive.
+2. Has the lowest (usually negative) historical correlation with growth assets.
+3. Historically, they are more favorable in contracting environments, making them negatively correlated with growth assets.
 
-The Diderot effect is when you buy a new pair of shoes. Now you decide to replace your wardrobe because all your clothes are old compared to your shoes. Then you decide to replace your furniture because your new clothes seem so out of place compared to the sofa you bought 15 years ago with multiple stains. You’ve made the plate bigger.
+### Low correlation assets (characteristics)
 
-## The first brownie (short-term assets and income)
+Watch that second characteristic again.
 
-Primary characteristics:
+1. Things you have or receive.
+2. Has low historical correlation with things in all other categories.
+3. Historically, they are more favorable in inflationary environments.
 
-1. These are things you have or that someone gives you.
-2. Historically, the real rate is neutral or negative compared to the other categories.
-3. Historically, things in this category are more advantageous in deflationary environments.
+By low correlation, we mean the correlation may be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 
-Secondary characteristics:
+## The types (round 3)
 
-1. Interest rates are in terms of [.Annual Percentage Yield](APY) and indicate excess money given to you.
+We're going to focus on the "elephants in the room." And we're only talking about as of this writing.
 
-Here is a non-exhaustive list of ingredients that go into making the first brownie:
+### Liabilities and outflows (types)
 
-1. Cash (includes your paycheck): The ubiquitous method of exchange for the economy you’re participating in. It could be the [.United States Dollar](USD), precious metal coins back in the day, or cigarettes in those old prison movies.
-2. Short-term bonds: Bonds with a 1- to 3-year maturity date.
-3. Certificates of deposit and share certificates: Cash held at a bank for a period, usually less than 10 years.
+1. Bills, charitable giving, and time.
+2. Terminal loans (auto, mortgage, student, and so on).
+3. Revolving loans (credit cards, lines of credit, and so on).
 
-Some things that cause this brownie to get bigger and smaller:
+### Short-term assets and inflows (types)
 
-1. Saving or reinvesting dividends,
-2. inflation and deflation,
-3. an emergency,
-4. The [hedonic treadmill](https://en.m.wikipedia.org/wiki/Hedonic_treadmill) and lifestyle inflation, and
-5. The [Diderot Effect](https://en.m.wikipedia.org/wiki/Diderot_effect).
+1. Your paycheck and time.
+2. Cash.
+3. Things with a maturity date of fewer than 10 years (certificates of deposit and share certificates, I-bonds, short-term treasuries, and so on).
 
-Yep. Almost the same list as the plate.
+The lists for the other types will get shorter because they have the biggest elephants.
 
-This reveals the notion of spending less, earning more, or both.
+### Growth assets (types)
 
-Some might say reinvesting dividends has the greatest impact, but this isn't the space for that complexity and debate. It'll be covered in a [later section](/essays-and-editorials/finances/the-universal-portfolio/#compounding). Further, compounding falls under the "making more" part. But let's start with spending less as we tend to have more control over that.
+United States equities.
 
-A recommended precursor to spending less (and most things) is to get an idea of where you are, also known as [tracking](/essays-and-editorials/finances/budgeting/#tracking). Capture how much short-term assets you spend (the brownie you eat) and why you spent it. Focus on the categories you spend the most on and see if you can reduce or eliminate them.
+### Negative correlation assets (types)
 
-The plate gets smaller, and the brownie may increase in volume.
+Long-term United States Treasuries.
 
-The truth about making more is that not every employer or client will increase your income annually. There aren’t mechanisms that cause regular increases. Sometimes, you must advocate for yourself or change how you earn income; otherwise, you are taking a pay cut because some aspects of the plate don't care about your situation. The volume of the brownie remains the same, but the plate gets bigger.
+### Low correlation assets (types)
 
-This is one reason I include liabilities in the portfolio. Paying off liabilities takes a bite of the brownie while making the plate proportionally smaller. However, it doesn't actually change the proportion of the portfolio.
+This one has two elephants. We'll call them a parent and child. But, it's one of those instances where the child is larger than the parent.
 
-I have 5,000 USD in liabilities. I have 5,000 USD in short-term assets. My ratio is 50:50. I spend 4,000 USD from short-term assets to pay a liability. My liabilities are 1,000 USD, and my short-term assets are 1,000 USD; still 50:50.
+The parent is what we typically call commodities in general, and the child is gold specifically.
 
-To change the allocation, we must change something else; spend less, earn more, or both.
+## Why, though?
 
-Go ahead and pay off the credit card, but don’t run it up again; spend less. Be good at what you do and ask for a raise or increase your prices; earn more. Or both.
+With the meat and potatoes (or dessert if you remember the original presentation) out of the way, let's talk about what this model gives us.
 
-Let’s say I pay off the 5,000 USD using the 5,000 USD. The plate is still there (mainly due to inflation and other bills), and I have no brownie. Then I earn 1,000 USD. My first brownie is back. Let’s say I have 200 USD in bills; the portfolio is about 20:80. I pay the bill, and the portfolio is 0:100.
+Why not just do it the way everyone else does?
 
-Some people are in a position where the phrase “feast or famine” truly applies. Further, in some cases, they can't see alternatives. Finally, sometimes they can see an alternative but feel it doesn’t apply to them or they will fail (including spending less or earning more).
+In short, because I was reconciling the "shoulds" and "buts," I was hearing from the various [life and financial content I was consuming](https://joshbruce.com/examinations/):
 
-Next brownie!
+- You should have an emergency fund that covers your insurance deductibles, and it should be in cash (short-term asset); but
+- you should also reduce your high-interest rate debt (liabilities) and expenses (outflows); but
+- you should also build a cash reserve of at least 3 months of living expenses, and it should be in cash (short-term asset); but
+- you should be in the market (growth assets) and not have cash  (short-term asset) sitting on the sidelines; but
+- you should consider risk by having a stock-bond portfolio (negative correlation and growth assets); but
+- not all bonds are created equal (short-term, negative correlation, and low correlation);
+- and on.
 
-## The second brownie (growth assets)
+These are a lot of [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/), and it's not even a complete list.
 
-Primary characteristics:
+So I wanted a model that could accommodate all the "buts" and "shoulds" and different ways people do things with their finances—investing on margin (liability), cash-only (short-term), accumulation (short-term and growth), buy the dip (short-term and growth without negative or low correlation), and so on.
 
-1. These are assets, therefore, things you have.
-2. Historically, the real rate is positive and higher than the other categories.
-3. Historically, they are more advantageous in growth environments.
+Let's look at some other primary considerations. 
 
-Secondary characteristics:
+### Transparency
 
-1. You typically convert short-term assets into something else you own, not a liability.
-2. Has a resell value that fluctuates more than short-term assets; a dollar is a dollar, and someone is rarely willing to give you 2 dollars for 1.
-3. When you sell the thing, it becomes a short-term asset. Even if you sell with the intention of immediately purchasing another asset.
-4. Many growth assets will pay some form of income, whether dividends or rent. The dividend and rent you receive, strictly speaking, is a short-term asset.
+The way many of us talk about finances allows us to, for lack of a better term, hide things and not say anything. Talking money in the United States is pretty taboo, and the way we usually talk about finance, in particular, allows us to say something without saying anything:
 
-Here is a non-exhaustive list of ingredients that go into making the second brownie:
+> I have a net worth of 500,000 USD, and my portfolio is 100 percent in a total stock market index fund.
 
-1. US corporate equities: Ownership shares in publicly and privately held companies.
-2. Some forms of tangible things (real estate, artwork, and antique cars, for example).
-3. Mutual and index funds in various forms that purchase corporate equities: You purchase a share in the fund, and the fund's custodian purchases shares in companies based on some [guidelines and guardrails](/essays-and-editorials/guidelines-and-guardrails/) established for the fund.
+On the surface, we could presume all sorts of things.
 
-Some primary things causing this layer to grow and shrink:
+This person has a total stock market fund valued at 500,000 USD, and every time they get paid, the money goes straight into it, and they cashflow their lifestyle from selling shares. Not saying it's terrible if you do that. But I could presume that's what's happening.
 
-1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp): Where we get the idea of greater risk, greater return, which isn't a hard truth; correlation is not causation. Just because it's risky doesn't mean there will be a reward (just look at most things we consider gambling).
-2. Selling some or buying more of the things.
-3. Appreciation and depreciation of those things.
-4. Reinvesting dividends.
+This person has no debt. This person has whatever. Again, it's saying something without saying anything. For the sake of closing out the example, let's put their financial situation into The Universal Portfolio model:
 
-We're buying something other than short-term assets, one reason this is a different brownie. Short-term and growth assets tend to have a low or negative correlation with one another, the definition of diversification.
+1. Liabilities and outflows: They have a mortgage with a 200,000 USD balance.
+2. Short-term assets and inflows: They have 100,000 USD in cash to cover deductibles and 12 months of living expenses.
+3. Growth assets: They have a total stock market fund valued at 100,000 USD.
+4. Negative correlation assets: None.
+5. Low correlation assets: They have a house they paid 500,000 USD for.
 
-That said, it’s important to note and remember that things can shift. Something you thought was a growth asset can turn into a liability or short-term asset based on the changing characteristics of the thing.
+Assets of 700,000 USD minus liabilities of 200,000 USD is a net worth of 500,000 USD. So now let's examine the part about "my portfolio is 100 percent in a total stock market index fund."
 
-You can charge whatever you want for the thing when you sell it. Some questions this raises:
+If by "portfolio," we mean everything excluding cash and liabilities (the mortgage) and use assets (the house), absolutely true. But that wouldn't be in Univeral Portfolio terms.
 
-1. When do you need the short-term asset from the sale?
-2. Will someone pay what you’re asking?
-3. If so, will they do it in a timely manner?
-4. Will you need to replace the thing with something similar?
+We have a portfolio with a total value of 900,000 USD:
 
-This brings up the idea of liquidity. 
+1. Liabilities and outflows: Roughly 20 percent.
+2. Short-term assets and inflows: Roughly 15 percent.
+3. Growth assets: Roughly 15 percent.
+4. Negative correlation: 0 percent.
+5. Low correlation: Roughly 50 percent.
 
-Liquidity is the time and cost it takes for something to be exchanged for something else. Short-term assets are considered very liquid, mainly because cash is an ingredient in that brownie. Growth assets usually have low liquidity. Low liquidity is a risk because you may be unable to "get at the money" when needed. The risk premium at work.
+Transparent.
 
-Back in the day, and I mean the 1970s and earlier back in the day, buying shares in a publicly traded company was pretty prohibitive because of the lack of liquidity.
+### Multiple asset types
 
-We’re talking old-school here.
+Traditionally we look at portfolios in terms of growth assets (stocks) and non-cash assets (bonds). 
 
-Let’s assume you could buy direct. You would give someone your money. They would generate a piece of paper representing your share in the company. You’d wait to get the paper. You would then have to hold it as proof of ownership. If the company ever decided to pay its shareholders a dividend, it must keep records of its ownership stake and cut you a check. You would also need to keep tabs in case you missed getting your cut, then use the paper to verify your claim of ownership. (Shares are like the corporate equivalent of printing money or a [community currency](https://en.wikipedia.org/wiki/List_of_community_currencies_in_the_United_States)).
+One of the "shoulds" in the financial community is that you *should* be all stocks during accumulation mode. Further, another "should" is that you *should* rebalance your portfolio regularly. Finally, you *should* buy low and sell high (buy the dips).
 
-If you wanted to sell the share, you’d have to find someone willing to buy it. They’d have to give you money. You’d have to transfer ownership to this other person. Then give them the paper and let the company know to update their records. (Like transferring the title for a car or house or the certificate of ownership for artwork.)
+That said, there is no rebalancing if your "portfolio" only has one index fund. The Universal Portfolio changes that. Let's use our example portfolio from above.
 
-If you had to go through a broker (most times you did), you might have to pay fees of hundreds of dollars to pay them to do all of that for you.
+1. Liabilities and outflows: Roughly 20 percent.
+2. Short-term assets and inflows: Roughly 15 percent.
+3. Growth assets: Roughly 15 percent.
+4. Negative correlation: 0 percent.
+5. Low correlation: Roughly 50 percent.
 
-In the twenty-first century, there are more options with varying fees ranging from 0 to a couple percent. Publicly traded company shares have become more liquid. And the old-school way still exists; old doesn’t mean bad or extinct.
+Let's say the growth assets drop by 20 percent:
 
-Compare that to a tangible asset like a painting. Again, you purchase the thing. You wait for the thing. Sometimes there’s a letter of authenticity you’ll want to keep. Now you want to sell the painting. How long does finding someone willing to pay what you’re charging take? Again, risk.
+1. Liabilities and outflows: 200,000 USD.
+2. Short-term assets and inflows: 100,000 USD.
+3. Growth assets: 80,000 USD.
+4. Negative correlation: 0 USD.
+5. Low correlation: 500,000 USD.
 
-Compare both to something you own and use, like a house. Historically, houses are growth assets. But, when you sell the manmade cave, you usually want to find another one. Further, they may act more like low-correlation assets if you're not charging rent.
+The percents change to:
 
-Regardless, the second brownie gets a little smaller in volume once sold.
+1. Liabilities and outflows: Roughly 23 percent.
+2. Short-term assets and inflows: Roughly 11 percent.
+3. Growth assets: Roughly 9 percent.
+4. Negative correlation: 0 percent.
+5. Low correlation: Roughly 57 percent.
 
-Let's go back to risk for a second.
+Hypothetically part of your [investment policy](/essays-and-editorials/finances/investment-policies/) is you want to maintain the same percentage of short-term and growth assets. Further, if growth assets drop by a certain percentage, you can do some rebalancing (rebalancing on bands).
 
-We often conflate risk with volatility. Volatility is how much the thing you bought appreciates or depreciates in a given period. Volatility is great when it's going up and sucks when it's going down. The risky side of volatility is needing to sell and having to charge less than your cost basis for the thing being sold.
+Then, in this circumstance, you can take 1 percent of your short-term assets and buy growth assets. 1 percent of 100,000 USD is 10,000 USD. Bringing us to:
 
-Cost basis is what you paid for the thing plus any additional related costs for maintenance and improvement; also known as the [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/). Just because you paid a lot for something doesn't mean someone later will pay your initial cost basis, much less anything extra.
+1. Liabilities and outflows: 200,000 USD.
+2. Short-term assets and inflows: 90,000 USD.
+3. Growth assets: 90,000 USD.
+4. Negative correlation: 0 USD.
+5. Low correlation: 500,000 USD.
 
-I buy a car for 10,000 USD. The chances of me selling it for 10,000 USD later is pretty slim. The chances of me selling it for 10,000 USD, plus the taxes I paid over the years, the interest paid on the loan I had then, the oil changes, tires, and so on, are even slimmer. When it comes to cars, we don't look at them as an asset. We look at them as a liability. We tend to look at homes as assets because we don't keep track of all the money spent over the course of ownership. Of course, we tend not to track the total cost of ownership for most things.
+This brings us to the following percentages:
 
-## The condiments (negative correlation assets)
+1. Liabilities and outflows: Roughly 23 percent.
+2. Short-term assets and inflows: Roughly 10 percent.
+3. Growth assets: Roughly 10 percent.
+4. Negative correlation: 0 percent.
+5. Low correlation: Roughly 57 percent.
 
-Primary characteristics:
+Let's say growth assets have a severe spike, and you're still in accumulation mode. Let's say growth assets jump by 30 percent:
 
-1. Again, they're assets, so you have them.
-2. Historically, they have the greatest negative correlation to growth assets.
-3. Historically, they are more advantageous in contracting environments, hence the negative correlation to growth assets.
+1. Liabilities and outflows: 200,000 USD.
+2. Short-term assets and inflows: 90,000 USD.
+3. Growth assets: 117,000 USD (90,000 USD + 27,000 USD).
+4. Negative correlation: 0 USD.
+5. Low correlation: 500,000 USD.
 
-Secondary characteristics:
+Now the value of the portfolio is 907,000 USD and the following percentages:
 
-1. Has all the same secondary characteristics as growth assets.
-2. Interest rates are in terms of APY and indicate excess money given to you.
-3. Historically, the real rate is lower than growth assets.
+1. Liabilities and outflows: Roughly 22 percent.
+2. Short-term assets and inflows: Roughly 10 percent.
+3. Growth assets: Roughly 13 percent.
+4. Negative correlation: 0 percent.
+5. Low correlation: Roughly 55 percent.
 
-In the US, the asset type with the greatest negative correlation historically to US corporate equities is:
+Does that mean we should sell some growth assets?
 
-1. Long-term US treasuries: A loan to the US Government with a maturity date of around 20 or more years.
+Depends on the investment policy statement. You may be in accumulation mode and have as part of your statement not to sell other assets. Okay. You could stop throwing extra money at growth assets, keep it in a savings vehicle, or pay down the liabilities.
 
-Primary things causing this layer to grow and shrink:
+And, maybe your policy statement says go ahead and sell, but it's only half. To illustrate using our example, we'd need to trade 1.5 percent of our growth assets (roughly 2,000 USD) to get short-term and growth assets to be equal weights in the portfolio. Our policy statement would allow us to do 0.75 percent (roughly 875 USD).
 
-1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp).
-2. Selling some or buying more of the things.
-3. Appreciation and depreciation of those things.
-4. Reinvesting dividends.
-
-Yep. Same as the list for growth assets.
-
-Many negatively correlated assets have a lower risk premium. The things that fall into this part of our dessert also tend to be less volatile.
-
-When folks talk about a stock-bond portfolio, the benefit isn't in the type of asset, specifically company stocks and any old bonds.
-
-Humans have a tendency to try and expedite communication by cutting out the parts of speech we think are superfluous. So, instead of saying, "A diversified collection of stocks in relatively stable companies and long-term treasuries," we just say, "stocks and bonds" and hope the other person unpacks it as we intended. Our intention is to say, "A diversified collection of growth and negative correlation assets for the economic market in which you're participating." We want something with the characteristics described, not a specific asset type. Sticking with an asset type, despite a change in historical characteristics for that asset type, would be a [foolish consistency](https://en.wikipedia.org/wiki/Self-Reliance).
-
-There are all types of companies, and they all have at least one share. They're not all growth assets; most will fail ("go to zero").
-
-There are all types of bonds. Corporate bonds, state municipal bonds, and federal government bonds. Short-, long-, and intermediate-term. Then there's the credit rating for the bond issuer; triple A, double A, and so on.
-
-Corporate equities historically have a positive real rate. Historically, negative correlation assets increase their real rate when growth assets are decreasing in theirs. If this relationship changes over a long enough period, we might want to look for a different asset type. We'll go into depth on correlations in a [later section](#correlations).
-
-## The sprinkles (low correlation assets)
-
-Primary characteristics:
-
-1. These are assets, so things you have.
-2. Historically, they have a low correlation with the other categories.
-3. More advantageous in inflationary environments.
-
-Secondary characteristics:
-
-1. Same as [growth assets](#the-second-brownie-growth-assets).
-2. In some cases, these things will not generate income.
-
-In the US, there's an elephant in the room and a baby elephant:
-
-1. Commodities (the elephant): A basic good often exchanged for similar goods. The goods include metals, energy, livestock and meat, and agriculture.
-2. Gold (the baby elephant): A specific type of commodity that has been historically used as currency (or to back currencies); no longer the case in most contemporary economies. Gold does have some utility in electronics.
-
-Primary things causing sprinkles to grow and shrink:
-
-1. The [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp).
-2. Selling some or buying more of the things.
-3. Appreciation and depreciation of those things.
-
-Almost the same list as growth and negative correlation, but notice we took out reinvesting dividends. Some commodities, like gold, don't pay a dividend. Further, when you sell them, they may be taxed differently than other types of assets. In this sense, they are less investment and more speculation [according to the definitions](/essays-and-editorials/finances/concepts/#investing-speculating-and-gambling-arent-the-same) laid out by J. David Stein.
-
-## One more thing on economic environments
-
-Notice the asset categories cover each of the four broad environments. When short-term assets are doing well, chances are low-correlation assets aren't, deflationary and inflationary, respectively. When growth assets are doing well, chances are negative-correlation assets aren't, growth and contraction, respectively.
-
-
-
-## Compounding
-
-Back to the compounding debate and how much of a contributor it is.
-
-If I give you a dollar every day for 50 days, that's your paycheck. That's linear (we'll start skipping after the first 10 days, so keep track of the day column):
-
-|Day |On-hand |Increase |New balance |
-|:--:|:------:|:-------:|:----------:|
-|1   |0       |1        |1           |
-|2   |1       |1        |2           |
-|3   |2       |1        |3           |
-|4   |3       |1        |4           |
-|5   |4       |1        |5           |
-|6   |5       |1        |6           |
-|7   |6       |1        |7           |
-|8   |7       |1        |8           |
-|9   |8       |1        |9           |
-|10  |9       |1        |10          |
-|15  |14      |1        |15          |
-|20  |19      |1        |20          |
-|25  |24      |1        |25          |
-|30  |29      |1        |30          |
-|35  |34      |1        |35          |
-|40  |39      |1        |40          |
-|50  |49      |1        |50          |
-
-That's not bad. Double your money from day 1 to day 2. However, on day 3, the increase is only 50 percent. On day 4, the increase is 30 percent. On day 5, it's 25 percent. On day 6, it's 20 percent. Day 7, it's 16. When you have no money and are thinking 1 day at a time, every bit feels like a million.
-
-Humans tend to have a difficult time thinking long-term and exponentially. We're much better at short-term and linear.
-
-If I give you a dollar and only 10 percent of the amount you keep every day thereafter, that's exponential:
-
-|Day |On-hand |Increase |New balance |
-|:--:|:------:|:-------:|:----------:|
-|1   |0       |1        |1           |
-|2   |1       |0.10     |1.10        |
-|3   |1.10    |0.11     |1.21        |
-|4   |1.21    |0.12     |1.32        |
-|5   |1.32    |0.13     |1.45        |
-|6   |1.45    |0.14     |1.59        |
-|7   |1.59    |0.15     |1.74        |
-|8   |1.74    |0.17     |1.91        |
-|9   |1.91    |0.19     |2.10        |
-|10  |2.10    |0.21     |2.31        |
-|15  |3.47    |0.34     |3.81        |
-|20  |5.56    |0.55     |6.06        |
-|25  |8.85    |0.88     |9.73        |
-|30  |14.23   |1.42     |15.65       |
-|35  |22.90   |2.29     |25.19       |
-|40  |36.86   |3.68     |40.54       |
-|50  |96.23   |9.62     |105.85      |
-
-From day 1 to day 2, it's kinda, "meh." Even up to day 6, you might think, "I'd rather have the dollar a day" (indicative of a steady paycheck and short-term linear thinking). Heck, it's not actually interesting until days 25 to 30 because that's the tipping point.
-
-That's where the 10 percent is more than you earned each day in the linear example. Then 5 days later, you're increasing by over double what you earned in the linear example. 5 days later, it's triple what you were increasing in the linear example, and you have roughly the same balance; you have caught up to your earnings from the linear paycheck example. 10 days later, it's 9 times the increase of the linear example and twice the balance.
-
-The other thing we can take away from the exponential table is what's referred to as the rule of 72. Basically, divide 72 by any rate of return (APY), and you will arrive at roughly the number of compounding periods it will take for a specific dollar amount to double. In our case, 72 divided by 10 is 7.2. It took about 8 days to go from 1 dollar to 2. It took about 16 days to go from 2 dollars to 4. We hit 8 dollars around day 20. And so on.
-
-So, yes, compounding is very powerful. It also takes two things to really kick in:
-
-1. time and
-2. money to put somewhere to compound.
-
-1 dollar at 1 percent APY in a regular savings account will double in 72 years. If I live hand-to-mouth, there aren't even seeds left to plant at that 1 percent return.
-
-My regular dentist recommended someone else when it came time to remove my wisdom teeth. When I didn't react well to the estimated cost the other dentist quoted me, they said, "There are always places you can cut in your budget." Sure, I could have bitched about healthcare in the United States and my lot in life working slightly over minimum wage with health and dental insurance and how "the system" is out to screw us. But I didn't.
-
-Instead, I laughed the laugh to keep from crying. I went to my car and did cry. I returned to my regular dentist, told him the story, and shed a tear or two in the process. He said, "That was pretty elitist. I guess I won't be recommending them anymore. The two teeth on the bottom are pretty far out, and I can probably pull them. We'll bill it as an extraction. The ones on the top are pretty impacted and probably not going anywhere, and I don't want to get near your sinuses. We'll leave those where they are and check on them regularly to ensure they haven't moved."
-
-We extracted the teeth. Almost 20 years and 3 more dentists later, the top wisdom teeth haven't moved. And none of the dentists have recommended even trying.
-
-It's difficult for humans to think long-term and exponentially. It's also difficult to understand and empathize with situations that aren't ours or those closest to us.
-
-Let's do one more table. This time, I'll give you a dollar a day and the 10 percent.
-
-|Day |On-hand |Dividends |Increase |New balance |
-|:--:|:------:|:--------:|:-------:|:----------:|
-|1   |0       |0         |1        |1           |
-|2   |1       |0.10      |1        |2.10        |
-|3   |2.10    |0.21      |1        |3.31        |
-|4   |3.31    |0.31      |1        |4.62        |
-|5   |4.62    |0.46      |1        |6.08        |
-|6   |6.08    |0.60      |1        |7.68        |
-|7   |7.68    |0.76      |1        |9.44        |
-|8   |9.44    |0.94      |1        |11.38       |
-|9   |11.38   |1.38      |1        |13.76       |
-|10  |13.76   |1.37      |1        |16.13       |
-
-We will stop here because, in 10 days, we've hit the tipping point.
-
-It's not the compounding that fuels everything. It's the compounding along with the continued contribution. Right now, each contribution of 1 dollar is roughly 1 percent of the total balance. Given enough time, at some point, the 1-dollar contribution will be less than 0.0001 percent.
-
-## Correlations
-
-Two of the asset categories are in terms of correlation. Correlation is measured from -1 to 1. -1 means one of the things moves in the opposite direction of the other. Positive 1 means both things move in the same direction. 0 means we're unsure which direction one of them will move; there doesn't seem to be a correlation.
-
-Consider a see-saw (or lever with the fulcrum dead center). If something is -1 compared to something else, as that something else moves, say, down, the other thing will move up the same distance. However, if something has a negative correlation of -0.5, it will move up half the distance the other side moved down. 
-
-Let's look at correlations of one asset type in each part of the dessert, not including the plate. We'll use the following proxies inside an asset correlation tool provided by Portfolio Visualizer:
-
-1. First brownie (short-term assets): Cash.
-2. Second brownie (growth assets): A popular total US Stock Market index fund (VTSAX).
-3. Condiments (negative correlation assets): Long-term US Treasuries (TLT).
-4. Sprinkles (low correlation assets): Gold (GLD).
-
-We'll only be able to do 10 years and roughly 19 years because the gold fund we're using started in 2004.
-
-The hypotheses going in:
-
-1. Cash will have a 0 or slightly negative correlation with our representative growth asset.
-2. Growth assets will have a 0 or negative correlation with the other three.
-3. Long-term US Treasuries will have the greatest negative correlation with the growth asset.
-4. Gold will have a close to 0 correlation with the other three.
-
-For 10 years, we'll go from [February 2013 to the end of January 2023](https://www.portfoliovisualizer.com/asset-correlations?s=y&symbols=CASHX%2C+VTSAX%2CTLT%2C+GLD&startDate=02%2F01%2F2013&endDate=01%2F31%2F2023&timePeriod=2&tradingDays=60&months=12), here's what we find:
-
-1. Cash is negatively correlated with the growth asset at -0.07; hypothesis confirmed.
-2. Growth assets range in correlation from -0.07 (compared to cash) to 0.06 (compared to gold); hypothesis confirmed.
-3. Long-term US Treasuries are negatively correlated with the growth asset at -0.03; this does not confirm the hypothesis.
-4. Gold ranges in correlation with the other three from 0.06 (compared to the growth asset) to 0.4 (compared to long-term US Treasuries); this does not confirm the hypothesis.
-
-In this case, there are no assets meeting the negative correlation characteristics; more on that later.
-
-Does this mean we should shift our thinking? Is this the proverbial paradigm shift you may have heard about? Do we need to find something else to replace long-term US Treasuries as a negative correlation asset before adding condiments to our portfolio? Or, if we already have long-term US Treasuries, should we rebalance into something else with a greater negative correlation?
-
-Maybe. Only time will tell. Let's look at a period longer than 10 years and see what we find.
-
-For this, we'll use the period from [February 2005 to the end of January 2023](https://www.portfoliovisualizer.com/asset-correlations?s=y&symbols=CASHX%2C+VTSAX%2CTLT%2C+GLD&startDate=02%2F01%2F2005&endDate=01%2F31%2F2023&timePeriod=2&tradingDays=60&months=12), and using the same hypotheses, here's what we find:
-
-1. Cash is negatively correlated with the growth asset at -0.06; hypothesis confirmed.
-2. Growth assets range in correlation from -0.19 (compared to long-term US Treasuries) to 0.08 (compared to gold); hypothesis confirmed.
-3. Long-term US Treasuries are negatively correlated with the growth asset at -0.19, greater than the negative correlation of cash; hypothesis confirmed.
-4. Gold ranges in correlation with the other three from 0.08 (compared to the growth asset) to 0.23 (compared to long-term US Treasuries); the hypothesis is confirmed.
-
-In this context, if something has a correlation of 0.4 or greater (40 percent or more), I wouldn't call it a low correlation, and it's definitely not negative. If something has a negative correlation between 0 and -0.1, I wouldn't say it was negative enough to be in the negative correlation category.
-
-For the last 10 years, it seems like maybe we are seeing a shift in asset behavior. But, for almost 20 years, we're seeing the hypothesized behavior. The new behavior might indicate a shift, and we should keep an eye out. But until there are more periods showing where the original hypothesis failed, I wouldn't make any drastic changes to anything.
-
-As of this writing, I'm still in accumulation mode and only have the plate and first two brownies occupying any significant portion of my portfolio. And I still have a few years before seriously contemplating adding condiments to my dessert.
+With the traditional way of looking at a "portfolio," you may not see these opportunities.
