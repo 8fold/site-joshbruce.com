@@ -6,7 +6,7 @@ I was asked to build a lightweight web shop experience for a client. I also need
 
 A short conversation and a “thank you” later, and I started reflecting on my addiction to thinking in terms of accessibility. I tend to apply it to all things, but with software in particular, two stories came to mind.
 
-## The portfolio sit
+## The portfolio site
 
 Around 2005 I went from mainly Flash-based websites to the [.Linux, Apache, MySQL, and PHP](LAMP) stack. I was introduced to [Zeldman](https://en.m.wikipedia.org/wiki/Jeffrey_Zeldman), [Jared Spool](https://en.m.wikipedia.org/wiki/Jared_Spool), and others in realm of usability. The emphasis at the time was the [semantic web](https://en.m.wikipedia.org/wiki/Semantic_Web ) and accessibility.
 
