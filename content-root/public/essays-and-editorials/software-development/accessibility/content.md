@@ -8,7 +8,7 @@ A short conversation and a “thank you” later, and I started reflecting on my
 
 ## The portfolio site
 
-Around 2005 I went from mainly Flash-based websites to the [.Linux, Apache, MySQL, and PHP](LAMP) stack. I was introduced to [Zeldman](https://en.m.wikipedia.org/wiki/Jeffrey_Zeldman), [Jared Spool](https://en.m.wikipedia.org/wiki/Jared_Spool), and others in realm of usability. The emphasis at the time was the [semantic web](https://en.m.wikipedia.org/wiki/Semantic_Web ) and accessibility.
+Around 2005 I went from mainly Flash-based websites to the [.Linux, Apache, MySQL, and PHP](LAMP) stack. I was introduced to [Zeldman](https://en.m.wikipedia.org/wiki/Jeffrey_Zeldman), [Jared Spool](https://en.m.wikipedia.org/wiki/Jared_Spool), and others in the realm of usability. The emphasis at the time was the [semantic web](https://en.m.wikipedia.org/wiki/Semantic_Web ) and accessibility.
 
 While I didn’t jump in as far as others, for me, accessibility became a passion. 
 
@@ -24,7 +24,7 @@ When it comes to accessibility, Text on the web is easy. Images and more complex
 
 In 2005 I also worked in the call center of a credit union. 
 
-One day a woman called. She told me the story of her recently becoming blind. Her’s was a light switch, not a gradual degradation. She was high-spirited as we talked about navigating the credit union website and the experience of becoming blind. She even complemented the credit union site.
+One day a woman called. She told me the story of her recently becoming blind. Her’s was a light-switch, not a gradual degradation. She was high-spirited as we talked about navigating the credit union website and the experience of becoming blind. She even complemented the credit union site.
 
 I have no memory as to why she called outside of that.
 
@@ -60,7 +60,7 @@ In the years since it’s become easier for developers who don’t require ATs t
 
 In 2015, I was working as an agile coach (and the front-end architect) for a Government website.
 
-The site mainly displays page-based content, not an app experience. Yet, the developers and other architects were insisting that the site be a single-page client-side web app; no script, no site. 
+The site mainly displays document-based content, not an app experience. Yet, the developers and other architects were insisting that the site be a single-page client-side web app; no script, no site. 
 
 There’s a whole story here. In short, I was frustrated and becoming frustrating to others, because I kept trying to explain all the technical problems and increased effort required behind what they were trying to do compared to where we were. I was losing the argument by the quantity of folks saying I was making mountains out of molehills. My thoughts were from a bygone era, I didn’t know what I was talking about, or all of the above. 
 
@@ -70,7 +70,7 @@ One day one of the other architects mentioned a statistic I found interesting:
 
 I don’t know where the statistic came from. I just replied:
 
-> The reason we have jobs right now is because the Government got sued by a group representing less than three percent of the United States population because they couldn’t navigate the site.
+> The reason we have jobs right now is because the Government got sued by a group representing less than three percent of the United States’ population because they couldn’t navigate the site.
 
 It kept escalating and escalating. Two companies that kept coming up as exemplars to mimic were Google and Facebook. The future of the web is client-side and JavaScript is the new [.HyperText Markup Language](HTML) were the positions. (Cue French accent, “Almost 10 years later.”)
 
