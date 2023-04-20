@@ -1,5 +1,7 @@
 # In an ideal world…
 
+{!! dateblock !!}
+
 A common refrain wherever I go:
 
 > In an ideal world, Agile works. Unfortunately, this isn't an ideal world.
