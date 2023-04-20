@@ -93,7 +93,7 @@ class Main implements Stringable // Buildable
             Element::link()->omitEndTag()
                 ->props(
                     'rel stylesheet',
-                    'href /css/styles.min.css?v=1.2.1',
+                    'href /css/styles.min.css?v=1.3.0',
                     'type text/css'
                 ),
             Element::script()->props(
