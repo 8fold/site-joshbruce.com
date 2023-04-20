@@ -331,6 +331,7 @@ ul[is="data-list"] {
 
   a {
     color: var(--key-light);
+    text-decoration-color: var(--key-light);
     font-weight: var(--x-bold-font);
 
     &:hover {

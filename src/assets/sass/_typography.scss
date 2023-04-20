@@ -58,7 +58,11 @@ a:hover {
 
 a {
   font-weight: var(--bold-font);
-  text-decoration: var(--none);
+  text-decoration-color: var(--key);
+  text-decoration-thickness: var(--2-px);
+  text-underline-offset: var(--2-px);
+  // text-decoration-style: var(--wavy);
+  // text-decoration-skip-ink: none;
   color: var(--key);
   transition: var(--transition-color);
 
