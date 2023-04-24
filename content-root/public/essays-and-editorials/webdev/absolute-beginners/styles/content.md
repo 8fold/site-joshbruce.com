@@ -110,19 +110,11 @@ The asterisk (`*`) is referred to as a "selector" and means, "Apply this to all 
 
 If you refresh your browser, you should see all the text is now in the same sans-serifed font. As such, we can remove all the inline styles.
 
+In fact, it's typically more efficient to consider styles in the reverse order we described them. Start by being general (global) and then handle the exceptions. The asterisk (`*`) or root (`root:`) will apply the rules to everything on the page, regardless of where it is. Element-based styles like the `html` and `body` styles we'll apply next are more specific and could be exceptions to a rule set in the asterisk or root. We'll explore more specific exceptions as we progress.
+
+Put another way, if you choose a font for your website, put it in an asterisk or root. If you want a specific element to use a different font, use an element-based selector with a different font. [.Cascading Stylesheets](CSS) styles are generally applied top-down, from the least specific to the most specific; the lowest thing interpreted will be the last thing applied.
+
 Just about any element can have a style applied to it. Whether it causes a visible change is a different story. For example, styling the `head` element probably won't visibly change anything because it's a hidden element.
-
-When styling websites, we tend to favor a mobile-first approach. That means designing and styling the website as if it were on a mobile device first, then alter as needed for the desktop and possibly tablet. There are a couple of ways to test mobile-first design (in no particular order):
-
-1. Make the browser narrow, like a mobile device.
-2. Use a mobile device.
-3. Enter a mobile design mode on the browser.
-
-The first is pretty easy because you change the width of the browser. The second is to have your mobile device able to open files stored on your desktop; then open the files on the device when you save them (iPhone + iCloud, for example). The last is more "robust" because it simulates different mobile devices more accurately. However, it can be a little more difficult to get there, depending on the browser.
-
-With [Safari for macOS](https://developer.apple.com/safari/tools/), you need to have macOS, and you need to enable the "Develop" menu item in Safari's settings. [Firefox](https://www.mozilla.org/en-US/firefox/) has it under browser tools; no changes to settings are required. [Chrome has it](https://developer.chrome.com/docs/devtools/device-mode/). Microsoft's Edge browser has it by way of an add-on.
-
-You get the idea.
 
 Let's change the background color of the `html` element (the whole screen):
 
@@ -156,11 +148,11 @@ Let's change the background color of the `html` element (the whole screen):
 
 When you refresh the browser, you should see a neutral gray background.
 
-There are lots of ways to apply colors. This is called hexadecimal; I know. It starts with a hash (#) symbol and is three or six characters long (hex, meaning six). Each character can be any number from zero to nine or any letter from "a" to "f"; 16 "numbers," so to speak; zero is the darkest and "f" is the lightest. This means you can generate about 16 million colors.
+There are lots of ways to apply colors. This is called hexadecimal; I know. It starts with a hash (#) symbol and is three or six characters long (hex, meaning six). Each character can be any number from zero to nine or any letter from "a" to "f"; 16 "numbers," so to speak; zero is the darkest, and "f" is the lightest. This means you can generate about 16 million colors.
 
 Moving on!
 
-Let's apply a different color to the `body` element:
+Let's apply a different color to (create an exception for) the `body` element:
 
 <pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- About /my-site/about/index.html --&gt;</span></span>
 <span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">style</span><span style="color: #ADBAC7">&gt;</span></span>
