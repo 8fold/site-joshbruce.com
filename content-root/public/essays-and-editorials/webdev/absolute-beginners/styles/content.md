@@ -152,7 +152,7 @@ There are lots of ways to apply colors. This is called hexadecimal; I know. It s
 
 Moving on!
 
-Let's apply a different color to (create an exception for) the `body` element:
+Let's apply a different color to the `body` element:
 
 <pre class="shiki focus" style="background-color: #22272e"><code><span class="line focus"><span style="color: #768390">&lt;!-- About /my-site/about/index.html --&gt;</span></span>
 <span class="line focus"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">style</span><span style="color: #ADBAC7">&gt;</span></span>
