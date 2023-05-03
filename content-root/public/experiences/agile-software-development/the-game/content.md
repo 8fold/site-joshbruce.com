@@ -46,7 +46,7 @@ We actually talked about a few options before coming to an agreed-upon solution.
 
 One possibility was, "If Josh is 'it,' everyone must stay on the main playground."
 
-I said (something like), "That doesn't seem fair. Y'all shouldn't have to handicap yourselves because I can't cross the monkey bars. 
+I said (something like), "That doesn't seem fair. Y'all shouldn't have to handicap yourselves because I can't cross the monkey bars." 
 
 We modified the lava rule that you had to be on the ground for three seconds or longer before becoming "it." That meant if I were "it," and I could run the length of the monkey bars in three seconds or less, I wouldn't become it from touching the ground. (We didn't think about how the incremental exercise would improve my abilities, or how we would know it was three seconds, or anything else—simply sophisticated.)
 
@@ -66,7 +66,7 @@ As an adult, it fascinates me how much pushback I receive in corporate settings 
 
 As a child, no one taught us how to negotiate or make fair rules or the concepts of game theory, justice, and empathy. More importantly, we didn't think we were being formal or sophisticated. And, finally, we didn't need to get "leadership buy-in"; no one asked the teacher how to play tag or if a given rule was equitable or not—we just knew and trusted none of us was intentionally trying to game the system.
 
-Let's shift to continuous improvement. Specifically, continuous improvement by doing the same thing repeatedly; improvement and a "different thing" aren't synonyms.
+Let's shift to continuous improvement. Specifically, continuous improvement by doing the same thing repeatedly; improvement and a "different activity" aren't synonyms.
 
 Eventually, I got to the point where I could cross the monkey bars. I could also skip bars. I could jump to a distant bar instead of starting from the beginning. (My teammates were shocked the first time I made it. We forgot the game long enough to celebrate my accomplishment.)
 
@@ -80,23 +80,27 @@ The first row was rings, the second and third were full-width bars, and the four
 
 For the most part, we stuck to the four rows while playing tag despite having a whole multi-tier platform stage attached. One day a teammate's arms were too tired to cross. They jumped out two or three bars, swung their feet up, stood on the bars, and ran across. We had no rule against it. But, as was our norm, whenever we did something different that none of us had thought about trying or seen before, we were about to talk about it. Before we could, the teacher tasked with the kids' safety came over and said, "Impressive as that was. You can't do that."
 
-As an adult, I was introduced to things like speed limits, safety belts, and [Sarbanes Oxley](https://en.wikipedia.org/wiki/Sarbanes–Oxley_Act). 
+As an adult, I was introduced to things like speed limits, safety belts, and the bane of [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes–Oxley_Act). 
 
-Eventually, the game got a bit boring. We started to wait for it person to start crossing, choose a different row of bars, and cross.
+Eventually, the game got a bit boring. We started waiting for the "it" person to cross, waiting until they were halfway across, chose a different row of bars, and crossed.
 
-One day, I tagged someone on the multi-tier platform side, jumped a couple of bars out, and skipped one bar at a time to get to the narrow platform on the other end. I was waiting. My teammate started crossing on the second row of bars. I went to the fourth row of bars and started crossing. 
+One day, I tagged someone on the multi-tier platform side, jumped a couple of bars out, and skipped one bar at a time to get to the narrow platform on the other end. 
+
+I was waiting. My teammate started crossing on the second row of bars. I went to the fourth row of bars and started crossing. 
 
 Midswing, my friend grabbed the log, not the bar. He proceeded to use the logs to cross laterally to me.
 
-Dumbstruck, I stopped crossing and just watched. I just hung there. He tagged me, and I dropped to the ground. I was like, "Woh! What was that? That was awesome. How'd you do it?"
+Dumbstruck, I stopped crossing and just watched. I just hung there. He tagged me, and I dropped to the ground. I was like, "Woh! What was that? That was awesome! How'd you do it?"
 
 We all came together and talked about it. He showed us exactly how he had done it. We spent some time trying to do it ourselves. 
 
-We decided it was fair game. No rule against it was in place before I got tagged. And no rule against it was made afterward. We had established a re-entry ritual to occur after moments like these. I went to the narrow platform (because I was "it"), and everyone else went to the multi-tier platform.
+We decided it was fair game. No rule against it was in place before I got tagged. And no rule against it was made afterward. 
+
+We had established a re-entry ritual to occur after moments like these. I went to the narrow platform (because I was "it"), and everyone else went to the multi-tier platform.
 
 Game on!
 
-There were so many other things we did that went beyond the basics. Each decision was to increase joy and inclusivity.
+There were so many other things we did that went beyond the basics. Each decision was to increase joy and inclusivity and sometimes decrease the rare possibility of going against the spirit of a rule without breaking the letter of the rule.
 
 As an adult, I'm blown away by how much complexity we create to appear sophisticated (or busy or do things the "right" way) while neglecting the basics of increasing joy and inclusivity.
 
@@ -110,10 +114,14 @@ Meanwhile, in business, we tend to "nice" each other to death. I can't call out 
 
 Embrace your inner child. Not as fiction but as the reality that once was. Remember that you might be like I was initially trying to cross the monkey bars, though. Both when I was young and a few years later (post-puberty)
 
-I was visiting my mom. I went back to my old school and playground. I stood on the narrow platform. I jumped to the third bar. I caught it. I didn't realize I was much taller, and I simultaneously hit the crown of my head on the second bar. I fell to the deck.
+I was visiting my mom. I went back to my old school and playground. I stood on the narrow platform. I jumped to the third bar. I caught it. I had never been able to do that when I was at the school. 
+
+I didn't realize I was much taller, and I simultaneously hit the crown of my head on the second bar. I fell to the deck.
 
 It took a little while before I tried out playground equipment again.
 
 I was going to title this "Agile is natural," but decided it was too on the nose, so I relegated it to the closing paragraph.
+
+Game on!
 
 {!! article-list !!}
