@@ -102,7 +102,9 @@ We had established a re-entry ritual to occur after moments like these. I went t
 
 Game on!
 
-There were so many other things we did that went beyond the basics. Each decision was to increase joy and inclusivity and sometimes decrease the rare possibility of going against the spirit of a rule without breaking the letter of the rule.
+There were so many other things we did that went beyond the basics. Each decision was to increase joy and inclusivity and sometimes decrease the rare possibility of going against the spirit of a rule without breaking the letter of the rule. 
+
+(We spent a fair amount of time after recess talking about how the game went and how it could be better—a retrospective—and the activity was so fun, we *wanted* to talk about more—employee engagement. But not fake or the definition of "try hard.")
 
 As an adult, I'm blown away by how much complexity we create to appear sophisticated (or busy or do things the "right" way) while neglecting the basics of increasing joy and inclusivity.
 
