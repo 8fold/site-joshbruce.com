@@ -10,7 +10,9 @@ You probably have no idea (or recollection of) how sophisticated you were as a c
 > 
 > And we run our companies like this. 
 > 
-> We stigmatize mistakes. And we're now running national education systems where mistakes are the worst thing you can make. And the result is that we are educating people out of their creative capacities.
+> We stigmatize mistakes. 
+> 
+> And we're now running national education systems where mistakes are the worst thing you can make. And the result is that we are educating people out of their creative capacities.
 
 I want to talk about the [game of tag](https://en.wikipedia.org/wiki/Tag_(game)). A simple game and a [complex adaptive system](https://en.wikipedia.org/wiki/Complex_adaptive_system) because humans are involved.
 
@@ -26,7 +28,7 @@ This game is now a [professional sport](https://youtu.be/f-YwTh7ZWgE).
 
 Now let's talk about the complex and creative parts.
 
-Some teams decide that "the floor is lava," and you become it if you fall onto the ground. Some teams decide there is a safe spot where players can go and take a break from the game. Some teams will make the rule that you can't immediately tag the person who tagged you (no "touchbacks").
+Some teams decide that "the floor is lava," and you become it if you fall onto the ground. Some teams decide there is a safe spot for players to take a break from the game. Some teams will make the rule that you can't immediately tag the person who tagged you (no "touchbacks").
 
 There are infinite possibilities; the point is that the players decide these rules, not an external rule book. Further, the rules are in place to make the game more inclusive and enjoyable for the players involved (not someone who might join later).
 
