@@ -56,7 +56,7 @@ We also decided that you couldn't become it if someone on the ground tagged you 
 
 We kept iterating like this for a while and creating and modifying the rules daily. 
 
-When our pod went to recess, no one bothered much trying to be on that set of playground equipment. If they did decide, typically, it was to join the game. They learned the rules as we played.
+When our pod went to recess, no one bothered much trying to be on that set of playground equipment. If they did decide, typically, it was to join the game. They learned the rules as we played, and none of the "veterans" questioned why they didn't already know how to play tag—especially play it our way. Sometimes "veterans" would go do something else for a day or two, but they were always welcomed back.
 
 We added that I had to at least *try* and cross the monkey bars. 
 
