@@ -202,7 +202,7 @@ The following table uses complexity and risk along with a Fibonacci Sequence.
 <table style=“width: 90%; text-align: center;”>
 	<tbody>
 		<tr>
-			<th rowspan=“3” style=“transform: rotate(-90deg)”>Complexity</th>
+			<th rowspan=“3” style=“transform: rotate(-90deg);”>Complexity</th>
 			<td style=“text-align: right;”>High</td>
 			<td>3</td>
 			<td>5</td>
