@@ -199,32 +199,35 @@ We (the group or individual responsible, accountable, or both for getting the st
 
 The following table uses complexity and risk along with a Fibonacci Sequence.
 
-<table style="width: 100%;">
+<table style=“width: 90%; text-align: center;”>
 	<tbody>
 		<tr>
-			<th rowspan="3">Complexity</th>
-			<td>High</td>
+			<th rowspan=“3” style=“transform: rotate(-90deg)”>Complexity</th>
+			<td style=“text-align: right;”>High</td>
 			<td>3</td>
 			<td>5</td>
 			<td>8</td>
 		</tr>
 		<tr>
-			<td>Medium</td>
+			<td style=“text-align: right;”>Medium</td>
 			<td>2</td>
 			<td>3</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td>Low</td>
+			<td style=“text-align: right;”>Low</td>
 			<td>1</td>
 			<td>2</td>
 			<td>3</td>
 		</tr>
 		<tr>
-			<th colspan="2">Risk</th>
+			<th colspan=“2”></th>
 			<td>Low</td>
 			<td>Medium</td>
 			<td>High</td>
+		</tr>
+        <tr>
+			<th colspan=“5”>Risk</th>
 		</tr>
 	</tbody>
 </table>
