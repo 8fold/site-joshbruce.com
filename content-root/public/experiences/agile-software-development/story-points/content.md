@@ -199,35 +199,35 @@ We (the group or individual responsible, accountable, or both for getting the st
 
 The following table uses complexity and risk along with a Fibonacci Sequence.
 
-<table style=“width: 90%; text-align: center;”>
+<table style="text-align: center; border-spacing: var(--s-spacer);">
 	<tbody>
 		<tr>
-			<th rowspan=“3” style=“transform: rotate(-90deg);”>Complexity</th>
-			<td style=“text-align: right;”>High</td>
+			<th rowspan="3" scope="col" style="width: 1rem; transform: rotate(-90deg);">Complexity</th>
+			<td style="text-align: right;"><abbr title="High">H</abbr></td>
 			<td>3</td>
 			<td>5</td>
 			<td>8</td>
 		</tr>
 		<tr>
-			<td style=“text-align: right;”>Medium</td>
+			<td style="text-align: right;"><abbr title="Medium">M</abbr></td>
 			<td>2</td>
 			<td>3</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td style=“text-align: right;”>Low</td>
+			<td style="text-align: right;"><abbr title="Low">L<abbr title="High"></td>
 			<td>1</td>
 			<td>2</td>
 			<td>3</td>
 		</tr>
 		<tr>
-			<th colspan=“2”></th>
-			<td>Low</td>
-			<td>Medium</td>
-			<td>High</td>
+			<th colspan="2"></th>
+			<td><abbr title="Low">L</abbr></td>
+			<td><abbr title="Medium">M</abbr></td>
+			<td><abbr title="High">H</abbr></td>
 		</tr>
         <tr>
-			<th colspan=“5”>Risk</th>
+			<th colspan="5">Risk</th>
 		</tr>
 	</tbody>
 </table>
