@@ -10,16 +10,16 @@ Let's get the bottom line up front out of the way:
 2. The points aren't the point.
 3. If the story points leave the team, or some metrics and dashboards leave the team derived directly from story points, bad things usually happen (more than a 90 percent chance).
 4. [Ron Jeffries](https://ronjeffries.com/articles/019-01ff/story-points/Index.html), an original signatory of [The Manifesto for Agile Software Development](http://agilemanifesto.org), has said a lot on the subject.
-5. [Martin Fowler](https://martinfowler.com/bliki/StoryPoint.html), an original signatory of The Manifesto, has also described them while pointing out an alternative. 
+5. [Martin Fowler](https://martinfowler.com/bliki/StoryPoint.html), an original signatory of The Manifesto, has also described them while pointing out an alternative.
 6. [Jeff Sutherland](https://www.scruminc.com/story-points-why-are-they-better-than/), an original signatory of The Manifesto and co-creator of the [Scrum framework](https://scrumguides.org), has written about them and more recently discussed using alternatives with teams in his consulting practice.
 7. Story points don't need to be constrained to [Fibonacci sequencing](https://en.wikipedia.org/wiki/Fibonacci_sequence).
 8. Order things from the most to the least perceived value, accounting for [finish-to-start relationships](https://en.wikipedia.org/wiki/Dependency_(project_management)#Standard_types_of_dependencies).
 
-All right, five assertions and three name drops, with links, should be good enough for a summary and list of resources. 
+All right, five assertions and three name drops, with links, should be good enough for a summary and list of resources.
 
 What we're describing here are possibilities.
 
-One of my core practices is not to get hung up on history. 
+One of my core practices is not to get hung up on history.
 
 Focusing on history is often used to justify current behavior, explain how our actions don't match the original intent, or blame someone or something for a current situation. That leads to debate and gatekeeping behavior (see every major religion worldwide). Who and how the vase became broken is less important than the current reality that the vase is broken.
 
@@ -29,9 +29,9 @@ Story points are an abstraction. Humans, generally speaking, do better with conc
 
 If I were to ask you to define the abstract concept of freedom, you would probably respond with concrete examples. (And, later, the Government might sentence me to [drink hemlock](https://en.wikipedia.org/wiki/Trial_of_Socrates).)
 
-We couldn't talk about story points without talking about estimates. 
+We couldn't talk about story points without talking about estimates.
 
-Regarding most knowledge work, the answer with the most integrity, courage, and transparency is, "I don't know." 
+Regarding most knowledge work, the answer with the most integrity, courage, and transparency is, "I don't know."
 
 (Even if you've done similar things in the past, and it's not as "simple" as breaking a complicated unknown into smaller, known items and adding them together; [work breakdown structures](https://en.wikipedia.org/wiki/Work_breakdown_structure).)
 
@@ -39,7 +39,7 @@ Unfortunately, "I don't know" usually doesn't fly, and folks have a hard time "d
 
 > It will most likely be done by X plus or minus Y.
 
-X and Y can change as we start the work or have conversations. 
+X and Y can change as we start the work or have conversations.
 
 This is also helpful in a salary negotiation because we stop talking about the mundane (the salary) and start talking about the important part (the total compensation and context).
 
@@ -55,13 +55,13 @@ The following are neither mutually exclusive nor inclusive. Many times we stack 
 
 The concept of story points applies to any context in which you are trying to get something done or help others get something done (see Pomodoros in [The Pomodoro Technique](https://francescocirillo.com/products/the-pomodoro-technique)).
 
-The hard truth is that agile isn't a noun. It's an adjective. If you can't easily pivot without causing pain, you are not operating with agility or within an agile system. The principle from The Manifesto for Agile Software that comes to mind is "Accepting changing requirements even late in development," and the value that comes to mind is "Responding to change over following a plan." 
+The hard truth is that agile isn't a noun. It's an adjective. If you can't easily pivot without causing pain, you are not operating with agility or within an agile system. The principle from The Manifesto for Agile Software that comes to mind is "Accepting changing requirements even late in development," and the value that comes to mind is "Responding to change over following a plan."
 
 If your system is easy to change, that's not a problem. If your system is rigid, for whatever reason, that's a problem. (That's probably a post for another time.)
 
 ## Story points as a proxy for time
 
-Let's start with the most common use I've seen in practice. It's the one many of us learned through [the oral tradition](https://youtu.be/fzqEHwXVpKQ) of how to "do agile." 
+Let's start with the most common use I've seen in practice. It's the one many of us learned through [the oral tradition](https://youtu.be/fzqEHwXVpKQ) of how to "do agile."
 
 <details>
 <summary>What problems does this approach seek to solve?</summary>
@@ -85,27 +85,27 @@ The points aren't the point. The understanding and consensus about what we're ab
 4. Humans are great at procrastination or inflating the complexity of a solution to a given problem. See [Rube Goldberg Machines](https://en.wikipedia.org/wiki/Rube_Goldberg_machine). This tendency leads to creating bloated and byzantine operating environments wherein changing something as simple as a lightbulb becomes an all-day affair with multiple communications across multiple people and departments. For example, only maintenance personnel can change the lightbulb. They must adhere to the policies and laws related to work in general ([OSHA](https://en.wikipedia.org/wiki/Occupational_Safety_and_Health_Act_(United_States)) in the United States). That means carrying the ladders properly, wearing the correct safety gear, and so on.
 
 > Do the most important thing until it ships or is no longer the most important thing.
-> 
+>
 > <cite>Kent Beck</cite>
 
 And, because movie references are kind of my thing:
 
 > Stop trying to hit, and hit me.
-> 
+>
 > <cite>Morpheus, *The Matrix*
 
-If the story points are a proxy for time, use time. Then you don't have to train people, document what the term means, and so on.
+If the story points are a proxy for time, use time. Then you don't have to train people, document what the term means, and so on. In other words, you transparency by increasing the amoutn of work not done; the definition of simple from The Manifesto.
 
 </details>
 
 <details>
 <summary>How it typically works.</summary>
 
-We have a list of stuff we want to get done someday, maybe. 
+We have a list of stuff we want to get done someday, maybe.
 
 An optimization is that the list is ordered from top-to-bottom from the greatest to the least perceived value; this reduces scanning the list to find the most important thing. If we take something from the top, it's always the most important thing. Further, if the thing on the top of the list depends on something else being finished first, it inherits the perceived value of the successor. For example, Item A has a perceived value of 5. Item B has a perceived value of 2. Item B must be completed before Item A can be started, finished, or both. Item B has a perceived value of 7 and goes to the top of the list.
 
-We look at the most important thing, Item B. First, the individual or group who are [accountable](https://medium.com/@kentbeck_7670/accountability-in-software-development-375d42932813), responsible, or both for getting the thing done have a conversation (the part that matters) to reach mutual understanding and consensus on how long it will take, in time. 
+We look at the most important thing, Item B. First, the individual or group who are [accountable](https://medium.com/@kentbeck_7670/accountability-in-software-development-375d42932813), responsible, or both for getting the thing done have a conversation (the part that matters) to reach mutual understanding and consensus on how long it will take, in time.
 
 They apply a multiplier to convert the time into the story point equivalent. If using Fibonacci sequenced numbers, they'll typically round the number up to the nearest Fibonacci number.
 
@@ -115,7 +115,7 @@ The multiplier adds padding for the unknown, ever-changing reality in which we f
 
 ## Story points as non-time (confidence)
 
-This is how I learned story points through the oral tradition. I learned in 2011 based on someone's experience from around 2005.
+This is how I learned story points through the oral tradition. I learned in 2011 based on someone's experience from around 2005. We used Fibonacci Sequencing. The rationale for using Fibonacci Sequencing was because the less confidant we are, the more likely we are to be wrong, and the Fibonacci Sequence builds that in by increasing the gaps between numbers the higher you go.
 
 When we view story points as a social construct and tool used to facilitate the individuals and interactions (conversation and information) in a team, we can do all sorts of things.
 
@@ -132,11 +132,11 @@ When we view story points as a social construct and tool used to facilitate the 
 <details>
 <summary>Judgy pants</summary>
 
-Shorthand is excellent for expediting communication. You may sacrifice quality for that shorthand. The sacrifice in quality reclaims the speed benefit received from expediting communication. (Consider this as the leverage debt metaphor when someone mentions technical debt, only this is communication debt.)
+Shorthand is excellent for expediting communication. You may sacrifice quality for that shorthand. The sacrifice in quality reclaims the speed benefit received from expediting communication. (Consider this as the leverage debt metaphor when someone mentions [technical debt](https://youtu.be/Jp5japiHAs4), only this is communication debt.)
 
-A short, lighthearted example is when I first heard someone use the term "obvy" as shorthand for "obviously." I paused the conversation and asked what the term meant. 
+A short, lighthearted example is when I first heard someone use the term "obvy" as shorthand for "obviously." I paused the conversation and asked what the term meant—the term "obvy" wasn't.
 
-I was a Federal Government contractor for 10 years. Lots of acronyms to expedite communication. Acronyms are an abstraction; humans don't do well with abstracts—abstracts differ from similes, metaphors, and analogies. The FBI is shorthand for The United States Federal Bureau of Investigation. 
+I was a Federal Government contractor for 10 years. Lots of acronyms to expedite communication. Acronyms are an abstraction; humans don't do well with abstracts—abstracts differ from similes, metaphors, and analogies. The FBI is shorthand for The United States Federal Bureau of Investigation.
 
 I went to work for the private sector as a Scrum Master. I asked the team who our customer was. They said, "The FBI."
 
@@ -148,7 +148,7 @@ I said, "I thought this was an internal product. I didn't know we did work for T
 
 The penny dropped for the team's manager, who said, "No. Not that FBI. FBI stands for (I literally can't remember, it started with 'Finance')."
 
-It took him less than 2 seconds to say the acronym. It took him less than 2 seconds to say the full name. It took 30 seconds to explain what "FBI" stood for. (And my autocorrect helper keeps wanting to use "The" in front of it because there is only one FBI, apparently.) 
+It took him less than 2 seconds to say the acronym. It took him less than 2 seconds to say the full name. It took 30 seconds to explain what "FBI" stood for. (And my autocorrect helper keeps wanting to use "The" in front of it because there is only one FBI, apparently.)
 
 In the remaining time I was there, I didn't mentally unpack the acronym to the organization's name. Instead, I translated it to "the customer."
 
@@ -177,11 +177,11 @@ The understanding and consensus is the point.
 
 ## Story points as non-time (complexity and risk)
 
-Sponsors (or you for personal management) tend to want to know, based on time, roughly when something will be done and the probability of negative impact. (I'll avoid injecting the Risk Management practice post here.) 
+Sponsors (or you for personal management) tend to want to know, based on time, roughly when something will be done and the probability of negative impact. (I'll avoid injecting the Risk Management practice post here.)
 
 The highest impact risk usually comes in the form of known unknowns. Next to that is the complexity of the situation or solution.
 
-(When I cook an egg for myself, it's low complexity and low risk because I do it, and few things are involved—pan, fire, and egg. The complexity and risk increase when I visit a restaurant because more individuals and interactions are involved. If I order food for delivery, the complexity increases again compared to going to the restaurant, mainly because I inherit the restaurant complexity and risk and add the complexity and risk related to the delivery service. The more complexity and time we add, the more probability there is for failure.)
+(When I cook an egg for myself, it's low complexity and low risk because I do it, and few things are involved—pan, fire, and egg. The complexity and risk increase when I visit a restaurant because more individuals and interactions are involved. If I order food for delivery, the complexity increases again compared to going to the restaurant, mainly because I inherit the restaurant complexity and risk and add the complexity and risk related to the delivery service. The more complexity and time we add, the more probability there is for failure. That's why it's so amazing when a Rube Goldberg machine actually finishes, it's not the outcome of the task, it's that it finished at all. It's so hard to get these things to work that we're usually skeptical if one is recorded with or without a cut—there has to be a trick edit somewhere.)
 
 <details>
 <summary>What problems does this approach seek to solve?</summary>
@@ -213,19 +213,19 @@ The following table uses complexity and risk along with a Fibonacci Sequence.
 			<td>2</td>
 			<td>3</td>
 			<td>5</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td>Low</td>
 			<td>1</td>
 			<td>2</td>
 			<td>3</td>
-		</tr>			
+		</tr>
 		<tr>
 			<th colspan="2">Risk</th>
 			<td>Low</td>
 			<td>Medium</td>
 			<td>High</td>
-		</tr>		
+		</tr>
 	</tbody>
 </table>
 
@@ -233,11 +233,11 @@ Now we can focus on the conversation rather than the points and define criteria 
 
 The following are just examples, not mandates.
 
-What criteria describe low complexity or risk? 
+What criteria describe low complexity or risk?
 
 Our team can do it all by their lonesome, from start-to-finish soup-to-nuts, not just the development piece but the roll-out, marketing, and success tracking.
 
-What about medium complexity? 
+What about medium complexity?
 
 Our team may depend on two other teams to get their part done before we can do it, and we decide that's a medium complexity. Or is our codebase just that rigid?
 
@@ -258,13 +258,13 @@ Kent Beck, an original signatory of The Manifesto for Agile Software Development
 
 Seriously, please stop trying to hit me and hit me.
 
-Engineers tend to be a pretty literal bunch. Further, humans generally do better with concrete things rather than abstractions. Change is hard enough. We don't need to tack on learning a new language. Finally, [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) will win the day. 
+Engineers tend to be a pretty literal bunch. Further, humans generally do better with concrete things rather than abstractions. Change is hard enough. We don't need to tack on learning a new language. Finally, [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) will win the day.
 
-If you don't know what Conway's Law says, try this. 
+If you don't know what Conway's Law says, try this.
 
 I can describe the code if you show me the people and how they communicate. Further, if you show me the code, I can probably describe the people and operating models.
 
-Indirect communication styles tend to lead to software with indirect and circuitous routes of getting to the desired outcomes; Rube Goldberg machines. I see this a lot in organizations where folks would rather "nice each other to death" than be perceived as rude due to being direct in their communication.
+Indirect communication styles tend to lead to software with indirect and circuitous routes of getting to the desired outcomes; Rube Goldberg machines. I see this a lot in organizations where folks would rather "nice each other to death" than be perceived as rude due to being direct in their communication. (Or organizations with little psychological safety.)
 
 Another thing we see, thanks to marketing and branding, is creating new labels for already-named things. Or, misapplying common labels to a custom implementation, "We do Scrum, we just don't have a Product Backlog, don't use Sprints, and refuse to do retrospectives."
 
@@ -272,12 +272,12 @@ Don't get me wrong, naming things is hard, and you may not know a concept has a 
 
 I [accidentally created Scrum and Agile Software Development](https://joshbruce.com/experiences/agile-software-development/in-an-ideal-world/). I was working on a name for the way I was working. A year or so later, I was introduced to Scrum and Agile Software Development, one less thing I needed to create and maintain. (At the same time, I was introduced to Extreme Programming, The Pomodoro Technique, Getting Things Done, The Project Management Body of Knowledge, and many other representations of similar concepts. Now it's just how I work, no labels.)
 
-If our users (or sponsors) think in terms of time, talk in terms of time. If our users (or sponsors) want to discuss risk, talk about risk. Complexity? Talk about complexity. 
+If our users (or sponsors) think in terms of time, talk in terms of time. If our users (or sponsors) want to discuss risk, talk about risk. Complexity? Talk about complexity.
 
 Don't burden them with learning a new label, definition, or abstract concept that's a proxy for another abstract concept, like risk and complexity (unless they ask for it). And be patient because we all have linguistic baggage that must be unpacked for "common" words like "risk." Much less the debate around whether something called a "feature" could be estimated in "story points" because it's not a "user story" in our work tracking system.
 
 > Don't get caught up in the thickness of thin things.
-> 
+>
 > <cite>Stephen R. Covey</cite>
 
 </details>
@@ -291,7 +291,7 @@ Because this is more about the conversation that could take many paths, the "How
 <details>
 <summary>What problem does this approach seek to solve?</summary>
 
-- Simplify the mundane part (the math) to get to the important part (understanding and consensus). 
+- Simplify the mundane part (the math) to get to the important part (understanding and consensus).
 
 </details>
 
@@ -322,7 +322,7 @@ Item B moves to the top of the list. Does Item B depend on something else being 
 
 No.
 
-Great, bring Item B into the smaller batch and give it a story point of 1. 
+Great, bring Item B into the smaller batch and give it a story point of 1.
 
 - Large batch:
 	1. Item A.
@@ -332,7 +332,7 @@ Great, bring Item B into the smaller batch and give it a story point of 1.
 
 Could we finish or start something else in the allotted time?
 
-(No is a perfectly valid response, nothing wrong with a batch size of 1.)
+("No" is a perfectly valid response, nothing wrong with a batch size of 1.)
 
 We say, "Yes."
 
@@ -346,7 +346,7 @@ Larger.
 
 How much larger?
 
-**The mundane part:** Someone says 3 times larger, and someone else says 6 times larger. (See [Planning Poker](https://en.wikipedia.org/wiki/Planning_poker).) 
+**The mundane part:** Someone says 3 times larger, and someone else says 6 times larger. (See [Planning Poker](https://en.wikipedia.org/wiki/Planning_poker).)
 
 Okay, why the discrepancy?
 
@@ -382,7 +382,7 @@ Smaller.
 
 Great. Mark Item C as 1 story point. How much larger is Item B compared to Item C (the mundane part)?
 
-**The important part:** We discuss and agree that Item B is 5 times larger than Item C. 
+**The important part:** We discuss and agree that Item B is 5 times larger than Item C.
 
 **The mundane part:** We mark Item A as 20 story points because we already agreed it's 4 times larger *relative* to Item B.
 
@@ -400,7 +400,7 @@ Can I make Item A smaller?
 
 Yes. We can delay certain functionality until later.
 
-Great. Let's extract those pieces into a new item—Item D. 
+Great. Let's extract those pieces into a new item—Item D.
 
 - Large batch:
 	1. Item D
@@ -440,7 +440,7 @@ Is Item D larger or smaller than Item C?
 
 Smaller.
 
-Great. Mark Item D as 1. 
+Great. Mark Item D as 1.
 
 - Large batch: Empty
 - Small batch:
@@ -451,7 +451,7 @@ Great. Mark Item D as 1.
 
 How much larger is Item C relative to Item D?
 
-We agree it's twice as large and mark Item C with 2 story points. 
+We agree it's twice as large and mark Item C with 2 story points.
 
 - Large batch: Empty
 - Small batch:
@@ -471,19 +471,19 @@ Go forth and do the things!
 
 There are a lot of assumptions built into this type of response.
 
-If I have something that can be done in 1 minute, something 50 times larger can be done in 50 minutes. 
+If I have something that can be done in 1 minute, something 50 times larger can be done in 50 minutes.
 
 (Stop trying to hit me, and hit me. The points aren't the point. And humans are better with concretes than abstracts.)
 
 The point is understanding and consensus. Through the conversations, we teach each other about the implementation and context and simultaneously learn more about the user needs driving the prioritization. (No "offline" knowledge transfer sessions are necessary. No "give them the easy stuff until they get up to speed.")
 
-If you don't enjoy hanging out and conversing with your teammates, explore and unpack that. If you don't care about the implementation or user needs, unpack that, "Why don't I like these people enough to spend time with them? Why don't I care about what we're building and why?" 
+If you don't enjoy hanging out and conversing with your teammates, explore and unpack that. If you don't care about the implementation or user needs, unpack that, "Why don't I like these people enough to spend time with them? Why don't I care about what we're building and why?"
 
 Anything can feel like busy work that doesn't deliver value. However, things like story points, estimating in general, and meetings are tools, and they only provide value through how the participants use them. Further, they cannot be improved if the participants only say, "This thing has no value for me; therefore, it shouldn't exist."
 
-Once we revealed Item B as the most important, why didn't we stop there and change the time allotted to match how long we thought it would take to get It done? 
+Once we revealed Item B as the most important, why didn't we stop there and change the time allotted to match how long we thought it would take to get It done?
 
-Then we ask, what knowledge do we need to get Item B done? Who has that knowledge? Who else would like to have that knowledge?
+Then we ask, what knowledge we need to get Item B done? Who has that knowledge? Who else would like to have that knowledge?
 
 Great! We have a team. Go, do the thing!
 
@@ -491,7 +491,7 @@ They do the thing until it's done, run out of time, or it's no longer the most i
 
 ([Turtles all the way down](https://en.wikipedia.org/wiki/Turtles_all_the_way_down).)
 
-No story points are necessary. Just a hypothesis, "We think we can get this done in `x` period." Run the experiment with the drive to get Item B done with a certain degree of quality as soon as possible. While running the experiment, capture work that can be delayed until later and any shortcuts performed. Reevaluate after the time is up. 
+No story points are necessary. Just a hypothesis, "We think we can get this done in `x` period." Run the experiment with the drive to get Item B done with a certain degree of quality as soon as possible. While running the experiment, capture work that can be delayed until later and any shortcuts performed. Reevaluate after the time is up.
 
 Is Item B still the most important thing?
 
@@ -507,8 +507,8 @@ Going down this line of questioning has spawned a few unpacking conversations wi
 
 Unpacking that baggage is always an exciting ride that includes questions like:
 
-- Why are you in a relationship with people you don't believe have your best interests at heart and in mind? 
-- Is it that you don't trust them? Or that you don't trust your ability to pick humans to be in a relationship with? 
+- Why are you in a relationship with people you don't believe have your best interests at heart and in mind?
+- Is it that you don't trust them? Or that you don't trust your ability to pick humans to be in a relationship with?
 - What evidence do you have to feel this way?
 - Are you blaming them for your ex?
 
@@ -518,7 +518,7 @@ Direct communication can sometimes feel rude.
 
 <aside>
 
-**Principle:** We often conflate efficiency and speed. 
+**Principle:** We often conflate efficiency and speed.
 
 "We want this meeting to be more efficient" translates to "We want this meeting to be shorter." We don't consider the cost of making all the meetings shorter or ask why we don't like conversing with the people in the room. (Spend all day with a loved one, no problem—spend more than 30 minutes with a teammate, problem.)
 
@@ -532,25 +532,25 @@ This approach is built into every "agile" work tracking tool I've ever used. But
 
 For velocity to exist, we need a consistent time box and a constant representation of 1 story point across multiple time boxes.
 
-(A mile is a mile—story point. Driving X miles per hour is always X miles per hour—the hour is the time box. Imagine a world in which the measure of a mile changed every hour or so. Or where the measure of an hour changed regularly.)
+(A mile is a mile—story point. Driving `X` miles per hour is always `X` miles per hour—the hour is the time box. Imagine a world in which the measure of a mile changed every hour or so. Or where the measure of an hour changed regularly.)
 
 <details>
 <summary>What problem does this approach seek to solve?</summary>
 
 - How much work can the team bring into a time box (capacity)?
 - How long will delivering the estimated work take (forecasting)?
-- The time box specifically seeks to solve the problem of [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) and acts as a foundational risk management plan; we reduce risk by working in smaller batches completed more often. 
+- The time box specifically seeks to solve the problem of [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law) and acts as a foundational risk management plan; we reduce risk by working in smaller batches completed more often.
 
-</details> 
+</details>
 
 <details>
 <summary>How it's <s>typically</s> done (well?).</summary>
 
 (Judgy pants: It's *typically* done poorly.)
 
-The team (or individual) establishes what 1 story point represents; I recommend it represent the start-to-finish "Hello, World!" in your operating context. 
+The team (or individual) establishes what 1 story point represents; I recommend it represent the start-to-finish "Hello, World!" in your operating context.
 
-Posed as a question, "What will it take in your context for a user to ask to see 'Hello, World!' on a screen and then see it on their screen?" This becomes the representation of 1 story point. Every other request is sized relative to that. 
+Posed as a question, "What will it take in your context for a user to ask to see 'Hello, World!' on a screen and then see it on their screen?" This becomes the representation of 1 story point. Every other request is sized relative to that.
 
 (Judgy pants: If the 1-pointer takes longer than 1 day when translated to time, that's probably a sign that there are other things you could focus on than getting better at estimating, sequencing, and completing work.)
 
@@ -562,7 +562,7 @@ The team (or individual) will typically use some form of batch reduction exercis
 
 The team (or individual) tries to complete what they can within the allotted time.
 
-At the end of the allotted time, we look at what got done and add all the story points of the done things together. That gives us our velocity for those two weeks. The velocity for those two weeks gives us our capacity for the next two weeks. 
+At the end of the allotted time, we look at what got done and add all the story points of the done things together. That gives us our velocity for those two weeks. The velocity for those two weeks gives us our capacity for the next two weeks.
 
 At the beginning of the two weeks, we don't bring in more points than we did in the previous two-week period (or an average of, say, the last five two-week periods). We can bring something else in if we finish all the work and still have time.
 
@@ -579,7 +579,7 @@ You might ask, "What happens if something is started but not finished?"
 
 That's a question for the ages, is always a point of contention, and depends on the environment (context).
 
-If your environment believes story points aren't the point, whatever doesn't get completed, typically gets put back into the larger batch and prioritized. The progress to date is usually saved somewhere. And it will either be resized when brought back into another time box or left with the same story point count despite work being started and saved for the future. 
+If your environment believes story points aren't the point, whatever doesn't get completed, typically gets put back into the larger batch and prioritized. The progress to date is usually saved somewhere. And it will either be resized when brought back into another time box or left with the same story point count despite work being started and saved for the future.
 
 If your environment leads folks to consider points as part of the merit credit system (or worse, are explicit parts of vendor contracts), teams will typically split the item in two based on points. This warrants explaining.
 
@@ -599,7 +599,7 @@ If you're consistently delivering value, no matter how "small," and you're havin
 
 If you're not consistently delivering value, you're not having the conversations, or both—then story points might help.
 
-They can help give you the breathing space. To pause from the hustle culture, grind, grind, grind to explore the work and ask questions. Some of these questions may terrify you. Some of these questions may excite you.
+They can help give you breathing space. To pause from the hustle culture, grind, grind, grind to explore the work and ask questions. Some of these questions may terrify you. Some of these questions may excite you.
 
 Scale up and down as needed. Knowing what to add and take away is much more important than just adding practices and processes all the time to reach "feature parity" with other folks operating in similar ways using similar language.
 
