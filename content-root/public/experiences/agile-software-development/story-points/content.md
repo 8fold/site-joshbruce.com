@@ -37,11 +37,11 @@ Regarding most knowledge work, the answer with the most integrity, courage, and 
 
 Unfortunately, "I don't know" usually doesn't fly, and folks have a hard time "decomposing" things into deployable parts, "I need all of it!" So, the next best thing I appreciate is the best case, worst case, and most likely case; anchor and spread:
 
-> It will most likely be done by X plus or minus Y.
+> It will most likely be done by `X` plus or minus `Y`.
 
-X and Y can change as we start the work or have conversations.
+`X` and `Y` can change as we start the work or have conversations.
 
-This is also helpful in a salary negotiation because we stop talking about the mundane (the salary) and start talking about the important part (the total compensation and context).
+I find this helpful in a salary negotiation because we stop talking about the mundane (the salary) and start talking about the important part (the total compensation and context).
 
 <aside>
 
@@ -51,7 +51,7 @@ This is also helpful in a salary negotiation because we stop talking about the m
 
 How can story points be used?
 
-The following are neither mutually exclusive nor inclusive. Many times we stack these approaches and practices. (I'll be explicit when putting on my judgy pants, which are less about judgment and more about interpretation, experience, and frustration.)
+The following are neither mutually exclusive nor inclusive. Many times we stack these approaches and practices. And it’s a non-exhaustive exploration. (I'll be explicit when putting on my judgy pants, which are less about judgment and more about interpretation, experience, and frustration.)
 
 The concept of story points applies to any context in which you are trying to get something done or help others get something done (see Pomodoros in [The Pomodoro Technique](https://francescocirillo.com/products/the-pomodoro-technique)).
 
@@ -94,7 +94,7 @@ And, because movie references are kind of my thing:
 >
 > <cite>Morpheus, *The Matrix*
 
-If the story points are a proxy for time, use time. Then you don't have to train people, document what the term means, and so on. In other words, you transparency by increasing the amoutn of work not done; the definition of simple from The Manifesto.
+If the story points are a proxy for time, use time. Then you don't have to train people, document what the term means, and so on. In other words, you increase transparency by increasing the amount of work not done; the definition of simple from The Manifesto.
 
 </details>
 
