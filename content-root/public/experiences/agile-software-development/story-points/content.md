@@ -273,7 +273,7 @@ Another thing we see, thanks to marketing and branding, is creating new labels f
 
 Don't get me wrong, naming things is hard, and you may not know a concept has a label, but it's easier to modify your word when you find out than it is to get the world to accept your new word.
 
-I [accidentally created Scrum and Agile Software Development](https://joshbruce.com/experiences/agile-software-development/in-an-ideal-world/). I was working on a name for the way I was working. A year or so later, I was introduced to Scrum and Agile Software Development, one less thing I needed to create and maintain. (At the same time, I was introduced to Extreme Programming, The Pomodoro Technique, Getting Things Done, The Project Management Body of Knowledge, and many other representations of similar concepts. Now it's just how I work, no labels.)
+I [accidentally created Scrum and Agile Software Development](/experiences/agile-software-development/in-an-ideal-world/). I was working on a name for the way I was working. A year or so later, I was introduced to Scrum and Agile Software Development, one less thing I needed to create and maintain. (At the same time, I was introduced to Extreme Programming, The Pomodoro Technique, Getting Things Done, The Project Management Body of Knowledge, and many other representations of similar concepts. Now it's just how I work, no labels.)
 
 If our users (or sponsors) think in terms of time, talk in terms of time. If our users (or sponsors) want to discuss risk, talk about risk. Complexity? Talk about complexity.
 
