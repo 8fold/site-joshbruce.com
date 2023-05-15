@@ -502,7 +502,7 @@ Yes.
 
 Are these still the people with all knowledge to get it done?
 
-No. We discovered this work here and need someone who knows about this thing. Cool. New team!
+No. We discovered this work here and need someone who knows about this thing. Cool. New team member!
 
 What's the new hypothesis for when it'll be done?
 
