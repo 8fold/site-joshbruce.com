@@ -418,7 +418,7 @@ Yes.
 
 How much larger?
 
-We talked and agreed Item A is now twice the size of Item B. Therefore, we mark Item B with 5 story points. (Item D is now at the top of the list.)
+We talked and agreed Item A is now twice the size of Item B. Therefore, we mark Item A with 10 story points. (Item D is now at the top of the list.)
 
 - Large batch:
 	1. Item D
