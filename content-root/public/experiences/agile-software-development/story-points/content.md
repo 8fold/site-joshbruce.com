@@ -461,7 +461,7 @@ We agree it's twice as large and mark Item C with 2 story points.
 	1. Item D—1 story point.
 	1. Item C—2 story points.
 	2. Item B—10 story points.
-	3. Item A—50 story points.
+	3. Item A—20 story points.
 
 Go forth and do the things!
 
@@ -470,7 +470,7 @@ Go forth and do the things!
 <details>
 <summary>Judgy pants</summary>
 
-50 story points‽ You shouldn't have anything that large! Break it down further, split it across multiple time boxes, something! Anything! It's the end of the world! You don't know how to Agile. (Not a strawman, people have put on their judgy pants and said these things.)
+20 story points‽ You shouldn't have anything that large! Break it down further, split it across multiple time boxes, something! Anything! It's the end of the world! You don't know how to Agile. (Not a strawman, people have put on their judgy pants and said these things.)
 
 There are a lot of assumptions built into this type of response.
 
