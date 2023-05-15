@@ -529,7 +529,7 @@ Direct communication can sometimes feel rude.
 
 ## Story points as an input into velocity
 
-This one is the most common reason for story points. Story points exist to create velocity and burndown graphs.
+This one is the most common reason for story points I’ve seen. Story points exist to create velocity and burn-down graphs.
 
 This approach is built into every "agile" work tracking tool I've ever used. But, unfortunately, it's also the easiest to game, even if the gaming is unconscious.
 
