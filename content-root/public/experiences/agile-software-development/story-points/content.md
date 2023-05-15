@@ -592,7 +592,7 @@ If your environment wants to increase velocity, have the team apply story points
 
 If your environment wants to keep velocity constant, always recalculate story points based on current understanding.
 
-I've never seen an environment that wanted to decrease velocity. However, a decreasing velocity could mean we're getting much better at our processes or focusing on hitting a "done" or "stable" state; users aren't asking for features or reporting bugs. (I had an app on iOS that hadn't been changed in years, no one was asking for new features or reporting bugs, and people were still buying it.)
+I've never seen an environment that wanted to decrease velocity. However, a decreasing velocity could mean we're getting much better at our processes or focusing on hitting a "done" or "stable" state; users aren't asking for features or reporting bugs. (I had an app on iOS that hadn't been changed in years, no one was asking for new features or reporting bugs, and people were still buying it. I was one of the users.)
 
 </details>
 
