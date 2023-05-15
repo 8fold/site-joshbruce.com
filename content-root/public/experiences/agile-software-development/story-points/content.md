@@ -474,7 +474,7 @@ Go forth and do the things!
 
 There are a lot of assumptions built into this type of response.
 
-If I have something that can be done in 1 minute, something 50 times larger can be done in 50 minutes.
+If I have something that can be done in 1 minute, something 20 times larger can be done in 20 minutes.
 
 (Stop trying to hit me, and hit me. The points aren't the point. And humans are better with concretes than abstracts.)
 
