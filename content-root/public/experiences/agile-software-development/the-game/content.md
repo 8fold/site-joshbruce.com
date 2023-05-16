@@ -70,7 +70,9 @@ As a child, no one taught us how to negotiate or make fair rules or the concepts
 
 Let's shift to continuous improvement. Specifically, continuous improvement by doing the same thing repeatedly; improvement and a "different activity" aren't synonyms.
 
-Eventually, I got to the point where I could cross the monkey bars. I could also skip bars. I could jump to a distant bar instead of starting from the beginning. (My teammates were shocked the first time I made it. We forgot the game long enough to celebrate my accomplishment.)
+Eventually, I got to the point where I could cross the monkey bars. I could also skip bars. I could jump to a distant bar instead of starting from the beginning. 
+
+(My teammates were shocked the first time I made it. We forgot the game long enough to celebrate my accomplishment. We also set aside the three second rule because the original rationale was no longer valid. And, we could bring it back if someone else couldn’t cross the bars. Sophisticated.)
 
 Another friend of mine could skip two or three bars at a time. Eventually, they got to a point where they would jump to a distant bar, skip three bars at a time, and be across in three moves (smooth is fast).
 
@@ -84,7 +86,7 @@ For the most part, we stuck to the four rows while playing tag despite having a 
 
 As an adult, I was introduced to things like speed limits, safety belts, and the bane of [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes–Oxley_Act). 
 
-Eventually, the game got a bit boring. We started waiting for the "it" person to cross, waiting until they were halfway across, chose a different row of bars, and crossed.
+Eventually, the game got a bit boring. We started waiting for the "it" person to start crossing. When they were halfway across, we chose a different row of bars, and crossed. Some of us got good at turning around, but it was still mundane.
 
 One day, I tagged someone on the multi-tier platform side, jumped a couple of bars out, and skipped one bar at a time to get to the narrow platform on the other end. 
 
@@ -114,13 +116,13 @@ Meanwhile, in business, we tend to view delegation as dumping, "I don't want or 
 
 I didn't like crossing the bars. But my teammates wouldn't let me not even try; they managed me and established expectations.
 
-Meanwhile, in business, we tend to "nice" each other to death. I can't call out my teammate or tell them what to do, "That's not my role. We need a manager to do it." In other words, "I think there needs to be a stick, but I don't want to be the bearer (delegation as dumping—only this time, it's delegating 'up')."
+Meanwhile, in business, we tend to "nice each other to death.” I can't call out my teammate or tell them what to do, "That's not my role. We need a manager to do it." In other words, "I think there needs to be a stick, but I don't want to be the bearer (delegation as dumping—only this time, it's delegating 'up')."
 
 Embrace your inner child. Not as fiction but as the reality that once was. Remember that you might be like I was initially trying to cross the monkey bars, though. Both when I was young and a few years later (post-puberty)
 
 I was visiting my mom. I went back to my old school and playground. I stood on the narrow platform. I jumped to the third bar. I caught it. I had never been able to do that when I was at the school. 
 
-I didn't realize I was much taller, and I simultaneously hit the crown of my head on the second bar. I fell to the deck.
+I didn't realize I was much taller, and I simultaneously hit the crown of my head on the second bar. I fell to the deck. (My hands had even instantly become blistered and torn because the daily cultivation of callouses had gone away.)
 
 It took a little while before I tried out playground equipment again.
 
