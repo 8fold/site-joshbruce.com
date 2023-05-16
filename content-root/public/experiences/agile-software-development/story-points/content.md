@@ -250,7 +250,7 @@ The points aren't the point.
 
 What does it take for us to think the risk is low? Medium? High? What can we do to get whatever we're looking at moved toward the lower side of the scale? Maybe "proper" story slicing will do it?
 
-Kent Beck, an original signatory of The Manifesto for Agile Software Development and credited with capturing, if not inventing, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming), once said:
+Kent Beck, an original signatory of The Manifesto for Agile Software Development and credited with capturing, if not creating, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming), once said:
 
 > Make the change easy—this may be hard—then make the easy change.
 
@@ -381,7 +381,7 @@ Smaller.
 - Small batch:
 	1. Item C—1 story point.
 	2. Item B—`x` story point.
-	3. Item A—`4 * x` story points.
+	3. Item A—`x * 4` story points.
 
 Great. Mark Item C as 1 story point. How much larger is Item B compared to Item C (the mundane part)?
 
@@ -600,7 +600,7 @@ I've never seen an environment that wanted to decrease velocity. However, a decr
 
 If you're consistently delivering value, no matter how "small," and you're having the conversations that facilitate delivering that value—then story points aren't necessary.
 
-If you're not consistently delivering value, you're not having the conversations, or both—then story points might help.
+If you're not consistently delivering value, you're not having the conversations, or both—then story points might help. (Maybe don’t call them that; stop trying to hit me and hit me.)
 
 They can help give you breathing space. To pause from the hustle culture, grind, grind, grind to explore the work and ask questions. Some of these questions may terrify you. Some of these questions may excite you.
 
