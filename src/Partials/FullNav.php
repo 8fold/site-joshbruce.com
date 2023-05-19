@@ -3,44 +3,41 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
-
 use Symfony\Component\Finder\Finder;
 
 use Eightfold\HTMLBuilder\Element;
 
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
+
 use Eightfold\Amos\Site;
-use Eightfold\Amos\Markdown;
 
-class FullNav implements Stringable // Buildable
+class FullNav implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (array_key_exists('site', $extras) === false) {
+            return '';
+        }
 
-    final private function __construct(private Site $site)
-    {
-    }
+        $site = $extras['site'];
+        if (
+            is_object($site) === false or
+            is_a($site, Site::class) === false
+        ) {
+            return '';
+        }
 
-    private function site(): Site
-    {
-        return $this->site;
-    }
+        $publicRoot = $site->publicRoot()->toString();
 
-    public function __toString(): string
-    {
-        $finder = (new Finder())->files()->name('meta.json')->in(
-            $this->site()->publicRoot()
-        );
-
-        $publicRoot = $this->site()->publicRoot();
-        $contentFilename = 'content.md';
+        $metaFilePaths = (new Finder())->files()->name('meta.json')
+            ->in($publicRoot);
 
         $files = [];
-        foreach ($finder as $fileInfo) {
-            $filePath  = $fileInfo->getRealPath();
+        foreach ($metaFilePaths as $filePath) {
+            $filePath  = $filePath->getRealPath();
             $shortPath = str_replace(
                 [$publicRoot, 'meta.json'],
                 ['', ''],
@@ -98,6 +95,6 @@ class FullNav implements Stringable // Buildable
             $markdownList .= $listItem;
         }
 
-        return Markdown::convert($this->site(), $markdownList);
+        return $markdownList;
     }
 }

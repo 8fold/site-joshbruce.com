@@ -3,39 +3,48 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
-class Data implements Stringable // Buildable
+class Data implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function __toString(): string
-    {
-        $meta = $this->site()->decodedJsonFile(
-            named: '/data.json',
-            at: $this->site()->requestPath()
-        );
-        if ($meta === false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
-        $data = $meta->data;
+
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
+
+        $data = PublicObject::inRoot(
+            $site->contentRoot(),
+            'data.json',
+            $request_path
+        );
+
+        if ($data->notFound()) {
+            return '';
+        }
+
+        $data = $data->data();
 
         $listHeadings = [];
         foreach ($data as $row) {

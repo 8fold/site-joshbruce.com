@@ -250,7 +250,7 @@ The points aren't the point.
 
 What does it take for us to think the risk is low? Medium? High? What can we do to get whatever we're looking at moved toward the lower side of the scale? Maybe "proper" story slicing will do it?
 
-Kent Beck, an original signatory of The Manifesto for Agile Software Development and credited with capturing, if not inventing, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming), once said:
+Kent Beck, an original signatory of The Manifesto for Agile Software Development and credited with capturing, if not creating, [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming), once said:
 
 > Make the change easy—this may be hard—then make the easy change.
 
@@ -273,7 +273,7 @@ Another thing we see, thanks to marketing and branding, is creating new labels f
 
 Don't get me wrong, naming things is hard, and you may not know a concept has a label, but it's easier to modify your word when you find out than it is to get the world to accept your new word.
 
-I [accidentally created Scrum and Agile Software Development](https://joshbruce.com/experiences/agile-software-development/in-an-ideal-world/). I was working on a name for the way I was working. A year or so later, I was introduced to Scrum and Agile Software Development, one less thing I needed to create and maintain. (At the same time, I was introduced to Extreme Programming, The Pomodoro Technique, Getting Things Done, The Project Management Body of Knowledge, and many other representations of similar concepts. Now it's just how I work, no labels.)
+I [accidentally created Scrum and Agile Software Development](/experiences/agile-software-development/in-an-ideal-world/). I was working on a name for the way I was working. A year or so later, I was introduced to Scrum and Agile Software Development, one less thing I needed to create and maintain. (At the same time, I was introduced to Extreme Programming, The Pomodoro Technique, Getting Things Done, The Project Management Body of Knowledge, and many other representations of similar concepts. Now it's just how I work, no labels.)
 
 If our users (or sponsors) think in terms of time, talk in terms of time. If our users (or sponsors) want to discuss risk, talk about risk. Complexity? Talk about complexity.
 
@@ -381,7 +381,7 @@ Smaller.
 - Small batch:
 	1. Item C—1 story point.
 	2. Item B—`x` story point.
-	3. Item A—`4 * x` story points.
+	3. Item A—`x * 4` story points.
 
 Great. Mark Item C as 1 story point. How much larger is Item B compared to Item C (the mundane part)?
 
@@ -418,7 +418,7 @@ Yes.
 
 How much larger?
 
-We talked and agreed Item A is now twice the size of Item B. Therefore, we mark Item B with 5 story points. (Item D is now at the top of the list.)
+We talked and agreed Item A is now twice the size of Item B. Therefore, we mark Item A with 10 story points. (Item D is now at the top of the list.)
 
 - Large batch:
 	1. Item D
@@ -461,7 +461,7 @@ We agree it's twice as large and mark Item C with 2 story points.
 	1. Item D—1 story point.
 	1. Item C—2 story points.
 	2. Item B—10 story points.
-	3. Item A—50 story points.
+	3. Item A—20 story points.
 
 Go forth and do the things!
 
@@ -470,11 +470,11 @@ Go forth and do the things!
 <details>
 <summary>Judgy pants</summary>
 
-50 story points‽ You shouldn't have anything that large! Break it down further, split it across multiple time boxes, something! Anything! It's the end of the world! You don't know how to Agile. (Not a strawman, people have put on their judgy pants and said these things.)
+20 story points‽ You shouldn't have anything that large! Break it down further, split it across multiple time boxes, something! Anything! It's the end of the world! You don't know how to Agile. (Not a strawman, people have put on their judgy pants and said these things.)
 
 There are a lot of assumptions built into this type of response.
 
-If I have something that can be done in 1 minute, something 50 times larger can be done in 50 minutes.
+If I have something that can be done in 1 minute, something 20 times larger can be done in 20 minutes.
 
 (Stop trying to hit me, and hit me. The points aren't the point. And humans are better with concretes than abstracts.)
 
@@ -502,7 +502,7 @@ Yes.
 
 Are these still the people with all knowledge to get it done?
 
-No. We discovered this work here and need someone who knows about this thing. Cool. New team!
+No. We discovered this work here and need someone who knows about this thing. Cool. New team member!
 
 What's the new hypothesis for when it'll be done?
 
@@ -529,7 +529,7 @@ Direct communication can sometimes feel rude.
 
 ## Story points as an input into velocity
 
-This one is the most common reason for story points. Story points exist to create velocity and burndown graphs.
+This one is the most common reason for story points I’ve seen. Story points exist to create velocity and burn-down graphs.
 
 This approach is built into every "agile" work tracking tool I've ever used. But, unfortunately, it's also the easiest to game, even if the gaming is unconscious.
 
@@ -592,7 +592,7 @@ If your environment wants to increase velocity, have the team apply story points
 
 If your environment wants to keep velocity constant, always recalculate story points based on current understanding.
 
-I've never seen an environment that wanted to decrease velocity. However, a decreasing velocity could mean we're getting much better at our processes or focusing on hitting a "done" or "stable" state; users aren't asking for features or reporting bugs. (I had an app on iOS that hadn't been changed in years, no one was asking for new features or reporting bugs, and people were still buying it.)
+I've never seen an environment that wanted to decrease velocity. However, a decreasing velocity could mean we're getting much better at our processes or focusing on hitting a "done" or "stable" state; users aren't asking for features or reporting bugs. (I had an app on iOS that hadn't been changed in years, no one was asking for new features or reporting bugs, and people were still buying it. I was one of the users.)
 
 </details>
 
@@ -600,7 +600,7 @@ I've never seen an environment that wanted to decrease velocity. However, a decr
 
 If you're consistently delivering value, no matter how "small," and you're having the conversations that facilitate delivering that value—then story points aren't necessary.
 
-If you're not consistently delivering value, you're not having the conversations, or both—then story points might help.
+If you're not consistently delivering value, you're not having the conversations, or both—then story points might help. (Maybe don’t call them that; stop trying to hit me and hit me.)
 
 They can help give you breathing space. To pause from the hustle culture, grind, grind, grind to explore the work and ask questions. Some of these questions may terrify you. Some of these questions may excite you.
 

@@ -18,7 +18,7 @@ The plan is to stick with movements I can or could do, with links to in-depth ex
 
 I’ve been trying to become more active for a couple of years. I’m laid up for a week or more every time I do.
 
-- 1 inverted row a day for a way. 
+- 1 inverted row a day for a week. 
 
 The muscles in my back became so tense that it hurt to rotate my core, sit, or lift a jacket onto a hook. Urgent care prescribed steroids and a muscle relaxer. I was on them for a week and told not to try exercising. After two weeks, it still felt like someone was pushing their thumb into my back when I would move in certain ways.
 
@@ -51,7 +51,7 @@ During the year, Becca and I would do planks every day. This was part of a large
 
 Around this time, I tried to do some inverted rows while she watched, and I apparently was turning into a shrugger.
 
-We lived on the third flow of the apartment building, and I would use the stairs when going in or out of the building, skipping a step each time.
+We lived on the third floor of the apartment building, and I would use the stairs when going in or out of the building, skipping a step each time.
 
 I got shingles this year and also injured my right big toe. I treated it like turf toe, improving in about a week. 
 
@@ -111,7 +111,7 @@ In the beginning, I would step down, do a squat, step down and do a squat. At my
 
 To get back up, I would climb onto the railing, which was a few inches wide, and I'd essentially turn into a chameleon for a moment while I went all the way back up the stairs ([quadrapedie](https://youtu.be/NUMuxmp3lb4)). Once I was back up, I'd jog over to a set of bleachers (you know? where the parents sit).
 
-I would do lateral plyometric pushups. Feet on the bottom bench and hands braced on a higher-up bench. Go down slowly, go up quickly, and throw my upper body to the left, trying to get my right hand to end where my left was. Then I would throw my feet into the air and try to get them to land in the center, putting me back in the starting position, slightly to the left of the bench. One more pushup. It would take around 5 pushups to make it across the bleachers. Then I'd do the same thing but to the right. Initially, I'd use the picnic tables and do plyometric pushups using those; start low, start slow. When I used the table, I aimed to throw myself to the point of standing upright before doing a controlled fall back onto the table.
+I would do lateral plyometric pushups. Feet on the bottom bench and hands braced on a higher-up bench. Go down slowly, go up quickly, and throw my upper body to the left, trying to get my right hand to end where my left was. Then I would throw my feet into the air and try to get them to land in the center, putting me back in the starting position, slightly to the left on the bench. One more pushup. It would take around 5 pushups to make it across the bleachers. Then I'd do the same thing but to the right. Initially, I'd use the picnic tables and do plyometric pushups using those; start low, start slow. When I used the table, I aimed to throw myself to the point of standing upright before doing a controlled fall back onto the table.
 
 I would continue to the walkway that led to two more baseball fields. There was a low wall and about 10 narrow stairs.
 
@@ -121,7 +121,7 @@ Then I'd do hop squats up the narrow stairs.
 
 At the top of the stairs, there was a narrow curb, like a triangle. I'd balance beam it all the way to the snack station.  Then I'd walk back and do it three more times.
 
-**Injuries:** One day, I decided to try and job along the curb. I misplaced my right foot and slightly sprained my ankle. Not major, and I was able to walk it off.
+**Injuries:** One day, I decided to try and jog along the curb. I misplaced my right foot and slightly sprained my ankle. Not major, and I was able to walk it off.
 
 ## 2005 (25 years of age)
 

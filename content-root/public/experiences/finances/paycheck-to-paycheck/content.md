@@ -1,9 +1,3 @@
----
-title: Building Wealth Paycheck to Paycheck
-created: 20210216
-loglist: true
----
-
 # Building Wealth Paycheck to Paycheck
 
 {!!dateblock!!}
