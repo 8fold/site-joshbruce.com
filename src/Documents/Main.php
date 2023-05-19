@@ -8,11 +8,10 @@ use Stringable;
 
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
+use Eightfold\HTMLBuilder\Components\Favicons;
+use Eightfold\HTMLBuilder\Components\Copyright;
 
 use Eightfold\Amos\Site;
-
-use Eightfold\Amos\PageComponents\Favicons;
-use Eightfold\Amos\PageComponents\Copyright;
 
 use JoshBruce\Site\PageComponents\Navigation;
 
@@ -24,18 +23,25 @@ class Main implements Stringable // Buildable
 
     private string $schemaType = 'BlogPosting';
 
-    public static function create(Site $site): self
+    public static function create(Site $site, string $requestPath): self
     {
-        return new self($site);
+        return new self($site, $requestPath);
     }
 
-    final private function __construct(private Site $site)
-    {
+    final private function __construct(
+        private readonly Site $site,
+        private readonly string $requestPath
+    ) {
     }
 
     public function site(): Site
     {
         return $this->site;
+    }
+
+    public function requestPath(): string
+    {
+        return $this->requestPath;
     }
 
     public function setPageTitle(string $title): self
@@ -85,11 +91,9 @@ class Main implements Stringable // Buildable
             //     'content A tabletop role playing game for the ages.'
             // ),
             Favicons::create(
-                themeColor: '#ffffff',
                 path: '/favicons',
-                msAppTileColor: '#00aba9',
-                safariTabColor: '#00aba9'
-            ),
+                themeColor: '#ffffff',
+            )->withSafariThemeColor('#00aba9')->withMetro('#00aba9'),
             Element::link()->omitEndTag()
                 ->props(
                     'rel stylesheet',
@@ -108,7 +112,7 @@ class Main implements Stringable // Buildable
         )->body(
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
-            Navigation::create($this->site()),
+            Navigation::create($this->site(), $this->requestPath()),
             Element::article(
                 Element::section(
                     $this->body()

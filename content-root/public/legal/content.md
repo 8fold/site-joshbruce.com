@@ -1,8 +1,3 @@
----
-title: Terms of service
-created: 20210710
----
-
 # Terms of service
 
 {!!dateblock!!}

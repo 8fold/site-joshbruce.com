@@ -3,62 +3,62 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
-
-use StdClass;
-
-use Eightfold\HTMLBuilder\Element;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
-use Eightfold\Amos\Markdown;
+use Eightfold\Amos\PlainText\PrivateFile;
 
-class OriginalContentNotice implements Stringable // Buildable
+class OriginalContentNotice implements PartialInterface
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    private function originalNotice(): string
-    {
-        $path = $this->site()->contentRoot() . '/notices/original.md';
-        if (file_exists($path) == false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
 
-        $content = file_get_contents($path);
-        if ($content === false) {
-            return '';
-        }
-        return $content;
-    }
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
 
-    public function __toString(): string
-    {
-        $noticeMarkdown = $this->originalNotice();
-        if (strlen($noticeMarkdown) === 0) {
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
             return '';
         }
 
-        $meta = $this->site()->meta(at: $this->site()->requestPath());
-        if ($meta === false) {
+        $meta = $site->publicMeta($request_path);
+        if (
+            $meta->notFound() or
+            $meta->hasProperty('original') === false
+        ) {
             return '';
         }
 
-        $original = $meta->original;
-        list($href, $platform) = explode(' ', $original, 2);
+        $metaOriginal = $meta->original();
+
+        // $path = $site->publicRoot() . $request_path;
+        $noticeMarkdown = PrivateFile::inRoot(
+            $site->contentRoot(),
+            'original.md',
+            '/notices'
+        );
+        if ($noticeMarkdown->notFound()) {
+            return '';
+        }
+
+        $noticeMarkdown = (string) $noticeMarkdown;
+
+        // $metaOriginal = $meta->original();
+        list($href, $platform) = explode(' ', $metaOriginal, 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';
@@ -75,6 +75,6 @@ class OriginalContentNotice implements Stringable // Buildable
             return '';
         }
 
-        return Markdown::convert($this->site(), $noticeMarkdown);
+        return $noticeMarkdown;
     }
 }

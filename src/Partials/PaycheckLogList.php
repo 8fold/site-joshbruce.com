@@ -3,34 +3,38 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
+use Eightfold\HTMLBuilder\Element;
+
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
 
-use Eightfold\HTMLBuilder\Element;
-
-class PaycheckLogList implements Stringable
+class PaycheckLogList implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function __toString(): string
-    {
-        $path = $this->site()->publicRoot() . $this->site()->requestPath();
-        if (is_dir($path) === false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
+
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
+
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
+
+        $path = $site->publicRoot() . $request_path;
 
         $contents = scandir($path);
         if ($contents === false) {
@@ -50,10 +54,21 @@ class PaycheckLogList implements Stringable
                 continue;
             }
 
-            $href = $this->site()->requestPath() . '/' . $content;
-            $item = $this->listItem($href);
-            if ($item === false) {
+            $href = $request_path . '/' . $content;
+
+            $meta = $site->publicMeta($href);
+            $item = '';
+            if (
+                $meta->notFound() or
+                $meta->hasProperty('title') === false
+            ) {
                 continue;
+
+            } else {
+                $item = Element::li(
+                    Element::a($meta->title())->props('href ' . $href)
+                );
+
             }
 
             $year = date('Y');
@@ -84,16 +99,5 @@ class PaycheckLogList implements Stringable
         }
 
         return $return;
-    }
-
-    private function listItem(string $href): Element|false
-    {
-        $meta = $this->site()->meta($href);
-        if (is_object($meta) and property_exists($meta, 'title')) {
-            return Element::li(
-                Element::a($meta->title)->props('href ' . $href)
-            );
-        }
-        return false;
     }
 }

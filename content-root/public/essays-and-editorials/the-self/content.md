@@ -1,9 +1,6 @@
----
-title: The self
-created: 20220417
----
-
 # The self
+
+{!! dateblock !!}
 
 This is what can be described as the I-perspective.
 
