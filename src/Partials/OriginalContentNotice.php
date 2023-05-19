@@ -3,33 +3,14 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-use StdClass;
+use Eightfold\Amos\PlainText\PrivateFile;
 
-use Eightfold\HTMLBuilder\Element;
-
-use Eightfold\Amos\Site;
-use Eightfold\Amos\Markdown;
-
-class OriginalContentNotice implements Stringable // Buildable
+class OriginalContentNotice implements PartialInterface
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
-
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
 
     private function originalNotice(): string
     {
@@ -45,20 +26,40 @@ class OriginalContentNotice implements Stringable // Buildable
         return $content;
     }
 
-    public function __toString(): string
-    {
-        $noticeMarkdown = $this->originalNotice();
-        if (strlen($noticeMarkdown) === 0) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
 
-        $meta = $this->site()->meta(at: $this->site()->requestPath());
-        if ($meta === false) {
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
+
+        $noticeMarkdown = PrivateFile::inRoot(
+            $site->contentRoot(),
+            'original.md',
+            '/notices'
+        );
+        if ($noticeMarkdown->notFound()) {
+            return '';
+        }
+        $noticeMarkdown = (string) $noticeMarkdown;
+
+        $meta = $site->publicMeta($request_path);
+        if (
+            $meta->notFound() or
+            $meta->hasProperty('original') === false
+        ) {
             return '';
         }
 
-        $original = $meta->original;
-        list($href, $platform) = explode(' ', $original, 2);
+        $metaOriginal = $meta->original();
+        list($href, $platform) = explode(' ', $metaOriginal, 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';
@@ -75,6 +76,6 @@ class OriginalContentNotice implements Stringable // Buildable
             return '';
         }
 
-        return Markdown::convert($this->site(), $noticeMarkdown);
+        return $noticeMarkdown;
     }
 }

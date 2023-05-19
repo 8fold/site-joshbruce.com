@@ -3,31 +3,28 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-
-use Eightfold\Amos\Site;
-
 use Eightfold\HTMLBuilder\Element;
 
-class PaycheckLogList implements Stringable
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
+
+class PaycheckLogList implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
+            return '';
+        }
 
-    final private function __construct(private Site $site)
-    {
-    }
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
 
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function __toString(): string
-    {
-        $path = $this->site()->publicRoot() . $this->site()->requestPath();
+        $path = $site->publicRoot() . $request_path;
         if (is_dir($path) === false) {
             return '';
         }
@@ -50,10 +47,21 @@ class PaycheckLogList implements Stringable
                 continue;
             }
 
-            $href = $this->site()->requestPath() . '/' . $content;
-            $item = $this->listItem($href);
-            if ($item === false) {
+            $href = $request_path . '/' . $content;
+
+            $meta = $site->publicMeta($href);
+            $item = '';
+            if (
+                $meta->notFound() or
+                $meta->hasProperty('title') === false
+            ) {
                 continue;
+
+            } else {
+                $item = Element::li(
+                    Element::a($meta->title())->props('href ' . $href)
+                );
+
             }
 
             $year = date('Y');

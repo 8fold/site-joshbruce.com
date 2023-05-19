@@ -3,32 +3,28 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
-
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-class ArticleList implements Stringable // Buildable
+class ArticleList implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
+            return '';
+        }
 
-    final private function __construct(private Site $site)
-    {
-    }
+        $site = $extras['site'];
+        $request_path = $extras['request_path'];
 
-    public function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function __toString(): string
-    {
-        $path = $this->site()->publicRoot() . $this->site()->requestPath();
+        $path = $site->publicRoot() . $request_path;
         if (is_dir($path) === false) {
             return '';
         }
@@ -50,15 +46,15 @@ class ArticleList implements Stringable // Buildable
                 continue;
             }
 
-            $href = $this->site()->requestPath() . '/' . $content;
+            $href = $request_path . '/' . $content;
 
-            $meta = $this->site()->meta($href);
+            $meta = $site->publicMeta($href);
             if (
                 is_object($meta) and
-                property_exists($meta, 'title')
+                $meta->hasProperty('title')
             ) {
                 $links[] = Element::li(
-                    Element::a($meta->title)->props('href ' . $href)
+                    Element::a($meta->title())->props('href ' . $href)
                 );
             }
         }

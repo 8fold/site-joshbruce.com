@@ -15,13 +15,15 @@ use Eightfold\Amos\Site;
 
 class Navigation implements Stringable // Buildable
 {
-    public static function create(Site $site): self
+    public static function create(Site $site, string $requestPath): self
     {
-        return new self($site);
+        return new self($site, $requestPath);
     }
 
-    final private function __construct(private Site $site)
-    {
+    final private function __construct(
+        private readonly Site $site,
+        private readonly string $requestPath
+    ) {
     }
 
     public function site(): Site
@@ -55,7 +57,7 @@ class Navigation implements Stringable // Buildable
         ];
 
         $l = [];
-        $requestPath = $this->site()->requestPath() . '/';
+        $requestPath = $this->requestPath;
         foreach ($links as $link) {
             list($href, $ts, $title) = explode(' ', $link, 3);
 

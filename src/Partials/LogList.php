@@ -3,30 +3,17 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Stringable;
-
-use Eightfold\Amos\Site;
-
 use Eightfold\HTMLBuilder\Element;
 
-class LogList implements Stringable
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
+
+class LogList implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function __toString(): string
-    {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
         $path = $this->site()->publicRoot() . $this->site()->requestPath();
         if (is_dir($path) === false) {
             return '';

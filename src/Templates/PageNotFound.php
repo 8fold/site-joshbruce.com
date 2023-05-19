@@ -4,22 +4,27 @@ declare(strict_types=1);
 namespace JoshBruce\Site\Templates;
 
 use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
+
+use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
-use Eightfold\Amos\Markdown;
+use Eightfold\Amos\PlainText\PrivateFile;
+use Eightfold\Amos\ObjectsFromJson\PrivateObject;
 
 use JoshBruce\Site\Documents\Main;
 
-class PageNotFound implements Stringable // Buildable
+class PageNotFound implements Stringable
 {
+    private Markdown $converter;
+
+    private string $requestPath;
+
     public static function create(Site $site): self
     {
         return new self($site);
     }
 
-    final private function __construct(private Site $site)
-    {
+    final private function __construct(private readonly Site $site) {
     }
 
     private function site(): Site
@@ -27,39 +32,50 @@ class PageNotFound implements Stringable // Buildable
         return $this->site;
     }
 
+    public function withRequestPath(string $requestPath): self
+    {
+        $this->requestPath = $requestPath;
+        return $this;
+    }
+
+    public function requestPath(): string
+    {
+        return $this->requestPath;
+    }
+
+    public function withConverter(Markdown $converter): self
+    {
+        $this->converter = $converter;
+        return $this;
+    }
+
+    private function converter(): Markdown
+    {
+        return $this->converter;
+    }
+
     public function __toString(): string
     {
-        $errorPath = $this->site()->contentRoot() . '/errors/404';
+        $meta = PrivateObject::inRoot(
+            $this->site()->contentRoot(),
+            'meta.json',
+            '/errors/404'
+        );
 
-        $content = $errorPath . '/content.md';
-        $markdown = '404: Page not found.';
-        if (file_exists($content)) {
-            $markdown = file_get_contents($content);
+        $content = PrivateFile::inRoot(
+            $this->site()->contentRoot(),
+            'content.md',
+            '/errors/404'
+        );
+
+        if ($meta->notFound() or $content->notFound()) {
+            return '404: Page not found.';
         }
 
-        $meta = $errorPath . '/meta.json';
-        $pageTitle = 'Page not found';
-        if (
-            file_exists($meta) and
-            $json = file_get_contents($meta) and
-            $decoded = json_decode($json) and
-            is_object($decoded) and
-            property_exists($decoded, 'title')
-        ) {
-            $pageTitle = $decoded->title;
-        }
-
-        if (is_string($markdown) === false) {
-            return '';
-        }
-
-        return (string) Main::create($this->site())
-            ->setPageTitle($pageTitle)
+        return (string) Main::create($this->site(), $this->requestPath())
+            ->setPageTitle($meta->title())
             ->setBody(
-                Markdown::convert(
-                    $this->site(),
-                    $markdown
-                )
+                $this->converter()->convert($content->toString())
             );
     }
 }
