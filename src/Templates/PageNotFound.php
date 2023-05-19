@@ -24,7 +24,8 @@ class PageNotFound implements Stringable
         return new self($site);
     }
 
-    final private function __construct(private readonly Site $site) {
+    final private function __construct(private readonly Site $site)
+    {
     }
 
     private function site(): Site
