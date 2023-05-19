@@ -10,6 +10,8 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\Site;
+
 class FullNav implements PartialInterface
 {
     public function __invoke(
@@ -21,6 +23,12 @@ class FullNav implements PartialInterface
         }
 
         $site = $extras['site'];
+        if (
+            is_object($site) === false or
+            is_a($site, Site::class) === false
+        ) {
+            return '';
+        }
 
         $publicRoot = $site->publicRoot()->toString();
 

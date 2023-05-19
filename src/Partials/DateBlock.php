@@ -10,6 +10,8 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
+
 class DateBlock implements PartialInterface
 {
     public function __invoke(PartialInput $input, array $extras = []): string
@@ -19,6 +21,13 @@ class DateBlock implements PartialInterface
         }
 
         $meta = $extras['meta'];
+        if (
+            is_object($meta) === false or
+            is_a($meta, PublicMeta::class) === false
+        ) {
+            return '';
+        }
+
         $times = [];
         if ($meta->hasProperty('created')) {
             $label      = 'Created';

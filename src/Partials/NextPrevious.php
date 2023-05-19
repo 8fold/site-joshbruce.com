@@ -8,6 +8,8 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\Site;
+
 class NextPrevious implements PartialInterface
 {
     public function __invoke(
@@ -23,7 +25,16 @@ class NextPrevious implements PartialInterface
 
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
-        $path         = $site->publicRoot() . $request_path;
+
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
+
+        $path = $site->publicRoot() . $request_path;
 
         $pathParts = explode('/', $path);
 

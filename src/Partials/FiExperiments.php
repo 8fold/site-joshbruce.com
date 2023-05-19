@@ -8,6 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\Site;
 use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
 class FiExperiments implements PartialInterface
@@ -25,6 +26,13 @@ class FiExperiments implements PartialInterface
 
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
 
         $meta = PublicObject::inRoot(
             $site->contentRoot(),

@@ -8,6 +8,7 @@ use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\HTMLBuilder\Element;
 
+use Eightfold\Amos\Site;
 use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
 class Data implements PartialInterface
@@ -23,8 +24,15 @@ class Data implements PartialInterface
             return '';
         }
 
-        $site = $extras['site'];
+        $site         = $extras['site'];
         $request_path = $extras['request_path'];
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
 
         $data = PublicObject::inRoot(
             $site->contentRoot(),

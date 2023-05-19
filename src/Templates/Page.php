@@ -18,7 +18,6 @@ use JoshBruce\Site\Documents\Main;
 use JoshBruce\Site\Partials\DateBlock;
 use JoshBruce\Site\Partials\NextPrevious;
 use JoshBruce\Site\Partials\ArticleList;
-use JoshBruce\Site\Partials\LogList;
 use JoshBruce\Site\Partials\PaycheckLogList;
 use JoshBruce\Site\Partials\OriginalContentNotice;
 use JoshBruce\Site\Partials\Data;
@@ -90,7 +89,6 @@ class Page implements Stringable
                 'dateblock'        => DateBlock::class,
                 'next-previous'    => NextPrevious::class,
                 'article-list'     => ArticleList::class,
-                'loglist'          => LogList::class,
                 'paycheck-loglist' => PaycheckLogList::class,
                 'original'         => OriginalContentNotice::class,
                 'data'             => Data::class,

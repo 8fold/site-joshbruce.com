@@ -6,25 +6,12 @@ namespace JoshBruce\Site\Partials;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\Site;
 use Eightfold\Amos\PlainText\PrivateFile;
 
 class OriginalContentNotice implements PartialInterface
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
-
-    private function originalNotice(): string
-    {
-        $path = $this->site()->contentRoot() . '/notices/original.md';
-        if (file_exists($path) == false) {
-            return '';
-        }
-
-        $content = file_get_contents($path);
-        if ($content === false) {
-            return '';
-        }
-        return $content;
-    }
 
     public function __invoke(
         PartialInput $input,
@@ -40,15 +27,13 @@ class OriginalContentNotice implements PartialInterface
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
 
-        $noticeMarkdown = PrivateFile::inRoot(
-            $site->contentRoot(),
-            'original.md',
-            '/notices'
-        );
-        if ($noticeMarkdown->notFound()) {
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
             return '';
         }
-        $noticeMarkdown = (string) $noticeMarkdown;
 
         $meta = $site->publicMeta($request_path);
         if (
@@ -59,6 +44,20 @@ class OriginalContentNotice implements PartialInterface
         }
 
         $metaOriginal = $meta->original();
+
+        // $path = $site->publicRoot() . $request_path;
+        $noticeMarkdown = PrivateFile::inRoot(
+            $site->contentRoot(),
+            'original.md',
+            '/notices'
+        );
+        if ($noticeMarkdown->notFound()) {
+            return '';
+        }
+
+        $noticeMarkdown = (string) $noticeMarkdown;
+
+        // $metaOriginal = $meta->original();
         list($href, $platform) = explode(' ', $metaOriginal, 2);
 
         $matches = [];

@@ -8,6 +8,8 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
+use Eightfold\Amos\Site;
+
 class PaycheckLogList implements PartialInterface
 {
     public function __invoke(
@@ -24,10 +26,15 @@ class PaycheckLogList implements PartialInterface
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
 
-        $path = $site->publicRoot() . $request_path;
-        if (is_dir($path) === false) {
+        if (
+            (is_object($site) === false or
+            is_a($site, Site::class) === false) or
+            is_string($request_path) === false
+        ) {
             return '';
         }
+
+        $path = $site->publicRoot() . $request_path;
 
         $contents = scandir($path);
         if ($contents === false) {
@@ -92,16 +99,5 @@ class PaycheckLogList implements PartialInterface
         }
 
         return $return;
-    }
-
-    private function listItem(string $href): Element|false
-    {
-        $meta = $this->site()->meta($href);
-        if (is_object($meta) and property_exists($meta, 'title')) {
-            return Element::li(
-                Element::a($meta->title)->props('href ' . $href)
-            );
-        }
-        return false;
     }
 }
