@@ -34,9 +34,9 @@ MovNat reminded me of a lot of movements I used to do, and they emphasize effici
 
 I walked through the campus of a university and found some nice rails going down the center of some stairs. We also went to a large extreme sport public park in the neighborhood where I found some nice obstacles and environments to mess around on.
 
-I had another MRI performed on my cervical and thoracic spine. ...
+I had another MRI performed on my cervical spine. Disc desiccation, minor hernias, and a little bulging. I don’t know to what degree, except for the bulge, which 1–2 millimeters. And straightening of the spine.
 
-I decided to visit a massage therapist. ...
+I decided to visit a massage therapist for a couple of hours. That was amazing. It was another situation where I didn’t realize how bad it was until it wasn’t anymore. Not sure how long it’ll last, but I’m enjoying it while I can.
 
 This is how you know I’m over it, whatever is feeling like it’s holding me back. I’m going to do some small things, call in all the professionals, and request as many tests as necessary to convince myself it’s okay.
 
