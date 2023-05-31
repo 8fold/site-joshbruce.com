@@ -37,6 +37,8 @@ When the toe isn’t acting up, my passive exercising consists of walking up sta
 
 Every week I walk about 4 miles along with all the steps required to go outside and come back in.
 
+[More entries from 2023](/experiences/health-and-wellness/2023/)
+
 ## 2022 (43 years of age)
 
 In the early part of the year, I contemplated active exercise movements and came down with appendicitis.
