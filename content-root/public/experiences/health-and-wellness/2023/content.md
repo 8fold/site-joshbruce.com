@@ -16,6 +16,38 @@ I’ve started paying more attention to how I walk and trying to do it the way I
 
 For the upper body, some of my muscles are taking a vacation. Specifically the triceps and forearms. This is leaving most of the work up to the back muscles; not good. 
 
+## June 2 to 9
+
+Continued the exercises and stretches from May 15 to 26. (More on that below.)
+
+MRI on the thoracic spine.
+
+I started incorporating more stretches. It’s not quite a warmup routine, but muscles are definitely reengaging instead of two or three trying to do the job of everyone else.
+
+I went to a [float tank](https://www.floathorizen.com) while Becca and I were in Nashville visiting friends. I want to do as much as possible to relax my back and reduce inflammation. It was a one hour session and I had lights off and earplugs in. For the first little bit I just layer there with arms over head. 
+
+Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor. 
+
+I normally associate this sensation when I would intentionally train to almost failure. However, in those instances, the shaking was accompanied by loads of stress and exertion. This was more like the sensation I felt when I first did the wall press and co-contraction slouch.
+
+After the float I had interesting burning (no heat) in right deltoid for a few days.
+
+Had my second session with the physical therapist. I’ve made a lot of progress. We’re changing the routine.
+
+- [Rock back breathing](https://youtu.be/hV5gOgG-pQY).
+- [Toe-spreading abduction](https://youtu.be/qzPziUkbmQg).
+- [Pectoral corner stretch](https://youtu.be/w3I3d1LuqOU), followed by posterior wall presses (I couldn’t locate video, images, or articles; let me know if you’d like me to try and describe).
+- [Couch quad stretch](https://youtu.be/fHKndvWwenc).
+- Transverse plane slouch. The video that came up in search for me was not the same thing; let me know if you’d like me to describe.
+- [Heel raise, ball between heels](https://youtu.be/IzXhuC6WTAA). Considered going one leg without the ball, but the calves were having none of it.
+- Upper back extension. Again, video that came up for me in search was not the same thing.
+
+Right now, what seems to be helping most is:
+
+1. Alignment things: Making sure I’m stacking joints properly for me.
+2. Relaxation things: I’m not sure when my body forgot how to relax, but that’s what it feels like. (Massage therapy and float tanks.) 
+2. Mobility things: Ensuring I can maintain (or progress into) full range of motion with all the things.
+
 ## May 27 to June 2
 
 I’m still doing the exercises and stretches from May 15 to 26. 
