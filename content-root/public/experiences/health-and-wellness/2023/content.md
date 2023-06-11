@@ -2,19 +2,11 @@
 
 {!! dateblock !!}
 
-## May
+## June
 
-I had an [.Magnetic Resonance Imaging](MRI) done on my right foot. The follow-up appointment with the orthopedic surgeon went well. I appreciate that he essentially said, “I don’t know. And that’s not to say it isn’t happening.” He added that I should stop taking the uric acid reduction therapy as he didn’t see any indication of arthritis or uric acid crystals.
+Feeling pretty good.
 
-That same week I visited a physical therapist who seems amazing so far.
-
-We looked at my walking patterns and I felt reaffirmed that the way I used to walk was actually better suited for me. She gave me some exercises to do as well, and they are kicking my ass, literally.
-
-The problem child for my foot, we believe, is weakness in the [abductor hallucis](https://en.m.wikipedia.org/wiki/Abductor_hallucis_muscle). My gait was a bit wide, and we believe this was causing me to roll off my big toe at an angle (pushing it toward the center of my foot), instead of straight on.
-
-I’ve started paying more attention to how I walk and trying to do it the way I used to. More mid- and front-strike, a bit more narrow, and ensuring the feet are pointed straight. Consider walking on a balance beam only slightly wider.
-
-For the upper body, some of my muscles are taking a vacation. Specifically the triceps and forearms. This is leaving most of the work up to the back muscles; not good. 
+We’re looking at external rotation of my right leg, and continuing to get my muscles to work as a cohesive team. Structurally, I’m adding in counter stretches and range of motion movements for my neck, spine, and shoulders; focusing on when and what things move (similar to the [novel movements of the beck](https://youtu.be/hm0MY9jt9rk)).
 
 ## June 2 to 9
 
@@ -26,7 +18,7 @@ I started incorporating more stretches. It’s not quite a warmup routine, but m
 
 I went to a [float tank](https://www.floathorizen.com) while Becca and I were in Nashville visiting friends. I want to do as much as possible to relax my back and reduce inflammation. It was a one hour session and I had lights off and earplugs in. For the first little bit I just layer there with arms over head. 
 
-Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor. 
+Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s) or the [second novel movement for the shoulders](https://youtu.be/IXj64-Sv16E). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor. 
 
 I normally associate this sensation when I would intentionally train to almost failure. However, in those instances, the shaking was accompanied by loads of stress and exertion. This was more like the sensation I felt when I first did the wall press and co-contraction slouch.
 
@@ -47,6 +39,22 @@ Right now, what seems to be helping most is:
 1. Alignment things: Making sure I’m stacking joints properly for me.
 2. Relaxation things: I’m not sure when my body forgot how to relax, but that’s what it feels like. (Massage therapy and float tanks.) 
 2. Mobility things: Ensuring I can maintain (or progress into) full range of motion with all the things.
+
+When it comes to neck movements, the problem child is lower neck mobility. I’m “facing the demons,” though.
+
+## May
+
+I had an [.Magnetic Resonance Imaging](MRI) done on my right foot. The follow-up appointment with the orthopedic surgeon went well. I appreciate that he essentially said, “I don’t know. And that’s not to say it isn’t happening.” He added that I should stop taking the uric acid reduction therapy as he didn’t see any indication of arthritis or uric acid crystals.
+
+That same week I visited a physical therapist who seems amazing so far.
+
+We looked at my walking patterns and I felt reaffirmed that the way I used to walk was actually better suited for me. She gave me some exercises to do as well, and they are kicking my ass, literally.
+
+The problem child for my foot, we believe, is weakness in the [abductor hallucis](https://en.m.wikipedia.org/wiki/Abductor_hallucis_muscle). My gait was a bit wide, and we believe this was causing me to roll off my big toe at an angle (pushing it toward the center of my foot), instead of straight on.
+
+I’ve started paying more attention to how I walk and trying to do it the way I used to. More mid- and front-strike, a bit more narrow, and ensuring the feet are pointed straight. Consider walking on a balance beam only slightly wider.
+
+For the upper body, some of my muscles are taking a vacation. Specifically the triceps and forearms. This is leaving most of the work up to the back muscles; not good. 
 
 ## May 27 to June 2
 
