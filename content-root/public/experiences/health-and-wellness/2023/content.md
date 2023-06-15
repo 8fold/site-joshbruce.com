@@ -2,6 +2,66 @@
 
 {!! dateblock !!}
 
+## June
+
+Feeling pretty good.
+
+We’re looking at external rotation of my right leg, and continuing to get my muscles to work as a cohesive team. Structurally, I’m adding in counter stretches and range of motion movements for my neck, spine, and shoulders; focusing on when and what things move (similar to the [novel movements of the beck](https://youtu.be/hm0MY9jt9rk)).
+
+## June 10 to 15
+
+Continuing the exercises from June 2. 
+
+I purchased a [MovNat bundle](https://www.movnat.com) when they were on sale. I appreciated the week 1 progressions. I’ve decided to incorporate the day 1 warmup movements on top of my daily physical therapy exercises every Monday, Wednesday, and Friday. By doing this I’m hoping to get back in the habit of blocking time for a more regular and intense routine in the future. I’m hoping to be able to complete the full week 1 day 1 MovNat routine by June 17 or 18.
+
+On the 13th I had some discomfort in my:
+
+- left hand,
+- right foot arch (feels like fasciitis),
+- top of my right foot,
+- the exterior muscles and ligaments around my right ankle, and
+- lower back just above right hip.
+
+The good news here though is that it’s not, “Boy, you better lay down and stop doing stuff,” levels of pain or discomfort. With that said, it’s odd how inconsistent the discomfort is; it comes and goes, and rarely in the same areas of my body.
+
+The description I can give to how I feel is imagine trying to rehydrate beef jerky, only the beef is your muscles and soft tissues. My back muscles for the longest time had only one setting; tense. Now they’re at least starting to relax or have levels of tension.
+
+I’m not straining to complete any of the movements, but I definitely feel worked. Further, I find myself becoming tired quickly from the exertion, at least for the first few days after increasing the type, number, and complexity of movements.
+
+## June 2 to 9
+
+Continued the exercises and stretches from May 15 to 26. (More on that below.)
+
+MRI on the thoracic spine. Apparently it’s pretty much perfect.
+
+I started incorporating more stretches. It’s not quite a warmup routine, but muscles are definitely reengaging instead of two or three trying to do the job of everyone else.
+
+I went to a [float tank](https://www.floathorizen.com) while Becca and I were in Nashville visiting friends. I want to do as much as possible to relax my back and reduce inflammation. It was a one hour session and I had lights off and earplugs in. For the first little bit I just layer there with arms over head. 
+
+Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s) or the [second novel movement for the shoulders](https://youtu.be/IXj64-Sv16E). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor. 
+
+I normally associate this sensation when I would intentionally train to almost failure. However, in those instances, the shaking was accompanied by loads of stress and exertion. This was more like the sensation I felt when I first did the wall press and co-contraction slouch.
+
+After the float I had interesting burning (no heat) in right deltoid for a few days.
+
+Had my second session with the physical therapist. I’ve made a lot of progress. We’re changing the routine.
+
+- [Rock back breathing](https://youtu.be/hV5gOgG-pQY).
+- [Toe-spreading abduction](https://youtu.be/qzPziUkbmQg).
+- [Pectoral corner stretch](https://youtu.be/w3I3d1LuqOU), followed by posterior wall presses (I couldn’t locate video, images, or articles; let me know if you’d like me to try and describe).
+- [Couch quad stretch](https://youtu.be/fHKndvWwenc).
+- Transverse plane slouch. The video that came up in search for me was not the same thing; let me know if you’d like me to describe.
+- [Heel raise, ball between heels](https://youtu.be/IzXhuC6WTAA). Considered going one leg without the ball, but the calves were having none of it.
+- Upper back extension. Again, video that came up for me in search was not the same thing.
+
+Right now, what seems to be helping most is:
+
+1. Alignment things: Making sure I’m stacking joints properly for me.
+2. Relaxation things: I’m not sure when my body forgot how to relax, but that’s what it feels like. (Massage therapy and float tanks.) 
+2. Mobility things: Ensuring I can maintain (or progress into) full range of motion with all the things.
+
+When it comes to neck movements, the problem child is lower neck mobility. I’m “facing the demons,” though.
+
 ## May
 
 I had an [.Magnetic Resonance Imaging](MRI) done on my right foot. The follow-up appointment with the orthopedic surgeon went well. I appreciate that he essentially said, “I don’t know. And that’s not to say it isn’t happening.” He added that I should stop taking the uric acid reduction therapy as he didn’t see any indication of arthritis or uric acid crystals.
