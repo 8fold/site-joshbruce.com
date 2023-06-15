@@ -7,7 +7,7 @@
       "optimum": "0",
       "high": "0.5",
       "max": "1",
-      "value": "0.89"
+      "value": "0.75"
     },
     {
       "label": "Short-term assets",
@@ -43,7 +43,7 @@
       "optimum": "32",
       "high": "34",
       "max": "38",
-      "value": "35.3"
+      "value": "35.1"
     },
     {
       "label": "Growth - US equities - mid",
@@ -52,7 +52,7 @@
       "optimum": "28",
       "high": "31",
       "max": "34",
-      "value": "26.5"
+      "value": "26.4"
     },
     {
       "label": "Growth - US equities - large",
@@ -61,7 +61,7 @@
       "optimum": "36",
       "high": "40",
       "max": "42",
-      "value": "29.7"
+      "value": "29.9"
     }
   ]
 }
