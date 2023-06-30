@@ -8,6 +8,26 @@ Feeling pretty good.
 
 We’re looking at external rotation of my right leg, and continuing to get my muscles to work as a cohesive team. Structurally, I’m adding in counter stretches and range of motion movements for my neck, spine, and shoulders; focusing on when and what things move (similar to the [novel movements of the neck](https://youtu.be/hm0MY9jt9rk)).
 
+## June 23 to 29
+
+On vacation.
+
+Trying to fit in the physical therapy exercises when I can. The transverse plane slouch and toe abductions are the easiest.
+
+Upper mid back still feels weird, but the pain is moving to different spots and only present when performing movement; unfortunately, I never know what movement will cause the pain.
+
+My left hand is also particularly painful. The middle digit has a throbbing pain when bent from the first joint; lateral movements also cause pain. Lateral movement of index finger comes with pain as well. Inside of thumb as well. 
+
+My right hand has the thumb pain as well.
+
+With most of these pain points I don’t know when the pain will happen. For example, I went to adjust the covers with my right hand and my thumb experienced a sharp, stabbing pain. I immediately stopped what I was doing, wiggled my thumb, and continued adjusting the blanket, no pain.
+
+The middle finger of the left hand is the most consistent. It feels like a jam. I can pull it, which is sometimes accompanied by what I can only describe as a release; no popping sounds, but something moves. After the massage-pull combination it feels better for an hour or two; all the way up to 12 hours.
+
+Right great toe has a constant low grade pain. Raising my toes into dorsiflexion on the right foot is accompanied by pain as well; almost like the muscles are overworked.
+
+All of these are odd sensations and I’m hoping to keep feeling that way as opposed to falling into the, “This is just my life now trap,” because I fear that will lead to darker days.
+
 ## June 16 to 22
 
 Continuing the exercises from June 2. I’m adapting to them about as quickly as I did the previous set. This has me a little concerned as we’re planning to head out of town this week and won’t be back until July. Therefore, won’t be able to get a more difficult set of exercises until July. More on what I’m doing there below.
