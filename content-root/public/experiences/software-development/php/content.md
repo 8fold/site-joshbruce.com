@@ -38,11 +38,11 @@ And that should resolve the problem.
 
 If you don't want to use the MAMP version of Composer, you can also install `composer.phar` somewhere and update the path in the `.profile` file to point there instead.
 
-I'm just looking for as few extra things I need to remember to do, which is why I use MAMP in the first place.
+I'm just looking for a few extra things I need to remember to do, which is why I use MAMP in the first place.
 
 ## What had happened was
 
-My MacBook Pro was having power issues. I sent it in for diagnostic and repair. They replaced the logic board. Replacing the logic board means I basically got a new laptop back. Right down to the version of macOS installed. 
+My MacBook Pro was having power issues. I sent it in for diagnostic and repair. They replaced the logic board. Replacing the logic board means I basically got a new laptop back. Right down to the version of macOS installed.
 
 I usually don't restore from a backup when stuff like this happens. I start over. It's like packing all your things in boxes as if you were going to move (or moving), then only unpacking what you need.
 
@@ -50,7 +50,7 @@ I finally hit the point of getting PHP working.
 
 For those who don't know, macOS used to ship with a version of PHP preinstalled. So if you wanted to use a different version of PHP, you would install PHP, most likely using Homebrew, if your internet search goes anything like mine.
 
-A few macOS versions ago, Apple renamed their install and let developers know that PHP, any version of it, would eventually no longer come preinstalled. So, at some point, you'd always have to resort to putting it on the machine yourself. 
+A few macOS versions ago, Apple renamed their install and let developers know that PHP, any version of it, would eventually no longer come preinstalled. So, at some point, you'd always have to put it on the machine yourself.
 
 Apple's last PHP version with macOS was 7.4 (if memory serves). When I wanted to start using PHP 8, I needed to overwrite their version with the one I installed. In the beginning, I used Homebrew because that's what the Internet said to do. After a while, I realized I only used Homebrew to install PHP, which seemed a bit silly.
 
@@ -68,7 +68,7 @@ alias composer='php ~/composer.phar'
 export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 ```
 
-This enabled it to run things like `composer install` and `update`. It also gave me the expected responses for things like `php -v` and `which php`. However, when I ran something like `./vendor/bin/phpunit`, I'd get a "file not found" error. When I tried running anything in `./vendor/bin`, I'd get the same error. Whether I was in the Terminal or my [.Integrated Development Environment](IDE).
+This enabled it to run things like `composer install` and `update`. It also gave me the expected responses for things like `php -v` and `which php`. However, when I ran something like `./vendor/bin/phpunit`, I'd get a "file not found" error. I'd get the same error when I tried running anything in `./vendor/bin`. Whether I was in the Terminal or my [.Integrated Development Environment](IDE).
 
 I was frustrated. [Tooted](https://phpc.social/@itsjoshbruce/109775464933883291) about it. And gave up for the rest of the day.
 
@@ -77,3 +77,29 @@ The next day I checked on the Mac mini to see how it was set up. I verified I co
 Boom!
 
 And now, I need to get back to the project.
+
+## MAMP Pro resetting `.profile`
+
+Every once in a while, the `.profile` would reset itself to the following:
+
+```
+alias composer='/Applications/MAMP/bin/php/composer'
+```
+
+This would cause the Terminal to lose all command possibilities from the above.
+
+MAMP has two ways to modify hosts.
+
+The first is:
+
+1. Stop the server.
+2. Make the changes to the host.
+3. Start the server.
+
+The second is:
+
+1. While the server is running.
+2. Make the changes to the host.
+3. Use the save button; MAMP will stop and start the servers.
+
+When I do the first option, all is right with the world. The `.profile` content is modified when I do the second option.
