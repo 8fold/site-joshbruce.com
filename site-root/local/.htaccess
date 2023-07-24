@@ -18,12 +18,12 @@ ErrorDocument 500 /error-500.html
 	Header add Access-Control-Allow-Methods "GET, HEAD"
 	Header add Allow "GET, HEAD"
 
-	# Handle redirects
-	# Redirect [status] [original] [updated]
-
 	# Redirect to trailing slash if not folder or file
 	RewriteCond %{REQUEST_URI} /+[^\.]+$
 	RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+	# Handle redirects
+	Redirect 301 "/experiences/health-and-wellness/2023/" "/experiences/health-and-wellness/historical-summaries/#2023-44-years-of-age"
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d

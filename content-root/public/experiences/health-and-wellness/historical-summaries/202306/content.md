@@ -1,12 +1,10 @@
-# 2023
+# June 2023
 
 {!! dateblock !!}
 
-## June
-
 Feeling pretty good.
 
-We’re looking at external rotation of my right leg, and continuing to get my muscles to work as a cohesive team. Structurally, I’m adding in counter stretches and range of motion movements for my neck, spine, and shoulders; focusing on when and what things move (similar to the [novel movements of the neck](https://youtu.be/hm0MY9jt9rk)).
+We’re looking at the external rotation of my right leg and continuing to get my muscles to work as a cohesive team. Structurally, I’m adding in counter stretches and range of motion movements for my neck, spine, and shoulders, focusing on when and what things move (similar to the [novel movements of the neck](https://youtu.be/hm0MY9jt9rk)).
 
 ## June 23 to 29
 
@@ -14,25 +12,25 @@ On vacation.
 
 Trying to fit in the physical therapy exercises when I can. The transverse plane slouch and toe abductions are the easiest.
 
-Upper mid back still feels weird, but the pain is moving to different spots and only present when performing movement; unfortunately, I never know what movement will cause the pain.
+The upper mid back still feels weird, but the pain moves to different spots and is only present when performing movement; unfortunately, I never know what movement will cause the pain.
 
-My left hand is also particularly painful. The middle digit has a throbbing pain when bent from the first joint; lateral movements also cause pain. Lateral movement of index finger comes with pain as well. Inside of thumb as well. 
+My left hand is also particularly painful. The middle digit has a throbbing pain when bent from the first joint; lateral movements also cause pain. Lateral movement of the index finger comes with pain as well. Inside of the thumb as well.
 
-My right hand has the thumb pain as well.
+My right hand has thumb pain as well.
 
-With most of these pain points I don’t know when the pain will happen. For example, I went to adjust the covers with my right hand and my thumb experienced a sharp, stabbing pain. I immediately stopped what I was doing, wiggled my thumb, and continued adjusting the blanket, no pain.
+With most of these pain points, I don’t know when the pain will happen. For example, I went to adjust the covers with my right hand, and my thumb experienced a sharp, stabbing pain. I immediately stopped what I was doing, wiggled my thumb, and continued adjusting the blanket no pain.
 
-The middle finger of the left hand is the most consistent. It feels like a jam. I can pull it, which is sometimes accompanied by what I can only describe as a release; no popping sounds, but something moves. After the massage-pull combination it feels better for an hour or two; all the way up to 12 hours.
+The middle finger of the left hand is the most consistent. It feels like a jam. I can pull it, which is sometimes accompanied by what I can only describe as a release; no popping sounds, but something moves. After the massage-pull combination, it feels better for an hour or two, all the way up to 12 hours.
 
-Right great toe has a constant low grade pain. Raising my toes into dorsiflexion on the right foot is accompanied by pain as well; almost like the muscles are overworked.
+The right great toe has constant low-grade pain. Raising my toes into dorsiflexion on the right foot is accompanied by pain as well, almost like the muscles are overworked.
 
-All of these are odd sensations and I’m hoping to keep feeling that way as opposed to falling into the, “This is just my life now trap,” because I fear that will lead to darker days.
+All of these are odd sensations, and I’m hoping to keep feeling that way as opposed to falling into the “This is just my life now" trap because I fear that will lead to darker days.
 
 ## June 16 to 22
 
 Continuing the exercises from June 2. I’m adapting to them about as quickly as I did the previous set. This has me a little concerned as we’re planning to head out of town this week and won’t be back until July. Therefore, won’t be able to get a more difficult set of exercises until July. More on what I’m doing there below.
 
-I did the week 1 day MovNat fundamentals warmup 3 days. June 17th I tried the full routine.
+I did the week 1-day MovNat fundamentals warmup for 3 days. On June 17th I tried the full routine.
 
 ### Progressive overloading
 
@@ -55,7 +53,7 @@ I used to do stuff like this a lot when I was younger. I never thought of it as 
 
 ## June 10 to 15
 
-Continuing the exercises from June 2. 
+Continuing the exercises from June 2.
 
 I purchased a [MovNat bundle](https://www.movnat.com) when they were on sale. I appreciated the week 1 progressions. I’ve decided to incorporate the day 1 warmup movements on top of my daily physical therapy exercises every Monday, Wednesday, and Friday. By doing this I’m hoping to get back in the habit of blocking time for a more regular and intense routine in the future. I’m hoping to be able to complete the full week 1 day 1 MovNat routine by June 17 or 18.
 
@@ -81,9 +79,9 @@ MRI on the thoracic spine. Apparently it’s pretty much perfect.
 
 I started incorporating more stretches. It’s not quite a warmup routine, but muscles are definitely reengaging instead of two or three trying to do the job of everyone else.
 
-I went to a [float tank](https://www.floathorizen.com) while Becca and I were in Nashville visiting friends. I want to do as much as possible to relax my back and reduce inflammation. It was a one hour session and I had lights off and earplugs in. For the first little bit I just layer there with arms over head. 
+I went to a [float tank](https://www.floathorizen.com) while Becca and I were in Nashville visiting friends. I want to do as much as possible to relax my back and reduce inflammation. It was a one hour session and I had lights off and earplugs in. For the first little bit I just layer there with arms over head.
 
-Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s) or the [second novel movement for the shoulders](https://youtu.be/IXj64-Sv16E). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor. 
+Once I settled in to a point where I wasn’t drifting into the walls, I started bringing my arms toward my sides. Think downward motion of a [jumping jack](https://youtu.be/-O7z3ilCu-s) or the [second novel movement for the shoulders](https://youtu.be/IXj64-Sv16E). Three main differences. First, I wanted to move slow enough to not propel myself through the epsom salt laden water. Second, I didn’t straighten my arms; wanted to make sure I was ready if I ran into the side of the tank. Third, I focused on rotating from the shoulders using my back muscles. The odd sensation was my lats ([latissimus dorsi](https://en.m.wikipedia.org/wiki/Latissimus_dorsi_muscle)) had a slight tremor.
 
 I normally associate this sensation when I would intentionally train to almost failure. However, in those instances, the shaking was accompanied by loads of stress and exertion. This was more like the sensation I felt when I first did the wall press and co-contraction slouch.
 
@@ -102,7 +100,7 @@ Had my second session with the physical therapist. I’ve made a lot of progress
 Right now, what seems to be helping most is:
 
 1. Alignment things: Making sure I’m stacking joints properly for me.
-2. Relaxation things: I’m not sure when my body forgot how to relax, but that’s what it feels like. (Massage therapy and float tanks.) 
+2. Relaxation things: I’m not sure when my body forgot how to relax, but that’s what it feels like. (Massage therapy and float tanks.)
 2. Mobility things: Ensuring I can maintain (or progress into) full range of motion with all the things.
 
 When it comes to neck movements, the problem child is lower neck mobility. I’m “facing the demons,” though.
@@ -119,11 +117,11 @@ The problem child for my foot, we believe, is weakness in the [abductor hallucis
 
 I’ve started paying more attention to how I walk and trying to do it the way I used to. More mid- and front-strike, a bit more narrow, and ensuring the feet are pointed straight. Consider walking on a balance beam only slightly wider.
 
-For the upper body, some of my muscles are taking a vacation. Specifically the triceps and forearms. This is leaving most of the work up to the back muscles; not good. 
+For the upper body, some of my muscles are taking a vacation. Specifically the triceps and forearms. This is leaving most of the work up to the back muscles; not good.
 
 ## May 27 to June 2
 
-I’m still doing the exercises and stretches from May 15 to 26. 
+I’m still doing the exercises and stretches from May 15 to 26.
 
 I started looking into [MovNat](https://www.movnat.com) and [Parkour Generations](https://parkourgenerations.com). Both have a philosophy and approach I believe in; even if not stated outright:
 
@@ -164,7 +162,7 @@ Let’s move to lower body, specifically the right leg.
 
 Around 2020 I had severe pain my right big toe. I treated it as turf toe. In early 2022 I had similar symptoms and the hypothesis from my doctor was hyperuricemia and gout. In short, I became concerned about moving that joint, and started babying that whole kinetic chain; choosing pause over pushing. In early 2023 I had similar symptoms and became exceedingly frustrated when I sprained my toe or induced a gout flare by doing push-ups and planks. More on that below.
 
-Just before and after the MRI, I decided to push a little bit rather than pause. 
+Just before and after the MRI, I decided to push a little bit rather than pause.
 
 The hypothesis regarding the big toe is that there is weakness in the [abductor hallucis](https://www.kenhub.com/en/library/anatomy/abductor-hallucis-muscle), this is where the toe abduction exercises come into play. We also discovered weakness in my ability to engage that hamstring, hence the co-contraction slouch.
 
@@ -182,7 +180,7 @@ One interesting piece is how much soreness and fatigue is in my hands and feet. 
 
 When I first experienced the pain, I figured it was turf toe. That was around 2020. It took about a week to get back to normal.
 
-In early 2022 I chose a primary care physician. Got the go ahead to start exercising. I was talking with a friend and did an ankle to loosen up the right ankle. It sounded like I bit into a rice crispy treat. It didn’t hurt, but was disconcerting. 
+In early 2022 I chose a primary care physician. Got the go ahead to start exercising. I was talking with a friend and did an ankle to loosen up the right ankle. It sounded like I bit into a rice crispy treat. It didn’t hurt, but was disconcerting.
 
 I decided to take a walk. Was overly conscious of the right foot. The next day I had similar symptoms as in 2020.
 
@@ -196,7 +194,7 @@ Being the empirical human I am, I asked if there was a way to see how much uric 
 
 This put me in a bind. How long should I wait to become active to minimize possible joint damage?
 
-I went for the rest of the year without increasing activity levels. I had no more issues and tried not to think about it. 
+I went for the rest of the year without increasing activity levels. I had no more issues and tried not to think about it.
 
 The body is pretty intent about guarding and adapting to do so. As such, I’m pretty sure I ended up babying the right leg without being conscious of it.
 
