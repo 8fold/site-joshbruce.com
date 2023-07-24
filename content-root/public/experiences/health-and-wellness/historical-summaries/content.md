@@ -35,9 +35,9 @@ As a result, I could no longer perform passive or active exercises.
 
 </details>
 
-{!! health-loglist:2023 !!}
+### 2023 Entries
 
-[More entries from 2023](/experiences/health-and-wellness/2023/)
+{!! health-loglist:year=2023 !!}
 
 ## 2022 (43 years of age)
 

@@ -8,7 +8,7 @@ I’m a reasonably kinetic human. I’m fascinated by the human body moving thro
 
 Watching gymnastics was a favorite growing up. When I was introduced to [parkour](https://en.m.wikipedia.org/wiki/Parkour) and [freerunning](https://en.m.wikipedia.org/wiki/Freerunning), I was fascinated.
 
-I've moved the [year-by-year summaries](/experiences/health-and-wellness) to create consistency with other overview pages on the site, focusing on values, principles, practices, and tools. Further, this area will continue to evolve as the content is created and iterated concerning presentation.
+I've moved the [year-by-year summaries](/experiences/health-and-wellness/historical-summaries/) to create consistency with other overview pages on the site, focusing on values, principles, practices, and tools. Further, this area will continue to evolve as the content is created and iterated concerning presentation.
 
 ## Values
 
