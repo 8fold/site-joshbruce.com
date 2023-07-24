@@ -10,12 +10,13 @@ use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
 
-class PaycheckLogList implements PartialInterface
+class HealthLogList implements PartialInterface
 {
     public function __invoke(
         PartialInput $input,
         array $extras = []
     ): string {
+        // die(var_dump($input->arguments()));
         if (
             array_key_exists('site', $extras) === false or
             array_key_exists('request_path', $extras) === false
@@ -23,8 +24,14 @@ class PaycheckLogList implements PartialInterface
             return '';
         }
 
+        $arguments = $input->arguments();
+        if (property_exists($arguments, 'year') === false) {
+            return '';
+        }
+
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
+        $year         = $arguments->year;
 
         if (
             (is_object($site) === false or
@@ -42,19 +49,14 @@ class PaycheckLogList implements PartialInterface
         }
 
         $links = [];
-        $currentYear = [];
-        $years = [];
+        // $currentYear = [];
+        // $years = [];
         foreach ($contents as $content) {
-            if (
-                $content === '.' or
-                $content === '..' or
-                $content === '.DS_Store' or
-                str_contains($content, '.')
-            ) {
+            if (str_starts_with($content, $year) === false) {
                 continue;
             }
 
-            $href = $request_path . '/' . $content;
+            $href = $request_path . $content . '/';
 
             $meta = $site->publicMeta($href);
             $item = '';
@@ -64,40 +66,27 @@ class PaycheckLogList implements PartialInterface
             ) {
                 continue;
 
-            } else {
-                $item = Element::li(
-                    Element::a($meta->title())->props('href ' . $href)
-                );
-
             }
 
-            $year = date('Y');
-            if (str_starts_with($content, $year)) {
-                $currentYear[$content] = $item;
-                continue;
-            }
+            $links[$content] = Element::li(
+                Element::a($meta->title())->props('href ' . $href)
+            );
 
-            $year = substr($content, 0, 4);
-            $links[$year][$content] = $item;
+            // $y = substr($content, 0, 4);
+            // $links[$y][$content] = $item;
         }
 
-        $return = '';
-        if (count($currentYear) > 0) {
-            krsort($currentYear);
-            $return = (string) Element::ul(...$currentYear);
-        }
+        // $return = '';
 
         krsort($links);
 
-        $pastYears = [];
-        foreach ($links as $year => $items) {
-            krsort($items);
-            $return .= (string) Element::details(
-                Element::summary(strval($year)),
-                Element::ul(...$items)
-            );
-        }
-
-        return $return;
+        return (string) Element::ul(...$links);
+//
+//         foreach ($links as $year => $items) {
+//             krsort($items);
+//
+//         }
+//
+//         return $return;
     }
 }

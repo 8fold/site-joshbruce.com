@@ -23,6 +23,7 @@ use JoshBruce\Site\Partials\OriginalContentNotice;
 use JoshBruce\Site\Partials\Data;
 use JoshBruce\Site\Partials\FiExperiments;
 use JoshBruce\Site\Partials\FullNav;
+use JoshBruce\Site\Partials\HealthLogList;
 
 class Page implements Stringable
 {
@@ -93,7 +94,8 @@ class Page implements Stringable
                 'original'         => OriginalContentNotice::class,
                 'data'             => Data::class,
                 'fi-experiments'   => FiExperiments::class,
-                'full-nav'         => FullNav::class
+                'full-nav'         => FullNav::class,
+                'health-loglist'   => HealthLogList::class
             ],
             'extras' => [
                 'meta'         => $meta,
