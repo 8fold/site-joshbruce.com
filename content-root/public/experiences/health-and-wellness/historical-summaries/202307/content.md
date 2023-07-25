@@ -2,7 +2,7 @@
 
 {!! dateblock !!}
 
-Still figuring out how best to create these entries. I may switch to monthly entries instead of yearly, with each month as a section. Further, I will try subdividing things a bit regarding movements to distinguish between prescribed (by a professional) and additional movements I'm putting in as well. Finally, I'm considering separating improvement areas from degradation (wins and losses).
+Still figuring out how best to create these entries. I may switch to monthly entries instead of yearly, with each month as a section. Further, I will try subdividing things regarding movements to distinguish between prescribed (by a professional) and additional movements I'm putting in. Finally, I'm considering separating improvement areas from degradation (wins and losses).
 
 Feeling pretty depressed.
 
@@ -10,31 +10,31 @@ Questioning whether I’ll actually be able to consistently recover.
 
 ## Monday, July 24, 2023
 
-
-
 **Daily questions:**
 
-1. Morning:
-    1. Is there stiffness? *No*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *Yes*
-    4. If yes, what areas are affected? And, does moving help?
-        - (discomfort) Low back, hands. (pain) Upper thoracic spine area, both wrists, left hand second digit, left foot second digit.  
-        - Sometimes moving helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
-2. Afternoon:
-    1. Is there stiffness? *‌*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *‌*
-    4. If yes, what areas are affected? And, does moving help?
-        - (discomfort) (pain)
-        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
-3. Evening:
-    1. Is there stiffness? *‌*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *m*
-    4. If yes, what areas are affected? And, does moving help?
-        - (discomfort). (pain) l 
-        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- (discomfort) Low back, hands. 
+	- (pain) Upper thoracic spine area, both wrists, the left-hand third digit, the left-hand second digit, foot second digit.
+- Afternoon: Yes.
+	- Same
+- Evening: Yes.
+	- Same
+
+Does movement improve stiffness, discomfort, or acute pain?
+
+*No movement, stretch, or exercise has relieved the symptoms in the upper thoracic spine area when present.* Pain in the upper thoracic spine occurs with movement and is not present in a neutral position.
+
+*Massage and manual adjustment temporarily relieve the left-hand third-digit symptoms from 10 minutes to a few hours.* Pain in the left hand third digit is not present when in a neutral position. Pain is consistent when moved laterally (abduction and adduction) under its own power. The pain gradually increases when moving into flexion.
+
+How does this impact quality of life?
 
 **Losses (top five):**
 

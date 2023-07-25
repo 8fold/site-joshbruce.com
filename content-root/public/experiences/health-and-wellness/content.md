@@ -21,6 +21,7 @@ I've moved the [year-by-year summaries](/experiences/health-and-wellness/histori
 1. Efficiency of movements increases the longevity of movement.
 	1. Speed hides inefficiencies.
 	2. Momentum hides inefficiencies.
+2. Correlation is not causation; however, context is important.
 
 ## Practices
 
