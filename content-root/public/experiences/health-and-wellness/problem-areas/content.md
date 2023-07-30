@@ -37,6 +37,14 @@ Same as mild only pain increases when weight-bearing and confidence in the knee'
 
 Movement helps.
 
+## Right ankle
+
+**Mild**
+
+Awareness has been present since May 2023.
+
+
+
 ## Right, left, or both feet—bottom
 
 **Moderate**
@@ -133,7 +141,7 @@ Limited range of motion, crispy-crunchy movement, and pain at the end of the ran
 
 **Severe**
 
-Same as moderate, only pain is present even in a neutral position.
+Same as moderate, only pain is present even in a neutral position, and the wrist may feel "locked" in place.
 
 ## Left hand—middle finger
 
@@ -166,3 +174,31 @@ Same as moderate; however, the intensity of flexion starts earlier. For example,
 Awareness has been present since June 2023.
 
 Mild pain is present along the thumb side of the index finger, mainly when the index finger needs to be engaged for support, like holding the handle of a pan with the thumb on top of the handle and the second joint of the index finger on the bottom of the handle.
+
+## Upper thoracic spine (mid-back)
+
+**Mild**
+
+Started in February 2023.
+
+It's an odd feeling. It doesn't feel like traditional muscle soreness. Instead, it feels like a strain or sprain of soft tissue.
+
+## Lower thoracic spine (mid-back)
+
+**Mild**
+
+Started in July 2023.
+
+Muscle soreness mainly. The soreness spreads completely across the back. It's similar to having a tense muscle that should be tense.
+
+**Moderate**
+
+This area of the back feels like it will start cramping any moment; usually happens with added strain.
+
+## Lumbar spine (low-back)
+
+**Mild**
+
+Started in July 2023.
+
+Muscle soreness mainly. The soreness spreads completely across the back and is roughly the width of the lumbar spine.

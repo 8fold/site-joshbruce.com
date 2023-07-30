@@ -8,6 +8,100 @@ Feeling pretty depressed.
 
 Questioning whether I’ll actually be able to consistently recover.
 
+## Sunday, July 30, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+## Saturday, July 29, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+	- Right wrist; moving helped
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), 
+	- Moderate: [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+	- Severe: [right wrist](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists).
+
+Woke up in high spirits despite the pain.
+
+## Friday, July 28, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+	- Left scapula; moving helped.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), 
+	- Moderate: [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+Woke up in high spirits despite the pain.
+
+## Thursday, July 27, 2023
+
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+## Wednesday, July 26, 2023
+
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+I'm writing this after the fact and don't remember much. Therefore, I'm presuming the wins and losses are unchanged.
+
+[The Whoop](/examinations/whoop-health-monitor/) arrived today. All I remember was that it felt like a good day.
+
+## Tuesday, July 25, 2023
+
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back).
+	- Moderate: [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [lef-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+I'm writing this after the fact and don't remember much. Therefore, I'm presuming the wins and losses are unchanged.
+
 ## Monday, July 24, 2023
 
 **Daily questions:**
@@ -32,7 +126,7 @@ Does movement improve stiffness, discomfort, or acute pain?
 
 *No movement, stretch, or exercise has relieved the symptoms in the upper thoracic spine area when present.* Pain in the upper thoracic spine occurs with movement and is not present in a neutral position.
 
-*Massage and manual adjustment temporarily relieve the left-hand third-digit symptoms from 10 minutes to a few hours.* Pain in the left hand third digit is not present when in a neutral position. Pain is consistent when moved laterally (abduction and adduction) under its own power. The pain gradually increases when moving into flexion.
+*Massage and manual adjustment temporarily relieve the left-hand third-digit symptoms from 10 minutes to a few hours.* Pain in the left-hand third digit is not present when in a neutral position. Pain is consistent when moved laterally (abduction and adduction) under its own power. The pain gradually increases when moving into flexion.
 
 How does this impact quality of life?
 
