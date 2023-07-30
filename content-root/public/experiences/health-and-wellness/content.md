@@ -26,7 +26,11 @@ I've moved the [year-by-year summaries](/experiences/health-and-wellness/histori
 ## Practices
 
 1. If it hurts, don't do it.
+2. Physical therapy.
+3. (sports) Massage therapy.
+4. [MovNat](https://www.movnat.com), [Parkour](https://parkourgenerations.com), and [calisthenics](https://www.calimove.com).
 
 ## Tools
 
 1. My body.
+2. The [Whoop, health monitor](/examinations/whoop-health-monitor/).
