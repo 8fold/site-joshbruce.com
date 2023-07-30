@@ -19,3 +19,7 @@ Note: Depending on how you define "free"; in some cases you'll be trading your e
 - [The Financial Order of Operations](/examinations/money-guy-foo/)
 - [The 7 Baby Steps](/examinations/ramsey-solutions-the-7-baby-steps/)
 - [How to Multiply Your Time](/examinations/procrastinate-on-purpose/) by Rory Vaden
+
+## Tools
+
+- [Whoop, health monitor](/examinations/whoop-health-monitor/)

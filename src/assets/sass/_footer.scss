@@ -8,6 +8,7 @@ footer {
   & > ul {
     display: block;
     margin: var(--m-spacer) auto;
+    padding: var(--0-spacer);
     list-style: none;
 
     & > li {
@@ -21,8 +22,12 @@ footer {
         }
       }
 
-      &:first-of-type:after, &:nth-of-type(2):after {
+      &:after {
         content: '|';
+      }
+
+      &:last-of-type:after {
+        content: '';
       }
     }
   }
