@@ -23,6 +23,20 @@ I'll use the [unidimensional verbal pain scale](https://pressbooks.library.toron
 - 2019 vasectomy
 - 2022 removal of an ingrown toenail on the right hallux
 
+## Right knee
+
+**Mild**
+
+The knee is a bit stiff, and slight pain is present.
+
+Movement helps.
+
+**Moderate**
+
+Same as mild only pain increases when weight-bearing and confidence in the knee's stability is reduced; moving with caution.
+
+Movement helps.
+
 ## Right, left, or both feet—bottom
 
 **Moderate**
@@ -115,7 +129,11 @@ Neck extension causes pain throughout this area of the neck.
 
 First presented in July 2023.
 
+Limited range of motion, crispy-crunchy movement, and pain at the end of the range of motion.
 
+**Severe**
+
+Same as moderate, only pain is present even in a neutral position.
 
 ## Left hand—middle finger
 
