@@ -1,5 +1,12 @@
 # Support this work
 
+Follow and converse on social media:
+
+- [LinkedIn](https://www.linkedin.com/in/josh-c-bruce)
+- [Mastodon](https://phpc.social/@itsjoshbruce)
+
+## Other ways
+
 Through your support I can:
 
 1. Keep this site advertisement free.
@@ -16,10 +23,7 @@ Sponsor:
 
 Improve content by submitting an issue or pull request on [GitHub](https://github.com/8fold/site-joshbruce.com); could be fixing (or letting me know about) a typo or updating a dead link.
 
-Suggest something via social media, direct message or tagging me:
-
-- [LinkedIn](https://www.linkedin.com/in/josh-c-bruce)
-- [Mastodon](https://phpc.social/@itsjoshbruce)
+Suggest something via social media, direct message or tagging me.
 
 ## The beggar's bowl
 
