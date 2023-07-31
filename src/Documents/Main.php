@@ -97,7 +97,7 @@ class Main implements Stringable // Buildable
             Element::link()->omitEndTag()
                 ->props(
                     'rel stylesheet',
-                    'href /css/styles.min.css?v=1.3.1',
+                    'href /css/styles.min.css?v=1.3.2',
                     'type text/css'
                 ),
             Element::script()->props(
@@ -132,6 +132,11 @@ class Main implements Stringable // Buildable
                         Element::a(
                             'terms'
                         )->props('href /legal/')
+                    ),
+                    Element::li(
+                        Element::a(
+                            'social'
+                        )->props('href /support/')
                     ),
                     Element::li(
                         Element::a(

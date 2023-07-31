@@ -300,6 +300,7 @@ footer{
 footer > ul{
   display:block;
   margin:var(--m-spacer) auto;
+  padding:var(--0-spacer);
   list-style:none;
 }
 footer > ul > li{
@@ -312,8 +313,11 @@ footer > ul > li > a{
 footer > ul > li > a:last-of-type{
   margin-left:1rem;
 }
-footer > ul > li:first-of-type:after, footer > ul > li:nth-of-type(2):after{
+footer > ul > li:after{
   content:"|";
+}
+footer > ul > li:last-of-type:after{
+  content:"";
 }
 footer > p{
   margin:0;
