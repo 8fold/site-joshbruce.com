@@ -8,39 +8,99 @@ Feeling pretty depressed.
 
 Questioning whether I’ll actually be able to consistently recover.
 
+## Sunday, July 30, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+## Saturday, July 29, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+	- Right wrist; moving helped
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), 
+	- Moderate: [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+	- Severe: [right wrist](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists).
+
+Woke up in high spirits despite the pain.
+
+## Friday, July 28, 2023
+
+Was there stiffness?
+
+- Morning: Yes.
+	- Left neck, trapezius; moving does not help.
+	- Left scapula; moving helped.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), 
+	- Moderate: [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+Woke up in high spirits despite the pain.
+
+## Thursday, July 27, 2023
+
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [lower thoracic spine](/experiences/health-and-wellness/problem-areas/#lower-thoracic-spine-mid-back), [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+## Wednesday, July 26, 2023
+
+Was there stiffness?
+
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
+
+Was there discomfort or acute pain?
+
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back), [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [left-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
+
+I'm writing this after the fact and don't remember much. Therefore, I'm presuming the wins and losses are unchanged.
+
+[The Whoop](/examinations/whoop-health-monitor/) arrived today. All I remember was that it felt like a good day.
+
 ## Tuesday, July 25, 2023
 
-**Daily questions:**
+Was there stiffness?
 
-1. Morning:
-    1. Is there stiffness? *No*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *Yes*
-    4. If yes, what areas are affected? And, does moving help?
-        - (discomfort) Behind the knees, left shoulder, left foot first digit. (pain) Upper thoracic spine area, both wrists, left hand second digit, left hand first digit, left foot second digit.  
-        - Sometimes moving helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
-2. Afternoon:
-    1. Is there stiffness? *No*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *Yes*
-    4. If yes, what areas are affected? And, does moving help?
-        - (discomfort) Right knee, lower back, left hand, right foot. (pain) Groin, hip flexor, upper thoracic region, second digit left hand, second digit left foot, left foot.
-        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
-3. Evening:
-    1. Is there stiffness? *No*
-    2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *Yes*
-    4. If yes, what areas are affected? And, does moving help?
-        - See afternoon.
-        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
+- Morning: No.
+- Afternoon: No.
+- Evening: No.
 
-**Losses (top five):**
+Was there discomfort or acute pain?
 
-1. Almost every joint seems crispy and crunchy.
+- Morning: Yes.
+	- Mild: [low back](/experiences/health-and-wellness/problem-areas/#lumbar-spine-low-back), [upper thoracic spine](/experiences/health-and-wellness/problem-areas/#upper-thoracic-spine-mid-back).
+	- Moderate: [both wrists](/experiences/health-and-wellness/problem-areas/#left-right-or-both-wrists), [lef-hand middle finger](/experiences/health-and-wellness/problem-areas/#left-handmiddle-finger).
 
-**Wins (top five):**
-
-1. Muscles seem to be waking up. Like the top of my left foot and left hamstring. I can tell because they are finally starting to have the same pain and discomfort as the right.
+I'm writing this after the fact and don't remember much. Therefore, I'm presuming the wins and losses are unchanged.
 
 ## Monday, July 24, 2023
 
@@ -71,7 +131,7 @@ Does movement improve stiffness, discomfort, or acute pain?
 
 *No movement, stretch, or exercise has relieved the symptoms in the upper thoracic spine area when present.* Pain in the upper thoracic spine occurs with movement and is not present in a neutral position.
 
-*Massage and manual adjustment temporarily relieve the left-hand third-digit symptoms from 10 minutes to a few hours.* Pain in the left hand third digit is not present when in a neutral position. Pain is consistent when moved laterally (abduction and adduction) under its own power. The pain gradually increases when moving into flexion.
+*Massage and manual adjustment temporarily relieve the left-hand third-digit symptoms from 10 minutes to a few hours.* Pain in the left-hand third digit is not present when in a neutral position. Pain is consistent when moved laterally (abduction and adduction) under its own power. The pain gradually increases when moving into flexion.
 
 How does this impact quality of life?
 
