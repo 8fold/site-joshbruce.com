@@ -8,6 +8,10 @@ Feeling pretty depressed.
 
 Questioning whether I’ll actually be able to consistently recover.
 
+## Monday, July 32, 2023
+
+Feeling consistently recovered and positive 3 days in a row. Thinking the introduction of [vagus nerve stimulation breath work](https://youtu.be/2rJvWLN8rtE) and [pelvic floor work](https://youtu.be/08ocxE0FDLI).
+
 ## Sunday, July 30, 2023
 
 Was there stiffness?
