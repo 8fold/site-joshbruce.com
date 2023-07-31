@@ -8,9 +8,47 @@ Feeling pretty depressed.
 
 Questioning whether I’ll actually be able to consistently recover.
 
+## Tuesday, July 25, 2023
+
+**Daily questions:**
+
+1. Morning:
+    1. Is there stiffness? *No*
+    2. If yes, what areas are affected? And, does moving help?
+    3. Is there discomfort or pain? *Yes*
+    4. If yes, what areas are affected? And, does moving help?
+        - (discomfort) Behind the knees, left shoulder, left foot first digit. (pain) Upper thoracic spine area, both wrists, left hand second digit, left hand first digit, left foot second digit.  
+        - Sometimes moving helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
+2. Afternoon:
+    1. Is there stiffness? *No*
+    2. If yes, what areas are affected? And, does moving help?
+    3. Is there discomfort or pain? *Yes*
+    4. If yes, what areas are affected? And, does moving help?
+        - (discomfort) Right knee, lower back, left hand, right foot. (pain) Groin, hip flexor, upper thoracic region, second digit left hand, second digit left foot, left foot.
+        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
+3. Evening:
+    1. Is there stiffness? *No*
+    2. If yes, what areas are affected? And, does moving help?
+    3. Is there discomfort or pain? *Yes*
+    4. If yes, what areas are affected? And, does moving help?
+        - See afternoon.
+        - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
+
+**Losses (top five):**
+
+1. Almost every joint seems crispy and crunchy.
+
+**Wins (top five):**
+
+1. Muscles seem to be waking up. Like the top of my left foot and left hamstring. I can tell because they are finally starting to have the same pain and discomfort as the right.
+
 ## Monday, July 24, 2023
 
+Bad day. 
 
+Becoming increasingly tired of this.
+
+Had a whole bunch of blood drawn for lab work.
 
 **Daily questions:**
 
@@ -22,18 +60,18 @@ Questioning whether I’ll actually be able to consistently recover.
         - (discomfort) Low back, hands. (pain) Upper thoracic spine area, both wrists, left hand second digit, left foot second digit.  
         - Sometimes moving helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
 2. Afternoon:
-    1. Is there stiffness? *‌*
+    1. Is there stiffness? *No*
     2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *‌*
+    3. Is there discomfort or pain? *Yes*
     4. If yes, what areas are affected? And, does moving help?
-        - (discomfort) (pain)
+        - (discomfort) Right knee, lower back, left hand, right foot. (pain) Groin, hip flexor, upper thoracic region, second digit left hand, second digit left foot, left foot.
         - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
 3. Evening:
-    1. Is there stiffness? *‌*
+    1. Is there stiffness? *No*
     2. If yes, what areas are affected? And, does moving help?
-    3. Is there discomfort or pain? *m*
+    3. Is there discomfort or pain? *Yes*
     4. If yes, what areas are affected? And, does moving help?
-        - (discomfort). (pain) l 
+        - See afternoon.
         - Sometimes movement helps, sometimes it doesn’t. Either way it goes back to where it was prior to moving.
 
 **Losses (top five):**
