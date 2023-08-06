@@ -1,5 +1,9 @@
 # Health and wellness
 
+{!! dateblock !!}
+
+{!! article-list !!}
+
 I wasn’t sure I’d ever create this section, but here we are.
 
 The bottom line is that I don’t get sick or injured. Further, I have some baggage when it comes to the medical profession. Finally, I’m becoming injured but not sick, unsure if I should push or pause.
