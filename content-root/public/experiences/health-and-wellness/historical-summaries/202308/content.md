@@ -2,6 +2,68 @@
 
 {!! dateblock !!}
 
+## Wednesday, August 9, 2023
+
+Didn’t have a good recovery after Monday and Tuesday. My ankle muscles (not my calves) were very annoyed. My left hamstring is awake now; also not happy about it.
+
+I decided I’d cut back on the reps moving forward, and would take the day to focus on active recovery stuff.
+
+In the shower I did a regular one-legged slouch; 10 reps, both sides. The hip lifts and everything else was the same from the previous day.
+
+I did both 1 mile walks, and breathing meditation.
+
+I also started paying close attention to the way I was standing.
+
+I’ve been standing at work since the late 90s while working retail and the early-aughts while at a desk. So, I haven’t really paid much attention.
+
+I think my body has developed some anti-patterns and unhealthy compensations. I have also developed some interesting habits.
+
+The first one I realized was that I tend to favor standing on my right leg when I stand on one leg throughout the day. I also tend to lock my left knee when standing on both feet; my right tends to be me relaxed. 
+
+I started experimenting with not locking my knee, and standing on my left leg when shifting to one leg.
+
+By the end of the day the bottom of my left mid-foot was pissed.
+
+## Tuesday, August 8, 2023
+
+Same shower routine as the day before.
+
+One modification to the exercises throughout the day. During 2 of the rounds I did 10 standing hip rotations, both sides; I plan to do these on Tuesdays, Thursdays, and Fridays. (Really trying to wake up my left ass cheek, and strengthen the right.)
+
+I decided to add an evening 1 mile lap to my days. That brings me up to 2 miles per day, with a longer bit on the weekend for grocery run.
+
+## Monday, August 7, 2023
+
+Shower routine:
+
+1. 5 standing hip rotations, exceedingly slow; both sides.
+2. 20 hip lifts; both sides.
+3. 10 wall presses; both sides.
+4. 30 toe abductions; seated.
+5. Foot massage, traction, and toe torsion.
+6. 2 minutes assisted toe and ankle extensions; both sides.
+7. 2 minutes assisted toe and ankle dorsiflexions; both sides.
+8. 10 rounds of vagal nerve stimulation breath work; 4 count inhale, chin lock and 4 count hold, 8 count exhale (after releasing chin lock).
+9. 10 rounds of 10 pelvic floor contractions.
+
+When possible, I did the following throughout the workday:
+
+1. Rock back breathing (5 count), 10 cat-cows, and upward-facing dog; once.
+2. 10 cat-cows, and upward-facing dog; twice.
+3. Wall breathing; 10 breaths. (Usually right after number 1.)
+4. 15 single-leg calf raises; both sides, 3 times.
+5. Pectoral corner stretch; 10 breaths. (Usually right after number 4.)
+6. Single arm wall press, hand down. (Usually right after number 5.)
+7. Couch quad stretch; 10 breaths, both sides, 3 times. (Usually after number 6.)
+
+This gives me the ability to create 3 pretty solid rounds, starting the cat-cow and with the couch quad stretch. And I just do three rounds to two per day.
+
+I’ve decided to try and do the week 1 day 1 warmup from the MovNat Fundamentals course on Mondays. It went pretty well.
+
+## Thursday, August 4 to Monday, August 6, 2023
+
+Decided to take a couple of recovery days, so not much going on or of note.
+
 ## Thursday, August 3, 2023
 
 According to WHOOP, this was my first day of reaching over 90 percent recovery. 
@@ -20,9 +82,7 @@ Modifications were made:
 
 1. Single-leg calf raises instead of calf raises while holding the ball. Start with the left leg, and repeat the same number of reps with the right leg.
 2. Single arm wall press with hand down to try and elongate the muscles in my forearm.
-3. We moved from rockback breathing on the ground to wall breathing, still emphasizing breathing into and expanding the back of the ribcage. 
-
-
+3. We moved from rockback breathing on the ground to wall breathing, still emphasizing breathing into and expanding the back of the ribcage.
 
 ## Wednesday, August 2, 2023
 
