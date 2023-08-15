@@ -2,6 +2,79 @@
 
 {!! dateblock !!}
 
+## Monday, August 14, 2023
+
+81 percent recovery.
+
+Both one mile walks. Did both at almost 3.5 miles per hour.
+
+Same set of exercises as August 7; scaling back the single-leg calf raises to 10 per side.
+
+## Sunday, August 13, 2023
+
+78 percent recovery.
+
+This day was a bitch.
+
+Before eating breakfast I did my store run. This is a 4 mile walk, part of which is with added weight; luckily it was a light grocery day. When I got home, I unloaded all the groceries, and did the exercises in the Reminders app.
+
+Then I ate breakfast.
+
+It was my day to scrub bathrooms, so I did that; that’s a whole exercise routine in and of itself. I also swept the kitchen, hall, and small foyer area in the apartment. I also did the wood conditioning for those areas.
+
+Lots of sweat.
+
+I also packed in all my meals before 4 to try and give more time between my last meal and sleep. This hurt.
+
+## Saturday, August 12, 2023
+
+81 percent recovery.
+
+Both 1 mile walks.
+
+I did the full run of movements from the 10th.
+
+I started feeling more severe muscle soreness in my calves and hips. I decided to reduce the number of hip rotations and calf raises. My goal is to try and be able to do all the things each day.
+
+## Friday, August 11, 2023
+
+95 percent recovery.
+
+I only did the morning 1 mile walk because Becca and I need to head to a float tank session right after work. There was walking involved, but it wasn’t tracked.
+
+I did the shower routine from the previous day, and the throughout the day routine less the hip rotations.
+
+## Thursday, August 10, 2023
+
+I think the way I’ll handle things is that if my recovery is less or equal 50 percent, I’ll take a rest day. If my recovery score is greater than 50 percent, I’ll do whatever is in the Reminders app for that day.
+
+In the shower I did 5 one-legged slow hip rotations; both sides. Everything else was the same from the previous day.
+
+I did both 1 mile walks at a speed less than 3 miles per hour.
+
+Shower routine:
+
+1. 5 standing hip rotations, exceedingly slow; both sides.
+2. 20 hip lifts; both sides.
+3. 10 wall presses; both sides.
+4. 30 toe abductions; seated.
+5. Foot massage, traction, and toe torsion.
+6. 2 minutes assisted toe and ankle extensions; both sides.
+7. 2 minutes assisted toe and ankle dorsiflexions; both sides.
+8. 10 rounds of vagal nerve stimulation breath work; 4 count inhale, chin lock and 4 count hold, 8 count exhale (after releasing chin lock).
+9. 10 rounds of 10 pelvic floor contractions.
+
+When possible, I did the following throughout the workday:
+
+1. Rock back breathing (5 count), 10 cat-cows, and upward-facing dog; once.
+2. 10 cat-cows, and upward-facing dog; twice.
+3. Wall breathing; 10 breaths. (Usually right after number 1.)
+4. 15 single-leg calf raises; both sides, 3 times.
+5. Pectoral corner stretch; 10 breaths. (Usually right after number 4.)
+6. Single arm wall press, hand down. (Usually right after number 5.)
+7. Couch quad stretch; 10 breaths, both sides, 3 times. (Usually after number 6.)
+8. 10 one-legged hip rotations; both sides, 2 times.
+
 ## Wednesday, August 9, 2023
 
 Didn’t have a good recovery after Monday and Tuesday. My ankle muscles (not my calves) were very annoyed. My left hamstring is awake now; also not happy about it.
