@@ -26,6 +26,7 @@ I've moved the [year-by-year summaries](/experiences/health-and-wellness/histori
 	1. Speed hides inefficiencies.
 	2. Momentum hides inefficiencies.
 2. Correlation is not causation; however, context is important.
+3. If you can't breathe in a given position, you have no business being in that position.
 
 ## Practices
 
