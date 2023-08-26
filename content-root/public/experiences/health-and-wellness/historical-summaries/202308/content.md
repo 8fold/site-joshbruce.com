@@ -2,6 +2,64 @@
 
 {!! dateblock !!}
 
+## Friday, August 24, 2023
+
+Muscle soreness started kicking in. Despite having a good recovery, I decided to have a rest day.
+
+I did:
+
+1. 10 hip rotations on both sides.
+2. 20 hip lifts on both sides.
+3. 10 wall presses on both sides.
+4. Foot massage variations.
+5. Toe releases and mobilizations.
+6. Foot extensions.
+7. Foot dorsiflexions.
+8. Hand releases.
+9. Vagal nerve stimulation.
+10. Pelvic floor contractions.
+11. 2-mile walk.
+
+Most of this list makes up the non-negotiables for right now. It’s the shower routine, and is doing wonders.
+
+It was crazy hot and humid this day. My morning walk was at a 3.5 mile per hour pace. By the end I hadn’t done any zone 2 cardio and I was so awash with sweat I needed to take off my shirt; to say nothing of how warm I was. 
+
+The outside thigh and hip area is not pleased. My knees (more the right than left) don’t seem to appreciate being asked to move through their full range of motion and stay there. Hips and hamstrings are a bit spicy; not a lot, but noticeable.
+
+In other news, I took a shower and some ibuprofen to cut off a migraine before it got too bad. In the shower I learned I can bend and balance to the point that I can touch my toes (for the first time in my life). Not that but I can do from a position of strength and control.
+
+**Changes:**
+
+1. Take weekends off; sort of.
+2. Do 2-miles daily, at minimum.
+3. Do as much of the shower routine as possible every day.
+4. ‌MovNat on Friday, not beginning or middle of week.
+5. Increasing protein intake to 190 grams per day, plus or minus 10.
+6. I bought a scale; my body has apparently adopted a set point of 240 pounds (100 kilograms).
+7. 10 hip rotations per set.
+
+I’m finding after a couple days of active recovery or rest, when I get back to it, I can do more without feeling as drained. So, I’ve decided I’m going to take weekends off.
+
+The weekends off but comes with 2 caveat. First, I want these days to be spent in active recovery. Second, I want to be doing some conditioning work. So, I’ll keep the 2-mile minimum walk and shower routine.
+
+Doing the entire MovNat week 1, day 1 on Wednesday was a great psychological boost. I didn’t feel fatigued and probably could have kept going in the moment. I’m glad I didn’t because a day later my knees started talking back and by Friday I was experiencing low-level delayed onset muscle soreness over the entire body. Therefore, I’m going to move that routine to Friday, and delay my desire to do it on Mondays and Fridays. If I can do the full routine, and not feel it by Monday, I’ll reassess increasing to twice a week. 
+
+For the last few weeks I’ve been experimenting with not changing my diet despite knowing it’s not as “dialed in” as it could be. Given the way some of my joints have been responding, I’ve decided to add glucosamine chondroitin to my daily pillbox; see if that does anything. I’m also increasing my protein intake to roughly 190 grams per day (the [math behind that number](https://youtu.be/Pok0Jg2JAkE?feature=shared)). Given the methods and science available, my minimum daily protein intake should be 180 grams; for a while now, I’ve been around 140 to 165. If I were a body builder going through a bulking phase, I’d want to push that up to around 200 grams per day. Given my goal is functional movement, I’m going to shoot for 190, and see what happens.
+
+I don’t put much stock in weight; however, a lot of fitness calculations use weight (mass) to do their thing. For example, I try and drink 0.75 to 1 ounce of water per pound of body weight. That’s 240 ounces of water on the high side; roughly 1.9 gallons. If my body weight drops to its previous set point of 220 pounds, I’d only be aiming for 220 ounces of water on the high side. And dropping to 190 (where I was at the peak of the aesthetics projects), would be even easier to attain and maintain each day. Anyway, not sure how often I’ll check the scale, but I have one. It’s a straight dial, and I might use it more often to test grip strength than measure body weight.
+
+I had been doing 8 hip rotations. It feels like I can do that number without experiencing muscle soreness, so I’m increasing. Basically, this lands me at a total of 30 on the days I do all three sets. If I can manage that load, I might switch to doing 20 every weekday before progressing to trying 30 every weekday.
+
+## Thursday, August 24, 2023
+
+Did my 2-mile walk, and that was about it.
+
+We needed to checkout of where we were staying, and I had the tea, then drove home.
+
+I did some hip rotations, hip lifts, and wall presses in the small shower. I’m pretty sure I did the hand releases as well. 
+
+I think I’m getting a feel for non-negotiables; the things I’ll try to make sure always get done, at least for now.
+
 ## Wednesday, August 23, 2023
 
 Becca and I are traveling so she can have some in-office time for her job, and I can get a medical test done.
