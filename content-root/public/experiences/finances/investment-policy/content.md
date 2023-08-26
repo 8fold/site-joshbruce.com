@@ -209,6 +209,14 @@ If the emergency is such that loans and liquid cash are not enough, other option
 - I’ll only replace items when the current item is deemed unsuitable to its intended purpose; or, the replacement items demonstrate a marked improvement over the current item.
 - I’ll consider [total cost of ownership](/essays-and-editorials/finances/total-cost-of-ownership/) in every purchase.
 
+## Windfall
+
+[Money Guy Show August 25 2023](https://moneyguy.com/2023/08/investing-showdown-dollar-cost-averaging-vs-lump-sum/) episode.
+
+Windfall relative to net worth. If windfall is less than 10 percent of net worth, lump sum. If greater than 10 percent, dollar cost average as described below. 
+
+If 10 percent, dollar cost average over the next 5 months. For each additional 5 percent relative to net worth, add an additional month. Do not exceed 12 months of dollar cost averaging the windfall.
+
 ## Changes
 
 - This policy will be revisited regularly; at least once per year.
