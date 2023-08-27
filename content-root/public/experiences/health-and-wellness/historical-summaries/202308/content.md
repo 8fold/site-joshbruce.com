@@ -2,6 +2,69 @@
 
 {!! dateblock !!}
 
+## Saturday, August 26, and Sunday August 27, 2023
+
+I added a mile to my evening walk. So, we’re at doing 4 miles per day at or above a 3 mile per hour pace. There are still moments where I hit zone 2 heart there, but they’re reducing.
+
+As stated before, I’ve decided to save non-shower exercises and movements to weekdays only.
+
+I’m trying out the [MacroFactor](https://macrofactorapp.com) app partially owned by [Jeff Nippard](https://www.youtube.com/@JeffNippard). It integrates directly with Apple’s Health app, which means WHOOP, which does the same, can get extra information. I’m planning to do a write-up about it soon as I decided to download it Saturday.
+
+I’m trying to find a way to integrate pea protein into my mix. Saturday I swapped out one scoop of collagen for one scoop of pea protein, that didn’t go as well as I had hoped. Unlike the collagen, the pea protein has a noticeable flavor and texture. I’m considering converting my vegetables for dinner into a smoothie and adding it there instead. As an experiment I made a smoothie out of my broccoli and carrots, that also didn’t go as well as I had hoped from a flavor perspective; however, it did reduce how long I spent eating the meal.
+
+Introducing the pea protein gets me to about 188 grams of protein on a normal feeding day. This is roughly the midpoint between the minimum and maximum using the [various calculations](https://youtu.be/Pok0Jg2JAkE?feature=shared) for such things; at least according to my calculations—the MacroFactor app shows 177 grams based on my meals, which is still close to the low bar of 180 grams.
+
+On Sunday, the WHOOP updates it’s insights. Of the things I track, consistent bed and wake times appears to have the greatest impact, even if I don’t sleep as long as the app suggests (reduced sleep performance); roughly a 5 percent increase to recovery. Next, at about 3 percent, is my perceived energy level, fish oil tablet, and multivitamin. Late meal and workout have the greatest negative impact to recovery, at about 3 percent.
+
+I decided to add my body composition (measurements) into the MacroFactor app. This took me back to the aesthetics project and two methods in determining “ideal” proportions. (More on that in a second.) The measurements were as follows (flexed); all measurements use inches:
+
+1. Waist (belly button): 43
+2. Hip (widest part): 42
+3. Shoulders (around deltoids): 48
+4. Neck: 18
+5. Chest (around nipple height): 42
+6. Left bicep (dominant arm, around peak of biceps): 15
+7. Left forearm (widest part): 12
+8. Left wrist (where the bone profusion is): 7
+9. Right thigh (middle): 22.5
+10. Right calf (widest part): 17
+11. Right ankle (where the bone protrusion is): 9.5
+12. Waist to height (calculated by the app): 0.61
+13. Waist to hip: 1.02
+14. Visual body fat: 27 percent
+
+Okay, to the methods for calculating ratios.
+
+The first is referred to as the Grecian Ideal. If memory serves, and in short, someone with a lot of time on their hands went around taking measurements of Greek statues. They found that if you knew the circumference of the wrist, other measurements kind of fell into place. The wrist doesn’t fluctuate in size much, the bone is close to the skin; so, regardless of where you are currently, wrist measurements won’t fluctuate much with exercise and weight gain. Plugging my wrist size into an [online calculator](https://www.fitness.com/calculators/greek-proportions) gave me the following results:
+
+1. Waist (belly button): 31.9
+2. Hip (widest part): 38.7
+3. Neck: 16.8
+4. Chest (around nipple height):  45.5
+5. Left bicep (dominant arm, around peak of biceps): 16.4
+6. Left forearm (widest part): 13.2
+7. Right thigh (middle): 24.1
+8. Right calf (widest part): 15.5
+
+Growing up, and for the aesthetics project, this is roughly what I was going for. Grecian statues tend to have a more “normal” estimated body fat percentage than we sometimes think is ideal. You might not have a six-pack, but you also won’t need to dehydrate yourself, run at a severe caloric deficit from maintenance, or both.
+
+The next method comes from a few decades later and is called the Steve Reeves ideal. And, of course, there’s [a calculator for that](https://www.muscleandstrength.com/tools/ideal-measurements). It takes into consideration more than the Grecian Ideal, and sticks with the approach of measuring areas of that body that do t change much. This approach looks at height, wrist, ankle, head, pelvis, and knee.
+
+My results for going full Steve Reeves would be:
+
+1. Waist (belly button): 36
+3. Neck: 19
+4. Chest (around nipple height):  62
+5. Left bicep (dominant arm, around peak of biceps): 18
+7. Right thigh (middle): 30
+8. Right calf (widest part): 18
+
+Notice the larger size for most of the measurements.
+
+Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my during the aesthetics project.
+
+With that said, I’m also not looking for speed. Less flash-fry and more low-and-slow barbecue. In the beginning (where I am), I want to be able see some type of improvement in what I’m capable of on a weekly basis, without requiring a day or more to recover due to pain or injury. This is how I gauge whether I’m pushing too hard or not hard enough. 
+
 ## Friday, August 24, 2023
 
 Muscle soreness started kicking in. Despite having a good recovery, I decided to have a rest day.
