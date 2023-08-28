@@ -2,6 +2,133 @@
 
 {!! dateblock !!}
 
+## Saturday, August 26, and Sunday August 27, 2023
+
+I added a mile to my evening walk. So, we’re at doing 4 miles per day at or above a 3 mile per hour pace. There are still moments where I hit zone 2 heart there, but they’re reducing.
+
+As stated before, I’ve decided to save non-shower exercises and movements to weekdays only.
+
+I’m trying out the [MacroFactor](https://macrofactorapp.com) app partially owned by [Jeff Nippard](https://www.youtube.com/@JeffNippard). It integrates directly with Apple’s Health app, which means WHOOP, which does the same, can get extra information. I’m planning to do a write-up about it soon as I decided to download it Saturday.
+
+I’m trying to find a way to integrate pea protein into my mix. Saturday I swapped out one scoop of collagen for one scoop of pea protein, that didn’t go as well as I had hoped. Unlike the collagen, the pea protein has a noticeable flavor and texture. I’m considering converting my vegetables for dinner into a smoothie and adding it there instead. As an experiment I made a smoothie out of my broccoli and carrots, that also didn’t go as well as I had hoped from a flavor perspective; however, it did reduce how long I spent eating the meal.
+
+Introducing the pea protein gets me to about 188 grams of protein on a normal feeding day. This is roughly the midpoint between the minimum and maximum using the [various calculations](https://youtu.be/Pok0Jg2JAkE?feature=shared) for such things; at least according to my calculations—the MacroFactor app shows 177 grams based on my meals, which is still close to the low bar of 180 grams.
+
+On Sunday, the WHOOP updates it’s insights. Of the things I track, consistent bed and wake times appears to have the greatest impact, even if I don’t sleep as long as the app suggests (reduced sleep performance); roughly a 5 percent increase to recovery. Next, at about 3 percent, is my perceived energy level, fish oil tablet, and multivitamin. Late meal and workout have the greatest negative impact to recovery, at about 3 percent.
+
+I decided to add my body composition (measurements) into the MacroFactor app. This took me back to the aesthetics project and two methods in determining “ideal” proportions. (More on that in a second.) The measurements were as follows (flexed); all measurements use inches:
+
+1. Waist (belly button): 43
+2. Hip (widest part): 42
+3. Shoulders (around deltoids): 48
+4. Neck: 18
+5. Chest (around nipple height): 42
+6. Left bicep (dominant arm, around peak of biceps): 15
+7. Left forearm (widest part): 12
+8. Left wrist (where the bone profusion is): 7
+9. Right thigh (middle): 22.5
+10. Right calf (widest part): 17
+11. Right ankle (where the bone protrusion is): 9.5
+12. Waist to height (calculated by the app): 0.61
+13. Waist to hip: 1.02
+14. Visual body fat: 27 percent
+
+Okay, to the methods for calculating ratios.
+
+The first is referred to as the Grecian Ideal. If memory serves, and in short, someone with a lot of time on their hands went around taking measurements of Greek statues. They found that if you knew the circumference of the wrist, other measurements kind of fell into place. The wrist doesn’t fluctuate in size much, the bone is close to the skin; so, regardless of where you are currently, wrist measurements won’t fluctuate much with exercise and weight gain. Plugging my wrist size into an [online calculator](https://www.fitness.com/calculators/greek-proportions) gave me the following results:
+
+1. Waist (belly button): 31.9
+2. Hip (widest part): 38.7
+3. Neck: 16.8
+4. Chest (around nipple height):  45.5
+5. Left bicep (dominant arm, around peak of biceps): 16.4
+6. Left forearm (widest part): 13.2
+7. Right thigh (middle): 24.1
+8. Right calf (widest part): 15.5
+
+Growing up, and for the aesthetics project, this is roughly what I was going for. Grecian statues tend to have a more “normal” estimated body fat percentage than we sometimes think is ideal. You might not have a six-pack, but you also won’t need to dehydrate yourself, run at a severe caloric deficit from maintenance, or both.
+
+The next method comes from a few decades later and is called the Steve Reeves ideal. And, of course, there’s [a calculator for that](https://www.muscleandstrength.com/tools/ideal-measurements). It takes into consideration more than the Grecian Ideal, and sticks with the approach of measuring areas of that body that do t change much. This approach looks at height, wrist, ankle, head, pelvis, and knee.
+
+My results for going full Steve Reeves would be:
+
+1. Waist (belly button): 36
+3. Neck: 19
+4. Chest (around nipple height):  62
+5. Left bicep (dominant arm, around peak of biceps): 18
+7. Right thigh (middle): 30
+8. Right calf (widest part): 18
+
+Notice the larger size for most of the measurements.
+
+Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my way during the aesthetics project. 
+
+The smaller calves would be relatively impossible, I think, given my calves are almost 2 inches larger than desired, and almost large enough for the Steve Reeves ratios. That’s without intentionally trying, just walking and stairs. However, somewhere in the middle will probably happen naturally, and I’d be okay with it as long as I can maintain or increase flexibility, balance, and strength from a functional perspective.
+
+Even though I’m not shooting for aesthetics, I’m also not looking for speed. Less flash-fry and more low-and-slow barbecue. In the beginning (where I am), I want to be able see some type of improvement in what I’m capable of on a weekly basis, without requiring a day or more to recover due to pain or injury. This is how I gauge whether I’m pushing too hard or not hard enough. Compounding pain day-to-day is pushing too hard. Only being able to do the same stuff week-to-week, not hard enough—at least until I find my literal plateau or ceiling, depending on your preferred metaphor.
+
+Oh! One other thing. I’m shifting my fasting day a bit. I won’t bother explaining how it used to work. Basically, on Saturday I’ll eat as normal. Sunday, I’ll only drink water until roughly the same time I finished dinner on Saturday. For Sunday dinner, I’ll have my fruit smoothie, vitamins, Builder’s bar, and possibly a little extra.
+
+For example, this Sunday, I had a rotisserie chicken thigh and drumstick and a bit of sourdough bread.
+
+## Friday, August 24, 2023
+
+Muscle soreness started kicking in. Despite having a good recovery, I decided to have a rest day.
+
+I did:
+
+1. 10 hip rotations on both sides.
+2. 20 hip lifts on both sides.
+3. 10 wall presses on both sides.
+4. Foot massage variations.
+5. Toe releases and mobilizations.
+6. Foot extensions.
+7. Foot dorsiflexions.
+8. Hand releases.
+9. Vagal nerve stimulation.
+10. Pelvic floor contractions.
+11. 2-mile walk.
+
+Most of this list makes up the non-negotiables for right now. It’s the shower routine, and is doing wonders.
+
+It was crazy hot and humid this day. My morning walk was at a 3.5 mile per hour pace. By the end I hadn’t done any zone 2 cardio and I was so awash with sweat I needed to take off my shirt; to say nothing of how warm I was. 
+
+The outside thigh and hip area is not pleased. My knees (more the right than left) don’t seem to appreciate being asked to move through their full range of motion and stay there. Hips and hamstrings are a bit spicy; not a lot, but noticeable.
+
+In other news, I took a shower and some ibuprofen to cut off a migraine before it got too bad. In the shower I learned I can bend and balance to the point that I can touch my toes (for the first time in my life). Not that but I can do from a position of strength and control.
+
+**Changes:**
+
+1. Take weekends off; sort of.
+2. Do 2-miles daily, at minimum.
+3. Do as much of the shower routine as possible every day.
+4. ‌MovNat on Friday, not beginning or middle of week.
+5. Increasing protein intake to 190 grams per day, plus or minus 10.
+6. I bought a scale; my body has apparently adopted a set point of 240 pounds (100 kilograms).
+7. 10 hip rotations per set.
+
+I’m finding after a couple days of active recovery or rest, when I get back to it, I can do more without feeling as drained. So, I’ve decided I’m going to take weekends off.
+
+The weekends off but comes with 2 caveat. First, I want these days to be spent in active recovery. Second, I want to be doing some conditioning work. So, I’ll keep the 2-mile minimum walk and shower routine.
+
+Doing the entire MovNat week 1, day 1 on Wednesday was a great psychological boost. I didn’t feel fatigued and probably could have kept going in the moment. I’m glad I didn’t because a day later my knees started talking back and by Friday I was experiencing low-level delayed onset muscle soreness over the entire body. Therefore, I’m going to move that routine to Friday, and delay my desire to do it on Mondays and Fridays. If I can do the full routine, and not feel it by Monday, I’ll reassess increasing to twice a week. 
+
+For the last few weeks I’ve been experimenting with not changing my diet despite knowing it’s not as “dialed in” as it could be. Given the way some of my joints have been responding, I’ve decided to add glucosamine chondroitin to my daily pillbox; see if that does anything. I’m also increasing my protein intake to roughly 190 grams per day (the [math behind that number](https://youtu.be/Pok0Jg2JAkE?feature=shared)). Given the methods and science available, my minimum daily protein intake should be 180 grams; for a while now, I’ve been around 140 to 165. If I were a body builder going through a bulking phase, I’d want to push that up to around 200 grams per day. Given my goal is functional movement, I’m going to shoot for 190, and see what happens.
+
+I don’t put much stock in weight; however, a lot of fitness calculations use weight (mass) to do their thing. For example, I try and drink 0.75 to 1 ounce of water per pound of body weight. That’s 240 ounces of water on the high side; roughly 1.9 gallons. If my body weight drops to its previous set point of 220 pounds, I’d only be aiming for 220 ounces of water on the high side. And dropping to 190 (where I was at the peak of the aesthetics projects), would be even easier to attain and maintain each day. Anyway, not sure how often I’ll check the scale, but I have one. It’s a straight dial, and I might use it more often to test grip strength than measure body weight.
+
+I had been doing 8 hip rotations. It feels like I can do that number without experiencing muscle soreness, so I’m increasing. Basically, this lands me at a total of 30 on the days I do all three sets. If I can manage that load, I might switch to doing 20 every weekday before progressing to trying 30 every weekday.
+
+## Thursday, August 24, 2023
+
+Did my 2-mile walk, and that was about it.
+
+We needed to checkout of where we were staying, and I had the tea, then drove home.
+
+I did some hip rotations, hip lifts, and wall presses in the small shower. I’m pretty sure I did the hand releases as well. 
+
+I think I’m getting a feel for non-negotiables; the things I’ll try to make sure always get done, at least for now.
+
 ## Wednesday, August 23, 2023
 
 Becca and I are traveling so she can have some in-office time for her job, and I can get a medical test done.
