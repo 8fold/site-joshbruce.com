@@ -4,7 +4,7 @@
 
 ## Saturday, August 26, and Sunday August 27, 2023
 
-I added a mile to my evening walk. So, we’re at doing 4 miles per day at or above a 3 mile per hour pace. There are still moments where I hit zone 2 heart there, but they’re reducing.
+I added a mile to my evening walk. So, we’re at doing 4 miles per day at or above a 3 mile per hour pace. There are still moments where I hit zone 2 heart rate there, but they’re reducing.
 
 As stated before, I’ve decided to save non-shower exercises and movements to weekdays only.
 
@@ -14,7 +14,7 @@ I’m trying to find a way to integrate pea protein into my mix. Saturday I swap
 
 Introducing the pea protein gets me to about 188 grams of protein on a normal feeding day. This is roughly the midpoint between the minimum and maximum using the [various calculations](https://youtu.be/Pok0Jg2JAkE?feature=shared) for such things; at least according to my calculations—the MacroFactor app shows 177 grams based on my meals, which is still close to the low bar of 180 grams.
 
-On Sunday, the WHOOP updates it’s insights. Of the things I track, consistent bed and wake times appears to have the greatest impact, even if I don’t sleep as long as the app suggests (reduced sleep performance); roughly a 5 percent increase to recovery. Next, at about 3 percent, is my perceived energy level, fish oil tablet, and multivitamin. Late meal and workout have the greatest negative impact to recovery, at about 3 percent.
+On Sunday, the WHOOP updated its insights. Of the things I track, consistent bed and wake times appears to have the greatest impact, even if I don’t sleep as long as the app suggests (reduced sleep performance); roughly a 5 percent increase to recovery each. Next, at about 3 percent, is my perceived energy level, fish oil tablet, and multivitamin. Late meal and workout have the greatest negative impact to recovery, at about 3 percent.
 
 I decided to add my body composition (measurements) into the MacroFactor app. This took me back to the aesthetics project and two methods in determining “ideal” proportions. (More on that in a second.) The measurements were as follows (flexed); all measurements use inches:
 
@@ -25,7 +25,7 @@ I decided to add my body composition (measurements) into the MacroFactor app. Th
 5. Chest (around nipple height): 42
 6. Left bicep (dominant arm, around peak of biceps): 15
 7. Left forearm (widest part): 12
-8. Left wrist (where the bone profusion is): 7
+8. Left wrist (where the bone protusion is): 7
 9. Right thigh (middle): 22.5
 10. Right calf (widest part): 17
 11. Right ankle (where the bone protrusion is): 9.5
@@ -48,7 +48,7 @@ The first is referred to as the Grecian Ideal. If memory serves, and in short, s
 
 Growing up, and for the aesthetics project, this is roughly what I was going for. Grecian statues tend to have a more “normal” estimated body fat percentage than we sometimes think is ideal. You might not have a six-pack, but you also won’t need to dehydrate yourself, run at a severe caloric deficit from maintenance, or both.
 
-The next method comes from a few decades later and is called the Steve Reeves ideal. And, of course, there’s [a calculator for that](https://www.muscleandstrength.com/tools/ideal-measurements). It takes into consideration more than the Grecian Ideal, and sticks with the approach of measuring areas of that body that do t change much. This approach looks at height, wrist, ankle, head, pelvis, and knee.
+The next method comes from a few decades later and is called the Steve Reeves ideal. And, of course, there’s [a calculator for that](https://www.muscleandstrength.com/tools/ideal-measurements). It takes into consideration more than the Grecian Ideal, and sticks with the approach of measuring areas of the body that don’t change much. This approach looks at height, wrist, ankle, head, pelvis, and knee.
 
 My results for going full Steve Reeves would be:
 
@@ -63,7 +63,7 @@ Notice the larger size for most of the measurements.
 
 Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my way during the aesthetics project. 
 
-The smaller calves would be relatively impossible, I think, given my calves are almost 2 inches larger than desired, and almost large enough for the Steve Reeves ratios. That’s without intentionally trying, just walking and stairs. However, somewhere in the middle will probably happen naturally, and I’d be okay with it as long as I can maintain or increase flexibility, balance, and strength from a functional perspective.
+The smaller calves would be relatively impossible, I think, given my calves are almost 2 inches larger than Grecian Ideal, and almost large enough for the Steve Reeves ratios. That’s without intentionally trying, just walking and stairs. However, somewhere in the middle will probably happen naturally, and I’d be okay with it as long as I can maintain or increase flexibility, balance, and strength from a functional perspective.
 
 Even though I’m not shooting for aesthetics, I’m also not looking for speed. Less flash-fry and more low-and-slow barbecue. In the beginning (where I am), I want to be able see some type of improvement in what I’m capable of on a weekly basis, without requiring a day or more to recover due to pain or injury. This is how I gauge whether I’m pushing too hard or not hard enough. Compounding pain day-to-day is pushing too hard. Only being able to do the same stuff week-to-week, not hard enough—at least until I find my literal plateau or ceiling, depending on your preferred metaphor.
 
