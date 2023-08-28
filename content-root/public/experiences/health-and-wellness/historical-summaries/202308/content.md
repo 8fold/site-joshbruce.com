@@ -61,9 +61,15 @@ My results for going full Steve Reeves would be:
 
 Notice the larger size for most of the measurements.
 
-Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my during the aesthetics project.
+Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my way during the aesthetics project. 
 
-With that said, I’m also not looking for speed. Less flash-fry and more low-and-slow barbecue. In the beginning (where I am), I want to be able see some type of improvement in what I’m capable of on a weekly basis, without requiring a day or more to recover due to pain or injury. This is how I gauge whether I’m pushing too hard or not hard enough. 
+The smaller calves would be relatively impossible, I think, given my calves are almost 2 inches larger than desired, and almost large enough for the Steve Reeves ratios. That’s without intentionally trying, just walking and stairs. However, somewhere in the middle will probably happen naturally, and I’d be okay with it as long as I can maintain or increase flexibility, balance, and strength from a functional perspective.
+
+Even though I’m not shooting for aesthetics, I’m also not looking for speed. Less flash-fry and more low-and-slow barbecue. In the beginning (where I am), I want to be able see some type of improvement in what I’m capable of on a weekly basis, without requiring a day or more to recover due to pain or injury. This is how I gauge whether I’m pushing too hard or not hard enough. Compounding pain day-to-day is pushing too hard. Only being able to do the same stuff week-to-week, not hard enough—at least until I find my literal plateau or ceiling, depending on your preferred metaphor.
+
+Oh! One other thing. I’m shifting my fasting day a bit. I won’t bother explaining how it used to work. Basically, on Saturday I’ll eat as normal. Sunday, I’ll only drink water until roughly the same time I finished dinner on Saturday. For Sunday dinner, I’ll have my fruit smoothie, vitamins, Builder’s bar, and possibly a little extra.
+
+For example, this Sunday, I had a rotisserie chicken thigh and drumstick and a bit of sourdough bread.
 
 ## Friday, August 24, 2023
 
