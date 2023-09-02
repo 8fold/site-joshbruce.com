@@ -2,17 +2,100 @@
 
 {!! dateblock !!}
 
-## Saturday, August 26, and Sunday August 27, 2023
 
-I added a mile to my evening walk. So, we’re at doing 4 miles per day at or above a 3 mile per hour pace. There are still moments where I hit zone 2 heart rate there, but they’re reducing.
 
-As stated before, I’ve decided to save non-shower exercises and movements to weekdays only.
+## Monday, August 28, 2023
+
+Good day, but odd.
+
+I'm starting to determine things that I think I'll continue doing for as long as I'm physically able to.
+
+For the morning, that's some form of stretching and mobilization (I typically do this in the shower if it's large enough):
+
+1. L-sit toe abductions.
+2. L-sit foot massage and toe mobilization.
+3. L-sit toe abductions.
+4. L-sit active foot extensions for 2 minutes.
+5. L-sit toe abductions.
+6. L-sit active foot dorsiflexions for 2 minutes.
+7. Bent sit position while performing hand massage and mobilization.
+8. [Flat school-style](https://www.yogabody.com/how-to-sit-in-meditation/) seated position for pelvic floor contractions.
+9. Flat school-style seated position (changing which leg is in front) for vagal nerve stimulation breathwork.
+
+A lot is going on here. While stretching and mobilization are the focus, there's some resistance work. I am pulling during the active stretches. Back and hip flexor engagement from the L-sit; trying to be as upright as possible for the duration (around 6 minutes, static stretching and hold). The toe abductions use the abductor muscles in the feet. Sometimes there is pushing if I need to post my arm or arms to maintain or achieve that upright spine position. I'm in the flat school-style position for about 4 or 5 minutes (static stretching and hold).
+
+Most mornings, I also add some physical therapy and resistance movements as well:
+
+1. 10 slow (8 to 16 seconds per repetition) single-leg hip rotations.
+2. 20 hip lifts.
+3. 10 wall presses, emphasizing wrist flexibility.
+
+Throughout the day, I try to fit in the physical therapy prescriptions, plus some additional things. I try to create circuits (or rounds) for these. The goal for the single-leg hip rotations is 3 sets of 10. I have one of those sets in the shower because I can do it safely, and it seems valuable enough not to miss; even if I only do one set the entire day, it's worth it.
+
+So, what does a physical therapy prescription look like?
+
+1. 10 wall breaths.
+2. 10 single-leg hip rotations.
+3. 15 split calf raises.
+4. Pectoral corner stretch for 10 breaths.
+5. 10 wall presses, hand down.
+6. Couch quad stretch for 10 breaths.
+
+Given I already have one of the sets of single-leg hip rotations in from the shower, I just remove them from the final round.
+
+What made today odd is I accidentally did more single-leg hip rotations than planned. 
+
+Initially, I would only do hip rotations on Tuesday, Thursday, and Saturday because they were kicking my ass. While that's the point with the movement, I couldn't recover fast enough to keep doing them daily; I even cut back to 8 instead of 10 and only 2 sets instead of 3. But, for whatever reason, I was in a flow and feeling good, and without conscious thought, just did a set. I decided to shoot for 2 sets of 10 daily for the week. If I still weren't recovering well, I'd cut back again.
+
+While we're here, we might as well talk about the rounds. The most basic round looks like this:
+
+1. 10 cat cows.
+2. Upward-facing dog for 10 breaths.
+3. 10 single-leg hip rotations.
+4. 15 split calf raises.
+5. Pectoral corner stretch for 10 breaths.
+6. 10 wall presses, hand down.
+7. Couch quad stretch for 10 breaths.
+
+These are most of the prescribed physical therapy movements, except the ones I do in the morning (shower), and 1 more I do in the first round.
+
+Quick warm-up, followed by more intense movements (lower body), followed by less intense upper body work, followed by what could be described as a cool-down.
+
+All right, the first round has a bit more thrown in:
+
+1. 5 rock-back breaths leading into 1 and 2 from above.
+2. 10 wall breaths.
+3. 10 planar slouches with eyes closed leading into 3.
+
+3 rounds at my pace make this roughly a 1-hour workout.
+
+Because I want fitness and exercise to be integrated into my world as a habit, on Mondays, Wednesdays, and Fridays, I also do some MovNat movements. Today was no exception, and I did the following:
+
+1. Supine lying 5 breaths.
+2. Roll to prone lying, both sides, 5 breaths.
+3. Bent sit for 10 breaths.
+4. Side bent sit, both sides, 5 breaths, 3 repetitions.
+5. Kneeling for 10 breaths, tall kneeling for 10 breaths, flex foot tall kneeling for 10 breaths, flex foot kneeling for 10 breaths.
+6. Number 5, 5 more times (but without holding the position for a specific period of time).
+7. Knee hand position for 5 breaths.
+
+To make fitness a habit, I must make room for it in life and prioritize its completion. As of today, the plan is that if I can do the entire MovNat Fundamentals Week 1, Day 1, on Friday, I'll add it to Monday. I'll add it to Wednesday if I can do that throughout the week. If I can do that throughout the week, I'll try replacing Friday with Week 1, Day 2.
+
+I'll revisit at that point.
+
+The habit here is active exercise 3 times a week, at least.
+
+## Saturday, August 26, and Sunday, August 27, 2023
+
+I added a mile to my evening walk. So, we’re doing 4 miles per day at or above a 3-mile-per-hour pace. There are still moments where I hit zone 2 heart rate there, but they’re reducing.
+
+As stated, I’ve decided to save non-shower exercises and movements to weekdays only.
 
 I’m trying out the [MacroFactor](https://macrofactorapp.com) app partially owned by [Jeff Nippard](https://www.youtube.com/@JeffNippard). It integrates directly with Apple’s Health app, which means WHOOP, which does the same, can get extra information. I’m planning to do a write-up about it soon as I decided to download it Saturday.
 
-I’m trying to find a way to integrate pea protein into my mix. Saturday I swapped out one scoop of collagen for one scoop of pea protein, that didn’t go as well as I had hoped. Unlike the collagen, the pea protein has a noticeable flavor and texture. I’m considering converting my vegetables for dinner into a smoothie and adding it there instead. As an experiment I made a smoothie out of my broccoli and carrots, that also didn’t go as well as I had hoped from a flavor perspective; however, it did reduce how long I spent eating the meal.
+I’m trying to find a way to integrate pea protein into my mix. Saturday, I swapped out one scoop of collagen for one scoop of pea protein, which didn’t go as well as I hoped. Unlike the collagen, the pea protein has a noticeable flavor and texture. I’m considering converting my vegetables for dinner into a smoothie and adding it there instead. As an experiment, I made a smoothie out of my broccoli and carrots, which also didn’t go as well as I had hoped from a flavor perspective; however, it did reduce how long I spent eating the meal.
 
-Introducing the pea protein gets me to about 188 grams of protein on a normal feeding day. This is roughly the midpoint between the minimum and maximum using the [various calculations](https://youtu.be/Pok0Jg2JAkE?feature=shared) for such things; at least according to my calculations—the MacroFactor app shows 177 grams based on my meals, which is still close to the low bar of 180 grams.
+Introducing the pea protein gets me to about 188 grams on a normal feeding day. This is roughly the midpoint between the minimum and maximum using the [various calculations](https://youtu.be/Pok0Jg2JAkE?feature=shared) for such things; at least according to my calculations—the MacroFactor app shows 177 grams based on my meals, which is still close to the low bar of 180 grams.
 
 On Sunday, the WHOOP updated its insights. Of the things I track, consistent bed and wake times appears to have the greatest impact, even if I don’t sleep as long as the app suggests (reduced sleep performance); roughly a 5 percent increase to recovery each. Next, at about 3 percent, is my perceived energy level, fish oil tablet, and multivitamin. Late meal and workout have the greatest negative impact to recovery, at about 3 percent.
 
@@ -61,7 +144,7 @@ My results for going full Steve Reeves would be:
 
 Notice the larger size for most of the measurements.
 
-Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my way during the aesthetics project. 
+Again, my goal with this journey isn’t aesthetic, it’s movement and quality of life. And, with the exercises and movements I’m doing, ending up looking like a Greek statue seems within reach (not far off now), and I was well on my way during the aesthetics project.
 
 The smaller calves would be relatively impossible, I think, given my calves are almost 2 inches larger than Grecian Ideal, and almost large enough for the Steve Reeves ratios. That’s without intentionally trying, just walking and stairs. However, somewhere in the middle will probably happen naturally, and I’d be okay with it as long as I can maintain or increase flexibility, balance, and strength from a functional perspective.
 
@@ -91,7 +174,7 @@ I did:
 
 Most of this list makes up the non-negotiables for right now. It’s the shower routine, and is doing wonders.
 
-It was crazy hot and humid this day. My morning walk was at a 3.5 mile per hour pace. By the end I hadn’t done any zone 2 cardio and I was so awash with sweat I needed to take off my shirt; to say nothing of how warm I was. 
+It was crazy hot and humid this day. My morning walk was at a 3.5 mile per hour pace. By the end I hadn’t done any zone 2 cardio and I was so awash with sweat I needed to take off my shirt; to say nothing of how warm I was.
 
 The outside thigh and hip area is not pleased. My knees (more the right than left) don’t seem to appreciate being asked to move through their full range of motion and stay there. Hips and hamstrings are a bit spicy; not a lot, but noticeable.
 
@@ -111,7 +194,7 @@ I’m finding after a couple days of active recovery or rest, when I get back to
 
 The weekends off but comes with 2 caveat. First, I want these days to be spent in active recovery. Second, I want to be doing some conditioning work. So, I’ll keep the 2-mile minimum walk and shower routine.
 
-Doing the entire MovNat week 1, day 1 on Wednesday was a great psychological boost. I didn’t feel fatigued and probably could have kept going in the moment. I’m glad I didn’t because a day later my knees started talking back and by Friday I was experiencing low-level delayed onset muscle soreness over the entire body. Therefore, I’m going to move that routine to Friday, and delay my desire to do it on Mondays and Fridays. If I can do the full routine, and not feel it by Monday, I’ll reassess increasing to twice a week. 
+Doing the entire MovNat week 1, day 1 on Wednesday was a great psychological boost. I didn’t feel fatigued and probably could have kept going in the moment. I’m glad I didn’t because a day later my knees started talking back and by Friday I was experiencing low-level delayed onset muscle soreness over the entire body. Therefore, I’m going to move that routine to Friday, and delay my desire to do it on Mondays and Fridays. If I can do the full routine, and not feel it by Monday, I’ll reassess increasing to twice a week.
 
 For the last few weeks I’ve been experimenting with not changing my diet despite knowing it’s not as “dialed in” as it could be. Given the way some of my joints have been responding, I’ve decided to add glucosamine chondroitin to my daily pillbox; see if that does anything. I’m also increasing my protein intake to roughly 190 grams per day (the [math behind that number](https://youtu.be/Pok0Jg2JAkE?feature=shared)). Given the methods and science available, my minimum daily protein intake should be 180 grams; for a while now, I’ve been around 140 to 165. If I were a body builder going through a bulking phase, I’d want to push that up to around 200 grams per day. Given my goal is functional movement, I’m going to shoot for 190, and see what happens.
 
@@ -125,7 +208,7 @@ Did my 2-mile walk, and that was about it.
 
 We needed to checkout of where we were staying, and I had the tea, then drove home.
 
-I did some hip rotations, hip lifts, and wall presses in the small shower. I’m pretty sure I did the hand releases as well. 
+I did some hip rotations, hip lifts, and wall presses in the small shower. I’m pretty sure I did the hand releases as well.
 
 I think I’m getting a feel for non-negotiables; the things I’ll try to make sure always get done, at least for now.
 
@@ -194,9 +277,9 @@ How'd it go?
 
 Very well, actually.
 
-In the morning, I couldn't do my normal shower routine; the shower was too small. But, as soon as I finished the shower, I went through the stretching, massage, and breathing routine. Then I went for the 2-mile morning walk at about 3.5 miles per hour; most of that was at zone 2 heart rate. 
+In the morning, I couldn't do my normal shower routine; the shower was too small. But, as soon as I finished the shower, I went through the stretching, massage, and breathing routine. Then I went for the 2-mile morning walk at about 3.5 miles per hour; most of that was at zone 2 heart rate.
 
-It was hot and humid, and I was sweating balls by the time I got back to the place we were staying. 
+It was hot and humid, and I was sweating balls by the time I got back to the place we were staying.
 
 A few hours later, I did everything but the MovNat sequence. I've adapted enough at this point that, from a muscle strain perspective, it's pretty easy. With that said, the problem joints experienced some releases, which was great and needed.
 
@@ -218,7 +301,7 @@ I decided to modify the protocols related to WHOOP recovery.
 
 32 percent recovery.
 
-This is the first recovery I had in the red, I think. I felt okay. 
+This is the first recovery I had in the red, I think. I felt okay.
 
 Despite the less-than-fifty protocol, I did my normal Saturday morning errands. I'm walking 4 miles, with part of that having my weekly groceries. I also needed to return the rental car, which resulted in a 2-mile walk back to the apartment.
 
@@ -228,7 +311,7 @@ Despite the less-than-fifty protocol, I did my normal Saturday morning errands. 
 
 I didn't do anything due to the less than 50 percent recovery protocol.
 
-Went to the office early in the day and drove home around noon. 
+Went to the office early in the day and drove home around noon.
 
 Every day I was out of town, I ate the breakfast provided by the hotel. Mainly the eggs, with some standard pork products. It was a just-in-case measure since I didn't know what the company served for breakfast or lunch.
 
@@ -375,7 +458,7 @@ I’ve been standing at work since the late 90s while working retail and the ear
 
 I think my body has developed some anti-patterns and unhealthy compensations. I have also developed some interesting habits.
 
-The first one I realized was that I tend to favor standing on my right leg when I stand on one leg throughout the day. I also lock my left knee when standing on both feet; my right tends to be relaxed. 
+The first one I realized was that I tend to favor standing on my right leg when I stand on one leg throughout the day. I also lock my left knee when standing on both feet; my right tends to be relaxed.
 
 I started experimenting with not locking my knee and standing on my left leg when shifting to one leg.
 
@@ -423,7 +506,7 @@ Decided to take a couple of recovery days, so not much going on or of note.
 
 ## Thursday, August 3, 2023
 
-WHOOP said this was my first day of reaching over 90 percent recovery. 
+WHOOP said this was my first day of reaching over 90 percent recovery.
 
 I knew I would be seeing my [physical therapist](https://www.instagram.com/theunbrokenacademy/), and I didn't do a full-on set because I didn't want to be any more messed up when I saw her.
 
@@ -447,15 +530,15 @@ I've added walking a mile in the morning to my routine. This is to replicate the
 
 I also increased my water intake to about 1 ounce per pound of body weight.
 
-The last two days were pretty intense regarding body transformation and adaptation. I went to bed around 7 pm. I was wide awake at midnight. I lay in bed and meditated mainly, trying to be as relaxed as possible. The [WHOOP](/examinations/whoop-health-monitor/) showed me as asleep most of that time. 
+The last two days were pretty intense regarding body transformation and adaptation. I went to bed around 7 pm. I was wide awake at midnight. I lay in bed and meditated mainly, trying to be as relaxed as possible. The [WHOOP](/examinations/whoop-health-monitor/) showed me as asleep most of that time.
 
 I did the 1-mile walk in the morning. Took a nap. I did all my physical therapy exercises and additional components from the [MovNat](https://www.movnat.com) week 1 day 1 workout; just some warmup movements.
 
 ## Tuesday, August 1, 2023
 
-Felt like I slept well. I was able to do all the physical therapy things. 
+Felt like I slept well. I was able to do all the physical therapy things.
 
 - No stiffness
 - Low-grade discomfort and pain similar to the previous day.
 
-This was my second day doing the vagal nerve stimulation and pelvic floor exercises. 
+This was my second day doing the vagal nerve stimulation and pelvic floor exercises.
