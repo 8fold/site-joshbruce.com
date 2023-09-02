@@ -2,7 +2,108 @@
 
 {!! dateblock !!}
 
+## Thursday, August 31, 2023
 
+Good day.
+
+Morning routine went well. The slow single leg hip rotations really lit up my glutes this time. It’s interesting how small the left is to the right though. I really do think there has been some long-term atrophy of the posterior and lateral chains on the left side.
+
+The physical therapy rounds also went off without a hitch. The 2, 2-mile walks were great.
+
+Somewhat relaxing day actually.
+
+Speaking of which, I had a float tank session scheduled. Becca dropped me off before heading to the gym herself. I only floated for an hour instead of staying the full 90 minutes. 
+
+While waiting for Becca to pick me up I checked how far the apartment was from the float spot. 2 miles; lucky. Sent a message to Becca letting her know I’d be walking home.
+
+This walk, despite being no longer than my regular morning walk had me spending most of my time in zone 3 territory.
+
+To sound like I know what I’m talking about for a second. If your heart rate is below 50 percent of your calculated maximum heart rate, it’s considered restorative (zone 0, because of course it uses base zero, must be European—that’s an elevator joke). Zone 1 is 50 to 60 percent of your maximum heart rate is more for warming up, cooling down, and active recovery. Zone 2 is 60 to to 70 percent and can be maintained for long periods of time, building endurance, and burning fat. Zone 3 is 70 to 80 percent and improves aerobic fitness and muscle strength. You catch up on zones 4 and 5 from the [WHOOP article](https://www.whoop.com/us/en/thelocker/max-heart-rate-training-zones/).
+
+Back to the story.
+
+For that 2-mile walk, half my time was spent in zone 3. Most of it was still zone 2. That’s an odd mix for me. 
+
+Consider my morning walk at the same distance and pace. 10 percent of my time was in zone 2, the rest was basically zone 1.
+
+[WHOOP](/examinations/whoop-health-monitor/) also gave me an end of month report. It’s interesting to look at the data collected. In particular is strain and heart rate zones during training; heart rate zones aren’t measured for just existing. I did about 47 hours of tracked, straining activities. Roughly 60 percent of that time was spent in zone 1. Roughly 20 percent was zone 2. 15 percent in zone 0. And that last little bit in zone 3.
+
+From a strain perspective, WHOOP measured it as light on a scale of:
+
+1. light,
+2. moderate,
+3. strenuous, and
+4. all out.
+
+This is despite me being able to do more.
+
+The takeaway for me here is: You can lightly walk your way into being stronger and more mobile, with improved cardiovascular ability, you don’t have to practically kill yourself. Not only that, but it can at least start rapidly (newbie gains and all that).
+
+The other better takeaway for me is: I can do things without winding up being laid up for a week for otherwise inexplicable reasons.
+
+## Wednesday, August 30, 2023
+
+Another good day.
+
+Had an appointment with my primary care physician. Gave him the news from the rheumatologist. Made sure the request for lung CT scan was in. And we did a [spirometry test](https://www.mayoclinic.org/tests-procedures/spirometry/about/pac-20385201), wanting to capture a baseline.
+
+In short, you are tested against a general population with similar attributes based on height, age, sex, and weight. Inhale quick and deep. Exhale as quickly as you can and keep trying to exhale for a few seconds. Then inhale. This creates a shape. 
+
+2 important measurements are how much air you push out in one second and how much air you push out overall before needing to inhale again.
+
+I scored a 98 percent and a 102 percent. So, at the top end of normal.
+
+Good sign.
+
+I walked to the doctor’s office for my evening 2-mile walk. I was his last patient and he offered me a ride home. I declined.
+
+So, walked 6 miles that day.
+
+## Tuesday, August 29, 2023
+
+Good day.
+
+Tuesday is only physical therapy prescription beyond the baseline shower and walking.
+
+I had a 2-hour sports massage session. Some grueling spots and inflammation. My therapist uses cupping in those instances. Just an upside down cup with a slight vacuum. She slid it around my entire back, but it never actually stuck anywhere, which is a good sign. If the cup sticks, she would leave it there and bring in another cup. The first session we had I ended up with 3 or 4 cups on my back.
+
+Becca and I were in Nashville last week to get a scan of my foot, and I had a late night follow-up appointment with the rheumatologist I’m seeing. The rheumatologist said we ruled out a lot of possibilities. No rheumatoid arthritis and, more importantly, no evidence of uric acid crystals in the joints. Therefore, whatever happened with my foot (specifically the big toe), wasn’t gout. She prescribed an increase to my fish oil dosage (1,000 milligrams per day) and the introduction of turmeric (1,000 milligrams per day with black pepper). She also wants me to follow-up with a dermatologist to revisit the possibility of psoriasis.
+
+The increase in fish oil was easy enough, just 2 capsules instead of 1. I purchased a turmeric tablet as well, which contains a black pepper extract.
+
+The amount of supplementation is starting to bother me a bit though, because I’m one of those people who thinks most of what we need should be received from our diet. With that said, right now, I’m looking at therapy to repair and recover from whatever life position this is to give me the space to consider other things.
+
+I’m a pretty intuitive person, and turmeric was something I was considering adding to my diet anyway due to the anti-inflammatory research related to it. 
+
+Let’s talk supplementation for a second.
+
+When it comes to foundational supplements, an insurance policy against unfortunate circumstances, I use the following:
+
+1. A broad-spectrum multivitamin.
+2. 500 milligrams of fish oil.
+
+That’s it. At the time I was looking to fill some gaps in micronutrients and I’ve been participating in intermittent fasting for over 20 years. Around 10 years ago I added a single 24-hour fasting period per week to the mix.
+
+Now, let’s talk about what’s been added:
+
+1. 6 grams creatine,
+2. 14 grams of collagen, and
+3. 28 grams of pea protein.
+
+These are all added to my daily fruit smoothie. The smoothie was originally developed by Becca. The creatine is there mainly to hydrate muscles, I think. The collagen is there because, generally speaking, most people are deficient and it’s god for bones and joints. So, with those two, much of the musculoskeletal system is aided.
+
+The pea protein is a recent addition and there to help boost my protein intake to a midpoint between 180 and 200 grams per pound of body weight per day. If I lose weight, the ratio increases despite consuming the same meals and supplements. If I gain weight, the inverse is true.
+
+I recently added the following:
+
+1. Glucosamine plus chondroitin.
+
+I’m a proponent of flexibility as a general benefit and particularly beneficial in avoiding injury. The supplement I use contains multiple ingredients, and the heavy hitter is glucosamine plus chondroitin.
+
+And, again, the rheumatologist has the following prescription for now:
+
+1. 500 more milligrams of fish oil and
+2. 1,000 milligrams of turmeric.
 
 ## Monday, August 28, 2023
 
