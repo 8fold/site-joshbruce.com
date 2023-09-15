@@ -34,6 +34,7 @@ I've moved the [year-by-year summaries](/experiences/health-and-wellness/histori
 2. Physical therapy.
 3. (sports) Massage therapy.
 4. [MovNat](https://www.movnat.com), [Parkour](https://parkourgenerations.com), and [calisthenics](https://www.calimove.com).
+5. The sun and water scale for diet.
 
 ## Tools
 
