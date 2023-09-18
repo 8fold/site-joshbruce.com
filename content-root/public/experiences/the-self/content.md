@@ -59,6 +59,7 @@ My name is <span property="name">Josh Bruce</span>.
 17. If you’re no good to yourself, you won’t be any good to others.
 18. Ruthlessly chase simplicity.
 19. Informed consent.
+20. Take what is useful, discard what is useless, and add something uniquely your own. (Bruce Lee)
 
 ## My oath
 
