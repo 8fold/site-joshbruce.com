@@ -10,25 +10,37 @@ There's a dichotomy here.
 
 I remember in 2020, when the Coronavirus first started spreading, and we went into lockdown. One of the popular refrains was that if you didn't come out of lockdown with a new or improved skill, you wasted that opportunity. Then, a counterpoint came into popularity, which was that "It's okay if you don't improve. We're all going through some shit right now. Calm down and deal with what's happening."
 
-So much negative baggage can reside around this idea. At what point do we take a break or, put another way, continue practicing inside the plateau? Further, how much improvement needs to happen before we consider it an improvement? Finally, does the law of diminishing returns not apply to improving things?
+So much negative baggage can reside around the idea of continuous improvement. 
 
-Practicing in the plateau alludes to the concept of mastery and mastery curves. The observation here is that whenever we first start something, there is a period of very little progress, then a spike, followed by a small dip, followed by a plateau (or leveling off) that will last for an indeterminate amount of time. From a continuous improvement perspective, we might view the plateau as a problem that needs to be addressed instead of a natural part of the cycle. Further, we may be focused on a granular item within a larger discipline or practice—how much weight you can squat versus how far you can run—both are within the fitness discipline; however, they aren't the same thing.
+At what point do we take a break or, put another way, continue practicing inside the plateau? Further, how much improvement needs to happen before we consider it an improvement? Finally, does the law of diminishing returns not apply to improving things?
+
+Practicing in the plateau alludes to the concept of mastery and mastery curves. The observation here is that whenever we first start something, there is a period of very little progress, then a spike, followed by a small dip, followed by a plateau (or leveling off) that will last for an indeterminate amount of time. From a continuous improvement perspective, we might view the plateau as a problem that needs to be addressed instead of a natural part of the cycle. Further, we may be focused on a granular item within a larger discipline or practice—how much weight you can squat versus how far you can run—both are within the fitness discipline; however, they aren't the same thing. Finally, some folks even push to improve the speed at which improvement happens, even if time is available.
 
 I recently started discussing my [health and wellness](/experiences/health-and-wellness/) issues and journey. Last month I made the observation that I wasn't walking as much as I did the last time I felt relatively healthy and fit. 
 
-So, I added a 1-mile walk to my morning routine to reclaim something I lost when I started working from home (a 1 percent improvement, so to speak). That first week I was sweating a lot, and my calves achieved a consistent level of discomfort; my ability to recover was maintaining the same pace as the stress placed on them. Toward the end of the week, my calves were feeling better, and I wasn't sweating as much with the walk. I added a second 1-mile walk to my evening (a 1 percent improvement). The next week I felt better and increased the morning walk to 2 miles (a 1 percent improvement). The next week I felt better and increased the evening walk to 2 miles (a 1 percent improvement).
+So, I added a 1-mile walk to my morning routine to reclaim something I lost when I started working from home (a 1 percent improvement, so to speak). That first week I was sweating a lot, and my calves achieved a consistent level of discomfort; the speed of my recovery was the same pace as the stress placed on my calves. Toward the end of the week, my calves were feeling better, and I wasn't sweating as much with the walk. I added a second 1-mile walk to my evening (a 1 percent improvement). The next week I felt better and increased the morning walk to 2 miles (a 1 percent improvement). The next week I felt better and increased the evening walk to 2 miles (a 1 percent improvement).
 
-I also walk to get groceries every week. That walk is about 4 miles. I added a mile to that walk (a 1 percent improvement), making it a 5-mile walk, with roughly 1 mile it carrying an extra 10 to 20 pounds. And, I recently just made walking at least 4 miles per day to my day. 
+I also walk to get groceries every week. That walk is about 4 miles. I added a mile to that walk (a 1 percent improvement), making it a 5-mile walk, with roughly 1 mile carrying an extra 10 to 20 pounds. And, I recently just made walking at least 4 miles to every day I'm physically able to.
 
-Does adding a day of 4 miles count as a 1 percent improvement or a 20 percent improvement?
+You may think the math doesn't play out, and you'd be technically correct. During the first week, my intentional walking distance was 4 miles per week. Increasing it to 10 miles per week (1 mile per day for 5 days) is a 150 percent increase for the week. Increasing to 16 miles per week in the second week is a 60 percent increase. Increasing to 22 miles per week in the third week is roughly a 38 percent increase. Increasing to 24 miles in the fourth week is a 10 percent increase. And increasing to 28 miles per week in the fifth week is a 16 percent increase.
 
-I appreciate the sentiment of the following:
+So, yeah, from a math perspective, we're seeing diminishing returns, and those aren't 1 percent increases. However, from a qualitative goal perspective, they are.
+
+I didn't try what so many of us try, which is to go from 0 to 28 overnight. 
 
 > 100 1 percent improvements is the same as 1 100 percent improvement.
 
 This plays into [the principle](/experiences/the-self/#principles) that:
 
 > Great value doesn't require grand gestures.
+
+The mindset shift of *not* going all out from the gate is probably the hardest mindset shift in Agile Software Development (or most creative endeavors), despite the fact that nothing goes from 0 to done overnight.
+
+The second difficult mindset shift is that, at some point, something is "stable" enough for the demands placed upon it, and it will no longer be new or exciting, which doesn't mean it's not useful.
+
+
+
+
 
 
 
