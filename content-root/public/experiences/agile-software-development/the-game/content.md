@@ -44,7 +44,7 @@ Watching two people repeatedly tagging each other isn't fun for the other player
 
 I protested because I couldn't cross the monkey bars, which wasn't fun for me. (Admittedly, the protest at the time was made more in the spirit of "I'll take my ball and go home.") My teammates wanted me to play the game.
 
-We actually talked about a few options before coming to an agreed-upon solution.
+We actually talked about a few options before coming to an agreed-upon solution (working agreement).
 
 One possibility was, "If Josh is 'it,' everyone must stay on the main playground."
 
