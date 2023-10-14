@@ -53,5 +53,5 @@ Follow the instructions, and you should be good.
 
 Beneath the device is the recharging cable. The recharging cable is USB-C on one end and USB-A on the other.
 
-[Read my personal reflections on the Whoop](/examinations/whoop-health-monitor/reflection/)
+[Read my personal reflections on the WHOOP](/examinations/whoop-health-monitor/reflection/)
 
