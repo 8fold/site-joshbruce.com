@@ -23,3 +23,4 @@ Note: Depending on how you define "free"; in some cases you'll be trading your e
 ## Tools
 
 - [Whoop, health monitor](/examinations/whoop-health-monitor/)
+- [MacroFactor, food tracker](/examinations/macrofactor-food-tracker/)
