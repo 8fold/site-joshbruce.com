@@ -1,4 +1,4 @@
-# September 2023
+# October 2023
 
 {!! dateblock !!}
 
@@ -31,7 +31,7 @@ I started by talking about what had changed since the last time we spoke:
 5. Adding micro-bends to my knees to help with being in a more stacked posture instead of leaning forward all the time.
 6. Able to get but-to-heel on the left leg during the distal quad stretch.
 
-This was the first time we did what I'll refer to as a retest of baselines. 
+This was the first time we did what I'll refer to as a retest of baselines.
 
 "Bend forward and touch your toes," she said, adding, "Let's see how far you can get this time."
 
@@ -39,11 +39,11 @@ This was the first time we did what I'll refer to as a retest of baselines.
 
 "Really?" she asked with a hint of doubt in her voice.
 
-My fingers hit the floor with a bend, and I stood back up; I still don't trust myself to stay there, but I can get there pretty regularly. 
+My fingers hit the floor with a bend, and I stood back up; I still don't trust myself to stay there, but I can get there pretty regularly.
 
 "Wow!" she exclaimed. "Okay. Okay. That's different."
 
-I smiled at her and gave her a high-five. 
+I smiled at her and gave her a high-five.
 
 We continued with bending back. I could go a little bit farther, but my abdominal muscles weren't fighting the experience like the first time. Side-to-side was also pretty good. Rotationally I could have my looking backward while my foot pointed forward.
 
@@ -53,7 +53,7 @@ I was like, "Not bad? I'm staring at this back wall."
 
 We laughed.
 
-She had me moving my arms into various positions, trying to figure out the shoulder situation. She was impressed with the range of motion I had. 
+She had me moving my arms into various positions, trying to figure out the shoulder situation. She was impressed with the range of motion I had.
 
 I got on the table, and we started doing the "push against me" tests. A lot of progress in all of those.
 
@@ -76,17 +76,17 @@ We spent a lot of time together talking about all the things, and I was given th
 
 Not much to report here except for Wednesday. I did the full set of movements and, according to the WHOOP, didn't break into the high-strain range.
 
-I can consistently get my but to my left heel during the distal (couch) quad stretch. I no longer use the wall to stabilize the single-leg hip rotations. 
+I can consistently get my but to my left heel during the distal (couch) quad stretch. I no longer use the wall to stabilize the single-leg hip rotations.
 
 This indicates that I've adapted to the current prescription and extras, with one caveat. My knees and shoulders experience some discomfort bordering on pain after performing certain movements.
 
-It's good that I scheduled an appointment with the physical therapist for Thursday. 
+It's good that I scheduled an appointment with the physical therapist for Thursday.
 
 ## Saturday, September 16 to Sunday, September 17, 2023
 
-Pretty uneventful weekend. 
+Pretty uneventful weekend.
 
-Something I decided to change was during the morning routine. As of this writing, I do 10 slow single-leg hip rotations; "slow" means a 6 count up and a 6 count down to increase time under tension. I follow this up with 20 hip lifts. 
+Something I decided to change was during the morning routine. As of this writing, I do 10 slow single-leg hip rotations; "slow" means a 6 count up and a 6 count down to increase time under tension. I follow this up with 20 hip lifts.
 
 The hip rotations are there mainly for the mind-body connection of engaging the glute muscles. I did them slowly to help activate as many of the muscle fibers as I could. By about the fifth repetition, the stabilizer along my left calf becomes pretty "lit up," and by about the seventh repetition, the glutes finally start kicking in as well.
 
