@@ -1,8 +1,8 @@
-# Whoop, health monitor
+# WHOOP, health monitor
 
 {!! dateblock !!}
 
-[Whoop](https://www.whoop.com) is a health monitoring device.
+[WHOOP](https://www.whoop.com) is a health monitoring device.
 
 You can use [my referral link](https://join.whoop.com/C55FFC) to receive:
 
@@ -43,7 +43,7 @@ You directly charge the recharging block using the provided cable. Then you slid
 
 The delivery box was standard cardboard with bubble wrap to protect the other device box.
 
-The box the Whoop came in is a matte black with a perforated strip for easy access. Unfortunately, it broke apart when I first tried pulling. They could add a strip of cardstock or something along the strip to reduce the possibility of breakage.
+The box the WHOOP came in is a matte black with a perforated strip for easy access. Unfortunately, it broke apart when I first tried pulling. They could add a strip of cardstock or something along the strip to reduce the possibility of breakage.
 
 Opening the two flaps reveals the recharging block and the setup instructions; well done. Pulling out the instructions reveals the Whoop device with the strap attached. There is a tab that says, "Lift." 
 
@@ -53,5 +53,5 @@ Follow the instructions, and you should be good.
 
 Beneath the device is the recharging cable. The recharging cable is USB-C on one end and USB-A on the other.
 
-[Read my personal reflections on the Whoop](/examinations/whoop-health-monitor/reflection/)
+[Read my personal reflections on the WHOOP](/examinations/whoop-health-monitor/reflection/)
 
