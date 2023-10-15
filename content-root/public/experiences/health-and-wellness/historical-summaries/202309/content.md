@@ -2,6 +2,96 @@
 
 {!! dateblock !!}
 
+## Thursday, September 21, 2023
+
+Physical therapy day.
+
+On these days, I typically avoid doing much in the way of activities because I want to go in as refreshed as possible. So, I did the full morning routine and walks, and that was about it.
+
+The prescription going in was:
+
+1. 3 sets of 10 single-leg hip rotations 3 times a week (I have been doing them daily).
+2. 3 sets of 15 split-leg calf raises daily.
+3. 3 sets of 10 toe abductions daily.
+4. 3 sets of 5 distal quad stretches daily (I only did 1 on each side; my bad).
+5. 10 wall breaths daily.
+6. 3 sets of pectoral corner stretches for 10 breaths daily.
+7. 3 sets of 5 hand-down wall presses daily (I have been doing 10).
+
+I started by talking about what had changed since the last time we spoke:
+
+1. 1-mile walks increased to 4 miles daily.
+2. The 4-mile grocery walk increased to 5 miles per week.
+3. MovNat Fundamentals Week 1, Day 1 warm-up and emphasis (when the knee concerns started) increased to the full routine twice a week.
+4. Playing with time under tension for some of the movements.
+5. Adding micro-bends to my knees to help with being in a more stacked posture instead of leaning forward all the time.
+6. Able to get but-to-heel on the left leg during the distal quad stretch.
+
+This was the first time we did what I'll refer to as a retest of baselines.
+
+"Bend forward and touch your toes," she said, adding, "Let's see how far you can get this time."
+
+"Oh, I think I'll do it this time," and started moving.
+
+"Really?" she asked with a hint of doubt in her voice.
+
+My fingers hit the floor with a bend, and I stood back up; I still don't trust myself to stay there, but I can get there pretty regularly.
+
+"Wow!" she exclaimed. "Okay. Okay. That's different."
+
+I smiled at her and gave her a high-five.
+
+We continued with bending back. I could go a little bit farther, but my abdominal muscles weren't fighting the experience like the first time. Side-to-side was also pretty good. Rotationally I could have my looking backward while my foot pointed forward.
+
+"Not bad," she said.
+
+I was like, "Not bad? I'm staring at this back wall."
+
+We laughed.
+
+She had me moving my arms into various positions, trying to figure out the shoulder situation. She was impressed with the range of motion I had.
+
+I got on the table, and we started doing the "push against me" tests. A lot of progress in all of those.
+
+We spent a lot of time together talking about all the things, and I was given the new prescription:
+
+1. 3 sets of 10 single-leg hip rotations 3 times a week.
+2. 3 sets of 15 split-leg calf raises daily.
+3. 3 sets of 10 toe abductions daily.
+4. 3 sets of 5 distal quad stretches daily.
+5. 3 sets of 10 [Powell raises](https://youtu.be/CuCAMi8pRWo) twice a week.
+6. 1 set of 25 [reverse step-ups](https://youtu.be/7PV_bGLFlfY) 4 times weekly (no more than every other day).
+7. During the walks
+	- Walk backward for 10 minutes once per day.
+8. MovNat Fundamentals Week 1, Day 1
+	- Replace the deep squat with the deep knee bend.
+	- Replace foot-hand crawl with a bear crawl (shorter steps), and introduce lateral movement; each step is a breath. Repeat 10 times. Not sure what that means, but I'm going to presume it's one step forward on both sides, one step back on both sides, one step left, and one step right.
+
+
+## Monday, September 18 to Wednesday, September 20, 2023
+
+Not much to report here except for Wednesday. I did the full set of movements and, according to the WHOOP, didn't break into the high-strain range.
+
+I can consistently get my but to my left heel during the distal (couch) quad stretch. I no longer use the wall to stabilize the single-leg hip rotations.
+
+This indicates that I've adapted to the current prescription and extras, with one caveat. My knees and shoulders experience some discomfort bordering on pain after performing certain movements.
+
+It's good that I scheduled an appointment with the physical therapist for Thursday.
+
+## Saturday, September 16 to Sunday, September 17, 2023
+
+Pretty uneventful weekend.
+
+Something I decided to change was during the morning routine. As of this writing, I do 10 slow single-leg hip rotations; "slow" means a 6 count up and a 6 count down to increase time under tension. I follow this up with 20 hip lifts.
+
+The hip rotations are there mainly for the mind-body connection of engaging the glute muscles. I did them slowly to help activate as many of the muscle fibers as I could. By about the fifth repetition, the stabilizer along my left calf becomes pretty "lit up," and by about the seventh repetition, the glutes finally start kicking in as well.
+
+The hip lifts target a different part of the glute muscles; the glute medius. It's a rare event if they become "lit up."
+
+What I decided to start doing is going straight from the hip rotation to the hip lift for the same side. So, if I do 10 repetitions of the single-leg hip rotations for the left side, I'll immediately go into the hip lift for the left side. In theory, my brain is already primed to activate the pelvic muscles, and they haven't had time to fully relax as I hit them again.
+
+This is a change from what I was doing before, which was to do the single-leg hip rotations for one side, then get that side to release the tension before starting the other side. While doing the other side gives the first side time to chill out a bit.
+
 ## Friday, September 15, 2023
 
 80 percent recovery.
@@ -32,9 +122,9 @@ We're considering moving, so one more year of testing, and we should know.
 
 My abdominal muscles feel like I've done thousands of sit-ups, crunches, and knee raises. My lower back is also hurting a bit. Even my neck muscles feel sore. As of today, my throat isn't raw or anything. But, man, the last couple of days have sucked.
 
-My meeting schedule today at work is a bit bonkers, and I'm still determining if I can get in all the exercises I hope to do. They are stacking up because I haven't done any over the last few days.
+My meeting schedule today at work is a bit bonkers, and I'm still determining if I can get all the exercises I hope to do in. They are stacking up because I haven't done any over the last few days.
 
-I'll keep an eye on the strain gauge and not go too far over optimal strain for the day.
+I'll watch the strain gauge and not go too far over optimal strain for the day.
 
 ## Tuesday, September 12, 2023
 

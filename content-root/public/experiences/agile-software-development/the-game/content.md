@@ -38,13 +38,13 @@ Yep.
 
 I used to be really slow and overweight as a kid. I couldn't chase anyone down and couldn't cross the [monkey bars](https://en.wikipedia.org/wiki/Jungle_gym#/media/File:Japanesehighschoolgirlonmonkeybars-dec19-2014.jpg)—playing tag sucked for me. 
 
-If I became it, everyone would scatter and cross the monkey bars. I became very good and touchbacks.
+If I became it, everyone would scatter and cross the monkey bars. I became very good at touchbacks.
 
 Watching two people repeatedly tagging each other isn't fun for the other players who want to play the game. Someone recommended the no-touchback rule. (We already had the ground as lava and would make you "it" in place.)
 
 I protested because I couldn't cross the monkey bars, which wasn't fun for me. (Admittedly, the protest at the time was made more in the spirit of "I'll take my ball and go home.") My teammates wanted me to play the game.
 
-We actually talked about a few options before coming to an agreed-upon solution.
+We actually talked about a few options before coming to an agreed-upon solution (working agreement).
 
 One possibility was, "If Josh is 'it,' everyone must stay on the main playground."
 
