@@ -2,6 +2,52 @@
 
 {!! dateblock !!}
 
+## Sunday, October 22nd, 2023
+
+You know what we haven’t talked about in a while (or possibly ever in this context)?
+
+My toenails.
+
+Back when my primary care physician thought I had gout (middle of 2022) I went to see a podiatrist. He also thought I had gout.
+
+While I was there, he noticed I had an ingrown toenail on my right big toe, which was the problem toe. He removed it. I noticed my left big toe also had an impacted and ingrown toenail. He didn’t remove that one. I asked the podiatrist if the toenail would ever grow in flat again, and he said, “No.” He also said that if the toenails continue giving me trouble he could remove them and apply acid to make it so that part of the nail never grew again.
+
+This prompted me to learn how to give myself a pedicure.
+
+I’ve been doing it every few weeks for a few months. In the beginning it was every week. The things you can learn in the twenty-first century is pretty insane.
+
+Apparently there’s a difference between an impacted toenail and ingrown toenail. An impacted toenail may look and feel like an ingrown toenail, but it’s caused by material (usually lint front socks) gets lodged under the toenail. An ingrown toenail on the other hand results from a sharp bit of nail digging into the skin.
+
+In both cases inflammation may occurs, which deforms the nail and causes pain.
+
+For an impacted toenail you want to remove the debris causing the inflammation. With an ingrown toenail, you want to remove the stabbing bit—not necessarily the curled bit of toenail down to the quick.
+
+I bought all sorts of shit.
+
+Cuticle pusher, files, buffer blocks, cuticle nippers, and things that look like dental instruments. Epsom salts, foot balm, and nail mycosis solution. A tool carrying case and one of those foot basins.
+
+It’s a bit ridiculous, but I was tired of feeling like shit and it seemed as good a place as any to start.
+
+To make a long story short (I might make a separate post describing the journey), the first time I gave myself a pedicure, my feet felt amazing. And recently, I think I finally have the left big toenail sorted. Above all else, the toenail appears to be flattening out and my feet appear less swollen; I can see the tendons and ligaments.
+
+Progress.
+
+As for the nutrition side of things, MacroFactor reduced my recommended caloric intake again, so I reduced the amount of bananas in the breakfast smoothie. This demonstrates a level of flexibility in the latest iteration there.
+
+I’ve removed carrots, broccoli, and sourdough bread entirely, which reduces the volume of food. I’m thinking the chicken will be the next thing to go. That will reduce meals that require a pan and fire to only breakfast.
+
+I mean I could eat raw eggs, but I’d rather not. 
+
+I’m going try start experimenting with peanuts and sunflower seeds as nutritional replacements for the chicken and eggs. Reduces volume again, cost overall, and should decrease cholesterol as well.
+
+I removed the multivitamin from my supplementation. Now I’m meeting daily targets for all the things, but still going over on iron, magnesium, and manganese mainly due to pumpkin seeds and cashews. I’m hoping to reduce those and replace them with the peanuts and sunflower seeds.
+
+This will tilt my diet toward fat over carbs.
+
+I want to a full blood panel done with micronutrients to see where I end up. If I have deficiencies, I can change the targets in the MacroFactor app to be specific to my needs instead of a generic human.
+
+Oh! I was also able to do get on the ground using a [cross leg squat](https://youtu.be/K1-S7UqGAHA), without using my hands. This is a longevity test and marker. I still used my hand to stabilize getting up, but still good times.
+
 ## Sunday, October 15th, 2023
 
 I think I'm settling into a cadence for these posts. Mainly, I'm thinking once a week, probably on the weekend. With that said, if something interesting enough happens on a given day, and I remember to write it out, and I'm in a position to do so, I will. That's a whole lotta conditions and caveats.
