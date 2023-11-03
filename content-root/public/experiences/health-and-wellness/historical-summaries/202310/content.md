@@ -2,6 +2,16 @@
 
 {!! dateblock !!}
 
+## Monday, October 31st, 2023
+
+The nutrition side of things is leveling off. The digital coach no longer thinks I burn over 4,000 calories a day.
+
+I’m going to be dropping chicken thighs and eggs from my diet soon.
+
+It’s starting to get cold where I live and it’s been difficult to convince myself to get out and walk. 
+
+Left toenail is still curled, but not as bad as it was. I’ve been prying it flat after each shower and making sure it’s not impacted. The manicurist I learned from talked about the toenail needing to reestablish a groove in the skin and how it would hurt. It is definitely hurting. But it looks better than it was.
+
 ## Sunday, October 22nd, 2023
 
 You know what we haven’t talked about in a while (or possibly ever in this context)?
