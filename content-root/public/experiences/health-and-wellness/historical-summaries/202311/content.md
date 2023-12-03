@@ -8,19 +8,19 @@ Becca and I went out of town for the last week. It was fun, but I spent most of 
 
 With that said, continuing on the nutrition theme, I'm digging the flexibility I have now.
 
-I boiled eggs to take with us. I'm experimenting with removing eggs going forward. This means I won't need to cook any of my meals outside of microwaving the green peas. This also should reduce my cholesterol overall. Part of me is disappointed I won't be able to complete the experiment regarding exercise increasing good cholesterol and reducing bad, but still. (I don't remember where I heard about the research related to exercise and its impacts on cholesterol, but will post a link if I do.)
+I boiled eggs to take with us. I'm experimenting with removing eggs in the future. This means I won't need to cook my meals outside of microwaving the green peas. This also should reduce my cholesterol overall. Part of me is disappointed I won't be able to complete the experiment regarding exercise increasing good cholesterol and lowering bad, but still. (I don't remember where I heard about the research related to exercise and its impacts on cholesterol, but I will post a link if I do.)
 
-I'm having some concerns about the dependence on smoothies, though. I haven't figured out a good way to travel with smoothie fixings or a way to do alternatives.
+I'm having some concerns about the dependence on smoothies, though. I have yet to figure out a good way to travel with smoothie fixings or a way to do alternatives.
 
-I modified the [MacroFactor app](/examinations/macrofactor-food-tracker/) to increase protein intake. To do that without adding a bunch of non-protein calories and other macronutrients means I'm relying a lot on protein powders. The favored delivery mechanisms for the powders are the smoothies.
+I modified the [MacroFactor app](/examinations/macrofactor-food-tracker/) to increase protein intake. To do that without adding a bunch of non-protein calories and other macronutrients means I rely a lot on protein powders. The favored delivery mechanisms for the powders are the smoothies.
 
-I'm thinking about finding a complete smoothie powder I can blend without a blender and some bottles to take with me on trips.
+I'm considering finding a complete smoothie powder I can blend without a blender and some bottles to take with me on trips.
 
 Breakfast is still the largest meal from a nutritional contribution perspective. This gives me some slack for dinner. Either eating out or staying in. Eating out should also be cheaper because I won't need to consume as much food.
 
-Regarding physical movement, I'm still getting back on the wagon with that one. The MacroFactor app has dropped below 3,000 calories for the first time in a few months, which is making life easier. I have a self-powered treadmill now, which should let me get the walking in.
+Regarding physical movement, I'm still getting back on the wagon with that one. The MacroFactor app has dropped below 3,000 calories for the first time in a few months, making life easier. I have a self-powered treadmill now, which should let me get the walking in.
 
-I hope to return to a normal sleep schedule and do the full morning system integrity check this week.
+This week, I will return to a regular sleep schedule and complete the morning system integrity check.
 
 ## Sunday, November 19th, 2023
 
@@ -63,6 +63,6 @@ From a micronutrient perspective, nuts, seeds, protein bars, and orange juice ar
 
 Work was getting interesting in a bad way, and I decided to leave that position to focus on some other things.
 
-I've started working on some of the books I've been putting off and refining my productivity system to improve my mental health, not that it was in a critical position or anything, just a lot of weight being carried. Now that nutrition is more stable, I've started ramping up on physical therapy and fitness.
+I've started working on some of the books I've been putting off and refining my productivity system to improve my mental health. It was not that it was in a critical position or anything; it was just a lot of weight being carried. Now that nutrition is more stable, I've started ramping up on physical therapy and fitness.
 
 Oh, and this will be the last week with eggs. I've also noticed some irritated skin problems on my face I used to get back in the day. I think the peanuts are a contributing factor and have switched them back out for pumpkin seeds as I didn't experience the problem while using those.
