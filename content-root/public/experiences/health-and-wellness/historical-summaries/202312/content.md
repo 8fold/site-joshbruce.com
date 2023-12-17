@@ -1,6 +1,20 @@
-# November 2023
+# December 2023
 
 {!! dateblock !!}
+
+## Sunday, December 17, 2023
+
+I decided to switch my breakfast with my dinner. That hasn't been going well, and I'm considering a new change. Let's start with why it has yet to go well.
+
+I noticed that I would have a slump after the midday feeding time. From what I understand, this is normal for humans; however, I haven't been experiencing it over the last couple of weeks. Then, having all the seeds packed at the end of the day is too much. I end up being bloated and gassy. I've also been experiencing indigestion pains. 
+
+I'm going to try instead to have half the seeds with breakfast and shift the banana smoothie back to being in the morning. This means I'll divide the 2 Builder Bars between the 2 meals instead of having both of them with the day's first meal.
+
+Most of the other variables will remain the same.
+
+I'm hoping this will reduce the feelings of indigestion and slight constipation. If it is working out, I'm thinking about going back to eating earlier in the day (around 8 am), with my second meal being around noon. This will maintain the 5-hour feeding window but give me more digestion and water-drinking time between the last meal and sleep. 
+
+ps. I also just realized I didn't update the main title of this page to December. Fixed it!
 
 ## Sunday, December 10, 2023
 
