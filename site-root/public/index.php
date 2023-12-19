@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-ini_set('display_errors', '0');
-ini_set('display_startup_errors', '0');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 ini_set('realpath_cache_size', '4096');
@@ -19,7 +19,8 @@ use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
-use Eightfold\Amos\FileSystem\Directories\Root;
+use Eightfold\Amos\Http\Root as HttpRoot;
+use Eightfold\Amos\FileSystem\Directories\Root as ContentRoot;
 
 use JoshBruce\Site\Documents\Sitemap;
 
@@ -40,8 +41,8 @@ $request = (new ServerRequestCreator(
 $uri = $request->getUri();
 
 $site = Site::init(
-    Root::fromString(__DIR__ . '/../../content-root'),
-    $uri->getScheme() . '://' . $uri->getAuthority()
+    ContentRoot::fromString(__DIR__ . '/../../content-root'),
+    HttpRoot::fromString($uri->getScheme() . '://' . $uri->getAuthority())
 );
 
 if ($site === false) {
@@ -78,7 +79,7 @@ $converter = Markdown::create()
         ]
     ])->externalLinks([
         'open_in_new_window' => true,
-        'internal_hosts'     => $site->domain()
+        'internal_hosts'     => $site->domain()->toString()
     ])->accessibleHeadingPermalinks([
         'min_heading_level' => 2,
         'max_heading_level' => 3,
@@ -102,7 +103,8 @@ if ($site->hasPublicMeta($path) === false) {
 }
 
 $body = (string) Page::create($site)
-    ->withConverter($converter)->withRequestPath($path);
+    ->withConverter($converter)
+    ->withRequestPath($path);
 
 $response = new Response(200, body: $body);
 

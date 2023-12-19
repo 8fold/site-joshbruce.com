@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42a2fd69100ef21703e6f54592c36c96",
+    "content-hash": "d745af470c284406c7e654197ba4837e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -238,24 +238,24 @@
         },
         {
             "name": "8fold/php-amos",
-            "version": "0.7.6",
+            "version": "0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/8fold/php-amos.git",
-                "reference": "0b7e48178b3a8c263d6a9f23e313884dc926d25f"
+                "reference": "6e8927b00b84e3db3f8505e8c8ce961f06187a13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/8fold/php-amos/zipball/0b7e48178b3a8c263d6a9f23e313884dc926d25f",
-                "reference": "0b7e48178b3a8c263d6a9f23e313884dc926d25f",
+                "url": "https://api.github.com/repos/8fold/php-amos/zipball/6e8927b00b84e3db3f8505e8c8ce961f06187a13",
+                "reference": "6e8927b00b84e3db3f8505e8c8ce961f06187a13",
                 "shasum": ""
             },
             "require": {
-                "8fold/commonmark-fluent-markdown": "^1.1",
                 "8fold/php-xml-builder": "^2.0",
                 "php": "^8.1",
                 "psr/http-message": "^1.1",
-                "psr/log": "^3.0"
+                "psr/log": "^3.0",
+                "voku/portable-ascii": "^2.0"
             },
             "require-dev": {
                 "nyholm/psr7": "^1.8",
@@ -286,7 +286,7 @@
             "description": "Not a content management system.",
             "support": {
                 "issues": "https://github.com/8fold/php-amos/issues",
-                "source": "https://github.com/8fold/php-amos/tree/0.7.6"
+                "source": "https://github.com/8fold/php-amos/tree/0.8.7"
             },
             "funding": [
                 {
@@ -298,7 +298,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-17T22:03:40+00:00"
+            "time": "2023-12-19T22:36:35+00:00"
         },
         {
             "name": "8fold/php-html-builder",
@@ -1848,6 +1848,80 @@
                 }
             ],
             "time": "2023-11-06T11:00:25+00:00"
+        },
+        {
+            "name": "voku/portable-ascii",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-ascii.git",
+                "reference": "b56450eed252f6801410d810c8e1727224ae0743"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b56450eed252f6801410d810c8e1727224ae0743",
+                "reference": "b56450eed252f6801410d810c8e1727224ae0743",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+            },
+            "suggest": {
+                "ext-intl": "Use Intl for transliterator_transliterate() support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                }
+            ],
+            "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
+            "homepage": "https://github.com/voku/portable-ascii",
+            "keywords": [
+                "ascii",
+                "clean",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/voku/portable-ascii/issues",
+                "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/portable-ascii",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-08T17:03:00+00:00"
         }
     ],
     "packages-dev": [
