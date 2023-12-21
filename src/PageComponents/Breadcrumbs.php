@@ -31,21 +31,6 @@ class Breadcrumbs implements Stringable // Buildable
         return $this->site;
     }
 
-    /**
-     *
-     * @param string $title
-     * @param string $titleShort
-     *
-     * @return Element[]
-     */
-    private function spans(string $title, string $titleShort): array
-    {
-        return [
-            Element::span($title),
-            Element::span($titleShort)->props('aria-label ' . $title)
-        ];
-    }
-
     public function __toString(): string
     {
         $linkStack = $this->site()->linkStack($this->requestPath);
@@ -67,8 +52,6 @@ class Breadcrumbs implements Stringable // Buildable
         $l = [];
         $requestPath = $this->requestPath;
         foreach ($links as $href => $title) {
-            // list($href, $ts, $title) = explode(' ', $link, 2);
-
             $a = Element::a($title)->props('href ' . $href);
 
             $l[] = Element::li($a);
