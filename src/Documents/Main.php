@@ -14,6 +14,7 @@ use Eightfold\HTMLBuilder\Components\Copyright;
 use Eightfold\Amos\Site;
 
 use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\Breadcrumbs;
 
 class Main implements Stringable // Buildable
 {
@@ -113,6 +114,7 @@ class Main implements Stringable // Buildable
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
             Navigation::create($this->site(), $this->requestPath()),
+            Breadcrumbs::create($this->site(), $this->requestPath()),
             Element::article(
                 Element::section(
                     $this->body()
