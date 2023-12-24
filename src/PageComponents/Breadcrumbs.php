@@ -59,6 +59,6 @@ class Breadcrumbs implements Stringable // Buildable
 
         return (string) Element::nav(
             Element::ul(...$l)->props('class col-' . count($links))
-        )->props('is breadcrumb-nav', 'role secondary', 'aria-label secondary navigation');
+        )->props('is breadcrumb-nav', 'aria-label secondary navigation');
     }
 }
