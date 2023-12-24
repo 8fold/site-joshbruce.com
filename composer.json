@@ -17,7 +17,7 @@
     "source": "https://github.com/8fold/site-joshbruce.com"
   },
   "require": {
-    "php": "^8.0",
+    "php": "^8.2",
     "ext-fileinfo": "*",
     "8fold/commonmark-fluent-markdown": "^1.0",
     "8fold/php-amos": "^0.8.0",
