@@ -92,6 +92,6 @@ class Navigation implements Stringable // Buildable
 
         return (string) Element::nav(
             Element::ul(...$l)->props('class col-' . count($links))
-        )->props('is main-nav', 'role primary', 'aria-label primary navigation');
+        )->props('is main-nav', 'aria-label primary navigation');
     }
 }
