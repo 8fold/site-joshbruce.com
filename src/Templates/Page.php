@@ -85,25 +85,26 @@ class Page implements Stringable
                 ->withRequestPath($this->requestPath());
         }
 
-        $converter = $this->converter()->partials([
-            'partials' => [
-                'dateblock'        => DateBlock::class,
-                'next-previous'    => NextPrevious::class,
-                'article-list'     => ArticleList::class,
-                'paycheck-loglist' => PaycheckLogList::class,
-                'original'         => OriginalContentNotice::class,
-                'data'             => Data::class,
-                'fi-experiments'   => FiExperiments::class,
-                'full-nav'         => FullNav::class,
-                'health-loglist'   => HealthLogList::class
-            ],
-            'extras' => [
-                'meta'         => $meta,
-                'site'         => $this->site(),
-                'request_path' => $this->requestPath()
-            ]
-        ]);
+        // $converter = $this->converter()->partials([
+        //     'partials' => [
+        //         'dateblock'        => DateBlock::class,
+        //         'next-previous'    => NextPrevious::class,
+        //         'article-list'     => ArticleList::class,
+        //         'paycheck-loglist' => PaycheckLogList::class,
+        //         'original'         => OriginalContentNotice::class,
+        //         'data'             => Data::class,
+        //         'fi-experiments'   => FiExperiments::class,
+        //         'full-nav'         => FullNav::class,
+        //         'health-loglist'   => HealthLogList::class
+        //     ],
+        //     'extras' => [
+        //         'meta'         => $meta,
+        //         'site'         => $this->site(),
+        //         'request_path' => $this->requestPath()
+        //     ]
+        // ]);
 
+        $converter = $this->converter();
         $main = Main::create($this->site(), $this->requestPath())
             ->setPageTitle(
                 (string) PageTitle::create($this->site()->titles(
