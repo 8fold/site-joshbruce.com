@@ -22,7 +22,7 @@ use JoshBruce\Site\Templates\Page;
 use JoshBruce\Site\Templates\PageNotFound;
 use JoshBruce\Site\Documents\Sitemap as SitemapResponse;
 
-class Sitemap extends Command
+class StaticSite extends Command
 {
     private Site $site;
 

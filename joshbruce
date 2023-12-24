@@ -5,10 +5,10 @@ require __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 
-use JoshBruce\Console\Sitemap;
+use JoshBruce\Console\StaticSite;
 
 $application = new Application();
 
-$application->add(new Sitemap());
+$application->add(new StaticSite());
 
 $application->run();
