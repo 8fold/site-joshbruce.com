@@ -7,7 +7,7 @@ copyright: Joshua C. Bruce
 copyright_year: 2004
 ---
 
-Welcome to the rabbit-hole.
+Welcome to the rabbit hole.
 
 My name is Josh Bruce (shocker); I don't play rugby—do a search—the failings of not having an internet-unique name. With that said, I'm fascinated by human thought ([memetics](https://en.wikipedia.org/wiki/Memetics)), the human experience, and how we interact with each other and those thoughts and ideas.
 
