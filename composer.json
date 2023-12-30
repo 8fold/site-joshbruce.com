@@ -26,10 +26,11 @@
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
     "spatie/commonmark-shiki-highlighter": "^2.1",
-    "symfony/finder": "^6.2"
+    "symfony/finder": "^6.2",
+    "8fold/php-syndication": "@dev"
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.9",
+    "phpstan/phpstan": "^1.10",
     "phpunit/phpunit": "^10.0",
     "squizlabs/php_codesniffer": "^3.7",
     "symfony/console": "^7.0",
@@ -46,6 +47,12 @@
       "JoshBruce\\Site\\Tests\\": "./tests"
     }
   },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/Users/alex/Public/8fold/php-syndication"
+    }
+  ],
   "config": {
     "preferred-install": "dist",
     "sort-packages": true
