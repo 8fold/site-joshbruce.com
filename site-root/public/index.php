@@ -69,6 +69,11 @@ if (str_ends_with($path, 'sitemap.xml')) {
     exit();
 }
 
+$meta = PublicMeta::inRoot(
+    $site->contentRoot(),
+    $path
+);
+
 $converter = Markdown::create()
     ->withConfig([
         'html_input' => 'allow'
@@ -104,8 +109,8 @@ $converter = Markdown::create()
         ],
         'extras' => [
             'meta'         => $meta,
-            'site'         => $this->site(),
-            'request_path' => $this->requestPath()
+            'site'         => $site,
+            'request_path' => $path
         ]
     ]);
 

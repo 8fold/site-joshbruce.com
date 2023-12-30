@@ -19,10 +19,12 @@ use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
 use Eightfold\Amos\Http\Root as HttpRoot;
 use Eightfold\Amos\FileSystem\Directories\Root as ContentRoot;
 
 use JoshBruce\Site\Documents\Sitemap;
+use JoshBruce\Site\Documents\Feed;
 
 use JoshBruce\Site\Templates\Page;
 use JoshBruce\Site\Templates\PageNotFound;
@@ -69,6 +71,11 @@ if (str_ends_with($path, 'sitemap.xml')) {
     exit();
 }
 
+$meta = PublicMeta::inRoot(
+    $site->contentRoot(),
+    $path
+);
+
 $converter = Markdown::create()
     ->withConfig([
         'html_input' => 'allow'
@@ -89,7 +96,32 @@ $converter = Markdown::create()
     ->descriptionLists()
     ->tables()
     ->attributes() // for class on notices
-    ->abbreviations();
+    ->abbreviations()
+    ->partials([
+        'partials' => [
+            'dateblock'        => DateBlock::class,
+            'next-previous'    => NextPrevious::class,
+            'article-list'     => ArticleList::class,
+            'paycheck-loglist' => PaycheckLogList::class,
+            'original'         => OriginalContentNotice::class,
+            'data'             => Data::class,
+            'fi-experiments'   => FiExperiments::class,
+            'full-nav'         => FullNav::class,
+            'health-loglist'   => HealthLogList::class
+        ],
+        'extras' => [
+            'meta'         => $meta,
+            'site'         => $site,
+            'request_path' => $path
+        ]
+    ]);
+
+if (str_ends_with($path, 'rss.xml')) {
+    $response = new Feed();
+
+    $emitter->emit($response($site, $converter));
+    exit();
+}
 
 if ($site->hasPublicMeta($path) === false) {
     $response = new Response(
