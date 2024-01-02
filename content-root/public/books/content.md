@@ -8,7 +8,7 @@ I tend to favor publishing ebooks, which may be updated on occasion; buy once, k
 
 ## Published
 
-### Triumph over Time
+### Triumph over Time (First Edition)
 
 See more and purchase on [Leanpub](https://leanpub.com/triumph-over-time-principle-based-productivity)
 
