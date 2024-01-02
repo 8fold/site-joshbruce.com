@@ -6,6 +6,25 @@ We’ll go reverse chronological.
 
 The plan is to stick with movements I can or could do, with links to in-depth explorations.
 
+## 2024 (45 years of age)
+
+**Goals (passive exercises):** Continue being able to do the following:
+
+1. Complete weekly shopping while walking roughly 5 miles.
+2. Skip steps when leaving and entering the apartment daily.
+
+**Goals (active exercises):** Perform the following every day:
+
+- 1 one-minute plank.
+- 1 regular pushup.
+- 1 inverted row.
+- 1 air squat.
+- Walk 1 mile in less than 30 minutes.
+
+### 2024 Entries
+
+{!! health-loglist:year=2024 !!}
+
 ## 2023 (44 years of age)
 
 **Goals (passive exercises):** Continue being able to do the following:
