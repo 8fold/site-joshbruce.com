@@ -29,6 +29,17 @@ use JoshBruce\Site\Documents\Feed;
 use JoshBruce\Site\Templates\Page;
 use JoshBruce\Site\Templates\PageNotFound;
 
+/** Partials **/
+use JoshBruce\Site\Partials\DateBlock;
+use JoshBruce\Site\Partials\NextPrevious;
+use JoshBruce\Site\Partials\ArticleList;
+use JoshBruce\Site\Partials\PaycheckLogList;
+use JoshBruce\Site\Partials\OriginalContentNotice;
+use JoshBruce\Site\Partials\Data;
+use JoshBruce\Site\Partials\FiExperiments;
+use JoshBruce\Site\Partials\FullNav;
+use JoshBruce\Site\Partials\HealthLogList;
+
 $emitter = new SapiEmitter();
 
 $psr17Factory = new Psr17Factory();
@@ -110,7 +121,7 @@ $converter = Markdown::create()
             'health-loglist'   => HealthLogList::class
         ],
         'extras' => [
-            'meta'         => $meta,
+            'meta'         => $site->publicMeta($path),
             'site'         => $site,
             'request_path' => $path
         ]
