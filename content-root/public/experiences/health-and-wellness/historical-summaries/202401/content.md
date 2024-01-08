@@ -2,6 +2,20 @@
 
 {!! dateblock !!}
 
+## Monday, January 7, 2024
+
+I think the [MacroFactor app](/examinations/macrofactor-food-tracker/) is settling in. MacroFactor uses body weight and trends to calculate caloric expenditure. Since [December 25th](/experiences/health-and-wellness/historical-summaries/202312/#sunday-december-24-2023), I’ve had 9 weigh-ins; 8 of them have been at 220 pounds. Further, in that time, the target caloric intake has stayed around 3,500 calories.
+
+It’s winter, I’m unemployed, and working on a fair amount of side projects.
+
+Winter means I’m walking less, and feeling a bit disappointed that I’m not using the treadmill I purchased. Unemployed means I’m looking for (or at least for) a steady stream of income; taking opportunities when they present themselves, while taking advantage of the somewhat [privileged position](/experiences/finances/paycheck-to-paycheck/) I’ve set up for myself. I’m pumping a lot of time and energy into the side projects, specifically the long-tail ones.
+
+Beyond that, I’m starting to dial in a sustainable pace. Further, the activities I’m choosing and that cadence are such that I still have space for full-time employment when that becomes an option.
+
+This dialing in includes finding the activities that deliver the most band for the time taken (return on investment) from a health and wellness perspective.
+
+Oh, and the great toenail uncurling is still a work-in-progress, but seems to be going well.
+
 ## Monday, January 1, 2024
 
 Today is “book day” according to Becca. (I love her a great deal.) I released the free sample chapter for *[Time: Mastering the Mundane](https://leanpub.com/master-the-mundane)*. The plan is to publish a Part every week. I’m thinking the free download will have Parts 1 & 2. Then, in exchange for reader’s email address they can get the “Community Edition,” which will include Part 3. Once I get Part 4 published in the full version, I’ll open it to purchasing. And that will keep going until I run out of Parts to publish. Then I’ll open it up to mass-distribution.
