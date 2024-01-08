@@ -27,6 +27,17 @@ use JoshBruce\Site\Documents\Sitemap;
 use JoshBruce\Site\Templates\Page;
 use JoshBruce\Site\Templates\PageNotFound;
 
+/** Partials **/
+use JoshBruce\Site\Partials\DateBlock;
+use JoshBruce\Site\Partials\NextPrevious;
+use JoshBruce\Site\Partials\ArticleList;
+use JoshBruce\Site\Partials\PaycheckLogList;
+use JoshBruce\Site\Partials\OriginalContentNotice;
+use JoshBruce\Site\Partials\Data;
+use JoshBruce\Site\Partials\FiExperiments;
+use JoshBruce\Site\Partials\FullNav;
+use JoshBruce\Site\Partials\HealthLogList;
+
 $emitter = new SapiEmitter();
 
 $psr17Factory = new Psr17Factory();
@@ -89,7 +100,25 @@ $converter = Markdown::create()
     ->descriptionLists()
     ->tables()
     ->attributes() // for class on notices
-    ->abbreviations();
+    ->abbreviations()
+    ->partials([
+        'partials' => [
+            'dateblock'        => DateBlock::class,
+            'next-previous'    => NextPrevious::class,
+            'article-list'     => ArticleList::class,
+            'paycheck-loglist' => PaycheckLogList::class,
+            'original'         => OriginalContentNotice::class,
+            'data'             => Data::class,
+            'fi-experiments'   => FiExperiments::class,
+            'full-nav'         => FullNav::class,
+            'health-loglist'   => HealthLogList::class
+        ],
+        'extras' => [
+            'meta'         => $site->publicMeta($path),
+            'site'         => $site,
+            'request_path' => $path
+        ]
+    ]);
 
 if ($site->hasPublicMeta($path) === false) {
     $response = new Response(
