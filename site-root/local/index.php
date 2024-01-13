@@ -134,6 +134,13 @@ if (str_ends_with($path, 'rss.xml')) {
     exit();
 }
 
+if (str_ends_with($path, 'atom.xml')) {
+    $response = new Feed();
+
+    $emitter->emit($response($site, $converter, Feed::ATOM));
+    exit();
+}
+
 if ($site->hasPublicMeta($path) === false) {
     $response = new Response(
         404,

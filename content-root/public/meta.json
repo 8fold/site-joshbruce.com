@@ -1,9 +1,13 @@
 {
   "title": "Josh Bruceʼs personal site",
+  "default_authors": [
+    {"name": "Josh Bruce"}
+  ],
   "created": "20210101",
   "updated": "20220423",
   "priority": "1.0",
   "header_quote": "Welcome to the rabbit hole.",
   "copyright": "Joshua C. Bruce",
-  "copyright_year": "2004"
+  "copyright_year": "2004",
+
 }
