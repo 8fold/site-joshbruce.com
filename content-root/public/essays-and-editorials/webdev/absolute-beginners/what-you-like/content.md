@@ -38,6 +38,8 @@ The body copy could almost literally be: Hi, I'm me. You are you. You can connec
 
 What's nice about this is if you decide you don't like a platform anymore, you can deactivate or archive that account and put the link in a different unordered list: You used to be able to find me...
 
+(I did this in January 2024 in fact with: [ItsJoshBruce.com](http://itsjoshbruce.com))
+
 When someone asks, instead of rattling off five different platforms and usernames, say, "Start at my website..."
 
 Done.
@@ -74,7 +76,7 @@ Specifically, what we're talking about is a non-web-based piece of software. You
 
 [Blocs](https://blocsapp.com) is about 100 USD as a one-time purchase and seems to have a robust community and many additions. [RapidWeaver](https://www.realmacsoftware.com/rapidweaver/) is about 100 USD and seems pretty decent. Compared to popular alternatives, either will pay for itself in about 6 months in money saved from subscription-based platforms. (Not sure what's available for Windows. I've at least played with both of these.)
 
-If you're okay with paying a monthly premium, [Wix](https://www.wix.com/upgrade/website) provides hosting (point the domain there) and a web-based, what-you-see-is-what-you-get (WYSIWYG) editor; probably won't be able to take advantage of the storage on disk for non-site files though. 
+If you're okay with paying a monthly premium, [Wix](https://www.wix.com/upgrade/website) provides hosting (point the domain there) and a web-based, what-you-see-is-what-you-get (WYSIWYG) editor; probably won't be able to take advantage of the storage on disk for non-site files though.
 
 While I don't recommend Adobe products anymore, you can get [Adobe DreamWeaver](https://www.adobe.com/products/dreamweaver.html) for about the same price as Wix every month; it's available for both macOS and Windows and has been around for over 20 years and will have similar capabilities as Blocs and RapidWeaver.
 
@@ -98,9 +100,9 @@ I prefer [PHP](https://www.php.net) and [PHPC.social](https://phpc.social/gettin
 
 All of these languages have frameworks and libraries. Each of those will have its sub-cultures and communities. Laravel, Symfony, and so on for PHP. Ruby on Rails, Jekyll, and so on for Ruby. Django, Masonite, and so on for Python. I'm going to stop now.
 
-My humble request is to avoid elitism and feeling inferior; a paradox, to be sure. Some people are hung up on being a "real" programmer. It's one of the most frustrating aspects of software development for me; we can be so mean to one another. 
+My humble request is to avoid elitism and feeling inferior; a paradox, to be sure. Some people are hung up on being a "real" programmer. It's one of the most frustrating aspects of software development for me; we can be so mean to one another.
 
-"I only do HTML and CSS. I'm not a real developer." Or, "I'm self-taught and don't have a computer science degree. I'm not a real developer." Or, "You don't write tests? I thought you were a *real* developer." 
+"I only do HTML and CSS. I'm not a real developer." Or, "I'm self-taught and don't have a computer science degree. I'm not a real developer." Or, "You don't write tests? I thought you were a *real* developer."
 
 (I understand this is part of the human condition in many ways, and still, it seems exceptionally prevalent in the software development space.)
 
@@ -110,9 +112,9 @@ The Internet is a magical thing comprised of the most mundane things (plain text
 
 Seeing what others have done and are doing can fill people with a sense of, "I could never do that!" I don't think that's true. What is probably more accurate is, "I don't want to do that." And that's okay.
 
-Further, if you want to have a site on the Internet but don't want to make web design and development your career, that's okay too—don't let others give you shit for that. 
+Further, if you want to have a site on the Internet but don't want to make web design and development your career, that's okay too—don't let others give you shit for that.
 
-Finally, if you're worried, people will give you shit, and that's the thing that's stopping you from starting. You have a friend in me. I will gladly hold space for you. 
+Finally, if you're worried, people will give you shit, and that's the thing that's stopping you from starting. You have a friend in me. I will gladly hold space for you.
 
 With that said, as always, I typically work on pull from folks letting me know the content they want to see (otherwise, I write about whatever and whenever). If you found this series helpful and would like to go beyond the absolute beginner topic (or would like a deeper dive into something from the absolute beginner space), let me know:
 
