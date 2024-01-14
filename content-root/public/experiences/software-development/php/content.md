@@ -4,29 +4,12 @@
 
 Bottom line up front.
 
-If you want to use the PHP-related things from a [MAMP](https://www.mamp.info/en/mac/) installation, add the following to the `.profile` file:
+I use [MAMP](https://www.mamp.info/en/mac/) for my local PHP environment because it's the easiest setup I've found.
 
-```
-export PATH="/Applications/MAMP/bin/php/php8.2.0/bin:${PATH}"
-alias php='/Applications/MAMP/bin/php/php8.2.0/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php8.2.0.ini"'
-alias composer='/Applications/MAMP/bin/php/composer'
-alias php-config='/Applications/MAMP/bin/php/php8.2.0/bin/php-config'
-alias phpdbg='/Applications/MAMP/bin/php/php8.2.0/bin/phpdbg'
-alias phpize='/Applications/MAMP/bin/php/php8.2.0/bin/phpize'
-alias pear='/Applications/MAMP/bin/php/php8.2.0/bin/pear'
-alias peardev='/Applications/MAMP/bin/php/php8.2.0/bin/peardev'
-alias pecl='/Applications/MAMP/bin/php/php8.2.0/bin/pecl'
-```
-
-If you don't know where the `.profile` file is, a complete path is:
-
-1. Hard drive.
-2. Your user folder.
-3. [Show hidden files](https://apple.stackexchange.com/questions/406762/keyboard-shortcut-to-show-hidden-files-on-macos-big-sur). (There's a way to do this all in the Terminal app, but I'm not that guy.)
-4. Edit in a text editor.
-5. Save changes.
-6. Launch a terminal (or the Terminal app).
-7. Type `source ~/.profile` (to refresh the profile contents).
+1. Launch MAMP (PRO)
+2. In the left pane of the MAMP window, click PHP in the "Languages" section.
+    - At the top of the main view you should see a dropdown for selecting (and installing) the PHP version you'd like to use for the default.
+3. Below that, you should see two checkboxes, select both of these and it should make all PHP-related Terminal commands available to you.
 
 Also, the MAMP version of [Composer](https://getcomposer.org) may throw a bunch of deprecation warnings. Perfectly normal, perfectly healthy. In Terminal run the following:
 
@@ -78,7 +61,37 @@ Boom!
 
 And now, I need to get back to the project.
 
-## MAMP Pro resetting `.profile`
+## Updating the macOS `.profile`
+
+You can also manually edit the `.profile` file in macOS.
+
+If you want to use the PHP-related things from a [MAMP](https://www.mamp.info/en/mac/) installation, add the following to the `.profile` file:
+
+```
+export PATH="/Applications/MAMP/bin/php/php8.2.0/bin:${PATH}"
+alias php='/Applications/MAMP/bin/php/php8.2.0/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php8.2.0.ini"'
+alias composer='/Applications/MAMP/bin/php/composer'
+alias php-config='/Applications/MAMP/bin/php/php8.2.0/bin/php-config'
+alias phpdbg='/Applications/MAMP/bin/php/php8.2.0/bin/phpdbg'
+alias phpize='/Applications/MAMP/bin/php/php8.2.0/bin/phpize'
+alias pear='/Applications/MAMP/bin/php/php8.2.0/bin/pear'
+alias peardev='/Applications/MAMP/bin/php/php8.2.0/bin/peardev'
+alias pecl='/Applications/MAMP/bin/php/php8.2.0/bin/pecl'
+```
+
+If you don't know where the `.profile` file is, a complete path is:
+
+1. Hard drive.
+2. Your user folder.
+3. [Show hidden files](https://apple.stackexchange.com/questions/406762/keyboard-shortcut-to-show-hidden-files-on-macos-big-sur). (There's a way to do this all in the Terminal app, but I'm not that guy.)
+4. Edit in a text editor.
+5. Save changes.
+6. Launch a terminal (or the Terminal app).
+7. Type `source ~/.profile` (to refresh the profile contents).
+
+Note: Under certain circumstances MAMP may overwrite what you enter into the `.profile` file. MAMP has said this is expected behavior, I'm presuming because the checkboxes mentioned above do the same thing, and part of making configuration changes is for MAMP to update the `.profile` file.
+
+### MAMP Pro resetting `.profile`
 
 Every once in a while, the `.profile` would reset itself to the following:
 
