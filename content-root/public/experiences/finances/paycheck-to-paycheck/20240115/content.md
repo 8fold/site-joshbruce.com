@@ -61,7 +61,14 @@ If you'd like to read about this hypothesis, please feel free; otherwise, I'm al
 
 ## The flow
 
-All revenue I receive goes into an "Income Account" (see Profit First). I use a spreadsheet to do some "napkin planning" on how the balance of the Income Account should be redistributed. I use Wave
+All revenue I receive goes into an "Income Account" (see Profit First). I use a spreadsheet to do some "napkin planning" on how the balance of the Income Account should be redistributed. I use Wave to do the actual planning. Then I go to the related apps to execute that plan.
+
+When I'm employed, sending money from non-W2 work, or transferring from the "Investment Pass-Through Account," it'll go to directly into the Income account. Reread the previous paragraph.
+
+I'm hoping I can avoid needing to sell investments, but it's nice that the flow can be the same except the initial two transfers.
+
+The flow from the Income Account is always to transfer money to the tax account first. I usually don't need to pay anything extra in taxes, but when fully "work-optional" that's something I'll need to take care of myself.
+
 
 
 
