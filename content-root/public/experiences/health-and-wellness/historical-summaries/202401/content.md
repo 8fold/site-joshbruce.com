@@ -2,7 +2,33 @@
 
 {!! dateblock !!}
 
-## Monday, January 7, 2024
+## Monday, January 15, 2024
+
+My phone was having battery issues. So, I took it to Apple for service. Went off without a hitch thanks to AppleCare. I don’t usually recommend device insurance, but for Apple products, I’m pretty much all in.
+
+The [WHOOP](https://joshbruce.com/examinations/whoop-health-monitor/) needed to be reconnected. That went relatively smoothly. The [MacroFactor app](https://joshbruce.com/examinations/macrofactor-food-tracker/) on the other hand, not as much; effectively starting over there. Not that big of a deal, more annoying than anything else.
+
+All right, health stuff, right. 
+
+The right big toenail is definitely growing out whatever funkiness was all up in there. The top part of the nail is a distinctly different color than the lower part. Looks like about a quarter of the nail still needs to grow out and be cut off. But that bottom portion is a nice color and texture similar to its brethren.
+
+The right second digit nail is still funky. Like hella funky. I think it was actually the progenitor of whatever fungus overtook the big toe. 
+
+The left big toenail seems to be liking no longer being curled as much and it seems to coming well-attached to the toe itself.
+
+I haven’t been doing much in the way of physical activity. I’m trying to see what gives me the most bang for the buck. So far, the seated portion of the system integrity check seems like a keeper.
+
+I’m also really focusing on setting up a more sustainable rhythm with all the other things.
+
+My left arm hurts a bit. I’m thinking that’s from not doing the wall presses. My right leg has also been giving me problems.
+
+I did an experiment of not doing anything for about a week, and my hips were not appreciating that. When I started doing the seated activities for the morning system integrity check, it started getting better, which leads me to believe it was the cause.
+
+Beyond that, doing okay and the hypotheses are proving accurate and fruitful.
+
+I think I’m going to shift to publishing these on or near Friday instead of Sunday.
+
+## Monday, January 8, 2024
 
 I think the [MacroFactor app](/examinations/macrofactor-food-tracker/) is settling in. MacroFactor uses body weight and trends to calculate caloric expenditure. Since [December 25th](/experiences/health-and-wellness/historical-summaries/202312/#sunday-december-24-2023), I’ve had 9 weigh-ins; 8 of them have been at 220 pounds. Further, in that time, the target caloric intake has stayed around 3,500 calories.
 
