@@ -15,7 +15,7 @@ The other reminder is set on the schedule of when I get paid, which is me tellin
 Right now, I don't have the cadence of an employer. There are a lot of possible terms to describe what I'm experiencing right now:
 
 - Unemployment: Technically, this is different because I own my own business and chose to leave my previous employer. The latter means I don't qualify for unemployment benefits.
-- Mini-retirement: Technically, this isn't true either because it's supposed to be intentional and planned, and the coiners' have said so. It's a common use term; therefore, not in the dictionary.
+- Mini-retirement: Technically, this isn't true either because it's supposed to be intentional and planned, and the coiners' have said so. It's not a common use term; therefore, not in the dictionary.
 - Sabbatical: It is kind of on the mark, but not really. Sabbatical is a break from routine work, which has loads of wiggle room. As I define it, my routine work is helping people make peace with time and space (how's that for woo-woo?). I never stop this work. It's just who I am.
 
 So, in the spirit of making shit up, I've decided to call what I'm experiencing The Great Depickling, or just, The Depickling.
