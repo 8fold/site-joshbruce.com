@@ -20,7 +20,7 @@ Right now, I don't have the cadence of an employer. There are a lot of possible 
 
 So, in the spirit of making shit up, I've decided to call what I'm experiencing The Great Depickling, or just, The Depickling.
 
-If you don't know how pickling works, you take something, put it into a brine solution, and leave it there for various lengths of time. Over time, whatever you put in there becomes "pickled." Many use the term "pickle" to refer to a "pickled cucumber." Technically, without the modifier, we don't know what type of pickle is because it could be just about anything. Pickled eggs, pickled okra, and so on. (It's also a preservative; pickled cucumbers can remain on a shelf longer than fresh.)
+If you don't know how pickling works, you take something, put it into a brine solution, and leave it there for various lengths of time. Over time, whatever you put in there becomes "pickled." Many use the term "pickle" to refer to a "pickled cucumber." Technically, without the modifier, we don't know what type of pickle it is because it could be just about anything. Pickled eggs, pickled okra, and so on. (It's also a preservative; pickled cucumbers can remain on a shelf longer than fresh.)
 
 Anyway, back on topic.
 
