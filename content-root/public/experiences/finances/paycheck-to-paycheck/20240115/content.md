@@ -28,7 +28,7 @@ While whatever you pickle (we'll go with cucumber) is in the brine, a chemical r
 
 I heard this recently from [George Dinwiddie](https://gdinwiddie.com) as an analogy for employment. The ominous part of the story is the observation that the cucumber tends to take on the qualities of the brine more than the brine takes on the qualities of the cucumber.
 
-The other coach I was talking with said they knew they needed to leave an employer when they were going to suggest something and thought, "That'll never work here."
+George told a story where he knew he needed to leave an employer when they were going to suggest something and thought, "That'll never work here."
 
 That's what it is to become pickled by the client or employer.
 
