@@ -4,12 +4,6 @@
 
 {!! data !!}
 
-# January 15th, 2024 paycheck
-
-{!! dateblock !!}
-
-{!! data !!}
-
 This one felt weird.
 
 I'm writing a [book](/books/#time-mastering-the-mundane) called *Time: Mastering the Mundane*. This isn't a shameless and pointless plug, I promise. The book is about self-management, primarily using things like reminders and to-do lists (what I call The Crucible and Forge). Regarding paychecks, I have two reminders (see, it was relevant to the topic), but I should change it.
