@@ -45,7 +45,9 @@ I'm going to split up the "Pay bills" reminder:
 1. credit cards and
 2. rent.
 
-Most of my underlying bills are automatic against a credit card. So, the "Pay bills" reminder is mainly a "Pay credit cards" reminder. The rent is odd because it only comes out at the beginning of the month. That every two weeks, when the paycheck used to be received, I'd need to verify whether it was the "rent paycheck" or not—that's not as full of an explanation as I could have, but this is getting longwinded enough. So, by having 2 reminders, I don't need to take on the cognitive load of remembering to verify if this is a "rent paycheck" or not.
+Most of my underlying bills are automatic against a credit card. So, the "Pay bills" reminder is mainly a "Pay credit cards" reminder. 
+
+The rent is odd because it only comes out at the beginning of the month. Meaning every two weeks, when the paycheck was received, I'd need to verify whether it was the "rent paycheck" or not—that's not as full of an explanation as I could have, but this is getting longwinded enough. So, by having 2 reminders, I don't need to take on the cognitive load of remembering to verify if this is a "rent paycheck" or not.
 
 I'll set the "Pay credit cards" reminder to Fridays. This will be a fixed reminder, meaning it should pop up again on Friday, even if I slip a few days. I'll set the "Pay rent" reminder to the last Friday of each month.
 
@@ -56,6 +58,8 @@ I also have a reminder to invoice my roommate, in this context, Becca, for some 
 I have fixed recurring events related to reconciling accounts that go off when each institution releases new statements because humans haven't standardized on that, which makes sense. After all, we haven't standardized it. I'm sure there's a negative impact I'm not considering here, but still. These won't change.
 
 These changes should keep me from being pickled by an employer or client because mentally, the flow and the center of that flow will be less time-, employer-, and paycheck-bound.
+
+I’m also going to modify these articles to biweekly on Fridays. This way there are always 24 articles per year, and all financial-related things happen around the same day of the week.
 
 If you'd like to read about this hypothesis, please feel free; otherwise, I'm already impressed you stuck around this long.
 
