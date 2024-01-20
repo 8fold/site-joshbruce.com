@@ -2,6 +2,32 @@
 
 {!! dateblock !!}
 
+## Saturday, January 20, 2024
+
+Winter is upon us and my toes aren’t happy about it.
+
+A few days ago, my feet got wet. Over the next couple of days I started getting a burning sensation at the tips of my big toe and second digit on my right foot. I believe yesterday it went into [dactylitis](https://en.m.wikipedia.org/wiki/Dactylitis) territory. The pain got to the point that I took a Non-Steroid Anti-Inflammatory Drug. It seemed to help.
+
+Still hurts a little today.
+
+I don’t think we can classify it as inflammatory arthritis at this point because I didn’t experience any stiffness or pain the joints. Just the swelling and surface burning sensation.
+
+I also had my phone worked on, which reset the [MacroFactor](/examinations/macrofactor-food-tracker/) app. It’s still in recalibration mode and I’m not making changes to my diet. I changed the check-in day to be Sunday as that’s usually my full fasting day. That means any shifts to the plan shouldn’t cause any mild-to-severe dietary shifts.
+
+Regarding the system integrity check I do in the morning, winter has made it more difficult to take showers long enough to do the full version. That said, I think the bare bones variation I’m coming to is the seated series up to and including the hand releases.
+
+Beyond that, I think the body is doing okay and I think I’m settling in on some decent workflows for all things beyond the physical.
+
+I’m trying out only doing writing on the weekdays in the hopes of making time for more laid back weekends. I still have things slated for those days, but it’s more about maintenance, infrastructure, and laid back things.
+
+I don’t like the idea of adding ads (and especially not trackers) to this site. In part because it will degrade the performance and user experience, but mainly because I don’t want to participate in the ad-based revenue model of the Internet.
+
+As such, I am considering adding calls to action for the things I’m making. I’m also looking at increasing the prominence of the crowdfunding links. Lastly I already somewhat participate in affiliate marketing (the [WHOOP article](/examinations/whoop-health-monitor/), which is a referral link).
+
+The problem with the affiliate or referral linking is that I don’t own or buy a lot of products or services and would only want to link to products and services I actively use.
+
+Anyway, even though I didn’t make it to my first Coast-FI number in 2023, it was a few months behind and I’m currently not making enough revenue to continue contributing. But this isn’t that series.
+
 ## Monday, January 15, 2024
 
 My phone was having battery issues. So, I took it to Apple for service. Went off without a hitch thanks to AppleCare. I don’t usually recommend device insurance, but for Apple products, I’m pretty much all in.
