@@ -15,20 +15,20 @@ The other reminder is set on the schedule of when I get paid, which is me tellin
 Right now, I don't have the cadence of an employer. There are a lot of possible terms to describe what I'm experiencing right now:
 
 - Unemployment: Technically, this is different because I own my own business and chose to leave my previous employer. The latter means I don't qualify for unemployment benefits.
-- Mini-retirement: Technically, this isn't true either because it's supposed to be intentional and planned, and the coiners' have said so. It's a common use term; therefore, not in the dictionary.
+- Mini-retirement: Technically, this isn't true either because it's supposed to be intentional and planned, and the coiners' have said so. It's not a common use term; therefore, not in the dictionary.
 - Sabbatical: It is kind of on the mark, but not really. Sabbatical is a break from routine work, which has loads of wiggle room. As I define it, my routine work is helping people make peace with time and space (how's that for woo-woo?). I never stop this work. It's just who I am.
 
 So, in the spirit of making shit up, I've decided to call what I'm experiencing The Great Depickling, or just, The Depickling.
 
-If you don't know how pickling works, you take something, put it into a brine solution, and leave it there for various lengths of time. Over time, whatever you put in there becomes "pickled." Many use the term "pickle" to refer to a "pickled cucumber." Technically, without the modifier, we don't know what type of pickle is because it could be just about anything. Pickled eggs, pickled okra, and so on. (It's also a preservative; pickled cucumbers can remain on a shelf longer than fresh.)
+If you don't know how pickling works, you take something, put it into a brine solution, and leave it there for various lengths of time. Over time, whatever you put in there becomes "pickled." Many use the term "pickle" to refer to a "pickled cucumber." Technically, without the modifier, we don't know what type of pickle it is because it could be just about anything. Pickled eggs, pickled okra, and so on. (It's also a preservative; pickled cucumbers can remain on a shelf longer than fresh.)
 
 Anyway, back on topic.
 
 While whatever you pickle (we'll go with cucumber) is in the brine, a chemical reaction occurs, and the cucumber becomes "pickled."
 
-I heard this recently as an analogy for employment. The ominous part of the story is the observation that the cucumber tends to take on the qualities of the brine more than the brine takes on the qualities of the cucumber.
+I heard this recently from [George Dinwiddie](https://gdinwiddie.com) as an analogy for employment. The ominous part of the story is the observation that the cucumber tends to take on the qualities of the brine more than the brine takes on the qualities of the cucumber.
 
-The other coach I was talking with said they knew they needed to leave an employer when they were going to suggest something and thought, "That'll never work here."
+George told a story where he knew he needed to leave an employer when they were going to suggest something and thought, "That'll never work here."
 
 That's what it is to become pickled by the client or employer.
 
@@ -45,7 +45,9 @@ I'm going to split up the "Pay bills" reminder:
 1. credit cards and
 2. rent.
 
-Most of my underlying bills are automatic against a credit card. So, the "Pay bills" reminder is mainly a "Pay credit cards" reminder. The rent is odd because it only comes out at the beginning of the month. That every two weeks, when the paycheck used to be received, I'd need to verify whether it was the "rent paycheck" or not—that's not as full of an explanation as I could have, but this is getting longwinded enough. So, by having 2 reminders, I don't need to take on the cognitive load of remembering to verify if this is a "rent paycheck" or not.
+Most of my underlying bills are automatic against a credit card. So, the "Pay bills" reminder is mainly a "Pay credit cards" reminder. 
+
+The rent is odd because it only comes out at the beginning of the month. Meaning every two weeks, when the paycheck was received, I'd need to verify whether it was the "rent paycheck" or not—that's not as full of an explanation as I could have, but this is getting longwinded enough. So, by having 2 reminders, I don't need to take on the cognitive load of remembering to verify if this is a "rent paycheck" or not.
 
 I'll set the "Pay credit cards" reminder to Fridays. This will be a fixed reminder, meaning it should pop up again on Friday, even if I slip a few days. I'll set the "Pay rent" reminder to the last Friday of each month.
 
@@ -56,6 +58,8 @@ I also have a reminder to invoice my roommate, in this context, Becca, for some 
 I have fixed recurring events related to reconciling accounts that go off when each institution releases new statements because humans haven't standardized on that, which makes sense. After all, we haven't standardized it. I'm sure there's a negative impact I'm not considering here, but still. These won't change.
 
 These changes should keep me from being pickled by an employer or client because mentally, the flow and the center of that flow will be less time-, employer-, and paycheck-bound.
+
+I’m also going to modify these articles to biweekly on Fridays. This way there are always 24 articles per year, and all financial-related things happen around the same day of the week.
 
 If you'd like to read about this hypothesis, please feel free; otherwise, I'm already impressed you stuck around this long.
 
