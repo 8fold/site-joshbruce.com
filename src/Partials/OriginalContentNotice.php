@@ -10,6 +10,7 @@ use Eightfold\Amos\Site;
 use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
 
 class OriginalContentNotice implements PartialInterface
 {
@@ -26,27 +27,36 @@ class OriginalContentNotice implements PartialInterface
             return '';
         }
 
-        $meta = $extras['meta'];
+        $orignal = '';
+        $meta    = $extras['meta'];
         if (
-            $meta->notFound() or
-            $meta->hasProperty('original') === false
+            is_object($meta) and
+            is_a($meta, PublicMeta::class) and
+            $meta->found() and
+            $meta->hasProperty('original')
         ) {
+            $orignal = $meta->original();
+
+        } else {
             return '';
+
         }
 
+        $noticeMarkdown = '';
         $site           = $extras['site'];
-        $noticeMarkdown = PrivateFile::inRoot(
-            $site->contentRoot(),
-            Filename::fromString('original.md'),
-            Path::fromString('notices')
-        );
-        if ($noticeMarkdown->notFound()) {
+        if (is_object($site) and is_a($site, Site::class)) {
+            $noticeMarkdown = (string) PrivateFile::inRoot(
+                $site->contentRoot(),
+                Filename::fromString('original.md'),
+                Path::fromString('notices')
+            );
+        }
+
+        if (empty($noticeMarkdown)) {
             return '';
         }
 
-        $noticeMarkdown = (string) $noticeMarkdown;
-
-        list($href, $platform) = explode(' ', $meta->original(), 2);
+        list($href, $platform) = explode(' ', $orignal, 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';
