@@ -18,7 +18,7 @@ use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 
 use Eightfold\Markdown\Markdown;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteWithRequest;
 use Eightfold\Amos\Http\Root as HttpRoot;
 use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Directories\Root as ContentRoot;
@@ -39,8 +39,6 @@ use JoshBruce\Site\Partials\FiExperiments;
 use JoshBruce\Site\Partials\FullNav;
 use JoshBruce\Site\Partials\HealthLogList;
 
-$emitter = new SapiEmitter();
-
 $psr17Factory = new Psr17Factory();
 
 $request = (new ServerRequestCreator(
@@ -50,12 +48,12 @@ $request = (new ServerRequestCreator(
     $psr17Factory  // StreamFactory
 ))->fromGlobals();
 
-$uri = $request->getUri();
-
-$site = Site::init(
+$site = SiteWithRequest::init(
     ContentRoot::fromString(__DIR__ . '/../../content-root'),
-    HttpRoot::fromString($uri->getScheme() . '://' . $uri->getAuthority())
+    $request
 );
+
+$emitter = new SapiEmitter();
 
 if ($site === false) {
     $error500 = file_get_contents(__DIR__ . '/error-500.html');
@@ -72,14 +70,16 @@ if ($site === false) {
     exit();
 }
 
-if (str_ends_with($uri->getPath(), 'sitemap.xml')) {
+$path = Path::fromString(
+    $request->getUri()->getPath()
+);
+
+if (str_ends_with($path->toString(), 'sitemap.xml')) {
     $response = new Sitemap();
 
     $emitter->emit($response($site));
     exit();
 }
-
-$path = Path::fromUri($uri);
 
 $converter = Markdown::create()
     ->withConfig([
@@ -117,11 +117,11 @@ $converter = Markdown::create()
         'extras' => [
             'meta'         => $site->publicMeta($path),
             'site'         => $site,
-            'request_path' => $uri->getPath()
+            'request_path' => $path->toString()
         ]
     ]);
 
-if ($site->hasPublicMeta(Path::fromUri($uri)) === false) {
+if ($site->hasPublicMeta($path) === false) {
     $response = new Response(
         404,
         body: (string) PageNotFound::create($site)

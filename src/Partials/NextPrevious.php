@@ -8,7 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 
 class NextPrevious implements PartialInterface
@@ -28,8 +28,10 @@ class NextPrevious implements PartialInterface
         $request_path = $extras['request_path'];
 
         if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
             is_string($request_path) === false
         ) {
             return '';
@@ -38,8 +40,6 @@ class NextPrevious implements PartialInterface
         $path = $site->publicRoot() . $request_path;
 
         $pathParts = explode('/', $path);
-
-        array_pop($pathParts);
 
         $folderName  = array_pop($pathParts);
         $folderAsInt = intval($folderName);
@@ -112,6 +112,10 @@ class NextPrevious implements PartialInterface
                     Element::a($meta->title())->props('href ' . $request . '/')
                 );
             }
+        }
+
+        if (is_string($previous) and is_string($next)) {
+            return '';
         }
 
         return (string) Element::ul($previous, $next)->props('is next-previous');

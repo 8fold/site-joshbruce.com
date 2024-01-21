@@ -10,12 +10,12 @@ use Nyholm\Psr7\Response;
 
 use Symfony\Component\Finder\Finder as SymfonyFinder;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\Sitemap as AmosSitemap;
 
 class Sitemap
 {
-    public function __invoke(Site $site): Response
+    public function __invoke(SiteInterface $site): Response
     {
         $iterator = (new SymfonyFinder())->files()->name('meta.json')
             ->in(

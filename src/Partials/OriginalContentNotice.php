@@ -6,7 +6,7 @@ namespace JoshBruce\Site\Partials;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
@@ -44,7 +44,7 @@ class OriginalContentNotice implements PartialInterface
 
         $noticeMarkdown = '';
         $site           = $extras['site'];
-        if (is_object($site) and is_a($site, Site::class)) {
+        if (is_object($site) and $site instanceof SiteInterface) {
             $noticeMarkdown = (string) PrivateFile::inRoot(
                 $site->contentRoot(),
                 Filename::fromString('original.md'),

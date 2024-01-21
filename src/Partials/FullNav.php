@@ -10,7 +10,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 
 class FullNav implements PartialInterface
 {
@@ -18,6 +18,7 @@ class FullNav implements PartialInterface
         PartialInput $input,
         array $extras = []
     ): string {
+
         if (array_key_exists('site', $extras) === false) {
             return '';
         }
@@ -25,7 +26,7 @@ class FullNav implements PartialInterface
         $site = $extras['site'];
         if (
             is_object($site) === false or
-            is_a($site, Site::class) === false
+            $site instanceof SiteInterface === false
         ) {
             return '';
         }
