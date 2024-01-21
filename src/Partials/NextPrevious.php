@@ -9,6 +9,7 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 class NextPrevious implements PartialInterface
 {
@@ -88,7 +89,7 @@ class NextPrevious implements PartialInterface
         $previous = '';
         if (strlen($previousPath) > 0) {
             list($root, $request) = explode('public', $previousPath, 2);
-            $meta = $site->publicMeta(at: $request);
+            $meta = $site->publicMeta(at: Path::fromString($request));
             if (
                 $meta->notFound() === false and
                 $meta->hasProperty('title')
@@ -102,7 +103,7 @@ class NextPrevious implements PartialInterface
         $next = '';
         if (strlen($nextPath) > 0) {
             list($root, $request) = explode('public', $nextPath, 2);
-            $meta = $site->publicMeta(at: $request);
+            $meta = $site->publicMeta(at: Path::fromString($request));
             if (
                 $meta->notFound() === false and
                 $meta->hasProperty('title')

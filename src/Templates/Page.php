@@ -10,6 +10,7 @@ use Eightfold\HTMLBuilder\Components\PageTitle;
 use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\ObjectsFromJson\PublicMeta;
 use Eightfold\Amos\PlainText\PublicContent;
 
@@ -29,7 +30,7 @@ class Page implements Stringable
 {
     private Markdown $converter;
 
-    private string $requestPath;
+    private Path $requestPath;
 
     public static function create(Site $site): self
     {
@@ -45,13 +46,13 @@ class Page implements Stringable
         return $this->site;
     }
 
-    public function withRequestPath(string $requestPath): self
+    public function withRequestPath(Path $requestPath): self
     {
         $this->requestPath = $requestPath;
         return $this;
     }
 
-    public function requestPath(): string
+    public function requestPath(): Path
     {
         return $this->requestPath;
     }

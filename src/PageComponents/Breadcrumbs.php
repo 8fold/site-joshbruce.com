@@ -12,17 +12,18 @@ use Psr\Http\Message\UriInterface;
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 class Breadcrumbs implements Stringable // Buildable
 {
-    public static function create(Site $site, string $requestPath): self
+    public static function create(Site $site, Path $requestPath): self
     {
         return new self($site, $requestPath);
     }
 
     final private function __construct(
         private readonly Site $site,
-        private readonly string $requestPath
+        private readonly Path $requestPath
     ) {
     }
 

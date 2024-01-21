@@ -8,6 +8,8 @@ use Stringable;
 use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
 use Eightfold\Amos\ObjectsFromJson\PrivateObject;
 
@@ -17,7 +19,7 @@ class PageNotFound implements Stringable
 {
     private Markdown $converter;
 
-    private string $requestPath;
+    private Path $requestPath;
 
     public static function create(Site $site): self
     {
@@ -33,13 +35,13 @@ class PageNotFound implements Stringable
         return $this->site;
     }
 
-    public function withRequestPath(string $requestPath): self
+    public function withRequestPath(Path $requestPath): self
     {
         $this->requestPath = $requestPath;
         return $this;
     }
 
-    public function requestPath(): string
+    public function requestPath(): Path
     {
         return $this->requestPath;
     }
@@ -59,14 +61,14 @@ class PageNotFound implements Stringable
     {
         $meta = PrivateObject::inRoot(
             $this->site()->contentRoot(),
-            'meta.json',
-            '/errors/404'
+            Filename::fromString('meta.json'),
+            Path::fromString('/errors/404')
         );
 
         $content = PrivateFile::inRoot(
             $this->site()->contentRoot(),
-            'content.md',
-            '/errors/404'
+            Filename::fromString('content.md'),
+            Path::fromString('/errors/404')
         );
 
         if ($meta->notFound() or $content->notFound()) {

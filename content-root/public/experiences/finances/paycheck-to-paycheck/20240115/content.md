@@ -72,3 +72,5 @@ When employed, sending money from non-W2 work or transferring from the "Investme
 I want to avoid selling investments, but it's nice that the flow can be the same except for the initial two transfers.
 
 The flow from the Income Account is always to transfer money to the tax account first. I usually don't need to pay anything extra in taxes, but when fully "work-optional," that's something I'll need to take care of myself.
+
+{!! next-previous !!}

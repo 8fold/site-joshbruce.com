@@ -12,6 +12,7 @@ use Eightfold\HTMLBuilder\Components\Favicons;
 use Eightfold\HTMLBuilder\Components\Copyright;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 use JoshBruce\Site\PageComponents\Navigation;
 use JoshBruce\Site\PageComponents\Breadcrumbs;
@@ -24,14 +25,14 @@ class Main implements Stringable // Buildable
 
     private string $schemaType = 'BlogPosting';
 
-    public static function create(Site $site, string $requestPath): self
+    public static function create(Site $site, Path $requestPath): self
     {
         return new self($site, $requestPath);
     }
 
     final private function __construct(
         private readonly Site $site,
-        private readonly string $requestPath
+        private readonly Path $requestPath
     ) {
     }
 
@@ -40,7 +41,7 @@ class Main implements Stringable // Buildable
         return $this->site;
     }
 
-    public function requestPath(): string
+    public function requestPath(): Path
     {
         return $this->requestPath;
     }

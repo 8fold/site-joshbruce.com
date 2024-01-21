@@ -7,7 +7,10 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
 
 class OriginalContentNotice implements PartialInterface
 {
@@ -18,47 +21,42 @@ class OriginalContentNotice implements PartialInterface
         array $extras = []
     ): string {
         if (
-            array_key_exists('site', $extras) === false or
-            array_key_exists('request_path', $extras) === false
+            array_key_exists('meta', $extras) === false or
+            array_key_exists('site', $extras) === false
         ) {
             return '';
         }
 
-        $site         = $extras['site'];
-        $request_path = $extras['request_path'];
-
+        $orignal = '';
+        $meta    = $extras['meta'];
         if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
-            is_string($request_path) === false
+            is_object($meta) and
+            is_a($meta, PublicMeta::class) and
+            $meta->found() and
+            $meta->hasProperty('original')
         ) {
+            $orignal = $meta->original();
+
+        } else {
+            return '';
+
+        }
+
+        $noticeMarkdown = '';
+        $site           = $extras['site'];
+        if (is_object($site) and is_a($site, Site::class)) {
+            $noticeMarkdown = (string) PrivateFile::inRoot(
+                $site->contentRoot(),
+                Filename::fromString('original.md'),
+                Path::fromString('notices')
+            );
+        }
+
+        if (empty($noticeMarkdown)) {
             return '';
         }
 
-        $meta = $site->publicMeta($request_path);
-        if (
-            $meta->notFound() or
-            $meta->hasProperty('original') === false
-        ) {
-            return '';
-        }
-
-        $metaOriginal = $meta->original();
-
-        // $path = $site->publicRoot() . $request_path;
-        $noticeMarkdown = PrivateFile::inRoot(
-            $site->contentRoot(),
-            'original.md',
-            '/notices'
-        );
-        if ($noticeMarkdown->notFound()) {
-            return '';
-        }
-
-        $noticeMarkdown = (string) $noticeMarkdown;
-
-        // $metaOriginal = $meta->original();
-        list($href, $platform) = explode(' ', $metaOriginal, 2);
+        list($href, $platform) = explode(' ', $orignal, 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';
