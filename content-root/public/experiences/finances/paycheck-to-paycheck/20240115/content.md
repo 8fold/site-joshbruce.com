@@ -4,12 +4,6 @@
 
 {!! data !!}
 
-# January 15th, 2024 paycheck
-
-{!! dateblock !!}
-
-{!! data !!}
-
 This one felt weird.
 
 I'm writing a [book](/books/#time-mastering-the-mundane) called *Time: Mastering the Mundane*. This isn't a shameless and pointless plug, I promise. The book is about self-management, primarily using things like reminders and to-do lists (what I call The Crucible and Forge). Regarding paychecks, I have two reminders (see, it was relevant to the topic), but I should change it.
@@ -74,3 +68,5 @@ When employed, sending money from non-W2 work or transferring from the "Investme
 I want to avoid selling investments, but it's nice that the flow can be the same except for the initial two transfers.
 
 The flow from the Income Account is always to transfer money to the tax account first. I usually don't need to pay anything extra in taxes, but when fully "work-optional," that's something I'll need to take care of myself.
+
+{!! next-previous !!}

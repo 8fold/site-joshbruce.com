@@ -9,6 +9,7 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 class ArticleList implements PartialInterface
 {
@@ -57,7 +58,10 @@ class ArticleList implements PartialInterface
 
             $href = $request_path . '/' . $content;
 
-            $meta = $site->publicMeta($href);
+            $meta = $site->publicMeta(
+                Path::fromString($href)
+            );
+
             if (
                 is_object($meta) and
                 $meta->hasProperty('title')

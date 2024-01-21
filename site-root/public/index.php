@@ -20,6 +20,7 @@ use Eightfold\Markdown\Markdown;
 
 use Eightfold\Amos\Site;
 use Eightfold\Amos\Http\Root as HttpRoot;
+use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Directories\Root as ContentRoot;
 
 use JoshBruce\Site\Documents\Sitemap;
@@ -71,14 +72,14 @@ if ($site === false) {
     exit();
 }
 
-$path = $uri->getPath();
-
-if (str_ends_with($path, 'sitemap.xml')) {
+if (str_ends_with($uri->getPath(), 'sitemap.xml')) {
     $response = new Sitemap();
 
     $emitter->emit($response($site));
     exit();
 }
+
+$path = Path::fromUri($uri);
 
 $converter = Markdown::create()
     ->withConfig([
@@ -116,15 +117,16 @@ $converter = Markdown::create()
         'extras' => [
             'meta'         => $site->publicMeta($path),
             'site'         => $site,
-            'request_path' => $path
+            'request_path' => $uri->getPath()
         ]
     ]);
 
-if ($site->hasPublicMeta($path) === false) {
+if ($site->hasPublicMeta(Path::fromUri($uri)) === false) {
     $response = new Response(
         404,
         body: (string) PageNotFound::create($site)
-            ->withConverter($converter)->withRequestPath($path)
+            ->withConverter($converter)
+            ->withRequestPath($path)
     );
 
     $emitter->emit($response);

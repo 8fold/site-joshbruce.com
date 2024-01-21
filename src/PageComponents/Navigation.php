@@ -12,17 +12,18 @@ use Psr\Http\Message\UriInterface;
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 class Navigation implements Stringable // Buildable
 {
-    public static function create(Site $site, string $requestPath): self
+    public static function create(Site $site, Path $requestPath): self
     {
         return new self($site, $requestPath);
     }
 
     final private function __construct(
         private readonly Site $site,
-        private readonly string $requestPath
+        private readonly Path $requestPath
     ) {
     }
 
@@ -57,7 +58,7 @@ class Navigation implements Stringable // Buildable
         ];
 
         $l = [];
-        $requestPath = $this->requestPath;
+        $requestPath = $this->requestPath->toStringWithTrailingSlash();
         foreach ($links as $link) {
             list($href, $ts, $title) = explode(' ', $link, 3);
 

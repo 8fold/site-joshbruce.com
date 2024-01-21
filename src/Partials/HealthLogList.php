@@ -9,6 +9,7 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
 
 class HealthLogList implements PartialInterface
 {
@@ -58,7 +59,9 @@ class HealthLogList implements PartialInterface
 
             $href = $request_path . $content . '/';
 
-            $meta = $site->publicMeta($href);
+            $meta = $site->publicMeta(
+                Path::fromString($href)
+            );
             $item = '';
             if (
                 $meta->notFound() or

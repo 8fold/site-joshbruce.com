@@ -7,6 +7,8 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
 
 class OriginalContentNotice implements PartialInterface
@@ -18,24 +20,13 @@ class OriginalContentNotice implements PartialInterface
         array $extras = []
     ): string {
         if (
-            array_key_exists('site', $extras) === false or
-            array_key_exists('request_path', $extras) === false
+            array_key_exists('meta', $extras) === false or
+            array_key_exists('site', $extras) === false
         ) {
             return '';
         }
 
-        $site         = $extras['site'];
-        $request_path = $extras['request_path'];
-
-        if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
-            is_string($request_path) === false
-        ) {
-            return '';
-        }
-
-        $meta = $site->publicMeta($request_path);
+        $meta = $extras['meta'];
         if (
             $meta->notFound() or
             $meta->hasProperty('original') === false
@@ -43,13 +34,11 @@ class OriginalContentNotice implements PartialInterface
             return '';
         }
 
-        $metaOriginal = $meta->original();
-
-        // $path = $site->publicRoot() . $request_path;
+        $site           = $extras['site'];
         $noticeMarkdown = PrivateFile::inRoot(
             $site->contentRoot(),
-            'original.md',
-            '/notices'
+            Filename::fromString('original.md'),
+            Path::fromString('notices')
         );
         if ($noticeMarkdown->notFound()) {
             return '';
@@ -57,8 +46,7 @@ class OriginalContentNotice implements PartialInterface
 
         $noticeMarkdown = (string) $noticeMarkdown;
 
-        // $metaOriginal = $meta->original();
-        list($href, $platform) = explode(' ', $metaOriginal, 2);
+        list($href, $platform) = explode(' ', $meta->original(), 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';

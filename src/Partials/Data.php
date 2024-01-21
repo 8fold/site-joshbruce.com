@@ -9,6 +9,8 @@ use Eightfold\CommonMarkPartials\PartialInput;
 use Eightfold\HTMLBuilder\Element;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
 class Data implements PartialInterface
@@ -36,8 +38,8 @@ class Data implements PartialInterface
 
         $data = PublicObject::inRoot(
             $site->contentRoot(),
-            'data.json',
-            $request_path
+            FileName::fromString('data.json'),
+            Path::fromString($request_path)
         );
 
         if ($data->notFound()) {

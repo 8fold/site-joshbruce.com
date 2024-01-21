@@ -9,6 +9,8 @@ use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\Amos\Site;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
 class FiExperiments implements PartialInterface
@@ -36,8 +38,8 @@ class FiExperiments implements PartialInterface
 
         $meta = PublicObject::inRoot(
             $site->contentRoot(),
-            'fi-experiments.json',
-            $request_path
+            Filename::fromString('fi-experiments.json'),
+            Path::fromString($request_path)
         );
         if (
             $meta->notFound() or
