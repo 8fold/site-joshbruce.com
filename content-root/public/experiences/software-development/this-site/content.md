@@ -1,8 +1,3 @@
----
-title: This site
-created: 20211119
----
-
 # This site
 
 {!! dateblock !!}

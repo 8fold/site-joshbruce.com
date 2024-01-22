@@ -1,8 +1,3 @@
----
-title: Scrum
-created: 20220421
----
-
 # Scrum
 
 {!! dateblock !!}

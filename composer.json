@@ -20,28 +20,29 @@
     "php": "^8.0",
     "ext-fileinfo": "*",
     "8fold/commonmark-fluent-markdown": "^1.0",
-    "8fold/php-html-builder": "^1.0",
+    "8fold/php-amos": "^0.10.0",
+    "8fold/php-html-builder": "^2.0",
     "laminas/laminas-httphandlerrunner": "^2.1",
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
-    "symfony/console": "^5.3",
-    "symfony/finder": "^5.3",
-    "symfony/yaml": "^5.3"
+    "spatie/commonmark-shiki-highlighter": "^2.1",
+    "symfony/finder": "^6.2"
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.2.0",
-    "phpunit/phpunit": "^9.5",
-    "squizlabs/php_codesniffer": "^3.6"
+    "phpstan/phpstan": "^1.9",
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^3.7",
+    "symfony/console": "^7.0",
+    "symfony/phpunit-bridge": "^6.2"
   },
   "autoload": {
     "psr-4": {
-      "Eightfold\\Amos\\": "./src/Amos",
-      "JoshBruce\\Site\\": "./src"
+      "JoshBruce\\Site\\": "./src",
+      "JoshBruce\\Console\\": "./console"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Eightfold\\Amos\\Tests\\": "./tests/Amos",
       "JoshBruce\\Site\\Tests\\": "./tests"
     }
   },

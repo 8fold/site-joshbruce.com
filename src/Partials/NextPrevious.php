@@ -3,47 +3,54 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
-
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-class NextPrevious implements Buildable
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
+
+class NextPrevious implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
+            return '';
+        }
 
-    final private function __construct(private Site $site)
-    {
-    }
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
 
-    public function site(): Site
-    {
-        return $this->site;
-    }
+        if (
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
 
-    public function build(): string
-    {
-        $path = $this->site()
-            ->contentPath(at: $this->site()->requestPath());
+        $path = $site->publicRoot() . $request_path;
 
         $pathParts = explode('/', $path);
-
-        array_pop($pathParts);
 
         $folderName  = array_pop($pathParts);
         $folderAsInt = intval($folderName);
 
         $parentPath = implode('/', $pathParts);
-
         if (is_dir($parentPath) === false) {
             return '';
         }
 
-        $contents     = scandir($parentPath);
+        $contents = scandir($parentPath);
+
         if ($contents === false) {
             return '';
         }
@@ -82,10 +89,13 @@ class NextPrevious implements Buildable
         $previous = '';
         if (strlen($previousPath) > 0) {
             list($root, $request) = explode('public', $previousPath, 2);
-            $meta = $this->site()->meta(at: $request);
-            if ($meta !== false and property_exists($meta, 'title')) {
+            $meta = $site->publicMeta(at: Path::fromString($request));
+            if (
+                $meta->notFound() === false and
+                $meta->hasProperty('title')
+            ) {
                 $previous = Element::li(
-                    Element::a($meta->title)->props('href ' . $request . '/')
+                    Element::a($meta->title())->props('href ' . $request . '/')
                 );
             }
         }
@@ -93,19 +103,21 @@ class NextPrevious implements Buildable
         $next = '';
         if (strlen($nextPath) > 0) {
             list($root, $request) = explode('public', $nextPath, 2);
-            $meta = $this->site()->meta(at: $request);
-            if ($meta !== false and property_exists($meta, 'title')) {
+            $meta = $site->publicMeta(at: Path::fromString($request));
+            if (
+                $meta->notFound() === false and
+                $meta->hasProperty('title')
+            ) {
                 $next = Element::li(
-                    Element::a($meta->title)->props('href ' . $request . '/')
+                    Element::a($meta->title())->props('href ' . $request . '/')
                 );
             }
         }
 
-        return Element::ul($previous, $next)->props('is next-previous')->build();
-    }
+        if (is_string($previous) and is_string($next)) {
+            return '';
+        }
 
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul($previous, $next)->props('is next-previous');
     }
 }
