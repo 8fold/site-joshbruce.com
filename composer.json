@@ -20,7 +20,7 @@
     "php": "^8.0",
     "ext-fileinfo": "*",
     "8fold/commonmark-fluent-markdown": "^1.0",
-    "8fold/php-amos": "^0.9.0",
+    "8fold/php-amos": "^0.10.0",
     "8fold/php-html-builder": "^2.0",
     "laminas/laminas-httphandlerrunner": "^2.1",
     "nyholm/psr7": "^1.4",
