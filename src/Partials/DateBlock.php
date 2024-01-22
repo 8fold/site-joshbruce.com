@@ -5,26 +5,57 @@ namespace JoshBruce\Site\Partials;
 
 use DateTime;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
-
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-class DateBlock implements Buildable
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
+
+class DateBlock implements PartialInterface
 {
-    public static function create(Site $site): self
+    public function __invoke(PartialInput $input, array $extras = []): string
     {
-        return new self($site);
-    }
+        if (array_key_exists('meta', $extras) === false) {
+            return '';
+        }
 
-    final private function __construct(private Site $site)
-    {
-    }
+        $meta = $extras['meta'];
+        if (
+            is_object($meta) === false or
+            is_a($meta, PublicMeta::class) === false
+        ) {
+            return '';
+        }
 
-    public function site(): Site
-    {
-        return $this->site;
+        $times = [];
+        if ($meta->hasProperty('created')) {
+            $label      = 'Created';
+            $date       = $meta->created();
+            $schemaProp = 'dateCreated';
+
+            $times[] = self::timestamp($label, $date, $schemaProp);
+        }
+
+        if ($meta->hasProperty('moved')) {
+            $label = 'Moved';
+            $date  = $meta->moved();
+
+            $times[] = self::timestamp($label, $date);
+        }
+
+        if ($meta->hasProperty('updated')) {
+            $label      = 'Updated';
+            $date       = $meta->updated();
+            $schemaProp = 'dateModified';
+
+            $times[] = self::timestamp($label, $date, $schemaProp);
+        }
+
+        if (count($times) === 0) {
+            return '';
+        }
+        return (string) Element::div(...$times)->props('is dateblock');
     }
 
     private static function timestamp(
@@ -37,56 +68,13 @@ class DateBlock implements Buildable
         }
 
         if ($date = DateTime::createFromFormat('Ymd', strval($date))) {
-            $time = Element::time($date->format('M j, Y'))
+            $time = (string) Element::time($date->format('M j, Y'))
                 ->props(
                     (strlen($schemaProp) > 0) ? "property {$schemaProp}" : '',
                     'content ' . $date->format('Y-m-d')
-                )->build();
+                );
             return Element::p("{$label}: {$time}");
         }
         return '';
-    }
-
-    public function build(): string
-    {
-        $meta = $this->site()->meta(at: $this->site()->requestPath());
-        if ($meta === false) {
-            return '';
-        }
-
-        $times = [];
-
-        if (property_exists($meta, 'created')) {
-            $label      = 'Created';
-            $date       = $meta->created;
-            $schemaProp = 'dateCreated';
-
-            $times[] = self::timestamp($label, $date, $schemaProp);
-        }
-
-        if (property_exists($meta, 'moved')) {
-            $label = 'Moved';
-            $date  = $meta->moved;
-
-            $times[] = self::timestamp($label, $date);
-        }
-
-        if (property_exists($meta, 'updated')) {
-            $label      = 'Updated';
-            $date       = $meta->updated;
-            $schemaProp = 'dateModified';
-
-            $times[] = self::timestamp($label, $date, $schemaProp);
-        }
-
-        if (count($times) === 0) {
-            return '';
-        }
-        return Element::div(...$times)->props('is dateblock')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
     }
 }

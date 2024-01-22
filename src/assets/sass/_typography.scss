@@ -58,7 +58,11 @@ a:hover {
 
 a {
   font-weight: var(--bold-font);
-  text-decoration: var(--none);
+  text-decoration-color: var(--key);
+  text-decoration-thickness: var(--2-px);
+  text-underline-offset: var(--2-px);
+  // text-decoration-style: var(--wavy);
+  // text-decoration-skip-ink: none;
   color: var(--key);
   transition: var(--transition-color);
 
@@ -76,3 +80,17 @@ a[rel~=noreferrer]:after {
   font-size: var(--xs-font);
 }
 
+kbd {
+  font-size: var(--2xs-font);
+}
+
+kbd.single,
+kbd>kbd {
+  padding: var(--0-spacer) var(--3-px);
+  font-weight: var(--light-font);
+  font-family: var(--code-font);
+  font-size: var(--xs-font);
+  display: var(--inline-block);
+  border-radius: var(--3-px);
+  border: var(--1-px) var(--solid) var(--gray-darkest);
+}

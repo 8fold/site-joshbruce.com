@@ -3,38 +3,52 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
+use Eightfold\Amos\ObjectsFromJson\PublicObject;
 
-class Data implements Buildable
+class Data implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function build(): string
-    {
-        $meta = $this->site()->decodedJsonFile(
-            named: '/data.json',
-            at: $this->site()->requestPath()
-        );
-        if ($meta === false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
-        $data = $meta->data;
+
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
+        if (
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
+
+        $data = PublicObject::inRoot(
+            $site->contentRoot(),
+            FileName::fromString('data.json'),
+            Path::fromString($request_path)
+        );
+
+        if ($data->notFound()) {
+            return '';
+        }
+
+        $data = $data->data();
 
         $listHeadings = [];
         foreach ($data as $row) {
@@ -81,12 +95,7 @@ class Data implements Buildable
             return '';
 
         }
-        return Element::ul(...$listHeadings)->props('is data-list')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul(...$listHeadings)->props('is data-list');
     }
 
     private static function listFrom12(
@@ -97,8 +106,8 @@ class Data implements Buildable
     ): Element {
         $detail = self::detail(floatval($min), floatval($max), floatval($value));
 
-        $label  = Element::span($label)->build();
-        $parenthetical = Element::span(' (' . $detail . ')')->build();
+        $label  = (string) Element::span($label);
+        $parenthetical = (string) Element::span(' (' . $detail . ')');
 
         $current = Element::li(
             Element::b('current: '),

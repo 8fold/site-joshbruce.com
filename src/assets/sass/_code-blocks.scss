@@ -1,0 +1,14 @@
+.shiki {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.shiki.focus .line:not(.focus) {
+    transition: all 0.3s ease-in;
+    filter: saturate(0) blur(1px);
+}
+
+.shiki.focus:hover .line {
+    transition: all 0.3 ease-out;
+    filter: saturate(0.7) blur(0);
+}

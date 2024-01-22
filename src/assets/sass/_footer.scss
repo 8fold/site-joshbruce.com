@@ -8,20 +8,26 @@ footer {
   & > ul {
     display: block;
     margin: var(--m-spacer) auto;
+    padding: var(--0-spacer);
     list-style: none;
 
     & > li {
       display: inline-block;
       & > a {
         margin-right: 1rem;
+        text-decoration: none;
 
         &:last-of-type {
           margin-left: 1rem;
         }
       }
 
-      &:first-of-type:after, &:nth-of-type(2):after {
+      &:after {
         content: '|';
+      }
+
+      &:last-of-type:after {
+        content: '';
       }
     }
   }

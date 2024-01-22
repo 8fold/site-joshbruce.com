@@ -1,10 +1,3 @@
----
-title: The self
-template: person
-created: 19790717
-updated: 20220522
----
-
 # The self
 
 {!! dateblock !!}
@@ -65,10 +58,12 @@ My name is <span property="name">Josh Bruce</span>.
 16. Capture everything.
 17. If you’re no good to yourself, you won’t be any good to others.
 18. Ruthlessly chase simplicity.
+19. Informed consent.
+20. Take what is useful, discard what is useless, and add something uniquely your own. (Bruce Lee)
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewerg who exclaimed: This is great, why limit it to being a Scrum Master‽
+This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
 
 I reflected on the question for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 
@@ -90,10 +85,10 @@ Short version:
 
 1. purpose,
 2. autonomy,
-3. mastery,
-4. connection,
-5. numbers,
-6. process,
+3. connection,
+4. mastery,
+5. process,
+6. numbers,
 7. prestige, and
 8. sticks.
 
@@ -106,11 +101,11 @@ Extended version:
 3. **physical touch (I’m big on hugs and high-fives)**,
 4. **words of affirmation**,
 5. **quality time**,
-6. mastery,
-7. numbers,
-8. **acts of service**,
-9. **receiving gifts**,
-10. process,
+6. **acts of service**,
+7. mastery,
+8. process,
+9. numbers,
+10. **receiving gifts**,
 11. prestige, and
 12. sticks.
 

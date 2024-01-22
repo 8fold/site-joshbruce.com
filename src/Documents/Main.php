@@ -3,19 +3,20 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Documents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
 
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
+use Eightfold\HTMLBuilder\Components\Favicons;
+use Eightfold\HTMLBuilder\Components\Copyright;
 
-use Eightfold\Amos\Site;
-
-use Eightfold\Amos\PageComponents\Favicons;
-use Eightfold\Amos\PageComponents\Copyright;
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
 
 use JoshBruce\Site\PageComponents\Navigation;
+use JoshBruce\Site\PageComponents\Breadcrumbs;
 
-class Main implements Buildable
+class Main implements Stringable // Buildable
 {
     private string $pageTitle = '';
 
@@ -23,18 +24,25 @@ class Main implements Buildable
 
     private string $schemaType = 'BlogPosting';
 
-    public static function create(Site $site): self
+    public static function create(SiteInterface $site, Path $requestPath): self
     {
-        return new self($site);
+        return new self($site, $requestPath);
     }
 
-    final private function __construct(private Site $site)
-    {
+    final private function __construct(
+        private readonly SiteInterface $site,
+        private readonly Path $requestPath
+    ) {
     }
 
-    public function site(): Site
+    public function site(): SiteInterface
     {
         return $this->site;
+    }
+
+    public function requestPath(): Path
+    {
+        return $this->requestPath;
     }
 
     public function setPageTitle(string $title): self
@@ -70,39 +78,43 @@ class Main implements Buildable
         return $this->schemaType;
     }
 
-    public function build(): string
+    public function __toString(): string
     {
-        return Document::create(
+        return (string) Document::create(
             $this->pageTitle()
         )->head(
             Element::meta()->omitEndTag()->props(
                 'name viewport',
                 'content width=device-width,initial-scale=1'
             ),
-            Element::meta()->omitEndTag()->props(
-                'name description',
-                'content A tabletop role playing game for the ages.'
-            ),
+            // Element::meta()->omitEndTag()->props(
+            //     'name description',
+            //     'content A tabletop role playing game for the ages.'
+            // ),
             Favicons::create(
-                themeColor: '#ffffff',
                 path: '/favicons',
-                msAppTileColor: '#00aba9',
-                safariTabColor: '#00aba9'
-            ),
+                themeColor: '#ffffff',
+            )->withSafariThemeColor('#00aba9')->withMetro('#00aba9'),
             Element::link()->omitEndTag()
                 ->props(
                     'rel stylesheet',
-                    'href /css/styles.min.css?v=1.0.1',
+                    'href /css/styles.min.css?v=1.3.2',
                     'type text/css'
                 ),
             Element::script()->props(
                 'src /js/interactive.min.js',
                 'type text/javascript'
-            )
+            ),
+            Element::link()->omitEndTag()
+                ->props(
+                    'rel me',
+                    'href https://phpc.social/@itsjoshbruce'
+                )
         )->body(
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
-            Navigation::create($this->site()),
+            Navigation::create($this->site(), $this->requestPath()),
+            Breadcrumbs::create($this->site(), $this->requestPath()),
             Element::article(
                 Element::section(
                     $this->body()
@@ -125,6 +137,11 @@ class Main implements Buildable
                     ),
                     Element::li(
                         Element::a(
+                            'social'
+                        )->props('href /support/')
+                    ),
+                    Element::li(
+                        Element::a(
                             'support'
                         )->props('href /support/')
                     )
@@ -136,11 +153,6 @@ class Main implements Buildable
                     'to top'
                 )
             )->props('id back-to-top', 'href #skip-nav')
-        )->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        );
     }
 }

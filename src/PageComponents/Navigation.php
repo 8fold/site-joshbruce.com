@@ -3,27 +3,30 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\PageComponents;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;
 
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
 
-class Navigation implements Buildable
+class Navigation implements Stringable // Buildable
 {
-    public static function create(Site $site): self
+    public static function create(SiteInterface $site, Path $requestPath): self
     {
-        return new self($site);
+        return new self($site, $requestPath);
     }
 
-    final private function __construct(private Site $site)
-    {
+    final private function __construct(
+        private readonly SiteInterface $site,
+        private readonly Path $requestPath
+    ) {
     }
 
-    public function site(): Site
+    public function site(): SiteInterface
     {
         return $this->site;
     }
@@ -43,7 +46,7 @@ class Navigation implements Buildable
         ];
     }
 
-    public function build(): string
+    public function __toString(): string
     {
         $links = [
             '/ H Home',
@@ -54,7 +57,7 @@ class Navigation implements Buildable
         ];
 
         $l = [];
-        $requestPath = $this->site()->requestPath() . '/';
+        $requestPath = $this->requestPath->toStringWithTrailingSlash();
         foreach ($links as $link) {
             list($href, $ts, $title) = explode(' ', $link, 3);
 
@@ -64,7 +67,11 @@ class Navigation implements Buildable
             if ($requestPath === '/' and $href === $requestPath) {
                 $a = Element::a(
                     ...$this->spans($title, $ts)
-                )->props('href ' . $href, 'class current');
+                )->props(
+                    'href ' . $href,
+                    'class current',
+                    'aria-current true'
+                );
 
             } elseif (
                 $href !== '/' and
@@ -72,20 +79,19 @@ class Navigation implements Buildable
             ) {
                 $a = Element::a(
                     ...$this->spans($title, $ts)
-                )->props('href ' . $href, 'class current');
+                )->props(
+                    'href ' . $href,
+                    'class current',
+                    'aria-current true'
+                );
 
             }
 
             $l[] = Element::li($a);
         }
 
-        return Element::nav(
+        return (string) Element::nav(
             Element::ul(...$l)->props('class col-' . count($links))
-        )->props('is main-nav')->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        )->props('is main-nav', 'aria-label primary navigation');
     }
 }
