@@ -238,16 +238,16 @@
         },
         {
             "name": "8fold/php-amos",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/8fold/php-amos.git",
-                "reference": "07782105d25dde3003638c0e5f518924d1294bad"
+                "reference": "7c6bcd8e5de1afc184b628216f9238780b98eff4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/8fold/php-amos/zipball/07782105d25dde3003638c0e5f518924d1294bad",
-                "reference": "07782105d25dde3003638c0e5f518924d1294bad",
+                "url": "https://api.github.com/repos/8fold/php-amos/zipball/7c6bcd8e5de1afc184b628216f9238780b98eff4",
+                "reference": "7c6bcd8e5de1afc184b628216f9238780b98eff4",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
             "description": "Not a content management system.",
             "support": {
                 "issues": "https://github.com/8fold/php-amos/issues",
-                "source": "https://github.com/8fold/php-amos/tree/0.10.0"
+                "source": "https://github.com/8fold/php-amos/tree/0.10.1"
             },
             "funding": [
                 {
@@ -298,7 +298,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-22T00:05:32+00:00"
+            "time": "2024-01-22T22:29:22+00:00"
         },
         {
             "name": "8fold/php-html-builder",
@@ -2538,16 +2538,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.8",
+            "version": "10.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "08f4fa74d5fbfff1ef22abffee47aaedcaea227e"
+                "reference": "0bd663704f0165c9e76fe4f06ffa6a1ca727fdbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/08f4fa74d5fbfff1ef22abffee47aaedcaea227e",
-                "reference": "08f4fa74d5fbfff1ef22abffee47aaedcaea227e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0bd663704f0165c9e76fe4f06ffa6a1ca727fdbe",
+                "reference": "0bd663704f0165c9e76fe4f06ffa6a1ca727fdbe",
                 "shasum": ""
             },
             "require": {
@@ -2619,7 +2619,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.8"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.9"
             },
             "funding": [
                 {
@@ -2635,7 +2635,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-19T07:07:27+00:00"
+            "time": "2024-01-22T14:35:40+00:00"
         },
         {
             "name": "psr/container",
