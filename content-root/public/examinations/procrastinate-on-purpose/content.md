@@ -61,7 +61,7 @@ This is followed by a description of priority dilution, which is the mantra: Whe
 
 Unfortunately, shifting priorities consistently keeps us from finding the ever elusive balance we hear so much about. 
 
-There has to something you’re missing. There has to be a better way. And there is.
+There has to be something you’re missing. There has to be a better way. And there is.
 
 
 
