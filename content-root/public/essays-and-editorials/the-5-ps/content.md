@@ -1,8 +1,3 @@
----
-title: The 5 Ps
-created: 20210623
----
-
 # The 5 Ps exercise by Josh Bruce
 
 {!!dateblock!!}

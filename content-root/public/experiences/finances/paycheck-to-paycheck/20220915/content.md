@@ -222,7 +222,7 @@ Humans have a tendency toward what I'll call pattern blindness.
 
 Once something becomes a pattern or ubiquitous long enough, we stop seeing the distinct instances of the pattern.
 
-Most of us, don't look to the right side on webpages anymore; that's where the ads are—or, at least where they used to be before interleaving them with the content because people weren't looking at or clicking them anymore. We can spend a lot of time on a page peppered with ads and not even see them because we know what and where to look (or not look). Twins are weird, except if you go to the [twins festival](https://twinsdays.org) where being a single is weird.
+Most of us, don't look to the right side on webpages anymore; that's where the ads are—or, at least where they used to be before interleaving them with the content because people weren't looking at or clicking them anymore (and handheld devices don’t lend themselves to wide content). We can spend a lot of time on a page peppered with ads and not even see them because we know what and where to look (or not look). Twins are weird, except if you go to the [twins festival](https://twinsdays.org) where being a single is weird.
 
 Picking at the "weird" thing can inspire conformity to the normal, ubiquitous thing. However, if someone wants to "get away something" they often stick to being as "normal" as possible—not weird: Act natural or casual. Social norms and mores are interesting and it's why it's hard to change things, even for the better.
 

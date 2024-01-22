@@ -3,38 +3,54 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
-
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-class FiExperiments implements Buildable
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
+use Eightfold\Amos\ObjectsFromJson\PublicObject;
+
+class FiExperiments implements PartialInterface
 {
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    public function build(): string
-    {
-        $meta = $this->site()->decodedJsonFile(
-            named: '/fi-experiments.json',
-            at: $this->site()->requestPath()
-        );
-        if ($meta === false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('site', $extras) === false or
+            array_key_exists('request_path', $extras) === false
+        ) {
             return '';
         }
-        $data = $meta->experiments;
+
+        $site         = $extras['site'];
+        $request_path = $extras['request_path'];
+        if (
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
+            is_string($request_path) === false
+        ) {
+            return '';
+        }
+
+        $meta = PublicObject::inRoot(
+            $site->contentRoot(),
+            Filename::fromString('fi-experiments.json'),
+            Path::fromString($request_path)
+        );
+        if (
+            $meta->notFound() or
+            $meta->hasProperty('experiments') === false
+        ) {
+            return '';
+        }
+
+        $data = $meta->experiments();
 
         $listHeadings = [];
         foreach ($data as $row) {
@@ -85,12 +101,7 @@ class FiExperiments implements Buildable
             return '';
 
         }
-        return Element::ul(...$listHeadings)->build();
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return (string) Element::ul(...$listHeadings);
     }
 
     private static function calculateChangeBetween(

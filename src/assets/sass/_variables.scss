@@ -19,7 +19,7 @@
   --2xs-font: clamp(8pt, 3.125vw, 12pt);
 
   --l-line-height: calc(var(--2xl-font) * 1);
-  --m-line-height: calc(var(--s-font) * 1.62);
+  --m-line-height: calc(var(--s-font) * 1.75);
   --s-line-height: calc(var(--s-font) * 1.25);
 
   --line-length: 70ch;
@@ -77,4 +77,5 @@
   --both: both;
   --hidden: hidden;
   --scroll: scroll;
+  --wavy: wavy;
 }

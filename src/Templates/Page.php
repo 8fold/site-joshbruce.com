@@ -3,79 +3,103 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Templates;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Stringable;
 
-use Eightfold\Amos\Site;
+use Eightfold\HTMLBuilder\Components\PageTitle;
 
-use Eightfold\Amos\Markdown;
-use Eightfold\Amos\PageComponents\PageTitle;
+use Eightfold\Markdown\Markdown;
+
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
+use Eightfold\Amos\PlainText\PublicContent;
 
 use JoshBruce\Site\Documents\Main;
 
 use JoshBruce\Site\Partials\DateBlock;
 use JoshBruce\Site\Partials\NextPrevious;
 use JoshBruce\Site\Partials\ArticleList;
-use JoshBruce\Site\Partials\LogList;
+use JoshBruce\Site\Partials\PaycheckLogList;
 use JoshBruce\Site\Partials\OriginalContentNotice;
 use JoshBruce\Site\Partials\Data;
 use JoshBruce\Site\Partials\FiExperiments;
 use JoshBruce\Site\Partials\FullNav;
+use JoshBruce\Site\Partials\HealthLogList;
 
-class Page implements Buildable
+class Page implements Stringable
 {
-    public static function create(Site $site): self
+    private Markdown $converter;
+
+    private Path $requestPath;
+
+    public static function create(SiteInterface $site): self
     {
         return new self($site);
     }
 
-    final private function __construct(private Site $site)
+    final private function __construct(private SiteInterface $site)
     {
     }
 
-    public function site(): Site
+    public function site(): SiteInterface
     {
         return $this->site;
     }
 
-    public function build(): string
+    public function withRequestPath(Path $requestPath): self
     {
-        $path = $this->site()->requestPath();
-        $markdown = $this->site()->content(at: $path);
-        if ($markdown === '') {
-            return '';
-        }
+        $this->requestPath = $requestPath;
+        return $this;
+    }
 
-        $meta = $this->site()->meta(at: $path);
+    public function requestPath(): Path
+    {
+        return $this->requestPath;
+    }
 
-        $main = Main::create($this->site())
-            ->setPageTitle(
-                PageTitle::create($this->site())->build()
-            )->setBody(
-                Markdown::convert(
-                    $this->site(),
-                    $markdown,
-                    [
-                        'dateblock'      => DateBlock::class,
-                        'next-previous'  => NextPrevious::class,
-                        'article-list'   => ArticleList::class,
-                        'loglist'        => LogList::class,
-                        'original'       => OriginalContentNotice::class,
-                        'data'           => Data::class,
-                        'fi-experiments' => FiExperiments::class,
-                        'full-nav'       => FullNav::class
-                    ]
-                )
-            );
+    public function withConverter(Markdown $converter): self
+    {
+        $this->converter = $converter;
+        return $this;
+    }
 
-        if (is_object($meta) and property_exists($meta, 'schemaType')) {
-            $main = $main->setSchemaType($meta->schemaType);
-        }
-
-        return $main->build();
+    public function converter(): Markdown
+    {
+        return $this->converter;
     }
 
     public function __toString(): string
     {
-        return $this->build();
+        $meta = PublicMeta::inRoot(
+            $this->site()->contentRoot(),
+            $this->requestPath()
+        );
+
+        $content = PublicContent::inRoot(
+            $this->site()->contentRoot(),
+            $this->requestPath()
+        );
+
+        if ($meta->notFound() or $content->notFound()) {
+            return (string) PageNotFound::create($this->site())
+                ->withConverter($this->converter())
+                ->withRequestPath($this->requestPath());
+        }
+
+        $converter = $this->converter();
+        $main = Main::create($this->site(), $this->requestPath())
+            ->setPageTitle(
+                (string) PageTitle::create($this->site()->titles(
+                    $this->requestPath()
+                ))
+            )->setBody($converter->convert(
+                $content->toString()
+            ));
+
+        if ($meta->hasProperty('schemaType')) {
+            $main = $main->setSchemaType($meta->schemaType());
+        }
+
+        return (string) $main;
     }
 }

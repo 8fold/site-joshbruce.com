@@ -8,6 +8,8 @@
 
 @forward 'footer';
 
+@forward 'code-blocks';
+
 html {
   scroll-padding-top: 44pt;
   @include mixins.at-media {
@@ -329,6 +331,7 @@ ul[is="data-list"] {
 
   a {
     color: var(--key-light);
+    text-decoration-color: var(--key-light);
     font-weight: var(--x-bold-font);
 
     &:hover {
@@ -378,6 +381,14 @@ ul[is="data-list"] {
       }
     }
   }
+
+  kbd>kbd {
+    border: var(--1-px) var(--solid) var(--gray-lightest);
+  }
+}
+
+div[is="heading-wrapper"] > a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 600px) {
