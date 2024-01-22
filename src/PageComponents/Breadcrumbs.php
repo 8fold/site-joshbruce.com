@@ -47,7 +47,11 @@ class Breadcrumbs implements Stringable // Buildable
 
         $length = $depth - $startDisplayingBreadcrumbsAtDepth;
 
-        $links = $this->site()->breadcrumbs($this->requestPath, $hideBreadcrumbsAtDepth, $length);
+        $links = $this->site()->breadcrumbs(
+            $this->requestPath,
+            $hideBreadcrumbsAtDepth,
+            $length
+        );
 
         $l = [];
         $requestPath = $this->requestPath;
