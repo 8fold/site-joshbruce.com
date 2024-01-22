@@ -12,6 +12,7 @@ declare(strict_types=1);
  * - Experiences/Finances/paycheck (20220315) - FI Experiments section
  * - Experiences/HealthAndWellness/HistoricalSummaries - log list
  * - EE/SoftwareDevelopment/OnConstraints/InternetBandwidth - Original content
+ * - sitemap
  * - 404 error - page not found
  */
 
