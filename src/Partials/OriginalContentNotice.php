@@ -3,61 +3,60 @@ declare(strict_types=1);
 
 namespace JoshBruce\Site\Partials;
 
-use Eightfold\XMLBuilder\Contracts\Buildable;
+use Eightfold\CommonMarkPartials\PartialInterface;
+use Eightfold\CommonMarkPartials\PartialInput;
 
-use StdClass;
+use Eightfold\Amos\SiteInterface;
+use Eightfold\Amos\FileSystem\Path;
+use Eightfold\Amos\FileSystem\Filename;
+use Eightfold\Amos\PlainText\PrivateFile;
+use Eightfold\Amos\ObjectsFromJson\PublicMeta;
 
-use Eightfold\HTMLBuilder\Element;
-
-use Eightfold\Amos\Site;
-use Eightfold\Amos\Markdown;
-
-class OriginalContentNotice implements Buildable
+class OriginalContentNotice implements PartialInterface
 {
     private const COMPONENT_WRAPPER = '{!! platformlink !!}';
 
-    public static function create(Site $site): self
-    {
-        return new self($site);
-    }
-
-    final private function __construct(private Site $site)
-    {
-    }
-
-    private function site(): Site
-    {
-        return $this->site;
-    }
-
-    private function originalNotice(): string
-    {
-        $path = $this->site()->contentRoot() . '/notices/original.md';
-        if (file_exists($path) == false) {
+    public function __invoke(
+        PartialInput $input,
+        array $extras = []
+    ): string {
+        if (
+            array_key_exists('meta', $extras) === false or
+            array_key_exists('site', $extras) === false
+        ) {
             return '';
         }
 
-        $content = file_get_contents($path);
-        if ($content === false) {
-            return '';
-        }
-        return $content;
-    }
+        $orignal = '';
+        $meta    = $extras['meta'];
+        if (
+            is_object($meta) and
+            is_a($meta, PublicMeta::class) and
+            $meta->found() and
+            $meta->hasProperty('original')
+        ) {
+            $orignal = $meta->original();
 
-    public function build(): string
-    {
-        $noticeMarkdown = $this->originalNotice();
-        if (strlen($noticeMarkdown) === 0) {
+        } else {
             return '';
-        }
 
-        $meta = $this->site()->meta(at: $this->site()->requestPath());
-        if ($meta === false) {
-            return '';
         }
 
-        $original = $meta->original;
-        list($href, $platform) = explode(' ', $original, 2);
+        $noticeMarkdown = '';
+        $site           = $extras['site'];
+        if (is_object($site) and $site instanceof SiteInterface) {
+            $noticeMarkdown = (string) PrivateFile::inRoot(
+                $site->contentRoot(),
+                Filename::fromString('original.md'),
+                Path::fromString('notices')
+            );
+        }
+
+        if (empty($noticeMarkdown)) {
+            return '';
+        }
+
+        list($href, $platform) = explode(' ', $orignal, 2);
 
         $matches = [];
         $search  = '/' . self::COMPONENT_WRAPPER . '/';
@@ -74,11 +73,6 @@ class OriginalContentNotice implements Buildable
             return '';
         }
 
-        return Markdown::convert($this->site(), $noticeMarkdown);
-    }
-
-    public function __toString(): string
-    {
-        return $this->build();
+        return $noticeMarkdown;
     }
 }

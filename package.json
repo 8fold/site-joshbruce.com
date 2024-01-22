@@ -24,5 +24,8 @@
     "postcss-csso": "^6.0.0",
     "postcss-discard-comments": "^5.1.2",
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "shiki": "^0.14.1"
   }
 }
