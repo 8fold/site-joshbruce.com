@@ -7,7 +7,7 @@ use Stringable;
 
 use Eightfold\Markdown\Markdown;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\PlainText\PrivateFile;
@@ -21,16 +21,16 @@ class PageNotFound implements Stringable
 
     private Path $requestPath;
 
-    public static function create(Site $site): self
+    public static function create(SiteInterface $site): self
     {
         return new self($site);
     }
 
-    final private function __construct(private readonly Site $site)
+    final private function __construct(private readonly SiteInterface $site)
     {
     }
 
-    private function site(): Site
+    private function site(): SiteInterface
     {
         return $this->site;
     }

@@ -4,14 +4,13 @@ declare(strict_types=1);
 namespace JoshBruce\Site\Documents;
 
 use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 use Eightfold\HTMLBuilder\Components\Favicons;
 use Eightfold\HTMLBuilder\Components\Copyright;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 
 use JoshBruce\Site\PageComponents\Navigation;
@@ -25,18 +24,18 @@ class Main implements Stringable // Buildable
 
     private string $schemaType = 'BlogPosting';
 
-    public static function create(Site $site, Path $requestPath): self
+    public static function create(SiteInterface $site, Path $requestPath): self
     {
         return new self($site, $requestPath);
     }
 
     final private function __construct(
-        private readonly Site $site,
+        private readonly SiteInterface $site,
         private readonly Path $requestPath
     ) {
     }
 
-    public function site(): Site
+    public function site(): SiteInterface
     {
         return $this->site;
     }

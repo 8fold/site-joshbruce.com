@@ -8,7 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 
 class ArticleList implements PartialInterface
@@ -27,8 +27,10 @@ class ArticleList implements PartialInterface
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
         if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
             is_string($request_path) === false
         ) {
             return '';

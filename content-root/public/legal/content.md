@@ -23,6 +23,8 @@ You may not do, or try to do, the following:
 
 Crawling (not scraping) Services are allowed if done in accordance with the provisions of the robots.txt files.
 
+Using the content of the site, in whole or in part, to train or improve Large Language Models, Generative Artificial Intelligence, and similar software is strictly prohibited without written permission and licensing agreement(s) between Joshua Bruce and the creator (or legal representative) of such software. Permission and agreement(s) must be signed by Joshua Bruce, notarized by a Notary Public registered in The United States, and at least one other witness selected by Joshua Bruce.
+
 Joshua Bruce may change, terminate, or restrict access to any aspect of the Services, at any time, without notice.
 
 ## No children

@@ -8,7 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 use Eightfold\Amos\FileSystem\Filename;
 use Eightfold\Amos\ObjectsFromJson\PublicObject;
@@ -29,8 +29,10 @@ class FiExperiments implements PartialInterface
         $site         = $extras['site'];
         $request_path = $extras['request_path'];
         if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
             is_string($request_path) === false
         ) {
             return '';

@@ -8,7 +8,7 @@ use Eightfold\HTMLBuilder\Element;
 use Eightfold\CommonMarkPartials\PartialInterface;
 use Eightfold\CommonMarkPartials\PartialInput;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 
 class HealthLogList implements PartialInterface
@@ -17,7 +17,6 @@ class HealthLogList implements PartialInterface
         PartialInput $input,
         array $extras = []
     ): string {
-        // die(var_dump($input->arguments()));
         if (
             array_key_exists('site', $extras) === false or
             array_key_exists('request_path', $extras) === false
@@ -35,8 +34,10 @@ class HealthLogList implements PartialInterface
         $year         = $arguments->year;
 
         if (
-            (is_object($site) === false or
-            is_a($site, Site::class) === false) or
+            (
+                is_object($site) === false or
+                $site instanceof SiteInterface === false
+            ) or
             is_string($request_path) === false
         ) {
             return '';
@@ -57,7 +58,7 @@ class HealthLogList implements PartialInterface
                 continue;
             }
 
-            $href = $request_path . $content . '/';
+            $href = $request_path . '/' . $content . '/';
 
             $meta = $site->publicMeta(
                 Path::fromString($href)

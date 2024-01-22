@@ -4,30 +4,29 @@ declare(strict_types=1);
 namespace JoshBruce\Site\PageComponents;
 
 use Stringable;
-// use Eightfold\XMLBuilder\Contracts\Buildable;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\UriInterface;
 
 use Eightfold\HTMLBuilder\Element;
 
-use Eightfold\Amos\Site;
+use Eightfold\Amos\SiteInterface;
 use Eightfold\Amos\FileSystem\Path;
 
 class Breadcrumbs implements Stringable // Buildable
 {
-    public static function create(Site $site, Path $requestPath): self
+    public static function create(SiteInterface $site, Path $requestPath): self
     {
         return new self($site, $requestPath);
     }
 
     final private function __construct(
-        private readonly Site $site,
+        private readonly SiteInterface $site,
         private readonly Path $requestPath
     ) {
     }
 
-    public function site(): Site
+    public function site(): SiteInterface
     {
         return $this->site;
     }
@@ -48,7 +47,11 @@ class Breadcrumbs implements Stringable // Buildable
 
         $length = $depth - $startDisplayingBreadcrumbsAtDepth;
 
-        $links = $this->site()->breadcrumbs($this->requestPath, $hideBreadcrumbsAtDepth, $length);
+        $links = $this->site()->breadcrumbs(
+            $this->requestPath,
+            $hideBreadcrumbsAtDepth,
+            $length
+        );
 
         $l = [];
         $requestPath = $this->requestPath;
