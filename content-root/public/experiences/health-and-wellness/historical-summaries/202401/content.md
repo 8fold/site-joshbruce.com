@@ -37,7 +37,7 @@ That toenail became thin, brittle, and bubbly for a while. This was the first si
 
 To be fair, topical solutions are criticized as useless because they don't penetrate the toenail. This would be true, but when I first started applying the solution, I'd run a buffer block across the top of the nails. In theory, this would remove some of the layers of the nail and should improve with the penetration problem. The response from the big toenail on the right foot proves this hypothesis as at least plausible.
 
-Back to the second digit, though. Seriously, no impact. Then, I switched to using the anti-fungal lacquer. That caused a severe response. Just like what happened with the big toenail, all of a sudden, the layers of the toenail seem to have separated. Only, unlike the big toe, the layers have separated pretty much the entire length of the nail. Further, the nail that's growing back in isn't getting thinner. 
+Back to the second digit, though. Seriously, no impact. Then, I switched to using the anti-fungal lacquer. That caused a severe response. Just like what happened with the big toenail, all of a sudden, the layers of the toenail seem to have separated. Only, unlike the big toe, the layers have separated pretty much the entire length of the nail. Further, the nail that's growing back in isn't getting thinner.
 
 I don't know if this points to a more serious fungal infection in that second digit or something else. But there's no pain or discomfort. The nail doesn't seem to be doing anything completely crazy. And it isn't getting worse, so I continue monitoring and performing what's become my foot routine.
 
@@ -77,11 +77,11 @@ My phone was having battery issues. So, I took it to Apple for service. Went off
 
 The [WHOOP](https://joshbruce.com/examinations/whoop-health-monitor/) needed to be reconnected. That went relatively smoothly. The [MacroFactor app](https://joshbruce.com/examinations/macrofactor-food-tracker/) on the other hand, not as much; effectively starting over there. It's not that big of a deal; more annoying than anything else.
 
-All right, health stuff, right? 
+All right, health stuff, right?
 
 The right big toenail is growing out whatever funkiness was all up in there. The top part of the nail is a distinctly different color than the lower part. It looks like about a quarter of the nail still needs to grow out and be cut off. But that bottom portion is a nice color and texture similar to its brethren.
 
-The right second-digit nail is still funky, like hella funky. I think it was actually the progenitor of whatever fungus overtook the big toe. 
+The right second-digit nail is still funky, like hella funky. I think it was actually the progenitor of whatever fungus overtook the big toe.
 
 The left big toenail is liking no longer being curled as much and it seems to coming well-attached to the toe itself.
 
