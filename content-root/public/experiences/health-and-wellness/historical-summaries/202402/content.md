@@ -2,6 +2,20 @@
 
 {!! dateblock !!}
 
+## Saturday, February 24, 2024
+
+[WHOOP](/examinations/whoop-health-monitor/) has been showing mainly green on the recovery score for the last couple of weeks. I did end up with a single red day thrown in for good measure.
+
+So far, the data point to the days when I deviate from the normal diet I've set myself on. For example, this morning's recovery was on the high end of a yellow recovery. Yesterday I didn't have my normal last meal. Instead of the fruit smoothie, pumpkin seeds, and protein bar, I had seafood salad and crackers. Prior to that, all days were green. Not high green, but green nonetheless.
+
+Beyond that, things are moving right along. I'm feeling pretty good mentally, physically, and emotionally. I'm going to start incorporating more fitness into the mix again.
+
+A few weeks ago, I needed to get my phone worked on. Doing so reset the [MacroFactor](/examinations/macrofactor-food-tracker/) app. My weight has remained stable, which is how MaacroFactor calculates caloric needs. I've started doing the morning system integrity check consistently again, which I think is helping with the green recoveries, and WHOOP insights seem to agree. I'm going to see about ramping up on fitness things again as well.
+
+I've also fleshed out a bit more of the [Mastering the Mundane website](https://mastering-the-mundane.com) to include mentoring and other services.
+
+I'm also still passively looking for regular employment.
+
 ## Saturday, February 10, 2024
 
 This is going to be the [change-step](https://youtu.be/exPY2TdJ_GQ) post. We'll be switching to the every two weeks cadence for these.
