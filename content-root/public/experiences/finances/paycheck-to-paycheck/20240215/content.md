@@ -42,3 +42,5 @@ I’ve been pretty restrained on dining out, which is a luxury I was trying to c
 As I’ve been working on [the money book](https://opencollective.com/mastering-the-mundane/projects/book-mastering-the-mundane-mon), I’ve been contemplating changing the expense account name from “medical and mental” to “self-care.” I think this will cover more ground and better reflect what I’m trying to do there. For example, if I join a gym, that would go there. If I buy gym equipment, it goes there. Haircuts, which currently fall under “miscellaneous” would go there.
 
 So, yeah, moving right along, putting myself out there, and pushing in the directions I’m pulled, without becoming the “asshole at the bar.”
+
+{!! next-previous !!}
