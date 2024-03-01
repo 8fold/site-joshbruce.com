@@ -129,3 +129,5 @@ As I wrote the books, I would post quotes from the books online with links to th
 And 3 months later, here we are.
 
 If I start getting people contributing to the Open Collective crowdfunding things for a different book, it will be taken into account, and it might cause me to shift. For now, I think this is a pretty fair and flexible system. Still shifting and tweaking things here and there, but not drastically and mostly at the edges and on weekends.
+
+{!! next-previous !!}
