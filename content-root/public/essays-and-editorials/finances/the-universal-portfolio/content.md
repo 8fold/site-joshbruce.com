@@ -14,6 +14,12 @@ Assertions:
 
 The first 2 assertions are why it's called The Universal Portfolio.
 
+The Universal Portfolio is based on Permanent Accounts and the Net Worth Calculation. For the uninitiated, that means means Assets and Liabilities and the following calculation:
+
+```
+Assets - Liabilities = Net Worth
+```
+
 We'll do this in 3 rounds with 3 asides to help define some terms.
 
 The first aside is that by "historical" in this context, we're talking in terms of decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
