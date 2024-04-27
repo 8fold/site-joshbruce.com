@@ -14,7 +14,7 @@ Assertions:
 
 The first 2 assertions are why it's called The Universal Portfolio.
 
-The Universal Portfolio is based on Permanent Accounts and the Net Worth Calculation. For the uninitiated, that means means Assets and Liabilities and the following calculation:
+The Universal Portfolio is based on Permanent Accounts and the Net Worth Calculation. For the uninitiated, that means Assets and Liabilities and the following calculation:
 
 ```
 Assets - Liabilities = Net Worth
@@ -29,10 +29,11 @@ We'll break Assets down into 4 sub-concepts:
 
 Let's cover the characteristics of each.
 
+**Short-term Assets (and Revenue):**
 
-
-
-
+1. Things you have or receive.
+2. The historical real rate has been relatively neutral compared to the other categories.
+3. Historically, they are more favorable in deflationary environments.
 
 We'll do this in 3 rounds with 3 asides to help define some terms.
 
