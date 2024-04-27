@@ -35,6 +35,29 @@ Let's cover the characteristics of each.
 2. The historical real rate has been relatively neutral compared to the other categories.
 3. Historically, they are more favorable in deflationary environments.
 
+**Growth Assets:**
+
+1. Things you have or receive.
+2. The historical real rate has been the highest compared to all the categories.
+3. Historically, they are more favorable in growth environments (hence the name).
+
+**Negative correlation Assets:**
+
+*Pay attention to the second item.*
+
+1. Things you have or receive.
+2. Has the lowest (usually negative) historical correlation with growth assets.
+3. Historically, they are more favorable in contracting environments, making them negatively correlated with growth assets.
+
+**Low correlation Assets:**
+
+*Watch that second characteristic again.*
+
+1. Things you have or receive.
+2. Has low historical correlation with things in all other categories.
+3. Historically, they are more favorable in inflationary environments.
+
+
 We'll do this in 3 rounds with 3 asides to help define some terms.
 
 The first aside is that by "historical" in this context, we're talking in terms of decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
