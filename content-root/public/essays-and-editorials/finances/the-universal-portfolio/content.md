@@ -33,7 +33,7 @@ We'll break Assets down into 4 sub-concepts:
 		- lowest (usually negative) correlation with Growth.
 		- more favorable in contracting environments.
 	4. Low correlation:
-		- low correlation with other categories.
+		- low correlation with other categories. May be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 		- more favorable in inflationary environments.
 
 Liabilities are a bit more fluid and difficult to break down. We'll give some examples that should get you started:
@@ -96,10 +96,6 @@ The last 4 categories will be much shorter.
 3. Historically, they are more favorable in growth environments (hence the name).
 
 When we use the term "growth," we're not talking about [style boxes for equities](https://www.investopedia.com/terms/e/equity_stylebox.asp). Instead, we are talking about a favorable environment.
-
-### Low correlation assets (characteristics)
-
-By low correlation, we mean the correlation may be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 
 ## The types (round 3)
 
