@@ -22,40 +22,32 @@ Assets - Liabilities = Net Worth
 
 We'll break Assets down into 4 sub-concepts:
 
-1. Short-term,
-2. Growth,
-3. Negative correlation, and
-4. Low correlation.
+- Assets: Things you have or receive
+	1. Short-term:
+		- real rate is relatively neutral compared to other categories.
+		- more favorable in deflationary environments.
+	2. Growth:
+		- real rate is the highest compared to other categories.
+		- more favorable in growth environments (hence the name).
+	3. Negative correlation:
+		- lowest (usually negative) correlation with Growth.
+		- more favorable in contracting environments.
+	4. Low correlation:
+		- low correlation with other categories.
+		- more favorable in inflationary environments.
 
-Let's cover the characteristics of each.
+Liabilities are a bit more fluid and difficult to break down. We'll give some examples that should get you started:
 
-**Short-term Assets (and Revenue):**
+- Liabilities: Things you owe or give
+	1. Revolving loans:
+		- real rate is lowest (usually negative) compared to other Asset and Liability categories.
+		- usually have a limit and can be borrowed against repeatedly without needing more paperwork.
+		- more favorable in all but deflationary-contracting environments.
+	2. Terminal loans
+		- real rate is low (usually negative), but not as low as Revolving loans.
+		- usually have a term (hence the name), which means once it's paid off, you are done.
+		- more favorable in all but deflationary-contracting environments.
 
-1. Things you have or receive.
-2. The historical real rate has been relatively neutral compared to the other categories.
-3. Historically, they are more favorable in deflationary environments.
-
-**Growth Assets:**
-
-1. Things you have or receive.
-2. The historical real rate has been the highest compared to all the categories.
-3. Historically, they are more favorable in growth environments (hence the name).
-
-**Negative correlation Assets:**
-
-*Pay attention to the second item.*
-
-1. Things you have or receive.
-2. Has the lowest (usually negative) historical correlation with growth assets.
-3. Historically, they are more favorable in contracting environments, making them negatively correlated with growth assets.
-
-**Low correlation Assets:**
-
-*Watch that second characteristic again.*
-
-1. Things you have or receive.
-2. Has low historical correlation with things in all other categories.
-3. Historically, they are more favorable in inflationary environments.
 
 
 We'll do this in 3 rounds with 3 asides to help define some terms.
@@ -63,16 +55,6 @@ We'll do this in 3 rounds with 3 asides to help define some terms.
 The first aside is that by "historical" in this context, we're talking in terms of decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
 
 The first round lists the categories. The second round outlines the primary characteristics of things in each category. The third round lists items that have fallen into each category historically.
-
-## The categories (round 1)
-
-The first round is brief. We'll list the 5 categories:
-
-1. Liabilities and outflows,
-2. short-term assets and inflows,
-3. growth assets,
-4. negative correlation assets, and
-5. low correlation assets.
 
 ## The characteristics (round 2)
 
@@ -96,12 +78,6 @@ A market can be at equilibrium, represented by the point where the scales cross.
 On to the primary characteristics of each category.
 
 ### Liabilities and outflows (characteristics)
-
-1. Things you owe or give to others.
-2. The real rate is the lowest (often negative) compared to the other categories.
-3. Historically, they are more favorable in all but deflationary-contracting environments.
-
-It's worth a couple of clarifications and examples.
 
 Typically, in finances, we don't think of liabilities and outflows in terms of the real rate. There are two reasons we did it in The Universal Portfolio context. First, it reduces cognitive load; if I'm thinking of every category in terms of the real rate, I don't need to shift mentally—*if this* is a liability, *then* I don't use the real rate. Second, using the real rate can help increase the psychological impact when looking for "high-interest debt."
 
