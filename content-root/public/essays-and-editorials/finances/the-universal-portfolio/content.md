@@ -99,12 +99,6 @@ When we use the term "growth," we're not talking about [style boxes for equities
 
 ### Low correlation assets (characteristics)
 
-Watch that second characteristic again.
-
-1. Things you have or receive.
-2. Has low historical correlation with things in all other categories.
-3. Historically, they are more favorable in inflationary environments.
-
 By low correlation, we mean the correlation may be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 
 ## The types (round 3)
