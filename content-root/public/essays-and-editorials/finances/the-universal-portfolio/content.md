@@ -97,14 +97,6 @@ The last 4 categories will be much shorter.
 
 When we use the term "growth," we're not talking about [style boxes for equities](https://www.investopedia.com/terms/e/equity_stylebox.asp). Instead, we are talking about a favorable environment.
 
-### Negative correlation assets (characteristics)
-
-We're going to change up the second characteristic for this one.
-
-1. Things you have or receive.
-2. Has the lowest (usually negative) historical correlation with growth assets.
-3. Historically, they are more favorable in contracting environments, making them negatively correlated with growth assets.
-
 ### Low correlation assets (characteristics)
 
 Watch that second characteristic again.
