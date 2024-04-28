@@ -48,10 +48,6 @@ Liabilities are a bit more fluid and difficult to break down. We'll give some ex
 		- usually have a term (hence the name), which means once it's paid off, you are done.
 		- more favorable in all but deflationary-contracting environments.
 
-
-
-We'll do this in 3 rounds with 3 asides to help define some terms.
-
 The first aside is that by "historical" in this context, we're talking in terms of decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
 
 The first round lists the categories. The second round outlines the primary characteristics of things in each category. The third round lists items that have fallen into each category historically.
