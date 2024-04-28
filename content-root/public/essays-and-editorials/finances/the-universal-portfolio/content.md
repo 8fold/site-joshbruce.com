@@ -89,12 +89,6 @@ Further, let's say a pack of chewing gum lasts you a year. At present, the cost 
 
 The last 4 categories will be much shorter.
 
-### Short-term assets and inflows (characteristics)
-
-1. Things you have or receive.
-2. The historical real rate has been relatively neutral compared to the other categories.
-3. Historically, they are more favorable in deflationary environments.
-
 ### Growth assets (characteristics)
 
 1. Things you have or receive.
