@@ -14,7 +14,39 @@ Assertions:
 
 The first 2 assertions are why it's called The Universal Portfolio.
 
-We'll do this in 3 rounds with 3 asides to help define some terms.
+The Universal Portfolio is based on Permanent Accounts and the Net Worth Calculation. For the uninitiated, that means Assets and Liabilities and the following calculation:
+
+```
+Assets - Liabilities = Net Worth
+```
+
+We'll break Assets down into 4 sub-concepts:
+
+- Assets: Things you have or receive
+	1. Short-term:
+		- real rate is relatively neutral compared to other categories.
+		- more favorable in deflationary environments.
+	2. Growth:
+		- real rate is the highest compared to other categories.
+		- more favorable in growth environments (hence the name).
+	3. Negative correlation:
+		- lowest (usually negative) correlation with Growth.
+		- more favorable in contracting environments.
+	4. Low correlation:
+		- low correlation with other categories. May be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
+		- more favorable in inflationary environments.
+
+Liabilities are a bit more fluid and difficult to break down. We'll give some examples that should get you started:
+
+- Liabilities: Things you owe or give
+	1. Revolving loans:
+		- real rate is lowest (usually negative) compared to other Asset and Liability categories.
+		- usually have a limit and can be borrowed against repeatedly without needing more paperwork.
+		- more favorable in all but deflationary-contracting environments.
+	2. Terminal loans
+		- real rate is low (usually negative), but not as low as Revolving loans.
+		- usually have a term (hence the name), which means once it's paid off, you are done.
+		- more favorable in all but deflationary-contracting environments.
 
 The first aside is that "historical" in this context, means decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
 
@@ -82,24 +114,6 @@ The last 4 categories will be much shorter.
 3. Historically, they are more favorable in growth environments (hence the name).
 
 When we use the term "growth," we're not talking about [style boxes for equities](https://www.investopedia.com/terms/e/equity_stylebox.asp). Instead, we are talking about a favorable environment.
-
-### Negative correlation assets (characteristics)
-
-We're going to change up the second characteristic for this one.
-
-1. Things you have or receive.
-2. Has the lowest (usually negative) historical correlation with growth assets.
-3. Historically, they are more favorable in contracting environments, making them negatively correlated with growth assets.
-
-### Low correlation assets (characteristics)
-
-Watch that second characteristic again.
-
-1. Things you have or receive.
-2. Has low historical correlation with things in all other categories.
-3. Historically, they are more favorable in inflationary environments.
-
-By low correlation, we mean the correlation may be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 
 ## The types (round 3)
 
