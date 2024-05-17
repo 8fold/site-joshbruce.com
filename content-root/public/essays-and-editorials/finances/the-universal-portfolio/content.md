@@ -8,9 +8,10 @@ Assertions:
 
 1. Everyone has a portfolio.
 2. Every portfolio has 5 categories.
-3. Each category can grow and shrink independently.
+3. Each category can grow and shrink in value independently.
 4. Each category is based on characteristics, not the things inside.
 5. Things may move between categories based on historical performance.
+6. All Revenue becomes an Asset, and all Expenses start as a Liability.
 
 The first 2 assertions are why it's called The Universal Portfolio.
 
@@ -20,7 +21,19 @@ The Universal Portfolio is based on Permanent Accounts and the Net Worth Calcula
 Assets - Liabilities = Net Worth
 ```
 
-We'll break Assets down into 4 sub-concepts:
+Liabilities are a bit more fluid and difficult to break down. We'll give some examples that should get you started:
+
+- Liabilities: Things you owe or give
+	1. Revolving loans:
+		- real rate is lowest (usually negative) compared to other Asset and Liability categories.
+		- usually have a limit and can be borrowed against repeatedly without needing more paperwork.
+		- more favorable in all but deflationary-contracting environments.
+	2. Terminal loans
+		- real rate is low (usually negative), but not as low as Revolving loans.
+		- usually have a term (hence the name), which means once it's paid off, you are done.
+		- more favorable in all but deflationary-contracting environments.
+
+We break Assets down into 4 sub-concepts:
 
 - Assets: Things you have or receive
 	1. Short-term:
@@ -36,43 +49,23 @@ We'll break Assets down into 4 sub-concepts:
 		- low correlation with other categories. May be negative, just not as negative as the negative correlation assets, or the correlation may be positive but less than 60–80 percent.
 		- more favorable in inflationary environments.
 
-Liabilities are a bit more fluid and difficult to break down. We'll give some examples that should get you started:
+"Historical" in this context, means decades; 10, 20, 30, 40, and so on years. 
 
-- Liabilities: Things you owe or give
-	1. Revolving loans:
-		- real rate is lowest (usually negative) compared to other Asset and Liability categories.
-		- usually have a limit and can be borrowed against repeatedly without needing more paperwork.
-		- more favorable in all but deflationary-contracting environments.
-	2. Terminal loans
-		- real rate is low (usually negative), but not as low as Revolving loans.
-		- usually have a term (hence the name), which means once it's paid off, you are done.
-		- more favorable in all but deflationary-contracting environments.
-
-The first aside is that "historical" in this context, means decades; 10, 20, 30, 40, and so on years. Further, we'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
+We'll intentionally inject a recency bias, giving more weight to recent time scales. We do this to avoid reversion to a mean, accommodate the complex adaptive nature of financial systems, and see paradigm shifts early.
 
 The first round lists the categories. The second round outlines the primary characteristics of things in each category. The third round lists items that have fallen into each category historically.
 
-## The categories (round 1)
-
-The first round is brief. We'll list the 5 categories:
-
-1. Liabilities and expenses,
-2. short-term assets and revenue,
-3. growth assets,
-4. negative correlation assets, and
-5. low correlation assets.
-
 ## The characteristics (round 2)
 
-We're going to get the other 2 asides out of the way.
+We adjust all interest rates by the inflation rate. For liabilities, we use a positive number for the interest rate, add the inflation rate, and convert the sum to a negative number. For assets, we use a positive number for the interest rate and subtract the inflation rate, leaving us with the real rate.
 
-The second aside is around the "real rate." We adjust the interest rate by the inflation rate. For liabilities, we use a positive number for the interest rate, add the inflation rate, and convert the sum to a negative number. For assets, we use a positive number for the interest rate and subtract the inflation rate, leaving us with the real rate.
+For example: 
 
-For example: A utility bill is an expense. It has a 0 percent interest rate. Inflation is 3 percent, and the sum is 3, giving us a negative 3 when we're done. A credit card is a liability. It has a 20 percent interest rate, inflation is 3 percent, and the sum is 23 percent, giving us a negative 23 when we're done. A savings account is a short-term asset. It has a 3 percent interest rate. Inflation is 3 percent, leaving us with 0 as the real rate.
+- A utility bill is an expense. It has a 0 percent interest rate. Inflation is 3 percent, and the sum is 3, giving us a negative 3 when we're done. 
+- A credit card is a liability. It has a 20 percent interest rate, inflation is 3 percent, and the sum is 23 percent, giving us a negative 23 when we're done. 
+- A savings account is a short-term asset. It has a 3 percent interest rate. Inflation is 3 percent, leaving us with 0 as the real rate.
 
-The final aside is more in-depth.
-
-This is a derivative of [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). However, the result is similar. We'll end up with 4 quadrants. The horizontal axis goes from infinite deflation (left) to infinite inflation (right); in percent. The vertical axis goes from infinite growth (top) to infinite contraction (bottom). At any given time, the market you are [saving and investing](/essays-and-editorials/finances/concepts/#saving-isnt-investing) in is in one of the 4 quadrants, and you are operating in a market in one of the 4 quadrants. The markets may not be the same; for example, someone operating in Venezuela while saving and investing in the United States. The 4 quadrants are as follows:
+The following is a derivative of [The Holy Grail of Investing](/essays-and-editorials/finances/concepts/#the-three-principles-of-investing). However, the result is similar. We'll end up with 4 quadrants. The horizontal axis goes from infinite deflation (left) to infinite inflation (right); in percent. The vertical axis goes from infinite growth (top) to infinite contraction (bottom). At any given time, the market you are [saving and investing](/essays-and-editorials/finances/concepts/#saving-isnt-investing) in is in one of the 4 quadrants, and you are operating in a market in one of the 4 quadrants. The markets may not be the same; for example, someone operating in Venezuela while saving and investing in the United States. The 4 quadrants are as follows:
 
 1. deflationary-growth,
 2. inflationary-growth (2021, for example),
@@ -84,10 +77,6 @@ A market can be at equilibrium, represented by the point where the scales cross.
 On to the primary characteristics of each category.
 
 ### Liabilities and expenses (characteristics)
-
-1. Things you owe or give to others.
-2. The real rate is the lowest (often negative) compared to the other categories.
-3. Historically, they are more favorable in all but deflationary-contracting environments.
 
 It's worth a couple of clarifications and examples.
 
@@ -101,21 +90,7 @@ Further, let's say a pack of chewing gum lasts you a year. At present, the cost 
 
 The last 4 categories will be much shorter.
 
-### Short-term assets and revenue (characteristics)
-
-1. Things you have or receive.
-2. The historical real rate has been relatively neutral compared to the other categories.
-3. Historically, they are more favorable in deflationary environments.
-
-### Growth assets (characteristics)
-
-1. Things you have or receive.
-2. The historical real rate has been the highest compared to all the categories.
-3. Historically, they are more favorable in growth environments (hence the name).
-
-When we use the term "growth," we're not talking about [style boxes for equities](https://www.investopedia.com/terms/e/equity_stylebox.asp). Instead, we are talking about a favorable environment.
-
-## The types (round 3)
+## The types
 
 We're going to focus on the "elephants in the room." And we're only talking about as of this writing.
 
