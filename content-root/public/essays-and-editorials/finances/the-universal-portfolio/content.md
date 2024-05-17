@@ -55,7 +55,7 @@ We'll intentionally inject a recency bias, giving more weight to recent time sca
 
 The first round lists the categories. The second round outlines the primary characteristics of things in each category. The third round lists items that have fallen into each category historically.
 
-## The characteristics (round 2)
+## The characteristics
 
 We adjust all interest rates by the inflation rate. For liabilities, we use a positive number for the interest rate, add the inflation rate, and convert the sum to a negative number. For assets, we use a positive number for the interest rate and subtract the inflation rate, leaving us with the real rate.
 
