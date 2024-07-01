@@ -12,6 +12,8 @@ I’m definitely shifting gears to *Space: Mastering the Mundane* as the next bo
 
 I’m also considering increasing the search for employment beyond self-employment.
 
+This month was also an anomaly for expenses mainly due to [the collapse](https://joshbruce.com/experiences/health-and-wellness/historical-summaries/202406/).
+
 ## Downsizing 
 
 Received payment for the Mac mini from [Sell Your Mac](https://www.sellyourmac.com). 
