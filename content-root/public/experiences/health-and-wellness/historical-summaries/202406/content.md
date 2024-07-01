@@ -58,7 +58,7 @@ There are a lot of possible contributing factors, which I think just landed as a
 
 Becca and I dropped off my Mac mini that sold, and that was pretty okay. And I’ve pretty much been lying in bed in the dark bedroom ever since.
 
-## To the data!
+### To the data!
 
 Some point while I was sleeping, [WHOOP](/examinations/whoop-health-monitor/) says my heart rate hit 160 beats per minute at the peak of a four minute spike. Prior to the spike it was less than 60 beats per minute. I’m hoping this was just a glitch in data readings.
 
