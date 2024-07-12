@@ -19,21 +19,23 @@ Creating the EPUB:
 
 1. Create a document in Apple Pages.
 	- It should use a table of contents for these instructions.
+	- Use a single font family throughout; you don't control the fonts users will use for the EPUB version.
+	- Do not add the cover image to the first page of the EPUB.
 2. Export to EPUB: File > Export to... > EPUB...
 	- A dialog box should appear.
 3. Enter the correct information:
 	- Title: The title as it will appear in the library of the e-reader.
 	- Author: The name of the author as it will appear in the e-reader.
 	- Cover: The cover image that appears in the library of the e-reader.
-		- Choose to use the first page as the cover image.
+		- Choose the cover image.
 	- Layout: How text will flow on different devices.
 		- Choose "Reflowable."
 	- Advanced options:
 		- Category: A category for the book (I'm not sure what platforms support the Apple implementation of this functionality).
 		- Language: Choose the appropriate language for the text.
 		- Use table of contents: Make sure this is checked.
-		- Embed fonts: Make sure this is checked.
-			- The EPUB will include the font families used in the document.
+		- Embed fonts: Leave this unchecked; we'll remove all references to your fonts in a minute.
+			- This also reduces the overall download size of the book because the fonts won't be included.
 4. Save the file.
 
 Post-process the EPUB:
@@ -46,25 +48,17 @@ Post-process the EPUB:
 	- Any errors and warnings should appear in the window's left pane.
 4. Fix errors (unless otherwise instructed, double-click the entry, correct the error, and return to step 3—that specific error should no longer appear in the list):
 	- Empty block in [.CSS](cascading stylesheet) file: Highlight from the dot (.) the closing curly bracket (}) > Delete the text > Save the file.
-		- A block is made up of a name (selector) starting with a period (.), followed by an opening curly brackets ({), followed by a closing curly brackets (}). Between the opening and closing curly brackets may be a set of attributes. The block is considered empty if there is nothing between the opening and closing curly brackets. Empty blocks mean that the block is either not used or does not actually change the look and feel of the EPUB book. Therefore, you can delete the block without negative impact.
-	- Missing generic font family: Add an appropriate [generic font family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#syntax) to the block's list of fonts.
-		- EPUBs are built on web technologies. The `font-family` attribute is a list of fonts to use for CSS. They are prioritized in order. If the device being used doesn't have the specified font, the application will try the next font on the list. Apple Pages only exports a single font family in the list.
-		- Steps:
-			1. command + F: Search and replace pane should appear.
-			2. Double-click the error.
-			3. Select the CSS text from the "f" in "font-family" to the semicolon (;). ex. font-family: "Times";
-			4. Copy the highlighted text.
-			5. Paste it into the "Find" field.
-			6. Paste it again into the "Replace" field.
-			7. In the "Replace" field, add a comma followed by a space before the semicolon. ex. font-family: "Times", ;
-			8. Add the appropriate generic font family name after the space and before the semicolon. ex. ex. font-family: "Times", serif;
-			9. Click "Find": An instance of the text in the "Find" field should be highlighted.
-			9. Click "Replace and Find" to update the found text and move to the next instance.
-				- Alternatively, you can click "Replace all": An alert should appear telling you how many instances will be replaced.
-					1. Click "See what changed": You should see a window displaying the before (left) and after (right).
-					2. Ensure each change is as expected.
-					3. If there are changes you didn't expect, click "Revert changes" and use "Replace and Find" instead; otherwise, click "Close".
-			10. Save the `book.css` file.
+		- A block is made up of a name (selector) starting with a period (.), followed by an opening curly brackets ({), followed by a closing curly brackets (}). Between the opening and closing curly brackets may be a set of attributes. The block is considered empty if there is nothing between the opening and closing curly brackets. Empty blocks mean that the block is either not used or does not actually change the look and feel of the EPUB book. Therefore, you can delete the block without a negative impact.
+	- Missing generic font family: Remove all references to `font-family: ...`; recommend:
+		1. Select the point after the semicolon (;) on the previous line until the end of the font family definition.
+		2. Copy this text.
+		3. `Command + F`
+		4. Paste the text into the Find field.
+		5. Click "Replace all".
+		6. Click "See what changed".
+		7. Confirm that each referent to a font family was removed. If something is incorrect, click "Revert changes"; otherwise, click "Close."
+		8. Save the `book.css` file.
+		9. Redo step 4, which may require fixing more generic font family problems.
 	- Expected selector "a" to come before:
 		1. Double-click the error
 		2. Scroll to the top of the CSS file (all of these should be near the top)
@@ -74,14 +68,16 @@ Post-process the EPUB:
 		6. Paste the text
 		7. Hit return to add a line break after the closing curly bracket.
 		8. Save the file.
-		9. Re-run the checks.
+		9. Redo step 4.
 	- OPS/epb.opf (icon of a human slipping): Click "Try to correct all fixable errors automatically.
 	- User controls background color: If you did not set the background color for the view, you should not have an explicit text color either. Apple Pages does not have an "automatic" font color option. Therefore, we want to remove any explicit color settings that will appear on the user-defined background.
 		1. Find the CSS attribute `color:`. If the attribute is a hexadecimal color (ex. #00000), and there isn't a `background-color` attribute set, we want to remove it.
-		2. Highlight the text from the semicolon on the previous line, until the semicolon on the line with `color` attribute.
+		2. Highlight the text from the semicolon on the previous line until the semicolon on the line with the `color` attribute.
 		3. Make sure the "Replace" field is blank.
 		4. Click "Replace all".
-		5. Click "See what changed" > Ensure each change is expected > If yes, click close; otherwise, click revert changes and go through each change using "Replace & Find" or "Find" (if you don't want to the change applied).
+		5. Click "See what changed" > Ensure each change is expected > If yes, click close; otherwise, click revert changes and go through each change using "Replace & Find" or "Find" (if you don't want the change applied).
+		6. Save the file.
+		7. Redo step 4.
 
 Optional things:
 
