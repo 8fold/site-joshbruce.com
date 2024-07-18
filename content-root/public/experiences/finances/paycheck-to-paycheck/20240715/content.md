@@ -54,7 +54,7 @@ The first 3 sell orders proved fruitful in this regard.
 
 The first sell order executed on the first day. The second order executed the next day. The third order executed a couple days later as the stock market rallied a bit.
 
-Because there is still 8.000 USD in unrealized gains for the extended market fund, I placed 3 more limit orders to sell 8,000 USD worth using the aforementioned strategy based on the closing price for July 17th.
+Because there is still 8,000 USD in unrealized gains for the extended market fund, I placed 3 more limit orders to sell 8,000 USD worth using the aforementioned strategy based on the closing price for July 17th.
 
 I also opened 3 buy orders for the small-cap value fund. So, we’ll see what happens as equity is pulled from the extended market fund to cash to one of the other funds (the small-cap value fund in this case).
 
