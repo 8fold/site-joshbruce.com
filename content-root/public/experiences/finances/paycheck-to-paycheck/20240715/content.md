@@ -80,7 +80,7 @@ The next day (the 16th) we visited a friend in Pennsylvania before driving a cou
 
 Today we’re at a hotel before going to the [West Virginia Mine Wars Museum](https://wvminewars.org/what-were-the-mine-wars) (lovingly referred to by me as The Redneck Museum).
 
-So, planning to be back at the apartment tomorrow or the next day. Becca and I will start scooping out neighborhoods with cheaper and smaller rentals. Still in the Louisville area for now.
+So, planning to be back at the apartment tomorrow or the next day. Becca and I will start scoping out neighborhoods with cheaper and smaller rentals. Still in the Louisville area for now.
 
 Having said that, we’re also starting to look at and consider some of the places we drove through this trip. I’m leaning more toward Canada personally, or at least ridiculously close to it.
 
