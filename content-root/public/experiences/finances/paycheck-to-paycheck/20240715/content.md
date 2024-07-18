@@ -44,9 +44,9 @@ At its core, the selling strategy is working like this:
 
 1. Decide a dollar amount to sell from a given vehicle.
 2. Place 3 limit orders based on the closing price from the previous day:
-  - closing price plus 1 percent,
-  - plus 2.5 percent, and
-  - plus 5 percent.
+    - closing price plus 1 percent,
+    - plus 2.5 percent, and
+    - plus 5 percent.
 
 The duration for buy orders is one trading day. I’m experimenting with using 60 days when selling.
 
@@ -54,9 +54,9 @@ The first 3 sell orders proved fruitful in this regard.
 
 The first sell order executed on the first day. The second order executed the next day. The third order executed a couple days later as the stock market rallied a bit.
 
-Because there is still 8.000 USD in unrealized gains for the extended market fund, I placed 3 more limit orders to sell 8,000 USD worth using the aforementioned strategy based on the closing price for July 17th.
+Because there is still 8,000 USD in unrealized gains for the extended market fund, I placed 3 more limit orders to sell 8,000 USD worth using the aforementioned strategy based on the closing price for July 17th.
 
-I also opened 3 buy orders for the small-cap value fund. So, we’ll see what happens as equity is pulled from the extended market fund to cash to one of the other funds (the small-cap value fund in this case).
+I also opened 3 buy orders for the small-cap value fund using its closing price for the 17th. So, we’ll see what happens as equity is pulled from the extended market fund to cash to one of the other funds (the small-cap value fund in this case).
 
 ## Downsizing
 
@@ -66,7 +66,7 @@ Shipped the Verizon 5G home internet equipment back to Verizon. That was an adve
 
 Becca and I enjoyed hanging out with Katrina for a few days in Columbus. Becca went camping one of the days.
 
-We drove by, but did not stop, to see Niagara Falls. We visited a friend in Toronto, and he made us pizza from his wood burning stove.  
+We drove by, but did not stop to see, Niagara Falls. We visited a friend in Toronto, and he made us pizza from his wood burning stove.  
 
 We stayed a night at 1,000 islands on the Canadian side.
 
@@ -78,9 +78,9 @@ So, we went straight to the overnight with a friend near Schenectady, New York.
 
 The next day (the 16th) we visited a friend in Pennsylvania before driving a couple more hours to our next stop and sleeping.
 
-Today we’re at a hotel before going to the West [Virginia Mine Wars Museum](https://wvminewars.org/what-were-the-mine-wars) (lovingly referred to by me as The Redneck Museum).
+Today we’re at a hotel before going to the [West Virginia Mine Wars Museum](https://wvminewars.org/what-were-the-mine-wars) (lovingly referred to by me as The Redneck Museum).
 
-So, planning to be back at the apartment tomorrow or the next day. Becca and I will start scooping out neighborhoods with cheaper and smaller rentals. Still in the Louisville area for now.
+So, planning to be back at the apartment tomorrow or the next day. Becca and I will start scoping out neighborhoods with cheaper and smaller rentals. Still in the Louisville area for now.
 
 Having said that, we’re also starting to look at and consider some of the places we drove through this trip. I’m leaning more toward Canada personally, or at least ridiculously close to it.
 
