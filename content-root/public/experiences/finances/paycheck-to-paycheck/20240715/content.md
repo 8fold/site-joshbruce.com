@@ -66,7 +66,7 @@ Shipped the Verizon 5G home internet equipment back to Verizon. That was an adve
 
 Becca and I enjoyed hanging out with Katrina for a few days in Columbus. Becca went camping one of the days.
 
-We drove by, but did not stop, to see Niagara Falls. We visited a friend in Toronto, and he made us pizza from his wood burning stove.  
+We drove by, but did not stop to see, Niagara Falls. We visited a friend in Toronto, and he made us pizza from his wood burning stove.  
 
 We stayed a night at 1,000 islands on the Canadian side.
 
