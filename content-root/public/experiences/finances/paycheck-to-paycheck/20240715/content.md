@@ -15,15 +15,35 @@ I stopped contributing to the extended market fund in 2022 because I wanted to m
 
 A few days ago, I was looking at my Traditional [Individual Retirement Arrangement](https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras) (because that's what the [.United States Internal Revenue Service] calls it). It was showing a gain of 8,000 USD. That's because this holding was purchased when I rolled over my employer-sponsored retirement account in 2022 and again in 2023.
 
-I'm still working through [rebalancing behavior](/experiences/finances/investment-policy/#rebalancing-the-portfolio), and I'm also taking this opportunity to try the selling strategy.
+I'm still working through [rebalancing behavior](/experiences/finances/investment-policy/#rebalancing-the-portfolio), and I'm also taking this opportunity to try to build out a selling strategy.
+
+So far, it seems like it will work out, at least until I feel confident to pick a withdrawal rate and do something on a regular cadence like [Frank Vasquez](https://www.riskparityradio.com).
+
+The short version, detailed in the next section, is I placed 3 limit orders for the extended market fund. I set them to stick around for 60 days; when buying, I do daily. That means if the per share priced reaches what I set it to within the next 60 days, the sale executes. On the first day, the first limit order sold. A few days later the other two did as well.
+
+Funny enough, the total unrealized gains for the extended market fund are still just over 8,000 USD. So, put it 3 more limit orders using the closing price for July 17th.
+
+And, I’ve been using the buying strategy to buy into the small-cap value fund. Strictly speaking, this isn’t rebalancing, but it’s similar.
 
 ## How I buy and sell
 
+I’ve been experiencing a lot of different scenarios recently, which has me modifying how I buy and sell things.
 
+1. If my income streams result in a positive cash flow, I’ll automatically dollar-cost average into tax-advantaged accounts as much as possible (up to the maximum). Further, excess cash after paying bills will be used to purchase more investments in a taxable brokerage account.
+2. If my income streams result in a negative cash flow, I won’t contribute to tax-advantaged accounts. Further, I’ll avoid selling investments as much as possible and reasonable. Finally, I’ll avoid purchasing investments in my taxable brokerage account.
+3. I follow the [spending from savings](/experiences/finances/personal-budget/#spending-savings) protocol from my Personal Budget to purchase things in my taxable brokerage account. Further, I follow the purchasing protocol outlined in my [Investment Policy statement](/experiences/finances/investment-policy/#investments).
 
+The buying strategy mainly looks at short-term assets in the portfolio, and whether a given vehicle was up or down the previous day.
 
+The selling strategy hasn’t been captured yet. It hasn’t been captured because I haven’t been in a scenario to think about and experiment with it much.
 
+At its core, the selling strategy is working like this:
 
+1. Decide a dollar amount to sell from a given vehicle.
+2. Place 3 limit orders based on the closing price from the previous day:
+  - closing price plus 1 percent,
+  - plus 2.5 percent, and
+  - plus 5 percent.
 
 
 
