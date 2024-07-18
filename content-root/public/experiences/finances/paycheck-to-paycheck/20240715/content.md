@@ -44,9 +44,9 @@ At its core, the selling strategy is working like this:
 
 1. Decide a dollar amount to sell from a given vehicle.
 2. Place 3 limit orders based on the closing price from the previous day:
-  - closing price plus 1 percent,
-  - plus 2.5 percent, and
-  - plus 5 percent.
+    - closing price plus 1 percent,
+    - plus 2.5 percent, and
+    - plus 5 percent.
 
 The duration for buy orders is one trading day. I’m experimenting with using 60 days when selling.
 
