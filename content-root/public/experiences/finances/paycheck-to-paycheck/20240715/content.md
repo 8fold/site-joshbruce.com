@@ -78,7 +78,7 @@ So, we went straight to the overnight with a friend near Schenectady, New York.
 
 The next day (the 16th) we visited a friend in Pennsylvania before driving a couple more hours to our next stop and sleeping.
 
-Today we’re at a hotel before going to the West [Virginia Mine Wars Museum](https://wvminewars.org/what-were-the-mine-wars) (lovingly referred to by me as The Redneck Museum).
+Today we’re at a hotel before going to the [West Virginia Mine Wars Museum](https://wvminewars.org/what-were-the-mine-wars) (lovingly referred to by me as The Redneck Museum).
 
 So, planning to be back at the apartment tomorrow or the next day. Becca and I will start scooping out neighborhoods with cheaper and smaller rentals. Still in the Louisville area for now.
 
