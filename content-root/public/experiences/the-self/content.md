@@ -137,6 +137,8 @@ These are my results from [The 5 Ps](/essays-and-editorials/the-5-ps/) exercise 
 
 1. Not seeking consent.
 2. People who assume or presume to know what is going on in someone’s mind.
+3. When rules, agreements, and similar aren’t applied equally to all. (No one is above the law, so to speak.)
+4. When someone identifies a behavior as problematic in others, and then proceeds to perform that same behavior (the malignant form of [psychological projection](https://en.m.wikipedia.org/wiki/Psychological_projection)). 
 
 ### Pedagogies
 
