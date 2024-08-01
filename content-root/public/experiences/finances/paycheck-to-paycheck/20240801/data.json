@@ -16,7 +16,7 @@
       "optimum": "6",
       "high": "8",
       "max": "9",
-      "value": "5.4"
+      "value": "3.72"
     },
     {
       "label": "Low correlation",
@@ -38,30 +38,30 @@
     },
     {
       "label": "Growth - US equities - small",
-      "min": "40",
-      "low": "47",
-      "optimum": "50",
-      "high": "53",
-      "max": "60",
-      "value": "51.4"
+      "min": "31",
+      "low": "36",
+      "optimum": "39",
+      "high": "41",
+      "max": "46",
+      "value": "54.32"
     },
     {
       "label": "Growth - US equities - mid",
-      "min": "7",
-      "low": "8",
-      "optimum": "9",
-      "high": "10",
-      "max": "11",
-      "value": "20.4"
+      "min": "3",
+      "low": "11",
+      "optimum": "14",
+      "high": "15",
+      "max": "16.2",
+      "value": "20.87"
     },
     {
       "label": "Growth - US equities - large",
-      "min": "28",
-      "low": "30",
-      "optimum": "35",
-      "high": "40",
-      "max": "42",
-      "value": "23.3"
+      "min": "34",
+      "low": "36",
+      "optimum": "42",
+      "high": "48",
+      "max": "50",
+      "value": "21.65"
     }
   ]
 }
