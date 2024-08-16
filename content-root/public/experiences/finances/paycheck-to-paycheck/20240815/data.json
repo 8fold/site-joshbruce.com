@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "label": "Liabilities",
+      "min": "0",
+      "low": "0",
+      "optimum": "0",
+      "high": "0.5",
+      "max": "1",
+      "value": "0"
+    },
+    {
+      "label": "Short-term assets",
+      "min": "3",
+      "low": "4",
+      "optimum": "6",
+      "high": "8",
+      "max": "9",
+      "value": "3.34"
+    },
+    {
+      "label": "Low correlation",
+      "min": "0",
+      "low": "0",
+      "optimum": "0",
+      "high": "0.5",
+      "max": "1",
+      "value": "0"
+    },
+    {
+      "label": "Negative correlation",
+      "min": "0",
+      "low": "0",
+      "optimum": "0",
+      "high": "0.3",
+      "max": "1",
+      "value": "0"
+    },
+    {
+      "label": "Growth - US equities - small",
+      "min": "31",
+      "low": "36",
+      "optimum": "39",
+      "high": "41",
+      "max": "46",
+      "value": "54.1"
+    },
+    {
+      "label": "Growth - US equities - mid",
+      "min": "3",
+      "low": "11",
+      "optimum": "14",
+      "high": "15",
+      "max": "16.2",
+      "value": "21.02"
+    },
+    {
+      "label": "Growth - US equities - large",
+      "min": "34",
+      "low": "36",
+      "optimum": "42",
+      "high": "48",
+      "max": "50",
+      "value": "22.11"
+    }
+  ]
+}
