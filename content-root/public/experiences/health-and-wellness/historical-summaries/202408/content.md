@@ -2,7 +2,7 @@
 
 {!! dateblock !!}
 
-## Friday, August 18, 2024
+## Friday, August 16, 2024
 
 Tested positive for COVID for the first time.
 
