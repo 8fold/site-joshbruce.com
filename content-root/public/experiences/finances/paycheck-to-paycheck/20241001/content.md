@@ -89,9 +89,11 @@ target amount (ta) = 1,879
 x = cp + 1%
 y = ta * 15%
 z = floor(y / x)
+```
 
 If z is greater than 0, that's how many shares we sell; otherwise:
 
+```
 a = cp + %5
 b = ta * 50%
 c = floor(a / b)
@@ -106,9 +108,9 @@ j = d + i
 k = ta - j
 
 m = floor(k / x)
+```
 
 If m is greater than 0, that's how many shares we sell; otherwise, we dont sell any.
-```
 
 I found this could leave me in a bing if I *really* needed cash but the funds aren’t fluctuating enough to execute some of the orders. This is how we wind up with almost 20 orders that haven’t sold yet. So, I split the 15 percent bracket into a 5 percent and a 10 percent.
 
