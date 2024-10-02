@@ -85,13 +85,13 @@ What’s in my head at the moment is:
 
 Journaling has been a practice that comes and goes with me. Having a personal website has also been something that comes and goes with me. As a creator wielding various media, I’ve spent a non-trivial amount of time considering the artist-audience paradigm and relationship.
 
-Much like the “mo margin, no mission” line from the nonprofit world, with no audience, there is no artist. 
+Much like the “no margin, no mission” line from the nonprofit world, with no audience, there is no artist. 
 
 That’s not to say the creator isn’t an artist or that what they create isn’t art, it’s just they’re a tree falling in a forest with no one around to hear it.
 
 As I continue emphasizing my personal relationships through one-to-one conversations something struck me: Most of the people I talk with regularly, don’t visit this site regularly (some don’t even know it exists). If I send them a link they might show up, but they don’t typically tell me about it.
 
-(It’s worth noting that I am grateful whenever someone reaches out or mentions application for something I’ve put on this site, and in 20 years I can count the “uniques” on my fingers, and the non-uniques might quadruple that number.)
+(It’s worth noting that I am grateful whenever someone reaches out or mentions appreciation for something I’ve put on this site, and in 20 years I can count the “uniques” on my fingers, and the non-uniques might quadruple that number.)
 
 For the audience members who love me deeply (like Becca, Katrina, and a few others), we talk about a lot of this stuff anyway. So, they shouldn’t lose anything. And maybe I’ll make one-pagers or something they can hand out to people for the content they do direct people to.
 
