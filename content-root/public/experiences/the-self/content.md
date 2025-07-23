@@ -4,7 +4,7 @@
 
 Here's where you can see the big picture of me. I will mainly use the exercises found in my books and the [essays and editorials](/essays-and-editorials/) area of the site.
 
-In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, emotionally, and financially.
+In times of stress, I can come back to these and center myself from a time when I was in a more stable place mentally, physically, emotionally, and financially.
 
 My name is <span property="name">Josh Bruce</span>.
 
@@ -29,7 +29,7 @@ My name is <span property="name">Josh Bruce</span>.
 3. Intent and impact are neither mutually inclusive nor exclusive.
 4. Your mind is for having ideas, not storing them (David Allen).
 5. If you want to go fast, go alone. If you want to go far, go together (African proverb).
-6. You never know, for sure, how you’ll respond to a situation until you’re in that situation and you can prepare yourself for a variety of situations.
+6. You never know, for sure, how you’ll respond to a situation until you’re in that situation, and you can prepare yourself for a variety of situations.
 7. Negatively criticizing something is not the same as thinking critically about the thing.
 8. Role does not dictate behavior.
 9. Great value doesn't require grand gestures.
@@ -39,7 +39,7 @@ My name is <span property="name">Josh Bruce</span>.
 
 ### Practices
 
-1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); ageism, racism, sexism, elitism…
+1. Avoid -isms, -isms in my opinion aren't good (*Ferris Bueller's Day Off*); specifically elitism and all its forms, ageism, racism, sexism…
 3. Don’t bet on others to fail.
 4. Maximize the number of people supporting your progress.
 5. Extend grace and ask before assuming malicious intent.
@@ -47,7 +47,7 @@ My name is <span property="name">Josh Bruce</span>.
 7. Don’t assume or presume intent.
 8. Never enter anything without an exit strategy.
 9. Don’t become addicted to brain crack (Ze Frank).
-10. Follow those you view as “ahead” of you based on your own criteria (you choose) and aid those who see themselves as behind you based on *their* criteria (they choose); it’s a dance, not a line.
+10. Follow those you view as “ahead” of you based on your criteria (you choose) and aid those who see themselves as behind you based on *their* criteria (they choose); it’s a dance, not a line.
 11. Give credit and compliments where they are due.
     - Accept credit and compliments graciously.
     - Correct credit and compliments if another is the reason (see parent).
@@ -63,19 +63,19 @@ My name is <span property="name">Josh Bruce</span>.
 
 ## My oath
 
-This was originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer who exclaimed: This is great, why limit it to being a Scrum Master‽
+Originally developed when I was working with a group around 2014 or ʼ15. As I get the opportunity to interact with new playmates and have different experiences, it gets modified. Initially, I called this list my My Scrum Master's Oath. Then, I was interviewing for a gig and shared it with the interviewer, who exclaimed: This is great. Why limit it to being a Scrum Master?
 
-I reflected on the question for a moment and decided they were right, so, here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
+I reflected on the question for a moment and decided they were right, so here it is. It's something I share with new playmates when we first start working together toward mutual benefit and improvement.
 
 1. I will not intentionally cause you pain (individually or collectively) without a) fair warning or b) providing an “easy out” only requiring initiative on your part.
 2. I will not ask you to do something I am not ready to do, willing to do, able to do, or am not already doing myself.
 3. Every action I perform will serve to bring the most long-term value to myself, the group, the program, and our users while satisfying the immediate needs of those I serve. (Not necessarily in that order.)
-4. I don’t show up for me, I show up for you; having said that, if I feel the relationship is unbalanced in that regard, I'll let you know—directly.
+4. I don’t show up for me, I show up for *us*; having said that, if I feel the relationship is unbalanced in that regard, I'll let you know—directly.
 5. I'll come to you with curiosity and compassion as opposed to judgment and contempt.
 6. I'd rather we all suffer a little than any one of us suffer a lot.
 7. I will not coerce or chase you.
 
-Caveat: This is something I strive to achieve with all interactions, if you feel I'm failing in some regard, please let me know so I might reflect and modify my behavior or this oath.
+Caveat: This is something I strive to achieve with all interactions. If you feel I'm failing in some regard, please let me know so I might reflect and modify my behavior or this oath.
 
 ## Motivators exercise results
 
@@ -92,7 +92,7 @@ Short version:
 7. prestige, and
 8. sticks.
 
-Regarding range and distance between, sticks is so far from the others I feel comfortable saying I am practically anti-stick. If I signed up for the negative consequence, I see that differently. Further, the top four are pretty close to one another and may even shift around based on context. Finally, the remaining are also pretty close to one another but aren’t exceptionally close to the top four.
+Regarding range and distance between sticks and everything else, sticks are so far from the others that I feel comfortable saying I am practically anti-stick. If I signed up for the negative consequence, I see that differently. Further, the top four are pretty close to one another and may even shift around based on context. Finally, the remaining are also pretty close to one another but aren’t exceptionally close to the top four.
 
 Extended version:
 
@@ -111,7 +111,7 @@ Extended version:
 
 Awareness and intent.
 
-Beyond the valuation portion (sorting), one of the things this exercise revealed to me is why I haven't been particularly ambitious when it comes to finances or progressing up the career ladder; low on numbers and low on prestige. It helped inform my practice of negotiating raises and charging for my services; if left to my own devices I would remain a starving artist, so to speak, I value numbers generally (and money specifically) so little. Further, it helped guide me to roles that fit me well, like Scrum Master; primarily influence-based, not authority- or title-based.
+Beyond the valuation portion (sorting), one of the things this exercise revealed to me is why I haven't been particularly ambitious when it comes to finances or progressing up the career ladder; low on numbers and low on prestige. It helped inform my practice of negotiating raises and charging for my services; if left to my own devices, I would remain a starving artist, so to speak. I value numbers generally (and money specifically) so little. Further, it helped guide me to roles that fit me well, like Scrum Master; primarily influence-based, not authority- or title-based.
 
 ## The 5 Ps results
 
