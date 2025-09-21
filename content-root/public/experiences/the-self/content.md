@@ -83,9 +83,9 @@ Here are my results from the [Motivators Exercise](/essays-and-editorials/motiva
 
 Short version:
 
-1. purpose,
-2. autonomy,
-3. connection,
+1. autonomy,
+2. connection,
+3. purpose,
 4. mastery,
 5. process,
 6. numbers,
@@ -94,18 +94,18 @@ Short version:
 
 Regarding range and distance between sticks and everything else, sticks are so far from the others that I feel comfortable saying I am practically anti-stick. If I signed up for the negative consequence, I see that differently. Further, the top four are pretty close to one another and may even shift around based on context. Finally, the remaining are also pretty close to one another but aren’t exceptionally close to the top four.
 
-Extended version:
+Extended version; the percents are the result of taking the official [The 5 Love Languages quiz](https://5lovelanguages.com/quizzes/love-language):
 
-1. purpose,
-2. autonomy,
-3. **physical touch (I’m big on hugs and high-fives)**,
-4. **words of affirmation**,
-5. **quality time**,
-6. **acts of service**,
+1. autonomy,
+2. **physical touch (I’m big on hugs and high-fives)** 30%,
+3. **words of affirmation** 23%,
+4. purpose,
+5. **quality time** 23%,
+6. **acts of service** 17%,
 7. mastery,
 8. process,
 9. numbers,
-10. **receiving gifts**,
+10. **receiving gifts** 7%,
 11. prestige, and
 12. sticks.
 
