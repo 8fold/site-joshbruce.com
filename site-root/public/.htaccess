@@ -31,6 +31,7 @@ ErrorDocument 500 /error-500.html
 	Redirect 301 "/experiences/health-and-wellness/2023/" "/experiences/health-and-wellness/historical-summaries/#2023-44-years-of-age"
 	Redirect 301 "/essays-and-editorials/the-5-ps/" "https://mastering-the-mundane.com/tools-and-resources/the-5-ps/"
 	Redirect 301 "/essays-and-editorials/motivators/" "https://mastering-the-mundane.com/tools-and-resources/motivators/"
+	Redirect 301 "/essays-and-editorials/action-loop/" "https://mastering-the-mundane.com/articles/the-action-loop/"
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
