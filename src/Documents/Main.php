@@ -109,7 +109,8 @@ class Main implements Stringable // Buildable
                 ->props(
                     'rel me',
                     'href https://phpc.social/@itsjoshbruce'
-                )
+                ),
+            Element::script('{"@context": "https://schema.org","@type": "Blog","creator": {"@type": "Person","name": "Joshua Bruce","url": "https://itsjoshbruce.com","sameAs": "https://itsjoshbruce.com"},"description": "Agile coaching, software development, and professional thought leadership"}')->props('type application/ld+json')
         )->body(
             Element::a('Skip to main content')
                 ->props('href #main', 'id skip-nav'),
